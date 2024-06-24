@@ -33,6 +33,10 @@ There are controversies about whether libretro's patreon and retroarch's GPL lic
 * While GPL code can't be mixed with non-commercial code, this is a non-issue since this port doesn't contain any GPL-licensed code.
 * Under european law, where the libretro buildbots are located, linking GPL and non-commercial softwares doesn't produce a derivative work, and doesn't extend the GPL license to the non-commercial work (source [here](https://joinup.ec.europa.eu/collection/eupl/licence-compatibility-permissivity-reciprocity-and-interoperability)). It is unclear whether the same applies in non-EU countries or not.
 
+## Note about this readme
+
+It mostly assumes you are using RetroArch as your libretro frontend, some specific instructions might differ if you are using another one.
+
 ## Extensions
 
 zip, 7z
@@ -265,23 +269,6 @@ This core supports the RetroArch cheat feature with the `.cht` files. However it
 * Uncompress **all of them** into the `SYSTEM_DIRECTORY/fbneo/cheats/` folder (which is **NOT** the same folder as the RetroArch feature with the `.cht` files)
 * Cheats will become available through core options (`Quick Menu > Core Options`, **NOT** `Quick Menu > Cheats`) afterward.
 
-## IPS Patch
-
-This core supports the IPS Patch feature.
-
-* Put all IPS patch files (including: driver name directory/**.dat|**.ips) into the `SYSTEM_DIRECTORY/fbneo/ips/` folder
-* IPS Patch will become available through core options (`Quick Menu > Core Options`) afterward.
-* Note : To ensure fairness in Achievement Mode, IPS Patch execution follows the 'Allow patched romsets' switch item.
-* Note : To avoid competing with loaded games for startup privileges, IPS Patches is initially disabled by default.
-
-## RomData
-
-This core supports the RomData feature.
-
-* Put all RomData files (including: driver name directory/**.dat) into the `SYSTEM_DIRECTORY/fbneo/romdata/` folder
-* RomData will become available through core options (`Quick Menu > Core Options`) afterward.
-* Note : To ensure fairness in Achievement Mode, RomData execution follows the 'Allow patched romsets' switch item.
-
 ## Multi-language
 
 This core supports multi-language feature.
@@ -306,12 +293,28 @@ Exceptionally there might be a false positive due to your file being unreadable 
 
 A lot of romhacks are supported natively, so your romhack might already be supported under a specific romset name.
 
-For the unsupported romhacks, you can put the patched version of the romset into `SYSTEM_DIRECTORY/fbneo/patched` (NB: you can strip it of any file that don't differ from non-patched romset if you want), that method will only work if the sizes and names matches with the original romset. 
-**The romset you must launch is still the original non-patched romset (its content will be overrided at runtime by the content of the patched one)**, you can disable that behavior by toggling off the `Allow patched romsets` core option.
+For the unsupported romhacks, there are 3 methods, but those romhacks are not allowed and must be disabled by toggling off the `Allow patched romsets` core option if you intend to use RetroAchievements : 
+
+#### Using the "patched" folder
+
+* Put the patched version of the romset into `SYSTEM_DIRECTORY/fbneo/patched`, this folder has special privileges allowing it to ignore crcs. Sizes and names still need to match the original romset though.
+* Optional : you could strip the patched version from any file that don't differ from the original romset.
+* Note : **The romset you must launch is still the original non-patched romset (its content will be overriden at runtime by the content of the patched one)**.
+
+#### Using IPS Patches
+
+* Put all IPS patch files (including: driver name directory/**.dat|**.ips) into the `SYSTEM_DIRECTORY/fbneo/ips/` folder.
+* IPS Patch will become available through core options (`Quick Menu > Core Options`) afterward. To apply them, you need to launch the game, enable them in core options, then use RetroArch's "restart" action.
+* Note : To avoid competing with loaded games for startup privileges, IPS Patches is initially disabled by default.
+
+#### Using RomData
+
+* Put all RomData files (including: driver name directory/**.dat) into the `SYSTEM_DIRECTORY/fbneo/romdata/` folder
+* RomData will become available through core options (`Quick Menu > Core Options`) afterward. To apply them, you need to launch the game, enable them in core options, then use RetroArch's "restart" action.
 
 ### How can i run that unibios i bought from http://unibios.free.fr/ ?
 
-Same answer as above.
+Use the "patched folder" method from above.
 
 ### I think i found a glitch, how do i report it ?
 
@@ -409,6 +412,8 @@ Removing that limitation was asked in https://github.com/libretro/RetroArch/issu
 The currently available neogeo combos were decided in https://github.com/libretro/FBNeo/issues/51, they won't be replaced, but they might totally disappear if users keep complaining about them.
 
 Note that there was also a request to add a retroarch macro mapper in https://github.com/libretro/RetroArch/issues/8209.
+
+There is also a PR currently opened to implement this : https://github.com/libretro/RetroArch/pull/16035.
 
 ### Why can't i enable hardcore mode in RetroAchievements ?
 
