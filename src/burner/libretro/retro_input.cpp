@@ -106,6 +106,8 @@ static void AnalyzeGameLayout()
 	INT32 nKickx3[MAX_PLAYERS] = {0, };
 	INT32 nKickInputs[MAX_PLAYERS][3];
 	INT32 nNeogeoButtons[MAX_PLAYERS][4];
+	INT32 nPgmButtons[MAX_PLAYERS][4];
+	INT32 nCps1Buttons[MAX_PLAYERS][2];
 
 	bStreetFighterLayout = false;
 	nMahjongKeyboards = 0;
@@ -187,6 +189,28 @@ static void AnalyzeGameLayout()
 				}
 				if (_stricmp(" Button D", bii.szName + 2) == 0) {
 					nNeogeoButtons[nPlayer][3] = i;
+				}
+			}
+			if (bIsPgmCartGame) {
+				if (_stricmp(" fire 1", bii.szInfo + 2) == 0) {
+					nPgmButtons[nPlayer][0] = i;
+				}
+				if (_stricmp(" fire 2", bii.szInfo + 2) == 0) {
+					nPgmButtons[nPlayer][1] = i;
+				}
+				if (_stricmp(" fire 3", bii.szInfo + 2) == 0) {
+					nPgmButtons[nPlayer][2] = i;
+				}
+				if (_stricmp(" fire 4", bii.szInfo + 2) == 0) {
+					nPgmButtons[nPlayer][3] = i;
+				}
+			}
+			if (bIsCps1CartGame) {
+				if (_stricmp(" fire 1", bii.szInfo + 2) == 0) {
+					nCps1Buttons[nPlayer][0] = i;
+				}
+				if (_stricmp(" fire 2", bii.szInfo + 2) == 0) {
+					nCps1Buttons[nPlayer][1] = i;
 				}
 			}
 		}
@@ -271,16 +295,83 @@ static void AnalyzeGameLayout()
 			pgi->nInput = GIT_MACRO_AUTO;
 			pgi->nType = BIT_DIGITAL;
 			pgi->Macro.nMode = 0;
-			sprintf(pgi->Macro.szName, "P%i Buttons BCD", nPlayer + 1);
+			sprintf(pgi->Macro.szName, "P%i Buttons BC", nPlayer + 1);
 			BurnDrvGetInputInfo(&bii, nNeogeoButtons[nPlayer][1]);
 			pgi->Macro.pVal[0] = bii.pVal;
 			pgi->Macro.nVal[0] = 1;
 			BurnDrvGetInputInfo(&bii, nNeogeoButtons[nPlayer][2]);
 			pgi->Macro.pVal[1] = bii.pVal;
 			pgi->Macro.nVal[1] = 1;
-			BurnDrvGetInputInfo(&bii, nNeogeoButtons[nPlayer][3]);
+			nMacroCount++;
+			pgi++;
+		}
+		if (bIsPgmCartGame) {
+			pgi->nInput = GIT_MACRO_AUTO;
+			pgi->nType = BIT_DIGITAL;
+			pgi->Macro.nMode = 0;
+			sprintf(pgi->Macro.szName, "P%i Buttons AB", nPlayer + 1);
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][0]);
+			pgi->Macro.pVal[0] = bii.pVal;
+			pgi->Macro.nVal[0] = 1;
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][1]);
+			pgi->Macro.pVal[1] = bii.pVal;
+			pgi->Macro.nVal[1] = 1;
+			nMacroCount++;
+			pgi++;
+
+			pgi->nInput = GIT_MACRO_AUTO;
+			pgi->nType = BIT_DIGITAL;
+			pgi->Macro.nMode = 0;
+			sprintf(pgi->Macro.szName, "P%i Buttons CD", nPlayer + 1);
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][2]);
+			pgi->Macro.pVal[0] = bii.pVal;
+			pgi->Macro.nVal[0] = 1;
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][3]);
+			pgi->Macro.pVal[1] = bii.pVal;
+			pgi->Macro.nVal[1] = 1;
+			nMacroCount++;
+			pgi++;
+
+			pgi->nInput = GIT_MACRO_AUTO;
+			pgi->nType = BIT_DIGITAL;
+			pgi->Macro.nMode = 0;
+			sprintf(pgi->Macro.szName, "P%i Buttons ABC", nPlayer + 1);
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][0]);
+			pgi->Macro.pVal[0] = bii.pVal;
+			pgi->Macro.nVal[0] = 1;
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][1]);
+			pgi->Macro.pVal[1] = bii.pVal;
+			pgi->Macro.nVal[1] = 1;
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][2]);
 			pgi->Macro.pVal[2] = bii.pVal;
 			pgi->Macro.nVal[2] = 1;
+			nMacroCount++;
+			pgi++;
+
+			pgi->nInput = GIT_MACRO_AUTO;
+			pgi->nType = BIT_DIGITAL;
+			pgi->Macro.nMode = 0;
+			sprintf(pgi->Macro.szName, "P%i Buttons BC", nPlayer + 1);
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][1]);
+			pgi->Macro.pVal[0] = bii.pVal;
+			pgi->Macro.nVal[0] = 1;
+			BurnDrvGetInputInfo(&bii, nPgmButtons[nPlayer][2]);
+			pgi->Macro.pVal[1] = bii.pVal;
+			pgi->Macro.nVal[1] = 1;
+			nMacroCount++;
+			pgi++;
+		}
+		if (bIsCps1CartGame) {
+			pgi->nInput = GIT_MACRO_AUTO;
+			pgi->nType = BIT_DIGITAL;
+			pgi->Macro.nMode = 0;
+			sprintf(pgi->Macro.szName, "P%i Buttons AB", nPlayer + 1);
+			BurnDrvGetInputInfo(&bii, nCps1Buttons[nPlayer][0]);
+			pgi->Macro.pVal[0] = bii.pVal;
+			pgi->Macro.nVal[0] = 1;
+			BurnDrvGetInputInfo(&bii, nCps1Buttons[nPlayer][1]);
+			pgi->Macro.pVal[1] = bii.pVal;
+			pgi->Macro.nVal[1] = 1;
 			nMacroCount++;
 			pgi++;
 		}
@@ -1942,12 +2033,26 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 	if (bIsNeogeoCartGame || (nGameType == RETRO_GAME_TYPE_NEOCD)) {
 		if (strncmp("Buttons ABC", description, 11) == 0)
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_4TH_COL_BOTTOM, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
-		if (strncmp("Buttons BCD", description, 11) == 0)
+		if (strncmp("Buttons BC", description, 10) == 0)
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_4TH_COL_TOP, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
 		if (strncmp("Buttons AB", description, 10) == 0)
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_BOTTOM, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
 		if (strncmp("Buttons CD", description, 10) == 0)
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_TOP, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
+	}
+	if (bIsPgmCartGame) {
+		if (strncmp("Buttons ABC", description, 11) == 0)
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_4TH_COL_BOTTOM, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
+		if (strncmp("Buttons BC", description, 10) == 0)
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_4TH_COL_TOP, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
+		if (strncmp("Buttons AB", description, 10) == 0)
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_BOTTOM, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
+		if (strncmp("Buttons CD", description, 10) == 0)
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_TOP, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
+	}
+	if (bIsCps1CartGame && !bStreetFighterLayout) {
+		if (strncmp("Buttons AB", description, 10) == 0)
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_4TH_COL_BOTTOM, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
 	}
 
 	// Handle megadrive

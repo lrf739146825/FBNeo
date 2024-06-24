@@ -2028,6 +2028,8 @@ static bool retro_load_game_common()
 		}
 
 		bIsNeogeoCartGame = ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_SNK_NEOGEO);
+		bIsPgmCartGame = ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_IGS_PGM);
+		bIsCps1CartGame = ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_CAPCOM_CPS1 || (BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_CAPCOM_CPS1_QSOUND);
 
 		// Define nMaxPlayers early;
 		nMaxPlayers = BurnDrvGetMaxPlayers();
