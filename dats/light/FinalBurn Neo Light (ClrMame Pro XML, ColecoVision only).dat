@@ -191,6 +191,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="antiair" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>AntiAir (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="AntiAir (2024)(Inufuto).rom" size="7941" crc="8fabe383"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aquatacka" cloneof="aquatack" romof="aquatack" sourcefile="coleco/d_coleco.cpp">
 		<description>Aquattack (Alt)</description>
 		<year>1984</year>
@@ -843,6 +856,19 @@
 		<year>2022</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Cacorm (2022)(Inufuto).rom" size="8423" crc="60000902"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="camknights" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Camelot Knights (HB)</description>
+		<year>2024</year>
+		<manufacturer>Nanochess</manufacturer>
+		<rom name="Camelot Knights (2024)(Nanochess).rom" size="22589" crc="b551402c"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6304,6 +6330,19 @@
 		<year>2011</year>
 		<manufacturer>CollectorVision Games</manufacturer>
 		<rom name="Way of the Exploding Foot (2011)(CollectorVision).rom" size="32768" crc="28e07beb"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wsbyrons" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Whack 'Em Smack 'Em Byrons (HB)</description>
+		<year>2024</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Whack 'Em Smack 'Em Byrons (2024)(Jess Creations).rom" size="29800" crc="a7bb34df"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>

@@ -400,7 +400,7 @@
 		<description>Adventure Island (USA)</description>
 		<year>1988</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Adventure Island (USA).nes" size="65552" crc="b78c09a2"/>
+		<rom name="Adventure Island (USA)(1988)(Hudson Soft).nes" size="65552" crc="b78c09a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -409,7 +409,7 @@
 		<description>Adventure Island 3 (Hack, Spanish v1.1)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="adventure island iii (usa) - castellano v1.1.nes" size="262160" crc="31c3056e"/>
+		<rom name="Adventure Island 3 T-Spa v1.1 (2017)(Wave).nes" size="262160" crc="31c3056e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -417,7 +417,7 @@
 		<description>Adventure Island 3 (USA)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Adventure Island 3 (USA).nes" size="262160" crc="952cdacf"/>
+		<rom name="Adventure Island 3 (USA)(1992)(Hudson Soft).nes" size="262160" crc="952cdacf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -426,15 +426,7 @@
 		<description>Adventure Island II (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="adventure island ii (usa) - castellano v1.0.nes" size="262160" crc="92f21250"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="advenisliiu" cloneof="advenislii" romof="advenislii" sourcefile="nes/d_nes.cpp">
-		<description>Adventure Island II (USA) (Beta)</description>
-		<year>1991</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Adventure Island II (USA) (Beta).nes" size="262160" crc="51a401ca"/>
+		<rom name="Adventure Island II T-Spa (2017)(Wave).nes" size="262160" crc="92f21250"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -442,7 +434,16 @@
 		<description>Adventure Island II (USA)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Adventure Island II (USA).nes" size="262160" crc="5d8f80c7"/>
+		<rom name="Adventure Island II (USA)(1991)(Hudson Soft).nes" size="262160" crc="5d8f80c7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="advenisliiu" cloneof="advenislii" romof="advenislii" sourcefile="nes/d_nes.cpp">
+		<comment>Prototype</comment>
+		<description>Adventure Island II (USA, Prototype)</description>
+		<year>1991</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Adventure Island II (USA, Proto)(1991)(Hudson Soft).nes" size="262160" crc="51a401ca"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -451,7 +452,7 @@
 		<description>Adventure Island IV (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Adventure Island IV (T-Eng).nes" size="393232" crc="54c153c6"/>
+		<rom name="Adventure Island IV T-Eng (2018)(Zynk Oxhyde).nes" size="393232" crc="54c153c6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -460,15 +461,7 @@
 		<description>Adventure Island IV (Hack, Spanish)</description>
 		<year>2016</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="adventure island iv (japan) - castellano v1.0.nes" size="393232" crc="9ba3eb86"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="advenislivj" cloneof="advenisliv" romof="advenisliv" sourcefile="nes/d_nes.cpp">
-		<description>Adventure Island IV (Japan)</description>
-		<year>1994</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Adventure Island IV (Japan).nes" size="393232" crc="a58fe808"/>
+		<rom name="Adventure Island IV T-Spa (2016)(Wave).nes" size="393232" crc="9ba3eb86"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1970,6 +1963,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="biohaz8bit" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Bio Hazard 8bit (HB)</description>
+		<year>2022</year>
+		<manufacturer>Zitz</manufacturer>
+		<rom name="Bio Hazard 8bit (2022)(Zitz).nes" size="524304" crc="dcc12cac"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="biomirbokupa" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Bio Miracle Baby Upa!! (Hack, English)</description>
@@ -2213,7 +2215,7 @@
 		<description>Bloodfall (HB)</description>
 		<year>2019</year>
 		<manufacturer>Dr. Ludos</manufacturer>
-		<rom name="Bloodfall (HB).nes" size="40976" crc="3c5548ef"/>
+		<rom name="Bloodfall (2019)(Dr. Ludus).nes" size="40976" crc="3c5548ef"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3269,6 +3271,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="chuchua" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>ChuChu Rocket! (HB, v. alpha)</description>
+		<year>2010</year>
+		<manufacturer>Dwedit</manufacturer>
+		<rom name="ChuChu Rocket! (v.alpha)(2010)(Dwedit).nes" size="163856" crc="ac44ecdc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="chumleeadv" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Chumlee's Adventure - The Quest for Pinky (HB)</description>
@@ -3324,7 +3335,7 @@
 		<description>City Trouble (HB)</description>
 		<year>2016</year>
 		<manufacturer>Den Kat Games</manufacturer>
-		<rom name="City Trouble (HB).nes" size="40976" crc="2481be7e"/>
+		<rom name="City Trouble (2016)(Den Kat Games).nes" size="40976" crc="2481be7e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3933,7 +3944,7 @@
 		<description>Daikaijuu Deburas (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="Daikaijuu Deburas (J)(1990)(Data East).nes" size="393232" crc="7fdf1bb3"/>
+		<rom name="Daikaijuu Deburas (Japan)(1990)(Data East).nes" size="393232" crc="7fdf1bb3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4084,15 +4095,15 @@
 		<description>Datsugoku (Japan)</description>
 		<year>1989</year>
 		<manufacturer>KAC</manufacturer>
-		<rom name="Datsugoku (Japan).nes" size="262160" crc="5bb9899a"/>
+		<rom name="Datsugoku (Japan)(1989)(KAC).nes" size="262160" crc="5bb9899a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="davidcrasaboyandhis" sourcefile="nes/d_nes.cpp">
 		<description>David Crane's A Boy and His Blob - Trouble on Blobolonia (USA)</description>
 		<year>1990</year>
-		<manufacturer>Absolute</manufacturer>
-		<rom name="David Crane's A Boy and His Blob - Trouble on Blobolonia (USA).nes" size="262160" crc="20a9e4a2"/>
+		<manufacturer>Absolute Entertainment</manufacturer>
+		<rom name="David Crane's A Boy and His Blob - Trouble on Blobolonia (USA)(1990)(Absolute).nes" size="262160" crc="20a9e4a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4100,7 +4111,7 @@
 		<description>Day Dreamin' Davey (USA)</description>
 		<year>1992</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Day Dreamin' Davey (USA).nes" size="393232" crc="ced13971"/>
+		<rom name="Day Dreamin' Davey (USA)(1992)(HAL Lab.).nes" size="393232" crc="ced13971"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4108,7 +4119,7 @@
 		<description>Days of Thunder (USA)</description>
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Days of Thunder (USA).nes" size="393232" crc="3616c7dd"/>
+		<rom name="Days of Thunder (USA)(1990)(Mindscape).nes" size="393232" crc="3616c7dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4125,7 +4136,7 @@
 		<description>Dead Fox (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Dead Fox (Japan).nes" size="262160" crc="f316b497"/>
+		<rom name="Dead Fox (Japan)(1990)(Capcom).nes" size="262160" crc="f316b497"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4142,7 +4153,7 @@
 		<description>Deadly Towers (USA)</description>
 		<year>1987</year>
 		<manufacturer>Broderbund</manufacturer>
-		<rom name="Deadly Towers (USA).nes" size="131088" crc="25225c70"/>
+		<rom name="Deadly Towers (USA)(1987)(Broderbund).nes" size="131088" crc="25225c70"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4177,15 +4188,15 @@
 		<description>Death Race (USA) (Unl)</description>
 		<year>1990</year>
 		<manufacturer>AGCI</manufacturer>
-		<rom name="Death Race (USA) (Unl).nes" size="131088" crc="837c5171"/>
+		<rom name="Death Race (USA)(Unl)(1990)(AGCI).nes" size="131088" crc="837c5171"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="deathbots" sourcefile="nes/d_nes.cpp">
-		<description>Deathbots (USA) (Rev 1) (Unl)</description>
+		<description>Deathbots (USA, Rev 1) (Unl)</description>
 		<year>1990</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Deathbots (USA) (Rev 1) (Unl).nes" size="131088" crc="cd12d2be"/>
+		<rom name="Deathbots (USA, Rev 1)(Unl)(1990)(AVE).nes" size="131088" crc="cd12d2be"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4193,7 +4204,7 @@
 		<description>Deblock (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Athena</manufacturer>
-		<rom name="Deblock (Japan).nes" size="65552" crc="70eac605"/>
+		<rom name="Deblock (Japan)(1991)(Athena).nes" size="65552" crc="70eac605"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4201,7 +4212,7 @@
 		<description>Defender II (USA)</description>
 		<year>1988</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Defender II (USA).nes" size="24592" crc="c0b2aa1f"/>
+		<rom name="Defender II (USA)(1988)(HAL Lab.).nes" size="24592" crc="c0b2aa1f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4209,7 +4220,7 @@
 		<description>Defender of the Crown (USA)</description>
 		<year>1989</year>
 		<manufacturer>Ultra Games</manufacturer>
-		<rom name="Defender of the Crown (USA).nes" size="262160" crc="79123682"/>
+		<rom name="Defender of the Crown (USA)(1989)(Ultra Games).nes" size="262160" crc="79123682"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4217,7 +4228,7 @@
 		<description>Defenders of Dynatron City (USA)</description>
 		<year>1992</year>
 		<manufacturer>JVC</manufacturer>
-		<rom name="Defenders of Dynatron City (USA).nes" size="262160" crc="8db6ba41"/>
+		<rom name="Defenders of Dynatron City (USA)(1992)(JVC).nes" size="262160" crc="8db6ba41"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4582,10 +4593,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="donkeykong" sourcefile="nes/d_nes.cpp">
-		<description>Donkey Kong (World) (Rev A)</description>
+		<description>Donkey Kong (World, Rev A)</description>
 		<year>1983</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Donkey Kong (World) (Rev A).nes" size="24592" crc="e40b593b"/>
+		<rom name="Donkey Kong (World)(Rev A)(1983)(Nintendo).nes" size="24592" crc="e40b593b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4593,7 +4604,7 @@
 		<description>Donkey Kong 3 (USA)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Donkey Kong 3 (USA).nes" size="24592" crc="d1cac3c2"/>
+		<rom name="Donkey Kong 3 (USA)(1984)(Nintendo).nes" size="24592" crc="d1cac3c2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4601,15 +4612,15 @@
 		<description>Donkey Kong Country 4 (Unl)</description>
 		<year>1997</year>
 		<manufacturer>J.Y. Company</manufacturer>
-		<rom name="Donkey Kong Country 4 (Unl).nes" size="524304" crc="5ae55685"/>
+		<rom name="Donkey Kong Country 4 (Unl)(1997)(J.Y. Company).nes" size="524304" crc="5ae55685"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="donkeykongjr" sourcefile="nes/d_nes.cpp">
-		<description>Donkey Kong Jr. (World) (Rev A)</description>
+		<description>Donkey Kong Jr. (World, Rev A)</description>
 		<year>1983</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Donkey Kong Jr. (World) (Rev A).nes" size="24592" crc="2a794ccb"/>
+		<rom name="Donkey Kong Jr. (World)(Rev A)(1983)(Nintendo).nes" size="24592" crc="2a794ccb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4644,7 +4655,7 @@
 		<description>Dooly Bravo Land (Korea)</description>
 		<year>1992</year>
 		<manufacturer>Daou Infosys</manufacturer>
-		<rom name="Dooly Bravo Land (Korea).nes" size="262160" crc="e7740e47"/>
+		<rom name="Dooly Bravo Land (Korea)(1992)(Daou Infosys).nes" size="262160" crc="e7740e47"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4652,15 +4663,15 @@
 		<description>Door Door (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Enix</manufacturer>
-		<rom name="Door Door (Japan).nes" size="24592" crc="70fb44b6"/>
+		<rom name="Door Door (Japan)(1985)(Enix).nes" size="24592" crc="70fb44b6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="doraemon" sourcefile="nes/d_nes.cpp">
-		<description>Doraemon (Japan) (Rev A)</description>
+		<description>Doraemon (Japan, Rev A)</description>
 		<year>1986</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Doraemon (Japan) (Rev A).nes" size="163856" crc="2768309d"/>
+		<rom name="Doraemon (Japan)(Rev A)(1986)(Hudson Soft).nes" size="163856" crc="2768309d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4669,15 +4680,15 @@
 		<description>Doraemon - Giga Zombie no Gyakushuu (Hack, English)</description>
 		<year>1999</year>
 		<manufacturer>WakdHacks</manufacturer>
-		<rom name="Doraemon - Giga Zombie no Gyakushuu (T-eng).nes" size="262160" crc="a9c510ac"/>
+		<rom name="Doraemon - Giga Zombie no Gyakushuu T-Eng (1999)(WakdHacks).nes" size="262160" crc="a9c510ac"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="doraej" cloneof="dorae" romof="dorae" sourcefile="nes/d_nes.cpp">
 		<description>Doraemon - Giga Zombie no Gyakushuu (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Epoch</manufacturer>
-		<rom name="Doraemon - Giga Zombie no Gyakushuu (Japan).nes" size="262160" crc="b28e9ea4"/>
+		<manufacturer>Epoch Co.</manufacturer>
+		<rom name="Doraemon - Giga Zombie no Gyakushuu (Japan)(1990)(Epoch Co.).nes" size="262160" crc="b28e9ea4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4685,7 +4696,7 @@
 		<description>Double Dare (USA)</description>
 		<year>1990</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="Double Dare (USA).nes" size="262160" crc="b631f92a"/>
+		<rom name="Double Dare (USA)(1990)(GameTek).nes" size="262160" crc="b631f92a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4698,11 +4709,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="doubledragonj" cloneof="doubledragon" romof="doubledragon" sourcefile="nes/d_nes.cpp">
+		<description>Double Dragon (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Technos Japan</manufacturer>
+		<rom name="Double Dragon (Japan)(1988)(Technos).nes" size="262160" crc="915780a5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="doubledragon" sourcefile="nes/d_nes.cpp">
 		<description>Double Dragon (USA)</description>
 		<year>1988</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Double Dragon (USA).nes" size="262160" crc="62afe166"/>
+		<rom name="Double Dragon (USA)(1988)(Technos).nes" size="262160" crc="62afe166"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4715,11 +4734,27 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="doubldraiij" cloneof="doubldraii" romof="doubldraii" sourcefile="nes/d_nes.cpp">
+		<description>Double Dragon II - The Revenge (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Technos Japan</manufacturer>
+		<rom name="Double Dragon II - The Revenge (Japan)(1989)(Technos).nes" size="262160" crc="1ddc74e3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="doubldraii" sourcefile="nes/d_nes.cpp">
 		<description>Double Dragon II - The Revenge (USA)</description>
 		<year>1990</year>
-		<manufacturer>Acclaim</manufacturer>
-		<rom name="Double Dragon II - The Revenge (USA).nes" size="262160" crc="cecfbf92"/>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Double Dragon II - The Revenge (USA)(1990)(Acclaim).nes" size="262160" crc="cecfbf92"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="doubldraiiij" cloneof="doubldraiii" romof="doubldraiii" sourcefile="nes/d_nes.cpp">
+		<description>Double Dragon III - The Rosetta Stones (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Technos Japan</manufacturer>
+		<rom name="Double Dragon III - The Rosetta Stone (Japan)(1991)(Technos).nes" size="262160" crc="d15f701d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4744,8 +4779,8 @@
 	<game name="doubldraiii" sourcefile="nes/d_nes.cpp">
 		<description>Double Dragon III - The Sacred Stones (USA)</description>
 		<year>1991</year>
-		<manufacturer>Acclaim</manufacturer>
-		<rom name="Double Dragon III - The Sacred Stones (USA).nes" size="262160" crc="7a6e0454"/>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Double Dragon III - The Sacred Stones (USA)(1991)(Acclaim).nes" size="262160" crc="7a6e0454"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4753,7 +4788,7 @@
 		<description>Double Dribble (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Double Dribble (USA).nes" size="131088" crc="7077a85d"/>
+		<rom name="Double Dribble (USA)(1987)(Konami).nes" size="131088" crc="7077a85d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4762,7 +4797,7 @@
 		<description>Double Moon Densetsu (Hack, English)</description>
 		<year>2020</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Double Moon Densetsu (T-Eng).nes" size="524304" crc="2c2c43a4"/>
+		<rom name="Double Moon Densetsu T-Eng (2020)(Stardust Crusaders).nes" size="524304" crc="2c2c43a4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4770,7 +4805,7 @@
 		<description>Double Moon Densetsu (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Masaya</manufacturer>
-		<rom name="Double Moon Densetsu (Japan).nes" size="524304" crc="e6ecf970"/>
+		<rom name="Double Moon Densetsu (Japan)(1992)(Masaya).nes" size="524304" crc="e6ecf970"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4778,7 +4813,7 @@
 		<description>Double Strike (Unl)</description>
 		<year>1990</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Double Strike (Unl).nes" size="65552" crc="f4bb370a"/>
+		<rom name="Double Strike (Unl)(1990)(AVE).nes" size="65552" crc="f4bb370a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4786,7 +4821,7 @@
 		<description>Dough Boy (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Dough Boy (Japan).nes" size="40976" crc="1012eb15"/>
+		<rom name="Dough Boy (Japan)(1985)(Kemco).nes" size="40976" crc="1012eb15"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4803,7 +4838,7 @@
 		<description>Downtown - Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Downtown - Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan).nes" size="262160" crc="e34fc4af"/>
+		<rom name="Downtown - Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan)(1990)(Technos).nes" size="262160" crc="e34fc4af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4820,7 +4855,7 @@
 		<description>Downtown - Nekketsu Monogatari (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Downtown - Nekketsu Monogatari (Japan).nes" size="262160" crc="f7346e46"/>
+		<rom name="Downtown - Nekketsu Monogatari (Japan)(1989)(Technos).nes" size="262160" crc="f7346e46"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4828,7 +4863,7 @@
 		<description>Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan).nes" size="262160" crc="014d63c9"/>
+		<rom name="Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan)(1991)(Technos).nes" size="262160" crc="014d63c9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5640,10 +5675,10 @@
 	</game>
 	<game name="enormadv" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Enormous Adventures (HB)</description>
+		<description>Enormous Adventures (HB, v1.1)</description>
 		<year>2021</year>
 		<manufacturer>Game Losers</manufacturer>
-		<rom name="Enormous Adventures (2021)(Game Losers).nes" size="524304" crc="fc0a42ee"/>
+		<rom name="Enormous Adventures v1.1 (2021)(Game Losers).nes" size="524304" crc="c237464e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5675,10 +5710,10 @@
 	</game>
 	<game name="eskimbobdeledi" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Eskimo Bob Deluxe Edition (HB)</description>
+		<description>Eskimo Bob, Starring Alfonzo - Deluxe Edition (HB, v1.2)</description>
 		<year>2019</year>
 		<manufacturer>Spoony Bard Productions</manufacturer>
-		<rom name="Eskimo Bob Deluxe Edition (HB).nes" size="65552" crc="a3b7848f"/>
+		<rom name="Eskimo Bob Starring Alfonzo - Deluxe Edition v1.2 (2019)(Spoony Bard Productions).nes" size="65552" crc="bc38ac6b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5718,10 +5753,10 @@
 	</game>
 	<game name="espitundherpim" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Espitenen und herr pimponen (HB)</description>
+		<description>Espitenen und herr Pimponen (HB)</description>
 		<year>2019</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Espitenen und herr pimponen (HB).nes" size="65552" crc="ea5fa8a8"/>
+		<rom name="Espitenen und herr Pimponen (2019)(The Mojon Twins).nes" size="65552" crc="ea5fa8a8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5894,10 +5929,10 @@
 	</game>
 	<game name="fallingtiles" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Falling Tiles (HB, rev.B)</description>
+		<description>Falling Tiles (HB, Rev B)</description>
 		<year>2020</year>
 		<manufacturer>Doug Fraker</manufacturer>
-		<rom name="Falling Tiles (HB, rev.B).nes" size="40976" crc="5b8fcd00"/>
+		<rom name="Falling Tiles (Rev B)(2020)(Doug Fraker).nes" size="40976" crc="5b8fcd00"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6523,7 +6558,7 @@
 		<description>Flappy Bird (HB)</description>
 		<year>2014</year>
 		<manufacturer>Nioreh</manufacturer>
-		<rom name="Flappy Bird (HB).nes" size="24592" crc="3653c07d"/>
+		<rom name="Flappy Bird (2014)(Nioreh).nes" size="24592" crc="3653c07d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6531,8 +6566,8 @@
 		<comment>Homebrew</comment>
 		<description>FLEA! (HB)</description>
 		<year>2020</year>
-		<manufacturer>Lowtek</manufacturer>
-		<rom name="flea! (HB).nes" size="524304" crc="d208c6da"/>
+		<manufacturer>Lowtek Games</manufacturer>
+		<rom name="FLEA! (2020)(Lowtek Games).nes" size="524304" crc="d208c6da"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6540,8 +6575,8 @@
 		<comment>Homebrew</comment>
 		<description>FLEA! Demo (HB)</description>
 		<year>2019</year>
-		<manufacturer>Lowtek</manufacturer>
-		<rom name="flea! demo (HB).nes" size="524304" crc="6d18f7c4"/>
+		<manufacturer>Lowtek Games</manufacturer>
+		<rom name="FLEA! Demo (2019)(Lowtek Games).nes" size="524304" crc="6d18f7c4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6789,6 +6824,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="fushiblobby" cloneof="davidcrasaboyandhis" romof="davidcrasaboyandhis" sourcefile="nes/d_nes.cpp">
+		<description>Fushigi na Blobby - Blobania no Kiki (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Fushigi na Blobby - Blobania no Kiki (Japan)(1990)(Jaleco).nes" size="262160" crc="76c8f957"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="fuzzicalfighter" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Fuzzical Fighter (Hack, English)</description>
@@ -7009,10 +7052,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="gaplus" sourcefile="nes/d_nes.cpp">
-		<description>Gaplus</description>
+		<description>Gaplus (World)</description>
 		<year>2020</year>
 		<manufacturer>Namco - BNEI</manufacturer>
-		<rom name="gaplus (bnei).nes" size="262160" crc="60811720"/>
+		<rom name="Gaplus (2020)(Namco - BNEI).nes" size="262160" crc="60811720"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8978,6 +9021,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="jesterv2" cloneof="jester" romof="jester" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jester (HB, Alt)</description>
+		<year>2023</year>
+		<manufacturer>Acclaim - Mega Cat Studios</manufacturer>
+		<rom name="Jester (Alt)(2023)(Acclaim - Mega Cat Studios).nes" size="40976" crc="cc1762b6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="jesus" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Jesus - Kyoufu no Bio Monster (Hack, English)</description>
@@ -9120,10 +9172,19 @@
 	</game>
 	<game name="journeyal" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Journey to the Center of the Alien (HB)</description>
+		<description>Journey to the Center of the Alien (HB, English)</description>
 		<year>2019</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Journey to the Center of the Alien (2019)(The Mojon Twins).nes" size="73744" crc="d4b8eaa5"/>
+		<rom name="Journey to the Center of the Alien EN (2019)(The Mojon Twins).nes" size="73744" crc="ede880e6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="journeyals" cloneof="journeyal" romof="journeyal" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Journey to the Center of the Alien (HB, Spanish)</description>
+		<year>2019</year>
+		<manufacturer>The Mojon Twins</manufacturer>
+		<rom name="Journey to the Center of the Alien ES (2019)(The Mojon Twins).nes" size="73744" crc="0d68dad3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9839,8 +9900,8 @@
 	<game name="kiterdai" sourcefile="nes/d_nes.cpp">
 		<description>Kiteretsu Daihyakka (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Epoch</manufacturer>
-		<rom name="Kiteretsu Daihyakka (Japan).nes" size="262160" crc="b6f4b759"/>
+		<manufacturer>Epoch Co.</manufacturer>
+		<rom name="Kiteretsu Daihyakka (Japan)(1990)(Epoch Co.).nes" size="262160" crc="b6f4b759"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10158,7 +10219,7 @@
 		<description>Lawn Mower (HB)</description>
 		<year>2011</year>
 		<manufacturer>Shiru</manufacturer>
-		<rom name="Lawn Mower (HB).nes" size="24592" crc="2e03cb7f"/>
+		<rom name="Lawn Mower (2011)(Shiru).nes" size="24592" crc="2e03cb7f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10566,10 +10627,37 @@
 	</game>
 	<game name="lizard" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Lizard (HB)</description>
+		<description>Lizard (HB, English)</description>
 		<year>2018</year>
 		<manufacturer>Brad Smith</manufacturer>
-		<rom name="Lizard (2018)(Brad Smith).nes" size="524304" crc="27a5348f"/>
+		<rom name="Lizard EN (2018)(Brad Smith).nes" size="524304" crc="e36fc0c0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lizardj" cloneof="lizard" romof="lizard" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Lizard (HB, Japan)</description>
+		<year>2018</year>
+		<manufacturer>Brad Smith</manufacturer>
+		<rom name="Lizard JP (2018)(Brad Smith).nes" size="524304" crc="f7f0c2b6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lizardp" cloneof="lizard" romof="lizard" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Lizard (HB, Portuguese)</description>
+		<year>2018</year>
+		<manufacturer>Brad Smith</manufacturer>
+		<rom name="Lizard PT (2018)(Brad Smith).nes" size="524304" crc="0e2192d0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lizards" cloneof="lizard" romof="lizard" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Lizard (HB, Spanish)</description>
+		<year>2018</year>
+		<manufacturer>Brad Smith</manufacturer>
+		<rom name="Lizard ES (2018)(Brad Smith).nes" size="524304" crc="96d800d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10738,7 +10826,7 @@
 		<description>Machine Cave (HB, v1.9)</description>
 		<year>2018</year>
 		<manufacturer>Simo Sievanen</manufacturer>
-		<rom name="Machine Cave (HB, v1.9).nes" size="40976" crc="2d904baf"/>
+		<rom name="Machine Cave v1.9 (2018)(Simo Sievanen).nes" size="40976" crc="2d904baf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11757,7 +11845,7 @@
 		<description>Micro Mages (HB)</description>
 		<year>2019</year>
 		<manufacturer>Morphcat Games</manufacturer>
-		<rom name="Micro Mages.nes" size="40976" crc="b0b6b5e4"/>
+		<rom name="Micro Mages (2019)(Morphcat Games).nes" size="40976" crc="b0b6b5e4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12185,10 +12273,10 @@
 	</game>
 	<game name="monterev" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Montezuma's Revenge (HB)</description>
+		<description>Montezuma's Revenge (HB, v1.1)</description>
 		<year>2022</year>
 		<manufacturer>Second Dimension</manufacturer>
-		<rom name="Montezuma's Revenge (2022)(Second Dimension).nes" size="40976" crc="02cfc8a7"/>
+		<rom name="Montezuma's Revenge v1.1 (2022)(Second Dimension).nes" size="40976" crc="161baad2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12370,11 +12458,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="mrsplash" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew, No one player mode</comment>
+		<comment>Homebrew, 2 player mode only</comment>
 		<description>Mr. Splash (HB)</description>
 		<year>2008</year>
 		<manufacturer>Project F</manufacturer>
-		<rom name="Mr. Splash (HB).nes" size="750052" crc="8b86978b"/>
+		<rom name="Mr. Splash (2008)(Project F).nes" size="750052" crc="8b86978b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12382,7 +12470,7 @@
 		<description>Ms. Pac-Man (USA) (Namco)</description>
 		<year>1993</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Ms. Pac-Man (USA)(Namco).nes" size="40976" crc="51a0c9de"/>
+		<rom name="Ms. Pac-Man (USA)(1993)(Namco).nes" size="40976" crc="51a0c9de"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12390,7 +12478,15 @@
 		<description>Ms. Pac-Man (USA) (Tengen)</description>
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="Ms. Pac-Man (USA)(Tengen).nes" size="40976" crc="bd0e29b3"/>
+		<rom name="Ms. Pac-Man (USA)(1990)(Tengen).nes" size="40976" crc="bd0e29b3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="valisj" cloneof="valis" romof="valis" sourcefile="nes/d_nes.cpp">
+		<description>Mugen Senshi Valis (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Tokuma Shoten</manufacturer>
+		<rom name="Mugen Senshi Valis (Japan)(1987)(Tokuma Shoten).nes" size="131088" crc="f4637ec0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12399,7 +12495,7 @@
 		<description>Multidude (HB)</description>
 		<year>2014</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="multidude (2014)(retrosouls).nes" size="40976" crc="154af940"/>
+		<rom name="Multidude (2014)(RetroSouls).nes" size="40976" crc="154af940"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12543,7 +12639,7 @@
 		<description>Nebs and Debs (HB)</description>
 		<year>2018</year>
 		<manufacturer>Dullahan</manufacturer>
-		<rom name="Nebs and Debs (HB).nes" size="40976" crc="570383a9"/>
+		<rom name="Nebs and Debs (2018)(Dullahan).nes" size="40976" crc="570383a9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12612,7 +12708,7 @@
 		<description>NEO Heiankyo Alien (HB)</description>
 		<year>2017</year>
 		<manufacturer>Hyperware Co.</manufacturer>
-		<rom name="NEO Heiankyo Alien (HB).nes" size="655376" crc="f9450fc9"/>
+		<rom name="NEO Heiankyo Alien (2017)(Hyperware Co.).nes" size="655376" crc="f9450fc9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12647,7 +12743,7 @@
 		<description>NEScape (HB)</description>
 		<year>2019</year>
 		<manufacturer>Khan Games</manufacturer>
-		<rom name="NEScape (HB).nes" size="524304" crc="60b6ad99"/>
+		<rom name="NEScape (2019)(Khan Games).nes" size="524304" crc="60b6ad99"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12740,7 +12836,7 @@
 		<description>Nim &amp; Nom (HB, v1.2)</description>
 		<year>2018</year>
 		<manufacturer>Metakrill</manufacturer>
-		<rom name="nim and nom (2018)(metakrill) v1.2.nes" size="40976" crc="e0096736"/>
+		<rom name="Nim and Nom v1.2 (2018)(Metakrill).nes" size="40976" crc="e0096736"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13038,7 +13134,7 @@
 		<description>Nix: the Paradox Relic (HB, v1.9)</description>
 		<year>2020</year>
 		<manufacturer>Dustin Huddleston</manufacturer>
-		<rom name="Nix Paradox Relic v1.9(2020)(Dustin Huddleston).nes" size="524304" crc="c85e7bcd"/>
+		<rom name="Nix Paradox Relic v1.9 (2020)(Dustin Huddleston).nes" size="524304" crc="c85e7bcd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13099,7 +13195,7 @@
 		<description>Nova the Squirrel (HB)</description>
 		<year>2018</year>
 		<manufacturer>NovaSquirrel</manufacturer>
-		<rom name="Nova the Squirrel (HB).nes" size="262160" crc="0b752bee"/>
+		<rom name="Nova the Squirrel (2018)(NovaSquirrel).nes" size="262160" crc="0b752bee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13225,10 +13321,10 @@
 	</game>
 	<game name="outlanders" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Outlanders (Hack, English)</description>
+		<description>Outlanders (Hack, English v1.01)</description>
 		<year>2019</year>
 		<manufacturer>GAFF Translations</manufacturer>
-		<rom name="Outlanders (T-Eng).nes" size="262160" crc="f0b0c8fe"/>
+		<rom name="Outlanders T-Eng (2019)(GAFF Translations).nes" size="262160" crc="f0b0c8fe"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13236,7 +13332,7 @@
 		<description>Outlanders (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Victor</manufacturer>
-		<rom name="Outlanders (Japan).nes" size="131088" crc="49a9f043"/>
+		<rom name="Outlanders (Japan)(1987)(Victor).nes" size="131088" crc="49a9f043"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13244,7 +13340,7 @@
 		<description>Over Horizon (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="Over Horizon (Japan).nes" size="262160" crc="130e399b"/>
+		<rom name="Over Horizon (Japan)(1992)(Takara).nes" size="262160" crc="130e399b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13261,7 +13357,7 @@
 		<description>Overlord (USA)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="Overlord (USA).nes" size="262160" crc="4df9d7c8"/>
+		<rom name="Overlord (USA)(1993)(Virgin Games).nes" size="262160" crc="4df9d7c8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13278,7 +13374,7 @@
 		<description>P.O.W. - Prisoners of War (USA)</description>
 		<year>1989</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="P.O.W. - Prisoners of War (USA).nes" size="262160" crc="d282464b"/>
+		<rom name="P.O.W. - Prisoners of War (USA)(1989)(SNK).nes" size="262160" crc="d282464b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13286,23 +13382,31 @@
 		<description>Pac-Land (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Pac-Land (Japan).nes" size="40976" crc="6ea63a46"/>
+		<rom name="Pac-Land (Japan)(1985)(Namco).nes" size="40976" crc="6ea63a46"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pacmanu" cloneof="pacman" romof="pacman" sourcefile="nes/d_nes.cpp">
+		<description>Pac-Man (USA) (Namco)</description>
+		<year>1993</year>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Pac-Man (USA)(1993)(Namco).nes" size="24592" crc="5988ed8e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="pacman" sourcefile="nes/d_nes.cpp">
-		<description>Pac-Man (USA) (Namco)</description>
-		<year>1993</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="Pac-Man (USA) (Namco).nes" size="24592" crc="15d202d8"/>
+		<description>Pac-Man (USA) (Tengen)</description>
+		<year>1988</year>
+		<manufacturer>Tengen</manufacturer>
+		<rom name="Pac-Man (USA)(1988)(Tengen).nes" size="24592" crc="6e7d8503"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="pacmance" sourcefile="nes/d_nes.cpp">
-		<description>Pac-Man Championship Edition</description>
+		<description>Pac-Man Championship Edition (World)</description>
 		<year>2020</year>
 		<manufacturer>Namco - BNEI</manufacturer>
-		<rom name="pacman-ce (2020).nes" size="262160" crc="b86c09af"/>
+		<rom name="Pac-Man CE (2020)(Namco - BNEI).nes" size="262160" crc="b86c09af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13319,7 +13423,7 @@
 		<description>Pac-Mania (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="Pac-Mania (USA) (Unl).nes" size="98320" crc="e2428b3c"/>
+		<rom name="Pac-Mania (USA)(1990)(Tengen).nes" size="98320" crc="e2428b3c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13327,7 +13431,7 @@
 		<description>Palamedes (USA)</description>
 		<year>1990</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Palamedes (USA).nes" size="65552" crc="c3cd6c66"/>
+		<rom name="Palamedes (USA)(1990)(HOT-B).nes" size="65552" crc="c3cd6c66"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13335,7 +13439,7 @@
 		<description>Palamedes II - Star Twinkle, Hoshi no Mabataki (Japan)</description>
 		<year>1991</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Palamedes II - Star Twinkle, Hoshi no Mabataki (Japan).nes" size="65552" crc="0fdad901"/>
+		<rom name="Palamedes II - Star Twinkle, Hoshi no Mabataki (Japan)(1991)(HOT-B).nes" size="65552" crc="0fdad901"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13368,7 +13472,7 @@
 		<description>Panic Restaurant (USA)</description>
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Panic Restaurant (USA).nes" size="262160" crc="69c9e654"/>
+		<rom name="Panic Restaurant (USA)(1992)(Taito).nes" size="262160" crc="69c9e654"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13385,7 +13489,7 @@
 		<description>Paperboy (USA)</description>
 		<year>1988</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Paperboy (USA).nes" size="65552" crc="eb171d77"/>
+		<rom name="Paperboy (USA)(1988)(Mindscape).nes" size="65552" crc="eb171d77"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13393,7 +13497,7 @@
 		<description>Paperboy 2 (USA)</description>
 		<year>1992</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Paperboy 2 (USA).nes" size="262160" crc="e02f3836"/>
+		<rom name="Paperboy 2 (USA)(1992)(Mindscape).nes" size="262160" crc="e02f3836"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13425,8 +13529,8 @@
 	<game name="parasolhenbeej" cloneof="parasolhenbee" romof="parasolhenbee" sourcefile="nes/d_nes.cpp">
 		<description>Parasol Henbee (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Epoch</manufacturer>
-		<rom name="Parasol Henbee (Japan).nes" size="262160" crc="edfab3a6"/>
+		<manufacturer>Epoch Co.</manufacturer>
+		<rom name="Parasol Henbee (Japan)(1991)(Epoch Co.).nes" size="262160" crc="edfab3a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14136,7 +14240,7 @@
 		<description>Pyramids of Ra (HB)</description>
 		<year>2019</year>
 		<manufacturer>Piko Interactive</manufacturer>
-		<rom name="Pyramids of Ra (2019)(Piko Int.).nes" size="393232" crc="0bcee664"/>
+		<rom name="Pyramids of Ra (2019)(Piko Interactive).nes" size="393232" crc="0bcee664"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14235,7 +14339,7 @@
 		<description>Quest Forge (HB)</description>
 		<year>2016</year>
 		<manufacturer>Ludosity</manufacturer>
-		<rom name="Quest Forge (HB).nes" size="40976" crc="e81cba21"/>
+		<rom name="Quest Forge (2016)(Ludosity).nes" size="40976" crc="e81cba21"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14540,6 +14644,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="realddragon" cloneof="doubledragon" romof="doubledragon" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Real Double Dragon (Hack)</description>
+		<year>2024</year>
+		<manufacturer>Corpse Grinder</manufacturer>
+		<rom name="Real Double Dragon (2024)(Corpse Grinder).nes" size="262160" crc="c65d1a6e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="redarremerii" cloneof="gargosqueii" romof="gargosqueii" sourcefile="nes/d_nes.cpp">
 		<description>Red Arremer II (Japan)</description>
 		<year>1992</year>
@@ -14553,7 +14666,7 @@
 		<description>Reknum - Souls Adventure (HB)</description>
 		<year>2021</year>
 		<manufacturer>NAPE Games</manufacturer>
-		<rom name="Reknum - Souls Adventure (2021).nes" size="524304" crc="ccdc9c66"/>
+		<rom name="Reknum - Souls Adventure (2021)(NAPE Games).nes" size="524304" crc="ccdc9c66"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14562,7 +14675,7 @@
 		<description>Reknum - The Awakening (HB)</description>
 		<year>2019</year>
 		<manufacturer>NAPE Games</manufacturer>
-		<rom name="Reknum - The Awakening (2019).nes" size="524304" crc="e2e0ea31"/>
+		<rom name="Reknum - The Awakening (2019)(NAPE Games).nes" size="524304" crc="e2e0ea31"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14622,7 +14735,7 @@
 		<description>Rick Rolled! (HB, Tech-Demo)</description>
 		<year>2009</year>
 		<manufacturer>Frantik</manufacturer>
-		<rom name="Rick Rolled! Tech-Demo (2009) (Frantik).nes" size="262160" crc="c1be91f9"/>
+		<rom name="Rick Rolled! Tech-Demo (2009)(Frantik).nes" size="262160" crc="c1be91f9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14665,7 +14778,7 @@
 		<description>Rise of Amondus, The (HB)</description>
 		<year>2015</year>
 		<manufacturer>Robert L. Bryant</manufacturer>
-		<rom name="The Rise of Amondus (HB).nes" size="131088" crc="b15ac0fe"/>
+		<rom name="Rise of Amondus, The (2015)(Robert L. Bryant).nes" size="131088" crc="b15ac0fe"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15022,7 +15135,7 @@
 		<description>Rollie (HB)</description>
 		<year>2019</year>
 		<manufacturer>Optovania</manufacturer>
-		<rom name="Rollie (HB).nes" size="40976" crc="8165c356"/>
+		<rom name="Rollie (2019)(Optovania).nes" size="40976" crc="8165c356"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15509,10 +15622,10 @@
 	</game>
 	<game name="shancara" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Seiryaku Simulation - Planet of Conspiracy - Shancara (Hack, English)</description>
+		<description>Seiryaku Simulation - Planet of Conspiracy - Shancara (Hack, English v1.01)</description>
 		<year>2024</year>
 		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng (2024)(BlackPaladin).nes" size="262160" crc="8d87c1e4"/>
+		<rom name="Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.01 (2024)(BlackPaladin).nes" size="262160" crc="7ea7e5df"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15663,7 +15776,7 @@
 		<description>Shoot UFO (GlobalHack)</description>
 		<year>2015</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Shoot UFO (2015)(GlobHack).nes" size="40976" crc="b5c91a2a"/>
+		<rom name="Shoot UFO GlobalHack (2015).nes" size="40976" crc="b5c91a2a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15822,7 +15935,7 @@
 		<description>Sinking Feeling (HB)</description>
 		<year>2017</year>
 		<manufacturer>Mega Cat Studios</manufacturer>
-		<rom name="Sinking Feeling (HB).nes" size="49168" crc="b2f79ee2"/>
+		<rom name="Sinking Feeling (2017)(Mega Cat Studios).nes" size="49168" crc="b2f79ee2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15840,7 +15953,7 @@
 		<description>Sir Ababol Remastered Edition (HB)</description>
 		<year>2016</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Sir Ababol Remastered Edition (2016)(Mojon Twins).nes" size="40976" crc="36d8ca2b"/>
+		<rom name="Sir Ababol Remastered Edition (2016)(The Mojon Twins).nes" size="40976" crc="36d8ca2b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16243,7 +16356,7 @@
 		<description>Spacegulls (HB, v1.1)</description>
 		<year>2021</year>
 		<manufacturer>Morphcat Games</manufacturer>
-		<rom name="Spacegulls (HB)(2021)(Morphcat Games).nes" size="65552" crc="539f87d4"/>
+		<rom name="Spacegulls (2021)(Morphcat Games).nes" size="65552" crc="539f87d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16955,7 +17068,7 @@
 		<description>Super Homebrew War (HB)</description>
 		<year>2019</year>
 		<manufacturer>gauauu</manufacturer>
-		<rom name="Super Homebrew War (HB).nes" size="65552" crc="16b8d50a"/>
+		<rom name="Super Homebrew War (2019)(gauauu).nes" size="65552" crc="16b8d50a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17620,6 +17733,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="takahashi" cloneof="adventureisland" romof="adventureisland" sourcefile="nes/d_nes.cpp">
+		<description>Takahashi Meijin no Bouken-jima (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima (Japan)(1986)(Hudson Soft).nes" size="65552" crc="0bb95602"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="takahashi2" cloneof="advenislii" romof="advenislii" sourcefile="nes/d_nes.cpp">
+		<description>Takahashi Meijin no Bouken-jima II (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima II (Japan)(1991)(Hudson Soft).nes" size="262160" crc="cba2f8e5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="takahashi3" cloneof="advenisl3" romof="advenisl3" sourcefile="nes/d_nes.cpp">
+		<description>Takahashi Meijin no Bouken-jima III (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima III (Japan)(1992)(Hudson Soft).nes" size="262160" crc="d9d35f73"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="takameivic" cloneof="advenisliv" romof="advenisliv" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Takahashi Meijin no Bouken-jima IV (Hack, Chinese)</description>
@@ -17629,11 +17766,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="takahashi4" cloneof="advenisliv" romof="advenisliv" sourcefile="nes/d_nes.cpp">
+		<description>Takahashi Meijin no Bouken-jima IV (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima IV (Japan)(1994)(Hudson Soft).nes" size="393232" crc="5ef1196b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="takahmeinobugho" sourcefile="nes/d_nes.cpp">
 		<description>Takahashi Meijin no Bugutte Honey (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Takahashi Meijin no Bugutte Honey (Japan).nes" size="163856" crc="312e6a31"/>
+		<rom name="Takahashi Meijin no Bugutte Honey (Japan)(1987)(Hudson Soft).nes" size="163856" crc="312e6a31"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17774,11 +17919,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tatakchorobseitr" sourcefile="nes/d_nes.cpp">
+	<game name="tatakchorobseitr" cloneof="transformers" romof="transformers" sourcefile="nes/d_nes.cpp">
 		<description>Tatakae! Chou Robot Seimeitai Transformers - Convoy no Nazo (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="Tatakae! Chou Robot Seimeitai Transformers - Convoy no Nazo (Japan).nes" size="65552" crc="ffd5a66f"/>
+		<rom name="Tatakae! Chou Robot Seimeitai Transformers - Convoy no Nazo (Japan)(1986)(Takara).nes" size="65552" crc="ffd5a66f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17786,15 +17931,15 @@
 		<description>Tatakae!! Rahmen Man - Sakuretsu Choujin 102 Gei (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Shinsei</manufacturer>
-		<rom name="Tatakae!! Rahmen Man - Sakuretsu Choujin 102 Gei (Japan).nes" size="262160" crc="ad9c24f5"/>
+		<rom name="Tatakae!! Rahmen Man - Sakuretsu Choujin 102 Gei (Japan)(1988)(Shinsei).nes" size="262160" crc="ad9c24f5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="tatakainobanka" cloneof="trojan" romof="trojan" sourcefile="nes/d_nes.cpp">
-		<description>Tatakai no Banka (Japan) (Rev A)</description>
+		<description>Tatakai no Banka (Japan, Rev A)</description>
 		<year>1986</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Tatakai no Banka (Japan) (Rev A).nes" size="131088" crc="a3120923"/>
+		<rom name="Tatakai no Banka (Japan)(Rev A)(1986)(Capcom).nes" size="131088" crc="a3120923"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17802,7 +17947,7 @@
 		<description>Tecmo Baseball (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo Baseball (USA).nes" size="131088" crc="7fd237e6"/>
+		<rom name="Tecmo Baseball (USA)(1989)(Tecmo).nes" size="131088" crc="7fd237e6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17810,7 +17955,7 @@
 		<description>Tecmo Bowl (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo Bowl (USA).nes" size="262160" crc="e815e1fb"/>
+		<rom name="Tecmo Bowl (USA)(1989)(Tecmo).nes" size="262160" crc="e815e1fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17818,7 +17963,7 @@
 		<description>Tecmo Cup - Soccer Game (USA)</description>
 		<year>1992</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo Cup - Soccer Game (USA).nes" size="262160" crc="04de5917"/>
+		<rom name="Tecmo Cup - Soccer Game (USA)(1992)(Tecmo).nes" size="262160" crc="04de5917"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17826,7 +17971,7 @@
 		<description>Tecmo NBA Basketball (USA)</description>
 		<year>1992</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo NBA Basketball (USA).nes" size="393232" crc="d31d7ab8"/>
+		<rom name="Tecmo NBA Basketball (USA)(1992)(Tecmo).nes" size="393232" crc="d31d7ab8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17834,7 +17979,7 @@
 		<description>Tecmo Super Bowl (USA)</description>
 		<year>1991</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo Super Bowl (USA).nes" size="393232" crc="1f7c5660"/>
+		<rom name="Tecmo Super Bowl (USA)(1991)(Tecmo).nes" size="393232" crc="1f7c5660"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17867,7 +18012,7 @@
 	</game>
 	<game name="tsbtapmeter" cloneof="tecmosuperbowl" romof="tecmosuperbowl" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Tecmo Super Bowl Tapmeter (v1.0.0, hack)</description>
+		<description>Tecmo Super Bowl Tapmeter (Hack)</description>
 		<year>2016</year>
 		<manufacturer>Bruddog</manufacturer>
 		<rom name="Tecmo Super Bowl Tapmeter v1.0.0 (2016)(Bruddog).nes" size="393232" crc="18f884f0"/>
@@ -17878,7 +18023,7 @@
 		<description>Tecmo World Cup Soccer (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo World Cup Soccer (Japan).nes" size="131088" crc="19f24980"/>
+		<rom name="Tecmo World Cup Soccer (Japan)(1990)(Tecmo).nes" size="131088" crc="19f24980"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17886,7 +18031,7 @@
 		<description>Tecmo World Wrestling (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tecmo World Wrestling (USA).nes" size="262160" crc="12444337"/>
+		<rom name="Tecmo World Wrestling (USA)(1990)(Tecmo).nes" size="262160" crc="12444337"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17894,7 +18039,7 @@
 		<description>Teenage Mutant Hero Turtles (Euro)</description>
 		<year>1990</year>
 		<manufacturer>Palcom</manufacturer>
-		<rom name="Teenage Mutant Hero Turtles (Europe).nes" size="262160" crc="6d1e30a7"/>
+		<rom name="Teenage Mutant Hero Turtles (Euro)(1990)(Palcom).nes" size="262160" crc="6d1e30a7"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -17902,7 +18047,7 @@
 		<description>Teenage Mutant Hero Turtles II - The Arcade Game (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Teenage Mutant Hero Turtles II - The Arcade Game (Europe).nes" size="524304" crc="a5bbb96b"/>
+		<rom name="Teenage Mutant Hero Turtles II - The Arcade Game (Euro)(1991)(Konami).nes" size="524304" crc="a5bbb96b"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -17928,7 +18073,7 @@
 		<description>Teenage Mutant Ninja Turtles (USA)</description>
 		<year>1989</year>
 		<manufacturer>Ultra Games</manufacturer>
-		<rom name="Teenage Mutant Ninja Turtles (USA).nes" size="262160" crc="83213ca0"/>
+		<rom name="Teenage Mutant Ninja Turtles (USA)(1989)(Ultra Games).nes" size="262160" crc="83213ca0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18351,10 +18496,19 @@
 	</game>
 	<game name="timezone" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Time Zone (Hack, English)</description>
+		<description>Time Zone (Hack, English v1.3)</description>
 		<year>2014</year>
 		<manufacturer>KingMike's Translations</manufacturer>
-		<rom name="Time Zone (T-eng).nes" size="262160" crc="4ffe1ceb"/>
+		<rom name="Time Zone T-Eng v1.3 (2013)(KingMike's Translations).nes" size="262160" crc="4ffe1ceb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="timezones" cloneof="timezone" romof="timezone" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Time Zone (Hack, Spanish)</description>
+		<year>2017</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Time Zone T-Spa (2017)(Wave).nes" size="262160" crc="43154f18"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18362,7 +18516,7 @@
 		<description>Time Zone (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sigma Enterprises</manufacturer>
-		<rom name="Time Zone (Japan).nes" size="262160" crc="c99628bc"/>
+		<rom name="Time Zone (Japan)(1991)(Sigma).nes" size="262160" crc="c99628bc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18371,7 +18525,7 @@
 		<description>Tina's Advanture Island III (Hack)</description>
 		<year>2019</year>
 		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Tina's Advanture Island III (USA).nes" size="262160" crc="774a6c79"/>
+		<rom name="Tina's Advanture Island III (2019)(Zynk Oxhyde).nes" size="262160" crc="774a6c79"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18380,7 +18534,7 @@
 		<description>Tina's Adventure Island (Hack)</description>
 		<year>2019</year>
 		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Tina's Adventure Island (USA).nes" size="65552" crc="6663d1aa"/>
+		<rom name="Tina's Adventure Island (2019)(Zynk Oxhyde).nes" size="65552" crc="6663d1aa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18389,7 +18543,7 @@
 		<description>Tina's Adventure Island II (Hack)</description>
 		<year>2019</year>
 		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Tina's Adventure Island II (USA).nes" size="262160" crc="28b36ecc"/>
+		<rom name="Tina's Adventure Island II (2019)(Zynk Oxhyde).nes" size="262160" crc="28b36ecc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18407,7 +18561,7 @@
 		<description>Tiny Toon Adventures (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="tiny toon adventures (usa) - castellano v1.0.nes" size="262160" crc="bcd94fa2"/>
+		<rom name="Tiny Toon Adventures T-Spa (2019)(Wave).nes" size="262160" crc="bcd94fa2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18440,7 +18594,7 @@
 		<description>Tiny Toon Adventures 6 (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="tiny toon adventures 6 (unl) - castellano v1.0.nes" size="524304" crc="93db8d83"/>
+		<rom name="Tiny Toon Adventures 6 T-Spa (2018)(Wave).nes" size="524304" crc="93db8d83"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18550,7 +18704,7 @@
 		<description>Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="tom &amp; jerry - the ultimate game of cat and mouse! (usa) - castellano v1.0.nes" size="262160" crc="9c6a9bcc"/>
+		<rom name="Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! T-Spa (2018)(Wave).nes" size="262160" crc="9c6a9bcc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18567,7 +18721,7 @@
 		<description>Tomb of Ice (HB)</description>
 		<year>2020</year>
 		<manufacturer>FG Software</manufacturer>
-		<rom name="Tomb of Ice (2020)(HB)(FG Software).nes" size="40976" crc="426d3439"/>
+		<rom name="Tomb of Ice (2020)(FG Software).nes" size="40976" crc="426d3439"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18609,7 +18763,7 @@
 		<description>Top Gun - The Second Mission (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="top gun - the second mission (usa) - castellano v1.0.nes" size="262160" crc="350f534b"/>
+		<rom name="Top Gun - The Second Mission T-Spa (2019)(Wave).nes" size="262160" crc="350f534b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18743,15 +18897,24 @@
 		<description>Track &amp; Field (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Track &amp; Field (USA).nes" size="65552" crc="d3b42f6d"/>
+		<rom name="Track &amp; Field (USA)(1987)(Konami).nes" size="65552" crc="d3b42f6d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="trackfieldii" sourcefile="nes/d_nes.cpp">
-		<description>Track &amp; Field II (USA) (Rev A)</description>
+		<description>Track &amp; Field II (USA, Rev A)</description>
 		<year>1989</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Track &amp; Field II (USA) (Rev A).nes" size="262160" crc="1212b0c9"/>
+		<rom name="Track &amp; Field II (USA)(Rev A)(1989)(Konami).nes" size="262160" crc="1212b0c9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="transformers" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Transformers - The Mystery of Optimus Prime (Hack, English)</description>
+		<year>2024</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Transformers - The Mystery of Optimus Prime T-Eng (2024)(BlackPaladin).nes" size="65552" crc="156d8b2d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18759,15 +18922,15 @@
 		<description>Treasure Master (USA)</description>
 		<year>1991</year>
 		<manufacturer>American Softworks</manufacturer>
-		<rom name="Treasure Master (USA).nes" size="262160" crc="d4ab7922"/>
+		<rom name="Treasure Master (USA)(1991)(American Softworks).nes" size="262160" crc="d4ab7922"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="trog" sourcefile="nes/d_nes.cpp">
 		<description>Trog (USA)</description>
 		<year>1991</year>
-		<manufacturer>Acclaim</manufacturer>
-		<rom name="Trog (USA).nes" size="131088" crc="dd6141df"/>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Trog (USA)(1991)(Acclaim).nes" size="131088" crc="dd6141df"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18775,7 +18938,7 @@
 		<description>Trojan (USA)</description>
 		<year>1987</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Trojan (USA).nes" size="131088" crc="cf378fb2"/>
+		<rom name="Trojan (USA)(1987)(Capcom).nes" size="131088" crc="cf378fb2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18801,16 +18964,16 @@
 		<description>Tsuppari Oozumou (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Tsuppari Oozumou (Japan).nes" size="65552" crc="dfc7c0c2"/>
+		<rom name="Tsuppari Oozumou (Japan)(1987)(Tecmo).nes" size="65552" crc="dfc7c0c2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="tsurikicsan" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Tsuri Kichi Sanpei - Blue Marlin Hen (Hack, English)</description>
+		<description>Tsuri Kichi Sanpei - Blue Marlin Hen (Hack, English v0.94b)</description>
 		<year>2015</year>
 		<manufacturer>MrRichard999</manufacturer>
-		<rom name="Tsuri Kichi Sanpei - Blue Marlin Hen (T-Eng).nes" size="131088" crc="a3479469"/>
+		<rom name="Tsuri Kichi Sanpei - Blue Marlin Hen T-Eng v0.94b (2015)(MrRichard999).nes" size="131088" crc="a3479469"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18818,7 +18981,7 @@
 		<description>Tsuri Kichi Sanpei - Blue Marlin Hen (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Victor</manufacturer>
-		<rom name="Tsuri Kichi Sanpei - Blue Marlin Hen (Japan).nes" size="131088" crc="99ef9cc3"/>
+		<rom name="Tsuri Kichi Sanpei - Blue Marlin Hen (Japan)(1988)(Victor).nes" size="131088" crc="99ef9cc3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18826,7 +18989,7 @@
 		<description>Twin Cobra (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sammy</manufacturer>
-		<rom name="Twin Cobra (USA).nes" size="262160" crc="24643875"/>
+		<rom name="Twin Cobra (USA)(1990)(Sammy).nes" size="262160" crc="24643875"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18852,7 +19015,7 @@
 		<description>Twin Eagle (USA)</description>
 		<year>1989</year>
 		<manufacturer>Romstar</manufacturer>
-		<rom name="Twin Eagle (USA).nes" size="131088" crc="fc2f727d"/>
+		<rom name="Twin Eagle (USA)(1989)(Romstar).nes" size="131088" crc="fc2f727d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19158,10 +19321,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="valis" sourcefile="nes/d_nes.cpp">
-		<description>Valis - The Fantastic Soldier (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Tokuma Shoten</manufacturer>
-		<rom name="Valis - The Fantastic Soldier (Japan).nes" size="131088" crc="f4637ec0"/>
+		<comment>Hack</comment>
+		<description>Valis - The Fantastic Soldier (Hack, English v1.1)</description>
+		<year>2021</year>
+		<manufacturer>Sliver X, satsu</manufacturer>
+		<rom name="Valis - The Fantasm Soldier T-Eng v1.1 (2021)(Sliver X, satsu).nes" size="131088" crc="7970a635"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="valispp" cloneof="valis" romof="valis" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Valis++ (Hack, English v1.1)</description>
+		<year>2021</year>
+		<manufacturer>Sliver X</manufacturer>
+		<rom name="Valis++ T-Eng v1.1 (2021)(Sliver X).nes" size="131088" crc="77275641"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19170,7 +19343,7 @@
 		<description>Valkyrie no Bouken - Toki no Kagi Densetsu (Hack, English)</description>
 		<year>2001</year>
 		<manufacturer>Some Good Shit Translations</manufacturer>
-		<rom name="Valkyrie no Bouken - Toki no Kagi Densetsu (T-eng).nes" size="65552" crc="e901fdd7"/>
+		<rom name="Valkyrie no Bouken - Toki no Kagi Densetsu T-Eng (2001)(Some Good Shit Trans.).nes" size="65552" crc="e901fdd7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19187,7 +19360,7 @@
 		<description>Valkyrie no Bouken - Toki no Kagi Densetsu (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Valkyrie no Bouken - Toki no Kagi Densetsu (Japan).nes" size="65552" crc="5915b843"/>
+		<rom name="Valkyrie no Bouken - Toki no Kagi Densetsu (Japan)(1986)(Namco).nes" size="65552" crc="5915b843"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19439,11 +19612,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="wanpakoknogouwo" sourcefile="nes/d_nes.cpp">
+	<game name="gourmetworld" cloneof="panicrestaurant" romof="panicrestaurant" sourcefile="nes/d_nes.cpp">
 		<description>Wanpaku Kokkun no Gourmet World (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Wanpaku Kokkun no Gourmet World (Japan).nes" size="262160" crc="fffb5ead"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Wanpaku Kokkun no Gourmet World (Japan)(1992)(Taito Corp.).nes" size="262160" crc="fffb5ead"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20202,7 +20375,7 @@
 		<description>Zombie Calavera (HB)</description>
 		<year>2016</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Zombie Calavera (HB).nes" size="40976" crc="23ec3047"/>
+		<rom name="Zombie Calavera (2016)(The Mojon Twins).nes" size="40976" crc="23ec3047"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
