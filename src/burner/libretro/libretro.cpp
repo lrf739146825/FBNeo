@@ -942,13 +942,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 			g_find_list_path.push_back(located_archive());
 			located_archive* located = &g_find_list_path.back();
 			located->path = path;
-			if (bPatchedRomsetsEnabled){
-				located->ignoreCrc = true;
-			}
-			else
-			{
-				located->ignoreCrc = false;
-			}
+			located->ignoreCrc = false;
 			ZipClose();
 			HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 		}
@@ -967,13 +961,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 				g_find_list_path.push_back(located_archive());
 				located_archive* located = &g_find_list_path.back();
 				located->path = path;
-				if (bPatchedRomsetsEnabled){
-					located->ignoreCrc = true;
-				}
-				else
-				{
-					located->ignoreCrc = false;
-				}
+				located->ignoreCrc = false;
 				ZipClose();
 				HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 			}
@@ -990,13 +978,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 			g_find_list_path.push_back(located_archive());
 			located_archive* located = &g_find_list_path.back();
 			located->path = path;
-			if (bPatchedRomsetsEnabled){
-				located->ignoreCrc = true;
-			}
-			else
-			{
-				located->ignoreCrc = false;
-			}
+			located->ignoreCrc = false;
 			ZipClose();
 			HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 		}
@@ -1015,13 +997,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 				g_find_list_path.push_back(located_archive());
 				located_archive* located = &g_find_list_path.back();
 				located->path = path;
-				if (bPatchedRomsetsEnabled){
-					located->ignoreCrc = true;
-				}
-				else
-				{
-					located->ignoreCrc = false;
-				}
+				located->ignoreCrc = false;
 				ZipClose();
 				HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 			}
@@ -1038,13 +1014,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 			g_find_list_path.push_back(located_archive());
 			located_archive* located = &g_find_list_path.back();
 			located->path = path;
-			if (bPatchedRomsetsEnabled){
-				located->ignoreCrc = true;
-			}
-			else
-			{
-				located->ignoreCrc = false;
-			}
+			located->ignoreCrc = false;
 			ZipClose();
 			HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 		}
@@ -1068,13 +1038,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 				g_find_list_path.push_back(located_archive());
 				located_archive* located = &g_find_list_path.back();
 				located->path = path;
-				if (bPatchedRomsetsEnabled){
-					located->ignoreCrc = true;
-				}
-				else
-				{
-					located->ignoreCrc = false;
-				}
+				located->ignoreCrc = false;
 				ZipClose();
 				HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 			}
@@ -1093,13 +1057,7 @@ static void locate_archive(std::vector<located_archive>& pathList, const char* c
 					g_find_list_path.push_back(located_archive());
 					located_archive* located = &g_find_list_path.back();
 					located->path = path;
-					if (bPatchedRomsetsEnabled){
-						located->ignoreCrc = true;
-					}
-					else
-					{
-						located->ignoreCrc = false;
-					}
+					located->ignoreCrc = false;
 					ZipClose();
 					HandleMessage(RETRO_LOG_INFO, "[FBNeo] Romset found at %s\n", path);
 				}
@@ -1189,6 +1147,7 @@ static bool open_archive()
 				if (index < 0)
 				{
 					if ((g_find_list_path[z].ignoreCrc && bPatchedRomsetsEnabled) ||
+						(bAllowIgnoreCrc && bPatchedRomsetsEnabled) ||							//Allow ignore crc mode
 						((NULL != pDataRomDesc) && (-1 != pRDI->nDescCount)))					// In romdata mode
 					{
 						index = find_rom_by_name(rom_name, list, count, &real_rom_crc);

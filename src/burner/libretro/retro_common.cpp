@@ -49,6 +49,7 @@ bool allow_neogeo_mode                = true;
 bool neogeo_use_specific_default_bios = false;
 bool bAllowDepth32                    = false;
 bool bPatchedRomsetsEnabled           = true;
+bool bAllowIgnoreCrc                  = false;
 bool bLibretroSupportsAudioBuffStatus = false;
 bool bLowPassFilterEnabled            = false;
 UINT32 nVerticalMode                  = 0;
@@ -244,6 +245,20 @@ static struct retro_core_option_v2_definition var_fbneo_allow_patched_romsets = 
 		{ NULL,       NULL },
 	},
 	"enabled"
+};
+static struct retro_core_option_v2_definition var_fbneo_allow_ignore_crc = {
+	"fbneo-allow-ignore-crc",
+	"Allow Ignore CRC",
+	NULL,
+	"Disable CRC checking, match the file name and file size . Enable CRC checking, match the file CRC and file size.",
+	NULL,
+	NULL,
+	{
+		{ "disabled", NULL },
+		{ "enabled",  NULL },
+		{ NULL,       NULL },
+	},
+	"disabled"
 };
 static struct retro_core_option_v2_definition var_fbneo_samplerate = {
 	"fbneo-samplerate",
@@ -912,6 +927,10 @@ void set_environment()
 	var_fbneo_allow_patched_romsets.desc                   = RETRO_PATCHED_CAT_DESC;
 	var_fbneo_allow_patched_romsets.info                   = RETRO_PATCHED_CAT_INFO;
 	vars_systems.push_back(&var_fbneo_allow_patched_romsets);
+
+	var_fbneo_allow_ignore_crc.desc                        = RETRO_IGNORE_CRC_DESC;
+	var_fbneo_allow_ignore_crc.info                        = RETRO_IGNORE_CRC_INFO;
+	vars_systems.push_back(&var_fbneo_allow_ignore_crc);
 
 	var_fbneo_analog_speed.desc                            = RETRO_ANALOG_CAT_DESC;
 	var_fbneo_analog_speed.info                            = RETRO_ANALOG_CAT_INFO;
@@ -1825,6 +1844,15 @@ void check_variables(void)
 			bPatchedRomsetsEnabled = true;
 		else
 			bPatchedRomsetsEnabled = false;
+	}
+
+	var.key = var_fbneo_allow_ignore_crc.key;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
+	{
+		if (strcmp(var.value, "enabled") == 0)
+			bAllowIgnoreCrc = true;
+		else
+			bAllowIgnoreCrc = false;
 	}
 
 	if (nGameType != RETRO_GAME_TYPE_NEOCD)

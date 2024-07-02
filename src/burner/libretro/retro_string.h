@@ -1,7 +1,7 @@
 #ifndef __RETRO_STRING__
 #define __RETRO_STRING__
 
-#define NUM_STRING	141
+#define NUM_STRING	143
 
 extern const char* pSelLangStr[NUM_STRING];
 
@@ -17,6 +17,8 @@ void set_multi_language_strings();
 #define RETRO_FORCE60_CAT_INFO				pSelLangStr[  7]
 #define RETRO_PATCHED_CAT_DESC				pSelLangStr[ 36]
 #define RETRO_PATCHED_CAT_INFO				pSelLangStr[ 37]
+#define RETRO_IGNORE_CRC_DESC				pSelLangStr[ 141]
+#define RETRO_IGNORE_CRC_INFO				pSelLangStr[ 142]
 #define RETRO_ANALOG_CAT_DESC				pSelLangStr[ 48]
 #define RETRO_ANALOG_CAT_INFO				pSelLangStr[ 49]
 #define RETRO_CROSSHAIR_CAT_DESC			pSelLangStr[ 50]
