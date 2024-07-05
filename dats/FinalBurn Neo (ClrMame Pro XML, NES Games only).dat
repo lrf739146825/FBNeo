@@ -5814,7 +5814,7 @@
 		<description>Expedition (HB)</description>
 		<year>2017</year>
 		<manufacturer>Mega Cat Studios</manufacturer>
-		<rom name="Expedition (HB).nes" size="393232" crc="1b83916d"/>
+		<rom name="Expedition (2017)(Mega Cat Studios).nes" size="393232" crc="1b83916d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7258,20 +7258,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="ghostsngoblinsh" cloneof="ghostsngoblins" romof="ghostsngoblins" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Ghosts'n Goblins (USA)(Hack, Easy Mode v2.0)</description>
-		<year>2019</year>
-		<manufacturer>chronix</manufacturer>
-		<rom name="Ghosts'n Goblins (USA)(Hack, Very Easy Mode v2.0).nes" size="131088" crc="66751cad"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="ghostsngoblins" sourcefile="nes/d_nes.cpp">
 		<description>Ghosts'n Goblins (USA)</description>
 		<year>1986</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Ghosts'n Goblins (USA).nes" size="131088" crc="983dd1de"/>
+		<rom name="Ghosts'n Goblins (USA)(1986)(Capcom).nes" size="131088" crc="87ed54aa"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ghostsngoblinsh" cloneof="ghostsngoblins" romof="ghostsngoblins" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ghosts'n Goblins - Easy Mode (Hack, v2.0)</description>
+		<year>2019</year>
+		<manufacturer>chronix</manufacturer>
+		<rom name="Ghosts'n Goblins - Easy Mode v2.0 (2019)(chronix).nes" size="131088" crc="79a599d9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9052,7 +9052,7 @@
 		<description>Jet-Paco (HB)</description>
 		<year>2015</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Jet-Paco (HB).nes" size="40976" crc="b5f18574"/>
+		<rom name="Jet-Paco (2015)(The Mojon Twins).nes" size="40976" crc="b5f18574"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11726,16 +11726,16 @@
 		<description>Metro-Cross (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Metro-Cross (Japan).nes" size="65552" crc="7bb329f5"/>
+		<rom name="Metro-Cross (Japan)(1986)(Namco).nes" size="65552" crc="7bb329f5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="metroidc" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Metroid (Hack, Spanish)</description>
-		<year>2019</year>
+		<description>Metroid (Hack, Spanish v2.0)</description>
+		<year>2021</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="metroid (usa) - castellano v1.0.nes" size="131088" crc="12767f2e"/>
+		<rom name="Metroid T-Spa v2.0 (2021)(Wave).nes" size="131088" crc="90e7c4f2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11743,7 +11743,7 @@
 		<description>Metroid (USA)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Metroid (USA).nes" size="131088" crc="a2c89cb9"/>
+		<rom name="Metroid (USA)(1987)(Nintendo).nes" size="131088" crc="a2c89cb9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11786,7 +11786,7 @@
 		<description>Michael Andretti's World Grand Prix (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sammy</manufacturer>
-		<rom name="Michael Andretti's World Grand Prix (USA).nes" size="262160" crc="beb81a82"/>
+		<rom name="Michael Andretti's World Grand Prix (USA)(1990)(Sammy).nes" size="262160" crc="beb81a82"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11888,7 +11888,15 @@
 		<description>Mighty Final Fight (Hack, Spanish)</description>
 		<year>2016</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mighty final fight (usa) - castellano v1.0.nes" size="262160" crc="79b72603"/>
+		<rom name="Mighty Final Fight T-Spa (2016)(Wave).nes" size="262160" crc="79b72603"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="mightfinfigj" cloneof="mightfinfig" romof="mightfinfig" sourcefile="nes/d_nes.cpp">
+		<description>Mighty Final Fight (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Mighty Final Fight (Japan)(1993)(Capcom).nes" size="262160" crc="01850362"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11896,7 +11904,7 @@
 		<description>Mighty Final Fight (USA)</description>
 		<year>1993</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Mighty Final Fight (USA).nes" size="262160" crc="15eb0bee"/>
+		<rom name="Mighty Final Fight (USA)(1993)(Capcom).nes" size="262160" crc="15eb0bee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11909,10 +11917,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="miketysspunout" sourcefile="nes/d_nes.cpp">
-		<description>Mike Tyson's Punch-Out!! (Japan, USA) (Rev A)</description>
+		<description>Mike Tyson's Punch-Out!! (Japan, USA, Rev A)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Mike Tyson's Punch-Out!! (Japan, USA) (Rev A).nes" size="262160" crc="3df8e170"/>
+		<rom name="Mike Tyson's Punch-Out!! (Japan, USA)(Rev A)(1987)(Nintendo).nes" size="262160" crc="3df8e170"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11920,15 +11928,15 @@
 		<description>Millipede (USA)</description>
 		<year>1988</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Millipede (USA).nes" size="24592" crc="cc4f5101"/>
+		<rom name="Millipede (USA)(1988)(HAL Laboratory).nes" size="24592" crc="cc4f5101"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="milli" cloneof="millipede" romof="millipede" sourcefile="nes/d_nes.cpp">
 		<description>Millipede - Kyodai Konchuu no Gyakushuu (Japan)</description>
-		<year>1989?</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Millipede - Kyodai Konchuu no Gyakushuu (Japan).nes" size="24592" crc="154cac47"/>
+		<year>1987</year>
+		<manufacturer>HAL Laboratory</manufacturer>
+		<rom name="Millipede - Kyodai Konchuu no Gyakushuu (Japan)(1987)(HAL Lab.).nes" size="24592" crc="154cac47"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12668,20 +12676,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="nekkestrbascastc" cloneof="nekkestrbas" romof="nekkestrbas" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Nekketsu! Street Basket - Ganbare Dunk Heroes (Hack, Spanish)</description>
-		<year>2020</year>
-		<manufacturer>Max1323</manufacturer>
-		<rom name="nekketsu! street basket - ganbare dunk heroes (japan) - castellano v1.0.nes" size="262160" crc="3a2487c3"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="nekkestrbas" sourcefile="nes/d_nes.cpp">
+	<game name="nekkestrbasj" cloneof="nekkestrbas" romof="nekkestrbas" sourcefile="nes/d_nes.cpp">
 		<description>Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan).nes" size="262160" crc="a2952508"/>
+		<rom name="Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan)(1993)(Technos).nes" size="262160" crc="a2952508"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12691,6 +12690,24 @@
 		<year>2020</year>
 		<manufacturer>HHNM Team</manufacturer>
 		<rom name="nekketsu! street basket - ganbare dunk heroes (T-Chi, v2).nes" size="524304" crc="8f359b4f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nekkestrbas" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Nekketsu! Street Basket - Go for it, Dunk Heroes (Hack, English v1.2)</description>
+		<year>2013</year>
+		<manufacturer>Farid</manufacturer>
+		<rom name="Nekketsu! Street Basket - Go for it, Dunk Heroes T-Eng v1.2 (2013)(Farid).nes" size="262160" crc="a4680ca5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nekkestrbascastc" cloneof="nekkestrbas" romof="nekkestrbas" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Nekketsu! Street Basket - Go for it, Dunk Heroes (Hack, Spanish)</description>
+		<year>2020</year>
+		<manufacturer>Max1323</manufacturer>
+		<rom name="Nekketsu! Street Basket - Go for it, Dunk Heroes T-Spa (2020)(Max1323).nes" size="262160" crc="3a2487c3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12725,7 +12742,7 @@
 		<description>NES Open Tournament Golf (USA)</description>
 		<year>1991</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="NES Open Tournament Golf (USA).nes" size="262160" crc="9316bf4b"/>
+		<rom name="NES Open Tournament Golf (USA)(1991)(Nintendo).nes" size="262160" crc="9316bf4b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12778,7 +12795,7 @@
 		<description>New Ghostbusters II (Japan)</description>
 		<year>1990</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="New Ghostbusters II (Japan).nes" size="262160" crc="34829f2f"/>
+		<rom name="New Ghostbusters II (Japan)(1990)(HAL Lab.).nes" size="262160" crc="34829f2f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12786,7 +12803,7 @@
 		<description>New York Nyankies (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Atlus</manufacturer>
-		<rom name="New York Nyankies (Japan).nes" size="262160" crc="07503930"/>
+		<rom name="New York Nyankies (Japan)(1991)(Atlus).nes" size="262160" crc="07503930"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12794,7 +12811,7 @@
 		<description>New Zealand Story, The (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="New Zealand Story, The (Europe).nes" size="262160" crc="4cf8ed7e"/>
+		<rom name="New Zealand Story, The (Euro)(1991)(Ocean).nes" size="262160" crc="4cf8ed7e"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -15571,6 +15588,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="grimshire" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Visual Novel</comment>
+		<description>Secret of Grimshire (HB)</description>
+		<year>2024</year>
+		<manufacturer>Nervanti</manufacturer>
+		<rom name="Secret of Grimshire (2024)(Nervanti).nes" size="524304" crc="5dd98606"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="secretties" sourcefile="nes/d_nes.cpp">
 		<comment>Prototype</comment>
 		<description>Secret Ties (USA) (Prototype)</description>
@@ -15712,12 +15738,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="shera" sourcefile="nes/d_nes.cpp">
+	<game name="shera" cloneof="sherade" romof="sherade" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Shera &amp; the 40 Thieves (HB)</description>
 		<year>2021</year>
 		<manufacturer>CGT Games</manufacturer>
 		<rom name="Shera &amp; the 40 Thieves (2021)(CGT Games).nes" size="524304" crc="40da8715"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sherade" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Shera &amp; the 40 Thieves - Definitive Edition  (HB)</description>
+		<year>2024</year>
+		<manufacturer>CGT Games</manufacturer>
+		<rom name="Shera and the 40 Thieves - Definitive Edition (2024)(CGT Games).nes" size="524304" crc="6fcf6ae7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15965,6 +16000,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="skatecat" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Skate Cat (HB)</description>
+		<year>2023</year>
+		<manufacturer>SJ Games</manufacturer>
+		<rom name="Skate Cat (2023)(SJ Games).nes" size="524304" crc="da49c2d2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="skateordie" sourcefile="nes/d_nes.cpp">
 		<description>Skate or Die (USA)</description>
 		<year>1988</year>
@@ -15978,15 +16022,6 @@
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Skate or Die 2 - The Search for Double Trouble (USA).nes" size="393232" crc="290296d4"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="skatecat" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
-		<description>SkateCat (HB)</description>
-		<year>2023</year>
-		<manufacturer>SJ Games</manufacturer>
-		<rom name="SkateCat (2023)(SJ Games).nes" size="524304" crc="0a53ba24"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16123,6 +16158,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="snowbrosj" cloneof="snowbrothers" romof="snowbrothers" sourcefile="nes/d_nes.cpp">
+		<description>Snow Bros. (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Snow Bros. (Japan)(1991)(Toaplan).nes" size="262160" crc="c747b26a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="snowbrotherssc" cloneof="snowbrothers" romof="snowbrothers" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Snow Brothers (Hack, Chinese v1.1)</description>
@@ -16137,7 +16180,7 @@
 		<description>Snow Brothers (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="snow brothers (usa) - castellano v1.0.nes" size="262160" crc="29c40f70"/>
+		<rom name="Snow Brothers T-Spa (2018)(Wave).nes" size="262160" crc="29c40f70"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16145,7 +16188,7 @@
 		<description>Snow Brothers (USA)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Snow Brothers (USA).nes" size="262160" crc="701f4326"/>
+		<rom name="Snow Brothers (USA)(1991)(Capcom).nes" size="262160" crc="701f4326"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16153,7 +16196,7 @@
 		<description>Soccer (USA)</description>
 		<year>1985</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Soccer (USA).nes" size="40976" crc="820d62ab"/>
+		<rom name="Soccer (USA)(1985)(Nintendo).nes" size="40976" crc="820d62ab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16161,7 +16204,7 @@
 		<description>Soccer League - Winner's Cup (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="Soccer League - Winner's Cup (Japan).nes" size="262160" crc="e08f129d"/>
+		<rom name="Soccer League - Winner's Cup (Japan)(1988)(Data East).nes" size="262160" crc="e08f129d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16178,15 +16221,15 @@
 		<description>Solar Jetman - Hunt for the Golden Warpship (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="Solar Jetman - Hunt for the Golden Warpship (USA).nes" size="262160" crc="1c17ce33"/>
+		<rom name="Solar Jetman - Hunt for the Golden Warpship (USA)(1990)(Tradewest).nes" size="262160" crc="1c17ce33"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="solitaire" sourcefile="nes/d_nes.cpp">
-		<description>Solitaire (USA) (Rev 1.1)</description>
+		<description>Solitaire (USA, Rev 1.1)</description>
 		<year>1992</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Solitaire REV1.1 (U)(1992)(AVE).nes" size="65552" crc="74aad703"/>
+		<rom name="Solitaire REV1.1 (USA)(1992)(AVE).nes" size="65552" crc="74aad703"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16194,7 +16237,7 @@
 		<description>Solomon no Kagi (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Solomon no Kagi (Jpn)(1986)(Tecmo).nes" size="65552" crc="013ed497"/>
+		<rom name="Solomon no Kagi (Japan)(1986)(Tecmo).nes" size="65552" crc="013ed497"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16219,7 +16262,7 @@
 		<description>Solomon's Key (USA)</description>
 		<year>1987</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Solomon's Key (USA).nes" size="65552" crc="99773bc4"/>
+		<rom name="Solomon's Key (USA)(1987)(Tecmo).nes" size="65552" crc="99773bc4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19132,7 +19175,7 @@
 		<description>Ultimate Frogger Champion (HB)</description>
 		<year>2019</year>
 		<manufacturer>Khan Games</manufacturer>
-		<rom name="Ultimate Frogger Champion (HB).nes" size="49168" crc="ab862073"/>
+		<rom name="Ultimate Frogger Champion (2019)(Khan Games).nes" size="49168" crc="ab862073"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

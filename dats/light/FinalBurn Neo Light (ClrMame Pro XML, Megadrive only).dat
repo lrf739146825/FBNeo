@@ -16654,6 +16654,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sor2rcgor" cloneof="sor2" romof="sor2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>River City Girls... of Rage (Hack, v0.9.82)</description>
+		<year>2021</year>
+		<manufacturer>hack (savok)</manufacturer>
+		<rom name="River City Girls... of Rage v0.9.82 (2021)(savok).bin" size="2889204" crc="bea16706"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rrash3" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Road 3 Rash - Tour de Force (Euro, USA)</description>
 		<year>1995</year>
@@ -20146,6 +20155,15 @@
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
 		<rom name="SoR2_BK3Boss_Hack.bin" size="3500098" crc="5c152787"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sor2dino" cloneof="sor2" romof="sor2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Streets of Rage 2 - Cadillacs and Dinosaurs edition (Hack, v1.0)</description>
+		<year>2024</year>
+		<manufacturer>hack (FengLao)</manufacturer>
+		<rom name="Streets of Rage 2 - Cadillacs and Dinosaurs edition v1.0 (2024)(FengLao).bin" size="2603092" crc="279ee8a6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25234,6 +25252,15 @@
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="x-men 2 - clone wars (prototype - dec 16, 1994).bin" size="2097152" crc="e8c40972"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sor2xmor" cloneof="sor2" romof="sor2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>X-Men of Rage (Hack, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>hack (NoMoneyRanger)</manufacturer>
+		<rom name="X-Men of Rage v1.1 (2024)(NoMoneyRanger).bin" size="3595434" crc="94781576"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
