@@ -95,13 +95,24 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 				break;
 			}
 			char* s = szLine;
-			while (*iniPtr && *iniPtr != '\n') {
+			while (*iniPtr && *iniPtr != '\n' && (s - szLine) < 8190) {
 				*s++ = *iniPtr++;
 			}
-			if (*iniPtr == '\n') {
+			if (*iniPtr == '\n' && (s - szLine) < 8190) {
 				*s++ = *iniPtr++;
+				*s = '\0';
+			} else if ((s - szLine) == 8190) {
+				*s++ = '\n';
+				*s = '\0';
+				while (*iniPtr && *iniPtr != '\n') {
+					iniPtr++;
+				}
+				if (*iniPtr == '\n') {
+					iniPtr++;
+				}
+			} else {
+				*s = '\0';
 			}
-			*s = '\0';
 		} else {
 			if (_fgetts(szLine, 8192, h) == NULL) {
 				break;
@@ -782,7 +793,9 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 			}
 			// Add the current line to CurrentMameCheatContent
 			for (TCHAR* p = szLine; *p; ++p) {
-				CurrentMameCheatContent.push_back(*p);
+				if (*p != '\0') {
+					CurrentMameCheatContent.push_back(*p);
+				}
 			}
 		}
 	}
@@ -899,22 +912,22 @@ static INT32 ExtractIniFromZip(const char* DrvName, const char* zipFileName, std
 		processInclude = false;
 		std::vector<char> newContent;
 		const char* iniPtr = CurrentIniCheatContent.data();
-		char szLine[8192];
+		std::vector<char> szLine;
 
 		// Let's check each line of CurrentIniCheatContent
 		// Looking for include file and hooking them to CurrentIniCheatContent
 		while (*iniPtr) {
-			char* s = szLine;
+			szLine.clear();
 			while (*iniPtr && *iniPtr != '\n') {
-				*s++ = *iniPtr++;
+				szLine.push_back(*iniPtr++);
 			}
 			if (*iniPtr == '\n') {
-				*s++ = *iniPtr++;
+				szLine.push_back(*iniPtr++);
 			}
-			*s = '\0';
+			szLine.push_back('\0');
 
 			char* t;
-			if ((t = LabelCheck(szLine, "include")) != 0) {
+			if ((t = LabelCheck(szLine.data(), "include")) != 0) {
 				processInclude = true;
 				char* szQuote = NULL;
 				QuoteRead(&szQuote, NULL, t);
@@ -928,11 +941,7 @@ static INT32 ExtractIniFromZip(const char* DrvName, const char* zipFileName, std
 					}
 				}
 			} else {
-#if defined(BUILD_WIN32)
-				newContent.insert(newContent.end(), szLine, szLine + lstrlen(szLine));
-#else
-				newContent.insert(newContent.end(), szLine, szLine + strlen(szLine));
-#endif
+				newContent.insert(newContent.end(), szLine.begin(), szLine.end() - 1);
 			}
 		}
 
