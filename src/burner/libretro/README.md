@@ -114,6 +114,11 @@ The following "device type" also exist, but they won't be compatible with every 
 * **Lightgun** : it will use lightgun to determine coordinates on screen, buttons will be on the lightgun too.
 * **Analog Arcade Gun** : it will use the analog stick for gun games but in a different way than "Classic" and "Modern", it is particularily useful if you have a "fixed arcade gun" (arcade gun mounted on an analog control).
 
+The following device types are mostly WIP, they haven't been thoroughly tested and might contain major bugs (please report them) :
+
+* **6-Panel** : assuming you are using a 6-button arcade panel and followed the "YXL as top row and BAR as bottom row" mapping recommendation, it will use R as your 3rd button and Y as your 4th button for anything that isn't a 6-button vsfighting game, note that some users might be more comfortable with Classic/Modern's BAYX's assignment for 4-buttons systems like neogeo.
+* **Touchscreen** : a variant of the "Pointer" device type meant for mobile devices, touchscreen "tap events" are used for gameplay, "Start" and "Coin" are still assigned to your retropad overlay.
+
 ## Emulating consoles and computers
 
 It also requires usage of specific romsets, meaning the rom must have the expected crc/size, and be packaged in an archive with a specific name (the instructions to build those romsets don't differ from arcade's).
