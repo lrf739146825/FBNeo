@@ -9700,27 +9700,35 @@ DRV		BurnSpecLoco;
 DRV		BurnDrvLocoboot;
 DRV		BurnDrvcv_locomotion;
 DRV		BurnDrvLocomotn;
-DRV		BurnSpecloderunn;
+DRV		BurnSpec_loderanger;
+DRV		BurnSpec_loderunner;
 DRV		BurnDrvsg1k_ldrun;
 DRV		BurnDrvcv_loderunner;
 DRV		BurnDrvMSX_ldrun;
 DRV		BurnDrvMSX_ldruna;
 DRV		BurnDrvsg1k_ldrunk;
-DRV		BurnSpecloderunn_48;
-DRV		BurnSpecloderunn2_48;
 DRV		BurnDrvLdrun;
 DRV		BurnDrvLdruna;
 DRV		BurnDrvsg1k_ldrunt;
 DRV		BurnDrvnes_loderunner;
 DRV		BurnDrvpce_ldrun;
+DRV		BurnSpec_loderun48a;
+DRV		BurnSpec_loderun48b;
 DRV		BurnDrvLoderndfa;
 DRV		BurnDrvLoderndf;
+DRV		BurnSpec_loderun3im;
+DRV		BurnSpec_loderun3ma;
+DRV		BurnSpec_loderun3ra;
+DRV		BurnSpec_loderun3fi;
+DRV		BurnSpec_loderun3bi;
+DRV		BurnSpec_loderun3he;
+DRV		BurnSpec_loderun4dg;
+DRV		BurnSpec_loderun4ts;
 DRV		BurnDrvMSX_ldrun2;
 DRV		BurnDrvLdrun2;
 DRV		BurnDrvLdrun3j;
 DRV		BurnDrvLdrun3;
 DRV		BurnDrvLdrun4;
-DRV		BurnSpecloderun2;
 DRV		BurnDrvnes_logjammers;
 DRV		BurnDrvcv_logiclvl;
 DRV		BurnDrvLogicpro;
@@ -18257,6 +18265,7 @@ DRV		BurnDrvKof94rz;
 DRV		BurnDrvKof94nr2;
 DRV		BurnDrvKof94;
 DRV		BurnDrvKof94br;
+DRV		BurnDrvkof94tea;
 DRV		BurnDrvKof94te;
 DRV		BurnDrvKof95bs;
 DRV		BurnDrvKof95b;
@@ -30579,27 +30588,35 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvLocoboot,			// Loco-Motion (bootleg)
 	&BurnDrvcv_locomotion,		// Loco-Motion (SGM) (HB)
 	&BurnDrvLocomotn,			// Loco-Motion
-	&BurnSpecloderunn,			// Lode Runner (128K)
+	&BurnSpec_loderanger,		// Lode Ranger (48K)(Hack)
+	&BurnSpec_loderunner,		// Lode Runner (128K)
 	&BurnDrvsg1k_ldrun,			// Lode Runner (Euro, Japan)
 	&BurnDrvcv_loderunner,		// Lode Runner (HB)
 	&BurnDrvMSX_ldrun,			// Lode Runner (Japan)
 	&BurnDrvMSX_ldruna,			// Lode Runner (Japan, Alt)
 	&BurnDrvsg1k_ldrunk,		// Lode Runner (Korea)
-	&BurnSpecloderunn_48,		// Lode Runner (Part 1 of 2) (48K)
-	&BurnSpecloderunn2_48,		// Lode Runner (Part 2 of 2) (48K)
 	&BurnDrvLdrun,				// Lode Runner (set 1)
 	&BurnDrvLdruna,				// Lode Runner (set 2)
 	&BurnDrvsg1k_ldrunt,		// Lode Runner (Taiwan)
 	&BurnDrvnes_loderunner,		// Lode Runner (USA)
 	&BurnDrvpce_ldrun,			// Lode Runner - Lost Labyrinth (Japan)
+	&BurnSpec_loderun48a,		// Lode Runner - Side A (48K)
+	&BurnSpec_loderun48b,		// Lode Runner - Side B, aka Lode Runner 2 (48K)
 	&BurnDrvLoderndfa,			// Lode Runner - The Dig Fight (ver. A)
 	&BurnDrvLoderndf,			// Lode Runner - The Dig Fight (ver. B)
+	&BurnSpec_loderun3im,		// Lode Runner 3 (48K)(Hack)
+	&BurnSpec_loderun3ma,		// Lode Runner 3 (48K)(Hack)
+	&BurnSpec_loderun3ra,		// Lode Runner 3 (48K)(Hack)
+	&BurnSpec_loderun3fi,		// Lode Runner 3 (48K)(Russian)(Hack)
+	&BurnSpec_loderun3bi,		// Lode Runner 3 (48K)(Russian)(Hack)
+	&BurnSpec_loderun3he,		// Lode Runner 3 - At Hell to Paradise (48K)(Hack)
+	&BurnSpec_loderun4dg,		// Lode Runner 4 (128K)(Hack)
+	&BurnSpec_loderun4ts,		// Lode Runner 4 (48K)(Hack)
 	&BurnDrvMSX_ldrun2,			// Lode Runner II (Japan)
 	&BurnDrvLdrun2,				// Lode Runner II - The Bungeling Strikes Back
 	&BurnDrvLdrun3j,			// Lode Runner III - Majin no Fukkatsu (Japan)
 	&BurnDrvLdrun3,				// Lode Runner III - The Golden Labyrinth
 	&BurnDrvLdrun4,				// Lode Runner IV - Teikoku Karano Dasshutsu (Japan)
-	&BurnSpecloderun2,			// Lode Runner v2 (48K)
 	&BurnDrvnes_logjammers,		// Log Jammers (HB)
 	&BurnDrvcv_logiclvl,		// Logic Levels
 	&BurnDrvLogicpro,			// Logic Pro (Japan)
@@ -39136,7 +39153,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKof94nr2,			// The King of Fighters '94 (New Remix 2018 Rev.2, Hack)
 	&BurnDrvKof94,				// The King of Fighters '94 (NGM-055 ~ NGH-055)
 	&BurnDrvKof94br,			// The King of Fighters '94 (Portuguese edition, Hack)
-	&BurnDrvKof94te,			// The King of Fighters '94 (Team Edit Edition v1.4.0, Hack)
+	&BurnDrvkof94tea,			// The King of Fighters '94 (Team Edit Edition: KOF94 style portraits v1.4.1, Hack)
+	&BurnDrvKof94te,			// The King of Fighters '94 (Team Edit Edition: KOF95 style portraits v1.4.1, Hack)
 	&BurnDrvKof95bs,			// The King of Fighters '95 (Boss, Hack)
 	&BurnDrvKof95b,				// The King of Fighters '95 (Enable Hidden Characters V.[?])
 	&BurnDrvKof95jq,			// The King of Fighters '95 (Infinite Energy, Hack)
@@ -51372,27 +51390,35 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "locoboot", "pre90s/d_rallyx.cpp"},
 	{ "cv_locomotion", "coleco/d_coleco.cpp"},
 	{ "locomotn", "pre90s/d_rallyx.cpp"},
-	{ "spec_loderunn", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderanger", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderunner", "spectrum/d_spectrum.cpp"},
 	{ "sg1k_ldrun", "sg1000/d_sg1000.cpp"},
 	{ "cv_loderunner", "coleco/d_coleco.cpp"},
 	{ "msx_ldrun", "msx/d_msx.cpp"},
 	{ "msx_ldruna", "msx/d_msx.cpp"},
 	{ "sg1k_ldrunk", "sg1000/d_sg1000.cpp"},
-	{ "spec_loderunn_48", "spectrum/d_spectrum.cpp"},
-	{ "spec_loderunn2_48", "spectrum/d_spectrum.cpp"},
 	{ "ldrun", "irem/d_m62.cpp"},
 	{ "ldruna", "irem/d_m62.cpp"},
 	{ "sg1k_ldrunt", "sg1000/d_sg1000.cpp"},
 	{ "nes_loderunner", "nes/d_nes.cpp"},
 	{ "pce_ldrun", "pce/d_pce.cpp"},
+	{ "spec_loderun48a", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun48b", "spectrum/d_spectrum.cpp"},
 	{ "loderndfa", "psikyo/d_psikyo4.cpp"},
 	{ "loderndf", "psikyo/d_psikyo4.cpp"},
+	{ "spec_loderun3im", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3ma", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3ra", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3fi", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3bi", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3he", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun4dg", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun4ts", "spectrum/d_spectrum.cpp"},
 	{ "msx_ldrun2", "msx/d_msx.cpp"},
 	{ "ldrun2", "irem/d_m62.cpp"},
 	{ "ldrun3j", "irem/d_m62.cpp"},
 	{ "ldrun3", "irem/d_m62.cpp"},
 	{ "ldrun4", "irem/d_m62.cpp"},
-	{ "spec_loderun2", "spectrum/d_spectrum.cpp"},
 	{ "nes_logjammers", "nes/d_nes.cpp"},
 	{ "cv_logiclvl", "coleco/d_coleco.cpp"},
 	{ "logicpro", "pst90s/d_deniam.cpp"},
@@ -59845,6 +59871,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kof94nr2", "neogeo/d_neogeo.cpp"},
 	{ "kof94", "neogeo/d_neogeo.cpp"},
 	{ "kof94br", "neogeo/d_neogeo.cpp"},
+	{ "kof94tea", "neogeo/d_neogeo.cpp"},
 	{ "kof94te", "neogeo/d_neogeo.cpp"},
 	{ "kof95bs", "neogeo/d_neogeo.cpp"},
 	{ "kof95b", "neogeo/d_neogeo.cpp"},
