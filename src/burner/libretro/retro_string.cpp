@@ -57,7 +57,7 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"Analog Speed",
 		"Mitigate analog controls speed, some games might require low values to be playable",
 		"Crosshair emulation",
-		"Change emulated crosshair behavior",
+		"Change emulated crosshair behavior, \"hide with lightgun device\" will also hide it on touchscreen device",
 		"hide with lightgun device",
 		"always hide",
 		"always show",

@@ -318,7 +318,7 @@ static struct retro_core_option_v2_definition var_fbneo_lightgun_crosshair_emula
 	"fbneo-lightgun-crosshair-emulation",
 	"Crosshair emulation",
 	NULL,
-	"Change emulated crosshair behavior",
+	"Change emulated crosshair behavior, \"hide with lightgun device\" will also hide it on touchscreen device",
 	NULL,
 	NULL,
 	{
