@@ -7031,10 +7031,10 @@
 	</game>
 	<game name="karnovre" cloneof="karnovr" romof="karnovr" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Karnov's Revenge / Fighter's History Dynamite (Revolution v0.1, Hack)</description>
-		<year>2023</year>
+		<description>Karnov's Revenge / Fighter's History Dynamite (Revolution v0.2, Hack)</description>
+		<year>2024</year>
 		<manufacturer>GameHackFan</manufacturer>
-		<rom name="066-p1kre.p1" size="1048576" crc="06b066a0"/>
+		<rom name="066-p1kre.p1" size="1048576" crc="07af175f"/>
 		<rom name="066-s1.s1" merge="066-s1.s1" size="131072" crc="bae5d5e5"/>
 		<rom name="066-c1.c1" merge="066-c1.c1" size="2097152" crc="09dfe061"/>
 		<rom name="066-c2.c2" merge="066-c2.c2" size="2097152" crc="e0f6682a"/>

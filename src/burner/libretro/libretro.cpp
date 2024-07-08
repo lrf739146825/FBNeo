@@ -1218,7 +1218,7 @@ static bool open_archive()
 	}
 	else
 	{
-		sprintf(text_missing_files, RETRO_ERROR_MESSAGES_00);
+		sprintf(text_missing_files, "%s", RETRO_ERROR_MESSAGES_00);
 		log_cb(RETRO_LOG_ERROR, "[FBNeo] None of those archives was found in your paths\n");
 	}
 
