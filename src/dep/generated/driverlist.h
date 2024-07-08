@@ -19941,8 +19941,8 @@ DRV		BurnDrvnes_widget;
 DRV		BurnDrvWiggie;
 DRV		BurnDrvMSX_wildcat;
 DRV		BurnDrvWildfangh;
-DRV		BurnDrvWildfang;
 DRV		BurnDrvWildfangs;
+DRV		BurnDrvWildfang;
 DRV		BurnDrvnes_wildgunman;
 DRV		BurnDrvWildplt;
 DRV		BurnDrvmd_wildsnak;
@@ -29732,7 +29732,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKarnova,			// Karnov (US, rev 5)
 	&BurnDrvKarnov,				// Karnov (US, rev 6)
 	&BurnDrvnes_karnov,			// Karnov (USA)
-	&BurnDrvKarnovre,			// Karnov's Revenge / Fighter's History Dynamite (Revolution v0.1, Hack)
+	&BurnDrvKarnovre,			// Karnov's Revenge / Fighter's History Dynamite (Revolution v0.2, Hack)
 	&BurnDrvKarnovr,			// Karnov's Revenge / Fighter's History Dynamite
 	&BurnDrvnes_kartfighter,	// Kart Fighter (Unl)
 	&BurnDrvpce_katochan,		// Kato Chan & Ken Chan (Japan)
@@ -38752,7 +38752,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_tecmocupi,		// Tecmo Cup (Hack, Italian)
 	&BurnDrvmd_tecmocup,		// Tecmo Cup (Japan, Prototype)
 	&BurnDrvnes_tecmocup,		// Tecmo Cup - Soccer Game (USA)
-	&BurnDrvTknight,			// Tecmo Knight
+	&BurnDrvTknight,			// Tecmo Knight (US)
 	&BurnDrvnes_tecmonbabas,	// Tecmo NBA Basketball (USA)
 	&BurnDrvmd_tecmobb,			// Tecmo Super Baseball (USA)
 	&BurnDrvmd_tecmosbwj,		// Tecmo Super Bowl (Japan)
@@ -40828,9 +40828,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_widget,			// Widget (USA)
 	&BurnDrvWiggie,				// Wiggie Waggie
 	&BurnDrvMSX_wildcat,		// Wild Cat (Japan)
-	&BurnDrvWildfangh,			// Wild Fang (year hack?)
-	&BurnDrvWildfang,			// Wild Fang / Tecmo Knight
-	&BurnDrvWildfangs,			// Wild Fang
+	&BurnDrvWildfangh,			// Wild Fang (1991 year hack)
+	&BurnDrvWildfangs,			// Wild Fang (Japan)
+	&BurnDrvWildfang,			// Wild Fang / Tecmo Knight (World?)
 	&BurnDrvnes_wildgunman,		// Wild Gunman (World) (Rev A)
 	&BurnDrvWildplt,			// Wild Pilot
 	&BurnDrvmd_wildsnak,		// Wild Snake (USA, Prototype)
@@ -61519,8 +61519,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "wiggie", "pst90s/d_seta.cpp"},
 	{ "msx_wildcat", "msx/d_msx.cpp"},
 	{ "wildfangh", "pst90s/d_gaiden.cpp"},
-	{ "wildfang", "pst90s/d_gaiden.cpp"},
 	{ "wildfangs", "pst90s/d_gaiden.cpp"},
+	{ "wildfang", "pst90s/d_gaiden.cpp"},
 	{ "nes_wildgunman", "nes/d_nes.cpp"},
 	{ "wildplt", "pst90s/d_cischeat.cpp"},
 	{ "md_wildsnak", "megadrive/d_megadrive.cpp"},
