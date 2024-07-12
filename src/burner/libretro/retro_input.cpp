@@ -552,10 +552,19 @@ static inline void CinpDirectCoord(int port, int axis)
 			if (sAxiBinds[axis].id == RETRO_DEVICE_ID_LIGHTGUN_SCREEN_X) pointerValues[port][0] = (INT32)(width * (double(val)/double(0x10000)));
 			else if (sAxiBinds[axis].id == RETRO_DEVICE_ID_LIGHTGUN_SCREEN_Y) pointerValues[port][1] = (INT32)(height * (double(val)/double(0x10000)));
 		}
-		else if (nDeviceType[port] == RETRO_DEVICE_POINTER || nDeviceType[port] == RETRO_DEVICE_TOUCHSCREEN)
+		else if (nDeviceType[port] == RETRO_DEVICE_POINTER)
 		{
 			if (sAxiBinds[axis].id == RETRO_DEVICE_ID_POINTER_X) pointerValues[port][0] = (INT32)(width * (double(val)/double(0x10000)));
 			else if (sAxiBinds[axis].id == RETRO_DEVICE_ID_POINTER_Y) pointerValues[port][1] = (INT32)(height * (double(val)/double(0x10000)));
+		}
+		else if (nDeviceType[port] == RETRO_DEVICE_TOUCHSCREEN)
+		{
+			unsigned pressed = input_cb_wrapper(port, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_PRESSED);
+			if (pressed)
+			{
+				if (sAxiBinds[axis].id == RETRO_DEVICE_ID_POINTER_X) pointerValues[port][0] = (INT32)(width * (double(val)/double(0x10000)));
+				else if (sAxiBinds[axis].id == RETRO_DEVICE_ID_POINTER_Y) pointerValues[port][1] = (INT32)(height * (double(val)/double(0x10000)));
+			}
 		}
 		else if (nDeviceType[port] == RETROARCADE_GUN)
 		{
@@ -576,13 +585,10 @@ static inline int CinpMouseAxis(int port, int axis)
 
 static inline int CinpTouch(int nCode)
 {
-	unsigned count   = input_cb_wrapper(sKeyBinds[nCode].port, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_COUNT);
-	unsigned pressed = input_cb_wrapper(sKeyBinds[nCode].port, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_PRESSED);
+	unsigned count = input_cb_wrapper(sKeyBinds[nCode].port, RETRO_DEVICE_POINTER, 0, RETRO_DEVICE_ID_POINTER_COUNT);
 
-	if (count > 1 && count <= 4)
+	if (count > 0 && count <= 4)
 		return (count == sKeyBinds[nCode].id);
-	if (sKeyBinds[nCode].id == 1 && pressed)
-		return 1;
 
 	return 0;
 }
