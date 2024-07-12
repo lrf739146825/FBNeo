@@ -9701,7 +9701,6 @@ DRV		BurnDrvLocoboot;
 DRV		BurnDrvcv_locomotion;
 DRV		BurnDrvLocomotn;
 DRV		BurnSpec_loderanger;
-DRV		BurnSpec_loderunner;
 DRV		BurnDrvsg1k_ldrun;
 DRV		BurnDrvcv_loderunner;
 DRV		BurnDrvMSX_ldrun;
@@ -9711,6 +9710,7 @@ DRV		BurnDrvLdrun;
 DRV		BurnDrvLdruna;
 DRV		BurnDrvsg1k_ldrunt;
 DRV		BurnDrvnes_loderunner;
+DRV		BurnSpec_loderunner;
 DRV		BurnDrvpce_ldrun;
 DRV		BurnSpec_loderun48a;
 DRV		BurnSpec_loderun48b;
@@ -9719,8 +9719,8 @@ DRV		BurnDrvLoderndf;
 DRV		BurnSpec_loderun3im;
 DRV		BurnSpec_loderun3ma;
 DRV		BurnSpec_loderun3ra;
-DRV		BurnSpec_loderun3fi;
 DRV		BurnSpec_loderun3bi;
+DRV		BurnSpec_loderun3fi;
 DRV		BurnSpec_loderun3he;
 DRV		BurnSpec_loderun4dg;
 DRV		BurnSpec_loderun4ts;
@@ -30588,8 +30588,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvLocoboot,			// Loco-Motion (bootleg)
 	&BurnDrvcv_locomotion,		// Loco-Motion (SGM) (HB)
 	&BurnDrvLocomotn,			// Loco-Motion
-	&BurnSpec_loderanger,		// Lode Ranger (48K)(Hack)
-	&BurnSpec_loderunner,		// Lode Runner (128K)
+	&BurnSpec_loderanger,		// Lode Ranger (48K) (Hack)
 	&BurnDrvsg1k_ldrun,			// Lode Runner (Euro, Japan)
 	&BurnDrvcv_loderunner,		// Lode Runner (HB)
 	&BurnDrvMSX_ldrun,			// Lode Runner (Japan)
@@ -30599,19 +30598,20 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvLdruna,				// Lode Runner (set 2)
 	&BurnDrvsg1k_ldrunt,		// Lode Runner (Taiwan)
 	&BurnDrvnes_loderunner,		// Lode Runner (USA)
+	&BurnSpec_loderunner,		// Lode Runner - levels 1-150 (128K)
 	&BurnDrvpce_ldrun,			// Lode Runner - Lost Labyrinth (Japan)
-	&BurnSpec_loderun48a,		// Lode Runner - Side A (48K)
-	&BurnSpec_loderun48b,		// Lode Runner - Side B, aka Lode Runner 2 (48K)
+	&BurnSpec_loderun48a,		// Lode Runner - Side A - levels 1-75 (48K)
+	&BurnSpec_loderun48b,		// Lode Runner - Side B - levels 76-150 (48K)
 	&BurnDrvLoderndfa,			// Lode Runner - The Dig Fight (ver. A)
 	&BurnDrvLoderndf,			// Lode Runner - The Dig Fight (ver. B)
-	&BurnSpec_loderun3im,		// Lode Runner 3 (48K)(Hack)
-	&BurnSpec_loderun3ma,		// Lode Runner 3 (48K)(Hack)
-	&BurnSpec_loderun3ra,		// Lode Runner 3 (48K)(Hack)
-	&BurnSpec_loderun3fi,		// Lode Runner 3 (48K)(Russian)(Hack)
-	&BurnSpec_loderun3bi,		// Lode Runner 3 (48K)(Russian)(Hack)
-	&BurnSpec_loderun3he,		// Lode Runner 3 - At Hell to Paradise (48K)(Hack)
-	&BurnSpec_loderun4dg,		// Lode Runner 4 (128K)(Hack)
-	&BurnSpec_loderun4ts,		// Lode Runner 4 (48K)(Hack)
+	&BurnSpec_loderun3im,		// Lode Runner 3 (48K) (Hack, Image)
+	&BurnSpec_loderun3ma,		// Lode Runner 3 (48K) (Hack, Ma$ter)
+	&BurnSpec_loderun3ra,		// Lode Runner 3 (48K) (Hack, Rasoft)
+	&BurnSpec_loderun3bi,		// Lode Runner 3 (Russian) (48K) (Hack, Biotech)
+	&BurnSpec_loderun3fi,		// Lode Runner 3 (Russian) (48K) (Hack, Fikus-Pikus)
+	&BurnSpec_loderun3he,		// Lode Runner 3 - At Hell to Paradise (48K) (Hack)
+	&BurnSpec_loderun4dg,		// Lode Runner 4 (128K) (Hack, DPS Group)
+	&BurnSpec_loderun4ts,		// Lode Runner 4 (48K) (Hack, Technospace)
 	&BurnDrvMSX_ldrun2,			// Lode Runner II (Japan)
 	&BurnDrvLdrun2,				// Lode Runner II - The Bungeling Strikes Back
 	&BurnDrvLdrun3j,			// Lode Runner III - Majin no Fukkatsu (Japan)
@@ -40193,7 +40193,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_umk3h06,			// Ultimate Mortal Kombat 3 Arcade (Hack, v0.6)
 	&BurnDrvmd_umk3h,			// Ultimate Mortal Kombat 3 Arcade (Hack, v0.71)
 	&BurnDrvmd_umk3mh,			// Ultimate Mortal Kombat 3 Mini (Hack, v13)
-	&BurnDrvmd_umk3osc,			// Ultimate Mortal Kombat 3 OSC (Hack, v29a)
+	&BurnDrvmd_umk3osc,			// Ultimate Mortal Kombat 3 OSC (Hack, v30a)
 	&BurnDrvUmk3p,				// Ultimate Mortal Kombat 3 Plus (Hack, Beta 2)
 	&BurnDrvUmk3te,				// Ultimate Mortal Kombat 3 Tournament Edition (hack, V2.0.042/August 2018)
 	&BurnDrvUmk3uk,				// Ultimate Mortal Kombat 3 Uk (FBNeo, Ver. 2021-07-20)
@@ -51391,7 +51391,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cv_locomotion", "coleco/d_coleco.cpp"},
 	{ "locomotn", "pre90s/d_rallyx.cpp"},
 	{ "spec_loderanger", "spectrum/d_spectrum.cpp"},
-	{ "spec_loderunner", "spectrum/d_spectrum.cpp"},
 	{ "sg1k_ldrun", "sg1000/d_sg1000.cpp"},
 	{ "cv_loderunner", "coleco/d_coleco.cpp"},
 	{ "msx_ldrun", "msx/d_msx.cpp"},
@@ -51401,6 +51400,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ldruna", "irem/d_m62.cpp"},
 	{ "sg1k_ldrunt", "sg1000/d_sg1000.cpp"},
 	{ "nes_loderunner", "nes/d_nes.cpp"},
+	{ "spec_loderunner", "spectrum/d_spectrum.cpp"},
 	{ "pce_ldrun", "pce/d_pce.cpp"},
 	{ "spec_loderun48a", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun48b", "spectrum/d_spectrum.cpp"},
@@ -51409,8 +51409,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_loderun3im", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun3ma", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun3ra", "spectrum/d_spectrum.cpp"},
-	{ "spec_loderun3fi", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun3bi", "spectrum/d_spectrum.cpp"},
+	{ "spec_loderun3fi", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun3he", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun4dg", "spectrum/d_spectrum.cpp"},
 	{ "spec_loderun4ts", "spectrum/d_spectrum.cpp"},

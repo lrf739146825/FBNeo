@@ -13274,7 +13274,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="loderanger" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Ranger (48K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Ranger (48K) (Hack)</description>
 		<year>1992</year>
 		<manufacturer>Fantadrom</manufacturer>
 		<rom name="Lode Ranger 48K (1992)(Fantadrom)(Hack).tap" size="48038" crc="4e990388"/>
@@ -13283,47 +13284,49 @@
 		<driver status="good"/>
 	</game>
 	<game name="loderunner" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Level 1-150 | SHIFT+L +Level | SHIFT+M +Lives | SHIFT+A abort | SHIFT+R restart</comment>
-		<description>Lode Runner (128K)</description>
-		<year>1984</year>
-		<manufacturer>Software Projects Ltd</manufacturer>
-		<rom name="Lode Runner 128K (1984)(Software Projects Ltd).tap" size="72752" crc="26929396"/>
+		<comment>SHIFT+L: +level, SHIFT+M: +lives, SHIFT+A: abort, SHIFT+R: restart</comment>
+		<description>Lode Runner - levels 1-150 (128K)</description>
+		<year>1986</year>
+		<manufacturer>Software Projects</manufacturer>
+		<rom name="Lode Runner 128K (1986)(Software Projects).tap" size="72752" crc="26929396"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="loderun48a" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Level 1-75 | SHIFT+L +Level | SHIFT+M +Lives | SHIFT+A abort | SHIFT+R restart</comment>
-		<description>Lode Runner - Side A (48K)</description>
+		<comment>SHIFT+L: +level, SHIFT+M: +lives, SHIFT+A: abort, SHIFT+R: restart</comment>
+		<description>Lode Runner - Side A - levels 1-75 (48K)</description>
 		<year>1984</year>
-		<manufacturer>Software Projects Ltd</manufacturer>
-		<rom name="Lode Runner - Side A 48K (1984)(Software Projects Ltd).tap" size="48037" crc="7e7e4ec7"/>
+		<manufacturer>Software Projects</manufacturer>
+		<rom name="Lode Runner - Side A 48K (1984)(Software Projects).tap" size="48037" crc="7e7e4ec7"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="loderun48b" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Level 76-150 | SHIFT+L +Level | SHIFT+M +Lives | SHIFT+A abort | SHIFT+R restart</comment>
-		<description>Lode Runner - Side B, aka Lode Runner 2 (48K)</description>
+		<comment>SHIFT+L: +level, SHIFT+M: +lives, SHIFT+A: abort, SHIFT+R: restart</comment>
+		<description>Lode Runner - Side B - levels 76-150 (48K)</description>
 		<year>1984</year>
-		<manufacturer>Software Projects Ltd</manufacturer>
+		<manufacturer>Software Projects</manufacturer>
 		<rom name="Lode Runner - Side B 48K (1984)(Software Projects).tap" size="48037" crc="1a98c993"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="loderun3im" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 3 (48K)(Hack)</description>
+		<comment>Hack, AY Sound supported</comment>
+		<description>Lode Runner 3 (48K) (Hack, Image)</description>
 		<year>1996</year>
 		<manufacturer>Image</manufacturer>
-		<rom name="Lode Runner 3 48K (1999)(Image)(Hack).tap" size="48038" crc="699aa740"/>
+		<rom name="Lode Runner 3 48K-AY (1996)(Image)(Hack).tap" size="48038" crc="699aa740"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="loderun3ma" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 3 (48K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Runner 3 (48K) (Hack, Ma$ter)</description>
 		<year>1999</year>
 		<manufacturer>Ma$ter</manufacturer>
 		<rom name="Lode Runner 3 48K (1999)(Ma$ter)(Hack).tap" size="48038" crc="dbf95098"/>
@@ -13332,7 +13335,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="loderun3ra" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 3 (48K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Runner 3 (48K) (Hack, Rasoft)</description>
 		<year>2015</year>
 		<manufacturer>Rasoft</manufacturer>
 		<rom name="Lode Runner 3 48K (2015)(Rasoft)(Hack).tap" size="48038" crc="cc4c8f4b"/>
@@ -13340,9 +13344,19 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="loderun3bi" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Hack</comment>
+		<description>Lode Runner 3 (Russian) (48K) (Hack, Biotech)</description>
+		<year>1995</year>
+		<manufacturer>Biotech Software</manufacturer>
+		<rom name="Lode Runner 3 48K (RU)(1995)(Biotech Software Inc.)(Hack).tap" size="48038" crc="18cb6710"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="loderun3fi" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>After 'Start Game' press 2x Space.</comment>
-		<description>Lode Runner 3 (48K)(Russian)(Hack)</description>
+		<comment>Hack, After 'Start Game' press 'SPACE' twice</comment>
+		<description>Lode Runner 3 (Russian) (48K) (Hack, Fikus-Pikus)</description>
 		<year>1995</year>
 		<manufacturer>Fikus-Pikus</manufacturer>
 		<rom name="Lode Runner 3 48K (RU)(1995)(Fikus-Pikus)(Hack).tap" size="48038" crc="d5b5852e"/>
@@ -13350,17 +13364,9 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="loderun3bi" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 3 (48K)(Russian)(Hack)</description>
-		<year>1995</year>
-		<manufacturer>Biotech Software Inc.</manufacturer>
-		<rom name="Lode Runner 3 48K (RU)(1995)(Biotech Software Inc.)(Hack).tap" size="48038" crc="18cb6710"/>
-		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="loderun3he" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 3 - At Hell to Paradise (48K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Runner 3 - At Hell to Paradise (48K) (Hack)</description>
 		<year>2013</year>
 		<manufacturer>Hungry Software</manufacturer>
 		<rom name="Lode Runner 3 - At Hell to Paradise 48K (2013)(Hungry Software)(Hack).tap" size="48038" crc="5f5af05d"/>
@@ -13369,7 +13375,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="loderun4dg" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 4 (128K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Runner 4 (128K) (Hack, DPS Group)</description>
 		<year>1998</year>
 		<manufacturer>DPS Group</manufacturer>
 		<rom name="Lode Runner 4 128K (1998)(DPS Group)(Hack).tap" size="64508" crc="0ee8a641"/>
@@ -13379,7 +13386,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="loderun4ts" cloneof="loderunner" romof="loderunner" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Lode Runner 4 (48K)(Hack)</description>
+		<comment>Hack</comment>
+		<description>Lode Runner 4 (48K) (Hack, Technospace)</description>
 		<year>1997</year>
 		<manufacturer>Technospace Software</manufacturer>
 		<rom name="Lode Runner 4 48K (1997)(Technospace Software)(Hack).tap" size="48038" crc="31d1cafc"/>
