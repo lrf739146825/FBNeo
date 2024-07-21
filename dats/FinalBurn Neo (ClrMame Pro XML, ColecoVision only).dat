@@ -2289,12 +2289,25 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="goonies" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+	<game name="gooniesoc" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Goonies, The (Opcode) (SGM) (HB)</description>
+		<year>1986-2023</year>
+		<manufacturer>Opcode Games - Konami</manufacturer>
+		<rom name="Goonies, The - SGM (2023)(Opcode Games).rom" size="131072" crc="6c8113c1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="goonies" cloneof="gooniesoc" romof="gooniesoc" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Published by Team Pixelboy</comment>
-		<description>Goonies (SGM) (HB)</description>
+		<description>Goonies, The (Team Pixelboy) (SGM) (HB)</description>
 		<year>1986-2012</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Goonies SGM (2012)(Team Pixelboy).rom" size="131072" crc="01581fa8"/>
+		<rom name="Goonies, The - SGM (2012)(Team Pixelboy).rom" size="131072" crc="01581fa8"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2329,11 +2342,24 @@
 		<driver status="good"/>
 	</game>
 	<game name="gradius" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, SGM - Super Game Module</comment>
 		<description>Gradius (SGM) (HB)</description>
 		<year>1986-2016</year>
 		<manufacturer>Opcode Games - Konami</manufacturer>
-		<rom name="Gradius SGM (2016)(Opcode Games).rom" size="131072" crc="30d337e4"/>
+		<rom name="Gradius - SGM (2016)(Opcode Games).rom" size="131072" crc="30d337e4"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gradiusa" cloneof="gradius" romof="gradius" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Gradius (SGM) (HB, Alt)</description>
+		<year>1986-2016</year>
+		<manufacturer>Opcode Games - Konami</manufacturer>
+		<rom name="Gradius - SGM (Alt)(2016)(Opcode Games).rom" size="131072" crc="2426c300"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2902,12 +2928,25 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kngtmare" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+	<game name="kngtmareoc" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Knightmare (Opcode) (SGM)</description>
+		<year>1986-2023</year>
+		<manufacturer>Opcode Games - Konami</manufacturer>
+		<rom name="Knightmare - SGM (2023)(Opcode Games).rom" size="131072" crc="80586cc5"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kngtmare" cloneof="kngtmareoc" romof="kngtmareoc" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Published by Team Pixelboy</comment>
-		<description>Knightmare (SGM) (HB)</description>
+		<description>Knightmare (Team Pixelboy) (SGM) (HB)</description>
 		<year>1986-2015</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Knightmare SGM (fix)(2015)(Team Pixelboy).rom" size="131072" crc="01cacd0d"/>
+		<rom name="Knightmare - SGM (fix)(2015)(Team Pixelboy).rom" size="131072" crc="01cacd0d"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3484,6 +3523,19 @@
 		<year>1984</year>
 		<manufacturer>Atarisoft</manufacturer>
 		<rom name="Moon Patrol.rom" size="32768" crc="6a672443"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mooncresta" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Mooncresta (SGM) (HB)</description>
+		<year>1980-2023</year>
+		<manufacturer>Opcode Games - Nichibutsu</manufacturer>
+		<rom name="Mooncresta - SGM (2023)(Opcode Games).rom" size="131072" crc="bdae4248"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
