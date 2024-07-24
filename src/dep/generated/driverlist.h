@@ -5864,6 +5864,7 @@ DRV		BurnDrvFfury3eh;
 DRV		BurnDrvFfury3bs;
 DRV		BurnDrvFatfury3a;
 DRV		BurnDrvFatfury3;
+DRV		BurnDrvmd_fatfuryone;
 DRV		BurnDrvgg_fatfursp;
 DRV		BurnDrvgg_fatfurspu;
 DRV		BurnDrvFfurspbt;
@@ -15760,6 +15761,7 @@ DRV		BurnDrvpce_soldblad;
 DRV		BurnDrvtg_soldblad;
 DRV		BurnDrvpce_soldblas;
 DRV		BurnDrvAmazont;
+DRV		BurnDrvamazoneo;
 DRV		BurnDrvAmazon;
 DRV		BurnSpecsoldfort;
 DRV		BurnSpecSoldoflight;
@@ -26766,6 +26768,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFfury3bs,			// Fatal Fury 3 - Road to the Final Victory / Garou Densetsu 3 - Haruka-naru Tatakai (Ancient Battles Resurgence, Hack)
 	&BurnDrvFatfury3a,			// Fatal Fury 3 - Road to the Final Victory / Garou Densetsu 3 - haruka-naru tatakai (NGM-069 ~ NGH-069) (alternate set)
 	&BurnDrvFatfury3,			// Fatal Fury 3 - Road to the Final Victory / Garou Densetsu 3 - Haruka-naru Tatakai (NGM-069 ~ NGH-069)
+	&BurnDrvmd_fatfuryone,		// Fatal Fury One (Brazil) (Unl) (HB, v1.5)
 	&BurnDrvgg_fatfursp,		// Fatal Fury Special (Euro)
 	&BurnDrvgg_fatfurspu,		// Fatal Fury Special (USA)
 	&BurnDrvFfurspbt,			// Fatal Fury Special / Garou Densetsu Special (BT Version PPX, Hack)
@@ -36662,6 +36665,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_soldblad,		// Soldier Blade (USA)
 	&BurnDrvpce_soldblas,		// Soldier Blade Special - Caravan Stage (Japan)
 	&BurnDrvAmazont,			// Soldier Girl Amazon (Tecfri license)
+	&BurnDrvamazoneo,			// Soldier Girl Amazon Neo
 	&BurnDrvAmazon,				// Soldier Girl Amazon
 	&BurnSpecsoldfort,			// Soldier of Fortune (48K)
 	&BurnSpecSoldoflight,		// Soldier of Light (48K)
@@ -47618,6 +47622,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ffury3bs", "neogeo/d_neogeo.cpp"},
 	{ "fatfury3a", "neogeo/d_neogeo.cpp"},
 	{ "fatfury3", "neogeo/d_neogeo.cpp"},
+	{ "md_fatfuryone", "megadrive/d_megadrive.cpp"},
 	{ "gg_fatfursp", "sms/d_sms.cpp"},
 	{ "gg_fatfurspu", "sms/d_sms.cpp"},
 	{ "ffurspbt", "neogeo/d_neogeo.cpp"},
@@ -57420,6 +57425,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tg_soldblad", "pce/d_pce.cpp"},
 	{ "pce_soldblas", "pce/d_pce.cpp"},
 	{ "amazont", "pre90s/d_terracre.cpp"},
+	{ "amazoneo", "neogeo/d_neogeo.cpp"},
 	{ "amazon", "pre90s/d_terracre.cpp"},
 	{ "spec_soldfort", "spectrum/d_spectrum.cpp"},
 	{ "spec_soldoflight", "spectrum/d_spectrum.cpp"},
