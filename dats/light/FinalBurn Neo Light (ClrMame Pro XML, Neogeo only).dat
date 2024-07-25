@@ -22720,7 +22720,7 @@
 		<description>Soldier Girl Amazon Neo</description>
 		<year>2023</year>
 		<manufacturer>IQ_132</manufacturer>
-		<rom name="amazon-p1.p1" size="131072" crc="f52d1c73"/>
+		<rom name="amazon-p1.p1" size="131072" crc="f5f57b9d"/>
 		<rom name="amazon-s1.s1" size="131072" crc="128166bb"/>
 		<rom name="amazon-c1.c1" size="131072" crc="901c6ae1"/>
 		<rom name="amazon-c2.c2" size="131072" crc="a02a8679"/>
