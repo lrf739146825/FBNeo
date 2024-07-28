@@ -7648,6 +7648,7 @@ DRV		BurnDrvHayaosi2;
 DRV		BurnDrvHayaosi3a;
 DRV		BurnDrvHayaosi3;
 DRV		BurnDrvHayaosi1;
+DRV		BurnDrvmd_hayatosj;
 DRV		BurnDrvnes_hbcpball;
 DRV		BurnDrvgg_headbust;
 DRV		BurnDrvHeadon1;
@@ -28552,6 +28553,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvHayaosi3a,			// Hayaoshi Quiz Nettou Namahousou (ver 1.2)
 	&BurnDrvHayaosi3,			// Hayaoshi Quiz Nettou Namahousou (ver 1.5)
 	&BurnDrvHayaosi1,			// Hayaoshi Quiz Ouza Ketteisen - The King Of Quiz
+	&BurnDrvmd_hayatosj,		// Hayato's Journey (HB)
 	&BurnDrvnes_hbcpball,		// HBC Phutball (HB)
 	&BurnDrvgg_headbust,		// Head Buster (Japan)
 	&BurnDrvHeadon1,			// Head On (1 player)
@@ -49396,6 +49398,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "hayaosi3a", "pst90s/d_ms32.cpp"},
 	{ "hayaosi3", "pst90s/d_ms32.cpp"},
 	{ "hayaosi1", "pre90s/d_megasys1.cpp"},
+	{ "md_hayatosj", "megadrive/d_megadrive.cpp"},
 	{ "nes_hbcpball", "nes/d_nes.cpp"},
 	{ "gg_headbust", "sms/d_sms.cpp"},
 	{ "headon1", "pre90s/d_vicdual.cpp"},
