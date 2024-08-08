@@ -2740,6 +2740,14 @@ static INT32 GameInpOtherOne(struct GameInp* pgi, char* szi, char *szn)
 		}
 	}
 
+	// Pu·Li·Ru·La requires this for Stage Select Mode
+	if ((parentrom && strcmp(parentrom, "pulirula") == 0) ||
+		(drvname && strcmp(drvname, "pulirula") == 0)) {
+		if (strcmp("Service", szn) == 0) {
+			GameInpDigital2RetroInpKey(pgi, 0, RETRO_DEVICE_ID_JOYPAD_R3, szn);
+		}
+	}
+
 	// Store the pgi that controls the reset input
 	if (strcmp(szi, "reset") == 0) {
 		pgi->nInput = GIT_SPECIAL_SWITCH;
