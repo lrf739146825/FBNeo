@@ -1,9 +1,11 @@
 #ifndef __RETRO_STRING__
 #define __RETRO_STRING__
 
-#define NUM_STRING	143
+#define NUM_STRING	141
+#define NUM_STRING_EXT	2
 
 extern const char* pSelLangStr[NUM_STRING];
+extern const char* pSelLangStrExt[NUM_STRING_EXT];
 
 void set_multi_language_strings();
 
@@ -17,8 +19,6 @@ void set_multi_language_strings();
 #define RETRO_FORCE60_CAT_INFO				pSelLangStr[  7]
 #define RETRO_PATCHED_CAT_DESC				pSelLangStr[ 36]
 #define RETRO_PATCHED_CAT_INFO				pSelLangStr[ 37]
-#define RETRO_IGNORE_CRC_DESC				pSelLangStr[ 141]
-#define RETRO_IGNORE_CRC_INFO				pSelLangStr[ 142]
 #define RETRO_ANALOG_CAT_DESC				pSelLangStr[ 48]
 #define RETRO_ANALOG_CAT_INFO				pSelLangStr[ 49]
 #define RETRO_CROSSHAIR_CAT_DESC			pSelLangStr[ 50]
@@ -139,6 +139,9 @@ void set_multi_language_strings();
 #define RETRO_DEBUG_SPRITE_6_DEF_DESC		pSelLangStr[107]
 #define RETRO_DEBUG_SPRITE_7_DEF_DESC		pSelLangStr[108]
 #define RETRO_DEBUG_SPRITE_8_DEF_DESC		pSelLangStr[109]
+
+#define RETRO_IGNORE_CRC_DESC				pSelLangStrExt[  0]
+#define RETRO_IGNORE_CRC_INFO				pSelLangStrExt[  1]
 
 /* UGUI */
 #define RETRO_ERROR_MESSAGES_00				pSelLangStr[ 59]
