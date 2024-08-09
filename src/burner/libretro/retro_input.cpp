@@ -1144,6 +1144,21 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 		}
 	}
 
+	// E-Swat - Cyber Police
+	if ((parentrom && strcmp(parentrom, "eswat") == 0) ||
+		(drvname && strcmp(drvname, "eswat") == 0)
+	) {
+		if (strcmp("Fire 1", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_Y, "Special Weapon");
+		}
+		if (strcmp("Fire 2", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_B, "Shoot");
+		}
+		if (strcmp("Fire 3", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_A, "Jump");
+		}
+	}
+
 	// Major League
 	if ((parentrom && strcmp(parentrom, "mjleague") == 0) ||
 		(drvname && strcmp(drvname, "mjleague") == 0)
