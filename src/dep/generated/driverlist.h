@@ -7256,6 +7256,7 @@ DRV		BurnDrvGravitar;
 DRV		BurnDrvMSX_gravitica;
 DRV		BurnDrvsms_gravbeam;
 DRV		BurnSpecGrazers;
+DRV		BurnDrvMSX_grazers;
 DRV		BurnDrvGtmr2ua;
 DRV		BurnDrvGtmr2u;
 DRV		BurnDrvGtmre;
@@ -11350,6 +11351,7 @@ DRV		BurnDrvcv_mrdo;
 DRV		BurnDrvmrdo;
 DRV		BurnDrvDocastleo;
 DRV		BurnDrvDocastle2;
+DRV		BurnDrvcv_mrdowr;
 DRV		BurnDrvMSX_mrdowild;
 DRV		BurnDrvMSX_mrdowildh;
 DRV		BurnDrvDowild;
@@ -14803,6 +14805,7 @@ DRV		BurnSpecSamallardes;
 DRV		BurnSpecSamallarden;
 DRV		BurnSpecSamslade;
 DRV		BurnDrvnes_samsjourney;
+DRV		BurnDrvMSX_sampr;
 DRV		BurnSpecSamanthasp;
 DRV		BurnDrvSamesame;
 DRV		BurnDrvSamesamenh;
@@ -19121,6 +19124,7 @@ DRV		BurnDrvmd_truco96;
 DRV		BurnDrvmd_trueliess;
 DRV		BurnDrvgg_truelies;
 DRV		BurnDrvmd_truelies;
+DRV		BurnDrvMSX_trun;
 DRV		BurnDrvmd_truxton;
 DRV		BurnDrvmd_truxtons;
 DRV		BurnDrvTruxton;
@@ -19950,6 +19954,7 @@ DRV		BurnDrvWexpressb2;
 DRV		BurnDrvWexpressb3;
 DRV		BurnDrvWexpress;
 DRV		BurnDrvcv_wsbyrons;
+DRV		BurnDrvMSX_wsbyrons;
 DRV		BurnDrvnes_whatremains;
 DRV		BurnSpecWhb;
 DRV		BurnDrvWfortune;
@@ -27789,7 +27794,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecGherbground,		// Gherbert Groundhog in Save the Date (48K) (HB)
 	&BurnDrvMSX_ghost,			// Ghost (Euro, Spanish)
 	&BurnDrvmsx_ghost2017,		// Ghost (HB)
-	&BurnDrvcv_ghost,			// Ghost (SGM)(HB)
+	&BurnDrvcv_ghost,			// Ghost (SGM) (HB)
 	&BurnDrvcv_gblaster,		// Ghost Blaster (HB)
 	&BurnDrvGhostbi,			// Ghost Busters (FMV Demo)
 	&BurnSpecGcastle,			// Ghost Castle (48K) (HB)
@@ -28197,6 +28202,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_gravitica,		// Gravitica (HB, v1.1)
 	&BurnDrvsms_gravbeam,		// Gravity Beam: Master Gaiden (HB, v1.01)
 	&BurnSpecGrazers,			// Grazers (48K) (HB)
+	&BurnDrvMSX_grazers,		// Grazers (HB, v1.2)
 	&BurnDrvGtmr2ua,			// Great 1000 Miles Rally 2 USA (95/05/18)
 	&BurnDrvGtmr2u,				// Great 1000 Miles Rally 2 USA (95/07/11)
 	&BurnDrvGtmre,				// Great 1000 Miles Rally: Evolution Model!!! (94/09/06)
@@ -32291,6 +32297,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmrdo,				// Mr. Do!
 	&BurnDrvDocastleo,			// Mr. Do's Castle (older)
 	&BurnDrvDocastle2,			// Mr. Do's Castle (set 2)
+	&BurnDrvcv_mrdowr,			// Mr. Do's Wild Ride (HB)
 	&BurnDrvMSX_mrdowild,		// Mr. Do's Wild Ride (Japan)
 	&BurnDrvMSX_mrdowildh,		// Mr. Do's Wild Ride (Japan, Alt)
 	&BurnDrvDowild,				// Mr. Do's Wild Ride
@@ -35744,6 +35751,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSamallarden,		// Sam Mallard - the Case of the Missing Swan (English) (48K) (HB, v1.2)
 	&BurnSpecSamslade,			// Sam Slade - Robo-Hunter (48K) (HB)
 	&BurnDrvnes_samsjourney,	// Sam's Journey (HB)
+	&BurnDrvMSX_sampr,			// Sam.Pr (HB, v1.1)
 	&BurnSpecSamanthasp,		// Samantha Fox Strip Poker (48K)
 	&BurnDrvSamesame,			// Same! Same! Same! (1P set)
 	&BurnDrvSamesamenh,			// Same! Same! Same! (1P set, NEW VER! hack)
@@ -40062,6 +40070,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_trueliess,		// True Lies (Hack, Spanish)
 	&BurnDrvgg_truelies,		// True Lies (World)
 	&BurnDrvmd_truelies,		// True Lies (World)
+	&BurnDrvMSX_trun,			// TRUN (HB)
 	&BurnDrvmd_truxton,			// Truxton (Euro, USA) ~ Tatsujin (Japan)
 	&BurnDrvmd_truxtons,		// Truxton (Hack, Spanish)
 	&BurnDrvTruxton,			// Truxton / Tatsujin
@@ -40891,6 +40900,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvWexpressb3,			// Western Express (bootleg set 3)
 	&BurnDrvWexpress,			// Western Express (Japan, rev 4)
 	&BurnDrvcv_wsbyrons,		// Whack 'Em Smack 'Em Byrons (HB)
+	&BurnDrvMSX_wsbyrons,		// Whack 'Em Smack 'Em Byrons (HB)
 	&BurnDrvnes_whatremains,	// What Remains (HB, v1.0.2)
 	&BurnSpecWhb,				// WHB (128K) (HB)
 	&BurnDrvWfortune,			// Wheel Of Fortune (set 1)
@@ -41555,7 +41565,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_yewdow,			// Yewdow (HB)
 	&BurnDrvsg1k_yewdow,		// Yewdow (HB)
 	&BurnDrvkovytzywscw,		// Yi Tong Zhong Yuan - Warriors
-	&BurnDrvcv_yiearii,			// Yie Ar Kung Fu II (SGM)(HB)
+	&BurnDrvcv_yiearii,			// Yie Ar Kung Fu II (SGM) (HB) [Resets randomly, SGM - Super Game Module, NOT WORKING]
 	&BurnSpecyiarkufu,			// Yie Ar Kung-Fu (128K)
 	&BurnSpecyiarkufu_48,		// Yie Ar Kung-Fu (48K)
 	&BurnDrvYieartf,			// Yie Ar Kung-Fu (bootleg GX361 conversion)
@@ -49078,6 +49088,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_gravitica", "msx/d_msx.cpp"},
 	{ "sms_gravbeam", "sms/d_sms.cpp"},
 	{ "spec_grazers", "spectrum/d_spectrum.cpp"},
+	{ "msx_grazers", "msx/d_msx.cpp"},
 	{ "gtmr2ua", "pst90s/d_kaneko16.cpp"},
 	{ "gtmr2u", "pst90s/d_kaneko16.cpp"},
 	{ "gtmre", "pst90s/d_kaneko16.cpp"},
@@ -53132,6 +53143,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mrdo", "pre90s/d_mrdo.cpp"},
 	{ "docastleo", "pre90s/d_docastle.cpp"},
 	{ "docastle2", "pre90s/d_docastle.cpp"},
+	{ "cv_mrdowr", "coleco/d_coleco.cpp"},
 	{ "msx_mrdowild", "msx/d_msx.cpp"},
 	{ "msx_mrdowildh", "msx/d_msx.cpp"},
 	{ "dowild", "pre90s/d_docastle.cpp"},
@@ -56553,6 +56565,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_samallarden", "spectrum/d_spectrum.cpp"},
 	{ "spec_samslade", "spectrum/d_spectrum.cpp"},
 	{ "nes_samsjourney", "nes/d_nes.cpp"},
+	{ "msx_sampr", "msx/d_msx.cpp"},
 	{ "spec_samanthasp", "spectrum/d_spectrum.cpp"},
 	{ "samesame", "toaplan/d_toaplan1.cpp"},
 	{ "samesamenh", "toaplan/d_toaplan1.cpp"},
@@ -60823,6 +60836,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_trueliess", "megadrive/d_megadrive.cpp"},
 	{ "gg_truelies", "sms/d_sms.cpp"},
 	{ "md_truelies", "megadrive/d_megadrive.cpp"},
+	{ "msx_trun", "msx/d_msx.cpp"},
 	{ "md_truxton", "megadrive/d_megadrive.cpp"},
 	{ "md_truxtons", "megadrive/d_megadrive.cpp"},
 	{ "truxton", "toaplan/d_toaplan1.cpp"},
@@ -61636,6 +61650,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "wexpressb3", "pre90s/d_exprraid.cpp"},
 	{ "wexpress", "pre90s/d_exprraid.cpp"},
 	{ "cv_wsbyrons", "coleco/d_coleco.cpp"},
+	{ "msx_wsbyrons", "msx/d_msx.cpp"},
 	{ "nes_whatremains", "nes/d_nes.cpp"},
 	{ "spec_whb", "spectrum/d_spectrum.cpp"},
 	{ "wfortune", "pst90s/d_itech8.cpp"},

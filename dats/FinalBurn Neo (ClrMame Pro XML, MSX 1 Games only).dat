@@ -7398,6 +7398,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="grazers" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Grazers (HB, v1.2)</description>
+		<year>2024</year>
+		<manufacturer>Arturs Grebstelis</manufacturer>
+		<rom name="Grazers v1.2 (2024)(Arturs Grebstelis).rom" size="32768" crc="5670651f"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gberet" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Green Beret (Euro)</description>
 		<year>1986</year>
@@ -14757,6 +14769,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sampr" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Sam.Pr (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>Fausto Pracek</manufacturer>
+		<rom name="Sam.Pr v1.1 (2024)(Fausto Pracek).rom" size="32768" crc="2b06bad8"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sasa" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Sasa (Japan)</description>
 		<year>1983</year>
@@ -17532,6 +17556,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="trun" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>TRUN (HB)</description>
+		<year>2016</year>
+		<manufacturer>The Pets Mode</manufacturer>
+		<rom name="TRUN (2016)(The Pets Mode).rom" size="49152" crc="7c48ae05"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ttracer" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>TT Racer (Euro)</description>
 		<year>1987</year>
@@ -18185,6 +18221,18 @@
 		<year>2021</year>
 		<manufacturer>Brain Games</manufacturer>
 		<rom name="Westen House v1.3.1 ES (2021)(Brain Games).rom" size="49152" crc="c3eef607"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wsbyrons" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Whack 'Em Smack 'Em Byrons (HB)</description>
+		<year>2024</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Whack 'Em Smack 'Em Byrons (2024)(Jess Creations).rom" size="32768" crc="cd5534d3"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
