@@ -36,6 +36,24 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aerial" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Aerial (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Aerial (2022)(Inufuto).sg" size="10750" crc="87e4f535"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="antiair" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>AntiAir (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="AntiAir (2024)(Inufuto).sg" size="8107" crc="948599bd"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="arnodash" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Homebrew</comment>
 		<description>Arno Dash (HB)</description>
@@ -1706,6 +1724,15 @@
 		<year>1985?</year>
 		<manufacturer>Unknown</manufacturer>
 		<rom name="c_so! (tw).bin" size="32768" crc="82c4e3e5"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wsbyrons" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Whack 'Em Smack 'Em Byrons (HB)</description>
+		<year>2024</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Whack 'Em Smack 'Em Byrons (2024)(Jess Creations).sg" size="32706" crc="a444660d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -1252,7 +1252,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="darc10" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew, Turn ON 'FM Emulation' in Dips for music/sfx!</comment>
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
 		<description>DARC (HB, v1.0)</description>
 		<year>2015</year>
 		<manufacturer>Zipper</manufacturer>
@@ -2313,6 +2313,15 @@
 		<year>2013</year>
 		<manufacturer>Neko-MrD</manufacturer>
 		<rom name="Gravity Beam Master Gaiden (2013)(Neko-MrD).sms" size="32768" crc="829fd975"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="grazers" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Grazers (HB, v1.2)</description>
+		<year>2024</year>
+		<manufacturer>Snauts</manufacturer>
+		<rom name="Grazers v1.2 (2024)(Snauts).sms" size="32768" crc="d59d25a5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4731,6 +4740,15 @@
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="space harrier 3d (japan).bin" size="262144" crc="156948f9"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sptonbow" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Space Tonbow (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>SteelFinger Studios</manufacturer>
+		<rom name="Space Tonbow v1.1 (2024)(SteelFinger Studios).sms" size="131072" crc="4c3d2616"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
