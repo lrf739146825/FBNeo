@@ -688,7 +688,7 @@
 		<description>Alex Kidd In The Enchanted Castle (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Alex Kidd In The Enchanted Castle (Hack, Spanish)(2017)(Wave).bin" size="262144" crc="d2f3a29e"/>
+		<rom name="Alex Kidd In The Enchanted Castle T-Spa (2017)(Wave).bin" size="262144" crc="d2f3a29e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -717,12 +717,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="alien3" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Alien 3 (Euro, USA, Rev. A)</description>
+		<year>1993</year>
+		<manufacturer>Arena Entertainment</manufacturer>
+		<rom name="Alien3 (Euro, USA, Rev A)(1993)(Arena Entertainment).bin" size="524288" crc="b327fd1b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alien3s" cloneof="alien3" romof="alien3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Alien 3 (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Alien 3 (Hack, Spanish)(2020)(Wave).bin" size="524288" crc="701d308e"/>
+		<rom name="Alien 3 T-Spa (2020)(Wave).bin" size="524288" crc="701d308e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -757,7 +765,7 @@
 		<description>Alien Soldier (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Alien Soldier (Hack, Spanish)(2017)(Wave).bin" size="2097152" crc="ab991070"/>
+		<rom name="Alien Soldier T-Spa (2017)(Wave).bin" size="2097152" crc="ab991070"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -794,11 +802,12 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="alien3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Alien3 (Euro, USA, Rev. A)</description>
-		<year>1993</year>
-		<manufacturer>Arena Entertainment</manufacturer>
-		<rom name="Alien3 (Euro, USA, Rev A)(1993)(Arena Entertainment).bin" size="524288" crc="b327fd1b"/>
+	<game name="alien3ecs" cloneof="alien3" romof="alien3" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Alien3 - Enhanced Colors &amp; SFX (Hack, v1.3)</description>
+		<year>2024</year>
+		<manufacturer>Byros</manufacturer>
+		<rom name="Alien3 Enhanced Colors &amp; SFX v1.3 (2024)(Byros).bin" size="524288" crc="51fa2292"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5803,15 +5812,15 @@
 		<description>Double Clutch (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="double clutch (euro).bin" size="262144" crc="d98c623c"/>
+		<rom name="Double Clutch (Euro)(1992)(Sega).bin" size="262144" crc="d98c623c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ddragon" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Double Dragon (Euro, USA)</description>
-		<year>1993</year>
-		<manufacturer>Ballistic</manufacturer>
-		<rom name="double dragon (euro, usa).bin" size="524288" crc="054f5d53"/>
+		<year>1992</year>
+		<manufacturer>Ballistic - Accolade</manufacturer>
+		<rom name="Double Dragon (Euro, USA)(1992)(Ballistic).bin" size="524288" crc="054f5d53"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5833,11 +5842,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ddragonarc" cloneof="ddragon" romof="ddragon" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Double Dragon - Arcade Music &amp; SFX (Hack)</description>
+		<year>2024</year>
+		<manufacturer>Segaman, VLD</manufacturer>
+		<rom name="Double Dragon Arcade Music &amp; SFX (2024)(Segaman, VLD).bin" size="1048576" crc="96a69d33"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ddragon3" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Double Dragon 3 - The Arcade Game (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="double dragon 3 - the arcade game (euro, usa).bin" size="1048576" crc="b36ab75c"/>
+		<rom name="Double Dragon 3 - The Arcade Game (Euro, USA)(1992)(Flying Edge).bin" size="1048576" crc="b36ab75c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5863,7 +5881,7 @@
 		<description>Double Dragon II - The Revenge (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Palsoft</manufacturer>
-		<rom name="double dragon ii - the revenge (jpn).bin" size="524288" crc="a8bfdbd6"/>
+		<rom name="Double Dragon II - The Revenge (Japan)(1991)(Palsoft).bin" size="524288" crc="a8bfdbd6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5880,7 +5898,7 @@
 		<description>Double Dragon V - The Shadow Falls (USA)</description>
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="double dragon v - the shadow falls (usa).bin" size="3145728" crc="27e59e35"/>
+		<rom name="Double Dragon V - The Shadow Falls (USA)(1994)(Tradewest).bin" size="3145728" crc="27e59e35"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7536,10 +7554,10 @@
 	</game>
 	<game name="fistnstar" cloneof="lastbtle" romof="lastbtle" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Fist of the North Star 'Revisited' (Hack, English v1.2)</description>
+		<description>Fist of the North Star 'Revisited' (Hack, English v2.0)</description>
 		<year>2024</year>
 		<manufacturer>Ermani S. Costa</manufacturer>
-		<rom name="Fist of the North Star Revisited T-Eng v1.2 (2024)(Ermani S. Costa).bin" size="537694" crc="7d424a16"/>
+		<rom name="Fist of the North Star Revisited T-Eng v2.0 (2024)(Ermani S. Costa).bin" size="537694" crc="26e9b00c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7927,7 +7945,7 @@
 		<description>Galahad (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="gal01.bin" size="1048576" crc="679557bc"/>
+		<rom name="Galahad (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="679557bc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8977,7 +8995,7 @@
 		<description>Hokuto no Ken - Shin Seikimatsu Kyuuseishu Densetsu (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="hokuto no ken - shin seikimatsu kyuuseishu densetsu (jpn).bin" size="524288" crc="1b6585e7"/>
+		<rom name="Hokuto no Ken - Shin Seikimatsu Kyuuseishu Densetsu (Japan)(1989)(Sega).bin" size="524288" crc="1b6585e7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10635,7 +10653,7 @@
 		<description>Langrisser II (Hack, English)</description>
 		<year>2011</year>
 		<manufacturer>Jon Najar</manufacturer>
-		<rom name="langrisser ii (english translation).bin" size="2097152" crc="e8f28522"/>
+		<rom name="Langrisser II T-Eng (2011)(Jon Najar).bin" size="2097152" crc="e8f28522"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10652,7 +10670,7 @@
 		<description>Langrisser II (Japan)</description>
 		<year>1994</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="langrisser ii (jpn).bin" size="2097152" crc="7f891dfc"/>
+		<rom name="Langrisser II (Japan)(1994)(NCS).bin" size="2097152" crc="7f891dfc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10660,7 +10678,7 @@
 		<description>Langrisser II (Japan, v1.1)</description>
 		<year>1994</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="langrisser ii (jpn) (v1.1).bin" size="2097152" crc="0caa0593"/>
+		<rom name="Langrisser II v1.1 (Japan)(1994)(NCS).bin" size="2097152" crc="0caa0593"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10668,7 +10686,7 @@
 		<description>Langrisser II (Japan, v1.2)</description>
 		<year>1994</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="langrisser ii (jpn) (v1.2).bin" size="2097152" crc="4967c9f9"/>
+		<rom name="Langrisser II v1.2 (Japan)(1994)(NCS).bin" size="2097152" crc="4967c9f9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10676,7 +10694,7 @@
 		<description>Last Action Hero (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="last action hero (euro, usa).bin" size="1048576" crc="15357dde"/>
+		<rom name="Last Action Hero (Euro, USA)(1993)(Sony Imagesoft).bin" size="1048576" crc="15357dde"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10684,7 +10702,7 @@
 		<description>Last Battle (Euro, USA, Korea)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12578.bin" size="524288" crc="bbfaad77"/>
+		<rom name="Last Battle (Euro, USA, Korea)(1989)(Sega).bin" size="524288" crc="bbfaad77"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10692,7 +10710,7 @@
 		<description>Lawnmower Man, The (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Time Warner Interactive</manufacturer>
-		<rom name="lawnmower man, the (euro, usa).bin" size="1048576" crc="a7cacd59"/>
+		<rom name="Lawnmower Man, The (Euro, USA)(1994)(Time Warner Int.).bin" size="1048576" crc="a7cacd59"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10717,7 +10735,7 @@
 		<description>Lego Batman (Russia) (Unl)</description>
 		<year>2014</year>
 		<manufacturer>BMB</manufacturer>
-		<rom name="Lego Batman (Unl).bin" size="524288" crc="00da53a9"/>
+		<rom name="Lego Batman (Unl)(2014)(BMB).bin" size="524288" crc="00da53a9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10733,7 +10751,7 @@
 		<description>Lemmings (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15233.bin" size="1048576" crc="6a1a4579"/>
+		<rom name="Lemmings (Euro)(1992)(Sega).bin" size="1048576" crc="6a1a4579"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10741,7 +10759,7 @@
 		<description>Lemmings (Japan, USA)</description>
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="lemmings (usa, jpn).bin" size="1048576" crc="f015c2ad"/>
+		<rom name="Lemmings (Japan, USA)(1992)(Sunsoft).bin" size="1048576" crc="f015c2ad"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10749,7 +10767,7 @@
 		<description>Lemmings (Japan, USA, Korea, v1.1)</description>
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="sunsoft_lem8_j.bin" size="1048576" crc="68c70362"/>
+		<rom name="Lemmings v1.1 (Japan, USA, Korea)(1992)(Sunsoft).bin" size="1048576" crc="68c70362"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10757,7 +10775,7 @@
 		<description>Lemmings 2 - The Tribes (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Psygnosis</manufacturer>
-		<rom name="lemmings 2 - the tribes (euro).bin" size="2097152" crc="741eb624"/>
+		<rom name="Lemmings 2 - The Tribes (Euro)(1994)(Psygnosis).bin" size="2097152" crc="741eb624"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10765,7 +10783,7 @@
 		<description>Lemmings 2 - The Tribes (USA)</description>
 		<year>1994</year>
 		<manufacturer>Psygnosis</manufacturer>
-		<rom name="lemmings 2 - the tribes (usa).bin" size="2097152" crc="de59a3a3"/>
+		<rom name="Lemmings 2 - The Tribes (USA)(1994)(Psygnosis).bin" size="2097152" crc="de59a3a3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10773,7 +10791,7 @@
 		<description>Lethal Enforcers (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="lethal enforcers (euro).bin" size="2097152" crc="ca2bf99d"/>
+		<rom name="Lethal Enforcers (Euro)(1993)(Konami).bin" size="2097152" crc="ca2bf99d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10781,7 +10799,7 @@
 		<description>Lethal Enforcers (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="fz008.bin" size="2097152" crc="f25f1e49"/>
+		<rom name="Lethal Enforcers (Japan)(1993)(Konami).bin" size="2097152" crc="f25f1e49"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10789,7 +10807,7 @@
 		<description>Lethal Enforcers (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="lethal enforcers (usa).bin" size="2097152" crc="51d9a84a"/>
+		<rom name="Lethal Enforcers (USA)(1993)(Konami).bin" size="2097152" crc="51d9a84a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10797,7 +10815,7 @@
 		<description>Lethal Enforcers II - Gun Fighters (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="lethal enforcers ii - gun fighters (euro).bin" size="2097152" crc="4bfe045c"/>
+		<rom name="Lethal Enforcers II - Gun Fighters (Euro)(1994)(Konami).bin" size="2097152" crc="4bfe045c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10805,7 +10823,7 @@
 		<description>Lethal Enforcers II - Gun Fighters (USA)</description>
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="lethal enforcers ii - gun fighters (usa).bin" size="2097152" crc="e5fdd28b"/>
+		<rom name="Lethal Enforcers II - Gun Fighters (USA)(1994)(Konami).bin" size="2097152" crc="e5fdd28b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10822,15 +10840,15 @@
 		<description>LHX Attack Chopper (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="lhx04.bin" size="1048576" crc="70c3428d"/>
+		<rom name="LHX Attack Chopper (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="70c3428d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="lhxj" cloneof="lhx" romof="lhx" sourcefile="megadrive/d_megadrive.cpp">
 		<description>LHX Attack Chopper (Japan)</description>
 		<year>1993</year>
-		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="lhx attack chopper (jpn).bin" size="1048576" crc="224ff103"/>
+		<manufacturer>Electronic Arts - Victor</manufacturer>
+		<rom name="LHX Attack Chopper (Japan)(1993)(Electronic Arts - Victor).bin" size="1048576" crc="224ff103"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21006,7 +21024,7 @@
 		<description>Super Monaco GP (Euro, Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super monaco gp (euro, jpn).bin" size="524288" crc="b1823595"/>
+		<rom name="Super Monaco GP (Euro, Japan)(1990)(Sega).bin" size="524288" crc="b1823595"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21022,7 +21040,7 @@
 		<description>Super Monaco GP (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13215.bin" size="524288" crc="90f9bab3"/>
+		<rom name="Super Monaco GP (Japan)(1990)(Sega).bin" size="524288" crc="90f9bab3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21030,7 +21048,16 @@
 		<description>Super Monaco GP (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super monaco gp (usa).bin" size="524288" crc="725018ee"/>
+		<rom name="Super Monaco GP (USA)(1990)(Sega).bin" size="524288" crc="725018ee"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smgpec" cloneof="smgp" romof="smgp" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Super Monaco GP - Enhanced Colors (Hack, v1.32)</description>
+		<year>2023</year>
+		<manufacturer>Byros</manufacturer>
+		<rom name="Super Monaco GP Enhanced Colors v1.32 (2023)(Byros).bin" size="524288" crc="d7d73d0e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21046,8 +21073,8 @@
 	<game name="superoff" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Super Off Road (Euro, USA)</description>
 		<year>1994</year>
-		<manufacturer>Ballistic</manufacturer>
-		<rom name="super off road (euro, usa).bin" size="524288" crc="8f2fdada"/>
+		<manufacturer>Ballistic - Accolade</manufacturer>
+		<rom name="Super Off Road (Euro, USA)(1994)(Ballistic).bin" size="524288" crc="8f2fdada"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21088,7 +21115,7 @@
 		<description>Super Real Basketball (Euro)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13432.bin" size="524288" crc="f04765ba"/>
+		<rom name="Super Real Basketball (Euro)(1990)(Sega).bin" size="524288" crc="f04765ba"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21096,7 +21123,7 @@
 		<description>Super Real Basketball (Japan, Korea)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12904.bin" size="524288" crc="4346e11a"/>
+		<rom name="Super Real Basketball (Japan, Korea)(1990)(Sega).bin" size="524288" crc="4346e11a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

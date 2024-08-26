@@ -576,6 +576,7 @@ DRV		BurnDrvsms_alibaba;
 DRV		BurnDrvmd_alicesisters;
 DRV		BurnDrvsms_alien3;
 DRV		BurnDrvgg_alien3;
+DRV		BurnDrvmd_alien3;
 DRV		BurnDrvsms_alien3c;
 DRV		BurnDrvnes_alien3c;
 DRV		BurnDrvmd_alien3s;
@@ -646,7 +647,7 @@ DRV		BurnDrvCpsAvsph;
 DRV		BurnDrvCpsAvspj;
 DRV		BurnDrvCpsAvspu;
 DRV		BurnDrvmd_alien3a;
-DRV		BurnDrvmd_alien3;
+DRV		BurnDrvmd_alien3ecs;
 DRV		BurnDrvmd_alien3h;
 DRV		BurnDrvAlien3j;
 DRV		BurnDrvAlien3u;
@@ -2177,6 +2178,7 @@ DRV		BurnDrvgg_bonkersp10;
 DRV		BurnDrvgg_bonkersp09;
 DRV		BurnDrvgg_bonkersp08;
 DRV		BurnSpecBonnieclyde;
+DRV		BurnDrvBonusstage;
 DRV		BurnDrvBonzeadvu;
 DRV		BurnDrvBonzeadvo;
 DRV		BurnDrvBonzeadvp;
@@ -4831,6 +4833,7 @@ DRV		BurnDrvnes_doubledragon;
 DRV		BurnDrvDdragon;
 DRV		BurnDrvDdragona;
 DRV		BurnDrvsms_ddragon;
+DRV		BurnDrvmd_ddragonarc;
 DRV		BurnDrvmd_ddragon3;
 DRV		BurnDrvmd_ddragon3s;
 DRV		BurnDrvDdrago3b;
@@ -8962,6 +8965,7 @@ DRV		BurnDrvKidnikiu;
 DRV		BurnDrvnes_kidnik;
 DRV		BurnDrvKidniki;
 DRV		BurnDrvHorekidb;
+DRV		BurnDrvHorekidb3;
 DRV		BurnDrvHorekid;
 DRV		BurnDrvnes_kiddysuninfan;
 DRV		BurnDrvmd_patlabor;
@@ -17379,6 +17383,7 @@ DRV		BurnDrvSmgp6d;
 DRV		BurnDrvSmgp6;
 DRV		BurnDrvSmgpd;
 DRV		BurnDrvSmgp;
+DRV		BurnDrvmd_smgpec;
 DRV		BurnDrvmd_smgp2019;
 DRV		BurnDrvSmooncrs;
 DRV		BurnSpecSupmoritz;
@@ -21530,6 +21535,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_alicesisters,	// Alice Sisters (HB)
 	&BurnDrvsms_alien3,			// Alien 3 (Euro, Brazil)
 	&BurnDrvgg_alien3,			// Alien 3 (Euro, USA)
+	&BurnDrvmd_alien3,			// Alien 3 (Euro, USA, Rev. A)
 	&BurnDrvsms_alien3c,		// Alien 3 (Hack, Spanish v1.0)
 	&BurnDrvnes_alien3c,		// Alien 3 (Hack, Spanish v1.1)
 	&BurnDrvmd_alien3s,			// Alien 3 (Hack, Spanish)
@@ -21600,7 +21606,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsAvspj,			// Alien vs. Predator (Japan 940520)
 	&BurnDrvCpsAvspu,			// Alien vs. Predator (USA 940520)
 	&BurnDrvmd_alien3a,			// Alien3 (Euro, USA)
-	&BurnDrvmd_alien3,			// Alien3 (Euro, USA, Rev. A)
+	&BurnDrvmd_alien3ecs,		// Alien3 - Enhanced Colors & SFX (Hack, v1.3)
 	&BurnDrvmd_alien3h,			// Alien3 - Kinoppi version (Hack)
 	&BurnDrvAlien3j,			// Alien3: The Gun (Japan)
 	&BurnDrvAlien3u,			// Alien3: The Gun (US, Rev A)
@@ -23131,6 +23137,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvgg_bonkersp09,		// Bonkers Wax Up! (Prototype, 19941126)
 	&BurnDrvgg_bonkersp08,		// Bonkers Wax Up! (Prototype, 19941129)
 	&BurnSpecBonnieclyde,		// Bonnie and Clyde (128K) (HB)
+	&BurnDrvBonusstage,			// Bonus Stage
 	&BurnDrvBonzeadvu,			// Bonze Adventure (US, rev 1)
 	&BurnDrvBonzeadvo,			// Bonze Adventure (World)
 	&BurnDrvBonzeadvp,			// Bonze Adventure (World, prototype, newer)
@@ -25785,6 +25792,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDdragon,			// Double Dragon (World set 1)
 	&BurnDrvDdragona,			// Double Dragon (World set 2)
 	&BurnDrvsms_ddragon,		// Double Dragon (World)
+	&BurnDrvmd_ddragonarc,		// Double Dragon - Arcade Music & SFX (Hack)
 	&BurnDrvmd_ddragon3,		// Double Dragon 3 - The Arcade Game (Euro, USA)
 	&BurnDrvmd_ddragon3s,		// Double Dragon 3 - The Arcade Game (Hack, Spanish)
 	&BurnDrvDdrago3b,			// Double Dragon 3: The Rosetta Stone (bootleg)
@@ -27081,7 +27089,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fishstory,		// Fish Story (Unl)
 	&BurnDrvCfishing,			// Fishing (DECO Cassette) (Japan)
 	&BurnSpecFist2,				// Fist II - The Legend Continues (48K)
-	&BurnDrvmd_fistnstar,		// Fist of the North Star 'Revisited' (Hack, English v1.2)
+	&BurnDrvmd_fistnstar,		// Fist of the North Star 'Revisited' (Hack, English v2.0)
 	&BurnDrvnes_fistnorsta,		// Fist of the North Star (USA)
 	&BurnSpecFistro,			// FistRO Fighters (48K) (HB)
 	&BurnSpecFitris,			// Fitris (128K) (HB)
@@ -29916,6 +29924,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_kidnik,			// Kid Niki - Radical Ninja (USA) (Rev A)
 	&BurnDrvKidniki,			// Kid Niki - Radical Ninja (World)
 	&BurnDrvHorekidb,			// Kid no Hore Hore Daisakusen (bootleg set 1)
+	&BurnDrvHorekidb3,			// Kid no Hore Hore Daisakusen (Neo-Geo Conversion)
 	&BurnDrvHorekid,			// Kid no Hore Hore Daisakusen
 	&BurnDrvnes_kiddysuninfan,	// Kiddy Sun in Fantasia (Taiwan)
 	&BurnDrvmd_patlabor,		// Kidou Keisatsu Patlabor - 98-shiki Kidou Seyo! (Japan)
@@ -38333,6 +38342,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSmgp6,				// Super Monaco GP (World, Rev A) (FD1094 317-0126a)
 	&BurnDrvSmgpd,				// Super Monaco GP (World, Rev B) (bootleg of FD1094 317-0126a set)
 	&BurnDrvSmgp,				// Super Monaco GP (World, Rev B) (FD1094 317-0126a)
+	&BurnDrvmd_smgpec,			// Super Monaco GP - Enhanced Colors (Hack, v1.32)
 	&BurnDrvmd_smgp2019,		// Super Monaco GP-2019 - HE Returns (Hack, Improvement)
 	&BurnDrvSmooncrs,			// Super Moon Cresta (Gremlin, bootleg)
 	&BurnSpecSupmoritz,			// Super Moritz (128K) (HB)
@@ -42484,6 +42494,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_alicesisters", "megadrive/d_megadrive.cpp"},
 	{ "sms_alien3", "sms/d_sms.cpp"},
 	{ "gg_alien3", "sms/d_sms.cpp"},
+	{ "md_alien3", "megadrive/d_megadrive.cpp"},
 	{ "sms_alien3c", "sms/d_sms.cpp"},
 	{ "nes_alien3c", "nes/d_nes.cpp"},
 	{ "md_alien3s", "megadrive/d_megadrive.cpp"},
@@ -42554,7 +42565,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "avspj", "capcom/d_cps2.cpp"},
 	{ "avspu", "capcom/d_cps2.cpp"},
 	{ "md_alien3a", "megadrive/d_megadrive.cpp"},
-	{ "md_alien3", "megadrive/d_megadrive.cpp"},
+	{ "md_alien3ecs", "megadrive/d_megadrive.cpp"},
 	{ "md_alien3h", "megadrive/d_megadrive.cpp"},
 	{ "alien3j", "sega/d_segas32.cpp"},
 	{ "alien3u", "sega/d_segas32.cpp"},
@@ -44075,6 +44086,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gg_bonkersp09", "sms/d_sms.cpp"},
 	{ "gg_bonkersp08", "sms/d_sms.cpp"},
 	{ "spec_bonnieclyde", "spectrum/d_spectrum.cpp"},
+	{ "bonusstage", "neogeo/d_neogeo.cpp"},
 	{ "bonzeadvu", "taito/d_asuka.cpp"},
 	{ "bonzeadvo", "taito/d_asuka.cpp"},
 	{ "bonzeadvp", "taito/d_asuka.cpp"},
@@ -46697,6 +46709,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ddragon", "pre90s/d_ddragon.cpp"},
 	{ "ddragona", "pre90s/d_ddragon.cpp"},
 	{ "sms_ddragon", "sms/d_sms.cpp"},
+	{ "md_ddragonarc", "megadrive/d_megadrive.cpp"},
 	{ "md_ddragon3", "megadrive/d_megadrive.cpp"},
 	{ "md_ddragon3s", "megadrive/d_megadrive.cpp"},
 	{ "ddragon3b", "pst90s/d_ddragon3.cpp"},
@@ -50790,6 +50803,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_kidnik", "nes/d_nes.cpp"},
 	{ "kidniki", "irem/d_m62.cpp"},
 	{ "horekidb", "pre90s/d_terracre.cpp"},
+	{ "horekidb3", "neogeo/d_neogeo.cpp"},
 	{ "horekid", "pre90s/d_terracre.cpp"},
 	{ "nes_kiddysuninfan", "nes/d_nes.cpp"},
 	{ "md_patlabor", "megadrive/d_megadrive.cpp"},
@@ -59123,6 +59137,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "smgp6", "sega/d_xbrd.cpp"},
 	{ "smgpd", "sega/d_xbrd.cpp"},
 	{ "smgp", "sega/d_xbrd.cpp"},
+	{ "md_smgpec", "megadrive/d_megadrive.cpp"},
 	{ "md_smgp2019", "megadrive/d_megadrive.cpp"},
 	{ "smooncrs", "galaxian/d_galaxian.cpp"},
 	{ "spec_supmoritz", "spectrum/d_spectrum.cpp"},
