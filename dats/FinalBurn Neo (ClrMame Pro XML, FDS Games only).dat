@@ -1030,7 +1030,7 @@
 		<description>Lutter (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Athena</manufacturer>
-		<rom name="Lutter (Japan).fds" size="131016" crc="54335232"/>
+		<rom name="Lutter (Japan)(1989)(Athena).fds" size="131016" crc="54335232"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1039,7 +1039,7 @@
 		<description>Maerchen Veil (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Maerchen Veil (Japan).fds" size="131016" crc="618d10a2"/>
+		<rom name="Maerchen Veil (Japan)(1987)(Sunsoft).fds" size="131016" crc="618d10a2"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1048,7 +1048,7 @@
 		<description>Magma Project - Hacker (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Bits Laboratory</manufacturer>
-		<rom name="Magma Project - Hacker (Japan).fds" size="131016" crc="59d51115"/>
+		<rom name="Magma Project - Hacker (Japan)(1989)(Bits Laboratory).fds" size="131016" crc="59d51115"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1057,7 +1057,7 @@
 		<description>Matou no Houkai - The Hero of Babel (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Matou no Houkai - The Hero of Babel (Japan).fds" size="131016" crc="0596b36a"/>
+		<rom name="Matou no Houkai - The Hero of Babel (Japan)(1988)(Pony Canyon).fds" size="131016" crc="0596b36a"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1067,7 +1067,7 @@
 		<description>Meikyuu Jiin Dababa (Hack, English)</description>
 		<year>2017</year>
 		<manufacturer>FlashPV</manufacturer>
-		<rom name="Meikyuu Jiin Dababa (T-Eng).fds" size="131000" crc="4d13e6b7"/>
+		<rom name="Meikyuu Jiin Dababa T-Eng (2017)(FlashPV).fds" size="131000" crc="4d13e6b7"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1076,7 +1076,7 @@
 		<description>Meikyuu Jiin Dababa (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Meikyuu Jiin Dababa (Japan).fds" size="131000" crc="1526d32e"/>
+		<rom name="Meikyuu Jiin Dababa (Japan)(1987)(Konami).fds" size="131000" crc="1526d32e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1086,7 +1086,7 @@
 		<description>Metroid (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>Jordiway73</manufacturer>
-		<rom name="Metroid (T-Eng).fds" size="131000" crc="2711adba"/>
+		<rom name="Metroid T-Eng (2016)(Jordiway73).fds" size="131000" crc="2711adba"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1095,7 +1095,7 @@
 		<description>Metroid (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Metroid (Japan).fds" size="131000" crc="5e4f013d"/>
+		<rom name="Metroid (Japan)(1986)(Nintendo).fds" size="131000" crc="5e4f013d"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1104,7 +1104,7 @@
 		<description>Michael English Daibouken (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Scorpion Soft</manufacturer>
-		<rom name="Michael English Daibouken (Japan).fds" size="131000" crc="e5ab0e6c"/>
+		<rom name="Michael English Daibouken (Japan)(1987)(Scorpion Soft).fds" size="131000" crc="e5ab0e6c"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1113,7 +1113,7 @@
 		<description>Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan).fds" size="131016" crc="0d684aa7"/>
+		<rom name="Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)(1986)(Konami).fds" size="131016" crc="0d684aa7"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1123,7 +1123,7 @@
 		<description>Monty on the Run - Monty no Doki Doki Dai Dassou (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Monty on the Run - Monty no Doki Doki Dai Dassou (T-Eng).fds" size="131001" crc="d7242483"/>
+		<rom name="Monty on the Run - Monty no Doki Doki Dai Dassou T-Eng (2021)(Stardust Crusaders).fds" size="131001" crc="d7242483"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1132,7 +1132,7 @@
 		<description>Monty on the Run - Monty no Doki Doki Dai Dassou (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Monty on the Run - Monty no Doki Doki Dai Dassou (Japan).fds" size="131016" crc="bb7ab325"/>
+		<rom name="Monty on the Run - Monty no Doki Doki Dai Dassou (Japan)(1987)(Jaleco).fds" size="131016" crc="bb7ab325"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1141,7 +1141,7 @@
 		<description>Moonball Magic (Japan)</description>
 		<year>1988</year>
 		<manufacturer>System Sacom</manufacturer>
-		<rom name="Moonball Magic (Japan).fds" size="131016" crc="99a87df8"/>
+		<rom name="Moonball Magic (Japan)(1988)(System Sacom).fds" size="131016" crc="99a87df8"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1151,7 +1151,7 @@
 		<description>Mysterious Murasame Castle, The (Hack, English)</description>
 		<year>2011</year>
 		<manufacturer>Spinner 8 and friends</manufacturer>
-		<rom name="Mysterious Murasame Castle (T-Eng).fds" size="131000" crc="5da99951"/>
+		<rom name="Mysterious Murasame Castle T-Eng (2011)(Spinner 8 and friends).fds" size="131000" crc="5da99951"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1160,7 +1160,7 @@
 		<description>Namida no Soukoban Special (Japan)</description>
 		<year>1986</year>
 		<manufacturer>ASCII Corp.</manufacturer>
-		<rom name="Namida no Soukoban Special (Japan).fds" size="131000" crc="0c5b12d6"/>
+		<rom name="Namida no Soukoban Special (Japan)(1986)(ASCII).fds" size="131000" crc="0c5b12d6"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1169,7 +1169,7 @@
 		<description>Nazo no Kabe - Block Kuzushi (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Nazo no Kabe - Block Kuzushi (Japan).fds" size="131000" crc="09292f11"/>
+		<rom name="Nazo no Kabe - Block Kuzushi (Japan)(1986)(Konami).fds" size="131000" crc="09292f11"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1178,7 +1178,7 @@
 		<description>Nazo no Murasamejou (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Nazo no Murasamejou (Japan).fds" size="131016" crc="2acde825"/>
+		<rom name="Nazo no Murasamejou (Japan)(1986)(Nintendo).fds" size="131016" crc="2acde825"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1187,7 +1187,7 @@
 		<description>Otocky (Japan)</description>
 		<year>1987</year>
 		<manufacturer>ASCII Corp.</manufacturer>
-		<rom name="Otocky (Japan).fds" size="131016" crc="d7a49861"/>
+		<rom name="Otocky (Japan)(1987)(ASCII).fds" size="131016" crc="d7a49861"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1206,7 +1206,7 @@
 		<description>Patlabor - The Mobile Police - Dai 2 Shoutai Shutsudou Seyo! (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Patlabor - The Mobile Police - Dai 2 Shoutai Shutsudou Seyo! (Japan).fds" size="131016" crc="b5639859"/>
+		<rom name="Patlabor - The Mobile Police - Dai 2 Shoutai Shutsudou Seyo! (Japan)(1989)(Bandai).fds" size="131016" crc="b5639859"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1215,7 +1215,7 @@
 		<description>Pro Golfer Saru - Kage no Tournament (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Pro Golfer Saru - Kage no Tournament (Japan).fds" size="131016" crc="8261910e"/>
+		<rom name="Pro Golfer Saru - Kage no Tournament (Japan)(1987)(Bandai).fds" size="131016" crc="8261910e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1224,7 +1224,7 @@
 		<description>Putt Putt Golf (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Pack-In-Video</manufacturer>
-		<rom name="Putt Putt Golf (Japan).fds" size="131016" crc="0ac52ae0"/>
+		<rom name="Putt Putt Golf (Japan)(1989)(Pack-In-Video).fds" size="131016" crc="0ac52ae0"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1234,7 +1234,7 @@
 		<description>Puzzle Boys (Hack, English)</description>
 		<year>2011</year>
 		<manufacturer>DvD Translations</manufacturer>
-		<rom name="Puzzle Boys (T-Eng).fds" size="131000" crc="fa03eba9"/>
+		<rom name="Puzzle Boys T-Eng (2011)(DvD Translations).fds" size="131000" crc="fa03eba9"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1242,8 +1242,8 @@
 	<game name="puzzleboysj" cloneof="puzzleboys" romof="puzzleboys" sourcefile="nes/d_nes.cpp">
 		<description>Puzzle Boys (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Puzzle Boys (Japan).fds" size="131000" crc="b9f22094"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Puzzle Boys (Japan)(1990)(Atlus).fds" size="131000" crc="b9f22094"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1252,7 +1252,7 @@
 		<description>Radical Bomber!! Jirai-kun (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Radical Bomber!! Jirai-kun (Japan).fds" size="131016" crc="2b41056b"/>
+		<rom name="Radical Bomber!! Jirai-kun (Japan)(1988)(Jaleco).fds" size="131016" crc="2b41056b"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

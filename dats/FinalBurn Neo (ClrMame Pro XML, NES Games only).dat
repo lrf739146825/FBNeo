@@ -16,7 +16,7 @@
 		<description>10-Yard Fight (USA)</description>
 		<year>1985</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="10-Yard Fight (USA).nes" size="40976" crc="c38b62cb"/>
+		<rom name="10-Yard Fight (USA)(1985)(Nintendo).nes" size="40976" crc="c38b62cb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -33,7 +33,7 @@
 		<description>1942 (Japan, USA)</description>
 		<year>1985</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="1942 (Japan, USA).nes" size="40976" crc="e9cf747f"/>
+		<rom name="1942 (Japan, USA)(1985)(Capcom).nes" size="40976" crc="e9cf747f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -41,7 +41,15 @@
 		<description>1943 - The Battle of Midway (USA)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="1943 - The Battle of Midway (USA).nes" size="131088" crc="d131bf15"/>
+		<rom name="1943 - The Battle of Midway (USA)(1988)(Capcom).nes" size="131088" crc="d131bf15"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="1943j" cloneof="1943" romof="1943" sourcefile="nes/d_nes.cpp">
+		<description>1943 - The Battle of Valhalla (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="1943 - The Battle of Valhalla (Japan)(1988)(Capcom).nes" size="131088" crc="8db59be8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -57,7 +65,7 @@
 		<description>2010 - Street Fighter (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="2010 - Street Fighter (Japan).nes" size="262160" crc="c5a04eff"/>
+		<rom name="2010 - Street Fighter (Japan)(1990)(Capcom).nes" size="262160" crc="c5a04eff"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -74,7 +82,7 @@
 		<description>3-D Battles of World Runner, The (USA)</description>
 		<year>1987</year>
 		<manufacturer>Acclaim</manufacturer>
-		<rom name="3-D Battles of World Runner, The (USA).nes" size="131088" crc="d5ada486"/>
+		<rom name="3-D Battles of World Runner, The (USA)(1987)(Acclaim).nes" size="131088" crc="d5ada486"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -82,7 +90,7 @@
 		<description>3D Block (Unl)</description>
 		<year>1990</year>
 		<manufacturer>RCM Group</manufacturer>
-		<rom name="3D Block (Unl).nes" size="32784" crc="a760eeeb"/>
+		<rom name="3D Block (Unl)(1990)(RCM Group).nes" size="32784" crc="a760eeeb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -99,7 +107,15 @@
 		<description>720 Degrees (USA)</description>
 		<year>1989</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="720 Degrees (USA).nes" size="131088" crc="6bc968af"/>
+		<rom name="720 Degrees (USA)(1989)(Mindscape).nes" size="131088" crc="6bc968af"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="8eyesj" cloneof="8eyes" romof="8eyes" sourcefile="nes/d_nes.cpp">
+		<description>8 Eye's (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Seta</manufacturer>
+		<rom name="8 Eye's (Japan)(1988)(Seta).nes" size="262160" crc="d24639e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -107,7 +123,7 @@
 		<description>8 Eyes (USA)</description>
 		<year>1990</year>
 		<manufacturer>Taxan</manufacturer>
-		<rom name="8 Eyes (USA).nes" size="262160" crc="18f9bb24"/>
+		<rom name="8 Eyes (USA)(1990)(Taxan).nes" size="262160" crc="18f9bb24"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -222,7 +238,7 @@
 		<description>Abadox - The Deadly Inner War (USA)</description>
 		<year>1990</year>
 		<manufacturer>Milton Bradley</manufacturer>
-		<rom name="Abadox - The Deadly Inner War (USA).nes" size="262160" crc="dc87f63d"/>
+		<rom name="Abadox - The Deadly Inner War (USA)(1990)(Milton Bradley).nes" size="262160" crc="dc87f63d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1565,7 +1581,7 @@
 		<description>Baseball Stars (USA)</description>
 		<year>1989</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="Baseball Stars (USA).nes" size="262160" crc="1924f963"/>
+		<rom name="Baseball Stars (USA)(1989)(SNK).nes" size="262160" crc="1924f963"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1573,7 +1589,7 @@
 		<description>Baseball Stars II (USA)</description>
 		<year>1992</year>
 		<manufacturer>Romstar</manufacturer>
-		<rom name="Baseball Stars II (USA).nes" size="393232" crc="104fabee"/>
+		<rom name="Baseball Stars II (USA)(1992)(Romstar).nes" size="393232" crc="104fabee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1581,7 +1597,7 @@
 		<description>Bases Loaded (USA)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bases Loaded (USA).nes" size="327696" crc="5f1b9397"/>
+		<rom name="Bases Loaded (USA)(1988)(Jaleco).nes" size="327696" crc="5f1b9397"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1589,7 +1605,7 @@
 		<description>Bases Loaded 3 (USA)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bases Loaded 3 (USA).nes" size="393232" crc="1bdd1704"/>
+		<rom name="Bases Loaded 3 (USA)(1991)(Jaleco).nes" size="393232" crc="1bdd1704"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1597,7 +1613,7 @@
 		<description>Bases Loaded 4 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bases Loaded 4 (USA).nes" size="393232" crc="0dee9ec1"/>
+		<rom name="Bases Loaded 4 (USA)(1993)(Jaleco).nes" size="393232" crc="0dee9ec1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1605,7 +1621,7 @@
 		<description>Bases Loaded II - Second Season (USA)</description>
 		<year>1990</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bases Loaded II - Second Season (USA).nes" size="393232" crc="965b9a2f"/>
+		<rom name="Bases Loaded II - Second Season (USA)(1990)(Jaleco).nes" size="393232" crc="965b9a2f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1614,7 +1630,7 @@
 		<description>Bashi Bazook - Morphoid Masher (USA) (Prototype)</description>
 		<year>1989</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bashi Bazook - Morphoid Masher (USA) (Proto).nes" size="262160" crc="11c92b5d"/>
+		<rom name="Bashi Bazook - Morphoid Masher (USA)(Proto)(1989)(Jaleco).nes" size="262160" crc="11c92b5d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1640,7 +1656,7 @@
 		<description>Batman - Return of the Joker (USA)</description>
 		<year>1991</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Batman - Return of the Joker (USA).nes" size="393232" crc="e14a7971"/>
+		<rom name="Batman - Return of the Joker (USA)(1991)(Sunsoft).nes" size="393232" crc="e14a7971"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1657,7 +1673,7 @@
 		<description>Batman - The Video Game (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Batman - The Video Game (Japan).nes" size="262160" crc="15f9a645"/>
+		<rom name="Batman - The Video Game (Japan)(1989)(Sunsoft).nes" size="262160" crc="15f9a645"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1665,7 +1681,7 @@
 		<description>Batman - The Video Game (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Batman - The Video Game (USA).nes" size="262160" crc="395569ec"/>
+		<rom name="Batman - The Video Game (USA)(1990)(Sunsoft).nes" size="262160" crc="395569ec"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1673,7 +1689,7 @@
 		<description>Batman Returns (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Batman Returns (USA).nes" size="393232" crc="e625e398"/>
+		<rom name="Batman Returns (USA)(1993)(Konami).nes" size="393232" crc="e625e398"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2045,7 +2061,7 @@
 		<description>Bird Week (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Toemiland</manufacturer>
-		<rom name="Bird Week (Japan).nes" size="24592" crc="d9b9b3ab"/>
+		<rom name="Bird Week (Japan)(1986)(Toemiland).nes" size="24592" crc="d9b9b3ab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2053,7 +2069,7 @@
 		<description>Black Bass 2, The (Japan)</description>
 		<year>1988</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Black Bass 2, The (Japan).nes" size="131088" crc="5a514495"/>
+		<rom name="Black Bass 2, The (Japan)(1988)(HOT-B).nes" size="131088" crc="5a514495"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2061,7 +2077,7 @@
 		<description>Black Bass 2, The (USA)</description>
 		<year>1989</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Black Bass 2, The (USA).nes" size="131088" crc="2e069e5f"/>
+		<rom name="Black Bass 2, The (USA)(1989)(HOT-B).nes" size="131088" crc="2e069e5f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2069,7 +2085,7 @@
 		<description>Black Bass, The (Japan)</description>
 		<year>1987</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Black Bass, The (Japan).nes" size="131088" crc="73bccc8b"/>
+		<rom name="Black Bass, The (Japan)(1987)(HOT-B).nes" size="131088" crc="73bccc8b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2095,7 +2111,7 @@
 		<description>Blackjack (USA)</description>
 		<year>1992</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Blackjack (U)(1992)(AVE).nes" size="65552" crc="00ac0fac"/>
+		<rom name="Blackjack (USA)(1992)(AVE).nes" size="65552" crc="00ac0fac"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2112,7 +2128,7 @@
 		<description>Blades of Steel (USA)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Blades of Steel (USA).nes" size="131088" crc="b9bcf910"/>
+		<rom name="Blades of Steel (USA)(1988)(Konami).nes" size="131088" crc="b9bcf910"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2129,7 +2145,7 @@
 		<description>Blaster Master (USA)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Blaster Master (U)(1988)(Sunsoft).nes" size="262160" crc="52bcf64a"/>
+		<rom name="Blaster Master (USA)(1988)(Sunsoft).nes" size="262160" crc="52bcf64a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2139,6 +2155,14 @@
 		<year>2014-2024</year>
 		<manufacturer>climax, HalDanGhor</manufacturer>
 		<rom name="Blaster Master - The Lost Key v1.06 (2014-2024)(climax, HalDanGhor).nes" size="262160" crc="56935623"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="blastermasterj" cloneof="blastermaster" romof="blastermaster" sourcefile="nes/d_nes.cpp">
+		<description>Blaster Master ~ Chou-Wakusei Senki - MetaFight (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Chou-Wakusei Senki - MetaFight (Japan)(1988)(Sunsoft).nes" size="262160" crc="6e286bb2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2189,8 +2213,8 @@
 	<game name="blockout" sourcefile="nes/d_nes.cpp">
 		<description>Block Out (USA)</description>
 		<year>1990</year>
-		<manufacturer>California Dreams / Technos</manufacturer>
-		<rom name="Block Out (USA).nes" size="131088" crc="deff01f6"/>
+		<manufacturer>California Dreams - Technos</manufacturer>
+		<rom name="Block Out (USA)(1990)(California Dreams - Technos).nes" size="131088" crc="deff01f6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2207,7 +2231,7 @@
 		<description>Blodia Land - Puzzle Quest (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tonkin House</manufacturer>
-		<rom name="Blodia Land - Puzzle Quest (Japan).nes" size="262160" crc="6d3d0c1e"/>
+		<rom name="Blodia Land - Puzzle Quest (Japan)(1990)(Tonkin House).nes" size="262160" crc="6d3d0c1e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2228,20 +2252,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="bloodwar" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Bloody Warriors - Shan-Go no Gyakushuu (Hack, English)</description>
-		<year>2021</year>
-		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Bloody Warriors - Shan-Go no Gyakushuu (T-Eng).nes" size="262160" crc="c06584e5"/>
+	<game name="bloodwarj" cloneof="bloodwar" romof="bloodwar" sourcefile="nes/d_nes.cpp">
+		<description>Bloody Warriors: Shan-Go no Gyakushuu (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Toei Animation</manufacturer>
+		<rom name="Bloody Warriors - Shan-Go no Gyakushuu (Japan)(1990)(Toei Animation).nes" size="262160" crc="5cb5676f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="bloodwarj" cloneof="bloodwar" romof="bloodwar" sourcefile="nes/d_nes.cpp">
-		<description>Bloody Warriors - Shan-Go no Gyakushuu (Japan)</description>
-		<year>1990</year>
-		<manufacturer>Toei Animation</manufacturer>
-		<rom name="Bloody Warriors - Shan-Go no Gyakushuu (Japan).nes" size="262160" crc="5cb5676f"/>
+	<game name="bloodwar" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Bloody Warriors: Shan-Go Strikes Back (Hack, English)</description>
+		<year>2021</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Bloody Warriors - Shan-Go Strikes Back T-Eng (2021)(BlackPaladin).nes" size="262160" crc="c06584e5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2258,7 +2282,7 @@
 		<description>Blue Marlin, The (USA)</description>
 		<year>1992</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Blue Marlin, The (USA).nes" size="262160" crc="d9e8e747"/>
+		<rom name="Blue Marlin, The (USA)(1992)(HOT-B).nes" size="262160" crc="d9e8e747"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2266,7 +2290,7 @@
 		<description>Blue Shadow (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Blue Shadow (Europe).nes" size="262160" crc="e3b889d9"/>
+		<rom name="Blue Shadow (Euro)(1991)(Taito).nes" size="262160" crc="e3b889d9"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -3133,8 +3157,8 @@
 	<game name="chikichimacmoura" cloneof="wackyraces" romof="wackyraces" sourcefile="nes/d_nes.cpp">
 		<description>Chiki Chiki Machine Mou Race (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Chiki Chiki Machine Mou Race (Japan).nes" size="262160" crc="fda7b555"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Chiki Chiki Machine Mou Race (Japan)(1991)(Atlus Co.).nes" size="262160" crc="fda7b555"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7326,6 +7350,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gleamy" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Gleamy the Cube (HB)</description>
+		<year>2023</year>
+		<manufacturer>Rigg'd Games</manufacturer>
+		<rom name="Gleamy the Cube (2023)(Rigg'd Games).nes" size="40976" crc="fe1cada7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="heracles2" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Glory of Heracles II, The - Titans' Downfall (Hack, English v1.31)</description>
@@ -7470,8 +7503,8 @@
 	<game name="golfgs" sourcefile="nes/d_nes.cpp">
 		<description>Golf Grand Slam (USA)</description>
 		<year>1991</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Golf Grand Slam (USA)(1991)(Atlus).nes" size="262160" crc="b4a1d511"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Golf Grand Slam (USA)(1991)(Atlus Co.).nes" size="262160" crc="b4a1d511"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8527,8 +8560,8 @@
 	<game name="hosmiruhito" cloneof="stargazers" romof="stargazers" sourcefile="nes/d_nes.cpp">
 		<description>Hoshi wo Miru Hito (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Hot-B</manufacturer>
-		<rom name="Hoshi wo Miru Hito (J)(1987)(Hot-B).nes" size="131088" crc="0ec30976"/>
+		<manufacturer>HOT-B</manufacturer>
+		<rom name="Hoshi wo Miru Hito (J)(1987)(HOT-B).nes" size="131088" crc="0ec30976"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10374,7 +10407,7 @@
 		<description>Legend of Zelda DX, The (Graphics Hack)</description>
 		<year>2014</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="legend of zelda dx (2014)(pacnsacdave).nes" size="131088" crc="0698579d"/>
+		<rom name="Legend of Zelda DX, The (2014)(pacnsacdave).nes" size="131088" crc="0698579d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10410,6 +10443,15 @@
 		<year>2023</year>
 		<manufacturer>arnpoly</manufacturer>
 		<rom name="Legend of Zelda, The - Ancient Dungeon v3.0 (2023)(arnpoly).nes" size="131088" crc="2846a6b8"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="legenzeldl" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Legend of Zelda, The - Dark Labyrinth (HB)</description>
+		<year>2023</year>
+		<manufacturer>pacnsacdave</manufacturer>
+		<rom name="Legend of Zelda, The - Dark Labyrinth (2023)(pacnsacdave).nes" size="524304" crc="c190ffc1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12117,7 +12159,7 @@
 		<description>Mischief Castle (HB)</description>
 		<year>2024</year>
 		<manufacturer>kn56k</manufacturer>
-		<rom name="Mischief Castle (2024)(kn56k).nes" size="524304" crc="73e3120b"/>
+		<rom name="Mischief Castle (2024)(kn56k).nes" size="524304" crc="39fc03f4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12244,7 +12286,7 @@
 		<description>Mojon Twins Multicart (HB)</description>
 		<year>2016</year>
 		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Mojon Twins Multicart (HB).nes" size="393232" crc="eec1e108"/>
+		<rom name="Mojon Twins Multicart (2016)(The Mojon Twins).nes" size="393232" crc="eec1e108"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12837,8 +12879,8 @@
 	<game name="newyornya" cloneof="rockinkats" romof="rockinkats" sourcefile="nes/d_nes.cpp">
 		<description>New York Nyankies (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="New York Nyankies (Japan)(1991)(Atlus).nes" size="262160" crc="07503930"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="New York Nyankies (Japan)(1991)(Atlus Co.).nes" size="262160" crc="07503930"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13860,6 +13902,15 @@
 		<year>1992</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Pizza Pop! (Japan).nes" size="262160" crc="361729fa"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pizzaport" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Pizza Portals (HB)</description>
+		<year>2024</year>
+		<manufacturer>Artix</manufacturer>
+		<rom name="Pizza Portals (2024)(Artix).nes" size="524304" crc="baedd12e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15062,8 +15113,8 @@
 	<game name="rockinkats" sourcefile="nes/d_nes.cpp">
 		<description>Rockin' Kats (USA)</description>
 		<year>1991</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Rockin' Kats (USA).nes" size="262160" crc="a3b4f5de"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Rockin' Kats (USA)(1991)(Atlus Co.).nes" size="262160" crc="a3b4f5de"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17113,7 +17164,7 @@
 		<description>Super Bat Puncher (HB, Demo)</description>
 		<year>2011</year>
 		<manufacturer>Morphcat Games</manufacturer>
-		<rom name="Super Bat Puncher (Demo).nes" size="131088" crc="d04302fa"/>
+		<rom name="Super Bat Puncher (Demo)(2011)(Morphcat Games).nes" size="131088" crc="d04302fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17898,8 +17949,8 @@
 	<game name="tashingenj" cloneof="tashingen" romof="tashingen" sourcefile="nes/d_nes.cpp">
 		<description>Takeda Shingen (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Hot-B</manufacturer>
-		<rom name="Takeda Shingen (J)(1988)(Hot-B).nes" size="131088" crc="394b0b7b"/>
+		<manufacturer>HOT-B</manufacturer>
+		<rom name="Takeda Shingen (J)(1988)(HOT-B).nes" size="131088" crc="394b0b7b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19574,8 +19625,8 @@
 	<game name="wackyraces" sourcefile="nes/d_nes.cpp">
 		<description>Wacky Races (USA)</description>
 		<year>1992</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Wacky Races (USA).nes" size="262160" crc="6a862965"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Wacky Races (USA)(1992)(Atlus Co.).nes" size="262160" crc="6a862965"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19846,7 +19897,16 @@
 		<description>Who Framed Roger Rabbit (USA)</description>
 		<year>1989</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Who Framed Roger Rabbit (USA).nes" size="131088" crc="e21dab3e"/>
+		<rom name="Who Framed Roger Rabbit (USA)(1989)(Ljn).nes" size="131088" crc="e21dab3e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="whofrarograbre" cloneof="whofrarograb" romof="whofrarograb" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Who Framed Roger Rabbit - Reframed (Hack)</description>
+		<year>2024</year>
+		<manufacturer>Lemmarx163</manufacturer>
+		<rom name="Who Framed Roger Rabbit - Reframed (2024)(Lemmarx163).nes" size="131088" crc="744ae9dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19854,23 +19914,23 @@
 		<description>Whomp 'Em (USA)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Whomp 'Em (USA).nes" size="262160" crc="4546aae3"/>
+		<rom name="Whomp 'Em (USA)(1991)(Jaleco).nes" size="262160" crc="4546aae3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="widget" sourcefile="nes/d_nes.cpp">
 		<description>Widget (USA)</description>
 		<year>1992</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="Widget (USA).nes" size="262160" crc="cd5a8930"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Widget (USA)(1992)(Atlus Co.).nes" size="262160" crc="cd5a8930"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="wildgunman" sourcefile="nes/d_nes.cpp">
-		<description>Wild Gunman (World) (Rev A)</description>
+		<description>Wild Gunman (World, Rev A)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Wild Gunman (World) (Rev A).nes" size="24592" crc="330f53ee"/>
+		<rom name="Wild Gunman (World, Rev A)(1984)(Nintendo).nes" size="24592" crc="330f53ee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19878,7 +19938,7 @@
 		<description>Willow (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Willow (Japan).nes" size="262160" crc="189462c2"/>
+		<rom name="Willow (Japan)(1989)(Capcom).nes" size="262160" crc="189462c2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19887,7 +19947,7 @@
 		<description>Willow (No Flash ed.) (Hack, v1.1)</description>
 		<year>2020</year>
 		<manufacturer>Jigglysaint</manufacturer>
-		<rom name="Willow (Hack, No Flash).nes" size="262160" crc="956ea1a6"/>
+		<rom name="Willow (Hack, No Flash v1.1)(2020)(Jigglysaint).nes" size="262160" crc="956ea1a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19895,7 +19955,7 @@
 		<description>Willow (USA)</description>
 		<year>1989</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Willow (USA).nes" size="262160" crc="5f86a065"/>
+		<rom name="Willow (USA)(1989)(Capcom).nes" size="262160" crc="5f86a065"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19903,7 +19963,7 @@
 		<description>Win, Lose or Draw (USA)</description>
 		<year>1990</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
-		<rom name="Win, Lose or Draw (USA).nes" size="131088" crc="258d6838"/>
+		<rom name="Win, Lose or Draw (USA)(1990)(Hi Tech Expressions).nes" size="131088" crc="258d6838"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19911,7 +19971,7 @@
 		<description>Wing of Madoola, The (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Wing of Madoola, The (Japan).nes" size="65552" crc="929899d8"/>
+		<rom name="Wing of Madoola, The (Japan)(1986)(Sunsoft).nes" size="65552" crc="929899d8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
