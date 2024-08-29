@@ -2280,17 +2280,17 @@
 		<description>Barbarian (Psygnosis) (48K)</description>
 		<year>1988</year>
 		<manufacturer>Melbourne House</manufacturer>
-		<rom name="Barbarian (1988)(Melbourne House).tap" size="46467" crc="51bf72c1"/>
+		<rom name="Barbarian 48K (1988)(Melbourne House).tap" size="46467" crc="51bf72c1"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="barbarn2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Press 'N' to through doors</comment>
-		<description>Barbarian II - The Dungeon of Drax (128K)</description>
+		<comment>Press 'N' to through doors/gates</comment>
+		<description>Barbarian II: The Dungeon of Drax (128K)</description>
 		<year>1988</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Barbarian II - The Dungeon of Drax (1988)(Palace Software)[128K].z80" size="109676" crc="2215c3b7"/>
+		<rom name="Barbarian II - The Dungeon of Drax 128K (1988)(Palace Software).z80" size="109676" crc="2215c3b7"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -2301,7 +2301,7 @@
 		<description>Barbarian: The Ultimate Warrior - Part 1 (48K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Barbarian - 2 Players (1987)(Palace Software).tap" size="56407" crc="18dd79c2"/>
+		<rom name="Barbarian - 2 Players 48K (1987)(Palace Software).tap" size="56407" crc="18dd79c2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2311,7 +2311,7 @@
 		<description>Barbarian: The Ultimate Warrior - Part 2 (48K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Barbarian - 1 Player (1987)(Palace Software).tap" size="56407" crc="a99a7baf"/>
+		<rom name="Barbarian - 1 Player 48K (1987)(Palace Software).tap" size="56407" crc="a99a7baf"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2401,7 +2401,7 @@
 		<description>Batman (128K)</description>
 		<year>1986</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman (1986)(Ocean)(48K-128K).tap" size="47819" crc="898d7592"/>
+		<rom name="Batman 48K-128K (1986)(Ocean).tap" size="47819" crc="898d7592"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -2411,36 +2411,8 @@
 		<description>Batman (48K)</description>
 		<year>1986</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman (1986)(Ocean)(48K-128K).tap" merge="Batman (1986)(Ocean)(48K-128K).tap" size="47819" crc="898d7592"/>
+		<rom name="Batman 48K-128K (1986)(Ocean).tap" merge="Batman 48K-128K (1986)(Ocean).tap" size="47819" crc="898d7592"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="batmancc" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Batman - The Caped Crusader - Part 1 - A Bird in the Hand (48K)</description>
-		<year>1988</year>
-		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman - The Caped Crusader - A Bird in the Hand (1988)(Ocean).tap" size="48076" crc="3102cef1"/>
-		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="batmancc2" cloneof="batmancc" romof="batmancc" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Batman - The Caped Crusader - Part 2 - A Fete Worse than Death (48K)</description>
-		<year>1988</year>
-		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman - The Caped Crusader - A Fete Worse than Death (1988)(Ocean).tap" size="47806" crc="8591332f"/>
-		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="batmanmv" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Batman - The Movie (128K)</description>
-		<year>1989</year>
-		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman - The Movie 128K (1989)(Ocean).tap" size="121528" crc="910b0bf4"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2448,8 +2420,36 @@
 		<description>Batman - The Puaj Edition (48K)</description>
 		<year>1989</year>
 		<manufacturer>Micro House</manufacturer>
-		<rom name="Batman - The Puaj Edition (1989)(Micro House).z80" size="34550" crc="1ec85d88"/>
+		<rom name="Batman - The Puaj Edition 48K (1989)(Micro House).z80" size="34550" crc="1ec85d88"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="batmancc" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Batman: The Caped Crusader - Part 1: A Bird in the Hand (48K)</description>
+		<year>1988</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Batman - The Caped Crusader - A Bird in the Hand 48K (1988)(Ocean).tap" size="48076" crc="3102cef1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="batmancc2" cloneof="batmancc" romof="batmancc" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Batman: The Caped Crusader - Part 2: A Fete Worse than Death (48K)</description>
+		<year>1988</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Batman - The Caped Crusader - A Fete Worse than Death 48K (1988)(Ocean).tap" size="47806" crc="8591332f"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="batmanmv" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Batman: The Movie (128K)</description>
+		<year>1989</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Batman - The Movie 128K (1989)(Ocean).tap" size="121528" crc="910b0bf4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5519,7 +5519,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chorace2" cloneof="chorace0" romof="chorace0" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Access Code = 54590173</comment>
+		<comment>Homebrew, Access Code: 54590173</comment>
 		<description>Cousin Horace - Chapter 2 (48K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
@@ -5529,7 +5529,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chorace3" cloneof="chorace0" romof="chorace0" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Access Code = 65731498</comment>
+		<comment>Homebrew, Access Code: 65731498</comment>
 		<description>Cousin Horace - Chapter 3 (48K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
@@ -5539,7 +5539,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chorace4" cloneof="chorace0" romof="chorace0" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Access Code = 29402763</comment>
+		<comment>Homebrew, Access Code: 29402763</comment>
 		<description>Cousin Horace - Chapter 4 (48K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
@@ -5549,7 +5549,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chorace5" cloneof="chorace0" romof="chorace0" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Access Code = 04758812</comment>
+		<comment>Homebrew, Access Code: 04758812</comment>
 		<description>Cousin Horace - Chapter 5 (48K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
@@ -9063,6 +9063,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="franknsteinrbt" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Frank N Stein Re-booted (48K) (HB)</description>
+		<year>2011</year>
+		<manufacturer>Colin Stewart</manufacturer>
+		<rom name="Frank N Stein Re-booted 48K (2011)(Colin Stewart).tap" size="45250" crc="00dec00d"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="frankensteinjr" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Frankenstein Jnr (48K)</description>
 		<year>1990</year>
@@ -9472,7 +9482,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="garfield" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Garfield - Big Fat Hairy Deal (48K)</description>
+		<description>Garfield: Big Fat Hairy Deal (48K)</description>
 		<year>1988</year>
 		<manufacturer>The Edge</manufacturer>
 		<rom name="Garfield - Big, Fat, Hairy Deal (1988)(The Edge).tap" size="43785" crc="45c3ceb8"/>
@@ -9481,7 +9491,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="garfield2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Garfield - Winter's Tail (48K)</description>
+		<description>Garfield: Winter's Tail (48K)</description>
 		<year>1990</year>
 		<manufacturer>The Edge</manufacturer>
 		<rom name="Garfield - Winter's Tail 48K (1990)(The Edge).tap" size="58470" crc="74f9f23e"/>
@@ -13800,6 +13810,48 @@
 		<manufacturer>Imagine Software</manufacturer>
 		<rom name="MOVIE 48K (1986)(Imagine).tap" size="48594" crc="4f413f00"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="m348en128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>M348 (English) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tartessos Games</manufacturer>
+		<rom name="M348 EN 128K (2024)(Tartessos Games).tap" size="57714" crc="f3a08128"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="m348en48" cloneof="m348en128" romof="m348en128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>M348 (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tartessos Games</manufacturer>
+		<rom name="M348 EN 48K (2024)(Tartessos Games).tap" size="57361" crc="20af0941"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="m348es128" cloneof="m348en128" romof="m348en128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>M348 (Spanish) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tartessos Games</manufacturer>
+		<rom name="M348 ES 128K (2024)(Tartessos Games).tap" size="57774" crc="8e59ecf8"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="m348es48" cloneof="m348en128" romof="m348en128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>M348 (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tartessos Games</manufacturer>
+		<rom name="M348 ES 48K (2024)(Tartessos Games).tap" size="57420" crc="b30826a2"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -24042,6 +24094,17 @@
 		<manufacturer>System 4</manufacturer>
 		<rom name="Underground ES 48K (1988)(System 4).tap" size="49575" crc="0470e56c"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="undseasol" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Undersea Colossus, The (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>TokuSoft</manufacturer>
+		<rom name="Undersea Colossus, The 128K (2024)(TokuSoft).tap" size="60058" crc="6947495c"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
