@@ -240,6 +240,9 @@ static INT32 LibretroAreaScan(INT32 nAction)
 	// including multiple iterations of the same frame through runahead,
 	// but it needs to stay synced between multiple iterations of a given frame
 	SCAN_VAR(nCurrentFrame);
+	// We want to serialize this for single-instance runahead, otherwise the counter increases faster
+	if (nAction & ACB_RUNAHEAD)
+		SCAN_VAR(nDiagInputHoldCounter);
 
 	BurnAreaScan(nAction, 0);
 

@@ -7565,8 +7565,8 @@
 		<comment>Homebrew</comment>
 		<description>Fix It Felix Jr. (HB)</description>
 		<year>2014</year>
-		<manufacturer>TOBIKOMI / Airwalkstudios</manufacturer>
-		<rom name="FixItFelixJr_AirwalkStudios.bin" size="601870" crc="424ff451"/>
+		<manufacturer>TOBIKOMI - AirwalkStudios</manufacturer>
+		<rom name="Fix It Felix Jr. (2014)(AirwalkStudios).bin" size="601870" crc="424ff451"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8217,7 +8217,7 @@
 		<description>Ghosts'n Goblins (HB, Ver.2021-11-01) (Unl)</description>
 		<year>2021</year>
 		<manufacturer>Fabrice Fernandez</manufacturer>
-		<rom name="Ghosts'n Goblins (HB, Ver. 2021-11-01).bin" size="318720" crc="fa4da29a"/>
+		<rom name="Ghosts'n Goblins Ver. 2021-11-01 (2021)(Fabrice Fernandez).bin" size="318720" crc="fa4da29a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8278,7 +8278,7 @@
 		<description>GLUF (HB)</description>
 		<year>2020</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="glufPD.bin" size="1048576" crc="ce5afac9"/>
+		<rom name="GLUF (2020)(RetroSouls).bin" size="1048576" crc="ce5afac9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8547,7 +8547,7 @@
 		<description>GraviBots (HB)</description>
 		<year>2021</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="gravibots (2021)(retrosouls).bin" size="1441792" crc="0d66d022"/>
+		<rom name="Gravibots (2021)(RetroSouls).bin" size="1441792" crc="0d66d022"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8630,7 +8630,7 @@
 		<description>Griel's Quest for the Holy Porron (HB)</description>
 		<year>2017</year>
 		<manufacturer>Oook!Lab</manufacturer>
-		<rom name="Griel's Quest for the Holy Porron.bin" size="2359296" crc="e1c3e75c"/>
+		<rom name="Griel's Quest for the Holy Porron (2017)(Oook-Lab).bin" size="2359296" crc="e1c3e75c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8690,6 +8690,15 @@
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="gunship (euro).bin" size="1048576" crc="da1440c9"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gunslugs" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>GunSlugs - Release 2.1 (HB)</description>
+		<year>2023</year>
+		<manufacturer>SpacePants Games</manufacturer>
+		<rom name="GunSlugs - Release 2.1 (2023)(SpacePants Games).bin" size="1048576" crc="1ea3b8e2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14895,7 +14904,7 @@
 		<description>Pat Riley Basketball (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pat riley basketball (usa).bin" size="524288" crc="3d9318a7"/>
+		<rom name="Pat Riley Basketball (USA)(1990)(Sega).bin" size="524288" crc="3d9318a7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17221,6 +17230,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sacredline2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Sacred Line II (HB, v1.02)</description>
+		<year>2024</year>
+		<manufacturer>Mega Cat Studios</manufacturer>
+		<rom name="Sacred Line II v1.02 (2024)(Mega Cat Studios).bin" size="3979616" crc="2121d724"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sagaias" cloneof="sagaia" romof="sagaia" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Sagaia (Hack, Spanish)</description>
@@ -17493,7 +17511,7 @@
 		<description>SD Valis (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Laser Soft</manufacturer>
-		<rom name="sd valis (jpn).bin" size="524288" crc="1aef72ea"/>
+		<rom name="SD Valis (Japan)(1992)(Laser Soft).bin" size="524288" crc="1aef72ea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19176,10 +19194,10 @@
 	</game>
 	<game name="s3compes" cloneof="sks3" romof="sks3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Sonic the Hedgehog 3 Complete - Emerald Safari (Hack)</description>
+		<description>Sonic the Hedgehog 3 Complete - Emerald Safari (Hack, v1.0a)</description>
 		<year>2023</year>
 		<manufacturer>BillyTime! Games</manufacturer>
-		<rom name="Sonic 3 Complete - Emerald Safari (2023)(BillyTime! Games).bin" size="3932160" crc="af6088b1"/>
+		<rom name="Sonic 3 Complete - Emerald Safari v1.0a (2023)(BillyTime! Games).bin" size="3932160" crc="9df80fed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20532,6 +20550,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sorplus" cloneof="sor" romof="sor" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Streets of Rage Plus (Hack)</description>
+		<year>2024</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Streets of Rage Plus (2024)(BillyTime! Games).bin" size="1048576" crc="606bb84f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="strider" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Strider (Euro, USA)</description>
 		<year>1990</year>
@@ -21183,7 +21210,7 @@
 		<description>Super Skidmarks (Euro, J-Cart)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="super skidmarks (euro) (j-cart).bin" size="2097152" crc="4a9c62f9"/>
+		<rom name="Super Skidmarks (Euro, J-Cart)(1995)(Codemasters).bin" size="2097152" crc="4a9c62f9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21192,7 +21219,7 @@
 		<description>Super Skidmarks (USA, Prototype)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="super skidmarks (euro) (beta).bin" size="2097152" crc="a61a0f0c"/>
+		<rom name="Super Skidmarks (Euro, Proto)(1995)(Codemasters).bin" size="2097152" crc="a61a0f0c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21217,8 +21244,17 @@
 		<comment>Hack</comment>
 		<description>Super Street Fighter II (Hack, Color and Sound)</description>
 		<year>2014</year>
-		<manufacturer>2014 Pyron (color), Stephane D (sound)</manufacturer>
-		<rom name="Super Street Fighter II Improvement.bin" size="5242880" crc="021b7403"/>
+		<manufacturer>2014 Pyron (color), Stephane D. (sound)</manufacturer>
+		<rom name="Super Street Fighter II - Color &amp; Sound Hack (2014)(Pyron, Stephane D).bin" size="5242880" crc="021b7403"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssf2rstn" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Super Street Fighter II - Restoration (Hack)</description>
+		<year>2024</year>
+		<manufacturer>Lord Hiryu, Aeronius</manufacturer>
+		<rom name="Super Street Fighter II - Restoration (2024)(Lord Hiryu, Aeronius).bin" size="5242880" crc="0945c0d3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21226,7 +21262,7 @@
 		<description>Super Street Fighter II - The New Challengers (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="super street fighter ii - the new challengers (euro).bin" size="5242880" crc="682c192f"/>
+		<rom name="Super Street Fighter II - The New Challengers (Euro)(1994)(Capcom).bin" size="5242880" crc="682c192f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21261,7 +21297,7 @@
 		<description>Super Street Fighter II - The New Challengers (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="super street fighter ii - the new challengers (jpn).bin" size="5242880" crc="d8eeb2bd"/>
+		<rom name="Super Street Fighter II - The New Challengers (Japan)(1994)(Capcom).bin" size="5242880" crc="d8eeb2bd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21269,7 +21305,7 @@
 		<description>Super Street Fighter II - The New Challengers (USA)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="super street fighter ii - the new challengers (usa).bin" size="5242880" crc="165defbf"/>
+		<rom name="Super Street Fighter II - The New Challengers (USA)(1994)(Capcom).bin" size="5242880" crc="165defbf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21277,7 +21313,7 @@
 		<description>Super Tank War (Taiwan) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Gamtec</manufacturer>
-		<rom name="Super Tank War.md" size="262144" crc="5e519ea1"/>
+		<rom name="Super Tank War (Unl)(199x)(Gamtec).md" size="262144" crc="5e519ea1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21285,7 +21321,7 @@
 		<description>Super Thunder Blade (Japan, Launch Cart)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11996.bin" size="524288" crc="8bd77836"/>
+		<rom name="Super Thunder Blade (Japan, Launch Cart)(1988)(Sega).bin" size="524288" crc="8bd77836"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21293,7 +21329,7 @@
 		<description>Super Thunder Blade (World)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12354.bin" size="524288" crc="b13087ee"/>
+		<rom name="Super Thunder Blade (World)(1989)(Sega).bin" size="524288" crc="b13087ee"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21301,7 +21337,7 @@
 		<description>Super Volley Ball (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Video System</manufacturer>
-		<rom name="super volley ball (jpn).bin" size="262144" crc="9b5c28ea"/>
+		<rom name="Super Volley Ball (Japan)(1991)(Video System).bin" size="262144" crc="9b5c28ea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21309,7 +21345,7 @@
 		<description>Super Volley Ball (USA)</description>
 		<year>1991</year>
 		<manufacturer>Video System</manufacturer>
-		<rom name="super volley ball (usa).bin" size="262144" crc="a88fee44"/>
+		<rom name="Super Volley Ball (USA)(1991)(Video System).bin" size="262144" crc="a88fee44"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21317,7 +21353,7 @@
 		<description>Super Volley Ball (USA, Alt)</description>
 		<year>1991</year>
 		<manufacturer>Video System</manufacturer>
-		<rom name="super volley ball (usa) (alt).bin" size="262144" crc="85102799"/>
+		<rom name="Super Volley Ball (USA, Alt)(1991)(Video System).bin" size="262144" crc="85102799"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21334,7 +21370,7 @@
 		<description>Superman (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="superman (usa).bin" size="1048576" crc="543a5869"/>
+		<rom name="Superman (USA)(1992)(Sunsoft).bin" size="1048576" crc="543a5869"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21343,7 +21379,7 @@
 		<description>Superman (USA, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="superman (usa) (beta).bin" size="1048576" crc="5cd0e1d4"/>
+		<rom name="Superman (USA, Proto)(1992)(Sunsoft).bin" size="1048576" crc="5cd0e1d4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21351,7 +21387,7 @@
 		<description>Superman - The Man of Steel (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="mpr-15327.bin" size="1048576" crc="7db434ba"/>
+		<rom name="Superman - The Man of Steel (Euro)(1993)(Virgin Games).bin" size="1048576" crc="7db434ba"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21368,7 +21404,7 @@
 		<description>Surging Aura (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="surging aura (jpn).bin" size="2097152" crc="65ac1d2b"/>
+		<rom name="Surging Aura (Japan)(1995)(Sega).bin" size="2097152" crc="65ac1d2b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21377,7 +21413,7 @@
 		<description>Swamp Thing (USA, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>NuVision</manufacturer>
-		<rom name="swamp thing proto.bin" size="4194304" crc="e6ebe9d5"/>
+		<rom name="Swamp Thing (USA, Proto)(1991)(NuVision).bin" size="4194304" crc="e6ebe9d5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21394,7 +21430,7 @@
 		<description>Sword of Sodan (Euro, USA)</description>
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="sword of sodan (euro, usa).bin" size="524288" crc="9cb8468f"/>
+		<rom name="Sword of Sodan (Euro, USA)(1990)(Electronic Arts).bin" size="524288" crc="9cb8468f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21411,7 +21447,7 @@
 		<description>Sword of Sodan (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sword of sodan (jpn).bin" size="524288" crc="58edb3f3"/>
+		<rom name="Sword of Sodan (Japan)(1990)(Sega).bin" size="524288" crc="58edb3f3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21419,7 +21455,7 @@
 		<description>Sword of Vermilion (Euro, USA)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13430+mpr-13431.bin" size="655360" crc="ea1bc9ab"/>
+		<rom name="Sword of Vermilion (Euro, USA)(1990)(Sega).bin" size="655360" crc="ea1bc9ab"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21445,7 +21481,7 @@
 		<description>Syd of Valis (USA)</description>
 		<year>1992</year>
 		<manufacturer>Renovation</manufacturer>
-		<rom name="syd of valis (usa).bin" size="524288" crc="37dc0108"/>
+		<rom name="Syd of Valis (USA)(1992)(Renovation).bin" size="524288" crc="37dc0108"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23547,7 +23583,7 @@
 		<description>Vermilion (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="vermilion (jpn).bin" size="655360" crc="e400dfc3"/>
+		<rom name="Vermilion (Japan)(1989)(Sega).bin" size="655360" crc="e400dfc3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

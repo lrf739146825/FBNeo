@@ -7470,6 +7470,7 @@ DRV		BurnDrvGunnail;
 DRV		BurnDrvGunnailp;
 DRV		BurnSpecgunship;
 DRV		BurnDrvmd_gunship;
+DRV		BurnDrvmd_gunslugs;
 DRV		BurnDrvMSX_gunsmokee;
 DRV		BurnSpecGunstar;
 DRV		BurnDrvmd_gunstar;
@@ -7951,6 +7952,7 @@ DRV		BurnDrvHookxr;
 DRV		BurnDrvHookxx;
 DRV		BurnDrvHoops96;
 DRV		BurnDrvHoops95;
+DRV		BurnDrvnes_hoops;
 DRV		BurnSpecHopnfrog;
 DRV		BurnSpecHopman;
 DRV		BurnDrvcv_hopman;
@@ -9700,6 +9702,7 @@ DRV		BurnSpecLirus48;
 DRV		BurnDrvMSX_litterbox;
 DRV		BurnDrvLithero;
 DRV		BurnDrvnes_littlelanc;
+DRV		BurnDrvnes_littleleague;
 DRV		BurnDrvnes_littlemagicc;
 DRV		BurnDrvnes_littlemagic;
 DRV		BurnDrvmd_littlemedusa;
@@ -11043,6 +11046,7 @@ DRV		BurnSpecModerateretribution;
 DRV		BurnDrvcv_moduleman;
 DRV		BurnDrvnes_moerotwi;
 DRV		BurnDrvfds_moerotwi;
+DRV		BurnDrvnes_moerojrbas;
 DRV		BurnDrvnes_moeroproten;
 DRV		BurnDrvMoegonta;
 DRV		BurnDrvsms_moggym100;
@@ -14759,6 +14763,7 @@ DRV		BurnSpecsabot_48;
 DRV		BurnSpecSabrewulf;
 DRV		BurnSpecSabrina;
 DRV		BurnSpecAntiriad;
+DRV		BurnDrvmd_sacredline2;
 DRV		BurnDrvMSX_sacredvalley;
 DRV		BurnDrvpce_sadaki7;
 DRV		BurnDrvSadari;
@@ -16982,6 +16987,7 @@ DRV		BurnDrvmd_sor2;
 DRV		BurnDrvsms_sor2;
 DRV		BurnDrvgg_sor2p;
 DRV		BurnDrvgg_sor2;
+DRV		BurnDrvmd_sorplus;
 DRV		BurnDrvStrnskil;
 DRV		BurnSpecstrider;
 DRV		BurnDrvmd_strider;
@@ -17517,6 +17523,7 @@ DRV		BurnDrvpce_sssoldr;
 DRV		BurnDrvtg_sssoldr;
 DRV		BurnDrvSstingry;
 DRV		BurnDrvmd_ssf2ics;
+DRV		BurnDrvmd_ssf2rstn;
 DRV		BurnDrvmd_ssf2;
 DRV		BurnDrvmd_ssf2cg;
 DRV		BurnDrvmd_ssf2fh;
@@ -28442,6 +28449,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGunnailp,			// GunNail (location test)
 	&BurnSpecgunship,			// Gunship (128K)
 	&BurnDrvmd_gunship,			// Gunship (Euro)
+	&BurnDrvmd_gunslugs,		// GunSlugs - Release 2.1 (HB)
 	&BurnDrvMSX_gunsmokee,		// Gunsmoke (Euro)
 	&BurnSpecGunstar,			// Gunstar (48K)
 	&BurnDrvmd_gunstar,			// Gunstar Heroes (Euro)
@@ -28923,6 +28931,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvHookxx,				// Hook (XX, Hack)
 	&BurnDrvHoops96,			// Hoops '96 (Europe/Asia 2.0)
 	&BurnDrvHoops95,			// Hoops (Europe/Asia 1.7)
+	&BurnDrvnes_hoops,			// Hoops (USA)
 	&BurnSpecHopnfrog,			// Hop'n'Frog (128K) (HB)
 	&BurnSpecHopman,			// Hopman (48K) (HB)
 	&BurnDrvcv_hopman,			// Hopman (HB)
@@ -30672,6 +30681,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_litterbox,		// Litter Box (HB)
 	&BurnDrvLithero,			// Little Hero
 	&BurnDrvnes_littlelanc,		// Little Lancelot (HB)
+	&BurnDrvnes_littleleague,	// Little League Baseball - Championship Series (USA)
 	&BurnDrvnes_littlemagicc,	// Little Magic (Hack, Chinese, MS Team 2nd Rev)
 	&BurnDrvnes_littlemagic,	// Little Magic (Japan)
 	&BurnDrvmd_littlemedusa,	// Little Medusa (HB)
@@ -32015,6 +32025,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvcv_moduleman,		// Module Man (HB)
 	&BurnDrvnes_moerotwi,		// Moero TwinBee - Cinnamon Hakase o Sukue! (Japan)
 	&BurnDrvfds_moerotwi,		// Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)
+	&BurnDrvnes_moerojrbas,		// Moero!! Junior Basket: Two on Two (Japan)
 	&BurnDrvnes_moeroproten,	// Moero!! Pro Tennis (Japan)
 	&BurnDrvMoegonta,			// Moeyo Gonta!! (Japan)
 	&BurnDrvsms_moggym100,		// Moggy Master (HB, v1.00)
@@ -35731,6 +35742,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSabrewulf,			// Sabre Wulf (48K)
 	&BurnSpecSabrina,			// Sabrina (Spanish) (48K)
 	&BurnSpecAntiriad,			// Sacred Armour of Antiriad, The (48K)
+	&BurnDrvmd_sacredline2,		// Sacred Line II (HB, v1.02)
 	&BurnDrvMSX_sacredvalley,	// Sacred Valley (HB)
 	&BurnDrvpce_sadaki7,		// Sadakichi 7 Series - Hideyoshi no Ougon (Japan)
 	&BurnDrvSadari,				// Sadari
@@ -36963,7 +36975,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_sonic3p1,		// Sonic the Hedgehog 3 (Prototype, 19931120)
 	&BurnDrvmd_sonic3u,			// Sonic the Hedgehog 3 (USA)
 	&BurnDrvmd_s3comp,			// Sonic the Hedgehog 3 Complete (Hack)
-	&BurnDrvmd_s3compes,		// Sonic the Hedgehog 3 Complete - Emerald Safari (Hack)
+	&BurnDrvmd_s3compes,		// Sonic the Hedgehog 3 Complete - Emerald Safari (Hack, v1.0a)
 	&BurnDrvmd_sonic31,			// Sonic the Hedgehog 3 in 1 (Hack)
 	&BurnDrvsms_sonicc,			// Sonic The Hedgehog Chaos (Euro, Brazil)
 	&BurnDrvsms_sonici131fm,	// Sonic The Hedgehog Improvement (Hack, v1.31) + (FM Mod v1.02)
@@ -37954,6 +37966,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_sor2,			// Streets of Rage II (Euro, Brazil)
 	&BurnDrvgg_sor2p,			// Streets of Rage II (Prototype)
 	&BurnDrvgg_sor2,			// Streets of Rage II (World) ~ Bare Knuckle II - Shitou e no Chingonka (Japan)
+	&BurnDrvmd_sorplus,			// Streets of Rage Plus (Hack)
 	&BurnDrvStrnskil,			// Strength & Skill
 	&BurnSpecstrider,			// Strider (128K)
 	&BurnDrvmd_strider,			// Strider (Euro, USA)
@@ -38489,6 +38502,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_sssoldr,			// Super Star Soldier (USA)
 	&BurnDrvSstingry,			// Super Stingray (Japan)
 	&BurnDrvmd_ssf2ics,			// Super Street Fighter II (Hack, Color and Sound)
+	&BurnDrvmd_ssf2rstn,		// Super Street Fighter II - Restoration (Hack)
 	&BurnDrvmd_ssf2,			// Super Street Fighter II - The New Challengers (Euro)
 	&BurnDrvmd_ssf2cg,			// Super Street Fighter II - The New Challengers (Hack, Color and Graphic)
 	&BurnDrvmd_ssf2fh,			// Super Street Fighter II - The New Challengers (Hack, Final)
@@ -49354,6 +49368,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gunnailp", "pst90s/d_nmk16.cpp"},
 	{ "spec_gunship", "spectrum/d_spectrum.cpp"},
 	{ "md_gunship", "megadrive/d_megadrive.cpp"},
+	{ "md_gunslugs", "megadrive/d_megadrive.cpp"},
 	{ "msx_gunsmokee", "msx/d_msx.cpp"},
 	{ "spec_gunstar", "spectrum/d_spectrum.cpp"},
 	{ "md_gunstar", "megadrive/d_megadrive.cpp"},
@@ -49831,6 +49846,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "hookxx", "irem/d_m92.cpp"},
 	{ "hoops96", "dataeast/d_decomlc.cpp"},
 	{ "hoops95", "dataeast/d_decomlc.cpp"},
+	{ "nes_hoops", "nes/d_nes.cpp"},
 	{ "spec_hopnfrog", "spectrum/d_spectrum.cpp"},
 	{ "spec_hopman", "spectrum/d_spectrum.cpp"},
 	{ "cv_hopman", "coleco/d_coleco.cpp"},
@@ -51558,6 +51574,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_litterbox", "msx/d_msx.cpp"},
 	{ "lithero", "irem/d_m62.cpp"},
 	{ "nes_littlelanc", "nes/d_nes.cpp"},
+	{ "nes_littleleague", "nes/d_nes.cpp"},
 	{ "nes_littlemagicc", "nes/d_nes.cpp"},
 	{ "nes_littlemagic", "nes/d_nes.cpp"},
 	{ "md_littlemedusa", "megadrive/d_megadrive.cpp"},
@@ -52891,6 +52908,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cv_moduleman", "coleco/d_coleco.cpp"},
 	{ "nes_moerotwi", "nes/d_nes.cpp"},
 	{ "fds_moerotwi", "nes/d_nes.cpp"},
+	{ "nes_moerojrbas", "nes/d_nes.cpp"},
 	{ "nes_moeroproten", "nes/d_nes.cpp"},
 	{ "moegonta", "pst90s/d_metro.cpp"},
 	{ "sms_moggym100", "sms/d_sms.cpp"},
@@ -56573,6 +56591,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_sabrewulf", "spectrum/d_spectrum.cpp"},
 	{ "spec_sabrina", "spectrum/d_spectrum.cpp"},
 	{ "spec_antiriad", "spectrum/d_spectrum.cpp"},
+	{ "md_sacredline2", "megadrive/d_megadrive.cpp"},
 	{ "msx_sacredvalley", "msx/d_msx.cpp"},
 	{ "pce_sadaki7", "pce/d_pce.cpp"},
 	{ "sadari", "pst90s/d_dooyong.cpp"},
@@ -58774,6 +58793,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_sor2", "sms/d_sms.cpp"},
 	{ "gg_sor2p", "sms/d_sms.cpp"},
 	{ "gg_sor2", "sms/d_sms.cpp"},
+	{ "md_sorplus", "megadrive/d_megadrive.cpp"},
 	{ "strnskil", "pre90s/d_markham.cpp"},
 	{ "spec_strider", "spectrum/d_spectrum.cpp"},
 	{ "md_strider", "megadrive/d_megadrive.cpp"},
@@ -59295,6 +59315,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tg_sssoldr", "pce/d_pce.cpp"},
 	{ "sstingry", "pre90s/d_alpha68k.cpp"},
 	{ "md_ssf2ics", "megadrive/d_megadrive.cpp"},
+	{ "md_ssf2rstn", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2cg", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2fh", "megadrive/d_megadrive.cpp"},

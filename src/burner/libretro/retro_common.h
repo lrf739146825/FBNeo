@@ -258,6 +258,7 @@ extern char g_rom_dir[MAX_PATH];
 extern TCHAR szAppPathDefPath[MAX_PATH];
 extern TCHAR szAppIpsesPath[MAX_PATH];
 extern TCHAR szAppRomdatasPath[MAX_PATH];
+extern UINT32 nDiagInputHoldCounter;
 
 char* str_char_replace(char* destination, char c_find, char c_replace);
 void set_neo_system_bios();
