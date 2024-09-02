@@ -8548,6 +8548,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="hoops" sourcefile="nes/d_nes.cpp">
+		<description>Hoops (USA)</description>
+		<year>1989</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Hoops (USA)(1989)(Jaleco).nes" size="262160" crc="08f89bb0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hoppinmad" sourcefile="nes/d_nes.cpp">
 		<comment>Prototype</comment>
 		<description>Hoppin' Mad (Prototype)</description>
@@ -10591,6 +10599,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="littleleague" sourcefile="nes/d_nes.cpp">
+		<description>Little League Baseball - Championship Series (USA)</description>
+		<year>1990</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="Little League Baseball - Championship Series (1990)(SNK)(USA).nes" size="262160" crc="7905ae67"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="littlemagicc" cloneof="littlemagic" romof="littlemagic" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Little Magic (Hack, Chinese, MS Team 2nd Rev)</description>
@@ -12261,6 +12277,14 @@
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Moero TwinBee - Cinnamon Hakase o Sukue! (Japan).nes" size="131088" crc="ac0a622b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="moerojrbas" cloneof="hoops" romof="hoops" sourcefile="nes/d_nes.cpp">
+		<description>Moero!! Junior Basket: Two on Two (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Moero!! Junior Basket - Two on Two (Japan)(1988)(Jaleco).nes" size="262160" crc="6ed22c25"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

@@ -9,7 +9,6 @@ INT32 nInputIntfMouseDivider = 1;
 retro_input_state_t input_cb;
 static retro_input_poll_t poll_cb;
 
-static unsigned nDiagInputComboStartFrame = 0;
 static unsigned nDiagInputHoldFrameDelay = 0;
 static unsigned nSwitchCode = 0;
 static unsigned nAxisNum = 0;
@@ -38,6 +37,7 @@ static char* pDirections[MAX_PLAYERS][6];
 // Macros
 UINT32 nMacroCount = 0;
 UINT32 nMaxMacro = 0;
+UINT32 nDiagInputHoldCounter = 0;
 
 #define RETRO_DEVICE_ID_3RD_COL_BOTTOM (nDeviceType[nPlayer] == RETROPAD_MODERN ? RETRO_DEVICE_ID_JOYPAD_R2 : RETRO_DEVICE_ID_JOYPAD_R )
 #define RETRO_DEVICE_ID_3RD_COL_TOP    (nDeviceType[nPlayer] == RETROPAD_MODERN ? RETRO_DEVICE_ID_JOYPAD_R  : RETRO_DEVICE_ID_JOYPAD_L )
@@ -2929,15 +2929,14 @@ static bool PollDiagInput()
 
 		if (bDiagComboActivated == false && bAllDiagInputPressed)
 		{
-			if (nDiagInputComboStartFrame == 0) // => User starts holding all the combo inputs
-				nDiagInputComboStartFrame = nCurrentFrame;
-			else if ((nCurrentFrame - nDiagInputComboStartFrame) > nDiagInputHoldFrameDelay) // Delays of the hold reached
+			nDiagInputHoldCounter++;
+			if (nDiagInputHoldCounter > nDiagInputHoldFrameDelay) // Delays of the hold reached
 				bDiagComboActivated = true;
 		}
 		else if (bOneDiagInputPressed == false)
 		{
 			bDiagComboActivated = false;
-			nDiagInputComboStartFrame = 0;
+			nDiagInputHoldCounter = 0;
 		}
 
 		if (bDiagComboActivated)
