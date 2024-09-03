@@ -3973,6 +3973,7 @@ DRV		BurnDrvCpsDaimakaib;
 DRV		BurnDrvCpsDaimakair;
 DRV		BurnDrvCpsDaimakai;
 DRV		BurnDrvsgx_daimakaid;
+DRV		BurnDrvsgx_daimakaii;
 DRV		BurnDrvmd_daimakai;
 DRV		BurnDrvsgx_daimakai1;
 DRV		BurnDrvsgx_daimakai;
@@ -24952,6 +24953,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsDaimakair,		// Dai Makai-Mura (Japan Resale Ver.)
 	&BurnDrvCpsDaimakai,		// Dai Makai-Mura (Japan)
 	&BurnDrvsgx_daimakaid,		// Dai Makaimura (Debug Menu Hack)
+	&BurnDrvsgx_daimakaii,		// Dai Makaimura (Improvement Hack, v1.0)
 	&BurnDrvmd_daimakai,		// Dai Makaimura (Japan)
 	&BurnDrvsgx_daimakai1,		// Dai Makaimura (Japan, SGX) (Alt)
 	&BurnDrvsgx_daimakai,		// Dai Makaimura (Japan, SGX)
@@ -45901,6 +45903,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "daimakair", "capcom/d_cps1.cpp"},
 	{ "daimakai", "capcom/d_cps1.cpp"},
 	{ "sgx_daimakaid", "pce/d_pce.cpp"},
+	{ "sgx_daimakaii", "pce/d_pce.cpp"},
 	{ "md_daimakai", "megadrive/d_megadrive.cpp"},
 	{ "sgx_daimakai1", "pce/d_pce.cpp"},
 	{ "sgx_daimakai", "pce/d_pce.cpp"},
