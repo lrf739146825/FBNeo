@@ -45,6 +45,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="daimakaii" cloneof="daimakai" romof="daimakai" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Dai Makaimura (Improvement Hack, v1.0)</description>
+		<year>2024</year>
+		<manufacturer>Upsilandre</manufacturer>
+		<rom name="Daimakaimura Improvement Hack (PC Engine SuperGrafx).pce" size="1048576" crc="460d8892"/>
+		<video type="raster" orientation="horizontal" width="352" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="daimakai1" cloneof="daimakai" romof="daimakai" sourcefile="pce/d_pce.cpp">
 		<description>Dai Makaimura (Japan, SGX) (Alt)</description>
 		<year>1990</year>
