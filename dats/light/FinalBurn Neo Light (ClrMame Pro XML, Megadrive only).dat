@@ -10506,6 +10506,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="knnsf" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Kunio no Nekketsu School Fighters (HB, Beta v.05b)</description>
+		<year>2024</year>
+		<manufacturer>UsagiRu</manufacturer>
+		<rom name="Kunio no Nekketsu School Fighters Beta v.05b (2023)(UsagiRu).bin" size="4194304" crc="1054a215"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kuuga" cloneof="vaportr" romof="vaportr" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Kuuga - Operation Code 'Vapor Trail' (Japan)</description>
 		<year>1991</year>
@@ -19195,9 +19204,9 @@
 	<game name="s3compes" cloneof="sks3" romof="sks3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Sonic the Hedgehog 3 Complete - Emerald Safari (Hack, v1.0a)</description>
-		<year>2023</year>
+		<year>2024</year>
 		<manufacturer>BillyTime! Games</manufacturer>
-		<rom name="Sonic 3 Complete - Emerald Safari v1.0a (2023)(BillyTime! Games).bin" size="3932160" crc="9df80fed"/>
+		<rom name="Sonic 3 Complete - Emerald Safari v1.0a (2024)(BillyTime! Games).bin" size="3932160" crc="9df80fed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

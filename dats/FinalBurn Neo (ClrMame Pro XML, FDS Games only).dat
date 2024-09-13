@@ -17,7 +17,7 @@
 		<description>19 - Neunzehn (Hack, English)</description>
 		<year>2015</year>
 		<manufacturer>MrRichard999</manufacturer>
-		<rom name="19 - Neunzehn (T-Eng).fds" size="131000" crc="da11432a"/>
+		<rom name="19 - Neunzehn T-Eng (2015)(MrRichard999).fds" size="131000" crc="da11432a"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -26,7 +26,7 @@
 		<description>19 - Neunzehn (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Soft Pro</manufacturer>
-		<rom name="19 - Neunzehn (Japan).fds" size="131016" crc="e6e06610"/>
+		<rom name="19 - Neunzehn (Japan)(1988)(Soft Pro).fds" size="131016" crc="e6e06610"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -35,7 +35,7 @@
 		<description>Adian no Tsue (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Adian no Tsue (Japan).fds" size="131000" crc="dcc7a8d6"/>
+		<rom name="Adian no Tsue (Japan)(1986)(Sunsoft).fds" size="131000" crc="dcc7a8d6"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -44,7 +44,7 @@
 		<description>Ai Senshi Nicol (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Ai Senshi Nicol (Japan).fds" size="131000" crc="21a1ad6e"/>
+		<rom name="Ai Senshi Nicol (Japan)(1987)(Konami).fds" size="131000" crc="21a1ad6e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -53,7 +53,7 @@
 		<description>Aki to Tsukasa no Fushigi no Kabe (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Super Pig</manufacturer>
-		<rom name="Aki to Tsukasa no Fushigi no Kabe (Japan).fds" size="131016" crc="d7b4a01e"/>
+		<rom name="Aki to Tsukasa no Fushigi no Kabe (Japan)(1988)(Super Pig).fds" size="131016" crc="d7b4a01e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -63,7 +63,7 @@
 		<description>Akumajou Dracula (Hack, English)</description>
 		<year>2020</year>
 		<manufacturer>DvD Translations</manufacturer>
-		<rom name="Akumajou Dracula (T-Eng).fds" size="131016" crc="f72f22af"/>
+		<rom name="Akumajou Dracula T-Eng (2020)(DvD Translations).fds" size="131016" crc="f72f22af"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -72,7 +72,7 @@
 		<description>Akumajou Dracula (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Akumajou Dracula (Japan).fds" size="131016" crc="ffed3158"/>
+		<rom name="Akumajou Dracula (Japan)(1986)(Konami).fds" size="131016" crc="ffed3158"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -80,8 +80,8 @@
 	<game name="akuusenrai" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Akuu Senki Raijin (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Square</manufacturer>
-		<rom name="Akuu Senki Raijin (Japan).fds" size="131016" crc="5117e64d"/>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Akuu Senki Raijin (Japan)(1988)(Squaresoft).fds" size="131016" crc="5117e64d"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -110,7 +110,7 @@
 		<description>All Night Nippon Super Mario Brothers (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="All Night Nippon Super Mario Brothers (Japan).fds" size="65500" crc="43e7fe95"/>
+		<rom name="All Night Nippon Super Mario Brothers (Japan)(1986)(Nintendo).fds" size="65500" crc="43e7fe95"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -118,8 +118,8 @@
 	<game name="appletowmon" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Apple Town Monogatari - Little Computer People (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Square</manufacturer>
-		<rom name="Apple Town Monogatari - Little Computer People (Japan).fds" size="131016" crc="bf89dd4a"/>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Apple Town Monogatari - Little Computer People (Japan)(1987)(Squaresoft).fds" size="131016" crc="bf89dd4a"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -129,7 +129,7 @@
 		<description>Armana no Kiseki (Hack, English)</description>
 		<year>2012</year>
 		<manufacturer>DvD Translations</manufacturer>
-		<rom name="Armana no Kiseki (T-Eng).fds" size="131000" crc="8b61e398"/>
+		<rom name="Armana no Kiseki T-Eng (2012)(DvD Translations).fds" size="131000" crc="8b61e398"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -138,7 +138,7 @@
 		<description>Armana no Kiseki (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Armana no Kiseki (Japan).fds" size="131016" crc="0bad64a5"/>
+		<rom name="Armana no Kiseki (Japan)(1987)(Konami).fds" size="131016" crc="0bad64a5"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -157,7 +157,7 @@
 		<description>Aspic - Majaou no Noroi (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bothtec</manufacturer>
-		<rom name="Aspic - Majaou no Noroi (J)(1988)(Bothtec).fds" size="131000" crc="1999addb"/>
+		<rom name="Aspic - Majaou no Noroi (Japan)(1988)(Bothtec).fds" size="131000" crc="1999addb"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -166,7 +166,7 @@
 		<description>Bakutoushi Patton-kun (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Soft Pro</manufacturer>
-		<rom name="Bakutoushi Patton-kun (Japan).fds" size="131016" crc="bdb5104d"/>
+		<rom name="Bakutoushi Patton-kun (Japan)(1988)(Soft Pro).fds" size="131016" crc="bdb5104d"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -175,7 +175,7 @@
 		<description>Big Challenge! Dogfight Spirit (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Big Challenge! Dogfight Spirit (Japan).fds" size="131016" crc="fcdb9fc9"/>
+		<rom name="Big Challenge! Dogfight Spirit (Japan)(1988)(Jaleco).fds" size="131016" crc="fcdb9fc9"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -184,7 +184,7 @@
 		<description>Big Challenge! Go! Go! Bowling (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Big Challenge! Go! Go! Bowling (Japan).fds" size="131016" crc="11519f4a"/>
+		<rom name="Big Challenge! Go! Go! Bowling (Japan)(1989)(Jaleco).fds" size="131016" crc="11519f4a"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -193,7 +193,7 @@
 		<description>Big Challenge! Gun Fighter (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Big Challenge! Gun Fighter (Japan).fds" size="131016" crc="691cb0c1"/>
+		<rom name="Big Challenge! Gun Fighter (Japan)(1989)(Jaleco).fds" size="131016" crc="691cb0c1"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -202,7 +202,7 @@
 		<description>Big Challenge! Juudou Senshuken (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Big Challenge! Juudou Senshuken (Japan).fds" size="131016" crc="a65712a7"/>
+		<rom name="Big Challenge! Juudou Senshuken (Japan)(1988)(Jaleco).fds" size="131016" crc="a65712a7"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -211,7 +211,7 @@
 		<description>Bio Miracle Bokutte Upa (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Bio Miracle Bokutte Upa (Japan).fds" size="131016" crc="75e44b0d"/>
+		<rom name="Bio Miracle Bokutte Upa (Japan)(1988)(Konami).fds" size="131016" crc="75e44b0d"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -220,7 +220,7 @@
 		<description>Bomber Man (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Bomber Man (Japan).fds" size="65516" crc="4f7bee06"/>
+		<rom name="Bomber Man (Japan)(1990)(Hudson Soft).fds" size="65516" crc="4f7bee06"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -228,8 +228,8 @@
 	<game name="bubblebobble" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Bubble Bobble (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Bubble Bobble (Japan).fds" size="131000" crc="8c8d153e"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Bubble Bobble (Japan)(1988)(Taito).fds" size="131000" crc="8c8d153e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -238,7 +238,7 @@
 		<description>BurgerTime (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="BurgerTime (Japan).fds" size="65516" crc="44e41aba"/>
+		<rom name="BurgerTime (Japan)(1987)(Data East).fds" size="65516" crc="44e41aba"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

@@ -6227,6 +6227,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="darknighte" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Dark Knight, The (English) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Mananuk</manufacturer>
+		<rom name="Dark Knight, The EN 128K (2024)(Mananuk).tap" size="64353" crc="bc00c3e7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="darknights" cloneof="darknighte" romof="darknighte" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Dark Knight, The (Spanish) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Mananuk</manufacturer>
+		<rom name="Dark Knight, The ES 128K (2024)(Mananuk).tap" size="64229" crc="8db09e89"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="darkredux" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Hold 'P' at the logo screen to skip the intro</comment>
 		<description>Dark Redux, The (English) (48K) (HB)</description>
@@ -9805,6 +9827,17 @@
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Gilligan's Gold 48K (1984)(Ocean).tap" size="45750" crc="8623c1a1"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gillimineb" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Gilligans Mine (128K) (HB, beta v1.04.1)</description>
+		<year>2024</year>
+		<manufacturer>Clebin Games</manufacturer>
+		<rom name="Gilligans Mine - beta v1.04.1 128K (2024)(Clebin Games).tap" size="63187" crc="ddf095c9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14414,6 +14447,27 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="maxstone128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone (Spanish) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone ES 128K (2024)(Flopping).tap" size="57394" crc="b882cd4b"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maxstone48" cloneof="maxstone128" romof="maxstone128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone ES 48K (2024)(Flopping).tap" size="57094" crc="9a150977"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mazania" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Mazania - Mage Rage Part II (48K) (HB)</description>
@@ -14656,7 +14710,7 @@
 		<description>Metro-Cross (48K)</description>
 		<year>1987</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Metro-Cross (1987)(U.S. Gold).tap" size="44446" crc="6e1d27d3"/>
+		<rom name="Metro-Cross 48K (1987)(U.S. Gold).tap" size="44446" crc="6e1d27d3"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15274,7 +15328,7 @@
 		<description>Moonsweeper (48K)</description>
 		<year>1983</year>
 		<manufacturer>CheetahSoft</manufacturer>
-		<rom name="Moonsweeper (1983)(CheetahSoft).z80" size="26570" crc="71b11ba8"/>
+		<rom name="Moonsweeper 48K (1983)(CheetahSoft).z80" size="26570" crc="71b11ba8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19736,10 +19790,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="samwarrior128k" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Samurai Warrior - Usagi Yojimbo (128K)</description>
+		<description>Samurai Warrior ~ Usagi Yojimbo (128K)</description>
 		<year>1988</year>
 		<manufacturer>Firebird Software</manufacturer>
-		<rom name="Samurai Warrior - Usagi Yojimbo 128k (1988)(Firebird).tap" size="53473" crc="989e9ffd"/>
+		<rom name="Samurai Warrior - Usagi Yojimbo 128K (1988)(Firebird).tap" size="53473" crc="989e9ffd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -20739,12 +20793,45 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="smellycat" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="smellycate" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Smelly Cat (English) (128K) (HB)</description>
+		<year>2022</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Smelly Cat EN 128K (2022)(Flopping).tap" size="48335" crc="fbd78a11"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smellycati" cloneof="smellycate" romof="smellycate" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Smelly Cat (Italian) (128K) (HB)</description>
+		<year>2022</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Smelly Cat IT 128K (2022)(Flopping).tap" size="48335" crc="3e07cc4f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smellycatp" cloneof="smellycate" romof="smellycate" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Smelly Cat (Portuguese) (128K) (HB)</description>
+		<year>2022</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Smelly Cat PT 128K (2022)(Flopping).tap" size="48335" crc="7259714a"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smellycats" cloneof="smellycate" romof="smellycate" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Smelly Cat (Spanish) (128K) (HB)</description>
 		<year>2022</year>
-		<manufacturer>flopping</manufacturer>
-		<rom name="Smelly Cat 128K (2022)(flopping).tap" size="48335" crc="73b91191"/>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Smelly Cat ES 128K (2022)(Flopping).tap" size="48335" crc="264ddb3a"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22243,7 +22330,7 @@
 		<description>Super Cycle (48K)</description>
 		<year>1987</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Super Cycle (1987)(U.S. Gold).z80" size="32852" crc="7aeedc00"/>
+		<rom name="Super Cycle 48K (1987)(U.S. Gold).z80" size="32852" crc="7aeedc00"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22478,7 +22565,7 @@
 		<description>Superman - The Man of Steel (48K)</description>
 		<year>1989</year>
 		<manufacturer>Tynesoft</manufacturer>
-		<rom name="Superman - The Man of Steel (1989)(Tynesoft).tap" size="300217" crc="578fc970"/>
+		<rom name="Superman - The Man of Steel 48K (1989)(Tynesoft).tap" size="300217" crc="578fc970"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -25012,6 +25099,16 @@
 		<year>1983</year>
 		<manufacturer>Quicksilva</manufacturer>
 		<rom name="Xadom 48K (1983)(Quicksilva).tap" size="46890" crc="6c3120a6"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="xanteljones" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Xantel Jones en la Tabla Verdosa (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>graelx</manufacturer>
+		<rom name="Xantel Jones en la Tabla Verdosa ES 48K (2024)(graelx).tap" size="41461" crc="18157570"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
