@@ -246,34 +246,43 @@
 		<description>Action 52 (USA)</description>
 		<year>1991</year>
 		<manufacturer>Active Enterprises</manufacturer>
-		<rom name="Action 52 (USA).nes" size="2097168" crc="7fa90614"/>
+		<rom name="Action 52 (USA)(1991)(Active Enterprises).nes" size="2097168" crc="7fa90614"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="actio53vol1stbu" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Action 53 vol 1 Streemerz Bundle (HB)</description>
+		<description>Action 53 vol.1: Streemerz Bundle + Compo 2011 (HB)</description>
 		<year>2013</year>
 		<manufacturer>Damian Yerrick &amp; Contributors</manufacturer>
-		<rom name="Action 53 vol 1 Streemerz Bundle (HB).nes" size="524304" crc="54fc4fae"/>
+		<rom name="Action 53 vol1 - Streemerz Bundle + Compo 2011 (2013)(Damian Yerrick &amp; Contributors).nes" size="524304" crc="54fc4fae"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="actio53vol2doac" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Action 53 vol 2 Double Action (HB)</description>
+		<description>Action 53 vol.2: Double Action + Compo Games (HB)</description>
 		<year>2015</year>
 		<manufacturer>Damian Yerrick &amp; Contributors</manufacturer>
-		<rom name="Action 53 vol 2 Double Action (HB).nes" size="524304" crc="4e9c9174"/>
+		<rom name="Action 53 vol2 - Double Action + Compo Games (2015)(Damian Yerrick &amp; Contributors).nes" size="524304" crc="4e9c9174"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="actio53vol3retw" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Action 53 vol 3 Revenge of the Twins (HB)</description>
+		<description>Action 53 vol.3: Revenge of the Twins + Compo Games (HB)</description>
 		<year>2018</year>
 		<manufacturer>Damian Yerrick &amp; Contributors</manufacturer>
-		<rom name="Action 53 vol 3 Revenge of the Twins (HB).nes" size="1048592" crc="0dc9110b"/>
+		<rom name="Action 53 vol3 - Revenge of the Twins (2018)(2018)(Damian Yerrick &amp; Contributors).nes" size="1048592" crc="0dc9110b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="actio53vol4act54" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Action 53 vol.4: Actually 54 - Compo 2017-18 (HB)</description>
+		<year>2020</year>
+		<manufacturer>Damian Yerrick &amp; Contributors</manufacturer>
+		<rom name="Action 53 vol4 - Actually 54 (2020)(Damian Yerrick &amp; Contributors).nes" size="2097168" crc="8e62e4c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -281,7 +290,7 @@
 		<description>Action in New York (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="Action in New York (Europe).nes" size="262160" crc="5773a224"/>
+		<rom name="Action in New York (Euro)(1992)(Infogrames).nes" size="262160" crc="5773a224"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -306,7 +315,7 @@
 		<description>Addams Family, The (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Addams Family, The (USA).nes" size="262160" crc="08e2af80"/>
+		<rom name="Addams Family, The (USA)(1992)(Ocean).nes" size="262160" crc="08e2af80"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -323,7 +332,7 @@
 		<description>Addams Family, The - Pugsley's Scavenger Hunt (USA)</description>
 		<year>1993</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Addams Family, The - Pugsley's Scavenger Hunt (USA).nes" size="262160" crc="6b8d777d"/>
+		<rom name="Addams Family, The - Pugsley's Scavenger Hunt (USA)(1993)(Ocean).nes" size="262160" crc="6b8d777d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -340,7 +349,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Dragon Strike (USA)</description>
 		<year>1990</year>
 		<manufacturer>Natsume</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - dragon strike (usa).nes" size="524304" crc="4c87cdde"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Dragon Strike (USA)(1990)(Natsume).nes" size="524304" crc="4c87cdde"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -349,7 +358,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Dragons of Flame (Hack, English v1.03)</description>
 		<year>2003</year>
 		<manufacturer>DvD Translations</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - dragons of flame (t-eng).nes" size="262160" crc="8196b978"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Dragons of Flame T-Eng (2003)(DvD Translations).nes" size="262160" crc="8196b978"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -366,7 +375,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Dragons of Flame (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - dragons of flame (japan).nes" size="262160" crc="8ba5de24"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Dragons of Flame (Japan)(1992)(Pony Canyon).nes" size="262160" crc="8ba5de24"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -383,7 +392,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Heroes of the Lance (USA)</description>
 		<year>1990</year>
 		<manufacturer>FCI Inc.</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - heroes of the lance (usa).nes" size="262160" crc="e880d426"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Heroes of the Lance (USA)(1990)(FCI Inc.).nes" size="262160" crc="e880d426"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -391,7 +400,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Hillsfar (USA)</description>
 		<year>1992</year>
 		<manufacturer>FCI Inc.</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - hillsfar (usa).nes" size="262160" crc="3849d0ee"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Hillsfar (USA)(1992)(FCI Inc.).nes" size="262160" crc="3849d0ee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -399,7 +408,7 @@
 		<description>Advanced Dungeons &amp; Dragons - Pool of Radiance (USA)</description>
 		<year>1992</year>
 		<manufacturer>FCI Inc.</manufacturer>
-		<rom name="advanced dungeons &amp; dragons - pool of radiance (usa).nes" size="655376" crc="bbea8d23"/>
+		<rom name="Advanced Dungeons &amp; Dragons - Pool of Radiance (USA)(1992)(FCI Inc.).nes" size="655376" crc="bbea8d23"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1937,11 +1946,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="biknekiroku" cloneof="crashnboy" romof="crashnboy" sourcefile="nes/d_nes.cpp">
+		<description>Bikkuri Nekketsu Shin Kiroku! - Harukanaru Kin Medal (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Technos</manufacturer>
+		<rom name="Bikkuri Nekketsu Shin Kiroku! - Harukanaru Kin Medal (Japan)(1992)(Technos).nes" size="262160" crc="f5202c9e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="billtedsexcvigaad" sourcefile="nes/d_nes.cpp">
 		<description>Bill &amp; Ted's Excellent Video Game Adventure (USA)</description>
 		<year>1991</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Bill &amp; Ted's Excellent Video Game Adventure (USA).nes" size="262160" crc="a905cc12"/>
+		<rom name="Bill &amp; Ted's Excellent Video Game Adventure (USA)(1991)(Ljn).nes" size="262160" crc="a905cc12"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1958,16 +1975,16 @@
 		<description>Binary Land (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Binary Land (Japan).nes" size="24592" crc="7e68abab"/>
+		<rom name="Binary Land (Japan)(1985)(Hudson Soft).nes" size="24592" crc="7e68abab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="bioforceape" sourcefile="nes/d_nes.cpp">
 		<comment>Prototype</comment>
-		<description>Bio Force Ape (Japan) (English) (Prototype)</description>
+		<description>Bio Force Ape (Japan, English, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Seta</manufacturer>
-		<rom name="Bio Force Ape (Japan) (En) (Proto).nes" size="262160" crc="339d5a6d"/>
+		<rom name="Bio Force Ape (Japan, En, Proto)(1991)(Seta).nes" size="262160" crc="339d5a6d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2010,7 +2027,7 @@
 		<description>Bio Miracle Bokutte Upa (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Bio Miracle Bokutte Upa (Japan).nes" size="262160" crc="e50ad737"/>
+		<rom name="Bio Miracle Bokutte Upa (Japan)(1993)(Konami).nes" size="262160" crc="e50ad737"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2018,7 +2035,7 @@
 		<description>Bio Senshi Dan - Increaser Tono Tatakai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Bio Senshi Dan - Increaser Tono Tatakai (Japan).nes" size="262160" crc="5b2d91d0"/>
+		<rom name="Bio Senshi Dan - Increaser Tono Tatakai (Japan)(1987)(Jaleco).nes" size="262160" crc="5b2d91d0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2044,7 +2061,7 @@
 		<description>Bionic Commando (USA)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Bionic Commando (USA).nes" size="262160" crc="83be000c"/>
+		<rom name="Bionic Commando (USA)(1988)(Capcom).nes" size="262160" crc="83be000c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2052,8 +2069,8 @@
 		<comment>Hack</comment>
 		<description>Bionic Commando - Return of Hitler (Hack)</description>
 		<year>2006</year>
-		<manufacturer>Chris M. Covell</manufacturer>
-		<rom name="Bionic Commando - Return of Hitler (Hack).nes" size="262160" crc="519a3005"/>
+		<manufacturer>Chris Covell</manufacturer>
+		<rom name="Bionic Commando - Return of Hitler (2006)(Chris Covell).nes" size="262160" crc="519a3005"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3695,7 +3712,7 @@
 		<description>Cosmo Genesis (Japan)</description>
 		<year>1986</year>
 		<manufacturer>ASCII Corp.</manufacturer>
-		<rom name="Cosmo Genesis (Japan).nes" size="65552" crc="d5c8ee20"/>
+		<rom name="Cosmo Genesis (Japan)(1986)(ASCII).nes" size="65552" crc="d5c8ee20"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3704,7 +3721,7 @@
 		<description>Cosmo Police Galivan (Hack, English)</description>
 		<year>2000</year>
 		<manufacturer>Jair</manufacturer>
-		<rom name="Cosmo Police Galivan (T-eng).nes" size="262160" crc="4f031cb0"/>
+		<rom name="Cosmo Police Galivan T-Eng (2000)(Jair).nes" size="262160" crc="4f031cb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3712,7 +3729,7 @@
 		<description>Cosmo Police Galivan (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="Cosmo Police Galivan (Japan).nes" size="262160" crc="bccada80"/>
+		<rom name="Cosmo Police Galivan (Japan)(1988)(Nihon Bussan).nes" size="262160" crc="bccada80"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3729,7 +3746,7 @@
 		<description>Cowboy Kid (USA)</description>
 		<year>1992</year>
 		<manufacturer>Romstar</manufacturer>
-		<rom name="Cowboy Kid (USA).nes" size="524304" crc="b150ae9a"/>
+		<rom name="Cowboy Kid (USA)(1992)(Romstar).nes" size="524304" crc="b150ae9a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3782,16 +3799,25 @@
 		<description>Crash 'n' the Boys - Street Challenge (USA)</description>
 		<year>1992</year>
 		<manufacturer>Technos</manufacturer>
-		<rom name="Crash 'n' the Boys - Street Challenge (USA).nes" size="262160" crc="ed63ccc5"/>
+		<rom name="Crash 'n' the Boys - Street Challenge (USA)(1992)(Technos).nes" size="262160" crc="ed63ccc5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="cratersong" sourcefile="nes/d_nes.cpp">
+	<game name="cratersong" cloneof="cratersongde" romof="cratersongde" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Crater Song (HB, v1.03)</description>
 		<year>2024</year>
 		<manufacturer>John Vanderhoef</manufacturer>
 		<rom name="Crater Song v1.03 (2024)(John Vanderhoef).nes" size="524304" crc="48df7653"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="cratersongde" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Crater Song - Definitive Edition (HB)</description>
+		<year>2024</year>
+		<manufacturer>John Vanderhoef</manufacturer>
+		<rom name="Crater Song - Definitive Edition (2024)(John Vanderhoef).nes" size="524304" crc="29d4b290"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5310,7 +5336,7 @@
 		<description>Dragon Warrior IV (Hack, Spanish)</description>
 		<year>2016</year>
 		<manufacturer>Butz Klauser</manufacturer>
-		<rom name="dragon warrior iv (usa) - castellano v1.0.nes" size="524304" crc="f5577473"/>
+		<rom name="Dragon Warrior IV T-Spa (2016)(Butz Klauser).nes" size="524304" crc="f5577473"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5327,7 +5353,7 @@
 		<description>Dragon's Lair (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="dragon's lair (usa) - castellano v1.0.nes" size="131088" crc="db3d2678"/>
+		<rom name="Dragon's Lair T-Spa (2019)(Wave).nes" size="131088" crc="db3d2678"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5411,7 +5437,7 @@
 		<description>DuckTales (Hack, Spanish v1.1)</description>
 		<year>2017</year>
 		<manufacturer>Darkchaosblast</manufacturer>
-		<rom name="duck tales (usa) - castellano v1.1.nes" size="131088" crc="fcb58532"/>
+		<rom name="Duck Tales T-Spa v1.1 (2017)(Darkchaosblast).nes" size="131088" crc="fcb58532"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5437,7 +5463,7 @@
 		<description>DuckTales 2 (Hack, Spanish v1.1)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="duck tales 2 (usa) - castellano v1.1.nes" size="131088" crc="908c28ff"/>
+		<rom name="Duck Tales 2 T-Spa v1.1 (2017)(Wave).nes" size="131088" crc="908c28ff"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5592,7 +5618,7 @@
 		<description>EarthBound Zero (Hack, Spanish v2.2)</description>
 		<year>2016</year>
 		<manufacturer>OAD</manufacturer>
-		<rom name="earthbound (usa) (proto) - castellano v2.2.nes" size="524304" crc="d80e3217"/>
+		<rom name="Earthbound T-Spa v2.2 (2016)(OAD).nes" size="524304" crc="d80e3217"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5652,7 +5678,7 @@
 		<description>Elevator Action (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="elevator action (usa) - castellano v1.0.nes" size="40976" crc="cb844314"/>
+		<rom name="Elevator Action T-Spa (2019)(Wave).nes" size="40976" crc="cb844314"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5702,6 +5728,15 @@
 		<year>1987</year>
 		<manufacturer>Toshiba Emi</manufacturer>
 		<rom name="Empire City - 1931 (Japan).nes" size="131088" crc="bd736ec8"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="smbendssmbha1" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ende's Super Mario Bros. (Hack)</description>
+		<year>2004</year>
+		<manufacturer>Ende</manufacturer>
+		<rom name="Ende's Super Mario Bros. Hack 1 (2004)(Ende).nes" size="40976" crc="1eeab4b1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6329,7 +6364,7 @@
 		<description>Final Fantasy (Hack, Spanish)</description>
 		<year>2002</year>
 		<manufacturer>Cunaaao</manufacturer>
-		<rom name="final fantasy (usa) - castellano v1.0.nes" size="262160" crc="83a1074c"/>
+		<rom name="Final Fantasy T-Spa (2002)(Cunaaao).nes" size="262160" crc="83a1074c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11415,6 +11450,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="mariotank" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Mario The Tank (Hack, v1.0.2a)</description>
+		<year>2024</year>
+		<manufacturer>AleFunky</manufacturer>
+		<rom name="Mario The Tank v1.0.2a (2024)(AleFunky).nes" size="131088" crc="0ed256e4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="mashieiydenwatga" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Mashin Eiyuu Den Wataru Gaiden (Hack, English)</description>
@@ -12590,12 +12634,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="multidude" sourcefile="nes/d_nes.cpp">
+	<game name="multidude" cloneof="multidudee" romof="multidudee" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Multidude (HB)</description>
 		<year>2014</year>
 		<manufacturer>RetroSouls</manufacturer>
 		<rom name="Multidude (2014)(RetroSouls).nes" size="40976" crc="154af940"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="multidudee" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>MultiDude - Evercade Edition (HB)</description>
+		<year>2019</year>
+		<manufacturer>RetroSouls</manufacturer>
+		<rom name="MultiDude - Evercade Edition (2019)(RetroSouls).nes" size="40976" crc="9a97a22d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17024,6 +17077,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="storiedsword" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Storied Sword, The (HB)</description>
+		<year>2024</year>
+		<manufacturer>Bite The Chili</manufacturer>
+		<rom name="Storied Sword, The (2024)(Bite The Chili).nes" size="524304" crc="6ea699bc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="streefig201c" cloneof="streefig201" romof="streefig201" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Street Fighter 2010 - The Final Fight (Hack, Spanish)</description>
@@ -17242,12 +17304,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="superhomwar" sourcefile="nes/d_nes.cpp">
+	<game name="shbouncer" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Hard Bouncer (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>Libra Bits</manufacturer>
+		<rom name="Super Hard Bouncer v1.1 (2024)(Libra Bits).nes" size="163856" crc="1bed94e5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="superhomwar" cloneof="superhomwaree" romof="superhomwaree" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Super Homebrew War (HB)</description>
 		<year>2019</year>
 		<manufacturer>gauauu</manufacturer>
 		<rom name="Super Homebrew War (2019)(gauauu).nes" size="65552" crc="16b8d50a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="superhomwaree" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Homebrew War - Evercade Edition (HB)</description>
+		<year>2021</year>
+		<manufacturer>gauauu</manufacturer>
+		<rom name="Super Homebrew War - Evercade Edition (2021)(gauauu).nes" size="65552" crc="6f620ca4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17283,7 +17363,7 @@
 		<description>Super Mario Bros 8 (GlobalHack, English)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
-		<rom name="Super Mario Bros 8 hack eng (2021)(Crying Onion).nes" size="393232" crc="1f5d9f05"/>
+		<rom name="Super Mario Bros 8 GlobalHack - Eng (2021)(Crying Onion).nes" size="393232" crc="1f5d9f05"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17292,7 +17372,7 @@
 		<description>Super Mario Bros 8 (GlobalHack, Spanish)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
-		<rom name="Super Mario Bros 8 hack spa (2021)(Crying Onion).nes" size="393232" crc="ef9c0a4f"/>
+		<rom name="Super Mario Bros 8 GlobalHack - Spa (2021)(Crying Onion).nes" size="393232" crc="ef9c0a4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17301,7 +17381,7 @@
 		<description>Super Mario Bros 8 Special Edition (GlobalHack, English)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
-		<rom name="Super Mario Bros 8 SE hack (2021)(Crying Onion).nes" size="393232" crc="aa5822c0"/>
+		<rom name="Super Mario Bros 8 SE GlobalHack - Eng (2021)(Crying Onion).nes" size="393232" crc="aa5822c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17403,10 +17483,10 @@
 	</game>
 	<game name="smbchredi" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Super Mario Bros. Christmas Edition (Hack)</description>
-		<year>2020</year>
-		<manufacturer>U Retro</manufacturer>
-		<rom name="Super Mario Bros. Christmas Edition (Hack).nes" size="73744" crc="b293a7c4"/>
+		<description>Super Mario Bros. Christmas Edition (Hack, v1.4)</description>
+		<year>2022</year>
+		<manufacturer>U retro</manufacturer>
+		<rom name="Super Mario Bros. Christmas Edition v1.4 (2022)(U retro).nes" size="73744" crc="038dd207"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17416,15 +17496,6 @@
 		<year>2023</year>
 		<manufacturer>flamephanter</manufacturer>
 		<rom name="Super Mario Bros. DX - Anniversary Edition v4.5 (2023)(flamepanther).nes" size="40976" crc="01fa70ec"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="smbendssmbha1" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Super Mario Bros. Ende's SMB (Hack)</description>
-		<year>2004</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Super Mario Bros. Ende's SMB Hack 1 (Hack).nes" size="40976" crc="1eeab4b1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
