@@ -675,8 +675,8 @@
 	<game name="akiraj" cloneof="akira" romof="akira" sourcefile="nes/d_nes.cpp">
 		<description>Akira (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Akira (Japan)(1988)(Taito).nes" size="393232" crc="9d83974c"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Akira (Japan)(1988)(Taito Corp.).nes" size="393232" crc="9d83974c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1101,8 +1101,8 @@
 	<game name="arkanoidii" sourcefile="nes/d_nes.cpp">
 		<description>Arkanoid II (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Arkanoid II (Japan)(1988)(Taito).nes" size="262160" crc="c7db2710"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Arkanoid II (Japan)(1988)(Taito Corp.).nes" size="262160" crc="c7db2710"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2501,7 +2501,7 @@
 		<description>Bubble Bobble (USA)</description>
 		<year>1988</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Bubble Bobble (USA).nes" size="163856" crc="d3a91b41"/>
+		<rom name="Bubble Bobble (USA)(1988)(Taito).nes" size="163856" crc="d3a91b41"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2518,7 +2518,7 @@
 		<description>Bubble Bobble Part 2 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Bubble Bobble Part 2 (USA).nes" size="262160" crc="ca06cb60"/>
+		<rom name="Bubble Bobble Part 2 (USA)(1993)(Taito).nes" size="262160" crc="ca06cb60"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2574,8 +2574,8 @@
 	<game name="buraifighterj" cloneof="buraifighter" romof="buraifighter" sourcefile="nes/d_nes.cpp">
 		<description>Burai Fighter (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Burai Fighter (Japan).nes" size="65552" crc="76af01af"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Burai Fighter (Japan)(1990)(Taito Corp.).nes" size="65552" crc="76af01af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2723,8 +2723,8 @@
 	<game name="captainsaver" cloneof="powerblade2" romof="powerblade2" sourcefile="nes/d_nes.cpp">
 		<description>Captain Saver (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Captain Saver (Japan).nes" size="262160" crc="fc97fc14"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Captain Saver (Japan)(1992)(Taito Corp.).nes" size="262160" crc="fc97fc14"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2873,7 +2873,7 @@
 		<description>Castlevania (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Castlevania (USA).nes" size="131088" crc="856114c8"/>
+		<rom name="Castlevania (USA)(1987)(Konami).nes" size="131088" crc="856114c8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2926,7 +2926,7 @@
 		<description>Castlevania II - Simon's Quest (USA)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Castlevania II - Simon's Quest (USA).nes" size="262160" crc="a9c2c503"/>
+		<rom name="Castlevania II - Simon's Quest (USA)(1988)(Konami).nes" size="262160" crc="a9c2c503"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2934,7 +2934,7 @@
 		<description>Castlevania III - Dracula's Curse (USA)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Castlevania III - Dracula's Curse (USA).nes" size="393232" crc="7cc9c669"/>
+		<rom name="Castlevania III - Dracula's Curse (USA)(1990)(Konami).nes" size="393232" crc="7cc9c669"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2952,7 +2952,7 @@
 		<description>Cat Ninden Teyandee (Hack, English)</description>
 		<year>2012</year>
 		<manufacturer>Dark Mark</manufacturer>
-		<rom name="Cat Ninden Teyandee (T-eng).nes" size="393232" crc="60f29773"/>
+		<rom name="Cat Ninden Teyandee T-Eng (2012)(Dark Mark).nes" size="393232" crc="60f29773"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2960,7 +2960,7 @@
 		<description>Cat Ninden Teyandee (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Cat Ninden Teyandee (Japan).nes" size="262160" crc="6f1485ed"/>
+		<rom name="Cat Ninden Teyandee (Japan)(1991)(Tecmo).nes" size="262160" crc="6f1485ed"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3012,8 +3012,8 @@
 	<game name="chacknpop" sourcefile="nes/d_nes.cpp">
 		<description>Chack'n Pop (Japan)</description>
 		<year>1985</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Chack'n Pop (Japan).nes" size="24592" crc="e9b39b87"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Chack'n Pop (Japan)(1985)(Taito Corp.).nes" size="24592" crc="e9b39b87"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3021,7 +3021,7 @@
 		<description>Challenge of the Dragon (USA)</description>
 		<year>1990</year>
 		<manufacturer>Color Dreams</manufacturer>
-		<rom name="Challenge of the Dragon (USA).nes" size="131088" crc="e737a11f"/>
+		<rom name="Challenge of the Dragon (USA)(1990)(Color Dreams).nes" size="131088" crc="e737a11f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3029,7 +3029,7 @@
 		<description>Challenger (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Challenger (Japan).nes" size="40976" crc="94339dff"/>
+		<rom name="Challenger (Japan)(1985)(Hudson Soft).nes" size="40976" crc="94339dff"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3037,7 +3037,7 @@
 		<description>Championship Bowling (USA)</description>
 		<year>1989</year>
 		<manufacturer>Romstar</manufacturer>
-		<rom name="Championship Bowling (USA).nes" size="65552" crc="a5e89b19"/>
+		<rom name="Championship Bowling (USA)(1989)(Romstar).nes" size="65552" crc="a5e89b19"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3045,7 +3045,7 @@
 		<description>Championship Lode Runner (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Championship Lode Runner (Japan).nes" size="24592" crc="cfa85f7c"/>
+		<rom name="Championship Lode Runner (Japan)(1985)(Hudson Soft).nes" size="24592" crc="cfa85f7c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3054,7 +3054,7 @@
 		<description>Chaos World (Hack, English)</description>
 		<year>2001</year>
 		<manufacturer>Aeon Genesis</manufacturer>
-		<rom name="Chaos World (T-eng).nes" size="393232" crc="fbd2a0e0"/>
+		<rom name="Chaos World T-Eng (2001)(Aeon Genesis).nes" size="393232" crc="fbd2a0e0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3062,7 +3062,7 @@
 		<description>Chaos World (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Natsume</manufacturer>
-		<rom name="Chaos World (Japan).nes" size="393232" crc="e2ae3e63"/>
+		<rom name="Chaos World (Japan)(1991)(Natsume).nes" size="393232" crc="e2ae3e63"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3123,7 +3123,7 @@
 		<description>Chester Field - Ankoku Shin e no Chousen (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Chester Field - Ankoku Shin e no Chousen (Japan).nes" size="131088" crc="a6f40bd1"/>
+		<rom name="Chester Field - Ankoku Shin e no Chousen (Japan)(1987)(Vic Tokai).nes" size="131088" crc="a6f40bd1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3317,7 +3317,7 @@
 		<description>Chubby Cherub (USA)</description>
 		<year>1986</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Chubby Cherub (USA).nes" size="40976" crc="90f12ac8"/>
+		<rom name="Chubby Cherub (USA)(1986)(Bandai).nes" size="40976" crc="90f12ac8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3342,8 +3342,8 @@
 	<game name="chuukataisenj" cloneof="chuukataisen" romof="chuukataisen" sourcefile="nes/d_nes.cpp">
 		<description>Chuuka Taisen (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Chuuka Taisen (Japan).nes" size="262160" crc="e3beb057"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Chuuka Taisen (Japan)(1989)(Taito Corp.).nes" size="262160" crc="e3beb057"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3533,7 +3533,7 @@
 		<description>Contra (Hack, English)</description>
 		<year>1998</year>
 		<manufacturer>MadHacker</manufacturer>
-		<rom name="Contra (T-Eng).nes" size="262160" crc="d93f2c45"/>
+		<rom name="Contra T-Eng (1998)(MadHacker).nes" size="262160" crc="d93f2c45"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3550,7 +3550,7 @@
 		<description>Contra (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Contra (Japan).nes" size="262160" crc="8a96a3c4"/>
+		<rom name="Contra (Japan)(1988)(Konami).nes" size="262160" crc="8a96a3c4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3567,7 +3567,7 @@
 		<description>Contra (USA)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Contra (USA).nes" size="131088" crc="c50a8304"/>
+		<rom name="Contra (USA)(1988)(Konami).nes" size="131088" crc="c50a8304"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3577,24 +3577,6 @@
 		<year>2020</year>
 		<manufacturer>Huan Tian</manufacturer>
 		<rom name="contramdl.nes" size="541200" crc="78e3d5a4"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="contrredfalwar" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Contra - Red Falcon War (Hack)</description>
-		<year>2019</year>
-		<manufacturer>Azstar</manufacturer>
-		<rom name="Contra - Red Falcon War (USA).nes" size="262160" crc="59ef411a"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="contrrevredfal" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Contra - Revenge of the Red Falcon (Hack)</description>
-		<year>2016</year>
-		<manufacturer>Trax</manufacturer>
-		<rom name="Contra - Revenge of the Red Falcon (USA).nes" size="262160" crc="fa28193b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3628,7 +3610,7 @@
 		<description>Contra Force (USA)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Contra Force (USA).nes" size="262160" crc="83d69922"/>
+		<rom name="Contra Force (USA)(1992)(Konami).nes" size="262160" crc="83d69922"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3646,6 +3628,24 @@
 		<year>1996</year>
 		<manufacturer>J.Y. Company</manufacturer>
 		<rom name="Contra Spirits (Unl).nes" size="524304" crc="cea432be"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="contrredfalwar" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra: Red Falcon War (Hack)</description>
+		<year>2019</year>
+		<manufacturer>AzStar</manufacturer>
+		<rom name="Contra - Red Falcon War (2019)(AzStar).nes" size="262160" crc="59ef411a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="contrrevredfal" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra: Revenge of the Red Falcon (Hack)</description>
+		<year>2016</year>
+		<manufacturer>Trax</manufacturer>
+		<rom name="Contra - Revenge of the Red Falcon (2016)(Trax).nes" size="262160" crc="fa28193b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4321,7 +4321,7 @@
 		<description>Demon Sword (USA)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Demon Sword (USA).nes" size="262160" crc="2b324834"/>
+		<rom name="Demon Sword (USA)(1990)(Taito).nes" size="262160" crc="2b324834"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4612,8 +4612,8 @@
 	<game name="dondokodon" sourcefile="nes/d_nes.cpp">
 		<description>Don Doko Don (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Don Doko Don (Japan).nes" size="393232" crc="6db7e711"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Don Doko Don (Japan)(1990)(Taito Corp.).nes" size="393232" crc="6db7e711"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4638,8 +4638,8 @@
 	<game name="dondokodon2j" cloneof="dondokodon2" romof="dondokodon2" sourcefile="nes/d_nes.cpp">
 		<description>Don Doko Don 2 (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Don Doko Don 2 (Japan).nes" size="393232" crc="f583796b"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Don Doko Don 2 (Japan)(1992)(Taito Corp.).nes" size="393232" crc="f583796b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5485,10 +5485,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="dudeswitatt" sourcefile="nes/d_nes.cpp">
-		<description>Dudes With Attitude (Unl)</description>
+		<description>Dudes With Attitude (USA) (Unl)</description>
 		<year>1990</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Dudes With Attitude (Unl).nes" size="65552" crc="e9151645"/>
+		<rom name="Dudes With Attitude (USA)(Unl)(AVE).nes" size="65552" crc="e9151645"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5496,7 +5496,7 @@
 		<description>Dungeon Magic - Sword of the Elements (USA)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Dungeon Magic - Sword of the Elements (USA).nes" size="262160" crc="7a365bf8"/>
+		<rom name="Dungeon Magic - Sword of the Elements (USA)(1990)(Taito).nes" size="262160" crc="7a365bf8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5686,7 +5686,7 @@
 		<description>Elevator Action (USA)</description>
 		<year>1987</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Elevator Action (USA).nes" size="40976" crc="d415571f"/>
+		<rom name="Elevator Action (USA)(1987)(Taito).nes" size="40976" crc="d415571f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6522,10 +6522,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="firedragon" sourcefile="nes/d_nes.cpp">
-		<description>Fire Dragon (Asia) (Unl)</description>
+		<description>Fire Dragon (Taiwan) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Gamtec</manufacturer>
-		<rom name="Fire Dragon (Asia)(Unl)(199x)(GamTec).nes" size="40976" crc="8ac54f30"/>
+		<rom name="Fire Dragon (Taiwan)(Unl)(199x)(GamTec).nes" size="40976" crc="8ac54f30"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6676,8 +6676,8 @@
 	<game name="flintresdinhopj" cloneof="flintresdinhop" romof="flintresdinhop" sourcefile="nes/d_nes.cpp">
 		<description>Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan).nes" size="393232" crc="12f38740"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)(1991)(Taito Corp.).nes" size="393232" crc="12f38740"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6685,7 +6685,7 @@
 		<description>Flintstones, The - The Rescue of Dino &amp; Hoppy (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (USA).nes" size="393232" crc="0b804cdc"/>
+		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (USA)(1991)(Taito).nes" size="393232" crc="0b804cdc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6693,7 +6693,7 @@
 		<description>Flintstones, The - The Surprise at Dinosaur Peak! (USA)</description>
 		<year>1994</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Flintstones, The - The Surprise at Dinosaur Peak! (USA).nes" size="393232" crc="feda0b39"/>
+		<rom name="Flintstones, The - The Surprise at Dinosaur Peak! (USA)(1994)(Taito).nes" size="393232" crc="feda0b39"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6701,7 +6701,7 @@
 		<description>Flipull - An Exciting Cube Game (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Flipull - An Exciting Cube Game (Japan).nes" size="65552" crc="b0e199e3"/>
+		<rom name="Flipull - An Exciting Cube Game (Japan)(1989)(Taito).nes" size="65552" crc="b0e199e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6727,7 +6727,7 @@
 		<description>Flying Dragon - The Secret Scroll (USA)</description>
 		<year>1989</year>
 		<manufacturer>Culture Brain</manufacturer>
-		<rom name="Flying Dragon - The Secret Scroll (USA).nes" size="131088" crc="c2f70a8c"/>
+		<rom name="Flying Dragon - The Secret Scroll (USA)(1989)(Culture Brain).nes" size="131088" crc="c2f70a8c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6802,7 +6802,7 @@
 		<description>Freedom Force (USA)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Freedom Force (USA).nes" size="262160" crc="53eb8950"/>
+		<rom name="Freedom Force (USA)(1988)(Sunsoft).nes" size="262160" crc="53eb8950"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6828,7 +6828,7 @@
 		<description>Friday the 13th (USA)</description>
 		<year>1989</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Friday the 13th (USA).nes" size="65552" crc="f19a4249"/>
+		<rom name="Friday the 13th (USA)(1989)(Ljn).nes" size="65552" crc="f19a4249"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6861,16 +6861,16 @@
 	<game name="frontline" sourcefile="nes/d_nes.cpp">
 		<description>Front Line (Japan)</description>
 		<year>1985</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Front Line (Japan).nes" size="24592" crc="44d123a4"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Front Line (Japan)(1985)(Taito Corp.).nes" size="24592" crc="44d123a4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="fudoumyououden" cloneof="demonsword" romof="demonsword" sourcefile="nes/d_nes.cpp">
 		<description>Fudou Myouou Den (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Fudou Myouou Den (Japan).nes" size="393232" crc="64d10448"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Fudou Myouou Den (Japan)(1988)(Taito Corp.).nes" size="393232" crc="64d10448"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7976,8 +7976,8 @@
 	<game name="gyrodine" sourcefile="nes/d_nes.cpp">
 		<description>Gyrodine (Japan)</description>
 		<year>1986</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Gyrodine (Japan).nes" size="40976" crc="ce936921"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Gyrodine (Japan)(1986)(Taito Corp.).nes" size="40976" crc="ce936921"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7985,12 +7985,12 @@
 		<description>Gyromite (USA)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Gyromite (USA).nes" size="40976" crc="e54840ec"/>
+		<rom name="Gyromite (USA)(1987)(Nintendo).nes" size="40976" crc="e54840ec"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="gyromitese" cloneof="gyromite" romof="gyromite" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, This hack allows to play the game on a traditional controller</comment>
+		<comment>Hack, This hack allows to play the game with a standard controller</comment>
 		<description>Gyromite Special Edition (Hack)</description>
 		<year>2014</year>
 		<manufacturer>the jabu</manufacturer>
@@ -8011,7 +8011,7 @@
 		<description>Gyruss (USA)</description>
 		<year>1989</year>
 		<manufacturer>Ultra Games</manufacturer>
-		<rom name="Gyruss (USA).nes" size="65552" crc="526ad690"/>
+		<rom name="Gyruss (USA)(1989)(Ultra Games).nes" size="65552" crc="526ad690"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8834,7 +8834,7 @@
 		<description>Indiana Jones and the Last Crusade (USA) (Taito)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Indiana Jones and the Last Crusade (USA) (Taito).nes" size="262160" crc="da23166a"/>
+		<rom name="Indiana Jones and the Last Crusade (USA)(1991)(Taito).nes" size="262160" crc="da23166a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8842,15 +8842,15 @@
 		<description>Indiana Jones and the Last Crusade (USA) (UBI Soft)</description>
 		<year>1993</year>
 		<manufacturer>UBI Soft</manufacturer>
-		<rom name="Indiana Jones and the Last Crusade (USA) (UBI Soft).nes" size="131088" crc="ed5fa6c4"/>
+		<rom name="Indiana Jones and the Last Crusade (USA)(1993)(UBI Soft).nes" size="131088" crc="ed5fa6c4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="indiajonandtemdo" sourcefile="nes/d_nes.cpp">
-		<description>Indiana Jones and the Temple of Doom (USA) (Rev A)</description>
+		<description>Indiana Jones and the Temple of Doom (USA, Rev A)</description>
 		<year>1988</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Indiana Jones and the Temple of Doom (USA) (Rev A).nes" size="196624" crc="f07d31b2"/>
+		<rom name="Indiana Jones and the Temple of Doom (USA, Rev A)(1988)(Mindscape).nes" size="196624" crc="f07d31b2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8867,15 +8867,15 @@
 		<description>Infiltrator (USA)</description>
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Infiltrator (USA).nes" size="262160" crc="f5f79ea9"/>
+		<rom name="Infiltrator (USA)(1990)(Mindscape).nes" size="262160" crc="f5f79ea9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="insectorx" sourcefile="nes/d_nes.cpp">
 		<description>Insector X (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Insector X (Japan).nes" size="262160" crc="7dab812d"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Insector X (Japan)(1990)(Taito Corp.).nes" size="262160" crc="7dab812d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9152,8 +9152,8 @@
 	<game name="jetsonsj" cloneof="jetsons" romof="jetsons" sourcefile="nes/d_nes.cpp">
 		<description>Jetsons, The - Cogswell's Caper! (Japan)</description>
 		<year>1993</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Jetsons, The - Cogswell's Caper! (Japan).nes" size="393232" crc="4733c232"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Jetsons, The - Cogswell's Caper! (Japan)(1993)(Taito Corp.).nes" size="393232" crc="4733c232"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9161,7 +9161,7 @@
 		<description>Jetsons, The - Cogswell's Caper! (USA)</description>
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Jetsons, The - Cogswell's Caper! (USA).nes" size="393232" crc="0f945df6"/>
+		<rom name="Jetsons, The - Cogswell's Caper! (USA)(1992)(Taito).nes" size="393232" crc="0f945df6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9317,8 +9317,8 @@
 	<game name="jujudensetsu" cloneof="toki" romof="toki" sourcefile="nes/d_nes.cpp">
 		<description>JuJu Densetsu (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="JuJu Densetsu (Japan)(1991)(Taito).nes" size="393232" crc="138d2e4b"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="JuJu Densetsu (Japan)(1991)(Taito Corp.).nes" size="393232" crc="138d2e4b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9512,7 +9512,7 @@
 		<description>Kage (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Natsume</manufacturer>
-		<rom name="Kage (Japan).nes" size="262160" crc="459fbede"/>
+		<rom name="Kage (Japan)(1990)(Natsume).nes" size="262160" crc="459fbede"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9528,8 +9528,8 @@
 	<game name="kagenodensetsu" cloneof="legenkag" romof="legenkag" sourcefile="nes/d_nes.cpp">
 		<description>Kage no Densetsu (Japan)</description>
 		<year>1986</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Kage no Densetsu (Japan).nes" size="49168" crc="6e55f630"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Kage no Densetsu (Japan)(1986)(Taito Corp.).nes" size="49168" crc="6e55f630"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10010,7 +10010,7 @@
 		<description>Kiwi Kraze - A Bird-Brained Adventure! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Kiwi Kraze - A Bird-Brained Adventure! (USA).nes" size="262160" crc="2497e97f"/>
+		<rom name="Kiwi Kraze - A Bird-Brained Adventure! (USA)(1991)(Taito).nes" size="262160" crc="2497e97f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10018,7 +10018,7 @@
 		<description>KlashBall (USA)</description>
 		<year>1991</year>
 		<manufacturer>Sofel</manufacturer>
-		<rom name="KlashBall (USA).nes" size="131088" crc="3728b1c6"/>
+		<rom name="KlashBall (USA)(1991)(Sofel).nes" size="131088" crc="3728b1c6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10388,7 +10388,7 @@
 		<description>Legend of Kage, The (USA)</description>
 		<year>1987</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Legend of Kage, The (USA).nes" size="49168" crc="6785c961"/>
+		<rom name="Legend of Kage, The (USA)(1987)(Taito).nes" size="49168" crc="6785c961"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10638,7 +10638,7 @@
 		<description>Little League Baseball - Championship Series (USA)</description>
 		<year>1990</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="Little League Baseball - Championship Series (1990)(SNK)(USA).nes" size="262160" crc="7905ae67"/>
+		<rom name="Little League Baseball - Championship Series (USA)(1990)(SNK).nes" size="262160" crc="7905ae67"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10655,7 +10655,7 @@
 		<description>Little Magic (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="Little Magic (Japan).nes" size="262160" crc="fc3c18eb"/>
+		<rom name="Little Magic (Japan)(1990)(Data East).nes" size="262160" crc="fc3c18eb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10672,7 +10672,7 @@
 		<description>Little Mermaid, The (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Little Mermaid, The (Japan).nes" size="131088" crc="57c9290f"/>
+		<rom name="Little Mermaid, The (Japan)(1991)(Capcom).nes" size="131088" crc="57c9290f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10680,7 +10680,7 @@
 		<description>Little Mermaid, The (USA)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Little Mermaid, The (USA).nes" size="131088" crc="08eb97db"/>
+		<rom name="Little Mermaid, The (USA)(1991)(Capcom).nes" size="131088" crc="08eb97db"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10697,7 +10697,7 @@
 		<description>Little Nemo - The Dream Master (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Little Nemo - The Dream Master (USA).nes" size="262160" crc="71d868c4"/>
+		<rom name="Little Nemo - The Dream Master (USA)(1990)(Capcom).nes" size="262160" crc="71d868c4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10705,7 +10705,7 @@
 		<description>Little Ninja Brothers (USA)</description>
 		<year>1990</year>
 		<manufacturer>Culture Brain</manufacturer>
-		<rom name="Little Ninja Brothers (USA).nes" size="262160" crc="96ece52b"/>
+		<rom name="Little Ninja Brothers (USA)(1990)(Culture Brain).nes" size="262160" crc="96ece52b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10722,7 +10722,7 @@
 		<description>Little Samson (USA)</description>
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Little Samson (USA).nes" size="393232" crc="6bb483e8"/>
+		<rom name="Little Samson (USA)(1992)(Taito).nes" size="393232" crc="6bb483e8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12115,8 +12115,8 @@
 	<game name="minelsagj" cloneof="minelsag" romof="minelsag" sourcefile="nes/d_nes.cpp">
 		<description>Minelvaton Saga - Ragon no Fukkatsu (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Minelvaton Saga - Ragon no Fukkatsu (Japan).nes" size="262160" crc="cb2ff607"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Minelvaton Saga - Ragon no Fukkatsu (Japan)(1987)(Taito Corp.).nes" size="262160" crc="cb2ff607"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12681,8 +12681,8 @@
 	<game name="musasnokenj" cloneof="musasnoken" romof="musasnoken" sourcefile="nes/d_nes.cpp">
 		<description>Musashi no Ken - Tadaima Shugyou Chuu (Japan)</description>
 		<year>1986</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Musashi no Ken - Tadaima Shugyou Chuu (Japan).nes" size="65552" crc="d21ff7d9"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Musashi no Ken - Tadaima Shugyou Chuu (Japan)(1986)(Taito Corp.).nes" size="65552" crc="d21ff7d9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12716,7 +12716,7 @@
 		<description>Mystery World Dizzy (HB)</description>
 		<year>2017</year>
 		<manufacturer>Oliver Twins</manufacturer>
-		<rom name="Mystery World Dizzy (HB).nes" size="262160" crc="03124bf3"/>
+		<rom name="Mystery World Dizzy (2017)(Oliver Twins).nes" size="262160" crc="03124bf3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13416,7 +13416,7 @@
 		<description>Operation Wolf (USA)</description>
 		<year>1989</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Operation Wolf (USA).nes" size="262160" crc="80704705"/>
+		<rom name="Operation Wolf (USA)(1989)(Taito).nes" size="262160" crc="80704705"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13635,7 +13635,7 @@
 		<description>Panic Dizzy (HB)</description>
 		<year>2019</year>
 		<manufacturer>Oliver Twins</manufacturer>
-		<rom name="Panic Dizzy (HB).nes" size="65552" crc="c5b23abd"/>
+		<rom name="Panic Dizzy (2019)(Oliver Twins).nes" size="65552" crc="c5b23abd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14131,7 +14131,7 @@
 		<description>Power Blade (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Power Blade (USA).nes" size="262160" crc="76663e66"/>
+		<rom name="Power Blade (USA)(1991)(Taito).nes" size="262160" crc="76663e66"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14148,7 +14148,7 @@
 		<description>Power Blade 2 (USA)</description>
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Power Blade 2 (USA).nes" size="262160" crc="f8e0bc9b"/>
+		<rom name="Power Blade 2 (USA)(1992)(Taito).nes" size="262160" crc="f8e0bc9b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14164,8 +14164,8 @@
 	<game name="powerblazerj" cloneof="powerblazer" romof="powerblazer" sourcefile="nes/d_nes.cpp">
 		<description>Power Blazer (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Power Blazer (Japan).nes" size="262160" crc="2b17a194"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Power Blazer (Japan)(1990)(Taito Corp.).nes" size="262160" crc="2b17a194"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14387,7 +14387,7 @@
 		<description>Puzznic (USA)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Puzznic (USA).nes" size="65552" crc="a44a0927"/>
+		<rom name="Puzznic (USA)(1990)(Taito).nes" size="65552" crc="a44a0927"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14452,7 +14452,7 @@
 		<description>QIX (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="QIX (USA).nes" size="131088" crc="4724713d"/>
+		<rom name="QIX (USA)(1991)(Taito).nes" size="131088" crc="4724713d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14683,7 +14683,7 @@
 		<description>Raid on Bungeling Bay (USA)</description>
 		<year>1987</year>
 		<manufacturer>Broderbund</manufacturer>
-		<rom name="Raid on Bungeling Bay (USA).nes" size="24592" crc="b1155ae3"/>
+		<rom name="Raid on Bungeling Bay (USA)(1987)(Broderbund).nes" size="24592" crc="b1155ae3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14706,26 +14706,26 @@
 		<driver status="good"/>
 	</game>
 	<game name="rainbisloce" sourcefile="nes/d_nes.cpp">
-		<description>Rainbow Islands - Ocean (Euro)</description>
-		<year>1988</year>
+		<description>Rainbow Islands (Euro)</description>
+		<year>1991</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Rainbow Islands - Ocean (Europe).nes" size="262160" crc="fac97247"/>
+		<rom name="Rainbow Islands (Euro)(1991)(Ocean).nes" size="262160" crc="fac97247"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
 	<game name="rainbisltaij" cloneof="rainbisltai" romof="rainbisltai" sourcefile="nes/d_nes.cpp">
-		<description>Rainbow Islands - Taito (Japan)</description>
+		<description>Rainbow Islands (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Rainbow Islands - Taito (Japan).nes" size="131088" crc="39872654"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Rainbow Islands (Japan)(1988)(Taito Corp.).nes" size="131088" crc="39872654"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="rainbisltai" sourcefile="nes/d_nes.cpp">
-		<description>Rainbow Islands - Taito (USA)</description>
+		<description>Rainbow Islands (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Rainbow Islands - Taito (USA).nes" size="131088" crc="5d56b6a4"/>
+		<rom name="Rainbow Islands (USA)(1991)(Taito).nes" size="131088" crc="5d56b6a4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14880,7 +14880,7 @@
 		<description>Renegade (USA)</description>
 		<year>1988</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Renegade (USA).nes" size="131088" crc="935f5d29"/>
+		<rom name="Renegade (USA)(1988)(Taito).nes" size="131088" crc="935f5d29"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14897,7 +14897,7 @@
 		<description>Rescue - The Embassy Mission (USA)</description>
 		<year>1990</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Rescue - The Embassy Mission (USA).nes" size="262160" crc="0e4fe1f3"/>
+		<rom name="Rescue - The Embassy Mission (USA)(1990)(Kemco).nes" size="262160" crc="0e4fe1f3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14940,7 +14940,7 @@
 		<description>Ripple Island (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Ripple Island (J)(1988)(Sunsoft).nes" size="131088" crc="7148c342"/>
+		<rom name="Ripple Island (Japan)(1988)(Sunsoft).nes" size="131088" crc="7148c342"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15379,6 +15379,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="rugrats" sourcefile="nes/d_nes.cpp">
+		<description>Rugrats: Adventures in Gameland (World)</description>
+		<year>2024</year>
+		<manufacturer>The MIX Games</manufacturer>
+		<rom name="Rugrats - Adventures in Gameland (2024)(The MIX Games).nes" size="524304" crc="97130010"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="rushnattackc" cloneof="rushnattack" romof="rushnattack" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Rush'n Attack (Hack, Spanish v1.1)</description>
@@ -15765,7 +15773,7 @@
 		<description>Secret Ties (USA) (Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Secret Ties (USA) (Proto).nes" size="262160" crc="9e131010"/>
+		<rom name="Secret Ties (USA)(Proto)(1991)(Vic Tokai).nes" size="262160" crc="9e131010"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15773,31 +15781,31 @@
 		<description>Section-Z (USA)</description>
 		<year>1987</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Section-Z (USA).nes" size="131088" crc="3ce543e6"/>
+		<rom name="Section-Z (USA)(1987)(Capcom).nes" size="131088" crc="3ce543e6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="seicross" sourcefile="nes/d_nes.cpp">
 		<description>Seicross (USA)</description>
 		<year>1988</year>
-		<manufacturer>FCI</manufacturer>
-		<rom name="Seicross (USA).nes" size="40976" crc="c0d823ed"/>
+		<manufacturer>FCI Inc.</manufacturer>
+		<rom name="Seicross (USA)(1988)(FCI Inc.).nes" size="40976" crc="c0d823ed"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="seikima2" sourcefile="nes/d_nes.cpp">
 		<description>Seikima II - Akuma no Gyakushuu (Japan)</description>
 		<year>1986</year>
-		<manufacturer>CBS-Sony</manufacturer>
-		<rom name="Seikima II - Akuma no Gyakushuu (J)(1986)(CBS-Sony).nes" size="65552" crc="b546589d"/>
+		<manufacturer>CBS - Sony</manufacturer>
+		<rom name="Seikima II - Akuma no Gyakushuu (Japan)(1986)(CBS - Sony).nes" size="65552" crc="b546589d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="seiredenlic" cloneof="littlesamson" romof="littlesamson" sourcefile="nes/d_nes.cpp">
 		<description>Seirei Densetsu Lickle (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Seirei Densetsu Lickle (Japan).nes" size="393232" crc="2823a809"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Seirei Densetsu Lickle (Japan)(1992)(Taito Corp.).nes" size="393232" crc="2823a809"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16224,8 +16232,8 @@
 	<game name="skydestroyer" sourcefile="nes/d_nes.cpp">
 		<description>Sky Destroyer (Japan)</description>
 		<year>1985</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Sky Destroyer (Japan).nes" size="24592" crc="6fe201bd"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Sky Destroyer (Japan)(1985)(Taito Corp.).nes" size="24592" crc="6fe201bd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16233,15 +16241,15 @@
 		<description>Sky Kid (USA)</description>
 		<year>1987</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Sky Kid (USA).nes" size="163856" crc="8b190ddc"/>
+		<rom name="Sky Kid (USA)(1987)(Sunsoft).nes" size="163856" crc="8b190ddc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="skyshark" sourcefile="nes/d_nes.cpp">
-		<description>Sky Shark (USA) (Rev 0A)</description>
+		<description>Sky Shark (USA, Rev 0A)</description>
 		<year>1989</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Sky Shark (USA) (Rev 0A).nes" size="196624" crc="147e6b6c"/>
+		<rom name="Sky Shark (USA, Rev 0A)(1989)(Taito).nes" size="196624" crc="147e6b6c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16249,7 +16257,7 @@
 		<description>Slalom (USA)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Slalom (USA).nes" size="40976" crc="6115164d"/>
+		<rom name="Slalom (USA)(1987)(Nintendo).nes" size="40976" crc="6115164d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16284,7 +16292,7 @@
 		<description>Smash T.V. (USA)</description>
 		<year>1991</year>
 		<manufacturer>Acclaim</manufacturer>
-		<rom name="Smash T.V. (USA).nes" size="262160" crc="447a45a0"/>
+		<rom name="Smash T.V. (USA)(1991)(Acclaim).nes" size="262160" crc="447a45a0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16292,7 +16300,7 @@
 		<description>Smurfs, The (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="Smurfs, The PAL (1994)(Infogrames).nes" size="131088" crc="732b1a7a"/>
+		<rom name="Smurfs, The (Euro)(1994)(Infogrames).nes" size="131088" crc="732b1a7a"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -16535,15 +16543,15 @@
 		<description>Space Hunter (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Space Hunter (Japan).nes" size="65552" crc="b155899c"/>
+		<rom name="Space Hunter (Japan)(1986)(Kemco).nes" size="65552" crc="b155899c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="spaceinvaders" sourcefile="nes/d_nes.cpp">
 		<description>Space Invaders (Japan)</description>
 		<year>1985</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Space Invaders (Japan).nes" size="24592" crc="525c0dab"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Space Invaders (Japan)(1985)(Taito Corp.).nes" size="24592" crc="525c0dab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16595,25 +16603,25 @@
 	<game name="spartanx" sourcefile="nes/d_nes.cpp">
 		<description>Spartan X (Japan)</description>
 		<year>1985</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Spartan X (Japan).nes" size="40976" crc="872adc83"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="spartanx2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Spartan X 2 (Hack, English)</description>
-		<year>2003</year>
-		<manufacturer>Abstract Crouton Productions</manufacturer>
-		<rom name="Spartan X 2 (T-Eng).nes" size="262160" crc="30003fc6"/>
+		<manufacturer>Nintendo - Irem Corp.</manufacturer>
+		<rom name="Spartan X (Japan)(1985)(Nintendo - Irem).nes" size="40976" crc="872adc83"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="spartanx2j" cloneof="spartanx2" romof="spartanx2" sourcefile="nes/d_nes.cpp">
 		<description>Spartan X 2 (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="Spartan X 2 (Japan).nes" size="262160" crc="09825979"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Spartan X 2 (Japan)(1991)(Irem).nes" size="262160" crc="09825979"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="spartanx2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Spartan X 2 ~ Kung-Fu 2 (Hack, English)</description>
+		<year>2003</year>
+		<manufacturer>Abstract Crouton Productions</manufacturer>
+		<rom name="Spartan X 2 T-Eng (2003)(Abstract Crouton Productions).nes" size="262160" crc="30003fc6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17031,6 +17039,15 @@
 		<year>1990</year>
 		<manufacturer>KAC</manufacturer>
 		<rom name="Sted - Iseki Wakusei no Yabou (Japan).nes" size="262160" crc="a86fb17a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="steellegion" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Steel Legion (HB)</description>
+		<year>2024</year>
+		<manufacturer>Aeon &amp; Star Interactive</manufacturer>
+		<rom name="Steel Legion (2024)(Aeon &amp; Star Interactive).nes" size="524304" crc="af212481"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17936,8 +17953,8 @@
 	<game name="taitochasehq" sourcefile="nes/d_nes.cpp">
 		<description>Taito Chase H.Q. (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Taito Chase H.Q. (Japan).nes" size="262160" crc="b3408ee4"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Taito Chase H.Q. (Japan)(1989)(Taito Corp.).nes" size="262160" crc="b3408ee4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17946,15 +17963,15 @@
 		<description>Taito Grand Prix - Eikou e no License (Hack, English)</description>
 		<year>2015</year>
 		<manufacturer>MrRichard999</manufacturer>
-		<rom name="Taito Grand Prix - Eikou e no License (T-Eng).nes" size="262160" crc="b58f4f5a"/>
+		<rom name="Taito Grand Prix - Eikou e no License T-Eng (2015)(MrRichard999).nes" size="262160" crc="b58f4f5a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="taitograprij" cloneof="taitograpri" romof="taitograpri" sourcefile="nes/d_nes.cpp">
 		<description>Taito Grand Prix - Eikou e no License (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Taito Grand Prix - Eikou e no License (Japan).nes" size="262160" crc="613bd034"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Taito Grand Prix - Eikou e no License (Japan)(1987)(Taito Corp.).nes" size="262160" crc="613bd034"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17962,7 +17979,7 @@
 		<description>Taiyou no Shinden - Asteka 2 (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Tokyo Shoseki</manufacturer>
-		<rom name="Taiyou no Shinden - Asteka 2 (J)(1988)(Tokyo Shoseki).nes" size="262160" crc="01259d1f"/>
+		<rom name="Taiyou no Shinden - Asteka 2 (Japan)(1988)(Tokyo Shoseki).nes" size="262160" crc="01259d1f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17971,15 +17988,15 @@
 		<description>Taiyou no Yuusha Firebird (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>Dragoon-X Translations</manufacturer>
-		<rom name="Taiyou no Yuusha Firebird (T-eng).nes" size="262160" crc="bfacf6de"/>
+		<rom name="Taiyou no Yuusha Firebird T-Eng (2016)(Dragoon-X Translations).nes" size="262160" crc="bfacf6de"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="taiyonoyuufirj" cloneof="taiyonoyuufir" romof="taiyonoyuufir" sourcefile="nes/d_nes.cpp">
 		<description>Taiyou no Yuusha Firebird (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="Taiyou no Yuusha Firebird (Japan).nes" size="262160" crc="be1d0344"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Taiyou no Yuusha Firebird (Japan)(1992)(Irem).nes" size="262160" crc="be1d0344"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18052,16 +18069,16 @@
 	<game name="takesschaj" cloneof="takesscha" romof="takesscha" sourcefile="nes/d_nes.cpp">
 		<description>Takeshi no Chousenjou (Japan)</description>
 		<year>1986</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Takeshi's Challenge (Japan).nes" size="131088" crc="e810b35c"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Takeshi's Challenge (Japan)(1986)(Taito Corp.).nes" size="131088" crc="e810b35c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="takesnosenfuu" sourcefile="nes/d_nes.cpp">
 		<description>Takeshi no Sengoku Fuuunji (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Takeshi no Sengoku Fuuunji (Japan).nes" size="262160" crc="5c80a4a2"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Takeshi no Sengoku Fuuunji (Japan)(1988)(Taito Corp.).nes" size="262160" crc="5c80a4a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18070,7 +18087,7 @@
 		<description>Takeshi's Challenge (Hack, English)</description>
 		<year>2011</year>
 		<manufacturer>KingMike</manufacturer>
-		<rom name="Takeshi's Challenge (T-Eng).nes" size="262160" crc="18c9b8ad"/>
+		<rom name="Takeshi's Challenge T-Eng (2011)(KingMike's Translations).nes" size="262160" crc="18c9b8ad"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18078,7 +18095,7 @@
 		<description>TaleSpin (USA)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="TaleSpin (USA).nes" size="262160" crc="143dcab6"/>
+		<rom name="TaleSpin (USA)(1991)(Capcom).nes" size="262160" crc="143dcab6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18131,7 +18148,7 @@
 		<description>Target Renegade (USA)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Target Renegade (USA).nes" size="262160" crc="fe07b4ac"/>
+		<rom name="Target Renegade (USA)(1990)(Taito).nes" size="262160" crc="fe07b4ac"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18139,7 +18156,7 @@
 		<description>Tasac (Taiwan)</description>
 		<year>1992</year>
 		<manufacturer>Sachen</manufacturer>
-		<rom name="Tasac (Taiwan).nes" size="65552" crc="cf0bbd95"/>
+		<rom name="Tasac (Taiwan)(1992)(Sachen).nes" size="65552" crc="cf0bbd95"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18547,6 +18564,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="terminatorjts" cloneof="journsil" romof="journsil" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Terminator, The (Hack, v4.0)</description>
+		<year>2021</year>
+		<manufacturer>pacnsacdave, 8-bit fan</manufacturer>
+		<rom name="Terminator, The - Journey to Silius hack v4.0 (2021)(pacnsacdave, 8-bit fan).nes" size="262160" crc="4f19ef9f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="terminatorthe" sourcefile="nes/d_nes.cpp">
 		<description>Terminator, The (USA)</description>
 		<year>1992</year>
@@ -18576,7 +18602,7 @@
 		<description>Tetrastar - The Fighter (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Tetrastar - The Fighter (Japan).nes" size="524304" crc="16745bf4"/>
+		<rom name="Tetrastar - The Fighter (Japan)(1991)(Taito Corp.).nes" size="524304" crc="16745bf4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18692,7 +18718,7 @@
 		<description>Thunder Warrior (Asia) (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Micro Genius</manufacturer>
-		<rom name="Thunder Warrior (Asia) (Unl).nes" size="262160" crc="81600926"/>
+		<rom name="Thunder Warrior (Asia)(Unl)(1992)(Micro Genius).nes" size="262160" crc="81600926"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18700,15 +18726,15 @@
 		<description>Thunderbirds (USA)</description>
 		<year>1990</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Thunderbirds (USA).nes" size="262160" crc="406f0ced"/>
+		<rom name="Thunderbirds (USA)(1990)(Activision).nes" size="262160" crc="406f0ced"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="thunderbolt2" sourcefile="nes/d_nes.cpp">
-		<description>Thunderbolt 2 (China)</description>
+		<description>Thunderbolt 2 (Taiwan) (Unl)</description>
 		<year>1993</year>
 		<manufacturer>Gamtec</manufacturer>
-		<rom name="Thunderbolt 2 (Ch).nes" size="262160" crc="ce1813c9"/>
+		<rom name="Thunderbolt 2 (Taiwan)(Unl)(1993)(Gamtec).nes" size="262160" crc="ce1813c9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18716,7 +18742,7 @@
 		<description>Thundercade (USA)</description>
 		<year>1989</year>
 		<manufacturer>Sammy</manufacturer>
-		<rom name="Thundercade (USA).nes" size="131088" crc="6c430704"/>
+		<rom name="Thundercade (USA)(1989)(Sammy).nes" size="131088" crc="6c430704"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18724,15 +18750,15 @@
 		<description>Tiger-Heli (USA)</description>
 		<year>1987</year>
 		<manufacturer>Acclaim</manufacturer>
-		<rom name="Tiger-Heli (USA).nes" size="65552" crc="1ad8d039"/>
+		<rom name="Tiger-Heli (USA)(1987)(Acclaim).nes" size="65552" crc="1ad8d039"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="timediveonman" sourcefile="nes/d_nes.cpp">
 		<description>Time Diver Eon Man (USA)</description>
 		<year>1993</year>
-		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Time Diver Eon Man (USA).nes" size="262160" crc="9562d0d5"/>
+		<manufacturer>Taito</manufacturer>
+		<rom name="Time Diver Eon Man (USA)(1993)(Taito).nes" size="262160" crc="9562d0d5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18740,7 +18766,7 @@
 		<description>Time Lord (USA)</description>
 		<year>1990</year>
 		<manufacturer>Milton Bradley</manufacturer>
-		<rom name="Time Lord (USA).nes" size="131088" crc="e37ad9fb"/>
+		<rom name="Time Lord (USA)(1990)(Milton Bradley).nes" size="131088" crc="e37ad9fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18902,7 +18928,7 @@
 		<description>Toki (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Toki (USA).nes" size="393232" crc="5bd50be6"/>
+		<rom name="Toki (USA)(1991)(Taito).nes" size="393232" crc="5bd50be6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20178,7 +20204,7 @@
 		<description>Wonderland Dizzy (HB)</description>
 		<year>2015</year>
 		<manufacturer>Oliver Twins</manufacturer>
-		<rom name="Wonderland Dizzy (HB).nes" size="262160" crc="62c97c6c"/>
+		<rom name="Wonderland Dizzy (2015)(Oliver Twins).nes" size="262160" crc="62c97c6c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20225,10 +20251,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="wrathblaman" sourcefile="nes/d_nes.cpp">
-		<description>Wrath of the Black Manta (USA) (Rev A)</description>
+		<description>Wrath of the Black Manta (USA, Rev A)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="Wrath of the Black Manta (USA) (Rev A).nes" size="262160" crc="57340297"/>
+		<rom name="Wrath of the Black Manta (USA, Rev A)(1990)(Taito).nes" size="262160" crc="57340297"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20236,7 +20262,7 @@
 		<description>Wrecking Crew (World)</description>
 		<year>1985</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Wrecking Crew (World).nes" size="40976" crc="658d4fd4"/>
+		<rom name="Wrecking Crew (World)(1985)(Nintendo).nes" size="40976" crc="658d4fd4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20253,7 +20279,7 @@
 		<description>Wurm - Journey to the Center of the Earth! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Asmik</manufacturer>
-		<rom name="Wurm - Journey to the Center of the Earth! (USA).nes" size="262160" crc="c1133e82"/>
+		<rom name="Wurm - Journey to the Center of the Earth! (USA)(1991)(Asmik).nes" size="262160" crc="c1133e82"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20261,7 +20287,7 @@
 		<description>Xenophobe (USA)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Xenophobe (USA).nes" size="163856" crc="fc2188db"/>
+		<rom name="Xenophobe (USA)(1988)(Sunsoft).nes" size="163856" crc="fc2188db"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20269,7 +20295,7 @@
 		<description>Xevious - The Avenger (USA)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Xevious - The Avenger (USA).nes" size="40976" crc="210a2bbb"/>
+		<rom name="Xevious - The Avenger (USA)(1988)(Bandai).nes" size="40976" crc="210a2bbb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20277,7 +20303,7 @@
 		<description>Xexyz (USA)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Xexyz (USA).nes" size="262160" crc="dcd20ec8"/>
+		<rom name="Xexyz (USA)(1990)(Hudson Soft).nes" size="262160" crc="dcd20ec8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20302,7 +20328,7 @@
 		<description>Xybots (USA) (Prototype)</description>
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="Xybots (proto)(1990)(Tengen).nes" size="196624" crc="59dae478"/>
+		<rom name="Xybots (Proto)(1990)(Tengen).nes" size="196624" crc="59dae478"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20316,10 +20342,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="yiearkungfu" sourcefile="nes/d_nes.cpp">
-		<description>Yie Ar Kung-Fu (Japan) (Rev 1.4)</description>
+		<description>Yie Ar Kung-Fu (Japan, Rev 1.4)</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Yie Ar Kung-Fu (Japan) (Rev 1.4).nes" size="24592" crc="0d526208"/>
+		<rom name="Yie Ar Kung-Fu (Japan, Rev 1.4)(1985)(Konami).nes" size="24592" crc="0d526208"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20336,7 +20362,7 @@
 		<description>Yo! Noid (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Yo! Noid (USA).nes" size="262160" crc="3d6260d2"/>
+		<rom name="Yo! Noid (USA)(1990)(Capcom).nes" size="262160" crc="3d6260d2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20344,7 +20370,7 @@
 		<description>Yoshi (USA)</description>
 		<year>1992</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Yoshi (USA).nes" size="163856" crc="f4951766"/>
+		<rom name="Yoshi (USA)(1992)(Nintendo).nes" size="163856" crc="f4951766"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20352,7 +20378,7 @@
 		<description>Yoshi's Cookie (USA)</description>
 		<year>1993</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Yoshi's Cookie (USA).nes" size="196624" crc="1600ac5b"/>
+		<rom name="Yoshi's Cookie (USA)(1993)(Nintendo).nes" size="196624" crc="1600ac5b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
