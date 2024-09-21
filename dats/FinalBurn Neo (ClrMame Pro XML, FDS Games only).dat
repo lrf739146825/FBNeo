@@ -229,7 +229,7 @@
 		<description>Bubble Bobble (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Bubble Bobble (Japan)(1988)(Taito).fds" size="131000" crc="8c8d153e"/>
+		<rom name="Bubble Bobble (Japan)(1988)(Taito Corp.).fds" size="131000" crc="8c8d153e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -749,8 +749,8 @@
 	<game name="halleywars" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Halley Wars (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Halley Wars (Japan).fds" size="131016" crc="583b11ca"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Halley Wars (Japan)(1989)(Taito Corp.).fds" size="131016" crc="583b11ca"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -889,8 +889,8 @@
 	<game name="kickandrun" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Kick and Run (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Kick and Run (Japan).fds" size="131016" crc="a37d4c85"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Kick and Run (Japan)(1988)(Taito Corp.).fds" size="131016" crc="a37d4c85"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -926,8 +926,8 @@
 	<game name="kikikaij" cloneof="kikikai" romof="kikikai" sourcefile="nes/d_nes.cpp">
 		<description>Kiki Kaikai - Dotou Hen (Japan) (Rev 1)</description>
 		<year>1987</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Kiki Kaikai Dotou Hen (J)(Rev 1)(1987)(Taito).fds" size="131000" crc="007aa4fd"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Kiki Kaikai Dotou Hen (Japan)(Rev 1)(1987)(Taito Corp.).fds" size="131000" crc="007aa4fd"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1288,8 +1288,8 @@
 	<game name="replicart" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Replicart (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Replicart (Japan).fds" size="131016" crc="c3cbc847"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Replicart (Japan)(1988)(Taito Corp.).fds" size="131016" crc="c3cbc847"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1503,7 +1503,7 @@
 		<description>Tama &amp; Friends - 3 Choume Daibouken (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Tama &amp; Friends - 3 Choume Daibouken (Japan).fds" size="131016" crc="8751a949"/>
+		<rom name="Tama &amp; Friends - 3 Choume Daibouken (Japan)(1989)(Bandai).fds" size="131016" crc="8751a949"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1512,7 +1512,7 @@
 		<description>Tennis (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Tennis (Japan).fds" size="65516" crc="136c64ed"/>
+		<rom name="Tennis (Japan)(1986)(Nintendo).fds" size="65516" crc="136c64ed"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1521,7 +1521,7 @@
 		<description>Tobidase Daisakusen (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Square</manufacturer>
-		<rom name="Tobidase Daisakusen (Japan).fds" size="131016" crc="95546107"/>
+		<rom name="Tobidase Daisakusen (Japan)(1987)(Square).fds" size="131016" crc="95546107"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1530,7 +1530,7 @@
 		<description>Topple Zip (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bothtec</manufacturer>
-		<rom name="Topple Zip (Japan).fds" size="131016" crc="7bf73c75"/>
+		<rom name="Topple Zip (Japan)(1987)(Bothtec).fds" size="131016" crc="7bf73c75"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1539,7 +1539,7 @@
 		<description>Transformers - The Headmasters (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="Transformers - The Headmasters (Japan).fds" size="131016" crc="8bd904cd"/>
+		<rom name="Transformers - The Headmasters (Japan)(1987)(Takara).fds" size="131016" crc="8bd904cd"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1548,7 +1548,7 @@
 		<description>TwinBee (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="TwinBee (Japan).fds" size="65500" crc="517be396"/>
+		<rom name="TwinBee (Japan)(1988)(Konami).fds" size="65500" crc="517be396"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1557,7 +1557,7 @@
 		<description>Ultraman - Kaijuu Teikoku no Gyakushuu (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Ultraman - Kaijuu Teikoku no Gyakushuu (Japan).fds" size="131016" crc="2ab0c9bd"/>
+		<rom name="Ultraman - Kaijuu Teikoku no Gyakushuu (Japan)(1986)(Bandai).fds" size="131016" crc="2ab0c9bd"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1566,7 +1566,7 @@
 		<description>Ultraman 2 - Shutsugeki Katoku Tai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Ultraman 2 - Shutsugeki Katoku Tai (Japan).fds" size="131016" crc="4010e726"/>
+		<rom name="Ultraman 2 - Shutsugeki Katoku Tai (Japan)(1987)(Bandai).fds" size="131016" crc="4010e726"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1575,7 +1575,7 @@
 		<description>Ultraman Club - Chikyuu Dakkan Sakusen (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Ultraman Club - Chikyuu Dakkan Sakusen (Japan).fds" size="131000" crc="fd150e81"/>
+		<rom name="Ultraman Club - Chikyuu Dakkan Sakusen (Japan)(1988)(Bandai).fds" size="131000" crc="fd150e81"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1584,7 +1584,7 @@
 		<description>Volleyball (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Volleyball (Japan).fds" size="65516" crc="0533c149"/>
+		<rom name="Volleyball (Japan)(1986)(Nintendo).fds" size="65516" crc="0533c149"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1593,7 +1593,7 @@
 		<description>Vs. Excitebike (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Vs. Excitebike (Japan).fds" size="131016" crc="b8a7c0a9"/>
+		<rom name="Vs. Excitebike (Japan)(1988)(Nintendo).fds" size="131016" crc="b8a7c0a9"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1602,7 +1602,7 @@
 		<description>Wakusei Aton Gaiden (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Kokuzeichou</manufacturer>
-		<rom name="Wakusei Aton Gaiden (Japan).fds" size="131016" crc="94a825fa"/>
+		<rom name="Wakusei Aton Gaiden (Japan)(1990)(Kokuzeichou).fds" size="131016" crc="94a825fa"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1610,8 +1610,8 @@
 	<game name="wardnernomori" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Wardner no Mori (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Wardner no Mori (Japan).fds" size="131016" crc="b5a04f7e"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Wardner no Mori (Japan)(1988)(Taito Corp.).fds" size="131016" crc="b5a04f7e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1656,8 +1656,8 @@
 	<game name="yuumaze" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Yuu Maze (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="Yuu Maze (Japan).fds" size="131016" crc="de297106"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Yuu Maze (Japan)(1988)(Taito Corp.).fds" size="131016" crc="de297106"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

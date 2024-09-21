@@ -32,7 +32,7 @@
 		<description>Alien Crush (USA)</description>
 		<year>1989</year>
 		<manufacturer>NEC - Hudson Soft</manufacturer>
-		<rom name="alien crush (usa).pce" size="262144" crc="ea488494"/>
+		<rom name="Alien Crush (USA)(1989)(NEC, Hudson Soft).pce" size="262144" crc="ea488494"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -40,7 +40,7 @@
 		<description>Ballistix (USA)</description>
 		<year>1991</year>
 		<manufacturer>NEC - Psygnosis</manufacturer>
-		<rom name="ballistix (usa).pce" size="262144" crc="420fa189"/>
+		<rom name="Ballistix (USA)(1991)(NEC - Psygnosis).pce" size="262144" crc="420fa189"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -210,15 +210,15 @@
 		<description>Devil's Crush - Naxat Pinball (USA)</description>
 		<year>1990</year>
 		<manufacturer>NEC</manufacturer>
-		<rom name="devil's crush - naxat pinball (usa).pce" size="393216" crc="157b4492"/>
+		<rom name="Devil's Crush - Naxat Pinball (USA)(1990)(NEC).pce" size="393216" crc="157b4492"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ddungw" sourcefile="pce/d_pce.cpp">
 		<description>Double Dungeons - W (USA)</description>
 		<year>1990</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="double dungeons - w (usa).pce" size="262144" crc="4a1a8c60"/>
+		<manufacturer>NEC - NCS</manufacturer>
+		<rom name="Double Dungeons - W (USA)(1990)(NEC - NCS).pce" size="262144" crc="4a1a8c60"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -377,24 +377,24 @@
 	<game name="legaxe2" sourcefile="pce/d_pce.cpp">
 		<description>Legendary Axe II, The (USA)</description>
 		<year>1990</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="legendary axe ii, the (usa).pce" size="262144" crc="220ebf91"/>
+		<manufacturer>Victor Interactive Software</manufacturer>
+		<rom name="Legendary Axe II, The (USA)(1990)(Victor).pce" size="262144" crc="220ebf91"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="legaxe" sourcefile="pce/d_pce.cpp">
 		<description>Legendary Axe, The (USA)</description>
 		<year>1989</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="legendary axe, the (usa).pce" size="262144" crc="2d211007"/>
+		<manufacturer>Victor Inc.</manufacturer>
+		<rom name="Legendary Axe, The (USA)(1989)(Victor).pce" size="262144" crc="2d211007"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="magchase" sourcefile="pce/d_pce.cpp">
 		<description>Magical Chase (USA)</description>
-		<year>1991</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="magical chase (usa).pce" size="524288" crc="95cd2979"/>
+		<year>1993</year>
+		<manufacturer>Quest</manufacturer>
+		<rom name="Magical Chase (USA)(1993)(Quest).pce" size="524288" crc="95cd2979"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
