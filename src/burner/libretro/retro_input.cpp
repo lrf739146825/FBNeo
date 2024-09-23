@@ -658,7 +658,7 @@ static INT32 GameInpAnalog2RetroInpAnalog(struct GameInp* pgi, unsigned port, un
 			sAxiBinds[pgi->Input.MouseAxis.nAxis].id = id;
 			retro_input_descriptor descriptor;
 			descriptor.port = port;
-			descriptor.device = nDeviceType[port];
+			descriptor.device = (nDeviceType[port] == RETROARCADE_GUN && BurnGunIsActive() ? RETRO_DEVICE_ANALOG : nDeviceType[port]);
 			descriptor.index = index;
 			descriptor.id = id;
 			descriptor.description = szn;
@@ -3078,6 +3078,8 @@ static void SetFakeInputDescriptors()
 		if (nDeviceType[i] == RETROMOUSE_BALL
 		 || nDeviceType[i] == RETROMOUSE_FULL
 		 || nDeviceType[i] == RETRO_DEVICE_POINTER
+		 || nDeviceType[i] == RETROARCADE_GUN
+		 || nDeviceType[i] == RETRO_DEVICE_TOUCHSCREEN
 		) {
 			continue;
 		}
