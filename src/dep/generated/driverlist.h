@@ -1474,6 +1474,7 @@ DRV		BurnDrvsms_basketn;
 DRV		BurnDrvmd_bassmc;
 DRV		BurnDrvmd_bassmpro;
 DRV		BurnDrvnes_bassedefadv;
+DRV		BurnSpecBastet;
 DRV		BurnSpecBatboy;
 DRV		BurnDrvnes_batlizard;
 DRV		BurnSpecbatman;
@@ -2009,6 +2010,10 @@ DRV		BurnDrvsg1k_bloktris;
 DRV		BurnDrvsms_bloktris;
 DRV		BurnDrvBlmbycar;
 DRV		BurnDrvBlmbycaru;
+DRV		BurnSpecBlond128en;
+DRV		BurnSpecBlond48en;
+DRV		BurnSpecBlond128es;
+DRV		BurnSpecBlond48es;
 DRV		BurnDrvBloodbroja;
 DRV		BurnDrvBloodbroj;
 DRV		BurnDrvBloodbrok;
@@ -7545,6 +7550,7 @@ DRV		BurnDrvHachooa;
 DRV		BurnDrvnes_hackmatch;
 DRV		BurnSpechadesnebula;
 DRV		BurnSpecMrhair;
+DRV		BurnSpecMrhairiv;
 DRV		BurnSpecHairyfly;
 DRV		BurnDrvsms_hajafuin;
 DRV		BurnSpecHakken128a;
@@ -10401,8 +10407,10 @@ DRV		BurnDrvnes_maurimursu;
 DRV		BurnDrvnes_mawthornej;
 DRV		BurnDrvnes_mawthorne;
 DRV		BurnDrvMaxrpm;
-DRV		BurnSpecMaxstone128;
-DRV		BurnSpecMaxstone48;
+DRV		BurnSpecMaxstone128en;
+DRV		BurnSpecMaxstone48en;
+DRV		BurnSpecMaxstone128es;
+DRV		BurnSpecMaxstone48es;
 DRV		BurnDrvnes_maxwar;
 DRV		BurnDrvMSX_maxima;
 DRV		BurnDrvMayday;
@@ -12077,6 +12085,8 @@ DRV		BurnSpecNightrally;
 DRV		BurnSpecNightshade;
 DRV		BurnDrvnes_nightshade;
 DRV		BurnDrvmd_nikkan;
+DRV		BurnSpecNikotmo128;
+DRV		BurnSpecNikotmo48;
 DRV		BurnDrvpce_nikopun;
 DRV		BurnDrvnes_nimnom;
 DRV		BurnDrvcv_nim;
@@ -22476,6 +22486,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_bassmc,			// BASS Masters Classic (USA)
 	&BurnDrvmd_bassmpro,		// BASS Masters Classic - Pro Edition (USA)
 	&BurnDrvnes_bassedefadv,	// Basse Def Adventures (HB)
+	&BurnSpecBastet,			// Bastet (48K) (HB)
 	&BurnSpecBatboy,			// Bat Boy (128K) (HB)
 	&BurnDrvnes_batlizard,		// Bat Lizard Bonanza (HB)
 	&BurnSpecbatman,			// Batman (128K)
@@ -23011,6 +23022,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_bloktris,		// Bloktris (HB)
 	&BurnDrvBlmbycar,			// Blomby Car (Version 1P0)
 	&BurnDrvBlmbycaru,			// Blomby Car (Version 1P0, not encrypted)
+	&BurnSpecBlond128en,		// Blond, The (English) (128K) (HB)
+	&BurnSpecBlond48en,			// Blond, The (English) (48K) (HB)
+	&BurnSpecBlond128es,		// Blond, The (Spanish) (128K) (HB)
+	&BurnSpecBlond48es,			// Blond, The (Spanish) (48K) (HB)
 	&BurnDrvBloodbroja,			// Blood Bros. (Japan)
 	&BurnDrvBloodbroj,			// Blood Bros. (Japan, rev A)
 	&BurnDrvBloodbrok,			// Blood Bros. (Korea)
@@ -28547,6 +28562,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_hackmatch,		// Hack*Match (HB)
 	&BurnSpechadesnebula,		// Hades Nebula (48K)
 	&BurnSpecMrhair,			// Hair Raising Adventures of Mr Hair, The (128K) (HB)
+	&BurnSpecMrhairiv,			// Hair Raising Adventures of Mr Hair, The - Imp. version (128K) (HB)
 	&BurnSpecHairyfly,			// Hairy Fly, The (128K) (HB)
 	&BurnDrvsms_hajafuin,		// Haja no Fuuin (Japan)
 	&BurnSpecHakken128a,		// Hakkenkast - Dungeon 1 (128K) (HB)
@@ -31403,8 +31419,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_mawthornej,		// Mawthorne (Japan) (HB)
 	&BurnDrvnes_mawthorne,		// Mawthorne (USA) (HB)
 	&BurnDrvMaxrpm,				// Max RPM (ver 2)
-	&BurnSpecMaxstone128,		// Max Stone (Spanish) (128K) (HB)
-	&BurnSpecMaxstone48,		// Max Stone (Spanish) (48K) (HB)
+	&BurnSpecMaxstone128en,		// Max Stone (English) (128K) (HB)
+	&BurnSpecMaxstone48en,		// Max Stone (English) (48K) (HB)
+	&BurnSpecMaxstone128es,		// Max Stone (Spanish) (128K) (HB)
+	&BurnSpecMaxstone48es,		// Max Stone (Spanish) (48K) (HB)
 	&BurnDrvnes_maxwar,			// Max Warrior - Wakusei Kaigenrei (Japan)
 	&BurnDrvMSX_maxima,			// Maxima (Euro)
 	&BurnDrvMayday,				// Mayday (set 1)
@@ -33079,6 +33097,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecNightshade,		// Nightshade (48K)
 	&BurnDrvnes_nightshade,		// Nightshade (USA)
 	&BurnDrvmd_nikkan,			// Nikkan Sports Pro Yakyuu Van (Japan)
+	&BurnSpecNikotmo128,		// Niko and the Magic Orb (128K) (HB)
+	&BurnSpecNikotmo48,			// Niko and the Magic Orb (48K) (HB)
 	&BurnDrvpce_nikopun,		// Niko Niko, Pun (Japan)
 	&BurnDrvnes_nimnom,			// Nim & Nom (HB, v1.2)
 	&BurnDrvcv_nim,				// Nim (HB)
@@ -43472,6 +43492,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_bassmc", "megadrive/d_megadrive.cpp"},
 	{ "md_bassmpro", "megadrive/d_megadrive.cpp"},
 	{ "nes_bassedefadv", "nes/d_nes.cpp"},
+	{ "spec_bastet", "spectrum/d_spectrum.cpp"},
 	{ "spec_batboy", "spectrum/d_spectrum.cpp"},
 	{ "nes_batlizard", "nes/d_nes.cpp"},
 	{ "spec_batman", "spectrum/d_spectrum.cpp"},
@@ -44003,6 +44024,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_bloktris", "sms/d_sms.cpp"},
 	{ "blmbycar", "pst90s/d_blmbycar.cpp"},
 	{ "blmbycaru", "pst90s/d_blmbycar.cpp"},
+	{ "spec_blond128en", "spectrum/d_spectrum.cpp"},
+	{ "spec_blond48en", "spectrum/d_spectrum.cpp"},
+	{ "spec_blond128es", "spectrum/d_spectrum.cpp"},
+	{ "spec_blond48es", "spectrum/d_spectrum.cpp"},
 	{ "bloodbroja", "pst90s/d_bloodbro.cpp"},
 	{ "bloodbroj", "pst90s/d_bloodbro.cpp"},
 	{ "bloodbrok", "pst90s/d_bloodbro.cpp"},
@@ -49489,6 +49514,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_hackmatch", "nes/d_nes.cpp"},
 	{ "spec_hadesnebula", "spectrum/d_spectrum.cpp"},
 	{ "spec_mrhair", "spectrum/d_spectrum.cpp"},
+	{ "spec_mrhairiv", "spectrum/d_spectrum.cpp"},
 	{ "spec_hairyfly", "spectrum/d_spectrum.cpp"},
 	{ "sms_hajafuin", "sms/d_sms.cpp"},
 	{ "spec_hakken128a", "spectrum/d_spectrum.cpp"},
@@ -52313,8 +52339,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_mawthornej", "nes/d_nes.cpp"},
 	{ "nes_mawthorne", "nes/d_nes.cpp"},
 	{ "maxrpm", "pre90s/d_mcr3.cpp"},
-	{ "spec_maxstone128", "spectrum/d_spectrum.cpp"},
-	{ "spec_maxstone48", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstone128en", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstone48en", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstone128es", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstone48es", "spectrum/d_spectrum.cpp"},
 	{ "nes_maxwar", "nes/d_nes.cpp"},
 	{ "msx_maxima", "msx/d_msx.cpp"},
 	{ "mayday", "pre90s/d_williams.cpp"},
@@ -53973,6 +54001,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_nightshade", "spectrum/d_spectrum.cpp"},
 	{ "nes_nightshade", "nes/d_nes.cpp"},
 	{ "md_nikkan", "megadrive/d_megadrive.cpp"},
+	{ "spec_nikotmo128", "spectrum/d_spectrum.cpp"},
+	{ "spec_nikotmo48", "spectrum/d_spectrum.cpp"},
 	{ "pce_nikopun", "pce/d_pce.cpp"},
 	{ "nes_nimnom", "nes/d_nes.cpp"},
 	{ "cv_nim", "coleco/d_coleco.cpp"},

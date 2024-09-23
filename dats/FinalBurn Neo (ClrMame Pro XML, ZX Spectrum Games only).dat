@@ -2386,6 +2386,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bastet" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Bastet (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>ZXdeveloper</manufacturer>
+		<rom name="Bastet 48K-AY (2024)(ZXdeveloper).tap" size="44066" crc="b7debd82"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="batboy" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Bat Boy (128K) (HB)</description>
@@ -3045,6 +3055,48 @@
 		<year>2023</year>
 		<manufacturer>Under4Mhz</manufacturer>
 		<rom name="Bloktris 48K (2023)(Under4Mhz).tap" size="33787" crc="a5c03f14"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blond128en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press SPACE to switch weapon: gun/dynamite</comment>
+		<description>Blond, The (English) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tom Martin</manufacturer>
+		<rom name="Blond, The EN 128K (2024)(Tom Martin).tap" size="46904" crc="cdbcc874"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blond48en" cloneof="blond128en" romof="blond128en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press SPACE to switch weapon: gun/dynamite</comment>
+		<description>Blond, The (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tom Martin</manufacturer>
+		<rom name="Blond, The EN 48K (2024)(Tom Martin).tap" size="45806" crc="ce0826dd"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blond128es" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press SPACE to switch weapon: gun/dynamite</comment>
+		<description>Blond, The (Spanish) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tom Martin</manufacturer>
+		<rom name="Blond, The ES 128K (2024)(Tom Martin).tap" size="46878" crc="10325f75"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blond48es" cloneof="blond128es" romof="blond128es" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press SPACE to switch weapon: gun/dynamite</comment>
+		<description>Blond, The (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Tom Martin</manufacturer>
+		<rom name="Blond, The ES 48K (2024)(Tom Martin).tap" size="45782" crc="5f7a0986"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4882,7 +4934,7 @@
 		<description>Cobra (48K)</description>
 		<year>1986</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Cobra (1986)(Ocean).z80" size="42218" crc="28a20fe7"/>
+		<rom name="Cobra 48K (1986)(Ocean).z80" size="42218" crc="28a20fe7"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8465,7 +8517,7 @@
 		<description>Extreme (48K)</description>
 		<year>1991</year>
 		<manufacturer>Digital Integration</manufacturer>
-		<rom name="Extreme (1991)(Digital Integration).tap" size="54612" crc="dc41f6f2"/>
+		<rom name="Extreme 48K (1991)(Digital Integration).tap" size="54612" crc="dc41f6f2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10431,12 +10483,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mrhair" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="mrhair" cloneof="mrhairiv" romof="mrhairiv" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Hair Raising Adventures of Mr Hair, The (128K) (HB)</description>
 		<year>2019</year>
 		<manufacturer>Lee Stevenson</manufacturer>
-		<rom name="The Hair Raising Adventures of Mr Hair (2019)(Lee Stevenson).tap" size="46747" crc="240d58bc"/>
+		<rom name="Hair Raising Adventures of Mr Hair, The (2019)(Lee Stevenson).tap" size="46747" crc="240d58bc"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mrhairiv" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Hair Raising Adventures of Mr Hair, The - Imp. version (128K) (HB)</description>
+		<year>2020-24</year>
+		<manufacturer>MicroChops</manufacturer>
+		<rom name="Hair Raising Adventures of Mr Hair, The - Imp. version 128K (2024)(MicroChops).tap" size="47133" crc="e8c66770"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10897,7 +10960,7 @@
 		<description>Hero Quest (128K)</description>
 		<year>1991</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Hero Quest (1991)(Gremlin Graphics).tap" size="111870" crc="76faec29"/>
+		<rom name="Hero Quest 128K (1991)(Gremlin Graphics).tap" size="111870" crc="76faec29"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10907,7 +10970,7 @@
 		<description>Hero Quest - Return of the Witch Lord (128K)</description>
 		<year>1991</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Hero Quest - Return of the Witch Lord (1991)(Gremlin Graphics).tap" size="131173" crc="65141180"/>
+		<rom name="Hero Quest - Return of the Witch Lord 128K (1991)(Gremlin Graphics).tap" size="131173" crc="65141180"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -14447,7 +14510,29 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="maxstone128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="maxstone128en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone (English) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone EN 128K (2024)(Flopping).tap" size="57430" crc="b62757a7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maxstone48en" cloneof="maxstone128en" romof="maxstone128en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone EN 48K (2024)(Flopping).tap" size="57130" crc="ab6380e9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maxstone128es" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Max Stone (Spanish) (128K) (HB)</description>
 		<year>2024</year>
@@ -14458,7 +14543,7 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="maxstone48" cloneof="maxstone128" romof="maxstone128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="maxstone48es" cloneof="maxstone128es" romof="maxstone128es" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Max Stone (Spanish) (48K) (HB)</description>
 		<year>2024</year>
@@ -16121,6 +16206,27 @@
 		<manufacturer>Ultimate Play The Game</manufacturer>
 		<rom name="Nightshade 48K (1985)(Ultimate Play The Game).tap" size="42456" crc="b421d1a8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nikotmo128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Niko and the Magic Orb (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>BTCO</manufacturer>
+		<rom name="Niko and the Magic Orb 128K (2024)(BTCO).tap" size="52571" crc="0080e61f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nikotmo48" cloneof="nikotmo128" romof="nikotmo128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Niko and the Magic Orb (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>BTCO</manufacturer>
+		<rom name="Niko and the Magic Orb 48K (2024)(BTCO).tap" size="52316" crc="d922530b"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22955,7 +23061,7 @@
 		<description>Teodoro Can't Fly (English) (48K) (HB)</description>
 		<year>2010</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Teodoro Can't Fly (2010)(RetroWorks).tap" size="45440" crc="39826d34"/>
+		<rom name="Teodoro Can't Fly EN 48K (2010)(RetroWorks).tap" size="45440" crc="39826d34"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22965,7 +23071,7 @@
 		<description>Teodoro No Sabe Volar (Russian) (48K) (HB)</description>
 		<year>2010</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Teodoro No Sabe Volar RU (2010)(RetroWorks).tap" size="45440" crc="d4b96f36"/>
+		<rom name="Teodoro No Sabe Volar RU 48K (2010)(RetroWorks).tap" size="45440" crc="d4b96f36"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22975,7 +23081,7 @@
 		<description>Teodoro No Sabe Volar (Spanish) (48K) (HB)</description>
 		<year>2010</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Teodoro No Sabe Volar (2010)(RetroWorks).tap" size="45436" crc="20ea68ea"/>
+		<rom name="Teodoro No Sabe Volar ES 48K (2010)(RetroWorks).tap" size="45436" crc="20ea68ea"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -23379,7 +23485,7 @@
 		<description>Time Sniper (128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Nextric</manufacturer>
-		<rom name="Time Sniper (2023)(Nextric).tap" size="44158" crc="737a235f"/>
+		<rom name="Time Sniper 128K (2023)(Nextric).tap" size="44158" crc="737a235f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23489,7 +23595,7 @@
 		<description>TJ's Cavern Capers (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Gaz Marshall</manufacturer>
-		<rom name="TJ Cavern Capers (2021)(Gaz Marshall).tap" size="33902" crc="2749ecc9"/>
+		<rom name="TJ Cavern Capers 128K (2021)(Gaz Marshall).tap" size="33902" crc="2749ecc9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23571,7 +23677,7 @@
 		<description>Toofy's Winter Nuts (48K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>Paul Jenkinson</manufacturer>
-		<rom name="Toofy's Winter Nuts (2013)(Paul Jenkinson).tap" size="39747" crc="aea85a8d"/>
+		<rom name="Toofy's Winter Nuts 48K (2013)(Paul Jenkinson).tap" size="39747" crc="aea85a8d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -23650,7 +23756,7 @@
 		<description>Tournament Arkanoid (48K) (Hack)</description>
 		<year>2022</year>
 		<manufacturer>Martyn Carrol</manufacturer>
-		<rom name="Tournament Arkanoid (2022)(Martyn Carrol).tap" size="48367" crc="3790ec49"/>
+		<rom name="Tournament Arkanoid 48K (2022)(Martyn Carrol).tap" size="48367" crc="3790ec49"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -24100,7 +24206,7 @@
 		<description>Tut-Tut (48K) (HB, v1.04)</description>
 		<year>2020</year>
 		<manufacturer>Cronosoft</manufacturer>
-		<rom name="Tut-Tut v1.04 (2020)(Cronosoft).tap" size="25895" crc="ede5bd5d"/>
+		<rom name="Tut-Tut v1.04 48K (2020)(Cronosoft).tap" size="25895" crc="ede5bd5d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
