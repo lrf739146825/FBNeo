@@ -10509,7 +10509,7 @@
 	<game name="knnsf" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Kunio no Nekketsu School Fighters (HB, Beta v.05b)</description>
-		<year>2024</year>
+		<year>2023</year>
 		<manufacturer>UsagiRu</manufacturer>
 		<rom name="Kunio no Nekketsu School Fighters Beta v.05b (2023)(UsagiRu).bin" size="4194304" crc="1054a215"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
