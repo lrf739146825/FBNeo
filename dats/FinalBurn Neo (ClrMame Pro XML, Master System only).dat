@@ -343,7 +343,7 @@
 		<description>Alien Storm (Euro, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14254.ic1" size="262144" crc="7f30f793"/>
+		<rom name="Alien Storm (Euro, Brazil)(1991)(Sega).sms" size="262144" crc="7f30f793"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -351,7 +351,7 @@
 		<description>Alien Syndrome (Euro, USA, Brazil)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11384 w10.ic1" size="262144" crc="5cbfe997"/>
+		<rom name="Alien Syndrome (Euro, USA, Brazil)(1987)(Sega).sms" size="262144" crc="5cbfe997"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -359,7 +359,7 @@
 		<description>Alien Syndrome (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="alien syndrome (japan).bin" size="262144" crc="4cc11df9"/>
+		<rom name="Alien Syndrome (Japan)(1987)(Sega).sms" size="262144" crc="4cc11df9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -368,7 +368,7 @@
 		<description>Alien Syndrome (Prototype)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="alien syndrome (proto).bin" size="262144" crc="c148868c"/>
+		<rom name="Alien Syndrome (Proto)(1987)(Sega).sms" size="262144" crc="c148868c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -458,7 +458,7 @@
 		<description>As Aventuras da TV Colosso (Brazil)</description>
 		<year>1996</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="tv colosso (brazil).bin" size="524288" crc="e1714a88"/>
+		<rom name="As Aventuras da TV Colosso (Brazil)(1996)(Tec Toy).sms" size="524288" crc="e1714a88"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -523,7 +523,7 @@
 		<description>Astro Flash (Japan, MyCard)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="astro flash (japan).bin" size="32768" crc="c795182d"/>
+		<rom name="Astro Flash (Japan, MyCard)(1985)(Sega).bin" size="32768" crc="c795182d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -531,7 +531,7 @@
 		<description>Astro Flash (Japan, Pirate)</description>
 		<year>1985</year>
 		<manufacturer>pirate</manufacturer>
-		<rom name="astro flash [hack].bin" size="32768" crc="0e21e6cf"/>
+		<rom name="Astro Flash (Japan, Pirate)(1985)(Sega).sms" size="32768" crc="0e21e6cf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -548,7 +548,7 @@
 		<description>Astro Warrior (Japan, USA, Brazil)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-10387.ic1" size="131072" crc="299cbb74"/>
+		<rom name="Astro Warrior (Japan, USA, Brazil)(1986)(Sega).sms" size="131072" crc="299cbb74"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -556,7 +556,7 @@
 		<description>Astro Warrior and Pit Pot (Euro)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11070.ic1" size="131072" crc="69efd483"/>
+		<rom name="Astro Warrior and Pit Pot (Euro)(1986)(Sega).sms" size="131072" crc="69efd483"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -657,7 +657,7 @@
 		<description>Bank Panic (Euro, Sega Card)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12554.ic1" merge="mpr-12554.ic1" size="32768" crc="655fb1f4"/>
+		<rom name="Bank Panic (Euro, Sega Card)(1987)(Sega).bin" merge="mpr-12554.ic1" size="32768" crc="655fb1f4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1913,6 +1913,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="frontierforce" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Frontier Force (HB, Alpha Demo v0.1.2.2)</description>
+		<year>2024</year>
+		<manufacturer>badcomputer0</manufacturer>
+		<rom name="Frontier Force - Alpha Demo v0.1.2.2 (2024)(helpcomputer0).sms" size="262144" crc="aba14731"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pitpot" sourcefile="sms/d_sms.cpp">
 		<description>Fushigi no Oshiro Pit Pot (Japan, MyCard)</description>
 		<year>1985</year>
@@ -2091,9 +2100,9 @@
 	</game>
 	<game name="gerald" cloneof="teddyboy" romof="teddyboy" sourcefile="sms/d_sms.cpp">
 		<description>Geraldinho (Brazil)</description>
-		<year>19??</year>
+		<year>198?</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="geraldinho (brazil).bin" size="32768" crc="956c416b"/>
+		<rom name="Geraldinho (Brazil)(198x)(Tec Toy).sms" size="32768" crc="956c416b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2101,7 +2110,7 @@
 		<description>Ghost House (Euro, USA, Brazil)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12586.ic1" size="32768" crc="f1f8ff2d"/>
+		<rom name="Ghost House (Euro, USA, Brazil)(1986)(Sega).sms" size="32768" crc="f1f8ff2d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2109,7 +2118,7 @@
 		<description>Ghost House (Euro, USA, Brazil, Sega Card)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ghost house (euro, usa, bra).bin" merge="mpr-12586.ic1" size="32768" crc="f1f8ff2d"/>
+		<rom name="ghost house (euro, usa, bra).bin" merge="Ghost House (Euro, USA, Brazil)(1986)(Sega).sms" size="32768" crc="f1f8ff2d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2124,8 +2133,8 @@
 	<game name="ghosthj1" cloneof="ghosth" romof="ghosth" sourcefile="sms/d_sms.cpp">
 		<description>Ghost House (Japan, Pirate?)</description>
 		<year>1986</year>
-		<manufacturer>pirate</manufacturer>
-		<rom name="ghost house (j) [hack].bin" size="32768" crc="dabcc054"/>
+		<manufacturer>Sega?</manufacturer>
+		<rom name="Ghost House (Japan, Pirate)(1986).sms" size="32768" crc="dabcc054"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2133,7 +2142,7 @@
 		<description>Ghost House (Korea)</description>
 		<year>198?</year>
 		<manufacturer>Samsung</manufacturer>
-		<rom name="ghost house (kr).bin" size="32768" crc="1203afc9"/>
+		<rom name="Ghost House (Korea)(198x)(Samsung).sms" size="32768" crc="1203afc9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2150,7 +2159,7 @@
 		<description>Ghostbusters (Euro, USA, Korea)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-10516.ic1" size="131072" crc="1ddc3059"/>
+		<rom name="Ghostbusters (Euro, USA, Korea)(1989)(Sega).sms" size="131072" crc="1ddc3059"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3560,7 +3569,7 @@
 		<description>New Zealand Story, The (Euro)</description>
 		<year>1992</year>
 		<manufacturer>TecMagik</manufacturer>
-		<rom name="new zealand story, the (europe).bin" size="262144" crc="c660ff34"/>
+		<rom name="New Zealand Story, The (Euro)(1992)(TecMagik).sms" size="262144" crc="c660ff34"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5234,7 +5243,7 @@
 		<description>Super Wonder Boy - Monster World (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super wonder boy - monster world (japan).bin" size="262144" crc="b1da6a30"/>
+		<rom name="Super Wonder Boy - Monster World (Japan)(1988)(Sega).sms" size="262144" crc="b1da6a30"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5344,7 +5353,7 @@
 		<description>Teddy Boy (Euro, USA, Brazil)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12668.ic1" size="32768" crc="2728faa3"/>
+		<rom name="Teddy Boy (Euro, USA, Brazil)(1985)(Sega).sms" size="32768" crc="2728faa3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5352,7 +5361,7 @@
 		<description>Teddy Boy (Euro, USA, Brazil, Sega Card)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="teddy boy (euro, usa, bra).bin" merge="mpr-12668.ic1" size="32768" crc="2728faa3"/>
+		<rom name="Teddy Boy (Euro, USA, Brazil, Sega Card)(1985)(Sega).bin" merge="Teddy Boy (Euro, USA, Brazil)(1985)(Sega).sms" size="32768" crc="2728faa3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5361,7 +5370,7 @@
 		<description>Teddy Boy Blues (Japan, Ep-MyCard, Prototype)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="teddy boy blues (japan) (proto) (ep-mycard).bin" size="49152" crc="d7508041"/>
+		<rom name="Teddy Boy Blues (Japan, Ep-MyCard, Proto)(1985)(Sega).bin" size="49152" crc="d7508041"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5369,15 +5378,15 @@
 		<description>Teddy Boy Blues (Japan, MyCard)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="teddy boy blues (japan).bin" size="32768" crc="316727dd"/>
+		<rom name="Teddy Boy Blues (Japan, MyCard)(1985)(Sega).bin" size="32768" crc="316727dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="teddyboyj1" cloneof="teddyboy" romof="teddyboy" sourcefile="sms/d_sms.cpp">
 		<description>Teddy Boy Blues (Japan, Pirate?)</description>
 		<year>1985</year>
-		<manufacturer>pirate</manufacturer>
-		<rom name="teddy boy blues (j) [hack].bin" size="32768" crc="9dfa67ee"/>
+		<manufacturer>Sega?</manufacturer>
+		<rom name="Teddy Boy Blues (Japan, Pirate)(1985).sms" size="32768" crc="9dfa67ee"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5394,7 +5403,7 @@
 		<description>Tennis Ace (Euro, Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tennis ace (europe).bin" size="262144" crc="1a390b93"/>
+		<rom name="Tennis Ace (Euro, Brazil)(1989)(Sega).sms" size="262144" crc="1a390b93"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5402,7 +5411,7 @@
 		<description>Tensai Bakabon (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tensai bakabon (japan).bin" size="262144" crc="8132ab2c"/>
+		<rom name="Tensai Bakabon (Japan)(1988)(Sega).sms" size="262144" crc="8132ab2c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5410,7 +5419,7 @@
 		<description>Terminator 2 - Judgment Day (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="terminator 2 - judgment day (europe).bin" size="262144" crc="ac56104f"/>
+		<rom name="Terminator 2 - Judgment Day (Euro)(1993)(Flying Edge).sms" size="262144" crc="ac56104f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5427,7 +5436,7 @@
 		<description>Terminator, The (Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="terminator, the (brazil).bin" size="262144" crc="e3d5ce9a"/>
+		<rom name="Terminator, The (Brazil)(1992)(Tec Toy).sms" size="262144" crc="e3d5ce9a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5435,7 +5444,7 @@
 		<description>Terminator, The (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="terminator, the (europe).bin" size="262144" crc="edc5c012"/>
+		<rom name="Terminator, The (Euro)(1992)(Virgin).sms" size="262144" crc="edc5c012"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5540,7 +5549,7 @@
 		<description>Thunder Blade (Euro, USA, Brazil)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11820f.ic1" size="262144" crc="ae920e4b"/>
+		<rom name="Thunder Blade (Euro, USA, Brazil)(1988)(Sega).sms" size="262144" crc="ae920e4b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5548,7 +5557,7 @@
 		<description>Thunder Blade (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="thunder blade (japan).bin" size="262144" crc="c0ce19b1"/>
+		<rom name="Thunder Blade (Japan)(1988)(Sega).sms" size="262144" crc="c0ce19b1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5557,7 +5566,7 @@
 		<description>Thunder Blade (Japan, Prototype)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="thunder blade (japan)(proto).sms" size="262144" crc="bab9533b"/>
+		<rom name="Thunder Blade (Japan, Proto)(1988)(Sega).sms" size="262144" crc="bab9533b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5565,16 +5574,16 @@
 		<description>Time Soldiers (Euro, USA, Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12129f.ic1" size="262144" crc="51bd14be"/>
+		<rom name="Time Soldiers (Euro, USA, Brazil)(1989)(Sega).sms" size="262144" crc="51bd14be"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tomjerry" cloneof="tomjermv" romof="tomjermv" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Tom and Jerry (Prototype)</description>
+		<description>Tom and Jerry (Euro, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry (europe) (beta).bin" size="262144" crc="0c2fc2de"/>
+		<rom name="Tom and Jerry (Euro, Proto)(1992)(Sega).sms" size="262144" crc="0c2fc2de"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5582,7 +5591,7 @@
 		<description>Tom and Jerry - The Movie (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry - the movie (europe).bin" size="262144" crc="bf7b7285"/>
+		<rom name="Tom and Jerry - The Movie (Euro, Brazil)(1992)(Sega).sms" size="262144" crc="bf7b7285"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5596,10 +5605,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="totowld3" sourcefile="sms/d_sms.cpp">
-		<description>Toto World 3 (Korea)</description>
+		<description>Toto World 3 (Korea) (Unl)</description>
 		<year>1993</year>
 		<manufacturer>Open Corp.</manufacturer>
-		<rom name="toto world 3 (korea) (unl).bin" size="262144" crc="4f8d75ec"/>
+		<rom name="Toto World 3 (Korea)(Unl)(1992)(Open Corp.).sms" size="262144" crc="4f8d75ec"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5650,26 +5659,26 @@
 	</game>
 	<game name="transbot" sourcefile="sms/d_sms.cpp">
 		<description>TransBot (Euro, USA, Brazil)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12552.ic1" size="32768" crc="4bc42857"/>
+		<rom name="TransBot (Euro, USA, Brazil)(1986)(Sega).sms" size="32768" crc="4bc42857"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="transbotc" cloneof="transbot" romof="transbot" sourcefile="sms/d_sms.cpp">
 		<description>TransBot (Euro, USA, Brazil, Sega Card)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="transbot (euro, usa, bra).bin" merge="mpr-12552.ic1" size="32768" crc="4bc42857"/>
+		<rom name="TransBot (Euro, USA, Brazil, Sega Card)(1986)(Sega).bin" merge="TransBot (Euro, USA, Brazil)(1986)(Sega).sms" size="32768" crc="4bc42857"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="transbotp" cloneof="transbot" romof="transbot" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
 		<description>TransBot (USA, Prototype)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="transbot [proto].bin" size="32768" crc="58b99750"/>
+		<rom name="TransBot (USA, Proto)(1986)(Sega).sms" size="32768" crc="58b99750"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5677,7 +5686,7 @@
 		<description>Treinamento Do Mymo (Brazil)</description>
 		<year>19??</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="treinamento do mymo (b).bin" size="262144" crc="e94784f2"/>
+		<rom name="Treinamento Do Mymo (Brazil)(19xx)(Tec Toy).sms" size="262144" crc="e94784f2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5685,7 +5694,7 @@
 		<description>Trivial Pursuit - Genus Edition (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="trivial pursuit - genus edition (europe) (en,fr,de,es).bin" size="524288" crc="e5374022"/>
+		<rom name="Trivial Pursuit - Genus Edition (Euro)(1992)(Domark).sms" size="524288" crc="e5374022"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5693,7 +5702,7 @@
 		<description>Ttoriui Moheom (Korea)</description>
 		<year>19??</year>
 		<manufacturer>Unknown</manufacturer>
-		<rom name="ttoriui moheom (kr).bin" size="32768" crc="178801d2"/>
+		<rom name="Ttoriui Moheom (Korea)(19xx).sms" size="32768" crc="178801d2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5701,7 +5710,7 @@
 		<description>Turma da Monica em O Resgate (Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="mpr-15999.ic1" size="262144" crc="22cca9bb"/>
+		<rom name="Turma da Monica em O Resgate (Brazil)(1993)(Tec Toy).sms" size="262144" crc="22cca9bb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5709,7 +5718,7 @@
 		<description>Ultima IV - Quest of the Avatar (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13135.ic1" size="524288" crc="b52d60c8"/>
+		<rom name="Ultima IV - Quest of the Avatar (Euro, Brazil)(1990)(Sega).sms" size="524288" crc="b52d60c8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5718,7 +5727,7 @@
 		<description>Ultima IV - Quest of the Avatar (Euro, Prototype)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ultima iv - quest of the avatar (europe) (beta).bin" size="524288" crc="de9f8517"/>
+		<rom name="Ultima IV - Quest of the Avatar (Euro, Proto)(1990)(Sega).sms" size="524288" crc="de9f8517"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5726,7 +5735,7 @@
 		<description>Ultimate Soccer (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ultimate soccer (europe) (en,fr,de,es,it).bin" size="262144" crc="15668ca4"/>
+		<rom name="Ultimate Soccer (Euro, Brazil)(1993)(Sega).sms" size="262144" crc="15668ca4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5735,7 +5744,7 @@
 		<description>Vampire (Euro, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="vampire (europe) (beta).bin" size="262144" crc="20f40cae"/>
+		<rom name="Vampire (Euro, Proto)(1992)(Sega).sms" size="262144" crc="20f40cae"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5752,7 +5761,7 @@
 		<description>Vigilante (Euro, USA, Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12138f.ic1" size="262144" crc="dfb0b161"/>
+		<rom name="Vigilante (Euro, USA, Brazil)(1989)(Sega).sms" size="262144" crc="dfb0b161"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5760,7 +5769,7 @@
 		<description>Virtua Fighter Animation (Brazil)</description>
 		<year>1997</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="virtua fighter animation (brazil).bin" size="1048576" crc="57f1545b"/>
+		<rom name="Virtua Fighter Animation (Brazil)(1997)(Tec Toy).sms" size="1048576" crc="57f1545b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5786,7 +5795,7 @@
 		<description>Walter Payton Football (USA)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="walter payton football (usa).bin" size="262144" crc="3d55759b"/>
+		<rom name="Walter Payton Football (USA).sms" size="262144" crc="3d55759b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5795,7 +5804,7 @@
 		<description>Wanted (Euro, USA, Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12533f.ic1" size="131072" crc="5359762d"/>
+		<rom name="Wanted (Euro, USA, Brazil)(1989)(Sega).sms" size="131072" crc="5359762d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5812,7 +5821,7 @@
 		<description>Where in the World is Carmen Sandiego? (Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="where in the world is carmen sandiego (brazil).bin" size="131072" crc="88aa8ca6"/>
+		<rom name="Where in the World is Carmen Sandiego (Brazil)(1989)(Tec Toy).sms" size="131072" crc="88aa8ca6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5820,7 +5829,7 @@
 		<description>Where in the World is Carmen Sandiego? (USA)</description>
 		<year>1989</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="where in the world is carmen sandiego (usa).bin" size="131072" crc="428b1e7c"/>
+		<rom name="Where in the World is Carmen Sandiego (USA)(1989)(Parker Brothers).sms" size="131072" crc="428b1e7c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5846,7 +5855,7 @@
 		<description>Wimbledon (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14686.ic1" size="262144" crc="912d92af"/>
+		<rom name="Wimbledon (Euro)(1992)(Sega).sms" size="262144" crc="912d92af"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5854,7 +5863,7 @@
 		<description>Wimbledon II (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wimbledon ii (europe).bin" size="262144" crc="7f3afe58"/>
+		<rom name="Wimbledon II (Euro, Brazil)(1993)(Sega).sms" size="262144" crc="7f3afe58"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5871,7 +5880,7 @@
 		<description>Winter Olympics - Lillehammer '94 (Brazil)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="winter olympics - lillehammer '94 (brazil) (en,fr,de,es,it,pt,sv,no).bin" size="524288" crc="2fec2b4a"/>
+		<rom name="Winter Olympics - Lillehammer '94 (Brazil)(1993)(U.S. Gold).sms" size="524288" crc="2fec2b4a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5879,7 +5888,7 @@
 		<description>Winter Olympics - Lillehammer '94 (Euro)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="winter olympics - lillehammer '94 (europe) (en,fr,de,es,it,pt,sv,no).bin" size="524288" crc="a20290b6"/>
+		<rom name="Winter Olympics - Lillehammer '94 (Euro)(1993)(U.S. Gold).sms" size="524288" crc="a20290b6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5887,7 +5896,7 @@
 		<description>Wolfchild (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="mpr-15714.ic1" size="262144" crc="1f8efa1d"/>
+		<rom name="Wolfchild (Euro, Brazil)(1993)(Virgin).sms" size="262144" crc="1f8efa1d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5895,7 +5904,7 @@
 		<description>Wonder Boy (Euro, Korea, v0) ~ Super Wonder Boy (Japan, v0)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super wonder boy (japan).bin" size="131072" crc="e2fcb6f3"/>
+		<rom name="Wonder Boy (Euro, Korea, v0) ~ Super Wonder Boy (Japan, v0)(1987)(Sega).sms" size="131072" crc="e2fcb6f3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5903,7 +5912,7 @@
 		<description>Wonder Boy (Euro, USA, Brazil, v1)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy (usa, europe).bin" size="131072" crc="73705c02"/>
+		<rom name="Wonder Boy (Euro, USA, Brazil, v1)(1987)(Sega).sms" size="131072" crc="73705c02"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5920,7 +5929,7 @@
 		<description>Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12570.ic1" size="262144" crc="679e1676"/>
+		<rom name="Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)(1989)(Sega).sms" size="262144" crc="679e1676"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5946,7 +5955,7 @@
 		<description>Wonder Boy in Monster Land (Euro, USA)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11487.ic1" size="262144" crc="8cbef0c1"/>
+		<rom name="Wonder Boy in Monster Land (Euro, USA)(1988)(Sega).sms" size="262144" crc="8cbef0c1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5954,7 +5963,7 @@
 		<description>Wonder Boy in Monster Land (Euro, USA, Hacked?)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy in monster land [hack].bin" size="262144" crc="7522cf0a"/>
+		<rom name="Wonder Boy in Monster Land (Euro, USA, Hacked)(1988)(Sega).sms" size="262144" crc="7522cf0a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5963,7 +5972,7 @@
 		<description>Wonder Boy in Monster Land (Prototype)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy in monster land [proto].bin" size="262144" crc="8312c429"/>
+		<rom name="Wonder Boy in Monster Land (Proto)(1988)(Sega).sms" size="262144" crc="8312c429"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5971,7 +5980,7 @@
 		<description>Wonder Boy in Monster World (Euro, Korea)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15317.ic1" size="524288" crc="7d7ce80b"/>
+		<rom name="Wonder Boy in Monster World (Euro, Korea)(1993)(Sega).sms" size="524288" crc="7d7ce80b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5980,7 +5989,7 @@
 		<description>Wonder Boy in Monster World (Euro, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy in monster world (europe) (beta).bin" size="524288" crc="81bff9bb"/>
+		<rom name="Wonder Boy in Monster World (Euro, Proto)(1993)(Sega).sms" size="524288" crc="81bff9bb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5997,7 +6006,7 @@
 		<description>Wonsiin (Korea)</description>
 		<year>1991</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="wonsiin (kr).bin" size="131072" crc="a05258f5"/>
+		<rom name="Wonsiin (Korea)(1991)(Zemina).sms" size="131072" crc="a05258f5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6010,10 +6019,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="wclead" sourcefile="sms/d_sms.cpp">
-		<description>World Class Leader Board (Euro, Brazil)</description>
+		<description>World Class Leader Board (Euro)</description>
 		<year>1991</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="world class leader board (europe).bin" size="262144" crc="c9a449b7"/>
+		<rom name="World Class Leader Board (Euro)(1991)(U.S. Gold).sms" size="262144" crc="c9a449b7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6021,7 +6030,7 @@
 		<description>World Cup Italia '90 (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13292.ic1" size="131072" crc="6e1ad6fd"/>
+		<rom name="World Cup Italia '90 (Euro, Brazil)(1990)(Sega).sms" size="131072" crc="6e1ad6fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6029,23 +6038,23 @@
 		<description>World Cup Italia '90 (USA, Demo)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="world cup italia '90 [demo].bin" size="131072" crc="a0cf8b15"/>
+		<rom name="World Cup Italia '90 (USA, Demo)(1990)(Sega).sms" size="131072" crc="a0cf8b15"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wcup94" sourcefile="sms/d_sms.cpp">
-		<description>World Cup USA 94 (Euro, Brazil)</description>
+		<description>World Cup USA 94 (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="world cup usa 94 (europe) (en,fr,de,es,it,nl,pt,sv).bin" size="524288" crc="a6bf8f9e"/>
+		<rom name="World Cup USA 94 (Euro)(1992)(Sega).sms" size="524288" crc="a6bf8f9e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wldgames" sourcefile="sms/d_sms.cpp">
-		<description>World Games (Euro, Brazil)</description>
+		<description>World Games (Euro)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="world games (europe).bin" size="131072" crc="a2a60bc8"/>
+		<rom name="World Games (Euro)(1989)(Sega).sms" size="131072" crc="a2a60bc8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6054,7 +6063,7 @@
 		<description>World Games (Euro, Prototype)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="world games (europe) (beta).bin" size="131072" crc="914d3fc4"/>
+		<rom name="World Games (Euro, Proto)(1989)(Sega).sms" size="131072" crc="914d3fc4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6062,7 +6071,7 @@
 		<description>World Grand Prix (Euro)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-10156.ic1" size="131072" crc="4aaad0d6"/>
+		<rom name="World Grand Prix (Euro)(1986)(Sega).sms" size="131072" crc="4aaad0d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6070,7 +6079,7 @@
 		<description>World Grand Prix (USA, Brazil, Korea)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-10151.ic2" size="131072" crc="7b369892"/>
+		<rom name="World Grand Prix (USA, Brazil, Korea)(1986)(Sega).sms" size="131072" crc="7b369892"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6079,7 +6088,7 @@
 		<description>World Grand Prix (USA, Prototype)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="world grand prix [proto].bin" size="131072" crc="b5a9f824"/>
+		<rom name="World Grand Prix (USA, Proto)(1986)(Sega).sms" size="131072" crc="b5a9f824"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6087,15 +6096,15 @@
 		<description>World Soccer (Euro, Japan, Korea) ~ Great Soccer (USA)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-10747f.ic1" size="131072" crc="72112b75"/>
+		<rom name="World Soccer (World)(1987)(Sega).sms" size="131072" crc="72112b75"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wwfsteel" sourcefile="sms/d_sms.cpp">
-		<description>WWF Wrestlemania - Steel Cage Challenge (Euro, Brazil)</description>
+		<description>WWF Wrestlemania - Steel Cage Challenge (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="wwf wrestlemania - steel cage challenge (europe).bin" size="262144" crc="2db21448"/>
+		<rom name="WWF Wrestlemania - Steel Cage Challenge (Euro)(1993)(Flying Edge).sms" size="262144" crc="2db21448"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6103,7 +6112,7 @@
 		<description>X-Men - Mojo World (Brazil)</description>
 		<year>1996</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="x-men - mojo world (brazil).bin" size="524288" crc="3e1387f6"/>
+		<rom name="X-Men - Mojo World (Brazil)(1996)(Tec Toy).sms" size="524288" crc="3e1387f6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6111,7 +6120,7 @@
 		<description>Xenon 2 - Megablast (Image Works) (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Image Works</manufacturer>
-		<rom name="xenon 2 - megablast (europe) (image works).bin" size="262144" crc="5c205ee1"/>
+		<rom name="Xenon 2 - Megablast (Euro)(1991)(Image Works).sms" size="262144" crc="5c205ee1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6119,15 +6128,15 @@
 		<description>Xenon 2 - Megablast (Virgin) (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="xenon 2 - megablast (europe) (virgin).bin" size="262144" crc="ec726c0d"/>
+		<rom name="Xenon 2 - Megablast (Euro)(1991)(Virgin).sms" size="262144" crc="ec726c0d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="xyzolog" sourcefile="sms/d_sms.cpp">
 		<description>Xyzolog (Korea)</description>
-		<year>19??</year>
+		<year>198?</year>
 		<manufacturer>Taito?</manufacturer>
-		<rom name="xyzolog (kr).sms" size="49152" crc="565c799f"/>
+		<rom name="Xyzolog (Korea)(198x).sms" size="49152" crc="565c799f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6135,15 +6144,7 @@
 		<description>Ys (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ys (japan).bin" size="262144" crc="32759751"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ysd" cloneof="ys" romof="ys" sourcefile="sms/d_sms.cpp">
-		<description>Ys (USA, Demo)</description>
-		<year>1988</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="ys - the vanished omens [demo].bin" size="262144" crc="e8b82066"/>
+		<rom name="Ys (Japan)(1988)(Sega).sms" size="262144" crc="32759751"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6151,7 +6152,7 @@
 		<description>Ys - The Vanished Omens (Euro, USA, Brazil)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12044f.ic1" size="262144" crc="b33e2827"/>
+		<rom name="Ys - The Vanished Omens (Euro, USA, Brazil)(1988)(Sega).sms" size="262144" crc="b33e2827"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6164,11 +6165,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ysd" cloneof="ys" romof="ys" sourcefile="sms/d_sms.cpp">
+		<description>Ys - The Vanished Omens (USA, Demo)</description>
+		<year>1988</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Ys - The Vanished Omens (USA, Demo)(1988)(Sega).sms" size="262144" crc="e8b82066"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zaxxon3d" sourcefile="sms/d_sms.cpp">
 		<description>Zaxxon 3-D (World)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11197.ic1" size="262144" crc="a3ef13cb"/>
+		<rom name="Zaxxon 3-D (World)(1987)(Sega).sms" size="262144" crc="a3ef13cb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6177,7 +6186,7 @@
 		<description>Zaxxon 3-D (World, Prototype)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="zaxxon 3-d (world) (beta).bin" size="262144" crc="bba74147"/>
+		<rom name="Zaxxon 3-D (World, beta)(1987)(Sega).sms" size="262144" crc="bba74147"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6194,7 +6203,7 @@
 		<description>Zillion (Euro, v1.0) ~ Akai Koudan Zillion (Japan, v0)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="zillion (japan, europe) (en,ja).bin" size="131072" crc="60c19645"/>
+		<rom name="Zillion (Euro, Japan)(1987)(Sega).sms" size="131072" crc="60c19645"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6202,7 +6211,7 @@
 		<description>Zillion (Euro, v1.2)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="zillion (europe) (v1.2).bin" size="131072" crc="7ba54510"/>
+		<rom name="Zillion (Euro, v1.2)(1987)(Sega).sms" size="131072" crc="7ba54510"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6210,7 +6219,7 @@
 		<description>Zillion (USA, v1.1)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="zillion (usa) (v1.1).bin" size="131072" crc="5718762c"/>
+		<rom name="Zillion (USA, v1.1)(1987)(Sega).sms" size="131072" crc="5718762c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6218,7 +6227,7 @@
 		<description>Zillion II - The Tri Formation (Euro, USA) ~ Tri Formation (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="zillion ii - the tri formation (world).bin" size="131072" crc="2f2e3bc9"/>
+		<rom name="Zillion II - The Tri Formation (World)(1987)(Sega).sms" size="131072" crc="2f2e3bc9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6226,7 +6235,7 @@
 		<description>Zool - Ninja of the 'Nth' Dimension (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Gremlin Interactive</manufacturer>
-		<rom name="mpr-15992.ic1" size="262144" crc="9d9d0a5f"/>
+		<rom name="Zool - Ninja of the 'Nth' Dimension (Euro)(1993)(Gremlin Interactive).sms" size="262144" crc="9d9d0a5f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

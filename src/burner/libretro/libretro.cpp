@@ -59,8 +59,8 @@ static unsigned libretro_msg_interface_version = 0;
 int kNetGame = 0;
 INT32 nReplayStatus = 0;
 unsigned nGameType = 0;
-static INT32 nGameWidth = 800;
-static INT32 nGameHeight = 600;
+static INT32 nGameWidth = 640;
+static INT32 nGameHeight = 480;
 static INT32 nGameMaximumGeometry;
 static INT32 nNextGeometryCall = RETRO_ENVIRONMENT_SET_GEOMETRY;
 
@@ -1118,75 +1118,76 @@ static bool open_archive()
 
 			ZipEntry *list = NULL;
 			int count;
-			ZipGetList(&list, &count);
-
-			// Try to map the ROMs FBNeo wants to ROMs we find inside our pretty archives ...
-			for (unsigned i = 0; i < nRomCount; i++)
+			if (ZipGetList(&list, &count) == 0)
 			{
-				if (pRomFind[i].nState == STAT_OK)
-					continue;
-
-				struct BurnRomInfo ri;
-				memset(&ri, 0, sizeof(ri));
-				BurnDrvGetRomInfo(&ri, i);
-
-				if ((ri.nType & BRF_NODUMP) || (ri.nType == 0) || (ri.nLen == 0) || ((NULL == pDataRomDesc) && (-1 == pRDI->nDescCount) && (0 == ri.nCrc)))
+				// Try to map the ROMs FBNeo wants to ROMs we find inside our pretty archives ...
+				for (unsigned i = 0; i < nRomCount; i++)
 				{
-					pRomFind[i].nState = STAT_OK;
-					continue;
-				}
+					if (pRomFind[i].nState == STAT_OK)
+						continue;
 
-				char *real_rom_name;
-				uint32_t real_rom_crc;
-				int index = find_rom_by_crc(ri.nCrc, list, count, &real_rom_name);
+					struct BurnRomInfo ri;
+					memset(&ri, 0, sizeof(ri));
+					BurnDrvGetRomInfo(&ri, i);
 
-				BurnDrvGetRomName(&rom_name, i, 0);
+					if ((ri.nType & BRF_NODUMP) || (ri.nType == 0) || (ri.nLen == 0) || ((NULL == pDataRomDesc) && (-1 == pRDI->nDescCount) && (0 == ri.nCrc)))
+					{
+						pRomFind[i].nState = STAT_OK;
+						continue;
+					}
 
-				bool unknown_crc = false;
+					char *real_rom_name;
+					uint32_t real_rom_crc;
+					int index = find_rom_by_crc(ri.nCrc, list, count, &real_rom_name);
 
-				if (index < 0)
-				{
-					if ((g_find_list_path[z].ignoreCrc && bPatchedRomsetsEnabled) ||
+					BurnDrvGetRomName(&rom_name, i, 0);
+
+					bool unknown_crc = false;
+
+					if (index < 0)
+					{
+						if ((g_find_list_path[z].ignoreCrc && bPatchedRomsetsEnabled) ||
 						(bAllowIgnoreCrc && bPatchedRomsetsEnabled) ||							//Allow ignore crc mode
-						((NULL != pDataRomDesc) && (-1 != pRDI->nDescCount)))					// In romdata mode
-					{
-						index = find_rom_by_name(rom_name, list, count, &real_rom_crc);
-						if (index >= 0)
-							unknown_crc = true;
+							((NULL != pDataRomDesc) && (-1 != pRDI->nDescCount)))					// In romdata mode
+						{
+							index = find_rom_by_name(rom_name, list, count, &real_rom_crc);
+							if (index >= 0)
+								unknown_crc = true;
+						}
 					}
-				}
 
-				if (index >= 0)
-				{
-					if ((NULL == pDataRomDesc) && (-1 == pRDI->nDescCount))						// Not in romdata mode
+					if (index >= 0)
 					{
-						if (unknown_crc)
-							HandleMessage(RETRO_LOG_WARN, "[FBNeo] Using ROM with unknown crc 0x%08x and name %s from archive %s\n", real_rom_crc, rom_name, g_find_list_path[z].path.c_str());
-						else
-							HandleMessage(RETRO_LOG_INFO, "[FBNeo] Using ROM with known crc 0x%08x and name %s from archive %s\n", ri.nCrc, real_rom_name, g_find_list_path[z].path.c_str());
+						if ((NULL == pDataRomDesc) && (-1 == pRDI->nDescCount))						// Not in romdata mode
+						{
+							if (unknown_crc)
+								HandleMessage(RETRO_LOG_WARN, "[FBNeo] Using ROM with unknown crc 0x%08x and name %s from archive %s\n", real_rom_crc, rom_name, g_find_list_path[z].path.c_str());
+							else
+								HandleMessage(RETRO_LOG_INFO, "[FBNeo] Using ROM with known crc 0x%08x and name %s from archive %s\n", ri.nCrc, real_rom_name, g_find_list_path[z].path.c_str());
+						}
 					}
+					else
+					{
+						continue;
+					}
+
+					if (bIsNeogeoCartGame)
+						set_neogeo_bios_availability(list[index].szName, list[index].nCrc, (g_find_list_path[z].ignoreCrc && bPatchedRomsetsEnabled));
+
+					// Yay, we found it!
+					pRomFind[i].nZip = z;
+					pRomFind[i].nPos = index;
+					pRomFind[i].nState = STAT_OK;
+
+					if (list[index].nLen < ri.nLen)
+						pRomFind[i].nState = STAT_SMALL;
+					else if (list[index].nLen > ri.nLen)
+						pRomFind[i].nState = STAT_LARGE;
 				}
-				else
-				{
-					continue;
-				}
 
-				if (bIsNeogeoCartGame)
-					set_neogeo_bios_availability(list[index].szName, list[index].nCrc, (g_find_list_path[z].ignoreCrc && bPatchedRomsetsEnabled));
-
-				// Yay, we found it!
-				pRomFind[i].nZip = z;
-				pRomFind[i].nPos = index;
-				pRomFind[i].nState = STAT_OK;
-
-				if (list[index].nLen < ri.nLen)
-					pRomFind[i].nState = STAT_SMALL;
-				else if (list[index].nLen > ri.nLen)
-					pRomFind[i].nState = STAT_LARGE;
+				free_archive_list(list, count);
+				ZipClose();
 			}
-
-			free_archive_list(list, count);
-			ZipClose();
 		}
 
 		if (bIsNeogeoCartGame)
