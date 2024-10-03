@@ -371,6 +371,7 @@ DRV		BurnDrvnes_advenlol2;
 DRV		BurnDrvnes_advenlol3;
 DRV		BurnDrvmd_mightmax;
 DRV		BurnDrvmd_mightmaxu;
+DRV		BurnDrvnes_advpanzer3;
 DRV		BurnDrvnes_advpanzer2;
 DRV		BurnDrvnes_advpanzer;
 DRV		BurnDrvnes_advenradgra;
@@ -8585,6 +8586,7 @@ DRV		BurnDrvnes_jimmyconten;
 DRV		BurnDrvmd_jimmywws;
 DRV		BurnDrvsg1k_jingwumn;
 DRV		BurnDrvsg1k_jingwumna;
+DRV		BurnDrvnes_jinglesdef;
 DRV		BurnSpecJinj;
 DRV		BurnSpecJinj2;
 DRV		BurnDrvJin;
@@ -13206,6 +13208,7 @@ DRV		BurnDrvPlottingb;
 DRV		BurnDrvnes_plumchal;
 DRV		BurnDrvPlumppop;
 DRV		BurnDrvPlusalph;
+DRV		BurnDrvnes_plyuk;
 DRV		BurnDrvCpsPnickj;
 //		BurnDrvCpsPnicku;		// no comment
 DRV		BurnDrvnes_popoteam;
@@ -15608,13 +15611,13 @@ DRV		BurnSpecsitoponsgp;
 DRV		BurnSpecSixsixsixsix;
 DRV		BurnDrvMSX_skateair;
 DRV		BurnDrvnes_skateboy;
-DRV		BurnDrvnes_skatecat;
 DRV		BurnSpecSkatecrazy;
 DRV		BurnSpecSkatecrazy1;
 DRV		BurnSpecSkatecrazy2;
 DRV		BurnDrvnes_skateordie;
 DRV		BurnDrvnes_skateordie2;
 DRV		BurnSpecSkateball;
+DRV		BurnDrvnes_skatecat;
 DRV		BurnDrvCskater;
 DRV		BurnDrvsms_skazkav1;
 DRV		BurnDrvsms_skazkav2;
@@ -21399,7 +21402,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_advenlol3,		// Adventures of Lolo 3 (USA)
 	&BurnDrvmd_mightmax,		// Adventures of Mighty Max, The (Euro)
 	&BurnDrvmd_mightmaxu,		// Adventures of Mighty Max, The (USA)
-	&BurnDrvnes_advpanzer2,		// Adventures of Panzer 2, The (HB, v1.1)
+	&BurnDrvnes_advpanzer3,		// Adventures of Panzer 3, The (HB, v1.1)
+	&BurnDrvnes_advpanzer2,		// Adventures of Panzer II, The (HB, v1.1)
 	&BurnDrvnes_advpanzer,		// Adventures of Panzer, The (HB, v1.5)
 	&BurnDrvnes_advenradgra,	// Adventures of Rad Gravity, The (USA)
 	&BurnDrvmd_rockybw,			// Adventures of Rocky and Bullwinkle and Friends, The (USA)
@@ -26806,7 +26810,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_famicomwarsj,	// Famicom Wars (Japan)
 	&BurnDrvnes_familyboxing,	// Family Boxing (Japan)
 	&BurnDrvnes_familcir91,		// Family Circuit '91 (Japan)
-	&BurnDrvnes_familycircuit,	// Family Circuit (Hack, English)
+	&BurnDrvnes_familycircuit,	// Family Circuit (Hack, English v0.95)
 	&BurnDrvnes_familycircuitj,	// Family Circuit (Japan)
 	&BurnDrvnes_othelloj,		// Family Computer - Othello (Japan)
 	&BurnDrvmd_famfeud,			// Family Feud (USA)
@@ -26942,7 +26946,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_faxanadut,		// Faxanadu (Hack, English)
 	&BurnDrvnes_faxanaduc,		// Faxanadu (Hack, Spanish)
 	&BurnDrvnes_faxanaduj,		// Faxanadu (Japan)
-	&BurnDrvnes_faxanadu,		// Faxanadu (USA) (Rev A)
+	&BurnDrvnes_faxanadu,		// Faxanadu (USA, Rev A)
 	&BurnDrvfds_fdsirqtest,		// FDS IRQ Test (Sour, v7)
 	&BurnDrvfds_fdsbios,		// FDS System BIOS [BIOS only, NOT WORKING]
 	&BurnSpecFearlessfrank,		// Fearless Frank (48K)
@@ -27445,7 +27449,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_frontlina,		// Front Line (Japan, Alt)
 	&BurnDrvcv_frntlnsce,		// Front Line S.C.E. (Hack, Standard Controller Edition)
 	&BurnDrvcv_frontlin,		// Front Line
-	&BurnDrvsms_frontierforce,	// Frontier Force (HB, Alpha Demo v0.1.2.2)
+	&BurnDrvsms_frontierforce,	// Frontier Force (HB, Alpha Demo v0.1.2.3)
 	&BurnDrvcv_frostbite,		// Frost Bite (HB)
 	&BurnSpecfrostbyte,			// Frost Byte (48K)
 	&BurnSpecFrozpenguin,		// Frozen Penguin (48K)
@@ -28347,7 +28351,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_greatscrj,		// Great Soccer (Japan, MyCard)
 	&BurnDrvsms_greatscrtw,		// Great Soccer (Taiwan)
 	&BurnDrvnes_greattank,		// Great Tank (Japan)
-	&BurnDrvsms_greattns,		// Great Tennis (Japan, MyCard)
+	&BurnDrvsms_greattns,		// Great Tennis ~ Super Tennis (Japan, MyCard)
 	&BurnDrvsms_greatvol,		// Great Volleyball (Euro, USA, Brazil)
 	&BurnDrvsms_greatvolj,		// Great Volleyball (Japan)
 	&BurnDrvmd_waldo,			// Great Waldo Search, The (USA)
@@ -29613,6 +29617,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_jimmywws,		// Jimmy White's Whirlwind Snooker (Euro)
 	&BurnDrvsg1k_jingwumn,		// Jing Wu Men (Taiwan)
 	&BurnDrvsg1k_jingwumna,		// Jing Wu Men (Taiwan, Alt)
+	&BurnDrvnes_jinglesdef,		// Jingles Defense (HB)
 	&BurnSpecJinj,				// JinJ (128K) (HB)
 	&BurnSpecJinj2,				// Jinj 2 - Belmonte's Revenge (128K) (HB)
 	&BurnDrvJin,				// Jin
@@ -34234,6 +34239,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_plumchal,		// Plummet Challenge Game (HB)
 	&BurnDrvPlumppop,			// Plump Pop (Japan)
 	&BurnDrvPlusalph,			// Plus Alpha
+	&BurnDrvnes_plyuk,			// Plyuk (HB)
 	&BurnDrvCpsPnickj,			// Pnickies (Japan 940608)
 //	&BurnDrvCpsPnicku,			// Pnickies (USA 940608) [no comment]
 	&BurnDrvnes_popoteam,		// Po Po Team (Taiwan)
@@ -36636,13 +36642,13 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSixsixsixsix,		// Sixsixsixsix (Russian) (48K) (HB)
 	&BurnDrvMSX_skateair,		// Skate Air (HB)
 	&BurnDrvnes_skateboy,		// Skate Boy (Spain) (Gluk Video) (Unl)
-	&BurnDrvnes_skatecat,		// Skate Cat (HB)
 	&BurnSpecSkatecrazy,		// Skate Crazy (128K)
 	&BurnSpecSkatecrazy1,		// Skate Crazy - Part 1 (48K-128K)
 	&BurnSpecSkatecrazy2,		// Skate Crazy - Part 2 (48K)
 	&BurnDrvnes_skateordie,		// Skate or Die (USA)
 	&BurnDrvnes_skateordie2,	// Skate or Die 2 - The Search for Double Trouble (USA)
 	&BurnSpecSkateball,			// Skateball (48K)
+	&BurnDrvnes_skatecat,		// SkateCat (HB)
 	&BurnDrvCskater,			// Skater (DECO Cassette) (Japan)
 	&BurnDrvsms_skazkav1,		// Skazka (HB, v1.0)
 	&BurnDrvsms_skazkav2,		// Skazka (HB, v2.0)
@@ -42427,6 +42433,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_advenlol3", "nes/d_nes.cpp"},
 	{ "md_mightmax", "megadrive/d_megadrive.cpp"},
 	{ "md_mightmaxu", "megadrive/d_megadrive.cpp"},
+	{ "nes_advpanzer3", "nes/d_nes.cpp"},
 	{ "nes_advpanzer2", "nes/d_nes.cpp"},
 	{ "nes_advpanzer", "nes/d_nes.cpp"},
 	{ "nes_advenradgra", "nes/d_nes.cpp"},
@@ -50571,6 +50578,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_jimmywws", "megadrive/d_megadrive.cpp"},
 	{ "sg1k_jingwumn", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_jingwumna", "sg1000/d_sg1000.cpp"},
+	{ "nes_jinglesdef", "nes/d_nes.cpp"},
 	{ "spec_jinj", "spectrum/d_spectrum.cpp"},
 	{ "spec_jinj2", "spectrum/d_spectrum.cpp"},
 	{ "jin", "pre90s/d_williams.cpp"},
@@ -55146,6 +55154,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_plumchal", "nes/d_nes.cpp"},
 	{ "plumppop", "taito/d_tnzs.cpp"},
 	{ "plusalph", "pre90s/d_megasys1.cpp"},
+	{ "nes_plyuk", "nes/d_nes.cpp"},
 	{ "pnickj", "capcom/d_cps1.cpp"},
 	{ "pnicku", "capcom/d_cps1.cpp"},
 	{ "nes_popoteam", "nes/d_nes.cpp"},
@@ -57524,13 +57533,13 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_sixsixsixsix", "spectrum/d_spectrum.cpp"},
 	{ "msx_skateair", "msx/d_msx.cpp"},
 	{ "nes_skateboy", "nes/d_nes.cpp"},
-	{ "nes_skatecat", "nes/d_nes.cpp"},
 	{ "spec_skatecrazy", "spectrum/d_spectrum.cpp"},
 	{ "spec_skatecrazy1", "spectrum/d_spectrum.cpp"},
 	{ "spec_skatecrazy2", "spectrum/d_spectrum.cpp"},
 	{ "nes_skateordie", "nes/d_nes.cpp"},
 	{ "nes_skateordie2", "nes/d_nes.cpp"},
 	{ "spec_skateball", "spectrum/d_spectrum.cpp"},
+	{ "nes_skatecat", "nes/d_nes.cpp"},
 	{ "cskater", "dataeast/d_decocass.cpp"},
 	{ "sms_skazkav1", "sms/d_sms.cpp"},
 	{ "sms_skazkav2", "sms/d_sms.cpp"},

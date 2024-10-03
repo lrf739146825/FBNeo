@@ -1915,10 +1915,10 @@
 	</game>
 	<game name="frontierforce" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Frontier Force (HB, Alpha Demo v0.1.2.2)</description>
+		<description>Frontier Force (HB, Alpha Demo v0.1.2.3)</description>
 		<year>2024</year>
 		<manufacturer>badcomputer0</manufacturer>
-		<rom name="Frontier Force - Alpha Demo v0.1.2.2 (2024)(helpcomputer0).sms" size="262144" crc="aba14731"/>
+		<rom name="Frontier Force - Alpha Demo v0.1.2.3 (2024)(helpcomputer0).sms" size="262144" crc="def51eb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2456,10 +2456,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="greattns" cloneof="stennis" romof="stennis" sourcefile="sms/d_sms.cpp">
-		<description>Great Tennis (Japan, MyCard)</description>
-		<year>1985</year>
+		<description>Great Tennis ~ Super Tennis (Japan, MyCard)</description>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="great tennis (japan).bin" size="32768" crc="95cbf3dd"/>
+		<rom name="Great Tennis (Japan, MyCard)(1986)(Sega).bin" size="32768" crc="95cbf3dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4945,7 +4945,7 @@
 		<description>Street Master (Korea)</description>
 		<year>1992</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="street master (kr).bin" size="131072" crc="83f0eede"/>
+		<rom name="Street Master (Korea)(1992)(Zemina).sms" size="131072" crc="83f0eede"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4969,7 +4969,7 @@
 		<description>Strider (Euro, USA, Brazil, Korea)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14093 w08.ic1" size="524288" crc="9802ed31"/>
+		<rom name="Strider (Euro, USA, Brazil, Korea)(1991)(Sega).sms" size="524288" crc="9802ed31"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4977,7 +4977,7 @@
 		<description>Strider (USA, Display Unit Sample)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="strider (demo).bin" size="131072" crc="b990269a"/>
+		<rom name="Strider (USA, Display Unit Sample)(1991)(Sega).sms" size="131072" crc="b990269a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4985,7 +4985,7 @@
 		<description>Strider II (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="strider ii (europe).bin" size="262144" crc="b8f0915a"/>
+		<rom name="Strider II (Euro, Brazil)(1992)(U.S. Gold).sms" size="262144" crc="b8f0915a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5020,15 +5020,15 @@
 		<description>Submarine Attack (Euro)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="submarine attack (europe).bin" size="262144" crc="d8f2f1b9"/>
+		<rom name="Submarine Attack (Euro)(1990)(Sega).sms" size="262144" crc="d8f2f1b9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="suhocheo" sourcefile="sms/d_sms.cpp">
 		<description>Suho Jeonsa (Korea)</description>
-		<year>19??</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="suho cheonsa (kr).bin" size="262144" crc="01686d67"/>
+		<year>1994</year>
+		<manufacturer>Open Corp.</manufacturer>
+		<rom name="Suho Jeonsa (Korea)(1994)(Open Corp.).sms" size="262144" crc="01686d67"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5036,7 +5036,7 @@
 		<description>Sukeban Deka II - Shoujo Tekkamen Densetsu (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sukeban deka ii - shoujo tekkamen densetsu (japan).bin" size="131072" crc="b13df647"/>
+		<rom name="Sukeban Deka II - Shoujo Tekkamen Densetsu (Japan)(1987)(Sega).sms" size="131072" crc="b13df647"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5044,7 +5044,7 @@
 		<description>Summer Games (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="summer games (europe).bin" size="131072" crc="8da5c93f"/>
+		<rom name="Summer Games (Euro)(1991)(Sega).sms" size="131072" crc="8da5c93f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5053,7 +5053,7 @@
 		<description>Summer Games (Euro, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="summer games (europe) (beta).bin" size="131072" crc="80eb1fff"/>
+		<rom name="Summer Games (Euro, Proto)(1991)(Sega).sms" size="131072" crc="80eb1fff"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5068,17 +5068,17 @@
 	</game>
 	<game name="superark" cloneof="woodypop" romof="woodypop" sourcefile="sms/d_sms.cpp">
 		<description>Super Arkanoid (Korea)</description>
-		<year>1989</year>
+		<year>1990</year>
 		<manufacturer>HiCom</manufacturer>
-		<rom name="woody pop (super arkanoid) (kr).bin" size="32768" crc="c9dd4e5f"/>
+		<rom name="Super Arkanoid (Korea)(1990)(HiCom).sms" size="32768" crc="c9dd4e5f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="suprbskt" sourcefile="sms/d_sms.cpp">
 		<description>Super Basketball (USA, CES Demo)</description>
-		<year>1989?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="super basketball (usa) (sample).bin" size="65536" crc="0dbf3b4a"/>
+		<year>1989</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Super Basketball (USA, CES Demo)(1989)(Sega).sms" size="65536" crc="0dbf3b4a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5086,7 +5086,7 @@
 		<description>Super Bioman 1 (Korea)</description>
 		<year>1992</year>
 		<manufacturer>HiCom</manufacturer>
-		<rom name="super bioman 1.bin" size="65536" crc="a66d26cf"/>
+		<rom name="Super Bioman 1 (Korea)(1992)(HiCom).sms" size="65536" crc="a66d26cf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5094,7 +5094,7 @@
 		<description>Super Boy 3 (Korea)</description>
 		<year>1991</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="super boy 3.bin" size="131072" crc="9195c34c"/>
+		<rom name="Super Boy 3 (Korea)(1991)(Zemina).sms" size="131072" crc="9195c34c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5102,7 +5102,7 @@
 		<description>Super Boy 4 (Korea)</description>
 		<year>1992</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="super boy 4 (kor).bin" size="262144" crc="b995b4f0"/>
+		<rom name="Super Boy 4 (Korea)(1992)(Zemina).sms" size="262144" crc="b995b4f0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5110,7 +5110,7 @@
 		<description>Super Boy I (Korea)</description>
 		<year>1989</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="super boy 1.bin" size="49152" crc="bf5a994a"/>
+		<rom name="Super Boy I (Korea)(1989)(Zemina).sms" size="49152" crc="bf5a994a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5118,7 +5118,7 @@
 		<description>Super Boy II (Korea)</description>
 		<year>1989</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="super boy ii (kor).bin" size="49152" crc="67c2f0ff"/>
+		<rom name="Super Boy II (Korea)(1989)(Zemina).sms" size="49152" crc="67c2f0ff"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5143,7 +5143,7 @@
 		<description>Super Kick Off (Euro, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="mpr-14397-f.ic1" size="262144" crc="406aa0c2"/>
+		<rom name="Super Kick Off (Euro, Brazil)(1991)(U.S. Gold).sms" size="262144" crc="406aa0c2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5184,8 +5184,8 @@
 	<game name="superoff" sourcefile="sms/d_sms.cpp">
 		<description>Super Off Road (Euro)</description>
 		<year>1992</year>
-		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="super off road (europe).bin" size="131072" crc="54f68c2a"/>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Super Off Road (Euro)(1992)(Virgin Games).sms" size="131072" crc="54f68c2a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5193,7 +5193,7 @@
 		<description>Super Racing (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super racing (japan).bin" size="262144" crc="7e0ef8cb"/>
+		<rom name="Super Racing (Japan)(1988)(Sega).bin" size="262144" crc="7e0ef8cb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5207,17 +5207,17 @@
 	</game>
 	<game name="stennis" sourcefile="sms/d_sms.cpp">
 		<description>Super Tennis (Euro, USA)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12584.ic1" size="32768" crc="914514e3"/>
+		<rom name="Super Tennis (Euro, USA)(1986)(Sega).sms" size="32768" crc="914514e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="stennisc" cloneof="stennis" romof="stennis" sourcefile="sms/d_sms.cpp">
 		<description>Super Tennis (Euro, USA, Sega Card)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super tennis (euro, usa).bin" merge="mpr-12584.ic1" size="32768" crc="914514e3"/>
+		<rom name="Super Tennis (Euro, USA, Sega Card)(1986)(Sega).bin" merge="Super Tennis (Euro, USA)(1986)(Sega).sms" size="32768" crc="914514e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5250,8 +5250,8 @@
 	<game name="superman" sourcefile="sms/d_sms.cpp">
 		<description>Superman - The Man of Steel (Euro, Brazil)</description>
 		<year>1993</year>
-		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="mpr-15506.ic1" size="262144" crc="6f9ac98f"/>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Superman - The Man of Steel (Euro, Brazil)(1993)(Virgin Games).sms" size="262144" crc="6f9ac98f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5285,8 +5285,8 @@
 	<game name="t2ag" sourcefile="sms/d_sms.cpp">
 		<description>T2 - The Arcade Game (Euro)</description>
 		<year>1993</year>
-		<manufacturer>Arena</manufacturer>
-		<rom name="mpr-16073.ic1" size="524288" crc="93ca8152"/>
+		<manufacturer>Arena Entertainment</manufacturer>
+		<rom name="T2 - The Arcade Game (Euro)(1993)(Arena Ent.).sms" size="524288" crc="93ca8152"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5309,9 +5309,9 @@
 	</game>
 	<game name="tazmars" sourcefile="sms/d_sms.cpp">
 		<description>Taz in Escape from Mars (Brazil)</description>
-		<year>19??</year>
+		<year>199?</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="taz in escape from mars (brazil).bin" size="524288" crc="11ce074c"/>
+		<rom name="Taz in Escape from Mars (Brazil)(199x)(Tec Toy).sms" size="524288" crc="11ce074c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5319,7 +5319,7 @@
 		<description>Taz-Mania (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15161.ic1" size="262144" crc="7cc3e837"/>
+		<rom name="Taz-Mania (Euro, Brazil)(1992)(Sega).sms" size="262144" crc="7cc3e837"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5328,7 +5328,7 @@
 		<description>Taz-Mania (Euro, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="taz-mania (europe) (beta).bin" size="262144" crc="1b312e04"/>
+		<rom name="Taz-Mania (Euro, Proto)(1992)(Sega).sms" size="262144" crc="1b312e04"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5337,7 +5337,7 @@
 		<description>Tecmo World Cup '92 (Euro, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tecmo world cup '92 (europe) (beta).bin" size="262144" crc="96e75f48"/>
+		<rom name="Tecmo World Cup '92 (Euro, Proto)(1992)(Sega).sms" size="262144" crc="96e75f48"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5345,7 +5345,7 @@
 		<description>Tecmo World Cup '93 (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tecmo world cup '93 (europe).bin" size="262144" crc="5a1c3dde"/>
+		<rom name="Tecmo World Cup '93 (Euro)(1993)(Sega).sms" size="262144" crc="5a1c3dde"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5443,8 +5443,8 @@
 	<game name="termntr" sourcefile="sms/d_sms.cpp">
 		<description>Terminator, The (Euro)</description>
 		<year>1992</year>
-		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="Terminator, The (Euro)(1992)(Virgin).sms" size="262144" crc="edc5c012"/>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Terminator, The (Euro)(1992)(Virgin Games).sms" size="262144" crc="edc5c012"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5895,8 +5895,8 @@
 	<game name="wolfchld" sourcefile="sms/d_sms.cpp">
 		<description>Wolfchild (Euro, Brazil)</description>
 		<year>1993</year>
-		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="Wolfchild (Euro, Brazil)(1993)(Virgin).sms" size="262144" crc="1f8efa1d"/>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Wolfchild (Euro, Brazil)(1993)(Virgin Games).sms" size="262144" crc="1f8efa1d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6014,7 +6014,7 @@
 		<description>Woody Pop - Shinjinrui no Block Kuzushi (Japan, MyCard)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="woody pop - shinjinrui no block kuzushi (japan).bin" size="32768" crc="315917d4"/>
+		<rom name="Woody Pop - Shinjinrui no Block Kuzushi (Japan, MyCard)(1987)(Sega).bin" size="32768" crc="315917d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6127,8 +6127,8 @@
 	<game name="xenon2v" cloneof="xenon2" romof="xenon2" sourcefile="sms/d_sms.cpp">
 		<description>Xenon 2 - Megablast (Virgin) (Euro)</description>
 		<year>1991</year>
-		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="Xenon 2 - Megablast (Euro)(1991)(Virgin).sms" size="262144" crc="ec726c0d"/>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Xenon 2 - Megablast (Euro)(1991)(Virgin Games).sms" size="262144" crc="ec726c0d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
