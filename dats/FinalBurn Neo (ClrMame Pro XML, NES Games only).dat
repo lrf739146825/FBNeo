@@ -546,9 +546,18 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="advpanzer3" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Adventures of Panzer 3, The (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>PixelCraft</manufacturer>
+		<rom name="Adventures of Panzer 3, The v1.1 (2024)(PixelCraft).nes" size="524304" crc="7ff8e8f3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="advpanzer2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Adventures of Panzer 2, The (HB, v1.1)</description>
+		<description>Adventures of Panzer II, The (HB, v1.1)</description>
 		<year>2022</year>
 		<manufacturer>PixelCraft</manufacturer>
 		<rom name="Adventures of Panzer 2, The v1.1 (2022)(PixelCraft).nes" size="524304" crc="29750f4f"/>
@@ -6066,16 +6075,16 @@
 		<description>Family Circuit '91 (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Family Circuit '91 (Japan).nes" size="655376" crc="cfbb646d"/>
+		<rom name="Family Circuit '91 (Japan)(1991)(Namco).nes" size="655376" crc="cfbb646d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="familycircuit" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Family Circuit (Hack, English)</description>
+		<description>Family Circuit (Hack, English v0.95)</description>
 		<year>2016</year>
 		<manufacturer>MrRichard999</manufacturer>
-		<rom name="Family Circuit (T-Eng).nes" size="163856" crc="e44892f7"/>
+		<rom name="Family Circuit T-Eng v0.95 (2016)(MrRichard999).nes" size="163856" crc="e44892f7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6083,7 +6092,7 @@
 		<description>Family Circuit (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Family Circuit (Japan).nes" size="163856" crc="51ce0655"/>
+		<rom name="Family Circuit (Japan)(1988)(Namco).nes" size="163856" crc="51ce0655"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6108,7 +6117,7 @@
 		<description>Family Pinball (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Family Pinball (Japan).nes" size="196624" crc="0da8a7b2"/>
+		<rom name="Family Pinball (Japan)(1989)(Namco).nes" size="196624" crc="0da8a7b2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6116,7 +6125,7 @@
 		<description>Famista '89 (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '89 (Japan).nes" size="196624" crc="62b90039"/>
+		<rom name="Famista '89 (Japan)(1989)(Namco).nes" size="196624" crc="62b90039"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6124,7 +6133,7 @@
 		<description>Famista '90 (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '90 (Japan).nes" size="262160" crc="c942dfe9"/>
+		<rom name="Famista '90 (Japan)(1989)(Namco).nes" size="262160" crc="c942dfe9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6132,7 +6141,7 @@
 		<description>Famista '91 (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '91 (Japan).nes" size="262160" crc="7195ca38"/>
+		<rom name="Famista '91 (Japan)(1990)(Namco).nes" size="262160" crc="7195ca38"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6140,16 +6149,16 @@
 		<description>Famista '92 (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '92 (Japan).nes" size="262160" crc="fb6bdb9d"/>
+		<rom name="Famista '92 (Japan)(1991)(Namco).nes" size="262160" crc="fb6bdb9d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="famista93e" cloneof="famista93" romof="famista93" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Famista '93 (Hack, English)</description>
-		<year>20??</year>
+		<year>201?</year>
 		<manufacturer>FlashPV</manufacturer>
-		<rom name="famista '93 (t-eng).nes" size="262160" crc="d9301c12"/>
+		<rom name="Famista '93 T-Eng (201x)(FlashPV).nes" size="262160" crc="d9301c12"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6157,7 +6166,7 @@
 		<description>Famista '93 (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '93 (Japan).nes" size="262160" crc="38511037"/>
+		<rom name="Famista '93 (Japan)(1992)(Namco).nes" size="262160" crc="38511037"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6165,7 +6174,7 @@
 		<description>Famista '94 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Famista '94 (Japan).nes" size="262160" crc="d73fc5b1"/>
+		<rom name="Famista '94 (Japan)(1993)(Namco).nes" size="262160" crc="d73fc5b1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6173,7 +6182,7 @@
 		<description>Fantastic Adventures of Dizzy, The (USA)</description>
 		<year>1991</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="Fantastic Adventures of Dizzy, The (USA).nes" size="262160" crc="59318584"/>
+		<rom name="Fantastic Adventures of Dizzy, The (USA)(1991)(Camerina).nes" size="262160" crc="59318584"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6181,7 +6190,7 @@
 		<description>Fantasy Zone (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Fantasy Zone (Japan).nes" size="131088" crc="dd119b43"/>
+		<rom name="Fantasy Zone (Japan)(1987)(Sunsoft).nes" size="131088" crc="dd119b43"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6189,7 +6198,7 @@
 		<description>Fantasy Zone (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="Fantasy Zone (Tengen) (USA).nes" size="131088" crc="9c546b0b"/>
+		<rom name="Fantasy Zone (USA)(1989)(Tengen).nes" size="131088" crc="9c546b0b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6197,7 +6206,7 @@
 		<description>Fantasy Zone II - Opa-Opa no Namida (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Fantasy Zone II - Opa-Opa no Namida (Japan).nes" size="262160" crc="6faf6db1"/>
+		<rom name="Fantasy Zone II - Opa-Opa no Namida (Japan)(1988)(Sunsoft).nes" size="262160" crc="6faf6db1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6205,7 +6214,7 @@
 		<description>Faria - A World of Mystery &amp; Danger! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Nexoft</manufacturer>
-		<rom name="Faria - A World of Mystery &amp; Danger! (USA).nes" size="262160" crc="1c059dfb"/>
+		<rom name="Faria - A World of Mystery &amp; Danger! (USA)(1991)(Nexoft).nes" size="262160" crc="1c059dfb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6213,7 +6222,7 @@
 		<description>Faria - Fuuin no Tsurugi (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Game Arts</manufacturer>
-		<rom name="Faria - Fuuin no Tsurugi (Japan).nes" size="262160" crc="a17079e4"/>
+		<rom name="Faria - Fuuin no Tsurugi (Japan)(1989)(Game Arts).nes" size="262160" crc="a17079e4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6222,7 +6231,7 @@
 		<description>Faxanadu (Hack, English)</description>
 		<year>2019</year>
 		<manufacturer>Unsavory Maggot</manufacturer>
-		<rom name="Faxanadu (T-Eng).nes" size="524304" crc="ed0a6836"/>
+		<rom name="Faxanadu T-Eng (2019)(Unsavory Maggot).nes" size="524304" crc="ed0a6836"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6239,15 +6248,15 @@
 		<description>Faxanadu (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Faxanadu (Japan).nes" size="262160" crc="f9e6e6ad"/>
+		<rom name="Faxanadu (Japan)(1987)(Hudson Soft).nes" size="262160" crc="f9e6e6ad"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="faxanadu" sourcefile="nes/d_nes.cpp">
-		<description>Faxanadu (USA) (Rev A)</description>
+		<description>Faxanadu (USA, Rev A)</description>
 		<year>1989</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Faxanadu (USA) (Rev A).nes" size="262160" crc="b6f4f544"/>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Faxanadu (USA, Rev A)(1989)(Hudson Soft).nes" size="262160" crc="b6f4f544"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6255,7 +6264,7 @@
 		<description>Felix the Cat (USA)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Felix the Cat (USA).nes" size="262160" crc="0639e88e"/>
+		<rom name="Felix the Cat (USA)(1992)(Hudson Soft).nes" size="262160" crc="0639e88e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6263,7 +6272,7 @@
 		<description>Ferrari Grand Prix Challenge (USA)</description>
 		<year>1992</year>
 		<manufacturer>Acclaim</manufacturer>
-		<rom name="Ferrari Grand Prix Challenge (USA).nes" size="262160" crc="a3c49590"/>
+		<rom name="Ferrari Grand Prix Challenge (USA)(1992)(Acclaim).nes" size="262160" crc="a3c49590"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6280,7 +6289,7 @@
 		<description>Fester's Quest (USA)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Fester's Quest (USA).nes" size="262160" crc="db0c7019"/>
+		<rom name="Fester's Quest (USA)(1989)(Sunsoft).nes" size="262160" crc="db0c7019"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6288,7 +6297,7 @@
 		<description>Field Combat (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Field Combat (Japan).nes" size="24592" crc="90d93924"/>
+		<rom name="Field Combat (Japan)(1985)(Jaleco).nes" size="24592" crc="90d93924"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6296,7 +6305,7 @@
 		<description>Fighting Golf (Japan)</description>
 		<year>1988</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="Fighting Golf (Japan).nes" size="262160" crc="eebbdff9"/>
+		<rom name="Fighting Golf (Japan)(1988)(SNK).nes" size="262160" crc="eebbdff9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9221,6 +9230,15 @@
 		<year>1993</year>
 		<manufacturer>UBI Soft</manufacturer>
 		<rom name="Jimmy Connors Tennis (USA).nes" size="131088" crc="c31e3754"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="jinglesdef" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jingles Defense (HB)</description>
+		<year>2024</year>
+		<manufacturer>Zyzix Games</manufacturer>
+		<rom name="Jingles Defense (2024)(Zyzix Games).nes" size="24592" crc="ec0e201c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14060,6 +14078,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="plyuk" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Plyuk (HB)</description>
+		<year>2024</year>
+		<manufacturer>RetroSouls</manufacturer>
+		<rom name="Plyuk (2024)(RetroSouls).nes" size="40976" crc="a0ecf080"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="popoteam" sourcefile="nes/d_nes.cpp">
 		<description>Po Po Team (Taiwan)</description>
 		<year>1992</year>
@@ -16222,15 +16249,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="skatecat" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
-		<description>Skate Cat (HB)</description>
-		<year>2023</year>
-		<manufacturer>SJ Games</manufacturer>
-		<rom name="Skate Cat (2023)(SJ Games).nes" size="524304" crc="da49c2d2"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="skateordie" sourcefile="nes/d_nes.cpp">
 		<description>Skate or Die (USA)</description>
 		<year>1988</year>
@@ -16244,6 +16262,15 @@
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Skate or Die 2 - The Search for Double Trouble (USA).nes" size="393232" crc="290296d4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="skatecat" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>SkateCat (HB)</description>
+		<year>2023</year>
+		<manufacturer>SJ Games</manufacturer>
+		<rom name="SkateCat (2023)(SJ Games).nes" size="524304" crc="a5597bb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
