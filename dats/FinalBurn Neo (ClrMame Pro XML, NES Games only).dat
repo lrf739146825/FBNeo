@@ -5772,7 +5772,7 @@
 		<description>Erika and Satoru's Dream Adventure (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Erika to Satoru no Yume Bouken (T-Eng)(2022)(Stardust Crusaders).nes" size="393232" crc="cfb795ac"/>
+		<rom name="Erika to Satoru no Yume Bouken T-Eng (2022)(Stardust Crusaders).nes" size="393232" crc="cfb795ac"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5780,7 +5780,7 @@
 		<description>Erika to Satoru no Yume Bouken (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Erika to Satoru no Yume Bouken (J)(Namco)(1988).nes" size="262160" crc="e9f199aa"/>
+		<rom name="Erika to Satoru no Yume Bouken (Japan)(1988)(Namco).nes" size="262160" crc="e9f199aa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5789,7 +5789,7 @@
 		<description>Escape From Atlantis, The (Prototype)</description>
 		<year>199?</year>
 		<manufacturer>Color Dreams</manufacturer>
-		<rom name="Escape From Atlantis, The (Prototype).nes" size="131088" crc="3c550fd5"/>
+		<rom name="Escape From Atlantis, The (Proto)(199x)(Color Dreams).nes" size="131088" crc="3c550fd5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5802,11 +5802,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="esperboukentai" sourcefile="nes/d_nes.cpp">
+	<game name="esperboukentai" cloneof="espercorps" romof="espercorps" sourcefile="nes/d_nes.cpp">
 		<description>Esper Bouken Tai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Esper Bouken Tai (Japan).nes" size="262160" crc="56b7dfe3"/>
+		<rom name="Esper Bouken Tai (Japan)(1987)(Jaleco).nes" size="262160" crc="56b7dfe3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="espercorps" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Esper Corps (Hack, English v1.01)</description>
+		<year>2024</year>
+		<manufacturer>aishsha</manufacturer>
+		<rom name="Esper Corps T+Eng v1.01 (2011)(aishsha).nes" size="524304" crc="286daf9c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5815,7 +5824,7 @@
 		<description>Esper Dream 2 - Aratanaru Tatakai (Hack, English)</description>
 		<year>2006</year>
 		<manufacturer>Aeon Genesis</manufacturer>
-		<rom name="Esper Dream 2 - Aratanaru Tatakai (T-Eng).nes" size="393232" crc="892b32eb"/>
+		<rom name="Esper Dream 2 - Aratanaru Tatakai T-Eng (2006)(Aeon Genesis).nes" size="393232" crc="892b32eb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5823,7 +5832,7 @@
 		<description>Esper Dream 2 - Aratanaru Tatakai (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Esper Dream 2 - Aratanaru Tatakai (Japan).nes" size="393232" crc="72344f1d"/>
+		<rom name="Esper Dream 2 - Aratanaru Tatakai (Japan)(1992)(Konami).nes" size="393232" crc="72344f1d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5858,7 +5867,7 @@
 		<description>Excitebike (Japan, USA)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Excitebike (Japan, USA).nes" size="24592" crc="2bb33c69"/>
+		<rom name="Excitebike (Japan, USA)(1984)(Nintendo).nes" size="24592" crc="2bb33c69"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5866,7 +5875,7 @@
 		<description>Exciting Boxing (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Exciting Boxing (Japan).nes" size="262160" crc="b374b6b0"/>
+		<rom name="Exciting Boxing (Japan)(1987)(Konami).nes" size="262160" crc="b374b6b0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5874,7 +5883,7 @@
 		<description>Exciting Rally - World Rally Championship (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Kaken Corp.</manufacturer>
-		<rom name="Exciting Rally - World Rally Championship (Japan).nes" size="262160" crc="8cefb613"/>
+		<rom name="Exciting Rally - World Rally Championship (Japan)(1992)(Kaken Corp.).nes" size="262160" crc="8cefb613"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5882,7 +5891,7 @@
 		<description>Exerion (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Exerion (Japan).nes" size="24592" crc="352f9a62"/>
+		<rom name="Exerion (Japan)(1985)(Jaleco).nes" size="24592" crc="352f9a62"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5890,7 +5899,7 @@
 		<description>Exodus - Journey to the Promised Land (USA) (Unl)</description>
 		<year>1991</year>
 		<manufacturer>Wisdom Tree</manufacturer>
-		<rom name="Exodus - Journey to the Promised Land (USA) (Unl).nes" size="262160" crc="4b334bdf"/>
+		<rom name="Exodus - Journey to the Promised Land (USA)(Unl)(1991)(Wisdom Tree).nes" size="262160" crc="4b334bdf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5914,10 +5923,10 @@
 	</game>
 	<game name="explodingfist" sourcefile="nes/d_nes.cpp">
 		<comment>Prototype</comment>
-		<description>Exploding Fist (USA) (Prototype)</description>
+		<description>Exploding Fist (USA, Prototype)</description>
 		<year>1990</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="Exploding Fist (USA, Prototype).nes" size="65552" crc="c52ea831"/>
+		<rom name="Exploding Fist (USA, Proto)(1990)(Tradewest).nes" size="65552" crc="c52ea831"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5934,7 +5943,7 @@
 		<description>F-1 Hero (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Varie</manufacturer>
-		<rom name="F-1 Hero (Japan).nes" size="262160" crc="ab82d025"/>
+		<rom name="F-1 Hero (Japan)(1988)(Varie).nes" size="262160" crc="ab82d025"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5942,7 +5951,7 @@
 		<description>F-1 Hero 2 (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Varie</manufacturer>
-		<rom name="F-1 Hero 2 (Japan).nes" size="262160" crc="36b9506d"/>
+		<rom name="F-1 Hero 2 (Japan)(1991)(Varie).nes" size="262160" crc="36b9506d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5950,7 +5959,7 @@
 		<description>F-1 Race (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="F-1 Race (Japan).nes" size="24592" crc="827dc0b9"/>
+		<rom name="F-1 Race (Japan)(1984)(Nintendo).nes" size="24592" crc="827dc0b9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5958,7 +5967,7 @@
 		<description>F-1 Sensation (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="F-1 Sensation (Japan).nes" size="262160" crc="abb7157e"/>
+		<rom name="F-1 Sensation (Japan)(1993)(Konami).nes" size="262160" crc="abb7157e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5966,7 +5975,7 @@
 		<description>F-117A Stealth Fighter (USA)</description>
 		<year>1992</year>
 		<manufacturer>Microprose</manufacturer>
-		<rom name="F-117A Stealth Fighter (USA).nes" size="524304" crc="6aa0a7ad"/>
+		<rom name="F-117A Stealth Fighter (USA)(1992)(Microprose).nes" size="524304" crc="6aa0a7ad"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5974,7 +5983,7 @@
 		<description>F-15 City War (USA) (Unl)</description>
 		<year>1990</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="F-15 City War (USA) (Unl).nes" size="65552" crc="a7b81c02"/>
+		<rom name="F-15 City War (USA)(Unl)(1990)(AVE).nes" size="65552" crc="a7b81c02"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5982,7 +5991,7 @@
 		<description>F-15 Strike Eagle (USA)</description>
 		<year>1992</year>
 		<manufacturer>Microprose</manufacturer>
-		<rom name="F-15 Strike Eagle (USA).nes" size="524304" crc="6b1461ae"/>
+		<rom name="F-15 Strike Eagle (USA)(1992)(Microprose).nes" size="524304" crc="6b1461ae"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6000,7 +6009,7 @@
 		<description>F1 Circus (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>MrRichard999</manufacturer>
-		<rom name="F1 Circus (T-Eng).nes" size="393232" crc="67c75e53"/>
+		<rom name="F1 Circus T-Eng (2016)(MrRichard999).nes" size="393232" crc="67c75e53"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6008,7 +6017,7 @@
 		<description>F1 Circus (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Nichibutsu</manufacturer>
-		<rom name="F1 Circus (Japan).nes" size="393232" crc="1f19532d"/>
+		<rom name="F1 Circus (Japan)(1992)(Nichibutsu).nes" size="393232" crc="1f19532d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11453,10 +11462,10 @@
 	</game>
 	<game name="marioadventure3" cloneof="smb3" romof="smb3" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Mario Adventure 3 (Hack, v1.5.2)</description>
+		<description>Mario Adventure 3 (Hack, v1.6.8)</description>
 		<year>2024</year>
 		<manufacturer>ScarlettVixen</manufacturer>
-		<rom name="Mario Adventure 3 v1.5.2 (2024)(ScarlettVixen).nes" size="786448" crc="b92cde3f"/>
+		<rom name="Mario Adventure 3 v1.6.8 (2024)(ScarlettVixen).nes" size="786448" crc="70b5aa2d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12693,6 +12702,15 @@
 		<year>2019</year>
 		<manufacturer>RetroSouls</manufacturer>
 		<rom name="MultiDude - Evercade Edition (2019)(RetroSouls).nes" size="40976" crc="9a97a22d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="mummypuzzle" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mummy Egyptian Puzzle (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>AJP Games</manufacturer>
+		<rom name="Mummy Egyptian Puzzle v1.1 (2024)(AJP Games).nes" size="65552" crc="fc952668"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17687,7 +17705,7 @@
 		<description>Super Pang (Taiwan)</description>
 		<year>1991</year>
 		<manufacturer>Sachen</manufacturer>
-		<rom name="Super Pang (Taiwan).nes" size="65552" crc="f7c73ecc"/>
+		<rom name="Super Pang (Taiwan)(1991)(Sachen).nes" size="65552" crc="f7c73ecc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17695,7 +17713,7 @@
 		<description>Super Pang 2 (Taiwan)</description>
 		<year>1992</year>
 		<manufacturer>Sachen</manufacturer>
-		<rom name="Super Pang 2 (Taiwan).nes" size="98320" crc="a5043905"/>
+		<rom name="Super Pang 2 (Taiwan)(1992)(Sachen).nes" size="98320" crc="a5043905"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17703,7 +17721,7 @@
 		<description>Super Pinball (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Coconuts/C-Dream</manufacturer>
-		<rom name="Super Pinball (Japan).nes" size="131088" crc="c8ee3210"/>
+		<rom name="Super Pinball (Japan)(1988)(Coconuts - C-Dream).nes" size="131088" crc="c8ee3210"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17711,7 +17729,7 @@
 		<description>Super Pitfall (USA)</description>
 		<year>1987</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Super Pitfall (USA).nes" size="131088" crc="a4958020"/>
+		<rom name="Super Pitfall (USA)(1987)(Activision).nes" size="131088" crc="a4958020"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17737,7 +17755,7 @@
 		<description>Super Rugby (Japan)</description>
 		<year>1989</year>
 		<manufacturer>TSS</manufacturer>
-		<rom name="Super Rugby (Japan).nes" size="262160" crc="f2e219e5"/>
+		<rom name="Super Rugby (Japan)(1989)(TSS).nes" size="262160" crc="f2e219e5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17754,7 +17772,7 @@
 		<description>Super Shinobi, The (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Realtec</manufacturer>
-		<rom name="Super Shinobi, The (Unl).nes" size="524304" crc="a36c26e7"/>
+		<rom name="Super Shinobi, The (Unl)(199x)(Realtec).nes" size="524304" crc="a36c26e7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17762,7 +17780,7 @@
 		<description>Super Spike V'Ball (USA)</description>
 		<year>1990</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Super Spike V'Ball (USA).nes" size="262160" crc="c2d3f5b3"/>
+		<rom name="Super Spike V'Ball (USA)(1990)(Nintendo).nes" size="262160" crc="c2d3f5b3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17770,7 +17788,7 @@
 		<description>Super Sprint (USA)</description>
 		<year>1988</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="Super Sprint (USA).nes" size="131088" crc="3c7b0120"/>
+		<rom name="Super Sprint (USA)(1988)(Tengen).nes" size="131088" crc="3c7b0120"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17778,7 +17796,7 @@
 		<description>Super Spy Hunter (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Super Spy Hunter (USA).nes" size="262160" crc="81d24ccc"/>
+		<rom name="Super Spy Hunter (USA)(1992)(Sunsoft).nes" size="262160" crc="81d24ccc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17786,7 +17804,7 @@
 		<description>Super Star Force (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Super Star Force (Japan).nes" size="131088" crc="0ca0b143"/>
+		<rom name="Super Star Force (Japan)(1986)(Tecmo).nes" size="131088" crc="0ca0b143"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17821,7 +17839,7 @@
 		<description>Super Turrican (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Imagineer</manufacturer>
-		<rom name="Super Turrican (Europe).nes" size="262160" crc="55cbc495"/>
+		<rom name="Super Turrican (Euro)(1993)(Imagineer).nes" size="262160" crc="55cbc495"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -17838,7 +17856,7 @@
 		<description>Super Xevious - Gump no Nazo (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Super Xevious - Gump no Nazo (Japan).nes" size="163856" crc="b6c7e249"/>
+		<rom name="Super Xevious - Gump no Nazo (Japan)(1986)(Namco).nes" size="163856" crc="b6c7e249"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17855,7 +17873,7 @@
 		<description>Superman (USA)</description>
 		<year>1988</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Superman (USA).nes" size="262160" crc="721be58a"/>
+		<rom name="Superman (USA)(1988)(Kemco).nes" size="262160" crc="721be58a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17872,7 +17890,7 @@
 		<description>Supervision 16-in-1 (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Supervision</manufacturer>
-		<rom name="Supervision 16-in-1 (Unl).nes" size="2129936" crc="48017a49"/>
+		<rom name="Supervision 16-in-1 (Unl)(199x)(Supervision).nes" size="2129936" crc="48017a49"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17884,20 +17902,29 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="sweethomee" cloneof="sweethome" romof="sweethome" sourcefile="nes/d_nes.cpp">
+	<game name="sweethomee" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Sweet Home (Hack, English)</description>
 		<year>2000</year>
 		<manufacturer>Gaijin Productions</manufacturer>
-		<rom name="Sweet Home (Eng Hack).nes" size="262160" crc="0bd7d357"/>
+		<rom name="Sweet Home T-Eng (2000)(Gaijin Productions).nes" size="262160" crc="0bd7d357"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="sweethome" sourcefile="nes/d_nes.cpp">
+	<game name="sweethomer" cloneof="sweethomee" romof="sweethomee" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Sweet Home (Hack, Russian)</description>
+		<year>2024</year>
+		<manufacturer>TalkingCat</manufacturer>
+		<rom name="Sweet Home T-Rus (2024)(TalkingCat).nes" size="262160" crc="c30a1bde"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sweethomej" cloneof="sweethomee" romof="sweethomee" sourcefile="nes/d_nes.cpp">
 		<description>Sweet Home (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Sweet Home (Japan).nes" size="262160" crc="40803bc5"/>
+		<rom name="Sweet Home (Japan)(1989)(Capcom).nes" size="262160" crc="40803bc5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17915,7 +17942,7 @@
 		<description>Sword Master (USA) (Hack, Sample Fix)</description>
 		<year>2020</year>
 		<manufacturer>TakuikaNinja</manufacturer>
-		<rom name="Sword Master (USA)(Hack Sample Fix).nes" size="262160" crc="cc1a0cfa"/>
+		<rom name="Sword Master (USA)(Hack Sample Fix)(2020)(TakuikaNinja).nes" size="262160" crc="cc1a0cfa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17923,7 +17950,7 @@
 		<description>Sword Master (USA)</description>
 		<year>1992</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Sword Master (USA).nes" size="262160" crc="6ccd5c11"/>
+		<rom name="Sword Master (USA)(1992)(Activision).nes" size="262160" crc="6ccd5c11"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17958,7 +17985,7 @@
 		<description>Swords and Serpents (USA)</description>
 		<year>1990</year>
 		<manufacturer>Acclaim</manufacturer>
-		<rom name="Swords and Serpents (USA).nes" size="131088" crc="071e3f72"/>
+		<rom name="Swords and Serpents (USA)(1990)(Acclaim).nes" size="131088" crc="071e3f72"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17966,7 +17993,7 @@
 		<description>T&amp;C 2 - Thrilla's Surfari (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="T&amp;C 2 - Thrilla's Surfari (USA).nes" size="262160" crc="54c4f37e"/>
+		<rom name="T&amp;C 2 - Thrilla's Surfari (USA)(1992)(Ljn).nes" size="262160" crc="54c4f37e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17974,7 +18001,7 @@
 		<description>T&amp;C Surf Design (USA)</description>
 		<year>1988</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="T&amp;C Surf Design (USA).nes" size="65552" crc="9c94ed32"/>
+		<rom name="T&amp;C Surf Design (USA)(1988)(Ljn).nes" size="65552" crc="9c94ed32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17982,7 +18009,7 @@
 		<description>Taboo - The Sixth Sense (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="Taboo - The Sixth Sense (USA).nes" size="65552" crc="e057b507"/>
+		<rom name="Taboo - The Sixth Sense (USA)(1989)(Tradewest).nes" size="65552" crc="e057b507"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17999,7 +18026,7 @@
 		<description>Tag Team Wrestling (USA)</description>
 		<year>1986</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="Tag Team Wrestling (USA).nes" size="40976" crc="41f82f6e"/>
+		<rom name="Tag Team Wrestling (USA)(1986)(Data East).nes" size="40976" crc="41f82f6e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18939,7 +18966,7 @@
 		<description>Tiny Toon Adventures 6 (Unl)</description>
 		<year>1997</year>
 		<manufacturer>J.Y. Company</manufacturer>
-		<rom name="Tiny Toon Adventures 6 (Unl).nes" size="524304" crc="476cb108"/>
+		<rom name="Tiny Toon Adventures 6 (Unl)(1997)(J.Y. Company).nes" size="524304" crc="476cb108"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18973,7 +19000,7 @@
 		<description>Titanic (Hack, English v2.1)</description>
 		<year>2022</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Titanic (T-Eng, v2.1)(2022(pacnsacdave).nes" size="524304" crc="4f0bef8a"/>
+		<rom name="Titanic T-Eng v2.1 (2022)(pacnsacdave).nes" size="524304" crc="4f0bef8a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19494,7 +19521,7 @@
 		<description>Ultimate Mortal Kombat 3 (Hack)</description>
 		<year>2020</year>
 		<manufacturer>Vasil</manufacturer>
-		<rom name="Ultimate Mortal Kombat 3 (Hack).nes" size="2097168" crc="a0a183e6"/>
+		<rom name="Ultimate Mortal Kombat 3 (Hack)(2020)(Vasil).nes" size="2097168" crc="a0a183e6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19502,7 +19529,7 @@
 		<description>Ultimate Mortal Kombat 3 (Unl)</description>
 		<year>1996</year>
 		<manufacturer>Ka Sheng</manufacturer>
-		<rom name="Ultimate Mortal Kombat 3 (Unl).nes" size="1048592" crc="c9495564"/>
+		<rom name="Ultimate Mortal Kombat 3 (Unl)(1996)(Ka Sheng).nes" size="1048592" crc="c9495564"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19611,7 +19638,7 @@
 		<description>Urban Strike (Unl)</description>
 		<year>1995</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Urban Strike (USA).nes" size="262160" crc="fd02591b"/>
+		<rom name="Urban Strike (USA)(1995).nes" size="262160" crc="fd02591b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19705,7 +19732,7 @@
 		<description>Vanguard (Unl)</description>
 		<year>200?</year>
 		<manufacturer>Power Joy</manufacturer>
-		<rom name="Vanguard (20XX)(Power Joy).nes" size="163856" crc="b6c0c49e"/>
+		<rom name="Vanguard (200x)(Power Joy).nes" size="163856" crc="b6c0c49e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

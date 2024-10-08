@@ -385,7 +385,7 @@
 		<description>Dr. Chaos - Jigoku no Tobira (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Dr. Chaos - Jigoku no Tobira (Japan).fds" size="131000" crc="7954bd8f"/>
+		<rom name="Dr. Chaos - Jigoku no Tobira (Japan)(1987)(Pony Canyon).fds" size="131000" crc="7954bd8f"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -394,7 +394,7 @@
 		<description>Dracula II - Noroi no Fuuin (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Dracula II - Noroi no Fuuin (Japan).fds" size="131016" crc="2d1ec77c"/>
+		<rom name="Dracula II - Noroi no Fuuin (Japan)(1987)(Konami).fds" size="131016" crc="2d1ec77c"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -403,7 +403,7 @@
 		<description>Druid - Kyoufu no Tobira (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Druid - Kyoufu no Tobira (Japan).fds" size="131016" crc="b5d4e955"/>
+		<rom name="Druid - Kyoufu no Tobira (Japan)(1988)(Jaleco).fds" size="131016" crc="b5d4e955"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -413,7 +413,7 @@
 		<description>Druid - The Gate of Fear (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Druid - Kyoufu no Tobira (T-Eng)(2022)(BlackPaladin).fds" size="131000" crc="1e9dc522"/>
+		<rom name="Druid - Kyoufu no Tobira T-Eng (2022)(BlackPaladin).fds" size="131000" crc="1e9dc522"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -422,16 +422,26 @@
 		<description>Egger Land (Japan)</description>
 		<year>1987</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Egger Land (Japan).fds" size="131016" crc="84f75912"/>
+		<rom name="Egger Land (Japan)(1987)(HAL Labs).fds" size="131016" crc="84f75912"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="eggerlansouenota" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+	<game name="eggerlanjourney" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Egger Land - A Creative Journey (Hack, English)</description>
+		<year>2024</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Egger Land - A Creative Journey T-Eng (2024)(BlackPaladin).fds" size="131000" crc="0737a435"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="eggerlansouenota" cloneof="eggerlanjourney" romof="eggerlanjourney" sourcefile="nes/d_nes.cpp">
 		<description>Egger Land - Souzouhe no Tabidachi (Japan)</description>
 		<year>1988</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Egger Land - Souzouhe no Tabidachi (Japan).fds" size="131016" crc="2441b3b9"/>
+		<rom name="Egger Land - Souzouhe no Tabidachi (Japan)(1988)(HAL Labs).fds" size="131016" crc="2441b3b9"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -440,8 +450,8 @@
 		<comment>Hack</comment>
 		<description>Electrician (Hack, English)</description>
 		<year>2001</year>
-		<manufacturer>King Mike</manufacturer>
-		<rom name="Electrician (T-eng).fds" size="131016" crc="4aa51f48"/>
+		<manufacturer>KingMike's Translations</manufacturer>
+		<rom name="Electrician T-Eng (2001)(KingMike's Translations).fds" size="131016" crc="4aa51f48"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -450,7 +460,7 @@
 		<description>Electrician (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Electrician (Japan).fds" size="131016" crc="9c37e289"/>
+		<rom name="Electrician (Japan)(1986)(Kemco).fds" size="131016" crc="9c37e289"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -460,7 +470,7 @@
 		<description>Esper Dream (Hack, English)</description>
 		<year>2003</year>
 		<manufacturer>Mute</manufacturer>
-		<rom name="Esper Dream (T-Eng).fds" size="131000" crc="51d8c9f1"/>
+		<rom name="Esper Dream T-Eng (2003)(Mute).fds" size="131000" crc="51d8c9f1"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -469,7 +479,7 @@
 		<description>Esper Dream (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Esper Dream (Japan).fds" size="131000" crc="1d40f83f"/>
+		<rom name="Esper Dream (Japan)(1987)(Konami).fds" size="131000" crc="1d40f83f"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -478,7 +488,7 @@
 		<description>Exciting Soccer - Konami Cup (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Exciting Soccer - Konami Cup (Japan).fds" size="131016" crc="43ccd4ba"/>
+		<rom name="Exciting Soccer - Konami Cup (Japan)(1988)(Konami).fds" size="131016" crc="43ccd4ba"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -487,7 +497,7 @@
 		<description>Fairy Pinball - Yousei Tachi no Pinball (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hacker International</manufacturer>
-		<rom name="Fairy Pinball - Yousei Tachi no Pinball (Japan).fds" size="131016" crc="1ce10f77"/>
+		<rom name="Fairy Pinball - Yousei Tachi no Pinball (Japan)(1987)(Hacker International).fds" size="131016" crc="1ce10f77"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -496,7 +506,7 @@
 		<description>Falsion (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Falsion (Japan).fds" size="131016" crc="398bc9dc"/>
+		<rom name="Falsion (Japan)(1987)(Konami).fds" size="131016" crc="398bc9dc"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -505,7 +515,7 @@
 		<description>Famicom Grand Prix - F1 Race (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Famicom Grand Prix - F1 Race (Japan).fds" size="131016" crc="7040bf35"/>
+		<rom name="Famicom Grand Prix - F1 Race (Japan)(1987)(Nintendo).fds" size="131016" crc="7040bf35"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -514,7 +524,7 @@
 		<description>Famicom Grand Prix II - 3D Hot Rally (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Famicom Grand Prix II - 3D Hot Rally (Japan).fds" size="131016" crc="012267d8"/>
+		<rom name="Famicom Grand Prix II - 3D Hot Rally (Japan)(1988)(Nintendo).fds" size="131016" crc="012267d8"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

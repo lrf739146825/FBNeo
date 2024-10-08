@@ -546,7 +546,7 @@
 		<description>Ad Lunam Plus (English) (128K) (HB, v1.1)</description>
 		<year>2020</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
-		<rom name="Ad Lunam Plus 128K EN (2020)(Grussu, Alessandro).tap" size="83541" crc="41988944"/>
+		<rom name="Ad Lunam Plus EN 128K (2020)(Alessandro Grussu).tap" size="83541" crc="41988944"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -557,7 +557,7 @@
 		<description>Ad Lunam Plus (Italian) (128K) (HB, v1.1)</description>
 		<year>2020</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
-		<rom name="Ad Lunam Plus 128K IT (2020)(Grussu, Alessandro).tap" size="83768" crc="c27e30a2"/>
+		<rom name="Ad Lunam Plus IT 128K (2020)(Alessandro Grussu).tap" size="83768" crc="c27e30a2"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -568,7 +568,7 @@
 		<description>Ad Lunam Plus (Spanish) (128K) (HB, v1.1)</description>
 		<year>2020</year>
 		<manufacturer>Alessandro Grussu</manufacturer>
-		<rom name="Ad Lunam Plus 128K ES (2020)(Grussu, Alessandro).tap" size="83712" crc="1d812053"/>
+		<rom name="Ad Lunam Plus ES 128K (2020)(Alessandro Grussu).tap" size="83712" crc="1d812053"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -662,7 +662,7 @@
 		<description>Adventures of Buratino, The (Russian) (128K)</description>
 		<year>1993</year>
 		<manufacturer>Copper Feet</manufacturer>
-		<rom name="Adventures of Buratino, The (1993)(Copper Feet)(128k).z80" size="38636" crc="3a0cb189"/>
+		<rom name="Adventures of Buratino, The 128K (1993)(Copper Feet).z80" size="38636" crc="3a0cb189"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -1107,7 +1107,7 @@
 		<description>Alien Syndrome (48K)</description>
 		<year>1987-88</year>
 		<manufacturer>ACE Software</manufacturer>
-		<rom name="Alien Syndrome (1988)(ACE).tap" size="74240" crc="ed57e69d"/>
+		<rom name="Alien Syndrome 48K (1988)(ACE).tap" size="74240" crc="ed57e69d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -1243,16 +1243,17 @@
 		<description>Alter Ego (48K) (HB)</description>
 		<year>2011</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="Alter Ego (2011)(RetroSouls).tap" size="38926" crc="855c13dc"/>
+		<rom name="Alter Ego 48K (2011)(RetroSouls).tap" size="38926" crc="855c13dc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="altbeast" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Set 'E:Sinclair 1' (P1) and 'I:Sinclair 2' (P2) to use controllers</comment>
 		<description>Altered Beast (128K)</description>
 		<year>1989</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Altered Beast (1989)(Activision).tap" size="191417" crc="f4ce807b"/>
+		<rom name="Altered Beast 128K (1989)(Activision).tap" size="191417" crc="f4ce807b"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -1312,7 +1313,7 @@
 		<description>Amidar (Spanish) (48K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Salvador Camacho</manufacturer>
-		<rom name="Amidar (2022)(Salvador Camacho).tap" size="26664" crc="7dda9ac5"/>
+		<rom name="Amidar 48K (2022)(Salvador Camacho).tap" size="26664" crc="7dda9ac5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -1350,7 +1351,7 @@
 		<description>Andy Capp (128K)</description>
 		<year>1988</year>
 		<manufacturer>Mirrorsoft</manufacturer>
-		<rom name="Andy Capp (1988)(Mirrorsoft).tap" size="54909" crc="7c81909f"/>
+		<rom name="Andy Capp 128K (1988)(Mirrorsoft).tap" size="54909" crc="7c81909f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -1361,7 +1362,7 @@
 		<description>Angel Nieto Pole 500cc (Spanish) (128K)</description>
 		<year>1990</year>
 		<manufacturer>Opera Soft</manufacturer>
-		<rom name="Angel Nieto Pole 500cc 128K ES (1990)(Opera Soft).tap" size="68099" crc="010c9f97"/>
+		<rom name="Angel Nieto Pole 500cc ES 128K (1990)(Opera Soft).tap" size="68099" crc="010c9f97"/>
 		<rom name="zx128_2a_0.rom" merge="zx128_2a_0.rom" size="16384" crc="30c9f490"/>
 		<rom name="zx128_2a_1.rom" merge="zx128_2a_1.rom" size="16384" crc="a7916b3f"/>
 		<rom name="zx128_2a_2.rom" merge="zx128_2a_2.rom" size="16384" crc="c9a0b748"/>
@@ -1374,7 +1375,7 @@
 		<description>Angel Nieto Pole 500cc (Spanish) (48K)</description>
 		<year>1990</year>
 		<manufacturer>Opera Soft</manufacturer>
-		<rom name="Angel Nieto Pole 500cc 48K ES (1990)(Opera Soft).tap" size="68296" crc="f3e448a8"/>
+		<rom name="Angel Nieto Pole 500cc ES 48K (1990)(Opera Soft).tap" size="68296" crc="f3e448a8"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2458,7 +2459,7 @@
 		<description>Batman: The Caped Crusader - Part 2: A Fete Worse than Death (48K)</description>
 		<year>1988</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Batman - The Caped Crusader - A Fete Worse than Death 48K (1988)(Ocean).tap" size="47806" crc="8591332f"/>
+		<rom name="Batman - The Caped Crusader - A Fete Worse than Death 48K (1988)(Ocean).tap" size="49178" crc="967e82ee"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4196,7 +4197,7 @@
 		<description>Captain Planet and the Planeteers (48K)</description>
 		<year>1991</year>
 		<manufacturer>Mindscape International</manufacturer>
-		<rom name="Captain Planet and the Planeteers (1991)(Mindscape International).tap" size="61255" crc="0e629f1d"/>
+		<rom name="Captain Planet and the Planeteers 48K (1991)(Mindscape International).tap" size="61255" crc="0e629f1d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4307,7 +4308,7 @@
 		<description>Castle Master (48K)</description>
 		<year>1990</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="Castle Master (1990)(Domark).tap" size="50816" crc="63e17cd0"/>
+		<rom name="Castle Master 48K (1990)(Domark).tap" size="50816" crc="63e17cd0"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4464,7 +4465,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="centibug" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Press 'K' to select Kempston Joystick</comment>
+		<comment>Press 'K' to select Kempston joystick</comment>
 		<description>Centi-Bug - aka Centipede (16K)</description>
 		<year>1983</year>
 		<manufacturer>DK'Tronics</manufacturer>
@@ -6633,7 +6634,7 @@
 		<description>Delta Charge! (128K)</description>
 		<year>1990</year>
 		<manufacturer>Thalamus - Twilight</manufacturer>
-		<rom name="Delta Charge! (1990)(Thalamus).tap" size="56562" crc="3f0b7368"/>
+		<rom name="Delta Charge! 128K (1990)(Thalamus).tap" size="56562" crc="3f0b7368"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -6889,7 +6890,7 @@
 		<description>Diosa de Cozumel, La (Spanish) (48K)</description>
 		<year>1990</year>
 		<manufacturer>Aventuras A.D.</manufacturer>
-		<rom name="Diosa de Cozumel, La ES (1990)(Aventuras AD).tap" size="95528" crc="225d77d8"/>
+		<rom name="Diosa de Cozumel, La ES 48K (1990)(Aventuras AD).tap" size="95528" crc="225d77d8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8264,7 +8265,7 @@
 		<description>Equinox (48K)</description>
 		<year>1986</year>
 		<manufacturer>Mikro-Gen</manufacturer>
-		<rom name="Equinox (1986)(Mikro-Gen).z80" size="45770" crc="aaa2864d"/>
+		<rom name="Equinox 48K (1986)(Mikro-Gen).z80" size="45770" crc="aaa2864d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8273,7 +8274,7 @@
 		<description>Eric and the Floaters (48K)</description>
 		<year>1983</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Eric And The Floaters (1983)(Hudson Soft).tap" size="8492" crc="0f7826de"/>
+		<rom name="Eric And The Floaters 48K (1983)(Hudson Soft).tap" size="8492" crc="0f7826de"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8429,7 +8430,7 @@
 		<description>Everyone's a Wally (48K)</description>
 		<year>1985</year>
 		<manufacturer>Mikro-Gen</manufacturer>
-		<rom name="Everyone's a Wally (1985)(Mikro-Gen).tap" size="40178" crc="94e1bce9"/>
+		<rom name="Everyone's a Wally 48K (1985)(Mikro-Gen).tap" size="40178" crc="94e1bce9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -11299,11 +11300,20 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="hnchbac2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="hunchbac2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Hunchback II - Quasimodo's Revenge (48K)</description>
 		<year>1985</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Hunchback II - Quasimodo's Revenge 48K (1984)(Ocean).tap" size="49221" crc="65a9fcbe"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hunchy" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Hunchy ~ Quasimodo (16K)</description>
+		<year>1983</year>
+		<manufacturer>Your Computer</manufacturer>
+		<rom name="Hunchy - Quasimodo 16K (1983)(Your Computer).tap" size="9560" crc="7c7f85ad"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14092,6 +14102,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="madballs" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Madballs (128K)</description>
+		<year>1988</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Madballs 128K (1988)(Ocean).tap" size="47126" crc="08d83d83"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="magmax" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Mag Max - Robo Centurion (48K)</description>
 		<year>1987</year>
@@ -14158,6 +14178,16 @@
 		<year>1985</year>
 		<manufacturer>Mastertronic</manufacturer>
 		<rom name="Magic Carpet 16K (1985)(Mastertronic).z80" size="11221" crc="05e22cf1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="magictower" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Magic Tower (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Seagal</manufacturer>
+		<rom name="Magic Tower 48K (2024)(Seagal).tap" size="46839" crc="7e5cce9b"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14438,7 +14468,7 @@
 		<description>Maritrini Freelance Monster Slayer - Adventure (Spanish) (48K) (HB)</description>
 		<year>2012</year>
 		<manufacturer>The Mojon Twins, The</manufacturer>
-		<rom name="Maritrini Freelance Monster Slayer Adventure ES (2012)(The Mojon Twins).tap" size="40996" crc="fc0e6a74"/>
+		<rom name="Maritrini Freelance Monster Slayer Adventure ES 48K (2012)(The Mojon Twins).tap" size="40996" crc="fc0e6a74"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14815,6 +14845,27 @@
 		<manufacturer>Players Premier</manufacturer>
 		<rom name="Metal Army (1988)(Players).tap" size="40251" crc="dbced42f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="metalbrain128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Metal Brain (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Rod_Mad</manufacturer>
+		<rom name="Metal Brain 128K (2024)(Rod_Mad).tap" size="52066" crc="a1985b2c"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="metalbrain48" cloneof="metalbrain128" romof="metalbrain128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Metal Brain (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Rod_Mad</manufacturer>
+		<rom name="Metal Brain 48K (2024)(RodMad).tap" size="51459" crc="450392ad"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15520,7 +15571,7 @@
 		<description>More Tea Vicar? (128K) (HB)</description>
 		<year>2012</year>
 		<manufacturer>Cronosoft</manufacturer>
-		<rom name="More Tea Vicar (2012)(Cronosoft).tap" size="60372" crc="cb451c56"/>
+		<rom name="More Tea Vicar 128K (2012)(Cronosoft).tap" size="60372" crc="cb451c56"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15531,7 +15582,7 @@
 		<description>Moritz (48K) (HB)</description>
 		<year>2017</year>
 		<manufacturer>Sebastian Braunert</manufacturer>
-		<rom name="Moritz 48k (2017)(Sebastian Braunert).z80" size="39114" crc="f0f22000"/>
+		<rom name="Moritz 48K (2017)(Sebastian Braunert).z80" size="39114" crc="f0f22000"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -20568,6 +20619,34 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="shortcirc128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Short Circuit (128K)</description>
+		<year>1987</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Short Circuit 128K (1987)(Ocean).tap" size="91424" crc="d080565f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shortcirc48p1" cloneof="shortcirc128" romof="shortcirc128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Short Circuit - Part 1 (48K)</description>
+		<year>1987</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Short Circuit - Part 1 48K (1987)(Ocean).tap" size="44994" crc="19008124"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shortcirc48p2" cloneof="shortcirc128" romof="shortcirc128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Short Circuit - Part 2 (48K)</description>
+		<year>1987</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Short Circuit - Part 2 48K (1987)(Ocean).tap" size="44962" crc="100f3549"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="shoveladv" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Shovel Adventure ZX (128K) (HB, v1.2)</description>
@@ -21185,7 +21264,7 @@
 		<description>Somewhere in Hell (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Packobilly</manufacturer>
-		<rom name="Somewhere in Hell (2021)(Packobilly).tap" size="51930" crc="76b01aff"/>
+		<rom name="Somewhere in Hell 128K (2021)(Packobilly).tap" size="51930" crc="76b01aff"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
