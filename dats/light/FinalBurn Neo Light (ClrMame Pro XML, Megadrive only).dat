@@ -3152,7 +3152,7 @@
 		<description>Cannon Fire Chaos - Triple Threat (HB)</description>
 		<year>2018</year>
 		<manufacturer>Good Deal Games</manufacturer>
-		<rom name="Cannon Fire Chaos - Triple Threat.bin" size="1572864" crc="e6d6b7e1"/>
+		<rom name="Cannon Fire Chaos - Triple Threat (2018)(Good Deal Games).bin" size="1572864" crc="e6d6b7e1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3354,46 +3354,46 @@
 	</game>
 	<game name="cavestoryc" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Chinese, v0.8.0)</description>
-		<year>2022-02</year>
+		<description>Cave Story Doukutsu (HB, Chinese v0.8.0)</description>
+		<year>2022</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu (HB, zh, v0.8.0).bin" size="4194304" crc="0c1517fc"/>
+		<rom name="Cave Story Doukutsu v0.8.0 (ZH)(2022)(Studio Pixel).bin" size="4194304" crc="0c1517fc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, English, v0.8.0)</description>
-		<year>2022-02</year>
+		<description>Cave Story Doukutsu (HB, English v0.8.0)</description>
+		<year>2022</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu (HB, en, v0.8.0).bin" size="4194304" crc="d476a108"/>
+		<rom name="Cave Story Doukutsu v0.8.0 (EN)(2022)(Studio Pixel).bin" size="4194304" crc="d476a108"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestoryi" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Italian, v0.8.0)</description>
-		<year>2022-02</year>
+		<description>Cave Story Doukutsu (HB, Italian v0.8.0)</description>
+		<year>2022</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu (HB, it, v0.8.0).bin" size="4194304" crc="8ec855f9"/>
+		<rom name="Cave Story Doukutsu v0.8.0 (IT)(2022)(Studio Pixel).bin" size="4194304" crc="8ec855f9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestoryj" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Japanese, v0.8.0)</description>
-		<year>2022-02</year>
+		<description>Cave Story Doukutsu (HB, Japanese v0.8.0)</description>
+		<year>2022</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu (HB, ja, v0.8.0).bin" size="4194304" crc="21acbe48"/>
+		<rom name="Cave Story Doukutsu v0.8.0 (JP)(2022)(Studio Pixel).bin" size="4194304" crc="21acbe48"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestorys" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Spanish, v0.8.0)</description>
-		<year>2022-02</year>
+		<description>Cave Story Doukutsu (HB, Spanish v0.8.0)</description>
+		<year>2022</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu (HB, es, v0.8.0).bin" size="4194304" crc="06405697"/>
+		<rom name="Cave Story Doukutsu v0.8.0 (ES)(2022)(Studio Pixel).bin" size="4194304" crc="06405697"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3535,7 +3535,7 @@
 		<description>Chase (HB, v2.00)</description>
 		<year>2014</year>
 		<manufacturer>Jack Nolddor &amp; Davidian</manufacturer>
-		<rom name="Chase (v2.00).bin" size="393216" crc="0b3426ed"/>
+		<rom name="Chase v2.00 (2014)(Jack Nolddor and Davidian).bin" size="393216" crc="0b3426ed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3691,7 +3691,7 @@
 		<description>Chip's Challenge (HB, v1.4)</description>
 		<year>2020</year>
 		<manufacturer>PortableDev</manufacturer>
-		<rom name="chipschallenge_v14.bin" size="1310720" crc="c57188bb"/>
+		<rom name="Chip's Challenge v1.4 (2020)(PortableDev).bin" size="1310720" crc="c57188bb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3789,10 +3789,10 @@
 	</game>
 	<game name="citadel" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Citadel of Chaos, The (HB, v2.1)</description>
+		<description>Citadel of Chaos, The (HB, v2.23)</description>
 		<year>2021</year>
 		<manufacturer>Studio Vetea</manufacturer>
-		<rom name="Citadel of Chaos, The v2.1 (2021)(Studio Vetea).bin" size="3807254" crc="bfe255e3"/>
+		<rom name="Citadel of Chaos, The v2.23 (2021)(Studio Vetea).bin" size="3809298" crc="fac49e30"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5391,7 +5391,7 @@
 		<description>Devil Crash MD (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Technosoft</manufacturer>
-		<rom name="devil crash md (jpn).bin" size="524288" crc="4c4caad8"/>
+		<rom name="Devil Crash MD (Japan)(1993)(Technosoft).bin" size="524288" crc="4c4caad8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5776,10 +5776,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="dongguri" cloneof="drrobotn" romof="drrobotn" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Dong Gu Ri Te Chi Jak Jeon (Korea)</description>
+		<description>Dong Gu Ri Te Chi Jak Jeon (Korea) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="dong gu ri te chi jak jeon (kor).bin" size="1048576" crc="e32f0b1c"/>
+		<rom name="Dong Gu Ri Te Chi Jak Jeon (Korea)(Unl)(199x).bin" size="1048576" crc="e32f0b1c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5914,7 +5914,7 @@
 		<description>Dr. Robotnik's Mean Bean Machine (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega - Compile</manufacturer>
-		<rom name="dr. robotnik's mean bean machine (euro).bin" size="1048576" crc="70680706"/>
+		<rom name="Dr. Robotnik's Mean Bean Machine (Euro)(1993)(Sega, Compile).bin" size="1048576" crc="70680706"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5932,7 +5932,7 @@
 		<description>Dr. Robotnik's Mean Bean Machine (Prototype B)</description>
 		<year>1993</year>
 		<manufacturer>Sega - Compile</manufacturer>
-		<rom name="dr. robotnik's mean bean machine (prototype b).bin" size="1048576" crc="c631bfff"/>
+		<rom name="Dr. Robotnik's Mean Bean Machine (Proto B)(1993)(Sega, Compile).bin" size="1048576" crc="c631bfff"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5940,7 +5940,7 @@
 		<description>Dr. Robotnik's Mean Bean Machine (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega - Compile</manufacturer>
-		<rom name="dr. robotnik's mean bean machine (usa).bin" size="1048576" crc="c7ca517f"/>
+		<rom name="Dr. Robotnik's Mean Bean Machine (USA)(1993)(Sega, Compile).bin" size="1048576" crc="c7ca517f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5949,7 +5949,7 @@
 		<description>Dr. Robotnik's Mean Bean Machine (USA, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega - Compile</manufacturer>
-		<rom name="dr. robotnik's mean bean machine (usa) (beta).bin" size="1048576" crc="4d0e5273"/>
+		<rom name="Dr. Robotnik's Mean Bean Machine (USA, Proto)(1993)(Sega, Compile).bin" size="1048576" crc="4d0e5273"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5957,7 +5957,7 @@
 		<description>Dragon - The Bruce Lee Story (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="dragon - the bruce lee story (euro).bin" size="2097152" crc="fdeed51d"/>
+		<rom name="Dragon - The Bruce Lee Story (Euro)(1993)(Virgin).bin" size="2097152" crc="fdeed51d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5974,7 +5974,7 @@
 		<description>Dragon - The Bruce Lee Story (USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="dragon - the bruce lee story (usa).bin" size="2097152" crc="efe850e5"/>
+		<rom name="Dragon - The Bruce Lee Story (USA)(1994)(Acclaim).bin" size="2097152" crc="efe850e5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5991,7 +5991,7 @@
 		<description>Dragon Ball Z - Buyuu Retsuden (Hack, Enhanced Colors)</description>
 		<year>2020</year>
 		<manufacturer>Donus87</manufacturer>
-		<rom name="dragon ball z - buyuu retsuden (Hack, Enhanced Colors).bin" size="2097152" crc="31834e9c"/>
+		<rom name="Dragon Ball Z - Buyuu Retsuden -Enhanced Colors (2020)(Donus87).bin" size="2097152" crc="31834e9c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6008,7 +6008,7 @@
 		<description>Dragon Ball Z - Buyuu Retsuden (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="dragon ball z - buyuu retsuden (jpn).bin" size="2097152" crc="af8f3371"/>
+		<rom name="Dragon Ball Z - Buyuu Retsuden (Japan)(1994)(Bandai).bin" size="2097152" crc="af8f3371"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6016,7 +6016,7 @@
 		<description>Dragon Ball Z - L'Appel du Destin (Euro, French)</description>
 		<year>1994</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="dragon ball z - l'appel du destin (france).bin" size="2097152" crc="f035c737"/>
+		<rom name="Dragon Ball Z - L'Appel du Destin (Euro, French)(1994)(Bandai).bin" size="2097152" crc="f035c737"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6033,7 +6033,7 @@
 		<description>Dragon Slayer - Eiyuu Densetsu (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dragon slayer - eiyuu densetsu (jpn).bin" size="2097152" crc="01bc1604"/>
+		<rom name="Dragon Slayer - Eiyuu Densetsu (Japan)(1994)(Sega).bin" size="2097152" crc="01bc1604"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6041,7 +6041,7 @@
 		<description>Dragon Slayer - Eiyuu Densetsu II (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dragon slayer - eiyuu densetsu ii (jpn).bin" size="2097152" crc="46924dc3"/>
+		<rom name="Dragon Slayer - Eiyuu Densetsu II (Japan)(1995)(Sega).bin" size="2097152" crc="46924dc3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6049,7 +6049,7 @@
 		<description>Dragon's Eye Plus - Shanghai III (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Home Data</manufacturer>
-		<rom name="dragon's eye plus - shanghai iii (jpn).bin" size="262144" crc="81f0c3cf"/>
+		<rom name="Dragon's Eye Plus - Shanghai III (Japan)(1991)(Home Data).bin" size="262144" crc="81f0c3cf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6057,7 +6057,7 @@
 		<description>Dragon's Fury (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="dragon's fury (euro, usa).bin" size="524288" crc="58037bc6"/>
+		<rom name="Dragon's Fury (Euro, USA)(1992)(Tengen).bin" size="524288" crc="58037bc6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6075,7 +6075,7 @@
 		<description>Dragon's Lair (USA, Prototype)</description>
 		<year>199?</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="dragon's lair (usa, prototype).bin" size="524288" crc="a33eb522"/>
+		<rom name="Dragon's Lair (USA, Proto)(199x)(Taito).bin" size="524288" crc="a33eb522"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6083,7 +6083,7 @@
 		<description>Dragon's Revenge (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="dragon's revenge (euro, usa).bin" size="1048576" crc="841edbc0"/>
+		<rom name="Dragon's Revenge (Euro, USA)(1993)(Tengen).bin" size="1048576" crc="841edbc0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6100,7 +6100,7 @@
 		<description>Dragon's Revenge (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="dragon's revenge (japan).bin" size="1048576" crc="d8d2efd7"/>
+		<rom name="Dragon's Revenge (Japan)(1993)(Tengen).bin" size="1048576" crc="d8d2efd7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10786,6 +10786,15 @@
 		<year>1992</year>
 		<manufacturer>Sunsoft</manufacturer>
 		<rom name="Lemmings v1.1 (Japan, USA, Korea)(1992)(Sunsoft).bin" size="1048576" crc="68c70362"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lemmingscph" cloneof="lemmings" romof="lemmings" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Lemmings - Colour Palette &amp; Level Title Fix (Euro) (Hack, v1.3)</description>
+		<year>2024</year>
+		<manufacturer>J. Russell</manufacturer>
+		<rom name="Lemmings - Colour Palette &amp; Level Title Fix v1.3 (Euro)(2024)(J. Russell).bin" size="1048576" crc="08bf475c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18605,7 +18614,7 @@
 		<description>Sonic 2 Battle Race (Hack)</description>
 		<year>2012</year>
 		<manufacturer>ColinC10</manufacturer>
-		<rom name="Sonic2BattleRace.bin" size="2097152" crc="be6d9178"/>
+		<rom name="Sonic 2 Battle Race (2012)(ColinC10).bin" size="2097152" crc="be6d9178"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18623,7 +18632,7 @@
 		<description>Sonic 2 Recreation - Part One (Hack, Contest Build)</description>
 		<year>2013</year>
 		<manufacturer>redhotsonic</manufacturer>
-		<rom name="Sonic 2 Recreation - Part One.bin" size="2237992" crc="771fd4ea"/>
+		<rom name="Sonic 2 Recreation - Part One (2013)(rednotsonic).bin" size="2237992" crc="771fd4ea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18633,6 +18642,15 @@
 		<year>2007</year>
 		<manufacturer>SMTP</manufacturer>
 		<rom name="Sonic 2 SMTP v0.5 (2007)(SMTP).bin" size="2073642" crc="d116fef0"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sonic2vs" cloneof="sonic2" romof="sonic2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Sonic 2 VS (Hack, Contest Build)</description>
+		<year>2024</year>
+		<manufacturer>Sock Team</manufacturer>
+		<rom name="Sonic 2 VS (2024)(Sock Team).bin" size="4038681" crc="e4de765a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18775,7 +18793,7 @@
 		<description>Sonic Bash (Hack, v2)</description>
 		<year>2016</year>
 		<manufacturer>redhotsonic</manufacturer>
-		<rom name="Sonic Bash V2.bin" size="524288" crc="627d1ca8"/>
+		<rom name="Sonic Bash v2 (2016)(redhotsonic).bin" size="524288" crc="627d1ca8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18822,12 +18840,12 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sonicdeltar" cloneof="sonic3" romof="sonic3" sourcefile="megadrive/d_megadrive.cpp">
+	<game name="sonicdeltan" cloneof="sonic3" romof="sonic3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack, 40Mbit ROM</comment>
-		<description>Sonic Delta Reloaded (Hack, v0.78)</description>
-		<year>2023</year>
+		<description>Sonic Delta Next (Hack, v0.79)</description>
+		<year>2024</year>
 		<manufacturer>Esrael Neto</manufacturer>
-		<rom name="Sonic Delta Reloaded v0.78 (2023)(Esrael Neto).bin" size="5242880" crc="4e896915"/>
+		<rom name="Sonic Delta Next v0.79 (2024)(Esrael Neto).bin" size="5242880" crc="9376cfb0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18895,7 +18913,7 @@
 		<description>Sonic Pixel Perfect (Hack, Ultimate Version)</description>
 		<year>2013</year>
 		<manufacturer>JcFerggy, NovaWizard, Jk.Fox</manufacturer>
-		<rom name="Sonic Pixel Perfect (Ultimate Version).bin" size="796372" crc="6d776301"/>
+		<rom name="Sonic Pixel Perfect - Ultimate Version (2013)(JcFerggy, NovaWizard, Jk.Fox).bin" size="796372" crc="6d776301"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18997,7 +19015,7 @@
 		<description>Sonic the Hedgehog - The Lost Worlds (Hack)</description>
 		<year>2009</year>
 		<manufacturer>ExecByte</manufacturer>
-		<rom name="Sonic the Hedgehog - The Lost Worlds.bin" size="1048576" crc="47004e22"/>
+		<rom name="Sonic the Hedgehog - The Lost Worlds (2009)(ExecByte).bin" size="1048576" crc="47004e22"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19137,7 +19155,7 @@
 		<description>Sonic the Hedgehog 2 XL - Onion Ring (Hack)</description>
 		<year>2016</year>
 		<manufacturer>Captain Bozo, Ranger</manufacturer>
-		<rom name="sonic2xl.bin" size="4194304" crc="9459fbfb"/>
+		<rom name="Sonic the Hedgehog 2 XL (2016)(Captain Bozo, Ranger).bin" size="4194304" crc="9459fbfb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19224,7 +19242,7 @@
 		<description>Sonic Winter Adventures (Hack)</description>
 		<year>2013</year>
 		<manufacturer>vladikcomper</manufacturer>
-		<rom name="Sonic Winter Adventures (Hack).bin" size="950272" crc="795d6603"/>
+		<rom name="Sonic Winter Adventures (2013)(vladikcomper).bin" size="950272" crc="795d6603"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25593,7 +25611,7 @@
 		<description>Yoshi in Sonic the Hedgehog 2 (Hack, Beta)</description>
 		<year>2017</year>
 		<manufacturer>Xenowhirl</manufacturer>
-		<rom name="Yoshi_Sonic2beta.bin" size="1048576" crc="5f19712a"/>
+		<rom name="Yoshi in Sonic The Hedgehog 2 (Beta)(2017)(Xenowhirl).bin" size="1048576" crc="5f19712a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
