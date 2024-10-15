@@ -57,7 +57,7 @@ static UINT32 lightgun_port;
 
 static UINT16 color_base[3];
 
-static INT32 nExtraCycles;
+static INT32 nExtraCycles[3];
 
 static UINT8 DrvJoy1[16];
 static UINT8 DrvJoy2[16];
@@ -549,8 +549,8 @@ void deco32_z80_sound_init(UINT8 *rom, UINT8 *ram)
 	BurnYM2151SetRoute(BURN_SND_YM2151_YM2151_ROUTE_2, 0.40, BURN_SND_ROUTE_RIGHT);
 	BurnTimerAttachZet(3580000);
 
-	MSM6295Init(0, (32220000 / 32) / 132, 1);
-	MSM6295Init(1, (32220000 / 16) / 132, 1);
+	MSM6295Init(0, (32220000 / 32) / MSM6295_PIN7_HIGH, 1);
+	MSM6295Init(1, (32220000 / 16) / MSM6295_PIN7_HIGH, 1);
 	MSM6295SetRoute(0, 1.00, BURN_SND_ROUTE_BOTH);
 	MSM6295SetRoute(1, 0.25, BURN_SND_ROUTE_BOTH);
 }
@@ -1476,7 +1476,7 @@ static INT32 DrvDoReset()
 	raster_irq_scanline = 0;
 	lightgun_latch = 0;
 
-	nExtraCycles = 0;
+	nExtraCycles[0] = nExtraCycles[1] = nExtraCycles[2] = 0;
 
 	HiscoreReset();
 
@@ -1659,7 +1659,7 @@ static INT32 FghthistCommonInit(INT32 z80_sound, UINT32 speedhack)
 	else
 	{
 		use_z80 = 0;
-		deco16SoundInit(DrvHucROM, DrvHucRAM, 3580000, 0, DrvYM2151WritePort, 0.42, 1006875, 1.00, 2013750, 0.35);
+		deco16SoundInit(DrvHucROM, DrvHucRAM, 4027500, 0, DrvYM2151WritePort, 0.42, 1006875, 1.00, 2013750, 0.35);
 		BurnYM2151SetRoute(BURN_SND_YM2151_YM2151_ROUTE_1, 0.80, BURN_SND_ROUTE_LEFT);
 		BurnYM2151SetRoute(BURN_SND_YM2151_YM2151_ROUTE_2, 0.80, BURN_SND_ROUTE_RIGHT);
 	}
@@ -1961,7 +1961,7 @@ static INT32 NslasherCommonInit(INT32 has_z80, UINT32 speedhack)
 	}
 	else
 	{
-		deco16SoundInit(DrvHucROM, DrvHucRAM, 3580000, 0, DrvYM2151WritePort, 0.42, 1006875, 1.00, 2013750, 0.25);
+		deco16SoundInit(DrvHucROM, DrvHucRAM, 4027500, 0, DrvYM2151WritePort, 0.42, 1006875, 1.00, 2013750, 0.25);
 		BurnYM2151SetRoute(BURN_SND_YM2151_YM2151_ROUTE_1, 0.80, BURN_SND_ROUTE_LEFT);
 		BurnYM2151SetRoute(BURN_SND_YM2151_YM2151_ROUTE_2, 0.80, BURN_SND_ROUTE_RIGHT);
 	}
@@ -3591,7 +3591,7 @@ static INT32 DrvFrame()
 		nCyclesTotal[0] = (INT32)((double)7080500 / 58.464346);
 		nCyclesTotal[1] = (INT32)((double)deco16_sound_cpuclock / 58.464346);
 	}
-	INT32 nCyclesDone[2] = { nExtraCycles, 0 };
+	INT32 nCyclesDone[2] = { nExtraCycles[0], nExtraCycles[1] };
 
 	ArmOpen(0);
 	h6280Open(0);
@@ -3632,7 +3632,8 @@ static INT32 DrvFrame()
 	h6280Close();
 	ArmClose();
 
-	nExtraCycles = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[0] = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[1] = nCyclesDone[1] - nCyclesTotal[1];
 
 	if (pBurnDraw && pDrawScanline == NULL) {
 		BurnDrvRedraw();
@@ -3669,9 +3670,12 @@ static INT32 DrvZ80Frame()
 	}
 
 	INT32 nInterleave = 274;
-	INT32 nCyclesTotal[2] = { 7000000 / 60, 3580000 / 60 };
-	if (game_select == 2) nCyclesTotal[0] = 7080500 / 60; // nslasher
-	INT32 nCyclesDone[2] = { nExtraCycles, 0 };
+	INT32 nCyclesTotal[2] = { (INT32)((double)7000000 / 57.799650), (INT32)((double)3580000 / 57.799650) };
+	if (game_select == 2) { // nslasher
+		nCyclesTotal[0] = (INT32)((double)7080500 / 58.464346);
+		nCyclesTotal[1] = (INT32)((double)3580000 / 58.464346);
+	}
+	INT32 nCyclesDone[2] = { nExtraCycles[0], nExtraCycles[1] };
 
 	ArmOpen(0);
 	ZetOpen(0);
@@ -3696,7 +3700,8 @@ static INT32 DrvZ80Frame()
 	ZetClose();
 	ArmClose();
 
-	nExtraCycles = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[0] = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[1] = nCyclesDone[1] - nCyclesTotal[1];
 
 	if (pBurnSoundOut) {
 		deco32_z80_sound_update(pBurnSoundOut, nBurnSoundLen);
@@ -3731,7 +3736,7 @@ static INT32 DrvBSMTFrame()
 
 	INT32 nInterleave = 274;
 	INT32 nCyclesTotal[3] = { 7000000 / 58, 1789790 / 58, 24000000/4 / 58 };
-	INT32 nCyclesDone[3] = { nExtraCycles, 0, 0 };
+	INT32 nCyclesDone[3] = { nExtraCycles[0], nExtraCycles[1], nExtraCycles[2] };
 
 	ArmOpen(0);
 	deco16_vblank = 1;
@@ -3769,7 +3774,9 @@ static INT32 DrvBSMTFrame()
 
 	ArmClose();
 
-	nExtraCycles = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[0] = nCyclesDone[0] - nCyclesTotal[0];
+	nExtraCycles[1] = nCyclesDone[1] - nCyclesTotal[1];
+	nExtraCycles[2] = nCyclesDone[2] - nCyclesTotal[2];
 
 	if (pBurnDraw) {
 		BurnDrvRedraw();
