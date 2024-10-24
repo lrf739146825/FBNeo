@@ -287,7 +287,7 @@
 		<description>Ace Gun (HB)</description>
 		<year>2020</year>
 		<manufacturer>Cobinee</manufacturer>
-		<rom name="ace gun (2020)(cobinee).rom" size="32768" crc="d9bbb093"/>
+		<rom name="Ace Gun (2020)(Cobinee).rom" size="32768" crc="d9bbb093"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -3645,6 +3645,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="chimneyman" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>ChimneyMan (HB, v1.5)</description>
+		<year>2024</year>
+		<manufacturer>Gamecast Entertainment</manufacturer>
+		<rom name="ChimneyMan v1.5 (2024)(Gamecast Ent.).rom" size="753664" crc="3a36ef6a"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="choplift" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Choplifter (Japan)</description>
 		<year>1985</year>
@@ -3915,7 +3927,7 @@
 		<description>Cocoa and the Time Machine (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
-		<rom name="cocoa and the time machine (2020)(minilop).rom" size="753664" crc="22d55a91"/>
+		<rom name="Cocoa and the Time Machine (2020)(Minilop).rom" size="753664" crc="22d55a91"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -4848,8 +4860,8 @@
 		<comment>Homebrew</comment>
 		<description>Defence (HB, v1.2)</description>
 		<year>2022</year>
-		<manufacturer>GameCast Entertainment</manufacturer>
-		<rom name="Defence v1.2 (2022)(GameCast Ent.).rom" size="32768" crc="c39b5168"/>
+		<manufacturer>Gamecast Entertainment</manufacturer>
+		<rom name="Defence v1.2 (2022)(Gamecast Ent.).rom" size="32768" crc="c39b5168"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8399,6 +8411,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ilogic" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>I-Logic (HB)</description>
+		<year>2024</year>
+		<manufacturer>Platty Soft</manufacturer>
+		<rom name="I-Logic (2024)(Platty Soft).rom" size="49152" crc="142db92f"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="iceking" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Ice King, The (Euro)</description>
 		<year>1986</year>
@@ -9112,8 +9136,8 @@
 		<comment>Homebrew</comment>
 		<description>Kill Mice (HB)</description>
 		<year>2011</year>
-		<manufacturer>GameCast Entertainment</manufacturer>
-		<rom name="Kill Mice (2011)(GameCast Ent.).rom" size="65536" crc="783afacb"/>
+		<manufacturer>Gamecast Entertainment</manufacturer>
+		<rom name="Kill Mice (2011)(Gamecast Ent.).rom" size="65536" crc="783afacb"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -12335,8 +12359,8 @@
 		<comment>Homebrew</comment>
 		<description>Night Knight (HB, v1.0.3)</description>
 		<year>2019</year>
-		<manufacturer>Juan J. Martinez / usebox.net</manufacturer>
-		<rom name="nightk.rom" size="32768" crc="3a7965de"/>
+		<manufacturer>Juan J. Martinez - usebox.net</manufacturer>
+		<rom name="Night Knight v1.0.3 (2019)(usebox.net).rom" size="32768" crc="3a7965de"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -12517,7 +12541,7 @@
 		<description>Nogalious Demo (HB)</description>
 		<year>2018</year>
 		<manufacturer>LuegoLu3go</manufacturer>
-		<rom name="nogalious demo (2018)(luegolu3go).rom" size="524288" crc="8728e3e9"/>
+		<rom name="Nogalious Demo (2018)(LuegoLu3go).rom" size="524288" crc="8728e3e9"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13507,8 +13531,8 @@
 		<comment>Homebrew</comment>
 		<description>Pippo La Scopa Ficcanaso (HB)</description>
 		<year>2021</year>
-		<manufacturer>GameCast Entertainment</manufacturer>
-		<rom name="Pippo La Scopa Ficcanaso (2021)(Gamecast).rom" size="16384" crc="ee9b213d"/>
+		<manufacturer>Gamecast Entertainment</manufacturer>
+		<rom name="Pippo La Scopa Ficcanaso (2021)(Gamecast Ent.).rom" size="16384" crc="ee9b213d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13703,6 +13727,17 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="policedog" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Police Dog (Japan)</description>
+		<year>1983</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Police Dog (Japan)(1983)(Hudson Soft)[BLOAD'CAS-',R].cas" size="12646" crc="c03d100b"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ponpon" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Pon Pon (HB, v1.51)</description>
@@ -13776,7 +13811,7 @@
 		<description>Pretty Kingdom (HB)</description>
 		<year>2014</year>
 		<manufacturer>Nerlaska Studio</manufacturer>
-		<rom name="NLKMSX006EN_PRETTYKINGDOM.rom" size="32768" crc="cb2d148c"/>
+		<rom name="Pretty Kingdom (2014)(Nerlaska Studio).rom" size="32768" crc="cb2d148c"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13799,7 +13834,7 @@
 		<description>Princess Quest (HB)</description>
 		<year>2012</year>
 		<manufacturer>Oscar Toledo G.</manufacturer>
-		<rom name="princess_quest_msx.rom" size="65536" crc="aa31ac36"/>
+		<rom name="Princess Quest (2012)(Oscar Toledo G.).rom" size="65536" crc="aa31ac36"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13889,7 +13924,7 @@
 		<comment>Homebrew</comment>
 		<description>PuzzyBox (HB)</description>
 		<year>2021</year>
-		<manufacturer>GameCast Entertainment</manufacturer>
+		<manufacturer>Gamecast Entertainment</manufacturer>
 		<rom name="PuzzyBox (2021)(Gamecast Ent.).rom" size="65536" crc="454381e4"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -13903,6 +13938,18 @@
 		<year>2009</year>
 		<manufacturer>Metal Soft</manufacturer>
 		<rom name="PWND (2009)(Metal Soft).rom" size="16384" crc="51f201b3"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pyjamarama" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Pyjamarama (HB)</description>
+		<year>2024</year>
+		<manufacturer>Fregarni</manufacturer>
+		<rom name="Pyjamarama (2024)(Fregarni).rom" size="131072" crc="b6ec9180"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13970,7 +14017,7 @@
 		<description>QBIQS (HB, v1.2)</description>
 		<year>2010</year>
 		<manufacturer>Z80st Software</manufacturer>
-		<rom name="qbiqs (2010)(z80st-software).rom" size="49152" crc="11d4e90e"/>
+		<rom name="QBIQS (2010)(Z80st Software).rom" size="49152" crc="11d4e90e"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13982,7 +14029,7 @@
 		<description>Quartet (HB, v1.2)</description>
 		<year>2019</year>
 		<manufacturer>Ilkke and bitsofbas</manufacturer>
-		<rom name="quartet v12.rom" size="32768" crc="eeb24910"/>
+		<rom name="Quartet v1.2 (2019)(Ilkke and bitsofbas).rom" size="32768" crc="eeb24910"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -14284,7 +14331,7 @@
 		<description>Relic, The (English) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Roolandoo</manufacturer>
-		<rom name="the relic (2020)(roolandoo).rom" size="32768" crc="4ff53c97"/>
+		<rom name="Relic, The (2020)(Roolandoo).rom" size="32768" crc="4ff53c97"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -14307,7 +14354,7 @@
 		<description>Reliquia, La (Spanish) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Roolandoo</manufacturer>
-		<rom name="la reliquia (2020)(roolando).rom" size="32768" crc="8a251dba"/>
+		<rom name="Reliquia, La (2020)(Roolando).rom" size="32768" crc="8a251dba"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -14341,7 +14388,7 @@
 		<description>Retaliot (HB)</description>
 		<year>2009</year>
 		<manufacturer>Video Hazard</manufacturer>
-		<rom name="Retaliot (2009)(video Hazard).rom" size="131072" crc="e63a6c39"/>
+		<rom name="Retaliot (2009)(Video Hazard).rom" size="131072" crc="e63a6c39"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
