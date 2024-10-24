@@ -9126,7 +9126,7 @@
 		<description>Flype (48K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>Repixel8</manufacturer>
-		<rom name="Flype (2015)(Repixel8).tap" size="41719" crc="2b9a90f2"/>
+		<rom name="Flype 48K (2015)(Repixel8).tap" size="41719" crc="2b9a90f2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9688,7 +9688,7 @@
 		<description>Ganimedes (128K) (HB, v1.01)</description>
 		<year>2023</year>
 		<manufacturer>Nextric</manufacturer>
-		<rom name="Ganimedes 128K v1.01 (2023)(Nextric).tap" size="59199" crc="c58082f3"/>
+		<rom name="Ganimedes v1.01 128K (2023)(Nextric).tap" size="59199" crc="c58082f3"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9789,7 +9789,7 @@
 		<description>Gem Chaser (48K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>Electric Wolf</manufacturer>
-		<rom name="Gem Chaser (2013)(Electric Wolf).tap" size="37361" crc="67791e1d"/>
+		<rom name="Gem Chaser 48K (2013)(Electric Wolf).tap" size="37361" crc="67791e1d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9799,7 +9799,7 @@
 		<description>Gem Chaser 2 (48K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>Electric Wolf</manufacturer>
-		<rom name="Gem Chaser 2 (2013)(Electric Wolf).tap" size="45479" crc="3ab12186"/>
+		<rom name="Gem Chaser 2 48K (2013)(Electric Wolf).tap" size="45479" crc="3ab12186"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9830,7 +9830,7 @@
 		<description>Genesis dawn of a new day (128K) (HB)</description>
 		<year>2010</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Genesis dawn of a new day (2010)(RetroWorks).tap" size="63025" crc="3a5fb7db"/>
+		<rom name="Genesis dawn of a new day 128K (2010)(RetroWorks).tap" size="63025" crc="3a5fb7db"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9847,10 +9847,10 @@
 	</game>
 	<game name="getmars" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Get Out Of Mars (128K) (HB, v1.1)</description>
+		<description>Get Out of Mars (128K) (HB, v1.1)</description>
 		<year>2021</year>
 		<manufacturer>Noentiendo</manufacturer>
-		<rom name="Get Out Of Mars (2021)(Noentiendo).tap" size="69762" crc="c699ac83"/>
+		<rom name="Get Out of Mars v1.1 128K (2021)(Noentiendo).tap" size="69762" crc="c699ac83"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9861,7 +9861,7 @@
 		<description>Gherbert Groundhog in Save the Date (48K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>PuttyCAD &amp; Psychic Parrot</manufacturer>
-		<rom name="Gherbert Groundhog in Save the Date (2022)(PuttyCAD &amp; Psychic Parrot).tap" size="45411" crc="13f11e02"/>
+		<rom name="Gherbert Groundhog in Save the Date 48K (2022)(PuttyCAD &amp; Psychic Parrot).tap" size="45411" crc="13f11e02"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10137,7 +10137,7 @@
 		<description>GLUF (128K) (HB)</description>
 		<year>2019</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="Gluf (2019)(RetroSouls).tap" size="34669" crc="52be5093"/>
+		<rom name="Gluf 128K (2019)(RetroSouls).tap" size="34669" crc="52be5093"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10186,7 +10186,7 @@
 		<description>Goblin, The (English) (128K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Hicks</manufacturer>
-		<rom name="The Goblin EN 128K (2022)(Hicks).tap" size="46960" crc="aaddbdc4"/>
+		<rom name="Goblin, The EN 128K (2022)(Hicks).tap" size="46960" crc="aaddbdc4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10197,7 +10197,7 @@
 		<description>Goblin, The (Spanish) (128K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Hicks</manufacturer>
-		<rom name="The Goblin ES 128K (2022)(Hicks).tap" size="46999" crc="80e04163"/>
+		<rom name="Goblin, The ES 128K (2022)(Hicks).tap" size="46999" crc="80e04163"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10208,7 +10208,7 @@
 		<description>Godkiller - New Timeline Edition (128K) (HB, v2)</description>
 		<year>2019</year>
 		<manufacturer>APSIS</manufacturer>
-		<rom name="Godkiller v2 (2019)(APSIS).tap" size="57216" crc="ba14a5b9"/>
+		<rom name="Godkiller v2 128K (2019)(APSIS).tap" size="57216" crc="ba14a5b9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10219,7 +10219,7 @@
 		<description>Godkiller - New Timeline Edition - INTRO (128K) (HB, v2)</description>
 		<year>2019</year>
 		<manufacturer>APSIS</manufacturer>
-		<rom name="Godkiller intro v2 (2019)(APSIS).tap" size="35443" crc="a1957fa3"/>
+		<rom name="Godkiller intro v2 128K (2019)(APSIS).tap" size="35443" crc="a1957fa3"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10230,7 +10230,7 @@
 		<description>Godkiller 2 Exile - New Timeline Edition (128K) (HB, v2)</description>
 		<year>2020</year>
 		<manufacturer>APSIS</manufacturer>
-		<rom name="Godkiller 2 Exile v2 (2020)(APSIS).tap" size="59462" crc="b5002734"/>
+		<rom name="Godkiller 2 Exile v2 128K (2020)(APSIS).tap" size="59462" crc="b5002734"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10241,7 +10241,7 @@
 		<description>Godkiller 2 Exile - New Timeline Edition - INTRO (128K) (HB, v2)</description>
 		<year>2020</year>
 		<manufacturer>APSIS</manufacturer>
-		<rom name="Godkiller 2 Exile intro v2 (2020)(APSIS).tap" size="42380" crc="0fde1ae6"/>
+		<rom name="Godkiller 2 Exile intro v2 128K (2020)(APSIS).tap" size="42380" crc="0fde1ae6"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10262,7 +10262,7 @@
 		<description>Gommy Defensor Medieval (English) (128K) (HB)</description>
 		<year>2009</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Gommy Defensor Medieval EN (2009)(RetroWorks).tap" size="43940" crc="c2c41f87"/>
+		<rom name="Gommy Defensor Medieval EN 128K (2009)(RetroWorks).tap" size="43940" crc="c2c41f87"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10273,7 +10273,7 @@
 		<description>Gommy Defensor Medieval (Spanish) (128K) (HB)</description>
 		<year>2009</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Gommy Defensor Medieval ES (2009)(RetroWorks).tap" size="43943" crc="53a9e2bf"/>
+		<rom name="Gommy Defensor Medieval ES 128K (2009)(RetroWorks).tap" size="43943" crc="53a9e2bf"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10314,7 +10314,7 @@
 		<description>Good Night Kanga (128K) (HB)</description>
 		<year>2016</year>
 		<manufacturer>Gabriele Amore - Factor 6</manufacturer>
-		<rom name="Good Night Kanga (2016)(Gabriele Amore - Factor 6).tap" size="27329" crc="3e2bacae"/>
+		<rom name="Good Night Kanga 128K (2016)(Gabriele Amore - Factor 6).tap" size="27329" crc="3e2bacae"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10335,7 +10335,7 @@
 		<description>Goody Recoloured (128K) (Hack)</description>
 		<year>2012</year>
 		<manufacturer>Rafal Miazga</manufacturer>
-		<rom name="Goody (1987)(Opera Soft)(Recoloured)(es).tap" size="56242" crc="8b02e960"/>
+		<rom name="Goody Recoloured 128K (1987-2012)(Rafal Miazga).tap" size="56242" crc="8b02e960"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10404,7 +10404,7 @@
 		<description>GraviBots (128K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="GraviBots (2014)(RetroSouls).z80" size="29436" crc="375bfa1c"/>
+		<rom name="GraviBots 128K (2014)(RetroSouls).z80" size="29436" crc="375bfa1c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10753,7 +10753,7 @@
 		<description>Hallowed Knight (48K) (HB, v1.4)</description>
 		<year>2021</year>
 		<manufacturer>EJVG</manufacturer>
-		<rom name="Hallowed Knight v1.4 (2021)(EJVG).tap" size="46199" crc="489c76cc"/>
+		<rom name="Hallowed Knight v1.4 48K (2021)(EJVG).tap" size="46199" crc="489c76cc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -11306,7 +11306,7 @@
 		<description>Horace and the Robots (128K) (HB)</description>
 		<year>2017</year>
 		<manufacturer>Steve Snake</manufacturer>
-		<rom name="Horace and the Robots (2017)(Steve Snake).tap" size="25517" crc="05fd13e2"/>
+		<rom name="Horace and the Robots 128K (2017)(Steve Snake).tap" size="25517" crc="05fd13e2"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16205,7 +16205,7 @@
 		<description>Mystical (128K)</description>
 		<year>1991</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="Mystical (1991)(Infogrames).tap" size="260015" crc="f7df7363"/>
+		<rom name="Mystical 128K (1991)(Infogrames).tap" size="260015" crc="f7df7363"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16815,7 +16815,7 @@
 		<description>Nosy (English) (128K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Javier Fopiani</manufacturer>
-		<rom name="Nosy 128K EN (2022)(Javier Fopiani).tap" size="125924" crc="97a842a0"/>
+		<rom name="Nosy EN 128K (2022)(Javier Fopiani).tap" size="125924" crc="97a842a0"/>
 		<rom name="zx128_2a_0.rom" merge="zx128_2a_0.rom" size="16384" crc="30c9f490"/>
 		<rom name="zx128_2a_1.rom" merge="zx128_2a_1.rom" size="16384" crc="a7916b3f"/>
 		<rom name="zx128_2a_2.rom" merge="zx128_2a_2.rom" size="16384" crc="c9a0b748"/>
@@ -16828,7 +16828,7 @@
 		<description>Nosy (Spanish) (128K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Javier Fopiani</manufacturer>
-		<rom name="Nosy 128K ES (2022)(Javier Fopiani).tap" size="125815" crc="c9fe4df5"/>
+		<rom name="Nosy ES 128K (2022)(Javier Fopiani).tap" size="125815" crc="c9fe4df5"/>
 		<rom name="zx128_2a_0.rom" merge="zx128_2a_0.rom" size="16384" crc="30c9f490"/>
 		<rom name="zx128_2a_1.rom" merge="zx128_2a_1.rom" size="16384" crc="a7916b3f"/>
 		<rom name="zx128_2a_2.rom" merge="zx128_2a_2.rom" size="16384" crc="c9a0b748"/>
@@ -16841,7 +16841,7 @@
 		<description>Nosy - first version (48K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Javier Fopiani</manufacturer>
-		<rom name="Nosy (2020)(Javier Fopiani).tap" size="43998" crc="efb0331a"/>
+		<rom name="Nosy 48K (2020)(Javier Fopiani).tap" size="43998" crc="efb0331a"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -16903,7 +16903,7 @@
 		<description>Oceano (128K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>EgoTrip</manufacturer>
-		<rom name="Oceano (2015)(EgoTrip).tap" size="24434" crc="1ef0dccd"/>
+		<rom name="Oceano 128K (2015)(EgoTrip).tap" size="24434" crc="1ef0dccd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16965,7 +16965,7 @@
 		<description>Old Tower (128K) (HB)</description>
 		<year>2019</year>
 		<manufacturer>RetroSouls</manufacturer>
-		<rom name="OldTower128k (2018)(RetroSouls).tap" size="97764" crc="837df93f"/>
+		<rom name="Old Tower 128K (2018)(RetroSouls).tap" size="97764" crc="837df93f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -17014,7 +17014,7 @@
 		<description>Ooze (128K) (HB)</description>
 		<year>2017</year>
 		<manufacturer>Bubblesoft</manufacturer>
-		<rom name="Ooze (2017)(Bubblesoft).tap" size="49790" crc="188d3e4e"/>
+		<rom name="Ooze 128K (2017)(Bubblesoft).tap" size="49790" crc="188d3e4e"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -17056,7 +17056,7 @@
 		<description>Operation: Labyrinth Fall (128K) (HB)</description>
 		<year>2018</year>
 		<manufacturer>Bumfun Software</manufacturer>
-		<rom name="Operation - Labyrinth Fall 128K  (2018)(Bumfun Software).tap" size="36787" crc="22169ded"/>
+		<rom name="Operation - Labyrinth Fall 128K (2018)(Bumfun Software).tap" size="36787" crc="22169ded"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -17644,7 +17644,7 @@
 		<description>Percy the Potty Pigeon (48K)</description>
 		<year>1984</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Percy the Potty Pigeon (1984)(Gremlin Graphics).tap" size="49061" crc="243fb1ea"/>
+		<rom name="Percy the Potty Pigeon 48K (1984)(Gremlin Graphics).tap" size="49061" crc="243fb1ea"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19357,7 +19357,7 @@
 		<description>Restless Andre (128K) (HB)</description>
 		<year>2019</year>
 		<manufacturer>Jaime Grilo</manufacturer>
-		<rom name="Restless Andre (2019)(Jaime Grilo).tap" size="48113" crc="0db7023a"/>
+		<rom name="Restless Andre 128K (2019)(Jaime Grilo).tap" size="48113" crc="0db7023a"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -20716,6 +20716,16 @@
 		<year>1990</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Shadow Warriors (1990)(Ocean).tap" size="130491" crc="a9adbe6d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shanghaiwrs" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Shanghai Warriors (128K)</description>
+		<year>1989</year>
+		<manufacturer>Players Software</manufacturer>
+		<rom name="Shanghai Warriors 128K (1989)(Players Software).tap" size="130361" crc="15961f1d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22120,7 +22130,7 @@
 		<description>Star Bowls (48K)</description>
 		<year>1991</year>
 		<manufacturer>Zigurat Software</manufacturer>
-		<rom name="Star Bowls (1991)(Zigurat Software).tap" size="47077" crc="10eb1995"/>
+		<rom name="Star Bowls 48K (1991)(Zigurat Software).tap" size="47077" crc="10eb1995"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22186,7 +22196,7 @@
 		<description>Star Wars (48K)</description>
 		<year>1987</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="Star Wars.tap" size="41763" crc="14f2595f"/>
+		<rom name="Star Wars 48K (1987)(Domark).tap" size="41763" crc="14f2595f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22301,40 +22311,40 @@
 		<driver status="good"/>
 	</game>
 	<game name="stifflip1en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Stifflip &amp; Co. - part 1 (English) (128K)</description>
+		<description>Stifflip &amp; Co. - Part 1 (English) (128K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Stifflip and Co. - part1 EN (1987)(Palace Software).tap" size="56817" crc="c5a6eb1c"/>
+		<rom name="Stifflip and Co. - Part 1 EN 128K (1987)(Palace Software).tap" size="56817" crc="c5a6eb1c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="stifflip1es" cloneof="stifflip1en" romof="stifflip1en" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Stifflip &amp; Co. - part 1 (Spanish) (128K)</description>
+		<description>Stifflip &amp; Co. - Part 1 (Spanish) (128K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Stifflip and Co. - part1 ES (1987)(Palace Software).tap" size="56790" crc="53bc50dd"/>
+		<rom name="Stifflip and Co. - Part 1 ES 128K (1987)(Palace Software).tap" size="56790" crc="53bc50dd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="stifflip2en" cloneof="stifflip1en" romof="stifflip1en" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Stifflip &amp; Co. - part 2 epilogue (English) (128K)</description>
+		<description>Stifflip &amp; Co. - Part 2 epilogue (English) (128K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Stifflip and Co. - part2 epilogue EN (1987)(Palace Software).tap" size="56817" crc="f5798ea4"/>
+		<rom name="Stifflip and Co. - Part 2 epilogue EN 128K (1987)(Palace Software).tap" size="56817" crc="f5798ea4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="stifllip2es" cloneof="stifflip1en" romof="stifflip1en" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Stifflip &amp; Co. - part 2 epilogue (Spanish) (128K)</description>
+		<description>Stifflip &amp; Co. - Part 2 epilogue (Spanish) (128K)</description>
 		<year>1987</year>
 		<manufacturer>Palace Software</manufacturer>
-		<rom name="Stifflip and Co. - part2 epilogue ES (1987)(Palace Software).tap" size="56790" crc="15936e89"/>
+		<rom name="Stifflip and Co. - Part 2 epilogue ES 128K (1987)(Palace Software).tap" size="56790" crc="15936e89"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -24314,7 +24324,7 @@
 		<description>Treinador de Futebol (Portuguese) (48K)</description>
 		<year>1983</year>
 		<manufacturer>Microbyte Software</manufacturer>
-		<rom name="Treinador de Futebol PT (1983)(Microbyte Software).z80" size="34576" crc="49dbc0b8"/>
+		<rom name="Treinador de Futebol PT 48K (1983)(Microbyte Software).z80" size="34576" crc="49dbc0b8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

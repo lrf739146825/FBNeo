@@ -623,7 +623,7 @@
 		<description>Fuuun Shourin Ken (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Fuuun Shourin Ken (Japan).fds" size="131016" crc="b5b75934"/>
+		<rom name="Fuuun Shourin Ken (Japan)(1987)(Jaleco).fds" size="131016" crc="b5b75934"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -641,7 +641,7 @@
 		<description>Galaga (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Galaga (Japan).fds" size="65516" crc="a9ba7801"/>
+		<rom name="Galaga (Japan)(1990)(Namco).fds" size="65516" crc="a9ba7801"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -650,7 +650,7 @@
 		<description>Galaxian (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Galaxian (Japan).fds" size="65516" crc="429169f5"/>
+		<rom name="Galaxian (Japan)(1990)(Namco).fds" size="65516" crc="429169f5"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -660,7 +660,7 @@
 		<description>Gall Force - Eternal Story (Hack, English)</description>
 		<year>2008</year>
 		<manufacturer>Gil Galad</manufacturer>
-		<rom name="Gall Force - Eternal Story (T-Eng).fds" size="131000" crc="d66e007f"/>
+		<rom name="Gall Force - Eternal Story T-Eng (2008)(Gil Galad).fds" size="131000" crc="d66e007f"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -669,7 +669,7 @@
 		<description>Gall Force - Eternal Story (Japan)</description>
 		<year>1986</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Gall Force - Eternal Story (Japan).fds" size="131016" crc="51ef74fb"/>
+		<rom name="Gall Force - Eternal Story (Japan)(1986)(HAL Lab.).fds" size="131016" crc="51ef74fb"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -678,16 +678,16 @@
 		<description>Ginga Denshou - Galaxy Odyssey (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Imagineer</manufacturer>
-		<rom name="Ginga Denshou - Galaxy Odyssey (Japan).fds" size="131016" crc="d38240da"/>
+		<rom name="Ginga Denshou - Galaxy Odyssey (Japan)(1986)(Imagineer).fds" size="131016" crc="d38240da"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="golf" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Golf (Japan)</description>
-		<year>1985</year>
+		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Golf (Japan).fds" size="65516" crc="4667eafa"/>
+		<rom name="Golf (Japan)(1986)(Nintendo).fds" size="65516" crc="4667eafa"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -696,16 +696,16 @@
 		<description>Golf - Japan Course (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Golf - Japan Course (Japan).fds" size="131016" crc="dbacfaaa"/>
+		<rom name="Golf - Japan Course (Japan)(1987)(Nintendo).fds" size="131016" crc="dbacfaaa"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="golfuscourse" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Golf - US Course (Japan)</description>
+		<description>Golf - U.S. Course (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Golf - US Course (Japan).fds" size="131016" crc="0ef5dae4"/>
+		<rom name="Golf - U.S. Course (Japan)(1987)(Nintendo).fds" size="131016" crc="0ef5dae4"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -714,7 +714,7 @@
 		<description>Goonies, The (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Goonies (Japan).fds" size="65516" crc="81b760a2"/>
+		<rom name="Goonies (Japan)(1988)(Konami).fds" size="65516" crc="81b760a2"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -723,7 +723,7 @@
 		<description>Green Beret (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Green Beret (Japan).fds" size="131016" crc="e7f0577b"/>
+		<rom name="Green Beret (Japan)(1987)(Konami).fds" size="131016" crc="e7f0577b"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -732,7 +732,7 @@
 		<description>Gun.Smoke (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Gun.Smoke (Japan).fds" size="131016" crc="be761b95"/>
+		<rom name="Gun.Smoke (Japan)(1988)(Capcom).fds" size="131016" crc="be761b95"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -742,7 +742,7 @@
 		<description>Gyruss (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>Stardust Crusader</manufacturer>
-		<rom name="Gyruss (T-eng).fds" size="131000" crc="f17f2728"/>
+		<rom name="Gyruss T-Eng (2021)(Stardust Crusader).fds" size="131000" crc="f17f2728"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -751,7 +751,7 @@
 		<description>Gyruss (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Gyruss (Japan).fds" size="131016" crc="4552202c"/>
+		<rom name="Gyruss (Japan)(1988)(Konami).fds" size="131016" crc="4552202c"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -760,7 +760,7 @@
 		<description>Halley Wars (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Halley Wars (Japan)(1989)(Taito Corp.).fds" size="131016" crc="583b11ca"/>
+		<rom name="Halley Wars (Japan)(1989)(Taito).fds" size="131016" crc="583b11ca"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -768,8 +768,8 @@
 	<game name="haokunnofusnata" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Hao-kun no Fushigi na Tabi (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Square</manufacturer>
-		<rom name="Hao-kun no Fushigi na Tabi (Japan).fds" size="131016" crc="085f5f88"/>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Hao-kun no Fushigi na Tabi (Japan)(1987)(Squaresoft).fds" size="131016" crc="085f5f88"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -788,7 +788,7 @@
 		<description>Hikari Shinwa - Palutena no Kagami (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Hikari Shinwa - Palutena no Kagami (Japan).fds" size="131000" crc="32516fcf"/>
+		<rom name="Hikari Shinwa - Palutena no Kagami (Japan)(1986)(Nintendo).fds" size="131000" crc="32516fcf"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -797,7 +797,7 @@
 		<description>Ice Hockey (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Ice Hockey (Japan).fds" size="65516" crc="7bb390de"/>
+		<rom name="Ice Hockey (Japan)(1988)(Nintendo).fds" size="65516" crc="7bb390de"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -807,7 +807,7 @@
 		<description>Idol Hotline - Nakayama Miho no Tokimeki High School (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>FCandChill</manufacturer>
-		<rom name="Idol Hotline - Nakayama Miho no Tokimeki High School (T-Eng)(2022)(FCandChill).fds" size="131000" crc="772a6bcc"/>
+		<rom name="Idol Hotline - Nakayama Miho no Tokimeki High School T-Eng (2022)(FCandChill).fds" size="131000" crc="772a6bcc"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -826,7 +826,7 @@
 		<description>Ishidou (Hack, English)</description>
 		<year>2011</year>
 		<manufacturer>Django</manufacturer>
-		<rom name="Ishidou (T-Eng).fds" size="131000" crc="ebfcf648"/>
+		<rom name="Ishidou T-Eng (2011)(Django).fds" size="131000" crc="ebfcf648"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -835,7 +835,7 @@
 		<description>Ishidou (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Ishidou (Japan).fds" size="131000" crc="0c54a19e"/>
+		<rom name="Ishidou (Japan)(1990)(Nintendo).fds" size="131000" crc="0c54a19e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -843,8 +843,8 @@
 	<game name="jikaishometmag" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Jikai Shounen Met Mag (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Square - Thinking Rabbit</manufacturer>
-		<rom name="Jikai Shounen Met Mag (Japan).fds" size="131016" crc="c8ce0200"/>
+		<manufacturer>Squaresoft - Thinking Rabbit</manufacturer>
+		<rom name="Jikai Shounen Met Mag (Japan)(1987)(Squaresoft - Thinking Rabbit).fds" size="131016" crc="c8ce0200"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -853,7 +853,7 @@
 		<description>Kaettekita Mario Bros. (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Kaettekita Mario Brothers (Japan).fds" size="131016" crc="12358ded"/>
+		<rom name="Kaettekita Mario Brothers (Japan)(1988)(Nintendo).fds" size="131016" crc="12358ded"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -863,7 +863,7 @@
 		<description>Kalin no Tsurugi (Hack, English)</description>
 		<year>2005</year>
 		<manufacturer>filler, KingMike, satsu</manufacturer>
-		<rom name="Kalin no Tsurugi (T-Eng).fds" size="131000" crc="7825c974"/>
+		<rom name="Kalin no Tsurugi T-Eng (2005)(filler, KingMike, satsu).fds" size="131000" crc="7825c974"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -871,8 +871,8 @@
 	<game name="kalinnotsurugij" cloneof="kalinnotsurugi" romof="kalinnotsurugi" sourcefile="nes/d_nes.cpp">
 		<description>Kalin no Tsurugi (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Square</manufacturer>
-		<rom name="Kalin no Tsurugi (Japan).fds" size="131000" crc="c63a0059"/>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Kalin no Tsurugi (Japan)(1987)(Squaresoft).fds" size="131000" crc="c63a0059"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -891,7 +891,7 @@
 		<description>Kamen Rider Black - Taiketsu Shadow Moon (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Kamen Rider Black - Taiketsu Shadow Moon (Japan).fds" size="131016" crc="0db848ea"/>
+		<rom name="Kamen Rider Black - Taiketsu Shadow Moon (Japan)(1988)(Bandai).fds" size="131016" crc="0db848ea"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -900,7 +900,7 @@
 		<description>Kick and Run (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Kick and Run (Japan)(1988)(Taito Corp.).fds" size="131016" crc="a37d4c85"/>
+		<rom name="Kick and Run (Japan)(1988)(Taito).fds" size="131016" crc="a37d4c85"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1390,10 +1390,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="sexyinvaders" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Sexy Invaders (Japan)</description>
+		<description>Sexy Invaders (Japan) (Unl)</description>
 		<year>1990</year>
 		<manufacturer>Super Pig</manufacturer>
-		<rom name="Sexy Invaders (Japan)(1990)(Super Pig).fds" size="131000" crc="413e49da"/>
+		<rom name="Sexy Invaders (Japan)(Unl)(1990)(Super Pig).fds" size="131000" crc="413e49da"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1621,7 +1621,7 @@
 		<description>Wardner no Mori (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Wardner no Mori (Japan)(1988)(Taito Corp.).fds" size="131016" crc="b5a04f7e"/>
+		<rom name="Wardner no Mori (Japan)(1988)(Taito).fds" size="131016" crc="b5a04f7e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1630,7 +1630,7 @@
 		<description>Winter Games (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Winter Games (Japan).fds" size="131000" crc="6ab5e1d6"/>
+		<rom name="Winter Games (Japan)(1987)(Pony Canyon).fds" size="131000" crc="6ab5e1d6"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1639,7 +1639,7 @@
 		<description>Wrecking Crew (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Wrecking Crew (Japan).fds" size="65516" crc="f341f135"/>
+		<rom name="Wrecking Crew (Japan)(1988)(Nintendo).fds" size="65516" crc="f341f135"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1647,8 +1647,8 @@
 	<game name="youkaiyashikij" cloneof="youkaiyashiki" romof="youkaiyashiki" sourcefile="nes/d_nes.cpp">
 		<description>Youkai Yashiki (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="Youkai Yashiki (Japan).fds" size="131016" crc="a888c6df"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Youkai Yashiki (Japan)(1987)(Irem).fds" size="131016" crc="a888c6df"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1658,7 +1658,7 @@
 		<description>Youkai Yashiki ~ Ghost Manor (Hack, English)</description>
 		<year>2008</year>
 		<manufacturer>KingMike's Translations</manufacturer>
-		<rom name="Youkai Yashiki (T-Eng).fds" size="131000" crc="546589ab"/>
+		<rom name="Youkai Yashiki T-Eng (2008)(KingMike's Translations).fds" size="131000" crc="546589ab"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1667,7 +1667,7 @@
 		<description>Yuu Maze (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Yuu Maze (Japan)(1988)(Taito Corp.).fds" size="131016" crc="de297106"/>
+		<rom name="Yuu Maze (Japan)(1988)(Taito).fds" size="131016" crc="de297106"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1676,7 +1676,7 @@
 		<description>Zanac (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Zanac (Japan).fds" size="65516" crc="daa74bc4"/>
+		<rom name="Zanac (Japan)(1986)(Pony Canyon).fds" size="65516" crc="daa74bc4"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1686,7 +1686,7 @@
 		<description>Zelda no Densetsu - The Hyrule Fantasy (Hack, English v1.1)</description>
 		<year>2016</year>
 		<manufacturer>Jordiway73</manufacturer>
-		<rom name="Zelda no Densetsu - The Hyrule Fantasy (T-Eng).fds" size="131016" crc="ee11aa63"/>
+		<rom name="Zelda no Densetsu - The Hyrule Fantasy T-Eng (2016)(Jordiway73).fds" size="131016" crc="ee11aa63"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1695,7 +1695,7 @@
 		<description>Zelda no Densetsu - The Hyrule Fantasy (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Zelda no Densetsu - The Hyrule Fantasy (Japan).fds" size="131016" crc="3fbdddcd"/>
+		<rom name="Zelda no Densetsu - The Hyrule Fantasy (Japan)(1986)(Nintendo).fds" size="131016" crc="3fbdddcd"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
