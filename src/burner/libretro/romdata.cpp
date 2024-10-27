@@ -339,6 +339,8 @@ static INT32 LoadRomdata()
 							RDI.nDescCount++;
 
 							if (NULL != pDataRomDesc) {
+								pDataRomDesc[RDI.nDescCount].szName = (char*)malloc(512);
+
 								strcpy(pDataRomDesc[RDI.nDescCount].szName, TCHARToANSI(pszLabel, NULL, 0));
 
 								pDataRomDesc[RDI.nDescCount].nLen  = ri.nLen;
@@ -643,6 +645,11 @@ void RomDataSetFullName()
 void RomDataExit()
 {
 	if (NULL != pDataRomDesc) {
+
+		for (int i = 0; i < RDI.nDescCount + 1; i++) {
+			free(pDataRomDesc[i].szName);
+		}
+
 		free(pDataRomDesc);
 		pDataRomDesc = NULL;
 
