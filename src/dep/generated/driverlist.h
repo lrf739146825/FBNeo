@@ -4109,6 +4109,7 @@ DRV		BurnSpecdarkfusion;
 DRV		BurnDrvnes_dgimmick;
 DRV		BurnSpecDarknighte;
 DRV		BurnSpecDarknights;
+DRV		BurnSpecDarknightre;
 DRV		BurnDrvnes_darklord;
 DRV		BurnDrvDarkplnt;
 DRV		BurnSpecDarkredux;
@@ -4445,9 +4446,10 @@ DRV		BurnDrvnes_diehardc;
 DRV		BurnDrvpce_diehard;
 DRV		BurnDrvnes_diehard;
 DRV		BurnDrvDtfamily;
-DRV		BurnDrvDietgoea;
-DRV		BurnDrvDietgoe;
+DRV		BurnDrvDietgoeb;
 DRV		BurnDrvDietgo;
+DRV		BurnDrvDietgoe;
+DRV		BurnDrvDietgoea;
 DRV		BurnDrvDietgoj;
 DRV		BurnDrvDietgou;
 DRV		BurnDrvDigdugat;
@@ -7754,6 +7756,7 @@ DRV		BurnDrvHeatbrl2;
 DRV		BurnDrvHeatbrl;
 DRV		BurnDrvHeatbrl3;
 DRV		BurnDrvMSX_yokaibattle;
+DRV		BurnDrvHbarrelua;
 DRV		BurnDrvHbarrelu;
 DRV		BurnDrvnes_heavybarrel;
 DRV		BurnDrvHbarrel;
@@ -10902,6 +10905,7 @@ DRV		BurnDrvnes_micromages;
 DRV		BurnDrvnes_micromages2;
 DRV		BurnSpecMicromouse;
 DRV		BurnSpecMprofanation;
+DRV		BurnSpecMicrosnake;
 DRV		BurnDrvsms_xevious;
 DRV		BurnSpecMicronaut;
 DRV		BurnSpecMicrsocc_48;
@@ -10967,6 +10971,9 @@ DRV		BurnDrvCpsMPang;
 DRV		BurnDrvCpsMPangjd;
 DRV		BurnDrvCpsMPangj;
 DRV		BurnDrvCpsMPangu;
+DRV		BurnSpecMijadore2en;
+DRV		BurnSpecMijadore2pt;
+DRV		BurnSpecMijadore2es;
 DRV		BurnSpecMijavasee;
 DRV		BurnSpecMijavases;
 DRV		BurnDrvmd_ditkapf;
@@ -16278,6 +16285,7 @@ DRV		BurnSpecSpacesludge;
 DRV		BurnDrvSstrangr2;
 DRV		BurnDrvSstrangr;
 DRV		BurnSpecSpacethunder;
+DRV		BurnSpecSpacethunderdx;
 DRV		BurnDrvSpctbird;
 DRV		BurnDrvsms_sptonbow;
 #if defined FBNEO_DEBUG
@@ -22904,7 +22912,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_bigfd,			// Big's Fishing Derby (HB)
 	&BurnSpecBigfoot,			// Bigfoot (48K)
 	&BurnDrvnes_bigfoot,		// Bigfoot (USA)
-	&BurnSpecBigotudo,			// Bigotudo, El (128K) (HB)
+	&BurnSpecBigotudo,			// Bigotudo, El (128K) (HB, v1.4)
 	&BurnDrvBikkuric,			// Bikkuri Card (Japan)
 	&BurnDrvnes_biknekiroku,	// Bikkuri Nekketsu Shin Kiroku! - Harukanaru Kin Medal (Japan)
 	&BurnDrvngpc_bikkuri,		// Bikkuriman 2000 - Viva! Pocket Festiva! (Japan)
@@ -25213,6 +25221,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_dgimmick,		// Dark Gimmick (GlobalHack, v1.1)
 	&BurnSpecDarknighte,		// Dark Knight, The (English) (128K) (HB)
 	&BurnSpecDarknights,		// Dark Knight, The (Spanish) (128K) (HB)
+	&BurnSpecDarknightre,		// Dark Knight, The - Shadow of Madness - Reward Edition (128K) (HB)
 	&BurnDrvnes_darklord,		// Dark Lord (Japan)
 	&BurnDrvDarkplnt,			// Dark Planet
 	&BurnSpecDarkredux,			// Dark Redux, The (English) (48K) (HB)
@@ -25549,9 +25558,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_diehard,		// Die Hard (Japan)
 	&BurnDrvnes_diehard,		// Die Hard (USA)
 	&BurnDrvDtfamily,			// Diet Family
-	&BurnDrvDietgoea,			// Diet Go Go (Europe v1.1 1992.08.04)
-	&BurnDrvDietgoe,			// Diet Go Go (Europe v1.1 1992.09.26 v2)
-	&BurnDrvDietgo,				// Diet Go Go (Europe v1.1 1992.09.26 v3)
+	&BurnDrvDietgoeb,			// Diet Go Go (Europe v1.1 1992.08.04)
+	&BurnDrvDietgo,				// Diet Go Go (Europe v1.1 1992.09.26, set 1)
+	&BurnDrvDietgoe,			// Diet Go Go (Europe v1.1 1992.09.26, set 2)
+	&BurnDrvDietgoea,			// Diet Go Go (Europe v1.1 1992.09.26, set 3)
 	&BurnDrvDietgoj,			// Diet Go Go (Japan v1.1 1992.09.26)
 	&BurnDrvDietgou,			// Diet Go Go (USA v1.1 1992.09.26)
 	&BurnDrvDigdugat,			// Dig Dug (Atari, rev 2)
@@ -28858,7 +28868,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvHeatbrl,			// Heated Barrel (World version 3)
 	&BurnDrvHeatbrl3,			// Heated Barrel (World version ?)
 	&BurnDrvMSX_yokaibattle,	// Heated Yokai Battle, The ~ Yokai no Atsuki Tatakai (HB)
-	&BurnDrvHbarrelu,			// Heavy Barrel (US)
+	&BurnDrvHbarrelua,			// Heavy Barrel (US, revision 1)
+	&BurnDrvHbarrelu,			// Heavy Barrel (US, revision 3)
 	&BurnDrvnes_heavybarrel,	// Heavy Barrel (USA)
 	&BurnDrvHbarrel,			// Heavy Barrel (World)
 	&BurnDrvMSX_heavybox,		// Heavy Boxing (Japan)
@@ -32006,6 +32017,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_micromages2,	// Micro Mages - Second Quest (HB)
 	&BurnSpecMicromouse,		// Micro Mouse Goes De-bugging (128K)
 	&BurnSpecMprofanation,		// Micro Profanation (48K) (HB, v1.1)
+	&BurnSpecMicrosnake,		// Micro Snake (16K) (HB)
 	&BurnDrvsms_xevious,		// Micro Xevious, The (Korea)
 	&BurnSpecMicronaut,			// Micronaut One (48K)
 	&BurnSpecMicrsocc_48,		// MicroProse Soccer (48K)
@@ -32027,7 +32039,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSsioprom,			// Midway SSIO Sound Board Internal pROM [Internal pROM only, NOT WORKING]
 	&BurnDrvnes_miedow,			// Miedow (HB)
 	&BurnDrvnes_mig29,			// MiG 29 - Soviet Fighter (USA) (Unl)
-	&BurnSpecMig29sovfighter,	// Mig 29 Soviet Fighter (128K)
+	&BurnSpecMig29sovfighter,	// Mig 29 Soviet Fighter (48K)
 	&BurnDrvmd_mig29,			// Mig-29 Fighter Pilot (Euro)
 	&BurnDrvmd_mig29j,			// Mig-29 Fighter Pilot (Japan)
 	&BurnDrvmd_mig29u,			// Mig-29 Fighter Pilot (USA)
@@ -32071,6 +32083,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsMPangjd,			// Mighty! Pang (Japan 001011 Phoenix Edition) (bootleg)
 	&BurnDrvCpsMPangj,			// Mighty! Pang (Japan 001011)
 	&BurnDrvCpsMPangu,			// Mighty! Pang (USA 001010)
+	&BurnSpecMijadore2en,		// Mijadore 2 - the Key (English) (128K) (HB)
+	&BurnSpecMijadore2pt,		// Mijadore 2 - the Key (Portuguese) (128K) (HB)
+	&BurnSpecMijadore2es,		// Mijadore 2 - the Key (Spanish) (128K) (HB)
 	&BurnSpecMijavasee,			// Mijadore vase, The (English) (128K) (HB)
 	&BurnSpecMijavases,			// Mijadore vase, The (Spanish) (128K) (HB)
 	&BurnDrvmd_ditkapf,			// Mike Ditka Power Football (Euro, USA)
@@ -32323,7 +32338,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_montezump,		// Montezuma's Revenge Featuring Panama Joe (USA, Prototype)
 	&BurnDrvcv_montezum,		// Montezuma's Revenge
 	&BurnSpecMmlostsouls,		// Monty Mole And The Temple Of Lost Souls (128K) (HB)
-	&BurnSpecmontrun,			// Monty on the Run (128K)
+	&BurnSpecmontrun,			// Monty on the Run (48K)
 	&BurnDrvfds_montyonrun,		// Monty on the Run - Monty no Doki Doki Dai Dassou (Hack, English)
 	&BurnDrvfds_montyonrunj,	// Monty on the Run - Monty no Doki Doki Dai Dassou (Japan)
 	&BurnSpecMpflycircus,		// Monty Python's Flying Circus (128K)
@@ -37382,6 +37397,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSstrangr2,			// Space Stranger 2
 	&BurnDrvSstrangr,			// Space Stranger
 	&BurnSpecSpacethunder,		// Space Thunder (128K) (HB)
+	&BurnSpecSpacethunderdx,	// Space Thunder DX (128K) (HB)
 	&BurnDrvSpctbird,			// Space Thunderbird
 	&BurnDrvsms_sptonbow,		// Space Tonbow (HB, v1.1)
 #if defined FBNEO_DEBUG
@@ -46287,6 +46303,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_dgimmick", "nes/d_nes.cpp"},
 	{ "spec_darknighte", "spectrum/d_spectrum.cpp"},
 	{ "spec_darknights", "spectrum/d_spectrum.cpp"},
+	{ "spec_darknightre", "spectrum/d_spectrum.cpp"},
 	{ "nes_darklord", "nes/d_nes.cpp"},
 	{ "darkplnt", "galaxian/d_galaxian.cpp"},
 	{ "spec_darkredux", "spectrum/d_spectrum.cpp"},
@@ -46619,9 +46636,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pce_diehard", "pce/d_pce.cpp"},
 	{ "nes_diehard", "nes/d_nes.cpp"},
 	{ "dtfamily", "pst90s/d_vamphalf.cpp"},
-	{ "dietgoea", "dataeast/d_dietgogo.cpp"},
-	{ "dietgoe", "dataeast/d_dietgogo.cpp"},
+	{ "dietgoeb", "dataeast/d_dietgogo.cpp"},
 	{ "dietgo", "dataeast/d_dietgogo.cpp"},
+	{ "dietgoe", "dataeast/d_dietgogo.cpp"},
+	{ "dietgoea", "dataeast/d_dietgogo.cpp"},
 	{ "dietgoj", "dataeast/d_dietgogo.cpp"},
 	{ "dietgou", "dataeast/d_dietgogo.cpp"},
 	{ "digdugat", "pre90s/d_galaga.cpp"},
@@ -49900,6 +49918,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "heatbrl", "pst90s/d_legionna.cpp"},
 	{ "heatbrl3", "pst90s/d_legionna.cpp"},
 	{ "msx_yokaibattle", "msx/d_msx.cpp"},
+	{ "hbarrelua", "dataeast/d_dec0.cpp"},
 	{ "hbarrelu", "dataeast/d_dec0.cpp"},
 	{ "nes_heavybarrel", "nes/d_nes.cpp"},
 	{ "hbarrel", "dataeast/d_dec0.cpp"},
@@ -53014,6 +53033,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_micromages2", "nes/d_nes.cpp"},
 	{ "spec_micromouse", "spectrum/d_spectrum.cpp"},
 	{ "spec_mprofanation", "spectrum/d_spectrum.cpp"},
+	{ "spec_microsnake", "spectrum/d_spectrum.cpp"},
 	{ "sms_xevious", "sms/d_sms.cpp"},
 	{ "spec_micronaut", "spectrum/d_spectrum.cpp"},
 	{ "spec_micrsocc_48", "spectrum/d_spectrum.cpp"},
@@ -53079,6 +53099,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mpangjd", "capcom/d_cps2.cpp"},
 	{ "mpangj", "capcom/d_cps2.cpp"},
 	{ "mpangu", "capcom/d_cps2.cpp"},
+	{ "spec_mijadore2en", "spectrum/d_spectrum.cpp"},
+	{ "spec_mijadore2pt", "spectrum/d_spectrum.cpp"},
+	{ "spec_mijadore2es", "spectrum/d_spectrum.cpp"},
 	{ "spec_mijavasee", "spectrum/d_spectrum.cpp"},
 	{ "spec_mijavases", "spectrum/d_spectrum.cpp"},
 	{ "md_ditkapf", "megadrive/d_megadrive.cpp"},
@@ -58340,6 +58363,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sstrangr2", "pre90s/d_sstrangr.cpp"},
 	{ "sstrangr", "pre90s/d_sstrangr.cpp"},
 	{ "spec_spacethunder", "spectrum/d_spectrum.cpp"},
+	{ "spec_spacethunderdx", "spectrum/d_spectrum.cpp"},
 	{ "spctbird", "galaxian/d_galaxian.cpp"},
 	{ "sms_sptonbow", "sms/d_sms.cpp"},
 	{ "spacetrkc", "pre90s/d_vicdual.cpp"},
