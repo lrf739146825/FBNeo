@@ -2774,10 +2774,10 @@
 	</game>
 	<game name="bigotudo" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, S+O/S+P: select an item from inventory - ENTER: using an item</comment>
-		<description>Bigotudo, El (128K) (HB)</description>
+		<description>Bigotudo, El (128K) (HB, v1.4)</description>
 		<year>2024</year>
-		<manufacturer>Red Triangle</manufacturer>
-		<rom name="Bigotudo, El 128K (2024)(Red Triangle).tap" size="55771" crc="17e546ce"/>
+		<manufacturer>ZXOnline - Red Triangle</manufacturer>
+		<rom name="Bigotudo, El v1.4 128K (2024)(ZXOnline).tap" size="56901" crc="ebf1a265"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -6410,7 +6410,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="darknighte" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Set '2. Joystick' to use controller</comment>
 		<description>Dark Knight, The (English) (128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>Mananuk</manufacturer>
@@ -6421,11 +6421,22 @@
 		<driver status="good"/>
 	</game>
 	<game name="darknights" cloneof="darknighte" romof="darknighte" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Set '2. Joystick' to use controller</comment>
 		<description>Dark Knight, The (Spanish) (128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>Mananuk</manufacturer>
 		<rom name="Dark Knight, The ES 128K (2024)(Mananuk).tap" size="64229" crc="8db09e89"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="darknightre" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Set '2. Joystick' to use controller</comment>
+		<description>Dark Knight, The - Shadow of Madness - Reward Edition (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Mananuk</manufacturer>
+		<rom name="Dark Knight, The - Shadow of Madness - Reward Edition 128K (2024)(Mananuk).tap" size="66255" crc="9ed707e7"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -6436,7 +6447,7 @@
 		<description>Dark Redux, The (English) (48K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Zosya Entertainment</manufacturer>
-		<rom name="Dark Redux, The (2021)(Zosya Entertainment).tap" size="46873" crc="34f3deef"/>
+		<rom name="Dark Redux, The EN 48K (2021)(Zosya Entertainment).tap" size="46873" crc="34f3deef"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -6446,7 +6457,7 @@
 		<description>Dark Redux, The (Russian) (48K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Zosya Entertainment</manufacturer>
-		<rom name="Dark Redux, The RU (2021)(Zosya ent.).tap" size="46873" crc="b78e53c3"/>
+		<rom name="Dark Redux, The RU 48K (2021)(Zosya Entertainment).tap" size="46873" crc="b78e53c3"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15045,7 +15056,7 @@
 		<description>Metal Man Remixed (English) (48K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>Oleg Origin</manufacturer>
-		<rom name="Metal Man Remixed 48K EN (2015)(Origin, Oleg).tap" size="126688" crc="0f6c6bb5"/>
+		<rom name="Metal Man Remixed EN 48K (2015)(Oleg Origin).tap" size="126688" crc="0f6c6bb5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15055,7 +15066,7 @@
 		<description>Metal Man Remixed (Russian) (48K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>Oleg Origin</manufacturer>
-		<rom name="Metal Man Remixed 48K RU (2015)(Origin, Oleg).tap" size="126688" crc="beac0298"/>
+		<rom name="Metal Man Remixed RU 48K (2015)(Oleg Origin).tap" size="126688" crc="beac0298"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15179,6 +15190,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="microsnake" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Micro Snake (16K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>The Death Squad</manufacturer>
+		<rom name="Micro Snake 16K (2024)(The Death Squad).tap" size="7592" crc="ed3e3094"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="micronaut" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>S, Z, O, P and SPACE to set options in main menu</comment>
 		<description>Micronaut One (48K)</description>
@@ -15237,13 +15258,12 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mig29sovfighter" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Mig 29 Soviet Fighter (128K)</description>
+	<game name="mig29sovfighter" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Mig 29 Soviet Fighter (48K)</description>
 		<year>1989</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Mig 29 Soviet Fighter (1989)(Codemasters).tap" size="49442" crc="93a448fd"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Mig 29 Soviet Fighter 48K (1989)(Codemasters).tap" size="49442" crc="93a448fd"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15253,6 +15273,39 @@
 		<year>2018-2023</year>
 		<manufacturer>Sinc LAIR, SaNchez</manufacturer>
 		<rom name="Mighty Final Fight v1.2 128K (2023)(Sinc LAIR).tap" size="302058" crc="e2a30cd8"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mijadore2en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mijadore 2 - the Key (English) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>EdD</manufacturer>
+		<rom name="Mijadore 2 - the Key EN 128K (2024)(EdD).tap" size="62816" crc="16ccd53d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mijadore2pt" cloneof="mijadore2en" romof="mijadore2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mijadore 2 - the Key (Portuguese) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>EdD</manufacturer>
+		<rom name="Mijadore 2 - the Key PT 128K (2024)(EdD).tap" size="62794" crc="c5b88dcc"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mijadore2es" cloneof="mijadore2en" romof="mijadore2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mijadore 2 - the Key (Spanish) (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>EdD</manufacturer>
+		<rom name="Mijadore 2 - the Key ES 128K (2024)(EdD).tap" size="62764" crc="f72024c3"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15408,7 +15461,7 @@
 		<description>Mission Jupiter (48K)</description>
 		<year>1987</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Mission Jupiter (1987)(Codemasters).tap" size="45152" crc="f136a5b9"/>
+		<rom name="Mission Jupiter 48K (1987)(Codemasters).tap" size="45152" crc="f136a5b9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15572,7 +15625,7 @@
 		<description>Monte Carlo Casino (128K)</description>
 		<year>1989</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Monte Carlo Casino (1989)(Codemasters).tap" size="41821" crc="8d459dc5"/>
+		<rom name="Monte Carlo Casino 128K (1989)(Codemasters).tap" size="41821" crc="8d459dc5"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15589,13 +15642,12 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="montrun" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Monty on the Run (128K)</description>
+	<game name="montrun" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Monty on the Run (48K)</description>
 		<year>1985</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Monty on the Run (1985)(Gremlin Graphics)(128k).z80" size="40808" crc="330a393a"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Monty on the Run 48K (1985)(Gremlin Graphics).tap" size="48047" crc="bee203bb"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15653,7 +15705,7 @@
 		<description>Moon Cresta (48K)</description>
 		<year>1985</year>
 		<manufacturer>Incentive Software</manufacturer>
-		<rom name="Moon Cresta (1985)(Incentive Software).z80" size="38811" crc="af817ac8"/>
+		<rom name="Moon Cresta 48K (1985)(Incentive Software).z80" size="38811" crc="af817ac8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -15662,7 +15714,7 @@
 		<description>Moon Cresta - Review (48K)</description>
 		<year>1985</year>
 		<manufacturer>Incentive Software</manufacturer>
-		<rom name="Moon Cresta - Review (1985)(Incentive Software).z80" size="5247" crc="5db616b9"/>
+		<rom name="Moon Cresta - Review 48K (1985)(Incentive Software).z80" size="5247" crc="5db616b9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -16084,7 +16136,7 @@
 		<description>Munsters, The (128K)</description>
 		<year>1989</year>
 		<manufacturer>Again Again</manufacturer>
-		<rom name="Munsters, The (1989)(Again Again).tap" size="78341" crc="37451ece"/>
+		<rom name="Munsters, The 128K (1989)(Again Again).tap" size="78341" crc="37451ece"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16621,7 +16673,7 @@
 		<description>Ninja Poison - Part 1 (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>TokuSoft</manufacturer>
-		<rom name="Ninja Poison - Part 1 (2021)(TokuSoft).tap" size="45684" crc="2cd6d37d"/>
+		<rom name="Ninja Poison - Part 1 128K (2021)(TokuSoft).tap" size="45684" crc="2cd6d37d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16632,7 +16684,7 @@
 		<description>Ninja Poison - Part 2 (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>TokuSoft</manufacturer>
-		<rom name="Ninja Poison - Part 2 (2021)(TokuSoft).tap" size="48076" crc="e4cce9b9"/>
+		<rom name="Ninja Poison - Part 2 128K (2021)(TokuSoft).tap" size="48076" crc="e4cce9b9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -21742,7 +21794,18 @@
 		<description>Space Thunder (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Isaias Diaz Toledano</manufacturer>
-		<rom name="Space Thunder (2021)(Isaiasdiaz).tap" size="47073" crc="a11f0963"/>
+		<rom name="Space Thunder 128K (2021)(Isaias Diaz Toledano).tap" size="47073" crc="a11f0963"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spacethunderdx" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Space Thunder DX (128K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Isaias Diaz Toledano</manufacturer>
+		<rom name="Space Thunder DX 128K (2024)(Isaias Diaz Toledano).tap" size="59848" crc="11f8fe6c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22753,7 +22816,7 @@
 		<description>Super 48K Bro. (48K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>Rothers</manufacturer>
-		<rom name="Super 48k Bro. (2024)(Rothers).tap" size="47966" crc="c378e0a2"/>
+		<rom name="Super 48k Bro. 48K (2024)(Rothers).tap" size="47966" crc="c378e0a2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -22958,7 +23021,7 @@
 		<description>Super Sprint (48K)</description>
 		<year>1987</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Super Sprint (1987)(Activision).z80" size="31358" crc="52ee2754"/>
+		<rom name="Super Sprint 48K (1987)(Activision).z80" size="31358" crc="52ee2754"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
