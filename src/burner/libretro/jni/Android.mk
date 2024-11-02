@@ -12,6 +12,7 @@ USE_CYCLONE               := 0
 
 ifeq ($(TARGET_ARCH_ABI),armeabi-v7a)
   HAVE_NEON               := 1
+  INCLUDE_7Z_SUPPORT      := 0
   #USE_CYCLONE             := 1
 endif
 
