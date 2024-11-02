@@ -433,12 +433,15 @@ vpath %.d 	$(foreach dir,$(alldir),$(objdir)$(dir)/ )
 #
 #
 
+# backward compatibility (make less than 4.4 doesn't support .WAIT)
+.WAIT:
+
 .PHONY:	all init cleandep touch clean
 
 ifeq ($(MAKELEVEL),1)
 ifdef DEPEND
 
-all:	init $(drvdep) $(autdep) $(autobj) $(autdrv)
+all:	init .WAIT $(drvdep) $(autdep) $(autobj) $(autdrv)
 ifdef GCC345
 	@$(MAKE) -f makefile.mingw -s GCC345=1
 endif
@@ -454,7 +457,7 @@ endif
 
 else
 
-all:	init $(autobj) $(autdrv)
+all:	init .WAIT $(autobj) $(autdrv)
 ifdef GCC345
 	@$(MAKE) -f makefile.mingw -s GCC345=1
 endif
