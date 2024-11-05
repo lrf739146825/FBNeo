@@ -12911,7 +12911,7 @@
 		<description>Murder in the Maze (HB)</description>
 		<year>2024</year>
 		<manufacturer>T1LT</manufacturer>
-		<rom name="Murder in the Maze (2024)(T1LT).nes" size="524304" crc="fc86e8e1"/>
+		<rom name="Murder in the Maze (2024)(T1LT).nes" size="524304" crc="baac5e32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
