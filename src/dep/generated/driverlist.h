@@ -658,6 +658,10 @@ DRV		BurnDrvmd_alien3h;
 DRV		BurnDrvAlien3j;
 DRV		BurnDrvAlien3u;
 DRV		BurnDrvAlien3;
+DRV		BurnDrvmsx_alienescapee;
+DRV		BurnDrvmsx_alienescapei;
+DRV		BurnDrvmsx_alienescapej;
+DRV		BurnDrvmsx_alienescapes2;
 DRV		BurnDrvmsx_alienescape;
 DRV		BurnDrvAliensa;
 DRV		BurnDrvMSX_alienseu;
@@ -3629,6 +3633,9 @@ DRV		BurnDrvnes_copjack;
 DRV		BurnDrvCopsnrob;		// No sound
 #endif
 DRV		BurnSpecCoreycb;
+DRV		BurnDrvmsx_cornitfze;
+DRV		BurnDrvmsx_cornitfzf;
+DRV		BurnDrvmsx_cornitfzi;
 DRV		BurnDrvmsx_cornitfzs;
 DRV		BurnSpecCoronaenc;
 DRV		BurnDrvmd_corporat;
@@ -21812,7 +21819,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAlien3j,			// Alien3: The Gun (Japan)
 	&BurnDrvAlien3u,			// Alien3: The Gun (US, Rev A)
 	&BurnDrvAlien3,				// Alien3: The Gun (World)
-	&BurnDrvmsx_alienescape,	// Alien: Escape (Spanish) (HB)
+	&BurnDrvmsx_alienescapee,	// Alien: Escape (English) (HB)
+	&BurnDrvmsx_alienescapei,	// Alien: Escape (Italian) (HB)
+	&BurnDrvmsx_alienescapej,	// Alien: Escape (Japanese) (HB)
+	&BurnDrvmsx_alienescapes2,	// Alien: Escape (Spanish) (HB)
+	&BurnDrvmsx_alienescape,	// Alien: Escape (Spanish) (HB, Alt)
 	&BurnDrvAliensa,			// Aliens (Asia)
 	&BurnDrvMSX_alienseu,		// Aliens (Euro)
 	&BurnDrvAliensj,			// Aliens (Japan set 1)
@@ -24783,6 +24794,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCopsnrob,			// Cops'n Robbers [No sound]
 #endif
 	&BurnSpecCoreycb,			// Corey Coolbrew (128K) (HB)
+	&BurnDrvmsx_cornitfze,		// Cornelius in the Forbidden Zone (English) (HB)
+	&BurnDrvmsx_cornitfzf,		// Cornelius in the Forbidden Zone (French) (HB)
+	&BurnDrvmsx_cornitfzi,		// Cornelius in the Forbidden Zone (Italian) (HB)
 	&BurnDrvmsx_cornitfzs,		// Cornelius in the Forbidden Zone (Spanish) (HB)
 	&BurnSpecCoronaenc,			// Corona Encantada, La (Spanish) (128K) (HB)
 	&BurnDrvmd_corporat,		// Corporation (Euro)
@@ -42966,6 +42980,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "alien3j", "sega/d_segas32.cpp"},
 	{ "alien3u", "sega/d_segas32.cpp"},
 	{ "alien3", "sega/d_segas32.cpp"},
+	{ "msx_aliescapee", "msx/d_msx.cpp"},
+	{ "msx_aliescapei", "msx/d_msx.cpp"},
+	{ "msx_aliescapej", "msx/d_msx.cpp"},
+	{ "msx_aliescapes2", "msx/d_msx.cpp"},
 	{ "msx_aliescapes", "msx/d_msx.cpp"},
 	{ "aliensa", "konami/d_aliens.cpp"},
 	{ "msx_alienseu", "msx/d_msx.cpp"},
@@ -45909,6 +45927,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_copjack", "nes/d_nes.cpp"},
 	{ "copsnrob", "pre90s/d_copsnrob.cpp"},
 	{ "spec_coreycb", "spectrum/d_spectrum.cpp"},
+	{ "msx_cornitfze", "msx/d_msx.cpp"},
+	{ "msx_cornitfzf", "msx/d_msx.cpp"},
+	{ "msx_cornitfzi", "msx/d_msx.cpp"},
 	{ "msx_cornitfzs", "msx/d_msx.cpp"},
 	{ "spec_coronaenc", "spectrum/d_spectrum.cpp"},
 	{ "md_corporat", "megadrive/d_megadrive.cpp"},
