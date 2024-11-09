@@ -61,7 +61,7 @@ Don't expect things to work properly if you didn't build valid romsets, and don'
 
 ### Step 1: Obtaining an XML DAT
 
-You can download the dat files for the latest version of the core from the [dats](https://github.com/libretro/FBNeo/tree/master/dats/) directory. Note that some devices (Nintendo 3DS) are running a "light" build with fewer supported games due to memory limitation, the dat files for that build are available from the [light](https://github.com/libretro/FBNeo/tree/master/dats/light/) subdirectory.
+You can download the dat files for the latest version of the core from the [dats](https://github.com/libretro/FBNeo/tree/master/dats/) directory.
 
 ### Step 2: Gathering the ingredients
 

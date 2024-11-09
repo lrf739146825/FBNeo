@@ -16,8 +16,6 @@ HAVE_NEON = 0
 USE_EXPERIMENTAL_FLAGS = 0
 USE_CYCLONE = 0
 HAVE_UWP = 0
-# make the core smaller by removing some demanding drivers
-LIGHT = 0
 SPLIT_UP_LINK ?= 0
 
 SPACE :=
@@ -224,7 +222,6 @@ else ifneq (,$(filter $(platform), ps3 psl1ght))
 	EXTERNAL_ZLIB = 1
 	STATIC_LINKING = 1
 	INCLUDE_7Z_SUPPORT = 0
-#	LIGHT = 1
 
 	CC = $(PS3DEV)/ppu/bin/ppu-$(COMMONLV)gcc$(EXE_EXT)
 	CXX = $(PS3DEV)/ppu/bin/ppu-$(COMMONLV)g++$(EXE_EXT)
@@ -258,7 +255,6 @@ else ifeq ($(platform), ctr)
 	EXTERNAL_ZLIB = 1
 	STATIC_LINKING = 1
 	USE_CYCLONE = 1
-	LIGHT = 1
 
 # Xbox 360
 else ifeq ($(platform), xenon)
@@ -307,7 +303,6 @@ else ifeq ($(platform), funkey)
 	USE_EXPERIMENTAL_FLAGS = 1
 	HAVE_NEON = 1
 	USE_CYCLONE = 1
-	LIGHT = 1
 	ARCH = arm
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	ifeq ($(shell echo `$(CC) -dumpversion` "< 4.9" | bc -l), 1)
@@ -386,12 +381,10 @@ else ifneq (,$(filter $(platform), ngc wii wiiu))
 	# Nintendo Wii
 	else ifneq (,$(findstring wii,$(platform)))
 		PLATFORM_DEFINES += -DGEKKO -DHW_RVL -mrvl -mcpu=750 -meabi -mhard-float
-		LIGHT = 1
 
 	# Nintendo Game Cube
 	else ifneq (,$(findstring ngc,$(platform)))
 		PLATFORM_DEFINES += -DGEKKO -DHW_DOL -mrvl -mcpu=750 -meabi -mhard-float
-		LIGHT = 1
 	endif
 
 # Emscripten
