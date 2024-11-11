@@ -7125,6 +7125,7 @@ DRV		BurnDrvGalaga3c;
 DRV		BurnDrvGalaga3m;
 DRV		BurnDrvNeogalag;
 DRV		BurnDrvNeogalaga;
+DRV		BurnDrvGalagawm;
 DRV		BurnDrvmd_galahad;
 DRV		BurnDrvmd_galahads;
 DRV		BurnDrvGalaktron;
@@ -29936,6 +29937,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGalaga3m,			// Galaga 3 (set 5)
 	&BurnDrvNeogalag,			// Galaga Demo (set 1)
 	&BurnDrvNeogalaga,			// Galaga Demo (set 2)
+	&BurnDrvGalagawm,			// Galaga Wave Mixer (Hack)
 	&BurnDrvmd_galahad,			// Galahad (Euro, USA)
 	&BurnDrvmd_galahads,		// Galahad (Hack, Spanish)
 	&BurnDrvGalaktron,			// Galaktron (Petaco S.A.)
@@ -52693,6 +52695,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "galaga3m", "pre90s/d_gaplus.cpp"},
 	{ "neogalag", "neogeo/d_neogeo.cpp"},
 	{ "neogalaga", "neogeo/d_neogeo.cpp"},
+	{ "galagawm", "pre90s/d_galaga.cpp"},
 	{ "md_galahad", "megadrive/d_megadrive.cpp"},
 	{ "md_galahads", "megadrive/d_megadrive.cpp"},
 	{ "galaktron", "galaxian/d_galaxian.cpp"},

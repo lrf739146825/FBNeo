@@ -619,17 +619,12 @@ CTVMAKE_EXE = ctvmake$(EXE_EXT)
 PGM_SPRITE_CREATE_EXE = pgmspritecreate$(EXE_EXT)
 EXE_PREFIX = ./
 
-.PHONY: clean generate-files generate-files-clean clean-objs
+# backward compatibility (make less than 4.4 doesn't support .WAIT)
+.WAIT:
 
-ifeq ($(platform), theos_ios)
-	COMMON_FLAGS := -DIOS -DARM $(COMMON_DEFINES) $(INCFLAGS) -I$(THEOS_INCLUDE_PATH) -Wno-error
-	$(LIBRARY_NAME)_CFLAGS += $(CFLAGS) $(COMMON_FLAGS)
-	$(LIBRARY_NAME)_CXXFLAGS += $(CXXFLAGS) $(COMMON_FLAGS)
-	${LIBRARY_NAME}_FILES = $(SOURCES_CXX) $(SOURCES_C)
-	include $(THEOS_MAKE_PATH)/library.mk
-else
-all: $(TARGET)
+.PHONY: all clean generate-files generate-files-clean clean-objs
 
+all: generate-files clean-objs .WAIT $(TARGET)
 
 generate-files-clean:
 	rm -rf $(FBNEO_GENERATED_DIR)/
@@ -759,4 +754,3 @@ endif
 	rm -f $(M68KMAKE_EXE)
 	rm -f $(PGM_SPRITE_CREATE_EXE)
 	rm -f $(CTVMAKE_EXE)
-endif
