@@ -150,10 +150,12 @@ FBNEO_SRC_DIRS := $(FBNEO_BURNER_DIR) $(FBNEO_BURN_DIRS) $(FBNEO_CPU_DIRS) $(FBN
 ifneq ($(STATIC_LINKING), 1)
 	SOURCES_C += $(LIBRETRO_COMM_DIR)/file/file_path.c \
 		$(LIBRETRO_COMM_DIR)/file/file_path_io.c \
+		$(LIBRETRO_COMM_DIR)/file/retro_dirent.c \
 		$(LIBRETRO_COMM_DIR)/encodings/encoding_utf.c \
 		$(LIBRETRO_COMM_DIR)/compat/compat_posix_string.c \
 		$(LIBRETRO_COMM_DIR)/compat/compat_strcasestr.c \
 		$(LIBRETRO_COMM_DIR)/compat/compat_strl.c \
+		$(LIBRETRO_COMM_DIR)/compat/compat_strldup.c \
 		$(LIBRETRO_COMM_DIR)/compat/fopen_utf8.c \
 		$(LIBRETRO_COMM_DIR)/string/stdstring.c \
 		$(LIBRETRO_COMM_DIR)/streams/file_stream.c \
@@ -320,9 +322,15 @@ SOURCES_CXX += $(LIBRETRO_DIR)/libretro.cpp \
 	$(LIBRETRO_DIR)/retro_cdemu.cpp \
 	$(LIBRETRO_DIR)/retro_common.cpp \
 	$(LIBRETRO_DIR)/retro_input.cpp \
-	$(LIBRETRO_DIR)/retro_memory.cpp
+	$(LIBRETRO_DIR)/retro_memory.cpp \
+	$(LIBRETRO_DIR)/retro_string.cpp \
+	$(LIBRETRO_DIR)/ips_manager.cpp \
+	$(LIBRETRO_DIR)/romdata.cpp
 
 SOURCES_C += $(UGUI_DIR)/ugui.c \
+	$(UGUI_DIR)/ugui_textbox.c \
+	$(UGUI_DIR)/font_8x8.c \
+	$(UGUI_DIR)/SourceHanSansCN_Medium_13X17.c \
 	$(LIBRETRO_DIR)/ugui_tools.c
 
 # Drivers, cpus and devices for this subset
