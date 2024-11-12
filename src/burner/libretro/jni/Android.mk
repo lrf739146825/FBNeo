@@ -24,6 +24,7 @@ SOURCES_CXX :=
 FBNEO_DEFINES :=
 
 include $(LOCAL_PATH)/../Makefile.common
+include $(LOCAL_PATH)/../Makefile.all
 
 COMMON_FLAGS := -DUSE_SPEEDHACKS -D__LIBRETRO__ -DANDROID -Wno-write-strings -DLSB_FIRST $(FBNEO_DEFINES)
 

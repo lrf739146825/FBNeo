@@ -11,6 +11,18 @@
     MAKEFILE_PATH: src/burner/libretro
     CORENAME: fbneo
 
+.core-defs-neogeo:
+  extends: .core-defs
+  variables:
+    CORENAME: fbneo_neogeo
+    SUBSET: neogeo
+
+.core-defs-cps12:
+  extends: .core-defs
+  variables:
+    CORENAME: fbneo_cps12
+    SUBSET: cps12
+
 # Core definitions
 include:
   ################################## DESKTOPS ################################
@@ -175,15 +187,15 @@ libretro-build-tvos-arm64:
 
 ################################### CONSOLES #################################
 # Nintendo 3DS
-libretro-build-neogeo-ctr:
+libretro-build-ctr-neogeo:
   extends:
     - .libretro-ctr-static-retroarch-master
-    - .core-defs
-  variables:
-    PLATFORM_TARGET: ctr
-    CORENAME: fbneo_neogeo
-  script:
-    - make -C ${MAKEFILE_PATH} platform=${PLATFORM_TARGET} subset=neogeo
+    - .core-defs-neogeo
+
+libretro-build-ctr-cps12:
+  extends:
+    - .libretro-ctr-static-retroarch-master
+    - .core-defs-cps12
 
 # Nintendo WiiU
 #libretro-build-wiiu:
