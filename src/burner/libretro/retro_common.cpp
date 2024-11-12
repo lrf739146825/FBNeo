@@ -816,6 +816,7 @@ static RomBiosInfo* find_neogeo_bios(uint32_t categories)
 
 void set_neo_system_bios()
 {
+#ifndef NO_NEOGEO
 	if (g_opt_neo_geo_mode == 0)
 	{
 		// Nothing to do in DIPSWITCH mode because the NeoSystem variable is changed by the DIP Switch core option
@@ -835,6 +836,7 @@ void set_neo_system_bios()
 			log_cb(RETRO_LOG_INFO, "No bios found for requested mode, falling back to DIPSWITCH => NeoSystem: 0x%02x.\n", NeoSystem);
 		}
 	}
+#endif
 }
 
 void evaluate_neogeo_bios_mode(const char* drvname)
