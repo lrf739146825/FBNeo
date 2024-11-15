@@ -110,6 +110,7 @@ endif
 SOURCES_CXX += $(FBNEO_BURN_DIR)/burn_bitmap.cpp \
 	$(FBNEO_BURN_DIR)/burn_led.cpp \
 	$(FBNEO_BURN_DIR)/burn_pal.cpp \
+	$(FBNEO_BURN_DIR)/burn_sha1.cpp \
 	$(FBNEO_BURN_DIR)/burn_shift.cpp \
 	$(FBNEO_BURN_DIR)/tilemap_generic.cpp \
 	$(FBNEO_BURN_DIR)/tiles_generic.cpp \
