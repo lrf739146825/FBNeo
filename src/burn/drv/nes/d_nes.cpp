@@ -10975,7 +10975,7 @@ static INT32 gg_decode(char *gg_code, UINT16 &address, UINT8 &value, INT32 &comp
 	return 0;
 }
 
-const INT32 cheat_MAX = 0x100;
+static const INT32 cheat_MAX = 0x100;
 static INT32 cheats_active = 0;
 
 struct cheat_struct {
@@ -10987,7 +10987,7 @@ struct cheat_struct {
 
 static cheat_struct cheats[cheat_MAX];
 
-void nes_add_cheat(char *code) // 6/8 character game genie codes allowed
+static void nes_add_cheat(char *code) // 6/8 character game genie codes allowed
 {
 	UINT16 address;
 	UINT8 value;
@@ -11009,7 +11009,7 @@ void nes_add_cheat(char *code) // 6/8 character game genie codes allowed
 	}
 }
 
-void nes_remove_cheat(char *code)
+static void nes_remove_cheat(char *code)
 {
 	cheat_struct cheat_temp[cheat_MAX];
 	INT32 temp_num = 0;
@@ -11192,6 +11192,12 @@ static INT32 NESInit()
 		if (fds_load(rom, ri.nLen, ri.nCrc)) return 1;
 	} else {
 		if (BurnLoadRom(rom, 0, 1)) return 1;
+
+		// sha1 hash
+		char hash_potato[128] = { 0, };
+		BurnComputeSHA1(rom + 0x10, ri.nLen - 0x10, hash_potato);
+		bprintf(0, _T("sha1 hash: [%S]\n"), hash_potato);
+
 		if (cartridge_load(rom, ri.nLen, ri.nCrc)) return 1;
 	}
 
@@ -28056,10 +28062,10 @@ struct BurnDriver BurnDrvnes_marioadventure = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
-// Mario Adventure 3 (Hack, v1.9.8)
+// Mario Adventure 3 (Hack, v1.9.9)
 // https://marioadventure3.com/
 static struct BurnRomInfo nes_marioadventure3RomDesc[] = {
-	{ "Mario Adventure 3 v1.9.8 (2024)(ScarlettVixen).nes",          786448, 0x494115ef, BRF_ESS | BRF_PRG },
+	{ "Mario Adventure 3 v1.9.9 (2024)(ScarlettVixen).nes",          786448, 0x0bf1b61c, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(nes_marioadventure3)
@@ -28067,7 +28073,7 @@ STD_ROM_FN(nes_marioadventure3)
 
 struct BurnDriver BurnDrvnes_marioadventure3 = {
 	"nes_marioadventure3", "nes_smb3", NULL, NULL, "2024",
-	"Mario Adventure 3 (Hack, v1.9.8)\0", NULL, "ScarlettVixen", "Miscellaneous",
+	"Mario Adventure 3 (Hack, v1.9.9)\0", NULL, "ScarlettVixen", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_NES, GBF_PLATFORM, 0,
 	NESGetZipName, nes_marioadventure3RomInfo, nes_marioadventure3RomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
@@ -28800,9 +28806,9 @@ struct BurnDriver BurnDrvnes_multidudee = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
-// Murder in the Maze (HB)
+// Murder in the Maze (HB, v1.01)
 static struct BurnRomInfo nes_murdmazeRomDesc[] = {
-	{ "Murder in the Maze (2024)(T1LT).nes",          524304, 0xbaac5e32, BRF_ESS | BRF_PRG },
+	{ "Murder in the Maze v1.01 (2024)(T1LT).nes",          524304, 0xbaac5e32, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(nes_murdmaze)
@@ -28810,7 +28816,7 @@ STD_ROM_FN(nes_murdmaze)
 
 struct BurnDriver BurnDrvnes_murdmaze = {
 	"nes_murdmaze", NULL, NULL, NULL, "2024",
-	"Murder in the Maze (HB)\0", NULL, "T1LT", "Miscellaneous",
+	"Murder in the Maze (HB, v1.01)\0", NULL, "T1LT", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_NES, GBF_ADV | GBF_MINIGAMES, 0,
 	NESGetZipName, nes_murdmazeRomInfo, nes_murdmazeRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,

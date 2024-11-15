@@ -181,11 +181,13 @@ static struct BurnDIPInfo SNESMouseP1MouseP2GamepadDIPList[] =
 	{0x01, 0xff, 0xff, 0x01, NULL					},
 };
 
+#if 0
 static struct BurnDIPInfo SNESMouseP1GamepadP2MouseDIPList[] =
 {
 	{0x00, 0xff, 0xff, 0x00, NULL					},
 	{0x01, 0xff, 0xff, 0x02, NULL					},
 };
+#endif
 
 static struct BurnDIPInfo SNESMouseP1MouseP2MouseDIPList[] =
 {
@@ -195,7 +197,7 @@ static struct BurnDIPInfo SNESMouseP1MouseP2MouseDIPList[] =
 
 STDDIPINFOEXT(SNESMouse, SNESMouseP1GamepadP2Gamepad, SNESMouseBase) // zoop
 STDDIPINFOEXT(SNESMouseP1, SNESMouseP1MouseP2Gamepad, SNESMouseBase) // zoop
-STDDIPINFOEXT(SNESMouseP2, SNESMouseP1GamepadP2Mouse, SNESMouseBase) // zoop
+//STDDIPINFOEXT(SNESMouseP2, SNESMouseP1GamepadP2Mouse, SNESMouseBase) // zoop
 STDDIPINFOEXT(SNESMouseP1P2, SNESMouseP1MouseP2Mouse, SNESMouseBase) // zoop
 
 static UINT32 CheckControllerPlug()
@@ -2727,10 +2729,10 @@ struct BurnDriver BurnDrvsnes_Bahalagoonte = {
 	512, 448, 4, 3
 };
 
-// Bahamut Lagoon (Hack, Spanish v1.03a)
+// Bahamut Lagoon (Hack, Spanish v1.03c)
 // https://crackowia.com/bahamuts.html
 static struct BurnRomInfo snes_BahalagoontsRomDesc[] = {
-	{ "Bahamut Lagoon T-Spa v1.03a (2022)(Rod Merida).sfc", 8388608, 0x04a290fa, BRF_ESS | BRF_PRG },
+	{ "Bahamut Lagoon T-Spa v1.03c (2022)(Rod Merida).sfc", 8388608, 0xf24350ec, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Bahalagoonts)
@@ -2738,7 +2740,7 @@ STD_ROM_FN(snes_Bahalagoonts)
 
 struct BurnDriver BurnDrvsnes_Bahalagoonts = {
 	"snes_bahalagoonts", "snes_bahalagoonte", NULL, NULL, "2022",
-	"Bahamut Lagoon (Hack, Spanish v1.03a)\0", NULL, "Rod Merida", "Nintendo",
+	"Bahamut Lagoon (Hack, Spanish v1.03c)\0", NULL, "Rod Merida", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
 	SNESGetZipName, snes_BahalagoontsRomInfo, snes_BahalagoontsRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -6473,7 +6475,7 @@ struct BurnDriver BurnDrvsnes_Dezaemonj = {
 // Dezaemon (Hack, English)
 // https://www.romhacking.net/translations/3749/
 static struct BurnRomInfo snes_DezaemonteRomDesc[] = {
-	{ "Dezaemon T-Eng (2018)(Aeon Genesis)..sfc", 524288, 0x32f9c958, BRF_ESS | BRF_PRG },
+	{ "Dezaemon T-Eng (2018)(Aeon Genesis).sfc", 524288, 0x32f9c958, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Dezaemonte)
@@ -29676,25 +29678,6 @@ struct BurnDriver BurnDrvsnes_2048 = {
 	512, 448, 4, 3
 };
 
-// 4096 (HB)
-
-static struct BurnRomInfo snes_4096RomDesc[] = {
-	{ "4096 (2015)(e-nost).sfc", 262144, 0xdd073c4b, BRF_ESS | BRF_PRG },
-};
-
-STD_ROM_PICK(snes_4096)
-STD_ROM_FN(snes_4096)
-
-struct BurnDriver BurnDrvsnes_4096 = {
-	"snes_4096", NULL, NULL, NULL, "2015",
-	"4096 (HB)\0", NULL, "e-nost", "Nintendo",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SNES, GBF_PUZZLE, 0,
-	SNESGetZipName, snes_4096RomInfo, snes_4096RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
-	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
-	512, 448, 4, 3
-};
-
 // Alien Cat 2 Enhanced Edition (HB, v1.1)
 
 static struct BurnRomInfo snes_Aliencat2RomDesc[] = {
@@ -30152,10 +30135,10 @@ struct BurnDriver BurnDrvsnes_Ff5rte = {
 	512, 448, 4, 3
 };
 
-// Final Fantasy VI Reimagined (Hack)
+// Final Fantasy VI Reimagined (Hack) - 2024-10-30
 // https://www.ff6hacking.com/forums/thread-4416.html
 static struct BurnRomInfo snes_Ff6rmdRomDesc[] = {
-	{ "Final Fantasy VI Reimagined (2024)(DrakeyC).sfc", 4194304, 0xb1148ddf, BRF_ESS | BRF_PRG },
+	{ "Final Fantasy VI Reimagined (2024)(DrakeyC).sfc", 4194304, 0x60aff03d, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Ff6rmd)
@@ -30513,10 +30496,10 @@ struct BurnDriver BurnDrvsnes_Jimpoweree = {
 	512, 448, 4, 3
 };
 
-// Legend of Zelda, The - 18 Hours Past (Hack, v1.11)
+// Legend of Zelda, The - 18 Hours Past (Hack, v1.12)
 // https://www.romhacking.net/hacks/7732/
 static struct BurnRomInfo snes_Legendofzelda18hpRomDesc[] = {
-	{ "Legend of Zelda, The - 18 Hours Past v1.11 (2024)(Letterbomb).sfc", 2097152, 0x45d6950f, BRF_ESS | BRF_PRG },
+	{ "Legend of Zelda, The - 18 Hours Past v1.12 (2024)(Letterbomb).sfc", 2097152, 0xc2dc7b83, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Legendofzelda18hp)
@@ -30524,7 +30507,7 @@ STD_ROM_FN(snes_Legendofzelda18hp)
 
 struct BurnDriver BurnDrvsnes_Legendofzelda18hp = {
 	"snes_legendofzelda18hp", "snes_legendofzelda", NULL, NULL, "2024",
-	"Legend of Zelda, The - 18 Hours Past (Hack, v1.11)\0", NULL, "Letterbomb", "Nintendo",
+	"Legend of Zelda, The - 18 Hours Past (Hack, v1.12)\0", NULL, "Letterbomb", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_ACTION | GBF_ADV, 0,
 	SNESGetZipName, snes_Legendofzelda18hpRomInfo, snes_Legendofzelda18hpRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -31007,10 +30990,10 @@ struct BurnDriver BurnDrvsnes_Racedrivinsa1o = {
 	512, 448, 4, 3
 };
 
-// Ranma 1/2 - Chougi Ranbu Hen (Japan)
+// Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.4)
 // https://romhackplaza.org/romhacks/ranma-1-2-chougi-ranbu-hen-big-framerate-improvement-snes/
 static struct BurnRomInfo snes_Ranmahb2jfrRomDesc[] = {
-	{ "Ranma 1-2 - Chougi Ranbu Hen frameratehack v1.3 (2024)(Upsilandre).sfc", 4194304, 0x71aaff40, BRF_ESS | BRF_PRG },
+	{ "Ranma 1-2 - Chougi Ranbu Hen frameratehack v1.4 (2024)(Upsilandre).sfc", 4194304, 0x1705415f, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Ranmahb2jfr)
@@ -31018,7 +31001,7 @@ STD_ROM_FN(snes_Ranmahb2jfr)
 
 struct BurnDriver BurnDrvsnes_Ranmahb2jfr = {
 	"snes_ranmahb2jfr", "snes_ranmahb2te", NULL, NULL, "2024",
-	"Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.3)\0", NULL, "Upsilandre", "Nintendo",
+	"Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.4)\0", NULL, "Upsilandre", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_Ranmahb2jfrRomInfo, snes_Ranmahb2jfrRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -31026,11 +31009,11 @@ struct BurnDriver BurnDrvsnes_Ranmahb2jfr = {
 	512, 448, 4, 3
 };
 
-// Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.3)
+// Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.4)
 // https://www.romhacking.net/translations/3516/
 // https://romhackplaza.org/romhacks/ranma-1-2-chougi-ranbu-hen-big-framerate-improvement-snes/
 static struct BurnRomInfo snes_Ranmahb2tefrRomDesc[] = {
-	{ "Ranma 1-2 - Hard Battle II - Super Move Hustle T-Eng + frameratehack v1.3 (2024)(Upsilandre).sfc", 4194304, 0x4401b68c, BRF_ESS | BRF_PRG },
+	{ "Ranma 1-2 - Hard Battle II - Super Move Hustle T-Eng + frameratehack v1.4 (2024)(Upsilandre).sfc", 4194304, 0x22ae0893, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Ranmahb2tefr)
@@ -31038,7 +31021,7 @@ STD_ROM_FN(snes_Ranmahb2tefr)
 
 struct BurnDriver BurnDrvsnes_Ranmahb2tefr = {
 	"snes_ranmahb2tefr", "snes_ranmahb2te", NULL, NULL, "2024",
-	"Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.3)\0", NULL, "Dynamic-Designs - Upsilandre", "Nintendo",
+	"Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.4)\0", NULL, "Dynamic-Designs - Upsilandre", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_Ranmahb2tefrRomInfo, snes_Ranmahb2tefrRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -31213,25 +31196,6 @@ struct BurnDriver BurnDrvsnes_Spacegulls = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_SpacegullsRomInfo, snes_SpacegullsRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
-	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
-	512, 448, 4, 3
-};
-
-// Star Keeper (HB)
-
-static struct BurnRomInfo snes_StarkeeperRomDesc[] = {
-	{ "Star Keeper (2018)(87Arts).sfc", 524288, 0xd925182f, BRF_ESS | BRF_PRG },
-};
-
-STD_ROM_PICK(snes_Starkeeper)
-STD_ROM_FN(snes_Starkeeper)
-
-struct BurnDriver BurnDrvsnes_Starkeeper = {
-	"snes_starkeeper", NULL, NULL, NULL, "2018",
-	"Star Keeper (HB)\0", NULL, "87Arts", "Nintendo",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SNES, GBF_HORSHOOT, 0,
-	SNESGetZipName, snes_StarkeeperRomInfo, snes_StarkeeperRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -31555,25 +31519,6 @@ struct BurnDriver BurnDrvsnes_Supsudoku = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SNES, GBF_PUZZLE, 0,
 	SNESGetZipName, snes_SupsudokuRomInfo, snes_SupsudokuRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
-	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
-	512, 448, 4, 3
-};
-
-// Super Xoxol vs. Pigdog (HB)
-
-static struct BurnRomInfo snes_SupxoxolRomDesc[] = {
-	{ "Super Xoxol vs. Pigdog (2023)(Sergey Cyka).sfc", 1048576, 0xed786ffe, BRF_ESS | BRF_PRG },
-};
-
-STD_ROM_PICK(snes_Supxoxol)
-STD_ROM_FN(snes_Supxoxol)
-
-struct BurnDriver BurnDrvsnes_Supxoxol = {
-	"snes_supxoxol", NULL, NULL, NULL, "2023",
-	"Super Xoxol vs. Pigdog (HB)\0", NULL, "Sergey Cyka", "Nintendo",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
-	SNESGetZipName, snes_SupxoxolRomInfo, snes_SupxoxolRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };

@@ -172,7 +172,6 @@ DRV		BurnSpec4soccersims2;
 DRV		BurnSpec4soccersims3;
 DRV		BurnSpec4soccersims4;
 DRV		BurnDrvFourdwarrio;
-DRV		BurnDrvsnes_4096;
 DRV		BurnDrvcv_421;
 DRV		BurnDrvsnes_46okunmono;
 DRV		BurnDrvMSX_4x4offroad;
@@ -2057,6 +2056,7 @@ DRV		BurnDrvgg_sailormse;
 DRV		BurnDrvgg_sailorms;
 DRV		BurnDrvsnes_Slrmoonffpj;
 DRV		BurnDrvsnes_Slrmoonfightsj;
+DRV		BurnDrvmd_bssf2gq;
 DRV		BurnDrvsms_bitlogic;
 DRV		BurnDrvMSX_bitlogicfv;
 DRV		BurnDrvMSX_bitlogic;
@@ -17875,7 +17875,6 @@ DRV		BurnDrvsg1k_starjack2;
 DRV		BurnDrvStarjack;
 DRV		BurnDrvStarjacks;
 DRV		BurnDrvsg1k_starjackt;
-DRV		BurnDrvsnes_Starkeeper;
 DRV		BurnDrvnes_starluster;
 DRV		BurnDrvmd_starmobile;
 DRV		BurnDrvsnes_Staroceante;
@@ -19246,7 +19245,6 @@ DRV		BurnDrvSws;
 DRV		BurnDrvSxeviousj;
 DRV		BurnDrvnes_superxev;
 DRV		BurnDrvSxevious;
-DRV		BurnDrvsnes_Supxoxol;
 DRV		BurnDrvSzaxxon;
 DRV		BurnDrvzolapac;
 DRV		BurnDrvSuperxm;
@@ -22984,7 +22982,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpec4soccersims3,		// 4 Soccer Simulators - Soccer Skills (128K)
 	&BurnSpec4soccersims4,		// 4 Soccer Simulators - Street Soccer (128K)
 	&BurnDrvFourdwarrio,		// 4-D Warriors (315-5162)
-	&BurnDrvsnes_4096,			// 4096 (HB)
 	&BurnDrvcv_421,				// 421 (HB)
 	&BurnDrvsnes_46okunmono,	// 46 Okunen Monogatari - Harukanaru Eden e (Japan)
 	&BurnDrvMSX_4x4offroad,		// 4x4 Off-Road Racing (Euro)
@@ -24276,7 +24273,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvBagmanj,			// Bagman (Taito)
 	&BurnDrvBagman,				// Bagman
 	&BurnDrvsnes_Bahalagoonte,	// Bahamut Lagoon (Hack, English v1.3)
-	&BurnDrvsnes_Bahalagoonts,	// Bahamut Lagoon (Hack, Spanish v1.03a)
+	&BurnDrvsnes_Bahalagoonts,	// Bahamut Lagoon (Hack, Spanish v1.03c)
 	&BurnDrvsnes_Bahalagoonj,	// Bahamut Lagoon (Japan)
 	&BurnDrvmd_bahamutse,		// Bahamut Senki (Hack, English)
 	&BurnDrvmd_bahamuts,		// Bahamut Senki (Japan)
@@ -24869,6 +24866,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvgg_sailorms,		// Bishoujo Senshi Sailor Moon S (Japan)
 	&BurnDrvsnes_Slrmoonffpj,	// Bishoujo Senshi Sailor Moon Super S - Fuwa Fuwa Panic (Japan)
 	&BurnDrvsnes_Slrmoonfightsj,// Bishoujo Senshi Sailor Moon Super S - Zenin Sanka!! Shuyaku Soudatsusen (Japan)
+	&BurnDrvmd_bssf2gq,			// Bishoujo Super Street Fighter II: Glamor Queen (Hack, v1.6)
 	&BurnDrvsms_bitlogic,		// BitLogic a Cyberpunk Arcade Adventure (HB)
 	&BurnDrvMSX_bitlogicfv,		// BitLogic a Cyberpunk Arcade Adventure (HB, final version)
 	&BurnDrvMSX_bitlogic,		// BitLogic a Cyberpunk Arcade Adventure (HB, MSXdev'15 ed.)
@@ -33221,7 +33219,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_legenzelrd,		// Legend of Zelda Redux, The (Hack, v3.1)
 	&BurnDrvnes_legenzeli,		// Legend of Zelda, The (Hack, Italian)
 	&BurnDrvnes_legenzel,		// Legend of Zelda, The (USA) (Rev A)
-	&BurnDrvsnes_Legendofzelda18hp,// Legend of Zelda, The - 18 Hours Past (Hack, v1.11)
+	&BurnDrvsnes_Legendofzelda18hp,// Legend of Zelda, The - 18 Hours Past (Hack, v1.12)
 	&BurnDrvsnes_Legendofzeldafr,// Legend of Zelda, The - A Link to the Past (Canada, French)
 	&BurnDrvsnes_Legendofzeldati,// Legend of Zelda, The - A Link to the Past (Hack, Italian v1.1)
 	&BurnDrvsnes_Legendofzeldats,// Legend of Zelda, The - A Link to the Past (Hack, Spanish v1.11)
@@ -33960,7 +33958,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_mario3,			// Mario 3 - Vokrug Sveta (Russia) (Unl)
 	&BurnDrvmd_mario4,			// Mario 4 - Kosmicheskaya Odissyeya (Russia) (Unl)
 	&BurnDrvnes_marioadventure,	// Mario Adventure (Hack)
-	&BurnDrvnes_marioadventure3,// Mario Adventure 3 (Hack, v1.9.8)
+	&BurnDrvnes_marioadventure3,// Mario Adventure 3 (Hack, v1.9.9)
 	&BurnDrvsnes_Mariowario,	// Mario and Wario (Japan)
 	&BurnDrvmd_andretti,		// Mario Andretti Racing (Euro, USA)
 	&BurnSpecmaribros,			// Mario Bros (48K)
@@ -35088,7 +35086,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_mortalkombat4h,	// Mortal Kombat 4 (Hack, UMK3)
 	&BurnDrvnes_mortalkombat4,	// Mortal Kombat 4 (Unl)
 	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0a)
-	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v1.5)
+	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v2.1)
 	&BurnDrvsms_mk2,			// Mortal Kombat II (Euro, Brazil)
 	&BurnDrvMk2r11,				// Mortal Kombat II (rev L1.1)
 	&BurnDrvMk2r14,				// Mortal Kombat II (rev L1.4)
@@ -35328,7 +35326,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_mundoper,		// Mundo Perdido, El (Euro, Spanish)
 	&BurnSpecMunsters,			// Munsters, The (128K)
 	&BurnDrvnes_muppeadv,		// Muppet Adventure - Chaos at the Carnival (USA)
-	&BurnDrvnes_murdmaze,		// Murder in the Maze (HB)
+	&BurnDrvnes_murdmaze,		// Murder in the Maze (HB, v1.01)
 	&BurnSpecMurraymousesupercop,// Murray Mouse Super Cop (48K)
 	&BurnDrvnes_musasnoken,		// Musashi no Ken - Tadaima Shugyou Chuu (Hack, English)
 	&BurnDrvnes_musasnokenj,	// Musashi no Ken - Tadaima Shugyou Chuu (Japan)
@@ -38165,10 +38163,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Ranmahbf,		// Ranma 1/2 (Euro, French)
 	&BurnDrvsnes_Ranmarpgj,		// Ranma 1/2 - Akanekodan Teki Hihou (Japan)
 	&BurnDrvsnes_Ranmahbj,		// Ranma 1/2 - Bakuretsu Rantou Hen (Japan)
-	&BurnDrvsnes_Ranmahb2jfr,	// Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.3)
+	&BurnDrvsnes_Ranmahb2jfr,	// Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.4)
 	&BurnDrvsnes_Ranmahb2j,		// Ranma 1/2 - Chougi Ranbu Hen (Japan)
 	&BurnDrvsnes_Ranmahb,		// Ranma 1/2 - Hard Battle (USA)
-	&BurnDrvsnes_Ranmahb2tefr,	// Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.3)
+	&BurnDrvsnes_Ranmahb2tefr,	// Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.4)
 	&BurnDrvsnes_Ranmahb2te,	// Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10)
 	&BurnDrvsnes_Ranmarpgte,	// Ranma 1/2 - Treasure of the Red Cat Gang (Hack, English)
 	&BurnDrvnes_ranmachan,		// Ranma vs. Ranma! - Ranma-chan Edition (Hack, v2.2)
@@ -40687,7 +40685,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvStarjack,			// Star Jacker (Sega)
 	&BurnDrvStarjacks,			// Star Jacker (Stern Electronics)
 	&BurnDrvsg1k_starjackt,		// Star Jacker (Taiwan)
-	&BurnDrvsnes_Starkeeper,	// Star Keeper (HB)
 	&BurnDrvnes_starluster,		// Star Luster (Japan)
 	&BurnDrvmd_starmobile,		// Star Mobile (Mega Drive Mini 2 Edition)
 	&BurnDrvsnes_Staroceante,	// Star Ocean (Hack, English)
@@ -42058,7 +42055,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSxeviousj,			// Super Xevious (Japan)
 	&BurnDrvnes_superxev,		// Super Xevious - Gump no Nazo (Japan)
 	&BurnDrvSxevious,			// Super Xevious
-	&BurnDrvsnes_Supxoxol,		// Super Xoxol vs. Pigdog (HB)
 	&BurnDrvSzaxxon,			// Super Zaxxon (315-5013)
 	&BurnDrvzolapac,			// Super Zola Pac Gal
 	&BurnDrvSuperxm,			// Super-X (Mitchell)
@@ -45796,7 +45792,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_4soccersims3", "spectrum/d_spectrum.cpp"},
 	{ "spec_4soccersims4", "spectrum/d_spectrum.cpp"},
 	{ "4dwarrio", "sega/d_sys1.cpp"},
-	{ "snes_4096", "snes/d_snes.cpp"},
 	{ "cv_421", "coleco/d_coleco.cpp"},
 	{ "snes_46okunmono", "snes/d_snes.cpp"},
 	{ "msx_4x4offroad", "msx/d_msx.cpp"},
@@ -47673,6 +47668,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gg_sailorms", "sms/d_sms.cpp"},
 	{ "snes_slrmoonffpj", "snes/d_snes.cpp"},
 	{ "snes_slrmoonfightsj", "snes/d_snes.cpp"},
+	{ "md_bssf2gq", "megadrive/d_megadrive.cpp"},
 	{ "sms_bitlogic", "sms/d_sms.cpp"},
 	{ "msx_bitlogicfv", "msx/d_msx.cpp"},
 	{ "msx_bitlogic", "msx/d_msx.cpp"},
@@ -63351,7 +63347,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "starjack", "sega/d_sys1.cpp"},
 	{ "starjacks", "sega/d_sys1.cpp"},
 	{ "sg1k_starjackt", "sg1000/d_sg1000.cpp"},
-	{ "snes_starkeeper", "snes/d_snes.cpp"},
 	{ "nes_starluster", "nes/d_nes.cpp"},
 	{ "md_starmobile", "megadrive/d_megadrive.cpp"},
 	{ "snes_staroceante", "snes/d_snes.cpp"},
@@ -64702,7 +64697,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sxeviousj", "pre90s/d_galaga.cpp"},
 	{ "nes_superxev", "nes/d_nes.cpp"},
 	{ "sxevious", "pre90s/d_galaga.cpp"},
-	{ "snes_supxoxol", "snes/d_snes.cpp"},
 	{ "szaxxon", "sega/d_zaxxon.cpp"},
 	{ "zolapac", "pre90s/d_pacman.cpp"},
 	{ "superxm", "pst90s/d_dooyong.cpp"},
