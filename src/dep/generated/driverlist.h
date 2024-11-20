@@ -15015,6 +15015,7 @@ DRV		BurnDrvQuesters;
 DRV		BurnDrvsg1k_champicet;
 DRV		BurnSpecQuickdraw;
 DRV		BurnDrvnes_quinty;
+DRV		BurnDrvsnes_Quinty;
 DRV		BurnDrvCpsQadjr;
 DRV		BurnDrvCpsQad;
 DRV		BurnDrvInufuku;
@@ -22567,9 +22568,11 @@ DRV		BurnDrvnes_yumepenmonj;
 DRV		BurnSpecYumikohm;
 DRV		BurnDrvnes_yunr5;
 DRV		BurnDrvfds_yuumaze;
+DRV		BurnDrvsnes_Yuuyuuhakusho;
 DRV		BurnDrvsnes_Yuuyuuhakj;
 DRV		BurnDrvsnes_Yuuyuuhak2j;
 DRV		BurnDrvnes_yuuyuuhakfin;
+DRV		BurnDrvsnes_Yuuyuuhakushofinal;
 DRV		BurnDrvpce_yuyu;
 DRV		BurnDrvYuyugogo;
 DRV		BurnDrvMSX_zmazingo;
@@ -29355,7 +29358,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Finalfantvij,	// Final Fantasy VI (Japan)
 	&BurnDrvsnes_Ff6te,			// Final Fantasy VI - T-Edition (Hack v2.9, English v1.1)
 	&BurnDrvsnes_Ff6rmd,		// Final Fantasy VI Reimagined (Hack)
-	&BurnDrvsnes_Ff6sc,			// Final Fantasy VI: A Soldier's Contingency (Hack, v2.01)
+	&BurnDrvsnes_Ff6sc,			// Final Fantasy VI: A Soldier's Contingency (Hack, v2.02)
 	&BurnDrvnes_finalfanvii,	// Final Fantasy VII (China) (Unl)
 	&BurnDrvnes_finalfanviiadvch,// Final Fantasy VII - Advent Children (Hack, English)
 	&BurnSpecfinalfight,		// Final Fight (128K)
@@ -37825,6 +37828,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_champicet,		// Qugunqiu (Taiwan)
 	&BurnSpecQuickdraw,			// Quick Draw McGraw (128K)
 	&BurnDrvnes_quinty,			// Quinty (Japan)
+	&BurnDrvsnes_Quinty,		// Quinty (Japan, Prototype)
 	&BurnDrvCpsQadjr,			// Quiz & Dragons: Capcom Quiz Game (Japan Resale Ver. 940921)
 	&BurnDrvCpsQad,				// Quiz & Dragons: Capcom Quiz Game (USA 920701)
 	&BurnDrvInufuku,			// Quiz & Variety Sukusuku Inufuku (Japan)
@@ -45377,9 +45381,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecYumikohm,			// Yumiko in the haunted mansion (128K) (HB)
 	&BurnDrvnes_yunr5,			// Yun R5 (HB)
 	&BurnDrvfds_yuumaze,		// Yuu Maze (Japan)
+	&BurnDrvsnes_Yuuyuuhakusho,	// Yuu Yuu Hakusho (Japan)
 	&BurnDrvsnes_Yuuyuuhakj,	// Yuu Yuu Hakusho - Tokubetsu Hen (Japan)
 	&BurnDrvsnes_Yuuyuuhak2j,	// Yuu Yuu Hakusho 2 - Kakutou no Shou (Japan)
 	&BurnDrvnes_yuuyuuhakfin,	// Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)
+	&BurnDrvsnes_Yuuyuuhakushofinal,// Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)
 	&BurnDrvpce_yuyu,			// Yuu Yuu Jinsei - Victory Life (Japan)
 	&BurnDrvYuyugogo,			// Yuuyu no Quiz de GO!GO! (Japan)
 	&BurnDrvMSX_zmazingo,		// Z - Mazin Go (HB)
@@ -60511,6 +60517,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_champicet", "sg1000/d_sg1000.cpp"},
 	{ "spec_quickdraw", "spectrum/d_spectrum.cpp"},
 	{ "nes_quinty", "nes/d_nes.cpp"},
+	{ "snes_quinty", "snes/d_snes.cpp"},
 	{ "qadjr", "capcom/d_cps1.cpp"},
 	{ "qad", "capcom/d_cps1.cpp"},
 	{ "inufuku", "pst90s/d_inufuku.cpp"},
@@ -67981,9 +67988,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_yumikohm", "spectrum/d_spectrum.cpp"},
 	{ "nes_yunr5", "nes/d_nes.cpp"},
 	{ "fds_yuumaze", "nes/d_nes.cpp"},
+	{ "snes_yuuyuuhakusho", "snes/d_snes.cpp"},
 	{ "snes_yuuyuuhakj", "snes/d_snes.cpp"},
 	{ "snes_yuuyuuhak2j", "snes/d_snes.cpp"},
 	{ "nes_yuuyuuhakfin", "nes/d_nes.cpp"},
+	{ "snes_yuuyuuhakushofinal", "snes/d_snes.cpp"},
 	{ "pce_yuyu", "pce/d_pce.cpp"},
 	{ "yuyugogo", "taito/d_taitof2.cpp"},
 	{ "msx_zmazingo", "msx/d_msx.cpp"},

@@ -16,12 +16,14 @@
   variables:
     CORENAME: fbneo_neogeo
     SUBSET: neogeo
+    REGEN_HEADERS: 1
 
 .core-defs-cps12:
   extends: .core-defs
   variables:
     CORENAME: fbneo_cps12
     SUBSET: cps12
+    REGEN_HEADERS: 1
 
 # Core definitions
 include:

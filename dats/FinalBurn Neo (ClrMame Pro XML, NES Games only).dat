@@ -11619,10 +11619,10 @@
 	</game>
 	<game name="marioadventure3" cloneof="smb3" romof="smb3" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Mario Adventure 3 (Hack, v1.9.8)</description>
+		<description>Mario Adventure 3 (Hack, v1.9.9)</description>
 		<year>2024</year>
 		<manufacturer>ScarlettVixen</manufacturer>
-		<rom name="Mario Adventure 3 v1.9.8 (2024)(ScarlettVixen).nes" size="786448" crc="494115ef"/>
+		<rom name="Mario Adventure 3 v1.9.9 (2024)(ScarlettVixen).nes" size="786448" crc="0bf1b61c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12908,10 +12908,10 @@
 	</game>
 	<game name="murdmaze" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Murder in the Maze (HB)</description>
+		<description>Murder in the Maze (HB, v1.01)</description>
 		<year>2024</year>
 		<manufacturer>T1LT</manufacturer>
-		<rom name="Murder in the Maze (2024)(T1LT).nes" size="524304" crc="baac5e32"/>
+		<rom name="Murder in the Maze v1.01 (2024)(T1LT).nes" size="524304" crc="baac5e32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

@@ -17,6 +17,7 @@ USE_EXPERIMENTAL_FLAGS = 0
 USE_CYCLONE = 0
 HAVE_UWP = 0
 SPLIT_UP_LINK ?= 0
+REGEN_HEADERS ?= 0
 
 SPACE :=
 SPACE := $(SPACE) $(SPACE)
@@ -625,7 +626,11 @@ EXE_PREFIX = ./
 
 .PHONY: all clean generate-files generate-files-clean clean-objs
 
+ifeq ($(REGEN_HEADERS), 1)
 all: generate-files clean-objs .WAIT $(TARGET)
+else
+all: $(TARGET)
+endif
 
 generate-files-clean:
 	rm -rf $(FBNEO_GENERATED_DIR)/

@@ -49,4 +49,5 @@ SOURCES_CXX += $(FBNEO_CPU_DIR)/m68000_intf.cpp \
 	$(CAPCOM_DIR)/qs_z.cpp \
 	$(CAPCOM_DIR)/sf2mdt_snd.cpp
 
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO
 CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO
