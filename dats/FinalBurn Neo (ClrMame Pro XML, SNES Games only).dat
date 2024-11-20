@@ -64,15 +64,6 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="4096" sourcefile="snes/d_snes.cpp">
-		<comment>Homebrew</comment>
-		<description>4096 (HB)</description>
-		<year>2015</year>
-		<manufacturer>e-nost</manufacturer>
-		<rom name="4096 (2015)(e-nost).sfc" size="262144" crc="dd073c4b"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="46okunmono" cloneof="evo" romof="evo" sourcefile="snes/d_snes.cpp">
 		<description>46 Okunen Monogatari - Harukanaru Eden e (Japan)</description>
 		<year>1992</year>
@@ -984,10 +975,10 @@
 	</game>
 	<game name="bahalagoonts" cloneof="bahalagoonte" romof="bahalagoonte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Bahamut Lagoon (Hack, Spanish v1.03a)</description>
+		<description>Bahamut Lagoon (Hack, Spanish v1.03c)</description>
 		<year>2022</year>
 		<manufacturer>Rod Merida</manufacturer>
-		<rom name="Bahamut Lagoon T-Spa v1.03a (2022)(Rod Merida).sfc" size="8388608" crc="04a290fa"/>
+		<rom name="Bahamut Lagoon T-Spa v1.03c (2022)(Rod Merida).sfc" size="8388608" crc="f24350ec"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2715,7 +2706,7 @@
 		<description>Dezaemon (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Aeon Genesis, mwksoul</manufacturer>
-		<rom name="Dezaemon T-Eng (2018)(Aeon Genesis)..sfc" size="524288" crc="32f9c958"/>
+		<rom name="Dezaemon T-Eng (2018)(Aeon Genesis).sfc" size="524288" crc="32f9c958"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3928,16 +3919,16 @@
 		<description>Final Fantasy VI Reimagined (Hack)</description>
 		<year>2024</year>
 		<manufacturer>DrakeyC</manufacturer>
-		<rom name="Final Fantasy VI Reimagined (2024)(DrakeyC).sfc" size="4194304" crc="b1148ddf"/>
+		<rom name="Final Fantasy VI Reimagined (2024)(DrakeyC).sfc" size="4194304" crc="60aff03d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ff6sc" cloneof="finalfantiii" romof="finalfantiii" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, (Extended Bestiary Edition)</comment>
-		<description>Final Fantasy VI: A Soldier's Contingency (Hack, v2.01)</description>
+		<description>Final Fantasy VI: A Soldier's Contingency (Hack, v2.02)</description>
 		<year>2024</year>
 		<manufacturer>Lightning Hunter</manufacturer>
-		<rom name="Final Fantasy VI - A Soldier's Contingency (Extended Bestiary Edition) v2.01 (2024)(Lightning Hunter).sfc" size="6291456" crc="fd1a4f8b"/>
+		<rom name="Final Fantasy VI - A Soldier's Contingency (Extended Bestiary Edition) v2.02 (2024)(Lightning Hunter).sfc" size="6291456" crc="7d309e30"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6197,10 +6188,10 @@
 	</game>
 	<game name="legendofzelda18hp" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Legend of Zelda, The - 18 Hours Past (Hack, v1.11)</description>
+		<description>Legend of Zelda, The - 18 Hours Past (Hack, v1.12)</description>
 		<year>2024</year>
 		<manufacturer>Letterbomb</manufacturer>
-		<rom name="Legend of Zelda, The - 18 Hours Past v1.11 (2024)(Letterbomb).sfc" size="2097152" crc="45d6950f"/>
+		<rom name="Legend of Zelda, The - 18 Hours Past v1.12 (2024)(Letterbomb).sfc" size="2097152" crc="c2dc7b83"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8742,6 +8733,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="quinty" sourcefile="snes/d_snes.cpp">
+		<comment>Prototype</comment>
+		<description>Quinty (Japan, Prototype)</description>
+		<year>1999</year>
+		<manufacturer>Game Freak</manufacturer>
+		<rom name="Quinty (1999)(Game Freak).sfc" size="2097152" crc="1225927b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="qwak" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
 		<description>Qwak (CBM2SNES) (HB, v1.3)</description>
@@ -8884,10 +8884,10 @@
 	</game>
 	<game name="ranmahb2jfr" cloneof="ranmahb2te" romof="ranmahb2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.3)</description>
+		<description>Ranma 1/2 - Chougi Ranbu Hen (Hack, Framerate Imp. v1.4)</description>
 		<year>2024</year>
 		<manufacturer>Upsilandre</manufacturer>
-		<rom name="Ranma 1-2 - Chougi Ranbu Hen frameratehack v1.3 (2024)(Upsilandre).sfc" size="4194304" crc="71aaff40"/>
+		<rom name="Ranma 1-2 - Chougi Ranbu Hen frameratehack v1.4 (2024)(Upsilandre).sfc" size="4194304" crc="1705415f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8909,10 +8909,10 @@
 	</game>
 	<game name="ranmahb2tefr" cloneof="ranmahb2te" romof="ranmahb2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.3)</description>
+		<description>Ranma 1/2 - Hard Battle II - Super Move Hustle (Hack, English v1.10 + Framerate Imp. v1.4)</description>
 		<year>2024</year>
 		<manufacturer>Dynamic-Designs - Upsilandre</manufacturer>
-		<rom name="Ranma 1-2 - Hard Battle II - Super Move Hustle T-Eng + frameratehack v1.3 (2024)(Upsilandre).sfc" size="4194304" crc="4401b68c"/>
+		<rom name="Ranma 1-2 - Hard Battle II - Super Move Hustle T-Eng + frameratehack v1.4 (2024)(Upsilandre).sfc" size="4194304" crc="22ae0893"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10190,15 +10190,6 @@
 		<year>1996</year>
 		<manufacturer>Naxat Soft</manufacturer>
 		<rom name="Spriggan Powered (J)(1996)(Naxat Soft).sfc" size="1048576" crc="3f83f67c"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="starkeeper" sourcefile="snes/d_snes.cpp">
-		<comment>Homebrew</comment>
-		<description>Star Keeper (HB)</description>
-		<year>2018</year>
-		<manufacturer>87Arts</manufacturer>
-		<rom name="Star Keeper (2018)(87Arts).sfc" size="524288" crc="d925182f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12003,15 +11994,6 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="supxoxol" sourcefile="snes/d_snes.cpp">
-		<comment>Homebrew</comment>
-		<description>Super Xoxol vs. Pigdog (HB)</description>
-		<year>2023</year>
-		<manufacturer>Sergey Cyka</manufacturer>
-		<rom name="Super Xoxol vs. Pigdog (2023)(Sergey Cyka).sfc" size="1048576" crc="ed786ffe"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="supcooked" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
 		<description>Supercooked! (HB, v1.2)</description>
@@ -13566,6 +13548,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="yuuyuuhakusho" sourcefile="snes/d_snes.cpp">
+		<description>Yuu Yuu Hakusho (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Yuu Yuu Hakusho (1993)(Namcot).sfc" size="2097152" crc="ec96d517"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="yuuyuuhakj" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho - Tokubetsu Hen (Japan)</description>
 		<year>1994</year>
@@ -13580,6 +13570,14 @@
 		<manufacturer>Namco</manufacturer>
 		<rom name="Yuu Yuu Hakusho 2 - Kakutou no Shou (J)(1994)(Namco).sfc" size="2097152" crc="eef45a93"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="yuuyuuhakushofinal" sourcefile="snes/d_snes.cpp">
+		<description>Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (1995)(Namcot).sfc" size="3145728" crc="5617a42e"/>
+		<video type="raster" orientation="horizontal" width="512" height="480" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="zeldanodensetsu" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">

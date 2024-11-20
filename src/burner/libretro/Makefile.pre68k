@@ -76,4 +76,5 @@ SOURCES_CXX += $(FBNEO_CPU_DIR)/h6280_intf.cpp \
 	$(GALAXIAN_DIR)/gal_sound.cpp \
 	$(GALAXIAN_DIR)/gal_stars.cpp
 
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO
 CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO

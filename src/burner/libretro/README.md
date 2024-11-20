@@ -45,13 +45,18 @@ zip, 7z
 
 From the root of the repository, run
 ```
-make -j5 -C src/burner/libretro clean
-make -j5 -C src/burner/libretro generate-files
 make -j5 -C src/burner/libretro
 ```
 Note : `-j5` is to optimize build time on cpus with 4 cores (X+1 cores), you can rise or reduce that value to match your own, however a value too high will increase ram usage and might even cause your system to become unstable.
 
-Note : if you need additional parameters, they must be added to both commands.
+Note : Here is a non-exhaustive list of additional parameters you might want to append to the make command line :
+
+* **SUBSET=all** : Build a core that supports everything. This is the default SUBSET so you don't need to append it.
+* **SUBSET=neogeo** : Build a core that only supports neogeo games.
+* **SUBSET=cps12** : Build a core that only supports CPS-1 & CPS-2 games.
+* **generate-files** : Generate header/gamelist files and stop there.
+* **clean** : Remove any previously built object.
+* **REGEN_HEADERS=1** : This will run **generate-files** and **clean** consecutively before building the core, which is usually required when you made a change to the list of drivers you want to build, either from modifying the project's code or switching between SUBSETs. Note that make version 4.4 may be required for this to behave properly.
 
 ## Building romsets for FBNeo
 
@@ -133,6 +138,7 @@ You can use specific folder's name for detection, it's the easiest and recommend
 * Nec TurboGrafx-16 : `tg16`
 * Nintendo Entertainment System : `nes`
 * Nintendo Family Disk System : `fds`
+* Super Nintendo Entertainment System : `snes`
 * Sega GameGear : `gamegear`
 * Sega Master System : `sms` | `mastersystem`
 * Sega Megadrive : `megadriv` | `megadrive` | `genesis`
@@ -151,6 +157,7 @@ You can also emulate consoles by prefixing the name of the roms with `XXX_` and 
 * Nec TurboGrafx-16 : `tg`
 * Nintendo Entertainment System : `nes`
 * Nintendo Family Disk System : `fds`
+* Super Nintendo Entertainment System : `snes`
 * Sega GameGear : `gg`
 * Sega Master System : `sms`
 * Sega Megadrive : `md`
@@ -191,6 +198,13 @@ The following bioses are required for some of the emulated systems :
 * spec128.zip (ZX Spectrum 128 BIOS)
 * spec1282a.zip (ZX Spectrum 128 +2a BIOS)
 * channelf.zip (Fairchild Channel F BIOS)
+* dsp1.zip (SNES DSP-1)
+* dsp1b.zip (SNES DSP-1B)
+* dsp2.zip (SNES DSP-2)
+* dsp3.zip (SNES DSP-3)
+* dsp4.zip (SNES DSP-4)
+* st010.zip (SNES Seta ST010)
+* st011.zip (SNES Seta ST011)
 
 ## Samples
 

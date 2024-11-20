@@ -11375,7 +11375,7 @@
 		<description>Mokari Makka? Bochibochi Denna! (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Leben Pro</manufacturer>
-		<rom name="Mokari Makka? Bochibochi Denna! (Japan)(1986)(Leben Pro).rom" size="32768" crc="d40f481d"/>
+		<rom name="Mokari Makka Bochibochi Denna! (Japan)(1986)(Leben Pro).rom" size="32768" crc="d40f481d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>

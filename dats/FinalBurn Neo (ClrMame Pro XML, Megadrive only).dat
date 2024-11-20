@@ -2452,6 +2452,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v1.6)</description>
+		<year>2024</year>
+		<manufacturer>hack (Yoni Arousement)</manufacturer>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v1.6 (2024)(Yoni Arousement).bin" size="5242880" crc="f8aab4d4"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bladeven" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Blades of Vengeance (Euro, USA)</description>
 		<year>1993</year>
@@ -12852,10 +12860,10 @@
 	</game>
 	<game name="mkaee" cloneof="mk" romof="mk" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mortal Kombat Arcade Edition Enhanced (Hack, v1.5)</description>
-		<year>2022</year>
+		<description>Mortal Kombat Arcade Edition Enhanced (Hack, v2.1)</description>
+		<year>2024</year>
 		<manufacturer>Rael G.C.</manufacturer>
-		<rom name="Mortal Kombat Arcade Edition Enhanced v1.5 (2022)(Rael G.C.).bin" size="4194304" crc="b884890b"/>
+		<rom name="Mortal Kombat Arcade Edition Enhanced v2.1 (2024)(Rael G.C.).bin" size="4194304" crc="486979c5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
