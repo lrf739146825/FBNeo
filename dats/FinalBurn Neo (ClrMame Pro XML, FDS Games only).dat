@@ -400,11 +400,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="dracuii" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+	<game name="dracuiij" cloneof="dracuii" romof="dracuii" sourcefile="nes/d_nes.cpp">
 		<description>Dracula II - Noroi no Fuuin (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Dracula II - Noroi no Fuuin (Japan)(1987)(Konami).fds" size="131016" crc="2d1ec77c"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dracuii" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dracula II - The Cursed Seal (Hack, English v1.0)</description>
+		<year>2024</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Dracula II - The Cursed Seal T-Eng v1.0 (2024)(BlackPaladin).fds" size="131016" crc="3251423f"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

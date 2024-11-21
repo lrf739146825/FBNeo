@@ -1387,6 +1387,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="blackthornetp" cloneof="blackthorne" romof="blackthorne" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Blackthorne (Hack, Portuguese v1.02)</description>
+		<year>2024</year>
+		<manufacturer>Dindo, Rod Merida</manufacturer>
+		<rom name="Blackthorne T-Por v1.02 (2024)(Dindo, Rod Merida).sfc" size="1048576" crc="03cc4c7d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="blackthorne" sourcefile="snes/d_snes.cpp">
 		<description>Blackthorne (USA)</description>
 		<year>1994</year>
@@ -1788,6 +1797,22 @@
 		<year>1992</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Captain Tsubasa III - Koutei no Chousen (J)(1992)(Tecmo).sfc" size="1048576" crc="26b0cee3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="captsubasa4j" sourcefile="snes/d_snes.cpp">
+		<description>Captain Tsubasa IV - Pro no Rival Tachi (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Tecmo</manufacturer>
+		<rom name="Captain Tsubasa IV - Pro no Rival Tachi (Japan)(1993)(Tecmo).sfc" size="1572864" crc="3e04b246"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="captsubasa5j" sourcefile="snes/d_snes.cpp">
+		<description>Captain Tsubasa V - Hasha no Shougou Campione (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Tecmo</manufacturer>
+		<rom name="Captain Tsubasa V - Hasha no Shougou Canpione (Japan)(1994)(Tecmo).sfc" size="2097152" crc="e2b26d99"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9434,6 +9459,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="seikdens3te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Seiken Densetsu 3 (Hack, English v1.01)</description>
+		<year>2000</year>
+		<manufacturer>LNF Translations, Neill Corlett, SoM2Freak</manufacturer>
+		<rom name="Seiken Densetsu 3 T-Eng v1.01 (2000)(LNF Translations, Neill Corlett, SoM2Freak).sfc" size="4194304" crc="7dbde871"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="seikdens3j" cloneof="seikdens3te" romof="seikdens3te" sourcefile="snes/d_snes.cpp">
+		<description>Seiken Densetsu 3 (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Seiken Densetsu 3 (Japan)(1995)(Squaresoft).sfc" size="4194304" crc="863ed0b8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sengokute" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Sengoku Denshou (Hack, English)</description>
@@ -10924,6 +10966,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sconflict" sourcefile="snes/d_snes.cpp">
+		<description>Super Conflict (USA)</description>
+		<year>1993</year>
+		<manufacturer>Vic Tokai</manufacturer>
+		<rom name="Super Conflict (USA)(1993)(Vic Tokai).sfc" size="1048576" crc="f254d5cf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supcupsoccer" cloneof="goal" romof="goal" sourcefile="snes/d_snes.cpp">
 		<description>Super Cup Soccer (Japan)</description>
 		<year>1992</year>
@@ -11991,6 +12041,14 @@
 		<year>1992</year>
 		<manufacturer>Atlus Co.</manufacturer>
 		<rom name="Super Valis IV (U)(1992)(Atlus).sfc" size="1048576" crc="29e8ac9f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="svgeo" sourcefile="snes/d_snes.cpp">
+		<description>Super Variable Geo (Japan)</description>
+		<year>1995</year>
+		<manufacturer>TGL</manufacturer>
+		<rom name="Super Variable Geo (Japan)(1995)(TGL).sfc" size="3145728" crc="de3262e7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13540,6 +13598,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="yuuyuuhak2tp" cloneof="yuuyuuhak2j" romof="yuuyuuhak2j" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Yu Yu Hakusho 2 - The Fighting Chapter (Hack, Portuguese v1.0)</description>
+		<year>2024</year>
+		<manufacturer>Hextinkers</manufacturer>
+		<rom name="Yu Yu Hakusho 2 - The Fighting Chapter T-Por v1.0 (2024)(Hextinkers).sfc" size="2097152" crc="52ac1195"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dreamazej" cloneof="dreamazete" romof="dreamazete" sourcefile="snes/d_snes.cpp">
 		<description>Yume Meikyuu - Kigurumi Daibouken (Japan)</description>
 		<year>1994</year>
@@ -13548,7 +13615,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuuyuuhakusho" sourcefile="snes/d_snes.cpp">
+	<game name="yuuyuuhak" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Namcot</manufacturer>
@@ -13556,7 +13623,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuuyuuhakj" sourcefile="snes/d_snes.cpp">
+	<game name="yuuyuutoku" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho - Tokubetsu Hen (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
@@ -13572,12 +13639,12 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuuyuuhakushofinal" sourcefile="snes/d_snes.cpp">
+	<game name="yuuyuufin" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (1995)(Namcot).sfc" size="3145728" crc="5617a42e"/>
-		<video type="raster" orientation="horizontal" width="512" height="480" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="zeldanodensetsu" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
