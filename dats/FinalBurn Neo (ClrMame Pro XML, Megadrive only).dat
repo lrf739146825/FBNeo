@@ -2453,10 +2453,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v1.6)</description>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v1.7)</description>
 		<year>2024</year>
 		<manufacturer>hack (Yoni Arousement)</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v1.6 (2024)(Yoni Arousement).bin" size="5242880" crc="f8aab4d4"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v1.7 (2024)(Yoni Arousement).bin" size="5242880" crc="6ed2530f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10620,6 +10620,14 @@
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Landstalker - Le Tresor du Roi Nole (Euro, French)(1993)(Sega).bin" size="2097152" crc="5de7d917"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="landstlkrmx" cloneof="landstlk" romof="landstlk" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Landstalker - The Emperor's Treasure Remix (Hack, v1.0)</description>
+		<year>2024</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Landstalker - The Emperor's Treasure Remix v1.0 (2024)(paleskies).bin" size="2097152" crc="34083de3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
