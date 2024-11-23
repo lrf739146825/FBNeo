@@ -18412,7 +18412,7 @@
 	</game>
 	<game name="rotdbr" cloneof="rotd" romof="rotd" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Rage of the Dragons (Portuguese edition, Hack)</description>
+		<description>Rage of the Dragons (Portuguese edition v2.0, Hack)</description>
 		<year>2005</year>
 		<manufacturer>hack (NeoGeo BR Team)</manufacturer>
 		<rom name="264-p1br.p1" size="8388608" crc="8a973ecf"/>
@@ -31847,7 +31847,7 @@
 	</game>
 	<game name="kof2k2br" cloneof="kof2002" romof="kof2002" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>The King of Fighters 2002 (Portuguese Edition, Hack)</description>
+		<description>The King of Fighters 2002 (Portuguese edition v2.0, Hack)</description>
 		<year>2005</year>
 		<manufacturer>hack (NeoGeo BR Team)</manufacturer>
 		<rom name="265-p1br.p1" size="1048576" crc="95986d7a"/>
@@ -32979,7 +32979,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="kof2k3br" cloneof="kof2003" romof="kof2003" sourcefile="neogeo/d_neogeo.cpp">
-		<description>The King of Fighters 2003 (Portuguese Edition, Hack)</description>
+		<description>The King of Fighters 2003 (Portuguese edition v1.0, Hack)</description>
 		<year>2005</year>
 		<manufacturer>hack (NeoGeo BR Team)</manufacturer>
 		<rom name="271-p1br.p1" size="8388608" crc="a131786e"/>
