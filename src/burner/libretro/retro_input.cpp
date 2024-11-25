@@ -2265,6 +2265,28 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 		}
 	}
 
+	// Handle Snes
+	if ((nHardwareCode & HARDWARE_PUBLIC_MASK) == HARDWARE_SNES) {
+		if (strcmp("Button Y", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_Y, description);
+		}
+		if (strcmp("Button X", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_X, description);
+		}
+		if (strcmp("Button B", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_B, description);
+		}
+		if (strcmp("Button A", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_A, description);
+		}
+		if (strcmp("Button L", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_L, description);
+		}
+		if (strcmp("Button R", description) == 0) {
+			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_R, description);
+		}
+	}
+
 	// Handle Twin stick games
 	if ((strcmp("Up 2", description) == 0) ||
 		(strcmp("Up (right)", description) == 0) ||
