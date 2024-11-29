@@ -7455,7 +7455,7 @@
 		<description>Getsu Fuuma Den (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Getsu Fuuma Den (Japan).nes" size="262160" crc="71ff1e76"/>
+		<rom name="Getsu Fuuma Den (Japan)(1987)(Konami).nes" size="262160" crc="71ff1e76"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7463,7 +7463,7 @@
 		<description>Ghost Lion, Legend of the (USA)</description>
 		<year>1992</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Ghost Lion (USA).nes" size="262160" crc="5d83c1e5"/>
+		<rom name="Ghost Lion (USA)(1992)(Kemco).nes" size="262160" crc="5d83c1e5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7471,7 +7471,7 @@
 		<description>Ghostbusters (USA)</description>
 		<year>1988</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Ghostbusters (USA).nes" size="65552" crc="b30a3e39"/>
+		<rom name="Ghostbusters (USA)(1988)(Activision).nes" size="65552" crc="b30a3e39"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7479,7 +7479,7 @@
 		<description>Ghostbusters II (USA)</description>
 		<year>1990</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Ghostbusters II (USA).nes" size="262160" crc="8d4e6fa3"/>
+		<rom name="Ghostbusters II (USA)(1989)(Activision).nes" size="262160" crc="8d4e6fa3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8586,6 +8586,15 @@
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Hitler no Fukkatsu - Top Secret (Japan)(1988)(Capcom).nes" size="262160" crc="4749e48f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hoboalbo" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Hobo Albo's Big Adventure (HB)</description>
+		<year>2024</year>
+		<manufacturer>RetroBro85</manufacturer>
+		<rom name="Hobo Albo's Big Adventure (2024)(RetroBro85).nes" size="524304" crc="d276c4db"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10549,7 +10558,7 @@
 		<description>Layla (Hack, English)</description>
 		<year>2017</year>
 		<manufacturer>Supper</manufacturer>
-		<rom name="Layla (T-Eng).nes" size="262160" crc="3f4f9465"/>
+		<rom name="Layla T-Eng (2017)(Supper).nes" size="262160" crc="3f4f9465"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10557,7 +10566,7 @@
 		<description>Layla (Japan)</description>
 		<year>1986</year>
 		<manufacturer>dB-SOFT</manufacturer>
-		<rom name="Layla (Japan).nes" size="131088" crc="d9381fe7"/>
+		<rom name="Layla (Japan)(1986)(dB-SOFT).nes" size="131088" crc="d9381fe7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10565,7 +10574,7 @@
 		<description>Lee Trevino's Fighting Golf (USA)</description>
 		<year>1988</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="Lee Trevino's Fighting Golf (USA).nes" size="262160" crc="e55284da"/>
+		<rom name="Lee Trevino's Fighting Golf (USA)(1988)(SNK).nes" size="262160" crc="e55284da"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10582,24 +10591,24 @@
 		<description>Legacy of the Wizard (USA)</description>
 		<year>1989</year>
 		<manufacturer>Broderbund</manufacturer>
-		<rom name="Legacy of the Wizard (USA).nes" size="196624" crc="b534eb48"/>
+		<rom name="Legacy of the Wizard (USA)(1989)(Broderbund).nes" size="196624" crc="b534eb48"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="legenbal" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Legend of Balubalouk (Hack, English)</description>
+		<description>Legend of Balubalouk, The (Hack, English v1.1)</description>
 		<year>2017</year>
 		<manufacturer>Psyklax</manufacturer>
-		<rom name="Legend of Balubalouk (T-Eng).nes" size="131088" crc="661c0a1b"/>
+		<rom name="Legend of Balubalouk, The T-Eng v1.1 (2017)(Psyklax).nes" size="131088" crc="661c0a1b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="legenbalj" cloneof="legenbal" romof="legenbal" sourcefile="nes/d_nes.cpp">
-		<description>Legend of Balubalouk (Japan)</description>
+		<description>Legend of Balubalouk, The (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Legend of Balubalouk (Japan).nes" size="131088" crc="04fc4764"/>
+		<rom name="Legend of Balubalouk, The (Japan)(1986)(Vic Tokai).nes" size="131088" crc="04fc4764"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10608,7 +10617,7 @@
 		<description>Legend of Fuma, The (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Nebulous Translations</manufacturer>
-		<rom name="The Legend of Fuma (T-Eng).nes" size="393232" crc="dad72cc9"/>
+		<rom name="The Legend of Fuma T-Eng (2018)(Nebulous Translations).nes" size="393232" crc="dad72cc9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10621,11 +10630,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="legendsm" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Super Mario, The - Save Mushroom Kingdom (GlobalHack)</description>
+		<comment>Hack, Homebrew</comment>
+		<description>Legend of Super Mario, The - Save Mushroom Kingdom (GlobalHack, v1.2)</description>
 		<year>2023</year>
 		<manufacturer>NesDraug</manufacturer>
-		<rom name="Legend of Super Mario, The - Save Mushroom Kingdom (2023)(NesDraug).nes" size="262160" crc="b1d13af1"/>
+		<rom name="Legend of Super Mario, The - Save Mushroom Kingdom v1.2 (2023)(NesDraug).nes" size="262160" crc="b1d13af1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10701,10 +10710,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="legenzel" sourcefile="nes/d_nes.cpp">
-		<description>Legend of Zelda, The (USA) (Rev A)</description>
+		<description>Legend of Zelda, The (USA, Rev A)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Legend of Zelda, The (USA) (Rev A).nes" size="131088" crc="02bb0c56"/>
+		<rom name="Legend of Zelda, The (USA, Rev A)(1987)(Nintendo).nes" size="131088" crc="02bb0c56"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10730,7 +10739,7 @@
 		<description>Legendary Wings (USA)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Legendary Wings (USA).nes" size="131088" crc="689de607"/>
+		<rom name="Legendary Wings (USA)(1988)(Capcom).nes" size="131088" crc="689de607"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
