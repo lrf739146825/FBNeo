@@ -500,6 +500,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="albertods2j" sourcefile="snes/d_snes.cpp">
+		<description>Albert Odyssey 2: Jashin no Taidou (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Albert Odyssey 2 - Jashin no Taidou (J)(1994)(Sunsoft).sfc" size="2097152" crc="1b6add7b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alcahestte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Alcahest (Hack, English)</description>
@@ -730,6 +738,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="arcadeatarih1e" sourcefile="snes/d_snes.cpp">
+		<description>Arcade's Greatest Hits - The Atari Collection (Euro)</description>
+		<year>1997</year>
+		<manufacturer>Midway</manufacturer>
+		<rom name="Arcade's Greatest Hits - The Atari Collection (E)(1997)(Midway).sfc" size="524288" crc="d562233e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="arcana" sourcefile="snes/d_snes.cpp">
 		<description>Arcana (USA)</description>
 		<year>1992</year>
@@ -953,6 +969,15 @@
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Axelay (U)(1992)(Konami).sfc" size="1048576" crc="f812b533"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="axelayff" cloneof="axelay" romof="axelay" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Axelay - FastROM Fix (Hack)</description>
+		<year>2021</year>
+		<manufacturer>Vitor Vilela</manufacturer>
+		<rom name="Axelay - FastROM Fix (2021)(Vitor Vilela).sfc" size="1048576" crc="4bb73534"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1256,6 +1281,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="battletoadseasy" cloneof="battletoads" romof="battletoads" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Battletoads in Battlemaniacs - Easier (Hack)</description>
+		<year>U</year>
+		<manufacturer>_Q_</manufacturer>
+		<rom name="Battletoads in Battlemaniacs - Easier (U)(2024)(_Q_).sfc" size="1048576" crc="cc1199dc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bazooblitz" sourcefile="snes/d_snes.cpp">
 		<comment>'Super Scope' exclusive game</comment>
 		<description>Bazooka Blitzkrieg (USA)</description>
@@ -1509,6 +1543,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bsdraculae" sourcefile="snes/d_snes.cpp">
+		<description>Bram Stoker's Dracula (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Sony Imagesoft</manufacturer>
+		<rom name="Bram Stoker's Dracula (E)(1993)(Sony Imagesoft).sfc" size="1048576" crc="9ee3835d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="brandishj" cloneof="brandish" romof="brandish" sourcefile="snes/d_snes.cpp">
 		<description>Brandish (Japan)</description>
 		<year>1994</year>
@@ -1522,6 +1564,23 @@
 		<year>1995</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Brandish (U)(1995)(Koei).sfc" size="1572864" crc="74f70a0b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="brandish2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Brandish 2: The Planet Buster (Hack, English)</description>
+		<year>2009</year>
+		<manufacturer>Synchronicity</manufacturer>
+		<rom name="Brandish 2 - The Planet Buster T-Eng (2009)(Synchronicity).sfc" size="3145728" crc="9db396ec"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="brandish2j" cloneof="brandish2te" romof="brandish2te" sourcefile="snes/d_snes.cpp">
+		<description>Brandish 2: The Planet Buster (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Koei</manufacturer>
+		<rom name="Brandish 2 - The Planet Buster (J)(1995)(Koei).sfc" size="3145728" crc="bb89e67e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1804,7 +1863,7 @@
 		<description>Captain Tsubasa IV - Pro no Rival Tachi (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Captain Tsubasa IV - Pro no Rival Tachi (Japan)(1993)(Tecmo).sfc" size="1572864" crc="3e04b246"/>
+		<rom name="Captain Tsubasa IV - Pro no Rival Tachi (J)(1993)(Tecmo).sfc" size="1572864" crc="3e04b246"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1812,7 +1871,7 @@
 		<description>Captain Tsubasa V - Hasha no Shougou Campione (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Captain Tsubasa V - Hasha no Shougou Canpione (Japan)(1994)(Tecmo).sfc" size="2097152" crc="e2b26d99"/>
+		<rom name="Captain Tsubasa V - Hasha no Shougou Canpione (J)(1994)(Tecmo).sfc" size="2097152" crc="e2b26d99"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4270,6 +4329,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fmgunhazardte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Front Mission - Gun Hazard (Hack, English v1.01)</description>
+		<year>2004</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Front Mission - Gun Hazard T-Eng (2004)(Aeon Genesis).sfc" size="3145728" crc="e4628064"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fmgunhazardj" cloneof="fmgunhazardte" romof="fmgunhazardte" sourcefile="snes/d_snes.cpp">
+		<description>Front Mission - Gun Hazard (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Front Mission - Gun Hazard (J)(1996)(Squaresoft).sfc" size="3145728" crc="fd3fdbac"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fruelufia" cloneof="lufia2" romof="lufia2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Frue Lufia (Hack, v7.0)</description>
@@ -4363,16 +4439,8 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ganbgoemon" cloneof="legendmninja" romof="legendmninja" sourcefile="snes/d_snes.cpp">
-		<description>Ganbare Goemon - Yuki hime Kyuushuutsu emaki (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Ganbare Goemon - Yuki hime Kyuushuutsu emaki (J)(1992)(Konami).sfc" size="1048576" crc="6cd62399"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="ganbgoemon2" cloneof="ganbgoemon2te" romof="ganbgoemon2te" sourcefile="snes/d_snes.cpp">
-		<description>Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan)</description>
+		<description>Ganbare Goemon 2: Kiteretsu Shougun Magginesu (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (J)(1993(Konami).sfc" size="2097152" crc="ca4c0219"/>
@@ -4380,10 +4448,35 @@
 		<driver status="good"/>
 	</game>
 	<game name="ganbgoemon3" cloneof="ganbgoemon3te" romof="ganbgoemon3te" sourcefile="snes/d_snes.cpp">
-		<description>Ganbare Goemon 3 - Shishi Juuroku Hyoue no Karakuri Manjigatame (Japan)</description>
+		<description>Ganbare Goemon 3: Shishi Juuroku Hyoue no Karakuri Manjigatame (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Ganbare Goemon 3 - Shishi Juuroku Hyoue no Karakuri Manjigatame (J)(1994)(Konami).sfc" size="2097152" crc="7e5929e8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbgoemon4tp" cloneof="ganbgoemon4te" romof="ganbgoemon4te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Included as hidden game in 'Ganbare Goemon 4'</comment>
+		<description>Ganbare Goemon 4 - Time Pilot (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Svambo, Nokia3310</manufacturer>
+		<rom name="Go for it! Goemon 4 - Time Pilot (2022)(Svambo, Nokia3310).sfc" size="2097152" crc="eef6d15a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbgoemon4j" cloneof="ganbgoemon4te" romof="ganbgoemon4te" sourcefile="snes/d_snes.cpp">
+		<description>Ganbare Goemon 4: Kirakira Douchuu (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Ganbare Goemon - Kirakira Douchuu (J)(1995)(Konami).sfc" size="3145728" crc="bb9d8e56"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbgoemon" cloneof="legendmninja" romof="legendmninja" sourcefile="snes/d_snes.cpp">
+		<description>Ganbare Goemon: Yuki hime Kyuushuutsu emaki (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Ganbare Goemon - Yuki hime Kyuushuutsu emaki (J)(1992)(Konami).sfc" size="1048576" crc="6cd62399"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4544,7 +4637,7 @@
 	</game>
 	<game name="ganbgoemon2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Go for it! Goemon 2 - The Strange General McGuinness (Hack, English v3.0)</description>
+		<description>Go for it! Goemon 2: The Strange General McGuinness (Hack, English v3.0)</description>
 		<year>2020</year>
 		<manufacturer>DDSTranslation</manufacturer>
 		<rom name="Go for it! Goemon 2 - The Strange General McGuinness T-Eng v3.0 (2020)(DDSTranslation).sfc" size="4194304" crc="87aa6548"/>
@@ -4553,10 +4646,19 @@
 	</game>
 	<game name="ganbgoemon3te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Go for it! Goemon 3 - The Mecha Leg Hold of Jurokube Shishi (Hack, English v4.0)</description>
+		<description>Go for it! Goemon 3: The Mecha Leg Hold of Jurokube Shishi (Hack, English v4.0)</description>
 		<year>2020</year>
 		<manufacturer>DDSTranslation</manufacturer>
 		<rom name="Go for it! Goemon 3 - The Mecha Leg Hold of Jurokube Shishi T-Eng v4.0 (2020)(DDSTranslation).sfc" size="4194304" crc="74bbe6a0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbgoemon4te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Go for it! Goemon 4: The Twinkling Journey (Hack, English v3.0)</description>
+		<year>2020</year>
+		<manufacturer>DDSTranslation</manufacturer>
+		<rom name="Go for it! Goemon - The Twinkling Journey T-Eng v3.0 (2020)(DDSTranslation).sfc" size="4194304" crc="a3334a66"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4930,6 +5032,15 @@
 		<rom name="Hayazashi Nidan Morita Shougi (J)(1993)(Seta).sfc" size="524288" crc="81e822ad"/>
 		<rom name="st011.bin" merge="st011.bin" size="69632" crc="34d2952c"/>
 		<video type="raster" orientation="horizontal" width="512" height="462" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="heartmemo" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Heartthrob Memorial: Under the Tree of Legends (Hack, English v3)</description>
+		<year>2022</year>
+		<manufacturer>Translated.Games</manufacturer>
+		<rom name="Heartthrob Memorial - Under the Tree of Legends T-Eng v3 (2022)(Translated.Games).sfc" size="8388608" crc="09392b73"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hebepopoonj" cloneof="hebepopoone" romof="hebepopoone" sourcefile="snes/d_snes.cpp">
@@ -5429,6 +5540,14 @@
 		<year>1995</year>
 		<manufacturer>Ocean - Probe</manufacturer>
 		<rom name="Jelly Boy (E)(1995)(Ocean).sfc" size="1048576" crc="f8c72a24"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jellyboy2j" sourcefile="snes/d_snes.cpp">
+		<description>Jelly Boy 2 (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Epic/Sony Records</manufacturer>
+		<rom name="Jelly Boy 2 (J)(1994)(Epic-Sony Records).sfc" size="1572864" crc="f3a6c574"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6133,6 +6252,23 @@
 		<year>1993</year>
 		<manufacturer>Titus</manufacturer>
 		<rom name="Lamborghini American Challenge (U)(1993)(Titus).sfc" size="524288" crc="d2fb701b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="laplacej" cloneof="laplacete" romof="laplacete" sourcefile="snes/d_snes.cpp">
+		<description>Laplace no Ma (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Vic Tokai</manufacturer>
+		<rom name="Laplace no Ma (J)(1995)(Vic Tokai).sfc" size="2097152" crc="49c4cc15"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="laplacete" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Laplace's Demon (Hack, English v2.00)</description>
+		<year>2018</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Laplace's Demon T-Eng v2.00 (2018)(Aeon Genesis).sfc" size="2097152" crc="6105876c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6931,6 +7067,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megamanbass" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man &amp; Bass (Hack, English v1.1)</description>
+		<year>2002-2023</year>
+		<manufacturer>Aeon Genesis, Blade133bo</manufacturer>
+		<rom name="Mega Man &amp; Bass T-Eng v1.1 (2002-2023)(Aeon Genesis, Blade133bo).sfc" size="4194304" crc="bb319f69"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megaman7" sourcefile="snes/d_snes.cpp">
 		<description>Mega Man 7 (USA)</description>
 		<year>1995</year>
@@ -6979,6 +7124,15 @@
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Megaman's Soccer (U)(1994)(Capcom).sfc" size="1310720" crc="fa9ee2ce"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamansocrest" cloneof="megamansoccer" romof="megamansoccer" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man's Soccer Restoration (Hack, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>_Q_</manufacturer>
+		<rom name="Mega Man's Soccer Restoration v1.1 (U)(2024)(_Q_).sfc" size="1310720" crc="a45f64c0"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7865,6 +8019,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="onegaidlc" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>Onegai My Melody - Detour Land Conquest (GlobalHack)</description>
+		<year>2024</year>
+		<manufacturer>Big Brawler</manufacturer>
+		<rom name="Onegai My Melody - Detour Land Conquest (2024)(Big Brawler).sfc" size="3145728" crc="ca03c75c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="onegaimma" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>Onegai My Melody - My Melody Adventure (GlobalHack, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>Big Brawler</manufacturer>
+		<rom name="Onegai My Melody - My Melody Adventure v1.1 (2024)(Big Brawler).sfc" size="4194304" crc="6c66776a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="opeuro3945" sourcefile="snes/d_snes.cpp">
 		<description>Operation Europe - Path to Victory 1939-45 (USA)</description>
 		<year>1994</year>
@@ -8095,10 +8267,10 @@
 	</game>
 	<game name="parodiusjff" cloneof="parodiuse" romof="parodiuse" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Parodius Da!: Shinwa kara Owarai e - Fastrom Fix (Japan, Hack)</description>
+		<description>Parodius Da!: Shinwa kara Owarai e - FastROM Fix (Japan, Hack)</description>
 		<year>2021</year>
 		<manufacturer>MaxwelOlinda</manufacturer>
-		<rom name="Parodius Da! - Shinwa kara Owarai e - Fastrom Fix (J)(2021)(MaxwelOlinda).sfc" size="1048576" crc="9554dd02"/>
+		<rom name="Parodius Da! - Shinwa kara Owarai e - FastROM Fix (J)(2021)(MaxwelOlinda).sfc" size="1048576" crc="9554dd02"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8112,10 +8284,10 @@
 	</game>
 	<game name="parodiuseff" cloneof="parodiuse" romof="parodiuse" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Parodius: Non-Sense Fantasy - Fastrom Fix (Euro, Hack, v1.04)</description>
+		<description>Parodius: Non-Sense Fantasy - FastROM Fix (Euro, Hack, v1.04)</description>
 		<year>2023</year>
 		<manufacturer>kandowontu</manufacturer>
-		<rom name="Parodius - Non-Sense Fantasy - Fastrom Fix v1.04 (E)(2023)(kandowontu).sfc" size="1048576" crc="7fa02b26"/>
+		<rom name="Parodius - Non-Sense Fantasy - FastROM Fix v1.04 (E)(2023)(kandowontu).sfc" size="1048576" crc="7fa02b26"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8320,6 +8492,15 @@
 		<year>1991</year>
 		<manufacturer>THQ Inc.</manufacturer>
 		<rom name="Pit-Fighter (U)(1991)(THQ).sfc" size="524288" crc="9fab69fc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pitfallvcs" cloneof="pitfallmaya" romof="pitfallmaya" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Included as hidden game in 'Pitfall - The Mayan Adventure'</comment>
+		<description>Pitfall - Atari VCS 2600 (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Nokia3310</manufacturer>
+		<rom name="Pitfall - Atari VCS 2600 (2022)(Nokia3310).sfc" size="2097152" crc="12c81eda"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8734,6 +8915,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="puttysquade" sourcefile="snes/d_snes.cpp">
+		<description>Putty Squad (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Putty Squad (E)(1994)(Ocean).sfc" size="1572864" crc="c061f0a8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="puzzlebubble" cloneof="bustamove" romof="bustamove" sourcefile="snes/d_snes.cpp">
 		<description>Puzzle Bobble (Japan)</description>
 		<year>1995</year>
@@ -8760,10 +8949,10 @@
 	</game>
 	<game name="quinty" sourcefile="snes/d_snes.cpp">
 		<comment>Prototype</comment>
-		<description>Quinty (Japan, Prototype)</description>
+		<description>Quinty (Prototype)</description>
 		<year>1999</year>
 		<manufacturer>Game Freak</manufacturer>
-		<rom name="Quinty (1999)(Game Freak).sfc" size="2097152" crc="1225927b"/>
+		<rom name="Quinty (Proto)(1999)(Game Freak).sfc" size="2097152" crc="1225927b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9119,7 +9308,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rockmanforte" sourcefile="snes/d_snes.cpp">
+	<game name="rockmanforte" cloneof="megamanbass" romof="megamanbass" sourcefile="snes/d_snes.cpp">
 		<description>Rockman &amp; Forte (Japan)</description>
 		<year>1998</year>
 		<manufacturer>Capcom</manufacturer>
@@ -9169,6 +9358,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rockmansocrest" cloneof="megamansoccer" romof="megamansoccer" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Rockman's Soccer Restoration (Hack, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>_Q_</manufacturer>
+		<rom name="Rockman's Soccer Restoration v1.1 (J)(2024)(_Q_).sfc" size="1310720" crc="3683897b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rockomlife" sourcefile="snes/d_snes.cpp">
 		<description>Rocko's Modern Life - Spunky's Dangerous Day (USA)</description>
 		<year>1994</year>
@@ -9208,6 +9406,14 @@
 		<year>1992</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Royal Conquest (J)(1992)(Jaleco).sfc" size="524288" crc="f60e933e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rudraj" cloneof="rudrate" romof="rudrate" sourcefile="snes/d_snes.cpp">
+		<description>Rudra no Hihou (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Rudra no Hihou (J)(1996)(Squaresoft).sfc" size="4194304" crc="5d8cb7ac"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9451,6 +9657,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sdprettyj" sourcefile="snes/d_snes.cpp">
+		<description>Seifuku Densetsu - Pretty Fighter (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Imagineer</manufacturer>
+		<rom name="Seifuku Densetsu - Pretty Fighter (J)(1994)(Imagineer).sfc" size="2097152" crc="a638bef1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="seikdens2" cloneof="secretmana" romof="secretmana" sourcefile="snes/d_snes.cpp">
 		<description>Seiken Densetsu 2 (Japan)</description>
 		<year>1993</year>
@@ -9472,7 +9686,7 @@
 		<description>Seiken Densetsu 3 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Squaresoft</manufacturer>
-		<rom name="Seiken Densetsu 3 (Japan)(1995)(Squaresoft).sfc" size="4194304" crc="863ed0b8"/>
+		<rom name="Seiken Densetsu 3 (J)(1995)(Squaresoft).sfc" size="4194304" crc="863ed0b8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9506,6 +9720,15 @@
 		<year>1992</year>
 		<manufacturer>Toho Co.</manufacturer>
 		<rom name="Serizawa Nobuo no Birdie Try (J)(1992)(Toho Co.).sfc" size="1048576" crc="987a96d0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowp" sourcefile="snes/d_snes.cpp">
+		<comment>Prototype, NB: there are glitches in some sprites</comment>
+		<description>Shadow, The (Prototype)</description>
+		<year>1994</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Shadow, The (Proto)(1994)(Ocean).sfc" size="2097152" crc="36894cc3"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10360,10 +10583,10 @@
 	</game>
 	<game name="steeltalonsff" cloneof="steeltalons" romof="steeltalons" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Steel Talons - Fastrom fix (Hack)</description>
+		<description>Steel Talons - FastROM Fix (Hack)</description>
 		<year>2023</year>
 		<manufacturer>ANONYMOUS</manufacturer>
-		<rom name="Steel Talons - Fastrom fix (2023)(ANONYMOUS).sfc" size="524288" crc="dc40be22"/>
+		<rom name="Steel Talons - FastROM Fix (2023)(ANONYMOUS).sfc" size="524288" crc="dc40be22"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10970,7 +11193,7 @@
 		<description>Super Conflict (USA)</description>
 		<year>1993</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Super Conflict (USA)(1993)(Vic Tokai).sfc" size="1048576" crc="f254d5cf"/>
+		<rom name="Super Conflict (U)(1993)(Vic Tokai).sfc" size="1048576" crc="f254d5cf"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12048,7 +12271,7 @@
 		<description>Super Variable Geo (Japan)</description>
 		<year>1995</year>
 		<manufacturer>TGL</manufacturer>
-		<rom name="Super Variable Geo (Japan)(1995)(TGL).sfc" size="3145728" crc="de3262e7"/>
+		<rom name="Super Variable Geo (J)(1995)(TGL).sfc" size="3145728" crc="de3262e7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12572,6 +12795,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tokimemo" cloneof="heartmemo" romof="heartmemo" sourcefile="snes/d_snes.cpp">
+		<description>Tokimeki Memorial: Densetsu no Ki no Shita de (Japan, Rev 1)</description>
+		<year>1996</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Tokimeki Memorial - Densetsu no Ki no Shita de (J, Rev 1)(1996)(Konami).sfc" size="4194304" crc="ae9f3602"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tomjerry" sourcefile="snes/d_snes.cpp">
 		<description>Tom &amp; Jerry (USA)</description>
 		<year>1992</year>
@@ -12653,6 +12884,15 @@
 		<year>1996</year>
 		<manufacturer>Squaresoft</manufacturer>
 		<rom name="Treasure Hunter G (J)(1996)(Squaresoft).sfc" size="3145728" crc="3cceed49"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rudrate" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Treasure of the Rudras (Hack, English v2.10)</description>
+		<year>2018</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Treasure of the Rudras T-Eng v2.10 (2018)(Aeon Genesis).sfc" size="4194304" crc="2d7bd150"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13258,10 +13498,10 @@
 	</game>
 	<game name="wolfchildff" cloneof="wolfchild" romof="wolfchild" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Wolfchild - Fastrom Fix (Hack)</description>
+		<description>Wolfchild - FastROM Fix (Hack)</description>
 		<year>2024</year>
 		<manufacturer>kandowontu</manufacturer>
-		<rom name="Wolfchild - Fastrom Fix (2024)(kandowontu).sfc" size="1048576" crc="fe9deb64"/>
+		<rom name="Wolfchild - FastROM Fix (2024)(kandowontu).sfc" size="1048576" crc="fe9deb64"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13618,8 +13858,8 @@
 	<game name="yuuyuuhak" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho (Japan)</description>
 		<year>1993</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="Yuu Yuu Hakusho (1993)(Namcot).sfc" size="2097152" crc="ec96d517"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Yuu Yuu Hakusho (J)(1993)(Namco).sfc" size="2097152" crc="ec96d517"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13642,8 +13882,8 @@
 	<game name="yuuyuufin" sourcefile="snes/d_snes.cpp">
 		<description>Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)</description>
 		<year>1995</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (1995)(Namcot).sfc" size="3145728" crc="5617a42e"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (J)(1995)(Namco).sfc" size="3145728" crc="5617a42e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

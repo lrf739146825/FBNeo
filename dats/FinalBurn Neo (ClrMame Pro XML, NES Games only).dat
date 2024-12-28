@@ -1707,7 +1707,7 @@
 		<description>Batman - Return of the Joker Black Edition (Hack)</description>
 		<year>2024</year>
 		<manufacturer>DarthVaderX</manufacturer>
-		<rom name="Batman - Return of the Joker Black Edition (2024)(DarthVaderX).nes" size="393232" crc="47b2e497"/>
+		<rom name="Batman - Return of the Joker Black Edition (2024)(DarthVaderX).nes" size="393232" crc="be413a29"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1741,7 +1741,7 @@
 		<description>Batman Black Edition (Hack)</description>
 		<year>2024</year>
 		<manufacturer>DarthVaderX</manufacturer>
-		<rom name="Batman Black Edition (2024)(DarthVaderX).nes" size="262160" crc="8210a15c"/>
+		<rom name="Batman Black Edition (2024)(DarthVaderX).nes" size="262160" crc="05348f47"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1755,10 +1755,10 @@
 	</game>
 	<game name="batmanreturnsbe" cloneof="batmanreturns" romof="batmanreturns" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Batman Returns Black Edition (Hack, v1.0b)</description>
+		<description>Batman Returns Black Edition (Hack)</description>
 		<year>2024</year>
-		<manufacturer>darthvaderx</manufacturer>
-		<rom name="Batman Returns Black Edition v1.0b (2024)(darthvaderx).nes" size="393232" crc="5e4e4fb3"/>
+		<manufacturer>DarthVaderX</manufacturer>
+		<rom name="Batman Returns Black Edition (2024)(DarthVaderX).nes" size="393232" crc="0a54dec7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4475,7 +4475,7 @@
 		<description>Destiny of an Emperor (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Destiny of an Emperor (USA).nes" size="262160" crc="c0f73d85"/>
+		<rom name="Destiny of an Emperor (USA)(1990)(Capcom).nes" size="262160" crc="c0f73d85"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4483,7 +4483,7 @@
 		<description>Destroyer (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Mega Soft</manufacturer>
-		<rom name="Destroyer (1992)(Mega Soft).nes" size="65552" crc="d9362123"/>
+		<rom name="Destroyer (Unl)(1992)(Mega Soft).nes" size="65552" crc="d9362123"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4491,7 +4491,7 @@
 		<description>Destructor, El (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Gluk Video</manufacturer>
-		<rom name="Destructor, El (Spain) (Gluk Video) (Unl).nes" size="65552" crc="eb33ea3b"/>
+		<rom name="Destructor, El (Unl)(Spain)(1992)(Gluk Video).nes" size="65552" crc="eb33ea3b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4518,7 +4518,7 @@
 		<description>Devil Man (Hack, English)</description>
 		<year>2009</year>
 		<manufacturer>snark</manufacturer>
-		<rom name="Devil Man (T-eng).nes" size="262160" crc="0be5f3e3"/>
+		<rom name="Devil Man T-Eng (2009)(snark).nes" size="262160" crc="0be5f3e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4526,24 +4526,24 @@
 		<description>Devil Man (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Devil Man (Japan).nes" size="262160" crc="c4c1ab20"/>
+		<rom name="Devil Man (Japan)(1989)(Namco).nes" size="262160" crc="c4c1ab20"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="devilworld" sourcefile="nes/d_nes.cpp">
-		<description>Devil World (Japan) (Rev A)</description>
+		<description>Devil World (Japan, Rev A)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Devil World (Japan) (Rev A).nes" size="24592" crc="9fc60476"/>
+		<rom name="Devil World (Japan, Rev A)(1984)(Nintendo).nes" size="24592" crc="9fc60476"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="diabloii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Diablo II (Hack)</description>
+		<description>Diablo II (Unl)</description>
 		<year>19??</year>
 		<manufacturer>Shenzan Nanjing</manufacturer>
-		<rom name="Diablo II (Hack).nes" size="2097168" crc="b870d5cd"/>
+		<rom name="Diablo II (Unl)(19xx)(Shenzan Nanjing).nes" size="2097168" crc="b870d5cd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4568,7 +4568,7 @@
 		<description>Die Hard (USA)</description>
 		<year>1992</year>
 		<manufacturer>Activision</manufacturer>
-		<rom name="Die Hard (USA).nes" size="262160" crc="65eec6e7"/>
+		<rom name="Die Hard (USA)(1992)(Activision).nes" size="262160" crc="65eec6e7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4576,7 +4576,7 @@
 		<description>Dig Dug (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Dig Dug (Japan).nes" size="24592" crc="3ae8289a"/>
+		<rom name="Dig Dug (Japan)(1985)(Namco).nes" size="24592" crc="3ae8289a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4584,7 +4584,7 @@
 		<description>Dig Dug II (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Dig Dug II (Japan).nes" size="40976" crc="cc904e37"/>
+		<rom name="Dig Dug II (Japan)(1986)(Namco).nes" size="40976" crc="cc904e37"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4592,7 +4592,7 @@
 		<description>Dig Dug II - Trouble in Paradise (USA)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dig Dug II - Trouble in Paradise (USA).nes" size="40976" crc="3cc270fb"/>
+		<rom name="Dig Dug II - Trouble in Paradise (USA)(1989)(Bandai).nes" size="40976" crc="3cc270fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4600,7 +4600,7 @@
 		<description>Digger - The Legend of the Lost City (USA)</description>
 		<year>1990</year>
 		<manufacturer>Milton Bradley</manufacturer>
-		<rom name="Digger - The Legend of the Lost City (USA).nes" size="131088" crc="ec41647e"/>
+		<rom name="Digger - The Legend of the Lost City (USA)(1990)(Milton Bradley).nes" size="131088" crc="ec41647e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4609,15 +4609,15 @@
 		<description>Digital Devil Monogatari - Megami Tensei (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Digital Devil Monogatari - Megami Tensei (T-eng).nes" size="393232" crc="ac5acc89"/>
+		<rom name="Digital Devil Monogatari - Megami Tensei T-Eng (2018)(Stardust Crusaders).nes" size="393232" crc="ac5acc89"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="digitdevmonmegtej" cloneof="digitdevmonmegte" romof="digitdevmonmegte" sourcefile="nes/d_nes.cpp">
 		<description>Digital Devil Monogatari - Megami Tensei (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="Digital Devil Monogatari - Megami Tensei (Japan).nes" size="262160" crc="f906acab"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Digital Devil Monogatari - Megami Tensei (Japan)(1987)(Namco).nes" size="262160" crc="f906acab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4631,10 +4631,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="digitdevmonmegteiij" cloneof="digitdevmonmegteii" romof="digitdevmonmegteii" sourcefile="nes/d_nes.cpp">
-		<description>Digital Devil Monogatari - Megami Tensei II (Japan) (Rev A)</description>
+		<description>Digital Devil Monogatari - Megami Tensei II (Japan, Rev A)</description>
 		<year>1990</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Digital Devil Story - Megami Tensei II (J)(Rev A)(1990)(Namcot).nes" size="524304" crc="cbb8c4cc"/>
+		<rom name="Digital Devil Story - Megami Tensei II (Japan, Rev A)(1990)(Namcot).nes" size="524304" crc="cbb8c4cc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8135,7 +8135,7 @@
 		<description>GunTneR (HB)</description>
 		<year>2022</year>
 		<manufacturer>langel</manufacturer>
-		<rom name="GunTneR (2022)(langel).nes" size="24592" crc="170e5f53"/>
+		<rom name="GunTneR (2022)(langel).nes" size="24592" crc="abdac206"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12086,7 +12086,7 @@
 		<description>Metal Mech - Man &amp; Machine (USA)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Metal Mech - Man &amp; Machine (USA).nes" size="262160" crc="6884a729"/>
+		<rom name="Metal Mech - Man &amp; Machine (USA)(1991)(Jaleco).nes" size="262160" crc="6884a729"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12095,7 +12095,7 @@
 		<description>Metal Slader Glory (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Metal Slader Glory (T-Eng).nes" size="1572880" crc="13981241"/>
+		<rom name="Metal Slader Glory T-Eng (2018)(Stardust Crusaders).nes" size="1572880" crc="13981241"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12103,7 +12103,7 @@
 		<description>Metal Slader Glory (Japan)</description>
 		<year>1991</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Metal Slader Glory (Japan).nes" size="1048592" crc="c032f38f"/>
+		<rom name="Metal Slader Glory (Japan)(1991)(HAL Lab.).nes" size="1048592" crc="c032f38f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12111,7 +12111,7 @@
 		<description>Metal Storm (USA)</description>
 		<year>1991</year>
 		<manufacturer>Irem</manufacturer>
-		<rom name="Metal Storm (USA).nes" size="393232" crc="98cefa51"/>
+		<rom name="Metal Storm (USA)(1991)(Irem).nes" size="393232" crc="98cefa51"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12195,7 +12195,7 @@
 		<description>Mickey Mania 7 (Unl)</description>
 		<year>1996</year>
 		<manufacturer>J.Y. Company</manufacturer>
-		<rom name="Mickey Mania 7 (Unl).nes" size="524304" crc="a1460ad3"/>
+		<rom name="Mickey Mania 7 (Unl)(1996)(J.Y. Company).nes" size="524304" crc="a1460ad3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12204,7 +12204,7 @@
 		<description>Mickey Mouse III - Yume Fuusen (Hack, English)</description>
 		<year>2013</year>
 		<manufacturer>NikcDC</manufacturer>
-		<rom name="Mickey Mouse III - Yume Fuusen (T-Eng).nes" size="262160" crc="5cb55b23"/>
+		<rom name="Mickey Mouse III - Yume Fuusen T-Eng (2013)(NikcDC).nes" size="262160" crc="5cb55b23"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12212,7 +12212,7 @@
 		<description>Mickey Mouse III - Yume Fuusen (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Mickey Mouse III - Yume Fuusen (Japan).nes" size="262160" crc="8ad9a9be"/>
+		<rom name="Mickey Mouse III - Yume Fuusen (Japan)(1992)(Kemco).nes" size="262160" crc="8ad9a9be"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12220,7 +12220,7 @@
 		<description>Mickey Mousecapade (USA)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Mickey Mousecapade (USA).nes" size="65552" crc="3341274d"/>
+		<rom name="Mickey Mousecapade (USA)(1988)(Capcom).nes" size="65552" crc="3341274d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12255,7 +12255,7 @@
 		<description>Micro Machines (USA) (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="Micro Machines (USA) (Unl).nes" size="262160" crc="f3fffc7a"/>
+		<rom name="Micro Machines (USA)(Unl)(1992)(Camerica).nes" size="262160" crc="f3fffc7a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12290,7 +12290,7 @@
 		<description>MiG 29 - Soviet Fighter (USA) (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="MiG 29 - Soviet Fighter (USA) (Unl).nes" size="131088" crc="af33971f"/>
+		<rom name="MiG 29 - Soviet Fighter (USA)(Unl)(1992)(Camerica).nes" size="131088" crc="af33971f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12298,7 +12298,7 @@
 		<description>Mighty Bomb Jack (USA)</description>
 		<year>1987</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Mighty Bomb Jack (USA).nes" size="65552" crc="73dd920f"/>
+		<rom name="Mighty Bomb Jack (USA)(1987)(Tecmo).nes" size="65552" crc="73dd920f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13597,6 +13597,22 @@
 		<year>1990</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Ninjara Hoi! (Japan)(1990)(ASCII).nes" size="524304" crc="aea19f21"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ncc" sourcefile="nes/d_nes.cpp">
+		<description>Nintendo Campus Challenge 1991</description>
+		<year>1991</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Nintendo Campus Challenge (1991)(Nintendo).nes" size="786448" crc="15c73c66"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nwc" sourcefile="nes/d_nes.cpp">
+		<description>Nintendo World Championships 1990</description>
+		<year>1990</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Nintendo World Championships (1990)(Nintendo).nes" size="262160" crc="f12f16a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
