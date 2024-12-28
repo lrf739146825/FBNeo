@@ -2237,9 +2237,47 @@ static INT32 yamatoInit()
 	return rc;
 }
 
-// Yamato (US)
+// Yamato (set 1)
 
 static struct BurnRomInfo yamatoRomDesc[] = {
+	{ "2.5de",	0x2000, 0xe796fbce, 1 | BRF_PRG | BRF_ESS }, //  0 maincpu
+	{ "3.5f",	0x2000, 0xde50e4e8, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "4.5jh",	0x2000, 0x4f831d4b, 1 | BRF_PRG | BRF_ESS }, //  2
+
+	{ "1.5v",	0x0800, 0x3aad9e3c, 7 | BRF_PRG | BRF_ESS }, //  3 audiocpu
+
+	{ "10.11k",	0x2000, 0x161121f5, 2 | BRF_GRA }, //  4 gfx1
+	{ "9.11h",	0x2000, 0x56e84cc4, 2 | BRF_GRA }, //  5
+
+	{ "8.11c",	0x1000, 0x28024d9a, 3 | BRF_GRA }, //  6 gfx2
+	{ "7.11a",	0x1000, 0x4a179790, 3 | BRF_GRA }, //  7
+
+	{ "5.5lm",	0x1000, 0x7761ad24, 4 | BRF_GRA }, //  8 user1
+	{ "6.5n",	0x1000, 0xda48444c, 4 | BRF_GRA }, //  9
+
+	{ "1.bpr",	0x0020, 0xef2053ab, 6 | BRF_GRA }, // 10 proms
+	{ "2.bpr",	0x0020, 0x2281d39f, 6 | BRF_GRA }, // 11
+	{ "3.bpr",	0x0020, 0x9e6341e3, 6 | BRF_GRA }, // 12
+	{ "4.bpr",	0x0020, 0x1c97dc0b, 6 | BRF_GRA }, // 13
+	{ "5.bpr",	0x0020, 0xedd6c05f, 6 | BRF_GRA }, // 14
+};
+
+STD_ROM_PICK(yamato)
+STD_ROM_FN(yamato)
+
+struct BurnDriver BurnDrvYamato = {
+	"yamato", NULL, NULL, NULL, "1983",
+	"Yamato (set 1)\0", NULL, "Sega", "Miscellaneous",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_SHOOT, 0,
+	NULL, yamatoRomInfo, yamatoRomName, NULL, NULL, NULL, NULL, YamatoInputInfo, YamatoDIPInfo,
+	yamatoInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	224, 256, 3, 4
+};
+
+// Yamato (US)
+
+static struct BurnRomInfo yamatouRomDesc[] = {
 	{ "2.5de",	0x2000, 0x20895096, 1 | BRF_PRG | BRF_ESS }, //  0 maincpu
 	{ "3.5f",	0x2000, 0x57a696f9, 1 | BRF_PRG | BRF_ESS }, //  1
 	{ "4.5jh",	0x2000, 0x59a468e8, 1 | BRF_PRG | BRF_ESS }, //  2
@@ -2263,23 +2301,23 @@ static struct BurnRomInfo yamatoRomDesc[] = {
 	{ "5.bpr",	0x0020, 0xedd6c05f, 6 | BRF_GRA }, // 15
 };
 
-STD_ROM_PICK(yamato)
-STD_ROM_FN(yamato)
+STD_ROM_PICK(yamatou)
+STD_ROM_FN(yamatou)
 
-struct BurnDriver BurnDrvYamato = {
-	"yamato", NULL, NULL, NULL, "1983",
+struct BurnDriver BurnDrvYamatou = {
+	"yamatou", "yamato", NULL, NULL, "1983",
 	"Yamato (US)\0", NULL, "Sega", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_SHOOT, 0,
-	NULL, yamatoRomInfo, yamatoRomName, NULL, NULL, NULL, NULL, YamatoInputInfo, YamatoDIPInfo,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_SHOOT, 0,
+	NULL, yamatouRomInfo, yamatouRomName, NULL, NULL, NULL, NULL, YamatoInputInfo, YamatoDIPInfo,
 	yamatoInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 256, 3, 4
 };
 
 
-// Yamato (World?)
+// Yamato (set 2)
 
-static struct BurnRomInfo yamato2RomDesc[] = {
+static struct BurnRomInfo yamatoaRomDesc[] = {
 	{ "2-2.5de",0x2000, 0x93da1d52, 1 | BRF_PRG | BRF_ESS }, //  0 maincpu
 	{ "3-2.5f",	0x2000, 0x31e73821, 1 | BRF_PRG | BRF_ESS }, //  1
 	{ "4-2.5jh",0x2000, 0xfd7bcfc3, 1 | BRF_PRG | BRF_ESS }, //  2
@@ -2302,15 +2340,15 @@ static struct BurnRomInfo yamato2RomDesc[] = {
 	{ "5.bpr",	0x0020, 0xedd6c05f, 6 | BRF_GRA }, // 14
 };
 
-STD_ROM_PICK(yamato2)
-STD_ROM_FN(yamato2)
+STD_ROM_PICK(yamatoa)
+STD_ROM_FN(yamatoa)
 
-struct BurnDriver BurnDrvYamato2 = {
-	"yamato2", "yamato", NULL, NULL, "1983",
-	"Yamato (World?)\0", NULL, "Sega", "Miscellaneous",
+struct BurnDriver BurnDrvYamatoa = {
+	"yamatoa", "yamato", NULL, NULL, "1983",
+	"Yamato (set 2)\0", NULL, "Sega", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_SHOOT, 0,
-	NULL, yamato2RomInfo, yamato2RomName, NULL, NULL, NULL, NULL, YamatoInputInfo, YamatoDIPInfo,
+	NULL, yamatoaRomInfo, yamatoaRomName, NULL, NULL, NULL, NULL, YamatoInputInfo, YamatoDIPInfo,
 	yamatoInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 256, 3, 4
 };
