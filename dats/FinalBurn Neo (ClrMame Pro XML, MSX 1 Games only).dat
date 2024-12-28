@@ -3399,6 +3399,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="catbox" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Catbox (HB, v1.3)</description>
+		<year>2024</year>
+		<manufacturer>Gamecast Entertainment</manufacturer>
+		<rom name="Catbox v1.3 (2024)(Gamecast Ent.).rom" size="753664" crc="11e3133a"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="catspots" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>CatsPots (HB, v1.2)</description>
@@ -5623,6 +5635,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dropabucymbel" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, Redefine Keys to use controller</comment>
+		<description>Drop of Abu-Cymbel, The (English) (HB)</description>
+		<year>2024</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Drop of Abu-Cymbel, The (2024)(joesg).rom" size="32768" crc="1b20ae22"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="duckstroma" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Duckstroma (HB, v1.03)</description>
@@ -7465,6 +7489,18 @@
 		<year>2013</year>
 		<manufacturer>Impulse9</manufacturer>
 		<rom name="Gorgeous Gemma in Escape from the Space Disposal Planet (2013)(Impulse9).rom" size="32768" crc="818ccade"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gotaabucymbel" cloneof="dropabucymbel" romof="dropabucymbel" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, Redefine Keys to use controller</comment>
+		<description>Gota de Abu-Cymbel, La (Spanish) (HB)</description>
+		<year>2024</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Gota de Abu-Cymbel, La (2024)(joesg).rom" size="32768" crc="51c192e6"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15610,6 +15646,18 @@
 		<year>1989</year>
 		<manufacturer>Animagic</manufacturer>
 		<rom name="Soldier of Light (Euro, ES)(1989)(Animagic).rom" size="131072" crc="cab9cea9"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sorkidadv" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Sorcerer Kid Adventure (HB, v1.02)</description>
+		<year>2024</year>
+		<manufacturer>VidaExtraRetro</manufacturer>
+		<rom name="Sorcerer Kid Adventure v1.02 (2024)(VidaExtraRetro).rom" size="49152" crc="52747abb"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
