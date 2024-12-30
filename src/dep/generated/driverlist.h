@@ -857,6 +857,7 @@ DRV		BurnDrvMSX_amomundo;
 DRV		BurnDrvMSX_amotopuf;
 DRV		BurnDrvmd_amshay;
 DRV		BurnDrvMSX_amurisus;
+DRV		BurnDrvmd_amyrose;
 DRV		BurnSpecAnarchy;
 DRV		BurnDrvMSX_anchors;
 DRV		BurnDrvmd_agassi;
@@ -2961,6 +2962,7 @@ DRV		BurnDrvnes_captaameandave;
 DRV		BurnDrvsnes_Capamerica;
 DRV		BurnDrvmd_captavenup;
 DRV		BurnSpecCaptamerica;
+DRV		BurnDrvmd_captainbarrel;
 DRV		BurnDrvMSX_captchef;
 DRV		BurnDrvnes_captacom;
 DRV		BurnDrvCpsCaptc1v4;
@@ -7562,8 +7564,8 @@ DRV		BurnDrvnes_ghoulgrind;
 DRV		BurnDrvsnes_Ghoulpatrol;
 DRV		BurnDrvnes_ghoulschool;
 DRV		BurnSpecgng;
-DRV		BurnDrvmd_ghouls1;
 DRV		BurnDrvsms_ghouls;
+DRV		BurnDrvmd_ghouls1;
 DRV		BurnDrvmd_ghouls;
 DRV		BurnDrvmd_ghoulss;
 DRV		BurnDrvCpsGhoulsu;
@@ -12343,7 +12345,6 @@ DRV		BurnDrvsnes_Mkii;
 DRV		BurnDrvsnes_Mkiia;
 DRV		BurnDrvmd_mk2wuec;
 DRV		BurnDrvmd_mk2wus;
-DRV		BurnDrvmd_mk2wu;
 DRV		BurnDrvgg_mk2;
 DRV		BurnDrvmd_mk2;
 DRV		BurnDrvsms_mk2pi;
@@ -12351,6 +12352,7 @@ DRV		BurnDrvMk2chal;
 DRV		BurnDrvmk2p;
 DRV		BurnDrvnes_mortakomiispe;
 DRV		BurnDrvMk2ute;
+DRV		BurnDrvmd_mk2wu;
 DRV		BurnDrvnes_mortakomiiispe;
 DRV		BurnDrvmd_mkr;
 DRV		BurnDrvMortalr;
@@ -12977,7 +12979,6 @@ DRV		BurnDrvNewfanta;
 DRV		BurnDrvNewfant;
 DRV		BurnDrvnes_newghoii;
 DRV		BurnDrvNhidctch;
-DRV		BurnDrvmd_newhoriz;
 DRV		BurnDrvsnes_Newhorizons;
 DRV		BurnDrvThreein1semi;
 DRV		BurnDrvThreein1semia;
@@ -15866,6 +15867,7 @@ DRV		BurnDrvmd_rocket;
 DRV		BurnDrvmd_rockets;
 DRV		BurnDrvmd_rocketj;
 DRV		BurnDrvmd_rocketu;
+DRV		BurnDrvmd_rocketpanda;
 DRV		BurnDrvmd_rpunknown;
 DRV		BurnDrvnes_rocketranger;
 DRV		BurnDrvnes_rocketeerthe;
@@ -20512,6 +20514,7 @@ DRV		BurnDrvTimeplta;
 DRV		BurnDrvTimepltc;
 DRV		BurnDrvMSX_timeplt;
 DRV		BurnDrvMSX_timeplta;
+DRV		BurnDrvcv_TimePilot;
 DRV		BurnDrvcv_timeplt;
 DRV		BurnDrvTimeplt;
 DRV		BurnSpectimescan;
@@ -20532,7 +20535,6 @@ DRV		BurnDrvTimesupd;
 DRV		BurnDrvTimesup;
 DRV		BurnDrvtg_timeball;
 DRV		BurnDrvsnes_Timecop;
-DRV		BurnDrvcv_TimePilot;
 DRV		BurnDrvsnes_Tinstar;
 DRV		BurnDrvnes_tinasadvisliii;
 DRV		BurnDrvnes_tinasadvisl;
@@ -20768,6 +20770,7 @@ DRV		BurnDrvmd_toughman;
 DRV		BurnDrvmd_kingcole;
 DRV		BurnDrvmd_kingcols;
 DRV		BurnDrvmd_kingcol;
+DRV		BurnDrvmd_touhou;
 DRV		BurnDrvnes_touhourououmu;
 DRV		BurnDrvTkdenshoa;
 DRV		BurnDrvTkdensho;
@@ -21224,6 +21227,7 @@ DRV		BurnDrvnes_uncanxmen;
 DRV		BurnDrvmd_unchartd;
 DRV		BurnDrvnes_unchartedwaters;
 DRV		BurnDrvsnes_Unchwaters;
+DRV		BurnDrvmd_newhoriz;
 DRV		BurnDrvUnclepoo;
 DRV		BurnDrvmd_undeade;
 DRV		BurnDrvmd_undead;
@@ -23761,6 +23765,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_amotopuf,		// Amoto's Puf (Euro, Spanish)
 	&BurnDrvmd_amshay,			// Amshay (HB)
 	&BurnDrvMSX_amurisus,		// Amurisus (HB, Tech-Demo)
+	&BurnDrvmd_amyrose,			// Amy Rose's Island Adventure (Hack)
 	&BurnSpecAnarchy,			// Anarchy (48K)
 	&BurnDrvMSX_anchors,		// Anchors Aweigh (HB, v1.1)
 	&BurnDrvmd_agassi,			// Andre Agassi Tennis (Euro)
@@ -24761,7 +24766,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecBeethrev48,		// Beethoven's Revenge (48K) (HB)
 	&BurnDrvnes_beetlejuice,	// Beetlejuice (USA)
 	&BurnDrvMSX_beez,			// BeeZ (HB)
-	&BurnDrvmd_begprince,		// Beggar Prince - English Version (World, rev1) (Unl)
+	&BurnDrvmd_begprince,		// Beggar Prince - English Version (World, Rev. 1) (Unl)
 	&BurnDrvcv_bejeweled,		// Bejeweled (HB)
 	&BurnDrvBlswhstla,			// Bells & Whistles (Asia, version M)
 	&BurnDrvBlswhstl,			// Bells & Whistles (World, version L)
@@ -25865,6 +25870,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Capamerica,	// Captain America and the Avengers (USA)
 	&BurnDrvmd_captavenup,		// Captain America and the Avengers (USA, Prototype)
 	&BurnSpecCaptamerica,		// Captain America Defies the Doom Tube (48K)
+	&BurnDrvmd_captainbarrel,	// Captain Barrel (HB)
 	&BurnDrvMSX_captchef,		// Captain Chef (Japan)
 	&BurnDrvnes_captacom,		// Captain Comic - The Adventure (USA)
 	&BurnDrvCpsCaptc1v4,		// Captain Commando (1v4, Hack)
@@ -30439,7 +30445,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_ghostbusters,	// Ghostbusters (USA)
 	&BurnDrvmd_ghostbst1,		// Ghostbusters (World)
 	&BurnDrvmd_ghostbst,		// Ghostbusters (World, v1.1)
-	&BurnDrvmd_ghostbstse,		// Ghostbusters - Special Edition (Hack, v1.1)
+	&BurnDrvmd_ghostbstse,		// Ghostbusters - Special Edition (Hack, v2.1)
 	&BurnSpecghostb2,			// Ghostbusters II (128K) (Trainer)
 	&BurnDrvMSX_ghostbs2,		// Ghostbusters II (USA)
 	&BurnDrvnes_ghostbustersii,	// Ghostbusters II (USA)
@@ -30466,9 +30472,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Ghoulpatrol,	// Ghoul Patrol (USA)
 	&BurnDrvnes_ghoulschool,	// Ghoul School (USA)
 	&BurnSpecgng,				// Ghouls 'n' Ghosts (128K)
-	&BurnDrvmd_ghouls1,			// Ghouls'n Ghosts (Euro, USA)
 	&BurnDrvsms_ghouls,			// Ghouls'n Ghosts (Euro, USA, Brazil)
-	&BurnDrvmd_ghouls,			// Ghouls'n Ghosts (Euro, USA, Korea, Rev. A)
+	&BurnDrvmd_ghouls1,			// Ghouls'n Ghosts (Euro, USA, Rev. 1)
+	&BurnDrvmd_ghouls,			// Ghouls'n Ghosts (Euro, USA, Rev. 2)
 	&BurnDrvmd_ghoulss,			// Ghouls'n Ghosts (Hack, Spanish v1.1)
 	&BurnDrvCpsGhoulsu,			// Ghouls'n Ghosts (US)
 	&BurnDrvsms_ghoulsd,		// Ghouls'n Ghosts (USA, Demo)
@@ -35247,7 +35253,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Mkiia,			// Mortal Kombat II (USA, Alt)
 	&BurnDrvmd_mk2wuec,			// Mortal Kombat II (World) Unlimited (Hack, Enhanced Colors)
 	&BurnDrvmd_mk2wus,			// Mortal Kombat II (World) Unlimited (Hack, Spanish)
-	&BurnDrvmd_mk2wu,			// Mortal Kombat II (World) Unlimited (Hack, v1.0)
 	&BurnDrvgg_mk2,				// Mortal Kombat II (World)
 	&BurnDrvmd_mk2,				// Mortal Kombat II (World)
 	&BurnDrvsms_mk2pi,			// Mortal Kombat II - Palette improvement (Hack, v1.2)
@@ -35255,6 +35260,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmk2p,				// Mortal Kombat II Plus (Beta 2, Hack)
 	&BurnDrvnes_mortakomiispe,	// Mortal Kombat II Special (Unl)
 	&BurnDrvMk2ute,				// Mortal Kombat II Ultimate Tournament Edition (hack, V5.0.053)
+	&BurnDrvmd_mk2wu,			// Mortal Kombat II Unlimited (Hack, v1.0)
 	&BurnDrvnes_mortakomiiispe,	// Mortal Kombat III Special (Unl)
 	&BurnDrvmd_mkr,				// Mortal Kombat Revelations (Hack, v1.0)
 	&BurnDrvMortalr,			// Mortal Race
@@ -35881,7 +35887,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvNewfant,			// New Fantasia (1995 copyright)
 	&BurnDrvnes_newghoii,		// New Ghostbusters II (Japan)
 	&BurnDrvNhidctch,			// New Hidden Catch (World) / New Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02)
-	&BurnDrvmd_newhoriz,		// New Horizons (USA)
 	&BurnDrvsnes_Newhorizons,	// New Horizons (USA)
 	&BurnDrvThreein1semi,		// New HyperMan (3-in-1 with Cookie & Bibi & HyperMan) (set 1)
 	&BurnDrvThreein1semia,		// New HyperMan (3-in-1 with Cookie & Bibi & HyperMan) (set 2)
@@ -36511,10 +36516,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecOutrun,			// Outrun (128K)
 	&BurnDrvmd_outrun,			// OutRun (Euro, USA)
 	&BurnDrvmd_outrunac,		// OutRun (Hack, Arcade Colors v2.1)
-	&BurnDrvmd_outruns,			// Outrun (Hack, Spanish)
+	&BurnDrvmd_outruns,			// OutRun (Hack, Spanish)
 	&BurnDrvmd_outrunj,			// OutRun (Japan)
 	&BurnDrvmd_outr2019,		// OutRun 2019 (Euro)
-	&BurnDrvmd_outr2019s,		// Outrun 2019 (Hack, Spanish)
+	&BurnDrvmd_outr2019s,		// OutRun 2019 (Hack, Spanish)
 	&BurnDrvmd_outr2019j,		// OutRun 2019 (Japan)
 	&BurnDrvmd_outr2019u,		// OutRun 2019 (USA)
 	&BurnDrvmd_outr2019up,		// OutRun 2019 (USA, Prototype)
@@ -38770,6 +38775,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_rockets,			// Rocket Knight Adventures (Hack, Spanish v1.1)
 	&BurnDrvmd_rocketj,			// Rocket Knight Adventures (Japan)
 	&BurnDrvmd_rocketu,			// Rocket Knight Adventures (USA)
+	&BurnDrvmd_rocketpanda,		// Rocket Panda (HB)
 	&BurnDrvmd_rpunknown,		// Rocket Panda: Into the Unknown (HB, v4)
 	&BurnDrvnes_rocketranger,	// Rocket Ranger (USA)
 	&BurnDrvnes_rocketeerthe,	// Rocketeer, The (USA)
@@ -38963,7 +38969,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvgg_ryukyu,			// Ryuukyuu (Japan)
 	&BurnDrvpce_ryukyu,			// Ryuukyuu (Japan)
 	&BurnDrvKirarast,			// Ryuusei Janshi Kirara Star
-	&BurnDrvmd_tsfss,			// S Factor, The - Sonia And Silver (Hack)
+	&BurnDrvmd_tsfss,			// S Factor, The - Sonia and Silver (Hack)
 	&BurnSpecSascombatsim,		// S.A.S. Combat Simulator (48K)
 	&BurnSpecSasoperationthunderflash,// S.A.S. Operation Thunderflash (48K)
 	&BurnDrvnes_scat,			// S.C.A.T. - Special Cybernetic Attack Team (USA)
@@ -40191,7 +40197,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_solst,			// Solstice - The Quest for the Staff of Demnos (USA)
 	&BurnDrvsnes_Solsticeii,	// Solstice II (Japan)
 	&BurnDrvnes_somari,			// Somari (Unl)
-	&BurnDrvmd_somarita,		// Somari The Adventurer (Hack, v1.1)
+	&BurnDrvmd_somarita,		// Somari the Adventurer (Hack, v1.1)
 	&BurnDrvtg_somerass,		// Somer Assault (USA)
 	&BurnSpecSomehell,			// Somewhere in Hell (128K) (HB)
 	&BurnDrvSonofphx,			// Son of Phoenix (bootleg of Repulse)
@@ -43416,6 +43422,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTimepltc,			// Time Pilot (Centuri)
 	&BurnDrvMSX_timeplt,		// Time Pilot (Japan)
 	&BurnDrvMSX_timeplta,		// Time Pilot (Japan, Alt)
+	&BurnDrvcv_TimePilot,		// Time Pilot (SGM) (HB)
 	&BurnDrvcv_timeplt,			// Time Pilot
 	&BurnDrvTimeplt,			// Time Pilot
 	&BurnSpectimescan,			// Time Scanner (128K)
@@ -43436,7 +43443,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTimesup,			// Time's UP!
 	&BurnDrvtg_timeball,		// Timeball (USA)
 	&BurnDrvsnes_Timecop,		// TimeCop (USA)
-	&BurnDrvcv_TimePilot,		// TimePilot (SGM) (Konami)
 	&BurnDrvsnes_Tinstar,		// Tin Star (USA)
 	&BurnDrvnes_tinasadvisliii,	// Tina's Advanture Island III (Hack)
 	&BurnDrvnes_tinasadvisl,	// Tina's Adventure Island (Hack)
@@ -43672,6 +43678,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_kingcole,		// Tougiou King Colossus (Hack, English)
 	&BurnDrvmd_kingcols,		// Tougiou King Colossus (Hack, Spanish)
 	&BurnDrvmd_kingcol,			// Tougiou King Colossus (Japan)
+	&BurnDrvmd_touhou,			// Touhou - An Aftermath of the Index (Hack)
 	&BurnDrvnes_touhourououmu,	// Touhou Rououmu - Perfect Cherry Blossom (HB, v1.00 beta 2)
 	&BurnDrvTkdenshoa,			// Toukidenshou - Angel Eyes (VER. 960427)
 	&BurnDrvTkdensho,			// Toukidenshou - Angel Eyes (VER. 960614)
@@ -44093,7 +44100,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvUmk3p,				// Ultimate Mortal Kombat 3 Plus (Hack, Beta 2)
 	&BurnDrvUmk3te,				// Ultimate Mortal Kombat 3 Tournament Edition (hack, V2.0.042/August 2018)
 	&BurnDrvUmk3uk,				// Ultimate Mortal Kombat 3 Uk (FBNeo, Ver. 2021-07-20)
-	&BurnDrvmd_umk3t,			// Ultimate Mortal Kombat Trilogy (Hack, rev.5149)
+	&BurnDrvmd_umk3t,			// Ultimate Mortal Kombat Trilogy (Hack, Rev. 5149)
 	&BurnDrvmd_ultqixs,			// Ultimate Qix (Hack, Spanish)
 	&BurnDrvmd_ultqix,			// Ultimate Qix (USA)
 	&BurnDrvmd_ultsoccr,		// Ultimate Soccer (Euro)
@@ -44128,6 +44135,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_unchartd,		// Uncharted Waters (USA)
 	&BurnDrvnes_unchartedwaters,// Uncharted Waters (USA)
 	&BurnDrvsnes_Unchwaters,	// Uncharted Waters (USA)
+	&BurnDrvmd_newhoriz,		// Uncharted Waters - New Horizons (USA)
 	&BurnDrvUnclepoo,			// Uncle Poo
 	&BurnDrvmd_undeade,			// Undead Line (Hack, English)
 	&BurnDrvmd_undead,			// Undead Line (Japan)
@@ -44278,7 +44286,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvVanguard,			// Vanguard (SNK)
 	&BurnDrvnes_vanguard,		// Vanguard (Unl)
 	&BurnDrvVangrd2,			// Vanguard II
-	&BurnDrvmd_vaportrec,		// Vapor Trail (Hack, Enhanced Colors)
+	&BurnDrvmd_vaportrec,		// Vapor Trail (Hack, Enhanced Colors v2.0)
 	&BurnDrvmd_vaportrs,		// Vapor Trail (Hack, Spanish)
 	&BurnDrvmd_vaportr,			// Vapor Trail (USA)
 	&BurnDrvVaportrau,			// Vapor Trail - Hyper Offence Formation (US)
@@ -46661,6 +46669,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_amotopuf", "msx/d_msx.cpp"},
 	{ "md_amshay", "megadrive/d_megadrive.cpp"},
 	{ "msx_amurisus", "msx/d_msx.cpp"},
+	{ "md_amyrose", "megadrive/d_megadrive.cpp"},
 	{ "spec_anarchy", "spectrum/d_spectrum.cpp"},
 	{ "msx_anchors", "msx/d_msx.cpp"},
 	{ "md_agassi", "megadrive/d_megadrive.cpp"},
@@ -48755,6 +48764,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_capamerica", "snes/d_snes.cpp"},
 	{ "md_captavenup", "megadrive/d_megadrive.cpp"},
 	{ "spec_captamerica", "spectrum/d_spectrum.cpp"},
+	{ "md_captainbarrel", "megadrive/d_megadrive.cpp"},
 	{ "msx_captchef", "msx/d_msx.cpp"},
 	{ "nes_captacom", "nes/d_nes.cpp"},
 	{ "captc1v4", "capcom/d_cps1.cpp"},
@@ -53312,8 +53322,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_ghoulpatrol", "snes/d_snes.cpp"},
 	{ "nes_ghoulschool", "nes/d_nes.cpp"},
 	{ "spec_gng", "spectrum/d_spectrum.cpp"},
-	{ "md_ghouls1", "megadrive/d_megadrive.cpp"},
 	{ "sms_ghouls", "sms/d_sms.cpp"},
+	{ "md_ghouls1", "megadrive/d_megadrive.cpp"},
 	{ "md_ghouls", "megadrive/d_megadrive.cpp"},
 	{ "md_ghoulss", "megadrive/d_megadrive.cpp"},
 	{ "ghoulsu", "capcom/d_cps1.cpp"},
@@ -58051,7 +58061,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_mkiia", "snes/d_snes.cpp"},
 	{ "md_mk2wuec", "megadrive/d_megadrive.cpp"},
 	{ "md_mk2wus", "megadrive/d_megadrive.cpp"},
-	{ "md_mk2wu", "megadrive/d_megadrive.cpp"},
 	{ "gg_mk2", "sms/d_sms.cpp"},
 	{ "md_mk2", "megadrive/d_megadrive.cpp"},
 	{ "sms_mk2pi", "sms/d_sms.cpp"},
@@ -58059,6 +58068,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mk2p", "midway/d_tunit.cpp"},
 	{ "nes_mortakomiispe", "nes/d_nes.cpp"},
 	{ "mk2ute", "midway/d_tunit.cpp"},
+	{ "md_mk2wu", "megadrive/d_megadrive.cpp"},
 	{ "nes_mortakomiiispe", "nes/d_nes.cpp"},
 	{ "md_mkr", "megadrive/d_megadrive.cpp"},
 	{ "mortalr", "pst90s/d_mwarr.cpp"},
@@ -58679,7 +58689,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "newfant", "pst90s/d_expro02.cpp"},
 	{ "nes_newghoii", "nes/d_nes.cpp"},
 	{ "nhidctch", "pst90s/d_eolith.cpp"},
-	{ "md_newhoriz", "megadrive/d_megadrive.cpp"},
 	{ "snes_newhorizons", "snes/d_snes.cpp"},
 	{ "3in1semi", "pst90s/d_hyperpac.cpp"},
 	{ "3in1semia", "pst90s/d_hyperpac.cpp"},
@@ -61550,6 +61559,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_rockets", "megadrive/d_megadrive.cpp"},
 	{ "md_rocketj", "megadrive/d_megadrive.cpp"},
 	{ "md_rocketu", "megadrive/d_megadrive.cpp"},
+	{ "md_rocketpanda", "megadrive/d_megadrive.cpp"},
 	{ "md_rpunknown", "megadrive/d_megadrive.cpp"},
 	{ "nes_rocketranger", "nes/d_nes.cpp"},
 	{ "nes_rocketeerthe", "nes/d_nes.cpp"},
@@ -66148,6 +66158,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "timepltc", "konami/d_timeplt.cpp"},
 	{ "msx_timeplt", "msx/d_msx.cpp"},
 	{ "msx_timeplta", "msx/d_msx.cpp"},
+	{ "cv_timepilot", "coleco/d_coleco.cpp"},
 	{ "cv_timeplt", "coleco/d_coleco.cpp"},
 	{ "timeplt", "konami/d_timeplt.cpp"},
 	{ "spec_timescan", "spectrum/d_spectrum.cpp"},
@@ -66168,7 +66179,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "timesup", "neogeo/d_neogeo.cpp"},
 	{ "tg_timeball", "pce/d_pce.cpp"},
 	{ "snes_timecop", "snes/d_snes.cpp"},
-	{ "cv_timepilot", "coleco/d_coleco.cpp"},
 	{ "snes_tinstar", "snes/d_snes.cpp"},
 	{ "nes_tinasadvisliii", "nes/d_nes.cpp"},
 	{ "nes_tinasadvisl", "nes/d_nes.cpp"},
@@ -66398,6 +66408,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_kingcole", "megadrive/d_megadrive.cpp"},
 	{ "md_kingcols", "megadrive/d_megadrive.cpp"},
 	{ "md_kingcol", "megadrive/d_megadrive.cpp"},
+	{ "md_touhou", "megadrive/d_megadrive.cpp"},
 	{ "nes_touhourououmu", "nes/d_nes.cpp"},
 	{ "tkdenshoa", "pst90s/d_tecmosys.cpp"},
 	{ "tkdensho", "pst90s/d_tecmosys.cpp"},
@@ -66844,6 +66855,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_unchartd", "megadrive/d_megadrive.cpp"},
 	{ "nes_unchartedwaters", "nes/d_nes.cpp"},
 	{ "snes_unchwaters", "snes/d_snes.cpp"},
+	{ "md_newhoriz", "megadrive/d_megadrive.cpp"},
 	{ "unclepoo", "pre90s/d_jack.cpp"},
 	{ "md_undeade", "megadrive/d_megadrive.cpp"},
 	{ "md_undead", "megadrive/d_megadrive.cpp"},

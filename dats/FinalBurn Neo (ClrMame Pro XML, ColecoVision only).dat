@@ -6039,12 +6039,12 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="timeplt" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Time Pilot</description>
-		<year>1983</year>
-		<manufacturer>Coleco</manufacturer>
-		<rom name="timeplt.1" size="8192" crc="c7dbf3f4"/>
-		<rom name="timeplt.2" size="8192" crc="0103b17c"/>
+	<game name="timepilot" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Time Pilot (SGM) (HB)</description>
+		<year>1982-2024</year>
+		<manufacturer>Opcode Games - Konami</manufacturer>
+		<rom name="Time Pilot - SGM (2024)(Opcode Games).rom" size="131072" crc="cf803ddc"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6052,12 +6052,12 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="timepilot" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Homebrew, SGM - Super Game Module</comment>
-		<description>TimePilot (SGM) (Konami)</description>
-		<year>1980-2024</year>
-		<manufacturer>Opcode Games - Konami</manufacturer>
-		<rom name="TimePilot - SGM (2024)(Opcode Games).rom" size="131072" crc="cf803ddc"/>
+	<game name="timeplt" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<description>Time Pilot</description>
+		<year>1983</year>
+		<manufacturer>Coleco</manufacturer>
+		<rom name="timeplt.1" size="8192" crc="c7dbf3f4"/>
+		<rom name="timeplt.2" size="8192" crc="0103b17c"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
