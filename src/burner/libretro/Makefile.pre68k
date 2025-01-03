@@ -39,6 +39,7 @@ SOURCES_CXX += $(FBNEO_CPU_DIR)/h6280_intf.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/earom.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/joyprocess.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/8255ppi.cpp \
+	$(FBNEO_BURN_DEVICES_DIR)/i2ceeprom.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/resnet.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/tms9928a.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/watchdog.cpp \
