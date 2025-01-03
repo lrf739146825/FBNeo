@@ -17732,6 +17732,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="superchinese" cloneof="kungfuheroes" romof="kungfuheroes" sourcefile="nes/d_nes.cpp">
+		<description>Super Chinese (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Namco / Culture Brain</manufacturer>
+		<rom name="Super Chinese (Japan)(1986)(Culture Brain).nes" size="49168" crc="1ddceb54"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="superchii" cloneof="littlninbro" romof="littlninbro" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Super Chinese II - Dragon Kid (Hack, Chinese v1.4)</description>
