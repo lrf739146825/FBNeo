@@ -52,9 +52,9 @@ static int qstrcmp_plain_noext(const void *a_, const void *b_)
    const struct string_list_elem *b = (const struct string_list_elem*)b_;
 
    const char *ext_a = path_get_extension(a->data);
-   size_t l_a = string_is_empty(ext_a) ? strlen(a->data) : (ext_a - a->data - 1);
+   size_t l_a = string_is_empty(ext_a) ? strlen(a->data) : (size_t)(ext_a - a->data - 1);
    const char *ext_b = path_get_extension(b->data);
-   size_t l_b = string_is_empty(ext_b) ? strlen(b->data) : (ext_b - b->data - 1);
+   size_t l_b = string_is_empty(ext_b) ? strlen(b->data) : (size_t)(ext_b - b->data - 1);
 
    int rv = strncasecmp(a->data, b->data, MIN(l_a, l_b));
    if (rv == 0 && l_a != l_b)
@@ -164,7 +164,7 @@ static int dir_list_read(const char *dir,
       char file_path[PATH_MAX_LENGTH];
       const char *name                = retro_dirent_get_name(entry);
 
-      if (name[0] == '.')
+      if (name[0] == '.' || name[0] == '$')
       {
          /* Do not include hidden files and directories */
          if (!include_hidden)
@@ -185,9 +185,17 @@ static int dir_list_read(const char *dir,
       if (retro_dirent_is_dir(entry, NULL))
       {
          /* Exclude this frequent hidden dir on platforms which can not handle hidden attribute */
-#ifndef _WIN32
          if (!include_hidden && strcmp(name, "System Volume Information") == 0)
             continue;
+
+#if defined(IOS) || defined(OSX)
+         if (string_ends_with(name, ".framework"))
+         {
+            attr.i = RARCH_PLAIN_FILE;
+            if (!string_list_append(list, file_path, attr))
+               goto error;
+            continue;
+         }
 #endif
          if (recursive)
             dir_list_read(file_path, list, ext_list, include_dirs,
