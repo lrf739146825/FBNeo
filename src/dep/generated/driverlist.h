@@ -2516,6 +2516,7 @@ DRV		BurnDrvmd_draculau;
 DRV		BurnDrvnes_bramstosdra;
 DRV		BurnDrvsnes_Brandishj;
 DRV		BurnDrvsnes_Brandish;
+DRV		BurnDrvsnes_Brandish2expj;
 DRV		BurnDrvsnes_Brandish2te;
 DRV		BurnDrvsnes_Brandish2j;
 DRV		BurnDrvmd_barvere;
@@ -4686,6 +4687,8 @@ DRV		BurnDrvnes_depbomb2;
 DRV		BurnDrvDepthcho;		// No sound
 DRV		BurnDrvDepthch;			// No sound
 #endif
+DRV		BurnDrvsnes_Derlangte;
+DRV		BurnDrvsnes_Derlangj;
 DRV		BurnDrvDeroon;
 DRV		BurnDrvDeroona;
 DRV		BurnDrvDeroon2;
@@ -5482,6 +5485,10 @@ DRV		BurnDrvMSX_dquest2;
 DRV		BurnDrvsnes_Dquest3te;
 DRV		BurnDrvsnes_Dquest3ts;
 DRV		BurnDrvsnes_Dquest3j;
+DRV		BurnDrvsnes_Dquest5te;
+DRV		BurnDrvsnes_Dquest5j;
+DRV		BurnDrvsnes_Dquest6te;
+DRV		BurnDrvsnes_Dquest6j;
 DRV		BurnDrvnes_dragonrunning;
 DRV		BurnDrvDsaberj;
 DRV		BurnDrvDsaber;
@@ -9286,6 +9293,7 @@ DRV		BurnDrvcv_jeepcrep;
 DRV		BurnSpecJeffnotes;
 DRV		BurnDrvsnes_Jellyboy;
 DRV		BurnDrvmd_jellyboy;
+DRV		BurnDrvsnes_Jellyboy2te;
 DRV		BurnDrvsnes_Jellyboy2j;
 DRV		BurnDrvmd_jennifct;
 DRV		BurnDrvGrdnstrmk;
@@ -16723,6 +16731,8 @@ DRV		BurnDrvsnes_Gundamwj;
 DRV		BurnDrvsnes_Smtenseite;
 DRV		BurnDrvsnes_Smtenseits;
 DRV		BurnDrvsnes_Smtenseij;
+DRV		BurnDrvsnes_Smtenseiifte;
+DRV		BurnDrvsnes_Smtenseiifj;
 DRV		BurnDrvsnes_Smtensei2te;
 DRV		BurnDrvsnes_Smtensei2ts;
 DRV		BurnDrvsnes_Smtensei2j;
@@ -25436,6 +25446,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_bramstosdra,	// Bram Stoker's Dracula (USA)
 	&BurnDrvsnes_Brandishj,		// Brandish (Japan)
 	&BurnDrvsnes_Brandish,		// Brandish (USA)
+	&BurnDrvsnes_Brandish2expj,	// Brandish 2: Expert (Japan)
 	&BurnDrvsnes_Brandish2te,	// Brandish 2: The Planet Buster (Hack, English)
 	&BurnDrvsnes_Brandish2j,	// Brandish 2: The Planet Buster (Japan)
 	&BurnDrvmd_barvere,			// Brave Battle Saga - Legend of the Magic Warrior (Hack, English)
@@ -27606,6 +27617,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDepthcho,			// Depthcharge (older) [No sound]
 	&BurnDrvDepthch,			// Depthcharge [No sound]
 #endif
+	&BurnDrvsnes_Derlangte,		// Der Langrisser (Hack, English v1.3.1)
+	&BurnDrvsnes_Derlangj,		// Der Langrisser (Japan, Rev. 1)
 	&BurnDrvDeroon,				// Deroon DeroDero (earlier, set 1)
 	&BurnDrvDeroona,			// Deroon DeroDero (earlier, set 2)
 	&BurnDrvDeroon2,			// Deroon DeroDero / Tecmo Stackers
@@ -28402,6 +28415,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Dquest3te,		// Dragon Quest III (Hack, English v1.0c)
 	&BurnDrvsnes_Dquest3ts,		// Dragon Quest III (Hack, Spanish v1.05rtm)
 	&BurnDrvsnes_Dquest3j,		// Dragon Quest III (Japan)
+	&BurnDrvsnes_Dquest5te,		// Dragon Quest V (Hack, Enflish v2.01 Final)
+	&BurnDrvsnes_Dquest5j,		// Dragon Quest V - Tenkuu no Hanayome (Japan)
+	&BurnDrvsnes_Dquest6te,		// Dragon Quest VI (Hack, English v0.90)
+	&BurnDrvsnes_Dquest6j,		// Dragon Quest VI - Maboroshi no Daichi (Japan)
 	&BurnDrvnes_dragonrunning,	// Dragon Running (Unl)
 	&BurnDrvDsaberj,			// Dragon Saber (Japan, Rev B)
 	&BurnDrvDsaber,				// Dragon Saber (World, DO2)
@@ -29596,7 +29613,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fireembc,		// Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Hack, Chinese)
 	&BurnDrvnes_fireemb,		// Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Hack, English)
 	&BurnDrvnes_fireembj,		// Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Japan)
-	&BurnDrvsnes_Fireemblemj,	// Fire Emblem - Monshou no Nazo (Japan)
+	&BurnDrvsnes_Fireemblemj,	// Fire Emblem - Monshou no Nazo (Japan, Rev. 1)
 	&BurnDrvsnes_Fireemblemte,	// Fire Emblem - Mystery of the Emblem (Hack, English v0.22)
 	&BurnDrvsnes_Fireemblem776te,// Fire Emblem - Thracia 776 (Hack, English v1.08)
 	&BurnDrvsnes_Fireemblem776j,// Fire Emblem - Thracia 776 (Japan)
@@ -32206,6 +32223,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecJeffnotes,			// Jeff & the Blue Notes (128K) (HB)
 	&BurnDrvsnes_Jellyboy,		// Jelly Boy (Euro)
 	&BurnDrvmd_jellyboy,		// Jelly Boy (Euro, Prototype)
+	&BurnDrvsnes_Jellyboy2te,	// Jelly Boy 2 (Hack, English)
 	&BurnDrvsnes_Jellyboy2j,	// Jelly Boy 2 (Japan)
 	&BurnDrvmd_jennifct,		// Jennifer Capriati Tennis (USA)
 	&BurnDrvGrdnstrmk,			// Jeon Sin - Guardian Storm (Korea)
@@ -39643,6 +39661,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Smtenseite,	// Shin Megami Tensei (Hack, English)
 	&BurnDrvsnes_Smtenseits,	// Shin Megami Tensei (Hack, Spanish)
 	&BurnDrvsnes_Smtenseij,		// Shin Megami Tensei (Japan)
+	&BurnDrvsnes_Smtenseiifte,	// Shin Megami Tensei if... (Hack, English)
+	&BurnDrvsnes_Smtenseiifj,	// Shin Megami Tensei if... (Japan)
 	&BurnDrvsnes_Smtensei2te,	// Shin Megami Tensei II (Hack, English)
 	&BurnDrvsnes_Smtensei2ts,	// Shin Megami Tensei II (Hack, Spanish)
 	&BurnDrvsnes_Smtensei2j,	// Shin Megami Tensei II (Japan)
@@ -43558,7 +43578,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTokisens,			// Toki no Senshi - Chrono Soldier (MC-8123, 317-0040)
 	&BurnDrvTokisensa,			// Toki no Senshi - Chrono Soldier (prototype?)
 	&BurnSpecTokimal,			// Tokimal (128K) (HB)
-	&BurnDrvsnes_Tokimemo,		// Tokimeki Memorial: Densetsu no Ki no Shita de (Japan, Rev 1)
+	&BurnDrvsnes_Tokimemo,		// Tokimeki Memorial: Densetsu no Ki no Shita de (Japan, Rev. 1)
 	&BurnDrvTokiob,				// Tokio / Scramble Formation (bootleg)
 	&BurnDrvTokio,				// Tokio / Scramble Formation (newer)
 	&BurnDrvTokioo,				// Tokio / Scramble Formation (older)
@@ -48344,6 +48364,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_bramstosdra", "nes/d_nes.cpp"},
 	{ "snes_brandishj", "snes/d_snes.cpp"},
 	{ "snes_brandish", "snes/d_snes.cpp"},
+	{ "snes_brandish2expj", "snes/d_snes.cpp"},
 	{ "snes_brandish2te", "snes/d_snes.cpp"},
 	{ "snes_brandish2j", "snes/d_snes.cpp"},
 	{ "md_barvere", "megadrive/d_megadrive.cpp"},
@@ -50492,6 +50513,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_depbomb2", "nes/d_nes.cpp"},
 	{ "depthcho", "pre90s/d_vicdual.cpp"},
 	{ "depthch", "pre90s/d_vicdual.cpp"},
+	{ "snes_derlangte", "snes/d_snes.cpp"},
+	{ "snes_derlangj", "snes/d_snes.cpp"},
 	{ "deroon", "pst90s/d_tecmosys.cpp"},
 	{ "deroona", "pst90s/d_tecmosys.cpp"},
 	{ "deroon2", "pst90s/d_tecmosys.cpp"},
@@ -51280,6 +51303,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_dquest3te", "snes/d_snes.cpp"},
 	{ "snes_dquest3ts", "snes/d_snes.cpp"},
 	{ "snes_dquest3j", "snes/d_snes.cpp"},
+	{ "snes_dquest5te", "snes/d_snes.cpp"},
+	{ "snes_dquest5j", "snes/d_snes.cpp"},
+	{ "snes_dquest6te", "snes/d_snes.cpp"},
+	{ "snes_dquest6j", "snes/d_snes.cpp"},
 	{ "nes_dragonrunning", "nes/d_nes.cpp"},
 	{ "dsaberj", "pst90s/d_namcos2.cpp"},
 	{ "dsaber", "pst90s/d_namcos2.cpp"},
@@ -55056,6 +55083,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_jeffnotes", "spectrum/d_spectrum.cpp"},
 	{ "snes_jellyboy", "snes/d_snes.cpp"},
 	{ "md_jellyboy", "megadrive/d_megadrive.cpp"},
+	{ "snes_jellyboy2te", "snes/d_snes.cpp"},
 	{ "snes_jellyboy2j", "snes/d_snes.cpp"},
 	{ "md_jennifct", "megadrive/d_megadrive.cpp"},
 	{ "grdnstrmk", "pst90s/d_nmk16.cpp"},
@@ -62425,6 +62453,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_smtenseite", "snes/d_snes.cpp"},
 	{ "snes_smtenseits", "snes/d_snes.cpp"},
 	{ "snes_smtenseij", "snes/d_snes.cpp"},
+	{ "snes_smtenseiifte", "snes/d_snes.cpp"},
+	{ "snes_smtenseiifj", "snes/d_snes.cpp"},
 	{ "snes_smtensei2te", "snes/d_snes.cpp"},
 	{ "snes_smtensei2ts", "snes/d_snes.cpp"},
 	{ "snes_smtensei2j", "snes/d_snes.cpp"},
