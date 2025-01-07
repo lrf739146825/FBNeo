@@ -1567,6 +1567,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="brandish2expj" sourcefile="snes/d_snes.cpp">
+		<description>Brandish 2: Expert (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Koei</manufacturer>
+		<rom name="Brandish 2 - Expert (J)(1996)(Koei).sfc" size="3145728" crc="ab43e910"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="brandish2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Brandish 2: The Planet Buster (Hack, English)</description>
@@ -2744,6 +2752,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="derlangte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Der Langrisser (Hack, English v1.3.1)</description>
+		<year>2022</year>
+		<manufacturer>Near, D</manufacturer>
+		<rom name="Der Langrisser T-Eng v1.3.1 (2022)(Near, D).sfc" size="4194304" crc="a55f6086"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="derlangj" cloneof="derlangte" romof="derlangte" sourcefile="snes/d_snes.cpp">
+		<description>Der Langrisser (Japan, Rev. 1)</description>
+		<year>1995</year>
+		<manufacturer>NCS - Masaya</manufacturer>
+		<rom name="Der Langrisser (J, Rev 1)(1995)(NCS - Masaya).sfc" size="2097152" crc="35f9eecc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="desertfighte" cloneof="asp" romof="asp" sourcefile="snes/d_snes.cpp">
 		<description>Desert Fighter (Euro)</description>
 		<year>1994</year>
@@ -3362,6 +3387,40 @@
 		<year>1996</year>
 		<manufacturer>Enix</manufacturer>
 		<rom name="Dragon Quest III (J)(1996)(Enix).sfc" size="4194304" crc="13836bd2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dquest5te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Quest V (Hack, Enflish v2.01 Final)</description>
+		<year>2002</year>
+		<manufacturer>DeJap Translations, Partial Translations</manufacturer>
+		<rom name="Dragon Quest V - Tenkuu no Hanayome T-Eng v2.01 Final (2002)(DeJap Translations).sfc" size="2097152" crc="9400cb3c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dquest5j" cloneof="dquest5te" romof="dquest5te" sourcefile="snes/d_snes.cpp">
+		<description>Dragon Quest V - Tenkuu no Hanayome (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Enix</manufacturer>
+		<rom name="Dragon Quest V - Tenkuu no Hanayome (J)(1992)(Enix).sfc" size="1572864" crc="bc955f3b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dquest6te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Quest VI (Hack, English v0.90)</description>
+		<year>2001</year>
+		<manufacturer>NoPrgress</manufacturer>
+		<rom name="Dragon Quest VI - Maboroshi no Daichi T-Eng v0.90 (2001)(NoPrgress).sfc" size="4194304" crc="276d9893"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dquest6j" cloneof="dquest6te" romof="dquest6te" sourcefile="snes/d_snes.cpp">
+		<description>Dragon Quest VI - Maboroshi no Daichi (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Enix</manufacturer>
+		<rom name="Dragon Quest VI - Maboroshi no Daichi (J)(1995)(Enix).sfc" size="4194304" crc="33304519"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4099,7 +4158,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fireemblemj" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
-		<description>Fire Emblem - Monshou no Nazo (Japan)</description>
+		<description>Fire Emblem - Monshou no Nazo (Japan, Rev. 1)</description>
 		<year>1993</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Fire Emblem - Monshou no Nazo (J, Rev 1)(1993)(Nintendo).sfc" size="3145728" crc="a427b7e6"/>
@@ -5543,7 +5602,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="jellyboy2j" sourcefile="snes/d_snes.cpp">
+	<game name="jellyboy2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Jelly Boy 2 (Hack, English)</description>
+		<year>2006</year>
+		<manufacturer>KingMike's Translations</manufacturer>
+		<rom name="Jelly Boy 2 T-Eng (2006)(KingMike's Translations).sfc" size="1572864" crc="a42d70a8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jellyboy2j" cloneof="jellyboy2te" romof="jellyboy2te" sourcefile="snes/d_snes.cpp">
 		<description>Jelly Boy 2 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Epic/Sony Records</manufacturer>
@@ -9815,6 +9883,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="smtenseiifte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Shin Megami Tensei if... (Hack, English)</description>
+		<year>2018</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Shin Megami Tensei if... T-Eng (2018)(Aeon Genesis).sfc" size="2621440" crc="031f11b7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smtenseiifj" cloneof="smtenseiifte" romof="smtenseiifte" sourcefile="snes/d_snes.cpp">
+		<description>Shin Megami Tensei if... (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Shin Megami Tensei if... (J)(1994)(Atlus).sfc" size="2097152" crc="4dd73cba"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="smtensei2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Shin Megami Tensei II (Hack, English)</description>
@@ -12796,7 +12881,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="tokimemo" cloneof="heartmemo" romof="heartmemo" sourcefile="snes/d_snes.cpp">
-		<description>Tokimeki Memorial: Densetsu no Ki no Shita de (Japan, Rev 1)</description>
+		<description>Tokimeki Memorial: Densetsu no Ki no Shita de (Japan, Rev. 1)</description>
 		<year>1996</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Tokimeki Memorial - Densetsu no Ki no Shita de (J, Rev 1)(1996)(Konami).sfc" size="4194304" crc="ae9f3602"/>
