@@ -2966,8 +2966,8 @@ DRV		BurnDrvnes_captaameandave;
 DRV		BurnDrvsnes_Capamerica;
 DRV		BurnDrvmd_captavenup;
 DRV		BurnSpecCaptamerica;
-DRV		BurnDrvmd_captainbarrel;
 DRV		BurnDrvCaptainBarrel;
+DRV		BurnDrvmd_captainbarrel;
 DRV		BurnDrvMSX_captchef;
 DRV		BurnDrvnes_captacom;
 DRV		BurnDrvCpsCaptc1v4;
@@ -5203,6 +5203,7 @@ DRV		BurnDrvDkspkyrmx;
 DRV		BurnDrvDkspkyte;
 DRV		BurnDrvDkongst2;
 DRV		BurnDrvDkongst;
+DRV		BurnDrvDkongte;
 DRV		BurnDrvDktrainer;
 DRV		BurnDrvDkongtj;
 DRV		BurnDrvdkwizardry;
@@ -16795,6 +16796,7 @@ DRV		BurnDrvmd_shinobi3s;
 DRV		BurnDrvmd_shinobi3p;
 DRV		BurnDrvmd_shinobi3u;
 DRV		BurnDrvmd_shinobi3umj;
+DRV		BurnDrvShinobing;
 DRV		BurnDrvsnes_Cyberformula;
 DRV		BurnDrvShinygld;
 DRV		BurnDrvmd_ship1;
@@ -25896,8 +25898,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Capamerica,	// Captain America and the Avengers (USA)
 	&BurnDrvmd_captavenup,		// Captain America and the Avengers (USA, Prototype)
 	&BurnSpecCaptamerica,		// Captain America Defies the Doom Tube (48K)
+	&BurnDrvCaptainBarrel,		// Captain Barrel (HB)
 	&BurnDrvmd_captainbarrel,	// Captain Barrel (HB)
-	&BurnDrvCaptainBarrel,		// Captain Barrel
 	&BurnDrvMSX_captchef,		// Captain Chef (Japan)
 	&BurnDrvnes_captacom,		// Captain Comic - The Adventure (USA)
 	&BurnDrvCpsCaptc1v4,		// Captain Commando (1v4, Hack)
@@ -28133,6 +28135,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDkspkyte,			// Donkey Kong Spooky Tournament Edition (Hack)
 	&BurnDrvDkongst2,			// Donkey Kong Springs Trainer 2
 	&BurnDrvDkongst,			// Donkey Kong Springs Trainer
+	&BurnDrvDkongte,			// Donkey Kong Tournament Edition (Hack)
 	&BurnDrvDktrainer,			// Donkey Kong Trainer 1.01
 	&BurnDrvDkongtj,			// Donkey Kong Twisted Jungle v1.05
 	&BurnDrvdkwizardry,			// Donkey Kong Wizardry
@@ -32918,7 +32921,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_knightrs,		// Knight Rider Special (Japan)
 	&BurnSpecknighttyme,		// Knight Tyme (128K)
 	&BurnDrvcv_knightmore,		// Knight'n More (HB)
-	&BurnDrvKnightsch,			// Knight's Chance
+	&BurnDrvKnightsch,			// Knight's Chance (HB)
 	&BurnSpecKnightmare,		// Knightmare (48K)
 	&BurnDrvcv_Kngtmareoc,		// Knightmare (Opcode) (SGM)
 	&BurnDrvKngtmare,			// Knightmare (prototype)
@@ -39725,6 +39728,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_shinobi3p,		// Shinobi III - Return of the Ninja Master (Prototype, 19930629)
 	&BurnDrvmd_shinobi3u,		// Shinobi III - Return of the Ninja Master (USA)
 	&BurnDrvmd_shinobi3umj,		// Shinobi III - Return of the Ninja Master (USA, Hack)
+	&BurnDrvShinobing,			// Shinobi Neo Geo (HB)
 	&BurnDrvsnes_Cyberformula,	// Shinseiki GPX - Cyber Formula (Japan)
 	&BurnDrvShinygld,			// Shiny Golds
 	&BurnDrvmd_ship1,			// Ship (Prototype)
@@ -40206,7 +40210,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_soldblad,		// Soldier Blade (USA)
 	&BurnDrvpce_soldblas,		// Soldier Blade Special - Caravan Stage (Japan)
 	&BurnDrvAmazont,			// Soldier Girl Amazon (Tecfri license)
-	&BurnDrvamazoneo,			// Soldier Girl Amazon Neo
+	&BurnDrvamazoneo,			// Soldier Girl Amazon Neo (HB)
 	&BurnDrvAmazon,				// Soldier Girl Amazon
 	&BurnSpecsoldfort,			// Soldier of Fortune (48K)
 	&BurnSpecSoldoflight,		// Soldier of Light (48K)
@@ -48812,8 +48816,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_capamerica", "snes/d_snes.cpp"},
 	{ "md_captavenup", "megadrive/d_megadrive.cpp"},
 	{ "spec_captamerica", "spectrum/d_spectrum.cpp"},
-	{ "md_captainbarrel", "megadrive/d_megadrive.cpp"},
 	{ "captainbarrel", "neogeo/d_neogeo.cpp"},
+	{ "md_captainbarrel", "megadrive/d_megadrive.cpp"},
 	{ "msx_captchef", "msx/d_msx.cpp"},
 	{ "nes_captacom", "nes/d_nes.cpp"},
 	{ "captc1v4", "capcom/d_cps1.cpp"},
@@ -51021,6 +51025,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "dkspkyte", "pre90s/d_dkong.cpp"},
 	{ "dkongst2", "pre90s/d_dkong.cpp"},
 	{ "dkongst", "pre90s/d_dkong.cpp"},
+	{ "dkongte", "pre90s/d_dkong.cpp"},
 	{ "dktrainer", "pre90s/d_dkong.cpp"},
 	{ "dkongtj", "pre90s/d_dkong.cpp"},
 	{ "dkwizardry", "pre90s/d_dkong.cpp"},
@@ -62517,6 +62522,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_shinobi3p", "megadrive/d_megadrive.cpp"},
 	{ "md_shinobi3u", "megadrive/d_megadrive.cpp"},
 	{ "md_shinobi3umj", "megadrive/d_megadrive.cpp"},
+	{ "shinobing", "neogeo/d_neogeo.cpp"},
 	{ "snes_cyberformula", "snes/d_snes.cpp"},
 	{ "shinygld", "pst90s/d_sderby.cpp"},
 	{ "md_ship1", "megadrive/d_megadrive.cpp"},
