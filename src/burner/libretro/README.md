@@ -1,15 +1,21 @@
 # FinalBurn Neo
 
+## Note about this document
+
+It mostly assumes you are using RetroArch as your libretro frontend, some specific instructions might differ if you are using another frontend.
+
+It also assumes you are already knowledgeable about arcade emulation and its quirks. If you aren't, you should be reading [getting started with arcade emulation](https://docs.libretro.com/guides/arcade-getting-started/) first.
+
 ## Background
 
-FinalBurn Neo (also referred to as FBNeo or FBN) is a multi-system emulator (Arcade, consoles and computers) under active development. Unlike MAME it's more focused on playability and advanced features than preservation.
+FinalBurn Neo (also referred to as FBNeo or FBN) is a multi-system emulator (Arcade, consoles and computers) under active development.
 It is the follow-up of the FinalBurn and FinalBurn Alpha emulators.
 The libretro core provides wide compatibility with platforms and features supported by libretro.
 
 ## Difference from MAME
 
 FBNeo strives for accuracy, just like MAME. There are some arcade boards where one or the other will be more accurate, but for the most part they should be equally accurate.
-The main difference with MAME is that FBNeo doesn't mind including "quality of life" hacks, while MAME is about absolute preservation. "Quality of life" hacks include things like :
+The main difference with MAME is that FBNeo doesn't mind including "quality of life" hacks, while MAME is mostly focused on preservation and documentation. "Quality of life" hacks include things like :
 
 * improving original game's sound (some games like "Burger Time" have noise which was clearly unintended by their developpers, we are removing it)
 * implementing alternative colors for games where the colors don't look right (sometimes there are controversies about which colors are right for an arcade board, like "Tropical Angel", we implement alternative colors as dipswitches)
@@ -32,10 +38,6 @@ There are controversies about whether libretro's patreon and retroarch's GPL lic
 * Actually, alternative commercial libretro frontends already exist, and we consider we are not concerned as long as they neither redistribute FBNeo nor use it as some mean of advertisement. In this scenario, only a manual installation of the core by the user will be considered legal and supported.
 * While GPL code can't be mixed with non-commercial code, this is a non-issue since this port doesn't contain any GPL-licensed code.
 * Under european law, where the libretro buildbots are located, linking GPL and non-commercial softwares doesn't produce a derivative work, and doesn't extend the GPL license to the non-commercial work (source [here](https://joinup.ec.europa.eu/collection/eupl/licence-compatibility-permissivity-reciprocity-and-interoperability)). It is unclear whether the same applies in non-EU countries or not.
-
-## Note about this readme
-
-It mostly assumes you are using RetroArch as your libretro frontend, some specific instructions might differ if you are using another one.
 
 ## Extensions
 
@@ -60,7 +62,7 @@ Note : Here is a non-exhaustive list of additional parameters you might want to 
 
 ## Building romsets for FBNeo
 
-Arcade emulation won't work properly without the romsets matching the emulator. FBNeo being an emulator under active development, a given romset might change from time to time to stay in sync with the best dump available for that game. **All of this is to offer you the best gaming experience possible, because older bad dumps can prevent the game from working as it should**.
+Arcade emulation won't work properly without the romsets matching the emulator. FBNeo being an emulator under active development, a given romset might change from time to time to stay in sync with the best dump available for that game.
 
 Don't expect things to work properly if you didn't build valid romsets, and don't report issues because your romsets are invalid.
 
@@ -104,7 +106,7 @@ Refer to a [clrmamepro tutorial](https://docs.libretro.com/guides/arcade-getting
 
 ## Mapping
 
-We don't have a convenient tool like the MAME OSD, instead we use the libretro api to announce buttons and let the frontend customize mapping, this is done through `Quick Menu > Controls`.
+We don't have a tool like the MAME OSD, instead we use the libretro api to announce buttons and let the frontend customize mapping, this is done through `Quick Menu > Controls`.
 
 For those who don't want to fully customize their mapping, there are 2 convenient presets you can apply by changing the "device type" for a player in this menu :
 
@@ -270,7 +272,7 @@ This core widely supports the RetroArch input latency reduction features, with *
 
 Proper support for **runahead second instance** is not guaranteed because it doesn't exist in standalone FBNeo unlike the other methods.
 
-Note : There seems to be possible conflicts when rewind is active simultanneously, see https://github.com/libretro/RetroArch/issues/16374.
+Note : There seems to be possible conflicts when rewind is active simultaneously, see https://github.com/libretro/RetroArch/issues/16374.
 
 ## RetroAchievements
 
@@ -303,10 +305,11 @@ As far as we are concerned, you are supposed to dump your own games, so we can't
 
 ### Why am i getting a white screen ?
 
-Refer to [getting started with arcade emulation](https://docs.libretro.com/guides/arcade-getting-started/#step-3-use-the-correct-version-romsets-for-that-emulator) to understand how romsets work.
+The white screen tells you if the romset is supported at all and which files are wrong or missing. 
+Especially, if present, the line "Verify the following romsets : <romset> <parent> <bios>" tells you the list of romset/parent/bios needed by the romset you are trying to run.
 
-The white screen tells you if the romset is supported at all and which files are wrong or missing.
-Exceptionally there might be a false positive due to your file being unreadable for some reason.
+Exceptionally there might be a false positive due to your file being unreadable for some reason (file corruption during transfer, file permission, damaged disk drive, ...).
+This is a rabbit hole and something you should only concern yourself if you already used clrmamepro to verify your romsets.
 
 ### How can i run that romhack i found ?
 
@@ -441,6 +444,11 @@ This feature doesn't accept achievements made with any kind of cheat, meaning un
 ### Why do i need to re-enable cheats every time i boot a game ?
 
 It is common for arcade machines to execute self-tests at boot, and in many cases they won't boot if unexpected values have been injected into their memory, which is exactly what cheats do. Disabling cheats at boot is a safety mecanism to prevent those boot issues.
+
+### Why do the self-tests at boot fail ?
+
+Sometimes the NVRAM/EEPROM saved on your disk gets corrupted for some reason, Konami games are especially known for getting this issue *somewhat frequently*.
+NVRAM/EEPROM are saved in the `SAVEFILES_DIRECTORY/fbneo` folder, and you can get around this issue by finding the files corresponding to your game and deleting them.
 
 ### Where is SYSTEM_DIRECTORY ?
 
