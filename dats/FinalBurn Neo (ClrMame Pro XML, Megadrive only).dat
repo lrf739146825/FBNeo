@@ -1883,6 +1883,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="batmanrnmd" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew, Transposition and improvement of SNES version</comment>
+		<description>Batman Returns MD (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>Pyrons Lair</manufacturer>
+		<rom name="Batman Returns MD v1.1 (2024)(Pyrons Lair).bin" size="2097152" crc="f6c4eca5"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="battlyuie" cloneof="battlyui" romof="battlyui" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Battle Golfer Yui (Hack, English)</description>
@@ -6233,7 +6242,7 @@
 		<description>Dynamite Duke (World)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13438.bin" size="524288" crc="39d01c8c"/>
+		<rom name="Dynamite Duke (World)(1990)(Sega).bin" size="524288" crc="39d01c8c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6241,7 +6250,7 @@
 		<description>Dynamite Duke (World, Rev. A)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13438a.bin" size="524288" crc="246f0bda"/>
+		<rom name="Dynamite Duke (World, Rev A)(1990)(Sega).bin" size="524288" crc="246f0bda"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6249,7 +6258,7 @@
 		<description>Dynamite Headdy (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16990.bin" size="2097152" crc="3dfeeb77"/>
+		<rom name="Dynamite Headdy (Euro, USA)(1994)(Sega).bin" size="2097152" crc="3dfeeb77"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6258,7 +6267,7 @@
 		<description>Dynamite Headdy (Hack, English)</description>
 		<year>2007</year>
 		<manufacturer>Jon Najar</manufacturer>
-		<rom name="dynamite headdy (english translation).bin" size="2097152" crc="003e54e5"/>
+		<rom name="Dynamite Headdy T-Eng (2007)(Jon Najar).bin" size="2097152" crc="003e54e5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6275,7 +6284,7 @@
 		<description>Dynamite Headdy (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite headdy (jpn).bin" size="2097152" crc="d03cdb53"/>
+		<rom name="Dynamite Headdy (Japan)(1994)(Sega).bin" size="2097152" crc="d03cdb53"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6284,7 +6293,7 @@
 		<description>Dynamite Headdy (Japan, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite headdy (jpn) (beta).bin" size="2097152" crc="5c25e934"/>
+		<rom name="Dynamite Headdy (Japan, Proto)(1994)(Sega).bin" size="2097152" crc="5c25e934"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6293,7 +6302,7 @@
 		<description>Dynamite Headdy (Prototype, 19940614-CABEZA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite headdy (prototype - jun 14, 1994 - cabeza).bin" size="2097152" crc="971ef24c"/>
+		<rom name="Dynamite Headdy (Proto, 19940614-CABEZA)(Sega).bin" size="2097152" crc="971ef24c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6302,7 +6311,7 @@
 		<description>Dynamite Headdy (Prototype, 19940616)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite headdy (prototype - jun 16, 1994).bin" size="2097152" crc="f8a96719"/>
+		<rom name="Dynamite Headdy (Proto, 19940616)(Sega).bin" size="2097152" crc="f8a96719"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6311,7 +6320,7 @@
 		<description>Dynamite Headdy (Prototype, 19940622)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite headdy (prototype - jun 22, 1994).bin" size="2097152" crc="61001ec8"/>
+		<rom name="Dynamite Headdy (Proto, 19940622)(Sega).bin" size="2097152" crc="61001ec8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6328,15 +6337,15 @@
 		<description>EA Hockey (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="ea hockey (euro).bin" size="524288" crc="9bfc279c"/>
+		<rom name="EA Hockey (Euro)(1991)(.bin" size="524288" crc="9bfc279c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="eahockeyj" cloneof="eahockey" romof="eahockey" sourcefile="megadrive/d_megadrive.cpp">
 		<description>EA Hockey (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="ea hockey (jpn).bin" size="524288" crc="9dcdc894"/>
+		<manufacturer>Electronic Arts - Victor</manufacturer>
+		<rom name="EA Hockey (Japan)(1992)(Electronic Arts - Victor).bin" size="524288" crc="9dcdc894"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6344,7 +6353,7 @@
 		<description>EA Sports Double Header (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="ea304.bin" size="1048576" crc="a0b54cbc"/>
+		<rom name="EA Sports Double Header (Euro)(1993)(Electronic Arts).bin" size="1048576" crc="a0b54cbc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6360,8 +6369,8 @@
 	<game name="earnest" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Earnest Evans (USA)</description>
 		<year>1992</year>
-		<manufacturer>Renovation</manufacturer>
-		<rom name="earnest evans (usa).bin" size="1048576" crc="a243816d"/>
+		<manufacturer>Wolf Team</manufacturer>
+		<rom name="Earnest Evans (USA)(1992)(Wolf Team).bin" size="1048576" crc="a243816d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6377,7 +6386,7 @@
 		<description>Earthworm Jim (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="earthworm jim (euro).bin" size="3145728" crc="1c07b337"/>
+		<rom name="Earthworm Jim (Euro)(1994)(Virgin Interactive).bin" size="3145728" crc="1c07b337"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6395,7 +6404,7 @@
 		<description>Earthworm Jim (Prototype, 19940728)</description>
 		<year>1994</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="earthworm jim (prototype- jul 28,1994).bin" size="3145728" crc="24aa391b"/>
+		<rom name="Earthworm Jim (Proto, 19940728)(Virgin Interactive).bin" size="3145728" crc="24aa391b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6403,7 +6412,7 @@
 		<description>Earthworm Jim (USA)</description>
 		<year>1994</year>
 		<manufacturer>Playmates Interactive</manufacturer>
-		<rom name="earthworm jim (usa).bin" size="3145728" crc="df3acf59"/>
+		<rom name="Earthworm Jim (USA)(1994)(Playmates Interactive).bin" size="3145728" crc="df3acf59"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6411,7 +6420,7 @@
 		<description>Earthworm Jim 2 (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="earthworm jim 2 (euro).bin" size="3145728" crc="af235fdf"/>
+		<rom name="Earthworm Jim 2 (Euro)(1995)(Virgin Interactive).bin" size="3145728" crc="af235fdf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6429,15 +6438,15 @@
 		<description>Earthworm Jim 2 (Protoype, 19950824)</description>
 		<year>1995</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="earthworm jim 2 (prototype - aug 24, 1995).bin" size="3145728" crc="f92a931d"/>
+		<rom name="Earthworm Jim 2 (Proto, 19950824)(Virgin Interactive).bin" size="3145728" crc="f92a931d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ejim2u" cloneof="ejim2" romof="ejim2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Earthworm Jim 2 (USA)</description>
-		<year>1996</year>
+		<year>1995</year>
 		<manufacturer>Playmates Interactive</manufacturer>
-		<rom name="earthworm jim 2 (usa).bin" size="3145728" crc="d57f8ba7"/>
+		<rom name="Earthworm Jim 2 (USA)(1995)(Playmates Interactive).bin" size="3145728" crc="d57f8ba7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6445,7 +6454,7 @@
 		<description>Ecco - The Tides of Time (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco - the tides of time (euro).bin" size="2097152" crc="7b1bf89c"/>
+		<rom name="Ecco - The Tides of Time (Euro)(1994)(Sega).bin" size="2097152" crc="7b1bf89c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6453,7 +6462,7 @@
 		<description>Ecco - The Tides of Time (USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco - the tides of time (usa).bin" size="2097152" crc="ccb21f98"/>
+		<rom name="Ecco - The Tides of Time (USA)(1994)(Sega).bin" size="2097152" crc="ccb21f98"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6462,7 +6471,7 @@
 		<description>Ecco - The Tides of Time (USA, Prototype X11, 19940413)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco - the tides of time (prototype x11 - apr 13, 1994).bin" size="2097152" crc="b5d64817"/>
+		<rom name="Ecco - The Tides of Time (Proto X11 19940413)(Sega).bin" size="2097152" crc="b5d64817"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6471,7 +6480,7 @@
 		<description>Ecco - The Tides of Time (USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco - the tides of time (beta).bin" size="2097152" crc="8db60749"/>
+		<rom name="Ecco - The Tides of Time (USA, Proto)(1994)(Sega).bin" size="2097152" crc="8db60749"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6480,7 +6489,7 @@
 		<description>Ecco - The Tides of Time (USA, Prototype, 19940429)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco ii - the tides of time (prototype - apr 29, 1994).bin" size="2097152" crc="5af83ecb"/>
+		<rom name="Ecco - The Tides of Time (USA, Proto 19940429)(Sega).bin" size="2097152" crc="5af83ecb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6489,7 +6498,7 @@
 		<description>Ecco - The Tides of Time (USA, Prototype, Alt)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco - the tides of time (beta, alt).bin" size="2097152" crc="1d1470ea"/>
+		<rom name="Ecco - The Tides of Time (USA, Proto)(Alt)(1994)(Sega).bin" size="2097152" crc="1d1470ea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6497,7 +6506,7 @@
 		<description>Ecco Jr. (USA, Oceania, 199502)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco jr. (usa, aus) (february 1995).bin" size="1048576" crc="6c6f4b89"/>
+		<rom name="Ecco Jr. (USA, Oceania, 199502)(Sega).bin" size="1048576" crc="6c6f4b89"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6505,7 +6514,7 @@
 		<description>Ecco Jr. (USA, Oceania, 199503)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco jr. (usa, aus) (march 1995).bin" size="1048576" crc="3c517975"/>
+		<rom name="Ecco Jr. (USA, Oceania, 199503)(Sega).bin" size="1048576" crc="3c517975"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6513,7 +6522,7 @@
 		<description>Ecco the Dolphin (Euro, USA, Korea)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15265.bin" size="1048576" crc="45547390"/>
+		<rom name="Ecco the Dolphin (Euro, USA, Korea)(1993)(Sega).bin" size="1048576" crc="45547390"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6530,7 +6539,7 @@
 		<description>Ecco the Dolphin (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15702.bin" size="1048576" crc="6520304d"/>
+		<rom name="Ecco the Dolphin (Japan)(1993)(Sega).bin" size="1048576" crc="6520304d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6539,7 +6548,7 @@
 		<description>Ecco the Dolphin (Prototype, 19930421)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco the dolphin (prototype - apr 21, 1993).bin" size="1048576" crc="17e24509"/>
+		<rom name="Ecco the Dolphin (Proto, 19930421)(Sega).bin" size="1048576" crc="17e24509"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6547,7 +6556,7 @@
 		<description>Ecco the Dolphin II (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16996.bin" size="2097152" crc="062d439c"/>
+		<rom name="Ecco the Dolphin II (Japan)(1994)(Sega).bin" size="2097152" crc="062d439c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6564,15 +6573,15 @@
 		<description>El Viento (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Wolf Team</manufacturer>
-		<rom name="el viento (jpn).bin" size="1048576" crc="6091c36e"/>
+		<rom name="El Viento (Japan)(1991)(Wolf Team).bin" size="1048576" crc="6091c36e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="elviento" sourcefile="megadrive/d_megadrive.cpp">
 		<description>El Viento (USA)</description>
 		<year>1991</year>
-		<manufacturer>Renovation</manufacturer>
-		<rom name="mpr-14336.bin" size="1048576" crc="070a1ceb"/>
+		<manufacturer>Wolf Team</manufacturer>
+		<rom name="El Viento (USA)(1991)(Wolf Team).bin" size="1048576" crc="070a1ceb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6580,7 +6589,7 @@
 		<description>Elemental Master (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Technosoft</manufacturer>
-		<rom name="elemental master (jpn).bin" size="524288" crc="5f553e29"/>
+		<rom name="Elemental Master (Japan)(1990)(Technosoft).bin" size="524288" crc="5f553e29"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6588,7 +6597,7 @@
 		<description>Elemental Master (USA)</description>
 		<year>1993</year>
 		<manufacturer>Renovation</manufacturer>
-		<rom name="elemental master (usa).bin" size="524288" crc="390918c6"/>
+		<rom name="Elemental Master (USA)(1993)(Renovation).bin" size="524288" crc="390918c6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6605,7 +6614,7 @@
 		<description>Eliminate Down (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Soft Vision</manufacturer>
-		<rom name="eliminate down (jpn).bin" size="1048576" crc="48467542"/>
+		<rom name="Eliminate Down (Japan)(1993)(Soft Vision).bin" size="1048576" crc="48467542"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6613,7 +6622,7 @@
 		<description>Elitserien 95 (Sweden)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="swed9584.bin" size="2097152" crc="e10a25c0"/>
+		<rom name="Elitserien 95 (Sweden)(1994)(Electronic Arts).bin" size="2097152" crc="e10a25c0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6621,7 +6630,7 @@
 		<description>Elitserien 96 (Sweden)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="elitserien 96 (sweden).bin" size="2097152" crc="9821d0a3"/>
+		<rom name="Elitserien 96 (Sweden)(1995)(Electronic Arts).bin" size="2097152" crc="9821d0a3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6629,7 +6638,7 @@
 		<description>Empire of Steel (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="empire of steel (euro).bin" size="1048576" crc="e5517b77"/>
+		<rom name="Empire of Steel (Euro)(1992)(Flying Edge).bin" size="1048576" crc="e5517b77"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7508,6 +7517,15 @@
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="final blow (jpn).bin" size="524288" crc="48ad505d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Final Fight MD (HB, v24.01.20b)</description>
+		<year>2024</year>
+		<manufacturer>MXRetroDev</manufacturer>
+		<rom name="Final Fight MD v24.01.20b (2024)(MXRetroDev).bin" size="3670016" crc="2d5321a3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14198,7 +14216,7 @@
 		<description>NHL Hockey (USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nhl hockey (usa).bin" size="524288" crc="2641653f"/>
+		<rom name="NHL Hockey (USA)(1991)(Electronic Arts).bin" size="524288" crc="2641653f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19936,7 +19954,7 @@
 		<description>Steel Empire, The (USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="steel empire (usa).bin" size="1048576" crc="d0e7a0b6"/>
+		<rom name="Steel Empire, The (USA)(1992)(Flying Edge).bin" size="1048576" crc="d0e7a0b6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21297,6 +21315,15 @@
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="super smash tv (hack, spanish).bin" size="524288" crc="349b2a6c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superstarwarsmd" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Star Wars Holiday Special (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>Master Linkuei</manufacturer>
+		<rom name="Super Star Wars Holiday Special v1.1 (2024)(Master Linkuei).bin" size="2097152" crc="55db6351"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
