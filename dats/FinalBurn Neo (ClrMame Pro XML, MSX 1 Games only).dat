@@ -2012,6 +2012,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="binarybattle" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Binary Battle (HB)</description>
+		<year>2025</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Binary Battle (2025)(Haplo).rom" size="32768" crc="92be4f86"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="binarylnd" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Binary Land (Euro)</description>
 		<year>1984</year>
@@ -11474,6 +11486,30 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="molotoven" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, Select '2.Redefine' to set and use controller</comment>
+		<description>Molotov (English) (HB)</description>
+		<year>2025</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Molotov EN (2025)(joesg).rom" size="32768" crc="7a1e30ec"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="molotoves" cloneof="molotoven" romof="molotoven" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, Select '2.Redefine' to set and use controller</comment>
+		<description>Molotov (Spanish) (HB)</description>
+		<year>2025</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Molotov ES (2025)(joesg).rom" size="32768" crc="fc4d1d90"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="monkeyac" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Monkey Academy (Japan)</description>
 		<year>1984</year>
@@ -14588,6 +14624,18 @@
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Road Fighter (Japan)(Alt)(1985)(Konami).rom" size="16384" crc="cb82d8c9"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roborace" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Robo Race (HB)</description>
+		<year>2024-25</year>
+		<manufacturer>Maximilian Wohrl</manufacturer>
+		<rom name="Robo Race (2024)(Maximilian Wohrl).rom" size="45583" crc="a3bf7688"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
