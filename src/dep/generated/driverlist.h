@@ -1993,6 +1993,7 @@ DRV		BurnSpecBilnightes;
 DRV		BurnSpecBillythekid;
 DRV		BurnDrvmd_bimini;
 DRV		BurnSpecBinbattle;
+DRV		BurnDrvMSX_binarybattle;
 DRV		BurnDrvnes_binarycity;
 DRV		BurnSpecBinland;
 DRV		BurnSpecBinland16;
@@ -2022,14 +2023,14 @@ DRV		BurnDrvBiomtoy;
 DRV		BurnDrvsnes_Biometal;
 DRV		BurnDrvngpc_biomotor;
 DRV		BurnDrvngpc_biomotorj;
-DRV		BurnSpecbionicc;
-DRV		BurnSpecbionicc_48;
 DRV		BurnDrvbionicc;
 DRV		BurnDrvnes_bioniccommandoc;
 DRV		BurnDrvbionicc1;
 DRV		BurnDrvbionicc2;
 DRV		BurnDrvnes_bioniccommando;
 DRV		BurnDrvnes_bionicom;
+DRV		BurnSpecbionicc128;
+DRV		BurnSpecbionicc48;
 DRV		BurnDrvbioniccbl;
 DRV		BurnDrvbioniccbl2;
 DRV		BurnDrvBioplayc;
@@ -8012,7 +8013,7 @@ DRV		BurnDrvsnes_Greatwaldo;
 DRV		BurnDrvmd_ghw;
 DRV		BurnDrvmd_ghwj;
 DRV		BurnDrvmd_ghwu;
-DRV		BurnSpecgberet_48;
+DRV		BurnSpecgberet;
 DRV		BurnDrvGberetb;
 DRV		BurnDrvMSX_gberet;
 DRV		BurnDrvMSX_gbereta;
@@ -12137,6 +12138,8 @@ DRV		BurnDrvMSX_molemol;
 DRV		BurnDrvMSX_molemol2;
 DRV		BurnDrvMSX_molecman;
 DRV		BurnSpecMoleychristmas;
+DRV		BurnDrvMSX_molotoven;
+DRV		BurnDrvMSX_molotoves;
 DRV		BurnDrvMomokob;
 DRV		BurnDrvMomokoe;
 DRV		BurnDrvMomoko;
@@ -15786,6 +15789,7 @@ DRV		BurnDrvcv_robinh;
 DRV		BurnSpecrobinofwood;
 DRV		BurnDrvRoboarmya;
 DRV		BurnDrvRoboarmy;
+DRV		BurnDrvMSX_roborace;
 DRV		BurnDrvMSX_roborumble;
 DRV		BurnDrvnes_robowarrior;
 DRV		BurnDrvRobowres;
@@ -24928,6 +24932,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecBillythekid,		// Billy the Kid (48K)
 	&BurnDrvmd_bimini,			// Bimini Run (USA)
 	&BurnSpecBinbattle,			// Binary Battle (48K) (HB)
+	&BurnDrvMSX_binarybattle,	// Binary Battle (HB)
 	&BurnDrvnes_binarycity,		// Binary City (GlobalHack)
 	&BurnSpecBinland,			// Binary Land (128K) (HB, v1.7)
 	&BurnSpecBinland16,			// Binary Land (16K) (HB, v1.7)
@@ -24957,14 +24962,14 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Biometal,		// BioMetal (USA)
 	&BurnDrvngpc_biomotor,		// BioMotor Unitron (Euro, USA)
 	&BurnDrvngpc_biomotorj,		// BioMotor Unitron (Japan)
-	&BurnSpecbionicc,			// Bionic Commando (128K)
-	&BurnSpecbionicc_48,		// Bionic Commando (48K)
 	&BurnDrvbionicc,			// Bionic Commando (Euro)
 	&BurnDrvnes_bioniccommandoc,// Bionic Commando (Hack, Spanish v1.03)
 	&BurnDrvbionicc1,			// Bionic Commando (US set 1)
 	&BurnDrvbionicc2,			// Bionic Commando (US set 2)
 	&BurnDrvnes_bioniccommando,	// Bionic Commando (USA)
 	&BurnDrvnes_bionicom,		// Bionic Commando - Return of Hitler (Hack)
+	&BurnSpecbionicc128,		// Bionic Commandos (128K)
+	&BurnSpecbionicc48,			// Bionic Commandos (48K)
 	&BurnDrvbioniccbl,			// Bionic Commandos (bootleg, set 1)
 	&BurnDrvbioniccbl2,			// Bionic Commandos (bootleg, set 2)
 	&BurnDrvBioplayc,			// Bioplaything Cop (ver. 1.0.1823, checksum cd960fc9, prototype)
@@ -27405,7 +27410,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecDarkside,			// Dark Side (48K)
 	&BurnSpecDarkstar,			// Dark Star (48K)
 	&BurnDrvDarktowr,			// Dark Tower
-	&BurnSpecDarktransit,		// Dark Transit (48K) (HB)
+	&BurnSpecDarktransit,		// Dark Transit (128K) (HB)
 	&BurnSpecDarkveile,			// Dark Veil, The (English) (48K) (HB)
 	&BurnSpecDarklostpages,		// Dark, The - Lost Pages (128K) (HB)
 	&BurnSpecdarkman,			// Darkman (128K)
@@ -28881,7 +28886,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvElim4,				// Eliminator (4 Players)
 	&BurnDrvElim4p,				// Eliminator (4 Players, prototype)
 	&BurnDrvnes_elimiboadue,	// Eliminator Boat Duel (USA)
-	&BurnSpecelite,				// Elite (48K-128K)
+	&BurnSpecelite,				// Elite (128K)
 	&BurnDrvnes_elite,			// Elite (Euro)
 	&BurnDrvmd_elit95,			// Elitserien 95 (Sweden)
 	&BurnDrvmd_elit96,			// Elitserien 96 (Sweden)
@@ -29752,7 +29757,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_fpigarus,		// Flight of Pigarus (HB, v1.11)
 	&BurnDrvnes_flighint,		// Flight of the Intruder (USA)
 	&BurnDrvMSX_fsim,			// Flight Simulator - Gyorai Kougeki (Japan)
-	&BurnSpecFlintstones,		// Flintstones, the (128K)
+	&BurnSpecFlintstones,		// Flintstones, The (128K)
 	&BurnDrvmd_flint,			// Flintstones, The (Euro)
 	&BurnDrvMSX_flintstones,	// Flintstones, The (Euro)
 	&BurnDrvsms_flint,			// Flintstones, The (Euro, Brazil)
@@ -30027,7 +30032,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fuzzicalfighter,// Fuzzical Fighter (Hack, English)
 	&BurnDrvnes_fuzzicalfighterj,// Fuzzical Fighter (Japan)
 	&BurnDrvmd_fxunyuki,		// FX Unit Yuki - the Henshin Engine (World) (Unl)
-	&BurnSpecgloc,				// G-LOC (128K)
+	&BurnSpecgloc,				// G-LOC - R360 (128K)
 	&BurnDrvsms_gloc,			// G-LOC Air Battle (Euro, Brazil, Korea)
 	&BurnDrvgg_gloc,			// G-LOC Air Battle (Euro, USA, Brazil)
 	&BurnDrvmd_glocs,			// G-Loc Air Battle (Hack, Spanish)
@@ -30400,7 +30405,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_gemfire,			// Gemfire (USA)
 	&BurnDrvnes_gemfire,		// Gemfire (USA)
 	&BurnDrvsnes_Gemfire,		// Gemfire (USA)
-	&BurnSpecGeminiwing,		// Gemini Wing (128K)
+	&BurnSpecGeminiwing,		// Gemini Wing (48K-128K)
 	&BurnDrvGeminib,			// Gemini Wing (bootleg)
 	&BurnDrvGeminij,			// Gemini Wing (Japan)
 	&BurnDrvGemini,				// Gemini Wing (World)
@@ -30947,7 +30952,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_ghw,				// Greatest Heavyweights (Euro)
 	&BurnDrvmd_ghwj,			// Greatest Heavyweights (Japan)
 	&BurnDrvmd_ghwu,			// Greatest Heavyweights (USA)
-	&BurnSpecgberet_48,			// Green Beret (48K)
+	&BurnSpecgberet,			// Green Beret (48K)
 	&BurnDrvGberetb,			// Green Beret (bootleg) [needs correct PROM decoding, NOT WORKING]
 	&BurnDrvMSX_gberet,			// Green Beret (Euro)
 	&BurnDrvMSX_gbereta,		// Green Beret (Euro, Alt)
@@ -35072,6 +35077,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_molemol2,		// Mole Mole 2 (Japan)
 	&BurnDrvMSX_molecman,		// Molecule Man (Euro)
 	&BurnSpecMoleychristmas,	// Moley Christmas (128K)
+	&BurnDrvMSX_molotoven,		// Molotov (English) (HB)
+	&BurnDrvMSX_molotoves,		// Molotov (Spanish) (HB)
 	&BurnDrvMomokob,			// Momoko 120% (bootleg)
 	&BurnDrvMomokoe,			// Momoko 120% (English text)
 	&BurnDrvMomoko,				// Momoko 120% (Japanese text)
@@ -37780,7 +37787,7 @@ static struct BurnDriver* pDriver[] = {
 #endif
 	&BurnDrvmd_pulsemane,		// Pulseman (Hack, English)
 	&BurnDrvmd_pulseman,		// Pulseman (Japan)
-	&BurnSpecPulsoids,			// Pulsoid (128K)
+	&BurnSpecPulsoids,			// Pulsoid (48K-128K)
 	&BurnDrvPulstar,			// Pulstar
 	&BurnDrvnes_pulveration,	// Pulveration (Unl)
 	&BurnSpecPulzar,			// Pulzar (48K) (HB)
@@ -38721,6 +38728,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecrobinofwood,		// Robin of the Wood (128K)
 	&BurnDrvRoboarmya,			// Robo Army (NGM-032 ~ NGH-032)
 	&BurnDrvRoboarmy,			// Robo Army
+	&BurnDrvMSX_roborace,		// Robo Race (HB)
 	&BurnDrvMSX_roborumble,		// Robo Rumble (HB)
 	&BurnDrvnes_robowarrior,	// Robo Warrior (USA)
 	&BurnDrvRobowres,			// Robo Wres 2001
@@ -47855,6 +47863,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_billythekid", "spectrum/d_spectrum.cpp"},
 	{ "md_bimini", "megadrive/d_megadrive.cpp"},
 	{ "spec_binbattle", "spectrum/d_spectrum.cpp"},
+	{ "msx_binarybattle", "msx/d_msx.cpp"},
 	{ "nes_binarycity", "nes/d_nes.cpp"},
 	{ "spec_binland", "spectrum/d_spectrum.cpp"},
 	{ "spec_binland16", "spectrum/d_spectrum.cpp"},
@@ -47884,14 +47893,14 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_biometal", "snes/d_snes.cpp"},
 	{ "ngp_biomotor", "pst90s/d_ngp.cpp"},
 	{ "ngp_biomotorj", "pst90s/d_ngp.cpp"},
-	{ "spec_bionicc", "spectrum/d_spectrum.cpp"},
-	{ "spec_bionicc_48", "spectrum/d_spectrum.cpp"},
 	{ "bionicc", "pre90s/d_bionicc.cpp"},
 	{ "nes_bioniccommandoc", "nes/d_nes.cpp"},
 	{ "bionicc1", "pre90s/d_bionicc.cpp"},
 	{ "bionicc2", "pre90s/d_bionicc.cpp"},
 	{ "nes_bioniccommando", "nes/d_nes.cpp"},
 	{ "nes_bionicom", "nes/d_nes.cpp"},
+	{ "spec_bionicc128", "spectrum/d_spectrum.cpp"},
+	{ "spec_bionicc48", "spectrum/d_spectrum.cpp"},
 	{ "bioniccbl", "pre90s/d_bionicc.cpp"},
 	{ "bioniccbl2", "pre90s/d_bionicc.cpp"},
 	{ "bioplayc", "pst90s/d_gaelco.cpp"},
@@ -53822,7 +53831,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_ghw", "megadrive/d_megadrive.cpp"},
 	{ "md_ghwj", "megadrive/d_megadrive.cpp"},
 	{ "md_ghwu", "megadrive/d_megadrive.cpp"},
-	{ "spec_gberet_48", "spectrum/d_spectrum.cpp"},
+	{ "spec_gberet", "spectrum/d_spectrum.cpp"},
 	{ "gberetb", "konami/d_gberet.cpp"},
 	{ "msx_gberet", "msx/d_msx.cpp"},
 	{ "msx_gbereta", "msx/d_msx.cpp"},
@@ -57911,6 +57920,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_molemol2", "msx/d_msx.cpp"},
 	{ "msx_molecman", "msx/d_msx.cpp"},
 	{ "spec_moleychristmas", "spectrum/d_spectrum.cpp"},
+	{ "msx_molotoven", "msx/d_msx.cpp"},
+	{ "msx_molotoves", "msx/d_msx.cpp"},
 	{ "momokob", "pre90s/d_momoko.cpp"},
 	{ "momokoe", "pre90s/d_momoko.cpp"},
 	{ "momoko", "pre90s/d_momoko.cpp"},
@@ -61532,6 +61543,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_robinofwood", "spectrum/d_spectrum.cpp"},
 	{ "roboarmya", "neogeo/d_neogeo.cpp"},
 	{ "roboarmy", "neogeo/d_neogeo.cpp"},
+	{ "msx_roborace", "msx/d_msx.cpp"},
 	{ "msx_roborumble", "msx/d_msx.cpp"},
 	{ "nes_robowarrior", "nes/d_nes.cpp"},
 	{ "robowres", "sega/d_appoooh.cpp"},

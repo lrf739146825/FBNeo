@@ -104,9 +104,6 @@ static void retro_audio_buff_status_cb(bool active, unsigned occupancy, bool und
 
 // Mapping of PC inputs to game inputs
 struct GameInp* GameInp = NULL;
-UINT32 nGameInpCount = 0;
-INT32 nAnalogSpeed = 0x0100;
-INT32 nFireButtons = 0;
 
 char g_driver_name[128];
 char g_rom_dir[MAX_PATH];
