@@ -20063,8 +20063,8 @@
 		<description>Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.3, Hack)</description>
 		<year>2024</year>
 		<manufacturer>hack (Bear)</manufacturer>
-		<rom name="063-p1pe.p1" size="1048576" crc="184c3a6c"/>
-		<rom name="063-p2pe.sp2" size="1048576" crc="025ee4ed"/>
+		<rom name="063-p1pe.p1" size="1048576" crc="20625a12"/>
+		<rom name="063-p2pe.sp2" size="1048576" crc="231c4e31"/>
 		<rom name="063-p3pe.p3" size="131072" crc="82ce7ad7"/>
 		<rom name="063-s1.s1" merge="063-s1.s1" size="131072" crc="64a5cd66"/>
 		<rom name="063-c1.c1" merge="063-c1.c1" size="2097152" crc="86cd307c"/>
