@@ -4157,6 +4157,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fireemblemtsc" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Monshou no Nazo (Hack, Simplified Chinese v1.03)</description>
+		<year>2003</year>
+		<manufacturer>Wolf Group</manufacturer>
+		<rom name="Fire Emblem - Monshou no Nazo T-Chs v1.03 (2003)(Wolf Group).sfc" size="3145728" crc="5962b217"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblemttc" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Monshou no Nazo (Hack, Traditional Chinese v1.03)</description>
+		<year>2003</year>
+		<manufacturer>Wolf Group</manufacturer>
+		<rom name="Fire Emblem - Monshou no Nazo T-Cht v1.03 (2003)(Wolf Group).sfc" size="3145728" crc="76832422"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fireemblemj" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
 		<description>Fire Emblem - Monshou no Nazo (Japan, Rev. 1)</description>
 		<year>1993</year>
@@ -4174,12 +4192,56 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fireemblem4tsc" cloneof="fireemblem4j" romof="fireemblem4j" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Seisen no Keifu (Hack, Simplified Chinese v1.1)</description>
+		<year>2008</year>
+		<manufacturer>FIREEMBLEM.NET</manufacturer>
+		<rom name="Fire Emblem - Seisen no Keifu T-Chs v1.1 (2008)(FIREEMBLEM.NET).sfc" size="4194304" crc="58a9a697"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblem4ttc" cloneof="fireemblem4j" romof="fireemblem4j" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Seisen no Keifu (Hack, Traditional Chinese v1.1)</description>
+		<year>2008</year>
+		<manufacturer>FIREEMBLEM.NET</manufacturer>
+		<rom name="Fire Emblem - Seisen no Keifu T-Cht v1.1 (2008)(FIREEMBLEM.NET).sfc" size="4194304" crc="8ed60773"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblem4j" sourcefile="snes/d_snes.cpp">
+		<description>Fire Emblem - Seisen no Keifu (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Fire Emblem - Seisen no Keifu (Japan)(1996)(Nintendo).sfc" size="4194304" crc="dc0d8cf9"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fireemblem776te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem - Thracia 776 (Hack, English v1.08)</description>
 		<year>2021</year>
 		<manufacturer>Cirosan, Miacis</manufacturer>
 		<rom name="Fire Emblem - Thracia 776 T-Eng v1.08 (2021)(Cirosan, Miacis).sfc" size="6291456" crc="2039d71b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblem776tsc" cloneof="fireemblem776te" romof="fireemblem776te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Thracia 776 (Hack, Simplified Chinese v1.01)</description>
+		<year>2001</year>
+		<manufacturer>Wolf Group</manufacturer>
+		<rom name="Fire Emblem - Thracia 776 T-Chs v1.01 (2001)(Wolf Group).sfc" size="4194304" crc="9618371f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblem776ttc" cloneof="fireemblem776te" romof="fireemblem776te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Thracia 776 (Hack, Traditional Chinese v1.00)</description>
+		<year>2001</year>
+		<manufacturer>Wolf Group</manufacturer>
+		<rom name="Fire Emblem - Thracia 776 T-Cht v1.00 (2001)(Wolf Group).sfc" size="4194304" crc="533b84da"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9468,6 +9530,32 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="romasaga3tsc" cloneof="romasaga3j" romof="romasaga3j" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Romancing Sa-Ga 3 (Hack, Simplified Chinese v1.01)</description>
+		<year>2010</year>
+		<manufacturer>Werther Lee</manufacturer>
+		<rom name="Romancing Sa-Ga 3 T-Cht v1.01 (2010)(Werther Lee).sfc" size="4194304" crc="c9a66742"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="romasaga3ttc" cloneof="romasaga3j" romof="romasaga3j" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Romancing Sa-Ga 3 (Hack, Traditional Chinese v1.01)</description>
+		<year>2010</year>
+		<manufacturer>Werther Lee</manufacturer>
+		<rom name="Romancing Sa-Ga 3 T-Cht v1.01 (2010)(Werther Lee).sfc" size="4194304" crc="c8d13bdb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="romasaga3j" sourcefile="snes/d_snes.cpp">
+		<description>Romancing Sa-Ga 3 (Japan, Rev. 1)</description>
+		<year>1995</year>
+		<manufacturer>Squaresoft</manufacturer>
+		<rom name="Romancing Sa-Ga 3 (J, Rev 1)(1995)(Squaresoft).sfc" size="4194304" crc="6c50c2cf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="royalconq" cloneof="kingarthurw" romof="kingarthurw" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
 		<description>Royal Conquest (Japan)</description>
@@ -12944,6 +13032,23 @@
 		<manufacturer>Kemco - Gremlin Interactive</manufacturer>
 		<rom name="Top Gear 3000 (1994)(Kemco - Gremlin Interactive).sfc" size="1048576" crc="a20be998"/>
 		<rom name="dsp4.bin" merge="dsp4.bin" size="10240" crc="ce0c7783"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tornekodungtsc" cloneof="tornekodungj" romof="tornekodungj" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Torneco no Daibouken - Fushigi no Dungeon (Hack, Simplified Chinese v1.0)</description>
+		<year>2025</year>
+		<manufacturer>Xiaoguihun, Feiyuying, Aren</manufacturer>
+		<rom name="Torneco no Daibouken - Fushigi no Dungeon T-Chs v1.0 (2025)(Xiaoguihun, Feiyuying, Aren).sfc" size="2097152" crc="2e14f887"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tornekodungj" sourcefile="snes/d_snes.cpp">
+		<description>Torneco no Daibouken - Fushigi no Dungeon (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Chun Soft</manufacturer>
+		<rom name="Torneco no Daibouken - Fushigi no Dungeon (J)(1993)(Chun Soft).sfc" size="1572864" crc="654e1be4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
