@@ -2761,6 +2761,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="derlangtsc" cloneof="derlangte" romof="derlangte" sourcefile="snes/d_snes.cpp">
+		<description>Der Langrisser (Hack, Simplified Chinese v1.31)</description>
+		<year>2015</year>
+		<manufacturer>Hen, Xuejianbingdao</manufacturer>
+		<rom name="Der Langrisser T-Chs v1.31 (2015)(Hen, Xuejianbingdao).sfc" size="4194304" crc="ba4567ca"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="derlangj" cloneof="derlangte" romof="derlangte" sourcefile="snes/d_snes.cpp">
 		<description>Der Langrisser (Japan, Rev. 1)</description>
 		<year>1995</year>
@@ -4498,6 +4506,15 @@
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Fun 'n Games (USA)(1994)(Tradewest).sfc" size="1048576" crc="5d6deac7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mystdung2tsc" cloneof="mystdung2te" romof="mystdung2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fushigi no Dungeon 2 - Fuurai no Shiren (Hack, Simplified Chinese v1.0)</description>
+		<year>2011</year>
+		<manufacturer>Werther, Phoenix, Kenyo</manufacturer>
+		<rom name="Fushigi no Dungeon 2 - Fuurai no Shiren T-Chs v1.0 (2011)(Werther, Phoenix, Kenyo).sfc" size="4194304" crc="b8d26134"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9838,6 +9855,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="seikdens3ttc" cloneof="seikdens3te" romof="seikdens3te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Seiken Densetsu 3 (Hack, Traditional Chinese v1.0)</description>
+		<year>2012</year>
+		<manufacturer>darklink, vinxu</manufacturer>
+		<rom name="Seiken Densetsu 3 T-Cht v1.0 (2012)(darklink, vinxu).sfc" size="4194304" crc="86c49fcd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="seikdens3j" cloneof="seikdens3te" romof="seikdens3te" sourcefile="snes/d_snes.cpp">
 		<description>Seiken Densetsu 3 (Japan)</description>
 		<year>1993</year>
@@ -13066,6 +13092,15 @@
 		<year>2004</year>
 		<manufacturer>Metalhawk's Translations</manufacturer>
 		<rom name="Treasure Hunter G T-Eng Post Beta 2 (2004)(Metalhawk's Translations).sfc" size="4194816" crc="ebb81b81"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="treashuntgtsc" cloneof="treashuntgte" romof="treashuntgte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Treasure Hunter G (Hack, Simplified Chinese v1.0)</description>
+		<year>2012</year>
+		<manufacturer>yiyayiya</manufacturer>
+		<rom name="Treasure Hunter G T-Chs v1.0 (2012)(yiyayiya).sfc" size="4194304" crc="829f6663"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
