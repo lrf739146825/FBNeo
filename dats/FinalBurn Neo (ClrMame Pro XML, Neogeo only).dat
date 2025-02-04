@@ -28124,21 +28124,21 @@
 		<description>The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (Easy Combo Edition, Hack)</description>
 		<year>2024</year>
 		<manufacturer>hack</manufacturer>
-		<rom name="242-p1eck.p1" size="1048576" crc="eb0fd146"/>
-		<rom name="242-p2eck.sp2" size="4194304" crc="c784d2c9"/>
+		<rom name="242-p1eck.p1" size="1048576" crc="aef99d50"/>
+		<rom name="242-p2eck.sp2" size="4194304" crc="3abd98eb"/>
 		<rom name="242-s1eck.s1" size="131072" crc="e50c8256"/>
-		<rom name="242-c1eck.c1" size="8388608" crc="03963c99"/>
-		<rom name="242-c2eck.c2" size="8388608" crc="f2bce143"/>
+		<rom name="242-c1eck.c1" size="8388608" crc="b977ce78"/>
+		<rom name="242-c2eck.c2" size="8388608" crc="0fce3203"/>
 		<rom name="242-c3eck.c3" size="8388608" crc="fd04ebd3"/>
 		<rom name="242-c4eck.c4" size="8388608" crc="413f0427"/>
 		<rom name="242-c5eck.c5" size="8388608" crc="76252bdc"/>
 		<rom name="242-c6eck.c6" size="8388608" crc="13d5b9b7"/>
 		<rom name="242-c7eck.c7" size="8388608" crc="c3dda442"/>
 		<rom name="242-c8eck.c8" size="8388608" crc="f8e2c321"/>
-		<rom name="242-c9eck.c9" size="8388608" crc="5a8f8d88"/>
-		<rom name="242-c10eck.c10" size="8388608" crc="dc7a6504"/>
+		<rom name="242-c9eck.c9" size="8388608" crc="32a32160"/>
+		<rom name="242-c10eck.c10" size="8388608" crc="3fa53db9"/>
 		<rom name="242-m1eck.m1" size="262144" crc="a416260e"/>
-		<rom name="242-v1eck.v1" size="4194304" crc="64ebb03e"/>
+		<rom name="242-v1eck.v1" size="4194304" crc="93804bfe"/>
 		<rom name="242-v2eck.v2" size="4194304" crc="77acfcae"/>
 		<rom name="242-v3eck.v3" size="4194304" crc="33b1e408"/>
 		<rom name="242-v4eck.v4" size="4194304" crc="50c82369"/>
