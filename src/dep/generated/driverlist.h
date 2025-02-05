@@ -12548,6 +12548,7 @@ DRV		BurnDrvmd_mspacman;
 DRV		BurnDrvmd_mspacmans;
 DRV		BurnDrvmspacmanlai;
 DRV		BurnDrvmspacmbmc;
+DRV		BurnDrvmspacmap;
 DRV		BurnDrvmd_mspacmanpir;
 DRV		BurnDrvmspacmnf;
 DRV		BurnDrvnes_mspacmanu;
@@ -13750,6 +13751,7 @@ DRV		BurnDrvpacman;
 DRV		BurnDrvpacmod;
 DRV		BurnDrvpacmanf;
 DRV		BurnDrvPacmanmr;
+DRV		BurnDrvpacmanp;
 DRV		BurnDrvcv_pacman;
 DRV		BurnDrvpacmanso;
 DRV		BurnDrvnes_pacmanu;
@@ -13816,7 +13818,6 @@ DRV		BurnDrvMSX_pacific;
 DRV		BurnDrvPackbangp;
 DRV		BurnDrvPackbang;
 DRV		BurnDrvpacketman;
-DRV		BurnDrvpacmanp;
 DRV		BurnDrvclubpacm;
 DRV		BurnDrvMSX_pacobomb2e;
 DRV		BurnDrvMSX_pacobomb2i;
@@ -35537,6 +35538,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_mspacmans,		// Ms. Pac-Man (Hack, Spanish v1.1)
 	&BurnDrvmspacmanlai,		// Ms. Pac-Man (Leisure and Allied bootleg)
 	&BurnDrvmspacmbmc,			// Ms. Pac-Man (Marti Colls bootleg)
+	&BurnDrvmspacmap,			// Ms. Pac-Man (Patched)
 	&BurnDrvmd_mspacmanpir,		// Ms. Pac-Man (Pirate, Ripped from Golden 10 in 1) (Unl)
 	&BurnDrvmspacmnf,			// Ms. Pac-Man (speedup hack)
 	&BurnDrvnes_mspacmanu,		// Ms. Pac-Man (USA) (Namco)
@@ -36739,6 +36741,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpacmod,				// Pac-Man (Midway, harder)
 	&BurnDrvpacmanf,			// Pac-Man (Midway, speedup hack)
 	&BurnDrvPacmanmr,			// Pac-Man (Model Racing bootleg)
+	&BurnDrvpacmanp,			// Pac-Man (Patched)
 	&BurnDrvcv_pacman,			// Pac-Man (Prototype)
 	&BurnDrvpacmanso,			// Pac-Man (SegaSA / Sonic)
 	&BurnDrvnes_pacmanu,		// Pac-Man (USA) (Namco)
@@ -36805,7 +36808,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPackbangp,			// Pack'n Bang Bang (prototype)
 	&BurnDrvPackbang,			// Pack'n Bang Bang
 	&BurnDrvpacketman,			// Packetman (bootleg)
-	&BurnDrvpacmanp,			// Pacman (Patched)
 	&BurnDrvclubpacm,			// Pacman Club / Club Lambada (Argentina)
 	&BurnDrvMSX_pacobomb2e,		// Paco 2 - Paco El Bombas Again (English) (HB)
 	&BurnDrvMSX_pacobomb2i,		// Paco 2 - Paco El Bombas Again (Italian) (HB)
@@ -58424,6 +58426,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_mspacmans", "megadrive/d_megadrive.cpp"},
 	{ "mspacmanlai", "pre90s/d_pacman.cpp"},
 	{ "mspacmbmc", "pre90s/d_pacman.cpp"},
+	{ "mspacmap", "pre90s/d_pacman.cpp"},
 	{ "md_mspacmanpir", "megadrive/d_megadrive.cpp"},
 	{ "mspacmnf", "pre90s/d_pacman.cpp"},
 	{ "nes_mspacmanu", "nes/d_nes.cpp"},
@@ -59618,6 +59621,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pacmod", "pre90s/d_pacman.cpp"},
 	{ "pacmanf", "pre90s/d_pacman.cpp"},
 	{ "pacmanmr", "pre90s/d_pacman.cpp"},
+	{ "pacmanp", "pre90s/d_pacman.cpp"},
 	{ "cv_pacman", "coleco/d_coleco.cpp"},
 	{ "pacmanso", "pre90s/d_pacman.cpp"},
 	{ "nes_pacmanu", "nes/d_nes.cpp"},
@@ -59684,7 +59688,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "packbangp", "pst90s/d_kaneko16.cpp"},
 	{ "packbang", "pst90s/d_kaneko16.cpp"},
 	{ "packetman", "pre90s/d_pacman.cpp"},
-	{ "pacmanp", "pre90s/d_pacman.cpp"},
 	{ "clubpacm", "pre90s/d_pacman.cpp"},
 	{ "msx_pacobomb2e", "msx/d_msx.cpp"},
 	{ "msx_pacobomb2i", "msx/d_msx.cpp"},
