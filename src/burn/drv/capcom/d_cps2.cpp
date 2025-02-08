@@ -1,18 +1,5 @@
 #include "cps.h"
 
-INT32 Cps2Volume = 39;
-INT32 Cps2DisableDigitalVolume = 0;
-UINT8 Cps2VolUp;
-UINT8 Cps2VolDwn;
-UINT8 AspectDIP; // only for Cps2Turbo == 1
-
-UINT16 Cps2VolumeStates[40] = {
-	0xf010, 0xf008, 0xf004, 0xf002, 0xf001, 0xe810, 0xe808, 0xe804, 0xe802, 0xe801,
-	0xe410, 0xe408, 0xe404, 0xe402, 0xe401, 0xe210, 0xe208, 0xe204, 0xe202, 0xe201,
-	0xe110, 0xe108, 0xe104, 0xe102, 0xe101, 0xe090, 0xe088, 0xe084, 0xe082, 0xe081,
-	0xe050, 0xe048, 0xe044, 0xe042, 0xe041, 0xe030, 0xe028, 0xe024, 0xe022, 0xe021
-};
-
 // Input Definitions
 
 static struct BurnInputInfo Cps2FightingInputList[] = {
@@ -11799,13 +11786,13 @@ struct BurnDriver BurnDrvCpsSsf2xjr1r = {
 };
 
 struct BurnDriver BurnDrvCpsSsf2xjr1trn = {
-   "ssf2xjr1trn", "ssf2t", NULL, NULL, "1994",
-   "Super Street Fighter II X - GMC Trainer (Japan 940223)\0", NULL, "Hack", "CPS2",
-   NULL, NULL, NULL, NULL,
-   BDF_GAME_WORKING | BDF_CLONE | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS2, GBF_VSFIGHT, FBF_SF,
-   NULL, Ssf2xjr1trnRomInfo, Ssf2xjr1trnRomName, NULL, NULL, NULL, NULL, Cps2FightingInputInfo, NULL,
-   Ssf2tInit, DrvExit, Cps2Frame, CpsRedraw, CpsAreaScan,
-   &CpsRecalcPal, 0x1000, 384, 224, 4, 3
+	"ssf2xjr1trn", "ssf2t", NULL, NULL, "1994",
+	"Super Street Fighter II X: GMC Trainer (Japan 940223)\0", NULL, "Hack", "CPS2",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS2, GBF_VSFIGHT, FBF_SF,
+	NULL, Ssf2xjr1trnRomInfo, Ssf2xjr1trnRomName, NULL, NULL, NULL, NULL, Cps2FightingInputInfo, NULL,
+	Ssf2tInit, DrvExit, Cps2Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
 struct BurnDriver BurnDrvCpsVhunt2 = {

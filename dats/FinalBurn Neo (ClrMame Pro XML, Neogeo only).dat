@@ -30852,6 +30852,7 @@
 		<rom name="262-v4ult-08-e0.v4" size="4194304" crc="81e7a417"/>
 		<rom name="262-v5ult-08-e0.v5" size="4194304" crc="42423d32"/>
 		<rom name="262-v6ult-08-e0.v6" size="4194304" crc="73a03cbf"/>
+		<rom name="262-v7ult-08-e0.v7" size="4194304" crc="7a2d38df"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
