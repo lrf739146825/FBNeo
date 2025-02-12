@@ -1586,6 +1586,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="barback" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Barback (HB)</description>
+		<year>2024</year>
+		<manufacturer>Savage Squirrel Games</manufacturer>
+		<rom name="Barback (2024)(Savage Squirrel Games).nes" size="524304" crc="32b40921"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="bmetal2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew, NesDev Competition build</comment>
 		<description>Bare Metal 2.0 (HB)</description>
@@ -5310,7 +5319,7 @@
 		<description>Dragon Buster (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Dragon Buster (Japan).nes" size="163856" crc="abb83b0f"/>
+		<rom name="Dragon Buster (Japan)(1987)(Namco).nes" size="163856" crc="abb83b0f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5319,7 +5328,7 @@
 		<description>Dragon Buster II - Yami no Fuuin (Hack, English)</description>
 		<year>2003</year>
 		<manufacturer>PentarouZero</manufacturer>
-		<rom name="Dragon Buster II - Yami no Fuuin (T-eng).nes" size="196624" crc="ba54967b"/>
+		<rom name="Dragon Buster II - Yami no Fuuin T-Eng (2003)(PentarouZero).nes" size="196624" crc="ba54967b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5336,7 +5345,7 @@
 		<description>Dragon Buster II - Yami no Fuuin (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Dragon Buster II - Yami no Fuuin (Japan).nes" size="196624" crc="fa3c1312"/>
+		<rom name="Dragon Buster II - Yami no Fuuin (Japan)(1989)(Namco).nes" size="196624" crc="fa3c1312"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5344,7 +5353,7 @@
 		<description>Dragon Fighter (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sofel</manufacturer>
-		<rom name="Dragon Fighter (USA).nes" size="262160" crc="ccd575a1"/>
+		<rom name="Dragon Fighter (USA)(1992)(Sofel).nes" size="262160" crc="ccd575a1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5370,7 +5379,7 @@
 		<description>Dragon Ninja (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Dragon Ninja (T-Eng)(2010)(Stardust Crusaders).nes" size="262160" crc="d4e941c6"/>
+		<rom name="Dragon Ninja T-Eng (2010)(Stardust Crusaders).nes" size="262160" crc="d4e941c6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9105,7 +9114,7 @@
 		<description>Insector X (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Insector X (Japan)(1990)(Taito Corp.).nes" size="262160" crc="7dab812d"/>
+		<rom name="Insector X (Japan)(1990)(Taito).nes" size="262160" crc="7dab812d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9131,7 +9140,7 @@
 		<description>International Cricket (Australia)</description>
 		<year>1992</year>
 		<manufacturer>Beam Software</manufacturer>
-		<rom name="International Cricket (Australia).nes" size="262160" crc="cbde707e"/>
+		<rom name="International Cricket (Australia)(1992)(Beam Software).nes" size="262160" crc="cbde707e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9148,7 +9157,7 @@
 		<description>Iron Tank - The Invasion of Normandy (USA)</description>
 		<year>1988</year>
 		<manufacturer>SNK</manufacturer>
-		<rom name="Iron Tank - The Invasion of Normandy (USA).nes" size="262160" crc="dcfd85fc"/>
+		<rom name="Iron Tank - The Invasion of Normandy (USA)(1988)(SNK).nes" size="262160" crc="dcfd85fc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9912,6 +9921,23 @@
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Kamen Rider Club (Japan)(1988)(Bandai).nes" size="262160" crc="f95bf66d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kamenridersdj" cloneof="kamenridersd" romof="kamenridersd" sourcefile="nes/d_nes.cpp">
+		<description>Kamen Rider SD - Granshocker no Yabou (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Angel Studio</manufacturer>
+		<rom name="Kamen Rider SD - Granshocker no Yabou (Japan)(1992)(Angel).nes" size="262160" crc="511727c1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kamenridersd" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kamen Rider SD - The Ambitions of Grand Shocker (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Kamen Rider SD - Granshocker no Yabou T-Eng (2025)(BlackPaladin).nes" size="393232" crc="969bb8a0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13355,7 +13381,7 @@
 		<description>New Ghostbusters II (Japan)</description>
 		<year>1990</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="New Ghostbusters II (Japan)(1990)(HAL Lab.).nes" size="262160" crc="34829f2f"/>
+		<rom name="New Ghostbusters II (Japan)(1990)(HAL Laboratory).nes" size="262160" crc="34829f2f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13363,7 +13389,7 @@
 		<description>New York Nyankies (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Atlus Co.</manufacturer>
-		<rom name="New York Nyankies (Japan)(1991)(Atlus Co.).nes" size="262160" crc="07503930"/>
+		<rom name="New York Nyankies (Japan)(1991)(Atlus).nes" size="262160" crc="07503930"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13379,7 +13405,7 @@
 		<description>Nigel Mansell's World Championship Challenge (USA)</description>
 		<year>1993</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="Nigel Mansell's World Championship Challenge (USA).nes" size="262160" crc="2ae2867f"/>
+		<rom name="Nigel Mansell's World Championship Challenge (USA)(1993)(GameTek).nes" size="262160" crc="2ae2867f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13387,7 +13413,7 @@
 		<description>Nightmare on Elm Street, A (USA)</description>
 		<year>1990</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Nightmare on Elm Street, A (USA).nes" size="131088" crc="2a83ddc5"/>
+		<rom name="Nightmare on Elm Street, A (USA)(1990)(Ljn).nes" size="131088" crc="2a83ddc5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13404,7 +13430,7 @@
 		<description>Nightshade (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ultra Games</manufacturer>
-		<rom name="Nightshade (USA).nes" size="524304" crc="c6d266af"/>
+		<rom name="Nightshade (USA)(1991)(Ultra Games).nes" size="524304" crc="c6d266af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13439,7 +13465,7 @@
 		<description>Ninja Cop Saizou (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Kyugo Boueki</manufacturer>
-		<rom name="Ninja Cop Saizou (Japan).nes" size="262160" crc="f3c45f8b"/>
+		<rom name="Ninja Cop Saizou (Japan)(1989)(Kyugo Boueki).nes" size="262160" crc="f3c45f8b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13447,7 +13473,7 @@
 		<description>Ninja Crusaders (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sammy</manufacturer>
-		<rom name="Ninja Crusaders (USA).nes" size="131088" crc="dc84deb0"/>
+		<rom name="Ninja Crusaders (USA)(1990)(Sammy).nes" size="131088" crc="dc84deb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13473,7 +13499,7 @@
 		<description>Ninja Gaiden (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Ninja Gaiden (USA).nes" size="262160" crc="11f953f6"/>
+		<rom name="Ninja Gaiden (USA)(1989)(Tecmo).nes" size="262160" crc="11f953f6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13490,7 +13516,7 @@
 		<description>Ninja Gaiden II - The Dark Sword of Chaos (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Ninja Gaiden II - The Dark Sword of Chaos (USA).nes" size="262160" crc="9d135a8e"/>
+		<rom name="Ninja Gaiden II - The Dark Sword of Chaos (USA)(1990)(Tecmo).nes" size="262160" crc="9d135a8e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13507,15 +13533,15 @@
 		<description>Ninja Gaiden III - The Ancient Ship of Doom (USA)</description>
 		<year>1991</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Ninja Gaiden III - The Ancient Ship of Doom (USA).nes" size="262160" crc="babd39fa"/>
+		<rom name="Ninja Gaiden III - The Ancient Ship of Doom (USA)(1991)(Tecmo).nes" size="262160" crc="babd39fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="ninjahatkun" sourcefile="nes/d_nes.cpp">
-		<description>Ninja Hattori-kun - Ninja wa Syugyou de Gozaru (Japan)</description>
+		<description>Ninja Hattori-kun: Ninja wa Syugyou de Gozaru (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Ninja Hattori-kun - Ninja wa Syugyou de Gozaru (Japan).nes" size="40976" crc="7083154c"/>
+		<rom name="Ninja Hattori-kun - Ninja wa Syugyou de Gozaru (Japan)(1986)(Hudson Soft).nes" size="40976" crc="7083154c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13524,7 +13550,7 @@
 		<description>Ninja Jajamaru - Ginga Daisakusen (Hack, English)</description>
 		<year>2002</year>
 		<manufacturer>HTI</manufacturer>
-		<rom name="Ninja Jajamaru - Ginga Daisakusen (T-eng).nes" size="262160" crc="89ee0ed9"/>
+		<rom name="Ninja Jajamaru - Ginga Daisakusen T-Eng (2002)(HTI).nes" size="262160" crc="89ee0ed9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13532,7 +13558,7 @@
 		<description>Ninja Jajamaru - Ginga Daisakusen (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Ninja Jajamaru - Ginga Daisakusen (Japan).nes" size="262160" crc="7934c198"/>
+		<rom name="Ninja Jajamaru - Ginga Daisakusen (Japan)(1991)(Jaleco).nes" size="262160" crc="7934c198"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13593,7 +13619,7 @@
 		<description>Ninja Jajamaru-kun (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Ninja Jajamaru-kun (Japan).nes" size="32784" crc="95e02519"/>
+		<rom name="Ninja Jajamaru-kun (Japan)(1985)(Jaleco).nes" size="32784" crc="95e02519"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13699,18 +13725,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="ncc" sourcefile="nes/d_nes.cpp">
-		<description>Nintendo Campus Challenge 1991</description>
+		<comment>Press 'P2 Start' button to begin game</comment>
+		<description>Nintendo Campus Challenge 1991 (USA)</description>
 		<year>1991</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Nintendo Campus Challenge (1991)(Nintendo).nes" size="786448" crc="15c73c66"/>
+		<rom name="Nintendo Campus Challenge (USA)(1991)(Nintendo).nes" size="786448" crc="15c73c66"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="nwc" sourcefile="nes/d_nes.cpp">
-		<description>Nintendo World Championships 1990</description>
+		<comment>Press 'P2 Start' button to begin game</comment>
+		<description>Nintendo World Championships 1990 (USA)</description>
 		<year>1990</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Nintendo World Championships (1990)(Nintendo).nes" size="262160" crc="f12f16a6"/>
+		<rom name="Nintendo World Championships (USA)(1990)(Nintendo).nes" size="262160" crc="f12f16a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19823,6 +19851,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="tryptic" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Tryptic (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>CGT Games</manufacturer>
+		<rom name="Tryptic v1.1 (2024)(CGT Games).nes" size="524304" crc="a2162eb1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="tsupparioozumou" sourcefile="nes/d_nes.cpp">
 		<description>Tsuppari Oozumou (Japan)</description>
 		<year>1987</year>
@@ -21065,8 +21102,8 @@
 		<comment>Hack</comment>
 		<description>Ys - Definitive Edition (Hack, English)</description>
 		<year>2024</year>
-		<manufacturer>darthvaderx</manufacturer>
-		<rom name="Ys Definitive Edition (2024)(darthvaderx).nes" size="262160" crc="b1bd75b0"/>
+		<manufacturer>DarthVaderX</manufacturer>
+		<rom name="Ys Definitive Edition (2024)(DarthVaderX).nes" size="262160" crc="b1bd75b0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21100,17 +21137,17 @@
 		<comment>Hack</comment>
 		<description>Ys II - Definitive Edition (Hack, English)</description>
 		<year>2024</year>
-		<manufacturer>darthvaderx</manufacturer>
-		<rom name="Ys II Definitive Edition (2024)(darthvaderx).nes" size="393232" crc="d8235dfa"/>
+		<manufacturer>DarthVaderX</manufacturer>
+		<rom name="Ys II Definitive Edition (2024)(DarthVaderX).nes" size="393232" crc="d8235dfa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="ysiiide" cloneof="ysiii" romof="ysiii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ys III - Definitive Edition (Hack, English)</description>
+		<description>Ys III - Definitive Edition - Final Fix (Hack, English)</description>
 		<year>2024</year>
-		<manufacturer>darthvaderx</manufacturer>
-		<rom name="Ys III Definitive Edition (2024)(darthvaderx).nes" size="393232" crc="cbfaba05"/>
+		<manufacturer>DarthVaderX</manufacturer>
+		<rom name="Ys III - Definitive Edition - Final Fix (2024)(DarthVaderX).nes" size="393232" crc="e4bd47b2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
