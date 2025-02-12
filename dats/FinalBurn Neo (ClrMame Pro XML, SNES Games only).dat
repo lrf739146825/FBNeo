@@ -196,6 +196,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="actraiserjte" cloneof="actraiser" romof="actraiser" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, A 'new' english translation, much closer to the Japanese original.</comment>
+		<description>Actraiser (Hack, English)</description>
+		<year>2006</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Actraiser T-Eng (2006)(Aeon Genesis).sfc" size="1048576" crc="5a6eb990"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="actraiserj" cloneof="actraiser" romof="actraiser" sourcefile="snes/d_snes.cpp">
 		<description>Actraiser (Japan)</description>
 		<year>1990</year>
@@ -2744,6 +2753,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="demonscrestr" cloneof="demonscrest" romof="demonscrest" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, An english retranslation, much closer to the Japanese original.</comment>
+		<description>Demon's Crest Retranslation (Hack, English v1.2)</description>
+		<year>2024</year>
+		<manufacturer>RyuHayabusa</manufacturer>
+		<rom name="Demon's Crest Retranslation v1.2 (2024)(RyuHayabusa).sfc" size="2097152" crc="97b9f3d6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dennis" sourcefile="snes/d_snes.cpp">
 		<description>Dennis the Menace (USA)</description>
 		<year>1993</year>
@@ -3973,10 +3991,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="finalfantiii" sourcefile="snes/d_snes.cpp">
-		<description>Final Fantasy III (USA)</description>
+		<description>Final Fantasy III (USA, Rev. 1)</description>
 		<year>1994</year>
 		<manufacturer>Squaresoft</manufacturer>
-		<rom name="Final Fantasy III (U)(1994)(Squaresoft).sfc" size="3145728" crc="c0fa0464"/>
+		<rom name="Final Fantasy III (U, Rev 1)(1994)(Squaresoft).sfc" size="3145728" crc="c0fa0464"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7665,6 +7683,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mk3ne" cloneof="mk3" romof="mk3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mortal Kombat 3 New Edition (Hack)</description>
+		<year>2025</year>
+		<manufacturer>B-Zero TV</manufacturer>
+		<rom name="Mortal Kombat 3 New Edition (2025)(B-Zero TV).sfc" size="8388608" crc="6e9bed4b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mkii" sourcefile="snes/d_snes.cpp">
 		<description>Mortal Kombat II (USA)</description>
 		<year>1994</year>
@@ -9705,6 +9732,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="saunamarioworld" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>Sauna Mario World 2 (GlobalHack, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>pnaha</manufacturer>
+		<rom name="Sauna Mario World 2 v1.1 (2025)(pnaha).sfc" size="4194304" crc="dc5fef0e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="scoobydoo" sourcefile="snes/d_snes.cpp">
 		<description>Scooby-Doo Mystery (USA)</description>
 		<year>1995</year>
@@ -10319,6 +10355,15 @@
 		<year>1996</year>
 		<manufacturer>Infogrames</manufacturer>
 		<rom name="Smurfs, The - Travel the World (E)(1996)(Infogrames).sfc" size="1310720" crc="22947169"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smwfnr" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>SMW Friends and Rivalry (GlobalHack, v1.03)</description>
+		<year>2025</year>
+		<manufacturer>Bandicoot</manufacturer>
+		<rom name="SMW Friends and Rivalry v1.03 (2025)(Bandicoot).sfc" size="4194304" crc="5518f889"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
