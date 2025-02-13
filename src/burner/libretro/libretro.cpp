@@ -1586,14 +1586,18 @@ void retro_get_system_av_info(struct retro_system_av_info *info)
 	if (nBurnDrvActive != ~0U)
 	{
 		BurnDrvGetAspect(&game_aspect_x, &game_aspect_y);
-
+#if 0
 		// if game is vertical and rotation couldn't occur, "fix" the rotated aspect ratio
+		// note (2025-02-12): apparently, nowaday, retroarch rotates the aspect ratio automatically
+		//                    if the rotation couldn't occur, so this code isn't necessary anymore,
+		//                    and actually became harmful for users with disabled rotation
 		if ((BurnDrvGetFlags() & BDF_ORIENTATION_VERTICAL) && !bRotationDone)
 		{
 			int temp = game_aspect_x;
 			game_aspect_x = game_aspect_y;
 			game_aspect_y = temp;
 		}
+#endif
 	}
 	else
 	{
