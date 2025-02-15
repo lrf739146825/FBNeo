@@ -6828,6 +6828,59 @@
 		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="goldnaxeng" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Homebrew</comment>
+		<description>Golden Axe Neo Geo (HB)</description>
+		<year>2025</year>
+		<manufacturer>h0ffman</manufacturer>
+		<rom name="1338-p1.p1" size="1048576" crc="3c3ed057"/>
+		<rom name="1338-s1.s1" size="131072" crc="707d91c0"/>
+		<rom name="1338-c1.c1" size="2097152" crc="7540f3d6"/>
+		<rom name="1338-c2.c2" size="2097152" crc="a78a6647"/>
+		<rom name="1338-m1.m1" size="65536" crc="7805d21b"/>
+		<rom name="1338-v1.v1" size="4194304" crc="5ed99267"/>
+		<rom name="1338-v2.v2" size="4194304" crc="d30632dd"/>
+		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
+		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
+		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
+		<rom name="sp-u2.sp1" merge="sp-u2.sp1" size="131072" crc="e72943de"/>
+		<rom name="sp1-u2" merge="sp1-u2" size="131072" crc="62f021f4"/>
+		<rom name="sp-e.sp1" merge="sp-e.sp1" size="131072" crc="2723a5b5"/>
+		<rom name="sp1-u4.bin" merge="sp1-u4.bin" size="131072" crc="1179a30f"/>
+		<rom name="sp1-u3.bin" merge="sp1-u3.bin" size="131072" crc="2025b7a2"/>
+		<rom name="vs-bios.rom" merge="vs-bios.rom" size="131072" crc="f0e8f27d"/>
+		<rom name="sp-j2.sp1" merge="sp-j2.sp1" size="131072" crc="acede59c"/>
+		<rom name="sp1.jipan.1024" merge="sp1.jipan.1024" size="131072" crc="9fb0abe4"/>
+		<rom name="sp-45.sp1" merge="sp-45.sp1" size="524288" crc="03cc9f6a"/>
+		<rom name="sp-j3.sp1" merge="sp-j3.sp1" size="524288" crc="486cb450"/>
+		<rom name="japan-j3.bin" merge="japan-j3.bin" size="131072" crc="dff6d41f"/>
+		<rom name="sp1-j3.bin" merge="sp1-j3.bin" size="131072" crc="fbc6d469"/>
+		<rom name="neo-po.bin" merge="neo-po.bin" size="131072" crc="16d0c132"/>
+		<rom name="neo-epo.bin" merge="neo-epo.bin" size="131072" crc="d27a71f1"/>
+		<rom name="neodebug.bin" merge="neodebug.bin" size="131072" crc="698ebb7d"/>
+		<rom name="sp-1v1_3db8c.bin" merge="sp-1v1_3db8c.bin" size="131072" crc="162f0ebe"/>
+		<rom name="uni-bios_4_0.rom" merge="uni-bios_4_0.rom" size="131072" crc="a7aab458"/>
+		<rom name="uni-bios_3_3.rom" merge="uni-bios_3_3.rom" size="131072" crc="24858466"/>
+		<rom name="uni-bios_3_2.rom" merge="uni-bios_3_2.rom" size="131072" crc="a4e8b9b3"/>
+		<rom name="uni-bios_3_1.rom" merge="uni-bios_3_1.rom" size="131072" crc="0c58093f"/>
+		<rom name="uni-bios_3_0.rom" merge="uni-bios_3_0.rom" size="131072" crc="a97c89a9"/>
+		<rom name="uni-bios_2_3.rom" merge="uni-bios_2_3.rom" size="131072" crc="27664eb5"/>
+		<rom name="uni-bios_2_3o.rom" merge="uni-bios_2_3o.rom" size="131072" crc="601720ae"/>
+		<rom name="uni-bios_2_2.rom" merge="uni-bios_2_2.rom" size="131072" crc="2d50996a"/>
+		<rom name="uni-bios_2_1.rom" merge="uni-bios_2_1.rom" size="131072" crc="8dabf76b"/>
+		<rom name="uni-bios_2_0.rom" merge="uni-bios_2_0.rom" size="131072" crc="0c12c2ad"/>
+		<rom name="uni-bios_1_3.rom" merge="uni-bios_1_3.rom" size="131072" crc="b24b44a0"/>
+		<rom name="uni-bios_1_2.rom" merge="uni-bios_1_2.rom" size="131072" crc="4fa698e9"/>
+		<rom name="uni-bios_1_2o.rom" merge="uni-bios_1_2o.rom" size="131072" crc="e19d3ce9"/>
+		<rom name="uni-bios_1_1.rom" merge="uni-bios_1_1.rom" size="131072" crc="5dda0d84"/>
+		<rom name="uni-bios_1_0.rom" merge="uni-bios_1_0.rom" size="131072" crc="0ce453a0"/>
+		<rom name="neopen.sp1" merge="neopen.sp1" size="131072" crc="cb915e76"/>
+		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
+		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
+		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
+		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gururin" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<description>Gururin</description>
 		<year>1994</year>
@@ -7189,9 +7242,61 @@
 		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="karnovng" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Homebrew, Unofficial port, press P1 or P2 Select buttons to add coins.</comment>
+		<description>Karnov Neo Geo (HB)</description>
+		<year>2025</year>
+		<manufacturer>iq_132</manufacturer>
+		<rom name="karnov-p1.p1" size="524288" crc="79fd92aa"/>
+		<rom name="karnov-s1.s1" size="131072" crc="f6a144cf"/>
+		<rom name="karnov-c1.c1" size="524288" crc="a27d94ff"/>
+		<rom name="karnov-c2.c2" size="524288" crc="b9435703"/>
+		<rom name="karnov-m1.m1" size="65536" crc="089a15b5"/>
+		<rom name="karnov-v1.v1" size="2097152" crc="51502fea"/>
+		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
+		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
+		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
+		<rom name="sp-u2.sp1" merge="sp-u2.sp1" size="131072" crc="e72943de"/>
+		<rom name="sp1-u2" merge="sp1-u2" size="131072" crc="62f021f4"/>
+		<rom name="sp-e.sp1" merge="sp-e.sp1" size="131072" crc="2723a5b5"/>
+		<rom name="sp1-u4.bin" merge="sp1-u4.bin" size="131072" crc="1179a30f"/>
+		<rom name="sp1-u3.bin" merge="sp1-u3.bin" size="131072" crc="2025b7a2"/>
+		<rom name="vs-bios.rom" merge="vs-bios.rom" size="131072" crc="f0e8f27d"/>
+		<rom name="sp-j2.sp1" merge="sp-j2.sp1" size="131072" crc="acede59c"/>
+		<rom name="sp1.jipan.1024" merge="sp1.jipan.1024" size="131072" crc="9fb0abe4"/>
+		<rom name="sp-45.sp1" merge="sp-45.sp1" size="524288" crc="03cc9f6a"/>
+		<rom name="sp-j3.sp1" merge="sp-j3.sp1" size="524288" crc="486cb450"/>
+		<rom name="japan-j3.bin" merge="japan-j3.bin" size="131072" crc="dff6d41f"/>
+		<rom name="sp1-j3.bin" merge="sp1-j3.bin" size="131072" crc="fbc6d469"/>
+		<rom name="neo-po.bin" merge="neo-po.bin" size="131072" crc="16d0c132"/>
+		<rom name="neo-epo.bin" merge="neo-epo.bin" size="131072" crc="d27a71f1"/>
+		<rom name="neodebug.bin" merge="neodebug.bin" size="131072" crc="698ebb7d"/>
+		<rom name="sp-1v1_3db8c.bin" merge="sp-1v1_3db8c.bin" size="131072" crc="162f0ebe"/>
+		<rom name="uni-bios_4_0.rom" merge="uni-bios_4_0.rom" size="131072" crc="a7aab458"/>
+		<rom name="uni-bios_3_3.rom" merge="uni-bios_3_3.rom" size="131072" crc="24858466"/>
+		<rom name="uni-bios_3_2.rom" merge="uni-bios_3_2.rom" size="131072" crc="a4e8b9b3"/>
+		<rom name="uni-bios_3_1.rom" merge="uni-bios_3_1.rom" size="131072" crc="0c58093f"/>
+		<rom name="uni-bios_3_0.rom" merge="uni-bios_3_0.rom" size="131072" crc="a97c89a9"/>
+		<rom name="uni-bios_2_3.rom" merge="uni-bios_2_3.rom" size="131072" crc="27664eb5"/>
+		<rom name="uni-bios_2_3o.rom" merge="uni-bios_2_3o.rom" size="131072" crc="601720ae"/>
+		<rom name="uni-bios_2_2.rom" merge="uni-bios_2_2.rom" size="131072" crc="2d50996a"/>
+		<rom name="uni-bios_2_1.rom" merge="uni-bios_2_1.rom" size="131072" crc="8dabf76b"/>
+		<rom name="uni-bios_2_0.rom" merge="uni-bios_2_0.rom" size="131072" crc="0c12c2ad"/>
+		<rom name="uni-bios_1_3.rom" merge="uni-bios_1_3.rom" size="131072" crc="b24b44a0"/>
+		<rom name="uni-bios_1_2.rom" merge="uni-bios_1_2.rom" size="131072" crc="4fa698e9"/>
+		<rom name="uni-bios_1_2o.rom" merge="uni-bios_1_2o.rom" size="131072" crc="e19d3ce9"/>
+		<rom name="uni-bios_1_1.rom" merge="uni-bios_1_1.rom" size="131072" crc="5dda0d84"/>
+		<rom name="uni-bios_1_0.rom" merge="uni-bios_1_0.rom" size="131072" crc="0ce453a0"/>
+		<rom name="neopen.sp1" merge="neopen.sp1" size="131072" crc="cb915e76"/>
+		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
+		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
+		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="karnovre" cloneof="karnovr" romof="karnovr" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Karnov's Revenge / Fighter's History Dynamite (Revolution v0.2, Hack)</description>
+		<description>Karnov's Revenge ~ Fighter's History Dynamite - Revolution (Hack, v0.2)</description>
 		<year>2024</year>
 		<manufacturer>GameHackFan</manufacturer>
 		<rom name="066-p1kre.p1" size="1048576" crc="07af175f"/>
@@ -7246,7 +7351,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="karnovr" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
-		<description>Karnov's Revenge / Fighter's History Dynamite</description>
+		<description>Karnov's Revenge ~ Fighter's History Dynamite</description>
 		<year>1994</year>
 		<manufacturer>Data East Corporation</manufacturer>
 		<rom name="066-p1.p1" size="1048576" crc="8c86fd22"/>
@@ -8940,24 +9045,23 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="matrimbh" cloneof="matrim" romof="matrim" sourcefile="neogeo/d_neogeo.cpp">
-		<comment>Hack</comment>
-		<description>Matrimelee / Shin Gouketsuji Ichizoku Toukon (Enable Hidden Characters V2)</description>
-		<year>2002</year>
-		<manufacturer>Creamymami[EGCG]</manufacturer>
-		<rom name="266-p1bh.p1" size="1048576" crc="5f7b6942"/>
-		<rom name="266-p2.sp2" merge="266-p2.sp2" size="4194304" crc="a14b1906"/>
-		<rom name="266-c1.c1" merge="266-c1.c1" size="8388608" crc="505f4e30"/>
-		<rom name="266-c2.c2" merge="266-c2.c2" size="8388608" crc="3cb57482"/>
-		<rom name="266-c3.c3" merge="266-c3.c3" size="8388608" crc="f1cc6ad0"/>
-		<rom name="266-c4.c4" merge="266-c4.c4" size="8388608" crc="45b806b7"/>
-		<rom name="266-c5.c5" merge="266-c5.c5" size="8388608" crc="9a15dd6b"/>
-		<rom name="266-c6.c6" merge="266-c6.c6" size="8388608" crc="281cb939"/>
-		<rom name="266-c7.c7" merge="266-c7.c7" size="8388608" crc="4b71f780"/>
-		<rom name="266-c8.c8" merge="266-c8.c8" size="8388608" crc="29873d33"/>
-		<rom name="266-m1.m1" merge="266-m1.m1" size="131072" crc="456c3e6c"/>
-		<rom name="266-v1.v1" merge="266-v1.v1" size="8388608" crc="a4f83690"/>
-		<rom name="266-v2.v2" merge="266-v2.v2" size="8388608" crc="d0f69eda"/>
+	<game name="matrim" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<description>Matrimelee / Shin Gouketsuji Ichizoku Toukon (NGM-2660 ~ NGH-2660)</description>
+		<year>2003</year>
+		<manufacturer>Noise Factory / Atlus</manufacturer>
+		<rom name="266-p1.p1" size="1048576" crc="5d4c2dc7"/>
+		<rom name="266-p2.sp2" size="4194304" crc="a14b1906"/>
+		<rom name="266-c1.c1" size="8388608" crc="505f4e30"/>
+		<rom name="266-c2.c2" size="8388608" crc="3cb57482"/>
+		<rom name="266-c3.c3" size="8388608" crc="f1cc6ad0"/>
+		<rom name="266-c4.c4" size="8388608" crc="45b806b7"/>
+		<rom name="266-c5.c5" size="8388608" crc="9a15dd6b"/>
+		<rom name="266-c6.c6" size="8388608" crc="281cb939"/>
+		<rom name="266-c7.c7" size="8388608" crc="4b71f780"/>
+		<rom name="266-c8.c8" size="8388608" crc="29873d33"/>
+		<rom name="266-m1.m1" size="131072" crc="456c3e6c"/>
+		<rom name="266-v1.v1" size="8388608" crc="a4f83690"/>
+		<rom name="266-v2.v2" size="8388608" crc="d0f69eda"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
@@ -8999,23 +9103,24 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="matrim" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
-		<description>Matrimelee / Shin Gouketsuji Ichizoku Toukon (NGM-2660 ~ NGH-2660)</description>
-		<year>2003</year>
-		<manufacturer>Noise Factory / Atlus</manufacturer>
-		<rom name="266-p1.p1" size="1048576" crc="5d4c2dc7"/>
-		<rom name="266-p2.sp2" size="4194304" crc="a14b1906"/>
-		<rom name="266-c1.c1" size="8388608" crc="505f4e30"/>
-		<rom name="266-c2.c2" size="8388608" crc="3cb57482"/>
-		<rom name="266-c3.c3" size="8388608" crc="f1cc6ad0"/>
-		<rom name="266-c4.c4" size="8388608" crc="45b806b7"/>
-		<rom name="266-c5.c5" size="8388608" crc="9a15dd6b"/>
-		<rom name="266-c6.c6" size="8388608" crc="281cb939"/>
-		<rom name="266-c7.c7" size="8388608" crc="4b71f780"/>
-		<rom name="266-c8.c8" size="8388608" crc="29873d33"/>
-		<rom name="266-m1.m1" size="131072" crc="456c3e6c"/>
-		<rom name="266-v1.v1" size="8388608" crc="a4f83690"/>
-		<rom name="266-v2.v2" size="8388608" crc="d0f69eda"/>
+	<game name="matrimbh" cloneof="matrim" romof="matrim" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Hack</comment>
+		<description>Matrimelee ~ Shin Gouketsuji Ichizoku Toukon (Hack, Enable Hidden Characters V2)</description>
+		<year>20??</year>
+		<manufacturer>Creamymami[EGCG]</manufacturer>
+		<rom name="266-p1bh.p1" size="1048576" crc="5f7b6942"/>
+		<rom name="266-p2.sp2" merge="266-p2.sp2" size="4194304" crc="a14b1906"/>
+		<rom name="266-c1.c1" merge="266-c1.c1" size="8388608" crc="505f4e30"/>
+		<rom name="266-c2.c2" merge="266-c2.c2" size="8388608" crc="3cb57482"/>
+		<rom name="266-c3.c3" merge="266-c3.c3" size="8388608" crc="f1cc6ad0"/>
+		<rom name="266-c4.c4" merge="266-c4.c4" size="8388608" crc="45b806b7"/>
+		<rom name="266-c5.c5" merge="266-c5.c5" size="8388608" crc="9a15dd6b"/>
+		<rom name="266-c6.c6" merge="266-c6.c6" size="8388608" crc="281cb939"/>
+		<rom name="266-c7.c7" merge="266-c7.c7" size="8388608" crc="4b71f780"/>
+		<rom name="266-c8.c8" merge="266-c8.c8" size="8388608" crc="29873d33"/>
+		<rom name="266-m1.m1" merge="266-m1.m1" size="131072" crc="456c3e6c"/>
+		<rom name="266-v1.v1" merge="266-v1.v1" size="8388608" crc="a4f83690"/>
+		<rom name="266-v2.v2" merge="266-v2.v2" size="8388608" crc="d0f69eda"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
@@ -11923,8 +12028,8 @@
 		<description>Metal Slug 4 (Final, Hack)</description>
 		<year>2025</year>
 		<manufacturer>hack</manufacturer>
-		<rom name="263-p1zj.p1" size="1048576" crc="c10b8f60"/>
-		<rom name="263-p2zj.sp2" size="6291456" crc="8af77298"/>
+		<rom name="263-p1zj.p1" size="1048576" crc="521f944f"/>
+		<rom name="263-p2zj.sp2" size="6291456" crc="d886a760"/>
 		<rom name="263-s1d.s1" size="131072" crc="a9446774"/>
 		<rom name="263-c1d.c1" size="8388608" crc="a75ffcde"/>
 		<rom name="263-c2d.c2" size="8388608" crc="5ab0d12b"/>
@@ -23726,7 +23831,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="strhoop" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
-		<description>Street Hoop / Street Slam / Dunk Dream (DEM-004 ~ DEH-004)</description>
+		<description>Street Hoop ~ Street Slam ~ Dunk Dream (DEM-004 ~ DEH-004)</description>
 		<year>1994</year>
 		<manufacturer>Data East Corporation</manufacturer>
 		<rom name="079-p1.p1" size="1048576" crc="5e78328e"/>
@@ -32178,14 +32283,15 @@
 		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kf2k2ps2" cloneof="kof2002" romof="kof2002" sourcefile="neogeo/d_neogeo.cpp">
-		<comment>Hack, Other versions are selected in the dipswitch</comment>
-		<description>The King of Fighters 2002 (PlayStation 2, Hack)</description>
-		<year>2007-2023</year>
-		<manufacturer>hack</manufacturer>
-		<rom name="265-p1ps2.p1" size="1048576" crc="9da95b36"/>
-		<rom name="265-p2ps2.sp2" size="5242880" crc="9846db3a"/>
-		<rom name="265-s1ps2.s1" size="131072" crc="714ade47"/>
+	<game name="kf2k2ps2re" cloneof="kof2002" romof="kof2002" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Hack</comment>
+		<description>The King of Fighters 2002 (PlayStation 2 Plus 2025 ver 1.0, Hack)</description>
+		<year>2025</year>
+		<manufacturer>GSC2007, Dream</manufacturer>
+		<rom name="265-p1re.p1" size="1048576" crc="d2874a19"/>
+		<rom name="265-p2re.sp2" size="5242880" crc="14921466"/>
+		<rom name="265-p3re.p3" size="1048576" crc="6808554f"/>
+		<rom name="265-s1re.s1" size="131072" crc="7c31a953"/>
 		<rom name="265-c1d.c1" size="8388608" crc="7efa6ef7"/>
 		<rom name="265-c2d.c2" size="8388608" crc="aa82948b"/>
 		<rom name="265-c3d.c3" size="8388608" crc="959fad0b"/>
@@ -32194,20 +32300,11 @@
 		<rom name="265-c6d.c6" size="8388608" crc="e20d2216"/>
 		<rom name="265-c7re.c7" size="8388608" crc="f0897b93"/>
 		<rom name="265-c8re.c8" size="8388608" crc="8d27a4a6"/>
-		<rom name="265-c9re.c9" size="8388608" crc="9939c08a"/>
+		<rom name="265-c9re.c9" size="8388608" crc="1a2a8f68"/>
 		<rom name="265-c10re.c10" size="8388608" crc="c724c069"/>
 		<rom name="265-m1d.m1" size="131072" crc="1c661a4b"/>
 		<rom name="265-v1d.v1" size="8388608" crc="0fc9a58d"/>
 		<rom name="265-v2d.v2" size="8388608" crc="b8c475a4"/>
-		<rom name="265-p1ps2.dif" size="1048576" crc="09fdfd82"/>
-		<rom name="265-p2ps2.dif" size="5242880" crc="9a7d5af0"/>
-		<rom name="265-c7ps2.dif" size="8388608" crc="f146f22d"/>
-		<rom name="265-c8ps2.dif" size="8388608" crc="321645f2"/>
-		<rom name="265-c9ps2.dif" size="8388608" crc="2960c058"/>
-		<rom name="265-c10ps2.dif" size="8388608" crc="45c40d11"/>
-		<rom name="265-p1re.dif" size="1048576" crc="d26ca5a5"/>
-		<rom name="265-p2re.dif" size="5242880" crc="4c948784"/>
-		<rom name="265-p3re.p3" size="131072" crc="adf44b1d"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
