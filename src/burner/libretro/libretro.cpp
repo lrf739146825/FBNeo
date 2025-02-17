@@ -1399,12 +1399,12 @@ void retro_reset()
 	}
 
 	// romdata & ips patches run!
-	if ((-1 != nIndex) || (nPatches > 0))
+	if ((nIndex >= 0) || (nPatches > 0))
 	{
 		retro_incomplete_exit();
 
 		if (nPatches > 0) IpsPatchInit();
-		if (-1 != nIndex) RomDataInit();
+		if (nIndex >= 0) RomDataInit();
 
 		retro_load_game_common();
 	} 

@@ -6187,6 +6187,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="killinstee" cloneof="killinst" romof="killinst" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Killer Instinct - Eyedol Edition (Hack)</description>
+		<year>2020</year>
+		<manufacturer>NinjAkira</manufacturer>
+		<rom name="Killer Instinct - Eyedol Edition (2020)(NinjAkira).sfc" size="4194304" crc="ca350c4c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kingarthurw" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
 		<description>King Arthur's World (USA)</description>
@@ -6587,6 +6596,23 @@
 		<year>1994</year>
 		<manufacturer>Psygnosis</manufacturer>
 		<rom name="Lemmings 2 - The Tribes (U)(1994)(Psygnosis).sfc" size="2097152" crc="df7200c8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lennus2j" cloneof="lennus2te" romof="lennus2te" sourcefile="snes/d_snes.cpp">
+		<description>Lennus II: Fuuin no Shito (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Asmik</manufacturer>
+		<rom name="Lennus II - Fuuin no Shito (J)(1996)(Asmik).sfc" size="4194304" crc="c68be22a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lennus2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Lennus II: The Apostles of the Seals (Hack, English v1.04)</description>
+		<year>2008</year>
+		<manufacturer>Magic Destiny</manufacturer>
+		<rom name="Lennus II - The Apostles of the Seals T-Eng v1.04 (2008)(Magic Destiny).sfc" size="4194304" crc="fb561d6b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9498,6 +9524,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rockman7epte" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, In title screen press 'Select' button to enable English language</comment>
+		<description>Rockman 7 EP (Hack, English v1.02)</description>
+		<year>2021</year>
+		<manufacturer>Zynk Oxhyde</manufacturer>
+		<rom name="Rockman 7 EP - T-Eng v1.02 (2021)(Zynk Oxhyde).sfc" size="4194304" crc="dfab9721"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rockman7epj" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Rockman 7 EP (Hack, Japan v1.02)</description>
+		<year>2020</year>
+		<manufacturer>Puresable</manufacturer>
+		<rom name="Rockman 7 EP - Japan v1.02 (2020)(Puresable).sfc" size="4194304" crc="5a9fe058"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rockmanx" cloneof="megamanx" romof="megamanx" sourcefile="snes/d_snes.cpp">
 		<description>Rockman X (Japan)</description>
 		<year>1993</year>
@@ -10166,6 +10210,23 @@
 		<year>1993</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Side Pocket (U)(1993)(Data East).sfc" size="1048576" crc="597c2bfe"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="silvasaga2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Silva Saga II: The Legend of Light and Darkness (Hack, English)</description>
+		<year>2012</year>
+		<manufacturer>Dynamic-Designs</manufacturer>
+		<rom name="Silva Saga II - The Legend of Light and Darkness T-Eng (2012)(Dynamic-Designs).sfc" size="3145728" crc="bc3df046"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="silvasaga2j" cloneof="silvasaga2te" romof="silvasaga2te" sourcefile="snes/d_snes.cpp">
+		<description>Silva Saga II: The Legend of Light and Darkness (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Seta Co.</manufacturer>
+		<rom name="Silva Saga II - The Legend of Light and Darkness (J)(1993)(Seta).sfc" size="2097152" crc="67e1756b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12495,6 +12556,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="superunote" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Uno (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>Krokodyl</manufacturer>
+		<rom name="Super Uno T-Eng (2025)(Krokodyl).sfc" size="1572864" crc="17799616"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superunoj" cloneof="superunote" romof="superunote" sourcefile="snes/d_snes.cpp">
+		<description>Super Uno (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Tomy</manufacturer>
+		<rom name="Super Uno (J)(1993)(Tomy).sfc" size="1048576" crc="61441201"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supervalisj" cloneof="supervalisiv" romof="supervalisiv" sourcefile="snes/d_snes.cpp">
 		<description>Super Valis - Akaki Tsuki no Otome (Japan)</description>
 		<year>1992</year>
@@ -12737,8 +12815,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tmntiv" sourcefile="snes/d_snes.cpp">
+		<description>Teenage Mutant Ninja Turtles IV: Turtles in Time (USA)</description>
+		<year>1992</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Teenage Mutant Ninja Turtles IV - Turtles in Time (U)(1992)(Konami).sfc" size="1048576" crc="5940bd99"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tmntmw" cloneof="tmntfight" romof="tmntfight" sourcefile="snes/d_snes.cpp">
-		<description>Teenage Mutant Ninja Turtles - Mutant Warriors (Japan)</description>
+		<description>Teenage Mutant Ninja Turtles: Mutant Warriors (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Teenage Mutant Ninja Turtles - Mutant Warriors (J)(1993)(Konami).sfc" size="2097152" crc="7e97e194"/>
@@ -12746,7 +12832,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="tmntfight" sourcefile="snes/d_snes.cpp">
-		<description>Teenage Mutant Ninja Turtles - Tournament Fighters (USA)</description>
+		<description>Teenage Mutant Ninja Turtles: Tournament Fighters (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Teenage Mutant Ninja Turtles - Tournament Fighters (U)(1993)(Konami).sfc" size="2097152" crc="e2fe5dbf"/>
@@ -12754,18 +12840,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="tmntivj" cloneof="tmntiv" romof="tmntiv" sourcefile="snes/d_snes.cpp">
-		<description>Teenage Mutant Ninja Turtles - Turtles in Time (Japan)</description>
+		<description>Teenage Mutant Ninja Turtles: Turtles in Time (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Teenage Mutant Ninja Turtles - Turtles in Time (J)(1992)(Konami).sfc" size="1048576" crc="bdba1b55"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="tmntiv" sourcefile="snes/d_snes.cpp">
-		<description>Teenage Mutant Ninja Turtles IV - Turtles in Time (USA)</description>
-		<year>1992</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Teenage Mutant Ninja Turtles IV - Turtles in Time (U)(1992)(Konami).sfc" size="1048576" crc="5940bd99"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12917,6 +12995,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="themeparke" sourcefile="snes/d_snes.cpp">
+		<description>Theme Park (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Theme Park (E)(1995)(Ocean).sfc" size="1048576" crc="ca0e041c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="themeparkj" cloneof="themeparke" romof="themeparke" sourcefile="snes/d_snes.cpp">
+		<description>Theme Park (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Theme Park (J)(1995)(Electronic Arts).sfc" size="2097152" crc="6797884a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="thunderspiritsj" cloneof="thunderspirits" romof="thunderspirits" sourcefile="snes/d_snes.cpp">
 		<description>Thunder Spirits (Japan)</description>
 		<year>1991</year>
@@ -13031,11 +13125,29 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tinytoonjr" cloneof="tinytoon" romof="tinytoon" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Tiny Toon Adventures Buster Busts Loose JP Remix (Hack, v2)</description>
+		<year>2025</year>
+		<manufacturer>bankbank, RetroProf, clymax</manufacturer>
+		<rom name="Tiny Toon Adventures Buster Busts Loose JP Remix v2 (2025)(bankbank, RetroProf, clymax).sfc" size="1048576" crc="6e42b4e8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tkoscb" sourcefile="snes/d_snes.cpp">
 		<description>TKO Super Championship Boxing (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sofel</manufacturer>
 		<rom name="TKO Super Championship Boxing (U)(1992)(Sofel).sfc" size="524288" crc="fd4af462"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tmntfightce" cloneof="tmntfight" romof="tmntfight" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>TMNT: Tournament Fighters - Cowabunga Edition (Hack)</description>
+		<year>2022</year>
+		<manufacturer>gallaux</manufacturer>
+		<rom name="Teenage Mutant Ninja Turtles - Tournament Fighters - Cowabunga Edition (2022)(gallaux).sfc" size="2097152" crc="26540ce6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

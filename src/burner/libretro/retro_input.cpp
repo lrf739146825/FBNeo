@@ -3032,7 +3032,18 @@ void SetDefaultDeviceTypes()
 		}
 		else
 		{
-			nDeviceType[i] = RETROPAD_CLASSIC;
+			if (nDeviceType[i] != RETROPAD_CLASSIC &&
+				nDeviceType[i] != RETROPAD_MODERN &&
+				nDeviceType[i] != RETROPAD_6PANEL &&
+				nDeviceType[i] != RETROMOUSE_BALL &&
+				nDeviceType[i] != RETROMOUSE_FULL &&
+				nDeviceType[i] != RETRO_DEVICE_POINTER &&
+				nDeviceType[i] != RETRO_DEVICE_TOUCHSCREEN &&
+				nDeviceType[i] != RETRO_DEVICE_LIGHTGUN &&
+				nDeviceType[i] != RETROARCADE_GUN)
+			{
+				nDeviceType[i] = RETROPAD_CLASSIC;
+			}
 		}
 	}
 }
