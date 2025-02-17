@@ -621,6 +621,10 @@ INT32 apply_romdatas_from_variables()
 		if (0 == strcmp(var.value, "enabled")) nCount++;
 	}
 
+	// If nCount is 0, no romdata is enabled and we should return -1
+	if (nCount == 0)
+		return -1;
+
 	// Generates a random value when multiple selections are made.
 	if (nCount > 1)
 		nIndex = rand() % nCount;
