@@ -11205,7 +11205,7 @@
 		<description>Lupin Sansei - Pandora no Isan (Hack, English)</description>
 		<year>2017</year>
 		<manufacturer>Vice Translations</manufacturer>
-		<rom name="Lupin Sansei - Pandora no Isan (T-eng).nes" size="196624" crc="6054ca94"/>
+		<rom name="Lupin Sansei - Pandora no Isan T-Eng (2017)(Vice Translations).nes" size="196624" crc="6054ca94"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11222,7 +11222,7 @@
 		<description>Lupin Sansei - Pandora no Isan (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Lupin Sansei - Pandora no Isan (Japan).nes" size="196624" crc="bf2947ba"/>
+		<rom name="Lupin Sansei - Pandora no Isan (Japan)(1987)(Namco).nes" size="196624" crc="bf2947ba"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11230,7 +11230,7 @@
 		<description>M.C. Kids (USA)</description>
 		<year>1992</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="M.C. Kids (USA).nes" size="262160" crc="9a78fb49"/>
+		<rom name="M.C. Kids (USA)(1992)(Virgin Games).nes" size="262160" crc="9a78fb49"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11238,7 +11238,7 @@
 		<description>M.U.L.E. (USA)</description>
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="M.U.L.E. (USA).nes" size="131088" crc="dbf91186"/>
+		<rom name="M.U.L.E. (USA)(1990)(Mindscape).nes" size="131088" crc="dbf91186"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11246,7 +11246,7 @@
 		<description>M.U.S.C.L.E. (USA)</description>
 		<year>1986</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="M.U.S.C.L.E. (USA).nes" size="24592" crc="edee9759"/>
+		<rom name="M.U.S.C.L.E. (USA)(1986)(Bandai).nes" size="24592" crc="edee9759"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11254,7 +11254,7 @@
 		<description>Mach Rider (USA)</description>
 		<year>1985</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Mach Rider (USA).nes" size="40976" crc="bee56098"/>
+		<rom name="Mach Rider (USA)(1985)(Nintendo).nes" size="40976" crc="bee56098"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11281,7 +11281,7 @@
 		<description>Mad City (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Mad City (T-Eng).nes" size="262160" crc="52389803"/>
+		<rom name="Mad City T-Eng (2010)(Stardust Crusaders).nes" size="262160" crc="52389803"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11289,7 +11289,7 @@
 		<description>Mad City (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Mad City (Japan).nes" size="262160" crc="b28d64fc"/>
+		<rom name="Mad City (Japan)(1988)(Konami).nes" size="262160" crc="b28d64fc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11297,7 +11297,7 @@
 		<description>Mad Max (USA)</description>
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="Mad Max (USA).nes" size="262160" crc="28fd4957"/>
+		<rom name="Mad Max (USA)(1990)(Mindscape).nes" size="262160" crc="28fd4957"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11332,7 +11332,7 @@
 		<description>Mafat Conspiracy - Golgo 13 (USA)</description>
 		<year>1990</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Mafat Conspiracy - Golgo 13 (USA).nes" size="262160" crc="a0973444"/>
+		<rom name="Mafat Conspiracy - Golgo 13 (USA)(1990)(Vic Tokai).nes" size="262160" crc="a0973444"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11340,7 +11340,7 @@
 		<description>Magic Block (Unl)</description>
 		<year>1991</year>
 		<manufacturer>Mega Soft</manufacturer>
-		<rom name="Magic Block (Mega Soft).nes" size="131088" crc="2eba03bd"/>
+		<rom name="Magic Block (Unl)(1991)(Mega Soft).nes" size="131088" crc="2eba03bd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11348,7 +11348,7 @@
 		<description>Magic Carpet 1001 (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Caltron</manufacturer>
-		<rom name="Magic Carpet 1001 (Unl).nes" size="65552" crc="1ab5b8c5"/>
+		<rom name="Magic Carpet 1001 (Unl)(1992)(Caltron).nes" size="65552" crc="1ab5b8c5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11356,7 +11356,7 @@
 		<description>Magic Darts (USA)</description>
 		<year>1991</year>
 		<manufacturer>Romstar</manufacturer>
-		<rom name="Magic Darts (USA).nes" size="262160" crc="330bc629"/>
+		<rom name="Magic Darts (USA)(1991)(Romstar).nes" size="262160" crc="330bc629"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11364,7 +11364,7 @@
 		<description>Magic Dragon (Japan)</description>
 		<year>199?</year>
 		<manufacturer>Magic</manufacturer>
-		<rom name="Magic Dragon (J).nes" size="196624" crc="1ad30965"/>
+		<rom name="Magic Dragon (Japan)(199x)(Magic).nes" size="196624" crc="1ad30965"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11372,7 +11372,7 @@
 		<description>Magic Jewelry (Unl)</description>
 		<year>1990</year>
 		<manufacturer>RCM</manufacturer>
-		<rom name="Magic Jewelry (Unl).nes" size="40976" crc="26ad6047"/>
+		<rom name="Magic Jewelry (Unl)(1990)(RCM).nes" size="40976" crc="26ad6047"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11380,7 +11380,7 @@
 		<description>Magic Jewelry 2 (Unl)</description>
 		<year>1992</year>
 		<manufacturer>RCM</manufacturer>
-		<rom name="Magic Jewelry 2 (Unl).nes" size="65552" crc="9d4b8891"/>
+		<rom name="Magic Jewelry 2 (Unl)(1992)(RCM).nes" size="65552" crc="9d4b8891"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11388,7 +11388,7 @@
 		<description>Magic John (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Magic John (Japan).nes" size="262160" crc="a7b98886"/>
+		<rom name="Magic John (Japan)(1990)(Jaleco).nes" size="262160" crc="a7b98886"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11396,7 +11396,7 @@
 		<description>Magic Johnson's Fast Break (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="Magic Johnson's Fast Break (USA).nes" size="196624" crc="4d42a98c"/>
+		<rom name="Magic Johnson's Fast Break (USA)(1990)(Tradewest).nes" size="196624" crc="4d42a98c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11404,7 +11404,7 @@
 		<description>Magic Kid GooGoo (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="Magic Kid GooGoo (Unl).nes" size="393232" crc="12332a62"/>
+		<rom name="Magic Kid GooGoo (Unl)(1992)(Zemina).nes" size="393232" crc="12332a62"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11421,7 +11421,7 @@
 		<description>Magic of Scheherazade, The (USA)</description>
 		<year>1989</year>
 		<manufacturer>Culture Brain</manufacturer>
-		<rom name="Magic of Scheherazade, The (USA).nes" size="262160" crc="ffaa505d"/>
+		<rom name="Magic of Scheherazade, The (USA)(1989)(Culture Brain).nes" size="262160" crc="ffaa505d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11438,7 +11438,7 @@
 		<description>Magical Kid's Doropie (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="Magical Kid's Doropie (Japan).nes" size="262160" crc="5455ffc9"/>
+		<rom name="Magical Kid's Doropie (Japan)(1990)(Vic Tokai).nes" size="262160" crc="5455ffc9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11455,7 +11455,7 @@
 		<description>Magical Taruruuto-kun - Fantastic World!! (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Magical Taruruuto-kun - Fantastic World!! (Japan).nes" size="262160" crc="65b8e68b"/>
+		<rom name="Magical Taruruuto-kun - Fantastic World!! (Japan)(1991)(Bandai).nes" size="262160" crc="65b8e68b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11463,7 +11463,7 @@
 		<description>Magical Taruruuto-kun 2 - Mahou Daibouken (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Magical Taruruuto-kun 2 - Mahou Daibouken (Japan).nes" size="262160" crc="0ef31d50"/>
+		<rom name="Magical Taruruuto-kun 2 - Mahou Daibouken (Japan)(1992)(Bandai).nes" size="262160" crc="0ef31d50"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11471,7 +11471,7 @@
 		<description>Magician (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taxan</manufacturer>
-		<rom name="Magician (USA).nes" size="262160" crc="8f37610a"/>
+		<rom name="Magician (USA)(1991)(Taxan).nes" size="262160" crc="8f37610a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11479,7 +11479,7 @@
 		<description>Magmax (USA)</description>
 		<year>1988</year>
 		<manufacturer>FCI</manufacturer>
-		<rom name="Magmax (USA).nes" size="40976" crc="7fe5b39b"/>
+		<rom name="Magmax (USA)(1988)(FCI).nes" size="40976" crc="7fe5b39b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11494,10 +11494,10 @@
 	</game>
 	<game name="maharaja" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Maharaja (Hack, English)</description>
+		<description>Maharaja (Hack, English v0.99)</description>
 		<year>2009</year>
 		<manufacturer>snark</manufacturer>
-		<rom name="Maharaja (T-eng).nes" size="262160" crc="d6883037"/>
+		<rom name="Maharaja T-Eng v0.99 (2009)(snark).nes" size="262160" crc="d6883037"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11505,7 +11505,7 @@
 		<description>Maharaja (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Maharaja (Japan).nes" size="262160" crc="b9083fde"/>
+		<rom name="Maharaja (Japan)(1989)(Sunsoft).nes" size="262160" crc="b9083fde"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11530,23 +11530,23 @@
 		<description>Mahou no Princess Minky Momo - Remember Dream (Japan)</description>
 		<year>2023</year>
 		<manufacturer>Yutaka</manufacturer>
-		<rom name="Mahou no Princess Minky Momo - Remember Dream (J)(1992)(Yutaka).nes" size="262160" crc="d1b65a3e"/>
+		<rom name="Mahou no Princess Minky Momo - Remember Dream (Japan)(1992)(Yutaka).nes" size="262160" crc="d1b65a3e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="majorleague" sourcefile="nes/d_nes.cpp">
 		<description>Major League (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="Major League (Japan).nes" size="262160" crc="d8dfd3d1"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Major League (Japan)(1989)(Irem).nes" size="262160" crc="d8dfd3d1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="majorleabas" sourcefile="nes/d_nes.cpp">
-		<description>Major League Baseball (USA) (Rev A)</description>
+		<description>Major League Baseball (USA, Rev A)</description>
 		<year>1988</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Major League Baseball (USA) (Rev A).nes" size="65552" crc="d9cddbd2"/>
+		<rom name="Major League Baseball (USA, Rev A)(1988)(Ljn).nes" size="65552" crc="d9cddbd2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11563,7 +11563,7 @@
 		<description>Majou Densetsu II - Daimashikyou Galious (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Majou Densetsu II - Daimashikyou Galious (Japan).nes" size="131088" crc="763f2d28"/>
+		<rom name="Majou Densetsu II - Daimashikyou Galious (Japan)(1987)(Konami).nes" size="131088" crc="763f2d28"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11580,7 +11580,7 @@
 		<description>Makaimura (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Makaimura (Japan).nes" size="131088" crc="8c3fe6fb"/>
+		<rom name="Makaimura (Japan)(1986)(Capcom).nes" size="131088" crc="8c3fe6fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11589,7 +11589,7 @@
 		<description>Makaimura Arcade (Hack)</description>
 		<year>2010</year>
 		<manufacturer>2CH</manufacturer>
-		<rom name="Makaimura Arcade (Japan).nes" size="131088" crc="b523b441"/>
+		<rom name="Makaimura Arcade (2010)(2CH).nes" size="131088" crc="b523b441"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11671,7 +11671,7 @@
 		<description>Maniac Mansion (USA)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Maniac Mansion (USA).nes" size="262160" crc="68309d06"/>
+		<rom name="Maniac Mansion (USA)(1988)(Jaleco).nes" size="262160" crc="68309d06"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11697,7 +11697,7 @@
 		<description>Mappy (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Mappy (Japan).nes" size="24592" crc="3f0e8e0a"/>
+		<rom name="Mappy (Japan)(1984)(Namco).nes" size="24592" crc="3f0e8e0a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11774,6 +11774,15 @@
 		<year>1983</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Mario Bros. (World)(1983)(Nintendo).nes" size="24592" crc="a6de1b55"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="marioevo2" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Mario Evolution 2 (Hack, v2.1)</description>
+		<year>2025</year>
+		<manufacturer>Googie</manufacturer>
+		<rom name="Mario Evolution 2 v2.1 (2025)(Googie).nes" size="40976" crc="8f3b4caf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16655,7 +16664,7 @@
 		<description>Silk Worm (Hack, Chinese v1.1)</description>
 		<year>2020</year>
 		<manufacturer>HHNM Team</manufacturer>
-		<rom name="Silk Worm (T-Chi, v1.1).nes" size="393232" crc="3d53c8ad"/>
+		<rom name="Silk Worm T-Chi v1.1 (2020)(HHNM Team).nes" size="393232" crc="3d53c8ad"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17628,7 +17637,7 @@
 		<description>Sted - Iseki Wakusei no Yabou (Hack, English)</description>
 		<year>1999</year>
 		<manufacturer>J2e Translations</manufacturer>
-		<rom name="Sted - Iseki Wakusei no Yabou (T-eng).nes" size="262160" crc="5e63ec57"/>
+		<rom name="Sted - Iseki Wakusei no Yabou T-Eng (1999)(J2e Translations).nes" size="262160" crc="5e63ec57"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17636,7 +17645,7 @@
 		<description>Sted - Iseki Wakusei no Yabou (Japan)</description>
 		<year>1990</year>
 		<manufacturer>KAC</manufacturer>
-		<rom name="Sted - Iseki Wakusei no Yabou (Japan).nes" size="262160" crc="a86fb17a"/>
+		<rom name="Sted - Iseki Wakusei no Yabou (Japan)(1990)(KAC).nes" size="262160" crc="a86fb17a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17671,7 +17680,7 @@
 		<description>Stick Hunter - Exciting Ice Hockey (Japan)</description>
 		<year>1987</year>
 		<manufacturer>KAC</manufacturer>
-		<rom name="Stick Hunter - Exciting Ice Hockey (Japan).nes" size="131088" crc="67495228"/>
+		<rom name="Stick Hunter - Exciting Ice Hockey (Japan)(1987)(KAC).nes" size="131088" crc="67495228"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17688,7 +17697,7 @@
 		<description>Stinger (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Stinger (USA).nes" size="131088" crc="f6b9629f"/>
+		<rom name="Stinger (USA)(1987)(Konami).nes" size="131088" crc="f6b9629f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17714,7 +17723,7 @@
 		<description>Street Fighter 2010 - The Final Fight (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Street Fighter 2010 - The Final Fight (USA).nes" size="262160" crc="a7355946"/>
+		<rom name="Street Fighter 2010 - The Final Fight (USA)(1990)(Capcom).nes" size="262160" crc="a7355946"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17756,7 +17765,7 @@
 		<description>Street Heroes (Taiwan)</description>
 		<year>1995</year>
 		<manufacturer>Sachen</manufacturer>
-		<rom name="Street Heroes (Taiwan).nes" size="1048592" crc="dd65a6cc"/>
+		<rom name="Street Heroes (Taiwan)(1995)(Sachen).nes" size="1048592" crc="dd65a6cc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17856,7 +17865,7 @@
 		<description>Super Arabian (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Super Arabian (Japan).nes" size="24592" crc="f2988a21"/>
+		<rom name="Super Arabian (Japan)(1985)(Sunsoft).nes" size="24592" crc="f2988a21"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17873,7 +17882,7 @@
 		<description>Super C (USA)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Super C (USA).nes" size="262160" crc="ed53852d"/>
+		<rom name="Super C (USA)(1990)(Konami).nes" size="262160" crc="ed53852d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17881,7 +17890,7 @@
 		<description>Super Cars (USA)</description>
 		<year>1991</year>
 		<manufacturer>Electro Brain</manufacturer>
-		<rom name="Super Cars (USA).nes" size="131088" crc="729db2e4"/>
+		<rom name="Super Cars (USA)(1991)(Electro Brain).nes" size="131088" crc="729db2e4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17915,7 +17924,7 @@
 		<description>Super Dodge Ball (USA)</description>
 		<year>1989</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="Super Dodge Ball (USA).nes" size="262160" crc="052a50d7"/>
+		<rom name="Super Dodge Ball (USA)(1989)(Sony Imagesoft).nes" size="262160" crc="052a50d7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17923,7 +17932,7 @@
 		<description>Super Gun (USA)</description>
 		<year>1992</year>
 		<manufacturer>Caltron</manufacturer>
-		<rom name="Super Gun (USA).nes" size="98320" crc="3555dc26"/>
+		<rom name="Super Gun (USA)(1992)(Caltron).nes" size="98320" crc="3555dc26"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18021,7 +18030,7 @@
 		<description>Super Mario Bros. (World)</description>
 		<year>1985</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Super Mario Bros. (World).nes" size="40976" crc="3337ec46"/>
+		<rom name="Super Mario Bros. (World)(1985)(Nintendo).nes" size="40976" crc="3337ec46"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18206,7 +18215,7 @@
 		<description>Super Maruo (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Super Maruo (Unknown).nes" size="49168" crc="e5334399"/>
+		<rom name="Super Maruo (Unl)(199x).nes" size="49168" crc="e5334399"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20568,6 +20577,15 @@
 		<year>1985</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Warpman (Japan)(1985)(Namco).nes" size="24592" crc="ef27556d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="warrargos" cloneof="rygar" romof="rygar" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Warrior of Argos, The (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Warrior of Argos, The T-Eng (2025)(BlackPaladin).nes" size="131088" crc="21a9b33b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
