@@ -6192,7 +6192,7 @@
 		<description>Killer Instinct - Eyedol Edition (Hack)</description>
 		<year>2020</year>
 		<manufacturer>NinjAkira</manufacturer>
-		<rom name="Killer Instinct - Eyedol Edition (2020)(NinjAkira).sfc" size="4194304" crc="ca350c4c"/>
+		<rom name="Killer Instinct - Eyedol Edition (2020)(NinjAkira).sfc" size="4194816" crc="ea44610a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11435,6 +11435,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supercastlevania4uh" cloneof="supercastlevania4" romof="supercastlevania4" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Castlevania IV Uncensored (Hack, v2.1)</description>
+		<year>2021</year>
+		<manufacturer>ShadowOne333</manufacturer>
+		<rom name="Super Castlevania IV Uncensored v2.1 (2021)(ShadowOne333).sfc" size="3145728" crc="feb7ace2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="superchasehq" sourcefile="snes/d_snes.cpp">
 		<description>Super Chase H.Q. (USA)</description>
 		<year>1993</year>
@@ -13147,7 +13156,7 @@
 		<description>TMNT: Tournament Fighters - Cowabunga Edition (Hack)</description>
 		<year>2022</year>
 		<manufacturer>gallaux</manufacturer>
-		<rom name="Teenage Mutant Ninja Turtles - Tournament Fighters - Cowabunga Edition (2022)(gallaux).sfc" size="2097152" crc="26540ce6"/>
+		<rom name="Teenage Mutant Ninja Turtles - Tournament Fighters - Cowabunga Edition (2022)(gallaux).sfc" size="2097152" crc="ea03fbc9"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

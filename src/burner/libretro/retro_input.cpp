@@ -2984,10 +2984,11 @@ static bool PollDiagInput()
 		if (bDiagComboActivated)
 		{
 			// Cancel each input of the combo at the emulator side to not interfere when the diagnostic menu will be opened and the combo not yet released
-			struct GameInp* pgi = GameInp;
+			int i;
+			struct GameInp* pgi;
 			for (int combo_idx = 0; diag_input[combo_idx] != RETRO_DEVICE_ID_JOYPAD_EMPTY; combo_idx++)
 			{
-				for (int i = 0; i < nGameInpCount; i++, pgi++)
+				for (i = 0, pgi = GameInp; i < nGameInpCount; i++, pgi++)
 				{
 					if (pgi->nInput == GIT_SWITCH)
 					{

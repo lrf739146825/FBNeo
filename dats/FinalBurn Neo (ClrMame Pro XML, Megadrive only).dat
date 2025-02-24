@@ -870,6 +870,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="altbeastrt" cloneof="altbeast" romof="altbeast" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Altered Beast - ReToned (Hack, v1.16)</description>
+		<year>2025</year>
+		<manufacturer>Byros</manufacturer>
+		<rom name="Altered Beast - ReToned v1.16 (2025)(Byros).bin" size="524288" crc="40173c07"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alterego" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>AlterEgo Remastered (HB)</description>
@@ -1113,15 +1122,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="aofec" cloneof="aof" romof="aof" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Art of Fighting (Hack, Enhanced Colors)</description>
-		<year>2015</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="art of fighting (enhanced colors).md" size="2097152" crc="f28b2502"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="aofs" cloneof="aof" romof="aof" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Art Of Fighting (Hack, Spanish)</description>
@@ -1145,6 +1145,15 @@
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Art of Fighting (USA)(1994)(Sega).bin" size="2097152" crc="c9a57e07"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aofec" cloneof="aof" romof="aof" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Art of Fighting - Enhanced Colors (Hack)</description>
+		<year>2015</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Art of Fighting - Enhanced Colors (2015)(Pyron).bin" size="2097152" crc="f28b2502"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1516,15 +1525,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="backtof3cf" cloneof="backtof3" romof="backtof3" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Back to the Future Part III (Hack, Color Fix)</description>
-		<year>2019</year>
-		<manufacturer>Greg Kennedy</manufacturer>
-		<rom name="back to the future part iii (color fix).md" size="524288" crc="51f67e2f"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="backtof3s" cloneof="backtof3" romof="backtof3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Back to the Future Part III (Hack, Spanish)</description>
@@ -1539,6 +1539,15 @@
 		<year>1991</year>
 		<manufacturer>Arena Entertainment</manufacturer>
 		<rom name="Back to the Future Part III (USA)(1991)(Arena Entertainment).bin" size="524288" crc="66a388c3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="backtof3cf" cloneof="backtof3" romof="backtof3" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Back to the Future Part III - Color Fix (Hack)</description>
+		<year>2019</year>
+		<manufacturer>Greg Kennedy</manufacturer>
+		<rom name="Back to the Future Part III - Color Fix (2019)(Greg Kennedy).bin" size="524288" crc="51f67e2f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1564,7 +1573,7 @@
 		<description>Bahamut Senki (Hack, English)</description>
 		<year>2020</year>
 		<manufacturer>Supper</manufacturer>
-		<rom name="bahamut senki (j)(t-eng).bin" size="1048576" crc="89383a55"/>
+		<rom name="Bahamut Senki T-Eng (2020)(Supper).bin" size="1048576" crc="89383a55"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1689,15 +1698,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sor3bk3p" cloneof="sor3" romof="sor3" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Bare Knuckle 3 Project (World) (Hack)</description>
-		<year>2019</year>
-		<manufacturer>Gsaurus</manufacturer>
-		<rom name="Bare Knuckle 3 Project (World)(2019)(Gsaurus).bin" size="3882698" crc="aa7e7937"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="bk2p" cloneof="sor2" romof="sor2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
 		<description>Bare Knuckle II (Japan, Prototype)</description>
@@ -1711,8 +1711,8 @@
 		<comment>Hack</comment>
 		<description>Bare Knuckle III (Hack, English)</description>
 		<year>2009</year>
-		<manufacturer>Twilight Transaltions</manufacturer>
-		<rom name="bare knuckle iii (english translation).bin" size="3145728" crc="68917751"/>
+		<manufacturer>Twilight Translations</manufacturer>
+		<rom name="Bare Knuckle III T-Eng (2009)(Twilight Translations).bin" size="3145728" crc="68917751"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1742,12 +1742,12 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="bk3pro" cloneof="sor3" romof="sor3" sourcefile="megadrive/d_megadrive.cpp">
+	<game name="sor3bk3p" cloneof="sor3" romof="sor3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Bare Knuckle III Project (Japan) (Hack, v0.3)</description>
-		<year>2018</year>
-		<manufacturer>Gsaurus</manufacturer>
-		<rom name="Bare Knuckle III Project (Japan, v0.3)(2018)(Gsaurus).bin" size="3151044" crc="5aa71c8b"/>
+		<description>Bare Knuckle III Project (World) (Hack)</description>
+		<year>2019</year>
+		<manufacturer>gsaurus</manufacturer>
+		<rom name="Bare Knuckle III Project (World)(2019)(gsaurus).bin" size="3882698" crc="aa7e7937"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2402,7 +2402,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="btomatog" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Prototype, originally planned for 1994</comment>
+		<comment>Prototype, Originally planned for 1994.</comment>
 		<description>Bill's Tomato Game (Prototype) (Unl)</description>
 		<year>1994-2017</year>
 		<manufacturer>Psygnosis</manufacturer>
@@ -2471,10 +2471,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v1.7)</description>
-		<year>2024</year>
+		<comment>Hack</comment>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.1B)</description>
+		<year>2025</year>
 		<manufacturer>Yoni Arousement</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v1.7 (2024)(Yoni Arousement).bin" size="5242880" crc="6ed2530f"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.1B (2025)(Yoni Arousement).bin" size="5242880" crc="98dc13aa"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3090,15 +3091,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="cadashac" cloneof="cadash" romof="cadash" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Cadash (Hack, Arcade Colors)</description>
-		<year>2018</year>
-		<manufacturer>Tor Landeel</manufacturer>
-		<rom name="Cadash - Arcade Colors (2018)(Tor Landeel).bin" size="524288" crc="84480043"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="cadashs" cloneof="cadash" romof="cadash" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Cadash (Hack, Spanish)</description>
@@ -3113,6 +3105,15 @@
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Cadash (USA, Asia, Korea)(1992)(Taito).bin" size="524288" crc="13bdf374"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cadashac" cloneof="cadash" romof="cadash" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Cadash - Arcade Colors (Hack)</description>
+		<year>2018</year>
+		<manufacturer>Tor Landeel</manufacturer>
+		<rom name="Cadash - Arcade Colors (2018)(Tor Landeel).bin" size="524288" crc="84480043"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3233,15 +3234,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="captavenec" cloneof="captaven" romof="captaven" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Captain America and the Avengers (Hack, Enhanced Colors)</description>
-		<year>2015</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="Captain America and the Avengers - Enhanced Colors (2015)(Pyron).bin" size="1048576" crc="23109899"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="captavenu" cloneof="captaven" romof="captaven" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Captain America and the Avengers (USA)</description>
 		<year>1992</year>
@@ -3256,6 +3248,15 @@
 		<year>1992</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Captain America and the Avengers (USA, Prototype)(1992)(Data East).bin" size="1048576" crc="baac59c0"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="captavenec" cloneof="captaven" romof="captaven" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Captain America and the Avengers - Enhanced Colors (Hack)</description>
+		<year>2015</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Captain America and the Avengers - Enhanced Colors (2015)(Pyron).bin" size="1048576" crc="23109899"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3344,21 +3345,12 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="cvaniaec" cloneof="cvania" romof="cvania" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Castlevania - Bloodlines (Hack, Enhanced Colors)</description>
-		<year>2014</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="Castlevania - Bloodlines - Enhanced Colors (2014)(Pyron).bin" size="1048576" crc="5ffdffa7"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="cvanias" cloneof="cvania" romof="cvania" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Castlevania - Bloodlines (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="castlevania - bloodlines (hack, spanish).bin" size="1048576" crc="6107d697"/>
+		<rom name="Castlevania - Bloodlines T-Spa (2017)(Wave).bin" size="1048576" crc="6107d697"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3367,6 +3359,15 @@
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Castlevania - Bloodlines (USA)(1994)(Konami).bin" size="1048576" crc="fb1ea6df"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cvaniaec" cloneof="cvania" romof="cvania" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania - Bloodlines - Enhanced Colors (Hack)</description>
+		<year>2014</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Castlevania - Bloodlines - Enhanced Colors (2014)(Pyron).bin" size="1048576" crc="5ffdffa7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3453,7 +3454,7 @@
 		<description>Chakan (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="chakan (hack, spanish).bin" size="1048576" crc="5efeccac"/>
+		<rom name="Chakan T-Spa (2019)(Wave).bin" size="1048576" crc="5efeccac"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3462,7 +3463,7 @@
 		<description>Chakan (Prototype, 19921006)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Chakan (Prototype, 19921006)(Sega).bin" size="1048576" crc="77b7e85f"/>
+		<rom name="Chakan (Proto, 19921006)(Sega).bin" size="1048576" crc="77b7e85f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3643,7 +3644,7 @@
 		<description>Chester Cheetah - Wild Wild Quest (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="chester cheetah - wild wild quest (hack, spanish).bin" size="1048576" crc="031bc0b5"/>
+		<rom name="Chester Cheetah - Wild Wild Quest T-Spa (2019)(Wave).bin" size="1048576" crc="031bc0b5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3679,20 +3680,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="chikiec" cloneof="chiki" romof="chiki" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Chiki Chiki Boys (Hack, Enhanced Colors)</description>
-		<year>2016</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="Chiki Chiki Boys - Enhanced Colors (2016)(Pyron).bin" size="1048576" crc="f63e7e92"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="chikij" cloneof="chiki" romof="chiki" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Chiki Chiki Boys (Japan, Korea)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Chiki Chiki Boys (Japan, Korea)(1992)(Sega).bin" size="1048576" crc="06918c17"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chikiec" cloneof="chiki" romof="chiki" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Chiki Chiki Boys - Enhanced Colors (Hack)</description>
+		<year>2016</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Chiki Chiki Boys - Enhanced Colors (2016)(Pyron).bin" size="1048576" crc="f63e7e92"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3759,7 +3760,7 @@
 		<description>Chuck Rock (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="chuck rock (hack, spanish).bin" size="1048576" crc="97bea810"/>
+		<rom name="Chuck Rock T-Spa (2018)(Wave).bin" size="1048576" crc="97bea810"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3792,7 +3793,7 @@
 		<description>Chuck Rock II - Son Of Chuck (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="chuck rock ii - son of chuck (hack, spanish).bin" size="1048576" crc="7b46f45e"/>
+		<rom name="Chuck Rock II - Son Of Chuck T-Spa (2018)(Wave).bin" size="1048576" crc="7b46f45e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4576,7 +4577,7 @@
 		<description>Crude Buster (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="crude buster (jpn).bin" size="1048576" crc="affb4b00"/>
+		<rom name="Crude Buster (Japan)(1992)(Data East).bin" size="1048576" crc="affb4b00"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4975,20 +4976,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="darius2ec" cloneof="sagaia" romof="sagaia" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Darius II (Hack, Enhanced Colors)</description>
-		<year>2016</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="Darius II - Enhanced Colors (2016)(Pyron).bin" size="1048576" crc="021faa21"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="darius2" cloneof="sagaia" romof="sagaia" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Darius II (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="darius ii (jpn).bin" size="1048576" crc="25dfe62a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="darius2ec" cloneof="sagaia" romof="sagaia" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Darius II - Enhanced Colors (Hack)</description>
+		<year>2016</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Darius II - Enhanced Colors (2016)(Pyron).bin" size="1048576" crc="021faa21"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5868,15 +5869,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ddragonec" cloneof="ddragon" romof="ddragon" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Double Dragon (Hack, Enhanced Colors)</description>
-		<year>2015</year>
-		<manufacturer>Pyron</manufacturer>
-		<rom name="Double Dragon - Enhanced Colors (2015)(Pyron).bin" size="524288" crc="db8416cb"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="ddragons" cloneof="ddragon" romof="ddragon" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Double Dragon (Hack, Spanish)</description>
@@ -5892,6 +5884,15 @@
 		<year>2024</year>
 		<manufacturer>Segaman, VLD</manufacturer>
 		<rom name="Double Dragon Arcade Music &amp; SFX (2024)(Segaman, VLD).bin" size="1048576" crc="96a69d33"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ddragonec" cloneof="ddragon" romof="ddragon" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Double Dragon - Enhanced Colors (Hack)</description>
+		<year>2015</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Double Dragon - Enhanced Colors (2015)(Pyron).bin" size="524288" crc="db8416cb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6338,7 +6339,7 @@
 		<description>Dyno Blaze (Early Prototype)</description>
 		<year>199?</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="dyno blaze (proto).bin" size="1511878" crc="d625e584"/>
+		<rom name="Dyno Blaze (Proto)(199x)(Virgin Games).bin" size="1511878" crc="d625e584"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7231,20 +7232,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="fatfury2ec" cloneof="fatfury2" romof="fatfury2" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Fatal Fury 2 (Hack, Enhanced Colors v4.0)</description>
-		<year>2015</year>
-		<manufacturer>Takara - Pyron</manufacturer>
-		<rom name="fatal fury 2 (enhanced colors v4.0).md" size="3145728" crc="eb433a36"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="fatfury2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Fatal Fury 2 (USA, Korea)</description>
 		<year>1994</year>
 		<manufacturer>Takara</manufacturer>
 		<rom name="fatal fury 2 (usa, kor).bin" size="3145728" crc="1b1754cb"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fatfury2ec" cloneof="fatfury2" romof="fatfury2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Fatal Fury 2 - Enhanced Colors (Hack, v4.0)</description>
+		<year>2015</year>
+		<manufacturer>Pyron</manufacturer>
+		<rom name="Fatal Fury 2 - Enhanced Colors v4.0 (2015)(Pyron).bin" size="3145728" crc="eb433a36"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7410,7 +7411,7 @@
 		<description>FIFA Soccer 2020 (Hack, v2.3)</description>
 		<year>2020</year>
 		<manufacturer>TA Marcos</manufacturer>
-		<rom name="FIFA Soccer 2020 v2.3.bin" size="2173824" crc="2ee94b2e"/>
+		<rom name="FIFA Soccer 2020 v2.3 (2020)(TA Marcos).bin" size="2173824" crc="2ee94b2e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7901,10 +7902,10 @@
 	</game>
 	<game name="fxunyuki" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>48 Mbit (6MB) cartridge</comment>
-		<description>FX Unit Yuki - the Henshin Engine (World) (Unl)</description>
+		<description>FX Unit Yuki - The Henshin Engine (World) (Unl)</description>
 		<year>2018</year>
 		<manufacturer>Sarupro</manufacturer>
-		<rom name="fx unit yuki - the henshin engine (world) (unl).bin" size="6291456" crc="2906876b"/>
+		<rom name="FX Unit Yuki - The Henshin Engine (World)(Unl)(2018)(Sarupro).bin" size="6291456" crc="2906876b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8016,7 +8017,7 @@
 		<description>Galaxy Force II (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="galaxy force II (hack, spanish).bin" size="1048576" crc="21cdf3cd"/>
+		<rom name="Galaxy Force II T-Spa (2020)(Wave).bin" size="1048576" crc="21cdf3cd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8236,7 +8237,7 @@
 		<description>Ghostbusters (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="ghostbusters (hack, spanish).bin" size="524288" crc="4ed2c651"/>
+		<rom name="Ghostbusters T-Spa (2018)(Wave).bin" size="524288" crc="4ed2c651"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8270,7 +8271,7 @@
 		<description>Ghosts'n Goblins (HB, Ver.2021-11-01) (Unl)</description>
 		<year>2021</year>
 		<manufacturer>Fabrice Fernandez</manufacturer>
-		<rom name="Ghosts'n Goblins Ver. 2021-11-01 (2021)(Fabrice Fernandez).bin" size="318720" crc="fa4da29a"/>
+		<rom name="Ghosts'n Goblins Ver.2021-11-01 (2021)(Fabrice Fernandez).bin" size="318720" crc="fa4da29a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8295,7 +8296,7 @@
 		<description>Ghouls'n Ghosts (Hack, Spanish v1.1)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="ghouls'n ghosts (hack, spanish).bin" size="655360" crc="f71cd080"/>
+		<rom name="Ghouls'n Ghosts T-Spa v1.1 (2019)(Wave).bin" size="655360" crc="f71cd080"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8396,7 +8397,7 @@
 		<description>Golden Axe (Prototype, 19891014)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe (prototype - oct 14, 1989).bin" size="524288" crc="b01b26ff"/>
+		<rom name="Golden Axe (Proto, 19891014)(Sega).bin" size="524288" crc="b01b26ff"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8404,7 +8405,7 @@
 		<description>Golden Axe (Prototype, 19891122)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe (prototype - nov 22, 1989).bin" size="524288" crc="3e640c09"/>
+		<rom name="Golden Axe (Proto, 19891122)(Sega).bin" size="524288" crc="3e640c09"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8412,7 +8413,7 @@
 		<description>Golden Axe (World)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-12806.bin" size="524288" crc="e8182b90"/>
+		<rom name="Golden Axe (World)(1989)(Sega).bin" size="524288" crc="e8182b90"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8420,7 +8421,7 @@
 		<description>Golden Axe (World, v1.1)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe (world) (v1.1).bin" size="524288" crc="665d7df9"/>
+		<rom name="Golden Axe (World, v1.1)(1989)(Sega).bin" size="524288" crc="665d7df9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8446,7 +8447,7 @@
 		<description>Golden Axe II (World)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14272.bin" size="524288" crc="725e0a18"/>
+		<rom name="Golden Axe II (World)(1991)(Sega).bin" size="524288" crc="725e0a18"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8454,7 +8455,7 @@
 		<description>Golden Axe II (World, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe ii (world) (beta).bin" size="524288" crc="e62ea1bb"/>
+		<rom name="Golden Axe II (World, Proto)(1991)(Sega).bin" size="524288" crc="e62ea1bb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8462,7 +8463,7 @@
 		<description>Golden Axe III (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe iii (euro).bin" size="1048576" crc="1d90dc83"/>
+		<rom name="Golden Axe III (Euro)(1993)(Sega).bin" size="1048576" crc="1d90dc83"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8479,7 +8480,7 @@
 		<description>Golden Axe III (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="golden axe iii (jpn).bin" size="1048576" crc="c7862ea3"/>
+		<rom name="Golden Axe III (Japan)(1993)(Sega).bin" size="1048576" crc="c7862ea3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9381,7 +9382,7 @@
 		<description>INKtober (HB)</description>
 		<year>2019</year>
 		<manufacturer>Brunni</manufacturer>
-		<rom name="inktober (brunni)(2019).bin" size="917504" crc="09c7bb37"/>
+		<rom name="INKtober (2019)(Brunni).bin" size="917504" crc="09c7bb37"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9513,7 +9514,7 @@
 		<description>International Karate plus Deluxe (HB)</description>
 		<year>2019</year>
 		<manufacturer>Z-Team</manufacturer>
-		<rom name="IK+ deluxe (2019)(Z-Team).bin" size="2883584" crc="bf949018"/>
+		<rom name="IK+ Deluxe (2019)(Z-Team).bin" size="2883584" crc="bf949018"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9819,7 +9820,7 @@
 		<description>Jeopardy! (USA)</description>
 		<year>1992</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="jeopardy! (usa).bin" size="524288" crc="56cff3f1"/>
+		<rom name="Jeopardy! (USA)(1992)(GameTek).bin" size="524288" crc="56cff3f1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9827,7 +9828,7 @@
 		<description>Jeopardy! Deluxe (USA)</description>
 		<year>1993</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="jeopardy! deluxe (usa).bin" size="524288" crc="25e2f9d2"/>
+		<rom name="Jeopardy! Deluxe (USA)(1993)(GameTek).bin" size="524288" crc="25e2f9d2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9835,7 +9836,7 @@
 		<description>Jeopardy! Sports Edition (USA)</description>
 		<year>1993</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="jeopardy! sports edition (usa).bin" size="524288" crc="13f924d2"/>
+		<rom name="Jeopardy! Sports Edition (USA)(1993)(GameTek).bin" size="524288" crc="13f924d2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9843,7 +9844,7 @@
 		<description>Jerry Glanville's Pigskin Footbrawl (USA)</description>
 		<year>1992</year>
 		<manufacturer>Razorsoft</manufacturer>
-		<rom name="jerry glanville's pigskin footbrawl (usa).bin" size="1048576" crc="e7f48d30"/>
+		<rom name="Jerry Glanville's Pigskin Footbrawl (USA)(1992)(Razorsoft).bin" size="1048576" crc="e7f48d30"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9868,16 +9869,16 @@
 		<description>Jewel Master (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jewel master (jpn).bin" size="524288" crc="2cf6926c"/>
+		<rom name="Jewel Master (Japan)(1991)(Sega).bin" size="524288" crc="2cf6926c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="jimpower" cloneof="jimpowerpiko" romof="jimpowerpiko" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Prototype, imperfect graphics</comment>
+		<comment>Prototype, NB: imperfect graphics.</comment>
 		<description>Jim Power - The Arcade Game (USA, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Loriciel</manufacturer>
-		<rom name="jim power - the arcade game (usa) (prototype) (bad dump).bin" size="1048576" crc="1cf3238b"/>
+		<rom name="Jim Power - The Arcade Game (USA, Proto)(1993)(Loriciel).bin" size="1048576" crc="1cf3238b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9894,7 +9895,7 @@
 		<description>Jimmy White's Whirlwind Snooker (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="jimmy white's whirlwind snooker (euro).bin" size="524288" crc="0aef5b1f"/>
+		<rom name="Jimmy White's Whirlwind Snooker (Euro)(1994)(Virgin Games).bin" size="524288" crc="0aef5b1f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9902,7 +9903,7 @@
 		<description>Jiu Ji Ma Jiang II - Ye Yan Bian (China) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="jiu ji ma jiang ii - ye yan bian (chi) (unl).bin" size="1048576" crc="e9829b22"/>
+		<rom name="Jiu Ji Ma Jiang II - Ye Yan Bian (China)(Unl)(199x).bin" size="1048576" crc="e9829b22"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10459,15 +10460,15 @@
 		<description>Klax (Euro, USA)</description>
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="klax (euro, usa).bin" size="262144" crc="248cd09e"/>
+		<rom name="Klax (Euro, USA)(1990)(Tengen).bin" size="262144" crc="248cd09e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="klaxj" cloneof="klax" romof="klax" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Klax (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="klax (jpn).bin" size="262144" crc="1afcc1da"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Klax (Japan)(1990)(Namco).bin" size="262144" crc="1afcc1da"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10519,7 +10520,7 @@
 		<description>Krusty's Super Fun House (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="krusty's super fun house (euro, usa).bin" size="524288" crc="f764005e"/>
+		<rom name="Krusty's Super Fun House (Euro, USA)(1992)(Flying Edge).bin" size="524288" crc="f764005e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10527,7 +10528,7 @@
 		<description>Krusty's Super Fun House (Euro, USA, v1.1)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="krusty's super fun house (euro, usa) (v1.1).bin" size="524288" crc="56976261"/>
+		<rom name="Krusty's Super Fun House (Euro, USA, v1.1)(1992)(Flying Edge).bin" size="524288" crc="56976261"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10595,8 +10596,8 @@
 	<game name="kyukaidk" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Kyuukai Douchuuki (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="kyuukai douchuuki (jpn).bin" size="524288" crc="de48dce3"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Kyuukai Douchuuki (Japan)(1991)(Namco).bin" size="524288" crc="de48dce3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10621,7 +10622,7 @@
 		<description>La Russa Baseball 95 (USA, Oceania)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="la russa baseball 95 (usa, aus).bin" size="2097152" crc="3f848a92"/>
+		<rom name="La Russa Baseball 95 (USA, Oceania)(1994)(Electronic Arts).bin" size="2097152" crc="3f848a92"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10629,7 +10630,7 @@
 		<description>Lakers versus Celtics and the NBA Playoffs (USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="lakers versus celtics and the nba playoffs (usa).bin" size="524288" crc="0e33fc75"/>
+		<rom name="Lakers versus Celtics and the NBA Playoffs (USA)(1991)(Electronic Arts).bin" size="524288" crc="0e33fc75"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10637,7 +10638,7 @@
 		<description>Landstalker - Die Schatze von Konig Nolo (Euro, German)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="landstalker - die schatze von konig nolo (germany).bin" size="2097152" crc="10fedb8f"/>
+		<rom name="Landstalker - Die Schatze von Konig Nolo (Euro, German)(1993)(Sega).bin" size="2097152" crc="10fedb8f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10654,7 +10655,7 @@
 		<description>Landstalker - Koutei no Zaihou (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="landstalker - koutei no zaihou (jpn).bin" size="2097152" crc="60d4cedb"/>
+		<rom name="Landstalker - Koutei no Zaihou (Japan)(1992)(Sega).bin" size="2097152" crc="60d4cedb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10678,7 +10679,7 @@
 		<description>Landstalker - The Treasures of King Nole (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="landstalker - the treasures of king nole (euro).bin" size="2097152" crc="e3c65277"/>
+		<rom name="Landstalker - The Treasures of King Nole (Euro)(1993)(Sega).bin" size="2097152" crc="e3c65277"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10695,7 +10696,7 @@
 		<description>Landstalker - The Treasures of King Nole (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="landstalker (usa).bin" size="2097152" crc="fbbb5b97"/>
+		<rom name="Landstalker - The Treasures of King Nole (USA)(1992)(Sega).bin" size="2097152" crc="fbbb5b97"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10704,7 +10705,7 @@
 		<description>Landstalker - Treasure of King Nole (USA, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="landstalker (usa) (beta).bin" size="2097152" crc="70483d03"/>
+		<rom name="Landstalker - Treasure of King Nole (USA, Proto)(1992)(Sega).bin" size="2097152" crc="70483d03"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10712,7 +10713,7 @@
 		<description>Langrisser (Japan)</description>
 		<year>1991</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="mpr-13845.bin" size="524288" crc="b6ea5016"/>
+		<rom name="Langrisser (Japan)(1991)(Sega).bin" size="524288" crc="b6ea5016"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10850,10 +10851,10 @@
 	</game>
 	<game name="lemmingscph" cloneof="lemmings" romof="lemmings" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Lemmings - Colour Palette &amp; Level Title Fix (Euro) (Hack, v1.3)</description>
-		<year>2024</year>
+		<description>Lemmings - Colour Palette &amp; Level Title Fix (Euro) (Hack, v1.6 Final)</description>
+		<year>2025</year>
 		<manufacturer>J. Russell</manufacturer>
-		<rom name="Lemmings - Colour Palette &amp; Level Title Fix v1.3 (Euro)(2024)(J. Russell).bin" size="1048576" crc="08bf475c"/>
+		<rom name="Lemmings - Colour Palette &amp; Level Title Fix v1.6 Final (Euro)(2025)(J. Russell).bin" size="1048576" crc="5af027db"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12905,7 +12906,7 @@
 		<description>Mortal Kombat Arcade Edition (Hack, v1.0a)</description>
 		<year>2021</year>
 		<manufacturer>Linkuei</manufacturer>
-		<rom name="Mortal Kombat Arcade Edition (Hack)(2021).bin" size="4194304" crc="aa8fb151"/>
+		<rom name="Mortal Kombat Arcade Edition v1.0a (2021)(Linkuei).bin" size="4194304" crc="aa8fb151"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14997,7 +14998,7 @@
 		<description>Pele! (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Accolade</manufacturer>
-		<rom name="pele! (euro, usa).bin" size="1048576" crc="5a8abe51"/>
+		<rom name="Pele! (Euro, USA)(1993)(Accolade).bin" size="1048576" crc="5a8abe51"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15005,7 +15006,16 @@
 		<description>Pele's World Tournament Soccer (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Accolade</manufacturer>
-		<rom name="pele ii - world tournament soccer (euro, usa).bin" size="2097152" crc="05a486e9"/>
+		<rom name="Pele's World Tournament Soccer (Euro, USA)(1994)(Accolade).bin" size="2097152" crc="05a486e9"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pengoarc" cloneof="ppengo" romof="ppengo" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Pengo Arcade (Hack)</description>
+		<year>2024</year>
+		<manufacturer>125scratch</manufacturer>
+		<rom name="Pengo Arcade (2024)(125scratch).bin" size="1048576" crc="85bdcd37"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15013,7 +15023,7 @@
 		<description>Pepenga Pengo (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pepenga pengo (jpn).bin" size="1048576" crc="d1e2324b"/>
+		<rom name="Pepenga Pengo (Japan)(1995)(Sega).bin" size="1048576" crc="d1e2324b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15037,7 +15047,7 @@
 		<description>Pete Sampras Tennis (Euro, USA, J-Cart, Alt 2)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="pete sampras tennis (euro, usa) (j-cart).bin" size="1048576" crc="9ef5bbd1"/>
+		<rom name="Pete Sampras Tennis (Euro, USA, J-Cart, Alt 2)(1994)(Codemasters).bin" size="1048576" crc="9ef5bbd1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
 	</game>
@@ -15045,7 +15055,7 @@
 		<description>Pete Sampras Tennis (Euro, USA, J-Cart, Alt)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="mdstee_13.bin" size="1048576" crc="aa8b19bc"/>
+		<rom name="Pete Sampras Tennis (Euro, USA, J-Cart, Alt)(1994)(Codemasters).bin" size="1048576" crc="aa8b19bc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15053,7 +15063,7 @@
 		<description>PGA European Tour (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="euro03.bin" size="1048576" crc="8ca45acd"/>
+		<rom name="PGA European Tour (Euro, USA)(1994)(Electronic Arts).bin" size="1048576" crc="8ca45acd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15061,7 +15071,7 @@
 		<description>PGA Tour 96 (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="pga9601.bin" size="2097152" crc="9698bbde"/>
+		<rom name="PGA Tour 96 (Euro, USA)(1995)(Electronic Arts).bin" size="2097152" crc="9698bbde"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15069,7 +15079,7 @@
 		<description>PGA Tour Golf (Euro, USA, v1.1)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="pga tour golf (euro, usa) (v1.1).bin" size="524288" crc="0489ff8e"/>
+		<rom name="PGA Tour Golf (Euro, USA, v1.1)(1991)(Electronic Arts).bin" size="524288" crc="0489ff8e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15077,7 +15087,7 @@
 		<description>PGA Tour Golf (Euro, USA, v1.2)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="pga09.bin" size="524288" crc="c1f0b4e1"/>
+		<rom name="PGA Tour Golf (Euro, USA, v1.2)(1991)(Electronic Arts).bin" size="524288" crc="c1f0b4e1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15836,7 +15846,7 @@
 		<description>Prince of Persia 2 - Remastered Edition (Hack, v1.5)</description>
 		<year>2019</year>
 		<manufacturer>Linkuei</manufacturer>
-		<rom name="prince of persia 2 - remastered edition (v1.5).bin" size="2133984" crc="677ab959"/>
+		<rom name="Prince of Persia 2 - Remastered Edition v1.5 (2019)(Linkuei).bin" size="2133984" crc="677ab959"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17037,7 +17047,7 @@
 		<description>Rock n' Roll Racing (Hack, v16)</description>
 		<year>2020</year>
 		<manufacturer>Ti</manufacturer>
-		<rom name="Rock n Roll Racing Hack v16.bin" size="2097152" crc="676e3039"/>
+		<rom name="Rock n' Roll Racing v16 (2020)(Ti).bin" size="2097152" crc="676e3039"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17380,7 +17390,7 @@
 		<description>Samurai Shodown (Hack, Enhanced Colors v2.0)</description>
 		<year>2015</year>
 		<manufacturer>Pyron</manufacturer>
-		<rom name="samurai shodown (enhanced colors)(v2.0).md" size="3145728" crc="12cf057a"/>
+		<rom name="Samurai Shodown - Enhanced Colors v2.0 (2015)(Pyron).bin" size="3145728" crc="12cf057a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17660,10 +17670,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ssonicbror2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Sega Sonic Bros. (C2 Port, Rev.2)</description>
+		<description>Sega Sonic Bros. (C2 Port, Rev. 2)</description>
 		<year>1992-2018</year>
 		<manufacturer>Dustin O'Dell</manufacturer>
-		<rom name="SegaSonicBrosMDRev2.bin" size="786432" crc="91537567"/>
+		<rom name="Sega Sonic Bros. (C2 Port, Rev. 2)(2018)(Dustin O'Dell).bin" size="786432" crc="91537567"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17790,7 +17800,7 @@
 		<description>Shadow of the Beast (Hack, Enhanced Colors)</description>
 		<year>2014</year>
 		<manufacturer>Pyron</manufacturer>
-		<rom name="shadow of the beast (enhanced colors).md" size="1048576" crc="7eaa73de"/>
+		<rom name="Shadow of the Beast - Enhanced Colors (2014)(Pyron).bin" size="1048576" crc="7eaa73de"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20314,7 +20324,7 @@
 		<description>Streets of Rage - Killer Difficulty (Hack, v0.9)</description>
 		<year>2012</year>
 		<manufacturer>gsaurus</manufacturer>
-		<rom name="Streets of Rage - Killer Difficulty (2012)(gsaurus).bin" size="524288" crc="86eed3d6"/>
+		<rom name="Streets of Rage - Killer Difficulty v0.9 (2012)(gsaurus).bin" size="524288" crc="86eed3d6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20358,7 +20368,7 @@
 		<description>Streets of Rage 2 - Bare Knuckle 3 Boss Edition (Hack, v1.1)</description>
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
-		<rom name="SoR2_BK3Boss_Hack.bin" size="3500098" crc="5c152787"/>
+		<rom name="Streets of Rage 2 - Bare Knuckle 3 Boss Edition v1.1 (2017)(Kratus).bin" size="3500098" crc="5c152787"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20385,7 +20395,7 @@
 		<description>Streets of Rage 2 - Street Fighter Version 1 (Hack)</description>
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
-		<rom name="SoR2_StreetFighter_v1.bin" size="3395462" crc="e03f0c6b"/>
+		<rom name="Streets of Rage 2 - Street Fighter Version 1 (2017)(Kratus).bin" size="3395462" crc="e03f0c6b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20394,7 +20404,7 @@
 		<description>Streets of Rage 2 - Street Fighter Version 2 (Hack)</description>
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
-		<rom name="SoR2_StreetFighter_v2.bin" size="3560088" crc="828786e2"/>
+		<rom name="Streets of Rage 2 - Street Fighter Version 2 (2017)(Kratus).bin" size="3560088" crc="828786e2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20403,7 +20413,7 @@
 		<description>Streets of Rage 2 - Street Fighter Version 3 (Hack)</description>
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
-		<rom name="SoR2_StreetFighter_v3.bin" size="3532794" crc="d2ecf98f"/>
+		<rom name="Streets of Rage 2 - Street Fighter Version 3 (2017)(Kratus).bin" size="3532794" crc="d2ecf98f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20412,7 +20422,7 @@
 		<description>Streets of Rage 2 - Street Fighter Version 4 (Hack)</description>
 		<year>2017</year>
 		<manufacturer>Kratus</manufacturer>
-		<rom name="SoR2_StreetFighter_v4.bin" size="3757608" crc="59aa116d"/>
+		<rom name="Streets of Rage 2 - Street Fighter Version 4 (2017)(Kratus).bin" size="3757608" crc="59aa116d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20420,8 +20430,8 @@
 		<comment>Hack</comment>
 		<description>Streets of Rage 2 - Teenage Mutant Ninja Turtles (Hack)</description>
 		<year>2017</year>
-		<manufacturer>Hack By Carzj, Fix By M3tro</manufacturer>
-		<rom name="SoR2_TMNT_Hack.bin" size="2903472" crc="50e3c7c3"/>
+		<manufacturer>Carzj, M3tro</manufacturer>
+		<rom name="Streets of Rage 2 - Teenage Mutant Ninja Turtles (2017)(Carzj, M3tro).bin" size="2903472" crc="50e3c7c3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20615,17 +20625,17 @@
 		<comment>Hack</comment>
 		<description>Streets of Rage 3 - Extreme Edition (Hack, v0.42)</description>
 		<year>2012</year>
-		<manufacturer>Gsaurus</manufacturer>
-		<rom name="SoR3_Extreme_v042_Hack.bin" size="3145728" crc="d2135a13"/>
+		<manufacturer>gsaurus</manufacturer>
+		<rom name="Streets of Rage 3 - Extreme Edition v0.42 (2012)(gsaurus).bin" size="3145728" crc="d2135a13"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sor3pro" cloneof="sor3" romof="sor3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Streets of Rage 3 Project (USA) (Hack, v0.3)</description>
-		<year>2018</year>
-		<manufacturer>Gsaurus</manufacturer>
-		<rom name="Streets of Rage 3 Project (USA, v0.3)(2018)(Gsaurus).bin" size="3150276" crc="06b93815"/>
+		<description>Streets of Rage 3 Project (Hack)</description>
+		<year>2021</year>
+		<manufacturer>gsaurus</manufacturer>
+		<rom name="Streets of Rage 3 Project (2021)(gsaurus).bin" size="3150276" crc="0b31a6a5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20959,7 +20969,7 @@
 		<description>Super Hang-On Enhanced (Hack)</description>
 		<year>2018</year>
 		<manufacturer>Pyron</manufacturer>
-		<rom name="super hang-on enhanced.bin" size="524288" crc="ff381fed"/>
+		<rom name="Super Hang-On Enhanced (2018)(Pyron).bin" size="524288" crc="ff381fed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21177,10 +21187,10 @@
 	</game>
 	<game name="smgp2019" cloneof="smgp" romof="smgp" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Super Monaco GP-2019 - HE Returns (Hack, Improvement)</description>
+		<description>Super Monaco GP 2019 - HE Returns (Hack, Improvement)</description>
 		<year>2019</year>
 		<manufacturer>TA_Marcos_Translations</manufacturer>
-		<rom name="Super_Monaco_GP2019.bin" size="524288" crc="12bcabb6"/>
+		<rom name="Super_Monaco GP 2019 - HE Returns (2029)(TA_Marcos_Translations).bin" size="524288" crc="12bcabb6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21367,7 +21377,7 @@
 		<description>Super Street Fighter II - The New Challengers (Hack, Color and Graphic)</description>
 		<year>2021</year>
 		<manufacturer>Lord Hiryu</manufacturer>
-		<rom name="Super Street Fighter II (hack-2021).md" size="5242880" crc="f390add2"/>
+		<rom name="Super Street Fighter II Hack Color and Graphic (2021)(Lord Hiryu).bin" size="5242880" crc="f390add2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21409,7 +21419,7 @@
 		<description>Super Tank War (Taiwan) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Gamtec</manufacturer>
-		<rom name="Super Tank War (Unl)(199x)(Gamtec).md" size="262144" crc="5e519ea1"/>
+		<rom name="Super Tank War (Unl)(199x)(Gamtec).bin" size="262144" crc="5e519ea1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23194,7 +23204,7 @@
 		<description>Two Crude Dudes (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="two crude dudes (euro).bin" size="1048576" crc="b6d90a10"/>
+		<rom name="Two Crude Dudes (Euro)(1992)(Data East).bin" size="1048576" crc="b6d90a10"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23211,7 +23221,7 @@
 		<description>Two Crude Dudes (USA)</description>
 		<year>1992</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="two crude dudes (usa).bin" size="1048576" crc="721b5744"/>
+		<rom name="Two Crude Dudes (USA)(1992)(Data East).bin" size="1048576" crc="721b5744"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23219,7 +23229,7 @@
 		<description>Two Tribes - Populous II (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Games</manufacturer>
-		<rom name="mpr-15652.bin" size="1048576" crc="ee988bd9"/>
+		<rom name="Two Tribes - Populous II (Euro)(1993)(Virgin Games).bin" size="1048576" crc="ee988bd9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23248,6 +23258,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ultchakan" cloneof="chakan" romof="chakan" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Ultimate Chakan (Hack, v1.2)</description>
+		<year>2021</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Ultimate Chakan v1.2 (2021)(BillyTime! Games).bin" size="1048576" crc="59dc5466"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ultgargoyle" cloneof="gargoyle" romof="gargoyle" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Ultimate Gargoyles (Hack)</description>
@@ -23261,7 +23280,7 @@
 		<description>Ultimate Mortal Kombat 3 (Euro)</description>
 		<year>1996</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="pal_ultimate_mk3.bin" size="4194304" crc="ecfb5cb4"/>
+		<rom name="Ultimate Mortal Kombat 3 (Euro)(1996)(Acclaim).bin" size="4194304" crc="ecfb5cb4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23269,7 +23288,7 @@
 		<description>Ultimate Mortal Kombat 3 (USA)</description>
 		<year>1996</year>
 		<manufacturer>Williams</manufacturer>
-		<rom name="ultimate mortal kombat 3 (usa).bin" size="4194304" crc="7290770d"/>
+		<rom name="Ultimate Mortal Kombat 3 (USA)(1996)(Williams).bin" size="4194304" crc="7290770d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23330,7 +23349,7 @@
 		<description>Ultimate Qix (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="ultimate qix (usa).bin" size="262144" crc="d83369d9"/>
+		<rom name="Ultimate Qix (USA)(1991)(Taito).bin" size="262144" crc="d83369d9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23338,7 +23357,7 @@
 		<description>Ultimate Soccer (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15819.bin" size="1048576" crc="83db6e58"/>
+		<rom name="Ultimate Soccer (Euro)(1993)(Sega).bin" size="1048576" crc="83db6e58"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23356,7 +23375,7 @@
 		<description>Ultimate X-Men (Hack, Enhanced)</description>
 		<year>2021</year>
 		<manufacturer>BillyTime! Games</manufacturer>
-		<rom name="ultimate x-men (hack, enhanced).bin" size="1048576" crc="4528a2bb"/>
+		<rom name="Ultimate X-Men - Enhanced (2021)(BillyTime! Games).bin" size="1048576" crc="4528a2bb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23373,7 +23392,7 @@
 		<description>Ultraman (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Ma-Ba</manufacturer>
-		<rom name="ultraman (jpn).bin" size="524288" crc="83b4d5fb"/>
+		<rom name="Ultraman (Japan)(1993)(Ma-Ba).bin" size="524288" crc="83b4d5fb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23548,7 +23567,7 @@
 		<description>Vapor Trail (Hack, Enhanced Colors v2.0)</description>
 		<year>2015</year>
 		<manufacturer>Pyron</manufacturer>
-		<rom name="Vapor Trail Enhanced colors v2.0 (2015)(Pyron).bin" size="1048576" crc="8ed751a7"/>
+		<rom name="Vapor Trail Enhanced Colors v2.0 (2015)(Pyron).bin" size="1048576" crc="8ed751a7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23856,8 +23875,8 @@
 	<game name="volfied" cloneof="ultqix" romof="ultqix" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Volfied (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="volfied (jpn).bin" size="262144" crc="b0c5e3f7"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Volfied (Japan)(1991)(Taito).bin" size="262144" crc="b0c5e3f7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25271,7 +25290,7 @@
 		<description>WWF Raw (World)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="wwf raw (world).bin" size="3145728" crc="4ef5d411"/>
+		<rom name="WWF Raw (World)(1994)(Acclaim).bin" size="3145728" crc="4ef5d411"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25279,16 +25298,16 @@
 		<description>WWF Royal Rumble (World)</description>
 		<year>1994</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="wwf royal rumble (world).bin" size="2097152" crc="b69dc53e"/>
+		<rom name="WWF Royal Rumble (World)(1994)(Flying Edge).bin" size="2097152" crc="b69dc53e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wwfroyalimp" cloneof="wwfroyal" romof="wwfroyal" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>WWF Royal Rumble Enhanced Colors + SFX (Hack, v1.05)</description>
-		<year>2023</year>
+		<description>WWF Royal Rumble Enhanced Colors + SFX (Hack, v1.06)</description>
+		<year>2025</year>
 		<manufacturer>Byros</manufacturer>
-		<rom name="WWF Royal Rumble Enhanced Colors + SFX v1.05 (2023)(Byros).bin" size="2097152" crc="d6f4d1ed"/>
+		<rom name="WWF Royal Rumble Enhanced Colors + SFX v1.06 (2025)(BillyTime! Games, Byros).bin" size="2097152" crc="a3822ae3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25296,7 +25315,7 @@
 		<description>WWF Super WrestleMania (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="mpr-15215.bin" size="1048576" crc="b929d6c5"/>
+		<rom name="WWF Super WrestleMania (Euro, USA)(1992)(Flying Edge).bin" size="1048576" crc="b929d6c5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25304,7 +25323,7 @@
 		<description>WWF WrestleMania - The Arcade Game (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="9539d+9540d.bin" size="4194304" crc="a5d023f9"/>
+		<rom name="WWF WrestleMania - The Arcade Game (Euro, USA)(1995)(Acclaim).bin" size="4194304" crc="a5d023f9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25313,7 +25332,7 @@
 		<description>WWF WrestleMania - The Arcade Game (USA, Prototype)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="wwf wrestlemania - the arcade game (usa) (alpha).bin" size="262144" crc="719d6155"/>
+		<rom name="WWF WrestleMania - The Arcade Game (USA, Proto)(1995)(Acclaim).bin" size="262144" crc="719d6155"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25321,7 +25340,7 @@
 		<description>X-Men (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15505.bin" size="1048576" crc="0b78ca97"/>
+		<rom name="X-Men (Euro)(1993)(Sega).bin" size="1048576" crc="0b78ca97"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25329,7 +25348,7 @@
 		<description>X-Men (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="x-men (usa).bin" size="1048576" crc="f71b21b4"/>
+		<rom name="X-Men (USA)(1993)(Sega).bin" size="1048576" crc="f71b21b4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
