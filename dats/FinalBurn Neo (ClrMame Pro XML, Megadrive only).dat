@@ -2471,11 +2471,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
+		<comment>Hack, NB: also applied 'NoPause' patch.</comment>
 		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.1B)</description>
 		<year>2025</year>
 		<manufacturer>Yoni Arousement</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.1B (2025)(Yoni Arousement).bin" size="5242880" crc="98dc13aa"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.1B (2025)(Yoni Arousement).bin" size="5242880" crc="344f0b43"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
