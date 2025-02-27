@@ -234,9 +234,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="abadoxj" cloneof="abadox" romof="abadox" sourcefile="nes/d_nes.cpp">
+		<description>Abadox: Jigoku no Inner Wars (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Natsume</manufacturer>
+		<rom name="Abadox - Jigoku no Inner Wars (Japan)(1989)(Natsume).nes" size="262160" crc="797e7640"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="abadox" sourcefile="nes/d_nes.cpp">
-		<description>Abadox - The Deadly Inner War (USA)</description>
-		<year>1990</year>
+		<description>Abadox: The Deadly Inner War (USA)</description>
+		<year>1989-90</year>
 		<manufacturer>Milton Bradley</manufacturer>
 		<rom name="Abadox - The Deadly Inner War (USA)(1990)(Milton Bradley).nes" size="262160" crc="dc87f63d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
@@ -1251,6 +1259,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
+	<game name="asterixec" cloneof="asterix" romof="asterix" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Asterix - Enhanced Colors (Hack)</description>
+		<year>2025</year>
+		<manufacturer>SuperMichaelTheMarioKirbyFan</manufacturer>
+		<rom name="Asterix Enhanced Colors (Euro)(2025)(SuperMichaelTheMarioKirbyFan).nes" size="131088" crc="9b4877e5"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
 	<game name="astralworld" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Homebrew</comment>
 		<description>Astral World (GlobalHack)</description>
@@ -1265,7 +1282,7 @@
 		<description>Astro Boy (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Astro Boy T-Eng (2022)(Pacnsacdave).nes" size="262160" crc="d5e10c90"/>
+		<rom name="Astro Boy T-Eng (2022)(pacnsacdave).nes" size="262160" crc="d5e10c90"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5097,7 +5114,7 @@
 		<description>Dr. Chaos (USA)</description>
 		<year>1988</year>
 		<manufacturer>FCI</manufacturer>
-		<rom name="Dr. Chaos (USA).nes" size="131088" crc="406bda35"/>
+		<rom name="Dr. Chaos (USA)(1988)(FCI).nes" size="131088" crc="406bda35"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5114,15 +5131,24 @@
 		<description>Dr. Jekyll and Mr. Hyde (USA)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dr. Jekyll and Mr. Hyde (USA).nes" size="163856" crc="c006a41b"/>
+		<rom name="Dr. Jekyll and Mr. Hyde (USA)(1989)(Bandai).nes" size="163856" crc="c006a41b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="drlady" cloneof="drmario" romof="drmario" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dr. Lady Decade (Hack, v1.0)</description>
+		<year>2025</year>
+		<manufacturer>Retro Master HD</manufacturer>
+		<rom name="Dr. Lady Decade (2025)(Retro Master HD).nes" size="65552" crc="a9b09e91"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="drmario" sourcefile="nes/d_nes.cpp">
-		<description>Dr. Mario (Japan, USA) (Rev A)</description>
+		<description>Dr. Mario (Japan, USA, Rev A)</description>
 		<year>1990</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Dr. Mario (Japan, USA) (Rev A).nes" size="65552" crc="7623dffd"/>
+		<rom name="Dr. Mario (Japan, USA, Rev A)(1990)(Nintendo).nes" size="65552" crc="7623dffd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5144,6 +5170,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="drretro" cloneof="drmario" romof="drmario" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dr. Retro (Hack, v3.7)</description>
+		<year>2024-25</year>
+		<manufacturer>Retro Master HD</manufacturer>
+		<rom name="Dr. Retro v3.7 (2024-25)(Retro Master HD).nes" size="65552" crc="f29b5673"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="dracsnightout" sourcefile="nes/d_nes.cpp">
 		<comment>Prototype</comment>
 		<description>Drac's Night Out (USA, Prototype)</description>
@@ -5153,29 +5188,29 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="dragobaldaimaofu" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Dragon Ball - Dai Maou Fukkatsu (Hack, English)</description>
-		<year>2011</year>
-		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Dragon Ball - Dai Maou Fukkatsu (T-Eng).nes" size="393232" crc="69beb7a5"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="dragobaldaimaofuj" cloneof="dragobaldaimaofu" romof="dragobaldaimaofu" sourcefile="nes/d_nes.cpp">
 		<description>Dragon Ball - Dai Maou Fukkatsu (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dragon Ball - Dai Maou Fukkatsu (Japan).nes" size="262160" crc="beff8c77"/>
+		<rom name="Dragon Ball - Dai Maou Fukkatsu (Japan)(1988)(Bandai).nes" size="262160" crc="beff8c77"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="dragobalshelonnona" cloneof="dragonpower" romof="dragonpower" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dragon Ball - Shen Long no Nazo (Hack, English)</description>
-		<year>2016</year>
+		<description>Dragon Ball - Dragon Mystery? (Hack, English)</description>
+		<year>1999</year>
 		<manufacturer>TransBRC</manufacturer>
-		<rom name="Dragon Ball - Shen Long no Nazo (T-Eng).nes" size="163856" crc="b4e31bf4"/>
+		<rom name="Dragon Ball - Shen Long no Nazo T-Eng (1999)(TransBRC).nes" size="163856" crc="b4e31bf4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragobaldaimaofu" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Ball - Revival of the Dark Lord (Hack, English)</description>
+		<year>2011</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="Dragon Ball - Dai Maou Fukkatsu T-Eng (2011)(Stardust Crusaders).nes" size="393232" crc="69beb7a5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5183,7 +5218,7 @@
 		<description>Dragon Ball - Shen Long no Nazo (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dragon Ball - Shen Long no Nazo (Japan).nes" size="163856" crc="815a4bad"/>
+		<rom name="Dragon Ball - Shen Long no Nazo (Japan)(1986)(Bandai).nes" size="163856" crc="815a4bad"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5191,16 +5226,16 @@
 		<description>Dragon Ball 3 - Gokuu Den (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dragon Ball 3 - Gokuu Den (Japan).nes" size="393232" crc="0544b2a4"/>
+		<rom name="Dragon Ball 3 - Gokuu Den (Japan)(1989)(Bandai).nes" size="393232" crc="0544b2a4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="dragobalzkyosajin" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dragon Ball Z - Kyoushuu! Saiya Jin (Hack, English)</description>
+		<description>Dragon Ball Z - Assault of the Saiyans (Hack, English)</description>
 		<year>2005</year>
 		<manufacturer>Twilight Translations</manufacturer>
-		<rom name="Dragon Ball Z - Kyoushuu! Saiya Jin (T-Eng).nes" size="524304" crc="31d0d50a"/>
+		<rom name="Dragon Ball Z - Kyoushuu! Saiya Jin T-Eng (2005)(Twilight Translations).nes" size="524304" crc="31d0d50a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5208,7 +5243,7 @@
 		<description>Dragon Ball Z - Kyoushuu! Saiya Jin (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Dragon Ball Z - Kyoushuu! Saiya Jin (Japan).nes" size="524304" crc="d78484b7"/>
+		<rom name="Dragon Ball Z - Kyoushuu! Saiya Jin (Japan)(1990)(Bandai).nes" size="524304" crc="d78484b7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8843,7 +8878,7 @@
 		<description>Hoshi wo Miru Hito (Japan)</description>
 		<year>1987</year>
 		<manufacturer>HOT-B</manufacturer>
-		<rom name="Hoshi wo Miru Hito (J)(1987)(HOT-B).nes" size="131088" crc="0ec30976"/>
+		<rom name="Hoshi wo Miru Hito (Japan)(1987)(HOT-B).nes" size="131088" crc="0ec30976"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10564,7 +10599,7 @@
 		<description>Lasalle Ishii no Child's Quest (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Lasalle Ishii no Child's Quest (J)(1989)(Namcot).nes" size="196624" crc="c78d14f9"/>
+		<rom name="Lasalle Ishii no Child's Quest (Japan)(1989)(Namco).nes" size="196624" crc="c78d14f9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17227,24 +17262,24 @@
 		<description>Spelunker (USA)</description>
 		<year>1987</year>
 		<manufacturer>Broderbund</manufacturer>
-		<rom name="Spelunker (USA).nes" size="40976" crc="7ea3404f"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="speluii" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Spelunker II - Yuusha e no Chousen (Hack, English)</description>
-		<year>2003</year>
-		<manufacturer>Sarysa</manufacturer>
-		<rom name="Spelunker II - Yuusha e no Chousen (T-eng).nes" size="262160" crc="72a28744"/>
+		<rom name="Spelunker (USA)(1987)(Broderbund).nes" size="40976" crc="7ea3404f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="speluiij" cloneof="speluii" romof="speluii" sourcefile="nes/d_nes.cpp">
 		<description>Spelunker II - Yuusha e no Chousen (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="Spelunker II - Yuusha e no Chousen (Japan).nes" size="131088" crc="f076f168"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Spelunker II - Yuusha e no Chousen (Japan)(1987)(Irem).nes" size="131088" crc="f076f168"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="speluii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Spelunker II: A Hero's Challenge (Hack, English)</description>
+		<year>2003</year>
+		<manufacturer>Sarysa</manufacturer>
+		<rom name="Spelunker II - Yuusha e no Chousen T-Eng (2003)(Sarysa).nes" size="262160" crc="72a28744"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17261,7 +17296,7 @@
 		<description>Spider-Man - Return of the Sinister Six (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ljn</manufacturer>
-		<rom name="Spider-Man - Return of the Sinister Six (USA).nes" size="393232" crc="095b180b"/>
+		<rom name="Spider-Man - Return of the Sinister Six (USA)(1992)(Ljn).nes" size="393232" crc="095b180b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17284,10 +17319,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="splathou" sourcefile="nes/d_nes.cpp">
-		<description>Splatter House - Wanpaku Graffiti (Japan)</description>
+		<comment>Hack</comment>
+		<description>Splatter House: Super Deformed (Hack, English v2.0)</description>
+		<year>2000</year>
+		<manufacturer>Spinner 8 and friends</manufacturer>
+		<rom name="Splatterhouse - Super Deformed T-Eng v2.0 (2000)(Spinner 8 and friends).nes" size="262160" crc="21d6c3df"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="splathouj" cloneof="splathou" romof="splathou" sourcefile="nes/d_nes.cpp">
+		<description>Splatter House: Wanpaku Graffiti (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Splatter House - Wanpaku Graffiti (Japan).nes" size="262160" crc="b7eeb48b"/>
+		<rom name="Splatter House - Wanpaku Graffiti (Japan)(1989)(Namco).nes" size="262160" crc="b7eeb48b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17322,7 +17366,7 @@
 		<description>Spot (USA)</description>
 		<year>1990</year>
 		<manufacturer>Arcadia</manufacturer>
-		<rom name="Spot (USA).nes" size="131088" crc="1d6e0953"/>
+		<rom name="Spot (USA)(1990)(Arcadia).nes" size="131088" crc="1d6e0953"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17330,16 +17374,24 @@
 		<description>Spy Hunter (USA)</description>
 		<year>1987</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Spy Hunter (USA).nes" size="65552" crc="1e060ae0"/>
+		<rom name="Spy Hunter (USA)(1987)(Sunsoft).nes" size="65552" crc="1e060ae0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="spyvsspyc" cloneof="spyvsspy" romof="spyvsspy" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Spy Vs Spy (Hack, Spanish)</description>
+		<description>Spy vs Spy (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Spy Vs Spy T-Spa (2019)(Wave).nes" size="40976" crc="0c4a3d91"/>
+		<rom name="Spy vs Spy T-Spa (2019)(Wave).nes" size="40976" crc="0c4a3d91"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="spyvsspyj" cloneof="spyvsspy" romof="spyvsspy" sourcefile="nes/d_nes.cpp">
+		<description>Spy vs Spy (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Spy vs Spy (Japan)(1986)(Kemco).nes" size="40976" crc="b7f7f081"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17347,7 +17399,15 @@
 		<description>Spy vs Spy (USA)</description>
 		<year>1988</year>
 		<manufacturer>Kemco</manufacturer>
-		<rom name="Spy vs Spy (USA).nes" size="40976" crc="23d23dcc"/>
+		<rom name="Spy vs Spy (USA)(1988)(Kemco).nes" size="40976" crc="23d23dcc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="spyvsspyislcaj" cloneof="spyvsspyislca" romof="spyvsspyislca" sourcefile="nes/d_nes.cpp">
+		<description>Spy vs Spy - Nangoku Shirei!! (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Spy vs Spy - Nangoku Shirei!! (Japan)(1987)(Kemco).nes" size="131088" crc="23dff27d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17356,15 +17416,7 @@
 		<description>Spy vs Spy - The Island Caper (Hack, English)</description>
 		<year>2015</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Spy vs Spy - The Island Caper (T-Eng).nes" size="131088" crc="f9e51c93"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="spyvsspyislcaj" cloneof="spyvsspyislca" romof="spyvsspyislca" sourcefile="nes/d_nes.cpp">
-		<description>Spy vs Spy - The Island Caper (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Kemco</manufacturer>
-		<rom name="Spy vs Spy - The Island Caper (Japan).nes" size="131088" crc="23dff27d"/>
+		<rom name="Spy vs Spy - The Island Caper T-Eng (2015)(pacnsacdave).nes" size="131088" crc="f9e51c93"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17407,7 +17459,7 @@
 		<description>Stanley - The Search for Dr. Livingston (USA)</description>
 		<year>1992</year>
 		<manufacturer>Electro Brain</manufacturer>
-		<rom name="Stanley - The Search for Dr. Livingston (USA).nes" size="262160" crc="4871ef6e"/>
+		<rom name="Stanley - The Search for Dr. Livingston (USA)(1992)(Electro Brain).nes" size="262160" crc="4871ef6e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17424,7 +17476,7 @@
 		<description>Star Force (USA)</description>
 		<year>1987</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Star Force (USA).nes" size="65552" crc="b3cf12b8"/>
+		<rom name="Star Force (USA)(1987)(Tecmo).nes" size="65552" crc="b3cf12b8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17432,7 +17484,7 @@
 		<description>Star Gate (Japan)</description>
 		<year>1987</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Star Gate (Japan).nes" size="24592" crc="2b265d30"/>
+		<rom name="Star Gate (Japan)(1987)(HAL Laboratory).nes" size="24592" crc="2b265d30"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17440,7 +17492,7 @@
 		<description>Star Luster (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Star Luster (Japan).nes" size="40976" crc="d8604b5a"/>
+		<rom name="Star Luster (Japan)(1985)(Namco).nes" size="40976" crc="d8604b5a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17448,7 +17500,7 @@
 		<description>Star Soldier (USA)</description>
 		<year>1989</year>
 		<manufacturer>Taxan</manufacturer>
-		<rom name="Star Soldier (USA).nes" size="65552" crc="69004001"/>
+		<rom name="Star Soldier (USA)(1989)(Taxan).nes" size="65552" crc="69004001"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

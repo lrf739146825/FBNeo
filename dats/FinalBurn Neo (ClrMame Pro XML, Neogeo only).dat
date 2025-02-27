@@ -7404,7 +7404,7 @@
 	</game>
 	<game name="karnovre" cloneof="karnovr" romof="karnovr" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Karnov's Revenge ~ Fighter's History Dynamite - Revolution (Hack, v0.2)</description>
+		<description>Karnov's Revenge / Fighter's History Dynamite - Revolution (Hack, v0.2)</description>
 		<year>2024</year>
 		<manufacturer>GameHackFan</manufacturer>
 		<rom name="066-p1kre.p1" size="1048576" crc="07af175f"/>
@@ -7459,7 +7459,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="karnovr" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
-		<description>Karnov's Revenge ~ Fighter's History Dynamite</description>
+		<description>Karnov's Revenge / Fighter's History Dynamite</description>
 		<year>1994</year>
 		<manufacturer>Data East Corporation</manufacturer>
 		<rom name="066-p1.p1" size="1048576" crc="8c86fd22"/>
@@ -23993,7 +23993,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="strhoop" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
-		<description>Street Hoop ~ Street Slam ~ Dunk Dream (DEM-004 ~ DEH-004)</description>
+		<description>Street Hoop / Street Slam / Dunk Dream (DEM-004 ~ DEH-004)</description>
 		<year>1994</year>
 		<manufacturer>Data East Corporation</manufacturer>
 		<rom name="079-p1.p1" size="1048576" crc="5e78328e"/>
@@ -34362,12 +34362,12 @@
 	</game>
 	<game name="lastblsp" cloneof="lastblad" romof="lastblad" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>The Last Blade / Bakumatsu Roman - Gekka no Kenshi (Special 2017, Hack)</description>
-		<year>2023</year>
-		<manufacturer>hack</manufacturer>
-		<rom name="234-p1sp.p1" size="1048576" crc="264f191b"/>
-		<rom name="234-p2sp.sp2" size="6291456" crc="6e5914ce"/>
-		<rom name="234-p3sp.p3" size="131072" crc="d6a50f04"/>
+		<description>The Last Blade / Bakumatsu Roman - Gekka no Kenshi (Special 2017 v2.5 FINAL, Hack)</description>
+		<year>2025</year>
+		<manufacturer>GSC2007</manufacturer>
+		<rom name="234-p1sp.p1" size="1048576" crc="977753ce"/>
+		<rom name="234-p2sp.sp2" size="6291456" crc="4a2a92fc"/>
+		<rom name="234-p3sp.p3" size="131072" crc="d5fbd2dc"/>
 		<rom name="234-s1.s1" merge="234-s1.s1" size="131072" crc="95561412"/>
 		<rom name="234-c1.c1" merge="234-c1.c1" size="8388608" crc="9f7e2bd3"/>
 		<rom name="234-c2.c2" merge="234-c2.c2" size="8388608" crc="80623d3c"/>
