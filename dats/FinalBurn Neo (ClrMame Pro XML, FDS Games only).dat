@@ -938,8 +938,8 @@
 	<game name="kickcha" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Kick Challenger - Air Foot (Japan)</description>
 		<year>1987</year>
-		<manufacturer>Vap</manufacturer>
-		<rom name="Kick Challenger - Air Foot (Japan).fds" size="131016" crc="c83ef278"/>
+		<manufacturer>Vap Inc.</manufacturer>
+		<rom name="Kick Challenger - Air Foot (Japan)(1987)(Vap).fds" size="131016" crc="c83ef278"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1058,10 +1058,10 @@
 	</game>
 	<game name="linknobouc" cloneof="linknobou" romof="linknobou" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Link no Bouken - The Legend of Zelda 2 (Rev 1) (Hack, Spanish)</description>
+		<description>Link no Bouken - The Legend of Zelda II (Rev 1) (Rev 1) (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
-		<rom name="link no bouken - the legend of zelda 2 (japan) (rev 1) - castellano v1.0.fds" size="131000" crc="60a26198"/>
+		<rom name="Link no Bouken - The Legend of Zelda II (Rev 1) T-Spa (2019)(jackic).fds" size="131000" crc="60a26198"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1396,7 +1396,7 @@
 		<description>SD Gundam World - Gachapon Senshi - Scramble Wars (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Max1323</manufacturer>
-		<rom name="sd gundam world - gachapon senshi - scramble wars (japan) [b] - castellano v1.0.fds" size="131016" crc="53f73319"/>
+		<rom name="SD Gundam World - Gachapon Senshi - Scramble Wars T-Spa (2020)(Max1323).fds" size="131016" crc="53f73319"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1522,10 +1522,10 @@
 	</game>
 	<game name="supermarbroc" cloneof="supermarbro" romof="supermarbro" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Super Mario Brothers (Hack, Spanish)</description>
+		<description>Super Mario Bros. (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Noishe</manufacturer>
-		<rom name="super mario brothers (japan) - castellano v1.0.fds" size="65516" crc="42d4a7c5"/>
+		<rom name="Super Mario Bros. T-Spa (2020)(Noishe).fds" size="65516" crc="42d4a7c5"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
