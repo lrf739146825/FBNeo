@@ -2021,8 +2021,9 @@ static INT32 NeoSMAInit(void (*pInitCallback)(), pSekWriteWordHandler pBankswitc
 	INT32 nRet = NeoInit();
 
 	// If IPS_NOT_PROTECT, the data between PROM+0x700000 ~ 0x900000 is redundant, and the data of nIpsMemExpLen[PRG1_ROM] will be isolated.
+	// Expansion bytes larger than 5M should be moved after 5M.
 	if ((0 == nRet) && (nIpsDrvDefine & IPS_NOT_PROTECT) && (nIpsMemExpLen[PRG1_ROM] > 0)) {
-		memmove(Neo68KROMActive + 0x700000, Neo68KROMActive + 0x900000, nIpsMemExpLen[PRG1_ROM]);
+		memmove(Neo68KROMActive + 0x500000, Neo68KROMActive + 0x900000, nIpsMemExpLen[PRG1_ROM]);
 	}
 
 	return nRet;
@@ -8133,7 +8134,7 @@ struct BurnDriver BurnDrvMslug3h = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO | HARDWARE_SNK_CMC42, GBF_RUNGUN, FBF_MSLUG,
 	NULL, mslug3hRomInfo, mslug3hRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
-	NeoInit, NeoSMAExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000, 304, 224, 4, 3
 };
 
@@ -18790,11 +18791,11 @@ struct BurnDriver BurnDrvMslugxcq = {
 
 // Metal Slug X - Super Vehicle-001 (Legend with Infinite Firepower, Hack)
 // Modified by AKS
-// GOTVG 20241223
+// GOTVG 20250213
 
 static struct BurnRomInfo mslugxcqiRomDesc[] = {
-	{ "250-p1cqi.p1",	0x100000, 0x03bb5d5c, 1 | BRF_ESS | BRF_PRG },
-	{ "250-p2cqi.ep1",	0x400000, 0xe61c8983, 1 | BRF_ESS | BRF_PRG },
+	{ "250-p1cqi.p1",	0x100000, 0xf1cd0db7, 1 | BRF_ESS | BRF_PRG },
+	{ "250-p2cqi.ep1",	0x400000, 0xab4cd88e, 1 | BRF_ESS | BRF_PRG },
 
 	{ "250-s1sc.s1",	0x020000, 0x03bce893, 2 | BRF_GRA },
 
@@ -18813,7 +18814,7 @@ STDROMPICKEXT(mslugxcqi, mslugxcqi, neogeo)
 STD_ROM_FN(mslugxcqi)
 
 struct BurnDriver BurnDrvMslugxfs = {
-	"mslugxcqi", "mslugx", "neogeo", NULL, "2024",
+	"mslugxcqi", "mslugx", "neogeo", NULL, "2025",
 	"Metal Slug X - Super Vehicle-001 (Legend with Infinite Firepower, Hack)\0", NULL, "hack", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_RUNGUN, FBF_MSLUG,
@@ -19493,11 +19494,11 @@ struct BurnDriver BurnDrvMslug3cqi = {
 
 // Metal Slug 3 (Legend TD, Hack)
 // Modified by AKS
-// GOTVG 20241229
+// GOTVG 20250213
 
 static struct BurnRomInfo mslug3cqtRomDesc[] = {
 	{ "256-p1cqt.p1",	0x100000, 0x9a40066b, 1 | BRF_ESS | BRF_PRG },
-	{ "256-p2cqt.sp2",	0x600000, 0xf3ac11ef, 1 | BRF_ESS | BRF_PRG },
+	{ "256-p2cqt.sp2",	0x600000, 0x517ccf74, 1 | BRF_ESS | BRF_PRG },
 
 	MSLUG3_DECRYPTED_SPR1
 	MSLUG3_DECRYPTED_SPR2
@@ -19514,7 +19515,7 @@ STDROMPICKEXT(mslug3cqt, mslug3cqt, neogeo)
 STD_ROM_FN(mslug3cqt)
 
 struct BurnDriver BurnDrvMslug3cqt = {
-	"mslug3cqt", "mslug3", "neogeo", NULL, "2024",
+	"mslug3cqt", "mslug3", "neogeo", NULL, "2025",
 	"Metal Slug 3 (Legend TD, Hack)\0", NULL, "hack", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_RUNGUN, FBF_MSLUG,
@@ -19750,11 +19751,11 @@ struct BurnDriver BurnDrvMslug4fd = {
 
 // Metal Slug 4 (Final, Hack)
 // Modified by AKS & SAKURA
-// GOTVG 20250122
+// GOTVG 20250213
 
 static struct BurnRomInfo mslug4zjRomDesc[] = {
-	{ "263-p1zj.p1",	0x100000, 0x521f944f, 1 | BRF_ESS | BRF_PRG },
-	{ "263-p2zj.sp2",	0x600000, 0xd886a760, 1 | BRF_ESS | BRF_PRG },
+	{ "263-p1zj.p1",	0x100000, 0x7ff2f18e, 1 | BRF_ESS | BRF_PRG },
+	{ "263-p2zj.sp2",	0x600000, 0xf6e65e5e, 1 | BRF_ESS | BRF_PRG },
 
 	MSLUG4_DECRYPTED_TEXT
 
@@ -20284,10 +20285,10 @@ struct BurnDriver BurnDrvMslug5ex = {
 
 // Metal Slug 5 (The Longest Battle, Hack)
 // Modified by 明天再努力吧
-// GOTVG 20230208
+// GOTVG 20231229
 
 static struct BurnRomInfo mslug5esRomDesc[] = {
-	{ "268-p1es.p1",	0x600000, 0xfc309b3d, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "268-p1es.p1",	0x600000, 0x8f8327a1, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
 
 	MSLUG5_DECRYPTED_COMPONENTS
 };
@@ -20689,7 +20690,7 @@ struct BurnDriver BurnDrvMslug5x = {
 
 // Metal Slug 5 (Enemy Enhance, Hack)
 // Modified by 尤古朵拉
-// GOTVG 20220406
+// GOTVG 20200406
 
 static struct BurnRomInfo mslug5dbRomDesc[] = {
 	{ "268-p1db.p1",	0x600000, 0x1527c4dd, 1 | BRF_ESS | BRF_PRG },
@@ -26562,6 +26563,52 @@ struct BurnDriver BurnDrvBeast = {
 	BDF_GAME_WORKING | BDF_DEMO, 2, HARDWARE_SNK_NEOGEO, GBF_PLATFORM, 0,
 	NULL, beastRomInfo, beastRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	304, 224, 4, 3
+};
+
+
+// Neo 2048 (HB)
+// Release by Nicole Caroline Branagan
+// https://github.com/nicolebranagan/neo2048
+
+static struct BurnRomInfo neo2048RomDesc[] = {
+	{ "neo2048.p1",		0x000bde, 0xa1039bdb, 1 | BRF_ESS | BRF_PRG },  //  0 68K Code
+
+	{ "fixlayer.s1",	0x020000, 0xd1e4c798, 2 | BRF_GRA },            //  1 Text data
+
+	{ "logo.c1",		0x100000, 0x479543cf, 3 | BRF_GRA },            //  2 Sprite data
+	{ "logo.c2",		0x100000, 0x1f6431d5, 3 | BRF_GRA },            //  3
+	{ "sprites.c1",		0x000c00, 0xef3e848e, 0 | BRF_GRA },            //  4
+	{ "sprites.c2",		0x000c00, 0x933b4e8f, 0 | BRF_GRA },            //  5
+
+	{ "sounddriver.m1",	0x010000, 0x6e363bd2, 4 | BRF_ESS | BRF_PRG },  //  6 Z80 code
+
+	{ "adpcma.v1",		0x00e200, 0xdba56bf0, 5 | BRF_SND },            //  7 Sound data
+};
+
+STDROMPICKEXT(neo2048, neo2048, neogeo)
+STD_ROM_FN(neo2048)
+
+static void neo2048Callback()
+{
+	BurnLoadRom(NeoSpriteROM[nNeoActiveSlot] + 0x100000, 4, 2);
+	BurnLoadRom(NeoSpriteROM[nNeoActiveSlot] + 0x100001, 5, 2);
+}
+
+static INT32 neo2048Init()
+{
+	NeoCallbackActive->pInitialise = neo2048Callback;
+
+	return NeoInit();
+}
+
+struct BurnDriver BurnDrvNeo2048 = {
+	"neo2048", NULL, "neogeo", NULL, "2021",
+	"Neo 2048 (HB)\0", NULL, "Nicole Express", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PUZZLE, 0,
+	NULL, neo2048RomInfo, neo2048RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	neo2048Init, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };
 
