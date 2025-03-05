@@ -3514,6 +3514,8 @@ DRV		BurnDrvsms_borgman;
 DRV		BurnDrvsms_borgmanp;
 DRV		BurnDrvIronclad;
 DRV		BurnDrvIronclado;
+DRV		BurnDrvnes_chouyokushenkigm;
+DRV		BurnDrvnes_chouyokushenki;
 DRV		BurnDrvpce_bravomane;
 DRV		BurnDrvpce_bravoman;
 DRV		BurnDrvMSX_choyleefut;
@@ -4603,6 +4605,7 @@ DRV		BurnSpecDeathstalker;
 DRV		BurnSpecDstarint;
 DRV		BurnDrvmd_barbarianap2;
 DRV		BurnDrvmd_barbarianpc;
+DRV		BurnSpecDeathwish3;
 DRV		BurnDrvMSX_deathwish3;
 DRV		BurnDrvnes_deathbots;
 DRV		BurnSpecdeathcha;
@@ -7101,7 +7104,9 @@ DRV		BurnDrvFjbuster;
 DRV		BurnDrvsnes_Fullpower;
 DRV		BurnDrvnes_fullquietrv;
 DRV		BurnDrvnes_fullquiet;
+DRV		BurnSpecFullthrottle;
 DRV		BurnDrvFullthrl;
+DRV		BurnSpecFullthrottle2;
 DRV		BurnDrvsnes_Fullthrottle;
 DRV		BurnDrvmd_funngame;
 DRV		BurnDrvsnes_Funngames;
@@ -12070,6 +12075,7 @@ DRV		BurnDrvMSX_mikie;
 DRV		BurnDrvMikie;
 DRV		BurnDrvtg_miltrymd;
 DRV		BurnDrvsnes_Militia;
+DRV		BurnSpecMilkrace;
 DRV		BurnDrvMSX_milkrace;
 DRV		BurnDrvGtmr2a;
 DRV		BurnDrvGtmr2;
@@ -13025,6 +13031,7 @@ DRV		BurnDrvNkdodgeb;
 DRV		BurnDrvpce_nekdodge;
 DRV		BurnDrvmd_neksoccr;
 DRV		BurnDrvpce_neksoccr;
+DRV		BurnDrvnes_nekkoudbsochen;
 DRV		BurnDrvnes_nekkestrbasj;
 DRV		BurnDrvnes_nekkestrbasc;
 DRV		BurnDrvnes_nekkestrbas;
@@ -15609,6 +15616,7 @@ DRV		BurnSpecRatos;
 DRV		BurnDrvMSX_raven;
 DRV		BurnDrvnes_ravensgate;
 DRV		BurnDrvnes_ravensgatemmc1;
+DRV		BurnSpecRawrecruit;
 DRV		BurnDrvRayforce;
 DRV		BurnDrvRayforcej;
 DRV		BurnDrvsms_raymanrr;
@@ -16794,6 +16802,7 @@ DRV		BurnDrvmd_shdancer;
 DRV		BurnDrvShadfrceu;
 DRV		BurnDrvShadfrce;
 DRV		BurnDrvShadfrcej;
+DRV		BurnDrvSgz;
 DRV		BurnSpecShadowofthebeast;
 DRV		BurnDrvsms_beast;
 DRV		BurnDrvmd_beast;
@@ -16815,6 +16824,7 @@ DRV		BurnDrvShadoww;
 DRV		BurnDrvShadowwa;
 DRV		BurnDrvnes_shadowarepiii;
 DRV		BurnDrvsnes_Shadowp;
+DRV		BurnSpecShadowfire;
 DRV		BurnDrvnes_shadowgate;
 DRV		BurnDrvShadowld;
 DRV		BurnDrvsnes_Shadowrunti;
@@ -26645,6 +26655,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_borgmanp,		// Chouon Senshi Borgman (Japan, Prototype)
 	&BurnDrvIronclad,			// Choutetsu Brikin'ger / Iron Clad (prototype)
 	&BurnDrvIronclado,			// Choutetsu Brikin'ger / Iron Clad (prototype, bootleg)
+	&BurnDrvnes_chouyokushenkigm,// Chouyoku Senki ESTIQUE (God Mode, Hack)
+	&BurnDrvnes_chouyokushenki,	// Chouyoku Senki ESTIQUE (Japan)
 	&BurnDrvpce_bravomane,		// Chouzetsu Rinjin - Bravoman (Hack, English)
 	&BurnDrvpce_bravoman,		// Chouzetsu Rinjin - Bravoman (Japan)
 	&BurnDrvMSX_choyleefut,		// Choy-Lee-Fut Kung-Fu Warrior (Euro, Spanish)
@@ -27734,6 +27746,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecDstarint,			// Death Star Interceptor (48K)
 	&BurnDrvmd_barbarianap2,	// Death Sword - Apple II (HB)
 	&BurnDrvmd_barbarianpc,		// Death Sword - PC CGA (HB)
+	&BurnSpecDeathwish3,		// Death Wish 3 (128K)
 	&BurnDrvMSX_deathwish3,		// Death Wish 3 (Euro)
 	&BurnDrvnes_deathbots,		// Deathbots (USA, Rev 1) (Unl)
 	&BurnSpecdeathcha,			// Deathchase (48K)
@@ -30232,7 +30245,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Fullpower,		// Full Power (Japan)
 	&BurnDrvnes_fullquietrv,	// Full Quiet (HB)
 	&BurnDrvnes_fullquiet,		// Full Quiet (Test Cart) (HB, Prototype)
+	&BurnSpecFullthrottle,		// Full Throttle (48K)
 	&BurnDrvFullthrl,			// Full Throttle (Japan)
+	&BurnSpecFullthrottle2,		// Full Throttle 2 (48K)
 	&BurnDrvsnes_Fullthrottle,	// Full Throttle: All-American Racing (USA)
 	&BurnDrvmd_funngame,		// Fun 'N Games (Euro)
 	&BurnDrvsnes_Funngames,		// Fun 'n Games (USA)
@@ -35201,6 +35216,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMikie,				// Mikie
 	&BurnDrvtg_miltrymd,		// Military Madness (USA)
 	&BurnDrvsnes_Militia,		// Militia (Japan)
+	&BurnSpecMilkrace,			// Milk Race (48K)
 	&BurnDrvMSX_milkrace,		// Milk Race (Euro)
 	&BurnDrvGtmr2a,				// Mille Miglia 2: Great 1000 Miles Rally (95/04/04)
 	&BurnDrvGtmr2,				// Mille Miglia 2: Great 1000 Miles Rally (95/05/24)
@@ -36156,6 +36172,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_nekdodge,		// Nekketsu Koukou Dodgeball Bu - PC Bangai Hen (Japan)
 	&BurnDrvmd_neksoccr,		// Nekketsu Koukou Dodgeball Bu - Soccer Hen MD (Japan)
 	&BurnDrvpce_neksoccr,		// Nekketsu Koukou Dodgeball Bu - Soccer PC Hen (Japan)
+	&BurnDrvnes_nekkoudbsochen,	// Nekketsu Koukou Dodgeball-bu - Soccer Hen (Japan)
 	&BurnDrvnes_nekkestrbasj,	// Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan)
 	&BurnDrvnes_nekkestrbasc,	// Nekketsu! Street Basket - Ganbare Dunk Heroes (T-Chi, v2)
 	&BurnDrvnes_nekkestrbas,	// Nekketsu! Street Basket - Go for it, Dunk Heroes (Hack, English v1.2)
@@ -38740,6 +38757,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_raven,			// Raven (HB)
 	&BurnDrvnes_ravensgate,		// Raven's Gate (HB)
 	&BurnDrvnes_ravensgatemmc1,	// Raven's Gate (HB, MMC1 ver.)
+	&BurnSpecRawrecruit,		// Raw Recruit
 	&BurnDrvRayforce,			// Ray Force (Ver 2.3A 1994/01/20)
 	&BurnDrvRayforcej,			// Ray Force (Ver 2.3J 1994/01/20)
 	&BurnDrvsms_raymanrr,		// Rayman Retro Rumble (GlobalHack, v1.3)
@@ -39925,6 +39943,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvShadfrceu,			// Shadow Force (US, Version 2)
 	&BurnDrvShadfrce,			// Shadow Force (World, Version 3)
 	&BurnDrvShadfrcej,			// Shadow Force - Henshin Ninja (Japan, Version 2)
+	&BurnDrvSgz,				// Shadow Gangs Zero (Kick Demo Ver: 2.0)
 	&BurnSpecShadowofthebeast,	// Shadow Of The Beast (128K)
 	&BurnDrvsms_beast,			// Shadow of the Beast (Euro, Brazil)
 	&BurnDrvmd_beast,			// Shadow of the Beast (Euro, USA)
@@ -39946,6 +39965,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvShadowwa,			// Shadow Warriors (World, set 2)
 	&BurnDrvnes_shadowarepiii,	// Shadow Warriors Episode II - The Dark Sword of Chaos (Euro)
 	&BurnDrvsnes_Shadowp,		// Shadow, The (Prototype)
+	&BurnSpecShadowfire,		// Shadowfire
 	&BurnDrvnes_shadowgate,		// Shadowgate (USA)
 	&BurnDrvShadowld,			// Shadowland (YD3)
 	&BurnDrvsnes_Shadowrunti,	// Shadowrun (Hack, Italian v0.98)
@@ -49752,6 +49772,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_borgmanp", "sms/d_sms.cpp"},
 	{ "ironclad", "neogeo/d_neogeo.cpp"},
 	{ "ironclado", "neogeo/d_neogeo.cpp"},
+	{ "nes_chouyokushenkigm", "nes/d_nes.cpp"},
+	{ "nes_chouyokushenki", "nes/d_nes.cpp"},
 	{ "pce_bravomane", "pce/d_pce.cpp"},
 	{ "pce_bravoman", "pce/d_pce.cpp"},
 	{ "msx_choyleefut", "msx/d_msx.cpp"},
@@ -50835,6 +50857,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_dstarint", "spectrum/d_spectrum.cpp"},
 	{ "md_barbarianap2", "megadrive/d_megadrive.cpp"},
 	{ "md_barbarianpc", "megadrive/d_megadrive.cpp"},
+	{ "spec_deathwish3", "spectrum/d_spectrum.cpp"},
 	{ "msx_deathwish3", "msx/d_msx.cpp"},
 	{ "nes_deathbots", "nes/d_nes.cpp"},
 	{ "spec_deathcha", "spectrum/d_spectrum.cpp"},
@@ -53311,7 +53334,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_fullpower", "snes/d_snes.cpp"},
 	{ "nes_fullquietrv", "nes/d_nes.cpp"},
 	{ "nes_fullquiet", "nes/d_nes.cpp"},
+	{ "spec_fullthrottle", "spectrum/d_spectrum.cpp"},
 	{ "fullthrl", "taito/d_taitomisc.cpp"},
+	{ "spec_fullthrottle2", "spectrum/d_spectrum.cpp"},
 	{ "snes_fullthrottle", "snes/d_snes.cpp"},
 	{ "md_funngame", "megadrive/d_megadrive.cpp"},
 	{ "snes_funngames", "snes/d_snes.cpp"},
@@ -58236,6 +58261,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mikie", "konami/d_mikie.cpp"},
 	{ "tg_miltrymd", "pce/d_pce.cpp"},
 	{ "snes_militia", "snes/d_snes.cpp"},
+	{ "spec_milkrace", "spectrum/d_spectrum.cpp"},
 	{ "msx_milkrace", "msx/d_msx.cpp"},
 	{ "gtmr2a", "pst90s/d_kaneko16.cpp"},
 	{ "gtmr2", "pst90s/d_kaneko16.cpp"},
@@ -59181,6 +59207,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pce_nekdodge", "pce/d_pce.cpp"},
 	{ "md_neksoccr", "megadrive/d_megadrive.cpp"},
 	{ "pce_neksoccr", "pce/d_pce.cpp"},
+	{ "nes_nekkoudbsochen", "nes/d_nes.cpp"},
 	{ "nes_nekkestrbasj", "nes/d_nes.cpp"},
 	{ "nes_nekkestrbasc", "nes/d_nes.cpp"},
 	{ "nes_nekkestrbas", "nes/d_nes.cpp"},
@@ -61747,6 +61774,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_raven", "msx/d_msx.cpp"},
 	{ "nes_ravensgate", "nes/d_nes.cpp"},
 	{ "nes_ravensgatemmc1", "nes/d_nes.cpp"},
+	{ "spec_rawrecruit", "spectrum/d_spectrum.cpp"},
 	{ "rayforce", "taito/d_taitof3.cpp"},
 	{ "rayforcej", "taito/d_taitof3.cpp"},
 	{ "sms_raymanrr", "sms/d_sms.cpp"},
@@ -62918,6 +62946,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "shadfrceu", "pst90s/d_shadfrce.cpp"},
 	{ "shadfrce", "pst90s/d_shadfrce.cpp"},
 	{ "shadfrcej", "pst90s/d_shadfrce.cpp"},
+	{ "sgz", "neogeo/d_neogeo.cpp"},
 	{ "spec_shadowofthebeast", "spectrum/d_spectrum.cpp"},
 	{ "sms_beast", "sms/d_sms.cpp"},
 	{ "md_beast", "megadrive/d_megadrive.cpp"},
@@ -62939,6 +62968,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "shadowwa", "pst90s/d_gaiden.cpp"},
 	{ "nes_shadowarepiii", "nes/d_nes.cpp"},
 	{ "snes_shadowp", "snes/d_snes.cpp"},
+	{ "spec_shadowfire", "spectrum/d_spectrum.cpp"},
 	{ "nes_shadowgate", "nes/d_nes.cpp"},
 	{ "shadowld", "pre90s/d_namcos1.cpp"},
 	{ "snes_shadowrunti", "snes/d_snes.cpp"},

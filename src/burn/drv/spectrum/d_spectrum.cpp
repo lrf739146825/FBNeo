@@ -19,32 +19,33 @@ struct BurnInputInfo SpecInputList[] =
 	{"SPACE",			BIT_DIGITAL,	&SpecInputKbd[7][0],	"keyb_space"		},
 	{"CAPS SHIFT",		BIT_DIGITAL,	&SpecInputKbd[0][0],	"keyb_left_shift"	},
 	{"SYMBOL SHIFT",	BIT_DIGITAL,	&SpecInputKbd[7][1],	"keyb_right_shift"	},
-	{"Q",				BIT_DIGITAL,	&SpecInputKbd[2][0],	"keyb_Q"			},
-	{"W",				BIT_DIGITAL,	&SpecInputKbd[2][1],	"keyb_W"			},
-	{"E",				BIT_DIGITAL,	&SpecInputKbd[2][2],	"keyb_E"			},
-	{"R",				BIT_DIGITAL,	&SpecInputKbd[2][3],	"keyb_R"			},
-	{"T",				BIT_DIGITAL,	&SpecInputKbd[2][4],	"keyb_T"			},
-	{"Y",				BIT_DIGITAL,	&SpecInputKbd[5][4],	"keyb_Y"			},
-	{"U",				BIT_DIGITAL,	&SpecInputKbd[5][3],	"keyb_U"			},
-	{"I",				BIT_DIGITAL,	&SpecInputKbd[5][2],	"keyb_I"			},
-	{"O",				BIT_DIGITAL,	&SpecInputKbd[5][1],	"keyb_O"			},
-	{"P",				BIT_DIGITAL,	&SpecInputKbd[5][0],	"keyb_P"			},
 	{"A",				BIT_DIGITAL,	&SpecInputKbd[1][0],	"keyb_A"			},
-	{"S",				BIT_DIGITAL,	&SpecInputKbd[1][1],	"keyb_S"			},
+	{"B",				BIT_DIGITAL,	&SpecInputKbd[7][4],	"keyb_B"			},
+	{"C",				BIT_DIGITAL,	&SpecInputKbd[0][3],	"keyb_C"			},
 	{"D",				BIT_DIGITAL,	&SpecInputKbd[1][2],	"keyb_D"			},
+	{"E",				BIT_DIGITAL,	&SpecInputKbd[2][2],	"keyb_E"			},
 	{"F",				BIT_DIGITAL,	&SpecInputKbd[1][3],	"keyb_F"			},
 	{"G",				BIT_DIGITAL,	&SpecInputKbd[1][4],	"keyb_G"			},
 	{"H",				BIT_DIGITAL,	&SpecInputKbd[6][4],	"keyb_H"			},
+	{"I",				BIT_DIGITAL,	&SpecInputKbd[5][2],	"keyb_I"			},
 	{"J",				BIT_DIGITAL,	&SpecInputKbd[6][3],	"keyb_J"			},
 	{"K",				BIT_DIGITAL,	&SpecInputKbd[6][2],	"keyb_K"			},
 	{"L",				BIT_DIGITAL,	&SpecInputKbd[6][1],	"keyb_L"			},
-	{"Z",				BIT_DIGITAL,	&SpecInputKbd[0][1],	"keyb_Z"			},
-	{"X",				BIT_DIGITAL,	&SpecInputKbd[0][2],	"keyb_X"			},
-	{"C",				BIT_DIGITAL,	&SpecInputKbd[0][3],	"keyb_C"			},
-	{"V",				BIT_DIGITAL,	&SpecInputKbd[0][4],	"keyb_V"			},
-	{"B",				BIT_DIGITAL,	&SpecInputKbd[7][4],	"keyb_B"			},
-	{"N",				BIT_DIGITAL,	&SpecInputKbd[7][3],	"keyb_N"			},
 	{"M",				BIT_DIGITAL,	&SpecInputKbd[7][2],	"keyb_M"			},
+	{"N",				BIT_DIGITAL,	&SpecInputKbd[7][3],	"keyb_N"			},
+	{"O",				BIT_DIGITAL,	&SpecInputKbd[5][1],	"keyb_O"			},
+	{"P",				BIT_DIGITAL,	&SpecInputKbd[5][0],	"keyb_P"			},
+	{"Q",				BIT_DIGITAL,	&SpecInputKbd[2][0],	"keyb_Q"			},
+	{"R",				BIT_DIGITAL,	&SpecInputKbd[2][3],	"keyb_R"			},
+	{"S",				BIT_DIGITAL,	&SpecInputKbd[1][1],	"keyb_S"			},
+	{"T",				BIT_DIGITAL,	&SpecInputKbd[2][4],	"keyb_T"			},
+	{"U",				BIT_DIGITAL,	&SpecInputKbd[5][3],	"keyb_U"			},
+	{"V",				BIT_DIGITAL,	&SpecInputKbd[0][4],	"keyb_V"			},
+	{"W",				BIT_DIGITAL,	&SpecInputKbd[2][1],	"keyb_W"			},
+	{"X",				BIT_DIGITAL,	&SpecInputKbd[0][2],	"keyb_X"			},
+	{"Y",				BIT_DIGITAL,	&SpecInputKbd[5][4],	"keyb_Y"			},
+	{"Z",				BIT_DIGITAL,	&SpecInputKbd[0][1],	"keyb_Z"			},
+	{"0",				BIT_DIGITAL,	&SpecInputKbd[4][0],	"keyb_0"			},
 	{"1",				BIT_DIGITAL,	&SpecInputKbd[3][0],	"keyb_1"			},
 	{"2",				BIT_DIGITAL,	&SpecInputKbd[3][1],	"keyb_2"			},
 	{"3",				BIT_DIGITAL,	&SpecInputKbd[3][2],	"keyb_3"			},
@@ -54,7 +55,6 @@ struct BurnInputInfo SpecInputList[] =
 	{"7",				BIT_DIGITAL,	&SpecInputKbd[4][3],	"keyb_7"			},
 	{"8",				BIT_DIGITAL,	&SpecInputKbd[4][2],	"keyb_8"			},
 	{"9",				BIT_DIGITAL,	&SpecInputKbd[4][1],	"keyb_9"			},
-	{"0",				BIT_DIGITAL,	&SpecInputKbd[4][0],	"keyb_0"			},
 
 	{"EDIT",			BIT_DIGITAL,	&SpecInputKbd[11][0],	"keyb_insert"		},
 	{"CAPS LOCK",		BIT_DIGITAL,	&SpecInputKbd[11][1],	"keyb_caps_lock"	},
@@ -69,7 +69,7 @@ struct BurnInputInfo SpecInputList[] =
 	{"Cursor Left",		BIT_DIGITAL,	&SpecInputKbd[11][4],	"keyb_cursor_left"	}, // as joystick! (yie ar kungfu, ...)
 	{"Cursor Right",	BIT_DIGITAL,	&SpecInputKbd[12][2],	"keyb_cursor_right"	},
 
-	{"BREAK",			BIT_DIGITAL,	&SpecInputKbd[13][0],	"keyb_pause"		},
+	{"BREAK",			BIT_DIGITAL,	&SpecInputKbd[13][0],	"keyb_end"			},
 	{"EXT MODE",		BIT_DIGITAL,	&SpecInputKbd[13][1],	"keyb_left_ctrl"	},
 
 	{"\"",				BIT_DIGITAL,	&SpecInputKbd[14][0],	"keyb_apost"		},
@@ -52393,6 +52393,120 @@ struct BurnDriver BurnSpecZxwordle = {
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_PUZZLE, 0,
 	SpectrumGetZipName, SpecZxwordleRomInfo, SpecZxwordleRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
 	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Death Wish 3 (128K)
+
+static struct BurnRomInfo SpecDeathwish3RomDesc[] = {
+	{ "Death Wish 3 (1987)(Gremlin Graphics Software Ltd).tzx", 54322, 0x562a8373, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecDeathwish3, SpecDeathwish3, Spec128)
+STD_ROM_FN(SpecDeathwish3)
+
+struct BurnDriver BurnSpecDeathwish3 = {
+	"spec_deathwish3", NULL, "spec_spec128", NULL, "1987",
+	"Death Wish 3 (128K)\0", NULL, "Gremlin Graphics Software Ltd", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_ACTION, 0,
+	SpectrumGetZipName, SpecDeathwish3RomInfo, SpecDeathwish3RomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	Spec128KInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Full Throttle (48K)
+
+static struct BurnRomInfo SpecFullthrottleRomDesc[] = {
+	{ "Full Throttle (1984)(Micromega).tzx", 86354, 0xc2a42298, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecFullthrottle, SpecFullthrottle, Spectrum)
+STD_ROM_FN(SpecFullthrottle)
+
+struct BurnDriver BurnSpecFullthrottle = {
+	"spec_fullthrottle", NULL, "spec_spectrum", NULL, "1984",
+	"Full Throttle (48K)\0", NULL, "Micromega", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_RACING, 0,
+	SpectrumGetZipName, SpecFullthrottleRomInfo, SpecFullthrottleRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Full Throttle 2 (48K)
+
+static struct BurnRomInfo SpecFullthrottle2RomDesc[] = {
+	{ "Full Throttle 2 (1990)(Zeppelin Games Ltd).tzx", 44762, 0x9a97ae34, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecFullthrottle2, SpecFullthrottle2, Spectrum)
+STD_ROM_FN(SpecFullthrottle2)
+
+struct BurnDriver BurnSpecFullthrottle2 = {
+	"spec_fullthrottle2", NULL, "spec_spectrum", NULL, "1990",
+	"Full Throttle 2 (48K)\0", NULL, "Zeppelin Games Ltd", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_RACING, 0,
+	SpectrumGetZipName, SpecFullthrottle2RomInfo, SpecFullthrottle2RomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Milk Race (48K)
+
+static struct BurnRomInfo SpecMilkraceRomDesc[] = {
+	{ "Milk Race (1987)(Mastertronic).tzx", 42979, 0x0f7a291e, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecMilkrace, SpecMilkrace, Spectrum)
+STD_ROM_FN(SpecMilkrace)
+
+struct BurnDriver BurnSpecMilkrace = {
+	"spec_milkrace", NULL, "spec_spectrum", NULL, "1987",
+	"Milk Race (48K)\0", NULL, "Mastertronic", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_RACING, 0,
+	SpectrumGetZipName, SpecMilkraceRomInfo, SpecMilkraceRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Raw Recruit
+
+static struct BurnRomInfo SpecRawrecruitRomDesc[] = {
+	{ "Raw Recruit (1988)(Mastertronic Added Dimension).tzx", 45512, 0xa39f03e4, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecRawrecruit, SpecRawrecruit, Spec128)
+STD_ROM_FN(SpecRawrecruit)
+
+struct BurnDriver BurnSpecRawrecruit = {
+	"spec_rawrecruit", NULL, "spec_spec128", NULL, "1988",
+	"Raw Recruit\0", NULL, "Mastertronic Added Dimension", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_SHOOT, 0,
+	SpectrumGetZipName, SpecRawrecruitRomInfo, SpecRawrecruitRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	Spec128KInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Shadowfire
+
+static struct BurnRomInfo SpecShadowfireRomDesc[] = {
+	{ "Shadowfire (1985)(Beyond Software).tzx", 46876, 0x7913229c, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecShadowfire, SpecShadowfire, Spec128)
+STD_ROM_FN(SpecShadowfire)
+
+struct BurnDriver BurnSpecShadowfire = {
+	"spec_shadowfire", NULL, "spec_spec128", NULL, "1985",
+	"Shadowfire\0", NULL, "Beyond Software", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SPECTRUM, GBF_STRATEGY, 0,
+	SpectrumGetZipName, SpecShadowfireRomInfo, SpecShadowfireRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	Spec128KInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
