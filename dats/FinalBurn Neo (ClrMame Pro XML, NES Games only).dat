@@ -3417,6 +3417,23 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="chouyokushenkigm" cloneof="chouyokushenki" romof="chouyokushenki" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Chouyoku Senki ESTIQUE (God Mode, Hack)</description>
+		<year>2025</year>
+		<manufacturer>darthvaderx</manufacturer>
+		<rom name="Chouyoku Senki ESTIQUE God Mode (2025)(darthvaderx).nes" size="524304" crc="b412dbca"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="chouyokushenki" sourcefile="nes/d_nes.cpp">
+		<description>Chouyoku Senki ESTIQUE (Japan)</description>
+		<year>2023</year>
+		<manufacturer>Cat Hui</manufacturer>
+		<rom name="Chouyoku Senki ESTIQUE (Japan)(2023)(Cat Hui).nes" size="524304" crc="2b74b0dc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="christmascrisis" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Christmas Crisis (HB)</description>
@@ -13312,6 +13329,14 @@
 		<year>1987</year>
 		<manufacturer>Technos</manufacturer>
 		<rom name="Nekketsu Kouha Kunio-kun (Japan).nes" size="131088" crc="94dab06a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nekkoudbsochen" cloneof="ninteworcup" romof="ninteworcup" sourcefile="nes/d_nes.cpp">
+		<description>Nekketsu Koukou Dodgeball-bu - Soccer Hen (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Technos Japan</manufacturer>
+		<rom name="Nekketsu Koukou Dodgeball-bu - Soccer Hen (Japan)(1990)(Technos).nes" size="262160" crc="4e6e3334"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

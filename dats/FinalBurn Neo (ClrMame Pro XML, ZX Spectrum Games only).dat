@@ -6901,6 +6901,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="deathwish3" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Death Wish 3 (128K)</description>
+		<year>1987</year>
+		<manufacturer>Gremlin Graphics Software Ltd</manufacturer>
+		<rom name="Death Wish 3 (1987)(Gremlin Graphics Software Ltd).tzx" size="54322" crc="562a8373"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="deathcha" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Deathchase (48K)</description>
 		<year>1983</year>
@@ -9947,6 +9957,24 @@
 		<year>2020</year>
 		<manufacturer>EJVG</manufacturer>
 		<rom name="Fucking Mili 48K (2020)(EJVG).tap" size="39535" crc="04778248"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fullthrottle" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Full Throttle (48K)</description>
+		<year>1984</year>
+		<manufacturer>Micromega</manufacturer>
+		<rom name="Full Throttle (1984)(Micromega).tzx" size="86354" crc="c2a42298"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fullthrottle2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Full Throttle 2 (48K)</description>
+		<year>1990</year>
+		<manufacturer>Zeppelin Games Ltd</manufacturer>
+		<rom name="Full Throttle 2 (1990)(Zeppelin Games Ltd).tzx" size="44762" crc="9a97ae34"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -16111,6 +16139,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="milkrace" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Milk Race (48K)</description>
+		<year>1987</year>
+		<manufacturer>Mastertronic</manufacturer>
+		<rom name="Milk Race (1987)(Mastertronic).tzx" size="42979" crc="0f7a291e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="min128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Default Keys: W, S, A, D, M</comment>
 		<description>Min! (128K) (HB)</description>
@@ -19962,6 +19999,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rawrecruit" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Raw Recruit</description>
+		<year>1988</year>
+		<manufacturer>Mastertronic Added Dimension</manufacturer>
+		<rom name="Raw Recruit (1988)(Mastertronic Added Dimension).tzx" size="45512" crc="a39f03e4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="raysreprisal" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Rays' Reprisal (48K) (HB)</description>
@@ -21776,6 +21823,16 @@
 		<year>1990</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Shadow Warriors 128K (1990)(Ocean).tap" size="130491" crc="a9adbe6d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowfire" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Shadowfire</description>
+		<year>1985</year>
+		<manufacturer>Beyond Software</manufacturer>
+		<rom name="Shadowfire (1985)(Beyond Software).tzx" size="46876" crc="7913229c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
