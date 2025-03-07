@@ -3471,7 +3471,7 @@
 		<description>Chameleon Kid (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="chameleon kid (jpn).bin" size="1048576" crc="50217c80"/>
+		<rom name="Chameleon Kid (Japan)(1992)(Sega).bin" size="1048576" crc="50217c80"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4600,8 +4600,8 @@
 	<game name="crusader" cloneof="soleil" romof="soleil" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Crusader of Centy (USA)</description>
 		<year>1994</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="crusader of centy (usa).bin" size="2097152" crc="41858f6f"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Crusader of Centy (USA)(1994)(Atlus).bin" size="2097152" crc="41858f6f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10085,7 +10085,7 @@
 		<description>Jurassic Park (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15679.bin" size="2097152" crc="448341f6"/>
+		<rom name="Jurassic Park (Euro)(1993)(Sega).bin" size="2097152" crc="448341f6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10102,7 +10102,7 @@
 		<description>Jurassic Park (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park (jpn).bin" size="2097152" crc="ec8e5783"/>
+		<rom name="Jurassic Park (Japan)(1993)(Sega).bin" size="2097152" crc="ec8e5783"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10110,7 +10110,7 @@
 		<description>Jurassic Park (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park (usa).bin" size="2097152" crc="7b31deef"/>
+		<rom name="Jurassic Park (USA)(1993)(Sega).bin" size="2097152" crc="7b31deef"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10118,7 +10118,7 @@
 		<description>Jurassic Park (USA, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park (usa) (beta).bin" size="2097152" crc="cf890eed"/>
+		<rom name="Jurassic Park (USA, Proto)(1993)(Sega).bin" size="2097152" crc="cf890eed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10126,7 +10126,7 @@
 		<description>Jurassic Park - Rampage Edition (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (euro, usa).bin" size="2097152" crc="98b4aa1b"/>
+		<rom name="Jurassic Park - Rampage Edition (Euro, USA)(1994)(Sega).bin" size="2097152" crc="98b4aa1b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10143,7 +10143,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940620)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jun 20, 1994).bin" size="2059872" crc="1280fa5c"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940620)(Sega).bin" size="2059872" crc="1280fa5c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
 	</game>
@@ -10151,7 +10151,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940622)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jun 22, 1994).bin" size="2097152" crc="53582f2b"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940622)(Sega).bin" size="2097152" crc="53582f2b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
 	</game>
@@ -10159,7 +10159,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940630)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jun 30, 1994).bin" size="2097152" crc="bff4b396"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940630)(Sega).bin" size="2097152" crc="bff4b396"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10167,7 +10167,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940708)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 08, 1994).bin" size="2097152" crc="f4c78bd0"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940708)(Sega).bin" size="2097152" crc="f4c78bd0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10175,7 +10175,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940713)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 13, 1994).bin" size="2097152" crc="8475a105"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940713)(Sega).bin" size="2097152" crc="8475a105"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10183,7 +10183,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940714)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 14, 1994).bin" size="2097152" crc="9bf0e28d"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940714)(Sega).bin" size="2097152" crc="9bf0e28d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10191,7 +10191,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940715)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 15, 1994).bin" size="2097152" crc="d2202be5"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940715)(Sega).bin" size="2097152" crc="d2202be5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10199,7 +10199,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940717)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 17, 1994).bin" size="2097152" crc="2eae6140"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940717)(Sega).bin" size="2097152" crc="2eae6140"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10207,7 +10207,7 @@
 		<description>Jurassic Park - Rampage Edition (Prototype, 19940718)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="jurassic park - rampage edition (prototype - jul 18, 1994).bin" size="2097152" crc="1a62b826"/>
+		<rom name="Jurassic Park - Rampage Edition (Proto, 19940718)(Sega).bin" size="2097152" crc="1a62b826"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10224,7 +10224,7 @@
 		<description>Justice League Task Force (World)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="justice league task force (world).bin" size="3145728" crc="2a60ebe9"/>
+		<rom name="Justice League Task Force (World)(1995)(Acclaim).bin" size="3145728" crc="2a60ebe9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10248,7 +10248,7 @@
 		<description>Ka-Ge-Ki (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hot-B</manufacturer>
-		<rom name="ka-ge-ki (jpn).bin" size="1048576" crc="391866a1"/>
+		<rom name="Ka-Ge-Ki (Japan)(1991)(Hot-B).bin" size="1048576" crc="391866a1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10265,7 +10265,7 @@
 		<description>Ka-Ge-Ki - Fists of Steel (USA)</description>
 		<year>1991</year>
 		<manufacturer>Sage's Creation</manufacturer>
-		<rom name="ka-ge-ki - fists of steel (usa).bin" size="1048576" crc="effc0fa6"/>
+		<rom name="Ka-Ge-Ki - Fists of Steel (USA)(1991)(Sage's Creation).bin" size="1048576" crc="effc0fa6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10273,7 +10273,7 @@
 		<description>Kawasaki Superbike Challenge (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Time Warner Interactive</manufacturer>
-		<rom name="kawasaki superbike challenge (euro, usa).bin" size="1048576" crc="631cc8e9"/>
+		<rom name="Kawasaki Superbike Challenge (Euro, USA)(1994)(Time Warner Int.).bin" size="1048576" crc="631cc8e9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10282,7 +10282,7 @@
 		<description>Kawasaki Superbike Challenge (USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Time Warner Interactive</manufacturer>
-		<rom name="kawasaki superbike challenge (usa) (beta).bin" size="1048576" crc="55934d1b"/>
+		<rom name="Kawasaki Superbike Challenge (USA, Proto)(1994)(Time Warner Int.).bin" size="1048576" crc="55934d1b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10298,7 +10298,7 @@
 		<description>Kick Off 3 - European Challenge (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="kick off 3 - european challenge (euro).bin" size="1048576" crc="bc37401a"/>
+		<rom name="Kick Off 3 - European Challenge (Euro)(1994)(Vic Tokai).bin" size="1048576" crc="bc37401a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10323,7 +10323,7 @@
 		<description>Kidou Keisatsu Patlabor - 98-shiki Kidou Seyo! (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Ma-Ba</manufacturer>
-		<rom name="kidou keisatsu patlabor - 98-shiki kidou seyo! (jpn).bin" size="524288" crc="21a0e749"/>
+		<rom name="Kidou Keisatsu Patlabor - 98-shiki Kidou Seyo! (Japan)(1992)(Ma-Ba).bin" size="524288" crc="21a0e749"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10477,7 +10477,7 @@
 		<description>Knuckles in Sonic 2 (Prototype 0524, 19940527, 10.46)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="knuckles in sonic 2 (prototype 0524 - may 27, 1994, 10.46).bin" size="4194304" crc="8878c1a8"/>
+		<rom name="Knuckles in Sonic 2 (Proto 0524, 19940527, 10.46).bin" size="4194304" crc="8878c1a8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13655,7 +13655,7 @@
 		<description>NCAA Final Four Basketball (USA)</description>
 		<year>1994</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="ncaa final four basketball (usa).bin" size="1572864" crc="ed0c1303"/>
+		<rom name="NCAA Final Four Basketball (USA)(1994)(Mindscape).bin" size="1572864" crc="ed0c1303"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13663,7 +13663,7 @@
 		<description>NCAA Football (USA)</description>
 		<year>1994</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="ncaa football (usa).bin" size="1048576" crc="081012f0"/>
+		<rom name="NCAA Football (USA)(1994)(Mindscape).bin" size="1048576" crc="081012f0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13680,7 +13680,7 @@
 		<description>Nekketsu Koukou Dodgeball Bu - Soccer Hen MD (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Palsoft</manufacturer>
-		<rom name="nekketsu koukou dodgeball bu - soccer hen md (jpn).bin" size="524288" crc="f49c3a86"/>
+		<rom name="Nekketsu Koukou Dodgeball Bu - Soccer Hen MD (Japan)(1992)(Palsoft).bin" size="524288" crc="f49c3a86"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13688,7 +13688,7 @@
 		<description>New 3D Golf Simulation - Devil's Course (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="new 3d golf simulation devil's course (jpn).bin" size="1572864" crc="bd090c67"/>
+		<rom name="New 3D Golf Simulation - Devil's Course (Japan)(1994)(Sega).bin" size="1572864" crc="bd090c67"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13696,7 +13696,7 @@
 		<description>New 3D Golf Simulation - Harukanaru Augusta (Japan)</description>
 		<year>1993</year>
 		<manufacturer>T&amp;E Soft</manufacturer>
-		<rom name="mpr-16076.bin" size="1572864" crc="d2a9bf92"/>
+		<rom name="New 3D Golf Simulation - Harukanaru Augusta (Japan)(1993)(T&amp;E Soft).bin" size="1572864" crc="d2a9bf92"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13712,7 +13712,7 @@
 		<description>New 3D Golf Simulation - Waialae no Kiseki (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="new 3d golf simulation waialae no kiseki (jpn).bin" size="1572864" crc="cbe2c1f6"/>
+		<rom name="New 3D Golf Simulation - Waialae no Kiseki (Japan)(1994)(Sega).bin" size="1572864" crc="cbe2c1f6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13737,8 +13737,8 @@
 	<game name="tnzs" sourcefile="megadrive/d_megadrive.cpp">
 		<description>New Zealand Story, The (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="new zealand story, the (jpn).bin" size="524288" crc="1c77ad21"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="New Zealand Story, The (Japan)(1990)(Taito).bin" size="524288" crc="1c77ad21"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16359,7 +16359,7 @@
 		<description>Ragnacenty (Korea)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ragnacenty (kor).bin" size="2097152" crc="77b5b10b"/>
+		<rom name="Ragnacenty (Korea)(1995)(Sega).bin" size="2097152" crc="77b5b10b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16963,7 +16963,7 @@
 		<description>Robocop 3 (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="robocop 3 (hack, spanish).bin" size="524288" crc="eecbff56"/>
+		<rom name="Robocop 3 T-Spa (2017)(Wave).bin" size="524288" crc="eecbff56"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16980,7 +16980,7 @@
 		<description>Robocop versus The Terminator (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="robocop versus the terminator (hack, spanish).bin" size="2097152" crc="431feb53"/>
+		<rom name="Robocop versus The Terminator T-Spa (2017)(Wave).bin" size="2097152" crc="431feb53"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17038,7 +17038,7 @@
 		<description>Rock n' Roll Racing (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Interplay</manufacturer>
-		<rom name="rock n' roll racing (euro).bin" size="1048576" crc="bc5a0562"/>
+		<rom name="Rock n' Roll Racing (Euro)(1994)(Interplay).bin" size="1048576" crc="bc5a0562"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17055,7 +17055,7 @@
 		<description>Rock n' Roll Racing (USA)</description>
 		<year>1994</year>
 		<manufacturer>Interplay</manufacturer>
-		<rom name="rock n' roll racing (usa).bin" size="1048576" crc="6abab577"/>
+		<rom name="Rock n' Roll Racing (USA)(1994)(Interplay).bin" size="1048576" crc="6abab577"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17063,7 +17063,7 @@
 		<description>Rocket Knight Adventures (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="fx004.bin" size="1048576" crc="8eedfd51"/>
+		<rom name="Rocket Knight Adventures (Euro)(1993)(Konami).bin" size="1048576" crc="8eedfd51"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17072,7 +17072,7 @@
 		<description>Rocket Knight Adventures (Hack, Spanish v1.1)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="rocket knight adventures (hack, spanish).bin" size="1048576" crc="4ecd1bd6"/>
+		<rom name="Rocket Knight Adventures T-Spa v1.1 (2018)(Wave).bin" size="1048576" crc="4ecd1bd6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17080,7 +17080,7 @@
 		<description>Rocket Knight Adventures (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="rocket knight adventures (jpn).bin" size="1048576" crc="d1c8c1c5"/>
+		<rom name="Rocket Knight Adventures (Japan)(1993)(Konami).bin" size="1048576" crc="d1c8c1c5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17088,7 +17088,7 @@
 		<description>Rocket Knight Adventures (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="rocket knight adventures (usa).bin" size="1048576" crc="a6efec47"/>
+		<rom name="Rocket Knight Adventures (USA)(1993)(Konami).bin" size="1048576" crc="a6efec47"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17147,7 +17147,7 @@
 		<description>Roger Clements MVP Baseball (USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="roger clements mvp baseball (usa).bin" size="1048576" crc="83699e34"/>
+		<rom name="Roger Clements MVP Baseball (USA)(1992)(Flying Edge).bin" size="1048576" crc="83699e34"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17155,7 +17155,7 @@
 		<description>Rolling Thunder 2 (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="rolling thunder 2 (euro).bin" size="1048576" crc="c440f292"/>
+		<rom name="Rolling Thunder 2 (Euro)(1991)(Namco).bin" size="1048576" crc="c440f292"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17164,15 +17164,15 @@
 		<description>Rolling Thunder 2 (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="rolling thunder 2 (hack, spanish).bin" size="1048576" crc="43588ef3"/>
+		<rom name="Rolling Thunder 2 T-Spa (2018)(Wave).bin" size="1048576" crc="43588ef3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="rthun2j" cloneof="rthun2" romof="rthun2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Rolling Thunder 2 (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="rolling thunder 2 (jpn).bin" size="1048576" crc="965b2628"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Rolling Thunder 2 (Japan)(1991)(Namco).bin" size="1048576" crc="965b2628"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17180,7 +17180,7 @@
 		<description>Rolling Thunder 2 (USA)</description>
 		<year>1991</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="rolling thunder 2 (usa).bin" size="1048576" crc="3ace429b"/>
+		<rom name="Rolling Thunder 2 (USA)(1991)(Namco).bin" size="1048576" crc="3ace429b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17189,7 +17189,7 @@
 		<description>Rolling Thunder 3 (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="rolling thunder 3 (hack, spanish).bin" size="1572864" crc="0ad48d02"/>
+		<rom name="Rolling Thunder 3 T-Spa (2018)(Wave).bin" size="1572864" crc="0ad48d02"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17197,7 +17197,7 @@
 		<description>Rolling Thunder 3 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="rolling thunder 3 (usa).bin" size="1572864" crc="64fb13aa"/>
+		<rom name="Rolling Thunder 3 (USA)(1993)(Namco).bin" size="1572864" crc="64fb13aa"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17205,7 +17205,7 @@
 		<description>Rolo to the Rescue (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="rolo to the rescue (euro, usa).bin" size="524288" crc="306861a2"/>
+		<rom name="Rolo to the Rescue (Euro, USA)(1992)(Electronic Arts).bin" size="524288" crc="306861a2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17214,7 +17214,7 @@
 		<description>Rolo to the Rescue (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="rolo to the rescue (hack, spanish).bin" size="524288" crc="0c4584a4"/>
+		<rom name="Rolo to the Rescue T-Spa (2019)(Wave).bin" size="524288" crc="0c4584a4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17314,7 +17314,7 @@
 		<description>S.S. Lucifer - Man Overboard! (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="s.s. lucifer - man overboard! (hack, spanish).bin" size="1048576" crc="17edbbfe"/>
+		<rom name="S.S. Lucifer - Man Overboard! T-Spa (2019)(Wave).bin" size="1048576" crc="17edbbfe"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17332,7 +17332,7 @@
 		<description>Sagaia (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="sagaia (hack, spanish).bin" size="1048576" crc="29e1fb66"/>
+		<rom name="Sagaia T-Spa (2018)(Wave).bin" size="1048576" crc="29e1fb66"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17349,7 +17349,7 @@
 		<description>Saint Sword (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="saint sword (hack, spanish).bin" size="524288" crc="fe603ec4"/>
+		<rom name="Saint Sword T-Spa (2019)(Wave).bin" size="524288" crc="fe603ec4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17984,7 +17984,7 @@
 		<description>Shin Souseiki Ragnacenty (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="shin souseiki ragnacenty (jpn).bin" size="2097152" crc="6a3f5ae2"/>
+		<rom name="Shin Souseiki Ragnacenty (Japan)(1994)(Sega).bin" size="2097152" crc="6a3f5ae2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17993,7 +17993,7 @@
 		<description>Shin Souseiki Ragnacenty (Japan, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="shin souseiki ragnacenty (jpn) (beta).bin" size="1048576" crc="43797455"/>
+		<rom name="Shin Souseiki Ragnacenty (Japan, Proto)(1994)(Sega).bin" size="1048576" crc="43797455"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18489,15 +18489,15 @@
 		<description>Snow Bros. - Nick &amp; Tom (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="snow bros. - nick &amp; tom (jpn).bin" size="1048576" crc="11b56228"/>
+		<rom name="Snow Bros. - Nick &amp; Tom (Japan)(1993)(Tengen).bin" size="1048576" crc="11b56228"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="socket" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Socket (USA)</description>
-		<year>1994</year>
+		<year>1993</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="socket (usa).bin" size="1048576" crc="3c14e15a"/>
+		<rom name="Socket (USA)(1993)(Vic Tokai).bin" size="1048576" crc="3c14e15a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18506,15 +18506,15 @@
 		<description>Sol-Deace (Prototype, 19920203)</description>
 		<year>1992</year>
 		<manufacturer>Renovation</manufacturer>
-		<rom name="sol-deace (prototype - feb 3, 1992).bin" size="1048576" crc="a7994615"/>
+		<rom name="Sol-Deace (Proto, 19920203)(Wolf Team).bin" size="1048576" crc="a7994615"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="soldeace" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Sol-Deace (USA)</description>
 		<year>1992</year>
-		<manufacturer>Renovation</manufacturer>
-		<rom name="sol-deace (usa).bin" size="1048576" crc="a77e4e9f"/>
+		<manufacturer>Wolf Team</manufacturer>
+		<rom name="Sol-Deace (USA)(1992)(Wolf Team).bin" size="1048576" crc="a77e4e9f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18539,7 +18539,7 @@
 		<description>Soleil (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-17499.bin" size="2097152" crc="a30ebdb1"/>
+		<rom name="Soleil (Euro)(1994)(Sega).bin" size="2097152" crc="a30ebdb1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18581,7 +18581,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0525, 19940525, 15.28)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0525 - may 25, 1994, 15.28).bin" size="4194304" crc="8e8dadd0"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0525, 19940525, 15.28)(Sega).bin" size="4194304" crc="8e8dadd0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18590,7 +18590,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0606, 19940606, 10.02)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0606 - jun 06, 1994, 10.02).bin" size="2097152" crc="03a52f63"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0606, 19940606, 10.02)(Sega).bin" size="2097152" crc="03a52f63"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18599,7 +18599,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0608, 19940608, 05.03)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0608 - jun 08, 1994, 05.03).bin" size="2097152" crc="7a6c1317"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0608, 19940608, 05.03)(Sega).bin" size="2097152" crc="7a6c1317"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18608,7 +18608,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0610, 19940610, 07.49)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0610 - jun 10, 1994, 07.49).bin" size="2097152" crc="7092f368"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0610, 19940610, 07.49)(Sega).bin" size="2097152" crc="7092f368"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18617,7 +18617,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0612, 19940612, 18.27)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0612 - jun 12, 1994, 18.27).bin" size="2097152" crc="b0a253e8"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0612, 19940612, 18.27)(Sega).bin" size="2097152" crc="b0a253e8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18626,7 +18626,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0618, 19940618, 09.15)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0618 - jun 18, 1994, 09.15).bin" size="2097152" crc="2615f5dc"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0618, 19940618, 09.15)(Sega).bin" size="2097152" crc="2615f5dc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18635,7 +18635,7 @@
 		<description>Sonic &amp; Knuckles (Prototype 0619, 19940619, 08.18)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic &amp; knuckles (prototype 0619 - jun 19, 1994, 08.18).bin" size="2097152" crc="1ea5b9d1"/>
+		<rom name="Sonic &amp; Knuckles (Proto 0619, 19940619, 08.18)(Sega).bin" size="2097152" crc="1ea5b9d1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18643,8 +18643,7 @@
 		<description>Sonic &amp; Knuckles (World)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16910-u.ic1" size="2097152" crc="0658f691"/>
-		<rom name="mpr-16911-s.ic2" size="262144" crc="4dcfd55c"/>
+		<rom name="Sonic &amp; Knuckles (World)(1994)(Sega).bin" size="2097152" crc="0658f691"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18736,18 +18735,18 @@
 	<game name="sonic3c" cloneof="sks3" romof="sks3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype, Sonic the Hedgehog 3 Limited Edition (Prototype)</comment>
 		<description>Sonic 3C (Prototype 0408, 19940408, 17.29)</description>
-		<year>199?</year>
+		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3c (prototype 0408 - apr 08, 1994, 17.29).bin" size="4194304" crc="59d23df5"/>
+		<rom name="Sonic 3C (Proto 0408, 19940408, 17.29)(Sega).bin" size="4194304" crc="59d23df5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sonic3ca" cloneof="sks3" romof="sks3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype, Sonic the Hedgehog 3 Limited Edition (Prototype)</comment>
 		<description>Sonic 3C (Prototype 0517, 19940517, 17.08)</description>
-		<year>199?</year>
+		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3c (prototype 0517 - may 17, 1994, 17.08).bin" size="4194304" crc="766c4b81"/>
+		<rom name="Sonic 3C (Proto 0517, 19940517, 17.08)(Sega).bin" size="4194304" crc="766c4b81"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18755,7 +18754,7 @@
 		<description>Sonic 3D - Flickies' Island (Euro) ~ Sonic 3D Blast (USA, Korea)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast -- sonic 3d - flickies' island (euro, usa, kor).bin" size="4194304" crc="44a2ca44"/>
+		<rom name="Sonic 3D - Flickies' Island (Euro) - Sonic 3D Blast (USA, Korea)(1996)(Sega).bin" size="4194304" crc="44a2ca44"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18773,7 +18772,7 @@
 		<description>Sonic 3D Blast (Prototype 73, 19960703, 13.58)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 73 - jul 03, 1996, 13.58).bin" size="2097152" crc="93b75e99"/>
+		<rom name="Sonic 3D Blast (Proto 73, 19960703, 13.58)(Sega).bin" size="2097152" crc="93b75e99"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18782,7 +18781,7 @@
 		<description>Sonic 3D Blast (Prototype 814, 19960815, 07.55)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 814 - aug 15, 1996, 07.55).bin" size="4194304" crc="d64e7675"/>
+		<rom name="Sonic 3D Blast (Proto 814, 19960815, 07.55)(Sega).bin" size="4194304" crc="d64e7675"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18791,7 +18790,7 @@
 		<description>Sonic 3D Blast (Prototype 819, 19960819, 19.49)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 819 - aug 19, 1996, 19.49).bin" size="4194304" crc="2c43f43a"/>
+		<rom name="Sonic 3D Blast (Proto 819, 19960819, 19.49)(Sega).bin" size="4194304" crc="2c43f43a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18800,7 +18799,7 @@
 		<description>Sonic 3D Blast (Prototype 825, 19960826, 15.46)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 825 - aug 26, 1996, 15.46).bin" size="4194304" crc="465bcfbd"/>
+		<rom name="Sonic 3D Blast (Proto 825, 19960826, 15.46)(Sega).bin" size="4194304" crc="465bcfbd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18809,7 +18808,7 @@
 		<description>Sonic 3D Blast (Prototype 830, 19960831, 08.19)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 830 - aug 31, 1996, 08.19).bin" size="4194054" crc="57640422"/>
+		<rom name="Sonic 3D Blast (Proto 830, 19960831, 08.19)(Sega).bin" size="4194054" crc="57640422"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18818,7 +18817,7 @@
 		<description>Sonic 3D Blast (Prototype 831, 19960903, 10.07)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 831 - sep 03, 1996, 10.07).bin" size="4194304" crc="5933e453"/>
+		<rom name="Sonic 3D Blast (Proto 831, 19960903, 10.07)(Sega).bin" size="4194304" crc="5933e453"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18827,7 +18826,7 @@
 		<description>Sonic 3D Blast (Prototype 94, 19960904, 12.01)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (prototype 94 - sep 04, 1996, 12.01).bin" size="4194304" crc="2f2a4271"/>
+		<rom name="Sonic 3D Blast (Proto 94, 19960904, 12.01)(Sega).bin" size="4194304" crc="2f2a4271"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18836,7 +18835,7 @@
 		<description>Sonic 3D Blast (USA, Prototype)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic 3d blast (usa) (beta).bin" size="4194304" crc="d20f385b"/>
+		<rom name="Sonic 3D Blast (USA, Proto)(1996)(Sega).bin" size="4194304" crc="d20f385b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18845,7 +18844,7 @@
 		<description>Sonic 3D Blast Director's Cut (Hack)</description>
 		<year>2017</year>
 		<manufacturer>GameHut</manufacturer>
-		<rom name="Sonic 3D Blast  - Directors Cut.bin" size="4191682" crc="9767e840"/>
+		<rom name="Sonic 3D Blast  - Directors Cut (2017)(GameHut).bin" size="4191682" crc="9767e840"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22426,7 +22425,7 @@
 		<description>Time Dominator 1st (Japan, Korea)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="time dominator 1st (jpn, kor).bin" size="1048576" crc="7eba7a5c"/>
+		<rom name="Time Dominator 1st (Japan, Korea)(1994)(Vic Tokai).bin" size="1048576" crc="7eba7a5c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22814,7 +22813,7 @@
 		<description>Tougiou King Colossus (Hack, English)</description>
 		<year>2006</year>
 		<manufacturer>Jon Najar</manufacturer>
-		<rom name="tougiou king colossus (english translation).bin" size="1048576" crc="016afd40"/>
+		<rom name="Tougiou King Colossus T-Eng (2006)(Jon Najar).bin" size="1048576" crc="016afd40"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22823,7 +22822,7 @@
 		<description>Tougiou King Colossus (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Luceid</manufacturer>
-		<rom name="tougiou king colossus (hack, spanish).bin" size="1048576" crc="a6c9e0b6"/>
+		<rom name="Tougiou King Colossus T-Spa (2020)(Luceid).bin" size="1048576" crc="a6c9e0b6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22831,7 +22830,7 @@
 		<description>Tougiou King Colossus (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14929.bin" size="1048576" crc="ffe7b3c7"/>
+		<rom name="Tougiou King Colossus (Japan)(1992)(Sega).bin" size="1048576" crc="ffe7b3c7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25991,7 +25990,7 @@
 		<description>Zou! Zou! Zou! Rescue Daisakusen (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="zou! zou! zou! rescue daisakusen (jpn).bin" size="524288" crc="1a761e67"/>
+		<rom name="Zou! Zou! Zou! Rescue Daisakusen (Japan)(1993)(Electronic Arts Victor).bin" size="524288" crc="1a761e67"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
