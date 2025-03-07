@@ -14180,7 +14180,9 @@ DRV		BurnDrvPsoldier;
 DRV		BurnDrvPerfrman;
 DRV		BurnDrvPerfrmanu;
 DRV		BurnSpecpericodelgado;
+DRV		BurnSpecPerilsofwilly48;
 DRV		BurnSpecPerilsofwilly;
+DRV		BurnSpecPerilsofwilly128;
 DRV		BurnDrvnes_perkele;
 DRV		BurnDrvnes_perman;
 DRV		BurnDrvnes_permapar2;
@@ -29866,7 +29868,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFinger,				// Finger (bootleg of Stinger)
 	&BurnDrvnes_firenice,		// Fire 'n Ice (USA)
 	&BurnDrvnes_firenicell,		// Fire 'n Ice - The Lost Levels (Hack, v1.1)
-	&BurnSpecFireforget,		// Fire and Forget (128K)
+	&BurnSpecFireforget,		// Fire and Forget (48K-128K)
 	&BurnDrvsms_fireforg,		// Fire and Forget II (Euro)
 	&BurnDrvsms_fireice,		// Fire and Ice (Brazil)
 	&BurnDrvnes_firerescue,		// Fire and Rescue (HB, v1.1)
@@ -30127,7 +30129,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFourtraxj,			// Four Trax (Japan)
 	&BurnDrvFourtraxa,			// Four Trax (US?, censored banners)
 	&BurnDrvFourtrax,			// Four Trax (World)
-	&BurnSpecFoxxfightsback,	// Foxx Fights Back (128K)
+	&BurnSpecFoxxfightsback,	// Foxx Fights Back (48K-128K)
 	&BurnDrvmd_foxyland,		// Foxy Land (HB)
 	&BurnDrvcv_fracfevr,		// Fraction Fever
 	&BurnSpecFranknstein,		// Frank N Stein (48K)
@@ -30288,7 +30290,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_nadia,			// Fushigi no Umi no Nadia (Japan)
 	&BurnDrvpce_alice,			// Fushigi no Yume no Alice (Japan)
 	&BurnDrvmd_futbol,			// Futbol Argentino 98 - Pasion de Multitudes (Unl)
-	&BurnSpecFutbikesim,		// Future Bike Simulator (128K)
+	&BurnSpecFutbikesim,		// Future Bike Simulator (48K-128K)
 	&BurnSpecFutknight,			// Future Knight (128K)
 	&BurnDrvMSX_futknight,		// Future Knight (Euro)
 	&BurnSpecFuturelooter,		// Future Looter (48K) (HB)
@@ -37321,7 +37323,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPerfrman,			// Performan (Japan)
 	&BurnDrvPerfrmanu,			// Performan (US)
 	&BurnSpecpericodelgado,		// Perico Delgado Maillot Amarillo (Spanish) (48K)
-	&BurnSpecPerilsofwilly,		// Perils of Willy (128K) (HB)
+	&BurnSpecPerilsofwilly48,	// Perils of Willy (48K) (HB)
+	&BurnSpecPerilsofwilly,		// Perils of Willy - Bog Roll Edition (48K) (HB)
+	&BurnSpecPerilsofwilly128,	// Perils of Willy Plus (128K) (HB)
 	&BurnDrvnes_perkele,		// PERKELE! Suomi 100 vuotta - 5th Anniversary Edition (HB)
 	&BurnDrvnes_perman,			// Perman (Japan)
 	&BurnDrvnes_permapar2,		// Perman Part 2 - Himitsu Kessha Madoodan o Taose! (Japan)
@@ -38757,7 +38761,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_raven,			// Raven (HB)
 	&BurnDrvnes_ravensgate,		// Raven's Gate (HB)
 	&BurnDrvnes_ravensgatemmc1,	// Raven's Gate (HB, MMC1 ver.)
-	&BurnSpecRawrecruit,		// Raw Recruit
+	&BurnSpecRawrecruit,		// Raw Recruit (48K)
 	&BurnDrvRayforce,			// Ray Force (Ver 2.3A 1994/01/20)
 	&BurnDrvRayforcej,			// Ray Force (Ver 2.3J 1994/01/20)
 	&BurnDrvsms_raymanrr,		// Rayman Retro Rumble (GlobalHack, v1.3)
@@ -39658,8 +39662,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSavagere,			// Savage Reign / Fu'un Mokushiroku - Kakutou Sousei
 	&BurnSpecSavekonga,			// Saving Kong - Crazy Kong City II (bgm Dizziness) (128K) (HB)
 	&BurnSpecSavekongb,			// Saving Kong - Crazy Kong City II (bgm Massive Attack) (128K) (HB)
-	&BurnSpecSbotp1,			// SBOT Part-1 (128K) (HB)
-	&BurnSpecSbotp2,			// SBOT Part-2 (128K) (HB)
+	&BurnSpecSbotp1,			// SBOT - Part 1 (128K) (HB)
+	&BurnSpecSbotp2,			// SBOT - Part 2 (128K) (HB)
 	&BurnSpecSc0tb0t,			// Sc0tb0t (48K) (HB)
 	&BurnDrvSpacewin,			// Scacco Matto / Space Win
 	&BurnDrvMSX_scarlet7,		// Scarlet 7 - The Mightiest Women (Japan)
@@ -39965,7 +39969,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvShadowwa,			// Shadow Warriors (World, set 2)
 	&BurnDrvnes_shadowarepiii,	// Shadow Warriors Episode II - The Dark Sword of Chaos (Euro)
 	&BurnDrvsnes_Shadowp,		// Shadow, The (Prototype)
-	&BurnSpecShadowfire,		// Shadowfire
+	&BurnSpecShadowfire,		// Shadowfire (48K)
 	&BurnDrvnes_shadowgate,		// Shadowgate (USA)
 	&BurnDrvShadowld,			// Shadowland (YD3)
 	&BurnDrvsnes_Shadowrunti,	// Shadowrun (Hack, Italian v0.98)
@@ -60346,7 +60350,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "perfrman", "toaplan/d_slapfght.cpp"},
 	{ "perfrmanu", "toaplan/d_slapfght.cpp"},
 	{ "spec_pericodelgado", "spectrum/d_spectrum.cpp"},
+	{ "spec_perilsofwilly48", "spectrum/d_spectrum.cpp"},
 	{ "spec_perilsofwilly", "spectrum/d_spectrum.cpp"},
+	{ "spec_perilsofwilly128", "spectrum/d_spectrum.cpp"},
 	{ "nes_perkele", "nes/d_nes.cpp"},
 	{ "nes_perman", "nes/d_nes.cpp"},
 	{ "nes_permapar2", "nes/d_nes.cpp"},
