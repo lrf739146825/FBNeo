@@ -15199,7 +15199,6 @@ DRV		BurnDrvmd_quadchal;
 DRV		BurnDrvnes_quadralords;
 DRV		BurnSpecQuadron;
 DRV		BurnSpecQuahappy;
-DRV		BurnDrvkovqhsgs302;
 DRV		BurnDrvkovqhsgsa;
 DRV		BurnDrvkovqhsgsd;
 DRV		BurnDrvkovqhsgs;
@@ -38350,7 +38349,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_quadralords,	// Quadralords (HB)
 	&BurnSpecQuadron,			// Quadron (48K) (HB, v1.23)
 	&BurnSpecQuahappy,			// Quahappy (128K) (HB)
-	&BurnDrvkovqhsgs302,		// Quanhuang Sanguo Tebie Ban (bootleg of Knights of Valour Super Heroes, V302CN, China) [no comment, NOT WORKING]
 	&BurnDrvkovqhsgsa,			// Quanhuang Sanguo Tebie Ban (bootleg of Knights of Valour Super Heroes, V303CN alt, China)
 	&BurnDrvkovqhsgsd,			// Quanhuang Sanguo Tebie Ban (bootleg of Knights of Valour Super Heroes, V303CN, China, decrypted version)
 	&BurnDrvkovqhsgs,			// Quanhuang Sanguo Tebie Ban (bootleg of Knights of Valour Super Heroes, V303CN, Nov 21 2008 19:03:49)
@@ -61377,7 +61375,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_quadralords", "nes/d_nes.cpp"},
 	{ "spec_quadron", "spectrum/d_spectrum.cpp"},
 	{ "spec_quahappy", "spectrum/d_spectrum.cpp"},
-	{ "kovqhsgs302", "pgm/d_pgm.cpp"},
 	{ "kovqhsgsa", "pgm/d_pgm.cpp"},
 	{ "kovqhsgsd", "pgm/d_pgm.cpp"},
 	{ "kovqhsgs", "pgm/d_pgm.cpp"},
