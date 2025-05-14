@@ -125,8 +125,14 @@ static INT32 is_mem_range_new (const char *pBuf)
 }
 
 static INT32 cpustr2num(char *pCpu)
-{ // all known versions of the first cpu as of May 15, 2017
-	return (strstr(pCpu, "maincpu") ||
+{
+	const int sub2 = (strstr(pCpu, "suby")) ? 2 : 0; // 3rd cpu name(s)
+
+//	bprintf(0, _T("%S / %d\n"), pCpu, sub2);
+
+	if (sub2) return 2;
+
+	return (strstr(pCpu, "maincpu") || // all known versions of the first cpu as of May 15, 2017
 		    strstr(pCpu, "cpu1") ||
 		    strstr(pCpu, "alpha") ||
 			strstr(pCpu, "master") ||
@@ -225,6 +231,11 @@ void HiscoreSearch_internal(FILE *fp, const char *name)
 
 						if ( (!strcmp(name, "cppicf")) || (!strcmp(name, "cppicf2")) ) {
 							bprintf(0, _T("-- cppicf* noConfirm hack for address range %x\n"), HiscoreMemRange[nHiscoreNumRanges].Address);
+							HiscoreMemRange[nHiscoreNumRanges].NoConfirm = 1;
+						}
+
+						if ( (!strcmp(name, "mmaze")) || (!strcmp(name, "mmaze2")) ) {
+							bprintf(0, _T("-- mmaze* noConfirm hack for address range %x\n"), HiscoreMemRange[nHiscoreNumRanges].Address);
 							HiscoreMemRange[nHiscoreNumRanges].NoConfirm = 1;
 						}
 
@@ -568,6 +579,7 @@ void HiscoreApply()
 #if 0
 		// Save for debugging hiscore.dat / driver problems.
 		cpu_open(HiscoreMemRange[i].nCpu);
+		bprintf(0, _T("cpu: %x\n"), HiscoreMemRange[i].nCpu);
 		bprintf(0, _T("start: addr %x   %x  %x\n"), HiscoreMemRange[i].Address, cheat_subptr->read(HiscoreMemRange[i].Address), HiscoreMemRange[i].StartValue);
 		bprintf(0, _T(" end : addr %x   %x  %x\n"), HiscoreMemRange[i].Address + HiscoreMemRange[i].NumBytes - 1, cheat_subptr->read(HiscoreMemRange[i].Address + HiscoreMemRange[i].NumBytes - 1), HiscoreMemRange[i].EndValue);
 		cheat_subptr->close();

@@ -92,6 +92,8 @@ ifneq (,$(findstring unix,$(platform)))
 		endif
 	else ifneq (,$(findstring rpi4_64,$(platform)))
 		PLATFORM_DEFINES := -march=armv8-a+crc+simd -mtune=cortex-a72
+	else ifneq (,$(findstring rpi5_64,$(platform)))
+		PLATFORM_DEFINES := -march=armv8.2-a+crc+simd -mtune=cortex-a76
 	endif
 
 	# Solaris

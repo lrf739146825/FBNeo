@@ -42,7 +42,7 @@ typedef struct CartHeader {
   bool hasBattery; // battery
 } CartHeader;
 
-static void readHeader(const uint8_t* data, int length, int location, CartHeader* header);
+static void readHeader(const uint8_t* data, int length, int location, CartHeader* header, int position);
 
 bool snes_loadRom(Snes* snes, const uint8_t* data, int length, uint8_t* biosdata, int bioslength) {
   // if smaller than smallest possible, don't load
@@ -57,14 +57,14 @@ bool snes_loadRom(Snes* snes, const uint8_t* data, int length, uint8_t* biosdata
   for(int i = 0; i < max_headers; i++) {
     headers[i].score = -50;
   }
-  if(length >= 0x8000) readHeader(data, length, 0x7fc0, &headers[0]); // lorom
-  if(length >= 0x8200) readHeader(data, length, 0x81c0, &headers[1]); // lorom + header
-  if(length >= 0x10000) readHeader(data, length, 0xffc0, &headers[2]); // hirom
-  if(length >= 0x10200) readHeader(data, length, 0x101c0, &headers[3]); // hirom + header
-  if(length >= 0x410000) readHeader(data, length, 0x407fc0, &headers[4]); // exlorom
-  if(length >= 0x410200) readHeader(data, length, 0x4081c0, &headers[5]); // exlorom + header
-  if(length >= 0x410000) readHeader(data, length, 0x40ffc0, &headers[6]); // exhirom
-  if(length >= 0x410200) readHeader(data, length, 0x4101c0, &headers[7]); // exhirom + header
+  if(length >= 0x8000) readHeader(data, length, 0x7fc0, &headers[0], 0); // lorom
+  if(length >= 0x8200) readHeader(data, length, 0x81c0, &headers[1], 1); // lorom + header
+  if(length >= 0x10000) readHeader(data, length, 0xffc0, &headers[2], 2); // hirom
+  if(length >= 0x10200) readHeader(data, length, 0x101c0, &headers[3], 3); // hirom + header
+  if(length >= 0x410000) readHeader(data, length, 0x407fc0, &headers[4], 4); // exlorom
+  if(length >= 0x410200) readHeader(data, length, 0x4081c0, &headers[5], 5); // exlorom + header
+  if(length >= 0x410000) readHeader(data, length, 0x40ffc0, &headers[6], 6); // exhirom
+  if(length >= 0x410200) readHeader(data, length, 0x4101c0, &headers[7], 7); // exhirom + header
   // see which it is, go backwards to allow picking ExHiROM over HiROM for roms with headers in both spots
   int max = 0;
   int used = 0;
@@ -157,10 +157,7 @@ bool snes_loadRom(Snes* snes, const uint8_t* data, int length, uint8_t* biosdata
   }
 
   // load it
-  const char* typeNames[12] = {"(none)", "LoROM", "HiROM", "ExLoROM", "ExHiROM", "CX4", "LoROM-DSP", "HiROM-DSP", "LoROM-SeTa", "LoROM-SA1", "LoROM-OBC1", "LoROM-SDD1"};
-  enum { CART_NONE = 0, CART_LOROM, CART_HIROM, CART_EXLOROM, CART_EXHIROM, CART_CX4, CART_LOROMDSP, CART_HIROMDSP, CART_LOROMSETA, CART_LOROMSA1, CART_LOROMOBC1, CART_LOROMSDD1 };
-
-  bprintf(0, _T("Loaded %S rom (%S)\n"), typeNames[headers[used].cartType], headers[used].pal ? "PAL" : "NTSC");
+  bprintf(0, _T("Loaded %S rom (%S)\n"), cart_gettype(headers[used].cartType), headers[used].pal ? "PAL" : "NTSC");
   bprintf(0, _T("\"%S\"\n"), headers[used].name);
 
   int bankSize = 0;
@@ -302,7 +299,7 @@ bool snes_loadState(Snes* snes, uint8_t* data, int size) {
   return true;
 }
 
-static void readHeader(const uint8_t* data, int length, int location, CartHeader* header) {
+static void readHeader(const uint8_t* data, int length, int location, CartHeader* header, int position) {
   // read name, TODO: non-ASCII names?
   for(int i = 0; i < 21; i++) {
     uint8_t ch = data[location + i];
@@ -387,7 +384,8 @@ static void readHeader(const uint8_t* data, int length, int location, CartHeader
   score += (header->coprocessor <= 5 || header->coprocessor >= 0xe) ? 5 : -2;
   score += (header->chips <= 6 || header->chips == 9 || header->chips == 0xa) ? 5 : -2;
   score += (header->region <= 0x14) ? 5 : -2;
-  score += (header->checksum + header->checksumComplement == 0xffff) ? 8 : -6;
+  score += (header->checksum != 0 && header->checksumComplement != 0 && header->checksum + header->checksumComplement == 0xffff) ? 8 : -6;
+  //bprintf(0, _T("header checksum/compl: %x %x\n"), header->checksum, header->checksumComplement);
   uint16_t resetVector = data[location + 0x3c] | (data[location + 0x3d] << 8);
   score += (resetVector >= 0x8000) ? 8 : -20;
   // check first opcode after reset
@@ -410,5 +408,7 @@ static void readHeader(const uint8_t* data, int length, int location, CartHeader
     // brk, sbc alx, stp
     score -= 6;
   }
+  score += (score > 0x20) ? position : 0; // pick "ex..ROM" over "..ROM"
+  bprintf(0, _T("opcode, score: %x  %x\n"), opcode, score);
   header->score = score;
 }

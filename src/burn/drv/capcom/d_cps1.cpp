@@ -7823,33 +7823,41 @@ STD_ROM_PICK(Ffightbla)
 STD_ROM_FN(Ffightbla)
 
 static struct BurnRomInfo FcrashRomDesc[] = {
-	{ "9.bin",         0x020000, 0xc6854c91, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "5.bin",         0x020000, 0x77f7c2b3, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "8.bin",         0x020000, 0x1895b3df, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "4.bin",         0x020000, 0xbbd411ee, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "7.bin",         0x020000, 0x5b23ebf2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "3.bin",         0x020000, 0xaba2aebe, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "6.bin",         0x020000, 0xd4bf37f6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "2.bin",         0x020000, 0x07ac8f43, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	// f205v id 252
+	{ "9.ic57",        0x020000, 0xc6854c91, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "5.ic56",        0x020000, 0x77f7c2b3, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "8.ic52",        0x020000, 0x1895b3df, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.ic51",        0x020000, 0xbbd411ee, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "7.ic59",        0x020000, 0x5b23ebf2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.ic58",        0x020000, 0xaba2aebe, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "6.ic54",        0x020000, 0xd4bf37f6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "2.ic53",        0x020000, 0x07ac8f43, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "18.bin",        0x020000, 0xf1eee6d9, BRF_GRA | CPS1_TILES },
-	{ "20.bin",        0x020000, 0x675f4537, BRF_GRA | CPS1_TILES },
-	{ "22.bin",        0x020000, 0xdb8a32ac, BRF_GRA | CPS1_TILES },
-	{ "24.bin",        0x020000, 0xf4113e57, BRF_GRA | CPS1_TILES },
-	{ "10.bin",        0x020000, 0xd478853e, BRF_GRA | CPS1_TILES },
-	{ "12.bin",        0x020000, 0x25055642, BRF_GRA | CPS1_TILES },
-	{ "14.bin",        0x020000, 0xb77d0328, BRF_GRA | CPS1_TILES },
-	{ "16.bin",        0x020000, 0xea111a79, BRF_GRA | CPS1_TILES },
-	{ "19.bin",        0x020000, 0xb3aa1f48, BRF_GRA | CPS1_TILES },
-	{ "21.bin",        0x020000, 0x04d175c9, BRF_GRA | CPS1_TILES },
-	{ "23.bin",        0x020000, 0xe592ba4f, BRF_GRA | CPS1_TILES },
-	{ "25.bin",        0x020000, 0xb89a740f, BRF_GRA | CPS1_TILES },
-	{ "11.bin",        0x020000, 0xd4457a60, BRF_GRA | CPS1_TILES },
-	{ "13.bin",        0x020000, 0x3b26a37d, BRF_GRA | CPS1_TILES },
-	{ "15.bin",        0x020000, 0x6d837e09, BRF_GRA | CPS1_TILES },
-	{ "17.bin",        0x020000, 0xc59a4d6c, BRF_GRA | CPS1_TILES },
+	{ "18.ic116",      0x020000, 0xf1eee6d9, BRF_GRA | CPS1_TILES },
+	{ "20.ic118",      0x020000, 0x675f4537, BRF_GRA | CPS1_TILES },
+	{ "22.ic120",      0x020000, 0xdb8a32ac, BRF_GRA | CPS1_TILES },
+	{ "24.ic122",      0x020000, 0xf4113e57, BRF_GRA | CPS1_TILES },
+	{ "10.ic117",      0x020000, 0xd478853e, BRF_GRA | CPS1_TILES },
+	{ "12.ic119",      0x020000, 0x25055642, BRF_GRA | CPS1_TILES },
+	{ "14.ic121",      0x020000, 0xb77d0328, BRF_GRA | CPS1_TILES },
+	{ "16.ic123",      0x020000, 0xea111a79, BRF_GRA | CPS1_TILES },
+	{ "19.ic131",      0x020000, 0xb3aa1f48, BRF_GRA | CPS1_TILES },
+	{ "21.ic129",      0x020000, 0x04d175c9, BRF_GRA | CPS1_TILES },
+	{ "23.ic127",      0x020000, 0xe592ba4f, BRF_GRA | CPS1_TILES },
+	{ "25.ic125",      0x020000, 0xb89a740f, BRF_GRA | CPS1_TILES },
+	{ "11.ic130",      0x020000, 0xd4457a60, BRF_GRA | CPS1_TILES },
+	{ "13.ic128",      0x020000, 0x3b26a37d, BRF_GRA | CPS1_TILES },
+	{ "15.ic126",      0x020000, 0x6d837e09, BRF_GRA | CPS1_TILES },
+	{ "17.ic124",      0x020000, 0xc59a4d6c, BRF_GRA | CPS1_TILES },
 
-	{ "1.bin",         0x020000, 0x5b276c14, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "1.ic172",       0x020000, 0x5b276c14, BRF_PRG | CPS1_Z80_PROGRAM },
+	
+	{ "gal16v8-25lnc.ic132.bad.dump",	0x000c25, 0x07369d5c, BRF_OPT },
+	{ "gal16v8-25lnc.ic141.bad.dump",	0x000c25, 0x9077fa78, BRF_OPT },
+	{ "palce16v8h-25pc.ic10.bad.dump",	0x000c28, 0x8d63e2ba, BRF_OPT },
+	{ "palce20v8h-25pc.ic56.bad.dump",	0x000e28, 0x89110049, BRF_OPT },
+	{ "palce20v8h-25pc.ic154.bad.dump",	0x000e28, 0xa7d1a4c0, BRF_OPT },
+	{ "palce20v8h-25pc.ic155.bad.dump",	0x000e28, 0x87b629bd, BRF_OPT },
 };
 
 STD_ROM_PICK(Fcrash)
@@ -10907,6 +10915,75 @@ static struct BurnRomInfo Sf2ebbl3RomDesc[] = {
 STD_ROM_PICK(Sf2ebbl3)
 STD_ROM_FN(Sf2ebbl3)
 
+static struct BurnRomInfo Sf2ebbl4RomDesc[] = {
+	// f205v id 1751
+	/* main PCB is marked "AAB" and "STF" on component side
+	   piggyback PCB is marked "MASK ROM TAP 8M=2M*4" on component side
+	   main PCB is labeled "O.K" on component side 
+	   piggyback PCB fits into main PCB @ maskROM location 4 (C) */
+	{ "6.bin", 			0x040000, 0xa258b4d5, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.bin", 			0x040000, 0x59ccd474, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "5.bin",       	0x040000, 0x82097d63, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.bin",       	0x040000, 0x0c83844d, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	
+	{ "sh-street-a-sd145.1", 	0x100000, 0xa258de13, BRF_GRA | CPS1_TILES }, 
+	// { "9.u5",  				0x040000, 0x25ae23bc, BRF_GRA | CPS1_TILES }, // == sf2en epr-b-24.8h
+	// { "11.u2", 				0x040000, 0xe5819676, BRF_GRA | CPS1_TILES }, // == sf2en epr-b-23.8f
+	// { "10.u3", 				0x040000, 0x0ad7fb2b, BRF_GRA | CPS1_TILES }, // == sf2en epr-b-04.9a
+	// { "8.u6",                0x040000, 0xb6b8a84b, BRF_GRA | CPS1_TILES }, // Maybe bad - Needs redump
+	// Assuming 8.u6 is maybe bad, we are using instead c-se005.bin from sf2ebbl2 but not correct layout for this set
+	{ "c-se005.bin", 			0x100000, 0xc781bf87, BRF_GRA | CPS1_TILES }, // taken from sf2ebbl2
+	{ "sh-street-b-sg011.8", 	0x100000, 0x5726cab8, BRF_GRA | CPS1_TILES }, 
+	{ "sh-street-d-sf005.10", 	0x100000, 0x4dd24197, BRF_GRA | CPS1_TILES },
+	{ "sh-street-e-sg071.3", 	0x100000, 0x187667cc, BRF_GRA | CPS1_TILES }, 
+	{ "sh-street-f-sh123.6", 	0x100000, 0x5b585071, BRF_GRA | CPS1_TILES }, 
+
+	{ "10.bin",       	0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
+	
+	{ "2.bin",          0x020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "1.bin",          0x020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	
+	{ "9h.bin",        	0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "11h.bin",       	0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "10h.bin",      	0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "12h.bin",  		0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	
+	{ "7.bin",          0x010000, 0x13ea1c44, BRF_OPT }, // unknown
+	
+	{ "gal20v8-25lp.7",   		0x000157, 0xdf8d1dd0, BRF_OPT },	
+	{ "gal20v8-25lp.9",   		0x000157, 0x3b2cfa9d, BRF_OPT },	
+	{ "gal20v8-25lp.17",  		0x000157, 0xdf8d1dd0, BRF_OPT },
+	{ "gal20v8-25lp.20",  		0x000157, 0x131c47d8, BRF_OPT },
+	{ "gal20v8-25lp.21",  		0x000157, 0xe1f86f7d, BRF_OPT },	
+	{ "gal20v8-25lp.22",  		0x000157, 0x1418342d, BRF_OPT },
+	{ "gal20v8-25lp.24",  		0x000157, 0x131c47d8, BRF_OPT },	
+	{ "gal20v8-25lp.25",  		0x000157, 0xcb958d15, BRF_OPT },	
+	{ "gal20v8-25lp.29",  		0x000157, 0x316a1650, BRF_OPT },
+	{ "hy18cv8s-30.11",   		0x000155, 0xa9726e81, BRF_OPT },
+	{ "hy18cv8s-30.26",   		0x000155, 0xac1fbde8, BRF_OPT },
+	{ "hy18cv8s-30.27",   		0x000155, 0x5220d4c1, BRF_OPT },
+	{ "hy18cv8s-30.28",   		0x000155, 0xd818c91c, BRF_OPT },
+	{ "pal16l8acn.1",     		0x000104, 0xfa2195c9, BRF_OPT },
+	{ "pal16l8acn.2",     		0x000104, 0x555f26a7, BRF_OPT },
+	{ "pal16l8acn.3",     		0x000104, 0x454080bf, BRF_OPT },	
+	{ "pal16l8acn.5",     		0x000104, 0xe0b5eabc, BRF_OPT },
+	{ "pal16l8acn.6",     		0x000104, 0xd64883a5, BRF_OPT },
+	{ "pal16l8acn.10",    		0x000104, 0x17ede363, BRF_OPT },
+	{ "pal16l8acn.14",    		0x000104, 0xc3d8c4bf, BRF_OPT },
+	{ "pal16l8acn.15",    		0x000104, 0x03c161bc, BRF_OPT },
+	{ "pal16l8acn.16",    		0x000104, 0x19e5d05f, BRF_OPT },
+	{ "palce16v8h-25pc-4.8",	0x000117, 0x0babcc29, BRF_OPT },
+	{ "palce16v8h-25pc-4.12",	0x000117, 0x19787c52, BRF_OPT },
+	{ "palce16v8h-25pc-4.13",	0x000117, 0x19787c52, BRF_OPT },
+	{ "palce16v8h-25pc-4.19",	0x000117, 0x4aadc105, BRF_OPT },
+	{ "palce16v8h-25pc-4.23",	0x000117, 0x4badc9c4, BRF_OPT },
+	{ "palce22v10h-25pc-4.4",	0x0002dd, 0x06861673, BRF_OPT },
+	{ "palce22v10h-25pc-4.18",	0x0002dd, 0xe641a9d8, BRF_OPT },
+};
+
+STD_ROM_PICK(Sf2ebbl4)
+STD_ROM_FN(Sf2ebbl4)
+
 static struct BurnRomInfo Sf2sttRomDesc[] = {
 #if !defined ROM_VERIFY
 	// These first two are missing from the PCB
@@ -12831,12 +12908,14 @@ static struct BurnRomInfo Sf2red2RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2red2)
@@ -12893,12 +12972,14 @@ static struct BurnRomInfo Sf2v0042RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif	
 };
 
 STD_ROM_PICK(Sf2v0042)
@@ -13242,12 +13323,14 @@ static struct BurnRomInfo Sf2yyc2RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2yyc2)
@@ -13471,12 +13554,14 @@ static struct BurnRomInfo Sf2amf4RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2amf4)
@@ -13508,7 +13593,7 @@ static struct BurnRomInfo Sf2amf5RomDesc[] = {
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	
 	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo (it's the only set that shows the ' after the logo
+	// Street Fighter II logo (it's the only set that shows the ' after the logo)
 };
 
 STD_ROM_PICK(Sf2amf5)
@@ -13597,28 +13682,28 @@ STD_ROM_PICK(Sf2amf7)
 STD_ROM_FN(Sf2amf7)
 
 static struct BurnRomInfo Sf2amf8RomDesc[] = {
-	{ "2.u222",  	   0x080000, 0x3a7a78f8, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, 
-	{ "1.u196",  	   0x080000, 0x6a3cb7ac, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },  
-	{ "4.u221",  	   0x040000, 0xb0bb6242, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, 
-	{ "3.u195",  	   0x040000, 0xf516e578, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },  
+	{ "2.u222",  	   			0x080000, 0x3a7a78f8, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, 
+	{ "1.u196",  	   			0x080000, 0x6a3cb7ac, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },  
+	{ "4.u221",  	   			0x040000, 0xb0bb6242, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, 
+	{ "3.u195",  	   			0x040000, 0xf516e578, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },  
 			
-	{ "y.c.e.c m.k.r-001.u70",    0x100000, 0xa258de13, BRF_GRA | CPS1_TILES },
-	{ "y.c.e.c.m.k.r-003.u68",    0x100000, 0xc781bf87, BRF_GRA | CPS1_TILES },
-	{ "y.c.e.c.m.k.r-002.u69",    0x100000, 0x5726cab8, BRF_GRA | CPS1_TILES },
-	{ "y.c.e.c.d.w.c-011.u64",    0x100000, 0xbc90c12f, BRF_GRA | CPS1_TILES },
-	{ "y.c.e.c.d.w.c-012.u19",    0x100000, 0x187667cc, BRF_GRA | CPS1_TILES },
-	{ "y.c.e.c.d.w.c-013.u18",    0x100000, 0x5b585071, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c m.k.r-001.u70",  0x100000, 0xa258de13, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c.m.k.r-003.u68",  0x100000, 0xc781bf87, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c.m.k.r-002.u69",  0x100000, 0x5726cab8, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c.d.w.c-011.u64",  0x100000, 0xbc90c12f, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c.d.w.c-012.u19",  0x100000, 0x187667cc, BRF_GRA | CPS1_TILES },
+	{ "y.c.e.c.d.w.c-013.u18",  0x100000, 0x5b585071, BRF_GRA | CPS1_TILES },
 	
-	{ "sound.u191",    0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "sound.u191",    			0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "voice.u210",    0x040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "voice.u210",    			0x040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	
-	{ "grp1.u31",      0x020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "grp3.u29",      0x020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "grp2.u30",      0x020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "grp4.u28",      0x020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "grp1.u31",      			0x020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "grp3.u29",      			0x020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "grp2.u30",      			0x020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "grp4.u28",      			0x020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
 	
-	{ "conv.u133",     0x010000, 0x13ea1c44, BRF_OPT }, // unknown
+	{ "conv.u133",     			0x010000, 0x13ea1c44, BRF_OPT }, // unknown
 };
 
 STD_ROM_PICK(Sf2amf8)
@@ -13647,12 +13732,14 @@ static struct BurnRomInfo Sf2amf9RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif 
 };
 
 STD_ROM_PICK(Sf2amf9)
@@ -13661,99 +13748,239 @@ STD_ROM_FN(Sf2amf9)
 static struct BurnRomInfo Sf2amf10RomDesc[] = {
 	// f205v id 1750
 	// PCB is labeled "9354" and "O.K" on component side 
-	{ "24.n",    	0x080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "22.m",       0x080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "23.bin",     0x020000, 0x94a46525, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "21.bin",     0x020000, 0x8fb3dd47, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "24.n",    		0x080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "22.m",       	0x080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "23.bin",     	0x020000, 0x94a46525, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "21.bin",     	0x020000, 0x8fb3dd47, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "a.bin",   	0x080000, 0x817af36b, BRF_GRA | CPS1_TILES },
-	{ "b.bin",   	0x080000, 0x38668d02, BRF_GRA | CPS1_TILES },
-	{ "g.bin",   	0x080000, 0xa69ee127, BRF_GRA | CPS1_TILES },	
-	{ "h.bin",   	0x080000, 0xe7ca9db7, BRF_GRA | CPS1_TILES },	
-	{ "c.bin",   	0x080000, 0x201b4e86, BRF_GRA | CPS1_TILES },
-	{ "d.bin",   	0x080000, 0x9e7ddcc2, BRF_GRA | CPS1_TILES },
-	{ "i.bin",   	0x080000, 0x4ecc4c30, BRF_GRA | CPS1_TILES },
-	{ "j.bin",   	0x080000, 0xb1f5c806, BRF_GRA | CPS1_TILES },
-	{ "e.bin",   	0x080000, 0x64ac2ae5, BRF_GRA | CPS1_TILES },
-	{ "f.bin",   	0x080000, 0xd9ee7246, BRF_GRA | CPS1_TILES },
-	{ "k.bin",   	0x080000, 0x6639a843, BRF_GRA | CPS1_TILES },
-	{ "l.bin",   	0x080000, 0x9ac6e349, BRF_GRA | CPS1_TILES },
+	{ "a.bin",   		0x080000, 0x817af36b, BRF_GRA | CPS1_TILES },
+	{ "b.bin",   		0x080000, 0x38668d02, BRF_GRA | CPS1_TILES },
+	{ "g.bin",   		0x080000, 0xa69ee127, BRF_GRA | CPS1_TILES },	
+	{ "h.bin",   		0x080000, 0xe7ca9db7, BRF_GRA | CPS1_TILES },	
+	{ "c.bin",   		0x080000, 0x201b4e86, BRF_GRA | CPS1_TILES },
+	{ "d.bin",   		0x080000, 0x9e7ddcc2, BRF_GRA | CPS1_TILES },
+	{ "i.bin",   		0x080000, 0x4ecc4c30, BRF_GRA | CPS1_TILES },
+	{ "j.bin",   		0x080000, 0xb1f5c806, BRF_GRA | CPS1_TILES },
+	{ "e.bin",   		0x080000, 0x64ac2ae5, BRF_GRA | CPS1_TILES },
+	{ "f.bin",   		0x080000, 0xd9ee7246, BRF_GRA | CPS1_TILES },
+	{ "k.bin",   		0x080000, 0x6639a843, BRF_GRA | CPS1_TILES },
+	{ "l.bin",   		0x080000, 0x9ac6e349, BRF_GRA | CPS1_TILES },
 
-	{ "30.bin",   	0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "30.bin",   		0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "28.4",       0x010000, 0x8153ef93, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "25.2",       0x010000, 0x45bca686, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "27.3",       0x010000, 0x84b21ad9, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "24.1",       0x010000, 0xd0c7f119, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "28.4",       	0x010000, 0x8153ef93, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "25.2",       	0x010000, 0x45bca686, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "27.3",       	0x010000, 0x84b21ad9, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "24.1",       	0x010000, 0xd0c7f119, BRF_SND | CPS1_OKIM6295_SAMPLES },
 
-	{ "30.13",      0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "26.10",      0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "27.11",      0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "29.12",      0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "30.13",      	0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "26.10",      	0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "27.11",      	0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "29.12",      	0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 
-	{ "6.bin",      0x010000, 0x13ea1c44, BRF_OPT }, // unknown
+	{ "6.bin",      	0x010000, 0x13ea1c44, BRF_OPT }, // unknown
+	
+	{ "gal20v8.7",  	0x000157, 0xbb650720, BRF_OPT }, // plds
+	{ "gal20v8.9",  	0x000157, 0xbce86321, BRF_OPT }, 
+	{ "gal20v8.17", 	0x000157, 0x3e1cd25b, BRF_OPT },
+	{ "gal20v8.20", 	0x000157, 0xd45a1234, BRF_OPT },
+	{ "gal20v8.21", 	0x000157, 0x26be3a91, BRF_OPT },
+	{ "gal20v8.22", 	0x000157, 0x06513cb8, BRF_OPT },
+	{ "gal20v8.24", 	0x000157, 0x989acece, BRF_OPT },
+	{ "gal20v8.25", 	0x000157, 0x47c70182, BRF_OPT },
+	{ "gal20v8.29", 	0x000157, 0xbb24af94, BRF_OPT },
+	{ "hy18cv8s.11",	0x000155, 0x24e0f6f5, BRF_OPT },
+	{ "hy18cv8s.26",	0x000155, 0xa2846824, BRF_OPT },
+	{ "hy18cv8s.27",	0x000155, 0x5220d4c1, BRF_OPT },
+	{ "hy18cv8s.28",	0x000155, 0x653a7a10, BRF_OPT },
+	{ "pal16l8acn.1",	0x000104, 0x3b4060a5, BRF_OPT },
+	{ "pal16l8acn.2",	0x000104, 0x3bbe9132, BRF_OPT },
+	{ "pal16l8acn.5",	0x000104, 0x615cb966, BRF_OPT },
+	{ "pal16l8acn.6",	0x000104, 0x26323cc8, BRF_OPT },
+	{ "pal16l8acn.10",	0x000104, 0x068dd038, BRF_OPT },
+	{ "pal16l8acn.14",	0x000104, 0xf2b43424, BRF_OPT },
+	{ "pal16l8acn.15",	0x000104, 0x03c161bc, BRF_OPT },
+	{ "pal16l8acn.16",	0x000104, 0x0fab3261, BRF_OPT },
+	{ "pal16l8acn.23",	0x000104, 0x7927db67, BRF_OPT },
+	{ "palce16v8h.3",	0x000117, 0xbbfa746b, BRF_OPT },
+	{ "palce16v8h.8",	0x000117, 0x0babcc29, BRF_OPT },
+	{ "palce16v8h.12",	0x000117, 0x19787c52, BRF_OPT },
+	{ "palce16v8h.13",	0x000117, 0x19787c52, BRF_OPT },
+	{ "palce16v8h.19",	0x000117, 0x4aadc105, BRF_OPT },
+	{ "palce22v10h.4",	0x0002dd, 0x06861673, BRF_OPT },
+	{ "palce22v10h.18",	0x0002dd, 0xe641a9d8, BRF_OPT },
 };
 
 STD_ROM_PICK(Sf2amf10)
 STD_ROM_FN(Sf2amf10)
 
-// Dumped by: gomarco79
-// Street Fighter II': Champion Edition (L735 Test Rom / Mega Co, bootleg, set 4?)
 static struct BurnRomInfo Sf2amf11RomDesc[] = {
-	{ "1.040.bin",   0x080000, 0x9e6d058a, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "3.040.bin",   0x080000, 0x518d8404, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "2.010.bin",   0x020000, 0xfca4fc1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "4.010.bin",   0x020000, 0xcfdd6f54, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	// f205v id 1784
+	// Dumped by: gomarco79
+	{ "4.bin",       0x080000, 0x9e6d058a, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.bin",   	 0x080000, 0x518d8404, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "2.bin",   	 0x020000, 0xfca4fc1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "1.bin",   	 0x020000, 0xcfdd6f54, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "u70.bin",     0x100000, 0xa94a8b19, BRF_GRA | CPS1_TILES },
-	{ "u68.bin",     0x100000, 0x0405f21f, BRF_GRA | CPS1_TILES },
-	{ "u69.bin",   	 0x100000, 0x05dc2043, BRF_GRA | CPS1_TILES },
-	{ "u67.bin",   	 0x100000, 0x055b64f1, BRF_GRA | CPS1_TILES },
-	{ "u19.bin",   	 0x100000, 0x1a518609, BRF_GRA | CPS1_TILES },
-	{ "u18.bin",   	 0x100000, 0x84f9354f, BRF_GRA | CPS1_TILES },
+	{ "11.bin",      0x100000, 0xa94a8b19, BRF_GRA | CPS1_TILES },
+	{ "12.bin",      0x100000, 0x0405f21f, BRF_GRA | CPS1_TILES },
+	{ "8.bin",   	 0x100000, 0x05dc2043, BRF_GRA | CPS1_TILES },
+	{ "10.bin",   	 0x100000, 0x055b64f1, BRF_GRA | CPS1_TILES },
+	{ "9.bin",   	 0x100000, 0x1a518609, BRF_GRA | CPS1_TILES },
+	{ "7.bin",   	 0x100000, 0x84f9354f, BRF_GRA | CPS1_TILES },
 
-	{ "sf2_9.12a",   0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "5.bin",       0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
 
 	{ "oki.u210",    0x040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 
-	{ "w-1",      	 0x020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "w-2",         0x020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "w-3",         0x020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
-	{ "w-4",         0x020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "127.9-0",     0x020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "129.11-0",    0x020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "128.9-1",     0x020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "130.11-1",    0x020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
 
-	{ "conv.u133",   0x010000, 0x13ea1c44, BRF_OPT }, // unknown
+	{ "sp-a6.bin",   0x010000, 0x13ea1c44, BRF_OPT }, // unknown
 };
 
 STD_ROM_PICK(Sf2amf11)
 STD_ROM_FN(Sf2amf11)
 
-// who knows?...  was originally thought to be "Magic KO Turbo!!"
-// mask-roms incorrectly dumped (12x 256k..), using mask roms from sf2mkot
 static struct BurnRomInfo Sf2amf12RomDesc[] = {
-	{ "6.bin", 	            0x0080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "4.bin", 	            0x0080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "5.bin", 	            0x0020000, 0x6ef18ab4, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "3.bin", 	            0x0020000, 0xc95e4443, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	// f205v id 1785
+	// This set is very similar to "SF2MKOT", without the "NIGHTMARE CRACK" in the title screen
+	{ "6.bin", 	        0x0080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.bin", 	        0x0080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "5.bin", 	        0x0020000, 0x6ef18ab4, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.bin", 	        0x0020000, 0xc95e4443, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+ 
+	{ "tat-01.bin",   	0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES }, // == mask01.bin.001 + mask05.bin.001
+	{ "tat-03.bin",   	0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES }, // == mask01.bin.002 + mask05.bin.002
+	{ "tat-05.bin",   	0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES }, // == mask03.bin.001 + mask07.bin.001
+	{ "tat-07.bin",   	0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES }, // == mask03.bin.002 + mask07.bin.002
+	{ "tat-02.bin",   	0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES }, // == mask02.bin.001 + mask06.bin.001
+	{ "tat-04.bin",   	0x0080000, 0x32518120, BRF_GRA | CPS1_TILES }, // == mask02.bin.002 + mask06.bin.001
+	{ "tat-06.bin",   	0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES }, // == mask04.bin.001 + mask08.bin.001
+	{ "tat-08.bin",   	0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES }, // == mask04.bin.002 + mask08.bin.002	
+	{ "tat-09.bin",   	0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES }, // == mask09.bin
+	{ "tat-10.bin",   	0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES }, // == mask10.bin
+	{ "tat-11.bin",   	0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES }, // == mask11.bin
+	{ "tat-12.bin",   	0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES }, // == mask12.bin 
+    /* Original GFX dumps for this set: same content as TAT-GFX ROMs but ordered in different way 
+	   Using instead TAT-GFX ROMs until we find a proper loading routine.
+	{ "mask01.bin",   	0x0080000, 0x5733d44e, BRF_GRA | CPS1_TILES }, 
+	{ "mask05.bin",   	0x0080000, 0x42d7635d, BRF_GRA | CPS1_TILES }, 
+	{ "mask03.bin",   	0x0080000, 0xe24eb699, BRF_GRA | CPS1_TILES },
+	{ "mask07.bin",   	0x0080000, 0xa18ac61a, BRF_GRA | CPS1_TILES },
+	{ "mask02.bin",   	0x0080000, 0xa480eeb7, BRF_GRA | CPS1_TILES },
+	{ "mask06.bin",   	0x0080000, 0xdc03b5c7, BRF_GRA | CPS1_TILES },
+	{ "mask04.bin",   	0x0080000, 0x64c474af, BRF_GRA | CPS1_TILES }, 
+	{ "mask08.bin",   	0x0080000, 0xf6db1877, BRF_GRA | CPS1_TILES },
+	{ "mask09.bin",     0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
+	{ "mask10.bin",     0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
+	{ "mask11.bin",     0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },
+	{ "mask12.bin",     0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES }, */
+    	
+	{ "2.bin",        	0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "d21.u70",      	   	0x0100000, 0xbaa0f81f, BRF_GRA | CPS1_TILES },
-	{ "d24.u68",      	   	0x0100000, 0x8edff95a, BRF_GRA | CPS1_TILES },
-	{ "d22.u69",      	   	0x0100000, 0x468962b1, BRF_GRA | CPS1_TILES },
-	{ "d25.u64",      	   	0x0100000, 0x8165f536, BRF_GRA | CPS1_TILES },
-	{ "d23.u19",      	   	0x0100000, 0x39d763d3, BRF_GRA | CPS1_TILES },
-	{ "d26.u18",      	   	0x0100000, 0x93ec42ae, BRF_GRA | CPS1_TILES },
+	{ "1.bin",        	0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 
-	{ "conv2.u191",        	0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "8a.bin",         0x020000, 0x94778332, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "10.bin",        	0x020000, 0xf95bc505, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "9.bin",        	0x020000, 0xd1e452d3, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "8b.bin",        	0x020000, 0x155824a9, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 }, 
 
-	{ "voice.u210",        	0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
-
-	{ "moon-1.c173.u30",   	0x0040000, 0x7e36ec84, BRF_GRA | CPS1_EXTRA_TILES_SF2MKOT_400000 }, 
-	{ "moon-2.c132.u29",   	0x0040000, 0x66403570, BRF_GRA | CPS1_EXTRA_TILES_SF2MKOT_400000 },
-
-	{ "u133.bin",          	0x0010000, 0x13ea1c44, BRF_OPT }, // unknown (bootleg prority?)
+	{ "7.bin",          		0x0010000, 0x13ea1c44, BRF_OPT }, // unknown (bootleg prority?)
+	
+	{ "palce16v8h-25pc-4.1",  	0x000117, 0x98e60919, BRF_OPT }, // plds
+	{ "palce16v8h-25pc-4.2",  	0x000117, 0x7fb1989d, BRF_OPT }, 
 };
 
 STD_ROM_PICK(Sf2amf12)
 STD_ROM_FN(Sf2amf12)
+
+static struct BurnRomInfo Sf2amf13RomDesc[] = {
+	// f205v id 1753
+	// small modification PCB is connected to main at resistor-net with 4 tiny cables (all of them cut off)
+	// connector PCB is etched "LATO COMPONENTI S.E." on component side
+	// main PCB is labeled "OGA", "O.K" and "9453" on component side
+	{ "27.bin", 	    		0x0080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "25.bin", 				0x0080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "26.bin", 	    		0x0020000, 0x6ef18ab4, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "24.bin", 				0x0020000, 0xc95e4443, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "kstviu-2.bin",  			0x0080000, 0x22c9cc8e, BRF_GRA | CPS1_TILES },
+	{ "kstviu-4.bin",  			0x0080000, 0x57213be8, BRF_GRA | CPS1_TILES },
+	{ "kstviu-1.bin",  			0x0080000, 0xba529b4f, BRF_GRA | CPS1_TILES },
+	{ "kstviu-3.bin",  			0x0080000, 0x4b1b33a8, BRF_GRA | CPS1_TILES },
+	{ "ksy-1.bin",     			0x0080000, 0x2c7e2229, BRF_GRA | CPS1_TILES },
+	{ "ksy-3.bin",     			0x0080000, 0xb5548f17, BRF_GRA | CPS1_TILES },
+	{ "kstviu-5.bin",  			0x0080000, 0x14b84312, BRF_GRA | CPS1_TILES },
+	{ "ksy-2.bin",     			0x0080000, 0x5e9cd89a, BRF_GRA | CPS1_TILES },
+	{ "jyg-1.bin",     			0x0080000, 0x994bfa58, BRF_GRA | CPS1_TILES },
+	{ "jyg-3.bin",     			0x0080000, 0x3e66ad9d, BRF_GRA | CPS1_TILES },
+	{ "ksy-4.bin",     			0x0080000, 0xc1befaa8, BRF_GRA | CPS1_TILES },
+	{ "jyg-2.bin",     			0x0080000, 0x0627c831, BRF_GRA | CPS1_TILES },
+	
+	{ "s92_09.bin",     		0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },	  // not present in original dump
+//	{ "jyg-5.bin.maybe.bad",	0x0080000, 0x5b98f225, BRF_PRG | CPS1_Z80_PROGRAM }, 	  // not sure this is correct
+
+	{ "s92_18.bin",     		0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not present in original dump
+	{ "s92_19.bin",     		0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not present in original dump
+//	{ "jyg-4.bin",      		0x0080000, 0x5c9054e3, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not sure this is correct
+
+	{ "29.bin",      			0x0020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "21.bin",      			0x0020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "30.bin",      			0x0020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "22.bin",      			0x0020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+
+	{ "28.bin",   	 			0x0010000, 0x13ea1c44, BRF_OPT }, // unknown
+	
+//  suspect to be a 16C57 due to the fact that a check on programmer gives "bad contact on pin 3,5" which are NC on said PIC 
+	{ "pic16c57.bin.maybe.bad", 0x00026cc, 0x612a8f8b, BRF_OPT | BRF_PRG | CPS1_PIC }, 	// needs redump
+	
+	{ "palce16v8h-25pc-4.1",  	0x000117, 0x22c5006b, BRF_OPT }, // plds
+};
+
+STD_ROM_PICK(Sf2amf13)
+STD_ROM_FN(Sf2amf13)
+
+static struct BurnRomInfo Sf2amf14RomDesc[] = {
+	// f205v id 1767
+	// PCB is labelled: "MES" and "91031A" on component side 
+	{ "4.bin", 	    		0x0080000, 0x03991fba, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "2.bin", 				0x0080000, 0x39f15a1e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.bin", 	    		0x0020000, 0x41068d2c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "1.bin", 				0x0020000, 0xc95e4443, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "kstviu-2.bin",  		0x0080000, 0x22c9cc8e, BRF_GRA | CPS1_TILES },
+	{ "kstviu-4.bin",  		0x0080000, 0x57213be8, BRF_GRA | CPS1_TILES },
+	{ "kstviu-1.bin",  		0x0080000, 0xba529b4f, BRF_GRA | CPS1_TILES },
+	{ "kstviu-3.bin",  		0x0080000, 0x4b1b33a8, BRF_GRA | CPS1_TILES },
+	{ "ksy-1.bin",     		0x0080000, 0x2c7e2229, BRF_GRA | CPS1_TILES },
+	{ "ksy-3.bin",     		0x0080000, 0xb5548f17, BRF_GRA | CPS1_TILES },
+	{ "kstviu-5.bin",  		0x0080000, 0x14b84312, BRF_GRA | CPS1_TILES },
+	{ "ksy-2.bin",     		0x0080000, 0x5e9cd89a, BRF_GRA | CPS1_TILES },
+	{ "jyg-1.bin",     		0x0080000, 0x994bfa58, BRF_GRA | CPS1_TILES },
+	{ "jyg-3.bin",     		0x0080000, 0x3e66ad9d, BRF_GRA | CPS1_TILES },
+	{ "ksy-4.bin",     		0x0080000, 0xc1befaa8, BRF_GRA | CPS1_TILES },
+	{ "jyg-2.bin",     		0x0080000, 0x0627c831, BRF_GRA | CPS1_TILES },
+	
+	{ "s92_09.bin",     	0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },	  // not present in original dump
+//	{ "jyg-5.bin.maybe.bad",0x0080000, 0x5b98f225, BRF_PRG | CPS1_Z80_PROGRAM }, 	  // not sure this is correct
+
+	{ "s92_18.bin",     	0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not present in original dump
+	{ "s92_19.bin",     	0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not present in original dump
+//	{ "jyg-4.bin",      	0x0080000, 0x5c9054e3, BRF_SND | CPS1_OKIM6295_SAMPLES }, // not sure this is correct
+
+	{ "e.bin",      		0x0020000, 0x6de44671, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "g.bin",      		0x0020000, 0xe8f14362, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "f.bin",      		0x0020000, 0xbf0cd819, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+	{ "h.bin",      		0x0020000, 0x76f9f91f, BRF_GRA | CPS1_EXTRA_TILES_SF2B_400000 },
+
+	{ "27c512.bin",   	 	0x0010000, 0x13ea1c44, BRF_OPT }, // unknown
+};
+
+STD_ROM_PICK(Sf2amf14)
+STD_ROM_FN(Sf2amf14)
 
 static struct BurnRomInfo Sf2megaRomDesc[] = {
 	// this set was previously known as sf2m2
@@ -13778,12 +14005,14 @@ static struct BurnRomInfo Sf2megaRomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2mega)
@@ -13813,69 +14042,68 @@ static struct BurnRomInfo Sf2mega2RomDesc[] = {
 
 	{ "s92_18.bin",   0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",   0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2mega2)
 STD_ROM_FN(Sf2mega2)
 
 static struct BurnRomInfo Sf2mdRomDesc[] = {
-	{ "27040.6",      	  0x0080000, 0x16c6372e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "27040.5",      	  0x0080000, 0x137d5f2e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "27010.4", 	  	  0x0020000, 0x8226c11c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "27010.3", 	  	  0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27040.6",      	0x0080000, 0x16c6372e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27040.5",      	0x0080000, 0x137d5f2e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27010.4", 	  	0x0020000, 0x8226c11c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27010.3", 	  	0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	
-	{ "tat-01.bin",   	  0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES },
-	{ "tat-03.bin",   	  0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES },
-	{ "tat-05.bin",   	  0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES },
-	{ "tat-07.bin",   	  0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES },
-	{ "tat-02.bin",   	  0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES },
-	{ "tat-04.bin",   	  0x0080000, 0x32518120, BRF_GRA | CPS1_TILES },
-	{ "tat-06.bin",   	  0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES },	
-	{ "tat-08.bin",   	  0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES },	
-	{ "tat-09.bin",   	  0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
-	{ "tat-10.bin",   	  0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
-	{ "tat-11.bin",   	  0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },	
-	{ "tat-12.bin",   	  0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES },
+	{ "tat-01.bin",   	0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES },
+	{ "tat-03.bin",   	0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES },
+	{ "tat-05.bin",   	0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES },
+	{ "tat-07.bin",   	0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES },
+	{ "tat-02.bin",   	0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES },
+	{ "tat-04.bin",   	0x0080000, 0x32518120, BRF_GRA | CPS1_TILES },
+	{ "tat-06.bin",   	0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES },	
+	{ "tat-08.bin",   	0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES },	
+	{ "tat-09.bin",   	0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
+	{ "tat-10.bin",   	0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
+	{ "tat-11.bin",   	0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },	
+	{ "tat-12.bin",   	0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES },
 
-	{ "27512.1", 	  	  0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "27512.1", 	  	0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "27020.2", 	  	  0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "27020.2", 	  	0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	
-	{ "gal20v8.68kadd",   0x000157, 0xb7fbcc26, BRF_OPT },
+	{ "gal20v8.68kadd", 0x000157, 0xb7fbcc26, BRF_OPT },
 };
 
 STD_ROM_PICK(Sf2md)
 STD_ROM_FN(Sf2md)
 
 static struct BurnRomInfo Sf2mdtRomDesc[] = {
-	{ "3.ic172",      0x0080000, 0x5301b41f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "1.ic171",      0x0080000, 0xc1c803f6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "4.ic176",      0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "2.ic175",      0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.ic172",      	0x0080000, 0x5301b41f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "1.ic171",      	0x0080000, 0xc1c803f6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.ic176",      	0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "2.ic175",      	0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "7.ic90",       0x0080000, 0x896eaf48, BRF_GRA | CPS1_TILES },
-	{ "13.ic89",      0x0080000, 0x305dd72a, BRF_GRA | CPS1_TILES },	
-	{ "10.ic88",      0x0080000, 0xef3f5be8, BRF_GRA | CPS1_TILES },	
-	{ "16.ic87",      0x0080000, 0xe57f6db9, BRF_GRA | CPS1_TILES },
-	{ "6.ic91",       0x0080000, 0x054cd5c4, BRF_GRA | CPS1_TILES },
-	{ "12.ic92",      0x0080000, 0x87e069e8, BRF_GRA | CPS1_TILES },
-	{ "9.ic93",       0x0080000, 0x818ca33d, BRF_GRA | CPS1_TILES },	
-	{ "15.ic94",      0x0080000, 0x5dfb44d1, BRF_GRA | CPS1_TILES },
-	{ "8.ic86",       0x0080000, 0x34bbb3fa, BRF_GRA | CPS1_TILES },
-	{ "14.ic85",      0x0080000, 0x7d9f1a67, BRF_GRA | CPS1_TILES },
-	{ "11.ic84",      0x0080000, 0xcea6d1d6, BRF_GRA | CPS1_TILES },	
-	{ "17.ic83",      0x0080000, 0x91a9a05d, BRF_GRA | CPS1_TILES },
+	{ "7.ic90",       	0x0080000, 0x896eaf48, BRF_GRA | CPS1_TILES },
+	{ "13.ic89",      	0x0080000, 0x305dd72a, BRF_GRA | CPS1_TILES },	
+	{ "10.ic88",      	0x0080000, 0xef3f5be8, BRF_GRA | CPS1_TILES },	
+	{ "16.ic87",      	0x0080000, 0xe57f6db9, BRF_GRA | CPS1_TILES },
+	{ "6.ic91",       	0x0080000, 0x054cd5c4, BRF_GRA | CPS1_TILES },
+	{ "12.ic92",      	0x0080000, 0x87e069e8, BRF_GRA | CPS1_TILES },
+	{ "9.ic93",       	0x0080000, 0x818ca33d, BRF_GRA | CPS1_TILES },	
+	{ "15.ic94",      	0x0080000, 0x5dfb44d1, BRF_GRA | CPS1_TILES },
+	{ "8.ic86",       	0x0080000, 0x34bbb3fa, BRF_GRA | CPS1_TILES },
+	{ "14.ic85",      	0x0080000, 0x7d9f1a67, BRF_GRA | CPS1_TILES },
+	{ "11.ic84",      	0x0080000, 0xcea6d1d6, BRF_GRA | CPS1_TILES },	
+	{ "17.ic83",      	0x0080000, 0x91a9a05d, BRF_GRA | CPS1_TILES },
 
-	{ "5.ic26",       0x0020000, 0x17d5ba8a, BRF_PRG | CPS1_Z80_PROGRAM },
-	
-	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo
+	{ "5.ic26",       	0x0020000, 0x17d5ba8a, BRF_PRG | CPS1_Z80_PROGRAM },
 };
 
 STD_ROM_PICK(Sf2mdt)
@@ -13899,37 +14127,31 @@ static struct BurnRomInfo Sf2mdtaRomDesc[] = {
 	{ "pf9 sh001.ic91", 0x0100000, 0x9f25090e, BRF_GRA | CPS1_TILES },
 
 	{ "1.ic28",         0x0020000, 0xd5bee9cc, BRF_PRG | CPS1_Z80_PROGRAM },
-	
-	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo
 };
 
 STD_ROM_PICK(Sf2mdta)
 STD_ROM_FN(Sf2mdta)
 
 static struct BurnRomInfo Sf2mdtbRomDesc[] = {
-	{ "3.ic172", 	  0x0080000, 0x0bdb9da2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "1.ic171", 	  0x0080000, 0xd88abbce, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "4.ic176", 	  0x0020000, 0x74844192, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "2.ic175", 	  0x0020000, 0xbd98ff15, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.ic172", 	  	0x0080000, 0x0bdb9da2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "1.ic171", 	  	0x0080000, 0xd88abbce, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.ic176", 	  	0x0020000, 0x74844192, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "2.ic175", 	  	0x0020000, 0xbd98ff15, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "7.ic90",       0x0080000, 0x896eaf48, BRF_GRA | CPS1_TILES },
-	{ "13.ic89",      0x0080000, 0x305dd72a, BRF_GRA | CPS1_TILES },	
-	{ "10.ic88",      0x0080000, 0xef3f5be8, BRF_GRA | CPS1_TILES },	
-	{ "16.ic87",      0x0080000, 0xe57f6db9, BRF_GRA | CPS1_TILES },
-	{ "6.ic91",       0x0080000, 0x054cd5c4, BRF_GRA | CPS1_TILES },
-	{ "12.ic92",      0x0080000, 0x87e069e8, BRF_GRA | CPS1_TILES },
-	{ "9.ic93",       0x0080000, 0x818ca33d, BRF_GRA | CPS1_TILES },	
-	{ "15.ic94",      0x0080000, 0x5dfb44d1, BRF_GRA | CPS1_TILES },
-	{ "8.ic86",       0x0080000, 0x34bbb3fa, BRF_GRA | CPS1_TILES },
-	{ "14.ic85",      0x0080000, 0x7d9f1a67, BRF_GRA | CPS1_TILES },
-	{ "11.ic84",      0x0080000, 0xcea6d1d6, BRF_GRA | CPS1_TILES },	
-	{ "17.ic83",      0x0080000, 0x91a9a05d, BRF_GRA | CPS1_TILES },
+	{ "7.ic90",       	0x0080000, 0x896eaf48, BRF_GRA | CPS1_TILES },
+	{ "13.ic89",      	0x0080000, 0x305dd72a, BRF_GRA | CPS1_TILES },	
+	{ "10.ic88",      	0x0080000, 0xef3f5be8, BRF_GRA | CPS1_TILES },	
+	{ "16.ic87",      	0x0080000, 0xe57f6db9, BRF_GRA | CPS1_TILES },
+	{ "6.ic91",       	0x0080000, 0x054cd5c4, BRF_GRA | CPS1_TILES },
+	{ "12.ic92",      	0x0080000, 0x87e069e8, BRF_GRA | CPS1_TILES },
+	{ "9.ic93",       	0x0080000, 0x818ca33d, BRF_GRA | CPS1_TILES },	
+	{ "15.ic94",      	0x0080000, 0x5dfb44d1, BRF_GRA | CPS1_TILES },
+	{ "8.ic86",       	0x0080000, 0x34bbb3fa, BRF_GRA | CPS1_TILES },
+	{ "14.ic85",      	0x0080000, 0x7d9f1a67, BRF_GRA | CPS1_TILES },
+	{ "11.ic84",      	0x0080000, 0xcea6d1d6, BRF_GRA | CPS1_TILES },	
+	{ "17.ic83",      	0x0080000, 0x91a9a05d, BRF_GRA | CPS1_TILES },
 
-	{ "5.ic28",       0x0020000, 0xd5bee9cc, BRF_PRG | CPS1_Z80_PROGRAM },
-	
-	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo
+	{ "5.ic28",       	0x0020000, 0xd5bee9cc, BRF_PRG | CPS1_Z80_PROGRAM },
 };
 
 STD_ROM_PICK(Sf2mdtb)
@@ -13951,9 +14173,6 @@ static struct BurnRomInfo Sf2mdtcRomDesc[] = {
 	{ "pf9-sh001.ic84", 0x0100000, 0x9f25090e, BRF_GRA | CPS1_TILES },
 
 	{ "3.ic26",         0x0020000, 0xd5bee9cc, BRF_PRG | CPS1_Z80_PROGRAM },
-	
-	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo
 };
 
 STD_ROM_PICK(Sf2mdtc)
@@ -13976,9 +14195,6 @@ static struct BurnRomInfo Sf2cebRomDesc[] = {
 	{ "pf9-sh001.ic84", 0x0100000, 0x9f25090e, BRF_GRA | CPS1_TILES },
 
 	{ "3.ic28",         0x0020000, 0xd5bee9cc, BRF_PRG | CPS1_Z80_PROGRAM },
-	
-	// extra graphics roms are required (see bike's on Chun-Li stage), but using the current dumps we have lead to a corrupt
-	// Street Fighter II logo
 };
 
 STD_ROM_PICK(Sf2ceb)
@@ -14037,27 +14253,27 @@ STD_ROM_FN(Sf2ceb5)
 
 static struct BurnRomInfo Sf2ceeablRomDesc[] = {
 	// this set was previously known as sf2m16
-	{ "joe-922",      0x0080000, 0xe927556c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "joe-921",      0x0080000, 0x8632e786, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "sf2m16_4.bin", 0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "sf2m16_3.bin", 0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "joe-922",      	0x0080000, 0xe927556c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "joe-921",      	0x0080000, 0x8632e786, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27010.4", 		0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "27010.3", 		0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	
-	{ "tat-01.bin",   0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES },
-	{ "tat-03.bin",   0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES },
-	{ "tat-05.bin",   0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES },
-	{ "tat-07.bin",   0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES },
-	{ "tat-02.bin",   0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES },
-	{ "tat-04.bin",   0x0080000, 0x32518120, BRF_GRA | CPS1_TILES },
-	{ "tat-06.bin",   0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES },	
-	{ "tat-08.bin",   0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES },	
-	{ "tat-09.bin",   0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
-	{ "tat-10.bin",   0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
-	{ "tat-11.bin",   0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },	
-	{ "tat-12.bin",   0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES },
+	{ "tat-01.bin",   	0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES },
+	{ "tat-03.bin",   	0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES },
+	{ "tat-05.bin",   	0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES },
+	{ "tat-07.bin",   	0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES },
+	{ "tat-02.bin",   	0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES },
+	{ "tat-04.bin",   	0x0080000, 0x32518120, BRF_GRA | CPS1_TILES },
+	{ "tat-06.bin",   	0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES },	
+	{ "tat-08.bin",   	0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES },	
+	{ "tat-09.bin",   	0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
+	{ "tat-10.bin",   	0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
+	{ "tat-11.bin",   	0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },	
+	{ "tat-12.bin",   	0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES },
 
-	{ "sf2m16_1.bin", 0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "27512.1", 		0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "sf2m16_2.bin", 0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "27020.2", 		0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 };
 
 STD_ROM_PICK(Sf2ceeabl)
@@ -14090,6 +14306,45 @@ static struct BurnRomInfo Sf2ceeab2RomDesc[] = {
 
 STD_ROM_PICK(Sf2ceeab2)
 STD_ROM_FN(Sf2ceeab2)
+
+static struct BurnRomInfo Sf2ceeab3RomDesc[] = {
+	{ "6.bin",        0x0080000, 0xe927556c, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.bin",        0x0080000, 0x8632e786, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "5.bin",    	  0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3.bin",    	  0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },	
+
+	{ "24.e7",        0x0040000, 0xa8b5633a, BRF_GRA | CPS1_TILES },
+	{ "20.e3",        0x0040000, 0x8d5d0045, BRF_GRA | CPS1_TILES },
+	{ "25.e8",        0x0040000, 0x72e923df, BRF_GRA | CPS1_TILES },
+	{ "21.e4",        0x0040000, 0x55c2b455, BRF_GRA | CPS1_TILES },
+	{ "14.c7",        0x0040000, 0x5db24ca7, BRF_GRA | CPS1_TILES },
+	{ "10.c3",        0x0040000, 0xeb48f7f2, BRF_GRA | CPS1_TILES },
+	{ "15.c8",        0x0040000, 0x9a96be48, BRF_GRA | CPS1_TILES },
+	{ "11.c4",        0x0040000, 0xff36859e, BRF_GRA | CPS1_TILES },
+	{ "26.e9",    	  0x0040000, 0x82e8e384, BRF_GRA | CPS1_TILES },
+	{ "22.e5",        0x0040000, 0x4109d637, BRF_GRA | CPS1_TILES },
+	{ "27.e10", 	  0x0040000, 0x4a3a8d09, BRF_GRA | CPS1_TILES },
+	{ "23.e6",        0x0040000, 0xef9c2d4d, BRF_GRA | CPS1_TILES },
+	{ "16.c9",        0x0040000, 0x1fd98ad0, BRF_GRA | CPS1_TILES },
+	{ "12.c5",        0x0040000, 0x5d21d8b3, BRF_GRA | CPS1_TILES },
+	{ "17.c10",       0x0040000, 0xa917a922, BRF_GRA | CPS1_TILES },
+	{ "13.c6",        0x0040000, 0xbc937c96, BRF_GRA | CPS1_TILES },
+	{ "6.a8",         0x0040000, 0x023baa18, BRF_GRA | CPS1_TILES },
+	{ "1.a3",         0x0040000, 0x877b2b18, BRF_GRA | CPS1_TILES },
+	{ "8.a10",        0x0040000, 0x26fb340c, BRF_GRA | CPS1_TILES },
+	{ "4.a6",         0x0040000, 0xf2c400b4, BRF_GRA | CPS1_TILES },
+	{ "5.a7",         0x0040000, 0xa6ad6ef3, BRF_GRA | CPS1_TILES },
+	{ "2.a4",         0x0040000, 0x144aa4c9, BRF_GRA | CPS1_TILES },
+	{ "7.a9",         0x0040000, 0xf56085ba, BRF_GRA | CPS1_TILES },
+	{ "3.a5",         0x0040000, 0x8053335d, BRF_GRA | CPS1_TILES },
+
+	{ "1.bin", 		  0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "2.bin", 		  0x0040000, 0x3c09ff5d, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Sf2ceeab3)
+STD_ROM_FN(Sf2ceeab3)
 
 static struct BurnRomInfo Sf2ceb2RomDesc[] = {
 	// f205v id 1395
@@ -14265,10 +14520,9 @@ STD_ROM_PICK(Sf2ceuabl)
 STD_ROM_FN(Sf2ceuabl)
 
 static struct BurnRomInfo Sf2ceuab2RomDesc[] = {
-	// this set was previously known as sf2m8
-//	This was the original dump which was bad
-//	{ "u221.epr",     0x0020000, 0xd8276822, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-
+	// This set was previously known as sf2m8
+	// This was the original dump which was bad
+	// { "u221.epr",     0x0020000, 0xd8276822, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "k4-222",       0x0080000, 0xdb567b66, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "k4-196",       0x0080000, 0x95ea597e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "u221.epr",     0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
@@ -14298,28 +14552,28 @@ STD_ROM_FN(Sf2ceuab2)
 
 static struct BurnRomInfo Sf2ceuab3RomDesc[] = {
 	// this set was previously known as sf2m8a
-	{ "yyc-2.2",  0x0080000, 0xdb567b66, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
-	{ "yyc-3.4",  0x0080000, 0x95ea597e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
-	{ "yyc-4.1",  0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
-	{ "yyc-5.3",  0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
+	{ "yyc-2.2",  	0x0080000, 0xdb567b66, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
+	{ "yyc-3.4",  	0x0080000, 0x95ea597e, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
+	{ "yyc-4.1",  	0x0020000, 0x1073b7b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
+	{ "yyc-5.3",  	0x0020000, 0x924c6ce2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
 	
-	{ "yyc-a",    0x0100000, 0x8242621f, BRF_GRA | CPS1_TILES },
-	{ "yyc-c",    0x0100000, 0x0793a960, BRF_GRA | CPS1_TILES }, 
-	{ "yyc-b",    0x0100000, 0xb0159973, BRF_GRA | CPS1_TILES }, 
-	{ "yyc-d",    0x0100000, 0x92a8b572, BRF_GRA | CPS1_TILES },	
-	{ "yyc-e",    0x0100000, 0x61138469, BRF_GRA | CPS1_TILES },
-	{ "yyc-f",    0x0100000, 0xb800dcdb, BRF_GRA | CPS1_TILES },	
+	{ "yyc-a",    	0x0100000, 0x8242621f, BRF_GRA | CPS1_TILES },
+	{ "yyc-c",    	0x0100000, 0x0793a960, BRF_GRA | CPS1_TILES }, 
+	{ "yyc-b",    	0x0100000, 0xb0159973, BRF_GRA | CPS1_TILES }, 
+	{ "yyc-d",    	0x0100000, 0x92a8b572, BRF_GRA | CPS1_TILES },	
+	{ "yyc-e",    	0x0100000, 0x61138469, BRF_GRA | CPS1_TILES },
+	{ "yyc-f",    	0x0100000, 0xb800dcdb, BRF_GRA | CPS1_TILES },	
 
-	{ "a-15.5",   0x0010000, 0x6f07d2cb, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "a-15.5",   	0x0010000, 0x6f07d2cb, BRF_PRG | CPS1_Z80_PROGRAM },
 	
-	{ "b-16.6",   0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "b-16.6",   	0x0040000, 0x6cfffb11, BRF_SND | CPS1_OKIM6295_SAMPLES },
 		
-	{ "yyc-6.1",  0x0020000, 0x94778332, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "yyc-8.9",  0x0020000, 0xf95bc505, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "yyc-7.10", 0x0020000, 0xd1e452d3, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
-	{ "yyc-9.8",  0x0020000, 0x155824a9, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "yyc-6.1",  	0x0020000, 0x94778332, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "yyc-8.9",  	0x0020000, 0xf95bc505, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "yyc-7.10", 	0x0020000, 0xd1e452d3, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "yyc-9.8",  	0x0020000, 0x155824a9, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	
-	{ "c-27.7",   0x0010000, 0x13ea1c44, BRF_OPT }, // unknown
+	{ "c-27.7",   	0x0010000, 0x13ea1c44, BRF_OPT }, // unknown
 };
 
 STD_ROM_PICK(Sf2ceuab3)
@@ -14386,9 +14640,9 @@ static struct BurnRomInfo Sf2reRomDesc[] = {
 STD_ROM_PICK(Sf2re)
 STD_ROM_FN(Sf2re)
 
-// PCB is marked: "100P003" and "054-034" on solder side
-// PCB is labelled: "10037SI 7", "STREET FIGHTER 2" and "STREET FIGHTER II MAGIC TURBO" on component side
 static struct BurnRomInfo Sf2mkotRomDesc[] = {
+	// PCB is marked: "100P003" and "054-034" on solder side
+	// PCB is labelled: "10037SI 7", "STREET FIGHTER 2" and "STREET FIGHTER II MAGIC TURBO" on component side
 	{ "u222.bin",     	   	0x0080000, 0xb01a94b6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "u196.bin",     	   	0x0080000, 0x20461c47, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "u221.bin",     	   	0x0020000, 0x64e6e091, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
@@ -14444,6 +14698,44 @@ static struct BurnRomInfo Sf2mkotRomDesc[] = {
 
 STD_ROM_PICK(Sf2mkot)
 STD_ROM_FN(Sf2mkot)
+
+static struct BurnRomInfo Sf2mkot2RomDesc[] = {
+	// f205v id 1761
+	// PCB is marked "STF" on component side
+	// PCB is labeled "30-04-92" on component side
+	{ "7.bin",     	  0x0080000, 0xc57501cb, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "5.bin",     	  0x0080000, 0x31d2691b, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "6.bin",     	  0x0020000, 0x64e6e091, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "4.bin",     	  0x0020000, 0xc95e4443, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "11.bin",       0x0080000, 0xa887f7d4, BRF_GRA | CPS1_TILES },
+	{ "13.bin",       0x0080000, 0x79fa8bf0, BRF_GRA | CPS1_TILES },
+	{ "12.bin",       0x0080000, 0x9390ff23, BRF_GRA | CPS1_TILES },
+	{ "14.bin",       0x0080000, 0x6a5f153c, BRF_GRA | CPS1_TILES },
+	{ "19.bin",       0x0080000, 0xafb3b589, BRF_GRA | CPS1_TILES },
+	{ "21.bin",       0x0080000, 0x32518120, BRF_GRA | CPS1_TILES },
+	{ "20.bin",       0x0080000, 0x90f2053e, BRF_GRA | CPS1_TILES },	
+	{ "22.bin",       0x0080000, 0xc16579ae, BRF_GRA | CPS1_TILES },	
+	{ "15.bin",       0x0080000, 0x169d85a6, BRF_GRA | CPS1_TILES },
+	{ "23.bin",       0x0080000, 0x0c638630, BRF_GRA | CPS1_TILES },
+	{ "16.bin",       0x0080000, 0x32a3a841, BRF_GRA | CPS1_TILES },	
+	{ "24.bin",       0x0080000, 0x6ee19b94, BRF_GRA | CPS1_TILES },
+
+	{ "3.bin",        0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "2.bin",        0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "1.bin",        0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	
+	{ "9.bin",        0x0020000, 0x94778332, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "17.bin",       0x0020000, 0x748f2dd0, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "10.bin",       0x0020000, 0xd1e452d3, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+	{ "18.bin",       0x0020000, 0x155824a9, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+
+	{ "8.bin",        0x0010000, 0x13ea1c44, BRF_OPT }, // unknown (bootleg prority?)
+};
+
+STD_ROM_PICK(Sf2mkot2)
+STD_ROM_FN(Sf2mkot2)
 
 static struct BurnRomInfo Sf2ceuab4RomDesc[] = {
 	{ "7.bin",         0x080000, 0xdb567b66, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP }, // same as sf2m8
@@ -14819,12 +15111,14 @@ static struct BurnRomInfo Sf2tlonaRomDesc[] = {
 
 	{ "s92_18.bin",    	0x020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",    	0x020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY		
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        	0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        	0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        	0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       	0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2tlona)
@@ -14854,12 +15148,14 @@ static struct BurnRomInfo Sf2tlonbRomDesc[] = {
 
 	{ "s92_18.bin",    	0x020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",    	0x020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        	0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        	0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        	0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       	0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2tlonb)
@@ -14888,12 +15184,14 @@ static struct BurnRomInfo Sf2tloncRomDesc[] = {
 
 	{ "s92_18.bin",    	0x020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
 	{ "s92_19.bin",    	0x020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	
+
+#if !defined ROM_VERIFY	
 	// these weren't present with this set, but extra graphics are required (see bike's on Chun-Li stage)
 	{ "6.amf",        	0x020000, 0x3a85a275, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "9.amf",        	0x020000, 0x9156472f, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "8.amf",        	0x020000, 0xecdb083b, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
 	{ "10.amf",       	0x020000, 0x8fea8384, BRF_GRA | CPS1_EXTRA_TILES_SF2EBBL_400000 },
+#endif
 };
 
 STD_ROM_PICK(Sf2tlonc)
@@ -16246,37 +16544,6 @@ static struct BurnRomInfo WofhfhRomDesc[] = {
 STD_ROM_PICK(Wofhfh)
 STD_ROM_FN(Wofhfh)
 
-static struct BurnRomInfo WofhRomDesc[] = {
-	{ "sgyx.800",       0x100000, 0x3703a650, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-
-	{ "sgyx-1.160",     0x200000, 0xa60be9f6, BRF_GRA | CPS1_TILES },
-	{ "sgyx-2.160",     0x200000, 0x6ad9d048, BRF_GRA | CPS1_TILES },
-	
-	// These sound roms are taken from sgyxz
-	{ "sgyxz_snd2.bin", 0x010000, 0x210c376f, BRF_PRG | CPS1_Z80_PROGRAM },
-
-	{ "sgyxz_snd1.bin", 0x040000, 0xc15ac0f2, BRF_SND | CPS1_OKIM6295_SAMPLES },
-};
-
-STD_ROM_PICK(Wofh)
-STD_ROM_FN(Wofh)
-
-static struct BurnRomInfo WofhaRomDesc[] = {
-	{ "fg-c.040",       0x080000, 0xd046fc86, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "fg-a.040",       0x080000, 0xf176ee8f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-
-	{ "sgyx-1.160",     0x200000, 0xa60be9f6, BRF_GRA | CPS1_TILES },
-	{ "sgyx-2.160",     0x200000, 0x6ad9d048, BRF_GRA | CPS1_TILES },
-	
-	// These sound roms are taken from sgyxz
-	{ "sgyxz_snd2.bin", 0x010000, 0x210c376f, BRF_PRG | CPS1_Z80_PROGRAM },
-
-	{ "sgyxz_snd1.bin", 0x040000, 0xc15ac0f2, BRF_SND | CPS1_OKIM6295_SAMPLES },
-};
-
-STD_ROM_PICK(Wofha)
-STD_ROM_FN(Wofha)
-
 static struct BurnRomInfo SgyxzRomDesc[] = {
 	{ "sgyxz_prg2.bin", 0x080000, 0x95429c83, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 	{ "sgyxz_prg1.bin", 0x080000, 0xd8511929, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
@@ -16292,79 +16559,36 @@ static struct BurnRomInfo SgyxzRomDesc[] = {
 STD_ROM_PICK(Sgyxz)
 STD_ROM_FN(Sgyxz)
 
-static struct BurnRomInfo Wof3jsRomDesc[] = {
-	{ "3js_23.rom",    0x080000, 0x1ebb76da, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-	{ "3js_22.rom",    0x080000, 0xf41d6153, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP }, // First and second halves identical
-	{ "3js_24.rom",    0x020000, 0x06ead409, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "3js_28.rom",    0x020000, 0x8ba934e6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+static struct BurnRomInfo SgyxzaRomDesc[] = {
+	{ "sgyx.800",       0x100000, 0x3703a650, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
 
-	{ "tk2_gfx1.rom",  0x080000, 0x0d9cb9bf, BRF_GRA | CPS1_TILES },
-	{ "tk2_gfx3.rom",  0x080000, 0x45227027, BRF_GRA | CPS1_TILES },
-	{ "tk2_gfx2.rom",  0x080000, 0xc5ca2460, BRF_GRA | CPS1_TILES },
-	{ "tk2_gfx4.rom",  0x080000, 0xe349551c, BRF_GRA | CPS1_TILES },
-	{ "3js_gfx5.rom",  0x080000, 0x94b58f82, BRF_GRA | CPS1_TILES },
-	{ "3js_gfx7.rom",  0x080000, 0xdf4fb386, BRF_GRA | CPS1_TILES },
-	{ "3js_gfx6.rom",  0x080000, 0xc22c5bd8, BRF_GRA | CPS1_TILES },
-	{ "3js_gfx8.rom",  0x080000, 0xf9cfd08b, BRF_GRA | CPS1_TILES },
-
-	{ "3js_09.rom",    0x010000, 0x21ce044c, BRF_PRG | CPS1_Z80_PROGRAM },
+	{ "sgyxz_gfx1.bin", 0x200000, 0xa60be9f6, BRF_GRA | CPS1_TILES },
+	{ "sgyxz_gfx2.bin", 0x200000, 0x6ad9d048, BRF_GRA | CPS1_TILES },
 	
-	{ "3js_18.rom",    0x020000, 0xac6e307d, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "3js_19.rom",    0x020000, 0x068741db, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	// These sound roms are taken from sgyxz
+	{ "sgyxz_snd2.bin", 0x010000, 0x210c376f, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "sgyxz_snd1.bin", 0x040000, 0xc15ac0f2, BRF_SND | CPS1_OKIM6295_SAMPLES },
 };
 
-STD_ROM_PICK(Wof3js)
-STD_ROM_FN(Wof3js)
+STD_ROM_PICK(Sgyxza)
+STD_ROM_FN(Sgyxza)
 
-static struct BurnRomInfo Wof3jsaRomDesc[] = {
-	{ "cx2.040",       0x080000, 0xc01a6d2f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "cx1.040",       0x080000, 0xfd95e677, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+static struct BurnRomInfo SgyxzbRomDesc[] = {
+	{ "fg-c.040",       0x080000, 0xd046fc86, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "fg-a.040",       0x080000, 0xf176ee8f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
 
-	{ "tx-a.160",      0x200000, 0xae348da2, BRF_GRA | CPS1_TILES },
-	{ "tx-b.160",      0x200000, 0x384a6db0, BRF_GRA | CPS1_TILES },
-
-	// These sound roms are taken from wofhfh, this set looks it uses psound
-	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
-
-	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
-};
-
-STD_ROM_PICK(Wof3jsa)
-STD_ROM_FN(Wof3jsa)
-
-static struct BurnRomInfo Wof3sjRomDesc[] = {
-	{ "k6b.040",       0x080000, 0x7b365108, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-	{ "k6a.040",       0x080000, 0x10488a51, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
-
-	{ "k6a.160",       0x200000, 0xa121180d, BRF_GRA | CPS1_TILES },
-	{ "k6b.160",       0x200000, 0xa4db96c4, BRF_GRA | CPS1_TILES },
+	{ "sgyxz_gfx1.bin", 0x200000, 0xa60be9f6, BRF_GRA | CPS1_TILES },
+	{ "sgyxz_gfx2.bin", 0x200000, 0x6ad9d048, BRF_GRA | CPS1_TILES },
 	
-	// These sound roms are taken from wofhfh, this set looks it uses psound
-	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
+	// These sound roms are taken from sgyxz
+	{ "sgyxz_snd2.bin", 0x010000, 0x210c376f, BRF_PRG | CPS1_Z80_PROGRAM },
 
-	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "sgyxz_snd1.bin", 0x040000, 0xc15ac0f2, BRF_SND | CPS1_OKIM6295_SAMPLES },
 };
 
-STD_ROM_PICK(Wof3sj)
-STD_ROM_FN(Wof3sj)
-
-static struct BurnRomInfo Wof3sjaRomDesc[] = {
-	{ "3js.800",       0x100000, 0x812f9200, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-
-	{ "k6a.160",       0x200000, 0xa121180d, BRF_GRA | CPS1_TILES },
-	{ "k6b.160",       0x200000, 0xa4db96c4, BRF_GRA | CPS1_TILES },
-	
-	// These sound roms are taken from wofhfh, this set looks it uses psound
-	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
-
-	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
-	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
-};
-
-STD_ROM_PICK(Wof3sja)
-STD_ROM_FN(Wof3sja)
+STD_ROM_PICK(Sgyxzb)
+STD_ROM_FN(Sgyxzb)
 
 static struct BurnRomInfo WofsjRomDesc[] = {
 	{ "c-c47b.040",    0x080000, 0xb1809761, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
@@ -16431,12 +16655,109 @@ static struct BurnRomInfo WofsjbRomDesc[] = {
 	{ "tk2-q3.3k",     0x080000, 0xbfcf6f52, BRF_SND },
 	{ "tk2-q4.4k",     0x080000, 0x36642e88, BRF_SND },
 
-	// using the sound roms from wofhfh or wof3js doesn't give the right result
+	// using the sound roms from wofhfh or wofsjs doesn't give the right result
 	// it doesn't use Q-Sound either
 };
 
 STD_ROM_PICK(Wofsjb)
 STD_ROM_FN(Wofsjb)
+
+static struct BurnRomInfo WofsjsRomDesc[] = {
+	{ "3js_23.rom",    0x080000, 0x1ebb76da, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "3js_22.rom",    0x080000, 0xf41d6153, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP }, // First and second halves identical
+	{ "3js_24.rom",    0x020000, 0x06ead409, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3js_28.rom",    0x020000, 0x8ba934e6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "tk2_gfx1.rom",  0x080000, 0x0d9cb9bf, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx3.rom",  0x080000, 0x45227027, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx2.rom",  0x080000, 0xc5ca2460, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx4.rom",  0x080000, 0xe349551c, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx5.rom",  0x080000, 0x94b58f82, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx7.rom",  0x080000, 0xdf4fb386, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx6.rom",  0x080000, 0xc22c5bd8, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx8.rom",  0x080000, 0xf9cfd08b, BRF_GRA | CPS1_TILES },
+
+	{ "3js_09.rom",    0x010000, 0x21ce044c, BRF_PRG | CPS1_Z80_PROGRAM },
+	
+	{ "3js_18.rom",    0x020000, 0xac6e307d, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "3js_19.rom",    0x020000, 0x068741db, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Wofsjs)
+STD_ROM_FN(Wofsjs)
+
+static struct BurnRomInfo WofsjsaRomDesc[] = {
+	{ "cx2.040",       0x080000, 0xc01a6d2f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "cx1.040",       0x080000, 0xfd95e677, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "tx-a.160",      0x200000, 0xae348da2, BRF_GRA | CPS1_TILES },
+	{ "tx-b.160",      0x200000, 0x384a6db0, BRF_GRA | CPS1_TILES },
+
+	// These sound roms are taken from wofhfh, this set looks it uses psound
+	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Wofsjsa)
+STD_ROM_FN(Wofsjsa)
+
+static struct BurnRomInfo WofsjsbRomDesc[] = {
+	{ "3j-c040.ok",    0x080000, 0x71eebe02, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "3j-a040.ok",    0x080000, 0xfb5fc689, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "tk2_gfx1.rom",  0x080000, 0x0d9cb9bf, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx3.rom",  0x080000, 0x45227027, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx2.rom",  0x080000, 0xc5ca2460, BRF_GRA | CPS1_TILES },
+	{ "tk2_gfx4.rom",  0x080000, 0xe349551c, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx5.rom",  0x080000, 0x94b58f82, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx7.rom",  0x080000, 0xdf4fb386, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx6.rom",  0x080000, 0xc22c5bd8, BRF_GRA | CPS1_TILES },
+	{ "3js_gfx8.rom",  0x080000, 0xf9cfd08b, BRF_GRA | CPS1_TILES },
+
+	// These sound roms are taken from wofhfh, this set looks it uses psound
+	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Wofsjsb)
+STD_ROM_FN(Wofsjsb)
+
+static struct BurnRomInfo WofssjRomDesc[] = {
+	{ "k6b.040",       0x080000, 0x7b365108, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "k6a.040",       0x080000, 0x10488a51, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "k6a.160",       0x200000, 0xa121180d, BRF_GRA | CPS1_TILES },
+	{ "k6b.160",       0x200000, 0xa4db96c4, BRF_GRA | CPS1_TILES },
+	
+	// These sound roms are taken from wofhfh, this set looks it uses psound
+	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Wofssj)
+STD_ROM_FN(Wofssj)
+
+static struct BurnRomInfo WofssjaRomDesc[] = {
+	{ "3js.800",       0x100000, 0x812f9200, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+
+	{ "k6a.160",       0x200000, 0xa121180d, BRF_GRA | CPS1_TILES },
+	{ "k6b.160",       0x200000, 0xa4db96c4, BRF_GRA | CPS1_TILES },
+	
+	// These sound roms are taken from wofhfh, this set looks it uses psound
+	{ "9",             0x020000, 0x86fe8a97, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "18",            0x020000, 0xc04be720, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "19",            0x020000, 0xfbb8d8c1, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Wofssja)
+STD_ROM_FN(Wofssja)
 
 static struct BurnRomInfo Wofr1blRomDesc[] = {
 	{ "3-f2ab.040",    0x080000, 0x61fd0a01, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
@@ -16453,7 +16774,7 @@ static struct BurnRomInfo Wofr1blRomDesc[] = {
 	{ "11-4171.040",   0x080000, 0x219fd7e2, BRF_GRA | CPS1_TILES },
 	{ "12-f56b.040",   0x080000, 0xefc17c9a, BRF_GRA | CPS1_TILES },
 	
-	// These sound roms are taken from wof3js, this set looks it uses psound
+	// These sound roms are taken from wofsjs, this set looks it uses psound
 	{ "3js_09.rom",    0x010000, 0x21ce044c, BRF_PRG | CPS1_Z80_PROGRAM },
 	
 	{ "3js_18.rom",    0x020000, 0xac6e307d, BRF_SND | CPS1_OKIM6295_SAMPLES },
@@ -16879,6 +17200,7 @@ static const struct GameConfig ConfigTable[] =
 	{ "sf2ebbl"       , CPS_B_17    , mapper_STF29 , 0, NULL                },
 	{ "sf2ebbl2"      , CPS_B_17    , mapper_STF29 , 0, NULL                },
 	{ "sf2ebbl3"      , CPS_B_17    , mapper_STF29 , 0, NULL                },
+	{ "sf2ebbl4"      , CPS_B_17    , mapper_STF29 , 0, NULL                },
 	{ "sf2stt"        , CPS_B_17    , mapper_STF29 , 0, NULL                },
 	{ "sf2ly"         , CPS_B_11    , mapper_STF29 , 0, NULL                },
 	{ "sf2ua"         , CPS_B_17    , mapper_STF29 , 0, NULL                },
@@ -16925,6 +17247,7 @@ static const struct GameConfig ConfigTable[] =
 	{ "sf2cejc"       , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2hfsce"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2mix"        , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
+	{ "sf2pp"         , CPS_B_11    , mapper_STF29 , 0, NULL                },
 	{ "sf2rb"         , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2rb2"        , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2rb3"        , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
@@ -16974,10 +17297,13 @@ static const struct GameConfig ConfigTable[] =
 	{ "sf2amf10"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2amf11"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2amf12"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
+	{ "sf2amf13"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
+	{ "sf2amf14"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2mega"       , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2mega2"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2ceeabl"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                }, // game controls layers at 0x98000c
 	{ "sf2ceeab2"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                }, // game controls layers at 0x98000c
+	{ "sf2ceeab3"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                }, // game controls layers at 0x98000c
 	{ "sf2cejabl"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
 	{ "sf2cejab2"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
 	{ "sf2ceupl"      , HACK_B_1    , mapper_S9263B, 0, NULL                },
@@ -16987,13 +17313,14 @@ static const struct GameConfig ConfigTable[] =
 	{ "sf2cems6a"     , HACK_B_2    , mapper_S9263B, 0, NULL                },
 	{ "sf2re"         , HACK_B_2    , mapper_S9263B, 0, NULL                },
 	{ "sf2mkot"       , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
+	{ "sf2mkot2"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2ceuab4"     , HACK_B_2    , mapper_S9263B, 0, NULL                },
 	{ "sf2ceuab5"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2ceblp"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2ceuab6"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
 	{ "sf2ceuab7"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
-	{ "sf2ceuab8"    , HACK_B_1    , mapper_S9263B, 0, NULL                },
-	{ "sf2ceuab9"    , HACK_B_1    , mapper_S9263B, 0, NULL                },
+	{ "sf2ceuab8"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
+	{ "sf2ceuab9"     , HACK_B_1    , mapper_S9263B, 0, NULL                },
 	{ "sf2ceucbl"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2level"      , HACK_B_2    , mapper_S9263B, 0, NULL                },
 	{ "sf2cebltw"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
@@ -17037,15 +17364,17 @@ static const struct GameConfig ConfigTable[] =
 	{ "wofj"          , CPS_B_21_QS1, mapper_TK263B, 0, wof_decode          },
 	{ "wofa"          , CPS_B_21_DEF, mapper_TK263B, 0, wof_decode          },
 	{ "wofhfh"        , CPS_B_21_DEF, mapper_TK263B, 0, NULL                },
-	{ "wofh"          , HACK_B_6    , mapper_TK263B, 0, NULL                },
-	{ "wofha"         , HACK_B_6    , mapper_TK263B, 0, NULL                },
 	{ "sgyxz"         , HACK_B_6    , mapper_TK263B, 0, NULL                },
-	{ "wof3js"        , CPS_B_21_DEF, mapper_TK263B, 0, NULL                },
-	{ "wof3jsa"       , HACK_B_6    , mapper_TK263B, 0, NULL                },
-	{ "wof3sj"        , HACK_B_6    , mapper_TK263B, 0, NULL                },
-	{ "wof3sja"       , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "sgyxza"        , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "sgyxzb"        , HACK_B_6    , mapper_TK263B, 0, NULL                },
 	{ "wofsj"         , HACK_B_6    , mapper_TK263B, 0, NULL                },
 	{ "wofsja"        , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "wofsjb"        , CPS_B_21_DEF, mapper_TK263B, 0, wof_patch			},
+	{ "wofsjs"        , CPS_B_21_DEF, mapper_TK263B, 0, NULL                },
+	{ "wofsjsa"       , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "wofsjsb"       , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "wofssj"        , HACK_B_6    , mapper_TK263B, 0, NULL                },
+	{ "wofssja"       , HACK_B_6    , mapper_TK263B, 0, NULL                },
 	{ "wofsjb"        , CPS_B_21_DEF, mapper_TK263B, 0, wof_patch			},
 	{ "wofr1bl"       , CPS_B_21_DEF, mapper_TK263B, 0, NULL                }, // game controls layers at 0x98000c
 	{ "wofpic"        , CPS_B_21_DEF, mapper_TK263B, 0, wof_patch			}, // game controls layers at 0x98000c
@@ -19735,6 +20064,20 @@ static INT32 Sf2amf11Init()
 	return TwelveMhzInit();
 }
 
+static INT32 Sf2amf12Init()
+{
+	Cps1GfxLoadCallbackFunction = CpsLoadTilesSf2ceeabl;
+	
+	Cps1LockSpriteList910000 = 1;
+	
+	CpsLayer1XOffs = -12;
+	CpsLayer2XOffs = -14;
+	CpsLayer3XOffs = -16;
+	CpsDrawSpritesInReverse = 1;
+	
+	return TwelveMhzInit();
+}
+
 static INT32 Sf2rulesInit()
 {
 	Cps1GfxLoadCallbackFunction = CpsLoadTilesSf2koryu;
@@ -20427,6 +20770,13 @@ static INT32 Sf2ceeab2Init()
 static INT32 Sf2ceeablInit()
 {
 	Cps1GfxLoadCallbackFunction = CpsLoadTilesSf2ceeabl;
+	
+	return Sf2ceeab2Init();
+}
+
+static INT32 Sf2ceeab3Init()
+{
+	Cps1GfxLoadCallbackFunction = CpsLoadTilesSf2ceblp;
 	
 	return Sf2ceeab2Init();
 }
@@ -21450,7 +21800,7 @@ static INT32 WofhInit()
 {
 	INT32 nRet = 0;
 
-	WofhProtValue = 0xd0;
+	WofhProtValue = 0xD0;
 
 	bCpsUpdatePalEveryFrame = 1;
 	CpsLayer1XOffs = 0xffc0;
@@ -21626,7 +21976,7 @@ UINT8 __fastcall Wof3sjInputReadByte(UINT32 a)
 		}
 		
 		case 0x880e7e: {
-			return 0xff;
+			return WofhProtValue;
 		}
 		
 		default: {
@@ -21674,15 +22024,39 @@ void __fastcall Wof3sjInputWriteWord(UINT32 a, UINT16 d)
 	}
 }
 
+static void WofsjsbPatchCallback()
+{
+	UINT32 patch_fix[] = {
+		0x06dc6, 0x00, 0x06dc8, 0x00, 0x06dcc, 0x00, 0x06dce, 0x00, 0x06dd2, 0x00, 0x06dd4, 0x00, 0x0a233, 0x27, 0x0a54d, 0x1b,
+		0x0a627, 0x1e, 0x0a656, 0x08, 0x0a657, 0x70, 0x0a658, 0x00, 0x0a659, 0x61, 0x0a65a, 0x44, 0x0a65b, 0x03, 0x0a804, 0x00,
+		0x0a806, 0x6e, 0x0a807, 0x09, 0x0fa72, 0x01, 0x0fa74, 0x34, 0x0fa75, 0xa6, 0x10e28, 0x12, 0x10e29, 0xc1, 0x10e2a, 0x12,
+		0x10e2b, 0x8d, 0x10e36, 0x14, 0x10e37, 0xc1, 0x10e38, 0x14, 0x10e39, 0x8d, 0x10fb1, 0x1c, 0x1128b, 0x1c, 0x13cb3, 0x1c,
+		0x148cb, 0x1c, 0x1493c, 0xae, 0x1493d, 0x01, 0x1493e, 0x1e, 0x1493f, 0x00, 0x14941, 0x54, 0x14943, 0x00, 0x1494c, 0x28,
+		0x1494d, 0x54, 0x1494f, 0x00, 0x15293, 0x1c, 0x16d1f, 0x13, 0x16d69, 0x1c, 0x18cc2, 0x7c, 0x18cc3, 0x24, 0x18cc4, 0x90,
+		0x18cc6, 0x18, 0x18cc7, 0xa0, 0x5380d, 0x1c, 0x5eec6, 0xc2
+	};
+
+	for (INT32 i = 0; i < (sizeof(patch_fix) / sizeof(UINT32)) >> 1; i++) {
+		CpsRom[patch_fix[(i << 1) + 0]] = (UINT8)patch_fix[(i << 1) + 1];
+	}
+}
+
 static INT32 Wof3sjInit()
 {
-	Wof3js = 1;
-	bCpsUpdatePalEveryFrame = 1;
+	if (0 == strcmp(BurnDrvGetTextA(DRV_NAME), "wofsjsb")) {
+		WofhProtValue = 0x50;
+		AmendProgRomCallback        = WofsjsbPatchCallback;
+	} else {
+		Wof3js = 1;
+		WofhProtValue = 0xff;
+		Cps1GfxLoadCallbackFunction = CpsLoadTilesHack160;
+	}
+
+	bCpsUpdatePalEveryFrame     = 1;
 	CpsLayer1XOffs = 0xffc0;
 	CpsLayer2XOffs = 0xffc0;
 	CpsLayer3XOffs = 0xffc0;
-	Cps1GfxLoadCallbackFunction = CpsLoadTilesHack160;
-	Cps1ObjGetCallbackFunction = WofhObjGet;
+	Cps1ObjGetCallbackFunction  = WofhObjGet;
 	Cps1ObjDrawCallbackFunction = FcrashObjDraw;
 	
 	INT32 nRet = TwelveMhzInit();
@@ -21704,6 +22078,7 @@ static INT32 Wof3sjInit()
 
 static INT32 WofsjInit()
 {
+	WofhProtValue = 0xff;
 	bCpsUpdatePalEveryFrame = 1;
 	CpsLayer1XOffs = 0xffc0;
 	CpsLayer2XOffs = 0xffc0;
@@ -23071,7 +23446,7 @@ struct BurnDriver BurnDrvCpsKnightsh = {
 
 struct BurnDriver BurnDrvCpsKnightsh2 = {
 	"knightsh2", "knights", NULL, NULL, "1991",
-	"Knights of the Round (bootleg, World 911127)\0", NULL, "bootleg", "CPS1",
+	"Knights of the Round (bootleg, World 911127 alt)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
 	NULL, Knightsh2RomInfo, Knightsh2RomName, NULL, NULL, NULL, NULL, KnightshInputInfo, KnightshDIPInfo,
@@ -23706,6 +24081,16 @@ struct BurnDriver BurnDrvCpsSf2ebbl3 = {
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2ebbl3RomInfo, Sf2ebbl3RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
 	Sf2ebbl3Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsSf2ebbl4 = {
+	"sf2ebbl4", "sf2", NULL, NULL, "1992",
+	"Street Fighter II: The World Warrior (TAB Austria, bootleg, set 5)\0", NULL, "bootleg", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2ebbl4RomInfo, Sf2ebbl4RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
+	Sf2ebbl2Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
@@ -24441,7 +24826,7 @@ struct BurnDriver BurnDrvCpsSf2koryu3 = {
 
 struct BurnDriver BurnDrvCpsSf2amf = {
 	"sf2amf", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 1)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 1)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amfRomInfo, Sf2amfRomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24451,7 +24836,7 @@ struct BurnDriver BurnDrvCpsSf2amf = {
 
 struct BurnDriver BurnDrvCpsSf2amf2 = {
 	"sf2amf2", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 1)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 2)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf2RomInfo, Sf2amf2RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24461,7 +24846,7 @@ struct BurnDriver BurnDrvCpsSf2amf2 = {
 
 struct BurnDriver BurnDrvCpsSf2amf3 = {
 	"sf2amf3", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 2)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 3)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf3RomInfo, Sf2amf3RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24471,7 +24856,7 @@ struct BurnDriver BurnDrvCpsSf2amf3 = {
 
 struct BurnDriver BurnDrvCpsSf2amf4 = {
 	"sf2amf4", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 2)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 4)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf4RomInfo, Sf2amf4RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24481,7 +24866,7 @@ struct BurnDriver BurnDrvCpsSf2amf4 = {
 
 struct BurnDriver BurnDrvCpsSf2amf5 = {
 	"sf2amf5", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 3)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 5)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf5RomInfo, Sf2amf5RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24491,7 +24876,7 @@ struct BurnDriver BurnDrvCpsSf2amf5 = {
 
 struct BurnDriver BurnDrvCpsSf2amf6 = {
 	"sf2amf6", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 4)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 6)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf6RomInfo, Sf2amf6RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24501,7 +24886,7 @@ struct BurnDriver BurnDrvCpsSf2amf6 = {
 
 struct BurnDriver BurnDrvCpsSf2amf7 = {
 	"sf2amf7", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 5)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 7)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf7RomInfo, Sf2amf7RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24511,7 +24896,7 @@ struct BurnDriver BurnDrvCpsSf2amf7 = {
 
 struct BurnDriver BurnDrvCpsSf2amf8 = {
 	"sf2amf8", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 6)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (Anno Test Rom, bootleg)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf8RomInfo, Sf2amf8RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24521,7 +24906,7 @@ struct BurnDriver BurnDrvCpsSf2amf8 = {
 
 struct BurnDriver BurnDrvCpsSf2amf9 = {
 	"sf2amf9", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Alpha Magic-F, bootleg, set 7)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 8)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf9RomInfo, Sf2amf9RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24531,7 +24916,7 @@ struct BurnDriver BurnDrvCpsSf2amf9 = {
 
 struct BurnDriver BurnDrvCpsSf2amf10 = {
 	"sf2amf10", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 3)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 9)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf10RomInfo, Sf2amf10RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
@@ -24551,11 +24936,31 @@ struct BurnDriver BurnDrvCpsSf2amf11 = {
 
 struct BurnDriver BurnDrvCpsSf2amf12 = {
 	"sf2amf12", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set ?)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 10)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2amf12RomInfo, Sf2amf12RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
-	Sf2koryuInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	Sf2amf12Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsSf2amf13 = {
+	"sf2amf13", "sf2ce", NULL, NULL, "1992",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 11)\0", NULL, "bootleg", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2amf13RomInfo, Sf2amf13RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
+	Sf2koryu2Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsSf2amf14 = {
+	"sf2amf14", "sf2ce", NULL, NULL, "1992",
+	"Street Fighter II': Champion Edition (L735 Test Rom, bootleg, set 12)\0", NULL, "bootleg", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2amf14RomInfo, Sf2amf14RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2amfDIPInfo,
+	Sf2koryu2Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
@@ -24699,6 +25104,16 @@ struct BurnDriver BurnDrvCpsSf2ceeab2 = {
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
+struct BurnDriver BurnDrvCpsSf2ceeab3 = {
+	"sf2ceeab3", "sf2ce", NULL, NULL, "1992",
+	"Street Fighter II': Champion Edition (bootleg, World 920313, set 3)\0", NULL, "bootleg", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2ceeab3RomInfo, Sf2ceeab3RomName, NULL, NULL, NULL, NULL, Sf2ceeablInputInfo, Sf2DIPInfo,
+	Sf2ceeab3Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
 struct BurnDriver BurnDrvCpsSf2cejabl = {
 	"sf2cejabl", "sf2ce", NULL, NULL, "1992",
 	"Street Fighter II': Champion Edition (bootleg, Japan 920322, set 1)\0", NULL, "bootleg", "CPS1",
@@ -24781,11 +25196,21 @@ struct BurnDriver BurnDrvCpsSf2re = {
 
 struct BurnDriver BurnDrvCpsSf2mkot = {
 	"sf2mkot", "sf2", NULL, NULL, "1992",
-	"Street Fighter II': Magic KO Turbo!! - Nightmare Crack\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Magic KO Turbo!! - Nightmare Crack (set 1)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2mkotRomInfo, Sf2mkotRomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
 	Sf2koryuInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsSf2mkot2 = {
+	"sf2mkot2", "sf2", NULL, NULL, "1992",
+	"Street Fighter II': Magic KO Turbo!! - Nightmare Crack (set 2)\0", NULL, "bootleg", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2mkot2RomInfo, Sf2mkot2RomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
+	Sf2amf12Init, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
@@ -24881,7 +25306,7 @@ struct BurnDriver BurnDrvCpsSf2level = {
 
 struct BurnDriver BurnDrvCpsSf2tlona = {
 	"sf2tlona", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Tu Long, bootleg, set 1)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (Tu Long, Chinese bootleg, set 1)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2tlonaRomInfo, Sf2tlonaRomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
@@ -24891,7 +25316,7 @@ struct BurnDriver BurnDrvCpsSf2tlona = {
 
 struct BurnDriver BurnDrvCpsSf2tlonb = {
 	"sf2tlonb", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Tu Long, bootleg, set 2)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (Tu Long, Chinese bootleg, set 2)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2tlonbRomInfo, Sf2tlonbRomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
@@ -24901,7 +25326,7 @@ struct BurnDriver BurnDrvCpsSf2tlonb = {
 
 struct BurnDriver BurnDrvCpsSf2tlonc = {
 	"sf2tlonc", "sf2ce", NULL, NULL, "1992",
-	"Street Fighter II': Champion Edition (Tu Long, bootleg, set 3)\0", NULL, "bootleg", "CPS1",
+	"Street Fighter II': Champion Edition (Tu Long, Chinese bootleg, set 3)\0", NULL, "bootleg", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2tloncRomInfo, Sf2tloncRomName, NULL, NULL, NULL, NULL, Sf2yycInputInfo, Sf2DIPInfo,
@@ -25279,80 +25704,40 @@ struct BurnDriver BurnDrvCpsWofhfh = {
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
-struct BurnDriver BurnDrvCpsWofh = {
-	"wofh", "wof", NULL, NULL, "1992",
-	"Sangokushi II: Sanguo Yingxiong Zhuan (Chinese bootleg, set 1)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u570B\u82F1\u96C4\u50B3\0Sangokushi II: Sanguo Yingxiong Zhuan (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, WofhRomInfo, WofhRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
-	WofhInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
-	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
-};
-
-struct BurnDriver BurnDrvCpsWofha = {
-	"wofha", "wof", NULL, NULL, "1992",
-	"Sangokushi II: Sanguo Yingxiong Zhuan (Chinese bootleg, set 2)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u570B\u82F1\u96C4\u50B3\0Sangokushi II: Sanguo Yingxiong Zhuan (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, WofhaRomInfo, WofhaRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
-	WofhInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
-	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
-};
-
 struct BurnDriver BurnDrvCpsSgyxz = {
 	"sgyxz", "wof", NULL, NULL, "1999",
-	"Warriors of Fate ('sgyxz' bootleg)\0", NULL, "bootleg (All-In Electronic)", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u570B\u82F1\u96C4\u50B3\0Warriors of Fate ('sgyxz' bootleg)\0", NULL, NULL, NULL,
+	"SanGuo YingXiongZhuan (Chinese bootleg of Sangokushi II, set 1)\0", NULL, "bootleg (All-In Electronic)", "CPS1",
+	L"\u4E09\u56FD\u82F1\u96C4\u4F20\0SanGuo YingxiongZhuan (Chinese bootleg of Sangokushi II, set 1)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
 	NULL, SgyxzRomInfo, SgyxzRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
 	SgyxzInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
-struct BurnDriver BurnDrvCpsWof3js = {
-	"wof3js", "wof", NULL, NULL, "1992",
-	"Sangokushi II: San Jian Sheng (Chinese bootleg, set 1)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u528D\u8056\0Sangokushi II: San Jian Sheng (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
+struct BurnDriver BurnDrvCpsSgyxza = {
+	"sgyxza", "wof", NULL, NULL, "1999",
+	"SanGuo YingXiongZhuan (Chinese bootleg of Sangokushi II, set 2)\0", NULL, "bootleg (All-In Electronic)", "CPS1",
+	L"\u4E09\u56FD\u82F1\u96C4\u4F20\0SanGuo YingxiongZhuan (Chinese bootleg of Sangokushi II, set 2)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, Wof3jsRomInfo, Wof3jsRomName, NULL, NULL, NULL, NULL, Wof3jsInputInfo, Wof3jsDIPInfo,
-	Wof3jsInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	NULL, SgyxzaRomInfo, SgyxzaRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
+	WofhInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
-struct BurnDriver BurnDrvCpsWof3jsa = {
-	"wof3jsa", "wof", NULL, NULL, "1992",
-	"Sangokushi II: San Jian Sheng (Chinese bootleg, set 2)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u528D\u8056\0Sangokushi II: San Jian Sheng (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
+struct BurnDriver BurnDrvCpsSgyxzb = {
+	"sgyxzb", "wof", NULL, NULL, "1999",
+	"SanGuo YingXiongZhuan (Chinese bootleg of Sangokushi II, set 3)\0", NULL, "bootleg (All-In Electronic)", "CPS1",
+	L"\u4E09\u56FD\u82F1\u96C4\u4F20\0SanGuo YingxiongZhuan (Chinese bootleg of Sangokushi II, set 3)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, Wof3jsaRomInfo, Wof3jsaRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
-	Wof3jsaInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
-	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
-};
-
-struct BurnDriver BurnDrvCpsWof3sj = {
-	"wof3sj", "wof", NULL, NULL, "1992",
-	"Sangokushi II: San Sheng Jian (Chinese bootleg, set 1)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u5723\u5251\0Sangokushi II: San Sheng Jian (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, Wof3sjRomInfo, Wof3sjRomName, NULL, NULL, NULL, NULL, Wof3sjInputInfo, Wof3sjDIPInfo,
-	Wof3sjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
-	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
-};
-
-struct BurnDriver BurnDrvCpsWof3sja = {
-	"wof3sja", "wof", NULL, NULL, "1992",
-	"Sangokushi II: San Sheng Jian (Chinese bootleg, set 2)\0", NULL, "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u4E09\u5723\u5251\0Sangokushi II: San Sheng Jian (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
-	NULL, Wof3sjaRomInfo, Wof3sjaRomName, NULL, NULL, NULL, NULL, Wof3sjInputInfo, Wof3sjDIPInfo,
-	Wof3sjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	NULL, SgyxzbRomInfo, SgyxzbRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
+	WofhInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
 struct BurnDriver BurnDrvCpsWofsj = {
 	"wofsj", "wof", NULL, NULL, "1992",
-	"Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 1)\0", "Imperfect Graphics", "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\u4E09\0Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
+	"Sangokushi II: Sheng Jian (Chinese bootleg, set 1)\0", "Imperfect Graphics", "bootleg", "CPS1",
+	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\0Sangokushi II: Sheng Jian (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
 	NULL, WofsjRomInfo, WofsjRomName, NULL, NULL, NULL, NULL, WofablaInputInfo, WofsjDIPInfo,
 	WofsjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
@@ -25361,8 +25746,8 @@ struct BurnDriver BurnDrvCpsWofsj = {
 
 struct BurnDriver BurnDrvCpsWofsja = {
 	"wofsja", "wof", NULL, NULL, "1992",
-	"Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 2)\0", "Imperfect Graphics", "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\u4E09\0Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
+	"Sangokushi II: Sheng Jian (Chinese bootleg, set 2)\0", "Imperfect Graphics", "bootleg", "CPS1",
+	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\0Sangokushi II: Sheng Jian (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
 	NULL, WofsjaRomInfo, WofsjaRomName, NULL, NULL, NULL, NULL, WofablaInputInfo, WofsjDIPInfo,
 	WofsjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
@@ -25371,11 +25756,61 @@ struct BurnDriver BurnDrvCpsWofsja = {
 
 struct BurnDriver BurnDrvCpsWofsjb = {
 	"wofsjb", "wof", NULL, NULL, "1992",
-	"Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 3)\0", "No sound", "bootleg", "CPS1",
-	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\u4E09\0Sangokushi II: Sheng Jian Sanguo (Chinese bootleg, set 3)\0", NULL, NULL, NULL,
+	"Sangokushi II: Sheng Jian (Chinese bootleg, set 3)\0", "No sound", "bootleg", "CPS1",
+	L"\u4E09\u56FD\u5FD7 II: \u5723\u5251\0Sangokushi II: Sheng Jian (Chinese bootleg, set 3)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
 	NULL, WofsjbRomInfo, WofsjbRomName, NULL, NULL, NULL, NULL, WofsjbInputInfo, WofsjbQSDIPInfo,
 	WofsjbInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsWofsjs = {
+	"wofsjs", "wof", NULL, NULL, "1992",
+	"San Jian Sheng (Chinese bootleg of Sangokushi II, set 1)\0", NULL, "bootleg", "CPS1",
+	L"\u4E09\u528D\u8056\0San Jian Sheng (Chinese bootleg of Sangokushi II, set 1)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
+	NULL, WofsjsRomInfo, WofsjsRomName, NULL, NULL, NULL, NULL, Wof3jsInputInfo, Wof3jsDIPInfo,
+	Wof3jsInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsWofsjsa = {
+	"wofsjsa", "wof", NULL, NULL, "1992",
+	"San Jian Sheng (Chinese bootleg of Sangokushi II, set 2)\0", NULL, "bootleg", "CPS1",
+	L"\u4E09\u528D\u8056\0San Jian Sheng (Chinese bootleg of Sangokushi II, set 2)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
+	NULL, WofsjsaRomInfo, WofsjsaRomName, NULL, NULL, NULL, NULL, WofhInputInfo, WofhDIPInfo,
+	Wof3jsaInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsWofsjsb = {
+	"wofsjsb", "wof", NULL, NULL, "1992",
+	"San Jian Sheng (Chinese bootleg of Sangokushi II, set 3)\0", NULL, "bootleg", "CPS1",
+	L"\u4E09\u528D\u8056\0San Jian Sheng (Chinese bootleg of Sangokushi II, set 3)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
+	NULL, WofsjsbRomInfo, WofsjsbRomName, NULL, NULL, NULL, NULL, Wof3sjInputInfo, Wof3sjDIPInfo,
+	Wof3sjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsWofssj = {
+	"wofssj", "wof", NULL, NULL, "1992",
+	"Sangokushi II: San Sheng Jian (Chinese bootleg, set 1)\0", NULL, "bootleg", "CPS1",
+	L"\u4E09\u56FD\u5FD7 II: \u4E09\u5723\u5251\0Sangokushi II: San Sheng Jian (Chinese bootleg, set 1)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
+	NULL, WofssjRomInfo, WofssjRomName, NULL, NULL, NULL, NULL, Wof3sjInputInfo, Wof3sjDIPInfo,
+	Wof3sjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+struct BurnDriver BurnDrvCpsWofssja = {
+	"wofssja", "wof", NULL, NULL, "1992",
+	"Sangokushi II: San Sheng Jian (Chinese bootleg, set 2)\0", NULL, "bootleg", "CPS1",
+	L"\u4E09\u56FD\u5FD7 II: \u4E09\u5723\u5251\0Sangokushi II: San Sheng Jian (Chinese bootleg, set 2)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 3, HARDWARE_CAPCOM_CPS1, GBF_SCRFIGHT, 0,
+	NULL, WofssjaRomInfo, WofssjaRomName, NULL, NULL, NULL, NULL, Wof3sjInputInfo, Wof3sjDIPInfo,
+	Wof3sjInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
@@ -26178,9 +26613,9 @@ struct BurnDriver BurnDrvCpsSf2hfsce = {
 // For more infomation, please visit: https://sf2mix.github.io/
 
 static struct BurnRomInfo sf2mixRomDesc[] = {
-	{ "smxe_23b.8f",   0x080000, 0x478d09c6, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-	{ "smx_22b.7f",    0x080000, 0x23212fb2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-	{ "smx_21a.6f",    0x080000, 0xd3d77d12, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smxe_23b.8f",   0x080000, 0xc1370215, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smx_22b.7f",    0x080000, 0x5b0566c8, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smx_21a.6f",    0x080000, 0xcb6ab274, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
 
 	{ "smx-1m.3a",     0x080000, 0xa8f70643, BRF_GRA | CPS1_TILES },
 	{ "smx-3m.5a",     0x080000, 0xf73f1913, BRF_GRA | CPS1_TILES },
@@ -26213,8 +26648,8 @@ STD_ROM_PICK(sf2mix)
 STD_ROM_FN(sf2mix)
 
 struct BurnDriver BurnDrvCpsSf2mix = {
-	"sf2mix", "sf2ce", NULL, NULL, "2023",
-	"Street Fighter II Mix (v1.3)\0", NULL, "hack", "CPS1",
+	"sf2mix", "sf2ce", NULL, NULL, "2025",
+	"Street Fighter II Mix (v1.4)\0", NULL, "hack", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, sf2mixRomInfo, sf2mixRomName, NULL, NULL, NULL, NULL, Sf2InputInfo, Sf2mixDIPInfo,
@@ -26307,6 +26742,58 @@ struct BurnDriver BurnDrvCpsSf2gm = {
 	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, Sf2gmRomInfo, Sf2gmRomName, NULL, NULL, NULL, NULL, Sf2InputInfo, Sf2DIPInfo,
 	TwelveMhzInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
+
+// Street Fighter II Plus Plus (Ver. 2020/07/19, Hack)
+// Modified by Yumeji
+
+static struct BurnRomInfo sf2ppRomDesc[] = {
+	{ "sf2pp_30g.11e",	0x020000, 0xb5ecbb3a, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_37g.11f",	0x020000, 0xddf2d988, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_31g.12e",	0x020000, 0x7e4af671, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_38g.12f",	0x020000, 0x2c70718a, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_28g.9e",	0x020000, 0x3d96d4d2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_35g.9f",	0x020000, 0xc02a2be3, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_29b.10e",	0x020000, 0x0bb77024, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+	{ "sf2pp_36b.10f",	0x020000, 0x48256574, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_BYTESWAP },
+
+	{ "sf2-5m.4a",		0x080000, 0x22c9cc8e, BRF_GRA | CPS1_TILES },
+	{ "sf2-7m.6a",		0x080000, 0x57213be8, BRF_GRA | CPS1_TILES },
+	{ "sf2-1m.3a",		0x080000, 0xba529b4f, BRF_GRA | CPS1_TILES },
+	{ "sf2-3m.5a",		0x080000, 0x4b1b33a8, BRF_GRA | CPS1_TILES },
+	{ "sf2-6m.4c",		0x080000, 0x2c7e2229, BRF_GRA | CPS1_TILES },
+	{ "sf2-8m.6c",		0x080000, 0xb5548f17, BRF_GRA | CPS1_TILES },
+	{ "sf2-2m.3c",		0x080000, 0x14b84312, BRF_GRA | CPS1_TILES },
+	{ "sf2-4m.5c",		0x080000, 0x5e9cd89a, BRF_GRA | CPS1_TILES },
+	{ "sf2pp-13m.4d",	0x080000, 0x4267b696, BRF_GRA | CPS1_TILES },
+	{ "sf2pp-15m.6d",	0x080000, 0xdf9b9146, BRF_GRA | CPS1_TILES },
+	{ "sf2pp-9m.3d",	0x080000, 0xa08a9786, BRF_GRA | CPS1_TILES },
+	{ "sf2pp-11m.5d",	0x080000, 0x80feac31, BRF_GRA | CPS1_TILES },
+
+	{ "sf2_9.12a",		0x010000, 0xa4823a1b, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "sf2_18.11c",		0x020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "sf2_19.12c",		0x020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	
+	A_BOARD_PLDS
+	
+	{ "stf29.1a",		0x000117, 0x043309c5, BRF_OPT },	// b-board PLDs
+	{ "iob1.11d",		0x000117, 0x3abc0700, BRF_OPT },
+	{ "c632.ic1",		0x000117, 0x0fbd9270, BRF_OPT },	// c-board PLDs
+};
+
+STD_ROM_PICK(sf2pp)
+STD_ROM_FN(sf2pp)
+
+struct BurnDriver BurnDrvCpsSf2pp = {
+	"sf2pp", "sf2", NULL, NULL, "2020",
+	"Street Fighter II Plus Plus (Ver. 2020/07/19, Hack)\0", NULL, "Yumeji", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, sf2ppRomInfo, sf2ppRomName, NULL, NULL, NULL, NULL, Sf2InputInfo, Sf2DIPInfo,
+	DrvInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 

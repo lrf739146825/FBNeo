@@ -1,9 +1,15 @@
 // Burner Config file module
 #include "burner.h"
+#include <process.h>
 
 #ifdef _UNICODE
  #include <locale.h>
 #endif
+
+#define IS_STRING_EMPTY(s) (NULL == (s) || (s)[0] == _T('\0'))
+
+static HANDLE hLSDThreads[DIRS_MAX] = { 0 };
+SubDirInfo _SubDirInfo[DIRS_MAX];
 
 int nIniVersion = 0;
 
@@ -30,6 +36,136 @@ static void HardFXLoadDefaults()
 	for (int thfx = 0; thfx < totalHardFX; thfx++) {
 		HardFXConfigs[thfx].hardfx_config_load_defaults();
 	}
+}
+
+static int ends_with_slash(const TCHAR* dirPath)
+{
+	UINT32 len = _tcslen(dirPath);
+	if (0 == len) return 0;
+
+	TCHAR last_char = dirPath[len - 1];
+	return (last_char == _T('/') || last_char == _T('\\'));
+}
+
+static void TraverseDirectory(const TCHAR* dirPath, TCHAR*** pszArray, UINT32* pnCount)
+{
+	if (IS_STRING_EMPTY(dirPath)) return;
+
+	TCHAR searchPath[MAX_PATH];
+
+	const TCHAR* szFormatA = ends_with_slash(dirPath) ? _T("%s*")  : _T("%s\\*");
+	const TCHAR* szFormatB = ends_with_slash(dirPath) ? _T("%s%s") : _T("%s\\%s");
+
+	_stprintf(searchPath, szFormatA, dirPath);
+
+	WIN32_FIND_DATA findFileData;
+	HANDLE hFind = FindFirstFile(searchPath, &findFileData);
+	if (INVALID_HANDLE_VALUE == hFind) return;
+
+	do {
+		if (findFileData.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) {
+			if (0 == _tcscmp(findFileData.cFileName, _T(".")) || 0 == _tcscmp(findFileData.cFileName, _T("..")))
+				continue;
+
+			// like: c:\1st_dir + '\' + 2nd_dir + '\' + "1.zip" + '\0' = 8 chars
+			if ((_tcslen(dirPath) + _tcslen(findFileData.cFileName)) > (MAX_PATH - 8))
+				continue;
+
+			TCHAR subDirPath[MAX_PATH] = { 0 };
+			_stprintf(subDirPath, szFormatB, dirPath, findFileData.cFileName);
+
+			TCHAR** newArray = (TCHAR**)realloc(*pszArray, (*pnCount + 1) * sizeof(TCHAR*));
+			*pszArray = newArray;
+			(*pszArray)[*pnCount] = (TCHAR*)malloc(MAX_PATH * sizeof(TCHAR));
+			_stprintf((*pszArray)[(*pnCount)++], _T("%s\\"), subDirPath);
+
+			TraverseDirectory(subDirPath, pszArray, pnCount);
+		}
+	} while (FindNextFile(hFind, &findFileData));
+
+	FindClose(hFind);
+}
+
+#undef IS_STRING_EMPTY
+
+static UINT32 __stdcall TraverseDirsProc(void* lpParam)
+{
+	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
+
+	SubDirInfo* pSubDirInfo = (SubDirInfo*)lpParam;
+	TraverseDirectory(pSubDirInfo->BaseDir, &(pSubDirInfo->SubDirs), &(pSubDirInfo->nCount));
+
+	return 0;
+}
+
+void SubDirThreadExit()
+{
+	INT32 nFinished = 0, i = 0;;
+
+	// Threads are not started
+	for (i = 0; i < DIRS_MAX; i++) {
+		if (NULL == hLSDThreads[i]) nFinished++;
+		if (DIRS_MAX == nFinished)  return;
+	}
+
+	// Threads have been started
+	nFinished = 0;
+
+	while (nFinished < DIRS_MAX) {
+		for (i = 0; i < DIRS_MAX; i++) {
+			if (NULL == hLSDThreads[i]) continue;
+
+			DWORD dwExitCode = 0;
+			GetExitCodeThread(hLSDThreads[i], &dwExitCode);
+
+			if (STILL_ACTIVE != dwExitCode) {
+				CloseHandle(hLSDThreads[i]); hLSDThreads[i] = NULL;
+				nFinished++;
+			} else {
+				WaitForSingleObject(hLSDThreads[i], 100);
+			}
+		}
+	}
+}
+
+static void FreeSubDirsInfo()
+{
+	for (INT32 i = 0; i < DIRS_MAX; i++) {
+		if (NULL != _SubDirInfo[i].SubDirs) {
+			for (UINT32 j = 0; j < _SubDirInfo[i].nCount; j++) {
+				if (NULL != _SubDirInfo[i].SubDirs[j]) {
+					free(_SubDirInfo[i].SubDirs[j]);
+					_SubDirInfo[i].SubDirs[j] = NULL;
+				}
+			}
+			free(_SubDirInfo[i].SubDirs);
+			_SubDirInfo[i].SubDirs = NULL;
+			_SubDirInfo[i].nCount = 0;
+		}
+	}
+}
+
+void DestroySubDir()
+{
+	SubDirThreadExit();
+	FreeSubDirsInfo();
+}
+
+INT32 LookupSubDirThreads()
+{
+	DestroySubDir();
+
+	if (!(nLoadMenuShowY & (1 << 26)))	// SEARCHSUBDIRS
+		return 1;
+
+	for (INT32 i = 0; i < DIRS_MAX; i++) {
+		memset(&(_SubDirInfo[i]), 0, sizeof(SubDirInfo));
+		_tcscpy(_SubDirInfo[i].BaseDir, szAppRomPaths[i]);
+		hLSDThreads[i] = (HANDLE)_beginthreadex(NULL, 0, TraverseDirsProc, &_SubDirInfo[i], 0, NULL);
+	}
+
+
+	return 0;
 }
 
 static void CreateConfigName(TCHAR* szConfig)
@@ -118,6 +254,7 @@ int ConfigAppLoad()
 		VAR(nScreenSizeVer);
 
 		VAR(nWindowSize);
+		VAR(bVidIntegerScale);
 		VAR(nWindowPosX); VAR(nWindowPosY);
 		VAR(bDoGamma);
 		VAR(bVidUseHardwareGamma);
@@ -213,6 +350,7 @@ int ConfigAppLoad()
 		VAR(nMaxChatFontSize);
 
 		VAR(bModelessMenu);
+		VAR(bAdaptivepopup);
 
 		VAR(nSplashTime);
 
@@ -269,6 +407,7 @@ int ConfigAppLoad()
 		STR(szAppSamplesPath);
 		STR(szAppHDDPath);
 		STR(szAppIpsPath);
+		STR(szAppRomdataPath);
 		STR(szAppIconsPath);
 		STR(szNeoCDCoverDir);
 		STR(szAppBlendPath);
@@ -313,6 +452,7 @@ int ConfigAppLoad()
 		VAR(bEnableIcons);
 		VAR(bIconsOnlyParents);
 		VAR(nIconsSize);
+		VAR(bIconsByHardwares);
 
 		STR(szPrevGames[0]);
 		STR(szPrevGames[1]);
@@ -335,6 +475,8 @@ int ConfigAppLoad()
 
 		VAR(bNeoCDListScanSub);
 		VAR(bNeoCDListScanOnlyISO);
+		
+		VAR(bRDListScanSub);
 
 		// Default Controls
 		VAR(nPlayerDefaultControls[0]);
@@ -356,6 +498,8 @@ int ConfigAppLoad()
 	}
 
 	fclose(h);
+	LookupSubDirThreads();
+
 	return 0;
 }
 
@@ -448,6 +592,8 @@ int ConfigAppSave()
 	VAR(nVidRotationAdjust);
 	_ftprintf(h, _T("\n// Initial window size (0 = autosize)\n"));
 	VAR(nWindowSize);
+	_ftprintf(h, _T("\n// Use integer scaling? (1 on, 0 off)\n"));
+	VAR(bVidIntegerScale);
 	_ftprintf(h, _T("\n// Window position\n"));
 	VAR(nWindowPosX); VAR(nWindowPosY);
 	_ftprintf(h, _T("\n// If non-zero, perform gamma correction\n"));
@@ -608,6 +754,9 @@ int ConfigAppSave()
 	_ftprintf(h, _T("\n// Make the menu modeless\n"));
 	VAR(bModelessMenu);
 
+	_ftprintf(h, _T("\n// Automatically determines the direction of the popup menu\n"));
+	VAR(bAdaptivepopup);
+
 	_ftprintf(h, _T("\n// Minimum length of time to display the splash screen (in milliseconds)\n"));
 	VAR(nSplashTime);
 
@@ -690,6 +839,7 @@ int ConfigAppSave()
 	STR(szAppSamplesPath);
 	STR(szAppHDDPath);
 	STR(szAppIpsPath);
+	STR(szAppRomdataPath);
 	STR(szAppIconsPath);
 	STR(szNeoCDCoverDir);
 	STR(szAppBlendPath);
@@ -717,6 +867,9 @@ int ConfigAppSave()
 	_ftprintf(h, _T("\n// Neo Geo CD Load Game Dialog options\n"));
 	VAR(bNeoCDListScanSub);
 	VAR(bNeoCDListScanOnlyISO);
+
+	_ftprintf(h, _T("\n// RomData Load Game Dialog options\n"));
+	VAR(bRDListScanSub);
 
 	_ftprintf(h, _T("\n\n\n"));
 	_ftprintf(h, _T("// --- miscellaneous ---------------------------------------------------------\n"));
@@ -779,6 +932,9 @@ int ConfigAppSave()
 
 	_ftprintf(h, _T("\n// Specify icons display size, 0 = 16x16 , 1 = 24x24, 2 = 32x32.\n"));
 	VAR(nIconsSize);
+
+	_ftprintf(h, _T("\n// If non-zero, display icons by hardwares.\n"));
+	VAR(bIconsByHardwares);
 
 	_ftprintf(h, _T("\n// Previous games list.\n"));
 	STR(szPrevGames[0]);

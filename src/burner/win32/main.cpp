@@ -737,6 +737,15 @@ static int AppInit()
 	OpenDebugLog();
 #endif
 
+#if defined BUILD_X64_EXE
+	if (nVidSelect == 1) {
+		// if "d3d7 / enhanced blitter" is set & running 64bit build,
+		// fall back to "basic blitter".  (d3d7 has no 64bit mode!)
+		nVidSelect = 0;
+		bprintf(0, _T("*** D3D7 / Enhanced Blitter set w/64bit build - falling back to basic blitter.\n"));
+	}
+#endif
+
 	FBALocaliseInit(szLocalisationTemplate);
 	BurnerDoGameListLocalisation();
 
@@ -795,27 +804,21 @@ static int AppInit()
 
 	bNumlockStatus = SetNumLock(false);
 
-	if(bEnableIcons && !bIconsLoaded) {
-		// load driver icons
-		LoadDrvIcons();
-		bIconsLoaded = 1;
-	}
+	CreateDrvIconsCache();
 
 	return 0;
 }
 
 static int AppExit()
 {
-	if(bIconsLoaded) {
-		// unload driver icons
-		UnloadDrvIcons();
-		bIconsLoaded = 0;
-	}
+	UnloadDrvIcons();
+	DestroyDrvIconsCache();
 
 	SetNumLock(bNumlockStatus);
 
 	DrvExit();						// Make sure any game driver is exitted
 	FreeROMInfo();
+	DestroySubDir();
 	MediaExit();
 	BurnLibExit();					// Exit the Burn library
 
@@ -1106,7 +1109,7 @@ int ProcessCmdLine()
 				TCHAR* szDatName = _tcstok(szPoint, _T("\""));
 
 				memset(szRomdataName, '\0', sizeof(szRomdataName));
-				_stprintf(szRomdataName, _T("%s%s%s"), _T(".\\config\\romdata\\"), szDatName, _T(".dat"));
+				_stprintf(szRomdataName, _T("%s%s%s"), szAppRomdataPath, szDatName, _T(".dat"));
 
 				szDatName = NULL;
 				szPoint = NULL;
@@ -1260,6 +1263,7 @@ static void CreateSupportFolders()
 		{_T("support/samples/")},
 		{_T("support/hdd/")},
 		{_T("support/ips/")},
+		{_T("support/romdata/")},
 		{_T("support/neocdz/")},
 		{_T("support/blend/")},
 		{_T("support/select/")},
@@ -1339,7 +1343,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR lpCmdLine, int nShowCmd
 		{_T("config/ips")},
 		{_T("config/localisation")},
 		{_T("config/presets")},
-		{_T("config/romdata")},
+//		{_T("config/romdata")},
 		{_T("recordings")},
 		{_T("roms")},
 		{_T("savestates")},

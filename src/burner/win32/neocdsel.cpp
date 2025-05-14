@@ -138,10 +138,10 @@ static int CALLBACK ListViewCompareFunc(LPARAM lParam1, LPARAM lParam2, LPARAM l
 {
 	TCHAR buf1[MAX_PATH];
 	TCHAR buf2[MAX_PATH];
-    LVCOMPAREINFO* lpsd = (struct LVCOMPAREINFO*)lParamSort;
+	LVCOMPAREINFO* lpsd = (struct LVCOMPAREINFO*)lParamSort;
 
-    ListView_GetItemText(lpsd->hWnd, (int)lParam1, lpsd->nColumn, buf1, sizeof(buf1));
-    ListView_GetItemText(lpsd->hWnd, (int)lParam2, lpsd->nColumn, buf2, sizeof(buf2));
+	ListView_GetItemText(lpsd->hWnd, (int)lParam1, lpsd->nColumn, buf1, sizeof(buf1));
+	ListView_GetItemText(lpsd->hWnd, (int)lParam2, lpsd->nColumn, buf2, sizeof(buf2));
 
 	switch (lpsd->bAscending) {
 		case SORT_ASCENDING:
@@ -150,7 +150,7 @@ static int CALLBACK ListViewCompareFunc(LPARAM lParam1, LPARAM lParam2, LPARAM l
 			return (0 - _wcsicmp(buf1, buf2));
 	}
 
-    return 0;
+	return 0;
 }
 
 static void ListViewSort(int nDirection, int nColumn)
@@ -668,7 +668,7 @@ static INT_PTR CALLBACK NeoCDList_WndProc(HWND hDlg, UINT Msg, WPARAM wParam, LP
 				unsigned int nID = 0;
 				_stscanf(szID, _T("%x"), &nID);
 
-				TCHAR szAudioTracks[] =_T("0");
+				TCHAR szAudioTracks[10] = _T("0");
 
 				if(nID == ngcd_list[nItem].nID) {
 					SetWindowText(GetDlgItem(hNeoCDWnd, IDC_NCD_TEXTSHORT), ngcd_list[nItem].szShortName);

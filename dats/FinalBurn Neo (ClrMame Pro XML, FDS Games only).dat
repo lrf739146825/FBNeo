@@ -40,7 +40,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="aisenshinicol" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+	<game name="aisenshinicol" cloneof="wolnicol" romof="wolnicol" sourcefile="nes/d_nes.cpp">
 		<description>Ai Senshi Nicol (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
@@ -321,8 +321,8 @@
 	<game name="digdug" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Dig Dug (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="Dig Dug (Japan)(1990)(Namco).fds" size="65516" crc="eb126143"/>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Dig Dug (Japan)(1990)(Namcot).fds" size="65516" crc="eb126143"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -330,8 +330,8 @@
 	<game name="digdugii" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Dig Dug II (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="Dig Dug II (Japan)(1990)(Namco).fds" size="65516" crc="1b2b1342"/>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Dig Dug II (Japan)(1990)(Namcot).fds" size="65516" crc="1b2b1342"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -401,7 +401,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dracuiij" cloneof="dracuii" romof="dracuii" sourcefile="nes/d_nes.cpp">
-		<description>Dracula II - Noroi no Fuuin (Japan)</description>
+		<description>Dracula II: Noroi no Fuuin (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Dracula II - Noroi no Fuuin (Japan)(1987)(Konami).fds" size="131016" crc="2d1ec77c"/>
@@ -411,16 +411,16 @@
 	</game>
 	<game name="dracuii" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dracula II - The Cursed Seal (Hack, English v1.0)</description>
+		<description>Dracula II: The Cursed Seal (Hack, English v1.0a)</description>
 		<year>2024</year>
 		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Dracula II - The Cursed Seal T-Eng v1.0 (2024)(BlackPaladin).fds" size="131016" crc="3251423f"/>
+		<rom name="Dracula II - The Cursed Seal T-Eng v1.0a (2024)(BlackPaladin).fds" size="131000" crc="6cc6feb3"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="druid" cloneof="druiden" romof="druiden" sourcefile="nes/d_nes.cpp">
-		<description>Druid - Kyoufu no Tobira (Japan)</description>
+		<description>Druid: Kyoufu no Tobira (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Druid - Kyoufu no Tobira (Japan)(1988)(Jaleco).fds" size="131016" crc="b5d4e955"/>
@@ -430,10 +430,10 @@
 	</game>
 	<game name="druiden" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Druid - The Gate of Fear (Hack, English)</description>
-		<year>2022</year>
+		<description>Druid: The Gate of Fear (Hack, English v1.1)</description>
+		<year>2024</year>
 		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Druid - Kyoufu no Tobira T-Eng (2022)(BlackPaladin).fds" size="131000" crc="1e9dc522"/>
+		<rom name="Druid - The Gate of Fear T-Eng v1.1 (2024)(BlackPaladin).fds" size="131000" crc="85bd20ba"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -442,7 +442,7 @@
 		<description>Egger Land (Japan)</description>
 		<year>1987</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Egger Land (Japan)(1987)(HAL Labs).fds" size="131016" crc="84f75912"/>
+		<rom name="Egger Land (Japan)(1987)(HAL Laboratory).fds" size="131016" crc="84f75912"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -660,8 +660,8 @@
 	<game name="galaga" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Galaga (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="Galaga (Japan)(1990)(Namco).fds" size="65516" crc="a9ba7801"/>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Galaga (Japan)(1990)(Namcot).fds" size="65516" crc="a9ba7801"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -669,8 +669,8 @@
 	<game name="galaxian" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Galaxian (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="Galaxian (Japan)(1990)(Namco).fds" size="65516" crc="429169f5"/>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Galaxian (Japan)(1990)(Namcot).fds" size="65516" crc="429169f5"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -689,7 +689,7 @@
 		<description>Gall Force - Eternal Story (Japan)</description>
 		<year>1986</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Gall Force - Eternal Story (Japan)(1986)(HAL Lab.).fds" size="131016" crc="51ef74fb"/>
+		<rom name="Gall Force - Eternal Story (Japan)(1986)(HAL Laboratory).fds" size="131016" crc="51ef74fb"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1058,7 +1058,7 @@
 	</game>
 	<game name="linknobouc" cloneof="linknobou" romof="linknobou" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Link no Bouken - The Legend of Zelda II (Rev 1) (Rev 1) (Hack, Spanish)</description>
+		<description>Link no Bouken - The Legend of Zelda II (Rev 1) (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Link no Bouken - The Legend of Zelda II (Rev 1) T-Spa (2019)(jackic).fds" size="131000" crc="60a26198"/>
@@ -1680,6 +1680,16 @@
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Wardner no Mori (Japan)(1988)(Taito).fds" size="131016" crc="b5a04f7e"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="wolnicol" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Warrior of Love Nicol (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Warrior of Love Nicol T-Eng (2025)(BlackPaladin).fds" size="131000" crc="a2322a37"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
