@@ -170,7 +170,7 @@
 		<description>Battle Lode Runner (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="battle lode runner (japan).pce" size="262144" crc="59e44f45"/>
+		<rom name="Battle Lode Runner (Japan)(1993)(Hudson Soft).pce" size="262144" crc="59e44f45"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -178,15 +178,7 @@
 		<description>Be Ball (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="be ball (japan).pce" size="262144" crc="261f1013"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="benkei1" cloneof="benkei" romof="benkei" sourcefile="pce/d_pce.cpp">
-		<description>Benkei Gaiden (Japan) (Alt)</description>
-		<year>1989</year>
-		<manufacturer>Sunsoft</manufacturer>
-		<rom name="benkei gaiden (japan) [a].pce" size="393216" crc="c9626a43"/>
+		<rom name="Be Ball (Japan)(1990)(Hudson Soft).pce" size="262144" crc="261f1013"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -194,15 +186,15 @@
 		<description>Benkei Gaiden (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="benkei gaiden (japan).pce" size="393216" crc="e1a73797"/>
+		<rom name="Benkei Gaiden (Japan)(1989)(Sunsoft).pce" size="393216" crc="e1a73797"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="bikkuri1" cloneof="bikkuri" romof="bikkuri" sourcefile="pce/d_pce.cpp">
-		<description>Bikkuriman World (Japan) (Alt)</description>
-		<year>1987</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bikkuriman world (japan) [a].pce" size="262144" crc="34893891"/>
+	<game name="benkei1" cloneof="benkei" romof="benkei" sourcefile="pce/d_pce.cpp">
+		<description>Benkei Gaiden (Japan, Alt)</description>
+		<year>1989</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Benkei Gaiden (Japan, Alt)(1989)(Sunsoft).pce" size="393216" crc="c9626a43"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -210,7 +202,15 @@
 		<description>Bikkuriman World (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bikkuriman world (japan).pce" size="262144" crc="2841fd1e"/>
+		<rom name="Bikkuriman World (Japan)(1987)(Hudson Soft).pce" size="262144" crc="2841fd1e"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bikkuri1" cloneof="bikkuri" romof="bikkuri" sourcefile="pce/d_pce.cpp">
+		<description>Bikkuriman World (Japan, Alt)</description>
+		<year>1987</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Bikkuriman World (Japan, Alt)(1987)(Hudson Soft).pce" size="262144" crc="34893891"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -218,7 +218,7 @@
 		<description>Blodia (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="blodia (japan).pce" size="131072" crc="958bcd09"/>
+		<rom name="Blodia (Japan)(1990)(Hudson Soft).pce" size="131072" crc="958bcd09"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -227,7 +227,7 @@
 		<description>Blue Blink (Hack, English v0.99b)</description>
 		<year>2022</year>
 		<manufacturer>Gaijin Productions</manufacturer>
-		<rom name="Blue Blink (T-Eng v0.99b)(2022)(Gaijin Productions).pce" size="393216" crc="25d34a20"/>
+		<rom name="Blue Blink T-Eng v0.99b (2022)(Gaijin Productions).pce" size="393216" crc="25d34a20"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -235,7 +235,7 @@
 		<description>Body Conquest II (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Games Express</manufacturer>
-		<rom name="body conquest ii (japan).pce" size="524288" crc="ffd92458"/>
+		<rom name="Body Conquest II (Japan)(1993)(Game Express).pce" size="524288" crc="ffd92458"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -243,7 +243,7 @@
 		<description>Bomberman '93 (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bomberman '93 (japan).pce" size="524288" crc="b300c5d0"/>
+		<rom name="Bomberman '93 (Japan)(1992)(Hudson Soft).pce" size="524288" crc="b300c5d0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -251,7 +251,7 @@
 		<description>Bomberman '93 - Special Version (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bomberman '93 (special version) (japan).pce" size="524288" crc="02309aa0"/>
+		<rom name="Bomberman '93 - Special Version (Japan)(1992)(Hudson Soft).pce" size="524288" crc="02309aa0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -259,7 +259,7 @@
 		<description>Bomberman '94 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bomberman '94 (japan).pce" size="1048576" crc="05362516"/>
+		<rom name="Bomberman '94 (Japan)(1993)(Hudson Soft).pce" size="1048576" crc="05362516"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -267,7 +267,7 @@
 		<description>Bomberman (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bomberman (japan).pce" size="262144" crc="9abb4d1f"/>
+		<rom name="Bomberman (Japan)(1990)(Hudson Soft).pce" size="262144" crc="9abb4d1f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -275,15 +275,15 @@
 		<description>Bomberman - Users Battle (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="bomberman - users battle (japan).pce" size="262144" crc="1489fa51"/>
+		<rom name="Bomberman - Users Battle (Japan)(1990)(Hudson Soft).pce" size="262144" crc="1489fa51"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="lostsunh" sourcefile="pce/d_pce.cpp">
 		<description>Bouken Danshaku Don - The Lost Sunheart (Japan)</description>
 		<year>1992</year>
-		<manufacturer>IMax</manufacturer>
-		<rom name="bouken danshaku don - the lost sunheart (japan).pce" size="524288" crc="8f4d9f94"/>
+		<manufacturer>I'Max</manufacturer>
+		<rom name="Bouken Danshaku Don - The Lost Sunheart (Japan)(1992)(I'Max).pce" size="524288" crc="8f4d9f94"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -291,7 +291,7 @@
 		<description>Break In (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="break in (japan).pce" size="262144" crc="c9d7426a"/>
+		<rom name="Break In (Japan)(1989)(Naxat Soft).pce" size="262144" crc="c9d7426a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -300,7 +300,7 @@
 		<description>Bubblegum Crash! - Knight Sabers 2034 (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>Dave Shadoff, filler</manufacturer>
-		<rom name="Bubblegum Crash! - Knight Sabers 2034 (T-Eng)(2022)(Dave Shadoff).pce" size="786432" crc="704b6916"/>
+		<rom name="Bubblegum Crash! - Knight Sabers 2034 T-Eng (2022)(Dave Shadoff).pce" size="786432" crc="704b6916"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -308,7 +308,7 @@
 		<description>Bubblegum Crash! - Knight Sabers 2034 (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="bubblegum crash! - knight sabers 2034 (japan).pce" size="524288" crc="0d766139"/>
+		<rom name="Bubblegum Crash! - Knight Sabers 2034 (Japan)(1991)(Naxat Soft).pce" size="524288" crc="0d766139"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -322,10 +322,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="bullfght" sourcefile="pce/d_pce.cpp">
-		<description>Bull Fight - Ring no Haja (Japan)</description>
+		<description>Bull Fight: Ring no Haja (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Cream</manufacturer>
-		<rom name="bull fight - ring no haja (japan).pce" size="393216" crc="5c4d1991"/>
+		<manufacturer>Cream Co.</manufacturer>
+		<rom name="Bull Fight - Ring no Haja (Japan)(1989)(Cream).pce" size="393216" crc="5c4d1991"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -333,15 +333,15 @@
 		<description>Burning Angels (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="burning angels (japan).pce" size="393216" crc="d233c05a"/>
+		<rom name="Burning Angels (Japan)(1990)(Naxat Soft).pce" size="393216" crc="d233c05a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cyberx" sourcefile="pce/d_pce.cpp">
-		<description>Busou Keiji - Cyber Cross (Japan)</description>
+		<description>Busou Keiji: Cyber Cross (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="busou keiji - cyber cross (japan).pce" size="393216" crc="d0c250ca"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Busou Keiji - Cyber Cross (Japan)(1989)(Face).pce" size="393216" crc="d0c250ca"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -366,15 +366,7 @@
 		<description>Chibi Maruko Chan - Quiz de Piihyara (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Chibi Maruko Chan - Quiz de Piihyara (Japan)(1991)(Namco).pce" size="524288" crc="951ed380"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="chikuden1" cloneof="chikuden" romof="chikuden" sourcefile="pce/d_pce.cpp">
-		<description>Chikudenya Toubei - Kubikiri Yakata Yori (Japan) (Alt)</description>
-		<year>1990</year>
-		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="Chikudenya Toubei - Kubikiri Yakata Yori (Japan, Alt)(1990)(Naxat Soft).pce" size="524288" crc="84098884"/>
+		<rom name="Chibi Maruko Chan - Quiz de Piihyara (Japan)(1991)(Namcot).pce" size="524288" crc="951ed380"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -383,6 +375,14 @@
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
 		<rom name="Chikudenya Toubei - Kubikiri Yakata Yori (Japan)(1990)(Naxat Soft).pce" size="524288" crc="cab21b2e"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chikuden1" cloneof="chikuden" romof="chikuden" sourcefile="pce/d_pce.cpp">
+		<description>Chikudenya Toubei - Kubikiri Yakata Yori (Japan, Alt)</description>
+		<year>1990</year>
+		<manufacturer>Naxat Soft</manufacturer>
+		<rom name="Chikudenya Toubei - Kubikiri Yakata Yori (Japan, Alt)(1990)(Naxat Soft).pce" size="524288" crc="84098884"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -399,7 +399,7 @@
 		<description>Chouzetsu Rinjin - Bravoman (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Chouzetsu Rinjin - Bravoman (Japan)(1990)(Namco).pce" size="524288" crc="0df57c90"/>
+		<rom name="Chouzetsu Rinjin - Bravoman (Japan)(1990)(Namcot).pce" size="524288" crc="0df57c90"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -416,7 +416,7 @@
 		<description>City Hunter (Hack, English v1.1)</description>
 		<year>2022</year>
 		<manufacturer>filler, cabbage</manufacturer>
-		<rom name="City Hunter (T-Eng v1.1)(2022)(filler, cabbage).pce" size="393216" crc="23f3df33"/>
+		<rom name="City Hunter T-Eng v1.1 (2022)(filler, cabbage).pce" size="393216" crc="23f3df33"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -436,27 +436,27 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="coryoon1" cloneof="coryoon" romof="coryoon" sourcefile="pce/d_pce.cpp">
-		<description>Coryoon - Child of Dragon (Japan) (Alt)</description>
+	<game name="coryoon" sourcefile="pce/d_pce.cpp">
+		<description>Coryoon: Child of Dragon (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="coryoon - child of dragon (japan) [a].pce" size="524288" crc="d5389889"/>
+		<rom name="Coryoon - Child of Dragon (Japan)(1991)(Naxat Soft).pce" size="524288" crc="b4d29e3b"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="coryoon" sourcefile="pce/d_pce.cpp">
-		<description>Coryoon - Child of Dragon (Japan)</description>
+	<game name="coryoon1" cloneof="coryoon" romof="coryoon" sourcefile="pce/d_pce.cpp">
+		<description>Coryoon: Child of Dragon (Japan, Alt)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="coryoon - child of dragon (japan).pce" size="524288" crc="b4d29e3b"/>
+		<rom name="Coryoon - Child of Dragon (Japan, Alt)(1991)(Naxat Soft).pce" size="524288" crc="d5389889"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="xwiber" sourcefile="pce/d_pce.cpp">
-		<description>Cross Wiber - Cyber Combat Police (Japan)</description>
+		<description>Cross Wiber: Cyber Combat Police (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="cross wiber - cyber combat police (japan).pce" size="524288" crc="2df97bd0"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Cross Wiber - Cyber Combat Police (Japan)(1990)(Face).pce" size="524288" crc="2df97bd0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -464,7 +464,7 @@
 		<description>Cyber Core (Japan)</description>
 		<year>1990</year>
 		<manufacturer>IGS</manufacturer>
-		<rom name="cyber core (japan).pce" size="393216" crc="a98d276a"/>
+		<rom name="Cyber Core (Japan)(1990)(IGS).pce" size="393216" crc="a98d276a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -581,7 +581,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dorams" sourcefile="pce/d_pce.cpp">
-		<description>Doraemon - Meikyuu Dai Sakusen (Japan)</description>
+		<description>Doraemon: Meikyuu Dai Sakusen (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Doraemon - Meikyuu Dai Sakusen (Japan)(1989)(Hudson Soft).pce" size="262144" crc="dc760a07"/>
@@ -589,7 +589,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dorandn" sourcefile="pce/d_pce.cpp">
-		<description>Doraemon - Nobita no Dorabian Night (Japan)</description>
+		<description>Doraemon: Nobita no Dorabian Night (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Doraemon - Nobita no Dorabian Night (Japan)(1991)(Hudson Soft).pce" size="524288" crc="013a747f"/>
@@ -625,7 +625,7 @@
 		<description>Dragon Egg! (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>onionzoo</manufacturer>
-		<rom name="Dragon Egg! (T-Eng)(2022)(onionzoo).pce" size="524288" crc="bde8ea74"/>
+		<rom name="Dragon Egg! T-Eng (2022)(onionzoo).pce" size="524288" crc="bde8ea74"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -633,23 +633,23 @@
 		<description>Dragon Egg! (Japan)</description>
 		<year>1991</year>
 		<manufacturer>NCS, Masaya</manufacturer>
-		<rom name="dragon egg! (japan).pce" size="524288" crc="442405d5"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="dsaber1" cloneof="dsaber" romof="dsaber" sourcefile="pce/d_pce.cpp">
-		<description>Dragon Saber - After Story of Dragon Spirit (Japan) (Alt)</description>
-		<year>1991</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="dragon saber - after story of dragon spirit (japan) [a].pce" size="524288" crc="c89ce75a"/>
+		<rom name="Dragon Egg! (Japan)(1991)(NCS, Masaya).pce" size="524288" crc="442405d5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="dsaber" sourcefile="pce/d_pce.cpp">
-		<description>Dragon Saber - After Story of Dragon Spirit (Japan)</description>
+		<description>Dragon Saber: After Story of Dragon Spirit (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="dragon saber - after story of dragon spirit (japan).pce" size="524288" crc="3219849c"/>
+		<rom name="Dragon Saber - After Story of Dragon Spirit (Japan)(1991)(Namcot).pce" size="524288" crc="3219849c"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dsaber1" cloneof="dsaber" romof="dsaber" sourcefile="pce/d_pce.cpp">
+		<description>Dragon Saber: After Story of Dragon Spirit (Japan, Alt)</description>
+		<year>1991</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Dragon Saber - After Story of Dragon Spirit (Japan, Alt)(1991)(Namcot).pce" size="524288" crc="c89ce75a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -657,15 +657,7 @@
 		<description>Dragon Spirit (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="dragon spirit (japan).pce" size="262144" crc="01a76935"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="droprock1" cloneof="droprock" romof="droprock" sourcefile="pce/d_pce.cpp">
-		<description>Drop Rock Hora Hora (Japan) (Alt)</description>
-		<year>1990</year>
-		<manufacturer>Data East</manufacturer>
-		<rom name="drop rock hora hora (japan) [a].pce" size="262144" crc="8e81fcac"/>
+		<rom name="Dragon Spirit (Japan)(1988)(Namcot).pce" size="262144" crc="01a76935"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -673,7 +665,15 @@
 		<description>Drop Rock Hora Hora (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="drop rock hora hora (japan).pce" size="262144" crc="67ec5ec4"/>
+		<rom name="Drop Rock Hora Hora (Japan)(1990)(Data East).pce" size="262144" crc="67ec5ec4"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="droprock1" cloneof="droprock" romof="droprock" sourcefile="pce/d_pce.cpp">
+		<description>Drop Rock Hora Hora (Japan, Alt)</description>
+		<year>1990</year>
+		<manufacturer>Data East</manufacturer>
+		<rom name="Drop Rock Hora Hora (Japan, Alt)(1990)(Data East).pce" size="262144" crc="8e81fcac"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -681,7 +681,7 @@
 		<description>Dungeon Explorer (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="dungeon explorer (japan).pce" size="393216" crc="1b1a80a2"/>
+		<rom name="Dungeon Explorer (Japan)(1989)(Hudson Soft).pce" size="393216" crc="1b1a80a2"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -689,7 +689,7 @@
 		<description>Energy (Japan)</description>
 		<year>1989</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="energy (japan).pce" size="262144" crc="ca68ff21"/>
+		<rom name="Energy (Japan)(1989)(NCS).pce" size="262144" crc="ca68ff21"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -697,31 +697,31 @@
 		<description>F-1 Dream (Japan)</description>
 		<year>1989</year>
 		<manufacturer>NEC</manufacturer>
-		<rom name="f-1 dream (japan).pce" size="262144" crc="d50ff730"/>
+		<rom name="F-1 Dream (Japan)(1989)(NEC).pce" size="262144" crc="d50ff730"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="f1pilot" sourcefile="pce/d_pce.cpp">
-		<description>F-1 Pilot - You're King of Kings (Japan)</description>
+		<description>F-1 Pilot: You're King of Kings (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Pack-In-Video</manufacturer>
-		<rom name="f-1 pilot - you're king of kings (japan).pce" size="393216" crc="09048174"/>
+		<rom name="F-1 Pilot - You're King of Kings (Japan)(1989)(Pack-In-Video).pce" size="393216" crc="09048174"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="f1circ91" sourcefile="pce/d_pce.cpp">
-		<description>F1 Circus '91 - World Championship (Japan)</description>
+		<description>F1 Circus '91: World Championship (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="f1 circus '91 - world championship (japan).pce" size="524288" crc="d7cfd70f"/>
+		<rom name="F1 Circus '91 - World Championship (Japan)(1991)(Nihon Bussan).pce" size="524288" crc="d7cfd70f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="f1circ92" sourcefile="pce/d_pce.cpp">
-		<description>F1 Circus '92 - The Speed of Sound (Japan)</description>
+		<description>F1 Circus '92: The Speed of Sound (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="f1 circus '92 - the speed of sound (japan).pce" size="786432" crc="b268f2a2"/>
+		<rom name="F1 Circus '92 - The Speed of Sound (Japan)(1992)(Nihon Bussan).pce" size="786432" crc="b268f2a2"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -745,7 +745,7 @@
 		<description>F1 Triple Battle (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Human</manufacturer>
-		<rom name="f1 triple battle (japan).pce" size="393216" crc="13bf0409"/>
+		<rom name="F1 Triple Battle (Japan)(1989)(Human).pce" size="393216" crc="13bf0409"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -753,7 +753,7 @@
 		<description>Fantasy Zone (Japan)</description>
 		<year>1988</year>
 		<manufacturer>NEC</manufacturer>
-		<rom name="fantasy zone (japan).pce" size="262144" crc="72cb0f9d"/>
+		<rom name="Fantasy Zone (Japan)(1988)(NEC).pce" size="262144" crc="72cb0f9d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -761,7 +761,7 @@
 		<description>Fantasy Zone (PC-Engine Mini Ed.)</description>
 		<year>2020</year>
 		<manufacturer>NEC</manufacturer>
-		<rom name="Fantasy Zone (PCE Mini).pce" size="524288" crc="4d3f879a"/>
+		<rom name="Fantasy Zone (PC-Engine Mini Ed.)(2020)(NEC).pce" size="524288" crc="4d3f879a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -769,7 +769,7 @@
 		<description>Fighting Run (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="fighting run (japan).pce" size="524288" crc="1828d2e5"/>
+		<rom name="Fighting Run (Japan)(1991)(Nihon Bussan).pce" size="524288" crc="1828d2e5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -777,7 +777,7 @@
 		<description>Final Blaster (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="final blaster (japan).pce" size="393216" crc="c90971ba"/>
+		<rom name="Final Blaster (Japan)(1990)(Namcot).pce" size="393216" crc="c90971ba"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -785,7 +785,7 @@
 		<description>Final Lap Twin (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="final lap twin (japan).pce" size="393216" crc="c8c084e3"/>
+		<rom name="Final Lap Twin (Japan)(1989)(Namcot).pce" size="393216" crc="c8c084e3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -793,7 +793,7 @@
 		<description>Final Match Tennis (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Human</manufacturer>
-		<rom name="final match tennis (japan).pce" size="262144" crc="560d2305"/>
+		<rom name="Final Match Tennis (Japan)(1991)(Human).pce" size="262144" crc="560d2305"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -810,7 +810,7 @@
 		<description>Final Soldier (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="final soldier (japan).pce" size="524288" crc="af2dd2af"/>
+		<rom name="Final Soldier (Japan)(1991)(Hudson Soft).pce" size="524288" crc="af2dd2af"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -818,7 +818,7 @@
 		<description>Final Soldier - Special Version (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="final soldier (special version) (japan).pce" size="524288" crc="02a578c5"/>
+		<rom name="Final Soldier - Special Version (Japan)(1991)(Hudson Soft).pce" size="524288" crc="02a578c5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -826,7 +826,7 @@
 		<description>Fire Pro Wrestling - Combination Tag (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Human</manufacturer>
-		<rom name="fire pro wrestling - combination tag (japan).pce" size="393216" crc="90ed6575"/>
+		<rom name="Fire Pro Wrestling - Combination Tag (Japan)(1989)(Human).pce" size="393216" crc="90ed6575"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -834,7 +834,7 @@
 		<description>Fire Pro Wrestling 2 - 2nd Bout (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Human</manufacturer>
-		<rom name="fire pro wrestling 2 - 2nd bout (japan).pce" size="524288" crc="e88987bb"/>
+		<rom name="Fire Pro Wrestling 2 - 2nd Bout (Japan)(1991)(Human).pce" size="524288" crc="e88987bb"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -842,7 +842,7 @@
 		<description>Fire Pro Wrestling 3 - Legend Bout (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Human</manufacturer>
-		<rom name="fire pro wrestling 3 - legend bout (japan).pce" size="1048576" crc="534e8808"/>
+		<rom name="Fire Pro Wrestling 3 - Legend Bout (Japan)(1992)(Human).pce" size="1048576" crc="534e8808"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -865,8 +865,8 @@
 	<game name="alice" sourcefile="pce/d_pce.cpp">
 		<description>Fushigi no Yume no Alice (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="fushigi no yume no alice (japan).pce" size="393216" crc="12c4e6fd"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Fushigi no Yume no Alice (Japan)(1990)(Face).pce" size="393216" crc="12c4e6fd"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -883,7 +883,7 @@
 		<description>Gai Flame (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="gai flame (japan).pce" size="393216" crc="95f90dec"/>
+		<rom name="Gai Flame (Japan)(1990)(NCS).pce" size="393216" crc="95f90dec"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -899,7 +899,7 @@
 		<description>Galaga '88 (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="galaga '88 (japan).pce" size="262144" crc="1a8393c6"/>
+		<rom name="Galaga '88 (Japan)(1988)(Namcot).pce" size="262144" crc="1a8393c6"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -907,15 +907,15 @@
 		<description>Ganbare! Golf Boys (Japan)</description>
 		<year>1989</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="ganbare! golf boys (japan).pce" size="262144" crc="27a4d11a"/>
+		<rom name="Ganbare! Golf Boys (Japan)(1989)(NCS).pce" size="262144" crc="27a4d11a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="gekisboy" sourcefile="pce/d_pce.cpp">
 		<description>Gekisha Boy (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="gekisha boy (japan).pce" size="524288" crc="e8702d51"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Gekisha Boy (Japan)(1992)(Irem).pce" size="524288" crc="e8702d51"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -923,7 +923,7 @@
 		<description>Genji Tsuushin Agedama (Japan)</description>
 		<year>1991</year>
 		<manufacturer>NEC Home Electronics</manufacturer>
-		<rom name="genji tsuushin agedama (japan).pce" size="524288" crc="ad450dfc"/>
+		<rom name="Genji Tsuushin Agedama (Japan)(1991)(NEC Home Electronics).pce" size="524288" crc="ad450dfc"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -931,7 +931,7 @@
 		<description>Genpei Toumaden (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="genpei toumaden (japan).pce" size="524288" crc="b926c682"/>
+		<rom name="Genpei Toumaden (Japan)(1990)(Namcot).pce" size="524288" crc="b926c682"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -939,15 +939,15 @@
 		<description>Genpei Toumaden ni no Maki (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="genpei toumaden ni no maki (japan).pce" size="524288" crc="8793758c"/>
+		<rom name="Genpei Toumaden ni no Maki (Japan)(1992)(Namcot).pce" size="524288" crc="8793758c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="chukatai" sourcefile="pce/d_pce.cpp">
 		<description>Gokuraku! Chuka Taisen (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="gokuraku! chuuka taisen (japan).pce" size="393216" crc="e749a22c"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Gokuraku! Chuka Taisen (Japan)(1992)(Taito).pce" size="393216" crc="e749a22c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -955,7 +955,7 @@
 		<description>Gomola Speed (Japan)</description>
 		<year>1990</year>
 		<manufacturer>UPL</manufacturer>
-		<rom name="gomola speed (japan).pce" size="393216" crc="4bd38f17"/>
+		<rom name="Gomola Speed (Japan)(1990)(UPL).pce" size="393216" crc="4bd38f17"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -963,7 +963,7 @@
 		<description>Gradius (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="gradius (japan).pce" size="262144" crc="0517da65"/>
+		<rom name="Gradius (Japan)(1991)(Konami).pce" size="262144" crc="0517da65"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -971,7 +971,7 @@
 		<description>Gradius (PC-Engine Mini Ed.)</description>
 		<year>2020</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Gradius (PCE Mini).pce" size="524288" crc="4eabdc5c"/>
+		<rom name="Gradius (PC-Engine Mini Ed.)(2020)(Konami).pce" size="524288" crc="4eabdc5c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -979,15 +979,7 @@
 		<description>GunHed (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="gunhed (japan).pce" size="393216" crc="a17d4d7e"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="gunhedht" sourcefile="pce/d_pce.cpp">
-		<description>GunHed - Hudson GunHed Taikai (Japan)</description>
-		<year>1989</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="gunhed - hudson gunhed taikai (japan).pce" size="262144" crc="57f183ae"/>
+		<rom name="GunHed (Japan)(1989)(Hudson Soft).pce" size="393216" crc="a17d4d7e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1000,27 +992,35 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="gunhedht" sourcefile="pce/d_pce.cpp">
+		<description>GunHed: Hudson GunHed Taikai (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="GunHed - Hudson GunHed Taikai (Japan)(1989)(Hudson Soft).pce" size="262144" crc="57f183ae"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hanataka" sourcefile="pce/d_pce.cpp">
 		<description>Hana Taaka Daka!? (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="hana taaka daka! (japan).pce" size="524288" crc="ba4d0dd4"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Hana Taaka Daka! (Japan)(1991)(Taito).pce" size="524288" crc="ba4d0dd4"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="haniisky" sourcefile="pce/d_pce.cpp">
 		<description>Hanii in the Sky (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="hanii in the sky (japan).pce" size="262144" crc="bf3e2cc7"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Hanii in the Sky (Japan)(1989)(Face).pce" size="262144" crc="bf3e2cc7"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="haniirod" sourcefile="pce/d_pce.cpp">
 		<description>Hanii on the Road (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="hanii on the road (japan).pce" size="393216" crc="9897fa86"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Hanii on the Road (Japan)(1990)(Face).pce" size="393216" crc="9897fa86"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1028,31 +1028,31 @@
 		<description>Hatris (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="hatris (japan).pce" size="131072" crc="44e7df53"/>
+		<rom name="Hatris (Japan)(1991)(Tengen).pce" size="131072" crc="44e7df53"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hvyunit" sourcefile="pce/d_pce.cpp">
 		<description>Heavy Unit (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="heavy unit (japan).pce" size="393216" crc="eb923de5"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Heavy Unit (Japan)(1989)(Taito).pce" size="393216" crc="eb923de5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="xserd" sourcefile="pce/d_pce.cpp">
 		<description>Hisou Kihei - Xserd (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="hisou kihei - xserd (japan).pce" size="393216" crc="1cab1ee6"/>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Hisou Kihei - Xserd (Japan)(1990)(Masaya).pce" size="393216" crc="1cab1ee6"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hitice" sourcefile="pce/d_pce.cpp">
-		<description>Hit the Ice - VHL - The Official Video Hockey League (Japan)</description>
+		<description>Hit the Ice - VHL The Official Video Hockey League (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="hit the ice - vhl the official video hockey league (japan).pce" size="393216" crc="7acb60c8"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Hit the Ice - VHL The Official Video Hockey League (Japan)(1991)(Taito).pce" size="393216" crc="7acb60c8"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1061,7 +1061,7 @@
 		<description>Honey in the Sky (Hack, English + 3-button controller)</description>
 		<year>2022</year>
 		<manufacturer>filler, cabbage</manufacturer>
-		<rom name="Honey in the Sky (T-Eng)(2022)(filler).pce" size="262144" crc="d1dc2f66"/>
+		<rom name="Honey in the Sky T-Eng (2022)(filler).pce" size="262144" crc="d1dc2f66"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1069,7 +1069,7 @@
 		<description>Honoo no Toukyuuji - Dodge Danpei (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="honoo no toukyuuji dodge danpei (japan).pce" size="524288" crc="b01ee703"/>
+		<rom name="Honoo no Toukyuuji - Dodge Danpei (Japan)(1992)(Hudson Soft).pce" size="524288" crc="b01ee703"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1086,15 +1086,15 @@
 		<description>Idol Hanafuda Fan Club (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Game Express</manufacturer>
-		<rom name="idol hanafuda fan club (japan).pce" size="524288" crc="9ec6fc6c"/>
+		<rom name="Idol Hanafuda Fan Club (Japan)(1991)(Game Express).pce" size="524288" crc="9ec6fc6c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="imagefgt" sourcefile="pce/d_pce.cpp">
 		<description>Image Fight (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="image fight (japan).pce" size="524288" crc="a80c565f"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Image Fight (Japan)(1990)(Irem).pce" size="524288" crc="a80c565f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1110,7 +1110,7 @@
 		<description>Jack Nicklaus' Greatest 18 Holes of Major Championship Golf (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
-		<rom name="jack nicklaus' greatest 18 holes of major championship golf (japan).pce" size="262144" crc="ea751e82"/>
+		<rom name="Jack Nicklaus' Greatest 18 Holes of Major Championship Golf (Japan)(1989)(Victor).pce" size="262144" crc="ea751e82"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1118,23 +1118,15 @@
 		<description>Jackie Chan (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="jackie chan (japan).pce" size="524288" crc="c6fa6373"/>
+		<rom name="Jackie Chan (Japan)(1991)(Hudson Soft).pce" size="524288" crc="c6fa6373"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="jigomegu" sourcefile="pce/d_pce.cpp">
 		<description>Jigoku Meguri (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="jigoku meguri (japan).pce" size="393216" crc="cc7d3eeb"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="jinmu1" cloneof="jinmu" romof="jinmu" sourcefile="pce/d_pce.cpp">
-		<description>Jinmu Denshou (Japan) (Alt)</description>
-		<year>1989</year>
-		<manufacturer>Big Club</manufacturer>
-		<rom name="jinmu denshou (japan) [a].pce" size="524288" crc="84240ef9"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Jigoku Meguri (Japan)(1990)(Taito).pce" size="393216" crc="cc7d3eeb"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1142,39 +1134,47 @@
 		<description>Jinmu Denshou (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Big Club</manufacturer>
-		<rom name="jinmu denshou (japan).pce" size="524288" crc="c150637a"/>
+		<rom name="Jinmu Denshou (Japan)(1989)(Big Club).pce" size="524288" crc="c150637a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="juuouki1" cloneof="juuouki" romof="juuouki" sourcefile="pce/d_pce.cpp">
-		<description>Juuouki (Japan) (Alt)</description>
+	<game name="jinmu1" cloneof="jinmu" romof="jinmu" sourcefile="pce/d_pce.cpp">
+		<description>Jinmu Denshou (Japan, Alt)</description>
 		<year>1989</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="juuouki (japan) [a].pce" size="524288" crc="6a628982"/>
+		<manufacturer>Big Club</manufacturer>
+		<rom name="Jinmu Denshou (Japan, Alt)(1989)(Big Club).pce" size="524288" crc="84240ef9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="juuouki" sourcefile="pce/d_pce.cpp">
 		<description>Juuouki (Japan)</description>
 		<year>1989</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="juuouki (japan).pce" size="524288" crc="c8c7d63e"/>
+		<manufacturer>NEC Avenue</manufacturer>
+		<rom name="Juuouki (Japan)(1989)(NEC Avenue).pce" size="524288" crc="c8c7d63e"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="juuouki1" cloneof="juuouki" romof="juuouki" sourcefile="pce/d_pce.cpp">
+		<description>Juuouki (Japan, Alt)</description>
+		<year>1989</year>
+		<manufacturer>NEC Avenue</manufacturer>
+		<rom name="Juuouki (Japan, Alt)(1989)(NEC Avenue).pce" size="524288" crc="6a628982"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="shubibi" sourcefile="pce/d_pce.cpp">
 		<description>Kaizou Choujin Shubibinman (Japan)</description>
 		<year>1989</year>
-		<manufacturer>NCS</manufacturer>
-		<rom name="kaizou choujin shubibinman (japan).pce" size="262144" crc="a9084d6e"/>
+		<manufacturer>NCS - Masaya</manufacturer>
+		<rom name="Kaizou Choujin Shubibinman (Japan)(1989)(NCS - Masaya).pce" size="262144" crc="a9084d6e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="shubibi2" sourcefile="pce/d_pce.cpp">
-		<description>Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)</description>
+		<description>Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="kaizou choujin shubibinman 2 - aratanaru teki (japan).pce" size="524288" crc="109ba474"/>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)(1991)(Masaya).pce" size="524288" crc="109ba474"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1182,7 +1182,7 @@
 		<description>Kato Chan &amp; Ken Chan (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="kato chan &amp; ken chan (japan).pce" size="262144" crc="6069c5e7"/>
+		<rom name="Kato Chan &amp; Ken Chan (Japan)(1987)(Hudson Soft).pce" size="262144" crc="6069c5e7"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1190,23 +1190,23 @@
 		<description>Kattobi! Takuhai Kun (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tonkin House</manufacturer>
-		<rom name="kattobi! takuhai kun (japan).pce" size="393216" crc="4f2844b0"/>
+		<rom name="Kattobi! Takuhai Kun (Japan)(1990)(Tonkin House).pce" size="393216" crc="4f2844b0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="kickball" sourcefile="pce/d_pce.cpp">
 		<description>Kickball (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="kickball (japan).pce" size="393216" crc="7e3c367b"/>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Kickball (Japan)(1990)(Masaya).pce" size="393216" crc="7e3c367b"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="kikikai" sourcefile="pce/d_pce.cpp">
 		<description>Kiki KaiKai (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="kiki kaikai (japan).pce" size="393216" crc="c0cb5add"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Kiki KaiKai (Japan)(1990)(Taito).pce" size="393216" crc="c0cb5add"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1214,7 +1214,7 @@
 		<description>King of Casino (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
-		<rom name="king of casino (japan).pce" size="262144" crc="bf52788e"/>
+		<rom name="King of Casino (Japan)(1990)(Victor).pce" size="262144" crc="bf52788e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1222,7 +1222,7 @@
 		<description>Klax (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="klax (japan).pce" size="262144" crc="c74ffbc9"/>
+		<rom name="Klax (Japan)(1990)(Tengen).pce" size="262144" crc="c74ffbc9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1231,7 +1231,7 @@
 		<description>Knight Rider Special (Hack, English v2.0)</description>
 		<year>2017</year>
 		<manufacturer>Psyklax</manufacturer>
-		<rom name="Knight Rider Special (T-Eng v2.0)(2017)(Psyklax).pce" size="262144" crc="1109d8e3"/>
+		<rom name="Knight Rider Special T-Eng v2.0 (2017)(Psyklax).pce" size="262144" crc="1109d8e3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1239,7 +1239,7 @@
 		<description>Knight Rider Special (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Pack-In-Video</manufacturer>
-		<rom name="knight rider special (japan).pce" size="262144" crc="c614116c"/>
+		<rom name="Knight Rider Special (Japan)(1989)(Pack-In-Video).pce" size="262144" crc="c614116c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1247,7 +1247,7 @@
 		<description>Kore Ga Pro Yakyuu '89 (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Intec</manufacturer>
-		<rom name="kore ga pro yakyuu '89 (japan).pce" size="262144" crc="44f60137"/>
+		<rom name="Kore Ga Pro Yakyuu '89 (Japan)(1989)(Intec).pce" size="262144" crc="44f60137"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1255,7 +1255,7 @@
 		<description>Kore Ga Pro Yakyuu '90 (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Intec</manufacturer>
-		<rom name="kore ga pro yakyuu '90 (japan).pce" size="262144" crc="1772b229"/>
+		<rom name="Kore Ga Pro Yakyuu '90 (Japan)(1990)(Intec).pce" size="262144" crc="1772b229"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1263,7 +1263,7 @@
 		<description>Kung Fu, The (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="kung fu, the (japan).pce" size="262144" crc="b552c906"/>
+		<rom name="Kung Fu, The (Japan)(1987)(Hudson Soft).pce" size="262144" crc="b552c906"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1271,7 +1271,7 @@
 		<description>Kyuukyoku Mahjong - Idol Graphics (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Game Express</manufacturer>
-		<rom name="kyuukyoku mahjong - idol graphics (japan).pce" size="524288" crc="02dde03e"/>
+		<rom name="Kyuukyoku Mahjong - Idol Graphics (Japan)(1992)(Game Express).pce" size="524288" crc="02dde03e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1279,15 +1279,15 @@
 		<description>Kyuukyoku Mahjong II (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Game Express</manufacturer>
-		<rom name="kyuukyoku mahjong ii (japan).pce" size="524288" crc="e5b6b3e5"/>
+		<rom name="Kyuukyoku Mahjong II (Japan)(1993)(Game Express).pce" size="524288" crc="e5b6b3e5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ktiger" sourcefile="pce/d_pce.cpp">
 		<description>Kyuukyoku Tiger (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="kyuukyoku tiger (japan).pce" size="262144" crc="09509315"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Kyuukyoku Tiger (Japan)(1989)(Taito).pce" size="262144" crc="09509315"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1296,7 +1296,7 @@
 		<description>Lady Sword (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>EsperKnight, filler, Grant Laughlin, Tomaitheous</manufacturer>
-		<rom name="Lady Sword T-Eng(2010)(EsperKnight, filler, Grant Laughlin, Tomaitheous).pce" size="1049088" crc="c556aa43"/>
+		<rom name="Lady Sword T-Eng (2010)(EsperKnight, filler, Grant Laughlin, Tomaitheous).pce" size="1049088" crc="c556aa43"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1319,8 +1319,8 @@
 	<game name="loht" sourcefile="pce/d_pce.cpp">
 		<description>Legend of Hero Tonma (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="legend of hero tonma (japan).pce" size="524288" crc="c28b0d8a"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Legend of Hero Tonma (Japan)(1991)(Irem).pce" size="524288" crc="c28b0d8a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1328,7 +1328,7 @@
 		<description>Lode Runner - Lost Labyrinth (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Pack-In-Video</manufacturer>
-		<rom name="lode runner - lost labyrinth (japan).pce" size="262144" crc="e6ee1468"/>
+		<rom name="Lode Runner - Lost Labyrinth (Japan)(1990)(Pack-In-Video).pce" size="262144" crc="e6ee1468"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1340,27 +1340,27 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mjgakuen" sourcefile="pce/d_pce.cpp">
-		<description>Mahjong Gakuen - Touma Soushirou Toujou (Japan)</description>
+	<game name="mjgakmld" sourcefile="pce/d_pce.cpp">
+		<description>Mahjong Gakuen Mild: Touma Soushirou Toujou (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="Mahjong Gakuen - Touma Soushirou Toujou (Japan)(1990)(Face).pce" size="524288" crc="f5b90d55"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Mahjong Gakuen Mild - Touma Soushirou Toujou (Japan)(1990)(Face).pce" size="524288" crc="f4148600"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mjgakmld1" cloneof="mjgakmld" romof="mjgakmld" sourcefile="pce/d_pce.cpp">
-		<description>Mahjong Gakuen Mild - Touma Soushirou Toujou (Japan) (Alt)</description>
+		<description>Mahjong Gakuen Mild: Touma Soushirou Toujou (Japan, Alt)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="mahjong gakuen mild - touma soushirou toujou (japan) [a].pce" size="524288" crc="3e4d432a"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Mahjong Gakuen Mild - Touma Soushirou Toujou (Japan, Alt)(1990)(Face).pce" size="524288" crc="3e4d432a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mjgakmld" sourcefile="pce/d_pce.cpp">
-		<description>Mahjong Gakuen Mild - Touma Soushirou Toujou (Japan)</description>
+	<game name="mjgakuen" sourcefile="pce/d_pce.cpp">
+		<description>Mahjong Gakuen: Touma Soushirou Toujou (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="mahjong gakuen mild - touma soushirou toujou (japan).pce" size="524288" crc="f4148600"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Mahjong Gakuen - Touma Soushirou Toujou (Japan)(1990)(Face).pce" size="524288" crc="f5b90d55"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1368,23 +1368,23 @@
 		<description>Mahjong Gokuu Special (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="mahjong gokuu special (japan).pce" size="393216" crc="f8861456"/>
+		<rom name="Mahjong Gokuu Special (Japan)(1990)(Sunsoft).pce" size="393216" crc="f8861456"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mjkaiser" sourcefile="pce/d_pce.cpp">
-		<description>Mahjong Haou Den - Kaiser's Quest (Japan)</description>
+		<description>Mahjong Haou Den: Kaiser's Quest (Japan)</description>
 		<year>1992</year>
 		<manufacturer>UPL</manufacturer>
-		<rom name="mahjong haou den - kaiser's quest (japan).pce" size="524288" crc="df10c895"/>
+		<rom name="Mahjong Haou Den - Kaiser's Quest (Japan)(1992)(UPL).pce" size="524288" crc="df10c895"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mjwars" sourcefile="pce/d_pce.cpp">
-		<description>Mahjong Shikyaku Retsuden - Mahjong Wars (Japan)</description>
+		<description>Mahjong Shikyaku Retsuden: Mahjong Wars (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="mahjong shikyaku retsuden - mahjong wars (japan).pce" size="262144" crc="6c34aaea"/>
+		<rom name="Mahjong Shikyaku Retsuden - Mahjong Wars (Japan)(1990)(Nihon Bussan).pce" size="262144" crc="6c34aaea"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1427,7 +1427,7 @@
 		<description>Makai Hakken Den Shada (Hack, English)</description>
 		<year>2015</year>
 		<manufacturer>Shubibiman</manufacturer>
-		<rom name="Makai Hakkenden Shada (T-Eng)(2015)(Shubibiman).pce" size="262144" crc="017de16d"/>
+		<rom name="Makai Hakkenden Shada T-Eng (2015)(Shubibiman).pce" size="262144" crc="017de16d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1476,7 +1476,7 @@
 		<description>Mashin Eiyuuden Wataru (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Mashin Eiyuuden Wataru (English v1.0)(2022)(Stardust Crusaders).pce" size="524288" crc="53e14cb5"/>
+		<rom name="Mashin Eiyuuden Wataru T-Eng (2022)(Stardust Crusaders).pce" size="524288" crc="53e14cb5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1491,24 +1491,24 @@
 	<game name="mesopot" sourcefile="pce/d_pce.cpp">
 		<description>Mesopotamia (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Atlus</manufacturer>
-		<rom name="mesopotamia (japan).pce" size="524288" crc="e87190f1"/>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Mesopotamia (Japan)(1991)(Atlus).pce" size="524288" crc="e87190f1"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="metlstok" sourcefile="pce/d_pce.cpp">
 		<description>Metal Stoker (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="metal stoker (japan).pce" size="524288" crc="25a02bee"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Metal Stoker (Japan)(1991)(Face).pce" size="524288" crc="25a02bee"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mizubaku" sourcefile="pce/d_pce.cpp">
-		<description>Mizubaku Dai Bouken - Liquid Kids (Japan)</description>
+		<description>Mizubaku Dai Bouken ~ Liquid Kids (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="mizubaku dai bouken (japan).pce" size="524288" crc="b2ef558d"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Mizubaku Dai Bouken (Japan)(1992)(Taito).pce" size="524288" crc="b2ef558d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1568,35 +1568,35 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="motorod2a" cloneof="motorod2" romof="motorod2" sourcefile="pce/d_pce.cpp">
-		<description>Moto Roader II (Japan) (Alt)</description>
-		<year>1991</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="moto roader ii (japan) [a].pce" size="393216" crc="4ba525ba"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="motorod2" sourcefile="pce/d_pce.cpp">
 		<description>Moto Roader II (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="moto roader ii (japan).pce" size="393216" crc="0b7f6e5f"/>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Moto roader II (Japan)(1991)(Masaya).pce" size="393216" crc="0b7f6e5f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mrheli1" cloneof="mrheli" romof="mrheli" sourcefile="pce/d_pce.cpp">
-		<description>Mr. Heli no Daibouken (Japan) (Alt)</description>
-		<year>1989</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="mr. heli no daibouken (japan) [a].pce" size="524288" crc="ac0cd796"/>
+	<game name="motorod2a" cloneof="motorod2" romof="motorod2" sourcefile="pce/d_pce.cpp">
+		<description>Moto Roader II (Japan, Alt)</description>
+		<year>1991</year>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Moto roader II (Japan, Alt)(1991)(Masaya).pce" size="393216" crc="4ba525ba"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mrheli" sourcefile="pce/d_pce.cpp">
 		<description>Mr. Heli no Daibouken (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="mr. heli no daibouken (japan).pce" size="524288" crc="2cb92290"/>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Mr. Heli no Daibouken (Japan)(1989)(Irem).pce" size="524288" crc="2cb92290"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mrheli1" cloneof="mrheli" romof="mrheli" sourcefile="pce/d_pce.cpp">
+		<description>Mr. Heli no Daibouken (Japan, Alt)</description>
+		<year>1989</year>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Mr. Heli no Daibouken (Japan, Alt)(1989)(Irem).pce" size="524288" crc="ac0cd796"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1613,7 +1613,7 @@
 		<description>Narazumono Sentai Butai - Bloody Wolf (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="narazumono sentai butai - bloody wolf (japan).pce" size="524288" crc="b01f70c2"/>
+		<rom name="Narazumono Sentai Butai - Bloody Wolf (Japan)(1989)(Data East).pce" size="524288" crc="b01f70c2"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1621,7 +1621,7 @@
 		<description>Naxat Open (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="naxat open (japan).pce" size="393216" crc="60ecae22"/>
+		<rom name="Naxat Open (Japan)(1989)(Naxat Soft).pce" size="393216" crc="60ecae22"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1629,15 +1629,15 @@
 		<description>Naxat Stadium (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="naxat stadium (japan).pce" size="524288" crc="20a7d128"/>
+		<rom name="Naxat Stadium (Japan)(1990)(Naxat Soft).pce" size="524288" crc="20a7d128"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="nazomasq" sourcefile="pce/d_pce.cpp">
 		<description>Nazo no Masquerade (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Masiya</manufacturer>
-		<rom name="nazo no mascarade (japan).pce" size="393216" crc="0441d85a"/>
+		<manufacturer>Masaya</manufacturer>
+		<rom name="Nazo no Masquerade (Japan)(1990)(Masaya).pce" size="393216" crc="0441d85a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1645,7 +1645,7 @@
 		<description>Necromancer (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="necromancer (japan).pce" size="262144" crc="53109ae6"/>
+		<rom name="Necromancer (Japan)(1988)(Hudson Soft).pce" size="262144" crc="53109ae6"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1653,7 +1653,7 @@
 		<description>Necros no Yousai (Japan)</description>
 		<year>1990</year>
 		<manufacturer>ASK</manufacturer>
-		<rom name="necros no yousai (japan).pce" size="524288" crc="fb0fdcfe"/>
+		<rom name="Necros no Yousai (Japan)(1990)(ASK).pce" size="524288" crc="fb0fdcfe"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1661,7 +1661,7 @@
 		<description>Nectaris (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="nectaris (japan).pce" size="393216" crc="0243453b"/>
+		<rom name="Nectaris (Japan)(1990)(Hudson Soft).pce" size="393216" crc="0243453b"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1669,7 +1669,7 @@
 		<description>Nekketsu Koukou Dodgeball Bu - PC Bangai Hen (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="nekketsu koukou dodgeball bu - pc bangai hen (japan).pce" size="262144" crc="65fdb863"/>
+		<rom name="Nekketsu Koukou Dodgeball Bu - PC Bangai Hen (Japan)(1990)(Naxat Soft).pce" size="262144" crc="65fdb863"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1677,7 +1677,7 @@
 		<description>Nekketsu Koukou Dodgeball Bu - Soccer PC Hen (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="nekketsu koukou dodgeball bu - soccer pc hen (japan).pce" size="524288" crc="f2285c6d"/>
+		<rom name="Nekketsu Koukou Dodgeball Bu - Soccer PC Hen (Japan)(1992)(Naxat Soft).pce" size="524288" crc="f2285c6d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1685,7 +1685,7 @@
 		<description>Neutopia (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="neutopia (japan).pce" size="393216" crc="9c49ef11"/>
+		<rom name="Neutopia (Japan)(1989)(Hudson Soft).pce" size="393216" crc="9c49ef11"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1693,15 +1693,15 @@
 		<description>Neutopia II (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="neutopia ii (japan).pce" size="786432" crc="2b94aedc"/>
+		<rom name="Neutopia II (Japan)(1991)(Hudson Soft).pce" size="786432" crc="2b94aedc"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tnzs" sourcefile="pce/d_pce.cpp">
 		<description>New Zealand Story, The (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="new zealand story, the (japan).pce" size="393216" crc="8e4d75a8"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="New Zealand Story, The (Japan)(1990)(Taito).pce" size="393216" crc="8e4d75a8"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1732,8 +1732,8 @@
 	<game name="ninjawar" sourcefile="pce/d_pce.cpp">
 		<description>Ninja Warriors, The (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="ninja warriors, the (japan).pce" size="393216" crc="96e0cd9d"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Ninja Warriors, The (Japan)(1989)(Taito).pce" size="393216" crc="96e0cd9d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1741,7 +1741,7 @@
 		<description>Obocchama-kun (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="obocchama kun (japan).pce" size="524288" crc="4d3b0bc9"/>
+		<rom name="Obocchama-kun (Japan)(1991)(Namcot).pce" size="524288" crc="4d3b0bc9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1749,8 +1749,8 @@
 		<comment>Prototype</comment>
 		<description>Off the Wall (Prototype)</description>
 		<year>1992</year>
-		<manufacturer>Tengen, Atari</manufacturer>
-		<rom name="Off the Wall [Proto 1].pce" size="524800" crc="40f04a7c"/>
+		<manufacturer>Tengen - Atari</manufacturer>
+		<rom name="Off the Wall (Proto)(1992)(Tengen - Atari).pce" size="524800" crc="40f04a7c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1758,7 +1758,7 @@
 		<description>Operation Wolf (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="operation wolf (japan).pce" size="524288" crc="ff898f87"/>
+		<rom name="Operation Wolf (Japan)(1990)(NEC Avenue).pce" size="524288" crc="ff898f87"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1766,7 +1766,7 @@
 		<description>Ordyne (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="ordyne (japan).pce" size="524288" crc="8c565cb6"/>
+		<rom name="Ordyne (Japan)(1989)(Namcot).pce" size="524288" crc="8c565cb6"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1775,7 +1775,7 @@
 		<description>Out Live (Hack, English v1.1)</description>
 		<year>2016</year>
 		<manufacturer>Nebulous Translations</manufacturer>
-		<rom name="Out Live (T-Eng v1.1)(2016)(Nebulous Translations).pce" size="303104" crc="2f1cee20"/>
+		<rom name="Out Live T-Eng v1.1 (2016)(Nebulous Translations).pce" size="303104" crc="2f1cee20"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1783,7 +1783,7 @@
 		<description>Out Live (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="out live (japan).pce" size="262144" crc="5cdb3f5b"/>
+		<rom name="Out Live (Japan)(1989)(Sunsoft).pce" size="262144" crc="5cdb3f5b"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1791,7 +1791,7 @@
 		<description>Out Run (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="out run (japan).pce" size="524288" crc="e203f223"/>
+		<rom name="Out Run (Japan)(1990)(NEC Avenue).pce" size="524288" crc="e203f223"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1799,15 +1799,15 @@
 		<description>Override (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="override (japan).pce" size="262144" crc="b74ec562"/>
+		<rom name="Override (Japan)(1991)(Data East).pce" size="262144" crc="b74ec562"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="p47" sourcefile="pce/d_pce.cpp">
-		<description>P-47 - The Freedom Fighter (Japan)</description>
+		<description>P-47: The Freedom Fighter (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Aicom</manufacturer>
-		<rom name="p-47 - the freedom fighter (japan).pce" size="262144" crc="7632db90"/>
+		<manufacturer>Aicom Corp.</manufacturer>
+		<rom name="P-47 - The Freedom Fighter (Japan)(1989)(Aicom).pce" size="262144" crc="7632db90"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1815,7 +1815,7 @@
 		<description>Pac-Land (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="pac-land (japan).pce" size="262144" crc="14fad3ba"/>
+		<rom name="Pac-Land (Japan)(1989)(Namcot).pce" size="262144" crc="14fad3ba"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1838,8 +1838,8 @@
 	<game name="parasol" sourcefile="pce/d_pce.cpp">
 		<description>Parasol Stars - The Story of Bubble Bobble III (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="parasol stars - the story of bubble bobble iii (japan).pce" size="393216" crc="51e86451"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Parasol Stars - The Story of Bubble Bobble III (Japan)(1991)(Taito).pce" size="393216" crc="51e86451"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1847,15 +1847,7 @@
 		<description>Parodius da! - Shinwa Kara Owarai He (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="parodius da! - shinwa kara owarai he (japan).pce" size="1048576" crc="647718f9"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pcdenja" cloneof="pcdenj" romof="pcdenj" sourcefile="pce/d_pce.cpp">
-		<description>PC Denjin - Punkic Cyborgs (Japan) (Alt)</description>
-		<year>1992</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc denjin - punkic cyborgs (japan) [a].pce" size="524288" crc="8fb4f228"/>
+		<rom name="Parodius da! - Shinwa Kara Owarai He (Japan)(1992)(Konami).pce" size="1048576" crc="647718f9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1863,47 +1855,55 @@
 		<description>PC Denjin - Punkic Cyborgs (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc denjin - punkic cyborgs (japan).pce" size="524288" crc="740491c2"/>
+		<rom name="PC Denjin - Punkic Cyborgs (Japan)(1992)(Hudson Soft).pce" size="524288" crc="740491c2"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="pcgenja" cloneof="pcgenj" romof="pcgenj" sourcefile="pce/d_pce.cpp">
-		<description>PC Genjin - Pithecanthropus Computerurus (Japan) (Alt)</description>
-		<year>1989</year>
+	<game name="pcdenja" cloneof="pcdenj" romof="pcdenj" sourcefile="pce/d_pce.cpp">
+		<description>PC Denjin: Punkic Cyborgs (Japan, Alt)</description>
+		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc genjin - pithecanthropus computerurus (japan) [a].pce" size="393216" crc="67b35e6e"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pcgenj" sourcefile="pce/d_pce.cpp">
-		<description>PC Genjin - Pithecanthropus Computerurus (Japan)</description>
-		<year>1989</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc genjin - pithecanthropus computerurus (japan).pce" size="393216" crc="2cb5cd55"/>
+		<rom name="PC Denjin - Punkic Cyborgs (Japan, Alt)(1992)(Hudson Soft).pce" size="524288" crc="8fb4f228"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pcgenj2" sourcefile="pce/d_pce.cpp">
-		<description>PC Genjin 2 - Pithecanthropus Computerurus (Japan)</description>
+		<description>PC Genjin 2: Pithecanthropus Computerurus (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc genjin 2 - pithecanthropus computerurus (japan).pce" size="524288" crc="3028f7ca"/>
+		<rom name="PC Genjin 2 - Pithecanthropus Computerurus (Japan)(1991)(Hudson Soft).pce" size="524288" crc="3028f7ca"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pcgenj3" sourcefile="pce/d_pce.cpp">
-		<description>PC Genjin 3 - Pithecanthropus Computerurus (Japan)</description>
+		<description>PC Genjin 3: Pithecanthropus Computerurus (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc genjin 3 - pithecanthropus computerurus (japan).pce" size="1048576" crc="a170b60e"/>
+		<rom name="PC Genjin 3 - Pithecanthropus Computerurus (Japan)(1993)(Hudson Soft).pce" size="1048576" crc="a170b60e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pcgenj3t" sourcefile="pce/d_pce.cpp">
-		<description>PC Genjin 3 - Pithecanthropus Computerurus (Taikenban) (Japan)</description>
+		<description>PC Genjin 3: Pithecanthropus Computerurus (Taikenban) (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="pc genjin 3 - pithecanthropus computerurus (taikenban) (japan).pce" size="786432" crc="6f6ed301"/>
+		<rom name="PC Genjin 3 - Pithecanthropus Computerurus (Taikenban) (Japan)(1993)(Hudson Soft).pce" size="786432" crc="6f6ed301"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pcgenj" sourcefile="pce/d_pce.cpp">
+		<description>PC Genjin: Pithecanthropus Computerurus (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="PC Genjin - Pithecanthropus Computerurus (Japan)(1989)(Hudson Soft).pce" size="393216" crc="2cb5cd55"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pcgenja" cloneof="pcgenj" romof="pcgenj" sourcefile="pce/d_pce.cpp">
+		<description>PC Genjin: Pithecanthropus Computerurus (Japan, Alt)</description>
+		<year>1989</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="PC Genjin - Pithecanthropus Computerurus (Japan, Alt)(1989)(Hudson Soft).pce" size="393216" crc="67b35e6e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2040,7 +2040,7 @@
 		<description>Power Sports (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="power sports (japan).pce" size="524288" crc="29eec024"/>
+		<rom name="Power Sports (Japan)(1992)(Hudson Soft).pce" size="524288" crc="29eec024"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2048,7 +2048,7 @@
 		<description>Power Tennis (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="power tennis (japan).pce" size="524288" crc="8def5aa1"/>
+		<rom name="Power Tennis (Japan)(1993)(Hudson Soft).pce" size="524288" crc="8def5aa1"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2056,7 +2056,7 @@
 		<description>Pro Tennis World Court (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="pro tennis world court (japan).pce" size="262144" crc="11a36745"/>
+		<rom name="Pro Tennis World Court (Japan)(1988)(Namcot).pce" size="262144" crc="11a36745"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2064,7 +2064,7 @@
 		<description>Pro Yakyuu World Stadium '91 (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="pro yakyuu world stadium '91 (japan).pce" size="262144" crc="66b167a9"/>
+		<rom name="Pro Yakyuu World Stadium '91 (Japan)(1991)(Namcot).pce" size="262144" crc="66b167a9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2072,7 +2072,7 @@
 		<description>Pro Yakyuu World Stadium (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="pro yakyuu world stadium (japan).pce" size="262144" crc="34e089a9"/>
+		<rom name="Pro Yakyuu World Stadium (Japan)(1988)(Namcot).pce" size="262144" crc="34e089a9"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2080,7 +2080,7 @@
 		<description>Psycho Chaser (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="psycho chaser (japan).pce" size="262144" crc="03883ee8"/>
+		<rom name="Psycho Chaser (Japan)(1990)(Naxat Soft).pce" size="262144" crc="03883ee8"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2088,15 +2088,15 @@
 		<description>Puzzle Boy (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Nihon Telenet</manufacturer>
-		<rom name="puzzle boy (japan).pce" size="262144" crc="faa6e187"/>
+		<rom name="Puzzle Boy (Japan)(1991)(Nihon Telenet).pce" size="262144" crc="faa6e187"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="puzznic" sourcefile="pce/d_pce.cpp">
 		<description>Puzznic (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="puzznic (japan).pce" size="262144" crc="965c95b3"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Puzznic (Japan)(1990)(Taito).pce" size="262144" crc="965c95b3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2143,7 +2143,7 @@
 	<game name="racindam" sourcefile="pce/d_pce.cpp">
 		<description>Racing Damashii (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Irem</manufacturer>
+		<manufacturer>Irem Corp.</manufacturer>
 		<rom name="racing damashii (japan).pce" size="524288" crc="3e79734c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2160,7 +2160,7 @@
 		<description>Rastan Saga II (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Rastan Saga II (Japan)(1990)(Taito Corp.).pce" size="393216" crc="00c38e69"/>
+		<rom name="Rastan Saga II (Japan)(1990)(Taito).pce" size="393216" crc="00c38e69"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2184,7 +2184,7 @@
 	<game name="ryukyu" sourcefile="pce/d_pce.cpp">
 		<description>Ryuukyuu (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Face</manufacturer>
+		<manufacturer>Face Corp.</manufacturer>
 		<rom name="Ryukyu (Japan)(1990)(Face).pce" size="262144" crc="91e6896f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2201,7 +2201,7 @@
 		<description>Saigo no Nindou - Ninja Spirit (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Saigo no Nindou - Ninja Spirit (Japan)(1990)(Irem Corp.).pce" size="524288" crc="0590a156"/>
+		<rom name="Saigo no Nindou - Ninja Spirit (Japan)(1990)(Irem).pce" size="524288" crc="0590a156"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2209,7 +2209,7 @@
 		<description>Salamander (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="salamander (japan).pce" size="262144" crc="faecce20"/>
+		<rom name="Salamander (Japan)(1991)(Konami).pce" size="262144" crc="faecce20"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2217,7 +2217,7 @@
 		<description>Salamander (PC-Engine Mini Ed.)</description>
 		<year>2020</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Salamander (PCE Mini).pce" size="1048576" crc="83b0c3a4"/>
+		<rom name="Salamander (PC-Engine Mini Ed.)(2020)(Konami).pce" size="1048576" crc="83b0c3a4"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2234,7 +2234,7 @@
 		<description>Sekigahara (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tonkin House</manufacturer>
-		<rom name="sekigahara (japan).pce" size="524288" crc="2e955051"/>
+		<rom name="Sekigahara (Japan)(1990)(Tonkin House).pce" size="524288" crc="2e955051"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2242,7 +2242,7 @@
 		<description>Sengoku Mahjong (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="sengoku mahjong (japan).pce" size="262144" crc="90e6bf49"/>
+		<rom name="Sengoku Mahjong (Japan)(1988)(Hudson Soft).pce" size="262144" crc="90e6bf49"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2250,7 +2250,7 @@
 		<description>Shanghai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="shanghai (japan).pce" size="131072" crc="6923d736"/>
+		<rom name="Shanghai (Japan)(1987)(Hudson Soft).pce" size="131072" crc="6923d736"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2258,7 +2258,7 @@
 		<description>Shinobi (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Asmik</manufacturer>
-		<rom name="shinobi (japan).pce" size="393216" crc="bc655cf3"/>
+		<rom name="Shinobi (Japan)(1989)(Asmik).pce" size="393216" crc="bc655cf3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2266,7 +2266,7 @@
 		<description>Shiryou Sensen (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
-		<rom name="shiryou sensen (japan).pce" size="262144" crc="469a0fdf"/>
+		<rom name="Shiryou Sensen (Japan)(1989)(Victor).pce" size="262144" crc="469a0fdf"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2274,7 +2274,7 @@
 		<description>Shougi Shodan Icchokusen (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Home Data</manufacturer>
-		<rom name="shougi shodan icchokusen (japan).pce" size="262144" crc="23ec8970"/>
+		<rom name="Shougi Shodan Icchokusen (Japan)(1990)(Home Data).pce" size="262144" crc="23ec8970"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2282,15 +2282,15 @@
 		<description>Shougi Shoshinsha Muyou (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Home Data</manufacturer>
-		<rom name="shougi shoshinsha muyou (japan).pce" size="262144" crc="457f2bc4"/>
+		<rom name="Shougi Shoshinsha Muyou (Japan)(1991)(Home Data).pce" size="262144" crc="457f2bc4"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sidearms" sourcefile="pce/d_pce.cpp">
-		<description>Sidearms - Hyper Dyne (Japan)</description>
+		<description>Side Arms - Hyper Dyne (Japan)</description>
 		<year>1989</year>
-		<manufacturer>NEC</manufacturer>
-		<rom name="sidearms - hyper dyne (japan).pce" size="262144" crc="e5e7b8b7"/>
+		<manufacturer>NEC Avenue</manufacturer>
+		<rom name="Side Arms - Hyper Dyne (Japan)(1989)(NEC Avenue).pce" size="262144" crc="e5e7b8b7"/>
 		<video type="raster" orientation="horizontal" width="352" height="242" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2298,7 +2298,7 @@
 		<description>Silent Debuggers (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="silent debuggers (japan).pce" size="524288" crc="616ea179"/>
+		<rom name="Silent Debuggers (Japan)(1991)(Data East).pce" size="524288" crc="616ea179"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2306,7 +2306,7 @@
 		<description>Sindibad Chitei no Dai Makyuu (Japan)</description>
 		<year>1990</year>
 		<manufacturer>IGS</manufacturer>
-		<rom name="sindibad chitei no dai makyuu (japan).pce" size="393216" crc="b5c4eebd"/>
+		<rom name="Sindibad Chitei no Dai Makyuu (Japan)(1990)(IGS).pce" size="393216" crc="b5c4eebd"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2314,7 +2314,7 @@
 		<description>Skweek (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
-		<rom name="skweek (japan).pce" size="262144" crc="4d539c9f"/>
+		<rom name="Skweek (Japan)(1991)(Victor).pce" size="262144" crc="4d539c9f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2361,8 +2361,8 @@
 	<game name="spaceinv" sourcefile="pce/d_pce.cpp">
 		<description>Space Invaders - Fukkatsu no Hi (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="space invaders - fukkatsu no hi (japan).pce" size="262144" crc="99496db3"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Space Invaders - Fukkatsu no Hi (Japan)(1990)(Taito).pce" size="262144" crc="99496db3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2393,8 +2393,8 @@
 	<game name="splatth" sourcefile="pce/d_pce.cpp">
 		<description>Splatterhouse (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Namco</manufacturer>
-		<rom name="splatterhouse (japan).pce" size="524288" crc="6b319457"/>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Splatterhouse (Japan)(1990)(Namcot).pce" size="524288" crc="6b319457"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2420,7 +2420,7 @@
 		<description>Stratego (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
-		<rom name="stratego (japan).pce" size="262144" crc="727f4656"/>
+		<rom name="Stratego (Japan)(1992)(Victor).pce" size="262144" crc="727f4656"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2491,8 +2491,8 @@
 	<game name="chasehq" sourcefile="pce/d_pce.cpp">
 		<description>Taito Chase H.Q. (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="taito chase h.q. (japan).pce" size="393216" crc="6f4fd790"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Taito Chase H.Q. (Japan)(1990)(Taito).pce" size="393216" crc="6f4fd790"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2500,64 +2500,64 @@
 		<description>Takahashi Meijin no Shin Boukenjima (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="takahashi meijin no shin boukenjima (japan).pce" size="524288" crc="e415ea19"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="shingen1" cloneof="shingen" romof="shingen" sourcefile="pce/d_pce.cpp">
-		<description>Takeda Shingen (Japan) (Alt)</description>
-		<year>1989</year>
-		<manufacturer>Aicom</manufacturer>
-		<rom name="takeda shingen (japan) [a].pce" size="262144" crc="df7af71c"/>
+		<rom name="Takahashi Meijin no Shin Boukenjima (Japan)(1992)(Hudson Soft).pce" size="524288" crc="e415ea19"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="shingen" sourcefile="pce/d_pce.cpp">
 		<description>Takeda Shingen (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Aicom</manufacturer>
-		<rom name="takeda shingen (japan).pce" size="262144" crc="f022be13"/>
+		<manufacturer>Aicom Corp.</manufacturer>
+		<rom name="Takeda Shingen (Japan)(1989)(Aicom).pce" size="262144" crc="f022be13"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shingen1" cloneof="shingen" romof="shingen" sourcefile="pce/d_pce.cpp">
+		<description>Takeda Shingen (Japan, Alt)</description>
+		<year>1989</year>
+		<manufacturer>Aicom Corp.</manufacturer>
+		<rom name="Takeda Shingen (Japan, Alt)(1989)(Aicom).pce" size="262144" crc="df7af71c"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tatsunok" sourcefile="pce/d_pce.cpp">
-		<description>Tatsu No Ko Fighter (Japan)</description>
+		<description>Tatsu no Ko Fighter (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Tonkin House</manufacturer>
-		<rom name="tatsunoko fighter (japan).pce" size="262144" crc="eeb6dd43"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="tatsujinp" cloneof="tatsujin" romof="tatsujin" sourcefile="pce/d_pce.cpp">
-		<comment>Prototype</comment>
-		<description>Tatsujin (Japan) (Prototype)</description>
-		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="tatsujin (japan) (proto).pce" size="524288" crc="c1b26659"/>
+		<rom name="Tatsu no Ko Fighter (Japan)(1989)(Tonkin House).pce" size="262144" crc="eeb6dd43"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tatsujin" sourcefile="pce/d_pce.cpp">
 		<description>Tatsujin (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="tatsujin (japan).pce" size="524288" crc="a6088275"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Tatsujin (Japan)(1992)(Taito).pce" size="524288" crc="a6088275"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tatsujinp" cloneof="tatsujin" romof="tatsujin" sourcefile="pce/d_pce.cpp">
+		<comment>Prototype</comment>
+		<description>Tatsujin (Japan, Prototype)</description>
+		<year>1992</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Tatsujin (Japan, Proto)(1992)(Taito).pce" size="524288" crc="c1b26659"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sdragon" sourcefile="pce/d_pce.cpp">
-		<description>Tenseiryuu - Saint Dragon (Japan)</description>
+		<description>Tenseiryuu: Saint Dragon (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Irem</manufacturer>
-		<rom name="tenseiryuu - saint dragon (japan).pce" size="393216" crc="2e278ccb"/>
+		<manufacturer>Aicom Corp.</manufacturer>
+		<rom name="Tenseiryuu - Saint Dragon (Japan)(1990)(Aicom).pce" size="393216" crc="2e278ccb"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="terracr2" sourcefile="pce/d_pce.cpp">
-		<description>Terra Cresta II - Mandoraa no Gyakushuu (Japan)</description>
+		<description>Terra Cresta II: Mandoraa no Gyakushuu (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Nihon Bussan</manufacturer>
-		<rom name="terra cresta ii - mandoraa no gyakushuu (japan).pce" size="524288" crc="1b2d0077"/>
+		<rom name="Terra Cresta II - Mandoraa no Gyakushuu (Japan)(1992)(Nihon Bussan).pce" size="524288" crc="1b2d0077"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2565,15 +2565,15 @@
 		<description>Thunder Blade (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="thunder blade (japan).pce" size="524288" crc="ddc3e809"/>
+		<rom name="Thunder Blade (Japan)(1990)(NEC Avenue).pce" size="524288" crc="ddc3e809"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="timcrus2" sourcefile="pce/d_pce.cpp">
 		<description>Time Cruise II (Japan)</description>
 		<year>1991</year>
-		<manufacturer>Face</manufacturer>
-		<rom name="time cruise ii (japan).pce" size="524288" crc="cfec1d6a"/>
+		<manufacturer>Face Corp.</manufacturer>
+		<rom name="Time Cruise II (Japan)(1991)(Face).pce" size="524288" crc="cfec1d6a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2581,7 +2581,7 @@
 		<description>Titan (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="titan (japan).pce" size="262144" crc="d20f382f"/>
+		<rom name="Titan (Japan)(1991)(Naxat Soft).pce" size="262144" crc="d20f382f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2589,7 +2589,7 @@
 		<description>Toilet Kids (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Media Rings Corporation</manufacturer>
-		<rom name="toilet kids (japan).pce" size="524288" crc="53b7784b"/>
+		<rom name="Toilet Kids (Japan)(1992)(Media Rings Corporation).pce" size="524288" crc="53b7784b"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2605,8 +2605,8 @@
 	<game name="toramich" sourcefile="pce/d_pce.cpp">
 		<description>Tora e no Michi (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Victor Entertainment</manufacturer>
-		<rom name="tora e no michi (japan).pce" size="393216" crc="82ae3b16"/>
+		<manufacturer>Victor Interactive Software</manufacturer>
+		<rom name="Tora e no Michi (Japan)(1990)(Victor).pce" size="393216" crc="82ae3b16"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2614,7 +2614,7 @@
 		<description>Toshi Tensou Keikaku - Eternal City (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="toshi tensou keikaku - eternal city (japan).pce" size="393216" crc="b18d102d"/>
+		<rom name="Toshi Tensou Keikaku - Eternal City (Japan)(1991)(Naxat Soft).pce" size="393216" crc="b18d102d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2623,7 +2623,7 @@
 		<description>Tower of Druaga, The (Hack, English v1.01)</description>
 		<year>2024</year>
 		<manufacturer>Pennywise</manufacturer>
-		<rom name="Tower of Druaga, The - T-Eng v1.01 (2024)(Pennywise).pce" size="1048576" crc="1914ad86"/>
+		<rom name="Tower of Druaga, The T-Eng v1.01 (2024)(Pennywise).pce" size="1048576" crc="1914ad86"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2631,15 +2631,15 @@
 		<description>Tower of Druaga, The (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="tower of druaga, the (japan).pce" size="524288" crc="72e00bc4"/>
+		<rom name="Tower of Druaga, The (Japan)(1992)(Namcot).pce" size="524288" crc="72e00bc4"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="toyshopb" sourcefile="pce/d_pce.cpp">
 		<description>Toy Shop Boys (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Victor</manufacturer>
-		<rom name="toy shop boys (japan).pce" size="262144" crc="97c5ee9a"/>
+		<manufacturer>Victor Interactive Software</manufacturer>
+		<rom name="Toy Shop Boys (Japan)(1990)(Victor).pce" size="262144" crc="97c5ee9a"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2647,7 +2647,7 @@
 		<description>Tricky (Japan)</description>
 		<year>1991</year>
 		<manufacturer>IGS</manufacturer>
-		<rom name="tricky (japan).pce" size="262144" crc="3aea2f8f"/>
+		<rom name="Tricky (Japan)(1991)(IGS).pce" size="262144" crc="3aea2f8f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2655,7 +2655,7 @@
 		<description>Tsuppari Oozumou - Heisei Ban (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="tsuppari oozumou - heisei ban (japan).pce" size="262144" crc="61a6e210"/>
+		<rom name="Tsuppari Oozumou - Heisei Ban (Japan)(1993)(Naxat Soft).pce" size="262144" crc="61a6e210"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2663,7 +2663,7 @@
 		<description>Tsuru Teruhito no Jissen Kabushiki Bai Bai Game (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Intec</manufacturer>
-		<rom name="tsuru teruhito no jissen kabushiki bai bai game (japan).pce" size="262144" crc="f70112e5"/>
+		<rom name="Tsuru Teruhito no Jissen Kabushiki Bai Bai Game (Japan)(1989)(Intec).pce" size="262144" crc="f70112e5"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2694,7 +2694,7 @@
 	<game name="usaprobs" sourcefile="pce/d_pce.cpp">
 		<description>USA Pro Basketball (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Aicom</manufacturer>
+		<manufacturer>Aicom Corp.</manufacturer>
 		<rom name="USA Pro Basketball (Japan)(1989)(Aicom).pce" size="262144" crc="1cad4b7f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -2736,7 +2736,7 @@
 		<description>Vigilante (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Vigilante (Japan)(1989)(Irem Corp.).pce" size="393216" crc="e4124fe0"/>
+		<rom name="Vigilante (Japan)(1989)(Irem).pce" size="393216" crc="e4124fe0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2752,7 +2752,7 @@
 		<description>Volfied (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Volfied (Japan)(1989)(Taito Corp.).pce" size="393216" crc="ad226f30"/>
+		<rom name="Volfied (Japan)(1989)(Taito).pce" size="393216" crc="ad226f30"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2820,6 +2820,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="xevioussc" cloneof="xevious" romof="xevious" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Xevious - Fardraut Densetsu (Hack, Simplified Chinese v1.0)</description>
+		<year>2025</year>
+		<manufacturer>Feiyue Wujin Ankong</manufacturer>
+		<rom name="Xevious - Fardraut Densetsu T-Chs v1.0 (2025)(Feiyue Wujin Ankong).pce" size="262144" crc="dcd579cf"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="xevious" sourcefile="pce/d_pce.cpp">
 		<description>Xevious - Fardraut Densetsu (Japan)</description>
 		<year>1990</year>
@@ -2844,19 +2853,27 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="zero4ce" cloneof="zero4c" romof="zero4c" sourcefile="pce/d_pce.cpp">
+		<description>Zero4 Champ (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>Supper</manufacturer>
+		<rom name="Zero4 Champ T-Eng (2025)(Supper).pce" size="688128" crc="de8da942"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zero4ca" cloneof="zero4c" romof="zero4c" sourcefile="pce/d_pce.cpp">
-		<description>Zero 4 Champ (Japan)</description>
+		<description>Zero4 Champ (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Media Rings Corporation</manufacturer>
-		<rom name="Zero 4 Champ (Japan)(1991)(Media Rings Corporation).pce" size="524288" crc="ee156721"/>
+		<rom name="Zero4 Champ (Japan)(1991)(Media Rings Corporation).pce" size="524288" crc="ee156721"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="zero4c" sourcefile="pce/d_pce.cpp">
-		<description>Zero 4 Champ (Japan, v1.5)</description>
+		<description>Zero4 Champ (Japan, v1.5)</description>
 		<year>1991</year>
 		<manufacturer>Media Rings Corporation</manufacturer>
-		<rom name="Zero 4 Champ v1.5 (Japan)(1991)(Media Rings Corporation).pce" size="524288" crc="b77f2e2f"/>
+		<rom name="Zero4 Champ v1.5 (Japan)(1991)(Media Rings Corporation).pce" size="524288" crc="b77f2e2f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

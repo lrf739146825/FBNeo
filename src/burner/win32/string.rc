@@ -113,6 +113,7 @@ BEGIN
 	IDS_SPATH_HISCORE			"High Scores"
 	IDS_SPATH_SAMPLES			"Samples"
 	IDS_SPATH_IPS				"IPS"
+	IDS_SPATH_ROMDATA			"RomData"
 	IDS_SPATH_NGCD_ISOS			"Neo Geo CDZ Games"
 	IDS_SPATH_NGCD_COVERS		"Neo Geo CDZ Covers"
 	IDS_SPATH_BLEND				"Blend Files"
@@ -266,6 +267,11 @@ BEGIN
 	IDS_NGCD_TITLE				"Title"
 	IDS_NGCD_NGCDID				"NGCD-ID"
 
+	IDS_ROMDATAMANAGER_TITLE	"%s%sRomData Manager%sSelect Game"
+	IDS_ROMDATA_DATPATH			"Dat path"
+	IDS_ROMDATA_ROMSET			"Romset"
+	IDS_ROMDATA_HARDWARE_DESC	"%s"
+
 	IDS_MENU_0 					"&Arcade"
     IDS_MENU_1 					"&Other..."
     IDS_MENU_2 					"&Other Gamma value..."
@@ -278,6 +284,8 @@ BEGIN
 	IDS_NUMDIAL_FILTER_SHARP	"Select desired filter sharpness"
 
 	IDS_SCANNING_ROMS			"Scanning ROMs..."
+
+	IDS_CACHING_ICONS			"Loading Icons..."
 
 	IDS_CHEAT_SEARCH_NEW		"New cheat search started"
 	IDS_CHEAT_SEARCH_ADD_MATCH	"%i Addresses Matched"

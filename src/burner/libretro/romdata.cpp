@@ -259,73 +259,83 @@ static INT32 LoadRomdata()
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_PRG_68K"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_68K_PROGRAM_BYTESWAP")))) {			//  1
-								ri.nType |= 1;
+								(0 == _tcscmp(pszInfo, _T("CPS1_68K_PROGRAM_BYTESWAP"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_000000")))) {			//  1
+								ri.nType |= 0x01;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_PRG_68K_SIMM"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_68K_PROGRAM_NO_BYTESWAP")))) {		//  2
-								ri.nType |= 2;
+								(0 == _tcscmp(pszInfo, _T("CPS1_68K_PROGRAM_NO_BYTESWAP"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_000001")))) {			//  2
+								ri.nType |= 0x02;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_PRG_68K_XOR_TABLE"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_Z80_PROGRAM")))) {					//  3
-								ri.nType |= 3;
+								(0 == _tcscmp(pszInfo, _T("CPS1_Z80_PROGRAM"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_020000")))) {			//  3
+								ri.nType |= 0x03;
 								continue;
 							}
-							if (0 == _tcscmp(pszInfo, _T("CPS1_TILES"))) {							//  4
-								ri.nType |= 4;
+							if ((0 == _tcscmp(pszInfo, _T("CPS1_TILES"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_080000")))) {			//  4
+								ri.nType |= 0x04;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_GFX"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_OKIM6295_SAMPLES")))) {				//  5
-								ri.nType |= 5;
+								(0 == _tcscmp(pszInfo, _T("CPS1_OKIM6295_SAMPLES"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_100000")))) {			//  5
+								ri.nType |= 0x05;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_GFX_SIMM"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_QSOUND_SAMPLES")))) {				//  6
-								ri.nType |= 6;
+								(0 == _tcscmp(pszInfo, _T("CPS1_QSOUND_SAMPLES"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_100001")))) {			//  6
+								ri.nType |= 0x06;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_GFX_SPLIT4"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_PIC")))) {							//  7
-								ri.nType |= 7;
+								(0 == _tcscmp(pszInfo, _T("CPS1_PIC"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_200000")))) {			//  7
+								ri.nType |= 0x07;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_GFX_SPLIT8"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2EBBL_400000")))) {	//  8
-								ri.nType |= 8;
+								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2EBBL_400000"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_300000")))) {			//  8
+								ri.nType |= 0x08;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_GFX_19XXJ"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_400000")))) {			//  9
-								ri.nType |= 9;
+								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_400000"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_RELOAD_200000_200000")))) {	//  9
+								ri.nType |= 0x09;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_PRG_Z80"))) ||
-								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2KORYU_400000")))) {	// 10
-								ri.nType |= 10;
+								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2KORYU_400000"))) ||
+								(0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_RELOAD_100000_300000")))) {	// 10
+								ri.nType |= 0x0a;
 								continue;
 							}
 							if (0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2B_400000"))) {		// 11
-								ri.nType |= 11;
+								ri.nType |= 0x0b;
 								continue;
 							}
 							if ((0 == _tcscmp(pszInfo, _T("CPS2_QSND"))) ||
 								(0 == _tcscmp(pszInfo, _T("CPS1_EXTRA_TILES_SF2MKOT_400000")))) {	// 12
-								ri.nType |= 12;
+								ri.nType |= 0x0c;
 								continue;
 							}
 							if (0 == _tcscmp(pszInfo, _T("CPS2_QSND_SIMM"))) {						// 13
-								ri.nType |= 13;
+								ri.nType |= 0x0d;
 								continue;
 							}
 							if (0 == _tcscmp(pszInfo, _T("CPS2_QSND_SIMM_BYTESWAP"))) {				// 14
-								ri.nType |= 14;
+								ri.nType |= 0x0e;
 								continue;
 							}
 							if (0 == _tcscmp(pszInfo, _T("CPS2_ENCRYPTION_KEY"))) {					// 15
-								ri.nType |= 15;
+								ri.nType |= 0x0f;
 								continue;
 							}
 							// megadrive
@@ -347,46 +357,6 @@ static INT32 LoadRomdata()
 							}
 							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_LOAD_NORMAL_CONTINUE_020000_080000"))) {
 								ri.nType |= 0x50;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_000000"))) {
-								ri.nType |= 0x01;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_000001"))) {
-								ri.nType |= 0x02;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_020000"))) {
-								ri.nType |= 0x03;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_080000"))) {
-								ri.nType |= 0x04;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_100000"))) {
-								ri.nType |= 0x05;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_100001"))) {
-								ri.nType |= 0x06;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_200000"))) {
-								ri.nType |= 0x07;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_OFFS_300000"))) {
-								ri.nType |= 0x08;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_RELOAD_200000_200000"))) {
-								ri.nType |= 0x09;
-								continue;
-							}
-							if (0 == _tcscmp(pszInfo, _T("SEGA_MD_ROM_RELOAD_100000_300000"))) {
-								ri.nType |= 0x0a;
 								continue;
 							}
 							_stscanf(pszInfo, _T("%x"), &nValue);
