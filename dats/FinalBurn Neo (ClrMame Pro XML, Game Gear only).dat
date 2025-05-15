@@ -1139,7 +1139,7 @@
 		<description>Earthworm Jim (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="earthworm jim.bin" size="524288" crc="691ae339"/>
+		<rom name="Earthworm Jim (Euro)(1995)(Virgin).gg" size="524288" crc="691ae339"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1147,39 +1147,39 @@
 		<description>Earthworm Jim (USA)</description>
 		<year>1995</year>
 		<manufacturer>Playmates Interactive</manufacturer>
-		<rom name="earthworm jim (usa).bin" size="524288" crc="5d3f23a9"/>
+		<rom name="Earthworm Jim (USA)(1995)(Playmates).gg" size="524288" crc="5d3f23a9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ecco" sourcefile="sms/d_sms.cpp">
 		<description>Ecco the Dolphin (Euro, USA)</description>
-		<year>1994</year>
+		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco the dolphin (usa, europe).bin" size="524288" crc="866c7113"/>
+		<rom name="Ecco the Dolphin (Euro, USA)(1993)(Sega).gg" size="524288" crc="866c7113"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="eccoj" cloneof="ecco" romof="ecco" sourcefile="sms/d_sms.cpp">
 		<description>Ecco the Dolphin (Japan)</description>
-		<year>1994</year>
+		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16428-f.ic1" size="524288" crc="a32eb9d5"/>
+		<rom name="Ecco the Dolphin (Japan)(1993)(Sega).gg" size="524288" crc="a32eb9d5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ecco2" sourcefile="sms/d_sms.cpp">
-		<description>Ecco the Dolphin II - The Tides of Time (Euro, USA)</description>
+		<description>Ecco the Dolphin II: The Tides of Time (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco ii - the tides of time (usa, europe).bin" size="524288" crc="e2f3b203"/>
+		<rom name="Ecco the Dolphin II - The Tides of Time (Euro, USA)(1994)(Sega).gg" size="524288" crc="e2f3b203"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ecco2j" cloneof="ecco2" romof="ecco2" sourcefile="sms/d_sms.cpp">
-		<description>Ecco the Dolphin II - The Tides of Time (Japan)</description>
-		<year>1995</year>
+		<description>Ecco the Dolphin II: The Tides of Time (Japan)</description>
+		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ecco the dolphin ii (japan).bin" size="524288" crc="ba9cef4f"/>
+		<rom name="Ecco the Dolphin II - The Tides of Time (Japan)(1994)(Sega).gg" size="524288" crc="ba9cef4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1187,7 +1187,7 @@
 		<description>Ernie Els Golf (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="ernie els golf (europe) (en,fr,de,es,it).bin" size="262144" crc="5e53c7f7"/>
+		<rom name="Ernie Els Golf (Euro)(1994)(Codemasters).gg" size="262144" crc="5e53c7f7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1201,10 +1201,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="eternleg" sourcefile="sms/d_sms.cpp">
-		<description>Eternal Legend - Eien no Densetsu (Japan)</description>
+		<description>Eternal Legend: Eien no Densetsu (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="eternal legend - eien no densetsu (japan).bin" size="262144" crc="04302bbd"/>
+		<rom name="Eternal Legend - Eien no Densetsu (Japan)(1991)(Sega).gg" size="262144" crc="04302bbd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1212,7 +1212,7 @@
 		<description>Evander Holyfield Boxing (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15391.ic1" size="262144" crc="36aaf536"/>
+		<rom name="Evander Holyfield Boxing (Euro, USA)(1992)(Sega).gg" size="262144" crc="36aaf536"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1220,7 +1220,7 @@
 		<description>Excellent Dizzy Collection, The (Euro, SMS Mode)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="excellent dizzy collection, the (europe).bin" size="524288" crc="aa140c9c"/>
+		<rom name="Excellent Dizzy Collection, The (Euro, SMS Mode)(1995)(Codemasters).gg" size="524288" crc="aa140c9c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1229,7 +1229,7 @@
 		<description>Excellent Dizzy Collection, The (Prototype, SMS Mode)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="excellent dizzy collection, the (prototype) [s][!].bin" size="262144" crc="8813514b"/>
+		<rom name="Excellent Dizzy Collection, The (Proto, SMS Mode)(1995)(Codemasters).gg" size="262144" crc="8813514b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1349,15 +1349,15 @@
 		<description>Frank Thomas Big Hurt Baseball (USA)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="frank thomas big hurt baseball (usa).bin" size="524288" crc="c443c35c"/>
+		<rom name="Frank Thomas Big Hurt Baseball (USA)(1995)(Acclaim).gg" size="524288" crc="c443c35c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="fray" sourcefile="sms/d_sms.cpp">
-		<description>Fray - Shugyou Hen (Japan)</description>
+		<description>Fray: Shugyou Hen (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Micro Cabin</manufacturer>
-		<rom name="fray - shugyou hen (japan).bin" size="262144" crc="e123d9b8"/>
+		<rom name="Fray - Shugyou Hen (Japan)(1991)(Micro Cabin).gg" size="262144" crc="e123d9b8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1365,7 +1365,7 @@
 		<description>Fred Couples' Golf (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="fred couples' golf (japan).bin" size="524288" crc="b1196cd7"/>
+		<rom name="Fred Couples' Golf (Japan)(1994)(Sega).gg" size="524288" crc="b1196cd7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1373,7 +1373,7 @@
 		<description>Fred Couples' Golf (USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="fred couples' golf (usa).bin" size="524288" crc="46f40b9f"/>
+		<rom name="Fred Couples' Golf (USA)(1994)(Sega).gg" size="524288" crc="46f40b9f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1382,15 +1382,15 @@
 		<description>Frogger (USA, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="frogger (usa) (proto).bin" size="131072" crc="02bbf994"/>
+		<rom name="Frogger (USA, Proto)(1991)(Sega).gg" size="131072" crc="02bbf994"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="slamdunk" sourcefile="sms/d_sms.cpp">
-		<description>From TV Animation - Slam Dunk - Shouri e no Starting 5 (Japan)</description>
+		<description>From TV Animation - Slam Dunk: Shouri e no Starting 5 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="from tv animation - slam dunk - shouri e no starting 5 (japan).bin" size="524288" crc="751dad4c"/>
+		<rom name="From TV Animation - Slam Dunk - Shouri e no Starting 5 (Japan)(1994)(Bandai).gg" size="524288" crc="751dad4c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1398,7 +1398,7 @@
 		<description>G-LOC Air Battle (Euro, USA, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="g-loc air battle (usa, europe).bin" size="131072" crc="18de59ed"/>
+		<rom name="G-LOC Air Battle (Euro, USA, Brazil)(1991)(Sega).gg" size="131072" crc="18de59ed"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1406,7 +1406,7 @@
 		<description>G-LOC Air Battle (Japan, v0)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="g-loc air battle (japan).bin" size="131072" crc="2333f615"/>
+		<rom name="G-LOC Air Battle (Japan, v0)(1990)(Sega).gg" size="131072" crc="2333f615"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1414,7 +1414,7 @@
 		<description>G-LOC Air Battle (Japan, v1.1)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="g-loc air battle (japanv1.1).bin" size="131072" crc="33237f50"/>
+		<rom name="G-LOC Air Battle (Japan, v1.1)(1990)(Sega).gg" size="131072" crc="33237f50"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

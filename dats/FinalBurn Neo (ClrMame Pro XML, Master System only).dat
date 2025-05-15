@@ -976,11 +976,11 @@
 		<description>Castelo Ra-Tim-Bum (Brazil)</description>
 		<year>1997</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="castelo ra-tim-bum (brazil).bin" size="524288" crc="31ffd7c3"/>
+		<rom name="Castelo Ra-Tim-Bum (Brazil)(1997)(Tec Toy).sms" size="524288" crc="31ffd7c3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="castlescape" sourcefile="sms/d_sms.cpp">
+	<game name="castlescape" cloneof="castlescapev2" romof="castlescapev2" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Castle Escape (HB)</description>
 		<year>2023</year>
@@ -989,11 +989,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="castlescapev2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Castle Escape (HB, v2.0)</description>
+		<year>2025</year>
+		<manufacturer>IrataHack</manufacturer>
+		<rom name="Castle Escape v2.0 (2025)(IrataHack).sms" size="65536" crc="c8e4298d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="castlill" sourcefile="sms/d_sms.cpp">
 		<description>Castle of Illusion Starring Mickey Mouse (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13584a.ic1" size="262144" crc="953f42e1"/>
+		<rom name="Castle of Illusion Starring Mickey Mouse (Euro, Brazil)(1990)(Sega).sms" size="262144" crc="953f42e1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1010,7 +1019,7 @@
 		<description>Castle of Illusion Starring Mickey Mouse (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="castle of illusion starring mickey mouse (usa).bin" size="262144" crc="b9db4282"/>
+		<rom name="Castle of Illusion Starring Mickey Mouse (USA)(1990)(Sega).sms" size="262144" crc="b9db4282"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1018,7 +1027,7 @@
 		<description>Castle of Illusion Starring Mickey Mouse (USA, Display Unit Sample)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="castle of illusion - starring mickey mouse (unknown) (sample).bin" size="32768" crc="bd610939"/>
+		<rom name="Castle of Illusion Starring Mickey Mouse (USA, Display Unit Sample)(1990)(Sega).sms" size="32768" crc="bd610939"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1026,7 +1035,7 @@
 		<description>Champions of Europe (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>TecMagik</manufacturer>
-		<rom name="mpr-14689.ic1" size="262144" crc="23163a12"/>
+		<rom name="Champions of Europe (Euro, Brazil)(1992)(TecMagik).sms" size="262144" crc="23163a12"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1039,10 +1048,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="chapolim" cloneof="ghosth" romof="ghosth" sourcefile="sms/d_sms.cpp">
-		<description>Chapolim x Dracula - Um Duelo Assustador (Brazil)</description>
+		<description>Chapolim x Dracula: Um Duelo Assustador (Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="chapolim x dracula - um duelo assustador (brazil).bin" size="131072" crc="492c7c6e"/>
+		<rom name="Chapolim x Dracula - Um Duelo Assustador (Brazil)(1990)(Tec Toy).sms" size="131072" crc="492c7c6e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1705,11 +1714,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="excdizzy" sourcefile="sms/d_sms.cpp">
-		<comment>Prototype, unfinished proto, play 'gg_excdizzy' instead!</comment>
+		<comment>Prototype, Unfinished prototype, play 'gg_excdizzy' instead!</comment>
 		<description>Excellent Dizzy Collection, The (Euro, USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="excellent dizzy collection, the (usa, europe) (en,fr,de,es,it) (proto).bin" size="262144" crc="8813514b"/>
+		<rom name="Excellent Dizzy Collection, The (Euro, USA, Proto)(Codemasters)(1994).gg" size="262144" crc="8813514b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2884,7 +2893,7 @@
 		<description>James Pond 2 - Codename RoboCod (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="james pond 2 - codename robocod (europe).bin" size="524288" crc="102d5fea"/>
+		<rom name="James Pond 2 - Codename RoboCod (Euro, Brazil)(1993)(U.S. Gold).sms" size="524288" crc="102d5fea"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4215,10 +4224,10 @@
 	</game>
 	<game name="rtypeas" cloneof="rtype" romof="rtype" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>R-Type Arcade Style (Hack, v1.1)</description>
-		<year>2023</year>
+		<description>R-Type Arcade Style (Hack, v1.1a)</description>
+		<year>2025</year>
 		<manufacturer>Datchy</manufacturer>
-		<rom name="R-Type Arcade Style Hack v1.1 (2023)(Datchy).sms" size="524288" crc="26ccf06d"/>
+		<rom name="R-Type Arcade Style Hack v1.1a (2025)(Datchy).sms" size="524288" crc="a9d2c2dc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4327,7 +4336,7 @@
 		<description>Reggie Jackson Baseball (USA)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="reggie jackson baseball (usa).bin" size="262144" crc="6d94bb0e"/>
+		<rom name="Reggie Jackson Baseball (USA)(1988)(Sega).sms" size="262144" crc="6d94bb0e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4335,7 +4344,7 @@
 		<description>Renegade (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="renegade (europe).bin" size="262144" crc="3be7f641"/>
+		<rom name="Renegade (Euro, Brazil)(1993)(Sega).sms" size="262144" crc="3be7f641"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4344,15 +4353,15 @@
 		<description>Rescue Mission (Euro, USA, Brazil)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11400.ic1" size="131072" crc="79ac8e7f"/>
+		<rom name="Rescue Mission (Euro, USA, Brazil)(1988)(Sega).sms" size="131072" crc="79ac8e7f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="roadfght" sourcefile="sms/d_sms.cpp">
 		<description>Road Fighter (Korea)</description>
 		<year>19??</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="road fighter (kr).bin" size="32768" crc="8034bd27"/>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Road Fighter (Korea)(19xx).sms" size="32768" crc="8034bd27"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4360,7 +4369,7 @@
 		<description>Road Rash (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="road rash (europe).bin" size="524288" crc="b876fc74"/>
+		<rom name="Road Rash (Euro, Brazil)(1993)(U.S. Gold).sms" size="524288" crc="b876fc74"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4368,7 +4377,7 @@
 		<description>RoboCop 3 (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="robocop 3 (europe).bin" size="262144" crc="9f951756"/>
+		<rom name="Robocop 3 (Euro, Brazil)(1993)(Flying Edge).sms" size="262144" crc="9f951756"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4376,7 +4385,7 @@
 		<description>RoboCop versus The Terminator (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="robocop versus the terminator (europe).bin" size="524288" crc="8212b754"/>
+		<rom name="RoboCop versus The Terminator (Euro, Brazil)(1993)(Virgin Interactive).sms" size="524288" crc="8212b754"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4384,7 +4393,7 @@
 		<description>Rocky (World)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11072 w01.ic1" size="262144" crc="1bcc7be3"/>
+		<rom name="Rocky (World)(1987)(Sega).sms" size="262144" crc="1bcc7be3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4400,15 +4409,15 @@
 		<description>Sagaia (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sagaia (europe).bin" size="262144" crc="66388128"/>
+		<rom name="Sagaia (Euro, Brazil)(1992)(Sega).sms" size="262144" crc="66388128"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sangoku3" sourcefile="sms/d_sms.cpp">
-		<description>Sangokushi 3 (Korea)</description>
+		<description>Sangokushi 3 (Korea) (Unl)</description>
 		<year>1994</year>
 		<manufacturer>Game Line</manufacturer>
-		<rom name="sangokushi 3 (korea) (unl).bin" size="1048576" crc="97d03541"/>
+		<rom name="Sangokushi 3 (Korea)(Unl)(1994)(Game Line).sms" size="1048576" crc="97d03541"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6032,12 +6041,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wekainvaders10" sourcefile="sms/d_sms.cpp">
+	<game name="wekainvaders" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Weka Invaders (HB, v1.0)</description>
+		<description>Weka Invaders (HB)</description>
 		<year>2017</year>
 		<manufacturer>Disjointed Studio</manufacturer>
 		<rom name="Weka Invaders (2017)(Disjointed Studio).sms" size="294912" crc="54b2fcf8"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wsbyronsr" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Whack 'Em Smack 'Em Byrons Remarked (HB)</description>
+		<year>2025</year>
+		<manufacturer>ArugulaZ</manufacturer>
+		<rom name="Whack 'Em Smack 'Em Byrons Remarked (2025)(ArugulaZ).sms" size="49152" crc="aa77d825"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
