@@ -3406,16 +3406,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ddragon5" cloneof="ddragon5u" romof="ddragon5u" sourcefile="snes/d_snes.cpp">
-		<description>Double Dragon V - The Shadow Falls (Europe)</description>
+	<game name="ddragon5e" cloneof="ddragon5" romof="ddragon5" sourcefile="snes/d_snes.cpp">
+		<description>Double Dragon V: The Shadow Falls (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Double Dragon V - The Shadow Falls (E)(1994)(Tradewest).sfc" size="2097152" crc="e80f6b65"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ddragon5u" sourcefile="snes/d_snes.cpp">
-		<description>Double Dragon V - The Shadow Falls (USA)</description>
+	<game name="ddragon5" sourcefile="snes/d_snes.cpp">
+		<description>Double Dragon V: The Shadow Falls (USA)</description>
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Double Dragon V - The Shadow Falls (U)(1994)(Tradewest).sfc" size="3145728" crc="98a96ae8"/>
@@ -4313,6 +4313,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ffighte" cloneof="ffight" romof="ffight" sourcefile="snes/d_snes.cpp">
+		<description>Final Fight (Euro)</description>
+		<year>1990-91</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Final Fight (E)(1990-91)(Capcom).sfc" size="1048576" crc="a4437629"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ffightj" cloneof="ffight" romof="ffight" sourcefile="snes/d_snes.cpp">
 		<description>Final Fight (Japan)</description>
 		<year>1990</year>
@@ -4329,6 +4337,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ffight2e" cloneof="ffight2" romof="ffight2" sourcefile="snes/d_snes.cpp">
+		<description>Final Fight 2 (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Final Fight 2 (E)(1993)(Capcom).sfc" size="1310720" crc="7b94ca96"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ffight2j" cloneof="ffight2" romof="ffight2" sourcefile="snes/d_snes.cpp">
 		<description>Final Fight 2 (Japan)</description>
 		<year>1993</year>
@@ -4342,6 +4358,14 @@
 		<year>1993</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Final Fight 2 (U)(1993)(Capcom).sfc" size="1310720" crc="8c37ff55"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffight3e" cloneof="ffight3" romof="ffight3" sourcefile="snes/d_snes.cpp">
+		<description>Final Fight 3 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Final Fight 3 (E)(1995)(Capcom).sfc" size="3145728" crc="aa58a166"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7078,6 +7102,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lostvikingre" cloneof="lostviking" romof="lostviking" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Lost Vikings, The - Ragnarok Edition (Hack)</description>
+		<year>2025</year>
+		<manufacturer>Ragnarok</manufacturer>
+		<rom name="Lost Vikings, The - Ragnarok Edition (2025)(Ragnarok).sfc" size="2097152" crc="10adc197"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="luckyluke" sourcefile="snes/d_snes.cpp">
 		<description>Lucky Luke (Euro)</description>
 		<year>1997</year>
@@ -7318,6 +7351,15 @@
 		<year>1992</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Magical Quest Starring Mickey Mouse, The (U)(1992)(Capcom).sfc" size="1048576" crc="10874c70"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="magicalquestff" cloneof="magicalquest" romof="magicalquest" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Magical Quest Starring Mickey Mouse, The - FastROM Fix v0.2 (Hack)</description>
+		<year>2025</year>
+		<manufacturer>bogaa</manufacturer>
+		<rom name="Magical Quest Starring Mickey Mouse, The - FastROM Fix v0.2 (2025)(bogaa).sfc" size="1048576" crc="bde87211"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7632,6 +7674,15 @@
 		<year>2023</year>
 		<manufacturer>CF</manufacturer>
 		<rom name="Mega Man X - Project Zero (2023)(CF).sfc" size="2097152" crc="a2f2edb8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanxsa1" cloneof="megamanx" romof="megamanx" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, SA-1 enhancement CPU</comment>
+		<description>Mega Man X SA-1 (Hack, v1.2)</description>
+		<year>2020</year>
+		<manufacturer>Bosn</manufacturer>
+		<rom name="Mega Man X SA1 (2020)(Bosn).sfc" size="1572864" crc="b0eea801"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8053,6 +8104,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mke" cloneof="mk" romof="mk" sourcefile="snes/d_snes.cpp">
+		<description>Mortal Kombat (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Mortal Kombat (E)(1993)(Acclaim Entertainment).sfc" size="2097152" crc="047b3d88"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mk" sourcefile="snes/d_snes.cpp">
 		<description>Mortal Kombat (USA)</description>
 		<year>1993</year>
@@ -8070,6 +8129,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mk3e" cloneof="mk3" romof="mk3" sourcefile="snes/d_snes.cpp">
+		<description>Mortal Kombat 3 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Williams Entertainment</manufacturer>
+		<rom name="Mortal Kombat 3 (E)(1995)(Williams).sfc" size="4194304" crc="ca3ceb0a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mk3" sourcefile="snes/d_snes.cpp">
 		<description>Mortal Kombat 3 (USA)</description>
 		<year>1995</year>
@@ -8084,6 +8151,14 @@
 		<year>2025</year>
 		<manufacturer>B-Zero TV</manufacturer>
 		<rom name="Mortal Kombat 3 New Edition (2025)(B-Zero TV).sfc" size="8388608" crc="6e9bed4b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mkiie" cloneof="mkii" romof="mkii" sourcefile="snes/d_snes.cpp">
+		<description>Mortal Kombat II (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Mortal Kombat II (E)(1994)(Acclaim Entertainment).sfc" size="3145728" crc="00dc2d51"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8375,6 +8450,15 @@
 		<year>1994</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="New Horizons (U)(1994)(Koei).sfc" size="2097152" crc="3c3c63e6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="newsupermarioland" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>New Super Mario Land (HB, v1.5)</description>
+		<year>2019</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="New Super Mario Land v1.5 (2019).sfc" size="2097152" crc="2b50f2af"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8727,10 +8811,10 @@
 	</game>
 	<game name="otogirisoute" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Otogirisou - Hypericum Perforatum (Hack, English)</description>
-		<year>2024</year>
-		<manufacturer>Translated.Games</manufacturer>
-		<rom name="Otogirisou T-Eng (2024)(Translated.Games).sfc" size="4194304" crc="650112ca"/>
+		<description>Otogirisou - Hypericum Perforatum (Hack, English v1.1)</description>
+		<year>2025</year>
+		<manufacturer>ButThouMust</manufacturer>
+		<rom name="Otogirisou T-Eng v1.1 (2025)(ButThouMust).sfc" size="1572864" crc="33c8391d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9833,6 +9917,14 @@
 		<year>1992</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Return of Double Dragon (J)(1992)(Technos Japan).sfc" size="1048576" crc="10470b58"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="returndoubledragonff" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+		<description>Return of Double Dragon - FastROM Fix v2.0 (Hack)</description>
+		<year>2023</year>
+		<manufacturer>kandowontu</manufacturer>
+		<rom name="Return of Double Dragon - FastROM Fix v2.0 (2023)(kandowontu).sfc" size="1048576" crc="088a7511"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11450,6 +11542,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sf2e" cloneof="sf2" romof="sf2" sourcefile="snes/d_snes.cpp">
+		<description>Street Fighter II (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Street Fighter II (E)(1992)(Capcom).sfc" size="2097152" crc="8b93f566"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sf2j" cloneof="sf2" romof="sf2" sourcefile="snes/d_snes.cpp">
 		<description>Street Fighter II (Japan)</description>
 		<year>1992</year>
@@ -11463,6 +11563,14 @@
 		<year>1992</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Street Fighter II (U)(1992)(Capcom).sfc" size="2097152" crc="bc3dcd9d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sf2turboe" cloneof="sf2turbo" romof="sf2turbo" sourcefile="snes/d_snes.cpp">
+		<description>Street Fighter II Turbo (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Street Fighter II Turbo (E)(1993)(Capcom).sfc" size="2621440" crc="abbc185d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12244,20 +12352,28 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supergnge" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<description>Super Ghouls'n Ghosts (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Super Ghouls'n Ghosts (E)(1992)(Capcom).sfc" size="1048576" crc="a00bc05e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supergng" sourcefile="snes/d_snes.cpp">
-		<description>Super Ghouls 'n Ghosts (USA)</description>
+		<description>Super Ghouls'n Ghosts (USA)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Super Ghouls 'n Ghosts (U)(1991)(Capcom).sfc" size="1048576" crc="6aaba901"/>
+		<rom name="Super Ghouls'n Ghosts (U)(1991)(Capcom).sfc" size="1048576" crc="6aaba901"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="supergngr" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Super Ghouls 'n Ghosts Restoration (Hack)</description>
+		<description>Super Ghouls'n Ghosts Restoration (Hack)</description>
 		<year>2023</year>
 		<manufacturer>SCD</manufacturer>
-		<rom name="Super Ghouls 'n Ghosts Restoration Hack (2023)(SCD).sfc" size="2097152" crc="acaed88a"/>
+		<rom name="Super Ghouls'n Ghosts Restoration Hack (2023)(SCD).sfc" size="2097152" crc="acaed88a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12986,6 +13102,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ssf2e" cloneof="ssf2" romof="ssf2" sourcefile="snes/d_snes.cpp">
+		<description>Super Street Fighter II - The New Challengers (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Super Street Fighter II - The New Challengers (E)(1994)(Capcom).sfc" size="4194304" crc="6d86bfb0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ssf2j" cloneof="ssf2" romof="ssf2" sourcefile="snes/d_snes.cpp">
 		<description>Super Street Fighter II - The New Challengers (Japan)</description>
 		<year>1994</year>
@@ -13400,6 +13524,15 @@
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Teenage Mutant Ninja Turtles - Turtles in Time (J)(1992)(Konami).sfc" size="1048576" crc="bdba1b55"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="teenagequeen" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Teenage Queen (HB, v1.4)</description>
+		<year>2018</year>
+		<manufacturer>Alekmaul</manufacturer>
+		<rom name="Teenage Queen (2018)(Alekmaul).sfc" size="1048576" crc="00e4c4e6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13978,6 +14111,14 @@
 		<year>1992</year>
 		<manufacturer>Sammy</manufacturer>
 		<rom name="Ultimate Football (J)(1992)(Sammy).sfc" size="1048576" crc="4c9a5e89"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="umk3e" cloneof="umk3" romof="umk3" sourcefile="snes/d_snes.cpp">
+		<description>Ultimate Mortal Kombat 3 (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Williams Entertainment</manufacturer>
+		<rom name="Ultimate Mortal Kombat 3 (E)(1996)(Williams).sfc" size="4194304" crc="1c4c54d2"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
