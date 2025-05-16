@@ -3426,7 +3426,7 @@
 		<description>Dragon - The Bruce Lee Story (USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Ent. - Virgin Int.</manufacturer>
-		<rom name="Dragon - The Bruce Lee Story (U)(1994)(Acclaim - Virgin).sfc" size="2097152" crc="407c5c24"/>
+		<rom name="Dragon - The Bruce Lee Story (U)(1994)(Acclaim Ent. - Virgin).sfc" size="2097152" crc="407c5c24"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6158,7 +6158,7 @@
 		<description>Judge Dredd (USA)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment - Probe</manufacturer>
-		<rom name="Judge Dredd (U)(1995)(Acclaim - Probe).sfc" size="2097152" crc="0a3f0288"/>
+		<rom name="Judge Dredd (U)(1995)(Acclaim Ent. - Probe).sfc" size="2097152" crc="0a3f0288"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7478,7 +7478,7 @@
 		<description>Marko's Magic Football (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment - Domark</manufacturer>
-		<rom name="Marko's Magic Football (E)(1995)(Acclaim - Domark).sfc" size="2097152" crc="4824a630"/>
+		<rom name="Marko's Magic Football (E)(1995)(Acclaim Ent. - Domark).sfc" size="2097152" crc="4824a630"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7682,7 +7682,7 @@
 		<description>Mega Man X SA-1 (Hack, v1.2)</description>
 		<year>2020</year>
 		<manufacturer>Bosn</manufacturer>
-		<rom name="Mega Man X SA1 (2020)(Bosn).sfc" size="1572864" crc="b0eea801"/>
+		<rom name="Mega Man X SA-1 v1.2 (2020)(Bosn).sfc" size="1572864" crc="b0eea801"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9398,7 +9398,7 @@
 		<description>Porky Pig's Haunted Holiday (USA)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment - Sunsoft</manufacturer>
-		<rom name="Porky Pig's Haunted Holiday (U)(1995)(Acclaim - Sunsoft).sfc" size="2097152" crc="f09e91a1"/>
+		<rom name="Porky Pig's Haunted Holiday (U)(1995)(Acclaim Ent. - Sunsoft).sfc" size="2097152" crc="f09e91a1"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11322,8 +11322,8 @@
 	<game name="speedygonzales" sourcefile="snes/d_snes.cpp">
 		<description>Speedy Gonzales - Los Gatos Bandidos (USA)</description>
 		<year>1994</year>
-		<manufacturer>Acclaim Ent. - Sunsoft</manufacturer>
-		<rom name="Speedy Gonzales - Los Gatos Bandidos (U)(1994)(Acclaim - Sunsoft).sfc" size="1048576" crc="e2dbad76"/>
+		<manufacturer>Acclaim Entertainment - Sunsoft</manufacturer>
+		<rom name="Speedy Gonzales - Los Gatos Bandidos (U)(1994)(Acclaim Ent. - Sunsoft).sfc" size="1048576" crc="e2dbad76"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11462,7 +11462,7 @@
 		<description>Stargate (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="Stargate (E)(1994)(Acclaim).sfc" size="2097152" crc="af4d4439"/>
+		<rom name="Stargate (E)(1994)(Acclaim Entertainment).sfc" size="2097152" crc="af4d4439"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11470,7 +11470,7 @@
 		<description>Stargate (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="Stargate (J)(1994)(Acclaim).sfc" size="2097152" crc="24bbddf8"/>
+		<rom name="Stargate (J)(1994)(Acclaim Entertainment).sfc" size="2097152" crc="24bbddf8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11478,7 +11478,7 @@
 		<description>Stargate (USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="Stargate (U)(1994)(Acclaim).sfc" size="2097152" crc="526ce576"/>
+		<rom name="Stargate (U)(1994)(Acclaim Entertainment).sfc" size="2097152" crc="526ce576"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13002,7 +13002,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="sshanghai" cloneof="shanghai2" romof="shanghai2" sourcefile="snes/d_snes.cpp">
-		<description>Super Shanghai - Dragon's Eye (Japan)</description>
+		<description>Super Shanghai: Dragon's Eye (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hot-B</manufacturer>
 		<rom name="Super Shanghai - Dragon's Eye (J)(1991)(Hot-B).sfc" size="1048576" crc="6f95d27e"/>
@@ -13073,7 +13073,7 @@
 		<description>Super SpongeBob Kart (Hack)</description>
 		<year>2014</year>
 		<manufacturer>Kempy</manufacturer>
-		<rom name="Super SpongeBob Kart - Hack (2014)(Kempy).sfc" size="786432" crc="f6d5920b"/>
+		<rom name="Super SpongeBob Kart (2014)(Kempy).sfc" size="786432" crc="f6d5920b"/>
 		<rom name="dsp1b.bin" merge="dsp1b.bin" size="10240" crc="453557e0"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -13103,7 +13103,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ssf2e" cloneof="ssf2" romof="ssf2" sourcefile="snes/d_snes.cpp">
-		<description>Super Street Fighter II - The New Challengers (Euro)</description>
+		<description>Super Street Fighter II: The New Challengers (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Super Street Fighter II - The New Challengers (E)(1994)(Capcom).sfc" size="4194304" crc="6d86bfb0"/>
@@ -13111,7 +13111,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ssf2j" cloneof="ssf2" romof="ssf2" sourcefile="snes/d_snes.cpp">
-		<description>Super Street Fighter II - The New Challengers (Japan)</description>
+		<description>Super Street Fighter II: The New Challengers (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Super Street Fighter II - The New Challengers (J)(1994)(Capcom).sfc" size="4194304" crc="26ca246b"/>
@@ -13119,7 +13119,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ssf2" sourcefile="snes/d_snes.cpp">
-		<description>Super Street Fighter II - The New Challengers (USA)</description>
+		<description>Super Street Fighter II: The New Challengers (USA)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Super Street Fighter II - The New Challengers (U)(1994)(Capcom).sfc" size="4194304" crc="f16d5ce9"/>
@@ -13532,7 +13532,7 @@
 		<description>Teenage Queen (HB, v1.4)</description>
 		<year>2018</year>
 		<manufacturer>Alekmaul</manufacturer>
-		<rom name="Teenage Queen (2018)(Alekmaul).sfc" size="1048576" crc="00e4c4e6"/>
+		<rom name="Teenage Queen v1.4 (2018)(Alekmaul).sfc" size="1048576" crc="00e4c4e6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
