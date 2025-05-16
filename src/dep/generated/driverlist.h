@@ -2535,8 +2535,8 @@ DRV		BurnDrvBrkblast;
 DRV		BurnSpecbrickrick;
 DRV		BurnDrvMSX_britishbob;
 DRV		BurnDrvBrix;
-DRV		BurnDrvMSX_bronx;
 DRV		BurnDrvBronx;
+DRV		BurnDrvMSX_bronx;
 DRV		BurnSpecBronxstcop;
 DRV		BurnDrvMSX_brosadv;
 DRV		BurnDrvMSX_brosadva;
@@ -3697,8 +3697,8 @@ DRV		BurnDrvCHF_clrorgan;
 DRV		BurnSpecColoristic;
 DRV		BurnSpecC4chess;
 DRV		BurnSpecColmagic;
-DRV		BurnDrvMSX_colt36;
 DRV		BurnDrvColt;
+DRV		BurnDrvMSX_colt36;
 DRV		BurnDrvgg_columns;
 DRV		BurnDrvsms_columns;
 DRV		BurnDrvsms_columnsc;
@@ -7102,6 +7102,7 @@ DRV		BurnSpecgloc;
 DRV		BurnDrvsms_gloc;
 DRV		BurnDrvgg_gloc;
 DRV		BurnDrvmd_glocs;
+DRV		BurnDrvGlocj;
 DRV		BurnDrvgg_glocj1;
 DRV		BurnDrvgg_glocj;
 DRV		BurnDrvGlocu;
@@ -12668,6 +12669,7 @@ DRV		BurnDrvNmg5a;
 DRV		BurnDrvNmg5e;
 DRV		BurnDrvMultchmk;
 DRV		BurnDrvMultchma;
+DRV		BurnDrvMultchmp25;
 DRV		BurnDrvMultchmp;
 DRV		BurnDrvMchampdx;
 DRV		BurnDrvMchampdb;
@@ -14614,8 +14616,9 @@ DRV		BurnDrvnes_powerblazer;
 DRV		BurnDrvnes_powerblazerj;
 DRV		BurnSpecpdrift;
 DRV		BurnDrvpce_pdrift1;
-DRV		BurnDrvPdriftj;
 DRV		BurnDrvpce_pdrift;
+DRV		BurnDrvPdriftjb;
+DRV		BurnDrvPdriftj;
 DRV		BurnDrvPdrifta;
 DRV		BurnDrvPdrifte;
 DRV		BurnDrvPdrift;
@@ -19207,11 +19210,11 @@ DRV		BurnDrvsnes_Superscope6;
 DRV		BurnSpecSuperscramblesim;
 DRV		BurnSpecSuperseymoursavestheplanet;
 DRV		BurnDrvsnes_Supshadbeastp;
-DRV		BurnDrvsnes_Sshanghai;
 DRV		BurnDrvSshanghaj;
 DRV		BurnDrvSshanghak;
 DRV		BurnDrvSshangha;
 DRV		BurnDrvSshanghab;
+DRV		BurnDrvsnes_Sshanghai;
 DRV		BurnDrvsnes_Ssmste;
 DRV		BurnDrvsnes_Ssms2te;
 DRV		BurnDrvmd_supshin2c;
@@ -19267,14 +19270,11 @@ DRV		BurnDrvSstingry;
 DRV		BurnDrvmd_ssf2ics;
 DRV		BurnDrvmd_ssf2rstn;
 DRV		BurnDrvmd_ssf2;
-DRV		BurnDrvsnes_Ssf2e;
 DRV		BurnDrvmd_ssf2cg;
 DRV		BurnDrvmd_ssf2fh;
 DRV		BurnDrvmd_ssf2s;
 DRV		BurnDrvmd_ssf2j;
-DRV		BurnDrvsnes_Ssf2j;
 DRV		BurnDrvmd_ssf2u;
-DRV		BurnDrvsnes_Ssf2;
 DRV		BurnDrvCpsSsf2tad;
 DRV		BurnDrvCpsSsf2ta;
 DRV		BurnDrvCpsSsf2tdf;
@@ -19291,12 +19291,15 @@ DRV		BurnDrvCpsSsf2xjr1;
 DRV		BurnDrvCpsSsf2xj;
 DRV		BurnDrvCpsSsf2ar1;
 DRV		BurnDrvCpsSsf2a;
+DRV		BurnDrvsnes_Ssf2e;
 DRV		BurnDrvCpsSsf2h;
 DRV		BurnDrvCpsSsf2jr2;
 DRV		BurnDrvCpsSsf2jr1;
 DRV		BurnDrvCpsSsf2j;
+DRV		BurnDrvsnes_Ssf2j;
 DRV		BurnDrvCpsSsf2ud;
 DRV		BurnDrvCpsSsf2u;
+DRV		BurnDrvsnes_Ssf2;
 DRV		BurnDrvCpsSsf2d;
 DRV		BurnDrvCpsSsf2r1;
 DRV		BurnDrvCpsSsf2;
@@ -20678,6 +20681,7 @@ DRV		BurnDrvmd_toejam2s;
 DRV		BurnDrvmd_toejam2j;
 DRV		BurnDrvmd_toejam2u;
 DRV		BurnDrvToffy;
+DRV		BurnDrvToffya;
 DRV		BurnDrvpce_toiletk;
 DRV		BurnDrvTokib;
 DRV		BurnDrvTokibr;
@@ -25469,8 +25473,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecbrickrick,			// Brick Rick Graveyard Shift (128K) (HB, v1.03)
 	&BurnDrvMSX_britishbob,		// British Bob (HB)
 	&BurnDrvBrix,				// Brix
+	&BurnDrvBronx,				// Bronx (bootleg of Cycle Shooting)
 	&BurnDrvMSX_bronx,			// Bronx (Euro, Spanish)
-	&BurnDrvBronx,				// Bronx
 	&BurnSpecBronxstcop,		// Bronx Street Cop (128K)
 	&BurnDrvMSX_brosadv,		// Brother Adventure - Hyeongje Moheom (Korea) (Unl)
 	&BurnDrvMSX_brosadva,		// Brother Adventure - Hyeongje Moheom (Korea, Alt) (Unl)
@@ -26631,8 +26635,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecColoristic,		// Coloristic (128K) (HB)
 	&BurnSpecC4chess,			// Colossus 4 Chess (48K)
 	&BurnSpecColmagic,			// Colour of Magic, The (48K)
+	&BurnDrvColt,				// Colt (bootleg of N.Y. Captor)
 	&BurnDrvMSX_colt36,			// Colt 36 (Euro, Spanish)
-	&BurnDrvColt,				// Colt
 	&BurnDrvgg_columns,			// Columns (Euro, USA, Brazil)
 	&BurnDrvsms_columns,		// Columns (Euro, USA, Brazil, Korea)
 	&BurnDrvsms_columnsc,		// Columns (Hack, Spanish)
@@ -30036,6 +30040,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_gloc,			// G-LOC Air Battle (Euro, Brazil, Korea)
 	&BurnDrvgg_gloc,			// G-LOC Air Battle (Euro, USA, Brazil)
 	&BurnDrvmd_glocs,			// G-LOC Air Battle (Hack, Spanish)
+	&BurnDrvGlocj,				// G-LOC Air Battle (Japan)
 	&BurnDrvgg_glocj1,			// G-LOC Air Battle (Japan, v0)
 	&BurnDrvgg_glocj,			// G-LOC Air Battle (Japan, v1.1)
 	&BurnDrvGlocu,				// G-LOC Air Battle (US)
@@ -35602,7 +35607,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvNmg5e,				// Multi 5 / New Multi Game 5 (set 3, earlier)
 	&BurnDrvMultchmk,			// Multi Champ (Korea, older)
 	&BurnDrvMultchma,			// Multi Champ (World, older)
-	&BurnDrvMultchmp,			// Multi Champ (World, ver. 2.5)
+	&BurnDrvMultchmp25,			// Multi Champ (World, ver. 2.5)
+	&BurnDrvMultchmp,			// Multi Champ (World, ver. 9.6)
 	&BurnDrvMchampdx,			// Multi Champ Deluxe (ver. 0106, 06/01/2000)
 	&BurnDrvMchampdb,			// Multi Champ Deluxe (ver. 1114, 14/11/1999)
 	&BurnDrvMchampda,			// Multi Champ Deluxe (ver. 1126, 26/11/1999)
@@ -37548,8 +37554,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_powerblazerj,	// Power Blazer (Japan)
 	&BurnSpecpdrift,			// Power Drift (128K)
 	&BurnDrvpce_pdrift1,		// Power Drift (Japan) (Alt)
-	&BurnDrvPdriftj,			// Power Drift (Japan)
 	&BurnDrvpce_pdrift,			// Power Drift (Japan)
+	&BurnDrvPdriftjb,			// Power Drift (Japan, Rev B)
+	&BurnDrvPdriftj,			// Power Drift (Japan, Rev C)
 	&BurnDrvPdrifta,			// Power Drift (World)
 	&BurnDrvPdrifte,			// Power Drift (World, Earlier)
 	&BurnDrvPdrift,				// Power Drift (World, Rev A)
@@ -42141,11 +42148,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSuperscramblesim,	// Super Scramble Simulator (128K)
 	&BurnSpecSuperseymoursavestheplanet,// Super Seymour Saves the Planet (128K)
 	&BurnDrvsnes_Supshadbeastp,	// Super Shadow of the Beast (USA, Prototype)
-	&BurnDrvsnes_Sshanghai,		// Super Shanghai - Dragon's Eye (Japan)
 	&BurnDrvSshanghaj,			// Super Shanghai Dragon's Eye (Japan)
 	&BurnDrvSshanghak,			// Super Shanghai Dragon's Eye (Korea)
 	&BurnDrvSshangha,			// Super Shanghai Dragon's Eye (World)
 	&BurnDrvSshanghab,			// Super Shanghai Dragon's Eye (World, bootleg)
+	&BurnDrvsnes_Sshanghai,		// Super Shanghai: Dragon's Eye (Japan)
 	&BurnDrvsnes_Ssmste,		// Super Shell Monsters Story (Hack, English)
 	&BurnDrvsnes_Ssms2te,		// Super Shell Monsters Story II (Hack, English v0.90)
 	&BurnDrvmd_supshin2c,		// Super Shinobi II, The (Hack, Chinese)
@@ -42201,14 +42208,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_ssf2ics,			// Super Street Fighter II (Hack, Color and Sound)
 	&BurnDrvmd_ssf2rstn,		// Super Street Fighter II - Restoration (Hack)
 	&BurnDrvmd_ssf2,			// Super Street Fighter II - The New Challengers (Euro)
-	&BurnDrvsnes_Ssf2e,			// Super Street Fighter II - The New Challengers (Euro)
 	&BurnDrvmd_ssf2cg,			// Super Street Fighter II - The New Challengers (Hack, Color and Graphic)
 	&BurnDrvmd_ssf2fh,			// Super Street Fighter II - The New Challengers (Hack, Final)
 	&BurnDrvmd_ssf2s,			// Super Street Fighter II - The New Challengers (Hack, Spanish v2.0)
 	&BurnDrvmd_ssf2j,			// Super Street Fighter II - The New Challengers (Japan)
-	&BurnDrvsnes_Ssf2j,			// Super Street Fighter II - The New Challengers (Japan)
 	&BurnDrvmd_ssf2u,			// Super Street Fighter II - The New Challengers (USA)
-	&BurnDrvsnes_Ssf2,			// Super Street Fighter II - The New Challengers (USA)
 	&BurnDrvCpsSsf2tad,			// Super Street Fighter II Turbo (Asia 940223 Phoenix Edition) (bootleg)
 	&BurnDrvCpsSsf2ta,			// Super Street Fighter II Turbo (Asia 940223)
 	&BurnDrvCpsSsf2tdf,			// Super Street Fighter II Turbo (Difficulty Fix, Hack)
@@ -42225,12 +42229,15 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsSsf2xj,			// Super Street Fighter II X: Grand Master Challenge (Japan 940311)
 	&BurnDrvCpsSsf2ar1,			// Super Street Fighter II: The New Challengers (Asia 930914)
 	&BurnDrvCpsSsf2a,			// Super Street Fighter II: The New Challengers (Asia 931005)
+	&BurnDrvsnes_Ssf2e,			// Super Street Fighter II: The New Challengers (Euro)
 	&BurnDrvCpsSsf2h,			// Super Street Fighter II: The New Challengers (Hispanic 930911)
 	&BurnDrvCpsSsf2jr2,			// Super Street Fighter II: The New Challengers (Japan 930910)
 	&BurnDrvCpsSsf2jr1,			// Super Street Fighter II: The New Challengers (Japan 930911)
 	&BurnDrvCpsSsf2j,			// Super Street Fighter II: The New Challengers (Japan 931005)
+	&BurnDrvsnes_Ssf2j,			// Super Street Fighter II: The New Challengers (Japan)
 	&BurnDrvCpsSsf2ud,			// Super Street Fighter II: The New Challengers (USA 930911 Phoenix Edition) (bootleg)
 	&BurnDrvCpsSsf2u,			// Super Street Fighter II: The New Challengers (USA 930911)
+	&BurnDrvsnes_Ssf2,			// Super Street Fighter II: The New Challengers (USA)
 	&BurnDrvCpsSsf2d,			// Super Street Fighter II: The New Challengers (World 930911 Phoenix Edition) (bootleg)
 	&BurnDrvCpsSsf2r1,			// Super Street Fighter II: The New Challengers (World 930911)
 	&BurnDrvCpsSsf2,			// Super Street Fighter II: The New Challengers (World 931005)
@@ -43611,7 +43618,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_toejam2s,		// Toe Jam & Earl in Panic on Funkotron (Hack, Spanish)
 	&BurnDrvmd_toejam2j,		// Toe Jam & Earl in Panic on Funkotron (Japan)
 	&BurnDrvmd_toejam2u,		// Toe Jam & Earl in Panic on Funkotron (USA)
-	&BurnDrvToffy,				// Toffy
+	&BurnDrvToffy,				// Toffy (encrypted)
+	&BurnDrvToffya,				// Toffy (unencrypted)
 	&BurnDrvpce_toiletk,		// Toilet Kids (Japan)
 	&BurnDrvTokib,				// Toki (Datsu bootleg)
 	&BurnDrvTokibr,				// Toki (Portuguese-BR Translation v1.07, Hack)
@@ -48391,8 +48399,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_brickrick", "spectrum/d_spectrum.cpp"},
 	{ "msx_britishbob", "msx/d_msx.cpp"},
 	{ "brix", "pre90s/d_jack.cpp"},
-	{ "msx_bronx", "msx/d_msx.cpp"},
 	{ "bronx", "taito/d_nycaptor.cpp"},
+	{ "msx_bronx", "msx/d_msx.cpp"},
 	{ "spec_bronxstcop", "spectrum/d_spectrum.cpp"},
 	{ "msx_brosadv", "msx/d_msx.cpp"},
 	{ "msx_brosadva", "msx/d_msx.cpp"},
@@ -49541,8 +49549,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_coloristic", "spectrum/d_spectrum.cpp"},
 	{ "spec_c4chess", "spectrum/d_spectrum.cpp"},
 	{ "spec_colmagic", "spectrum/d_spectrum.cpp"},
-	{ "msx_colt36", "msx/d_msx.cpp"},
 	{ "colt", "taito/d_nycaptor.cpp"},
+	{ "msx_colt36", "msx/d_msx.cpp"},
 	{ "gg_columns", "sms/d_sms.cpp"},
 	{ "sms_columns", "sms/d_sms.cpp"},
 	{ "sms_columnsc", "sms/d_sms.cpp"},
@@ -52918,6 +52926,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_gloc", "sms/d_sms.cpp"},
 	{ "gg_gloc", "sms/d_sms.cpp"},
 	{ "md_glocs", "megadrive/d_megadrive.cpp"},
+	{ "glocj", "sega/d_ybrd.cpp"},
 	{ "gg_glocj1", "sms/d_sms.cpp"},
 	{ "gg_glocj", "sms/d_sms.cpp"},
 	{ "glocu", "sega/d_ybrd.cpp"},
@@ -58436,6 +58445,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nmg5e", "pst90s/d_nmg5.cpp"},
 	{ "multchmpk", "pst90s/d_esd16.cpp"},
 	{ "multchmpa", "pst90s/d_esd16.cpp"},
+	{ "multchmp25", "pst90s/d_esd16.cpp"},
 	{ "multchmp", "pst90s/d_esd16.cpp"},
 	{ "mchampdx", "pst90s/d_esd16.cpp"},
 	{ "mchampdxb", "pst90s/d_esd16.cpp"},
@@ -60366,8 +60376,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_powerblazerj", "nes/d_nes.cpp"},
 	{ "spec_pdrift", "spectrum/d_spectrum.cpp"},
 	{ "pce_pdrift1", "pce/d_pce.cpp"},
-	{ "pdriftj", "sega/d_ybrd.cpp"},
 	{ "pce_pdrift", "pce/d_pce.cpp"},
+	{ "pdriftjb", "sega/d_ybrd.cpp"},
+	{ "pdriftj", "sega/d_ybrd.cpp"},
 	{ "pdrifta", "sega/d_ybrd.cpp"},
 	{ "pdrifte", "sega/d_ybrd.cpp"},
 	{ "pdrift", "sega/d_ybrd.cpp"},
@@ -64911,11 +64922,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_superscramblesim", "spectrum/d_spectrum.cpp"},
 	{ "spec_superseymoursavestheplanet", "spectrum/d_spectrum.cpp"},
 	{ "snes_supshadbeastp", "snes/d_snes.cpp"},
-	{ "snes_sshanghai", "snes/d_snes.cpp"},
 	{ "sshanghaj", "dataeast/d_sshangha.cpp"},
 	{ "sshanghak", "dataeast/d_sshangha.cpp"},
 	{ "sshangha", "dataeast/d_sshangha.cpp"},
 	{ "sshanghab", "dataeast/d_sshangha.cpp"},
+	{ "snes_sshanghai", "snes/d_snes.cpp"},
 	{ "snes_ssmste", "snes/d_snes.cpp"},
 	{ "snes_ssms2te", "snes/d_snes.cpp"},
 	{ "md_supshin2c", "megadrive/d_megadrive.cpp"},
@@ -64971,14 +64982,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_ssf2ics", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2rstn", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2", "megadrive/d_megadrive.cpp"},
-	{ "snes_ssf2e", "snes/d_snes.cpp"},
 	{ "md_ssf2cg", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2fh", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2s", "megadrive/d_megadrive.cpp"},
 	{ "md_ssf2j", "megadrive/d_megadrive.cpp"},
-	{ "snes_ssf2j", "snes/d_snes.cpp"},
 	{ "md_ssf2u", "megadrive/d_megadrive.cpp"},
-	{ "snes_ssf2", "snes/d_snes.cpp"},
 	{ "ssf2tad", "capcom/d_cps2.cpp"},
 	{ "ssf2ta", "capcom/d_cps2.cpp"},
 	{ "ssf2tdf", "capcom/d_cps2.cpp"},
@@ -64995,12 +65003,15 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ssf2xj", "capcom/d_cps2.cpp"},
 	{ "ssf2ar1", "capcom/d_cps2.cpp"},
 	{ "ssf2a", "capcom/d_cps2.cpp"},
+	{ "snes_ssf2e", "snes/d_snes.cpp"},
 	{ "ssf2h", "capcom/d_cps2.cpp"},
 	{ "ssf2jr2", "capcom/d_cps2.cpp"},
 	{ "ssf2jr1", "capcom/d_cps2.cpp"},
 	{ "ssf2j", "capcom/d_cps2.cpp"},
+	{ "snes_ssf2j", "snes/d_snes.cpp"},
 	{ "ssf2ud", "capcom/d_cps2.cpp"},
 	{ "ssf2u", "capcom/d_cps2.cpp"},
+	{ "snes_ssf2", "snes/d_snes.cpp"},
 	{ "ssf2d", "capcom/d_cps2.cpp"},
 	{ "ssf2r1", "capcom/d_cps2.cpp"},
 	{ "ssf2", "capcom/d_cps2.cpp"},
@@ -66374,6 +66385,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_toejam2j", "megadrive/d_megadrive.cpp"},
 	{ "md_toejam2u", "megadrive/d_megadrive.cpp"},
 	{ "toffy", "pre90s/d_ddragon.cpp"},
+	{ "toffya", "pre90s/d_ddragon.cpp"},
 	{ "pce_toiletk", "pce/d_pce.cpp"},
 	{ "tokib", "pre90s/d_toki.cpp"},
 	{ "tokibr", "pre90s/d_toki.cpp"},
