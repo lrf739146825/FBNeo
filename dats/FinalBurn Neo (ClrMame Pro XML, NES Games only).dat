@@ -1960,11 +1960,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="beatlesadv" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew, A 'GlobalHack' of Super Mario Bros. 2</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Super Mario Bros. 2'</comment>
 		<description>Beatles Adventures in Pepperland, The (GlobalHack)</description>
 		<year>2021</year>
 		<manufacturer>NesDraug</manufacturer>
-		<rom name="The Beatles Adventures in Pepperland GlobalHack (2021)(NesDraug).nes" size="524304" crc="fa5e3fa2"/>
+		<rom name="The Beatles Adventures in Pepperland (2021)(NesDraug).nes" size="524304" crc="fa5e3fa2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1979,7 +1979,7 @@
 	<game name="bee52" sourcefile="nes/d_nes.cpp">
 		<description>Bee 52 (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Bee 52 (USA)(1992)(Camerica).nes" size="65552" crc="77a8486f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -2023,7 +2023,7 @@
 		<description>Bible Adventures (Unl)</description>
 		<year>1991</year>
 		<manufacturer>Wisdom Tree</manufacturer>
-		<rom name="Bible Adventures (Unl)(1991)(Wisom Tree).nes" size="131088" crc="5eb290af"/>
+		<rom name="Bible Adventures (Unl)(1991)(Wisdom Tree).nes" size="131088" crc="5eb290af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2038,7 +2038,7 @@
 	<game name="bignosfreout" sourcefile="nes/d_nes.cpp">
 		<description>Big Nose Freaks Out (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Big Nose Freaks Out (USA)(1992)(Camerica).nes" size="262160" crc="ad16f6c7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -2046,7 +2046,7 @@
 	<game name="bignoscav" sourcefile="nes/d_nes.cpp">
 		<description>Big Nose the Caveman (USA)</description>
 		<year>1991</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Big Nose the Caveman (USA)(1991)(Camerica).nes" size="262160" crc="dcdf053f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -2077,10 +2077,10 @@
 	</game>
 	<game name="binarycity" cloneof="battlecity" romof="battlecity" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Binary City (GlobalHack)</description>
+		<description>Binary City (Hack)</description>
 		<year>2009</year>
 		<manufacturer>AnS</manufacturer>
-		<rom name="Binary City GlobalHack (2009)(AnS).nes" size="40976" crc="84f56a94"/>
+		<rom name="Binary City (2009)(AnS).nes" size="40976" crc="84f56a94"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2437,7 +2437,7 @@
 		<description>Blues Brothers, The (USA)</description>
 		<year>1992</year>
 		<manufacturer>Titus</manufacturer>
-		<rom name="Blues Brothers, The (USA).nes" size="131088" crc="ac273c14"/>
+		<rom name="Blues Brothers, The (USA)(1992)(Titus).nes" size="131088" crc="ac273c14"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2481,7 +2481,7 @@
 		<description>Bokosuka Wars (Japan)</description>
 		<year>1985</year>
 		<manufacturer>ASCII Corp.</manufacturer>
-		<rom name="Bokosuka Wars (Japan).nes" size="40976" crc="196afc68"/>
+		<rom name="Bokosuka Wars (Japan)(1985)(ASCII).nes" size="40976" crc="196afc68"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2494,36 +2494,61 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="bomberman" sourcefile="nes/d_nes.cpp">
-		<description>Bomberman (USA)</description>
-		<year>1989</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Bomberman (USA)(1989)(Hudson Soft).nes" size="24592" crc="b9804046"/>
+	<game name="bombdaisy" cloneof="bomberman" romof="bomberman" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Bomber Daisy (Hack, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Retro Master HD</manufacturer>
+		<rom name="Bomber Daisy v1.1 (2025)(Retro Master HD).nes" size="24592" crc="e5092a53"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="bomberboxart" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Bomberman - BoxArt (HB, v1.02)</description>
+	<game name="bombermanj" cloneof="bomberman" romof="bomberman" sourcefile="nes/d_nes.cpp">
+		<description>Bomberman (Japan)</description>
+		<year>1985</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Bomberman (Japan)(1985)(Hudson Soft).nes" size="24592" crc="90e10ddd"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="bomberman" sourcefile="nes/d_nes.cpp">
+		<description>Bomberman (USA)</description>
+		<year>1987</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Bomberman (USA)(1987)(Hudson Soft).nes" size="24592" crc="b9804046"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="bomberboxart" cloneof="bomberman" romof="bomberman" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Bomberman - BoxArt (Hack, v1.02)</description>
 		<year>2017</year>
 		<manufacturer>Corpse Grinder</manufacturer>
 		<rom name="Bomberman - BoxArt v1.02 (2017)(Corpse Grinder).nes" size="32784" crc="cb68a7fc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="bombermaniij" cloneof="bombermanii" romof="bombermanii" sourcefile="nes/d_nes.cpp">
+		<description>Bomberman II (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Bomberman II (Japan)(1991)(Hudson Soft).nes" size="131088" crc="de808339"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="bombermanii" sourcefile="nes/d_nes.cpp">
 		<description>Bomberman II (USA)</description>
-		<year>1993</year>
+		<year>1992</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Bomberman II (USA)(1993)(Hudson Soft).nes" size="131088" crc="cc7bcfeb"/>
+		<rom name="Bomberman II (USA)(1992)(Hudson Soft).nes" size="131088" crc="cc7bcfeb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="bonksadventure" sourcefile="nes/d_nes.cpp">
 		<description>Bonk's Adventure (USA)</description>
-		<year>1994</year>
+		<year>1993</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Bonk's Adventure (USA)(1994)(Hudson Soft).nes" size="393232" crc="6b53d59a"/>
+		<rom name="Bonk's Adventure (USA)(1993)(Hudson Soft).nes" size="393232" crc="6b53d59a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3008,30 +3033,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="castlevaniacom" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
+	<game name="castlsim" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Castlevania - Chorus of Mysteries (Hack, v1.1)</description>
-		<year>2007</year>
-		<manufacturer>Optomon &amp; Dr. Mario</manufacturer>
-		<rom name="Castlevania - Chorus of Mysteries v1.1 (2007)(Optomon, Dr. Mario).nes" size="131088" crc="bad05634"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="castlevaniahr" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Castlevania - The Holy Relics (Hack)</description>
-		<year>2017</year>
-		<manufacturer>Optomon</manufacturer>
-		<rom name="Castlevania - The Holy Relics (2017)(Optomon).nes" size="131088" crc="8603cbbb"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="castlevanialt" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Castlevania - The Last Tear (Hack, v4.0)</description>
-		<year>2023</year>
-		<manufacturer>Sky Flare</manufacturer>
-		<rom name="Castlevania - The Last Tear v4.0 (2023)(Sky Flare).nes" size="131088" crc="8ce018f9"/>
+		<description>Castlevania - Simplified (Hack)</description>
+		<year>2014</year>
+		<manufacturer>Megafield64</manufacturer>
+		<rom name="Castlevania - Simplified (2014)(Megafield64).nes" size="131088" crc="451a0c75"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3069,12 +3076,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="castlsim" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
+	<game name="castlevaniacom" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Castlevania Simplified (Hack)</description>
-		<year>2014</year>
-		<manufacturer>Megafield64</manufacturer>
-		<rom name="Castlevania Simplified (2014)(Megafield64).nes" size="131088" crc="451a0c75"/>
+		<description>Castlevania: Chorus of Mysteries (Hack, v1.1)</description>
+		<year>2007</year>
+		<manufacturer>Optomon &amp; Dr. Mario</manufacturer>
+		<rom name="Castlevania - Chorus of Mysteries v1.1 (2007)(Optomon, Dr. Mario).nes" size="131088" crc="bad05634"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="castlevaniahr" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania: The Holy Relics (Hack)</description>
+		<year>2017</year>
+		<manufacturer>Optomon</manufacturer>
+		<rom name="Castlevania - The Holy Relics (2017)(Optomon).nes" size="131088" crc="8603cbbb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="castlevanialt" cloneof="castlevania" romof="castlevania" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania: The Last Tear (Hack, v4.0)</description>
+		<year>2023</year>
+		<manufacturer>Sky Flare</manufacturer>
+		<rom name="Castlevania - The Last Tear v4.0 (2023)(Sky Flare).nes" size="131088" crc="8ce018f9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3601,10 +3626,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="cjeleant" sourcefile="nes/d_nes.cpp">
-		<description>CJ's Elephant Antics (USA) (Unl)</description>
+		<description>CJ's Elephant Antics (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="CJ's Elephant Antics (USA)(Unl)(1992)(Codemasters).nes" size="65552" crc="875855f1"/>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="CJ's Elephant Antics (USA)(1992)(Codemasters).nes" size="65552" crc="875855f1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3840,6 +3865,15 @@
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Contra Force (USA)(1992)(Konami).nes" size="262160" crc="83d69922"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="contrags" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra Gender Swap (Hack)</description>
+		<year>2025</year>
+		<manufacturer>tavuntu</manufacturer>
+		<rom name="Contra Gender Swap (2025)(tavuntu).nes" size="262160" crc="f7fac010"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4177,6 +4211,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="cybercoaster" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Cybercoaster (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clockwork Cats</manufacturer>
+		<rom name="Cybercoaster (2025)(Clockwork Cats).nes" size="49168" crc="2d826113"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="cyber" sourcefile="nes/d_nes.cpp">
 		<description>Cybernoid - The Fighting Machine (USA)</description>
 		<year>1989</year>
@@ -4321,11 +4364,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="dgimmick" cloneof="gimmick" romof="gimmick" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Dark Gimmick (GlobalHack, v1.1)</description>
+		<comment>Hack</comment>
+		<description>Dark Gimmick (Hack, v1.1)</description>
 		<year>2014</year>
 		<manufacturer>Berion - Dizzy9</manufacturer>
-		<rom name="Dark Gimmick v1.1 (2014).nes" size="393232" crc="d7ddb1d6"/>
+		<rom name="Dark Gimmick v1.1 (2014)(Berion - Dizzy9).nes" size="393232" crc="d7ddb1d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4462,27 +4505,27 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="deadpool" cloneof="ninjagaiden" romof="ninjagaiden" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+	<game name="deadpool" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew, A GlobalHack of 'Ninja Gaiden'</comment>
 		<description>Deadpool (GlobalHack)</description>
 		<year>2019</year>
 		<manufacturer>Techmoon</manufacturer>
-		<rom name="Deadpool Globalhack (2019)(Techmoon).nes" size="786448" crc="5e36e542"/>
+		<rom name="Deadpool (2019)(Techmoon).nes" size="786448" crc="5e36e542"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="deadpoolsm1" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Deadpool Special Mission (GlobalHack, v1.3, Alt 1)</description>
+	<game name="deadpoolsm1" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew, A GlobalHack of 'Contra'</comment>
+		<description>Deadpool Special Mission (GlobalHack, v1.3, MMC3)</description>
 		<year>2023</year>
 		<manufacturer>Techmoon</manufacturer>
 		<rom name="Deadpool Special Mission v1.3 MMC3 (2023)(Techmoon).nes" size="393232" crc="f5565dab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="deadpoolsm2" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Deadpool Special Mission (GlobalHack, v1.3, Alt 2)</description>
+	<game name="deadpoolsm2" cloneof="deadpoolsm1" romof="deadpoolsm1" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew, A GlobalHack of 'Contra'</comment>
+		<description>Deadpool Special Mission (GlobalHack, v1.3, VCR2)</description>
 		<year>2023</year>
 		<manufacturer>Techmoon</manufacturer>
 		<rom name="Deadpool Special Mission v1.3 VCR2 (2023)(Techmoon).nes" size="262160" crc="245b8aa0"/>
@@ -4650,7 +4693,7 @@
 		<description>Destructor, El (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Gluk Video</manufacturer>
-		<rom name="Destructor, El (Unl)(Spain)(1992)(Gluk Video).nes" size="65552" crc="eb33ea3b"/>
+		<rom name="Destructor, El (Unl)(1992)(Gluk Video).nes" size="65552" crc="eb33ea3b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4860,7 +4903,7 @@
 	<game name="dizzyadv" sourcefile="nes/d_nes.cpp">
 		<description>Dizzy The Adventurer (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Dizzy The Adventurer (USA)(1992)(Camerica).nes" size="131088" crc="92847456"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -5697,8 +5740,8 @@
 		<comment>Prototype</comment>
 		<description>Dreamworld Pogie (Prototype)</description>
 		<year>1993</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Dreamworld Pogie (Proto)(1993)(Camerica).nes" size="131088" crc="2ace2f1b"/>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="Dreamworld Pogie (Proto)(1993)(Codemasters).nes" size="131088" crc="2ace2f1b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5843,6 +5886,14 @@
 		<manufacturer>Broderbund</manufacturer>
 		<rom name="Dusty Diamond's All-Star Softball (USA)(1990)(Broderbund).nes" size="262160" crc="5506b1ca"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dynablaster" cloneof="bombermanii" romof="bombermanii" sourcefile="nes/d_nes.cpp">
+		<description>Dynablaster (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Dynablaster (Euro)(1991)(Hudson Soft).nes" size="131088" crc="e67be1d2"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
 	<game name="dynamitebatman" cloneof="batmaretjok" romof="batmaretjok" sourcefile="nes/d_nes.cpp">
@@ -6165,7 +6216,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="evildead" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Splatter House: Super Deformed'</comment>
 		<description>Evil Dead - Ash lives! (GlobalHack)</description>
 		<year>2020</year>
 		<manufacturer>Crying Onion</manufacturer>
@@ -6527,7 +6578,7 @@
 	<game name="fantaadvdiz" sourcefile="nes/d_nes.cpp">
 		<description>Fantastic Adventures of Dizzy, The (USA)</description>
 		<year>1991</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Fantastic Adventures of Dizzy, The (USA)(1991)(Camerina).nes" size="262160" crc="59318584"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -6606,6 +6657,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="fcgenjin" cloneof="bonksadventure" romof="bonksadventure" sourcefile="nes/d_nes.cpp">
+		<description>FC Genjin: Freakthoropus Computerus (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="FC Genjin - Freakthoropus Computerus (Japan)(1993)(Hudson Soft).nes" size="393232" crc="7a03f696"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="felixthecat" sourcefile="nes/d_nes.cpp">
 		<description>Felix the Cat (USA)</description>
 		<year>1992</year>
@@ -6659,7 +6718,7 @@
 		<description>Fighting Hero (Unl)</description>
 		<year>1991</year>
 		<manufacturer>Mega Soft</manufacturer>
-		<rom name="Fighting Hero (Unl).nes" size="393232" crc="2093f0e1"/>
+		<rom name="Fighting Hero (Unl)(1991)(Mega Soft).nes" size="393232" crc="2093f0e1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6667,7 +6726,7 @@
 		<description>Fighting Hero III (Unl)</description>
 		<year>1993</year>
 		<manufacturer>NTDEC</manufacturer>
-		<rom name="Fighting Hero III (Unl).nes" size="786448" crc="52b2045f"/>
+		<rom name="Fighting Hero III (Unl)(1993)(NTDEC).nes" size="786448" crc="52b2045f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6676,7 +6735,7 @@
 		<description>Fighting Road (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>Immutable</manufacturer>
-		<rom name="Fighting Road (T-Eng).nes" size="262160" crc="3b9e7aa1"/>
+		<rom name="Fighting Road T-Eng (2016)(Immutable).nes" size="262160" crc="3b9e7aa1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6684,7 +6743,7 @@
 		<description>Fighting Road (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Toei Animation</manufacturer>
-		<rom name="Fighting Road (Japan).nes" size="262160" crc="bdde0fd7"/>
+		<rom name="Fighting Road (Japan)(1988)(Toei Animation).nes" size="262160" crc="bdde0fd7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6698,10 +6757,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="finalcombat" sourcefile="nes/d_nes.cpp">
-		<description>Final Combat (Unl) (Asia)</description>
+		<description>Final Combat (Asia) (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Sachen</manufacturer>
-		<rom name="Final Combat (Asia) (NTSC) (Unl).nes" size="81936" crc="a7afcc45"/>
+		<rom name="Final Combat (Asia)(Unl)(1992)(Sachen).nes" size="81936" crc="a7afcc45"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6937,10 +6996,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="firehawk" sourcefile="nes/d_nes.cpp">
-		<description>Fire Hawk (USA) (Unl)</description>
-		<year>1991</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Fire Hawk (USA)(Unl)(1991)(Camerica).nes" size="131088" crc="a2259bd3"/>
+		<description>Fire Hawk (USA)</description>
+		<year>1992</year>
+		<manufacturer>Camerica - Codemasters</manufacturer>
+		<rom name="Fire Hawk (USA)(1992)(Camerica).nes" size="131088" crc="a2259bd3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7839,7 +7898,7 @@
 	<game name="godizzygo" sourcefile="nes/d_nes.cpp">
 		<description>Go! Dizzy Go! (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
+		<manufacturer>Camerica - Codemasters</manufacturer>
 		<rom name="Go! Dizzy Go! (USA)(1992)(Camerica).nes" size="65552" crc="78716f4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -8179,10 +8238,10 @@
 	</game>
 	<game name="gremlins" cloneof="hudsonhawk" romof="hudsonhawk" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Gremlins (GlobalHack)</description>
+		<description>Gremlins (Hack)</description>
 		<year>2016</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Gremlins GlobalHack (2016)(pacnsacdave).nes" size="262160" crc="f6d5d3e3"/>
+		<rom name="Gremlins (2016)(pacnsacdave).nes" size="262160" crc="f6d5d3e3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9297,11 +9356,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="gadget" cloneof="gumshoe" romof="gumshoe" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew, A 'GlobalHack' of Gumshoe</comment>
-		<description>Inspector Gadget (GlobalHack)</description>
+		<comment>Hack</comment>
+		<description>Inspector Gadget (Hack)</description>
 		<year>2022</year>
 		<manufacturer>Garrett Gilchrist</manufacturer>
-		<rom name="Inspector Gadget (GlobalHack)(2022)(Garrett Gilchrist).nes" size="172048" crc="51a2c04b"/>
+		<rom name="Inspector Gadget (2022)(Garrett Gilchrist).nes" size="172048" crc="51a2c04b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9843,8 +9902,8 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="junkoid" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+	<game name="junkoid" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew, A GlobalHack of 'Metroid'</comment>
 		<description>Junkoid (GlobalHack, v1.1)</description>
 		<year>2022</year>
 		<manufacturer>P. Yoshi</manufacturer>
@@ -10924,7 +10983,7 @@
 	</game>
 	<game name="legendsm" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Legend of Super Mario, The - Save Mushroom Kingdom (GlobalHack, v1.2)</description>
+		<description>Legend of Super Mario, The: Save Mushroom Kingdom (GlobalHack, v1.2)</description>
 		<year>2023</year>
 		<manufacturer>NesDraug</manufacturer>
 		<rom name="Legend of Super Mario, The - Save Mushroom Kingdom v1.2 (2023)(NesDraug).nes" size="262160" crc="b1d13af1"/>
@@ -11116,8 +11175,8 @@
 	<game name="linusspascoscr" sourcefile="nes/d_nes.cpp">
 		<description>Linus Spacehead's Cosmic Crusade (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Linus Spacehead's Cosmic Crusade (USA)(1992)(Camerica).nes" size="262160" crc="fffddf99"/>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="Linus Spacehead's Cosmic Crusade (USA)(1992)(Codemasters).nes" size="262160" crc="fffddf99"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11387,10 +11446,10 @@
 	</game>
 	<game name="lupin3gt" cloneof="mappy" romof="mappy" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Lupin III: Gentle Thief (GlobalHack)</description>
+		<description>Lupin III: Gentle Thief (Hack)</description>
 		<year>2023</year>
 		<manufacturer>ProtoPixel</manufacturer>
-		<rom name="Lupin III Gentle Thief (GlobHack)(2023)(ProtoPixel).nes" size="24592" crc="c5671156"/>
+		<rom name="Lupin III - Gentle Thief (2023)(ProtoPixel).nes" size="24592" crc="c5671156"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11990,11 +12049,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="mariokart" cloneof="rcproam" romof="rcproam" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Mario Kart (GlobalHack, v1.1)</description>
+		<comment>Hack</comment>
+		<description>Mario Kart (Hack, v1.1)</description>
 		<year>2017-2025</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Mario Kart GlobalHack v1.1 (2025)(pacnsacdave).nes" size="65552" crc="78c24010"/>
+		<rom name="Mario Kart v1.1 (2025)(pacnsacdave).nes" size="65552" crc="78c24010"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12107,7 +12166,7 @@
 		<description>Mawthorne (USA) (HB)</description>
 		<year>2022</year>
 		<manufacturer>CGT Games</manufacturer>
-		<rom name="Mawthorne (USA, Europe)(2022)(CGT Games).nes" size="524304" crc="447bec5d"/>
+		<rom name="Mawthorne (USA)(2022)(CGT Games).nes" size="524304" crc="447bec5d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12162,21 +12221,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="megamantnl" cloneof="megaman" romof="megaman" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Mega Man - The New Lands (Hack, v1.3)</description>
-		<year>2023</year>
-		<manufacturer>Timaeus</manufacturer>
-		<rom name="Mega Man - The New Lands v1.3 (2023)(Timaeus).nes" size="262160" crc="c06546f7"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="megamanx" cloneof="megaman" romof="megaman" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Mega Man Age of Wily (GlobalHack)</description>
+		<description>Mega Man Age of Wily (Hack)</description>
 		<year>2015</year>
 		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Mega Man Age of Wily GlobalHack (2015)(pacnsacdave).nes" size="524304" crc="9414c14f"/>
+		<rom name="Mega Man Age of Wily (2015)(pacnsacdave).nes" size="524304" crc="9414c14f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12289,6 +12339,15 @@
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man VI (USA)(1994)(Capcom).nes" size="524304" crc="1efcac48"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamantnl" cloneof="megaman" romof="megaman" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man: The New Lands (Hack, v1.3)</description>
+		<year>2023</year>
+		<manufacturer>Timaeus</manufacturer>
+		<rom name="Mega Man - The New Lands v1.3 (2023)(Timaeus).nes" size="262160" crc="c06546f7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12563,10 +12622,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="micromachines" sourcefile="nes/d_nes.cpp">
-		<description>Micro Machines (USA) (Unl)</description>
+		<description>Micro Machines (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Micro Machines (USA)(Unl)(1992)(Camerica).nes" size="262160" crc="f3fffc7a"/>
+		<manufacturer>Camerica - Codemasters</manufacturer>
+		<rom name="Micro Machines (USA)(1992)(Camerica).nes" size="262160" crc="f3fffc7a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12598,10 +12657,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="mig29" sourcefile="nes/d_nes.cpp">
-		<description>MiG 29 - Soviet Fighter (USA) (Unl)</description>
+		<description>MiG 29: Soviet Fighter (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="MiG 29 - Soviet Fighter (USA)(Unl)(1992)(Camerica).nes" size="131088" crc="af33971f"/>
+		<manufacturer>Camerica - Codemasters</manufacturer>
+		<rom name="MiG 29 - Soviet Fighter (USA)(1992)(Camerica).nes" size="131088" crc="af33971f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13166,7 +13225,7 @@
 		<description>Motocross Champion (Hack, English)</description>
 		<year>2001</year>
 		<manufacturer>Suicidal Translations</manufacturer>
-		<rom name="Motocross Champion (T-eng).nes" size="262160" crc="c252e03a"/>
+		<rom name="Motocross Champion T-Eng (2001)(Suicidal Translations).nes" size="262160" crc="c252e03a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13174,7 +13233,7 @@
 		<description>Motocross Champion (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Motocross Champion (Japan).nes" size="262160" crc="8b7a23b0"/>
+		<rom name="Motocross Champion (Japan)(1989)(Konami).nes" size="262160" crc="8b7a23b0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13182,7 +13241,7 @@
 		<description>Motor City Patrol (USA)</description>
 		<year>1992</year>
 		<manufacturer>Matchbox</manufacturer>
-		<rom name="Motor City Patrol (USA).nes" size="262160" crc="67ba0793"/>
+		<rom name="Motor City Patrol (USA)(1992)(Matchbox).nes" size="262160" crc="67ba0793"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13190,7 +13249,7 @@
 		<description>Mottomo Abunai Deka (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Toei Animation</manufacturer>
-		<rom name="Mottomo Abunai Deka (Japan).nes" size="131088" crc="3b646a29"/>
+		<rom name="Mottomo Abunai Deka (Japan)(1990)(Toei Animation).nes" size="131088" crc="3b646a29"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13199,7 +13258,7 @@
 		<description>Mouryou Senki Madara (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>Aeon Genesis</manufacturer>
-		<rom name="Mouryou Senki Madara (T-eng).nes" size="524304" crc="d9dcee07"/>
+		<rom name="Mouryou Senki Madara T-Eng (2016)(Aoen Genesis).nes" size="524304" crc="d9dcee07"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13207,7 +13266,7 @@
 		<description>Mouryou Senki Madara (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Mouryou Senki Madara (Japan).nes" size="524304" crc="4a6dd7c7"/>
+		<rom name="Mouryou Senki Madara (Japan)(1990)(Konami).nes" size="524304" crc="4a6dd7c7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13215,7 +13274,7 @@
 		<description>Mr. Gimmick (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Mr. Gimmick (Europe).nes" size="393232" crc="bf80b241"/>
+		<rom name="Mr. Gimmick (Euro)(1993)(Sunsoft).nes" size="393232" crc="bf80b241"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
@@ -14774,6 +14833,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="pizzapopev" cloneof="pizzapop" romof="pizzapop" sourcefile="nes/d_nes.cpp">
+		<description>Pizza Pop! Extend Version (USA)</description>
+		<year>1992-2025</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Pizza Pop! Extend Version (1992-2025)(Jaleco).nes" size="262160" crc="0fc04151"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="pizzaport" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Pizza Portals (HB)</description>
@@ -15301,26 +15368,26 @@
 		<driver status="good"/>
 	</game>
 	<game name="quattadv" sourcefile="nes/d_nes.cpp">
-		<description>Quattro Adventure (USA) (Unl)</description>
+		<description>Quattro Adventure (USA)</description>
 		<year>1992</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="Quattro Adventure (USA)(Unl)(1992)(Camerica).nes" size="262160" crc="ee8e3a91"/>
+		<rom name="Quattro Adventure (USA)(1992)(Camerica).nes" size="262160" crc="ee8e3a91"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="quattroarcade" sourcefile="nes/d_nes.cpp">
-		<description>Quattro Arcade (USA) (Unl)</description>
+		<description>Quattro Arcade (USA)</description>
 		<year>1992</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="Quattro Arcade (USA)(Unl)(1992)(Camerica).nes" size="262160" crc="2f36c2f1"/>
+		<rom name="Quattro Arcade (USA)(1992)(Camerica).nes" size="262160" crc="2f36c2f1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="quattrosports" sourcefile="nes/d_nes.cpp">
-		<description>Quattro Sports (USA) (Unl)</description>
+		<description>Quattro Sports (USA)</description>
 		<year>1992</year>
 		<manufacturer>Camerica</manufacturer>
-		<rom name="Quattro Sports (USA)(Unl)(1992)(Camerica).nes" size="262160" crc="9adc4130"/>
+		<rom name="Quattro Sports (USA)(1992)(Camerica).nes" size="262160" crc="9adc4130"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16224,12 +16291,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="royalflush" cloneof="smb3" romof="smb3" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Royal Flush - Princess Sidestory (GlobalHack)</description>
+	<game name="royalflush" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew, A GlobalHack of 'Super Mario Bros. 3'</comment>
+		<description>Royal Flush: Princess Sidestory (GlobalHack)</description>
 		<year>2013</year>
 		<manufacturer>Darkdata</manufacturer>
-		<rom name="Royal Flush - Princess Sidestory GlobalHack (2013)(Darkdata).nes" size="393232" crc="95e67f56"/>
+		<rom name="Royal Flush - Princess Sidestory (2013)(Darkdata).nes" size="393232" crc="95e67f56"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16850,7 +16917,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shootufo" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew, A GlobalHack of Duck Hunt</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Duck Hunt'</comment>
 		<description>Shoot UFO (GlobalHack)</description>
 		<year>2015</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
@@ -16867,7 +16934,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shovelknight" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Whomp 'Em'</comment>
 		<description>Shovel Knight (GlobalHack)</description>
 		<year>2023</year>
 		<manufacturer>Roket</manufacturer>
@@ -17307,7 +17374,7 @@
 		<description>Solitaire (USA, Rev 1.1)</description>
 		<year>1992</year>
 		<manufacturer>American Video Entertainment</manufacturer>
-		<rom name="Solitaire REV1.1 (USA)(1992)(AVE).nes" size="65552" crc="74aad703"/>
+		<rom name="Solitaire (USA, Rev 1.1)(1992)(AVE).nes" size="65552" crc="74aad703"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17332,7 +17399,7 @@
 		<description>Solomon no Kagi 2: Coolmintou Kyuushutsu Sakusen (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="Solomon no Kagi 2 - Coolmintou Kyuushutsu Sakusen (Jpn)(1992)(Tecmo).nes" size="262160" crc="f033b827"/>
+		<rom name="Solomon no Kagi 2 - Coolmintou Kyuushutsu Sakusen (Japan)(1992)(Tecmo).nes" size="262160" crc="f033b827"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17354,7 +17421,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="solstice" cloneof="solst" romof="solst" sourcefile="nes/d_nes.cpp">
-		<description>Solstice - Sanjigen Meikyuu no Kyoujuu (Japan)</description>
+		<description>Solstice: Sanjigen Meikyuu no Kyoujuu (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Epic/Sony Records</manufacturer>
 		<rom name="Solstice (Japan)(1990)(Epic-Sony Records).nes" size="131088" crc="59bb08e7"/>
@@ -17362,7 +17429,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="solst" sourcefile="nes/d_nes.cpp">
-		<description>Solstice - The Quest for the Staff of Demnos (USA)</description>
+		<description>Solstice: The Quest for the Staff of Demnos (USA)</description>
 		<year>1990</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Solstice - The Quest for the Staff of Demnos (USA)(1990)(Sony Imagesoft).nes" size="131088" crc="1d60732e"/>
@@ -17390,7 +17457,16 @@
 		<description>Son Son (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="Son Son (Japan).nes" size="40976" crc="f7c8f42d"/>
+		<rom name="Son Son (Japan)(1986)(Capcom).nes" size="40976" crc="f7c8f42d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sonicboom" cloneof="bomberman" romof="bomberman" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Sonic Boom (Hack)</description>
+		<year>2025</year>
+		<manufacturer>Retro Master HD</manufacturer>
+		<rom name="Sonic Boom (2025)(Retro Master HD).nes" size="24592" crc="b7bed34c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17416,7 +17492,7 @@
 		<description>Space Harrier (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="Space Harrier (Japan).nes" size="131088" crc="91930e95"/>
+		<rom name="Space Harrier (Japan)(1989)(Takara).nes" size="131088" crc="91930e95"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17432,7 +17508,7 @@
 		<description>Space Invaders (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Space Invaders (Japan)(1985)(Taito Corp.).nes" size="24592" crc="525c0dab"/>
+		<rom name="Space Invaders (Japan)(1985)(Taito).nes" size="24592" crc="525c0dab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18095,10 +18171,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="stuntkids" sourcefile="nes/d_nes.cpp">
-		<description>Stunt Kids (USA) (Unl)</description>
+		<description>Stunt Kids (USA)</description>
 		<year>1992</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Stunt Kids (USA)(Unl)(1992)(Camerica).nes" size="131088" crc="7384aa7d"/>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="Stunt Kids (USA)(1992)(Codemasters).nes" size="131088" crc="7384aa7d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18300,7 +18376,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smb8en" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Don Doko Don 2'</comment>
 		<description>Super Mario Bros 8 (GlobalHack, English)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
@@ -18309,7 +18385,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smb8es" cloneof="smb8en" romof="smb8en" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Don Doko Don 2'</comment>
 		<description>Super Mario Bros 8 (GlobalHack, Spanish)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
@@ -18318,7 +18394,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smb8se" cloneof="smb8en" romof="smb8en" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew, Don Doko Don 2 tribute edition</comment>
+		<comment>Hack, Homebrew, 'Don Doko Don 2' tribute edition</comment>
 		<description>Super Mario Bros 8 Special Edition (GlobalHack, English)</description>
 		<year>2021</year>
 		<manufacturer>Crying Onion</manufacturer>
@@ -18495,7 +18571,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smunlimdx" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Super Mario Bros.'</comment>
 		<description>Super Mario Unlimited Deluxe (GlobalHack, v2.4)</description>
 		<year>2021</year>
 		<manufacturer>Frantik</manufacturer>
@@ -20035,8 +20111,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="totoro" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Totoro - Mei is Missing (GlobalHack)</description>
+		<comment>Hack, Homebrew, A GlobalHack of 'Super Mario Bros.'</comment>
+		<description>Totoro: Mei is Missing (GlobalHack)</description>
 		<year>2024</year>
 		<manufacturer>Cakewarder</manufacturer>
 		<rom name="Totoro - Mei is Missing GlobalHack (2024)(Cakewarder).nes" size="40976" crc="44f5c8be"/>
@@ -20399,8 +20475,8 @@
 	<game name="ultimstu" sourcefile="nes/d_nes.cpp">
 		<description>Ultimate Stuntman, The (USA)</description>
 		<year>1991</year>
-		<manufacturer>Camerica</manufacturer>
-		<rom name="Ultimate Stuntman, The (USA)(1991)(Camerica).nes" size="262160" crc="e8ee7ddc"/>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="Ultimate Stuntman, The (USA)(1991)(Codemasters).nes" size="262160" crc="e8ee7ddc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21618,15 +21694,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="zeldaiiac" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew</comment>
-		<description>Zelda II Amida's Curse (GlobalHack, v1.9)</description>
-		<year>2023</year>
-		<manufacturer>Ok Impala!</manufacturer>
-		<rom name="Zelda II Amida's Curse GlobHack v1.9 (2021)(Ok Impala!).nes" size="262160" crc="f01a5b55"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="zeldaiird" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Zelda II Redux - The Adventure of Link (Hack, v3.0)</description>
@@ -21636,9 +21703,18 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="zeldakong" cloneof="donkeykong" romof="donkeykong" sourcefile="nes/d_nes.cpp">
+	<game name="zeldaiiac" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Zelda Kong (GlobalHack)</description>
+		<description>Zelda II: Amida's Curse (GlobalHack, v1.9)</description>
+		<year>2023</year>
+		<manufacturer>Ok Impala!</manufacturer>
+		<rom name="Zelda II - Amida's Curse v1.9 (2021)(Ok Impala!).nes" size="262160" crc="f01a5b55"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="zeldakong" cloneof="donkeykong" romof="donkeykong" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Zelda Kong (Hack)</description>
 		<year>2021</year>
 		<manufacturer>Zero Meaning</manufacturer>
 		<rom name="Zelda Kong (2021)(Zero Meaning).nes" size="24592" crc="4c801a11"/>
