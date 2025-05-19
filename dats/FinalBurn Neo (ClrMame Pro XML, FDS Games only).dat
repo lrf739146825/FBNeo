@@ -217,10 +217,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="bomberman" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Bomber Man (Japan)</description>
+		<description>Bomberman (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Bomber Man (Japan)(1990)(Hudson Soft).fds" size="65516" crc="4f7bee06"/>
+		<rom name="Bomberman (Japan)(1990)(Hudson Soft).fds" size="65516" crc="4f7bee06"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>

@@ -11340,6 +11340,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="metalgear" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Metal Gear (HB)</description>
+		<year>2025</year>
+		<manufacturer>h0ffman</manufacturer>
+		<rom name="MetalGear-TTE.md" size="1572864" crc="9f6a5f55"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mgs" cloneof="crkdown" romof="crkdown" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Metal Gear Solid (Russia) (Unl)</description>

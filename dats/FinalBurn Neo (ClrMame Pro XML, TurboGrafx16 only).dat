@@ -639,6 +639,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="chasehqnf" cloneof="chasehq" romof="chasehq" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Taito Chase H.Q. - Noise Fix (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Justin Gibbins</manufacturer>
+		<rom name="Taito Chase H.Q. - Noise Fix (Hack)(2022)(Justin Gibbins).pce" size="393216" crc="947740bc"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="taknhoop" sourcefile="pce/d_pce.cpp">
 		<description>Takin' It to the Hoop (USA)</description>
 		<year>1989</year>
