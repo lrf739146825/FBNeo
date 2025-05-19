@@ -2699,6 +2699,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="uwol" sourcefile="pce/d_pce.cpp">
+		<comment>Homebrew</comment>
+		<description>Uwol Quest for Money (HB, v1.1)</description>
+		<year>2018</year>
+		<manufacturer>Alekmaul</manufacturer>
+		<rom name="Uwol Quest for Money v1.1 (2018)(Alekmaul).pce" size="262144" crc="59421adc"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="valkyriee" cloneof="valkyrie" romof="valkyrie" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
 		<description>Valkyrie no Densetsu (Hack, English)</description>

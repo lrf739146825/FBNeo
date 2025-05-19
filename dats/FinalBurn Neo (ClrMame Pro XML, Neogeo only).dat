@@ -33215,7 +33215,7 @@
 	</game>
 	<game name="kf2k2mp" cloneof="kof2002" romof="kof2002" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Bootleg</comment>
-		<description>The King of Fighters 2002 Magic Plus (bootleg set 1)</description>
+		<description>The King of Fighters 2002 Magic Plus (bootleg, set 1)</description>
 		<year>2002</year>
 		<manufacturer>bootleg</manufacturer>
 		<rom name="kf02m-p1.bin" size="4194304" crc="ff7c6ec0"/>
@@ -33275,7 +33275,7 @@
 	</game>
 	<game name="kf2k2mpl" cloneof="kof2002" romof="kof2002" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Bootleg</comment>
-		<description>The King of Fighters 2002 Magic Plus (bootleg set 2)</description>
+		<description>The King of Fighters 2002 Magic Plus (bootleg, set 2)</description>
 		<year>2002</year>
 		<manufacturer>bootleg</manufacturer>
 		<rom name="kf02m-p1p.bin" size="1048576" crc="aba169fe"/>

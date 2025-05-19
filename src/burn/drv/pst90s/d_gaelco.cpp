@@ -1604,10 +1604,10 @@ static struct BurnRomInfo thoopRomDesc[] = {
 
 	{ "sound",				0x100000, 0x99f80961, 3 | BRF_SND },           //  6 M6295 Samples
 	
-	{ "thunderhoop_gal16v8.f2",	 0x00117, 0xd5ed5985, 4 | BRF_OPT },       //  7 plds
-	{ "thunderhoop_gal16v8.j16", 0x00117, 0xfe78b903, 4 | BRF_OPT },       //  8
-	{ "thunderhoop_gal20v8.d21", 0x00157, 0xa715e392, 4 | BRF_OPT },       //  9
-	{ "thunderhoop_gal20v8.h11", 0x00157, 0x51e34bc2, 4 | BRF_OPT },        // 10
+	{ "mu_mu-1_6541_gal16v8as.f2",  0x00117, 0xd5ed5985, 4 | BRF_OPT },    //  7 plds
+	{ "mu_mu-4_664c_gal16v8as.j16", 0x00117, 0xfe78b903, 4 | BRF_OPT },    //  8
+	{ "thunderhoop_gal20v8.d21",    0x00157, 0xa715e392, 4 | BRF_OPT },    //  9
+	{ "mu_mu-3_gal20v8as.h11",      0x00157, 0x51e34bc2, 4 | BRF_OPT },    // 10
 };
 
 STD_ROM_PICK(thoop)
@@ -1630,10 +1630,10 @@ static struct BurnRomInfo lastkmRomDesc[] = {
 	{ "prog-bici-e-8.11.95.d18",	0x80000, 0x1fc5fba0, 1 | BRF_PRG | BRF_ESS }, //  0 68k Code
 	{ "prog-bici-o-8.11.95.d16",	0x80000, 0xb93e57e3, 1 | BRF_PRG | BRF_ESS }, //  1
 
-	{ "bici-f3.h6",			0x80000, 0x0bf9f213, 2 | BRF_GRA },           //  2 Tiles and Sprites
-	{ "bici-f2.h7",			0x80000, 0xc48d5376, 2 | BRF_GRA },           //  3
-	{ "bici-f1.h9",			0x80000, 0xe7958070, 2 | BRF_GRA },           //  4
-	{ "bici-f0.h10",		0x80000, 0x73d4b29f, 2 | BRF_GRA },           //  5
+	{ "bici-f3.h6",			0x80000, 0x0bf9f213, 2 | BRF_GRA },           		  //  2 Tiles and Sprites
+	{ "bici-f2.h7",			0x80000, 0xc48d5376, 2 | BRF_GRA },           		  //  3
+	{ "bici-f1.h9",			0x80000, 0xe7958070, 2 | BRF_GRA },           		  //  4
+	{ "bici-f0.h10",		0x80000, 0x73d4b29f, 2 | BRF_GRA },           		  //  5
 
 	{ "sonido-bici-0-8.11.95.c1",	0x80000, 0x7380c963, 3 | BRF_SND },           //  6 M6295 Samples
 };
@@ -1647,6 +1647,34 @@ struct BurnDriver BurnDrvLastkm = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_PROTOTYPE, 2, HARDWARE_MISC_POST90S, GBF_RACING, 0,
 	NULL, lastkmRomInfo, lastkmRomName, NULL, NULL, NULL, NULL, LastkmInputInfo, LastkmDIPInfo,
+	ManiacspInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x400,
+	320, 240, 4, 3
+};
+
+
+// Last KM (ver 1.0.0227, checksum 747a7443, prototype)
+
+static struct BurnRomInfo lastkmaRomDesc[] = {
+	{ "bici_zeus_0_20-2_27c040.bin",	0x80000, 0x6a4a982c, 1 | BRF_PRG | BRF_ESS }, //  0 68k Code
+	{ "bici_zeus_1_20-2_27c040.bin",	0x80000, 0xb63eb33e, 1 | BRF_PRG | BRF_ESS }, //  1
+
+	{ "bici-f3.h6",			0x80000, 0x0bf9f213, 2 | BRF_GRA },           			  //  2 Tiles and Sprites
+	{ "bici-f2.h7",			0x80000, 0xc48d5376, 2 | BRF_GRA },           			  //  3
+	{ "bici-f1.h9",			0x80000, 0xe7958070, 2 | BRF_GRA },           			  //  4
+	{ "bici-f0.h10",		0x80000, 0x73d4b29f, 2 | BRF_GRA },           			  //  5
+
+	{ "sonido-bici-0-8.11.95.c1",	0x80000, 0x7380c963, 3 | BRF_SND },           	  //  6 M6295 Samples
+};
+
+STD_ROM_PICK(lastkma)
+STD_ROM_FN(lastkma)
+
+struct BurnDriver BurnDrvLastkma = {
+	"lastkma", "lastkm", NULL, NULL, "1995",
+	"Last KM (ver 1.0.0227, checksum 747a7443, prototype)\0", NULL, "Gaelco / Zeus", "Miscellaneous",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_PROTOTYPE, 2, HARDWARE_MISC_POST90S, GBF_RACING, 0,
+	NULL, lastkmaRomInfo, lastkmaRomName, NULL, NULL, NULL, NULL, LastkmInputInfo, LastkmDIPInfo,
 	ManiacspInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x400,
 	320, 240, 4, 3
 };
