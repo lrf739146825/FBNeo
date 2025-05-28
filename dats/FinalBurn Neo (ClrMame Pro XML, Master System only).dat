@@ -95,6 +95,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aerial" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Aerial (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Aerial (2021)(Inufuto).sms" size="15943" crc="bc64b967"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aerialas" sourcefile="sms/d_sms.cpp">
 		<description>Aerial Assault (Euro, Brazil)</description>
 		<year>1990</year>
@@ -140,6 +149,15 @@
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Aleste (Japan)(1988)(Sega).sms" size="131072" crc="d8c4165b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aleste3gg2sms" sourcefile="sms/d_sms.cpp">
+		<comment>Hack, CH3 fix applied</comment>
+		<description>Aleste 3 (Hack, GG2SMS Conversion)</description>
+		<year>2024</year>
+		<manufacturer>BCNabel76, Revo</manufacturer>
+		<rom name="Aleste 3 GG2SMS v1 (2024)(BCNabel76, Revo).sms" size="917504" crc="89643654"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -421,6 +439,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="antiair" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>AntiAir (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="AntiAir (2024)(Inufuto).sms" size="16384" crc="e49dfb4e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="antsms" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Ants for Master System (HB)</description>
@@ -477,6 +504,15 @@
 		<year>1996</year>
 		<manufacturer>Tec Toy</manufacturer>
 		<rom name="As Aventuras da TV Colosso (Brazil)(1996)(Tec Toy).sms" size="524288" crc="e1714a88"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ascend" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Ascend (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Ascend (2022)(Inufuto).sms" size="14122" crc="ffa79dc0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -746,6 +782,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="battlot" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Battlot (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Battlot (2021)(Inufuto).sms" size="14536" crc="e31f01d6"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="benosqr" sourcefile="sms/d_sms.cpp">
 		<comment>Demo, Homebrew</comment>
 		<description>Be No Sqr (HB, Tech-Demo v1.01)</description>
@@ -849,6 +894,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bootskell" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Bootskell (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Bootskell (2021)(Inufuto).sms" size="14884" crc="e12c3c4c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dracula" sourcefile="sms/d_sms.cpp">
 		<description>Bram Stoker's Dracula (Euro)</description>
 		<year>1993</year>
@@ -903,6 +957,15 @@
 		<year>198?</year>
 		<manufacturer>Joy Soft</manufacturer>
 		<rom name="C_So! (Korea)(198x)(Joy Soft).sms" size="32768" crc="0918fba0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cacorm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Cacorm (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Cacorm (2022)(Inufuto).sms" size="12593" crc="78a26f50"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1031,6 +1094,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cavit" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Cavit (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Cavit (2021)(Inufuto).sms" size="15990" crc="0c1674da"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="champeur" sourcefile="sms/d_sms.cpp">
 		<description>Champions of Europe (Euro, Brazil)</description>
 		<year>1992</year>
@@ -1110,23 +1182,31 @@
 		<description>Chuck Rock (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="chuck rock (europe).bin" size="524288" crc="dd0e2927"/>
+		<rom name="Chuck Rock (Euro, Brazil)(1992)(Virgin Interactive).sms" size="524288" crc="dd0e2927"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="chukrck2b" cloneof="chukrck2" romof="chukrck2" sourcefile="sms/d_sms.cpp">
-		<description>Chuck Rock II - Son of Chuck (Brazil)</description>
+		<description>Chuck Rock II: Son of Chuck (Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="chuck rock ii - son of chuck (brazil).bin" size="524288" crc="87783c04"/>
+		<rom name="Chuck Rock II - Son of Chuck (Brazil)(1993)(Tec Toy).sms" size="524288" crc="87783c04"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="chukrck2" sourcefile="sms/d_sms.cpp">
-		<description>Chuck Rock II - Son of Chuck (Euro)</description>
+		<description>Chuck Rock II: Son of Chuck (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Core Design</manufacturer>
-		<rom name="chuck rock ii - son of chuck (europe).bin" size="524288" crc="c30e690a"/>
+		<rom name="Chuck Rock II - Son of Chuck (Euro)(1993)(Core Design).sms" size="524288" crc="c30e690a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="circuit" cloneof="worldgp" romof="worldgp" sourcefile="sms/d_sms.cpp">
+		<description>Circuit, The (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Circuit, The (Japan)(1986)(Sega).sms" size="131072" crc="8fb75994"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1134,7 +1214,7 @@
 		<description>Cloud Master (Euro, USA)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="cloud master (usa, europe).bin" size="262144" crc="e7f62e6d"/>
+		<rom name="Cloud Master (Euro, USA)(1989)(Sega).sms" size="262144" crc="e7f62e6d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1184,7 +1264,7 @@
 		<description>Comical Machine Gun Joe (Japan, MyCard)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="comical machine gun joe (japan).bin" size="32768" crc="9d549e08"/>
+		<rom name="Comical Machine Gun Joe (Japan, MyCard)(1986)(Sega).bin" size="32768" crc="9d549e08"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1217,6 +1297,15 @@
 		<year>1993</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Cosmic Spacehead (Euro)(1993)(Codemasters).sms" size="262144" crc="29822980"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cracky" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Cracky (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Cracky (2023)(Inufuto).sms" size="11098" crc="d45f865c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1751,7 +1840,7 @@
 		<description>F-16 Fighter (Euro, USA, Sega Card)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="f-16 fighter (euro, usa).bin" merge="F-16 Fighter (Euro, USA)(1986)(Sega).sms" size="32768" crc="eaebf323"/>
+		<rom name="F-16 Fighter (Euro, USA, Sega Card)(1986)(Sega).bin" merge="F-16 Fighter (Euro, USA)(1986)(Sega).sms" size="32768" crc="eaebf323"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1759,7 +1848,7 @@
 		<description>F-16 Fighting Falcon (Japan, MyCard)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="f-16 fighting falcon (japan).bin" size="32768" crc="7ce06fce"/>
+		<rom name="F-16 Fighting Falcon (Japan, MyCard)(1985)(Sega).bin" size="32768" crc="7ce06fce"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1783,7 +1872,7 @@
 		<description>F-16 Fighting Falcon (USA, Sega Card for Display Unit)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="f-16 fighting falcon (usa).bin" size="32768" crc="184c23b7"/>
+		<rom name="F-16 Fighting Falcon (USA, Sega Card for Display Unit)(1985)(Sega).bin" size="32768" crc="184c23b7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1870,7 +1959,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fantzon2" sourcefile="sms/d_sms.cpp">
-		<description>Fantasy Zone II - The Tears of Opa-Opa (Euro, USA, Brazil)</description>
+		<description>Fantasy Zone II: The Tears of Opa-Opa (Euro, USA, Brazil)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Fantasy Zone II - The Tears of Opa-Opa (Euro, USA, Brazil)(1987)(Sega).sms" size="262144" crc="b8b141f9"/>
@@ -1921,7 +2010,7 @@
 		<description>Fire and Ice (Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="fire and ice (brazil).bin" size="262144" crc="8b24a640"/>
+		<rom name="Fire and Ice (Brazil)(1993)(Tec Toy).sms" size="262144" crc="8b24a640"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1929,7 +2018,7 @@
 		<description>Flash, The (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="flash, the (europe).bin" size="262144" crc="be31d63f"/>
+		<rom name="Flash, The (Euro, Brazil)(1993)(Sega).sms" size="262144" crc="be31d63f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1937,7 +2026,7 @@
 		<description>Flashpoint (Korea)</description>
 		<year>199?</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="flashpoint (kr).bin" size="32768" crc="61e8806f"/>
+		<rom name="Flashpoint (Korea)(199x)(Zemina).sms" size="32768" crc="61e8806f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1954,7 +2043,7 @@
 		<description>Flintstones, The (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Grandslam</manufacturer>
-		<rom name="mpr-13701-f.ic1" size="262144" crc="ca5c78a5"/>
+		<rom name="Flintstones, The (Euro, Brazil)(1990)(Grandslam).sms" size="262144" crc="ca5c78a5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1962,7 +2051,7 @@
 		<description>Forgotten Worlds (Euro, Brazil, Australia)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13706-f.ic1" size="262144" crc="38c53916"/>
+		<rom name="Forgotten Worlds (Euro, Brazil, Australia)(1991)(Sega).sms" size="262144" crc="38c53916"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1988,15 +2077,15 @@
 		<description>Fushigi no Oshiro Pit Pot (Japan, MyCard)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="fushigi no oshiro pit pot (japan).bin" size="32768" crc="e6795c53"/>
+		<rom name="Fushigi no Oshiro Pit Pot (Japan, MyCard)(1985)(Sega).bin" size="32768" crc="e6795c53"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pitpot1" cloneof="pitpot" romof="pitpot" sourcefile="sms/d_sms.cpp">
-		<description>Fushigi no Oshiro Pit Pot (Japan, Pirate?)</description>
+		<description>Fushigi no Oshiro Pit Pot (Japan, Pirate)</description>
 		<year>1985</year>
-		<manufacturer>pirate</manufacturer>
-		<rom name="fushigi no oshiro pit pot [hack].bin" size="32768" crc="5d08e823"/>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Fushigi no Oshiro Pit Pot (Japan, Pirate)(1985).sms" size="32768" crc="5d08e823"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2009,10 +2098,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="gaegujan" sourcefile="sms/d_sms.cpp">
-		<description>Gaegujangi Ggachi (Korea)</description>
+		<description>Gaegujangi Ggachi (Korea) (Unl)</description>
 		<year>1993</year>
 		<manufacturer>HiCom</manufacturer>
-		<rom name="gaegujangi ggachi (korea) (unl).bin" size="524288" crc="8b40f6bf"/>
+		<rom name="Gaegujangi Ggachi (Korea)(Unl)(1993)(HiCom).sms" size="524288" crc="8b40f6bf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2060,10 +2149,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="galaxian" sourcefile="sms/d_sms.cpp">
-		<description>Galaxian (Korea)</description>
+		<description>Galaxian (Korea) (Unl)</description>
 		<year>198?</year>
 		<manufacturer>HiCom</manufacturer>
-		<rom name="Galaxian (Korea)(198x)(HiCom).sms" size="32768" crc="577ec227"/>
+		<rom name="Galaxian (Korea)(Unl)(198x)(HiCom).sms" size="32768" crc="577ec227"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2156,7 +2245,7 @@
 		<description>George Foreman's KO Boxing (Euro, Brazil)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="george foreman's ko boxing (europe).bin" size="262144" crc="a64898ce"/>
+		<rom name="George Foreman's KO Boxing (Euro, Brazil)(1992)(Flying Edge).sms" size="262144" crc="a64898ce"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2380,10 +2469,10 @@
 	</game>
 	<game name="grailgods" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Grail of The Gods (HB, v0.47)</description>
-		<year>2023-24</year>
+		<description>Grail of the Gods (HB, v0.48)</description>
+		<year>2023-25</year>
 		<manufacturer>Guydebaville</manufacturer>
-		<rom name="Grail of The Gods v0.47 (2023-24)(Guydebaville).sms" size="65536" crc="c1f4206f"/>
+		<rom name="Grail of the Gods v0.48 (2023-25)(Guydebaville).sms" size="65536" crc="df1f88de"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2576,6 +2665,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="guntus" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Guntus (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Guntus (2022)(Inufuto).sms" size="16727" crc="691635e3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hajafuin" cloneof="miracle" romof="miracle" sourcefile="sms/d_sms.cpp">
 		<description>Haja no Fuuin (Japan)</description>
 		<year>1987</year>
@@ -2745,6 +2843,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hopman" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Hopman (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Hopman (2023)(Inufuto).sms" size="13037" crc="06090a9a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hoshiw" sourcefile="sms/d_sms.cpp">
 		<description>Hoshi wo Sagashite... (Japan)</description>
 		<year>1988</year>
@@ -2776,6 +2883,15 @@
 		<year>2021</year>
 		<manufacturer>Alex1975Br</manufacturer>
 		<rom name="Ice Force (2021)(Alex1975Br).sms" size="65536" crc="da5f2e58"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetus" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Impetus (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus (2021)(Inufuto).sms" size="22208" crc="0172e6f9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2959,7 +3075,7 @@
 		<description>Kenseiden (Euro, USA, Brazil)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="kenseiden (usa, europe).bin" size="262144" crc="516ed32e"/>
+		<rom name="Kenseiden (Euro, USA, Brazil)(1988)(Sega).sms" size="262144" crc="516ed32e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2967,15 +3083,15 @@
 		<description>Kenseiden (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-11488.ic1" size="262144" crc="05ea5353"/>
+		<rom name="Kenseiden (Japan)(1988)(Sega).sms" size="262144" crc="05ea5353"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="kingball" sourcefile="sms/d_sms.cpp">
 		<description>King and Balloon (Korea)</description>
-		<year>19??</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="king and balloon (kr).sms" size="32768" crc="0ae470e5"/>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="King and Balloon (Korea)(198x).sms" size="32768" crc="0ae470e5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2983,7 +3099,7 @@
 		<description>King's Quest - Quest for the Crown (USA)</description>
 		<year>1989</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="king's quest - quest for the crown (usa).bin" size="131072" crc="f8d33bc4"/>
+		<rom name="King's Quest - Quest for the Crown (USA)(1989)(Parker Brothers).sms" size="131072" crc="f8d33bc4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2992,7 +3108,7 @@
 		<description>King's Quest - Quest for the Crown (USA, Prototype)</description>
 		<year>1989</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="king's quest - quest for the crown (usa) (beta).bin" size="131072" crc="b7fe0a9d"/>
+		<rom name="King's Quest - Quest for the Crown (USA, Proto)(1989)(Parker Brothers).sms" size="131072" crc="b7fe0a9d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3147,6 +3263,15 @@
 		<year>1992</year>
 		<manufacturer>Probe</manufacturer>
 		<rom name="lethal weapon 3 music [proto].bin" size="32768" crc="eb71247b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lift" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Lift (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Lift (2021)(Inufuto).sms" size="12705" crc="2c5420a9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3389,6 +3514,24 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mazy" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Mazy (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Mazy (2022)(Inufuto).sms" size="10992" crc="cb5c20fd"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mazy2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Mazy 2 (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Mazy 2 (2025)(Inufuto).sms" size="16384" crc="d55761d1"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megumi" sourcefile="sms/d_sms.cpp">
 		<description>Megumi Rescue (Japan)</description>
 		<year>1988</year>
@@ -3451,6 +3594,15 @@
 		<year>1990</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Micro Xevious, The (Korea)(1990)(Zemina).sms" size="32768" crc="41cc2ade"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mieyen" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Mieyen (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Mieyen (2025)(Inufuto).sms" size="16384" crc="364c06ed"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3700,6 +3852,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="neuras" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Neuras (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Neuras (2021)(Inufuto).sms" size="12920" crc="9b229f4d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="newbogl2" sourcefile="sms/d_sms.cpp">
 		<description>New Boggle Boggle 2 (Korea)</description>
 		<year>1989</year>
@@ -3791,6 +3952,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="osotos" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Osotos (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Osotos (2024)(Inufuto).sms" size="16384" crc="b8569995"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ottifant" sourcefile="sms/d_sms.cpp">
 		<description>Ottifants, The (Euro, Brazil)</description>
 		<year>1993</year>
@@ -3834,10 +4004,10 @@
 	</game>
 	<game name="pacmansms" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Pac-Man SMS (HB)</description>
+		<description>Pac-Man SMS (HB, v1.10)</description>
 		<year>2025</year>
 		<manufacturer>Lack of Track</manufacturer>
-		<rom name="Pac-Man (2025)(Lack of Track).sms" size="32768" crc="3ee36f82"/>
+		<rom name="Pac-Man v1.10 (2025)(Lack of Track).sms" size="32768" crc="fea4f771"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4402,6 +4572,15 @@
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Running Battle (Euro, Brazil)(1991)(Sega).sms" size="262144" crc="1fdae719"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ruptus" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Ruptus (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Ruptus (2021)(Inufuto).sms" size="17461" crc="f4e44d46"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5463,7 +5642,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="superman" sourcefile="sms/d_sms.cpp">
-		<description>Superman - The Man of Steel (Euro, Brazil)</description>
+		<description>Superman: The Man of Steel (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Games</manufacturer>
 		<rom name="Superman - The Man of Steel (Euro, Brazil)(1993)(Virgin Games).sms" size="262144" crc="6f9ac98f"/>
@@ -5744,14 +5923,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="circuit" cloneof="worldgp" romof="worldgp" sourcefile="sms/d_sms.cpp">
-		<description>The Circuit (Japan)</description>
-		<year>1986</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="circuit, the (japan).bin" size="131072" crc="8fb75994"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="3dragon" sourcefile="sms/d_sms.cpp">
 		<description>Three Dragon Story, The (Korea)</description>
 		<year>1989</year>
@@ -5916,7 +6087,7 @@
 	<game name="ttoriui" cloneof="myhero" romof="myhero" sourcefile="sms/d_sms.cpp">
 		<description>Ttoriui Moheom (Korea)</description>
 		<year>19??</year>
-		<manufacturer>Unknown</manufacturer>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Ttoriui Moheom (Korea)(19xx).sms" size="32768" crc="178801d2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -6028,7 +6199,7 @@
 		<description>Walter Payton Football (USA)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Walter Payton Football (USA).sms" size="262144" crc="3d55759b"/>
+		<rom name="Walter Payton Football (USA)(1989)(Sega).sms" size="262144" crc="3d55759b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6155,7 +6326,7 @@
 		<description>Wonder Boy (Euro, Korea, v0) ~ Super Wonder Boy (Japan, v0)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Wonder Boy (Euro, Korea, v0) ~ Super Wonder Boy (Japan, v0)(1987)(Sega).sms" size="131072" crc="e2fcb6f3"/>
+		<rom name="Wonder Boy (Euro, Korea, v0) - Super Wonder Boy (Japan, v0)(1987)(Sega).sms" size="131072" crc="e2fcb6f3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6176,14 +6347,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wboy3" sourcefile="sms/d_sms.cpp">
-		<description>Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)</description>
-		<year>1989</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)(1989)(Sega).sms" size="262144" crc="679e1676"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="wboy3fm" cloneof="wboy3" romof="wboy3" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
 		<description>Wonder Boy III - The Dragon's Trap (Hack, FM Mod)</description>
@@ -6199,6 +6362,14 @@
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Wonder Boy III - The Dragon's Trap (Hack, Spanish)(2017)(Wave).sms" size="262144" crc="fed045bf"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wboy3" sourcefile="sms/d_sms.cpp">
+		<description>Wonder Boy III: The Dragon's Trap (Euro, USA, Korea)</description>
+		<year>1989</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)(1989)(Sega).sms" size="262144" crc="679e1676"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6400,6 +6571,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="yewdow" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Yewdow (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Yewdow (2023)(Inufuto).sms" size="16384" crc="07302dd3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="yokaininjap" cloneof="yokaininja" romof="yokaininja" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Yokai Ninja (HB, v1.02)</description>
@@ -6502,7 +6682,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="zillion2" sourcefile="sms/d_sms.cpp">
-		<description>Zillion II - The Tri Formation (Euro, USA) ~ Tri Formation (Japan)</description>
+		<description>Zillion II: The Tri Formation (Euro, USA) ~ Tri Formation (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Zillion II - The Tri Formation (World)(1987)(Sega).sms" size="131072" crc="2f2e3bc9"/>
@@ -6510,7 +6690,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="zool" sourcefile="sms/d_sms.cpp">
-		<description>Zool - Ninja of the 'Nth' Dimension (Euro)</description>
+		<description>Zool: Ninja of the 'Nth' Dimension (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Gremlin Interactive</manufacturer>
 		<rom name="Zool - Ninja of the 'Nth' Dimension (Euro)(1993)(Gremlin Interactive).sms" size="262144" crc="9d9d0a5f"/>
