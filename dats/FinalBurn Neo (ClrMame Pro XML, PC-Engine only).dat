@@ -2374,6 +2374,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="scinf" cloneof="sci" romof="sci" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Special Criminal Investigation - Noise Fix (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Justin Gibbins</manufacturer>
+		<rom name="Special Criminal Investigation - Noise Fix (2022)(Justin Gibbins).pce" size="524288" crc="54e4c79b"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spinpair" sourcefile="pce/d_pce.cpp">
 		<description>Spin Pair (Japan)</description>
 		<year>1990</year>

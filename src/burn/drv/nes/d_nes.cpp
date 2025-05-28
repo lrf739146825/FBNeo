@@ -48307,6 +48307,45 @@ struct BurnDriver BurnDrvnes_tagindragon = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
+// Taito Chase H.Q. (Hack, English)
+// https://www.romhacking.net/translations/2516/
+static struct BurnRomInfo nes_taitochasehqteRomDesc[] = {
+        { "Taito Chase H.Q. T-Eng (2015)(pacnsacdave).nes",          262160, 0x8b13b5e3, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(nes_taitochasehqte)
+STD_ROM_FN(nes_taitochasehqte)
+
+struct BurnDriver BurnDrvnes_taitochasehqte = {
+        "nes_taitochasehqte", NULL, NULL, NULL, "2015",
+        "Taito Chase H.Q. (Hack, English)\0", NULL, "pacnsacdave", "NES / Famicom",
+        NULL, NULL, NULL, NULL,
+        BDF_GAME_WORKING | BDF_HACK, 1, HARDWARE_NES, GBF_RACING, 0,
+        NESGetZipName, nes_taitochasehqteRomInfo, nes_taitochasehqteRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
+        NESInit, NESExit, NESFrame, NESDraw, NESScan, &NESRecalc, 0x40,
+        SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
+};
+
+// Taito Chase H.Q. (Hack, English + Palette Fix)
+// https://www.romhacking.net/translations/2516/
+// https://www.romhacking.net/hacks/4938/
+static struct BurnRomInfo nes_taitochasehqtepfRomDesc[] = {
+	{ "Taito Chase H.Q. T-Eng + Palette Fix (2015-20)(pacnsacdave - Osman Color).nes",          262160, 0x1f565114, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(nes_taitochasehqtepf)
+STD_ROM_FN(nes_taitochasehqtepf)
+
+struct BurnDriver BurnDrvnes_taitochasehqtepf = {
+	"nes_taitochasehqtepf", "nes_taitochasehqte", NULL, NULL, "2015-20",
+	"Taito Chase H.Q. (Hack, English + Palette Fix)\0", NULL, "pacnsacdave - Osman Color", "NES / Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_NES, GBF_RACING, 0,
+	NESGetZipName, nes_taitochasehqtepfRomInfo, nes_taitochasehqtepfRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
+	NESInit, NESExit, NESFrame, NESDraw, NESScan, &NESRecalc, 0x40,
+	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
+};
+
 // Taito Chase H.Q. (Japan)
 static struct BurnRomInfo nes_taitochasehqRomDesc[] = {
 	{ "Taito Chase H.Q. (Japan)(1989)(Taito Corp.).nes",          262160, 0xb3408ee4, BRF_ESS | BRF_PRG },
@@ -48316,10 +48355,10 @@ STD_ROM_PICK(nes_taitochasehq)
 STD_ROM_FN(nes_taitochasehq)
 
 struct BurnDriver BurnDrvnes_taitochasehq = {
-	"nes_taitochasehq", NULL, NULL, NULL, "1989",
+	"nes_taitochasehq", "nes_taitochasehqte", NULL, NULL, "1989",
 	"Taito Chase H.Q. (Japan)\0", NULL, "Taito Corp.", "NES / Famicom",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_NES, GBF_RACING, 0,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_NES, GBF_RACING, 0,
 	NESGetZipName, nes_taitochasehqRomInfo, nes_taitochasehqRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
 	NESInit, NESExit, NESFrame, NESDraw, NESScan, &NESRecalc, 0x40,
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT

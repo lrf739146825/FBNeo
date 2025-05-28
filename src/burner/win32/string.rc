@@ -62,8 +62,8 @@ BEGIN
 	IDS_NETPLAY_TOOMUCH			"too much text"
 
 	IDS_SSHOT_SAVED				"PNG saved"
-	IDS_STSHOT_SAVED			"PNG saved to titles"
-	IDS_SPSHOT_SAVED			"PNG saved to previews"
+	IDS_STSHOT_SAVED			"PNG saved as title"
+	IDS_SPSHOT_SAVED			"PNG saved as preview"
 	IDS_SSHOT_ERROR				"PNG error %1d"
 
 	IDS_REC_AVI				"Rec AVI ON"
@@ -254,7 +254,9 @@ BEGIN
 	IDS_ROMDATAMANAGER_TITLE	"%s%sRomData Manager%sSelect Game"
 	IDS_ROMDATA_DATPATH			"Dat path"
 	IDS_ROMDATA_ROMSET			"Romset"
+	IDS_ROMDATA_DRIVER			"Driver"
 	IDS_ROMDATA_HARDWARE_DESC	"%s"
+	IDS_ROMDATA_FULLNAME		"Game"
 
 	IDS_MENU_0 					"&Arcade"
     IDS_MENU_1 					"&Other..."
@@ -377,6 +379,8 @@ BEGIN
 	IDS_ERR_NO_DRIVER_SEL_SLOT1	"No driver has been selected for slot 1."
 	IDS_ERR_NON_WORKING			"This game isn't working. Load it anyway?"
 	IDS_ERR_CDEMU_INI_FAIL		"Couldn't initialise CD emulation."
+	IDS_ERR_DRIVER_NOT_EXIST	"Driver does not exist."
+	IDS_ERR_ROMSET_DUPLICATE	"Romset has duplicate names with drivers in the driver list."
 	
 	IDS_ERR_MACRO_NOT_MAPPING	"Double-click the macro to change its mapping first"
 

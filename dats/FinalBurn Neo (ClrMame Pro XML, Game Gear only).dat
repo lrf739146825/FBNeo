@@ -120,7 +120,7 @@
 		<description>Arch Rivals (USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="arch rivals (usa).bin" size="262144" crc="f0204191"/>
+		<rom name="Arch Rivals (USA)(1992)(Flying Edge).gg" size="262144" crc="f0204191"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -128,7 +128,7 @@
 		<description>Arena (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="arena (usa, europe).bin" size="524288" crc="7cb3facf"/>
+		<rom name="Arena (Euro, USA)(1995)(Sega).gg" size="524288" crc="7cb3facf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1519,6 +1519,15 @@
 		<year>2020</year>
 		<manufacturer>M2 Co.</manufacturer>
 		<rom name="GG Aleste 3 (2020)(M2).gg" size="1048576" crc="717fd9e3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ggaleste3sndfix" cloneof="ggaleste3" romof="ggaleste3" sourcefile="sms/d_sms.cpp">
+		<comment>1-Byte fix: missing CH3 activated</comment>
+		<description>GG Aleste 3 - Sound Channel 3 fix (Japan)</description>
+		<year>2020</year>
+		<manufacturer>M2 Co.</manufacturer>
+		<rom name="GG Aleste 3 - Sound Channel 3 fix (2020)(M2).gg" size="1048576" crc="53d0cacc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3069,7 +3078,7 @@
 		<description>Pocket Jansou (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="pocket jansou (japan).bin" size="131072" crc="cc90c723"/>
+		<rom name="Pocket Jansou (Japan)(1992)(Namcot).gg" size="131072" crc="cc90c723"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3077,7 +3086,7 @@
 		<description>Poker Face Paul's Blackjack (USA)</description>
 		<year>1994</year>
 		<manufacturer>Adrenalin - Sega</manufacturer>
-		<rom name="poker faced paul's blackjack (usa).bin" size="131072" crc="89d34067"/>
+		<rom name="Poker Face Paul's Blackjack (USA)(1994)(Adrenalin - Sega).gg" size="131072" crc="89d34067"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3085,7 +3094,7 @@
 		<description>Poker Face Paul's Poker (USA)</description>
 		<year>1994</year>
 		<manufacturer>Adrenalin - Sega</manufacturer>
-		<rom name="poker faced paul's poker (usa).bin" size="131072" crc="e783daf8"/>
+		<rom name="Poker Face Paul's Poker (USA)(1994)(Adrenalin - Sega).gg" size="131072" crc="e783daf8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3093,7 +3102,7 @@
 		<description>Poker Face Paul's Solitaire (USA)</description>
 		<year>1994</year>
 		<manufacturer>Adrenalin - Sega</manufacturer>
-		<rom name="poker faced paul's solitaire (usa).bin" size="131072" crc="0e9b0c0a"/>
+		<rom name="Poker Face Paul's Solitaire (USA)(1994)(Adrenalin - Sega).gg" size="131072" crc="0e9b0c0a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3101,7 +3110,7 @@
 		<description>Poker Faced Paul's Gin (USA)</description>
 		<year>1994</year>
 		<manufacturer>Adrenalin - Sega</manufacturer>
-		<rom name="poker faced paul's gin (usa).bin" size="131072" crc="afd61b89"/>
+		<rom name="Poker Face Paul's Gin (USA)(1994)(Adrenalin - Sega).gg" size="131072" crc="afd61b89"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3109,7 +3118,7 @@
 		<description>Pop Breaker (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Micro Cabin</manufacturer>
-		<rom name="pop breaker (japan).bin" size="131072" crc="71deba5a"/>
+		<rom name="Pop Breaker (Japan)(1991)(Micro Cabin).gg" size="131072" crc="71deba5a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3117,7 +3126,7 @@
 		<description>Popeye no Beach Volleyball (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Technos Japan</manufacturer>
-		<rom name="popeye no beach volleyball (japan).bin" size="524288" crc="3ef66810"/>
+		<rom name="Popeye no Beach Volleyball (Japan)(1994)(Technos Japan).gg" size="524288" crc="3ef66810"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3125,7 +3134,7 @@
 		<description>Power Drive (Euro)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="power drive (europe).bin" size="524288" crc="ac369ae3"/>
+		<rom name="Power Drive (Euro)(1994)(U.S.Gold).gg" size="524288" crc="ac369ae3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3133,7 +3142,7 @@
 		<description>Power Strike II (Euro) ~ GG Aleste II (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="power strike ii (japan, europe).bin" size="262144" crc="09de1528"/>
+		<rom name="Power Strike II - GG Aleste II (Euro, Japan)(1993)(Sega).gg" size="262144" crc="09de1528"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3157,7 +3166,7 @@
 		<description>Prince of Persia (Euro, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="prince of persia (usa, europe) (beta).bin" size="262144" crc="45f058d6"/>
+		<rom name="Prince of Persia (Euro, SMS Mode)(1992)(Domark).gg" size="262144" crc="45f058d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3165,7 +3174,7 @@
 		<description>Prince of Persia (USA, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="prince of persia (usa, europe).bin" size="262144" crc="311d2863"/>
+		<rom name="Prince of Persia (USA, SMS Mode)(1992)(Domark).gg" size="262144" crc="311d2863"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3182,7 +3191,7 @@
 		<description>Pro Yakyuu '91, The (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pro yakyuu '91, the (japan).bin" size="131072" crc="6d3a10d3"/>
+		<rom name="Pro Yakyuu '91, The (Japan)(1991)(Sega).gg" size="131072" crc="6d3a10d3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3190,16 +3199,16 @@
 		<description>Pro Yakyuu GG League '94 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pro yakyuu gg league '94 (japan).bin" size="524288" crc="a1a19135"/>
+		<rom name="Pro Yakyuu GG League '94 (Japan)(1994)(Sega).gg" size="524288" crc="a1a19135"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="proyakgg" sourcefile="sms/d_sms.cpp">
-		<comment>Game doesn't work</comment>
+		<comment>NB: Game doesn't work.</comment>
 		<description>Pro Yakyuu GG League (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15564.ic1" size="262144" crc="2da8e943"/>
+		<rom name="Pro Yakyuu GG League (Japan)(1993)(Sega).gg" size="262144" crc="2da8e943"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
 	</game>
@@ -3207,7 +3216,7 @@
 		<description>Psychic World (Euro, USA, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="psychic world (usa, europe) (v1.1).bin" size="131072" crc="73779b22"/>
+		<rom name="Psychic World (Euro, USA, Brazil)(1991)(Sega).gg" size="131072" crc="73779b22"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3215,7 +3224,7 @@
 		<description>Psychic World (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="psychic world (japan).bin" size="131072" crc="afcc7828"/>
+		<rom name="Psychic World (Japan)(1991)(Sega).gg" size="131072" crc="afcc7828"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3223,7 +3232,7 @@
 		<description>Putt and Putter (Euro, USA, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="putt and putter (usa, europe).bin" size="131072" crc="ecc301dd"/>
+		<rom name="Putt and Putter (Euro, USA, Brazil)(1991)(Sega).gg" size="131072" crc="ecc301dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3231,7 +3240,7 @@
 		<description>Putt and Putter (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="putt and putter (japan).bin" size="131072" crc="407ac070"/>
+		<rom name="Putt and Putter (Japan)(1991)(Sega).gg" size="131072" crc="407ac070"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3483,7 +3492,7 @@
 		<description>Sega Game Pack 4 in 1 (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15205.ic1" size="262144" crc="0924d2ec"/>
+		<rom name="Sega Game Pack 4 in 1 (Euro)(1991)(Sega).gg" size="262144" crc="0924d2ec"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3492,7 +3501,7 @@
 		<description>Sega Game Pack 4 in 1 (Euro, Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sega game pack 4 in 1 (proto).bin" size="262144" crc="758a7123"/>
+		<rom name="Sega Game Pack 4 in 1 (Euro, Proto)(1991)(Sega).gg" size="262144" crc="758a7123"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3500,15 +3509,15 @@
 		<description>Sensible Soccer (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="sensible soccer (europe).bin" size="131072" crc="5b68da75"/>
+		<rom name="Sensible Soccer (Euro)(1994)(Sony Imagesoft).gg" size="131072" crc="5b68da75"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="shadam" cloneof="defoasis" romof="defoasis" sourcefile="sms/d_sms.cpp">
-		<description>Shadam Crusader - Harukanaru Oukoku (Japan)</description>
+		<description>Shadam Crusader: Harukanaru Oukoku (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="shadam crusader - harukanaru oukoku (japan).bin" size="524288" crc="09f9ed60"/>
+		<rom name="Shadam Crusader - Harukanaru Oukoku (Japan)(1992)(Sega).gg" size="524288" crc="09f9ed60"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3516,7 +3525,7 @@
 		<description>Shanghai II (Japan, v0)</description>
 		<year>1990</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="shanghai ii (japan).bin" size="131072" crc="2ae8c75f"/>
+		<rom name="Shanghai II (Japan, v0)(1990)(Sunsoft).gg" size="131072" crc="2ae8c75f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3524,7 +3533,7 @@
 		<description>Shanghai II (Japan, v1)</description>
 		<year>1990</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="mpr-13494.ic1" size="131072" crc="81314249"/>
+		<rom name="Shanghai II (Japan, v1)(1990)(Sunsoft).gg" size="131072" crc="81314249"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3532,7 +3541,7 @@
 		<description>Shaq Fu (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="shaq fu (usa, europe).bin" size="524288" crc="6fcb8ab0"/>
+		<rom name="Shaq Fu (Euro, USA)(1995)(Electronic Arts).gg" size="524288" crc="6fcb8ab0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3540,15 +3549,7 @@
 		<description>Shikinjou (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="shikinjou (japan).bin" size="131072" crc="9c5c7f53"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="shinfrcg" sourcefile="sms/d_sms.cpp">
-		<description>Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan)(1992)(Sega).gg" size="524288" crc="4d1f4699"/>
+		<rom name="Shikinjou (Japan)(1991)(Sunsoft).gg" size="131072" crc="9c5c7f53"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3561,24 +3562,32 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shinfrgf" sourcefile="sms/d_sms.cpp">
-		<description>Shining Force Gaiden - Final Conflict (Japan)</description>
-		<year>1995</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Shining Force Gaiden - Final Conflict (Japan)(1995)(Sega).gg" size="524288" crc="6019fe5e"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="shinfrg2" cloneof="shinfrc2" romof="shinfrc2" sourcefile="sms/d_sms.cpp">
-		<description>Shining Force Gaiden II - Jashin no Kakusei (Japan)</description>
+		<description>Shining Force Gaiden II: Jashin no Kakusei (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining Force Gaiden II - Jashin no Kakusei (Japan)(1993)(Sega).gg" size="524288" crc="30374681"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="shinfrcg" sourcefile="sms/d_sms.cpp">
+		<description>Shining Force Gaiden: Ensei, Jashin no Kuni e (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Shining Force Gaiden - Ensei, Jashin no Kuni e (Japan)(1992)(Sega).gg" size="524288" crc="4d1f4699"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shinfrgf" sourcefile="sms/d_sms.cpp">
+		<description>Shining Force Gaiden: Final Conflict (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Shining Force Gaiden - Final Conflict (Japan)(1995)(Sega).gg" size="524288" crc="6019fe5e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="shinfrc2" sourcefile="sms/d_sms.cpp">
-		<description>Shining Force II - The Sword of Hajya (Euro, USA)</description>
+		<description>Shining Force II: The Sword of Hajya (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining Force II - The Sword of Hajya (Euro, USA)(1994)(Sega).gg" size="524288" crc="a6ca6fa9"/>
@@ -3587,7 +3596,7 @@
 	</game>
 	<game name="shinfrc2p2" cloneof="shinfrc2" romof="shinfrc2" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Shining Force II - The Sword of Hajya (Prototype, 19940627)</description>
+		<description>Shining Force II: The Sword of Hajya (Prototype, 19940627)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining Force II - The Sword of Hajya (Proto, 19940627)(Sega).gg" size="524288" crc="8bfc56c3"/>
@@ -3596,7 +3605,7 @@
 	</game>
 	<game name="shinfrc2p1" cloneof="shinfrc2" romof="shinfrc2" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Shining Force II - The Sword of Hajya (Prototype, 19940708)</description>
+		<description>Shining Force II: The Sword of Hajya (Prototype, 19940708)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining Force II - The Sword of Hajya (Proto, 19940708)(Sega).gg" size="524288" crc="80dca91d"/>
@@ -3639,7 +3648,7 @@
 		<description>Skweek (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Victor</manufacturer>
-		<rom name="skweek (japan).bin" size="131072" crc="3d9c92c7"/>
+		<rom name="Skweek (Japan)(1991)(Victor).gg" size="131072" crc="3d9c92c7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3647,7 +3656,7 @@
 		<description>Slider (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Victor</manufacturer>
-		<rom name="slider (usa, europe).bin" size="131072" crc="4dc6f555"/>
+		<rom name="Slider (Euro, USA)(1991)(Victor).gg" size="131072" crc="4dc6f555"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3663,7 +3672,7 @@
 		<description>Smurfs 2, The (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="smurfs travel the world, the.bin" size="262144" crc="3eb337df"/>
+		<rom name="Smurfs 2, The (Euro)(1995)(Infogrames).gg" size="262144" crc="3eb337df"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3671,7 +3680,7 @@
 		<description>Smurfs, The (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="smurfs, the (europe) (en,fr,de,es).bin" size="262144" crc="354e1cbd"/>
+		<rom name="Smurfs, The (Euro)(1994)(Infogrames).gg" size="262144" crc="354e1cbd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3679,7 +3688,7 @@
 		<description>Solitaire Funpak (USA)</description>
 		<year>1994</year>
 		<manufacturer>Interplay</manufacturer>
-		<rom name="solitaire funpak (usa).bin" size="262144" crc="f6f24b75"/>
+		<rom name="Solitaire Funpak (USA)(1994)(Interplay).gg" size="262144" crc="f6f24b75"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3687,7 +3696,7 @@
 		<description>Solitaire Poker (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="solitaire poker (usa, europe).bin" size="131072" crc="06f2fc46"/>
+		<rom name="Solitaire Poker (Euro, USA)(1991)(Sega).gg" size="131072" crc="06f2fc46"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4008,7 +4017,7 @@
 		<description>Sports Trivia (Prototype, 19950428-2MEG)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Sports Trivia (Prototype, 19950428-2MEG)(Sega).gg" size="262144" crc="26470d2b"/>
+		<rom name="Sports Trivia (Proto, 19950428-2MEG)(Sega).gg" size="262144" crc="26470d2b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4046,19 +4055,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="stng" sourcefile="sms/d_sms.cpp">
-		<description>Star Trek - The Next Generation (USA)</description>
-		<year>1994</year>
-		<manufacturer>Absolute Entertainment</manufacturer>
-		<rom name="star trek - the next generation - the advanced holodeck tutorial (usa).bin" size="262144" crc="80156323"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="stgbeyn" sourcefile="sms/d_sms.cpp">
 		<description>Star Trek Generations - Beyond the Nexus (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Absolute Entertainment</manufacturer>
-		<rom name="star trek generations - beyond the nexus (usa, europe).bin" size="262144" crc="087fc5f0"/>
+		<rom name="Star Trek Generations - Beyond the Nexus (Euro, USA)(1994)(Absolute Ent.).gg" size="262144" crc="087fc5f0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="stng" sourcefile="sms/d_sms.cpp">
+		<description>Star Trek: The Next Generation - The Advanced Holodek Tutorial (USA)</description>
+		<year>1994</year>
+		<manufacturer>Absolute Entertainment</manufacturer>
+		<rom name="Star Trek - The Next Generation - The Advanced Holodek Tutorial (USA)(1994)(Absolute Ent.).gg" size="262144" crc="80156323"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4066,7 +4075,7 @@
 		<description>Star Wars (Euro)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="star wars (europe).bin" size="524288" crc="db9bc599"/>
+		<rom name="Star Wars (Euro)(1993)(U.S. Gold).gg" size="524288" crc="db9bc599"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4074,7 +4083,7 @@
 		<description>Star Wars (USA)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="star wars (usa).bin" size="524288" crc="0228769c"/>
+		<rom name="Star Wars (USA)(1993)(U.S. Gold).gg" size="524288" crc="0228769c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4082,7 +4091,7 @@
 		<description>Stargate (World)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="stargate (world).bin" size="262144" crc="fc7c64e4"/>
+		<rom name="Stargate (World)(1994)(Acclaim).gg" size="262144" crc="fc7c64e4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

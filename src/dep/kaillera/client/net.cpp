@@ -59,7 +59,6 @@ int WINAPI Empty_Kaillera_End_Game()
 	return 0;
 }
 
-
 int Init_Network(void)
 {
 #if 0
@@ -71,7 +70,6 @@ int Init_Network(void)
 #endif // 0
 
 #ifdef BUILD_X64_EXE
-#define	KailleraClientDll			"kailleraclient64.dll"
 #define	kailleraGetVersion			"kailleraGetVersion"
 #define	kailleraInit				"kailleraInit"
 #define	kailleraShutdown			"kailleraShutdown"
@@ -81,7 +79,6 @@ int Init_Network(void)
 #define	kailleraChatSend			"kailleraChatSend"
 #define	kailleraEndGame				"kailleraEndGame"
 #else
-#define	KailleraClientDll			"kailleraclient.dll"
 #define	kailleraGetVersion			"_kailleraGetVersion@4"
 #define	kailleraInit				"_kailleraInit@0"
 #define	kailleraShutdown			"_kailleraShutdown@0"
@@ -92,8 +89,13 @@ int Init_Network(void)
 #define	kailleraEndGame				"_kailleraEndGame@0"
 #endif
 
-	Kaillera_HDLL = LoadLibraryA(KailleraClientDll);
+	Kaillera_HDLL = LoadLibraryA("kailleraclient.dll");
 
+	if ((Kaillera_HDLL == NULL) || (ERROR_BAD_EXE_FORMAT == GetLastError())) {
+		Kaillera_HDLL = LoadLibraryA("kailleraclient64.dll");
+
+	}
+	
 	if (Kaillera_HDLL != NULL)
 	{
 		Kaillera_Get_Version          = (int (WINAPI *)(char *version)) GetProcAddress(Kaillera_HDLL, kailleraGetVersion);

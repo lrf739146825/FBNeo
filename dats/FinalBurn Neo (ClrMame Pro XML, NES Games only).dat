@@ -18959,7 +18959,25 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="taitochasehq" sourcefile="nes/d_nes.cpp">
+	<game name="taitochasehqtepf" cloneof="taitochasehqte" romof="taitochasehqte" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Taito Chase H.Q. (Hack, English + Palette Fix)</description>
+		<year>2015-20</year>
+		<manufacturer>pacnsacdave - Osman Color</manufacturer>
+		<rom name="Taito Chase H.Q. T-Eng + Palette Fix (2015-20)(pacnsacdave - Osman Color).nes" size="262160" crc="1f565114"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="taitochasehqte" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Taito Chase H.Q. (Hack, English)</description>
+		<year>2015</year>
+		<manufacturer>pacnsacdave</manufacturer>
+		<rom name="Taito Chase H.Q. T-Eng (2015)(pacnsacdave).nes" size="262160" crc="8b13b5e3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="taitochasehq" cloneof="taitochasehqte" romof="taitochasehqte" sourcefile="nes/d_nes.cpp">
 		<description>Taito Chase H.Q. (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Taito Corp.</manufacturer>
