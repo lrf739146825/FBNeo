@@ -644,7 +644,7 @@
 		<description>Taito Chase H.Q. - Noise Fix (Hack)</description>
 		<year>2022</year>
 		<manufacturer>Justin Gibbins</manufacturer>
-		<rom name="Taito Chase H.Q. - Noise Fix (Hack)(2022)(Justin Gibbins).pce" size="393216" crc="947740bc"/>
+		<rom name="Taito Chase H.Q. - Noise Fix (2022)(Justin Gibbins).pce" size="393216" crc="947740bc"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
