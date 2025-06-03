@@ -119,8 +119,6 @@
 #define TAITO_CCHIP_BIOS									34
 #define TAITO_CCHIP_EEPROM									35
 
-
-
 struct DatListInfo {
 	TCHAR szRomSet[100];
 	TCHAR szFullName[1024];
@@ -177,7 +175,8 @@ static HWND hRDMgrWnd   = NULL;
 static HWND hRDListView = NULL;
 static HWND hRdCoverDlg = NULL;
 
-static TCHAR szCover[MAX_PATH] = { 0 };
+static TCHAR szCover[MAX_PATH]      = { 0 };
+static TCHAR szBackupDat[MAX_PATH]  = { 0 };
 
 
 static struct HardwareIcon IconTable[] =
@@ -1372,7 +1371,8 @@ TCHAR* RomdataGetZipName(const TCHAR* pszFileName)
 				pszInfo = _strqtoken(NULL, DELIM_TOKENS_NAME);
 				if (NULL == pszInfo) break;	// No romset specified
 				fclose(fp);
-				TCHAR szRet[100] = { 0 };
+				static TCHAR szRet[100];
+				memset(szRet, 0, sizeof(szRet));
 				return _tcscpy(szRet, pszInfo);
 			}
 		}
@@ -1429,7 +1429,8 @@ TCHAR* RomdataGetDrvName(const TCHAR* pszFileName)
 				pszInfo = _strqtoken(NULL, DELIM_TOKENS_NAME);
 				if (NULL == pszInfo) break;	// No romset specified
 				fclose(fp);
-				TCHAR szRet[100] = { 0 };
+				static TCHAR szRet[100];
+				memset(szRet, 0, sizeof(szRet));
 				return _tcscpy(szRet, pszInfo);
 			}
 		}
@@ -1495,7 +1496,8 @@ TCHAR* RomdataGetFullName(const TCHAR* pszFileName)
 			if ((_T('/') == pszLabel[0]) && (_T('/') == pszLabel[1])) continue;
 
 			if (0 == _tcsicmp(_T("FullName"), pszLabel) || 0 == _tcsicmp(_T("Game"), pszLabel)) {
-				TCHAR szMerger[260] = { 0 };
+				static TCHAR szMerger[260];
+				memset(szMerger, 0, sizeof(szMerger));
 				INT32 nAdd = 0;
 				while (NULL != (pszInfo = _strqtoken(NULL, DELIM_TOKENS_NAME))) {
 					_stprintf(szMerger + nAdd, _T("%s "), pszInfo);
@@ -2161,8 +2163,27 @@ static void RomdataCoverInit()
 	FBADialogBox(hAppInst, MAKEINTRESOURCE(IDD_ROMDATA_COVER_DLG), hRDMgrWnd, (DLGPROC)RomDataCoveProc);
 }
 
+void RomDataStateBackup()
+{
+	if (NULL != pDataRomDesc) {
+		memset(szBackupDat, 0, sizeof(szBackupDat));
+		_tcscpy(szBackupDat, szRomdataName);
+		RomDataExit();
+	}
+}
+
+void RomDataStateRestore()
+{
+	if (FileExists(szBackupDat)) {
+		_tcscpy(szRomdataName, szBackupDat);
+		memset(szBackupDat, 0, sizeof(szBackupDat));
+		RomDataInit();
+	}
+}
+
 static void RomDataManagerExit()
 {
+	RomDataStateRestore();
 	RomDataClearList();
 	DestroyHardwareIconList();
 	DeleteObject(hWhiteBGBrush);
@@ -2298,11 +2319,9 @@ static INT_PTR CALLBACK RomDataManagerProc(HWND hDlg, UINT Msg, WPARAM wParam, L
 
 				SendMessage(hRDListView, LVM_GETITEMTEXT, (WPARAM)nSelItem, (LPARAM)&LvItem);
 
-				if (0 == RomDataCheck(szSelDat)) {
-					RomDataManagerExit();
-					EndDialog(hDlg, 0);
-					BurnerLoadDriver(RomdataGetZipName(szSelDat));
-				}
+				RomDataManagerExit();
+				EndDialog(hDlg, 0);
+				RomDataLoadDriver(szSelDat);
 			}
 		}
 	}
@@ -2391,11 +2410,9 @@ static INT_PTR CALLBACK RomDataManagerProc(HWND hDlg, UINT Msg, WPARAM wParam, L
 
 						SendMessage(hRDListView, LVM_GETITEMTEXT, (WPARAM)nSelItem, (LPARAM)&LvItem);
 
-						if (0 == RomDataCheck(szSelDat)) {
-							RomDataManagerExit();
-							EndDialog(hDlg, 0);
-							BurnerLoadDriver(RomdataGetZipName(szSelDat));
-						}
+						RomDataManagerExit();
+						EndDialog(hDlg, 0);
+						RomDataLoadDriver(szSelDat);
 					}
 					break;
 				}
@@ -2436,5 +2453,7 @@ static INT_PTR CALLBACK RomDataManagerProc(HWND hDlg, UINT Msg, WPARAM wParam, L
 
 INT32 RomDataManagerInit()
 {
+	RomDataStateBackup();
+
 	return FBADialogBox(hAppInst, MAKEINTRESOURCE(IDD_ROMDATA_MANAGER), hScrnWnd, (DLGPROC)RomDataManagerProc);
 }

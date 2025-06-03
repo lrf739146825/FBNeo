@@ -284,6 +284,7 @@ void ScrnInitLua();
 void ScrnExitLua();
 char* DecorateKailleraGameName(UINT32 nBurnDrv);
 INT32 CreateAllDatfilesWindows(bool bSilent = false, const TCHAR* pszSpecDir = NULL);
+INT32 RomDataLoadDriver(TCHAR* szSelDat);
 
 // menu.cpp
 #define UM_DISPLAYPOPUP (WM_USER + 0x0100)
@@ -380,6 +381,8 @@ TCHAR* RomdataGetFullName(const TCHAR* pszFileName);
 bool FindZipNameFromDats(const TCHAR* dirPath, const char* pszZipName, TCHAR* pszFindDat);
 INT32 RomDataManagerInit();
 INT32 RomDataCheck(const TCHAR* pszDatFile);
+void RomDataStateBackup();
+void RomDataStateRestore();
 
 // cona.cpp
 struct SubDirInfo {
