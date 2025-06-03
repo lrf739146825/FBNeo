@@ -301,7 +301,7 @@
 		<description>Battletoads (Euro, Japan)</description>
 		<year>1993</year>
 		<manufacturer>Tradewest - Sega</manufacturer>
-		<rom name="battletoads (japan, europe).bin" size="262144" crc="cb3cd075"/>
+		<rom name="Battletoads (Euro, Japan)(1993)(Tradewest - Sega).gg" size="262144" crc="cb3cd075"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -309,7 +309,7 @@
 		<description>Battletoads (USA)</description>
 		<year>1993</year>
 		<manufacturer>Tradewest - Sega</manufacturer>
-		<rom name="battletoads (usa).bin" size="262144" crc="817cc0ca"/>
+		<rom name="Battletoads (USA)(1993)(Tradewest - Sega).gg" size="262144" crc="817cc0ca"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -412,7 +412,7 @@
 		<description>Bram Stoker's Dracula (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="bram stoker's dracula (usa).bin" size="262144" crc="69ebe5fa"/>
+		<rom name="Bram Stoker's Dracula (Euro)(1994)(Sony Imagesoft).gg" size="262144" crc="69ebe5fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -420,7 +420,7 @@
 		<description>Bram Stoker's Dracula (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="dracula (bram stoker's) (us).bin" size="262144" crc="d966ec47"/>
+		<rom name="Bram Stoker's Dracula (USA)(1994)(Sony Imagesoft).gg" size="262144" crc="d966ec47"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -437,7 +437,7 @@
 		<description>Bubble Bobble (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="bubble bobble (usa, europe).bin" size="262144" crc="fba338c5"/>
+		<rom name="Bubble Bobble (Euro, USA)(1994)(Taito).gg" size="262144" crc="fba338c5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -445,7 +445,7 @@
 		<description>Bugs Bunny in Double Trouble (Euro, USA)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-18846-s.ic1" size="524288" crc="5c34d9cd"/>
+		<rom name="Bugs Bunny in Double Trouble (Euro, USA)(1996)(Sega).gg" size="524288" crc="5c34d9cd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -462,7 +462,7 @@
 		<description>Bust-A-Move (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Taito</manufacturer>
-		<rom name="bust-a-move (usa, europe).bin" size="262144" crc="c90f29ef"/>
+		<rom name="Bust-A-Move (Euro, USA)(1995)(Taito).gg" size="262144" crc="c90f29ef"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -470,7 +470,7 @@
 		<description>Buster Ball (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Riverhill Software</manufacturer>
-		<rom name="buster ball (japan).bin" size="131072" crc="7cb079d0"/>
+		<rom name="Buster Ball (Japan)(1992)(Riverhill Software).gg" size="131072" crc="7cb079d0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -478,7 +478,7 @@
 		<description>Buster Fight (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="buster fight (japan).bin" size="262144" crc="a72a1753"/>
+		<rom name="Buster Fight (Japan)(1994)(Sega).gg" size="262144" crc="a72a1753"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -486,7 +486,7 @@
 		<description>Caesars Palace (USA)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="caesars palace (usa).bin" size="262144" crc="c53b60b8"/>
+		<rom name="Caesars Palace (USA)(1993)(Virgin Interactive).gg" size="262144" crc="c53b60b8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -494,15 +494,15 @@
 		<description>Captain America and the Avengers (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="captain america and the avengers (usa, europe).bin" size="262144" crc="5675dfdd"/>
+		<rom name="Captain America and the Avengers (Euro, USA)(1993)(Mindscape).gg" size="262144" crc="5675dfdd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="carlicen" sourcefile="sms/d_sms.cpp">
 		<description>Car Licence (Japan)</description>
 		<year>199?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="car licence (japan).bin" size="524288" crc="f6a697f8"/>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Car Licence (Japan)(199x).gg" size="524288" crc="f6a697f8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -510,7 +510,7 @@
 		<description>Casino Funpak (USA)</description>
 		<year>1995</year>
 		<manufacturer>Interplay</manufacturer>
-		<rom name="casino funpak (usa).bin" size="262144" crc="2b732056"/>
+		<rom name="Casino Funpak (USA)(1995)(Interplay).gg" size="262144" crc="2b732056"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -715,7 +715,7 @@
 		<description>Cosmic Spacehead (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="cosmic spacehead (europe).bin" size="262144" crc="6caa625b"/>
+		<rom name="Cosmic Spacehead (Euro)(1993)(Codemasters).gg" size="262144" crc="6caa625b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -729,10 +729,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="crayon" sourcefile="sms/d_sms.cpp">
-		<description>Crayon Shin-chan - Taiketsu! Kantamu Panic!! (Japan)</description>
+		<description>Crayon Shin-chan: Taiketsu! Kantamu Panic!! (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="mpr-17805.ic1" size="524288" crc="03d28eab"/>
+		<rom name="Crayon Shin-chan - Taiketsu! Kantamu Panic!! (Japan)(1995)(Bandai).gg" size="524288" crc="03d28eab"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -741,7 +741,7 @@
 		<description>Crazy Faces (Euro, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="crazy faces [proto].bin" size="131072" crc="46ad6257"/>
+		<rom name="Crazy Faces (Euro, Proto)(1993)(Domark).gg" size="131072" crc="46ad6257"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1707,7 +1707,7 @@
 		<description>Honoo no Toukyuuji - Dodge Danpei (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="honoo no toukyuuji - dodge danpei (japan).bin" size="131072" crc="dfa805a0"/>
+		<rom name="Honoo no Toukyuuji - Dodge Danpei (Japan)(1992)(Sega).gg" size="131072" crc="dfa805a0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1715,7 +1715,7 @@
 		<description>Hook (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="hook (eu).bin" size="262144" crc="a5aa5ba1"/>
+		<rom name="Hook (Euro)(1992)(Sony Imagesoft).gg" size="262144" crc="a5aa5ba1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1723,7 +1723,7 @@
 		<description>Hook (USA)</description>
 		<year>1992</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
-		<rom name="hook (usa).bin" size="262144" crc="f53ced2e"/>
+		<rom name="Hook (USA)(1992)(Sony Imagesoft).gg" size="262144" crc="f53ced2e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1731,15 +1731,15 @@
 		<description>Hurricanes (Euro)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="mpr-17442-f.ic1" size="524288" crc="0a25eec5"/>
+		<rom name="Hurricanes (Euro)(1994)(U.S. Gold).gg" size="524288" crc="0a25eec5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hyokkohj" sourcefile="sms/d_sms.cpp">
-		<description>Hyokkori Hyoutanjima - Hyoutanjima no Daikoukai (Japan)</description>
+		<description>Hyokkori Hyoutanjima: Hyoutanjima no Daikoukai (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14690-f.ic1" size="131072" crc="42389270"/>
+		<rom name="Hyokkori Hyoutanjima - Hyoutanjima no Daikoukai (Japan)(1992)(Sega).gg" size="131072" crc="42389270"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1747,7 +1747,7 @@
 		<description>Hyper Pro Yakyuu '92 (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14759.ic1" size="131072" crc="056cae74"/>
+		<rom name="Hyper Pro Yakyuu '92 (Japan)(1992)(Sega).gg" size="131072" crc="056cae74"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1755,7 +1755,7 @@
 		<description>In the Wake of Vampire (Japan)</description>
 		<year>1992</year>
 		<manufacturer>SIMS Co.</manufacturer>
-		<rom name="mpr-15156.ic1" size="262144" crc="dab0f265"/>
+		<rom name="In the Wake of Vampire (Japan)(1992)(SIMS Co.).gg" size="262144" crc="dab0f265"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1763,7 +1763,7 @@
 		<description>Incredible Crash Dummies, The (World)</description>
 		<year>1992</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="incredible crash dummies, the (usa, europe).bin" size="262144" crc="087fc247"/>
+		<rom name="Incredible Crash Dummies, The (World)(1992)(Acclaim).gg" size="262144" crc="087fc247"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1771,7 +1771,7 @@
 		<description>Incredible Hulk, The (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="incredible hulk, the (usa, europe).bin" size="524288" crc="d7055f88"/>
+		<rom name="Incredible Hulk, The (Euro, USA)(1994)(U.S. Gold).gg" size="524288" crc="d7055f88"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1779,7 +1779,7 @@
 		<description>Indiana Jones and the Last Crusade (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="indiana jones and the last crusade (usa, europe).bin" size="262144" crc="b875226b"/>
+		<rom name="Indiana Jones and the Last Crusade (Euro, USA)(1992)(U.S. Gold).gg" size="262144" crc="b875226b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1787,7 +1787,7 @@
 		<description>Iron Man X-O Manowar in Heavy Metal (Euro, USA)</description>
 		<year>1996</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="iron man x-o manowar in heavy metal (usa, europe).bin" size="524288" crc="8927b69b"/>
+		<rom name="Iron Man X-O Manowar in Heavy Metal (Euro, USA)(1996)(Acclaim).gg" size="524288" crc="8927b69b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1795,7 +1795,7 @@
 		<description>Iron Man X-O Manowar in Heavy Metal (USA, Alt)</description>
 		<year>1996</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="iron man x-o manowar in heavy metal (u) [a1].bin" size="524288" crc="847ae5ce"/>
+		<rom name="Iron Man X-O Manowar in Heavy Metal (USA, Alt)(1996)(Acclaim).gg" size="524288" crc="847ae5ce"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1996,7 +1996,7 @@
 		<description>Kenyuu Densetsu Yaiba (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="kenyuu densetsu yaiba (japan).bin" size="524288" crc="d9ce3f4c"/>
+		<rom name="Kenyuu Densetsu Yaiba (Japan)(1994)(Sega).gg" size="524288" crc="d9ce3f4c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3280,7 +3280,7 @@
 		<description>Puzzlle and Action Ichidant~R GG (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ichidant~r gg (japan).bin" size="524288" crc="9f64c2bb"/>
+		<rom name="Puzzlle and Action Ichidant~R GG (Japan)(1994)(Sega).gg" size="524288" crc="9f64c2bb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
