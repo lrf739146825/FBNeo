@@ -2593,6 +2593,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="choplift3e" cloneof="choplift3" romof="choplift3" sourcefile="snes/d_snes.cpp">
+		<description>Choplifter III - Rescue-Survive (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Beam Software</manufacturer>
+		<rom name="Choplifter III - Rescue-Survive (E)(1993)(Beam Software).sfc" size="524288" crc="788e42c9"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="choplift3j" cloneof="choplift3" romof="choplift3" sourcefile="snes/d_snes.cpp">
+		<description>Choplifter III - Rescue-Survive (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Beam Software</manufacturer>
+		<rom name="Choplifter III - Rescue-Survive (J)(1993)(Beam Software).sfc" size="524288" crc="ad26cc9e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="choplift3" sourcefile="snes/d_snes.cpp">
 		<description>Choplifter III - Rescue-Survive (USA)</description>
 		<year>1993</year>
@@ -2676,6 +2692,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="chuckrocke" cloneof="chuckrock" romof="chuckrock" sourcefile="snes/d_snes.cpp">
+		<description>Chuck Rock (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Sony Imagesoft - Core Design</manufacturer>
+		<rom name="Chuck Rock (E)(1992)(Sony Imagesoft).sfc" size="1048576" crc="fba012cd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="chuckrock" sourcefile="snes/d_snes.cpp">
 		<description>Chuck Rock (USA)</description>
 		<year>1992</year>
@@ -2710,6 +2734,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="clayfighte" cloneof="clayfight" romof="clayfight" sourcefile="snes/d_snes.cpp">
+		<description>Clay Fighter (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Inrerplay</manufacturer>
+		<rom name="Clay Fighter (E)(1993)(Interplay).sfc" size="2097152" crc="b581e100"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="clayfight" sourcefile="snes/d_snes.cpp">
 		<description>Clay Fighter (USA)</description>
 		<year>1993</year>
@@ -2726,6 +2758,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="clayfight2e" cloneof="clayfight2" romof="clayfight2" sourcefile="snes/d_snes.cpp">
+		<description>Clay Fighter 2 - Judgment Clay (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="Clay Fighter 2 - Judgment Clay (E)(1994)(Interplay).sfc" size="3145728" crc="caa9abf1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="clayfight2" sourcefile="snes/d_snes.cpp">
 		<description>Clay Fighter 2 - Judgment Clay (USA)</description>
 		<year>1994</year>
@@ -2734,11 +2774,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="claymatese" cloneof="claymates" romof="claymates" sourcefile="snes/d_snes.cpp">
+		<description>Claymates (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="Claymates (E)(1993)(Interplay).sfc" size="1048576" crc="3a571132"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="claymates" sourcefile="snes/d_snes.cpp">
 		<description>Claymates (USA)</description>
 		<year>1993</year>
 		<manufacturer>Interplay</manufacturer>
 		<rom name="Claymates (U)(1993)(Interplay).sfc" size="1048576" crc="7ad5ccac"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cliffhange" cloneof="cliffhang" romof="cliffhang" sourcefile="snes/d_snes.cpp">
+		<description>Cliffhanger (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Sony Imagesoft</manufacturer>
+		<rom name="Cliffhanger (E)(1993)(Sony Imagesoft).sfc" size="1048576" crc="a9e67214"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3617,6 +3673,22 @@
 		<year>1996</year>
 		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
 		<rom name="Disney's Pinocchio (U)(1996)(Virgin Int. - Disney Int.).sfc" size="3145728" crc="00fad8fd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="junglebooke" cloneof="junglebook" romof="junglebook" sourcefile="snes/d_snes.cpp">
+		<description>Disney's The Jungle Book (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
+		<rom name="Disney's The Jungle Book (E)(1994)(Virgin Int. - Disney Int.).sfc" size="2097152" crc="392ae185"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="junglebookj" cloneof="junglebook" romof="junglebook" sourcefile="snes/d_snes.cpp">
+		<description>Disney's The Jungle Book (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
+		<rom name="Disney's The Jungle Book (J)(1994)(Virgin Int. - Disney Int.).sfc" size="2097152" crc="ce14892d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6664,6 +6736,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hulke" cloneof="hulk" romof="hulk" sourcefile="snes/d_snes.cpp">
+		<description>Incredible Hulk, The (Euro)</description>
+		<year>1994</year>
+		<manufacturer>U.S. Gold - Probe</manufacturer>
+		<rom name="Incredible Hulk, The (E)(1994)(U.S. Gold - Probe).sfc" size="2097152" crc="9df29605"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hulk" sourcefile="snes/d_snes.cpp">
 		<description>Incredible Hulk, The (USA)</description>
 		<year>1994</year>
@@ -7082,6 +7162,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="judgedreede" cloneof="judgedreed" romof="judgedreed" sourcefile="snes/d_snes.cpp">
+		<description>Judge Dredd (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Acclaim Entertainment - Probe</manufacturer>
+		<rom name="Judge Dredd (E)(1995)(Acclaim Ent. - Probe).sfc" size="2097152" crc="7742b6f4"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="judgedreedj" cloneof="judgedreed" romof="judgedreed" sourcefile="snes/d_snes.cpp">
+		<description>Judge Dredd (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Acclaim Entertainment - Probe</manufacturer>
+		<rom name="Judge Dredd (J)(1995)(Acclaim Ent. - Probe).sfc" size="2097152" crc="d7bc8a52"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="judgedreed" sourcefile="snes/d_snes.cpp">
 		<description>Judge Dredd (USA)</description>
 		<year>1995</year>
@@ -7184,6 +7280,14 @@
 		<year>1993</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Jurassic Park (U, Rev 1)(1993)(Ocean).sfc" size="2097152" crc="8bfde0b7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jpark2e" cloneof="jpark2" romof="jpark2" sourcefile="snes/d_snes.cpp">
+		<description>Jurassic Park II - The Chaos Continues (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Jurassic Park II - The Chaos Continues (E)(1994)(Ocean).sfc" size="2097152" crc="8a926d1a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
