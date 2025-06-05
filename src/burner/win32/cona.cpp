@@ -74,10 +74,33 @@ static void TraverseDirectory(const TCHAR* dirPath, TCHAR*** pszArray, UINT32* p
 			TCHAR subDirPath[MAX_PATH] = { 0 };
 			_stprintf(subDirPath, szFormatB, dirPath, findFileData.cFileName);
 
-			TCHAR** newArray = (TCHAR**)realloc(*pszArray, (*pnCount + 1) * sizeof(TCHAR*));
-			*pszArray = newArray;
-			(*pszArray)[*pnCount] = (TCHAR*)malloc(MAX_PATH * sizeof(TCHAR));
-			_stprintf((*pszArray)[(*pnCount)++], _T("%s\\"), subDirPath);
+			bool bSkip = false;
+			TCHAR szCmpA[MAX_PATH] = { 0 }, szCmpB[MAX_PATH] = { 0 };
+			if (!ends_with_slash(subDirPath)) {
+				// The slash bar changes when the user reselects the ROMs directory
+				_stprintf(szCmpA, _T("%s/"),  subDirPath);
+				_stprintf(szCmpB, _T("%s\\"), subDirPath);
+			} else {
+				// After szFormatB formatting, there is almost no possibility to get to this step, reserved
+				INT32 nLen = _tcslen(subDirPath);
+				_tcscpy(szCmpA, subDirPath);
+				_tcscpy(szCmpB, subDirPath);
+				szCmpA[nLen - 1] = _T('/');
+				szCmpB[nLen - 1] = _T('\\');
+			}
+
+			// Ignore the default ROMs path
+			for (INT32 i = 0; i < sizeof(szAppRomPaths) / sizeof(szAppRomPaths[0]); i++) {
+				if ((0 == _tcscmp(szCmpA, szAppRomPaths[i])) || (0 == _tcscmp(szCmpB, szAppRomPaths[i]))) {
+					bSkip = true; break;
+				}
+			}
+			if (!bSkip) {
+				TCHAR** newArray = (TCHAR**)realloc(*pszArray, (*pnCount + 1) * sizeof(TCHAR*));
+				*pszArray = newArray;
+				(*pszArray)[*pnCount] = (TCHAR*)malloc(MAX_PATH * sizeof(TCHAR));
+				_stprintf((*pszArray)[(*pnCount)++], _T("%s\\"), subDirPath);
+			}
 
 			TraverseDirectory(subDirPath, pszArray, pnCount);
 		}
