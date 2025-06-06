@@ -4284,6 +4284,7 @@ DRV		BurnDrvmd_custodian;
 DRV		BurnDrvCutefght;
 DRV		BurnDrvCutieq;
 DRV		BurnDrvmd_cutiesuz;
+DRV		BurnDrvsnes_Cutthroate;
 DRV		BurnDrvgg_cutthr;
 DRV		BurnDrvmd_cutthr;
 DRV		BurnDrvmd_cutthrs;
@@ -4327,6 +4328,7 @@ DRV		BurnDrvCpsCybotsud;
 DRV		BurnDrvCpsCybotsu;
 DRV		BurnDrvnes_cybercoaster;
 DRV		BurnSpecCybermania;
+DRV		BurnDrvsnes_Cybernatore;
 DRV		BurnDrvsnes_Cybernator;
 DRV		BurnDrvnes_cyber;
 DRV		BurnSpecCybernoidii128;
@@ -4504,6 +4506,7 @@ DRV		BurnDrvmd_darius2;
 DRV		BurnDrvDarius2;
 DRV		BurnDrvmd_darius2ec;
 DRV		BurnDrvpce_dariusp;
+DRV		BurnDrvsnes_Dariustwine;
 DRV		BurnDrvsnes_Dariustwinj;
 DRV		BurnDrvsnes_Dariustwin;
 DRV		BurnSpecdarius;
@@ -6527,11 +6530,13 @@ DRV		BurnDrvFastlane;
 DRV		BurnDrvSqbert;
 DRV		BurnDrvmd_fastest1;
 DRV		BurnSpecFatworm;
+DRV		BurnDrvsnes_Fatalfurye;
 DRV		BurnDrvmd_fatfury;
 DRV		BurnDrvmd_fatfuryu;
 DRV		BurnDrvsnes_Fatalfury;
 DRV		BurnDrvFfury1bs;
 DRV		BurnDrvFatFury1;
+DRV		BurnDrvsnes_Fatalfury2e;
 DRV		BurnDrvsnes_Fatalfury2;
 DRV		BurnDrvmd_fatfury2;
 DRV		BurnDrvmd_fatfury2ec;
@@ -6544,6 +6549,7 @@ DRV		BurnDrvFatfury3a;
 DRV		BurnDrvFatfury3;
 DRV		BurnDrvmd_fatfuryone;
 DRV		BurnDrvgg_fatfursp;
+DRV		BurnDrvsnes_Fatalfuryspe;
 DRV		BurnDrvgg_fatfurspu;
 DRV		BurnDrvsnes_Fatalfurysp;
 DRV		BurnDrvFfurspbt;
@@ -6599,16 +6605,20 @@ DRV		BurnDrvmd_fidodido;
 DRV		BurnDrvnes_fieldcombat;
 DRV		BurnDrvFcombat;
 DRV		BurnSpecFiendfreddy;
+DRV		BurnDrvsnes_Fifasoccer97e;
+DRV		BurnDrvsnes_Fifasoccer97;
 DRV		BurnDrvsnes_Fifartwc98a;
 DRV		BurnDrvsnes_Fifartwc98;
 DRV		BurnDrvmd_fifa2k3;
 DRV		BurnDrvsms_fifa;
+DRV		BurnDrvsnes_Fifasoccere;
 DRV		BurnDrvgg_fifa;
 DRV		BurnDrvmd_fifa;
 DRV		BurnDrvgg_fifaj;
+DRV		BurnDrvsnes_Fifasoccerj;
 DRV		BurnDrvsnes_Fifasoccer;
+DRV		BurnDrvsnes_Fifasoccer96e;
 DRV		BurnDrvsnes_Fifasoccer96;
-DRV		BurnDrvsnes_Fifasoccer97;
 DRV		BurnDrvmd_fifa2k;
 DRV		BurnDrvmd_fifa2020;
 DRV		BurnDrvmd_fifa95;
@@ -6811,6 +6821,7 @@ DRV		BurnDrvsnes_Fireemblem4tsc;
 DRV		BurnDrvsnes_Fireemblem4ttc;
 DRV		BurnDrvsnes_Fireemblem4j;
 DRV		BurnDrvsnes_Fireemblem776te;
+DRV		BurnDrvsnes_Fireemblem776ti;
 DRV		BurnDrvsnes_Fireemblem776tsc;
 DRV		BurnDrvsnes_Fireemblem776ttc;
 DRV		BurnDrvsnes_Fireemblem776j;
@@ -9081,11 +9092,14 @@ DRV		BurnDrvCpsHsf2j2;
 DRV		BurnDrvCpsHsf2j1;
 DRV		BurnDrvCpsHsf2j;
 DRV		BurnDrvCpsHsf2;
+DRV		BurnDrvsnes_Hypervballe;
 DRV		BurnDrvsnes_Hypervball;
 DRV		BurnDrvMSX_hyperviper;
 DRV		BurnSpecHyperkill;
 DRV		BurnDrvHypernoid;
 DRV		BurnDrvHyperspc;
+DRV		BurnDrvsnes_Hyperzonee;
+DRV		BurnDrvsnes_Hyperzonej;
 DRV		BurnDrvsnes_Hyperzone;
 DRV		BurnSpecHypsys1;
 DRV		BurnSpecHypsys2;
@@ -22580,6 +22594,7 @@ DRV		BurnDrvcv_wonderboy;
 DRV		BurnDrvWboysys2;
 DRV		BurnDrvWboysys2a;
 DRV		BurnDrvWboyblt;
+DRV		BurnDrvWboyub;
 DRV		BurnDrvgg_wboydtrp;
 DRV		BurnDrvWbdeluxe;
 #if defined FBNEO_DEBUG
@@ -27688,6 +27703,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCutefght,			// Cute Fighter
 	&BurnDrvCutieq,				// Cutie Q
 	&BurnDrvmd_cutiesuz,		// Cutie Suzuki no Ringside Angel (Japan)
+	&BurnDrvsnes_Cutthroate,	// CutThroat Island (Euro)
 	&BurnDrvgg_cutthr,			// Cutthroat Island (Euro, USA)
 	&BurnDrvmd_cutthr,			// CutThroat Island (Euro, USA)
 	&BurnDrvmd_cutthrs,			// Cutthroat Island (Hack, Spanish)
@@ -27731,6 +27747,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsCybotsu,			// Cyberbots: Fullmetal Madness (USA 950424)
 	&BurnDrvnes_cybercoaster,	// Cybercoaster (HB)
 	&BurnSpecCybermania,		// Cybermania (48K) (HB)
+	&BurnDrvsnes_Cybernatore,	// Cybernator (Euro)
 	&BurnDrvsnes_Cybernator,	// Cybernator (USA)
 	&BurnDrvnes_cyber,			// Cybernoid - The Fighting Machine (USA)
 	&BurnSpecCybernoidii128,	// Cybernoid II: The Revenge (128K)
@@ -27908,6 +27925,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDarius2,			// Darius II (triple screen) (Japan, rev 1)
 	&BurnDrvmd_darius2ec,		// Darius II - Enhanced Colors (Hack)
 	&BurnDrvpce_dariusp,		// Darius Plus (Japan)
+	&BurnDrvsnes_Dariustwine,	// Darius Twin (Euro)
 	&BurnDrvsnes_Dariustwinj,	// Darius Twin (Japan)
 	&BurnDrvsnes_Dariustwin,	// Darius Twin (USA)
 	&BurnSpecdarius,			// Darius+ (128K)
@@ -29931,11 +29949,13 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSqbert,				// Faster, Harder, More Challenging Q*bert (prototype)
 	&BurnDrvmd_fastest1,		// Fastest 1 (Japan)
 	&BurnSpecFatworm,			// Fat Worm Blows a Sparky (48K)
+	&BurnDrvsnes_Fatalfurye,	// Fatal Fury (Euro)
 	&BurnDrvmd_fatfury,			// Fatal Fury (Euro, Korea)
 	&BurnDrvmd_fatfuryu,		// Fatal Fury (USA)
 	&BurnDrvsnes_Fatalfury,		// Fatal Fury (USA)
 	&BurnDrvFfury1bs,			// Fatal Fury - King of Fighters / Garou Densetsu - Shukumei no Tatakai (Boss, Hack)
 	&BurnDrvFatFury1,			// Fatal Fury - King of Fighters / Garou Densetsu - Shukumei no Tatakai (NGM-033 ~ NGH-033)
+	&BurnDrvsnes_Fatalfury2e,	// Fatal Fury 2 (Euro)
 	&BurnDrvsnes_Fatalfury2,	// Fatal Fury 2 (USA)
 	&BurnDrvmd_fatfury2,		// Fatal Fury 2 (USA, Korea)
 	&BurnDrvmd_fatfury2ec,		// Fatal Fury 2 - Enhanced Colors (Hack, v4.0)
@@ -29948,6 +29968,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFatfury3,			// Fatal Fury 3 - Road to the Final Victory / Garou Densetsu 3 - Haruka-naru Tatakai (NGM-069 ~ NGH-069)
 	&BurnDrvmd_fatfuryone,		// Fatal Fury One (Brazil) (Unl) (HB, v1.5)
 	&BurnDrvgg_fatfursp,		// Fatal Fury Special (Euro)
+	&BurnDrvsnes_Fatalfuryspe,	// Fatal Fury Special (Euro)
 	&BurnDrvgg_fatfurspu,		// Fatal Fury Special (USA)
 	&BurnDrvsnes_Fatalfurysp,	// Fatal Fury Special (USA)
 	&BurnDrvFfurspbt,			// Fatal Fury Special / Garou Densetsu Special (BT Version PPX, Hack)
@@ -30003,16 +30024,20 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fieldcombat,	// Field Combat (Japan)
 	&BurnDrvFcombat,			// Field Combat
 	&BurnSpecFiendfreddy,		// Fiendish Freddy's Big Top o'Fun (128K)
+	&BurnDrvsnes_Fifasoccer97e,	// FIFA '97 Gold Edition (Euro)
+	&BurnDrvsnes_Fifasoccer97,	// FIFA '97 Gold Edition (USA)
 	&BurnDrvsnes_Fifartwc98a,	// FIFA - Road to World Cup 98 (Euro, A8FE)
 	&BurnDrvsnes_Fifartwc98,	// FIFA - Road to World Cup 98 (Euro, A8FP)
 	&BurnDrvmd_fifa2k3,			// FIFA 2003 (Russia) (Unl)
 	&BurnDrvsms_fifa,			// FIFA International Soccer (Brazil)
+	&BurnDrvsnes_Fifasoccere,	// FIFA International Soccer (Euro)
 	&BurnDrvgg_fifa,			// FIFA International Soccer (Euro, USA)
 	&BurnDrvmd_fifa,			// FIFA International Soccer (Euro, USA)
 	&BurnDrvgg_fifaj,			// FIFA International Soccer (Japan)
+	&BurnDrvsnes_Fifasoccerj,	// FIFA International Soccer (Japan)
 	&BurnDrvsnes_Fifasoccer,	// FIFA International Soccer (USA)
+	&BurnDrvsnes_Fifasoccer96e,	// FIFA Soccer '96 (Euro)
 	&BurnDrvsnes_Fifasoccer96,	// FIFA Soccer '96 (USA)
-	&BurnDrvsnes_Fifasoccer97,	// FIFA Soccer '97 (USA)
 	&BurnDrvmd_fifa2k,			// FIFA Soccer 2000 Gold Edition (Unl)
 	&BurnDrvmd_fifa2020,		// FIFA Soccer 2020 (Hack, v2.3)
 	&BurnDrvmd_fifa95,			// FIFA Soccer 95 (Euro, USA)
@@ -30215,6 +30240,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Fireemblem4ttc,// Fire Emblem - Seisen no Keifu (Hack, Traditional Chinese v1.1)
 	&BurnDrvsnes_Fireemblem4j,	// Fire Emblem - Seisen no Keifu (Japan)
 	&BurnDrvsnes_Fireemblem776te,// Fire Emblem - Thracia 776 (Hack, English v1.08)
+	&BurnDrvsnes_Fireemblem776ti,// Fire Emblem - Thracia 776 (Hack, Italian v1.0.0)
 	&BurnDrvsnes_Fireemblem776tsc,// Fire Emblem - Thracia 776 (Hack, Simplified Chinese v1.01)
 	&BurnDrvsnes_Fireemblem776ttc,// Fire Emblem - Thracia 776 (Hack, Traditional Chinese v1.00)
 	&BurnDrvsnes_Fireemblem776j,// Fire Emblem - Thracia 776 (Japan)
@@ -32485,11 +32511,14 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsHsf2j1,			// Hyper Street Fighter II: The Anniversary Edition (Japan 040123)
 	&BurnDrvCpsHsf2j,			// Hyper Street Fighter II: The Anniversary Edition (Japan 040202)
 	&BurnDrvCpsHsf2,			// Hyper Street Fighter II: The Anniversary Edition (USA 040202)
+	&BurnDrvsnes_Hypervballe,	// Hyper V-Ball (Euro)
 	&BurnDrvsnes_Hypervball,	// Hyper V-Ball (USA)
 	&BurnDrvMSX_hyperviper,		// Hyper Viper (Euro)
 	&BurnSpecHyperkill,			// Hyperkill (128K) (HB)
 	&BurnDrvHypernoid,			// Hypernoid (HB, ver. 20220224)
 	&BurnDrvHyperspc,			// Hyperspace (bootleg of Asteroids)
+	&BurnDrvsnes_Hyperzonee,	// HyperZone (Euro)
+	&BurnDrvsnes_Hyperzonej,	// HyperZone (Japan)
 	&BurnDrvsnes_Hyperzone,		// HyperZone (USA)
 	&BurnSpecHypsys1,			// Hypsys - Part 1 (48K)
 	&BurnSpecHypsys2,			// Hypsys - Part 2 (48K)
@@ -45984,6 +46013,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvWboysys2,			// Wonder Boy (system 2, set 1, 315-5177)
 	&BurnDrvWboysys2a,			// Wonder Boy (system 2, set 2, 315-5176)
 	&BurnDrvWboyblt,			// Wonder Boy (Tecfri bootleg)
+	&BurnDrvWboyub,				// Wonder Boy (US bootleg)
 	&BurnDrvgg_wboydtrp,		// Wonder Boy - The Dragon's Trap (Euro)
 	&BurnDrvWbdeluxe,			// Wonder Boy Deluxe
 #if defined FBNEO_DEBUG
@@ -51060,6 +51090,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cutefght", "pst90s/d_dreamwld.cpp"},
 	{ "cutieq", "pre90s/d_warpwarp.cpp"},
 	{ "md_cutiesuz", "megadrive/d_megadrive.cpp"},
+	{ "snes_cutthroate", "snes/d_snes.cpp"},
 	{ "gg_cutthr", "sms/d_sms.cpp"},
 	{ "md_cutthr", "megadrive/d_megadrive.cpp"},
 	{ "md_cutthrs", "megadrive/d_megadrive.cpp"},
@@ -51103,6 +51134,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cybotsu", "capcom/d_cps2.cpp"},
 	{ "nes_cybercoaster", "nes/d_nes.cpp"},
 	{ "spec_cybermania", "spectrum/d_spectrum.cpp"},
+	{ "snes_cybernatore", "snes/d_snes.cpp"},
 	{ "snes_cybernator", "snes/d_snes.cpp"},
 	{ "nes_cyber", "nes/d_nes.cpp"},
 	{ "spec_cybernoidii128", "spectrum/d_spectrum.cpp"},
@@ -51280,6 +51312,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "darius2", "taito/d_darius2.cpp"},
 	{ "md_darius2ec", "megadrive/d_megadrive.cpp"},
 	{ "pce_dariusp", "pce/d_pce.cpp"},
+	{ "snes_dariustwine", "snes/d_snes.cpp"},
 	{ "snes_dariustwinj", "snes/d_snes.cpp"},
 	{ "snes_dariustwin", "snes/d_snes.cpp"},
 	{ "spec_darius", "spectrum/d_spectrum.cpp"},
@@ -53285,11 +53318,13 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sqbert", "pre90s/d_qbert.cpp"},
 	{ "md_fastest1", "megadrive/d_megadrive.cpp"},
 	{ "spec_fatworm", "spectrum/d_spectrum.cpp"},
+	{ "snes_fatalfurye", "snes/d_snes.cpp"},
 	{ "md_fatfury", "megadrive/d_megadrive.cpp"},
 	{ "md_fatfuryu", "megadrive/d_megadrive.cpp"},
 	{ "snes_fatalfury", "snes/d_snes.cpp"},
 	{ "ffury1bs", "neogeo/d_neogeo.cpp"},
 	{ "fatfury1", "neogeo/d_neogeo.cpp"},
+	{ "snes_fatalfury2e", "snes/d_snes.cpp"},
 	{ "snes_fatalfury2", "snes/d_snes.cpp"},
 	{ "md_fatfury2", "megadrive/d_megadrive.cpp"},
 	{ "md_fatfury2ec", "megadrive/d_megadrive.cpp"},
@@ -53302,6 +53337,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "fatfury3", "neogeo/d_neogeo.cpp"},
 	{ "md_fatfuryone", "megadrive/d_megadrive.cpp"},
 	{ "gg_fatfursp", "sms/d_sms.cpp"},
+	{ "snes_fatalfuryspe", "snes/d_snes.cpp"},
 	{ "gg_fatfurspu", "sms/d_sms.cpp"},
 	{ "snes_fatalfurysp", "snes/d_snes.cpp"},
 	{ "ffurspbt", "neogeo/d_neogeo.cpp"},
@@ -53357,16 +53393,20 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_fieldcombat", "nes/d_nes.cpp"},
 	{ "fcombat", "pre90s/d_fcombat.cpp"},
 	{ "spec_fiendfreddy", "spectrum/d_spectrum.cpp"},
+	{ "snes_fifasoccer97e", "snes/d_snes.cpp"},
+	{ "snes_fifasoccer97", "snes/d_snes.cpp"},
 	{ "snes_fifartwc98a", "snes/d_snes.cpp"},
 	{ "snes_fifartwc98", "snes/d_snes.cpp"},
 	{ "md_fifa2k3", "megadrive/d_megadrive.cpp"},
 	{ "sms_fifa", "sms/d_sms.cpp"},
+	{ "snes_fifasoccere", "snes/d_snes.cpp"},
 	{ "gg_fifa", "sms/d_sms.cpp"},
 	{ "md_fifa", "megadrive/d_megadrive.cpp"},
 	{ "gg_fifaj", "sms/d_sms.cpp"},
+	{ "snes_fifasoccerj", "snes/d_snes.cpp"},
 	{ "snes_fifasoccer", "snes/d_snes.cpp"},
+	{ "snes_fifasoccer96e", "snes/d_snes.cpp"},
 	{ "snes_fifasoccer96", "snes/d_snes.cpp"},
-	{ "snes_fifasoccer97", "snes/d_snes.cpp"},
 	{ "md_fifa2k", "megadrive/d_megadrive.cpp"},
 	{ "md_fifa2020", "megadrive/d_megadrive.cpp"},
 	{ "md_fifa95", "megadrive/d_megadrive.cpp"},
@@ -53569,6 +53609,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_fireemblem4ttc", "snes/d_snes.cpp"},
 	{ "snes_fireemblem4j", "snes/d_snes.cpp"},
 	{ "snes_fireemblem776te", "snes/d_snes.cpp"},
+	{ "snes_fireemblem776ti", "snes/d_snes.cpp"},
 	{ "snes_fireemblem776tsc", "snes/d_snes.cpp"},
 	{ "snes_fireemblem776ttc", "snes/d_snes.cpp"},
 	{ "snes_fireemblem776j", "snes/d_snes.cpp"},
@@ -55823,11 +55864,14 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "hsf2j1", "capcom/d_cps2.cpp"},
 	{ "hsf2j", "capcom/d_cps2.cpp"},
 	{ "hsf2", "capcom/d_cps2.cpp"},
+	{ "snes_hypervballe", "snes/d_snes.cpp"},
 	{ "snes_hypervball", "snes/d_snes.cpp"},
 	{ "msx_hyperviper", "msx/d_msx.cpp"},
 	{ "spec_hyperkill", "spectrum/d_spectrum.cpp"},
 	{ "hypernoid", "neogeo/d_neogeo.cpp"},
 	{ "hyperspc", "pre90s/d_asteroids.cpp"},
+	{ "snes_hyperzonee", "snes/d_snes.cpp"},
+	{ "snes_hyperzonej", "snes/d_snes.cpp"},
 	{ "snes_hyperzone", "snes/d_snes.cpp"},
 	{ "spec_hypsys1", "spectrum/d_spectrum.cpp"},
 	{ "spec_hypsys2", "spectrum/d_spectrum.cpp"},
@@ -69184,6 +69228,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "wboysys2", "sega/d_sys1.cpp"},
 	{ "wboysys2a", "sega/d_sys1.cpp"},
 	{ "wboyblt", "sega/d_sys1.cpp"},
+	{ "wboyub", "sega/d_sys1.cpp"},
 	{ "gg_wboydtrp", "sms/d_sms.cpp"},
 	{ "wbdeluxe", "sega/d_sys1.cpp"},
 	{ "wb3bbl", "sega/d_sys16b.cpp"},
