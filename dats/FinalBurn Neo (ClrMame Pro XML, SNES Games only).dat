@@ -3091,6 +3091,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cutthroate" cloneof="cutthroat" romof="cutthroat" sourcefile="snes/d_snes.cpp">
+		<description>CutThroat Island (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="CutThroat Island (E)(1995)(Acclaim Entertainment).sfc" size="2097152" crc="b5799f9c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cutthroat" sourcefile="snes/d_snes.cpp">
 		<description>CutThroat Island (USA)</description>
 		<year>1995</year>
@@ -3147,6 +3155,14 @@
 		<year>1992</year>
 		<manufacturer>Takara Co.</manufacturer>
 		<rom name="Cyber Spin (U)(1992)(Takara).sfc" size="524288" crc="44018650"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cybernatore" cloneof="cybernator" romof="cybernator" sourcefile="snes/d_snes.cpp">
+		<description>Cybernator (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Konami - Palcom</manufacturer>
+		<rom name="Cybernator (E)(1993)(Konami - Palcom).sfc" size="1048576" crc="f493414b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3237,6 +3253,14 @@
 		<year>1993</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Darius Force (J)(1993)(Taito Corp.).sfc" size="1048576" crc="3e828e49"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dariustwine" cloneof="dariustwin" romof="dariustwin" sourcefile="snes/d_snes.cpp">
+		<description>Darius Twin (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Darius Twin (E)(1991)(Taito).sfc" size="1048576" crc="cf54f1b2"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4786,27 +4810,67 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fatalfurye" cloneof="fatalfury" romof="fatalfury" sourcefile="snes/d_snes.cpp">
+		<description>Fatal Fury (Euro)</description>
+		<year>1993</year>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury (E)(1993)(SNK - Takara).sfc" size="1572864" crc="589ce983"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fatalfury" sourcefile="snes/d_snes.cpp">
 		<description>Fatal Fury (USA)</description>
 		<year>1993</year>
-		<manufacturer>Takara Co.</manufacturer>
-		<rom name="Fatal Fury (U)(1993)(Takara).sfc" size="1572864" crc="c67257d0"/>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury (U)(1993)(SNK - Takara).sfc" size="1572864" crc="c67257d0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fatalfury2e" cloneof="fatalfury2" romof="fatalfury2" sourcefile="snes/d_snes.cpp">
+		<description>Fatal Fury 2 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury 2 (E)(1994)(SNK - Takara).sfc" size="2621440" crc="304b2610"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="fatalfury2" sourcefile="snes/d_snes.cpp">
 		<description>Fatal Fury 2 (USA)</description>
 		<year>1994</year>
-		<manufacturer>Takara Co.</manufacturer>
-		<rom name="Fatal Fury 2 (U)(1994)(Takara).sfc" size="2621440" crc="a26ebfef"/>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury 2 (U)(1994)(SNK - Takara).sfc" size="2621440" crc="a26ebfef"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fatalfuryspe" cloneof="fatalfurysp" romof="fatalfurysp" sourcefile="snes/d_snes.cpp">
+		<description>Fatal Fury Special (Euro)</description>
+		<year>1994</year>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury Special (E)(1994)(SNK - Takara).sfc" size="3145728" crc="a7f8d832"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="fatalfurysp" sourcefile="snes/d_snes.cpp">
 		<description>Fatal Fury Special (USA)</description>
 		<year>1994</year>
-		<manufacturer>Takara Co.</manufacturer>
-		<rom name="Fatal Fury Special (U)(1994)(Takara).sfc" size="4194304" crc="93935bee"/>
+		<manufacturer>SNK - Takara Co.</manufacturer>
+		<rom name="Fatal Fury Special (U)(1994)(SNK - Takara).sfc" size="4194304" crc="93935bee"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fifasoccer97e" cloneof="fifasoccer97" romof="fifasoccer97" sourcefile="snes/d_snes.cpp">
+		<description>FIFA '97 Gold Edition (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="FIFA '97 Gold Edition (E)(1996)(Electronic Arts).sfc" size="2097152" crc="470eabe5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fifasoccer97" sourcefile="snes/d_snes.cpp">
+		<description>FIFA '97 Gold Edition (USA)</description>
+		<year>1996</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="FIFA '97 Gold Edition (U)(1996)(Electronic Arts).sfc" size="2097152" crc="9cdbb2f8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4826,6 +4890,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fifasoccere" cloneof="fifasoccer" romof="fifasoccer" sourcefile="snes/d_snes.cpp">
+		<description>FIFA International Soccer (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="FIFA International Soccer (E)(1994)(Electronic Arts).sfc" size="1048576" crc="a350821a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fifasoccerj" cloneof="fifasoccer" romof="fifasoccer" sourcefile="snes/d_snes.cpp">
+		<description>FIFA International Soccer (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Electronic Arts - Victor</manufacturer>
+		<rom name="FIFA International Soccer (J)(1994)(Electronic Arts - Victor).sfc" size="1048576" crc="4fa1d452"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fifasoccer" sourcefile="snes/d_snes.cpp">
 		<description>FIFA International Soccer (USA)</description>
 		<year>1994</year>
@@ -4834,19 +4914,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fifasoccer96e" cloneof="fifasoccer96" romof="fifasoccer96" sourcefile="snes/d_snes.cpp">
+		<description>FIFA Soccer '96 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="FIFA Soccer '96 (E)(1995)(Electronic Arts).sfc" size="1572864" crc="8faf17e5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fifasoccer96" sourcefile="snes/d_snes.cpp">
 		<description>FIFA Soccer '96 (USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="FIFA Soccer '96 (U)(1995)(Electronic Arts).sfc" size="1572864" crc="7566347d"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="fifasoccer97" sourcefile="snes/d_snes.cpp">
-		<description>FIFA Soccer '97 (USA)</description>
-		<year>1996</year>
-		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="FIFA Soccer '97 (U)(1996)(Electronic Arts).sfc" size="2097152" crc="9cdbb2f8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5218,6 +5298,15 @@
 		<year>2021</year>
 		<manufacturer>Cirosan, Miacis</manufacturer>
 		<rom name="Fire Emblem - Thracia 776 T-Eng v1.08 (2021)(Cirosan, Miacis).sfc" size="6291456" crc="2039d71b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemblem776ti" cloneof="fireemblem776te" romof="fireemblem776te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Thracia 776 (Hack, Italian v1.0.0)</description>
+		<year>2024</year>
+		<manufacturer>EnDavio</manufacturer>
+		<rom name="Fire Emblem - Thracia 776 T-Ita v1.0.0 (2024)(EnDavio).sfc" size="6291456" crc="3f2a7a82"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6631,11 +6720,35 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hypervballe" cloneof="hypervball" romof="hypervball" sourcefile="snes/d_snes.cpp">
+		<description>Hyper V-Ball (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Ubi Soft</manufacturer>
+		<rom name="Hyper V-Ball (E)(1994)(Ubi Soft).sfc" size="1048576" crc="094012ea"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hypervball" sourcefile="snes/d_snes.cpp">
 		<description>Hyper V-Ball (USA)</description>
 		<year>1994</year>
 		<manufacturer>McO'RIVER</manufacturer>
 		<rom name="Hyper V-Ball (U)(1994)(McO'RIVER).sfc" size="1048576" crc="7d179e21"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hyperzonee" cloneof="hyperzone" romof="hyperzone" sourcefile="snes/d_snes.cpp">
+		<description>HyperZone (Euro)</description>
+		<year>1991</year>
+		<manufacturer>HAL Laboratory</manufacturer>
+		<rom name="HyperZone (E)(1991)(HAL Laboratory).sfc" size="524288" crc="fa15d068"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hyperzonej" cloneof="hyperzone" romof="hyperzone" sourcefile="snes/d_snes.cpp">
+		<description>HyperZone (Japan)</description>
+		<year>1991</year>
+		<manufacturer>HAL Laboratory</manufacturer>
+		<rom name="HyperZone (J)(1991)(HAL Laboratory).sfc" size="1048576" crc="613c62b7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
