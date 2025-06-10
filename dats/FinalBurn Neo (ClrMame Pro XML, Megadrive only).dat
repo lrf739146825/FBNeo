@@ -3037,6 +3037,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cavaleirop" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew, Prototype</comment>
+		<description>Cavaleiro (HB, Prototype)</description>
+		<year>2025</year>
+		<manufacturer>Manganga Team</manufacturer>
+		<rom name="Cavaleiro (Proto)(2025)(Manganga Team).bin" size="524288" crc="b358d781"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cavestoryc" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Cave Story Doukutsu (HB, Chinese v0.8.0)</description>
@@ -6766,10 +6775,10 @@
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.82b)</description>
+		<description>Final Fight MD (HB, v0.83b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.82b (2025)(MXRetroDev - CFX).bin" size="4063232" crc="6760ec67"/>
+		<rom name="Final Fight MD v0.83b (2025)(MXRetroDev - CFX).bin" size="4063232" crc="cde690d4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9464,10 +9473,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="patlabor" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Kidou Keisatsu Patlabor - 98-shiki Kidou Seyo! (Japan)</description>
+		<description>Kidou Keisatsu Patlabor 98-shiki Kidou Seyo! (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Ma-Ba</manufacturer>
-		<rom name="Kidou Keisatsu Patlabor - 98-shiki Kidou Seyo! (Japan)(1992)(Ma-Ba).bin" size="524288" crc="21a0e749"/>
+		<rom name="Kidou Keisatsu Patlabor 98-shiki Kidou Seyo! (Japan)(1992)(Ma-Ba).bin" size="524288" crc="21a0e749"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9523,7 +9532,7 @@
 		<description>King of the Monsters (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="king of the monsters (euro).bin" size="1048576" crc="7a94fd49"/>
+		<rom name="King of the Monsters (Euro)(1993)(Sega).bin" size="1048576" crc="7a94fd49"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9531,7 +9540,7 @@
 		<description>King of the Monsters (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="king of the monsters (jpn).bin" size="1048576" crc="3af7e74e"/>
+		<rom name="King of the Monsters (Japan)(1993)(Sega).bin" size="1048576" crc="3af7e74e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9539,7 +9548,7 @@
 		<description>King of the Monsters (USA)</description>
 		<year>1993</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="king of the monsters (usa).bin" size="1048576" crc="f390d406"/>
+		<rom name="King of the Monsters (USA)(1993)(Sega).bin" size="1048576" crc="f390d406"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9547,7 +9556,7 @@
 		<description>King of the Monsters 2 (USA)</description>
 		<year>1994</year>
 		<manufacturer>Takara</manufacturer>
-		<rom name="king of the monsters 2 (usa).bin" size="2097152" crc="ee1638ac"/>
+		<rom name="King of the Monsters 2 (USA)(1994)(Takara).bin" size="2097152" crc="ee1638ac"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9555,7 +9564,7 @@
 		<description>King Salmon (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Hot-B</manufacturer>
-		<rom name="king salmon (jpn).bin" size="524288" crc="2cfc9f61"/>
+		<rom name="King Salmon (Japan)(1992)(Hot-B).bin" size="524288" crc="2cfc9f61"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9563,15 +9572,7 @@
 		<description>King Salmon - The Big Catch (USA)</description>
 		<year>1993</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="king salmon - the big catch (usa).bin" size="524288" crc="f516e7d9"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="kingsbty" sourcefile="megadrive/d_megadrive.cpp">
-		<description>King's Bounty - The Conqueror's Quest (Euro, USA)</description>
-		<year>1991</year>
-		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="king's bounty - the conqueror's quest (euro, usa).bin" size="524288" crc="aa68a92e"/>
+		<rom name="King Salmon - The Big Catch (USA)(1993)(Vic Tokai).bin" size="524288" crc="f516e7d9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9584,11 +9585,19 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kingsbty" sourcefile="megadrive/d_megadrive.cpp">
+		<description>King's Bounty: The Conqueror's Quest (Euro, USA)</description>
+		<year>1991</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="King's Bounty - The Conqueror's Quest (Euro, USA)(1991)(Electronic Arts).bin" size="524288" crc="aa68a92e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kishiden" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Kishi Densetsu (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Kodansha</manufacturer>
-		<rom name="kishi densetsu (jpn).bin" size="1572864" crc="22e1f04a"/>
+		<rom name="Kishi Densetsu (Japan)(1993)(Kodansha).bin" size="1572864" crc="22e1f04a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9596,7 +9605,7 @@
 		<description>Kiss Shot (Japan, SegaNet)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="kiss shot (jpn) (sn).bin" size="262144" crc="e487088c"/>
+		<rom name="Kiss Shot (Japan, SegaNet)(1992)(Sega).bin" size="262144" crc="e487088c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13644,6 +13653,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="patlaborte" cloneof="patlabor" romof="patlabor" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Patlabor Mobile Police (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>Barbarian_Moham</manufacturer>
+		<rom name="Patlabor Mobile Police T-Eng (2025)(Barbarian_Moham).bin" size="569568" crc="58ab4dad"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="peacocking2" cloneof="mystdef" romof="mystdef" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Peacock King 2: Castle of Illusion (Hack, English + Gameplay Upgrade v2.42)</description>
@@ -13770,7 +13788,7 @@
 		<description>PGA Tour Golf II (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="pga_tour_golf_pgt04" size="1048576" crc="8d980bb4"/>
+		<rom name="PGA Tour Golf II (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="8d980bb4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13778,7 +13796,7 @@
 		<description>PGA Tour Golf II (Euro, USA, v1.1)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="pga tour golf ii (euro, usa) (v1.1).bin" size="1048576" crc="e82b8606"/>
+		<rom name="PGA Tour Golf II (Euro, USA, v1.1)(1992)(Electronic Arts).bin" size="1048576" crc="e82b8606"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13786,7 +13804,7 @@
 		<description>PGA Tour Golf II (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="pga tour golf ii (jpn).bin" size="1048576" crc="c05b7a4a"/>
+		<rom name="PGA Tour Golf II (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="c05b7a4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15439,23 +15457,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rrash3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Road 3 Rash - Tour de Force (Euro, USA)</description>
-		<year>1995</year>
-		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="rr3b3.bin" size="2097152" crc="15785956"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="rrash3p" cloneof="rrash3" romof="rrash3" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Prototype</comment>
-		<description>Road 3 Rash - World Warriors (USA, Prototype)</description>
-		<year>1995</year>
-		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="road rash 3 (usa) (alpha).bin" size="2097152" crc="b6626083"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="rrash3imp" cloneof="rrash3" romof="rrash3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Road 3 Rash Improvement (Hack, v1.04)</description>
@@ -15465,11 +15466,28 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rrash3" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Road 3 Rash: Tour de Force (Euro, USA)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Road 3 Rash - Tour de Force (Euro, USA)(1995)(Electronic Arts).bin" size="2097152" crc="15785956"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rrash3p" cloneof="rrash3" romof="rrash3" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Prototype</comment>
+		<description>Road 3 Rash: World Warriors (USA, Prototype)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Road 3 Rash - World Warriors (USA, Prototype)(1995)(Electronic Arts).bin" size="2097152" crc="b6626083"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="roadrash" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Road Rash (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="road rash (euro, usa).bin" size="786432" crc="dea53d19"/>
+		<rom name="Road Rash (Euro, USA)(1991)(Electronic Arts).bin" size="786432" crc="dea53d19"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15486,7 +15504,7 @@
 		<description>Road Rash II (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="rr205.bin" size="1048576" crc="7b29c209"/>
+		<rom name="Road Rash II (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="7b29c209"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15494,7 +15512,7 @@
 		<description>Road Rash II (Euro, USA, v1.2)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="road rash ii (euro, usa) (v1.2).bin" size="1048576" crc="0876e992"/>
+		<rom name="Road Rash II (Euro, USA, v1.2)(1992)(Electronic Arts).bin" size="1048576" crc="0876e992"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15511,7 +15529,7 @@
 		<description>Road Rash II (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="road rash ii (jpn).bin" size="1048576" crc="9a5723b6"/>
+		<rom name="Road Rash II (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="9a5723b6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21840,6 +21858,15 @@
 		<year>1991</year>
 		<manufacturer>Renovation</manufacturer>
 		<rom name="Valis III (USA)(1991)(Renovation).bin" size="1048576" crc="59a2a368"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="valisrfd" cloneof="valis" romof="valis" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Valis Refined (Hack)</description>
+		<year>2025</year>
+		<manufacturer>Eldritch Penumbra</manufacturer>
+		<rom name="Valis Refined (2025)(Eldritch Penumbra).bin" size="1048576" crc="5a171555"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

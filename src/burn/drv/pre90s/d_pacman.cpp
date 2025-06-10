@@ -2571,7 +2571,7 @@ static INT32 pacman_load()
 			qLoad += ri.nLen;
 
 			continue;
-		}	
+		}
 	}
 
 	return 0;
@@ -2798,6 +2798,17 @@ static void MspacmanMap()
 	ZetSetOutHandler(pacman_out_port);
 }
 
+static void MspacmanbMap()
+{
+	for (INT32 i = 0; i <= 0x8000; i += 0x8000)
+	{
+		ZetMapArea(0x0000 + i, 0x3fff + i, 0, DrvZ80ROM + i);
+		ZetMapArea(0x0000 + i, 0x3fff + i, 2, DrvZ80ROM + i);
+	}
+
+	MspacmanMap();
+}
+
 static void WidelMap()
 {
 	ZetMapArea(0x0000, 0x3fff, 0, DrvZ80ROM);
@@ -2847,7 +2858,7 @@ static INT32 DrvInit(void (*mapCallback)(), void (*pInitCallback)(), INT32 selec
 
 	ZetInit(0);
 	ZetOpen(0);
-	mapCallback();	
+	mapCallback();
 	ZetClose();
 
 	AY8910Init(0, 1789750, 0);
@@ -4827,7 +4838,7 @@ STD_ROM_FN(mspacmab)
 
 static INT32 mspacmanbInit()
 {
-	return DrvInit(MspacmanMap, NULL, PACMAN);
+	return DrvInit(MspacmanbMap, NULL, PACMAN);
 }
 
 struct BurnDriver BurnDrvmspacmab = {
@@ -4912,7 +4923,7 @@ static void mspacmbe_decode()
 
 static INT32 mspacmbeInit()
 {
-	return DrvInit(MspacmanMap, mspacmbe_decode, PACMAN);
+	return DrvInit(MspacmanbMap, mspacmbe_decode, PACMAN);
 }
 
 struct BurnDriver BurnDrvmspacmbe = {
@@ -5107,6 +5118,8 @@ struct BurnDriver BurnDrvPacgal = {
 
 
 // Ms. Pac-Man Plus
+// note: the 1981 date displayed on title screen is most likely incorrect,
+//       this set is supposed to be based on mspackpls, which is dated 1983 on title screen
 
 static struct BurnRomInfo mspacplsRomDesc[] = {
 	{ "boot1",        0x1000, 0xd16b31b7, 1 | BRF_ESS | BRF_PRG },	//  0 Z80 Code
@@ -5130,12 +5143,82 @@ STD_ROM_PICK(mspacpls)
 STD_ROM_FN(mspacpls)
 
 struct BurnDriver BurnDrvmspacpls = {
-	"mspacpls", "mspacman", NULL, NULL, "1981",
+	"mspacpls", "mspacman", NULL, NULL, "1981?",
 	"Ms. Pac-Man Plus\0", NULL, "hack", "Pac-man",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
 	NULL, mspacplsRomInfo, mspacplsRomName, NULL, NULL, NULL, NULL, DrvInputInfo, mspacmanDIPInfo,
 	mspacmanbInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	224, 288, 3, 4
+};
+
+
+// Miss Packman Plus
+// This is a bootleg Ms. Pac-Man auxiliary board that displays "Miss Packman Plus" at the title screen and
+// contains alternate mazes. These are the mazes that were later hacked into the mspacpls romset.
+//
+// The auxiliary board contains a Z80, a PAL with "MTS" handwritten on it, and 3 2764 eproms labelled "E",
+// "F", and "H". The eproms have data bits 3 and 4 swapped, and the PAL scrambles the addressing in 0x0800
+// chunks.
+
+static struct BurnRomInfo mspackplsRomDesc[] = {
+	{ "rom-h.bin",    0x2000, 0x88c89824, 1 | BRF_ESS | BRF_PRG },	//  0 Z80 Code
+	{ "rom-f.bin",    0x2000, 0x19620d5d, 1 | BRF_ESS | BRF_PRG },	//  1
+	{ "rom-e.bin",    0x2000, 0x59cb7ea0, 1 | BRF_ESS | BRF_PRG },	//  2
+
+	{ "5e",           0x1000, 0x5c281d01, 2 | BRF_GRA },			//  6 Graphics
+	{ "5f",           0x1000, 0x615af909, 2 | BRF_GRA },			//  7
+
+	{ "82s123.7f",    0x0020, 0x2fc650bd, 3 | BRF_GRA },			//  8 Color Proms
+	{ "82s126.4a",    0x0100, 0x3eb3a8e4, 3 | BRF_GRA },			//  9
+
+	{ "82s126.1m",    0x0100, 0xa9cc86bf, 4 | BRF_SND },			// 10 Sound Prom
+	{ "82s126.3m",    0x0100, 0x77245b66, 0 | BRF_SND | BRF_OPT },	// 11 Timing Prom (not used)
+};
+
+STD_ROM_PICK(mspackpls)
+STD_ROM_FN(mspackpls)
+
+static void mspackpls_decode()
+{
+	// code
+	UINT8 *pTemp = (UINT8*)BurnMalloc(0x10000);
+	memcpy(pTemp, DrvZ80ROM, 0x10000);
+	memset(DrvZ80ROM, 0, 0x10000);
+
+	memcpy(DrvZ80ROM + 0x0000, pTemp + 0x0000, 0x800);
+	memcpy(DrvZ80ROM + 0x8800, pTemp + 0x0800, 0x800);
+	memcpy(DrvZ80ROM + 0x3000, pTemp + 0x1000, 0x800);
+	memcpy(DrvZ80ROM + 0x9800, pTemp + 0x1800, 0x800);
+
+	memcpy(DrvZ80ROM + 0x2000, pTemp + 0x2000, 0x800);
+	memcpy(DrvZ80ROM + 0x0800, pTemp + 0x2800, 0x800);
+	memcpy(DrvZ80ROM + 0x9000, pTemp + 0x3000, 0x800);
+	memcpy(DrvZ80ROM + 0x1800, pTemp + 0x3800, 0x800);
+
+	memcpy(DrvZ80ROM + 0x8000, pTemp + 0x8000, 0x800);
+	memcpy(DrvZ80ROM + 0x2800, pTemp + 0x8800, 0x800);
+	memcpy(DrvZ80ROM + 0x1000, pTemp + 0x9000, 0x800);
+	memcpy(DrvZ80ROM + 0x3800, pTemp + 0x9800, 0x800);
+
+	BurnFree(pTemp);
+
+	for (INT32 i = 0x0000; i < 0xa000; i++)
+		DrvZ80ROM[i] = BITSWAP08(DrvZ80ROM[i],7,6,5,3,4,2,1,0);
+}
+
+static INT32 mspackplsInit()
+{
+	return DrvInit(MspacmanbMap, mspackpls_decode, PACMAN);
+}
+
+struct BurnDriver BurnDrvmspackpls = {
+	"mspackpls", "mspacman", NULL, NULL, "1983",
+	"Miss Packman Plus\0", NULL, "hack", "Pac-man",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
+	NULL, mspackplsRomInfo, mspackplsRomName, NULL, NULL, NULL, NULL, DrvInputInfo, mspacmanDIPInfo,
+	mspackplsInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 288, 3, 4
 };
 
@@ -5193,7 +5276,7 @@ STD_ROM_FN(mspacmanbg)
 
 static INT32 mspacmanbgInit()
 {
-	return DrvInit(MspacmanMap, pacmansp_decode, PACMAN);
+	return DrvInit(MspacmanbMap, pacmansp_decode, PACMAN);
 }
 
 struct BurnDriver BurnDrvmspacmanbg = {
@@ -5819,14 +5902,14 @@ static void eyes_gfx_decode(UINT8 *src)
 
 static void eyes_decode()
 {
-	for (INT32 i = 0; i < 0x4000; i++)
+	for (INT32 i = 0; i < 0xc000; i++)
 		DrvZ80ROM[i] = BITSWAP08(DrvZ80ROM[i],7,6,3,4,5,2,1,0);
 
 	for (INT32 i = 0;i < 0x2000; i += 8)
 		eyes_gfx_decode(DrvGfxROM + i);
 }
 
-static INT32 crush4Init()
+static INT32 eyesInit()
 {
 	return DrvInit(StandardMap, eyes_decode, PACMAN);
 }
@@ -5835,9 +5918,9 @@ struct BurnDriver BurnDrvcrush4 = {
 	"crush4", "crush", NULL, NULL, "1981",
 	"Crush Roller (set 4)\0", NULL, "Alpha Denshi Co. / Kural Electric, Ltd.", "Pac-man",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED /*| BDF_HISCORE_SUPPORTED*/, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
 	NULL, crush4RomInfo, crush4RomName, NULL, NULL, NULL, NULL, DrvInputInfo, maketraxDIPInfo,
-	crush4Init, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	eyesInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 288, 3, 4
 };
 
@@ -5958,6 +6041,62 @@ struct BurnDriver BurnDrvpainter = {
 	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HACK | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
 	NULL, painterRomInfo, painterRomName, NULL, NULL, NULL, NULL, DrvInputInfo, mbrushDIPInfo,
 	puckmanInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	224, 288, 3, 4
+};
+
+
+// Crush Roller (Famare SA PCB)
+
+static struct BurnRomInfo crushrlfRomDesc[] = {
+	{ "pin1cc_6e.bin",   0x0800, 0x65e469cf, 1 | BRF_ESS | BRF_PRG },	//  0 Z80 Code
+	{ "pin5cc_6k.bin",   0x0800, 0x15f0415b, 1 | BRF_ESS | BRF_PRG },	//  1
+	{ "pin2cc_6f.bin",   0x0800, 0x653f726d, 1 | BRF_ESS | BRF_PRG },	//  2
+	{ "pin6cc_6m.bin",   0x0800, 0x4536ea5b, 1 | BRF_ESS | BRF_PRG },	//  3
+	{ "pin3cc_6h.bin",   0x0800, 0x55e15863, 1 | BRF_ESS | BRF_PRG },	//  4
+	{ "pin7cc_6n.bin",   0x0800, 0x409111ec, 1 | BRF_ESS | BRF_PRG },	//  5
+	{ "pin4cc_6j.bin",   0x0800, 0x4fc4b582, 1 | BRF_ESS | BRF_PRG },	//  6
+	{ "pin8cc_6p.bin",   0x0800, 0x0d97a047, 1 | BRF_ESS | BRF_PRG },	//  7
+
+	{ "pin9cc_5e.bin",   0x0800, 0xb6551507, 2 | BRF_GRA },			//  8 Graphics
+	{ "pin11cc_5h.bin",  0x0800, 0xe129d76a, 2 | BRF_GRA },			//  9
+	{ "pin10cc_5f.bin",  0x0800, 0xd106da36, 2 | BRF_GRA },			// 10 
+	{ "pin12cc_5j.bin",  0x0800, 0xd35d1caf, 2 | BRF_GRA },			// 11 
+
+	{ "82s123.7f",       0x0020, 0x2fc650bd, 3 | BRF_GRA },			// 12 Color Proms
+	{ "2s140.4a",        0x0100, 0x63efb927, 3 | BRF_GRA },			// 13
+
+	{ "82s126.1m",       0x0100, 0xa9cc86bf, 4 | BRF_SND },			// 14 Sound Prom
+	{ "82s126.3m",       0x0100, 0x77245b66, 0 | BRF_SND | BRF_OPT },	// 15 Timing Prom (not used)
+};
+
+STD_ROM_PICK(crushrlf)
+STD_ROM_FN(crushrlf)
+
+static void crushrlf_decode()
+{
+	// code
+	INT32 pOffset;
+	UINT8 *pTemp = (UINT8*)BurnMalloc(0x10000);
+	memcpy(pTemp, DrvZ80ROM, 0x10000);
+	for (pOffset = 0; pOffset <= 0x3800; pOffset += 0x800) {
+		memcpy(DrvZ80ROM + pOffset + 0x400, pTemp + pOffset, 0x400);
+		memcpy(DrvZ80ROM + pOffset, pTemp + pOffset + 0x400, 0x400);
+	}
+	BurnFree(pTemp);
+}
+
+static INT32 crushrlfInit()
+{
+	return DrvInit(StandardMap, crushrlf_decode, PACMAN);
+}
+
+struct BurnDriver BurnDrvcrushrlf = {
+	"crushrlf", "crush", NULL, NULL, "1981",
+	"Crush Roller (Famare SA PCB)\0", NULL, "bootleg", "Pac-man",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
+	NULL, crushrlfRomInfo, crushrlfRomName, NULL, NULL, NULL, NULL, DrvInputInfo, maketraxDIPInfo,
+	crushrlfInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 288, 3, 4
 };
 
@@ -6198,11 +6337,6 @@ static struct BurnRomInfo eyesRomDesc[] = {
 STD_ROM_PICK(eyes)
 STD_ROM_FN(eyes)
 
-static INT32 eyesInit()
-{
-	return DrvInit(StandardMap, eyes_decode, PACMAN);
-}
-
 struct BurnDriver BurnDrveyes = {
 	"eyes", NULL, NULL, NULL, "1982",
 	"Eyes (US, set 1)\0", NULL, "Techstar (Rock-Ola license)", "Pac-man",
@@ -6259,15 +6393,15 @@ static struct BurnRomInfo eyesbRomDesc[] = {
 	{ "8.bin",	  0x0800, 0x2baaadae, 1 | BRF_ESS | BRF_PRG },  //  7
 
 	{ "9.bin",	  0x0800, 0x342c0653, 2 | BRF_GRA },			//  8 Graphics
-	{ "11.bin",	  0x0800, 0xaaa7a537, 2 | BRF_GRA },			//  9
+	{ "12.bin",	  0x0800, 0x99af4b30, 2 | BRF_GRA },			//  9
 	{ "10.bin",	  0x0800, 0xb247b82c, 2 | BRF_GRA },			// 10
-	{ "12.bin",	  0x0800, 0x99af4b30, 2 | BRF_GRA },			// 11
+	{ "11.bin",	  0x0800, 0xaaa7a537, 2 | BRF_GRA },			// 11
 
 	{ "7051.bin",	  0x0020, 0x2c3cc909, 3 | BRF_GRA },		// 12 Color Proms
 	{ "7051-3.bin",	  0x0100, 0xd8d78829, 3 | BRF_GRA },		// 13
 
 	{ "82s126.1m",	  0x0100, 0xa9cc86bf, 4 | BRF_SND },		// 14 Sound Prom
-	{ "7051-2.bin",	  0x0100, 0x77245b66, 4 | BRF_OPT },     	// 15 Timing Prom (not used)
+	{ "7051-2.bin",	  0x0100, 0x77245b66, 0 | BRF_SND | BRF_OPT },     	// 15 Timing Prom (not used)
 };
 
 STD_ROM_PICK(eyesb)
@@ -6279,6 +6413,38 @@ struct BurnDriver BurnDrveyesb = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
 	NULL, eyesbRomInfo, eyesbRomName, NULL, NULL, NULL, NULL, eyesInputInfo, eyesDIPInfo,
+	eyesInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	224, 288, 3, 4
+};
+
+
+// Eyes (Italy)
+
+static struct BurnRomInfo eyeszacRomDesc[] = {
+	{ "1.7e",         0x1000, 0xe555b265, 1 | BRF_ESS | BRF_PRG },	//  0 Z80 Code
+	{ "2.7f",         0x1000, 0xd6d73eb5, 1 | BRF_ESS | BRF_PRG },	//  1
+	{ "3.7h",         0x1000, 0x604c940c, 1 | BRF_ESS | BRF_PRG },	//  2
+	{ "4.7i",         0x1000, 0xacc9cd8b, 1 | BRF_ESS | BRF_PRG },	//  3
+
+	{ "5.5d",         0x1000, 0xd6af0030, 2 | BRF_GRA },			//  8 Graphics
+	{ "6.5f",         0x1000, 0xa42b5201, 2 | BRF_GRA },			//  9
+
+	{ "82s123.7f",    0x0020, 0x2fc650bd, 3 | BRF_GRA },			// 12 Color Proms
+	{ "82s129.4a",    0x0100, 0xd8d78829, 3 | BRF_GRA },			// 13
+
+	{ "82s126.1m",    0x0100, 0xa9cc86bf, 4 | BRF_SND },			// 14 Sound Prom
+	{ "82s126.3m",    0x0100, 0x77245b66, 0 | BRF_SND | BRF_OPT },	// 15 Timing Prom (not used)
+};
+
+STD_ROM_PICK(eyeszac)
+STD_ROM_FN(eyeszac)
+
+struct BurnDriver BurnDrveyeszac = {
+	"eyeszac", "eyes", NULL, NULL, "1982",
+	"Eyes (Italy)\0", NULL, "Techstar (Zaccaria license)", "Pac-man",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION | GBF_ACTION, 0,
+	NULL, eyeszacRomInfo, eyeszacRomName, NULL, NULL, NULL, NULL, eyesInputInfo, eyesDIPInfo,
 	eyesInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 288, 3, 4
 };
@@ -6313,7 +6479,7 @@ static struct BurnRomInfo eyeszacbRomDesc[] = {
 STD_ROM_PICK(eyeszacb)
 STD_ROM_FN(eyeszacb)
 
-struct BurnDriver BurnDrveyeszac = {
+struct BurnDriver BurnDrveyeszacb = {
 	"eyeszacb", "eyes", NULL, NULL, "1982",
 	"Eyes (bootleg, set 2, decrypted)\0", NULL, "bootleg", "Pac-man",
 	NULL, NULL, NULL, NULL,
@@ -6462,7 +6628,7 @@ STD_ROM_FN(piranha)
 
 static INT32 piranhaInit()
 {
-	return DrvInit(StandardMap, eyes_decode, PIRANHA);
+	return DrvInit(WoodpekMap, eyes_decode, PIRANHA);
 }
 
 struct BurnDriver BurnDrvpiranha = {
@@ -6509,6 +6675,44 @@ struct BurnDriver BurnDrvpiranhao = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
 	NULL, piranhaoRomInfo, piranhaoRomName, NULL, NULL, NULL, NULL, DrvInputInfo, mspacmanDIPInfo,
+	piranhaInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
+	224, 288, 3, 4
+};
+
+
+// Ms. Pac-Man (bootleg, set 3)
+
+static struct BurnRomInfo mspacmab3RomDesc[] = {
+	{ "p1.6ef",       0x1000, 0x50b38941, 1 | BRF_ESS | BRF_PRG },	//  0 Z80 Code
+	{ "p2.7ef",       0x1000, 0x195883b8, 1 | BRF_ESS | BRF_PRG },	//  1
+	{ "p3.bin",       0x1000, 0x124a4507, 1 | BRF_ESS | BRF_PRG },	//  2
+	{ "p4.bin",       0x1000, 0x08ac65da, 1 | BRF_ESS | BRF_PRG },	//  3
+	{ "d5.6fh",       0x1000, 0x50b29f09, 1 | BRF_ESS | BRF_PRG },	//  4
+	{ "d6.6j",        0x0800, 0x33b09ed9, 1 | BRF_ESS | BRF_PRG },	//  5
+
+	{ "d7.5de",       0x0800, 0xb5d8c872, 2 | BRF_GRA },			//  6 Graphics
+	{ "d9.5fh",       0x0800, 0x9b2b936c, 2 | BRF_GRA },			//  7
+	{ "d8.5ef",       0x0800, 0xa70a6ac4, 2 | BRF_GRA },			//  8
+	{ "d10.5j",       0x0800, 0x53368498, 2 | BRF_GRA },			//  9
+
+	{ "6331.8h",      0x0020, 0x2fc650bd, 3 | BRF_GRA },			// 10 Color Proms
+	{ "6301.4a",      0x0200, 0x720528b4, 3 | BRF_GRA },			// 11
+
+	{ "63s141.1k",    0x0200, 0x459d2618, 4 | BRF_SND },			// 12 Sound Prom
+	{ "63s141.3k",    0x0200, 0xfcc24d5d, 0 | BRF_SND | BRF_OPT },	// 13 Timing Prom (not used)
+
+	{ "82s141.i14",   0x0200, 0x8d43d0a6, 0 | BRF_OPT },			// 14 Timing Prom (not used)
+};
+
+STD_ROM_PICK(mspacmab3)
+STD_ROM_FN(mspacmab3)
+
+struct BurnDriver BurnDrvmspacmab3 = {
+	"mspacmab3", "puckman", NULL, NULL, "1981",
+	"Ms. Pac-Man (bootleg, set 3)\0", NULL, "bootleg", "Pac-man",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_PACMAN, GBF_MAZE | GBF_ACTION, 0,
+	NULL, mspacmab3RomInfo, mspacmab3RomName, NULL, NULL, NULL, NULL, DrvInputInfo, mspacmanDIPInfo,
 	piranhaInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	224, 288, 3, 4
 };

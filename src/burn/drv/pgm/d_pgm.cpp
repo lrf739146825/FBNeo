@@ -2294,7 +2294,7 @@ struct BurnDriver BurnDrvOlds103t = {
 };
 
 
-// Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)
+// Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)
 
 /* IGS PCB N0-0212-2 MADE IN TAIWAN
    IGS PCB N0-0213T MADE IN TAIWAN 
@@ -2333,7 +2333,7 @@ static INT32 kovInit()
 
 struct BurnDriver BurnDrvKov = {
 	"kov", NULL, "pgm", NULL, "1999",
-	"Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour\0\u4e09\u56fd\u6218\u7eaa\0\u4e09\u570b\u6230\u7d00 (ver. 117, Hong Kong)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_IGS_PGM/* | HARDWARE_IGS_USE_ARM_CPU*/, GBF_SCRFIGHT, 0,
 	NULL, kovRomInfo, kovRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovDIPInfo,
@@ -2342,7 +2342,7 @@ struct BurnDriver BurnDrvKov = {
 };
 
 
-// Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 115)
+// Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 115)
 
 static struct BurnRomInfo kov115RomDesc[] = {
 	{ "p0600.115",     				0x0400000, 0x527a2924, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -2367,7 +2367,7 @@ STD_ROM_FN(kov115)
 
 struct BurnDriver BurnDrvKov115 = {
 	"kov115", "kov", "pgm", NULL, "1999",
-	"Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 115)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 115)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour\0\u4e09\u56fd\u6218\u7eaa\0\u4e09\u570b\u6230\u7d00 (ver. 115)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM/* | HARDWARE_IGS_USE_ARM_CPU*/, GBF_SCRFIGHT, 0,
 	NULL, kov115RomInfo, kov115RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2376,10 +2376,15 @@ struct BurnDriver BurnDrvKov115 = {
 };
 
 
-// Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 114, Hong Kong)
+// Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 114, Hong Kong)
 
 /* IGS PCB N0-0212-1 MADE IN TAIWAN
    IGS PCB N0-0213T MADE IN TAIWAN 
+   三国战纪 SAV114_U4  on sticker
+   三国战纪 SAV114_U5  on sticker
+   三国战纪 SAV114_U7  on sticker
+   三国战纪 SAV114_U8  on sticker
+   三国战纪 SAV114_U10 on sticker
    SCREEN VER PIC: THE ROM DOES NOT DISPLAY ITS VERSION ON SCREEN.
    ROM TYPES: U4 U5 U7 U8 ALL TI TMS27C040
    ROM TYPES: U10 TI TMS27C240
@@ -2422,7 +2427,7 @@ struct BurnDriver BurnDrvKov114 = {
 };
 
 
-// Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 111, Japanese Board)
+// Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 111, Japanese Board)
 
 /* IGS PCB N0-0212-1 MADE IN TAIWAN
    IGS PCB N0-0213T MADE IN TAIWAN
@@ -2463,7 +2468,7 @@ STD_ROM_FN(kov111)
 
 struct BurnDriver BurnDrvKov111 = {
 	"kov111", "kov", "pgm", NULL, "1999",
-	"Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 111, Japanese Board)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour / San Guo Zhan Ji / Sangoku Senki (ver. 111, Japanese Board)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour\0\u4e09\u56fd\u6218\u7eaa\0\u4e09\u570b\u6230\u7d00 (ver. 111, Japanese Board)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM/* | HARDWARE_IGS_USE_ARM_CPU*/, GBF_SCRFIGHT, 0,
 	NULL, kov111RomInfo, kov111RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov111DIPInfo,
@@ -2472,7 +2477,7 @@ struct BurnDriver BurnDrvKov111 = {
 };
 
 
-// Knights of Valour Plus / Sanguo Zhan Ji Zhengzong Plus / Sangoku Senki Masamune Plus (ver. 119, set 1)
+// Knights of Valour Plus / San Guo Zhan Ji - Zheng Zong Plus / Sangoku Senki Masamune Plus (ver. 119, set 1)
 
 static struct BurnRomInfo kovplusRomDesc[] = {
 	{ "pgm_p0603_v119.u1",     		0x0400000, 0xe4b0875d, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -2497,7 +2502,7 @@ STD_ROM_FN(kovplus)
 
 struct BurnDriver BurnDrvKovplus = {
 	"kovplus", NULL, "pgm", NULL, "1999",
-	"Knights of Valour Plus / Sanguo Zhan Ji Zhengzong Plus / Sangoku Senki Masamune Plus (ver. 119, set 1)\0", "no PLUS on screen when set to KOREA", "IGS", "PolyGame Master",
+	"Knights of Valour Plus / San Guo Zhan Ji - Zheng Zong Plus / Sangoku Senki Masamune Plus (ver. 119, set 1)\0", "no PLUS on screen when set to KOREA", "IGS", "PolyGame Master",
 	L"Knights of Valour Plus\0\u4e09\u56fd\u6218\u7eaa \u6b63\u5b97 Plus\0\u4e09\u570b\u6230\u7d00 \u6b63\u5b97 Plus (ver. 119, set 1)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_IGS_PGM/* | HARDWARE_IGS_USE_ARM_CPU*/, GBF_SCRFIGHT, 0,
 	NULL, kovplusRomInfo, kovplusRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2506,7 +2511,7 @@ struct BurnDriver BurnDrvKovplus = {
 };
 
 
-// Knights of Valour Plus / Sanguo Zhan Ji Zhengzong Plus / Sangoku Senki Masamune Plus (ver. 119, set 2)
+// Knights of Valour Plus / San Guo Zhan Ji - Zheng Zong Plus / Sangoku Senki Masamune Plus (ver. 119, set 2)
 
 /* IGS PCB N0-0212-1 MADE IN TAIWAN
    IGS PCB N0-0213 MADE IN TAIWAN
@@ -2543,7 +2548,7 @@ STD_ROM_FN(kovplusa)
 
 struct BurnDriver BurnDrvKovplusa = {
 	"kovplusa", "kovplus", "pgm", NULL, "1999",
-	"Knights of Valour Plus / Sanguo Zhan Ji Zhengzong Plus / Sangoku Senki Masamune Plus (ver. 119, set 2)\0", "no PLUS on screen when set to KOREA", "IGS", "PolyGame Master",
+	"Knights of Valour Plus / San Guo Zhan Ji - Zheng Zong Plus / Sangoku Senki Masamune Plus (ver. 119, set 2)\0", "no PLUS on screen when set to KOREA", "IGS", "PolyGame Master",
 	L"Knights of Valour Plus\0\u4e09\u56fd\u6218\u7eaa \u6b63\u5b97 Plus\0\u4e09\u570b\u6230\u7d00 \u6b63\u5b97 Plus (ver. 119, set 2)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM/* | HARDWARE_IGS_USE_ARM_CPU*/, GBF_SCRFIGHT, 0,
 	NULL, kovplusaRomInfo, kovplusaRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2552,7 +2557,7 @@ struct BurnDriver BurnDrvKovplusa = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 104, CN)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 104, CN)
 
 /* IGS PCB N0-0222-1 MADE IN TAIWAN
    IGS PCB-N0-213 MADE IN TAIWAN
@@ -2601,7 +2606,7 @@ static INT32 kovshInit()
 
 struct BurnDriver BurnDrvKovsh = {
 	"kovsh", NULL, "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 104, CN)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 104, CN)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (ver. 104, CN)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshRomInfo, kovshRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovassgDIPInfo,
@@ -2610,7 +2615,7 @@ struct BurnDriver BurnDrvKovsh = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 103, CN)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 103, CN)
 
 static struct BurnRomInfo kovsh103RomDesc[] = {
 	{ "pgm_p0604_v103.u1",			0x0400000, 0xf0b3da82, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -2637,7 +2642,7 @@ STD_ROM_FN(kovsh103)
 
 struct BurnDriver BurnDrvKovsh103 = {
 	"kovsh103", "kovsh", "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 103, CN)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 103, CN)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (ver. 103, CN)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovsh103RomInfo, kovsh103RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2646,7 +2651,7 @@ struct BurnDriver BurnDrvKovsh103 = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 102, CN)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 102, CN)
 
 /* IGS PCB N0-0257 MADE IN TAIWAN
    風雲再起 V102 U1 on sticker
@@ -2677,7 +2682,7 @@ STD_ROM_FN(kovsh102)
 
 struct BurnDriver BurnDrvKovsh102 = {
 	"kovsh102", "kovsh", "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 102, CN)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 102, CN)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (ver. 102, CN)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovsh102RomInfo, kovsh102RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2686,7 +2691,7 @@ struct BurnDriver BurnDrvKovsh102 = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 101, CN)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 101, CN)
 
 static struct BurnRomInfo kovsh101RomDesc[] = {
 	{ "p0600.101",	   				0x0400000, 0x517a9bcf, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -2713,7 +2718,7 @@ STD_ROM_FN(kovsh101)
 
 struct BurnDriver BurnDrvKovsh101 = {
 	"kovsh101", "kovsh", "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 101, CN)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 101, CN)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (ver. 101, CN)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovsh101RomInfo, kovsh101RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -2722,7 +2727,7 @@ struct BurnDriver BurnDrvKovsh101 = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 100, CN)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 100, CN)
 
 static struct BurnRomInfo kovsh100RomDesc[] = {
 	{ "kovsh-v0100-u1.bin", 		0x0400000, 0xd145c1ca, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -2749,7 +2754,7 @@ STD_ROM_FN(kovsh100)
 
 struct BurnDriver BurnDrvKovsh100 = {
 	"kovsh100", "kovsh", "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (ver. 100, CN)\0", NULL, "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Feng Yun Zai Qi / Sangoku Senki Super Heroes (ver. 100, CN)\0", NULL, "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (ver. 100, CN)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovsh100RomInfo, kovsh100RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -5273,7 +5278,7 @@ struct BurnDriver BurnDrvhappy6100cn = {
 };
 
 
-// Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 101)
+// Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 101)
 
 static struct BurnRomInfo kovshpRomDesc[] = {
 	{ "p0600h_101.rom",				0x0400000, 0xe1d89a19, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -5338,7 +5343,7 @@ static INT32 kovshpInit()
 
 struct BurnDriver BurnDrvkovshp = {
 	"kovshp", NULL, "pgm", NULL, "2004",
-	"Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 101)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 101)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes Plus\0\u4e09\u56fd\u6218\u7eaa \u4e71\u4e16\u67ad\u96c4\0\u4e09\u570b\u6230\u7d00 \u4e82\u4e16\u689f\u96c4 (ver. 101)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshpRomInfo, kovshpRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kov115DIPInfo,
@@ -5347,7 +5352,7 @@ struct BurnDriver BurnDrvkovshp = {
 };
 
 
-// Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 101, Chinese Board)
+// Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 101, Chinese Board)
 
 /* IGS PCB-0490-00-GZ
    IGS PCB-0491-00-GZ-A 
@@ -5379,7 +5384,7 @@ STD_ROM_FN(kovshp101)
 
 struct BurnDriver BurnDrvkovshp101 = {
 	"kovshp101", "kovshp", "pgm", NULL, "2004",
-	"Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 101, Chinese Board)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 101, Chinese Board)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes Plus\0\u4e09\u56fd\u6218\u7eaa \u4e71\u4e16\u67ad\u96c4\0\u4e09\u570b\u6230\u7d00 \u4e82\u4e16\u689f\u96c4 (ver. 101, Chinese Board)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshp101RomInfo, kovshp101RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovshp101DIPInfo,
@@ -5388,7 +5393,7 @@ struct BurnDriver BurnDrvkovshp101 = {
 };
 
 
-/* Knights of Valour Super Heroes Plus / Sangoku Senki Super Heroes Plus (V101 alt, China)
+/* Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (V101 alt, China)
 
    IGS PCB-0490-00-GZ
    IGS PCB-0568-00-GZ-B 
@@ -5420,7 +5425,7 @@ STD_ROM_FN(kovshp101a)
 
 struct BurnDriver BurnDrvkovshp101a = {
 	"kovshp101a", "kovshp", "pgm", NULL, "2004",
-	"Knights of Valour Super Heroes Plus / Sangoku Senki Super Heroes Plus (V101 alr, China)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (V101 alr, China)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes Plus\0\u4E09\u56FD\u6218\u7EAA\0\u4E71\u4E16\u67AD\u96C4 (V101 alt, China)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshp101aRomInfo, kovshp101aRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovshp101DIPInfo,
@@ -5429,7 +5434,7 @@ struct BurnDriver BurnDrvkovshp101a = {
 }; */
 
 
-// Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 100)
+// Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 100)
 
 /* IGS PCB-0490-00-GZ
    IGS PCB-0491-00-GZ-A 
@@ -5460,7 +5465,7 @@ STD_ROM_FN(kovshp100)
 
 struct BurnDriver BurnDrvkovshp100 = {
 	"kovshp100", "kovshp", "pgm", NULL, "2004",
-	"Knights of Valour Super Heroes Plus / Sanguo Zhan Ji Luanshi Xiaoxiong (ver. 100)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
+	"Knights of Valour Super Heroes Plus / San Guo Zhan Ji - Luan Shi Xiao Xiong (ver. 100)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
 	L"Knights of Valour Super Heroes Plus\0\u4e09\u56fd\u6218\u7eaa \u4e71\u4e16\u67ad\u96c4\0\u4e09\u570b\u6230\u7d00 \u4e82\u4e16\u689f\u96c4 (ver. 100)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshp100RomInfo, kovshp100RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovshp101DIPInfo,
@@ -5469,7 +5474,7 @@ struct BurnDriver BurnDrvkovshp100 = {
 };
 
 
-// Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (SANGO EX+) (ver. 201 'Yitong Zhongyuan', China)
+// Knights of Valour Super Heroes / San Guo Zhan Ji - Yi Tong Zhong Yuan / Sangoku Senki Super Heroes (SANGO EX+) (ver. 201 'Yitong Zhongyuan', China)
 
 static struct BurnRomInfo kovytzyRomDesc[] = {
 	{ "ytzy_v201cn.rom",			0x0400000, 0xf3705ea0, 1 | BRF_PRG | BRF_ESS }, //  0 68K Code
@@ -5521,8 +5526,8 @@ static INT32 kovytzyInit()
 
 struct BurnDriver BurnDrvkovytzy = {
 	"kovytzy", NULL, "pgm", NULL, "1999",
-	"Knights of Valour Super Heroes / Sanguo Zhan Ji Fengyun Zaiqi / Sangoku Senki Super Heroes (SANGO EX+) (ver. 201 'Yitong Zhongyuan', China)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
-	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (SANGO EX+) (ver. 201 '\u4e00\u7edf\u4e2d\u539f', China)\0", NULL, NULL, NULL,
+	"Knights of Valour Super Heroes / San Guo Zhan Ji - Yi Tong Zhong Yuan / Sangoku Senki Super Heroes (SANGO EX+) (ver. 201 'Yitong Zhongyuan', China)\0", "Imperfect Protection Emulation", "IGS", "PolyGame Master",
+	L"Knights of Valour Super Heroes\0\u4e09\u56fd\u6218\u7eaa - \u98ce\u4e91\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 \u98a8\u96f2\u518d\u8d77\0\u4e09\u570b\u6230\u7d00 Super Heroes (SANGO EX+) (ver. 201 '\u4e00\u7edf\u4e2d\u539f', China)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovytzyRomInfo, kovytzyRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovassgDIPInfo,
 	kovytzyInit, pgmExit, pgmFrame, pgmDraw, pgmScan, &nPgmPalRecalc, 0x900,
@@ -7020,7 +7025,7 @@ static INT32 kovgsyxInit()
 }
 
 struct BurnDriverD BurnDrvKovgsyx = {
-	"kovgsyx", "kovshp", "pgm", NULL, "2004",
+	"kovgsyx", "kovshp", "pgm", NULL, "2010",
 	"Gai Shi Xing Xiong (bootleg of Knights of Valour Super Heroes Plus, V302CN)\0", "Imperfect Protection Emulation", "bootleg (WDF)", "PolyGame Master",
 	L"Gai Shi Xing Xiong\0\u76D6\u4E16\u82F1\u96C4\u7279\u522B\u7248 (bootleg of Knights of Valour Super Heroes Plus, V302CN)\0", NULL, NULL, NULL,
 	BDF_CLONE | BDF_BOOTLEG, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
@@ -7830,6 +7835,147 @@ struct BurnDriver BurnDrvKovshb = {
 	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_IGS_PGM | HARDWARE_IGS_USE_ARM_CPU, GBF_SCRFIGHT, 0,
 	NULL, kovshbRomInfo, kovshbRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovassgDIPInfo,
 	kovshbInit, pgmExit, pgmFrame, pgmDraw, pgmScan, &nPgmPalRecalc, 0x900,
+	448, 224, 4, 3
+};
+
+
+// Knights of Valour / San Guo Zhan Ji / Sangoku Senki (bootleg, V112CN?) 
+/* VER: V0003
+   DATE: 05/02/99
+   TIME: 14:23:43 
+   IGS PCB NO-0213 MADE IN TAIWAN */
+
+static struct BurnRomInfo kovbootRomDesc[] = {
+	{ "kovboot_prg1.29f1610ml", 	0x200000, 0xe74fcc47, 1 | BRF_PRG | BRF_ESS },  //  0 68K Code
+	{ "kovboot_prg2.am27C4096", 	0x080000, 0x7b3577dc, 1 | BRF_PRG | BRF_ESS },  //  1
+
+	{ "t0600a 1610",				0x0200000, 0x64e406a1, 2 | BRF_GRA },			//  2 Tile data
+	{ "t0600b 1610",				0x0200000, 0x26591209, 2 | BRF_GRA },			//  3
+	{ "t0600c 1610",				0x0200000, 0x461dc80c, 2 | BRF_GRA },			//  4
+	{ "t0600d 1610",				0x0200000, 0xf7e6b529, 2 | BRF_GRA },			//  5
+
+	{ "pgm_a0600.u2",     			0x0800000, 0xd8167834, 3 | BRF_GRA },			//  6 Sprite Color Data
+	{ "pgm_a0601.u4",     			0x0800000, 0xff7a4373, 3 | BRF_GRA },			//  7
+	{ "pgm_a0602.u6",     			0x0800000, 0xe7a32959, 3 | BRF_GRA },			//  8
+	{ "pgm_a0603.u9",     			0x0400000, 0xec31abda, 3 | BRF_GRA },			//  9
+
+	{ "pgm_b0600.u5",     			0x0800000, 0x7d3cd059, 4 | BRF_GRA },			// 10 Sprite Masks & Color Indexes
+	{ "pgm_b0601.u7",     			0x0400000, 0xa0bb1c2f, 4 | BRF_GRA },			// 11
+
+	{ "pgm_m0600.u3",     			0x0400000, 0x3ada4fd6, 5 | BRF_SND },			// 12 Samples
+};
+
+STDROMPICKEXT(kovboot, kovboot, pgm)
+STD_ROM_FN(kovboot)
+
+static UINT16 __fastcall kovboot_read_word(UINT32 address)
+{
+	switch (address)
+	{
+		case 0x4f0000:
+			return PgmInput[7]; // region
+	}
+	
+	return 0;
+}
+
+static UINT8 *kovboot_ram;
+
+static void install_prot_kovboot()
+{
+	kovboot_ram = (UINT8*)BurnMalloc(0x8000);
+
+	SekOpen(0);
+	SekMapMemory(kovboot_ram,	0x4f8000, 0x4fffff, MAP_RAM);
+	SekMapHandler(4,			0x4f0000, 0x4f7fff, MAP_READ);
+	SekSetReadWordHandler(4, 	kovboot_read_word);
+	SekClose();
+}
+
+static void kovboot_byteswap()
+{
+	BurnByteswap(PGM68KROM, 0x280000);
+}
+
+static INT32 kovboot_scan(INT32 nAction, INT32 *)
+{
+	struct BurnArea ba;
+
+	if (nAction & ACB_MEMORY_RAM) {
+		ba.Data		= kovboot_ram;
+		ba.nLen		= 0x0008000; // ?
+		ba.nAddress	= 0x4f8000;
+		ba.szName	= "Bootleg RAM";
+		BurnAcb(&ba);
+	}
+
+	return 0;
+}
+
+static INT32 kovbootInit()
+{
+	pPgmScanCallback = kovboot_scan;
+	pPgmProtCallback = install_prot_kovboot;
+	pPgmInitCallback = kovboot_byteswap;
+
+	return pgmInit();
+}
+
+static INT32 kovbootExit()
+{
+	BurnFree (kovboot_ram);
+
+	return pgmExit();
+}
+
+struct BurnDriver BurnDrvKovboot = {
+	"kovboot", "kov", "pgm", NULL, "1999",
+	"Knights of Valour / San Guo Zhan Ji / Sangoku Senki (Bootleg, V112CN?)\0", NULL, "bootleg", "PolyGame Master",
+	L"Knights of Valour\0\u4e09\u56fd\u6218\u7eaa\0\u4e09\u570b\u6230\u7d00 (bootleg, V112CN?)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 4, HARDWARE_IGS_PGM, GBF_SCRFIGHT, 0,
+	NULL, kovbootRomInfo, kovbootRomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovDIPInfo,
+	kovbootInit, kovbootExit, pgmFrame, pgmDraw, pgmScan, &nPgmPalRecalc, 0x900,
+	448, 224, 4, 3
+};
+
+
+// Knights of Valour Plus / San Guo Zhan Ji - Zeng Zong Plus/ Sangoku Senki Masamune Plus (bootleg, V117CN?) 
+// Based on Knights of Valour / Sanguo Zhan Ji / Sangoku Senki (ver. 117, Hong Kong)
+/* VER: V0008
+   DATE: 27/04/99
+   TIME: 10:33:33 
+   IGS PCB NO-0213 MADE IN TAIWAN */
+
+static struct BurnRomInfo kovboot2RomDesc[] = {
+	{ "kovboot2_prg1.29f1610ml", 	0x200000, 0x35806d1b, 1 | BRF_PRG | BRF_ESS },  //  0 68K Code
+	{ "kovboot2_prg2.am27C4096", 	0x080000, 0x7b3577dc, 1 | BRF_PRG | BRF_ESS },  //  1
+
+	{ "t0600a 1610",				0x0200000, 0x64e406a1, 2 | BRF_GRA },			//  2 Tile data
+	{ "t0600b 1610",				0x0200000, 0x26591209, 2 | BRF_GRA },			//  3
+	{ "t0600c 1610",				0x0200000, 0x461dc80c, 2 | BRF_GRA },			//  4
+	{ "t0600d 1610",				0x0200000, 0xf7e6b529, 2 | BRF_GRA },			//  5
+
+	{ "pgm_a0600.u2",     			0x0800000, 0xd8167834, 3 | BRF_GRA },			//  6 Sprite Color Data
+	{ "pgm_a0601.u4",     			0x0800000, 0xff7a4373, 3 | BRF_GRA },			//  7
+	{ "pgm_a0602.u6",     			0x0800000, 0xe7a32959, 3 | BRF_GRA },			//  8
+	{ "pgm_a0603.u9",     			0x0400000, 0xec31abda, 3 | BRF_GRA },			//  9
+
+	{ "pgm_b0600.u5",     			0x0800000, 0x7d3cd059, 4 | BRF_GRA },			// 10 Sprite Masks & Color Indexes
+	{ "pgm_b0601.u7",     			0x0400000, 0xa0bb1c2f, 4 | BRF_GRA },			// 11
+
+	{ "pgm_m0600.u3",     			0x0400000, 0x3ada4fd6, 5 | BRF_SND },			// 12 Samples
+};
+
+STDROMPICKEXT(kovboot2, kovboot2, pgm)
+STD_ROM_FN(kovboot2)
+
+struct BurnDriver BurnDrvKovboot2 = {
+	"kovboot2", "kov", "pgm", NULL, "1999",
+	"Knights of Valour Plus / San Guo Zhan Ji - Zeng Zong Plus/ Sangoku Senki Masamune Plus (bootleg, V117CN?) \0", NULL, "bootleg", "PolyGame Master",
+	L"Knights of Valour Plus\0\u4e09\u56fd\u6218\u7eaa \u6b63\u5b97 Plus\0\u4e09\u570b\u6230\u7d00 \u6b63\u5b97 Plus (bootleg, V117CN?)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG, 4, HARDWARE_IGS_PGM, GBF_SCRFIGHT, 0,
+	NULL, kovboot2RomInfo, kovboot2RomName, NULL, NULL, NULL, NULL, pgmInputInfo, kovDIPInfo,
+	kovbootInit, kovbootExit, pgmFrame, pgmDraw, pgmScan, &nPgmPalRecalc, 0x900,
 	448, 224, 4, 3
 };
 

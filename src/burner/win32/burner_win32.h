@@ -468,17 +468,21 @@ void CubicSharpnessDialog();
 int SFactdCreate();
 
 // roms.cpp
+extern INT32 nRomsDlgWidth;
+extern INT32 nRomsDlgHeight;
 extern char* gameAv;
 extern bool avOk;
 extern bool bSkipStartupCheck;
-int RomsDirCreate(HWND hParentWND);
-int CreateROMInfo(HWND hParentWND);
+INT32 RomsDirCreate(HWND hParentWND);
+INT32 CreateROMInfo(HWND hParentWND);
 void FreeROMInfo();
-int WriteGameAvb();
+INT32 WriteGameAvb();
 
 // support_paths.cpp
-int SupportDirCreate(HWND hParentWND);
-int SupportDirCreateTab(int nTab, HWND hParentWND);
+extern INT32 nSupportDlgWidth;
+extern INT32 nSupportDlgHeight;
+INT32 SupportDirCreate(HWND hParentWND);
+//int SupportDirCreateTab(int nTab, HWND hParentWND);
 
 // res.cpp
 int ResCreate(int);

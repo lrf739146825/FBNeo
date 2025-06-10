@@ -1468,6 +1468,11 @@ error:
 #endif
 }
 
+TCHAR* AdaptiveEncodingReads(const TCHAR* pszFileName)
+{
+	return NULL;
+}
+
 static int percent_parser(const char *value)
 {
 	INT32 nVal = atoi(value);
