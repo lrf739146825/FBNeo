@@ -567,6 +567,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="alunserjre" cloneof="alunserjr" romof="alunserjr" sourcefile="snes/d_snes.cpp">
+		<description>Al Unser Jr.'s Road to the Top (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Software Toolworks</manufacturer>
+		<rom name="Al Unser Jr.'s Road to the Top (E)(1994)(Software Toolworks).sfc" size="1048576" crc="4cf5d45f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alunserjr" sourcefile="snes/d_snes.cpp">
 		<description>Al Unser Jr.'s Road to the Top (USA)</description>
 		<year>1994</year>
@@ -704,6 +712,14 @@
 		<year>1993</year>
 		<manufacturer>IGS</manufacturer>
 		<rom name="Aliens vs. Predator (J)(1993)(IGS).sfc" size="1048576" crc="2d5876ff"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="allamfootball" sourcefile="snes/d_snes.cpp">
+		<description>All-American Championship Football (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Malibu Games</manufacturer>
+		<rom name="All-American Championship Football (E)(1993)(Malibu Games).sfc" size="524288" crc="ebefbde2"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -919,6 +935,14 @@
 		<year>1993</year>
 		<manufacturer>Wolf Team</manufacturer>
 		<rom name="Arcus Spirits (U, Proto)(1993)(Wolf Team).sfc" size="1572864" crc="184ef398"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ardylfoote" cloneof="ardylfoot" romof="ardylfoot" sourcefile="snes/d_snes.cpp">
+		<description>Ardy Lightfoot (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Titus - ASCII Corp.</manufacturer>
+		<rom name="Ardy Lightfoot (E)(1993)(Titus - ASCII).sfc" size="1048576" crc="d239398f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1144,6 +1168,14 @@
 		<year>2021</year>
 		<manufacturer>Vitor Vilela</manufacturer>
 		<rom name="Axelay - FastROM (2021)(Vitor Vilela).sfc" size="1048576" crc="4bb73534"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bobe" cloneof="bob" romof="bob" sourcefile="snes/d_snes.cpp">
+		<description>B.O.B. (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="B.O.B. (E)(1993)(Electronic Arts).sfc" size="1048576" crc="8d56598b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1581,6 +1613,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="beavisbutte" cloneof="beavisbutt" romof="beavisbutt" sourcefile="snes/d_snes.cpp">
+		<description>Beavis and Butt-Head (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Viacom New Media</manufacturer>
+		<rom name="Beavis and Butt-Head (E)(1994)(Viacom New Media).sfc" size="1572864" crc="f77f160b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="beavisbutt" sourcefile="snes/d_snes.cpp">
 		<description>Beavis and Butt-Head (USA)</description>
 		<year>1994</year>
@@ -1594,6 +1634,14 @@
 		<year>1994</year>
 		<manufacturer>Motown Software</manufacturer>
 		<rom name="Bebe's Kids (U)(1994)(Motown Software).sfc" size="1048576" crc="bda2e412"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="beethovene" cloneof="beethoven" romof="beethoven" sourcefile="snes/d_snes.cpp">
+		<description>Beethoven - The Ultimate Canine Caper! (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Hi Tech Expressions</manufacturer>
+		<rom name="Beethoven - The Ultimate Canine Caper! (E)(1993)(Hi Tech Expressions).sfc" size="524288" crc="4d1352ad"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1613,11 +1661,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bestofbeste" cloneof="bestofbest" romof="bestofbest" sourcefile="snes/d_snes.cpp">
+		<description>Best of the Best - Championship Karate (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Futura - Loriciel</manufacturer>
+		<rom name="Best of the Best - Championship Karate (E)(1992)(Futura - Loriciel).sfc" size="1048576" crc="d63831a5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bestofbest" sourcefile="snes/d_snes.cpp">
 		<description>Best of the Best - Championship Karate (USA)</description>
 		<year>1992</year>
 		<manufacturer>Electro Brain</manufacturer>
 		<rom name="Best of the Best - Championship Karate (U)(1992)(Electro Brain).sfc" size="1048576" crc="7f6ed86e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bigskytroope" cloneof="bigskytroop" romof="bigskytroop" sourcefile="snes/d_snes.cpp">
+		<description>Big Sky Trooper (Euro)</description>
+		<year>1995</year>
+		<manufacturer>JVC Musical Industries - LucasArts</manufacturer>
+		<rom name="Big Sky Trooper (E)(1995)(JVC Musical Industries).sfc" size="1048576" crc="1b565be7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1636,6 +1700,14 @@
 		<manufacturer>NCS - Masaya</manufacturer>
 		<rom name="Bike Daisuki! Hashiriya Tamashii (J)(1994)(NCS - Masaya).sfc" size="524288" crc="b363fc99"/>
 		<rom name="dsp1.bin" merge="dsp1.bin" size="10240" crc="2838f9f5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bikermicee" cloneof="bikermice" romof="bikermice" sourcefile="snes/d_snes.cpp">
+		<description>Biker Mice from Mars (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Biker Mice from Mars (E)(1994)(Konami).sfc" size="1048576" crc="1a06db31"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1768,6 +1840,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="blazeonj" cloneof="blazeon" romof="blazeon" sourcefile="snes/d_snes.cpp">
+		<description>Blazeon (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Atlus</manufacturer>
+		<rom name="Blazeon (J)(1992)(Atlus).sfc" size="1048576" crc="ad2effc3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="blazeon" sourcefile="snes/d_snes.cpp">
 		<description>Blazeon (USA)</description>
 		<year>1992</year>
@@ -1818,6 +1898,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bluesbrose" cloneof="bluesbros" romof="bluesbros" sourcefile="snes/d_snes.cpp">
+		<description>Blues Brothers, The (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Blues Brothers, The (E)(1993)(Titus).sfc" size="524288" crc="4a62057d"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bluesbrosj" cloneof="bluesbros" romof="bluesbros" sourcefile="snes/d_snes.cpp">
 		<description>Blues Brothers, The (Japan)</description>
 		<year>1993</year>
@@ -1858,6 +1946,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="boogermane" cloneof="boogerman" romof="boogerman" sourcefile="snes/d_snes.cpp">
+		<description>Boogerman - A Pick and Flick Adventure (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="Boogerman - A Pick and Flick Adventure (E)(1995)(Interplay).sfc" size="3145728" crc="4328bd1b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="boogerman" sourcefile="snes/d_snes.cpp">
 		<description>Boogerman - A Pick and Flick Adventure (USA)</description>
 		<year>1995</year>
@@ -1880,6 +1976,14 @@
 		<year>1995</year>
 		<manufacturer>Pioneer LDC - Head Quarters</manufacturer>
 		<rom name="Bounty Sword (J)(1995)(Pioneer LDC - Head Quarters).sfc" size="3145728" crc="f3ddf35f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="boxinglegendse" cloneof="boxinglegends" romof="boxinglegends" sourcefile="snes/d_snes.cpp">
+		<description>Boxing Legends of the Ring (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Electro Brain</manufacturer>
+		<rom name="Boxing Legends of the Ring (E)(1993)(Electro Brain).sfc" size="1048576" crc="00cc468b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1913,6 +2017,14 @@
 		<year>1994</year>
 		<manufacturer>Enix</manufacturer>
 		<rom name="Brain Lord (U)(1994)(Enix).sfc" size="1572864" crc="ac443d87"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="brainiese" cloneof="brainies" romof="brainies" sourcefile="snes/d_snes.cpp">
+		<description>Brainies, The (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Brainies, The (E)(1992)(Titus).sfc" size="524288" crc="de551746"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1978,6 +2090,14 @@
 		<year>1995</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Brandish 2 - The Planet Buster (J)(1995)(Koei).sfc" size="3145728" crc="bb89e67e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="brawlbrose" cloneof="brawlbros" romof="brawlbros" sourcefile="snes/d_snes.cpp">
+		<description>Brawl Brothers (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Brawl Brothers (E)(1993)(Jaleco).sfc" size="1572864" crc="410cee18"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2059,6 +2179,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bof2e" cloneof="bof2" romof="bof2" sourcefile="snes/d_snes.cpp">
+		<description>Breath of Fire II (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Breath of Fire II (E)(1994)(Capcom).sfc" size="3145728" crc="a4ab3b33"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bof2ts" cloneof="bof2" romof="bof2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Breath of Fire II (Hack, Spanish v1.2)</description>
@@ -2090,6 +2218,14 @@
 		<year>2023</year>
 		<manufacturer>Maeson</manufacturer>
 		<rom name="Breath of Fire II Maeson v1.06 (2023)(Maeson).sfc" size="3684480" crc="d7c7b721"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bretthullhockeye" cloneof="bretthullhockey" romof="bretthullhockey" sourcefile="snes/d_snes.cpp">
+		<description>Brett Hull Hockey (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Accolade</manufacturer>
+		<rom name="Brett Hull Hockey (E)(1993)(Accolade).sfc" size="2097152" crc="77bbf192"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2125,6 +2261,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="brutale" cloneof="brutal" romof="brutal" sourcefile="snes/d_snes.cpp">
+		<description>Brutal - Paws of Fury (Euro)</description>
+		<year>1994</year>
+		<manufacturer>GameTek</manufacturer>
+		<rom name="Brutal - Paws of Fury (E)(1994)(GameTek).sfc" size="2097152" crc="2f6326b1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="brutal" sourcefile="snes/d_snes.cpp">
 		<description>Brutal - Paws of Fury (USA)</description>
 		<year>1994</year>
@@ -2133,11 +2277,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bubsyiie" cloneof="bubsyii" romof="bubsyii" sourcefile="snes/d_snes.cpp">
+		<description>Bubsy II (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Accolade</manufacturer>
+		<rom name="Bubsy II (E)(1994)(Accolade).sfc" size="2097152" crc="e278e9b4"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bubsyii" sourcefile="snes/d_snes.cpp">
 		<description>Bubsy II (USA)</description>
 		<year>1994</year>
 		<manufacturer>Accolade</manufacturer>
 		<rom name="Bubsy II (U)(1994)(Accolade).sfc" size="2097152" crc="d0d172fa"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bubsye" cloneof="bubsy" romof="bubsy" sourcefile="snes/d_snes.cpp">
+		<description>Bubsy in Claws Encounters of the Furred Kind (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Accolade</manufacturer>
+		<rom name="Bubsy in Claws Encounters of the Furred Kind (E)(1992)(Accolade).sfc" size="2097152" crc="74a94d60"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2165,11 +2325,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bugsbunnye" cloneof="bugsbunny" romof="bugsbunny" sourcefile="snes/d_snes.cpp">
+		<description>Bugs Bunny - Rabbit Rampage (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Bugs Bunny - Rabbit Rampage (E)(1993)(Sunsoft).sfc" size="1572864" crc="91b3db54"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bugsbunny" sourcefile="snes/d_snes.cpp">
 		<description>Bugs Bunny - Rabbit Rampage (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sunsoft</manufacturer>
 		<rom name="Bugs Bunny - Rabbit Rampage (U)(1993)(Sunsoft).sfc" size="1572864" crc="832c0cb6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bullsvsblazerse" cloneof="bullsvsblazers" romof="bullsvsblazers" sourcefile="snes/d_snes.cpp">
+		<description>Bulls vs Blazers and the NBA Playoffs (Euro, Rev. 1)</description>
+		<year>1992</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Bulls vs Blazers and the NBA Playoffs (E, Rev 1)(1992)(Electronic Arts).sfc" size="1048576" crc="0c4b876b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2228,6 +2404,14 @@
 		<year>1993</year>
 		<manufacturer>Seta</manufacturer>
 		<rom name="Cacoma Knight in Bizyland (U)(1993)(Seta).sfc" size="524288" crc="ba921443"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="calripkenjrbaseballe" cloneof="calripkenjrbaseball" romof="calripkenjrbaseball" sourcefile="snes/d_snes.cpp">
+		<description>Cal Ripken Jr. Baseball (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Mindscape</manufacturer>
+		<rom name="Cal Ripken Jr. Baseball (E)(1992)(Mindscape).sfc" size="1048576" crc="c1357473"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9283,7 +9467,7 @@
 		<year>1998</year>
 		<manufacturer>Twin Eagles Group</manufacturer>
 		<rom name="Men in Black (U)(Unl)(1998)(Twin Eagles Group).sfc" size="1048576" crc="cb5301b8"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="metalcombate" cloneof="metalcombat" romof="metalcombat" sourcefile="snes/d_snes.cpp">

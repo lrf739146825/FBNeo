@@ -119,6 +119,10 @@
 #define TAITO_CCHIP_BIOS									34
 #define TAITO_CCHIP_EEPROM									35
 
+#ifndef ERANGE
+  #define ERANGE 34
+#endif
+
 struct DatListInfo {
 	TCHAR szRomSet[100];
 	TCHAR szFullName[1024];
@@ -1834,7 +1838,7 @@ bool RomDataExportTemplate(HWND hWnd, const INT32 nDrvSelect)
 	TCHAR szFilter[150] = { 0 };
 	_stprintf(szFilter, FBALoadStringEx(hAppInst, IDS_DISK_FILE_ROMDATA, true), _T(APP_TITLE));
 	memcpy(szFilter + _tcslen(szFilter), _T(" (*.dat)\0*.dat\0\0"), 16 * sizeof(TCHAR));
-	_stprintf(szChoice, _T("%s.dat"), BurnDrvGetText(DRV_NAME));
+	_stprintf(szChoice, _T("template_%s.dat"), BurnDrvGetText(DRV_NAME));
 
 	memset(&ofn, 0, sizeof(OPENFILENAME));
 	ofn.lStructSize = sizeof(OPENFILENAME);
@@ -1872,9 +1876,14 @@ bool RomDataExportTemplate(HWND hWnd, const INT32 nDrvSelect)
 		struct BurnRomInfo ri = { 0 };
 
 		BurnDrvGetRomInfo(&ri, i);	// Get info about the rom
+		if ((NULL == pszRomName) || (_T('\0') == *pszRomName))
+			continue;
+		if ((ri.nType & BRF_BIOS) && (i >= 0x80))
+			continue;
+
 		_ftprintf(fp, _T("\"%hs\",\t0x%08x,\t0x%08x,\t0x%08x\n"), pszRomName, ri.nLen, ri.nCrc, ri.nType);
 	}
-	pszRomName = NULL;
+	pszRomName     = NULL;
 	fclose(fp); fp = NULL;
 	nBurnDrvActive = nOldDrvSel;
 
