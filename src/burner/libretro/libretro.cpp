@@ -890,7 +890,7 @@ static int archive_load_rom(uint8_t *dest, int *wrote, int i)
 
 	int archive = pRomFind[i].nZip;
 
-	// We want to return an error code even if the rom is skippable, that's what standalone does
+	// We want to return an error code even if the rom is not needed, that's what standalone does
 	if (pRomFind[i].nState != STAT_OK)
 		return 1;
 
@@ -1120,6 +1120,7 @@ static bool open_archive()
 				// Try to map the ROMs FBNeo wants to ROMs we find inside our pretty archives ...
 				for (unsigned i = 0; i < nRomCount; i++)
 				{
+					// Don't bother with roms that have already been found or are never needed
 					if (pRomFind[i].nState == STAT_OK || pRomFind[i].nState == STAT_SKIP)
 						continue;
 
@@ -1127,9 +1128,9 @@ static bool open_archive()
 					memset(&ri, 0, sizeof(ri));
 					BurnDrvGetRomInfo(&ri, i);
 
-					if ((ri.nType & BRF_OPT) || (ri.nType & BRF_NODUMP) || (ri.nType == 0) || (ri.nLen == 0) || ((NULL == pDataRomDesc) && (0 == ri.nCrc)))
+					// If a rom is never needed, let's flag it as skippable
+					if ((ri.nType & BRF_NODUMP) || (ri.nType == 0) || (ri.nLen == 0) || ((NULL == pDataRomDesc) && (0 == ri.nCrc)))
 					{
-						// if a rom is skippable, let's flag it as such
 						pRomFind[i].nState = STAT_SKIP;
 						continue;
 					}
@@ -1195,7 +1196,7 @@ static bool open_archive()
 		bool ret = true;
 		for (unsigned i = 0; i < nRomCount; i++)
 		{
-			// Neither the available roms nor the skippable ones should trigger an error here
+			// Neither the available roms nor the unneeded ones should trigger an error here
 			if (pRomFind[i].nState != STAT_OK && pRomFind[i].nState != STAT_SKIP)
 			{
 				struct BurnRomInfo ri;

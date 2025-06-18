@@ -86,9 +86,23 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 	if (iniContent) {
 		iniPtr = iniContent->data();
 	} else {
-		h = _tfopen(pszFilename, _T("rt"));
+		TCHAR* pszReadMode = AdaptiveEncodingReads(pszFilename);
+		if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+		h = _tfopen(pszFilename, pszReadMode);
 		if (h == NULL) {
-			return 1;
+			if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
+				TCHAR szAlternative[MAX_PATH] = { 0 };
+				_stprintf(szAlternative, _T("%s%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+
+				pszReadMode = AdaptiveEncodingReads(szAlternative);
+				if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+				if (NULL == (h = _tfopen(szAlternative, pszReadMode)))
+					return 1;
+			} else {
+				return 1;	// Parent driver
+			}
 		}
 	}
 
@@ -97,16 +111,16 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 			if (*iniPtr == '\0') {
 				break;
 			}
-			char* s = szLine;
-			while (*iniPtr && *iniPtr != '\n' && (s - szLine) < 8190) {
-				*s++ = *iniPtr++;
+			char* p = szLine;
+			while (*iniPtr && *iniPtr != '\n' && (p - szLine) < 8190) {
+				*p++ = *iniPtr++;
 			}
-			if (*iniPtr == '\n' && (s - szLine) < 8190) {
-				*s++ = *iniPtr++;
-				*s = '\0';
-			} else if ((s - szLine) == 8190) {
-				*s++ = '\n';
-				*s = '\0';
+			if (*iniPtr == '\n' && (p - szLine) < 8190) {
+				*p++ = *iniPtr++;
+				*p = '\0';
+			} else if ((p - szLine) == 8190) {
+				*p++ = '\n';
+				*p = '\0';
 				while (*iniPtr && *iniPtr != '\n') {
 					iniPtr++;
 				}
@@ -114,7 +128,7 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 					iniPtr++;
 				}
 			} else {
-				*s = '\0';
+				*p = '\0';
 			}
 		} else {
 			if (_fgetts(szLine, 8192, h) == NULL) {
@@ -372,9 +386,23 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 //TODO: make cross platform
 static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 {
-	FILE *fp = _tfopen(pszFilename, _T("rt"));
+	TCHAR* pszReadMode = AdaptiveEncodingReads(pszFilename);
+	if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+	FILE *fp = _tfopen(pszFilename, pszReadMode);
 	if (fp == NULL) {
-		return 1;
+		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
+			TCHAR szAlternative[MAX_PATH] = { 0 };
+			_stprintf(szAlternative, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+
+			pszReadMode = AdaptiveEncodingReads(szAlternative);
+			if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+			if (NULL == (fp = _tfopen(szAlternative, pszReadMode)))
+				return 1;
+		} else {
+			return 1;	// Parent driver
+		}
 	}
 
 	INT32 nLen;
@@ -817,9 +845,8 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 #else
 		if (_tcsncmp(szLine, gName, strlen(gName)) == 0) {
 #endif
-			if (!foundData) {
-				foundData = true;
-			}
+			foundData = true;
+			
 			// Add the current line to CurrentMameCheatContent
 			for (TCHAR* p = szLine; *p; ++p) {
 				if (*p != '\0') {
@@ -829,11 +856,7 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 		}
 	}
 
-	if (!foundData) {
-		return 1;
-	}
-
-	return 0;
+	return foundData ? 0 : 1;
 }
 
 static INT32 ConfigParseMAMEFile()
@@ -847,7 +870,11 @@ static INT32 ConfigParseMAMEFile()
 		_stprintf(szFileName, _T("%scheat.dat"), szAppCheatsPath);
 	}
 
-	FILE *fz = _tfopen(szFileName, _T("rt"));
+	TCHAR* pszReadMode = AdaptiveEncodingReads(szFileName);
+	if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+	FILE *fz = _tfopen(szFileName, pszReadMode);
+
 	INT32 ret = 1;
 
 	const TCHAR* DrvName = BurnDrvGetText(DRV_NAME);

@@ -390,6 +390,12 @@ int ConfigAppLoad()
 		VAR(nCDEmuSelect);
 		PAT(CDEmuImage);
 
+		VAR(nRomsDlgWidth);
+		VAR(nRomsDlgHeight);
+
+		VAR(nSupportDlgWidth);
+		VAR(nSupportDlgHeight);
+
 		VAR(nSelDlgWidth);
 		VAR(nSelDlgHeight);
 		VARI64(nLoadMenuShowX);
@@ -436,6 +442,7 @@ int ConfigAppLoad()
 		STR(szAppBlendPath);
 		STR(szAppSelectPath);
 		STR(szAppVersusPath);
+		STR(szAppHowtoPath);
 		STR(szAppScoresPath);
 		STR(szAppBossesPath);
 		STR(szAppGameoverPath);
@@ -463,6 +470,7 @@ int ConfigAppLoad()
 		VAR(bBurnGunDrawReticles);
 		VAR(bBurnGunPositionalMode);
 		VAR(bSkipStartupCheck);
+		VAR(bQuicklyCheck);
 
 		VAR(nSlowMo);
 
@@ -807,6 +815,18 @@ int ConfigAppSave()
 	STR(CDEmuImage);
 
 	_ftprintf(h, _T("\n\n\n"));
+	_ftprintf(h, _T("// --- Edit ROMs Paths Dialogs ------------------------------------------------\n"));
+	_ftprintf(h, _T("\n// Edit roms path dialog dimensions (in win32 client co-ordinates)\n"));
+	VAR(nRomsDlgWidth);
+	VAR(nRomsDlgHeight);
+
+	_ftprintf(h, _T("\n\n\n"));
+	_ftprintf(h, _T("// --- Edit support file paths Dialogs ----------------------------------------\n"));
+	_ftprintf(h, _T("\n// Edit support file paths dialog dimensions (in win32 client co-ordinates)\n"));
+	VAR(nSupportDlgWidth);
+	VAR(nSupportDlgHeight);
+
+	_ftprintf(h, _T("\n\n\n"));
 	_ftprintf(h, _T("// --- Load Game Dialogs ------------------------------------------------------\n"));
 	_ftprintf(h, _T("\n// Load game dialog dimensions (in win32 client co-ordinates)\n"));
 	VAR(nSelDlgWidth);
@@ -868,6 +888,7 @@ int ConfigAppSave()
 	STR(szAppBlendPath);
 	STR(szAppSelectPath);
 	STR(szAppVersusPath);
+	STR(szAppHowtoPath);
 	STR(szAppScoresPath);
 	STR(szAppBossesPath);
 	STR(szAppGameoverPath);
@@ -935,6 +956,9 @@ int ConfigAppSave()
 
 	_ftprintf(h, _T("\n// If non-zero, DISABLE start-up rom scan (if needed).\n"));
 	VAR(bSkipStartupCheck);
+
+	_ftprintf(h, _T("\n// If non-zero, enable quickly scan directories (zip only).\n"));
+	VAR(bQuicklyCheck);
 
 	_ftprintf(h, _T("\n// If non-zero, enable SlowMo T.A. [0 - 4]\n"));
 	VAR(nSlowMo);

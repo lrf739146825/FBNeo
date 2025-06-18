@@ -1114,6 +1114,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="arispidrag" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Arispi Dragon (HB)</description>
+		<year>2025</year>
+		<manufacturer>James Tall</manufacturer>
+		<rom name="Arispi Dragon (2025)(James Tall).nes" size="131088" crc="8e274449"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="arkaderush" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Arkade Rush (HB)</description>
@@ -3666,6 +3675,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="cness" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>CNESS (HB)</description>
+		<year>2025</year>
+		<manufacturer>Johnynot</manufacturer>
+		<rom name="CNESS (2025)(Johnybot).nes" size="24592" crc="caa8924e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="cobol" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Cobol (HB)</description>
@@ -3717,7 +3735,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="codenam" sourcefile="nes/d_nes.cpp">
-		<description>Code Name - Viper (USA)</description>
+		<description>Code Name: Viper (USA)</description>
 		<year>1989</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Code Name - Viper (USA)(1989)(Capcom).nes" size="262160" crc="c8a23081"/>
@@ -4477,14 +4495,6 @@
 		<year>2022</year>
 		<manufacturer>Game Losers</manufacturer>
 		<rom name="Ddream Ddiver (2022)(Game Losers).nes" size="524304" crc="26943006"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="deadfox" cloneof="codenam" romof="codenam" sourcefile="nes/d_nes.cpp">
-		<description>Dead Fox (Japan)</description>
-		<year>1990</year>
-		<manufacturer>Capcom</manufacturer>
-		<rom name="Dead Fox (Japan)(1990)(Capcom).nes" size="262160" crc="f316b497"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5656,7 +5666,7 @@
 		<description>Dragon Warrior (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="dragon warrior (usa) (rev a) - castellano v1.0.nes" size="81936" crc="7442bd9f"/>
+		<rom name="Dragon Warrior T-Spa (2019)(Wave).nes" size="81936" crc="7442bd9f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5679,9 +5689,9 @@
 	<game name="dragowariiic" cloneof="dragowariii" romof="dragowariii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Dragon Warrior III (Hack, Spanish v0.9)</description>
-		<year>2017</year>
+		<year>2016</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="dragon warrior iii (usa) - castellano v0.9.nes" size="524304" crc="c3d2f589"/>
+		<rom name="Dragon Warrior III T-Spa v0.9 (2016)(Wave).nes" size="524304" crc="c3d2f589"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7674,6 +7684,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gekistadium" cloneof="badnewbas" romof="badnewbas" sourcefile="nes/d_nes.cpp">
+		<description>Gekitou Stadium!! (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Tecmo</manufacturer>
+		<rom name="Gekitou Stadium!! (Japan)(1989)(Tecmo).nes" size="262160" crc="25a6389f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="gemfire" sourcefile="nes/d_nes.cpp">
 		<description>Gemfire (USA)</description>
 		<year>1992</year>
@@ -8929,7 +8947,7 @@
 		<description>Hokuto no Ken 2 (Hack, Spanish v1.1)</description>
 		<year>2018</year>
 		<manufacturer>Jonathan</manufacturer>
-		<rom name="hokuto no ken 2 (japan) - castellano v1.1.nes" size="131088" crc="3a3cd6df"/>
+		<rom name="Hokuto no Ken 2 T-Spa v1.1 (2018)(Jonathan).nes" size="131088" crc="3a3cd6df"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8941,26 +8959,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="hokutonoken3" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden (Hack, English)</description>
-		<year>2024</year>
-		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Retsuden T-Eng (2024)(BlackPaladin).nes" size="524304" crc="8b1eb74a"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="hokutonoken3c" cloneof="hokutonoken3" romof="hokutonoken3" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden (Hack, Spanish)</description>
+		<description>Hokuto no Ken 3: Shin Seiki Souzou Seiken Restuden (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>RMGlitch</manufacturer>
-		<rom name="hokuto no ken 3 - shin seiki souzou seiken restuden (japan) - castellano v1.0.nes" size="262160" crc="9e7cc5dc"/>
+		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden T-Spa (2019)(RMGlitch).nes" size="262160" crc="9e7cc5dc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="hokutonoken3j" cloneof="hokutonoken3" romof="hokutonoken3" sourcefile="nes/d_nes.cpp">
-		<description>Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden (Japan)</description>
+		<description>Hokuto no Ken 3: Shin Seiki Souzou Seiken Restuden (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Toei Animation</manufacturer>
 		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden (Japan)(1989)(Toei Animation).nes" size="262160" crc="12b32580"/>
@@ -8968,10 +8977,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="hokutonoken4" sourcefile="nes/d_nes.cpp">
-		<description>Hokuto no Ken 4 - Shichisei Haken Den (Japan)</description>
+		<description>Hokuto no Ken 4: Shichisei Haken Den (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Toei Animation</manufacturer>
 		<rom name="Hokuto no Ken 4 - Shichisei Haken Den (Japan)(1991)(Shouei System).nes" size="262160" crc="06e95541"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hokutonoken3" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hokuto no Ken: Fist of the North Star 3 (Hack, English)</description>
+		<year>2024</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Retsuden T-Eng (2024)(BlackPaladin).nes" size="524304" crc="8b1eb74a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9163,7 +9181,7 @@
 		<description>Hydlide (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="hydlide (usa) - castellano v1.0.nes" size="40976" crc="9b4f06c0"/>
+		<rom name="Hydlide T-Spa (2019)(Wave).nes" size="40976" crc="9b4f06c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9273,15 +9291,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="immortalthec" cloneof="immortalthe" romof="immortalthe" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Immortal, The (Hack, Spanish)</description>
-		<year>2004</year>
-		<manufacturer>R. Merida</manufacturer>
-		<rom name="immortal, the (usa) - castellano v1.0.nes" size="393232" crc="bf87b488"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="immortalthe" sourcefile="nes/d_nes.cpp">
 		<description>Immortal, The (USA)</description>
 		<year>1990</year>
@@ -9344,6 +9353,15 @@
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
 		<rom name="Infiltrator (USA)(1990)(Mindscape).nes" size="262160" crc="f5f79ea9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="immortalthec" cloneof="immortalthe" romof="immortalthe" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Inmortal, El (Hack, Spanish)</description>
+		<year>2004</year>
+		<manufacturer>Rod Merida</manufacturer>
+		<rom name="Inmortal, El T-Spa (2004)(Rod Merida).nes" size="393232" crc="bf87b488"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9881,7 +9899,7 @@
 		<description>Jungle Book, The (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="jungle book, the (usa) - castellano v1.0.nes" size="262160" crc="996a8677"/>
+		<rom name="Jungle Book, The T-Spa (2018)(Wave).nes" size="262160" crc="996a8677"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9941,7 +9959,7 @@
 		<description>Just Breed (Hack, Spanish v2.0)</description>
 		<year>2010</year>
 		<manufacturer>Butz Klauser</manufacturer>
-		<rom name="just breed (japan) - castellano v2.0.nes" size="786448" crc="e415a13f"/>
+		<rom name="Just Breed T-Spa v2.0 (2010)(Butz Klauser).nes" size="786448" crc="e415a13f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13742,10 +13760,18 @@
 	</game>
 	<game name="deadfoxc" cloneof="codenam" romof="codenam" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ningen Heiki - Dead Fox (Hack, Chinese v2.0)</description>
+		<description>Ningen Heiki: Dead Fox (Hack, Chinese v2.0)</description>
 		<year>2010</year>
 		<manufacturer>Xing Kong</manufacturer>
 		<rom name="Ningen Heiki - Dead Fox T-Chi v2.0 (2010)(Xing Kong).nes" size="303120" crc="3cf5df56"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="deadfox" cloneof="codenam" romof="codenam" sourcefile="nes/d_nes.cpp">
+		<description>Ningen Heiki: Dead Fox (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Dead Fox, Ningen Heiki (Japan)(1990)(Capcom).nes" size="262160" crc="f316b497"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14718,8 +14744,8 @@
 	<game name="phantomfighter" sourcefile="nes/d_nes.cpp">
 		<description>Phantom Fighter (USA)</description>
 		<year>1990</year>
-		<manufacturer>FCI Inc.</manufacturer>
-		<rom name="Phantom Fighter (USA)(1990)(FCI Inc.).nes" size="262160" crc="9dde4e60"/>
+		<manufacturer>FCI Inc. - Pony Canyon</manufacturer>
+		<rom name="Phantom Fighter (USA)(1990)(FCI Inc. - Pony Canyon).nes" size="262160" crc="9dde4e60"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15724,6 +15750,14 @@
 		<year>1992</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Red Arremer II (Japan).nes" size="262160" crc="7998c426"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="reigedoushi" cloneof="phantomfighter" romof="phantomfighter" sourcefile="nes/d_nes.cpp">
+		<description>Reigen Doushi (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Pony Canyon</manufacturer>
+		<rom name="Reigen Doushi (Japan)(1988)(Pony Canyon).nes" size="262160" crc="8f0eab04"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18905,7 +18939,7 @@
 	<game name="swordandser" sourcefile="nes/d_nes.cpp">
 		<description>Swords and Serpents (USA)</description>
 		<year>1990</year>
-		<manufacturer>Acclaim</manufacturer>
+		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Swords and Serpents (USA)(1990)(Acclaim).nes" size="131088" crc="071e3f72"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -19309,7 +19343,7 @@
 		<description>Tecmo Super Bowl Tapmeter (Hack)</description>
 		<year>2016</year>
 		<manufacturer>Bruddog</manufacturer>
-		<rom name="Tecmo Super Bowl Tapmeter v1.0.0 (2016)(Bruddog).nes" size="393232" crc="18f884f0"/>
+		<rom name="Tecmo Super Bowl Tapmeter (2016)(Bruddog).nes" size="393232" crc="18f884f0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19368,6 +19402,15 @@
 		<year>1989</year>
 		<manufacturer>Ultra Games</manufacturer>
 		<rom name="Teenage Mutant Ninja Turtles (USA)(1989)(Ultra Games).nes" size="262160" crc="83213ca0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="tmntpizza" cloneof="tmnt" romof="tmnt" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Teenage Mutant Ninja Turtles - Pizza Party (Hack)</description>
+		<year>2025</year>
+		<manufacturer>Mentil</manufacturer>
+		<rom name="Teenage Mutant Ninja Turtles - Pizza Party (2025)(Mentil).nes" size="262160" crc="f96951c6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19776,7 +19819,7 @@
 	<game name="tigerheli" sourcefile="nes/d_nes.cpp">
 		<description>Tiger-Heli (USA)</description>
 		<year>1987</year>
-		<manufacturer>Acclaim</manufacturer>
+		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Tiger-Heli (USA)(1987)(Acclaim).nes" size="65552" crc="1ad8d039"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -21074,6 +21117,14 @@
 		<year>1991</year>
 		<manufacturer>THQ Inc.</manufacturer>
 		<rom name="Where's Waldo (USA)(1991)(THQ).nes" size="262160" crc="e9d532af"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="whitelion" cloneof="ghostlion" romof="ghostlion" sourcefile="nes/d_nes.cpp">
+		<description>White Lion Densetsu: Pyramid no Kanata ni (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Kemco - Tohotowa</manufacturer>
+		<rom name="White Lion Densetsu - Pyramid no Kanata ni (Japan)(1989)(Kemco - Tohotowa).nes" size="262160" crc="dcf53069"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

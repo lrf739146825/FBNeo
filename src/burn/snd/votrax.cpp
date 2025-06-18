@@ -363,7 +363,7 @@ votrax_sc01a_device::votrax_sc01a_device(const machine_config &mconfig, const ch
 }
 #endif
 
-static void ar_dummy_cb(INT32) { };
+static void ar_dummy_cb(INT32) { }
 
 INT32 sc01_read_request()
 {
@@ -479,6 +479,11 @@ static void make_rom(INT32 reva)
 void sc01_set_buffered(INT32 (*pCPUCyclesCB)(), INT32 nCPUMhz)
 {
 	stream.set_buffered(pCPUCyclesCB, nCPUMhz);
+}
+
+void sc01_set_volume(double volume)
+{
+	stream.set_volume(volume);
 }
 
 void sc01_update(INT16 *output, INT32 samples_len)
