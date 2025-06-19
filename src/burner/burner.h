@@ -10,6 +10,11 @@
 #include <assert.h>
 #include <ctype.h>
 
+// Add for conc.cpp
+#include <vector>
+#include <string>
+#include <cstring>
+
 #include "tchar.h"
 
 // Macro to make quoted strings

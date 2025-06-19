@@ -1,13 +1,199 @@
 #include "burner.h"
-#include <vector>
-#include <string>
+
+#if defined(BUILD_WIN32)
+#include <windows.h>
+#else
+#include <iconv.h>
+#include <cerrno>
+#endif
+
+#if defined(BUILD_WIN32)
+/**
+ * @brief Convert a TCHAR string to an ANSI string (Windows implementation).
+ * @param pszInString Input TCHAR string to convert.
+ * @param pszOutString Output buffer for the ANSI string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in bytes.
+ * @return Pointer to the converted ANSI string (pszOutString or static buffer), or NULL on failure.
+ * @note On Windows, uses WideCharToMultiByte for conversion from UTF-16 to ANSI.
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+    static char szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer);
+    }
+
+    // Ensure the output buffer is large enough to hold the converted string
+    if (nOutSize <= 0) {
+        return NULL; // Invalid buffer size
+    }
+
+    // Clear the static buffer if used
+    if (pszOutString == szStringBuffer) {
+        memset(szStringBuffer, 0, sizeof(szStringBuffer));
+    }
+
+    int nBufferSize = nOutSize;
+
+    if (WideCharToMultiByte(CP_ACP, 0, pszInString, -1, pszOutString, nBufferSize, NULL, NULL)) {
+        return pszOutString;
+    }
+
+    return NULL;
+}
+
+/**
+ * @brief Convert an ANSI string to a TCHAR string (Windows implementation).
+ * @param pszInString Input ANSI string to convert.
+ * @param pszOutString Output buffer for the TCHAR string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in TCHARs.
+ * @return Pointer to the converted TCHAR string (pszOutString or static buffer), or NULL on failure.
+ * @note On Windows, uses MultiByteToWideChar for conversion from ANSI to UTF-16.
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+    static TCHAR szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+    }
+
+    // Ensure the output buffer is large enough to hold the converted string
+    if (nOutSize <= 0) {
+        return NULL; // Invalid buffer size
+    }
+
+    int nBufferSize = nOutSize;
+
+    if (MultiByteToWideChar(CP_ACP, 0, pszInString, -1, pszOutString, nBufferSize)) {
+        return pszOutString;
+    }
+
+    return NULL;
+}
+#else // Non-Windows implementation
+#ifdef _UNICODE
+/**
+ * @brief Convert a TCHAR string to an ANSI string (Unicode/iconv implementation).
+ * @param pszInString Input TCHAR string to convert.
+ * @param pszOutString Output buffer for the ANSI string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in bytes.
+ * @return Pointer to the converted ANSI string (pszOutString or static buffer), or NULL on failure.
+ * @note Uses iconv for conversion from WCHAR_T to UTF-8.
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+    static char szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer);
+    }
+
+    iconv_t cd = iconv_open("UTF-8", "WCHAR_T");
+    if (cd == (iconv_t)-1) {
+        return NULL;
+    }
+
+    size_t in_len = wcslen(pszInString) * sizeof(TCHAR);
+    size_t out_len = nOutSize;
+
+    if (iconv(cd, (char**)&pszInString, &in_len, &pszOutString, &out_len) == (size_t)-1) {
+        iconv_close(cd);
+        return NULL;
+    }
+
+    iconv_close(cd);
+    return pszOutString;
+}
+
+/**
+ * @brief Convert an ANSI string to a TCHAR string (Unicode/iconv implementation).
+ * @param pszInString Input ANSI string to convert.
+ * @param pszOutString Output buffer for the TCHAR string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in TCHARs.
+ * @return Pointer to the converted TCHAR string (pszOutString or static buffer), or NULL on failure.
+ * @note Uses iconv for conversion from UTF-8 to WCHAR_T.
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+    static TCHAR szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+    }
+
+    iconv_t cd = iconv_open("WCHAR_T", "UTF-8");
+    if (cd == (iconv_t)-1) {
+        return NULL;
+    }
+
+    size_t in_len = strlen(pszInString);
+    size_t out_len = nOutSize;
+
+    if (iconv(cd, (char**)&pszInString, &in_len, (char**)&pszOutString, &out_len) == (size_t)-1) {
+        iconv_close(cd);
+        return NULL;
+    }
+
+    iconv_close(cd);
+    return pszOutString;
+}
+#else
+/**
+ * @brief Convert a TCHAR string to an ANSI string (non-Unicode implementation).
+ * @param pszInString Input TCHAR string to convert.
+ * @param pszOutString Output buffer for the ANSI string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in bytes.
+ * @return Pointer to the converted ANSI string (pszOutString or static buffer), or NULL on failure.
+ * @note Assumes TCHAR is the same as char (no conversion needed).
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+    static char szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer);
+    }
+
+    if (nOutSize > 0) {
+        snprintf(pszOutString, nOutSize, "%s", pszInString);
+        return pszOutString;
+    }
+    return NULL;
+}
+
+/**
+ * @brief Convert an ANSI string to a TCHAR string (non-Unicode implementation).
+ * @param pszInString Input ANSI string to convert.
+ * @param pszOutString Output buffer for the TCHAR string. If NULL, a static buffer is used.
+ * @param nOutSize Size of the output buffer in TCHARs.
+ * @return Pointer to the converted TCHAR string (pszOutString or static buffer), or NULL on failure.
+ * @note Assumes TCHAR is the same as char (no conversion needed).
+ * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
+ */
+TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+    static TCHAR szStringBuffer[1024];
+    if (!pszOutString) {
+        pszOutString = szStringBuffer;
+        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+    }
+
+    if (nOutSize > 0) {
+        snprintf((char*)pszOutString, nOutSize * sizeof(TCHAR), "%s", pszInString);
+        return pszOutString;
+    }
+    return NULL;
+}
+#endif // _UNICODE
+#endif // BUILD_WIN32
 
 // GameGenie stuff is handled a little differently..
 #define HW_NES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_NES) || ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_FDS) )
 #define HW_SNES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_SNES) )
 #define HW_GGENIE ( HW_NES || HW_SNES )
-std::vector<char> CurrentMameCheatContent; // Global
-std::vector<char> CurrentIniCheatContent; // Global
+std::vector<TCHAR> CurrentMameCheatContent; // Global
+std::vector<TCHAR> CurrentIniCheatContent; // Global
 int usedCheatType = 0; //Global so we'll know if cheatload is already done or which cheat type it uses?
 
 static bool SkipComma(TCHAR** s)
@@ -66,7 +252,7 @@ static void CheatError(TCHAR* pszFilename, INT32 nLineNumber, CheatInfo* pCheat,
 
 // pszFilename only uses for cheaterror as string while iniContent,not as file
 // while no iniContent,process ini File
-static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniContent = NULL)
+static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniContent = NULL)
 {
 #define INSIDE_NOTHING (0xFFFF & (1 << ((sizeof(TCHAR) * 8) - 1)))
 
@@ -81,7 +267,7 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 	CheatInfo* pCurrentCheat = NULL;
 
 	FILE* h = NULL;
-	const char* iniPtr = NULL;
+	const TCHAR* iniPtr = NULL;
 
 	if (iniContent) {
 		iniPtr = iniContent->data();
@@ -108,27 +294,27 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<char>* iniCon
 
 	while (1) {
 		if (iniContent) {
-			if (*iniPtr == '\0') {
+			if (*iniPtr == _T('\0')) {
 				break;
 			}
-			char* p = szLine;
-			while (*iniPtr && *iniPtr != '\n' && (p - szLine) < 8190) {
+			TCHAR* p = szLine;
+			while (*iniPtr && *iniPtr != _T('\n') && (p - szLine) < 8190) {
 				*p++ = *iniPtr++;
 			}
-			if (*iniPtr == '\n' && (p - szLine) < 8190) {
+			if (*iniPtr == _T('\n') && (p - szLine) < 8190) {
 				*p++ = *iniPtr++;
-				*p = '\0';
+				*p = _T('\0');
 			} else if ((p - szLine) == 8190) {
-				*p++ = '\n';
-				*p = '\0';
-				while (*iniPtr && *iniPtr != '\n') {
+				*p++ = _T('\n');
+				*p = _T('\0');
+				while (*iniPtr && *iniPtr != _T('\n')) {
 					iniPtr++;
 				}
-				if (*iniPtr == '\n') {
+				if (*iniPtr == _T('\n')) {
 					iniPtr++;
 				}
 			} else {
-				*p = '\0';
+				*p = _T('\0');
 			}
 		} else {
 			if (_fgetts(szLine, 8192, h) == NULL) {
@@ -444,7 +630,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 			pCurrentCheat->nDefault = 0;							// Set default option
 
 			_tcsncpy (pCurrentCheat->szCheatName, szLine + 5, QUOTE_MAX);
-			pCurrentCheat->szCheatName[nLen-6] = '\0';
+			pCurrentCheat->szCheatName[nLen-6] = _T('\0');
 
 			continue;
 		}
@@ -452,7 +638,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 		if (!_tcsncmp (_T("Default="), szLine, 8) && n >= 0)
 		{
 			_tcsncpy (tmp, szLine + 8, nLen-9);
-			tmp[nLen-9] = '\0';
+			tmp[nLen-9] = _T('\0');
 #if defined(BUILD_WIN32)
 			_stscanf (tmp, _T("%d"), &(pCurrentCheat->nDefault));
 #else
@@ -465,8 +651,8 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 		i = 0, j = 0;
 		while (i < nLen)
 		{
-			if (szLine[i] == '=' && i < 4) j = i+1;
-			if (szLine[i] == ',' || szLine[i] == '\r' || szLine[i] == '\n')
+			if (szLine[i] == _T('=') && i < 4) j = i+1;
+			if (szLine[i] == _T(',') || szLine[i] == _T('\r') || szLine[i] == _T('\n'))
 			{
 				if (pCurrentCheat->pOption[n] == NULL) {
 					pCurrentCheat->pOption[n] = (CheatOption*)malloc(sizeof(CheatOption));
@@ -474,7 +660,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 				memset(pCurrentCheat->pOption[n], 0, sizeof(CheatOption));
 
 				_tcsncpy (pCurrentCheat->pOption[n]->szOptionName, szLine + j, QUOTE_MAX * sizeof(TCHAR));
-				pCurrentCheat->pOption[n]->szOptionName[i-j] = '\0';
+				pCurrentCheat->pOption[n]->szOptionName[i-j] = _T('\0');
 
 				i++; j = i;
 				break;
@@ -487,10 +673,10 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 		{
 			if (i == nLen) break;
 
-			if (szLine[i] == ',' || szLine[i] == '\r' || szLine[i] == '\n')
+			if (szLine[i] == _T(',') || szLine[i] == _T('\r') || szLine[i] == _T('\n'))
 			{
 				_tcsncpy (tmp, szLine + j, i-j);
-				tmp[i-j] = '\0';
+				tmp[i-j] = _T('\0');
 
 				if (nAddress == -1) {
 #if defined(BUILD_WIN32)
@@ -586,22 +772,22 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name)
 	CheatInfo* pCurrentCheat = NULL;
 	_stprintf(gName, _T(":%s:"), name);
 
-	const char* iniPtr = CurrentMameCheatContent.data();
+	const TCHAR* iniPtr = CurrentMameCheatContent.data();
 	while (*iniPtr)
 	{
-		char* s = szLine;
-		while (*iniPtr && *iniPtr != '\n') {
+		TCHAR* s = szLine;
+		while (*iniPtr && *iniPtr != _T('\n')) {
 			*s++ = *iniPtr++;
 		}
 		// szLine should include '\n'
-		if (*iniPtr == '\n') {
+		if (*iniPtr == _T('\n')) {
 			*s++ = *iniPtr++;
 		}
-		*s = '\0';
+		*s = _T('\0');
 
 		nLen = _tcslen (szLine);
 
-		if (szLine[0] == ';') continue;
+		if (szLine[0] == _T(';')) continue;
 
 		/*
 		 // find the cheat flags & 0x80000000 cheats (for debugging) -dink
@@ -634,7 +820,7 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name)
 
 		INT32 c0[16], c1 = 0;					// find colons / break
 		for (INT32 i = 0; i < nLen; i++)
-			if (szLine[i] == ':' || szLine[i] == '\r' || szLine[i] == '\n')
+			if (szLine[i] == _T(':') || szLine[i] == _T('\r') || szLine[i] == _T('\n'))
 				c0[c1++] = i;
 
 		tmpcpy(1);						// control flags
@@ -849,7 +1035,7 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 			
 			// Add the current line to CurrentMameCheatContent
 			for (TCHAR* p = szLine; *p; ++p) {
-				if (*p != '\0') {
+				if (*p != _T('\0')) {
 					CurrentMameCheatContent.push_back(*p);
 				}
 			}
@@ -906,14 +1092,14 @@ static INT32 ConfigParseMAMEFile()
 	return ret;
 }
 
-static INT32 LoadIniContentFromZip(const char* DrvName, const char* zipFileName, std::vector<char>& iniContent) {
-	TCHAR iniFileName[MAX_PATH] = "";
-	sprintf(iniFileName, "%s.ini", DrvName);
+static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& iniContent) {
+	TCHAR iniFileName[MAX_PATH] = {0};
+	_stprintf(iniFileName,_T("%s.ini"), DrvName);
 
-	TCHAR zipCheatPath[MAX_PATH];
-	sprintf(zipCheatPath, "%s%s", szAppCheatsPath, zipFileName);
+	TCHAR zipCheatPath[MAX_PATH] = {0};
+	_stprintf(zipCheatPath, _T("%s%s"), szAppCheatsPath, zipFileName);
 
-	if (ZipOpen((char*)zipCheatPath) != 0) {
+	if (ZipOpen(TCHAR2ANSI(zipCheatPath,NULL,0)) != 0) {
 		ZipClose();
 		return 1;
 	}
@@ -929,22 +1115,35 @@ static INT32 LoadIniContentFromZip(const char* DrvName, const char* zipFileName,
 	INT32 ret = 1;
 
 	for (int i = 0; i < pnListCount; i++) {
-		if (strcmp(pList[i].szName, iniFileName) == 0) {
-			void* dest = malloc(pList[i].nLen);
-			if (dest == NULL) {
+		if (_tcsicmp(ANSI2TCHAR(pList[i].szName,NULL,0), iniFileName) == 0) {
+			std::vector<char> dest(pList[i].nLen + 1);
+
+			INT32 pnWrote = 0;
+
+			if (ZipLoadFile(reinterpret_cast<UINT8*>(dest.data()), pList[i].nLen, &pnWrote, i) != 0){
 				break;
 			}
 
-			INT32 pnWrote = 0;
-			if (ZipLoadFile((UINT8*)dest, pList[i].nLen, &pnWrote, i) == 0) {
-				char* content = (char*)dest;
-				content[pnWrote / sizeof(char)] = 0;
+            if (pnWrote <= static_cast<INT32>(dest.size())) {
+                dest[pnWrote] = '\0';
+            } else {
+                break;
+            }
+            // Decode UTF-8 to platform-specific encoding
+#if defined(BUILD_WIN32)
+            int wide_len = MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, NULL, 0);
+            TCHAR* wideContent = new TCHAR[wide_len];
+            MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, wideContent, wide_len);
+            size_t wideLen = _tcslen(wideContent);
+            iniContent.insert(iniContent.end(), wideContent, wideContent + wideLen);
+            delete[] wideContent;
+#else
+            // Linux/macOS: UTF-8 is usually the default, so no conversion is needed
+            size_t len = dest.size();
+            iniContent.insert(iniContent.end(), reinterpret_cast<TCHAR*>(dest.data()), reinterpret_cast<TCHAR*>(dest.data()) + len);
+#endif
 
-				iniContent.insert(iniContent.end(), content, content + pnWrote);
-
-				free(dest);
-				ret = 0;
-			}
+            ret = 0;
 			break;
 		}
 	}
@@ -961,7 +1160,7 @@ static INT32 LoadIniContentFromZip(const char* DrvName, const char* zipFileName,
 }
 
  //Extract matched INI in cheat.zip or 7z
-static INT32 ExtractIniFromZip(const char* DrvName, const char* zipFileName, std::vector<char>& CurrentIniCheat) {
+static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheat) {
 
 	if (LoadIniContentFromZip(DrvName, zipFileName, CurrentIniCheatContent) != 0) {
 		return 1;
@@ -972,34 +1171,34 @@ static INT32 ExtractIniFromZip(const char* DrvName, const char* zipFileName, std
 	//max searching included files 5 depth
 	while (processInclude && depth < 5) {
 		processInclude = false;
-		std::vector<char> newContent;
-		const char* iniPtr = CurrentIniCheatContent.data();
-		std::vector<char> szLine;
+		std::vector<TCHAR> newContent;
+		const TCHAR* iniPtr = CurrentIniCheatContent.data();
+		std::vector<TCHAR> szLine;
 
 		// Let's check each line of CurrentIniCheatContent
 		// Looking for include file and hooking them to CurrentIniCheatContent
 		while (*iniPtr) {
 			szLine.clear();
-			while (*iniPtr && *iniPtr != '\n') {
+			while (*iniPtr && *iniPtr != _T('\n')) {
 				szLine.push_back(*iniPtr++);
 			}
-			if (*iniPtr == '\n') {
+			if (*iniPtr == _T('\n')) {
 				szLine.push_back(*iniPtr++);
 			}
-			szLine.push_back('\0');
+			szLine.push_back(_T('\0'));
 
-			char* t;
-			if ((t = LabelCheck(szLine.data(), "include")) != 0) {
+			TCHAR* t;
+			if ((t = LabelCheck(szLine.data(), _T("include"))) != 0) {
 				processInclude = true;
-				char* szQuote = NULL;
+				TCHAR* szQuote = NULL;
 				QuoteRead(&szQuote, NULL, t);
 
 				if (szQuote) {
-					std::vector<char> includedContent;
+					std::vector<TCHAR> includedContent;
 
 					if (LoadIniContentFromZip(szQuote, zipFileName, includedContent) == 0) {
 						newContent.insert(newContent.end(), includedContent.begin(), includedContent.end());
-						newContent.push_back('\n');
+						newContent.push_back(_T('\n'));
 					}
 				}
 			} else {
@@ -1015,7 +1214,7 @@ static INT32 ExtractIniFromZip(const char* DrvName, const char* zipFileName, std
 }
 
 INT32 ConfigCheatLoad() {
-	TCHAR szFilename[MAX_PATH] = "";
+	TCHAR szFilename[MAX_PATH] = _T("");
 	INT32 ret = 1;
 
 	// During running game,while ConfigCheatLoad is called the second time or more,
@@ -1031,17 +1230,17 @@ INT32 ConfigCheatLoad() {
 	switch (usedCheatType) {
 		case 0:
 			if (ConfigParseMAMEFile()) {
-				ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), "cheat", CurrentIniCheatContent);
+				ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
 				if (ret == 0) {
 					// pszFilename only uses for cheaterror as string,not a file
-					sprintf(szFilename, "%s%s.ini(cheat.zip/7z)", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+					_stprintf(szFilename, _T("%s%s.ini(cheat.zip/7z)"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 					ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 				}
 				if (ret > 0) {
-					sprintf(szFilename, "%s%s.ini", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+					_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 					ret = ConfigParseFile(szFilename,NULL);
 					if (ret != 0) {
-						sprintf(szFilename, "%s%s.dat", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+						_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 						ret = ConfigParseNebulaFile(szFilename);
 						if (ret != 0) {
 							usedCheatType = 6;
@@ -1058,15 +1257,15 @@ INT32 ConfigCheatLoad() {
 			break;
 		case 3:
 			// pszFilename only uses for cheaterror as string, not a file in this step
-			sprintf(szFilename, "%s%s.ini(cheat.zip/7z)", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			_stprintf(szFilename, _T("%s%s.ini(cheat.zip/7z)"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 			ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 			break;
 		case 4:
-			sprintf(szFilename, "%s%s.ini", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 			ret = ConfigParseFile(szFilename, NULL);
 			break;
 		case 5:
-			sprintf(szFilename, "%s%s.dat", szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 			ret = ConfigParseNebulaFile(szFilename);
 			break;
 		default: //case 6 aswell
