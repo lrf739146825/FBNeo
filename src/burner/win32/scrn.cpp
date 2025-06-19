@@ -69,9 +69,10 @@ static int bBackFromHibernation = 0;
 HWND hwndChat = NULL;
 WNDPROC pOldWndProc = NULL;
 
-bool bRescanRoms = false;
+bool bRescanRoms   = false;
+bool bQuicklyCheck = false;
 
-static bool bDrag = false;
+static bool bDrag  = false;
 static int nDragX, nDragY;
 static int nOldWindowX, nOldWindowY;
 static int nLeftButtonX, nLeftButtonY;
@@ -435,7 +436,7 @@ INT32 CreateAllDatfilesWindows(bool bSilent, const TCHAR* pszSpecDir)
 		memset(&bInfo, 0, sizeof(bInfo));
 		bInfo.hwndOwner = hScrnWnd;
 		bInfo.pszDisplayName = buffer;
-		bInfo.lpszTitle = FBALoadStringEx(hAppInst, IDS_ROMS_SELECT_DIR, true);
+		bInfo.lpszTitle = FBALoadStringEx(hAppInst, IDS_SELECT_DIR, true);
 		bInfo.ulFlags = BIF_EDITBOX | BIF_RETURNONLYFSDIRS;
 
 		pItemIDList = SHBrowseForFolder(&bInfo);
@@ -1035,7 +1036,7 @@ int BurnerLoadDriver(TCHAR *szDriverName)
 	DrvExit();				// This will exit RomData mode
 
 	INT32 nDrvIdx = -1;
-	bool bRDMode = false, bFinder = false;;
+	bool bRDMode = false, bFinder = false;
 	TCHAR szRDDatBackup[MAX_PATH] = { 0 };
 
 	if (bFinder = FindZipNameFromDats(szAppRomdataPath, TCHARToANSI(szBuf, NULL, 0), szRDDatBackup)) {
@@ -1235,7 +1236,9 @@ static void OnCommand(HWND /*hDlg*/, int id, HWND /*hwndCtl*/, UINT codeNotify)
 			extern bool bDialogCancel;
 
 			if (nGame >= 0 && bDialogCancel == false) {
-				DrvExit();
+#if 0
+				DrvExit();						// Already present in DrvInit()
+#endif
 				DrvInit(nGame, true);			// Init the game driver
 				MenuEnableItems();
 				bAltPause = 0;
@@ -2354,6 +2357,10 @@ static void OnCommand(HWND /*hDlg*/, int id, HWND /*hwndCtl*/, UINT codeNotify)
 
 		case MENU_AUTOSCANGAMELIST:
 			bSkipStartupCheck = !bSkipStartupCheck;
+			break;
+
+		case MENU_QUICKSCANGAMELIST:
+			bQuicklyCheck = !bQuicklyCheck;
 			break;
 
 		case MENU_SAVEHISCORES:

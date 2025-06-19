@@ -799,9 +799,9 @@ static INT32 GameInpDigital2RetroInpKey(struct GameInp* pgi, unsigned port, unsi
 	descriptor.description = szn;
 	normal_input_descriptors.push_back(descriptor);
 	bButtonMapped = true;
-	bDigitalMappingDone[port][id] = true;
 	if (device == RETRO_DEVICE_JOYPAD)
 	{
+		bDigitalMappingDone[port][id] = true;
 		switch (id)
 		{
 			case RETRO_DEVICE_ID_JOYPAD_UP:
@@ -2598,6 +2598,9 @@ static INT32 GameInpStandardOne(struct GameInp* pgi, INT32 nPlayer, char* szb, c
 	// note : some games need to be fixed for this to work (player number must be set in szName)
 	if (nMahjongKeyboards > 0)
 	{
+		// https://github.com/finalburnneo/FBNeo/issues/2117
+		if (nPlayer > 0) return 0;
+
 		int mahjongKeyboardPort = nMaxPlayers+nPlayer;
 		if (strcmp("mah a", szb) == 0)
 			GameInpDigital2RetroInpKey(pgi, mahjongKeyboardPort, RETROK_a, szn, RETRO_DEVICE_KEYBOARD);

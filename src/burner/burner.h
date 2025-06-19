@@ -10,6 +10,11 @@
 #include <assert.h>
 #include <ctype.h>
 
+// Add for conc.cpp
+#include <vector>
+#include <string>
+#include <cstring>
+
 #include "tchar.h"
 
 // Macro to make quoted strings
@@ -262,6 +267,7 @@ INT32 __cdecl ZipLoadOneFile(char* arcName, const char* fileName, void** Dest, I
 // retro_romdata.cpp
 
 extern TCHAR szRomdataName[MAX_PATH];
+TCHAR* AdaptiveEncodingReads(const TCHAR* pszFileName);
 
 // retro_ips.cpp 
 

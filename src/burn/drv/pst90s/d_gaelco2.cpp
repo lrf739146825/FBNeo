@@ -1188,6 +1188,39 @@ static INT32 DrvInit(INT32 game_selector)
 		}
 		break;
 
+		case 5: // touchgona
+		{
+			Drv68KROM[0] = 0xfe; // initial stack pointer in ic57 points to ROM not RAM, but checksum matched label?!
+
+			if (BurnLoadRom(DrvGfxROM0 + 0x1000000, 2, 1)) return 1;
+			if (BurnLoadRom(DrvGfxROM0 + 0x1080000, 3, 1)) return 1;
+			if (BurnLoadRom(DrvGfxROM0 + 0x1100000, 4, 1)) return 1;
+			if (BurnLoadRom(DrvGfxROM0 + 0x1180000, 5, 1)) return 1;
+
+			INT32 offset = 0;
+			INT32 i;
+			for (i = 6; i < 25; i += 2) {
+				if (BurnLoadRom(DrvGfxROM + offset + 0x0000000, i  , 2)) return 1;
+				if (BurnLoadRom(DrvGfxROM + offset + 0x0000001, i+1, 2)) return 1;
+				offset += 0x100000;
+				if (offset == 0x0600000) offset += 0x200000;
+			}
+
+			BurnLoadRom(DrvMCUROM, 26, 1);
+			BurnLoadRom(DrvMCUiRAM, 27, 1);
+
+			gaelco2_split_gfx(DrvGfxROM, DrvGfxROM0, 0x0000000, 0x0400000, 0x0000000, 0x0400000);
+			gaelco2_split_gfx(DrvGfxROM, DrvGfxROM0, 0x0400000, 0x0200000, 0x0200000, 0x0600000);
+			gaelco2_split_gfx(DrvGfxROM, DrvGfxROM0, 0x0800000, 0x0400000, 0x0800000, 0x0c00000);
+
+			DrvGfxDecode(0x1400000);
+
+			nCPUClockSpeed = 16000000;
+
+			gaelcosnd_start(DrvGfxROM0, 0 * 0x0400000, 1 * 0x0400000, 0, 0);
+		}
+		break;
+
 		case 6: // bang
 		{
 			if (BurnLoadRom(DrvGfxROM0 + 0x0000000,  2, 1)) return 1;
@@ -1762,9 +1795,46 @@ static INT32 DrvScan(INT32 nAction, INT32 *pnMin)
 }
 
 
-// Maniac Square (protected, version 1.0, checksum DEEE)
+// Maniac Square (unprotected, version 1.0, checksum BB73)
+// REF 940411, unprotected
 
 static struct BurnRomInfo maniacsqRomDesc[] = {
+	{ "d8-d15.1m",		0x020000, 0x9121d1b6, 0 | BRF_PRG | BRF_ESS }, //  0 68k Code
+	{ "d0-d7.1m",		0x020000, 0xa95cfd2a, 0 | BRF_PRG | BRF_ESS }, //  1
+
+	{ "d0-d7.4m",		0x080000, 0xd8551b2f, 1 | BRF_GRA },           //  2 Graphics & Samples
+	{ "d8-d15.4m",		0x080000, 0xb269c427, 1 | BRF_GRA },           //  3
+	{ "d16-d23.1m",		0x020000, 0xaf4ea5e7, 1 | BRF_GRA },           //  4
+	{ "d24-d31.1m",		0x020000, 0x578c3588, 1 | BRF_GRA },           //  5
+
+	{ "mu.6_4769_pal16l8.bin",		0x104, 0x00aedab5, 0 | BRF_OPT },  //  6 plds
+	{ "mu.6_585b_palce16v8.bin",	0x117, 0x6ba240e3, 0 | BRF_OPT },  //  7
+	{ "mu.c5_3a65_pal16r8.bin",		0x104, 0x27b1ca8b, 0 | BRF_OPT },  //  8
+};
+
+STD_ROM_PICK(maniacsq)
+STD_ROM_FN(maniacsq)
+
+static INT32 maniacsqInit()
+{
+	return DrvInit(1);
+}
+
+struct BurnDriver BurnDrvManiacsq = {
+	"maniacsq", NULL, NULL, NULL, "1996",
+	"Maniac Square (unprotected, version 1.0, checksum BB73)\0", NULL, "Gaelco", "Miscellaneous",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_POST90S, GBF_PUZZLE, 0,
+	NULL, maniacsqRomInfo, maniacsqRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
+	maniacsqInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x10000,
+	320, 240, 4, 3
+};
+
+
+// Maniac Square (protected, version 1.0, checksum DEEE)
+// REF 940411, protected
+
+static struct BurnRomInfo maniacsqaRomDesc[] = {
 	{ "tms27c010a.msu45",   0x020000, 0xfa44c907, 0 | BRF_PRG | BRF_ESS },       //  0 68k Code
 	{ "tms27c010a.msu44",   0x020000, 0x42e20121, 0 | BRF_PRG | BRF_ESS },       //  1
 
@@ -1780,28 +1850,24 @@ static struct BurnRomInfo maniacsqRomDesc[] = {
 	{ "mu.c5_3a65_pal16r8.bin",		0x104, 0x27b1ca8b, 0 | BRF_OPT },            //  9
 };
 
-STD_ROM_PICK(maniacsq)
-STD_ROM_FN(maniacsq)
+STD_ROM_PICK(maniacsqa)
+STD_ROM_FN(maniacsqa)
 
-static INT32 maniacsqInit()
-{
-	return DrvInit(1);
-}
-
-struct BurnDriver BurnDrvManiacsq = {
-	"maniacsq", NULL, NULL, NULL, "1996",
+struct BurnDriver BurnDrvManiacsqa = {
+	"maniacsqa", "maniacsq", NULL, NULL, "1996",
 	"Maniac Square (protected, version 1.0, checksum DEEE)\0", NULL, "Gaelco", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_POST90S, GBF_PUZZLE, 0,
-	NULL, maniacsqRomInfo, maniacsqRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_POST90S, GBF_PUZZLE, 0,
+	NULL, maniacsqaRomInfo, maniacsqaRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
 	maniacsqInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x10000,
 	320, 240, 4, 3
 };
 
 
 // Maniac Square (protected, version 1.0, checksum CF2D)
+// REF 940411, protected
 
-static struct BurnRomInfo maniacsqaRomDesc[] = {
+static struct BurnRomInfo maniacsqbRomDesc[] = {
 	{ "ms_u_45.u45",	0x020000, 0x98f4fdc0, 0 | BRF_PRG | BRF_ESS },           //  0 68k Code
 	{ "ms_u_44.u44",	0x020000, 0x1785dd41, 0 | BRF_PRG | BRF_ESS },           //  1
 
@@ -1817,45 +1883,46 @@ static struct BurnRomInfo maniacsqaRomDesc[] = {
 	{ "mu.c5_3a65_pal16r8.bin",		0x104, 0x27b1ca8b, 0 | BRF_OPT },            //  9
 };
 
-STD_ROM_PICK(maniacsqa)
-STD_ROM_FN(maniacsqa)
+STD_ROM_PICK(maniacsqb)
+STD_ROM_FN(maniacsqb)
 
-struct BurnDriver BurnDrvManiacsqa = {
-	"maniacsqa", "maniacsq", NULL, NULL, "1996",
+struct BurnDriver BurnDrvManiacsqb = {
+	"maniacsqb", "maniacsq", NULL, NULL, "1996",
 	"Maniac Square (protected, version 1.0, checksum CF2D)\0", NULL, "Gaelco", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_POST90S, GBF_PUZZLE, 0,
-	NULL, maniacsqaRomInfo, maniacsqaRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
+	NULL, maniacsqbRomInfo, maniacsqbRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
 	maniacsqInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x10000,
 	320, 240, 4, 3
 };
 
 
-// Maniac Square (unprotected, version 1.0, checksum BB73)
+// Maniac Square (unprotected, version 1.0, checksum BEAE)
+// unprotected
 
-static struct BurnRomInfo maniacsquRomDesc[] = {
-	{ "d8-d15.1m",		0x020000, 0x9121d1b6, 0 | BRF_PRG | BRF_ESS }, //  0 68k Code
-	{ "d0-d7.1m",		0x020000, 0xa95cfd2a, 0 | BRF_PRG | BRF_ESS }, //  1
+static struct BurnRomInfo maniacsqcRomDesc[] = {
+	{ "ms_45_no_dallas_23-5_27c010.bin",	0x020000, 0xccf5724f, 0 | BRF_PRG | BRF_ESS }, //  0 68k Code
+	{ "ms_44_no_dallas_23-5_27c010.bin",	0x020000, 0x9aeaa141, 0 | BRF_PRG | BRF_ESS }, //  1
 
-	{ "d0-d7.4m",		0x080000, 0xd8551b2f, 1 | BRF_GRA },           //  2 Graphics & Samples
-	{ "d8-d15.4m",		0x080000, 0xb269c427, 1 | BRF_GRA },           //  3
-	{ "d16-d23.1m",		0x020000, 0xaf4ea5e7, 1 | BRF_GRA },           //  4
-	{ "d24-d31.1m",		0x020000, 0x578c3588, 1 | BRF_GRA },           //  5
+	{ "ms1",			0x080000, 0xd8551b2f, 1 | BRF_GRA },           //  2 Graphics & Samples
+	{ "ms2",			0x080000, 0xb269c427, 1 | BRF_GRA },           //  3
+	{ "ms3",			0x020000, 0xaf4ea5e7, 1 | BRF_GRA },           //  4
+	{ "ms4",			0x020000, 0x578c3588, 1 | BRF_GRA },           //  5
 
 	{ "mu.6_4769_pal16l8.bin",		0x104, 0x00aedab5, 0 | BRF_OPT },  //  6 plds
 	{ "mu.6_585b_palce16v8.bin",	0x117, 0x6ba240e3, 0 | BRF_OPT },  //  7
 	{ "mu.c5_3a65_pal16r8.bin",		0x104, 0x27b1ca8b, 0 | BRF_OPT },  //  8
 };
 
-STD_ROM_PICK(maniacsqu)
-STD_ROM_FN(maniacsqu)
+STD_ROM_PICK(maniacsqc)
+STD_ROM_FN(maniacsqc)
 
-struct BurnDriver BurnDrvManiacsqu = {
-	"maniacsqu", "maniacsq", NULL, NULL, "1996",
-	"Maniac Square (unprotected, version 1.0, checksum BB73)\0", NULL, "Gaelco", "Miscellaneous",
+struct BurnDriver BurnDrvManiacsqc = {
+	"maniacsqc", "maniacsq", NULL, NULL, "1996",
+	"Maniac Square (unprotected, version 1.0, checksum BEAE)\0", NULL, "Gaelco", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_POST90S, GBF_PUZZLE, 0,
-	NULL, maniacsquRomInfo, maniacsquRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
+	NULL, maniacsqcRomInfo, maniacsqcRomName, NULL, NULL, NULL, NULL, ManiacsqInputInfo, ManiacsqDIPInfo,
 	maniacsqInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x10000,
 	320, 240, 4, 3
 };
@@ -2187,28 +2254,48 @@ struct BurnDriver BurnDrvTouchgoa = {
 // 14/Nov/1995
 
 static struct BurnRomInfo touchgonaRomDesc[] = {
-	{ "v_us_56_f546_14-11.ic56",	0x080000, 0x3bfe2010, 1 | BRF_PRG | BRF_ESS }, //  0 68k Code
-	{ "v_us_57_d888_14-11.ic57",	0x080000, 0xc8a9e7bd, 1 | BRF_PRG | BRF_ESS }, //  1
+	{ "v_us_56_f546_14-11.ic56",   0x080000, 0x3bfe2010, 1 | BRF_PRG | BRF_ESS }, //  0 68k Code
+	{ "v_us_57_d888_14-11.ic57",   0x080000, 0xc8a9e7bd, 1 | BRF_PRG | BRF_ESS }, //  1
 
-	{ "tg_ic69.ic69",				0x200000, 0x18bb12d4, 2 | BRF_GRA },           //  2 Graphics & Samples
-	{ "tg_ic65.ic65",				0x400000, 0x91b89c7c, 2 | BRF_GRA },           //  3
-	{ "tg_ic66.ic66",				0x200000, 0x52682953, 2 | BRF_GRA },           //  4
-	{ "tg_ic67.ic67",				0x400000, 0xc0a2ce5b, 2 | BRF_GRA },           //  5
+	{ "tg_e0_36e8_27c040.bin",     0x080000, 0x5b17a97a, 2 | BRF_GRA },           //  2 Graphics & Samples
+	{ "tg_e1_f282_27c4001.bin",    0x080000, 0x4471097f, 2 | BRF_GRA },           //  3
+	{ "tg_e2_4b24_27c4001.bin",    0x080000, 0x73a3fe2f, 2 | BRF_GRA },           //  4
+	{ "tg_e3_aed9_27c4001.bin",    0x080000, 0xd0b1422e, 2 | BRF_GRA },           //  5
+	{ "tg_a0_193f_27c040.bin",     0x080000, 0x41c90162, 2 | BRF_GRA },           //  6
+	{ "tg_b0_fb48_27c040.bin",     0x080000, 0xfe8eb187, 2 | BRF_GRA },           //  7
+	{ "tg_a1_5dce_27c4001.bin",    0x080000, 0x491238f9, 2 | BRF_GRA },           //  8
+	{ "tg_b1_ac00_27c4001.bin",    0x080000, 0x8860b58d, 2 | BRF_GRA },           //  9
+	{ "tg_a2_d081_27c040.bin",     0x080000, 0x1586253d, 2 | BRF_GRA },           // 10
+	{ "tg_b2_1b47_27c4001.bin",    0x080000, 0x2f03c5f5, 2 | BRF_GRA },           // 11
+	{ "tg_a3_044b_27c040.bin",     0x080000, 0xed8a7fb9, 2 | BRF_GRA },           // 12
+	{ "tg_b3_4da7_27c040.bin",     0x080000, 0xeacc3fb2, 2 | BRF_GRA },           // 13
+	{ "tg_a4_8a5c_27c040.bin",     0x080000, 0x7fb87c24, 2 | BRF_GRA },           // 14
+	{ "tg_b4_15b6_27c040.bin",     0x080000, 0x22cb5327, 2 | BRF_GRA },           // 15
+	{ "tg_a5_aab8_27c040.bin",     0x080000, 0x74857bb1, 2 | BRF_GRA },           // 16
+	{ "tg_b5_5da0_27c040.bin",     0x080000, 0xb6ad12bc, 2 | BRF_GRA },           // 17
+	{ "tg_c0_a325_27c040.bin",     0x080000, 0xfafcb7f8, 2 | BRF_GRA },           // 18
+	{ "tg_d0_3d37_27c4001.bin",    0x080000, 0x1e1fc30a, 2 | BRF_GRA },           // 19
+	{ "tg_c1_afd5_27c040.bin",     0x080000, 0x458167dc, 2 | BRF_GRA },           // 20
+	{ "tg_d1_b966_27c040.bin",     0x080000, 0xe9b9ba8a, 2 | BRF_GRA },           // 21
+	{ "tg_c2_0610_27c040.bin",     0x080000, 0x85c2c678, 2 | BRF_GRA },           // 22
+	{ "tg_d2_5aca_27c4001.bin",    0x080000, 0xa0d0f560, 2 | BRF_GRA },           // 23
+	{ "tg_c3_8d08_27c040.bin",     0x080000, 0x8364f252, 2 | BRF_GRA },           // 24
+	{ "tg_d3_e7dd_27c040.bin",     0x080000, 0xda2800c0, 2 | BRF_GRA },           // 25
 
-	{ "touchgo_ds5002fp_sram.bin", 	0x8000, 0x6a238adb, 4 | BRF_PRG | BRF_ESS },   //  6 Dallas MCU
-	{ "touchgo_scratch",		   	0x0080, 0xf9ca54ff, 4 | BRF_PRG | BRF_ESS },   //  7 Dallas MCU internal RAM
+	{ "touchgo_ds5002fp_sram.bin", 0x008000, 0x6a238adb, 4 | BRF_PRG | BRF_ESS }, // 26 Dallas MCU
+	{ "touchgo_scratch",           0x000080, 0xf9ca54ff, 4 | BRF_PRG | BRF_ESS }, // 27 Dallas MCU internal RAM
 
-	{ "c5_3a65_pal16r8.bin",		0x104, 0x27b1ca8b, 0 | BRF_OPT },              //  8 plds
-	{ "mu.6a_5083_gal18v6qs.bin",	0x117, 0xc6758737, 0 | BRF_OPT },              //  9
-	{ "mu.8_777d_gal20v8.bin",		0x157, 0x01cdc724, 0 | BRF_OPT },              // 10
-	{ "mu_8_668b_pal20l8.bin",		0x144, 0x4145d424, 0 | BRF_OPT },              // 11
+	{ "c5_3a65_pal16r8.bin",       0x000104, 0x27b1ca8b, 0 | BRF_OPT },           // 28 plds
+	{ "mu.6a_5083_gal18v6qs.bin",  0x000117, 0xc6758737, 0 | BRF_OPT },           // 29
+	{ "mu.8_777d_gal20v8.bin",     0x000157, 0x01cdc724, 0 | BRF_OPT },           // 30
+	{ "mu_8_668b_pal20l8.bin",     0x000144, 0x4145d424, 0 | BRF_OPT },           // 31
 };
 
 STD_ROM_PICK(touchgona)
 STD_ROM_FN(touchgona)
 
 static INT32 touchgonaInit() {
-	INT32 rc = touchgoInit();
+	INT32 rc = DrvInit(5);
 
 	if (!rc) {
 		Drv68KROM[1^1] = 0xfe;
