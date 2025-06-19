@@ -799,9 +799,9 @@ static INT32 GameInpDigital2RetroInpKey(struct GameInp* pgi, unsigned port, unsi
 	descriptor.description = szn;
 	normal_input_descriptors.push_back(descriptor);
 	bButtonMapped = true;
-	bDigitalMappingDone[port][id] = true;
 	if (device == RETRO_DEVICE_JOYPAD)
 	{
+		bDigitalMappingDone[port][id] = true;
 		switch (id)
 		{
 			case RETRO_DEVICE_ID_JOYPAD_UP:
