@@ -8,138 +8,141 @@
 #endif
 
 #if defined(BUILD_WIN32)
+
 /**
- * @brief Convert a TCHAR string to an ANSI string (Windows implementation).
+ * @brief Convert a TCHAR string to a UTF-8 string (Windows implementation).
  * @param pszInString Input TCHAR string to convert.
- * @param pszOutString Output buffer for the ANSI string. If NULL, a static buffer is used.
+ * @param pszOutString Output buffer for the UTF-8 string. If NULL, a static buffer is used.
  * @param nOutSize Size of the output buffer in bytes.
- * @return Pointer to the converted ANSI string (pszOutString or static buffer), or NULL on failure.
- * @note On Windows, uses WideCharToMultiByte for conversion from UTF-16 to ANSI.
+ * @return Pointer to the converted UTF-8 string (pszOutString or static buffer), or NULL on failure.
+ * @note On Windows, uses WideCharToMultiByte for conversion from UTF-16 to UTF-8.
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
-    static char szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer);
-    }
+char* TCHAR2CHAR(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+	static char szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer);
+	}
 
-    // Ensure the output buffer is large enough to hold the converted string
-    if (nOutSize <= 0) {
-        return NULL; // Invalid buffer size
-    }
+	if (nOutSize <= 0) {
+		return NULL; // Invalid buffer size
+	}
 
-    // Clear the static buffer if used
-    if (pszOutString == szStringBuffer) {
-        memset(szStringBuffer, 0, sizeof(szStringBuffer));
-    }
+	if (pszOutString == szStringBuffer) {
+		memset(szStringBuffer, 0, sizeof(szStringBuffer));
+	}
 
-    int nBufferSize = nOutSize;
+	int nBufferSize = nOutSize;
 
-    if (WideCharToMultiByte(CP_ACP, 0, pszInString, -1, pszOutString, nBufferSize, NULL, NULL)) {
-        return pszOutString;
-    }
+	if (WideCharToMultiByte(CP_UTF8, 0, pszInString, -1, pszOutString, nBufferSize, NULL, NULL)) {
+		return pszOutString;
+	}
 
-    return NULL;
+	return NULL;
 }
 
 /**
- * @brief Convert an ANSI string to a TCHAR string (Windows implementation).
- * @param pszInString Input ANSI string to convert.
+ * @brief Convert a UTF-8 string to a TCHAR string (Windows implementation).
+ * @param pszInString Input UTF-8 string to convert.
  * @param pszOutString Output buffer for the TCHAR string. If NULL, a static buffer is used.
  * @param nOutSize Size of the output buffer in TCHARs.
  * @return Pointer to the converted TCHAR string (pszOutString or static buffer), or NULL on failure.
- * @note On Windows, uses MultiByteToWideChar for conversion from ANSI to UTF-16.
+ * @note On Windows, uses MultiByteToWideChar for conversion from UTF-8 to UTF-16.
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
-    static TCHAR szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
-    }
+TCHAR* CHAR2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+	static TCHAR szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+	}
 
-    // Ensure the output buffer is large enough to hold the converted string
-    if (nOutSize <= 0) {
-        return NULL; // Invalid buffer size
-    }
+	if (nOutSize <= 0) {
+		return NULL; // Invalid buffer size
+	}
 
-    int nBufferSize = nOutSize;
+	int nBufferSize = nOutSize;
 
-    if (MultiByteToWideChar(CP_ACP, 0, pszInString, -1, pszOutString, nBufferSize)) {
-        return pszOutString;
-    }
+	if (MultiByteToWideChar(CP_UTF8, 0, pszInString, -1, pszOutString, nBufferSize)) {
+		return pszOutString;
+	}
 
-    return NULL;
+	return NULL;
 }
+
 #else // Non-Windows implementation
+
 #ifdef _UNICODE
+
 /**
- * @brief Convert a TCHAR string to an ANSI string (Unicode/iconv implementation).
+ * @brief Convert a TCHAR string to a UTF-8 string (Unicode/iconv implementation).
  * @param pszInString Input TCHAR string to convert.
- * @param pszOutString Output buffer for the ANSI string. If NULL, a static buffer is used.
+ * @param pszOutString Output buffer for the UTF-8 string. If NULL, a static buffer is used.
  * @param nOutSize Size of the output buffer in bytes.
- * @return Pointer to the converted ANSI string (pszOutString or static buffer), or NULL on failure.
+ * @return Pointer to the converted UTF-8 string (pszOutString or static buffer), or NULL on failure.
  * @note Uses iconv for conversion from WCHAR_T to UTF-8.
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
-    static char szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer);
-    }
+char* TCHAR2CHAR(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+	static char szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer);
+	}
 
-    iconv_t cd = iconv_open("UTF-8", "WCHAR_T");
-    if (cd == (iconv_t)-1) {
-        return NULL;
-    }
+	iconv_t cd = iconv_open("UTF-8", "WCHAR_T");
+	if (cd == (iconv_t)-1) {
+		return NULL;
+	}
 
-    size_t in_len = wcslen(pszInString) * sizeof(TCHAR);
-    size_t out_len = nOutSize;
+	size_t in_len = wcslen(pszInString) * sizeof(TCHAR);
+	size_t out_len = nOutSize;
 
-    if (iconv(cd, (char**)&pszInString, &in_len, &pszOutString, &out_len) == (size_t)-1) {
-        iconv_close(cd);
-        return NULL;
-    }
+	if (iconv(cd, (char**)&pszInString, &in_len, &pszOutString, &out_len) == (size_t)-1) {
+		iconv_close(cd);
+		return NULL;
+	}
 
-    iconv_close(cd);
-    return pszOutString;
+	iconv_close(cd);
+	return pszOutString;
 }
 
 /**
- * @brief Convert an ANSI string to a TCHAR string (Unicode/iconv implementation).
- * @param pszInString Input ANSI string to convert.
+ * @brief Convert a UTF-8 string to a TCHAR string (Unicode/iconv implementation).
+ * @param pszInString Input UTF-8 string to convert.
  * @param pszOutString Output buffer for the TCHAR string. If NULL, a static buffer is used.
  * @param nOutSize Size of the output buffer in TCHARs.
  * @return Pointer to the converted TCHAR string (pszOutString or static buffer), or NULL on failure.
  * @note Uses iconv for conversion from UTF-8 to WCHAR_T.
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
-    static TCHAR szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
-    }
+TCHAR* CHAR2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+	static TCHAR szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+	}
 
-    iconv_t cd = iconv_open("WCHAR_T", "UTF-8");
-    if (cd == (iconv_t)-1) {
-        return NULL;
-    }
+	iconv_t cd = iconv_open("WCHAR_T", "UTF-8");
+	if (cd == (iconv_t)-1) {
+		return NULL;
+	}
 
-    size_t in_len = strlen(pszInString);
-    size_t out_len = nOutSize;
+	size_t in_len = strlen(pszInString);
+	size_t out_len = nOutSize;
 
-    if (iconv(cd, (char**)&pszInString, &in_len, (char**)&pszOutString, &out_len) == (size_t)-1) {
-        iconv_close(cd);
-        return NULL;
-    }
+	if (iconv(cd, (char**)&pszInString, &in_len, (char**)&pszOutString, &out_len) == (size_t)-1) {
+		iconv_close(cd);
+		return NULL;
+	}
 
-    iconv_close(cd);
-    return pszOutString;
+	iconv_close(cd);
+	return pszOutString;
 }
+
 #else
+
 /**
  * @brief Convert a TCHAR string to an ANSI string (non-Unicode implementation).
  * @param pszInString Input TCHAR string to convert.
@@ -149,18 +152,18 @@ TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
  * @note Assumes TCHAR is the same as char (no conversion needed).
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
-    static char szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer);
-    }
+char* TCHAR2CHAR(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
+	static char szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer);
+	}
 
-    if (nOutSize > 0) {
-        snprintf(pszOutString, nOutSize, "%s", pszInString);
-        return pszOutString;
-    }
-    return NULL;
+	if (nOutSize > 0) {
+		snprintf(pszOutString, nOutSize, "%s", pszInString);
+		return pszOutString;
+	}
+	return NULL;
 }
 
 /**
@@ -172,21 +175,202 @@ char* TCHAR2ANSI(const TCHAR* pszInString, char* pszOutString, int nOutSize) {
  * @note Assumes TCHAR is the same as char (no conversion needed).
  * @warning The static buffer is not thread-safe. Avoid using NULL for pszOutString in multi-threaded contexts.
  */
-TCHAR* ANSI2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
-    static TCHAR szStringBuffer[1024];
-    if (!pszOutString) {
-        pszOutString = szStringBuffer;
-        nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
-    }
+TCHAR* CHAR2TCHAR(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+	static TCHAR szStringBuffer[1024];
+	if (!pszOutString) {
+		pszOutString = szStringBuffer;
+		nOutSize = sizeof(szStringBuffer) / sizeof(TCHAR);
+	}
 
-    if (nOutSize > 0) {
-        snprintf((char*)pszOutString, nOutSize * sizeof(TCHAR), "%s", pszInString);
-        return pszOutString;
-    }
-    return NULL;
+	if (nOutSize > 0) {
+		snprintf((char*)pszOutString, nOutSize * sizeof(TCHAR), "%s", pszInString);
+		return pszOutString;
+	}
+	return NULL;
 }
+
 #endif // _UNICODE
 #endif // BUILD_WIN32
+
+
+/**
+ * @brief Convert a TCHAR string to a char string.
+ * @param dest Input TCHAR string to convert.
+ * @return A vector of chars containing the converted string.
+ * @note On Windows, uses WideCharToMultiByte for conversion from UTF-16 to UTF-8 or ANSI.
+ * @note On non-Windows platforms, uses iconv for conversion.
+ */
+std::vector<char> TCHAR2CHAR(const std::vector<TCHAR>& dest) {
+	std::vector<char> charContent;
+
+#if defined(BUILD_WIN32)
+	int nLen = WideCharToMultiByte(CP_UTF8, 0, dest.data(), -1, NULL, 0, NULL, NULL);
+	if (nLen > 0) {
+		charContent.resize(nLen);
+		WideCharToMultiByte(CP_UTF8, 0, dest.data(), -1, charContent.data(), nLen, NULL, NULL);
+	}
+#else
+	// Non-Windows implementation
+#ifdef _UNICODE
+	// Unicode/iconv implementation
+	iconv_t cd = iconv_open("UTF-8", "WCHAR_T");
+	if (cd != (iconv_t)-1) {
+		size_t in_len = dest.size() * sizeof(TCHAR);
+		size_t out_len = dest.size() * 4;
+		charContent.resize(out_len);
+
+		char* in_buf = reinterpret_cast<char*>(const_cast<TCHAR*>(dest.data()));
+		char* out_buf = charContent.data();
+
+		if (iconv(cd, &in_buf, &in_len, &out_buf, &out_len) == (size_t)-1) {
+			iconv_close(cd);
+			charContent.clear();
+			return charContent;
+		}
+
+		iconv_close(cd);
+		charContent.resize(charContent.size() - out_len);
+	}
+#else
+	// Non-Unicode implementation
+	charContent.resize(dest.size());
+	for (size_t i = 0; i < dest.size(); ++i) {
+		charContent[i] = static_cast<char>(dest[i]);
+	}
+#endif // _UNICODE
+#endif // BUILD_WIN32
+
+	return charContent;
+}
+
+
+/**
+ * @brief Convert a vector of chars to a vector of TCHARs using the existing CHAR2TCHAR function.
+ * @param dest Input vector of chars to convert.
+ * @return A vector of TCHARs containing the converted string.
+ * @note The function uses the existing CHAR2TCHAR function to perform the actual character conversion.
+ * @warning The function assumes that CHAR2TCHAR handles buffer management correctly.
+ */
+std::vector<TCHAR> CHAR2TCHAR(const std::vector<char>& dest) {
+	std::vector<TCHAR> tcharContent;
+	tcharContent.resize(dest.size() + 1);
+
+	TCHAR* pszOutString = tcharContent.data();
+	if (CHAR2TCHAR(dest.data(), pszOutString, tcharContent.size())) {
+		return tcharContent;
+	} else {
+		tcharContent.clear();
+		return tcharContent;
+	}
+}
+
+/**
+ * @brief Converts an ANSI-encoded string to a TCHAR-encoded string.
+ * @param pszInString Input ANSI string to convert.
+ * @param pszOutString Output buffer for the TCHAR string. If NULL, a new buffer is allocated.
+ * @param nOutSize Size of the output buffer in TCHARs.
+ * @return Pointer to the converted TCHAR string, or NULL on failure.
+ * @note On Windows, uses MultiByteToWideChar to convert ANSI to UTF-16 (TCHAR is UTF-16 on Windows).
+ * @note On non-Windows platforms, uses iconv to convert ANSI to WCHAR_T.
+ * @warning The caller is responsible for freeing the memory allocated for the output buffer if pszOutString is NULL.
+ */
+TCHAR* CHAR2TCHAR_ANSI(const char* pszInString, TCHAR* pszOutString, int nOutSize) {
+#if defined(BUILD_WIN32)
+	// On Windows, use MultiByteToWideChar to convert ANSI to UTF-16 (TCHAR is UTF-16 on Windows)
+	if (!pszOutString) {
+		// Calculate required buffer size
+		int nLen = MultiByteToWideChar(CP_ACP, 0, pszInString, -1, NULL, 0);
+		if (nLen <= 0) return NULL; // Return NULL if the buffer size calculation fails
+
+		// Allocate a new buffer to hold the converted string
+		pszOutString = new TCHAR[nLen];
+		nOutSize = nLen; // Set the output size to the calculated buffer size
+	}
+
+	// Perform the actual conversion from ANSI to TCHAR (UTF-16 on Windows)
+	if (MultiByteToWideChar(CP_ACP, 0, pszInString, -1, pszOutString, nOutSize) > 0) {
+		// Return the pointer to the converted string if the conversion is successful
+		return pszOutString;
+	}
+
+	// Clean up if allocation was done and conversion failed
+	delete[] pszOutString; // Free the allocated memory if the conversion failed
+	return NULL; // Return NULL to indicate failure
+#else
+	// On non-Windows platforms, use iconv to convert ANSI to WCHAR_T (TCHAR is typically wchar_t)
+	if (!pszOutString) {
+		// Calculate required buffer size
+		iconv_t cd = iconv_open("WCHAR_T", "ANSI");
+		if (cd == (iconv_t)-1) return NULL;
+
+		size_t in_len = strlen(pszInString);
+		size_t out_len = in_len * sizeof(TCHAR); // Estimate output size
+
+		// Allocate a new buffer to hold the converted string
+		pszOutString = new TCHAR[out_len / sizeof(TCHAR) + 1]; // +1 for null terminator
+		nOutSize = out_len / sizeof(TCHAR) + 1;
+
+		char* in_buf = const_cast<char*>(pszInString);
+		char* out_buf = reinterpret_cast<char*>(pszOutString);
+
+		if (iconv(cd, &in_buf, &in_len, &out_buf, &out_len) == (size_t)-1) {
+			iconv_close(cd);
+			delete[] pszOutString;
+			return NULL;
+		}
+
+		iconv_close(cd);
+		pszOutString[out_len / sizeof(TCHAR)] = _T('\0'); // Null-terminate the string
+	}
+
+	// Return the pointer to the converted string
+	return pszOutString;
+#endif
+}
+
+// Helper function to check if a given byte sequence is a valid UTF-8 sequence
+bool IsValidUtf8Sequence(const unsigned char* data, size_t length) {
+	// UTF-8 validation logic
+	for (size_t i = 0; i < length; ) {
+		unsigned char c = data[i];
+		if (c <= 0x7F) { // 1-byte sequence (ASCII)
+			i++;
+		} else if ((c & 0xE0) == 0xC0) { // 2-byte sequence
+			if (i + 1 >= length) return false; // Check if there are enough bytes left
+			if ((data[i + 1] & 0xC0) != 0x80) return false; // Check if the next byte is a valid continuation byte
+			i += 2;
+		} else if ((c & 0xF0) == 0xE0) { // 3-byte sequence
+			if (i + 2 >= length) return false; // Check if there are enough bytes left
+			if ((data[i + 1] & 0xC0) != 0x80 || (data[i + 2] & 0xC0) != 0x80) return false; // Check continuation bytes
+			i += 3;
+		} else if ((c & 0xF8) == 0xF0) { // 4-byte sequence
+			if (i + 3 >= length) return false; // Check if there are enough bytes left
+			if ((data[i + 1] & 0xC0) != 0x80 || (data[i + 2] & 0xC0) != 0x80 || (data[i + 3] & 0xC0) != 0x80) return false; // Check continuation bytes
+			i += 4;
+		} else {
+			return false; // Invalid UTF-8 sequence
+		}
+	}
+	return true; // Valid UTF-8 sequence
+}
+
+// Function to detect the encoding of a given character vector
+const char* DetectFileEncoding(const std::vector<char>& dest) {
+	// Check for UTF-8 BOM (Byte Order Mark)
+	if (dest.size() >= 3 &&
+		static_cast<unsigned char>(dest[0]) == 0xEF &&
+		static_cast<unsigned char>(dest[1]) == 0xBB &&
+		static_cast<unsigned char>(dest[2]) == 0xBF) {
+		return "UTF-8"; // UTF-8 encoding detected via BOM
+	}
+
+	// Check if the content of the file is a valid UTF-8 sequence
+	if (IsValidUtf8Sequence(reinterpret_cast<const unsigned char*>(dest.data()), dest.size())) {
+		return "UTF-8"; // UTF-8 encoding detected via content validation
+	}
+
+	return "ANSI"; // Default to ANSI if no BOM and not a valid UTF-8 sequence
+}
 
 // GameGenie stuff is handled a little differently..
 #define HW_NES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_NES) || ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_FDS) )
@@ -1099,7 +1283,7 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 	TCHAR zipCheatPath[MAX_PATH] = {0};
 	_stprintf(zipCheatPath, _T("%s%s"), szAppCheatsPath, zipFileName);
 
-	if (ZipOpen(TCHAR2ANSI(zipCheatPath,NULL,0)) != 0) {
+	if (ZipOpen(TCHAR2CHAR(zipCheatPath,NULL,0)) != 0) {
 		ZipClose();
 		return 1;
 	}
@@ -1115,7 +1299,7 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 	INT32 ret = 1;
 
 	for (int i = 0; i < pnListCount; i++) {
-		if (_tcsicmp(ANSI2TCHAR(pList[i].szName,NULL,0), iniFileName) == 0) {
+		if (_tcsicmp(CHAR2TCHAR(pList[i].szName,NULL,0), iniFileName) == 0) {
 			std::vector<char> dest(pList[i].nLen + 1);
 
 			INT32 pnWrote = 0;
@@ -1124,26 +1308,40 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 				break;
 			}
 
-            if (pnWrote <= static_cast<INT32>(dest.size())) {
-                dest[pnWrote] = '\0';
-            } else {
-                break;
-            }
-            // Decode UTF-8 to platform-specific encoding
-#if defined(BUILD_WIN32)
-            int wide_len = MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, NULL, 0);
-            TCHAR* wideContent = new TCHAR[wide_len];
-            MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, wideContent, wide_len);
-            size_t wideLen = _tcslen(wideContent);
-            iniContent.insert(iniContent.end(), wideContent, wideContent + wideLen);
-            delete[] wideContent;
-#else
-            // Linux/macOS: UTF-8 is usually the default, so no conversion is needed
-            size_t len = dest.size();
-            iniContent.insert(iniContent.end(), reinterpret_cast<TCHAR*>(dest.data()), reinterpret_cast<TCHAR*>(dest.data()) + len);
-#endif
+			if (pnWrote <= static_cast<INT32>(dest.size())) {
+				dest[pnWrote] = '\0';
+			} else {
+				break;
+			}
 
-            ret = 0;
+			const char* encoding = DetectFileEncoding(dest);
+
+			if (strcmp(encoding, "UTF-8") == 0) {
+				// Decode UTF-8 to platform-specific encoding
+#if defined(BUILD_WIN32)
+				int wide_len = MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, NULL, 0);
+				TCHAR* wideContent = new TCHAR[wide_len];
+				MultiByteToWideChar(CP_UTF8, 0, dest.data(), -1, wideContent, wide_len);
+				size_t wideLen = _tcslen(wideContent);
+				iniContent.insert(iniContent.end(), wideContent, wideContent + wideLen);
+				delete[] wideContent;
+#else
+				// Linux/macOS: UTF-8 is usually the default, so no conversion is needed
+				size_t len = dest.size();
+				iniContent.insert(iniContent.end(), reinterpret_cast<TCHAR*>(dest.data()), reinterpret_cast<TCHAR*>(dest.data()) + len);
+#endif
+			}else{
+				// Decode ANSI
+				std::vector<TCHAR> tcharContent;
+				TCHAR* pszOutString = NULL;
+				pszOutString = CHAR2TCHAR_ANSI(dest.data(), NULL, 0); // First call to get required size
+				if (pszOutString) {
+					tcharContent.assign(pszOutString, pszOutString + wcslen(pszOutString));
+					delete[] pszOutString; // Clean up allocated memory
+				}
+				iniContent.insert(iniContent.end(), tcharContent.begin(), tcharContent.end());
+			}
+			ret = 0;
 			break;
 		}
 	}
