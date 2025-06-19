@@ -6504,6 +6504,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="getsumentsc" cloneof="getsumenj" romof="getsumenj" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Getsumen no Anubis / Anubis of the Moon's Surface (Hack, Simplified Chinese v1.0)</description>
+		<year>2025</year>
+		<manufacturer>CLARK.H</manufacturer>
+		<rom name="Getsumen no Anubis - Anubis of the Moon's Surface T-Chs v1.0 (2025)(CLARK.H).sfc" size="4194304" crc="779b5bc5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="getsumenj" sourcefile="snes/d_snes.cpp">
+		<description>Getsumen no Anubis / Anubis of the Moon's Surface (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Imagineer</manufacturer>
+		<rom name="Getsumen no Anubis - Anubis of the Moon's Surface (J)(1995)(Imagineer).sfc" size="3145728" crc="78432ddc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gcdenseij" sourcefile="snes/d_snes.cpp">
 		<description>Ghost Chaser Densei (Japan)</description>
 		<year>1994</year>

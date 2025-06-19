@@ -7754,6 +7754,8 @@ DRV		BurnDrvGetstarb2;
 DRV		BurnDrvGetstarj;
 DRV		BurnDrvnes_getemgary;
 DRV		BurnDrvnes_getsufuumaden;
+DRV		BurnDrvsnes_Getsumentsc;
+DRV		BurnDrvsnes_Getsumenj;
 DRV		BurnDrvgg_ggaleste;
 DRV		BurnDrvgg_ggaleste3;
 DRV		BurnDrvgg_ggaleste3sndfix;
@@ -31355,6 +31357,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGetstarj,			// Get Star (Japan)
 	&BurnDrvnes_getemgary,		// Get'Em Gary (HB)
 	&BurnDrvnes_getsufuumaden,	// Getsu Fuuma Den (Japan)
+	&BurnDrvsnes_Getsumentsc,	// Getsumen no Anubis / Anubis of the Moon's Surface (Hack, Simplified Chinese v1.0)
+	&BurnDrvsnes_Getsumenj,		// Getsumen no Anubis / Anubis of the Moon's Surface (Japan)
 	&BurnDrvgg_ggaleste,		// GG Aleste (Japan)
 	&BurnDrvgg_ggaleste3,		// GG Aleste 3 (Japan)
 	&BurnDrvgg_ggaleste3sndfix,	// GG Aleste 3 - Sound Channel 3 fix (Japan)
@@ -54896,6 +54900,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "getstarj", "toaplan/d_slapfght.cpp"},
 	{ "nes_getemgary", "nes/d_nes.cpp"},
 	{ "nes_getsufuumaden", "nes/d_nes.cpp"},
+	{ "snes_getsumentsc", "snes/d_snes.cpp"},
+	{ "snes_getsumenj", "snes/d_snes.cpp"},
 	{ "gg_ggaleste", "sms/d_sms.cpp"},
 	{ "gg_ggaleste3", "sms/d_sms.cpp"},
 	{ "gg_ggaleste3sndfix", "sms/d_sms.cpp"},
