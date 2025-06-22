@@ -713,6 +713,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gokyuugamten" cloneof="playtmprdise" romof="playtmprdise" sourcefile="nes/d_nes.cpp">
+		<description>Gokuraku Yuugi - Game Tengoku (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Sofel</manufacturer>
+		<rom name="Gokuraku Yuugi - Game Tengoku (Japan)(1987)(Sofel).fds" size="131000" crc="42fc78ae"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="golf" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Golf (Japan)</description>
 		<year>1986</year>
@@ -1076,6 +1085,16 @@
 		<driver status="good"/>
 	</game>
 	<game name="maerchenveil" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Maerchen Veil (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Marchen Veil T-Eng (2025)(BlackPaladin).fds" size="131000" crc="51ec9018"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="maerchenveilj" cloneof="maerchenveil" romof="maerchenveil" sourcefile="nes/d_nes.cpp">
 		<description>Maerchen Veil (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sunsoft</manufacturer>
@@ -1247,6 +1266,16 @@
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Patlabor - The Mobile Police - Dai 2 Shoutai Shutsudou Seyo! (Japan)(1989)(Bandai).fds" size="131016" crc="b5639859"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="playtmprdise" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Playtime Paradise (Hack, English)</description>
+		<year>2024</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Playtime Paradise T-Eng (2024)(BlackPaladin).fds" size="131000" crc="59ad90ad"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
