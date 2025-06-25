@@ -1633,6 +1633,16 @@
 		<driver status="good"/>
 	</game>
 	<game name="trans" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Transformers - The Headmasters (Hack, English)</description>
+		<year>1987</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Transformers - The Headmasters T-Eng (2025)(BlackPaladin).fds" size="131000" crc="e3165537"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="transj" cloneof="trans" romof="trans" sourcefile="nes/d_nes.cpp">
 		<description>Transformers - The Headmasters (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Takara</manufacturer>

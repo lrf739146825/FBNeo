@@ -2041,11 +2041,12 @@ static INT32 DrvFrame()
 	for (INT32 i = 0; i < nInterleave; i++) {
 		ZetOpen(0);
 		CPU_RUN(0, Zet);
-		if (i == nInterleave - 1 && interrupt_enable)
+		if (i == nInterleave - 1 && interrupt_enable) {
 			if (game_select == BAGMANF)
 				ZetSetIRQLine(0, CPU_IRQSTATUS_AUTO);
 			else
 				ZetNmi();
+		}
 		ZetClose();
 
 		if (uses_sub) {
@@ -3652,7 +3653,7 @@ struct BurnDriver BurnDrvRpatroln = {
 	"rpatroln", "rpatrol", NULL, NULL, "1981",
 	"River Patrol (Japan, unprotected)\0", NULL, "Orca", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_BOOTLEG | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HISCORE_SUPPORTED, 2, HARDWARE_MISC_PRE90S, GBF_ACTION, 0,
 	NULL, rpatrolnRomInfo, rpatrolnRomName, NULL, NULL, NULL, NULL, RpatrolInputInfo, RpatrolDIPInfo,
 	rpatrolnInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x200,
 	256, 224, 4, 3
@@ -4069,7 +4070,7 @@ struct BurnDriver BurnDrvToprollr = {
 	"toprollr", NULL, NULL, NULL, "1983",
 	"Top Roller\0", NULL, "Jaleco", "Miscellaneous",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL, 2, HARDWARE_MISC_PRE90S, GBF_MISC, 0,
+	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED, 2, HARDWARE_MISC_PRE90S, GBF_MISC, 0,
 	NULL, toprollrRomInfo, toprollrRomName, NULL, NULL, NULL, NULL, ToprollrInputInfo, ToprollrDIPInfo,
 	toprollrInit, DrvExit, DrvFrame, ToprollrDraw, DrvScan, &DrvRecalc, 0xa0,
 	224, 256, 3, 4

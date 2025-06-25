@@ -1088,6 +1088,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="argondream" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, No Sound</comment>
+		<description>Argon Dream (HB)</description>
+		<year>2025</year>
+		<manufacturer>Johnybot</manufacturer>
+		<rom name="Argon Dream (2025)(Johnybot).nes" size="24592" crc="d4ab5d9c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="argosnosenshic" cloneof="rygar" romof="rygar" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Argos no Senshi (Hack, Chinese v1.11)</description>
@@ -3005,6 +3014,15 @@
 		<year>1990</year>
 		<manufacturer>Bunch Games</manufacturer>
 		<rom name="Castle of Deceit (USA)(1990)(Bunch Games).nes" size="131088" crc="02e20d38"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="castleofdragts" cloneof="castleofdragon" romof="castleofdragon" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castle of Dragon (Hack, Spanish v1.1)</description>
+		<year>2019</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Castle of Dragon T-Spa v1.1 (2019)(Wave).nes" size="131088" crc="f3d293f5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5701,6 +5719,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="dragunit" cloneof="castleofdragon" romof="castleofdragon" sourcefile="nes/d_nes.cpp">
+		<description>Dragon Unit (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Athena</manufacturer>
+		<rom name="Dragon Unit (Japan)(1990)(Athena).nes" size="131088" crc="b3465abe"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="dragonwarriorc" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Dragon Warrior (Hack, Spanish)</description>
@@ -7685,7 +7711,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="garfi" sourcefile="nes/d_nes.cpp">
-		<description>Garfield no Isshukan - A Week of Garfield (Japan)</description>
+		<description>Garfield no Isshukan ~ A Week of Garfield (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Towa Chiki</manufacturer>
 		<rom name="Garfield - A Week of Garfield (Japan)(1989)(Towa Chiki).nes" size="163856" crc="39c68f84"/>
@@ -15065,11 +15091,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="pockezau" sourcefile="nes/d_nes.cpp">
+	<game name="pockezau" cloneof="pockezaute" romof="pockezaute" sourcefile="nes/d_nes.cpp">
 		<description>Pocket Zaurus: Juu Ouken no Nazo (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Pocket Zaurus - Juu Ouken no Nazo (Japan)(1987)(Bandai).nes" size="262160" crc="568be3b8"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pockezaute" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Pocket Zaurus: Swords of the Ten Kings (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>DvD Translations</manufacturer>
+		<rom name="Pocket Zaurus - Juu Ouken no Nazo T-Eng (2025)(DvD Translations).nes" size="262160" crc="51548a77"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15309,16 +15344,24 @@
 		<description>Probotector (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="probotector (europe) - castellano v1.0.nes" size="131088" crc="9e9a6477"/>
+		<rom name="Probotector T-Spa (2019)(Wave).nes" size="131088" crc="9e9a6477"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="probotector2" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
+		<description>Probotector II: Return of the Evil Forces (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Probotector II - Return of the Evil Forces (Euro)(1992)(Konami).nes" size="262160" crc="1d36e3c0"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
 	<game name="probotectorretc" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Probotector II - Return of the Evil Forces (Hack, Spanish)</description>
+		<description>Probotector II: Return of the Evil Forces (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="probotector ii - return of the evil forces (europe) - castellano v1.0.nes" size="262160" crc="f8d46d0b"/>
+		<rom name="Probotector II - Return of the Evil Forces T-Spa (2019)(Wave).nes" size="262160" crc="f8d46d0b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18468,8 +18511,8 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="scontra" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
-		<description>Super Contra - Alien no Gyakusyuu (Japan)</description>
+	<game name="supercontra" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
+		<description>Super Contra: Alien no Gyakusyuu (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Super Contra - Alien no Gyakusyuu (Japan)(1990)(Konami).nes" size="262160" crc="9bb6059e"/>
