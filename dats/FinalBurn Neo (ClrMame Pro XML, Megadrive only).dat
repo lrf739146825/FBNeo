@@ -21628,10 +21628,10 @@
 	</game>
 	<game name="umk3osc" cloneof="umk3" romof="umk3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Ultimate Mortal Kombat 3 OSC (Hack, v30a)</description>
-		<year>2024</year>
+		<description>Ultimate Mortal Kombat 3 OSC (Hack, v31)</description>
+		<year>2025</year>
 		<manufacturer>Bonus</manufacturer>
-		<rom name="Ultimate Mortal Kombat 3 OSC v30a (2024)(Bonus).bin" size="5459522" crc="486535ed"/>
+		<rom name="Ultimate Mortal Kombat 3 OSC v31 (2025)(Bonus).bin" size="5459844" crc="63a27314"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -23534,6 +23534,15 @@
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
 		<rom name="Zou! Zou! Zou! Rescue Daisakusen (Japan)(1993)(Electronic Arts Victor).bin" size="524288" crc="1a761e67"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zpf" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>ZPF (HB)</description>
+		<year>2025</year>
+		<manufacturer>Mega Cat Studios</manufacturer>
+		<rom name="ZPF (2025)(Mega Cat Studios).bin" size="4194304" crc="cd657892"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
