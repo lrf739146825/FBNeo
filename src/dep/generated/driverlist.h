@@ -7639,9 +7639,9 @@ DRV		BurnDrvGardiab;
 DRV		BurnDrvGardiaj;
 DRV		BurnDrvnes_garfiop;
 DRV		BurnDrvgg_garfield;
-DRV		BurnDrvmd_garfield;
 DRV		BurnDrvnes_garfi;
 DRV		BurnSpecGarfield;
+DRV		BurnDrvmd_garfield;
 DRV		BurnSpecGarfield2;
 DRV		BurnDrvnes_gargosqueii;
 DRV		BurnDrvmd_gargoyles;
@@ -7758,8 +7758,8 @@ DRV		BurnDrvmd_genelost;
 DRV		BurnSpecGenesis;
 DRV		BurnDrvMSX_genesis;
 DRV		BurnDrvnes_genghiskhan;
-DRV		BurnDrvmd_genghis2;
 DRV		BurnDrvsnes_Genghiskhanii;
+DRV		BurnDrvmd_genghis2;
 DRV		BurnDrvsms_bakabonen;
 DRV		BurnDrvGenix;
 DRV		BurnDrvpce_genjitsu;
@@ -8337,8 +8337,8 @@ DRV		BurnDrvMSX_gberetk;
 DRV		BurnDrvsms_gberetrmk;
 DRV		BurnDrvGberet;
 DRV		BurnDrvgg_greendog;
-DRV		BurnDrvmd_greendog;
 DRV		BurnDrvmd_greendogs;
+DRV		BurnDrvmd_greendog;
 DRV		BurnDrvnes_gngolfp;
 DRV		BurnSpecGreglhc;
 DRV		BurnSpecGrellandfalla;
@@ -20132,18 +20132,18 @@ DRV		BurnDrvTnk3;
 DRV		BurnDrvDefenderj;
 DRV		BurnDrvTtfitter;
 DRV		BurnDrvttmahjng;
-DRV		BurnDrvmd_term2;
 DRV		BurnDrvmd_term2s;
-DRV		BurnDrvmd_term2msh;
 DRV		BurnDrvsms_t2ag;
 DRV		BurnDrvsnes_T2arcadee;
 DRV		BurnDrvgg_t2ag;
-DRV		BurnDrvmd_t2ag;
 DRV		BurnDrvmd_t2ags;
 DRV		BurnDrvgg_t2agj;
-DRV		BurnDrvmd_t2agj;
 DRV		BurnDrvsnes_T2arcadej;
 DRV		BurnDrvsnes_T2arcade;
+DRV		BurnDrvmd_term2;
+DRV		BurnDrvmd_term2msh;
+DRV		BurnDrvmd_t2ag;
+DRV		BurnDrvmd_t2agj;
 DRV		BurnDrvmd_t2agp;
 DRV		BurnDrvmd_t3ag;
 DRV		BurnDrvnes_taboo;
@@ -24617,7 +24617,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkovassgn,			// Ao Shi San Guo (bootleg of Knights of Valour Super Heroes Plus, V202CN, encrypted, newer)
 	&BurnDrvpce_aoiblink,		// Aoi Blink (Japan)
 	&BurnDrvmd_genchohic,		// Aoki Ookami to Shiroki Mejika - Genchou Hishi (Hack, Chinese)
-	&BurnDrvmd_genchohi,		// Aoki Ookami to Shiroki Mejika - Genchou Hishi (Japan)
+	&BurnDrvmd_genchohi,		// Aoki Ookami to Shiroki Mejika: Genchou Hishi (Japan)
 #if defined FBNEO_DEBUG
 	&BurnDrvkovassgplus,		// Aoshi Sanguo Plus (bootleg of Knights of Valour Super Heroes Plus, V315CN) [Incomplete dump, NOT WORKING]
 #endif
@@ -25699,7 +25699,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_billwlsh,		// Bill Walsh College Football (Euro, USA)
 	&BurnDrvsnes_Billwalshfootball,// Bill Walsh College Football (USA)
 	&BurnDrvmd_billwl95,		// Bill Walsh College Football 95 (USA)
-	&BurnDrvmd_btomatog,		// Bill's Tomato Game (Prototype) (Unl)
+	&BurnDrvmd_btomatog,		// Bill's Tomato Game (Prototype)
 	&BurnDrvBilyard,			// Billiard
 	&BurnSpecBilnighten,		// Billie Night (English) (48K) (HB, v1.1)
 	&BurnSpecBilnightes,		// Billie Night (Spanish) (48K) (HB, v1.1)
@@ -31014,7 +31014,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_pitpot1,		// Fushigi no Oshiro Pit Pot (Japan, Pirate)
 	&BurnDrvmd_nadia,			// Fushigi no Umi no Nadia (Japan)
 	&BurnDrvpce_alice,			// Fushigi no Yume no Alice (Japan)
-	&BurnDrvmd_futbol,			// Futbol Argentino 98 - Pasion de Multitudes (Unl)
+	&BurnDrvmd_futbol,			// Futbol Argentino 98: Pasion de Multitudes (Unl)
 	&BurnSpecFutbikesim,		// Future Bike Simulator (48K-128K)
 	&BurnSpecFutknight,			// Future Knight (128K)
 	&BurnDrvMSX_futknight,		// Future Knight (Euro)
@@ -31311,9 +31311,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGardiaj,			// Gardia (Japan, 317-0006)
 	&BurnDrvnes_garfiop,		// Garfield - A Week of Garfield OVERHAUL Project (Hack)
 	&BurnDrvgg_garfield,		// Garfield - Caught in the Act (Euro, USA)
-	&BurnDrvmd_garfield,		// Garfield - Caught in the Act (Euro, USA)
 	&BurnDrvnes_garfi,			// Garfield no Isshukan ~ A Week of Garfield (Japan)
 	&BurnSpecGarfield,			// Garfield: Big Fat Hairy Deal (48K)
+	&BurnDrvmd_garfield,		// Garfield: Caught in the Act (Euro, USA)
 	&BurnSpecGarfield2,			// Garfield: Winter's Tail (48K)
 	&BurnDrvnes_gargosqueii,	// Gargoyle's Quest II (USA)
 	&BurnDrvmd_gargoyles,		// Gargoyles (Hack, Spanish v2.0)
@@ -31430,8 +31430,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecGenesis,			// Genesis dawn of a new day (128K) (HB)
 	&BurnDrvMSX_genesis,		// Genesis: dawn of a new day (HB)
 	&BurnDrvnes_genghiskhan,	// Genghis Khan (USA)
-	&BurnDrvmd_genghis2,		// Genghis Khan II - Clan of the Gray Wolf (USA)
 	&BurnDrvsnes_Genghiskhanii,	// Genghis Khan II - Clan of the Gray Wolf (USA)
+	&BurnDrvmd_genghis2,		// Genghis Khan II: Clan of the Gray Wolf (USA)
 	&BurnDrvsms_bakabonen,		// Genius Bakabon, The (Hack, English v1.2)
 	&BurnDrvGenix,				// Genix Family
 	&BurnDrvpce_genjitsu,		// Genji Tsuushin Agedama (Japan)
@@ -32009,8 +32009,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_gberetrmk,		// Green Beret Remake (HB, v2)
 	&BurnDrvGberet,				// Green Beret
 	&BurnDrvgg_greendog,		// Greendog (Euro, USA)
-	&BurnDrvmd_greendog,		// Greendog - The Beached Surfer Dude! (Euro, USA)
 	&BurnDrvmd_greendogs,		// Greendog - The Beached Surfer Dude! (Hack, Spanish)
+	&BurnDrvmd_greendog,		// Greendog: The Beached Surfer Dude! (Euro, USA)
 	&BurnDrvnes_gngolfp,		// Greg Norman's Golf Power (USA)
 	&BurnSpecGreglhc,			// Gregory Loses His Clock (48K)
 	&BurnSpecGrellandfalla,		// Grell and Falla (128K)
@@ -32036,7 +32036,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_grindsts,		// Grind Stormer (Hack, Spanish)
 	&BurnDrvGrindStormerA,		// Grind Stormer (older set)
 	&BurnDrvmd_grindst,			// Grind Stormer (USA)
-	&BurnDrvmd_grindstch,		// Grind Stormer Color Hack (Hack)
+	&BurnDrvmd_grindstch,		// Grind Stormer - Color Hack (Hack)
 	&BurnDrvGrindStormer,		// Grind Stormer
 	&BurnDrvGrobda,				// Grobda (New Ver.)
 	&BurnDrvGrobda2,			// Grobda (Old Ver. set 1)
@@ -40969,8 +40969,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_sherade,		// Shera & the 40 Thieves - Definitive Edition  (HB)
 	&BurnSpecSherlock,			// Sherlock (48K)
 	&BurnDrvmd_shijie,			// Shi Jie Zhi Bang Zheng Ba Zhan - World Pro Baseball 94 (Taiwan) (Unl)
-	&BurnDrvmd_labdeathgnk,		// Shi no Meikyuu - Labyrinth of Death (Japan, Game no Kandume MegaCD Rip)
-	&BurnDrvmd_labdeath,		// Shi no Meikyuu - Labyrinth of Death (Japan, SegaNet)
+	&BurnDrvmd_labdeathgnk,		// Shi no Meikyuu: Labyrinth of Death (Japan, Game no Kandume MegaCD Rip)
+	&BurnDrvmd_labdeath,		// Shi no Meikyuu: Labyrinth of Death (Japan, SegaNet)
 	&BurnDrvsnes_Shientbc,		// Shien - The Blade Chaser (Japan)
 	&BurnDrvsnes_Shienrevenge,	// Shien's Revenge (USA)
 	&BurnDrvmd_sokoban,			// Shijou Saidai no Soukoban (Japan)
@@ -43804,19 +43804,19 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDefenderj,			// T.T Defender
 	&BurnDrvTtfitter,			// T.T Fitter (Japan)
 	&BurnDrvttmahjng,			// T.T Mahjong
-	&BurnDrvmd_term2,			// T2 - Terminator 2 - Judgment Day (Euro, USA)
 	&BurnDrvmd_term2s,			// T2 - Terminator 2 - Judgment Day (Hack, Spanish)
-	&BurnDrvmd_term2msh,		// T2 - Terminator 2 - Judgment Day Music & Sound Hack (Hack)
 	&BurnDrvsms_t2ag,			// T2 - The Arcade Game (Euro)
 	&BurnDrvsnes_T2arcadee,		// T2 - The Arcade Game (Euro)
 	&BurnDrvgg_t2ag,			// T2 - The Arcade Game (Euro, USA)
-	&BurnDrvmd_t2ag,			// T2 - The Arcade Game (Euro, USA)
 	&BurnDrvmd_t2ags,			// T2 - The Arcade Game (Hack, Spanish)
 	&BurnDrvgg_t2agj,			// T2 - The Arcade Game (Japan)
-	&BurnDrvmd_t2agj,			// T2 - The Arcade Game (Japan)
 	&BurnDrvsnes_T2arcadej,		// T2 - The Arcade Game (Japan)
 	&BurnDrvsnes_T2arcade,		// T2 - The Arcade Game (USA)
-	&BurnDrvmd_t2agp,			// T2 - The Arcade Game (USA, Prototype)
+	&BurnDrvmd_term2,			// T2: Terminator 2 - Judgment Day (Euro, USA)
+	&BurnDrvmd_term2msh,		// T2: Terminator 2 - Judgment Day - Music & Sound Hack (Hack)
+	&BurnDrvmd_t2ag,			// T2: The Arcade Game (Euro, USA)
+	&BurnDrvmd_t2agj,			// T2: The Arcade Game (Japan)
+	&BurnDrvmd_t2agp,			// T2: The Arcade Game (USA, Prototype)
 	&BurnDrvmd_t3ag,			// T3 - The Arcade Game (Russia) (Unl)
 	&BurnDrvnes_taboo,			// Taboo - The Sixth Sense (USA)
 	&BurnDrvTacscan,			// Tac/Scan
@@ -54923,9 +54923,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gardiaj", "sega/d_sys1.cpp"},
 	{ "nes_garfiop", "nes/d_nes.cpp"},
 	{ "gg_garfield", "sms/d_sms.cpp"},
-	{ "md_garfield", "megadrive/d_megadrive.cpp"},
 	{ "nes_garfi", "nes/d_nes.cpp"},
 	{ "spec_garfield", "spectrum/d_spectrum.cpp"},
+	{ "md_garfield", "megadrive/d_megadrive.cpp"},
 	{ "spec_garfield2", "spectrum/d_spectrum.cpp"},
 	{ "nes_gargosqueii", "nes/d_nes.cpp"},
 	{ "md_gargoyles", "megadrive/d_megadrive.cpp"},
@@ -55042,8 +55042,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_genesis", "spectrum/d_spectrum.cpp"},
 	{ "msx_genesis", "msx/d_msx.cpp"},
 	{ "nes_genghiskhan", "nes/d_nes.cpp"},
-	{ "md_genghis2", "megadrive/d_megadrive.cpp"},
 	{ "snes_genghiskhanii", "snes/d_snes.cpp"},
+	{ "md_genghis2", "megadrive/d_megadrive.cpp"},
 	{ "sms_bakabonen", "sms/d_sms.cpp"},
 	{ "genix", "pst90s/d_pirates.cpp"},
 	{ "pce_genjitsu", "pce/d_pce.cpp"},
@@ -55619,8 +55619,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_gberetrmk", "sms/d_sms.cpp"},
 	{ "gberet", "konami/d_gberet.cpp"},
 	{ "gg_greendog", "sms/d_sms.cpp"},
-	{ "md_greendog", "megadrive/d_megadrive.cpp"},
 	{ "md_greendogs", "megadrive/d_megadrive.cpp"},
+	{ "md_greendog", "megadrive/d_megadrive.cpp"},
 	{ "nes_gngolfp", "nes/d_nes.cpp"},
 	{ "spec_greglhc", "spectrum/d_spectrum.cpp"},
 	{ "spec_grellandfalla", "spectrum/d_spectrum.cpp"},
@@ -67300,18 +67300,18 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "defenderj", "pre90s/d_williams.cpp"},
 	{ "ttfitter", "pre90s/d_thepit.cpp"},
 	{ "ttmahjng", "pre90s/d_route16.cpp"},
-	{ "md_term2", "megadrive/d_megadrive.cpp"},
 	{ "md_term2s", "megadrive/d_megadrive.cpp"},
-	{ "md_term2msh", "megadrive/d_megadrive.cpp"},
 	{ "sms_t2ag", "sms/d_sms.cpp"},
 	{ "snes_t2arcadee", "snes/d_snes.cpp"},
 	{ "gg_t2ag", "sms/d_sms.cpp"},
-	{ "md_t2ag", "megadrive/d_megadrive.cpp"},
 	{ "md_t2ags", "megadrive/d_megadrive.cpp"},
 	{ "gg_t2agj", "sms/d_sms.cpp"},
-	{ "md_t2agj", "megadrive/d_megadrive.cpp"},
 	{ "snes_t2arcadej", "snes/d_snes.cpp"},
 	{ "snes_t2arcade", "snes/d_snes.cpp"},
+	{ "md_term2", "megadrive/d_megadrive.cpp"},
+	{ "md_term2msh", "megadrive/d_megadrive.cpp"},
+	{ "md_t2ag", "megadrive/d_megadrive.cpp"},
+	{ "md_t2agj", "megadrive/d_megadrive.cpp"},
 	{ "md_t2agp", "megadrive/d_megadrive.cpp"},
 	{ "md_t3ag", "megadrive/d_megadrive.cpp"},
 	{ "nes_taboo", "nes/d_nes.cpp"},
