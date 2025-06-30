@@ -2721,6 +2721,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="buckyoharej" cloneof="buckyohare" romof="buckyohare" sourcefile="nes/d_nes.cpp">
+		<description>Bucky O'Hare (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Bucky O'Hare (Japan)(1991)(Konami).nes" size="262160" crc="0c7b289a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="buckyohare" sourcefile="nes/d_nes.cpp">
 		<description>Bucky O'Hare (USA)</description>
 		<year>1992</year>
@@ -3284,20 +3292,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="cgestique" sourcefile="nes/d_nes.cpp">
+	<game name="estique" sourcefile="nes/d_nes.cpp">
 		<description>Changeable Guardian ESTIQUE (USA)</description>
 		<year>2023</year>
 		<manufacturer>Cat Hui Trading</manufacturer>
-		<rom name="Changeable Guardian ESTIQUE (2023)(Cat Hui Trading).nes" size="524304" crc="6944469b"/>
+		<rom name="Changeable Guardian ESTIQUE (USA)(2023)(Cat Hui Trading).nes" size="524304" crc="6944469b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="cgestiquegf" cloneof="cgestique" romof="cgestique" sourcefile="nes/d_nes.cpp">
+	<game name="estiquef" cloneof="estique" romof="estique" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Fix patch by Sharpnull</comment>
-		<description>Changeable Guardian ESTIQUE (USA, Glitch Fixed Version)</description>
+		<description>Changeable Guardian ESTIQUE (USA, Glitch Fix v2)</description>
 		<year>2023-25</year>
 		<manufacturer>Cat Hui Trading</manufacturer>
-		<rom name="Changeable Guardian Estique (Sharpnull Glitch Fix)(USA)(2023-25)(Cat Hui Trading).nes" size="524304" crc="84b4aa43"/>
+		<rom name="Changeable Guardian ESTIQUE (Glitch Fix v2)(USA)(2023-25)(Cat Hui Trading - Sharpnull).nes" size="524304" crc="0dc9a2fc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3572,20 +3580,29 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="chouyokushenkigm" cloneof="cgestique" romof="cgestique" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Chouyoku Senki ESTIQUE (God Mode, Hack)</description>
-		<year>2025</year>
-		<manufacturer>darthvaderx</manufacturer>
-		<rom name="Chouyoku Senki ESTIQUE God Mode (2025)(darthvaderx).nes" size="524304" crc="b412dbca"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="chouyokushenki" cloneof="cgestique" romof="cgestique" sourcefile="nes/d_nes.cpp">
+	<game name="estiquej" cloneof="estique" romof="estique" sourcefile="nes/d_nes.cpp">
 		<description>Chouyoku Senki ESTIQUE (Japan)</description>
 		<year>2023</year>
 		<manufacturer>Cat Hui Trading</manufacturer>
 		<rom name="Chouyoku Senki ESTIQUE (Japan)(2023)(Cat Hui Trading).nes" size="524304" crc="2b74b0dc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="estiquejf" cloneof="estique" romof="estique" sourcefile="nes/d_nes.cpp">
+		<comment>Fix patch by Sharpnull</comment>
+		<description>Chouyoku Senki ESTIQUE (Japan, Glitch Fix v2)</description>
+		<year>2023-25</year>
+		<manufacturer>Cat Hui Trading</manufacturer>
+		<rom name="Chouyoku Senki ESTIQUE (Glitch Fix v2)(Japan)(2023-25)(Cat Hui Trading - Sharpnull).nes" size="524304" crc="9478aa2d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="estiquejgm" cloneof="estique" romof="estique" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Chouyoku Senki ESTIQUE - God Mode (Hack)</description>
+		<year>2025</year>
+		<manufacturer>darthvaderx</manufacturer>
+		<rom name="Chouyoku Senki ESTIQUE - God Mode (Japan)(2025)(darthvaderx).nes" size="524304" crc="b412dbca"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6552,6 +6569,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="famikan" sourcefile="nes/d_nes.cpp">
+		<comment>ADULT ONLY</comment>
+		<description>Famikan (Japan) (Unl)</description>
+		<year>2005</year>
+		<manufacturer>Dengakudou</manufacturer>
+		<rom name="Famikan (Japan)(Unl)(2005)(Dengakudou).nes" size="49168" crc="d7f808a1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="familyboxing" sourcefile="nes/d_nes.cpp">
 		<description>Family Boxing (Japan)</description>
 		<year>1987</year>
@@ -6729,7 +6755,7 @@
 		<description>Faxanadu (Hack, Spanish)</description>
 		<year>2021</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Faxanadu T-Spa v1.0 (2021)(Wave).nes" size="262160" crc="4e31a801"/>
+		<rom name="Faxanadu T-Spa (2021)(Wave).nes" size="262160" crc="4e31a801"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8361,11 +8387,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="greml2" sourcefile="nes/d_nes.cpp">
-		<description>Gremlins 2 - The New Batch (USA)</description>
+	<game name="greml2j" cloneof="greml2" romof="greml2" sourcefile="nes/d_nes.cpp">
+		<description>Gremlins 2: Shinshu Tanjou (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Gremlins 2 - The New Batch (USA).nes" size="393232" crc="2abb2ee7"/>
+		<rom name="Gremlins 2 - Shinshu Tanjou (Japan)(1990)(Sunsoft).nes" size="393232" crc="ea313dc5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="greml2" sourcefile="nes/d_nes.cpp">
+		<description>Gremlins 2: The New Batch (USA)</description>
+		<year>1990</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Gremlins 2 - The New Batch (USA)(1990)(Sunsoft).nes" size="393232" crc="2abb2ee7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9944,10 +9978,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="jovialrace" sourcefile="nes/d_nes.cpp">
-		<description>Jovial Race (Unl)</description>
+		<description>Jovial Race (Asia) (Unl)</description>
 		<year>1989</year>
 		<manufacturer>Thin Chen</manufacturer>
-		<rom name="Jovial Race (Unl)(1989)(Thin Chen).nes" size="98320" crc="52c262b4"/>
+		<rom name="Jovial Race (Asia)(Unl)(1989)(Thin Chen).nes" size="98320" crc="52c262b4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18511,6 +18545,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="supercontrax" sourcefile="nes/d_nes.cpp">
+		<description>Super Contra X (China) (Unl)</description>
+		<year>1994</year>
+		<manufacturer>Chengdu Tai Jing Da Dong</manufacturer>
+		<rom name="Super Contra X (China)(Unl)(1994)(Chengdu Tai Jing Da Dong).nes" size="524304" crc="c4bc7460"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="supercontra" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
 		<description>Super Contra: Alien no Gyakusyuu (Japan)</description>
 		<year>1990</year>
@@ -20096,6 +20138,14 @@
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Tiny Toon Adventures T-Spa (2019)(Wave).nes" size="262160" crc="bcd94fa2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="tinytooadvj" cloneof="tinytooadv" romof="tinytooadv" sourcefile="nes/d_nes.cpp">
+		<description>Tiny Toon Adventures (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Tiny Toon Adventures (Japan)(1991)(Konami).nes" size="262160" crc="a9dfa32d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
