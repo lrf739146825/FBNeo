@@ -1242,6 +1242,16 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="oprjumpout" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Operation: Jump Out (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Operation - Jump Out T-Eng (2025)(BlackPaladin).fds" size="131000" crc="938ab0af"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="otocky" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<description>Otocky (Japan)</description>
 		<year>1987</year>
@@ -1614,7 +1624,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tobiddai" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+	<game name="tobiddai" cloneof="oprjumpout" romof="oprjumpout" sourcefile="nes/d_nes.cpp">
 		<description>Tobidase Daisakusen (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Squaresoft</manufacturer>
