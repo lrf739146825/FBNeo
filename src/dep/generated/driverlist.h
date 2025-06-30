@@ -13995,6 +13995,7 @@ DRV		BurnDrvOpwolfa;
 DRV		BurnDrvOpwolf3j;
 DRV		BurnDrvOpwolf3u;
 DRV		BurnDrvOpwolf3;
+DRV		BurnDrvfds_oprjumpout;
 DRV		BurnSpecOplabfall;
 DRV		BurnDrvsnes_Oragaland;
 DRV		BurnDrvnes_oratorio;
@@ -37689,6 +37690,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvOpwolf3j,			// Operation Wolf 3 (Japan)
 	&BurnDrvOpwolf3u,			// Operation Wolf 3 (US)
 	&BurnDrvOpwolf3,			// Operation Wolf 3 (World)
+	&BurnDrvfds_oprjumpout,		// Operation: Jump Out (Hack, English)
 	&BurnSpecOplabfall,			// Operation: Labyrinth Fall (128K) (HB)
 	&BurnDrvsnes_Oragaland,		// Oraga Land Shusai - Best Farmer Shuukakusai (Japan)
 	&BurnDrvnes_oratorio,		// Oratorio (HB)
@@ -61273,6 +61275,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "opwolf3j", "taito/d_slapshot.cpp"},
 	{ "opwolf3u", "taito/d_slapshot.cpp"},
 	{ "opwolf3", "taito/d_slapshot.cpp"},
+	{ "fds_oprjumpout", "nes/d_nes.cpp"},
 	{ "spec_oplabfall", "spectrum/d_spectrum.cpp"},
 	{ "snes_oragaland", "snes/d_snes.cpp"},
 	{ "nes_oratorio", "nes/d_nes.cpp"},
