@@ -115,16 +115,22 @@ struct HoldCoin {
 
 template <int N, typename T>
 struct ClearOpposite {
-	T prev[N<<2];
+//	T prev[N << 2];
+	T prev[N << 1], prev_a[N << 1], prev_b[N << 1];
 
 	void reset() {
-		memset(&prev, 0, sizeof(prev));
+		memset(&prev,   0, sizeof(prev));
+		memset(&prev_a, 0, sizeof(prev_a));
+		memset(&prev_b, 0, sizeof(prev_b));
 	}
 
 	void scan() {
 		SCAN_VAR(prev);
+		SCAN_VAR(prev_a);
+		SCAN_VAR(prev_b);
 	}
 
+#if 0
 	void checkval(UINT8 n, T &inp, T val_a, T val_b) {
 		// When opposites become pressed simultaneously, and a 3rd direction isn't pressed
 		// remove the previously stored direction if it exists, cancel both otherwise
@@ -134,10 +140,95 @@ struct ClearOpposite {
 		else if (inp & val_a)
 			prev[n] = inp & val_a;
 	}
+#endif
 
-	void check(UINT8 num, T &inp, T val1, T val2) {
-		checkval((num<<1)  , inp, val1, val2);
-		checkval((num<<1)+1, inp, val2, val1);
+	// Insert the positive direction into the two fast-switching oblique directions
+	void interp(UINT8 n, T& inp, T val_a, T val_b) {
+		if (((inp | prev[n]) & val_a) == val_a) inp &= ~val_a;
+		if (((inp | prev[n]) & val_b) == val_b) inp &= ~val_b;
+
+		prev[n] = inp;
+	}
+
+	// SOCD - Simultaneous Neutral
+	void neu(UINT8 n, T& inp, T val_a, T val_b) {
+		if ((inp & val_a) == val_a) inp &= ~val_a;
+		if ((inp & val_b) == val_b) inp &= ~val_b;
+
+		interp(n, inp, val_a, val_b);
+	}
+
+	// SOCD - Last Input Priority (4 Way)
+	void lif(UINT8 n, T& inp, T val_a, T val_b) {
+		const T mask_a = inp & val_a;
+		if (mask_a == val_a) inp &= (inp ^ prev_a[n]);
+		else if (mask_a) prev_a[n] = mask_a;
+
+		const T mask_b = inp & val_b;
+		if (mask_b == val_b) inp &= (inp ^ prev_b[n]);
+		else if (mask_b) prev_b[n] = mask_b;
+
+		neu(n, inp, val_a, val_b);
+	}
+
+	// SOCD - Last Input Priority (8 Way)
+	void lie(UINT8 n, T& inp, T val_a, T val_b) {
+		lif(n, inp, val_a, val_b);
+
+		const T inp_u  = (1 << 0), inp_d = (1 << 1), inp_l = (1 << 2), inp_r = (1 << 3);
+		const T inp_ud = (inp_u | inp_d),           inp_lr = (inp_l & inp_r);
+		const T inp_e  = (inp & (inp_ud | inp_lr)), prev_e = (prev[n] & (inp_ud | inp_lr));
+
+		if (((inp_e == (inp_d | inp_l)) && (prev_e == (inp_d | inp_r))) ||
+			((inp_e == (inp_d | inp_r)) && (prev_e == (inp_d | inp_l))) ||
+			((inp_e == (inp_u | inp_l)) && (prev_e == (inp_u | inp_r))) ||
+			((inp_e == (inp_u | inp_r)) && (prev_e == (inp_u | inp_l)))) {
+			inp &= ~inp_lr;
+		}
+		if (((inp_e == (inp_d | inp_l)) && (prev_e == (inp_u | inp_l))) ||
+			((inp_e == (inp_d | inp_r)) && (prev_e == (inp_u | inp_r))) ||
+			((inp_e == (inp_u | inp_l)) && (prev_e == (inp_d | inp_l))) ||
+			((inp_e == (inp_u | inp_r)) && (prev_e == (inp_d | inp_r)))) {
+			inp &= ~inp_ud;
+		}
+
+		prev[n] = inp;
+	}
+
+	// SOCD - First Input Priority
+	void fip(UINT8 n, T& inp, T val_a, T val_b) {
+		const T mask_a = inp & val_a;
+		if (mask_a == val_a) inp &= ~val_a | prev_a[n];
+		else if (mask_a) prev_a[n] = mask_a;
+
+		const T mask_b = inp & val_b;
+		if (mask_b == val_b) inp &= ~val_b | prev_b[n];
+		else if (mask_b) prev_b[n] = mask_b;
+
+		neu(n, inp, val_a, val_b);
+	}
+
+	// SOCD - Up Priority (Up-override Down)
+	void uod(UINT8 n, T& inp, T val_a, T val_b) {
+		const T val_u = (inp & 1);	// up = 0x01
+		if ((inp & val_a) == val_a) inp &= ~val_a;
+		if ((inp & val_b) == val_b) inp &= ~val_b;
+		if (val_u)                  inp |= val_u;
+
+		neu(n, inp, val_a, val_b);
+	}
+
+	void check(UINT8 num, T& inp, T val1, T val2, INT32 socd = 2) {
+//		checkval((num << 1),     inp, val1, val2);
+//		checkval((num << 1) + 1, inp, val2, val1);
+		switch (socd) {
+			case 0: neu((num), inp, val1, val2); break;
+			case 1: lif((num), inp, val1, val2); break;
+			case 2: lie((num), inp, val1, val2); break;
+			case 3: fip((num), inp, val1, val2); break;
+			case 4: uod((num), inp, val1, val2); break;
+			default:                             break;
+		}
 	}
 };
 

@@ -753,7 +753,7 @@
 		<description>Goonies, The (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Goonies (Japan)(1988)(Konami).fds" size="65516" crc="81b760a2"/>
+		<rom name="Goonies, The (Japan)(1988)(Konami).fds" size="65516" crc="81b760a2"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1169,7 +1169,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="moerotwi" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)</description>
+		<comment>Cinnamon Hakase wo Sukue! ~ To the Rescue of Dr. Cinnamon!</comment>
+		<description>Moero TwinBee (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)(1986)(Konami).fds" size="131016" crc="0d684aa7"/>
