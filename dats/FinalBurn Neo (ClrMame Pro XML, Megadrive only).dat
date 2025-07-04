@@ -1099,7 +1099,7 @@
 		<description>Assault Suit Leynos (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Masaya</manufacturer>
-		<rom name="assault suit leynos (jpn).bin" size="524288" crc="81a2c800"/>
+		<rom name="Assault Suit Leynos (Japan)(1990)(Masaya).bin" size="524288" crc="81a2c800"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1293,7 +1293,7 @@
 		<description>AWS Pro Moves Soccer (USA)</description>
 		<year>1993</year>
 		<manufacturer>ASCII Entertainment</manufacturer>
-		<rom name="AWS Pro Moves Soccer (USA)(1993)(ASCII Ent.).bin" size="524288" crc="707017e5"/>
+		<rom name="AWS Pro Moves Soccer (USA)(1993)(ASCII).bin" size="524288" crc="707017e5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2618,7 +2618,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="buckrog" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Buck Rogers - Countdown to Doomsday (Euro, USA)</description>
+		<description>Buck Rogers: Countdown to Doomsday (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Buck Rogers - Countdown to Doomsday (Euro, USA)(1991)(Electronic Arts).bin" size="1048576" crc="44e3bfff"/>
@@ -2626,7 +2626,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="budokan" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Budokan - The Martial Spirit (Euro)</description>
+		<description>Budokan: The Martial Spirit (Euro)</description>
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Budokan - The Martial Spirit (Euro)(1990)(Electronic Arts).bin" size="524288" crc="97add5bd"/>
@@ -2635,7 +2635,7 @@
 	</game>
 	<game name="budokanp" cloneof="budokan" romof="budokan" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
-		<description>Budokan - The Martial Spirit (Prototype)</description>
+		<description>Budokan: The Martial Spirit (Prototype)</description>
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Budokan - The Martial Spirit (Proto)(1990)(Electronic Arts).bin" size="524288" crc="43532e3d"/>
@@ -2643,7 +2643,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="budokanu" cloneof="budokan" romof="budokan" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Budokan - The Martial Spirit (USA)</description>
+		<description>Budokan: The Martial Spirit (USA)</description>
 		<year>1990</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Budokan - The Martial Spirit (USA)(1990)(Electronic Arts).bin" size="524288" crc="acd9f5fc"/>
@@ -3412,7 +3412,7 @@
 		<description>Chou Kyuukai Miracle Nine (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="chou kyuukai miracle nine (jpn).bin" size="2097152" crc="6d8c2206"/>
+		<rom name="Chou Kyuukai Miracle Nine (Japan)(1995)(Sega).bin" size="2097152" crc="6d8c2206"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5403,7 +5403,7 @@
 		<description>Dragon Ball Z - Buyuu Retsuden (Hack, New Voices v2)</description>
 		<year>2021</year>
 		<manufacturer>KanonZombie</manufacturer>
-		<rom name="Dragon Ball Z - Buyuu Retsuden (Jap)(voice hack v2).md" size="2321812" crc="1e91792d"/>
+		<rom name="Dragon Ball Z - Buyuu Retsuden (Jap)(voice hack v2).bin" size="2321812" crc="1e91792d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7573,7 +7573,7 @@
 		<description>GleyLancer - 30th Edition (Japan)</description>
 		<year>2019-2022</year>
 		<manufacturer>Columbus Circle</manufacturer>
-		<rom name="Gley Lancer (2019-2022)(Columbus Circle).bin" size="1048576" crc="79ce299f"/>
+		<rom name="Gley Lancer - 30th Edition (Japan)(2019-2022)(Columbus Circle).bin" size="1048576" crc="79ce299f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8425,7 +8425,7 @@
 		<description>Hurricanes (Euro)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="hurricanes (euro).bin" size="2097152" crc="deccc874"/>
+		<rom name="Hurricanes (Euro)(1994)(U.S. Gold).bin" size="2097152" crc="deccc874"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8435,6 +8435,15 @@
 		<year>200?</year>
 		<manufacturer>cslrxyz</manufacturer>
 		<rom name="Hybrid Front, The T-Chi (200x)(cslrxyz).bin" size="2097152" crc="0d6d06f6"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hybridfte" cloneof="hybridf" romof="hybridf" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Hybrid Front, The (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>Nebulous Group</manufacturer>
+		<rom name="Hybrid Front, The T-Eng (2025)(Nebulous Group).bin" size="2097152" crc="5a69d1ea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9666,7 +9675,7 @@
 		<description>Kombate Morta (Hack, Spanish)</description>
 		<year>2000</year>
 		<manufacturer>Charnego Translations</manufacturer>
-		<rom name="Kombate Morta T-Spa (2000)(Charnego Translations).md" size="2097152" crc="0b5647b1"/>
+		<rom name="Kombate Morta T-Spa (2000)(Charnego Translations).bin" size="2097152" crc="0b5647b1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9708,7 +9717,7 @@
 		<description>Krusty's Super Fun House (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="krusty's super fun house (hack, spanish).bin" size="524288" crc="e3a453db"/>
+		<rom name="Krusty's Super Fun House T-Spa (2019)(Wave).bin" size="524288" crc="e3a453db"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10766,15 +10775,15 @@
 		<description>Marvel Land (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="lrog452-mml.bin" size="1048576" crc="5d162d21"/>
+		<rom name="Marvel Land (Japan)(1991)(Namcot).bin" size="1048576" crc="5d162d21"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="marvland" cloneof="talmit" romof="talmit" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Marvel Land (USA)</description>
 		<year>1991</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="marvel land (usa).bin" size="1048576" crc="cd7eeeb7"/>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Marvel Land (USA)(1991)(Namco).bin" size="1048576" crc="cd7eeeb7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10931,7 +10940,7 @@
 		<description>Mega 3D Noah's Ark (HB)</description>
 		<year>2017</year>
 		<manufacturer>Piko Interactive</manufacturer>
-		<rom name="Mega 3D Noah's Ark (2017)(Piko Interactive).md" size="2097152" crc="409165c2"/>
+		<rom name="Mega 3D Noah's Ark (2017)(Piko Interactive).bin" size="2097152" crc="409165c2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11213,7 +11222,7 @@
 		<description>Mega Turrican (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mega turrican (hack, spanish).bin" size="1048576" crc="b2901f8e"/>
+		<rom name="Mega Turrican T-Spa (2019)(Wave).bin" size="1048576" crc="b2901f8e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11346,7 +11355,7 @@
 		<description>Mercs (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mercs (hack, spanish).bin" size="1048576" crc="db0a96e0"/>
+		<rom name="Mercs T-Spa (2017)(Wave).bin" size="1048576" crc="db0a96e0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11417,7 +11426,7 @@
 		<description>Michael Jackson's Moonwalker (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
-		<rom name="michael jackson's moonwalker (hack, spanish).bin" size="524288" crc="6d849e61"/>
+		<rom name="Michael Jackson's Moonwalker T-Spa (2019)(jackic).bin" size="524288" crc="6d849e61"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11459,7 +11468,7 @@
 		<description>Mick &amp; Mack as the Global Gladiators (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mick &amp; mack as the global gladiators (hack, spanish).bin" size="1048576" crc="12236d34"/>
+		<rom name="Mick &amp; Mack as the Global Gladiators T-Spa (2019)(Wave).bin" size="1048576" crc="12236d34"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11481,7 +11490,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mmania" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (Euro)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse (Euro)(1994)(Sony Imagesoft).bin" size="2097152" crc="cb5a8b85"/>
@@ -11490,15 +11499,15 @@
 	</game>
 	<game name="mmanias" cloneof="mmania" romof="mmania" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (Hack, Spanish)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mickey mania - the timeless adventures of mickey mouse (hack, spanish).bin" size="2097152" crc="a65dae53"/>
+		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse T-Spa (2017)(Wave).bin" size="2097152" crc="a65dae53"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mmaniaj" cloneof="mmania" romof="mmania" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (Japan)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse (Japan)(1995)(Sega).bin" size="2097152" crc="23180cf7"/>
@@ -11506,7 +11515,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mmaniau" cloneof="mmania" romof="mmania" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (USA)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (USA)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse (USA)(1994)(Sony Imagesoft).bin" size="2097152" crc="629e5963"/>
@@ -11515,7 +11524,7 @@
 	</game>
 	<game name="mmaniaup" cloneof="mmania" romof="mmania" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (USA, Prototype)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse (USA, Proto)(1994)(Sony Imagesoft).bin" size="2097152" crc="7fc1bdf0"/>
@@ -11567,21 +11576,12 @@
 		<description>Micro Machines (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="micro machines (hack, spanish).bin" size="524288" crc="3ba6932d"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="microm96s" cloneof="microm96" romof="microm96" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Micro Machines - Turbo Tournament '96 (Hack, Spanish)</description>
-		<year>2014</year>
-		<manufacturer>pepodmc</manufacturer>
-		<rom name="micro machines - turbo tournament '96 (hack, spanish).bin" size="1048576" crc="7ceb363d"/>
+		<rom name="Micro Machines T-Spa (2019)(Wave).bin" size="524288" crc="3ba6932d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="micromc2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Micro Machines 2 - Turbo Tournament (Euro, J-Cart)</description>
+		<description>Micro Machines 2: Turbo Tournament (Euro, J-Cart)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Micro Machines 2 - Turbo Tournament (Euro, J-Cart)(1994)(Codemasters).bin" size="1048576" crc="42bfb7eb"/>
@@ -11589,7 +11589,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="micromc2a" cloneof="micromc2" romof="micromc2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Micro Machines 2 - Turbo Tournament (Euro, J-Cart, Alt)</description>
+		<description>Micro Machines 2: Turbo Tournament (Euro, J-Cart, Alt)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Micro Machines 2 - Turbo Tournament (Euro, J-Cart, Alt)(1994)(Codemasters).bin" size="1048576" crc="01c22a5d"/>
@@ -11605,18 +11605,27 @@
 		<driver status="good"/>
 	</game>
 	<game name="microm96" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Micro Machines Turbo Tournament '96 (Euro, Rev. 1, J-Cart)</description>
+		<description>Micro Machines: Turbo Tournament '96 (Euro, Rev. 1, J-Cart)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Micro Machines Turbo Tournament 96 (Euro, Rev 1, J-Cart)(1995)(Codemasters).bin" size="1048576" crc="23319d0d"/>
+		<rom name="Micro Machines - Turbo Tournament 96 (Euro, Rev 1, J-Cart)(1995)(Codemasters).bin" size="1048576" crc="23319d0d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="microm96s" cloneof="microm96" romof="microm96" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Micro Machines: Turbo Tournament '96 (Hack, Spanish)</description>
+		<year>2014</year>
+		<manufacturer>pepodmc</manufacturer>
+		<rom name="Micro Machines - Turbo Tournament 96 T-Spa (2014)(pepodmc).bin" size="1048576" crc="7ceb363d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="microm96a" cloneof="microm96" romof="microm96" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Micro Machines Turbo Tournament 96 (Euro, J-Cart)</description>
+		<description>Micro Machines: Turbo Tournament 96 (Euro, J-Cart)</description>
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Micro Machines Turbo Tournament 96 (Euro, J-Cart)(1995)(Codemasters).bin" size="1048576" crc="7492b1de"/>
+		<rom name="Micro Machines - Turbo Tournament 96 (Euro, J-Cart)(1995)(Codemasters).bin" size="1048576" crc="7492b1de"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11625,7 +11634,7 @@
 		<description>Midnight Resistance (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="midnight resistance (hack, spanish).bin" size="1048576" crc="fb38b80c"/>
+		<rom name="Midnight Resistance T-Spa (2019)(Wave).bin" size="1048576" crc="fb38b80c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11699,7 +11708,7 @@
 		<description>Mighty Morphin Power Rangers (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mighty morphin power rangers (hack, spanish).bin" size="2097152" crc="5a34dc26"/>
+		<rom name="Mighty Morphin Power Rangers T-Spa (2018)(Wave).bin" size="2097152" crc="5a34dc26"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11750,7 +11759,7 @@
 		<description>Mighty Morphin Power Rangers - The Movie (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="mighty morphin power rangers - the movie (hack, spanish).bin" size="2097152" crc="cb3852b1"/>
+		<rom name="Mighty Morphin Power Rangers - The Movie (2018)(Wave).bin" size="2097152" crc="cb3852b1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11844,7 +11853,7 @@
 		<description>Minnesota Fats - Pool Legend (USA)</description>
 		<year>1995</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="minnesota fats - pool legend (usa).bin" size="1048576" crc="38174f40"/>
+		<rom name="Minnesota Fats - Pool Legend (USA)(1995)(Data East).bin" size="1048576" crc="38174f40"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11852,7 +11861,7 @@
 		<description>Miracle Piano Teaching System, The (USA)</description>
 		<year>1992</year>
 		<manufacturer>The Software Toolworks</manufacturer>
-		<rom name="miracle piano teaching system, the (usa).bin" size="524288" crc="a719542e"/>
+		<rom name="Miracle Piano Teaching System, The (USA)(1992)(The Software Toolworks).bin" size="524288" crc="a719542e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11902,7 +11911,7 @@
 		<description>MLBPA Baseball (USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="mlbpa baseball (usa).bin" size="2097152" crc="14a8064d"/>
+		<rom name="MLBPA Baseball (USA)(1992)(Electronic Arts).bin" size="2097152" crc="14a8064d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11919,7 +11928,7 @@
 		<description>Monopoly (USA)</description>
 		<year>1992</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="monopoly (usa).bin" size="524288" crc="c10268da"/>
+		<rom name="Monopoly (USA)(1992)(Parker Brothers).bin" size="524288" crc="c10268da"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11928,7 +11937,7 @@
 		<description>Monopoly (USA, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="monopoly (usa) (beta).bin" size="524288" crc="dfbcc3fa"/>
+		<rom name="Monopoly (USA, Proto)(1992)(Parker Brothers).bin" size="524288" crc="dfbcc3fa"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11946,7 +11955,7 @@
 		<description>Monster World IV (Hack, English v2.2)</description>
 		<year>2008</year>
 		<manufacturer>Michele Di Somma</manufacturer>
-		<rom name="Monster World IV (J) [!] [T-Eng].bin" size="2097152" crc="c94a35bf"/>
+		<rom name="Monster World IV T-Eng v2.2 (2008)(Michele Di Somma).bin" size="2097152" crc="c94a35bf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11955,7 +11964,7 @@
 		<description>Monster World IV (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>jackic</manufacturer>
-		<rom name="monster world iv (hack, spanish).bin" size="2097152" crc="7dbbfa4a"/>
+		<rom name="Monster World IV T-Spa (2020)(jackic).bin" size="2097152" crc="7dbbfa4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11963,7 +11972,7 @@
 		<description>Monster World IV (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="monster world iv (jpn).bin" size="2097152" crc="36a3aaa4"/>
+		<rom name="Monster World IV (Japan)(1994)(Sega).bin" size="2097152" crc="36a3aaa4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11971,7 +11980,7 @@
 		<description>Monster World IV (USA, Europe) (English, Japanese) (Virtual Console)</description>
 		<year>2012</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Monster World IV (USA, Europe) (En,Ja) (Virtual Console).md" size="2097152" crc="af050c46"/>
+		<rom name="Monster World IV EN/JP (USA, Europe)(Virtual Console)(2012)(Sega).bin" size="2097152" crc="af050c46"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12493,7 +12502,7 @@
 		<description>NBA Jam (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="nba jam (jpn).bin" size="2097152" crc="a6c6305a"/>
+		<rom name="NBA Jam (Japan)(1994)(Acclaim).bin" size="2097152" crc="a6c6305a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12513,15 +12522,15 @@
 		<description>NBA Jam Tournament Edition (World)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="nba jam tournament edition (world).bin" size="3145728" crc="e9ffcb37"/>
+		<rom name="NBA Jam Tournament Edition (World)(1995)(Acclaim).bin" size="3145728" crc="e9ffcb37"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="nbajamtef" cloneof="nbajamte" romof="nbajamte" sourcefile="megadrive/d_megadrive.cpp">
 		<description>NBA Jam Tournament Edition (World, 2002 Fix Release)</description>
-		<year>2002?</year>
+		<year>200?</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="nba jam tournament edition (world) (fixed).bin" size="3145728" crc="6e25ebf0"/>
+		<rom name="NBA Jam Tournament Edition (World, 2002 Fix Release)(200x)(Acclaim).bin" size="3145728" crc="6e25ebf0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12529,7 +12538,7 @@
 		<description>NBA Live 95 (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba live 95 (euro, usa).bin" size="2097152" crc="66018abc"/>
+		<rom name="NBA Live 95 (Euro, USA)(1994)(Electonic Arts).bin" size="2097152" crc="66018abc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12537,7 +12546,7 @@
 		<description>NBA Live 95 (Korea)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="lh5370hc.bin" size="2097152" crc="779c1244"/>
+		<rom name="NBA Live 95 (Korea)(1994)(Electronic Arts).bin" size="2097152" crc="779c1244"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12545,7 +12554,7 @@
 		<description>NBA Live 96 (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba live 96 (euro, usa).bin" size="2097152" crc="49de0062"/>
+		<rom name="NBA Live 96 (Euro, USA)(1995)(Electronic Arts).bin" size="2097152" crc="49de0062"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12553,7 +12562,7 @@
 		<description>NBA Live 97 (Euro, USA)</description>
 		<year>1996</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba live 97 (euro, usa).bin" size="2097152" crc="7024843a"/>
+		<rom name="NBA Live 97 (Euro, USA)(1996)(Electronic Arts).bin" size="2097152" crc="7024843a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12561,7 +12570,7 @@
 		<description>NBA Live 98 (USA)</description>
 		<year>1997</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba live 98 (usa).bin" size="2097152" crc="23473a8a"/>
+		<rom name="NBA Live 98 (USA)(1997)(Electronic Arts).bin" size="2097152" crc="23473a8a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12569,7 +12578,7 @@
 		<description>NBA Playoffs - Bulls Vs Blazers (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="nba playoffs - bulls vs blazers (jpn).bin" size="1048576" crc="eae8c000"/>
+		<rom name="NBA Playoffs - Bulls Vs Blazers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="eae8c000"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12577,7 +12586,7 @@
 		<description>NBA Playoffs - Bulls Vs Blazers (Japan, Alt)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="nba playoffs - bulls vs blazers (jpn) (alt).bin" size="1048576" crc="4565ce1f"/>
+		<rom name="NBA Playoffs - Bulls Vs Blazers (Japan, Alt)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4565ce1f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12585,7 +12594,7 @@
 		<description>NBA Pro Basketball '94 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="nba pro basketball '94 (jpn).bin" size="2097152" crc="eea19bce"/>
+		<rom name="NBA Pro Basketball '94 (Japan)(1994)(Electronic Arts Victor).bin" size="2097152" crc="eea19bce"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12593,7 +12602,7 @@
 		<description>NBA Pro Basketball - Bulls Vs Lakers (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="nba pro basketball - bulls vs lakers (jpn).bin" size="1048576" crc="4416ce39"/>
+		<rom name="NBA Pro Basketball - Bulls Vs Lakers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4416ce39"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12601,16 +12610,16 @@
 		<description>NBA Showdown '94 (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba showdown '94 (euro, usa).bin" size="2097152" crc="160b7090"/>
+		<rom name="NBA Showdown '94 (Euro, USA)(1994)(Electronic Arts).bin" size="2097152" crc="160b7090"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="nbashowp" cloneof="nbashow" romof="nbashow" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack, Prototype</comment>
-		<description>NBA Showdown '94 (USA, Prototype, Hacked)</description>
+		<comment>Prototype</comment>
+		<description>NBA Showdown '94 (USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="nba showdown '94 (usa) (beta).bin" size="2097152" crc="6643a308"/>
+		<rom name="NBA Showdown '94 (USA, Proto)(1994)(Electronic Arts).bin" size="2097152" crc="6643a308"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14536,6 +14545,15 @@
 		<year>2009</year>
 		<manufacturer>Future Drive</manufacturer>
 		<rom name="Pringles the Game (2009)(Future Drive).bin" size="457064" crc="a397bc66"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="prisonelamd" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Prisonela MD (HB)</description>
+		<year>2025</year>
+		<manufacturer>Two Black Cats</manufacturer>
+		<rom name="Prisonela MD (2025)(Two Black Cats).bin" size="1048576" crc="58fe6ea8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18403,7 +18421,7 @@
 		<description>Steel Talons (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="steel talons (euro, usa).bin" size="524288" crc="10e4ec63"/>
+		<rom name="Steel Talons (Euro, USA)(1992)(Tengen).bin" size="524288" crc="10e4ec63"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18411,7 +18429,7 @@
 		<description>Steel Talons (Japan, Korea)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="steel talons (jpn, kor).bin" size="524288" crc="04f388e6"/>
+		<rom name="Steel Talons (Japan, Korea)(1993)(Tengen).bin" size="524288" crc="04f388e6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18420,7 +18438,7 @@
 		<description>Steel Talons (USA, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="steel talons (usa) (beta).bin" size="524288" crc="c4052f18"/>
+		<rom name="Steel Talons (USA, Proto)(1992)(Tengen).bin" size="524288" crc="c4052f18"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18463,7 +18481,7 @@
 		<description>Stone Protectors (USA, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="stone protectors.bin" size="2097152" crc="fbf0d54f"/>
+		<rom name="Stone Protectors (USA, Proto)(1994)(Vic Tokai).bin" size="2097152" crc="fbf0d54f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19282,7 +19300,7 @@
 		<description>Super Heavy Duty (HB)</description>
 		<year>2020</year>
 		<manufacturer>Playnautic</manufacturer>
-		<rom name="Super Heavy Duty (2020)(Playnautic).md" size="4194304" crc="81f8e890"/>
+		<rom name="Super Heavy Duty (2020)(Playnautic).bin" size="4194304" crc="81f8e890"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20055,7 +20073,7 @@
 		<description>Tanglewood (HB, Demo)</description>
 		<year>2018</year>
 		<manufacturer>Big Evil Corp.</manufacturer>
-		<rom name="TangleWood Demo (2018)(Big Evil Corp.).md" size="2097152" crc="9cc94381"/>
+		<rom name="TangleWood Demo (2018)(Big Evil Corp.).bin" size="2097152" crc="9cc94381"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20064,7 +20082,7 @@
 		<description>Tanglewood (HB, v1.0)</description>
 		<year>2018</year>
 		<manufacturer>Big Evil Corp.</manufacturer>
-		<rom name="TangleWood v1.0 (2018)(Big Evil Corp.).md" size="4194304" crc="1a91c419"/>
+		<rom name="TangleWood v1.0 (2018)(Big Evil Corp.).bin" size="4194304" crc="1a91c419"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20098,7 +20116,7 @@
 		<description>Target Earth (USA)</description>
 		<year>1990</year>
 		<manufacturer>Dreamworks Games</manufacturer>
-		<rom name="target earth (usa).bin" size="524288" crc="cddf62d3"/>
+		<rom name="Target Earth (USA)(1990)(Dreamworks Games).bin" size="524288" crc="cddf62d3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20115,7 +20133,7 @@
 		<description>Task Force Harrier EX (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Treco</manufacturer>
-		<rom name="task force harrier ex (jpn).bin" size="1048576" crc="e9a54eed"/>
+		<rom name="Task Force Harrier EX (Japan)(1991)(Treco).bin" size="1048576" crc="e9a54eed"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20123,7 +20141,7 @@
 		<description>Task Force Harrier EX (USA)</description>
 		<year>1991</year>
 		<manufacturer>Treco</manufacturer>
-		<rom name="task force harrier ex (usa).bin" size="1048576" crc="c8bb0257"/>
+		<rom name="Task Force Harrier EX (USA)(1991)(Treco).bin" size="1048576" crc="c8bb0257"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20140,7 +20158,7 @@
 		<description>Taz-Mania (World)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14838.bin" size="524288" crc="0e901f45"/>
+		<rom name="Taz-Mania (World)(1992)(Sega).bin" size="524288" crc="0e901f45"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20156,7 +20174,7 @@
 		<description>Techno Clash (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="techno clash (euro, usa).bin" size="1048576" crc="4e65e483"/>
+		<rom name="Techno Clash (Euro, USA)(1993)(Electronic Arts).bin" size="1048576" crc="4e65e483"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21791,7 +21809,7 @@
 		<description>USA Basketball World Challenge (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="team usa basketball (euro, usa).bin" size="1048576" crc="a0caf97e"/>
+		<rom name="USA Basketball World Challenge (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="a0caf97e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21799,7 +21817,7 @@
 		<description>USA Basketball World Challenge (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="dream team usa (jpn).bin" size="1048576" crc="e2e21b72"/>
+		<rom name="USA Basketball World Challenge (Japan)(1992)(Electronic Arts Victor).bin" size="1048576" crc="e2e21b72"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
