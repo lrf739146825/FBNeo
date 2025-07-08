@@ -1414,14 +1414,6 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wataru" sourcefile="pce/d_pce.cpp">
-		<description>Majin Eiyuu Den Wataru (Japan)</description>
-		<year>1988</year>
-		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Majin Eiyuu Den Wataru (Japan)(1988)(Hudson Soft).pce" size="262144" crc="2f8935aa"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="makaihake" cloneof="makaihak" romof="makaihak" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
 		<description>Makai Hakken Den Shada (Hack, English)</description>

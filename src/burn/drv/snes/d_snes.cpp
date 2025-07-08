@@ -10,6 +10,9 @@ static UINT8 snesInputPort1[12];
 static INT16 Analog[4];
 static UINT8 snesMouseButtons[4];
 
+static UINT16 DrvInput[2] = { 0x0000, 0x0000 };
+static ClearOpposite<2, UINT16> clear_opposite;
+
 static UINT8 DrvReset;
 static UINT8 DrvDips[2]; // [0] ?, [1] controller config
 static UINT8 DrvRecalc = 1;
@@ -287,6 +290,7 @@ static void DrvDoReset()
 	snes->vramhack = (snes->vramhack & ~1) + (DrvDips[0] & 1);
 	LastControllerDip = DrvDips[1];
 	LastControllerTimer = 0;
+	clear_opposite.reset();
 }
 
 static INT32 DrvInit()
@@ -429,6 +433,7 @@ static INT32 DrvScan(INT32 nAction, INT32* pnMin)
 				scope_pause.Scan();
 			}
 		}
+		clear_opposite.scan();
 	}
 
 	if (nAction & ACB_NVRAM && snes_batterysize > 0) {
@@ -471,11 +476,24 @@ static INT32 DrvFrame()
 				case 2: p2_type = DEVICE_JUSTIFIER; break;
 			}
 
+			// Compile digital inputs
+			DrvInput[0] = 0x0000;											// Player 1
+			DrvInput[1] = 0x0000;											// Player 2
+			for (INT32 i = 0; i < 12; i++) {
+				DrvInput[0] |= ((snesInputPort0[i] & 1) << i);
+				DrvInput[1] |= ((snesInputPort1[i] & 1) << i);
+			}
+			for (INT32 i = 0; i < 2; i++) {
+				clear_opposite.check(i, DrvInput[i], 0x0010, 0x0020, 0x0040, 0x0080, nSocd[i]);
+			}
+
 			for (INT32 i = 0; i < 12; i++) {
 				if ((DrvDips[1] & 0x01) == 0) {
+					snesInputPort0[i] = (UINT8)((DrvInput[0] >> i) & 1);	// SOCD after takeover
 					snes_setButtonState(snes, 1, i, snesInputPort0[i], DEVICE_GAMEPAD);
 				}
 				if ((DrvDips[1] & 0x02) == 0) { // p2 controller or lightgun (SuperScope, Justifier)
+					snesInputPort1[i] = (UINT8)((DrvInput[1] >> i) & 1);	// SOCD after takeover
 					snes_setButtonState(snes, 2, i, snesInputPort1[i], p2_type);
 				}
 			}
@@ -13039,11 +13057,31 @@ STD_ROM_PICK(snes_Fireemblem4j)
 STD_ROM_FN(snes_Fireemblem4j)
 
 struct BurnDriver BurnDrvsnes_Fireemblem4j = {
-	"snes_fireemblem4j", NULL, NULL, NULL, "1996",
+	"snes_fireemblem4j", "snes_fireemblem4te", NULL, NULL, "1996",
 	"Fire Emblem - Seisen no Keifu (Japan)\0", NULL, "Nintendo", "SNES / Super Famicom",
 	L"Fire Emblem - Seisen no Keifu (Japan)\0\u30d5\u30a1\u30a4\u30a2\u30fc\u30a8\u30e0\u30d6\u30ec\u30e0 - \u8056\u6226\u306e\u7cfb\u8b5c\0", NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
 	SNESGetZipName, snes_Fireemblem4jRomInfo, snes_Fireemblem4jRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Fire Emblem - Genealogy of the Holy War (Hack, English v1.01)
+// https://www.romhacking.net/translations/7415/
+
+static struct BurnRomInfo snes_Fireemblem4teRomDesc[] = {
+	{ "Fire Emblem - Genealogy of the Holy War T-Eng v1.01 (2025)(Miacis).sfc", 8388608, 0x0fba1e19, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Fireemblem4te)
+STD_ROM_FN(snes_Fireemblem4te)
+
+struct BurnDriver BurnDrvsnes_Fireemblem4te = {
+	"snes_fireemblem4te", NULL, NULL, NULL, "2025",
+	"Fire Emblem - Genealogy of the Holy War (Hack, English v1.01)\0", NULL, "Miacis", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HACK, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
+	SNESGetZipName, snes_Fireemblem4teRomInfo, snes_Fireemblem4teRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -13058,7 +13096,7 @@ STD_ROM_PICK(snes_Fireemblem4tsc)
 STD_ROM_FN(snes_Fireemblem4tsc)
 
 struct BurnDriver BurnDrvsnes_Fireemblem4tsc = {
-	"snes_fireemblem4tsc", "snes_fireemblem4j", NULL, NULL, "2008",
+	"snes_fireemblem4tsc", "snes_fireemblem4te", NULL, NULL, "2008",
 	"Fire Emblem - Seisen no Keifu (Hack, Simplified Chinese v1.1)\0", NULL, "FIREEMBLEM.NET", "SNES / Super Famicom",
 	L"Fire Emblem - Seisen no Keifu (Hack, Simplified Chinese v1.1)\0\u706b\u7130\u4e4b\u7eb9\u7ae0 - \u5723\u6218\u4e4b\u7cfb\u8c31\0", NULL, L"\u706b\u82b1\u5929\u9f99\u5251", NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
@@ -13077,7 +13115,7 @@ STD_ROM_PICK(snes_Fireemblem4ttc)
 STD_ROM_FN(snes_Fireemblem4ttc)
 
 struct BurnDriver BurnDrvsnes_Fireemblem4ttc = {
-	"snes_fireemblem4ttc", "snes_fireemblem4j", NULL, NULL, "2008",
+	"snes_fireemblem4ttc", "snes_fireemblem4te", NULL, NULL, "2008",
 	"Fire Emblem - Seisen no Keifu (Hack, Traditional Chinese v1.1)\0", NULL, "FIREEMBLEM.NET", "SNES / Super Famicom",
 	L"Fire Emblem - Seisen no Keifu (Hack, Traditional Chinese v1.1)\0\u706b\u7130\u4e4b\u7d0b\u7ae0 - \u8056\u6230\u4e4b\u7cfb\u8b5c\0", NULL, L"\u706b\u82b1\u5929\u9f99\u5251", NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_RPG | GBF_STRATEGY, 0,
@@ -15762,6 +15800,44 @@ struct BurnDriver BurnDrvsnes_Harvmoonj = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_STRATEGY | GBF_ADV, 0,
 	SNESGetZipName, snes_HarvmoonjRomInfo, snes_HarvmoonjRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Bokujou Monogatari (Hack, Simplified Chinese v2.0)
+
+static struct BurnRomInfo snes_harvmoontscRomDesc[] = {
+	{ "Bokujou Monogatari T-Chs v2.0 (2009)(TGB).sfc", 2097152, 0x2da5d261, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_harvmoontsc)
+STD_ROM_FN(snes_harvmoontsc)
+
+struct BurnDriver BurnDrvsnes_harvmoontsc = {
+	"snes_harvmoontsc", "snes_harvmoon", NULL, NULL, "2009",
+	"Bokujou Monogatari (Hack, Simplified Chinese v2.0)\0", NULL, "TGB", "SNES / Super Famicom",
+	L"Bokujou Monogatari (Hack, Simplified Chinese v2.0)\0\u7267\u573a\u7269\u8bed\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_STRATEGY | GBF_ADV, 0,
+	SNESGetZipName, snes_harvmoontscRomInfo, snes_harvmoontscRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Bokujou Monogatari (Hack, Traditional Chinese v2.0)
+
+static struct BurnRomInfo snes_harvmoonttcRomDesc[] = {
+	{ "Bokujou Monogatari T-Cht v2.0 (2009)(TGB).sfc", 2097152, 0x48cc8cd7, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_harvmoonttc)
+STD_ROM_FN(snes_harvmoonttc)
+
+struct BurnDriver BurnDrvsnes_harvmoonttc = {
+	"snes_harvmoonttc", "snes_harvmoon", NULL, NULL, "2009",
+	"Bokujou Monogatari (Hack, Traditional Chinese v2.0)\0", NULL, "TGB", "SNES / Super Famicom",
+	L"Bokujou Monogatari (Hack, Traditional Chinese v2.0)\0\u7267\u5834\u7269\u8a9e\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_STRATEGY | GBF_ADV, 0,
+	SNESGetZipName, snes_harvmoonttcRomInfo, snes_harvmoonttcRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };

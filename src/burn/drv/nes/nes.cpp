@@ -30,6 +30,8 @@ static UINT8 DrvInputs[4]   = { 0, 0, 0, 0 };
 static UINT32 JoyShifter[2] = { 0, 0 };
 static UINT8 JoyStrobe      = 0;
 
+static ClearOpposite<4, UINT8> clear_opposite;
+
 // Zapper emulation
 INT16 ZapperX;
 INT16 ZapperY;
@@ -10982,6 +10984,8 @@ static INT32 DrvDoReset()
 	cyc_counter = 0;
 	mega_cyc_counter = 0;
 
+	clear_opposite.reset();
+
 	{
 		INT32 nAspectX, nAspectY;
 		BurnDrvGetAspect(&nAspectX, &nAspectY);
@@ -11425,11 +11429,12 @@ INT32 NESFrame()
 			DrvInputs[2] ^= (NESJoy3[i] & 1) << i;
 			DrvInputs[3] ^= (NESJoy4[i] & 1) << i;
 		}
-
-		clear_opposites(DrvInputs[0]);
-		clear_opposites(DrvInputs[1]);
-		clear_opposites(DrvInputs[2]);
-		clear_opposites(DrvInputs[3]);
+		for (INT32 i = 0; i < 4; i++) {
+			if ((0 == nSocd[i]) || (nSocd[i] > 6))
+				clear_opposites(DrvInputs[i]);
+			else
+				clear_opposite.check(i, DrvInputs[i], 0x10, 0x20, 0x40, 0x80, nSocd[i]);
+		}
 
 		if (NESMode & (USE_ZAPPER | VS_ZAPPER)) {
 			BurnGunMakeInputs(0, ZapperX, ZapperY);
@@ -11553,6 +11558,7 @@ INT32 NESScan(INT32 nAction, INT32 *pnMin)
 		SCAN_VAR(JoyShifter);
 		SCAN_VAR(JoyStrobe);
 		SCAN_VAR(ZapperReloadTimer);
+		clear_opposite.scan();
 
 		ScanVar(NES_CPU_RAM, 0x800, "CPU Ram");
 		ScanVar(Cart.WorkRAM, Cart.WorkRAMSize, "Work Ram");

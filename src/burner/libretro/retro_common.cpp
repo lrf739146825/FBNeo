@@ -327,6 +327,26 @@ static struct retro_core_option_v2_definition var_fbneo_analog_speed = {
 	},
 	"100%"
 };
+// note : socd is made global for all users, standalone is handling different modes for each user but we really don't want this here... 
+//        libretro doesn't really support multiple keyboard users and this setting is mostly (only ?) useful for keyboard users...
+static struct retro_core_option_v2_definition var_fbneo_socd = {
+	"fbneo-socd",
+	"SOCD Setting",
+	NULL,
+	"Change ULDR priority, mostly useful for keyboard users",
+	NULL,
+	NULL,
+	{
+		{ "0", "disabled" },
+		{ "1", "Simultaneous Neutral" },
+		{ "2", "Last Input Priority (4 Way)" },
+		{ "3", "Last Input Priority (8 Way)" },
+		{ "4", "First Input Priority" },
+		{ "5", "Up Priority (Up-override Down)" },
+		{ "6", "Down Priority (Left/Right Last Input Priority)" },
+	},
+	"3"
+};
 static struct retro_core_option_v2_definition var_fbneo_lightgun_crosshair_emulation = {
 	"fbneo-lightgun-crosshair-emulation",
 	"Crosshair emulation",
@@ -935,6 +955,11 @@ void set_environment()
 	var_fbneo_analog_speed.desc                            = RETRO_ANALOG_CAT_DESC;
 	var_fbneo_analog_speed.info                            = RETRO_ANALOG_CAT_INFO;
 	vars_systems.push_back(&var_fbneo_analog_speed);
+
+	var_fbneo_socd.desc                                    = "SOCD Mode";
+	var_fbneo_socd.info                                    = "Change ULDR priority handling";
+	vars_systems.push_back(&var_fbneo_socd);
+
 
 	var_fbneo_lightgun_crosshair_emulation.desc            = RETRO_CROSSHAIR_CAT_DESC;
 	var_fbneo_lightgun_crosshair_emulation.info            = RETRO_CROSSHAIR_CAT_INFO;
@@ -1916,6 +1941,13 @@ void check_variables(void)
 	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
 	{
 		nAnalogSpeed = percent_parser(var.value);
+	}
+
+	var.key = var_fbneo_socd.key;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
+	{
+		for (int i = 0; i < 6; i++)
+			nSocd[i] = atoi(var.value);
 	}
 
 	var.key = var_fbneo_lightgun_crosshair_emulation.key;
