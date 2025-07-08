@@ -2330,26 +2330,23 @@ bool retro_load_game(const struct retro_game_info *info)
 			break;
 
 		case 2:{
-			//#### Add IPS .dat load with Romdata support ####
+			// #### Add IPS .dat load with Romdata support ####
 			char szRomset[MAX_PATH] = {0};
 			char szDatDir[MAX_PATH] = {0};
 			const char* dir = NULL;
 			char szSysDir[MAX_PATH] = {0};
 
-			// Get IPS .dat path (e.g., "E:\games\captcommkr")
+			// Extract the directory path of the IPS .dat file (e.g., "E:/ips/captcommkr/")
 			extract_directory(szDatDir, info->path, sizeof(szDatDir));
 
-			// Get IPS Romset Name (exp: "captcommkr")
+			// Get the Romset name from the path (e.g., "captcommkr")
 			const char* lastSlash = strrchr(szDatDir, PATH_DEFAULT_SLASH_C());
 			if (lastSlash) {
 				strncpy(szRomset, lastSlash + 1, sizeof(szRomset) - 1);
 			}
-			//If the Romset name (e.g., "captcommkr") does not exist in the DrvName list, and .dat file exist in the path (e.g., \SYSTEM_DIRECTORY(RetroArch Bios folder)\fbneo\romdata\captcommkr.dat) , try to load Romset by Romdata.
-			// Success condition: The Romset (e.g., "captcommkr.zip") must exist in one of the following paths:
-			// - [.dat file directory] (e.g., "\SYSTEM_DIRECTORY\fbneo\romdata\")
-			// - \SYSTEM_DIRECTORY\fbneo\
-			// - \SYSTEM_DIRECTORY\fbneo\arcade\
-			// - Defined in \SYSTEM_DIRECTORY\fbneo\path\rom_path.opt
+			// If the Romset (e.g., "captcommkr") is not in the BurnDrv list:
+			//   - Search for its .dat file in [SYSTEM_DIRECTORY]/fbneo/romdata/ (e.g., "captcommkr.dat")
+			//   - If found, load it via RomdataGetDrvName() and initialize with RomDataInit()
 			if (~0U == BurnDrvGetIndexByName(szRomset)) {
 			    if (environ_cb(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY, &dir) && dir)
 				{
@@ -2362,7 +2359,7 @@ bool retro_load_game(const struct retro_game_info *info)
 					}
 				}
 			}
-			//#### #### #### #### #### #### #### #### ####
+			// #### #### #### #### #### #### #### #### ####
 			IpsPatchInit();
 			break;
 		}
