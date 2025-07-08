@@ -2344,6 +2344,11 @@ bool retro_load_game(const struct retro_game_info *info)
 				strncpy(szRomset, lastSlash + 1, sizeof(szRomset) - 1);
 			}
 			//If the Romset name (e.g., "captcommkr") does not exist in the DrvName list, and .dat file exist in the path (e.g., \SYSTEM_DIRECTORY(RetroArch Bios folder)\fbneo\romdata\captcommkr.dat) , try to load Romset by Romdata.
+			// Success condition: The Romset (e.g., "captcommkr.zip") must exist in one of the following paths:
+			// - [.dat file directory] (e.g., "\SYSTEM_DIRECTORY\fbneo\romdata\")
+			// - \SYSTEM_DIRECTORY\fbneo\
+			// - \SYSTEM_DIRECTORY\fbneo\arcade\
+			// - Defined in \SYSTEM_DIRECTORY\fbneo\path\rom_path.opt
 			if (~0U == BurnDrvGetIndexByName(szRomset)) {
 			    if (environ_cb(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY, &dir) && dir)
 				{
