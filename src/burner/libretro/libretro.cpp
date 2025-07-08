@@ -2336,7 +2336,8 @@ bool retro_load_game(const struct retro_game_info *info)
 			const char* dir = NULL;
 			char szSysDir[MAX_PATH] = {0};
 
-			extract_directory(szDatDir, info->path, sizeof(szDatDir)); // Get IPS .dat path (e.g., "E:\games\captcommkr")
+			// Get IPS .dat path (e.g., "E:\games\captcommkr")
+			extract_directory(szDatDir, info->path, sizeof(szDatDir));
 
 			// Get IPS Romset Name (exp: "captcommkr")
 			const char* lastSlash = strrchr(szDatDir, PATH_DEFAULT_SLASH_C());
