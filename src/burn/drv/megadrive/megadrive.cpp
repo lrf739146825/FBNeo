@@ -254,6 +254,7 @@ UINT8 MegadriveJoy3[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 UINT8 MegadriveJoy4[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 UINT8 MegadriveJoy5[12] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 UINT8 MegadriveDIP[2] = {0, 0};
+static ClearOpposite<5, UINT16> clear_opposite;
 
 static UINT32 RomNum = 0;
 static UINT32 RomSize = 0;
@@ -1602,6 +1603,7 @@ static INT32 MegadriveResetDo()
 
 	memset(JoyPad, 0, sizeof(struct MegadriveJoyPad));
 	teamplayer_reset();
+	clear_opposite.reset();
 
 	// default VDP register values (based on Fusion)
 	memset(RamVReg, 0, sizeof(struct PicoVideo));
@@ -4918,6 +4920,9 @@ INT32 MegadriveFrame()
 		JoyPad->pad[3] |= (MegadriveJoy4[i] & 1) << i;
 		JoyPad->pad[4] |= (MegadriveJoy5[i] & 1) << i;
 	}
+	for (INT32 i = 0; i < 5; i++) {
+		clear_opposite.check(i, JoyPad->pad[i], 0x01, 0x02, 0x04, 0x08, nSocd[i]);
+	}
 
 	SekCyclesNewFrame(); // for sound sync
 	ZetNewFrame();
@@ -5011,7 +5016,8 @@ INT32 MegadriveFrame()
 			RamVReg->pending_ints |= 0x10;
 			if (RamVReg->reg[0] & 0x10) {
 				//bprintf(0, _T("h-int @ %d. "), SekCyclesDoneFrame());
-				SekSetIRQLine(4, CPU_IRQSTATUS_ACK);
+				//SekSetIRQLine(4, CPU_IRQSTATUS_ACK);
+				if (SekGetIRQLevel() < 4) SekSetIRQLine(4, CPU_IRQSTATUS_ACK);
 			}
 		}
 
@@ -5031,7 +5037,7 @@ INT32 MegadriveFrame()
 			SekCyclesBurn(DMABURN());
 #endif
 #endif
-			SekCyclesBurnRun(CheckDMA());
+			SekCyclesBurn(CheckDMA());
 
 			SekRunM68k(CYCLES_M68K_VINT_LAG);
 
@@ -5079,7 +5085,7 @@ INT32 MegadriveFrame()
 			if (y < lines_vis) {
 				do_timing_hacks_as(vdp_slots);
 			} else {
-				SekCyclesBurnRun(CheckDMA());
+				SekCyclesBurn(CheckDMA());
 			}
 			SekRunM68k(CYCLES_M68K_LINE);
 		}
@@ -5149,6 +5155,7 @@ INT32 MegadriveScan(INT32 nAction, INT32 *pnMin)
 		SCAN_VAR(z80_cycle_cnt);
 
 		BurnRandomScan(nAction);
+		clear_opposite.scan();
 	}
 
 	if ((nAction & ACB_NVRAM) && RamMisc->SRamDetected) {

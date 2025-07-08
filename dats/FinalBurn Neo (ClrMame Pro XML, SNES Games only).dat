@@ -1963,6 +1963,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="harvmoontsc" cloneof="harvmoon" romof="harvmoon" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Bokujou Monogatari (Hack, Simplified Chinese v2.0)</description>
+		<year>2009</year>
+		<manufacturer>TGB</manufacturer>
+		<rom name="Bokujou Monogatari T-Chs v2.0 (2009)(TGB).sfc" size="2097152" crc="2da5d261"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="harvmoonttc" cloneof="harvmoon" romof="harvmoon" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Bokujou Monogatari (Hack, Traditional Chinese v2.0)</description>
+		<year>2009</year>
+		<manufacturer>TGB</manufacturer>
+		<rom name="Bokujou Monogatari T-Cht v2.0 (2009)(TGB).sfc" size="2097152" crc="48cc8cd7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="harvmoonj" cloneof="harvmoon" romof="harvmoon" sourcefile="snes/d_snes.cpp">
 		<description>Bokujou Monogatari (Japan, Rev. 1)</description>
 		<year>1996</year>
@@ -5755,6 +5773,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fireemblem4te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Genealogy of the Holy War (Hack, English v1.01)</description>
+		<year>2025</year>
+		<manufacturer>Miacis</manufacturer>
+		<rom name="Fire Emblem - Genealogy of the Holy War T-Eng v1.01 (2025)(Miacis).sfc" size="8388608" crc="0fba1e19"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fireemblemtsc" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem - Monshou no Nazo (Hack, Simplified Chinese v1.03)</description>
@@ -5790,7 +5817,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="fireemblem4tsc" cloneof="fireemblem4j" romof="fireemblem4j" sourcefile="snes/d_snes.cpp">
+	<game name="fireemblem4tsc" cloneof="fireemblem4te" romof="fireemblem4te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem - Seisen no Keifu (Hack, Simplified Chinese v1.1)</description>
 		<year>2008</year>
@@ -5799,7 +5826,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="fireemblem4ttc" cloneof="fireemblem4j" romof="fireemblem4j" sourcefile="snes/d_snes.cpp">
+	<game name="fireemblem4ttc" cloneof="fireemblem4te" romof="fireemblem4te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem - Seisen no Keifu (Hack, Traditional Chinese v1.1)</description>
 		<year>2008</year>
@@ -5808,7 +5835,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="fireemblem4j" sourcefile="snes/d_snes.cpp">
+	<game name="fireemblem4j" cloneof="fireemblem4te" romof="fireemblem4te" sourcefile="snes/d_snes.cpp">
 		<description>Fire Emblem - Seisen no Keifu (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Nintendo</manufacturer>

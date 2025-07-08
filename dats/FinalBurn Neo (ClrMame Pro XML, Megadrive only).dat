@@ -4322,6 +4322,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="daikok2tsc" cloneof="newhoriz" romof="newhoriz" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Daikoukai Jidai II (Hack, Simplified Chinese v1.9c)</description>
+		<year>2011</year>
+		<manufacturer>Ken_Tse</manufacturer>
+		<rom name="Daikoukai Jidai II T-Chs v1.9c (2011)(Ken_Tse).bin" size="2097152" crc="a3ca9b9e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="daikok2" cloneof="newhoriz" romof="newhoriz" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Daikoukai Jidai II (Japan)</description>
 		<year>1994</year>
@@ -4907,7 +4916,7 @@
 		<description>Disney Collection, The - Mickey and Donald (Euro)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="disney collection, the (euro).bin" size="1048576" crc="adfde883"/>
+		<rom name="Disney Collection, The - Mickey and Donald (Euro)(1996)(Sega).bin" size="1048576" crc="adfde883"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5099,7 +5108,7 @@
 		<description>Divine Sealing (Japan) (Unl)</description>
 		<year>1991</year>
 		<manufacturer>CYX</manufacturer>
-		<rom name="divine sealing (jpn) (unl).bin" size="1048576" crc="ca72973c"/>
+		<rom name="Divine Sealing (Japan)(Unl)(1991)(CYX).bin" size="1048576" crc="ca72973c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5545,6 +5554,15 @@
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
 		<rom name="Dune II - Kampf um den Wustenplaneten (Euro, Germany)(1993)(Virgin Interactive).bin" size="1048576" crc="39790728"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dunerm" cloneof="dune2" romof="dune2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Dune: Razor Missions (Hack)</description>
+		<year>2024</year>
+		<manufacturer>Razor</manufacturer>
+		<rom name="Dune - Razor Missions (2024)(Razor).bin" size="2097152" crc="3a07a904"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8491,7 +8509,7 @@
 		<description>Hyper Marbles (Japan, Game no Kandume MegaCD Rip)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="hyper marbles (jpn) (gnk).bin" size="262144" crc="9ed72146"/>
+		<rom name="Hyper Marbles (Japan, Game no Kandume MegaCD Rip)(1991)(Sega).bin" size="262144" crc="9ed72146"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8499,7 +8517,7 @@
 		<description>Hyper Marbles (Japan, SegaNet)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="hyper marbles (jpn) (sn).bin" size="262144" crc="83bb2799"/>
+		<rom name="Hyper Marbles (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="83bb2799"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8637,7 +8655,7 @@
 		<description>Indiana Jones and the Last Crusade (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="indiana jones and the last crusade (hack, spanish).bin" size="1048576" crc="8c7871ad"/>
+		<rom name="Indiana Jones and the Last Crusade T-Spa (2018)(Wave).bin" size="1048576" crc="8c7871ad"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8681,7 +8699,7 @@
 		<description>Insector X (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="insector x (hack, spanish).bin" size="524288" crc="0a96a725"/>
+		<rom name="Insector X T-Spa T-Spa (2019)(Wave).bin" size="524288" crc="0a96a725"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8788,10 +8806,10 @@
 	</game>
 	<game name="ishidos" cloneof="ishido" romof="ishido" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Ishido - The Way of Stones (Hack, Spanish)</description>
+		<description>Ishido: The Way of Stones (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="ishido - the way of stones (hack, spanish).bin" size="131072" crc="9f24780c"/>
+		<rom name="Ishido - The Way of Stones T-Spa (2019)(Wave).bin" size="131072" crc="9f24780c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8889,7 +8907,7 @@
 		<description>James 'Buster' Douglas Knockout Boxing (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="james 'buster' douglas knockout boxing (hack, spanish).bin" size="524288" crc="915c96b4"/>
+		<rom name="James 'Buster' Douglas Knockout Boxing T-Spa (2019)(Wave).bin" size="524288" crc="915c96b4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8906,7 +8924,7 @@
 		<description>James Bond 007 - The Duel (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="james bond 007 - the duel (hack, spanish).bin" size="524288" crc="4daf3d0d"/>
+		<rom name="James Bond 007 - The Duel T-Spa (2019)(Wave).bin" size="524288" crc="4daf3d0d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8926,25 +8944,8 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="jpond" sourcefile="megadrive/d_megadrive.cpp">
-		<description>James Pond - Underwater Agent (Euro, USA)</description>
-		<year>1991</year>
-		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="James Pond - Underwater Agent (Euro, USA)(1991)(Electronic Arts).bin" size="524288" crc="d0e7b466"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="jponds" cloneof="jpond" romof="jpond" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>James Pond - Underwater Agent (Hack, Spanish)</description>
-		<year>2018</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="james pond - underwater agent (hack, spanish).bin" size="524288" crc="442cd24e"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="jpond3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>James Pond 3 - Operation Starfish (Euro, USA)</description>
+		<description>James Pond 3: Operation Starfish (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="James Pond 3 - Operation Starfish (Euro, USA)(1993)(Electronic Arts).bin" size="2097152" crc="26f64b2a"/>
@@ -8953,15 +8954,15 @@
 	</game>
 	<game name="jpond3s" cloneof="jpond3" romof="jpond3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>James Pond 3 - Operation Starfish (Hack, Spanish)</description>
+		<description>James Pond 3: Operation Starfish (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="james pond 3 - operation starfish (hack, spanish).bin" size="2097152" crc="4803b7f3"/>
+		<rom name="James Pond 3 - Operation Starfish T-Spa (2019)(Wave).bin" size="2097152" crc="4803b7f3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="robocod" sourcefile="megadrive/d_megadrive.cpp">
-		<description>James Pond II - Codename RoboCod (Euro, USA)</description>
+		<description>James Pond II: Codename RoboCod (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="James Pond II - Codename RoboCod (Euro, USA)(1991)(Electronic Arts).bin" size="524288" crc="c32b5d66"/>
@@ -8970,18 +8971,35 @@
 	</game>
 	<game name="robocods" cloneof="robocod" romof="robocod" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>James Pond II - Codename Robocod (Hack, Spanish)</description>
+		<description>James Pond II: Codename Robocod (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="james pond II - codename robocod (hack, spanish).bin" size="524288" crc="4733a2ec"/>
+		<rom name="James Pond II - Codename Robocod T-Spa (2018)(Wave).bin" size="524288" crc="4733a2ec"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="robocodj" cloneof="robocod" romof="robocod" sourcefile="megadrive/d_megadrive.cpp">
-		<description>James Pond II - Codename RoboCod (Japan, Korea)</description>
+		<description>James Pond II: Codename RoboCod (Japan, Korea)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="James Pond II - Codename RoboCod (Japan, Korea)(1991)(Electronic Arts).bin" size="524288" crc="98794702"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jpond" sourcefile="megadrive/d_megadrive.cpp">
+		<description>James Pond: Underwater Agent (Euro, USA)</description>
+		<year>1991</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="James Pond - Underwater Agent (Euro, USA)(1991)(Electronic Arts).bin" size="524288" crc="d0e7b466"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jponds" cloneof="jpond" romof="jpond" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>James Pond: Underwater Agent (Hack, Spanish)</description>
+		<year>2018</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="James Pond - Underwater Agent T-Spa (2018)(Wave).bin" size="524288" crc="442cd24e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9982,6 +10000,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lastdefense2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Last Defense 2 (HB)</description>
+		<year>2025</year>
+		<manufacturer>AAR</manufacturer>
+		<rom name="Last Defense 2 (2025)(AAR).bin" size="2475500" crc="f04aff53"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lawnmowr" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Lawnmower Man, The (Euro, USA)</description>
 		<year>1994</year>
@@ -10889,7 +10916,7 @@
 		<description>McDonald's Treasure Land Adventure (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mcdonald's treasure land adventure (euro).bin" size="1048576" crc="6ab6a8da"/>
+		<rom name="McDonald's Treasure Land Adventure (Euro)(1993)(Sega).bin" size="1048576" crc="6ab6a8da"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10906,7 +10933,7 @@
 		<description>McDonald's Treasure Land Adventure (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mcdonald's treasure land adventure (jpn).bin" size="1048576" crc="febcfd06"/>
+		<rom name="McDonald's Treasure Land Adventure (Japan)(1993)(Sega).bin" size="1048576" crc="febcfd06"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10915,7 +10942,7 @@
 		<description>McDonald's Treasure Land Adventure (Japan, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mcdonald's treasure land adventure (jpn) (beta).bin" size="1048576" crc="7bf477e8"/>
+		<rom name="McDonald's Treasure Land Adventure (Japan, Proto)(1993)(Sega).bin" size="1048576" crc="7bf477e8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10923,7 +10950,7 @@
 		<description>McDonald's Treasure Land Adventure (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mcdonald's treasure land adventure (usa).bin" size="1048576" crc="04ef4899"/>
+		<rom name="McDonald's Treasure Land Adventure (USA)(1993)(Sega).bin" size="1048576" crc="04ef4899"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10931,7 +10958,7 @@
 		<description>Medal City (Japan, SegaNet)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="medal city (jpn) (sn).bin" size="262144" crc="3ef4135d"/>
+		<rom name="Medal City (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="3ef4135d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11980,7 +12007,7 @@
 		<description>Monster World IV (USA, Europe) (English, Japanese) (Virtual Console)</description>
 		<year>2012</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Monster World IV EN/JP (USA, Europe)(Virtual Console)(2012)(Sega).bin" size="2097152" crc="af050c46"/>
+		<rom name="Monster World IV (USA, Europe)(English, Japanese)(Virtual Console)(2012)(Sega).bin" size="2097152" crc="af050c46"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14969,7 +14996,7 @@
 		<description>R.B.I. Baseball '93 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball '93 (usa).bin" size="1048576" crc="beafce84"/>
+		<rom name="R.B.I. Baseball '93 (USA)(1993)(Tengen).bin" size="1048576" crc="beafce84"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14977,7 +15004,7 @@
 		<description>R.B.I. Baseball '94 (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball '94 (euro, usa).bin" size="2097152" crc="4eb4d5e4"/>
+		<rom name="R.B.I. Baseball '94 (Euro, USA)(1994)(Tengen).bin" size="2097152" crc="4eb4d5e4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14985,15 +15012,15 @@
 		<description>R.B.I. Baseball 3 (USA)</description>
 		<year>1991</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball 3 (usa).bin" size="524288" crc="4840348c"/>
+		<rom name="R.B.I. Baseball 3 (USA)(1991)(Tengen).bin" size="524288" crc="4840348c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="rbibb4j" cloneof="rbibb4" romof="rbibb4" sourcefile="megadrive/d_megadrive.cpp">
-		<description>R.B.I. Baseball 4 (Jpn)</description>
+		<description>R.B.I. Baseball 4 (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball 4 (jpn).bin" size="1048576" crc="8f4e1005"/>
+		<rom name="R.B.I. Baseball 4 (Japan)(1992)(Tengen).bin" size="1048576" crc="8f4e1005"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15001,7 +15028,7 @@
 		<description>R.B.I. Baseball 4 (Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball 4 (beta).bin" size="1048576" crc="f7420278"/>
+		<rom name="R.B.I. Baseball 4 (Proto)(1992)(Tengen).bin" size="1048576" crc="f7420278"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15009,7 +15036,7 @@
 		<description>R.B.I. Baseball 4 (USA)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="r.b.i. baseball 4 (usa).bin" size="1048576" crc="fecf9b94"/>
+		<rom name="R.B.I. Baseball 4 (USA)(1992)(Tengen).bin" size="1048576" crc="fecf9b94"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15017,7 +15044,7 @@
 		<description>Race Drivin' (USA)</description>
 		<year>1993</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="race drivin' (usa).bin" size="524288" crc="d737cf3d"/>
+		<rom name="Race Drivin' (USA)(1993)(Tengen).bin" size="524288" crc="d737cf3d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21143,6 +21170,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kingcoltsc" cloneof="kingcol" romof="kingcol" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Tougiou King Colossus (Hack, Simplified Chinese)</description>
+		<year>2017</year>
+		<manufacturer>WINSEN</manufacturer>
+		<rom name="Tougiou King Colossus T-Chs (2017)(WINSEN).bin" size="1048576" crc="53ea0f67"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kingcols" cloneof="kingcol" romof="kingcol" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Tougiou King Colossus (Hack, Spanish)</description>
@@ -21357,15 +21393,15 @@
 		<description>Tun Shi Tian Di III (China) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>SKOB</manufacturer>
-		<rom name="tun shi tian di iii (chi) (unl).bin" size="2097152" crc="b23c4166"/>
+		<rom name="Tun Shi Tian Di III (China)(Unl)(1997)(SKOB).bin" size="2097152" crc="b23c4166"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tunshi" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Tun Shi Tian Di III (China, Simple Chinese) (Unl)</description>
+		<description>Tun Shi Tian Di III (China, Simplified Chinese) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>SKOB</manufacturer>
-		<rom name="tun shi tian di iii (chi) (simple chinese) (unl).bin" size="2097152" crc="ea57b668"/>
+		<rom name="Tun Shi Tian Di III (China, Simp. Chinese)(Unl)(1997)(SKOB).bin" size="2097152" crc="ea57b668"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
