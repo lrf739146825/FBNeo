@@ -2330,7 +2330,7 @@ bool retro_load_game(const struct retro_game_info *info)
 			break;
 
 		case 2:{
-			// #### Add IPS .dat load with Romdata support ####
+			// #### Feature: IPS .dat Loading with Romdata Support ####
 			char szRomset[MAX_PATH] = {0};
 			char szDatDir[MAX_PATH] = {0};
 			const char* dir = NULL;
@@ -2359,7 +2359,7 @@ bool retro_load_game(const struct retro_game_info *info)
 					}
 				}
 			}
-			// #### #### #### #### #### #### #### #### ####
+			// #### #### #### #### #### #### #### #### #### #### ####
 			IpsPatchInit();
 			break;
 		}
