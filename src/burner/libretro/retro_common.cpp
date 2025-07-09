@@ -956,8 +956,14 @@ void set_environment()
 	var_fbneo_analog_speed.info                            = RETRO_ANALOG_CAT_INFO;
 	vars_systems.push_back(&var_fbneo_analog_speed);
 
-	var_fbneo_socd.desc                                    = "SOCD Mode";
-	var_fbneo_socd.info                                    = "Change ULDR priority handling";
+	var_fbneo_socd.desc                                    = RETRO_SOCD_DESC;
+	var_fbneo_socd.info                                    = RETRO_SOCD_INFO;
+	var_fbneo_socd.values[1].value                         = RETRO_SOCD_OPTIONS_1;
+	var_fbneo_socd.values[2].value                         = RETRO_SOCD_OPTIONS_2;
+	var_fbneo_socd.values[3].value                         = RETRO_SOCD_OPTIONS_3;
+	var_fbneo_socd.values[4].value                         = RETRO_SOCD_OPTIONS_4;
+	var_fbneo_socd.values[5].value                         = RETRO_SOCD_OPTIONS_5;
+	var_fbneo_socd.values[6].value                         = RETRO_SOCD_OPTIONS_6;
 	vars_systems.push_back(&var_fbneo_socd);
 
 
