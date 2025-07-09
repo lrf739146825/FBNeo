@@ -709,7 +709,7 @@
 		<description>Akira (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Akira (Japan)(1988)(Taito Corp.).nes" size="393232" crc="9d83974c"/>
+		<rom name="Akira (Japan)(1988)(Taito).nes" size="393232" crc="9d83974c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2695,6 +2695,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="bubblbob2j" cloneof="bubblbobpar2" romof="bubblbobpar2" sourcefile="nes/d_nes.cpp">
+		<description>Bubble Bobble 2 (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Bubble Bobble 2 (Japan)(1993)(Taito).nes" size="262160" crc="98a28f9c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="bubblebobbledx" cloneof="bubblebobble" romof="bubblebobble" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Bubble Bobble Deluxe (Hack)</description>
@@ -3095,7 +3103,7 @@
 	</game>
 	<game name="castliih" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Castlevania II - Simon's Quest (Hack, Re-translation + Map)</description>
+		<description>Castlevania II: Simon's Quest (Hack, Re-translation + Map)</description>
 		<year>2020</year>
 		<manufacturer>Bisqwit</manufacturer>
 		<rom name="Castlevania II - Simon's Quest (English Re-translation + Map)(2020)(Bisqwit).nes" size="262160" crc="153143e9"/>
@@ -3104,7 +3112,7 @@
 	</game>
 	<game name="castliic" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Castlevania II - Simon's Quest (Hack, Spanish v2.0)</description>
+		<description>Castlevania II: Simon's Quest (Hack, Spanish v2.0)</description>
 		<year>2013</year>
 		<manufacturer>Julian L.</manufacturer>
 		<rom name="Castlevania II - Simon's Quest T-Spa v2.0 (2013)(Julian L.).nes" size="262160" crc="38d393a9"/>
@@ -3112,7 +3120,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="castlii" sourcefile="nes/d_nes.cpp">
-		<description>Castlevania II - Simon's Quest (USA)</description>
+		<description>Castlevania II: Simon's Quest (USA)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Castlevania II - Simon's Quest (USA)(1988)(Konami).nes" size="262160" crc="a9c2c503"/>
@@ -3120,7 +3128,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="castliii" sourcefile="nes/d_nes.cpp">
-		<description>Castlevania III - Dracula's Curse (USA)</description>
+		<description>Castlevania III: Dracula's Curse (USA)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Castlevania III - Dracula's Curse (USA)(1990)(Konami).nes" size="393232" crc="7cc9c669"/>
@@ -3256,7 +3264,7 @@
 		<description>Chack'n Pop (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Chack'n Pop (Japan)(1985)(Taito Corp.).nes" size="24592" crc="e9b39b87"/>
+		<rom name="Chack'n Pop (Japan)(1985)(Taito).nes" size="24592" crc="e9b39b87"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3306,6 +3314,14 @@
 		<year>2023-25</year>
 		<manufacturer>Cat Hui Trading</manufacturer>
 		<rom name="Changeable Guardian ESTIQUE (Glitch Fix v2)(USA)(2023-25)(Cat Hui Trading - Sharpnull).nes" size="524304" crc="0dc9a2fc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="supercontra7" sourcefile="nes/d_nes.cpp">
+		<description>Chao Ji Zhan Hun: Super Contra 7 (China) (Unl)</description>
+		<year>1996</year>
+		<manufacturer>E.S.C Co.</manufacturer>
+		<rom name="Chao Ji Zhan Hun - Super Contra 7 (China)(Unl)(1996)(E.S.C Co.).nes" size="262160" crc="69480594"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5183,7 +5199,7 @@
 		<description>Double Dragon (Hack, Spanish v1.1)</description>
 		<year>2021</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="double dragon (usa) - castellano v1.1.nes" size="262160" crc="f5e19c32"/>
+		<rom name="Double Dragon T-Spa v1.1 (2021)(Wave).nes" size="262160" crc="f5e19c32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5205,15 +5221,15 @@
 	</game>
 	<game name="doubldraiic" cloneof="doubldraii" romof="doubldraii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Double Dragon II - The Revenge (Hack, Spanish)</description>
+		<description>Double Dragon II: The Revenge (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="double dragon ii - the revenge (usa) (rev a) - castellano v1.0.nes" size="262160" crc="67a0d781"/>
+		<rom name="Double Dragon II - The Revenge T-Spa (2017)(Wave).nes" size="262160" crc="67a0d781"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="doubldraiij" cloneof="doubldraii" romof="doubldraii" sourcefile="nes/d_nes.cpp">
-		<description>Double Dragon II - The Revenge (Japan)</description>
+		<description>Double Dragon II: The Revenge (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Double Dragon II - The Revenge (Japan)(1989)(Technos).nes" size="262160" crc="1ddc74e3"/>
@@ -5221,7 +5237,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="doubldraii" sourcefile="nes/d_nes.cpp">
-		<description>Double Dragon II - The Revenge (USA)</description>
+		<description>Double Dragon II: The Revenge (USA)</description>
 		<year>1990</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Double Dragon II - The Revenge (USA)(1990)(Acclaim).nes" size="262160" crc="cecfbf92"/>
@@ -5229,7 +5245,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="doubldraiiij" cloneof="doubldraiii" romof="doubldraiii" sourcefile="nes/d_nes.cpp">
-		<description>Double Dragon III - The Rosetta Stones (Japan)</description>
+		<description>Double Dragon III: The Rosetta Stones (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Double Dragon III - The Rosetta Stone (Japan)(1991)(Technos).nes" size="262160" crc="d15f701d"/>
@@ -5238,7 +5254,7 @@
 	</game>
 	<game name="doubldraiiisc" cloneof="doubldraiii" romof="doubldraiii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Double Dragon III - The Sacred Stones (Hack, Chinese)</description>
+		<description>Double Dragon III: The Sacred Stones (Hack, Chinese)</description>
 		<year>2022</year>
 		<manufacturer>asiwish</manufacturer>
 		<rom name="Double Dragon III - The Sacred Stones T-Chi (2022)(asiwish).nes" size="262160" crc="4b992f63"/>
@@ -5247,15 +5263,15 @@
 	</game>
 	<game name="doubldraiiic" cloneof="doubldraiii" romof="doubldraiii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Double Dragon III - The Sacred Stones (Hack, Spanish)</description>
+		<description>Double Dragon III: The Sacred Stones (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="double dragon iii - the sacred stones (usa) - castellano v1.0.nes" size="262160" crc="aa40b251"/>
+		<rom name="Double Dragon III - The Sacred Stones T-Spa (2018)(Wave).nes" size="262160" crc="aa40b251"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="doubldraiii" sourcefile="nes/d_nes.cpp">
-		<description>Double Dragon III - The Sacred Stones (USA)</description>
+		<description>Double Dragon III: The Sacred Stones (USA)</description>
 		<year>1991</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Double Dragon III - The Sacred Stones (USA)(1991)(Acclaim).nes" size="262160" crc="7a6e0454"/>
@@ -5519,9 +5535,9 @@
 	</game>
 	<game name="dragonballz5" sourcefile="nes/d_nes.cpp">
 		<description>Dragon Ball Z 5 (China) (Unl)</description>
-		<year>19??</year>
+		<year>199?</year>
 		<manufacturer>Rex Game Soft</manufacturer>
-		<rom name="Dragon Ball Z 5 (China).nes" size="786448" crc="1f2b86ea"/>
+		<rom name="Dragon Ball Z 5 (China)(Unl)(199x)(Rex Game Soft).nes" size="786448" crc="1f2b86ea"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5861,14 +5877,6 @@
 		<manufacturer>Mindscape</manufacturer>
 		<rom name="Dropzone (Euro)(1992)(Mindscape).nes" size="65552" crc="ab29ab28"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
-		<driver status="good"/>
-	</game>
-	<game name="druaganotou" sourcefile="nes/d_nes.cpp">
-		<description>Druaga no Tou (Japan)</description>
-		<year>1985</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="Druaga no Tou (Japan)(1985)(Namcot).nes" size="40976" crc="0c045fb9"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="duckhunt" sourcefile="nes/d_nes.cpp">
@@ -6570,7 +6578,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="famikan" sourcefile="nes/d_nes.cpp">
-		<comment>ADULT ONLY</comment>
+		<comment>Adult Only</comment>
 		<description>Famikan (Japan) (Unl)</description>
 		<year>2005</year>
 		<manufacturer>Dengakudou</manufacturer>
@@ -7235,7 +7243,7 @@
 		<description>Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)(1991)(Taito Corp.).nes" size="393232" crc="12f38740"/>
+		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)(1991)(Taito).nes" size="393232" crc="12f38740"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8195,19 +8203,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gooniesiithej" cloneof="gooniesiithe" romof="gooniesiithe" sourcefile="nes/d_nes.cpp">
+		<comment>Fratelli Saigo no Chousen ~ The Fratellis' Last Stand</comment>
+		<description>Goonies II, The (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Goonies II, The - Fratelli Saigo no Chousen (Japan)(1987)(Konami).nes" size="131088" crc="a1f99604"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="gooniesiithe" sourcefile="nes/d_nes.cpp">
 		<description>Goonies II, The (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Goonies II, The (USA)(1987)(Konami).nes" size="131088" crc="aa9ca482"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="gooniesiithej" cloneof="gooniesiithe" romof="gooniesiithe" sourcefile="nes/d_nes.cpp">
-		<description>Goonies II, The - Fratelli Saigo no Chousen (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Goonies II, The - Fratelli Saigo no Chousen (Japan)(1987)(Konami).nes" size="131088" crc="a1f99604"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9025,7 +9034,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hitlenofukc" cloneof="bioniccommando" romof="bioniccommando" sourcefile="nes/d_nes.cpp">
-		<description>Hitler no Fukkatsu - Top Secret (China)</description>
+		<description>Hitler no Fukkatsu: Top Secret (China)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Hitler no Fukkatsu - Top Secret (China)(1988)(Capcom).nes" size="294928" crc="1dd2194c"/>
@@ -9033,7 +9042,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hitlenofuk" cloneof="bioniccommando" romof="bioniccommando" sourcefile="nes/d_nes.cpp">
-		<description>Hitler no Fukkatsu - Top Secret (Japan)</description>
+		<description>Hitler no Fukkatsu: Top Secret (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Hitler no Fukkatsu - Top Secret (Japan)(1988)(Capcom).nes" size="262160" crc="4749e48f"/>
@@ -9247,6 +9256,14 @@
 		<year>1986</year>
 		<manufacturer>Use</manufacturer>
 		<rom name="Hottaaman no Chitei Tanken (Japan)(1986)(Use).nes" size="65552" crc="7d5ee762"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="huarongdao" sourcefile="nes/d_nes.cpp">
+		<description>Hua Rong Dao (China) (Unl)</description>
+		<year>1996</year>
+		<manufacturer>Waixing</manufacturer>
+		<rom name="Hua Rong Dao (China)(Unl)(1996)(Waixing).nes" size="24592" crc="79671b43"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9640,7 +9657,7 @@
 	</game>
 	<game name="jackalem" cloneof="jackal" romof="jackal" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Jackal - Endless Mission (v1.2)</description>
+		<description>Jackal - Endless Mission (Hack, v1.2)</description>
 		<year>2021</year>
 		<manufacturer>HHNM Team - ZENG GE</manufacturer>
 		<rom name="Jackal - Endless Mission v1.2 (2021)(HHNM Team - ZENG GE).nes" size="262160" crc="833c6bc4"/>
@@ -9656,10 +9673,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="jackiechan" sourcefile="nes/d_nes.cpp">
-		<description>Jackie Chan (USA)</description>
+		<description>Jackie Chan's Action Kung Fu (USA)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Jackie Chan (USA)(1990)(Hudson Soft).nes" size="262160" crc="6f371f16"/>
+		<rom name="Jackie Chan's Action Kung Fu (USA)(1990)(Hudson Soft).nes" size="262160" crc="6f371f16"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9776,7 +9793,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jesusj" cloneof="jesus" romof="jesus" sourcefile="nes/d_nes.cpp">
-		<description>Jesus - Kyoufu no Bio Monster (Japan)</description>
+		<description>Jesus: Kyoufu no Bio Monster (Japan)</description>
 		<year>1989</year>
 		<manufacturer>King Records</manufacturer>
 		<rom name="Jesus - Kyoufu no Bio Monster (Japan)(1989)(King Records).nes" size="262160" crc="5c2c76a4"/>
@@ -10247,44 +10264,26 @@
 		<driver status="good"/>
 	</game>
 	<game name="kaikeyanmar" cloneof="kidnik" romof="kidnik" sourcefile="nes/d_nes.cpp">
-		<description>Kaiketsu Yancha Maru (Japan)</description>
+		<description>Kaiketsu Yanchamaru (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Kaiketsu Yancha Maru (Japan)(1987)(Irem).nes" size="262160" crc="6394bcd8"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="kaikeyanmar2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kaiketsu Yancha Maru 2 - Karakuri Land (Hack, English)</description>
-		<year>2020</year>
-		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Kaiketsu Yancha Maru 2 - Karakuri Land T-Eng (2020)(Zynk Oxhyde).nes" size="262160" crc="0f038e8f"/>
+		<rom name="Kaiketsu Yanchamaru (Japan)(1987)(Irem).nes" size="262160" crc="6394bcd8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="kaikeyanmar2j" cloneof="kaikeyanmar2" romof="kaikeyanmar2" sourcefile="nes/d_nes.cpp">
-		<description>Kaiketsu Yancha Maru 2 - Karakuri Land (Japan)</description>
+		<description>Kaiketsu Yanchamaru 2: Karakuri Land (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Kaiketsu Yancha Maru 2 - Karakuri Land (Japan)(1991)(Irem).nes" size="262160" crc="459c9e31"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="kaikeyanmar3" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Hack, English)</description>
-		<year>2013</year>
-		<manufacturer>Suicidal Translations, Proveaux</manufacturer>
-		<rom name="Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen T-Eng (2013)(Suicidal Translations, Proveaux).nes" size="393232" crc="6f533a06"/>
+		<rom name="Kaiketsu Yanchamaru 2 - Karakuri Land (Japan)(1991)(Irem).nes" size="262160" crc="459c9e31"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="kaikeyanmar3j" cloneof="kaikeyanmar3" romof="kaikeyanmar3" sourcefile="nes/d_nes.cpp">
-		<description>Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Japan)</description>
+		<description>Kaiketsu Yanchamaru 3: Taiketsu! Zouringen (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Japan)(1993)(Irem).nes" size="262160" crc="f86d5c4c"/>
+		<rom name="Kaiketsu Yanchamaru 3 - Taiketsu! Zouringen (Japan)(1993)(Irem).nes" size="262160" crc="f86d5c4c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10562,8 +10561,26 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="kaikeyanmar2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Radical Ninja Yanchamaru 2 in Karakuri Land</comment>
+		<description>Kid Niki 2: Karakuri Land (Hack, English)</description>
+		<year>2020</year>
+		<manufacturer>Zynk Oxhyde</manufacturer>
+		<rom name="Kaiketsu Yanchamaru 2 - Karakuri Land T-Eng (2020)(Zynk Oxhyde).nes" size="262160" crc="0f038e8f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kaikeyanmar3" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Radical Ninja Yanchamaru 3</comment>
+		<description>Kid Niki 3 (Hack, English)</description>
+		<year>2013</year>
+		<manufacturer>Suicidal Translations, Proveaux</manufacturer>
+		<rom name="Kaiketsu Yanchamaru 3 - Taiketsu! Zouringen T-Eng (2013)(Suicidal Translations, Proveaux).nes" size="393232" crc="6f533a06"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kidnik" sourcefile="nes/d_nes.cpp">
-		<description>Kid Niki - Radical Ninja (USA, Rev A)</description>
+		<description>Kid Niki: Radical Ninja (USA, Rev A)</description>
 		<year>1987</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Kid Niki - Radical Ninja (USA, Rev A)(1987)(Data East).nes" size="262160" crc="0f33d193"/>
@@ -10766,6 +10783,15 @@
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
 		<rom name="Klax (USA)(Unl)(1990)(Tengen).nes" size="131088" crc="755cf043"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightmoon" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Knight on the Moon (HB)</description>
+		<year>2025</year>
+		<manufacturer>kn56k</manufacturer>
+		<rom name="Knight on the Moon (2025)(kn56k).nes" size="524304" crc="e9879aaf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11237,7 +11263,7 @@
 	</game>
 	<game name="legenzelad" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Legend of Zelda, The - Ancient Dungeon (Hack, v3.0)</description>
+		<description>Legend of Zelda, The: Ancient Dungeon (Hack, v3.0)</description>
 		<year>2023</year>
 		<manufacturer>arnpoly</manufacturer>
 		<rom name="Legend of Zelda, The - Ancient Dungeon v3.0 (2023)(arnpoly).nes" size="131088" crc="2846a6b8"/>
@@ -11246,7 +11272,7 @@
 	</game>
 	<game name="legenzeldl" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Legend of Zelda, The - Dark Labyrinth (HB)</description>
+		<description>Legend of Zelda, The: Dark Labyrinth (HB)</description>
 		<year>2023</year>
 		<manufacturer>pacnsacdave</manufacturer>
 		<rom name="Legend of Zelda, The - Dark Labyrinth (2023)(pacnsacdave).nes" size="524304" crc="c190ffc1"/>
@@ -13151,11 +13177,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="moerotwi" sourcefile="nes/d_nes.cpp">
-		<description>Moero TwinBee - Cinnamon Hakase wo Sukue! (Japan)</description>
-		<year>1986</year>
+	<game name="moerotwi" cloneof="stinger" romof="stinger" sourcefile="nes/d_nes.cpp">
+		<comment>Cinnamon Hakase wo Sukue! ~ To the Rescue of Dr. Cinnamon!</comment>
+		<description>Moero TwinBee (Japan)</description>
+		<year>1986-1993</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Moero TwinBee - Cinnamon Hakase o Sukue! (Japan)(1986)(Konami).nes" size="131088" crc="ac0a622b"/>
+		<rom name="Moero TwinBee - Cinnamon Hakase o Sukue! (Japan)(1986-1993)(Konami).nes" size="131088" crc="ac0a622b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13616,8 +13643,9 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="nagagutsu" sourcefile="nes/d_nes.cpp">
-		<description>Nagagutsu wo Haita Neko - Sekai Isshuu 80 Nichi Daibouken (Japan)</description>
+	<game name="nagagutsu" cloneof="pussinboots" romof="pussinboots" sourcefile="nes/d_nes.cpp">
+		<comment>Sekai Isshuu 80 Nichi Daibouken ~ Around the World in 80 Days</comment>
+		<description>Nagagutsu wo Haita Neko (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Shouei System</manufacturer>
 		<rom name="Nagagutsu wo Haita Neko - Sekai Isshuu 80 Nichi Daibouken (Japan)(1986)(Shouei System).nes" size="65552" crc="a78475e9"/>
@@ -14774,7 +14802,7 @@
 		<description>Parodius Da! (Hack, Spanish v1.1)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="parodius da! (japan) - castellano v1.1.nes" size="393232" crc="746bb8a8"/>
+		<rom name="Parodius Da! T-Spa v1.1 (2018)(Wave).nes" size="393232" crc="746bb8a8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15449,6 +15477,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="pussinboots" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Puss in Boots: Around the World in 80 Days (Hack, English)</description>
+		<year>2017</year>
+		<manufacturer>Psyklax</manufacturer>
+		<rom name="Puss in Boots - Around the World in 80 Days T-Eng (2017)(Psyklax).nes" size="65552" crc="261e3178"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="puyopuyoc" cloneof="puyopuyo" romof="puyopuyo" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Puyo Puyo (Hack, Spanish v1.1)</description>
@@ -15826,7 +15863,7 @@
 		<description>Rainbow Islands (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Rainbow Islands (Japan)(1988)(Taito Corp.).nes" size="131088" crc="39872654"/>
+		<rom name="Rainbow Islands (Japan)(1988)(Taito).nes" size="131088" crc="39872654"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16347,7 +16384,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rockm2" cloneof="megaman2" romof="megaman2" sourcefile="nes/d_nes.cpp">
-		<description>Rockman 2 - Dr. Wily no Nazo (Japan)</description>
+		<description>Rockman 2: Dr. Wily no Nazo (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Rockman 2 - Dr. Wily no Nazo (Japan)(1988)(Capcom).nes" size="262160" crc="30b91650"/>
@@ -16356,7 +16393,7 @@
 	</game>
 	<game name="rockm3c" cloneof="megaman3" romof="megaman3" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Rockman 3 - Dr. Wily no Saigo! (Hack, Chinese)</description>
+		<description>Rockman 3: Dr. Wily no Saigo!? (Hack, Chinese)</description>
 		<year>2023</year>
 		<manufacturer>NOKOH</manufacturer>
 		<rom name="Rockman 3 - Dr. Wily no Saigo! T-Chi (2023)(NOKOH).nes" size="786448" crc="8125b0a4"/>
@@ -16364,7 +16401,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rockm3" cloneof="megaman3" romof="megaman3" sourcefile="nes/d_nes.cpp">
-		<description>Rockman 3 - Dr. Wily no Saigo! (Japan)</description>
+		<description>Rockman 3: Dr. Wily no Saigo!? (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Rockman 3 - Dr. Wily no Saigo! (Japan)(1990)(Capcom).nes" size="393232" crc="fce6cea2"/>
@@ -16372,7 +16409,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rockm4" cloneof="megaman4" romof="megaman4" sourcefile="nes/d_nes.cpp">
-		<description>Rockman 4 - Aratanaru Yabou!! (Japan)</description>
+		<description>Rockman 4: Aratanaru Yabou!! (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Rockman 4 - Aratanaru Yabou!! (Japan)(1991)(Capcom).nes" size="524304" crc="771a9138"/>
@@ -16381,7 +16418,7 @@
 	</game>
 	<game name="rockm4mi" cloneof="megaman4" romof="megaman4" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Rockman 4 - Minus Infinity (Hack, v1.01)</description>
+		<description>Rockman 4: Minus Infinity (Hack, v1.01)</description>
 		<year>2016</year>
 		<manufacturer>Puresabe</manufacturer>
 		<rom name="Rockman 4 - Minus Infinity (Hack v1.01)(2016)(Puresabe).nes" size="1048592" crc="e9887ba6"/>
@@ -16389,7 +16426,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rockm5" cloneof="megaman5" romof="megaman5" sourcefile="nes/d_nes.cpp">
-		<description>Rockman 5 - Blues no Wana! (Japan)</description>
+		<description>Rockman 5: Blues no Wana!? (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Rockman 5 - Blues no Wana! (Japan)(1992)(Capcom).nes" size="524304" crc="9d01e44c"/>
@@ -16398,7 +16435,7 @@
 	</game>
 	<game name="rockm5mp" cloneof="megaman5" romof="megaman5" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Rockman 5 - Metropolis (GlobalHack, v1.1a)</description>
+		<description>Rockman 5: Metropolis (GlobalHack, v1.1a)</description>
 		<year>2021-22</year>
 		<manufacturer>StalkerMaestro</manufacturer>
 		<rom name="Rockman 5 - Metropolis v1.1a (2022)(StalkerMaestro).nes" size="524304" crc="f4e22701"/>
@@ -16406,7 +16443,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rockm6" cloneof="megaman6" romof="megaman6" sourcefile="nes/d_nes.cpp">
-		<description>Rockman 6 - Shijou Saidai no Tatakai!! (Japan)</description>
+		<description>Rockman 6: Shijou Saidai no Tatakai!! (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Rockman 6 - Shijou Saidai no Tatakai!! (Japan)(1993)(Capcom).nes" size="524304" crc="ab1d7979"/>
@@ -18309,7 +18346,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="stinger" cloneof="moerotwi" romof="moerotwi" sourcefile="nes/d_nes.cpp">
+	<game name="stinger" sourcefile="nes/d_nes.cpp">
 		<description>Stinger (USA)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
@@ -18701,12 +18738,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="smb2j" cloneof="smb2" romof="smb2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Super Mario Bros. 2 J (Japan, MMC3 Conversion Hack)</description>
-		<year>2020</year>
-		<manufacturer>Loopy</manufacturer>
-		<rom name="Super Mario Bros. 2 J (Japan, MMC3 Conversion).nes" size="81936" crc="0133ebf9"/>
+	<game name="smb2j" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Mapper conversion by Loopy (2020)</comment>
+		<description>Super Mario Bros. 2: The Lost Levels (Japan, MMC3 Conversion)</description>
+		<year>1986</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Super Mario Bros. 2 - The Lost Levels (Japan, MMC3 Conversion)(1986-2020)(Nintendo - Loopy).nes" size="81936" crc="0133ebf9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19054,6 +19091,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
+	<game name="supermanj" cloneof="superman" romof="superman" sourcefile="nes/d_nes.cpp">
+		<description>Superman (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Superman (Japan)(1988)(Kemco).nes" size="262160" crc="79f7bd86"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="superman" sourcefile="nes/d_nes.cpp">
 		<description>Superman (USA)</description>
 		<year>1988</year>
@@ -19245,7 +19290,7 @@
 		<description>Taito Chase H.Q. (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Taito Chase H.Q. (Japan)(1989)(Taito Corp.).nes" size="262160" crc="b3408ee4"/>
+		<rom name="Taito Chase H.Q. (Japan)(1989)(Taito).nes" size="262160" crc="b3408ee4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19262,7 +19307,7 @@
 		<description>Taito Grand Prix - Eikou e no License (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Taito Grand Prix - Eikou e no License (Japan)(1987)(Taito Corp.).nes" size="262160" crc="613bd034"/>
+		<rom name="Taito Grand Prix - Eikou e no License (Japan)(1987)(Taito).nes" size="262160" crc="613bd034"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19361,7 +19406,7 @@
 		<description>Takeshi no Chousenjou (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Takeshi's Challenge (Japan)(1986)(Taito Corp.).nes" size="131088" crc="e810b35c"/>
+		<rom name="Takeshi's Challenge (Japan)(1986)(Taito).nes" size="131088" crc="e810b35c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19369,7 +19414,7 @@
 		<description>Takeshi no Sengoku Fuuunji (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
-		<rom name="Takeshi no Sengoku Fuuunji (Japan)(1988)(Taito Corp.).nes" size="262160" crc="5c80a4a2"/>
+		<rom name="Takeshi no Sengoku Fuuunji (Japan)(1988)(Taito).nes" size="262160" crc="5c80a4a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20158,7 +20203,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="tinytooadv2molaheyo" cloneof="tinytooadv2trinwa" romof="tinytooadv2trinwa" sourcefile="nes/d_nes.cpp">
-		<description>Tiny Toon Adventures 2 - Montana Land he Youkoso (Japan)</description>
+		<description>Tiny Toon Adventures 2: Montana Land he Youkoso (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Tiny Toon Adventures 2 - Montana Land he Youkoso (Japan)(1992)(Konami).nes" size="262160" crc="2506e382"/>
@@ -20166,7 +20211,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="tinytooadv2trinwa" sourcefile="nes/d_nes.cpp">
-		<description>Tiny Toon Adventures 2 - Trouble in Wackyland (USA)</description>
+		<description>Tiny Toon Adventures 2: Trouble in Wackyland (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Tiny Toon Adventures 2 - Trouble in Wackyland (USA)(1993)(Konami).nes" size="262160" crc="ab36e3f7"/>
@@ -20460,11 +20505,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="towerdru" sourcefile="nes/d_nes.cpp">
-		<description>Tower of Druaga, The (Japan)</description>
+	<game name="druaganotou" sourcefile="nes/d_nes.cpp">
+		<description>Tower of Druaga, The ~ Druaga no Tou (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="Tower of Druaga, The (Japan)(1985)(Namcot).nes" size="40976" crc="0c045fb9"/>
+		<rom name="Druaga no Tou (Japan)(1985)(Namcot).nes" size="40976" crc="0c045fb9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20835,6 +20880,15 @@
 		<year>2019</year>
 		<manufacturer>Dale Coop</manufacturer>
 		<rom name="Underground Adventure (2019)(Dale Coop).nes" size="524304" crc="eaf67029"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="undklotski" cloneof="huarongdao" romof="huarongdao" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Undertale Klotski (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Rani Baker</manufacturer>
+		<rom name="Undertale Klotski (2022)(Rani Baker).nes" size="24592" crc="97c37a29"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21992,26 +22046,9 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="zeldaiic" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Zelda II - The Adventure of Link (Rev 2) (Hack, Spanish)</description>
-		<year>2016</year>
-		<manufacturer>jackic</manufacturer>
-		<rom name="Zelda II - The Adventure of Link (Rev 2) T-Spa (2016)(jackic).nes" size="262160" crc="d31d09ae"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="zeldaii" sourcefile="nes/d_nes.cpp">
-		<description>Zelda II - The Adventure of Link (USA)</description>
-		<year>1988</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Zelda II - The Adventure of Link (USA)(1988)(Nintendo).nes" size="262160" crc="e3c788b0"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="zeldaiird" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Zelda II Redux - The Adventure of Link (Hack, v3.0)</description>
+		<description>Zelda II Redux: The Adventure of Link (Hack, v3.0)</description>
 		<year>2022</year>
 		<manufacturer>ShadowOne333</manufacturer>
 		<rom name="Zelda II - The Adventure of Link Redux v3.0 (2022)(ShadowOne333).nes" size="262160" crc="f4bdec40"/>
@@ -22024,6 +22061,23 @@
 		<year>2023</year>
 		<manufacturer>Ok Impala!</manufacturer>
 		<rom name="Zelda II - Amida's Curse v1.9 (2021)(Ok Impala!).nes" size="262160" crc="f01a5b55"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="zeldaiic" cloneof="zeldaii" romof="zeldaii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Zelda II: The Adventure of Link (Rev 2) (Hack, Spanish)</description>
+		<year>2016</year>
+		<manufacturer>jackic</manufacturer>
+		<rom name="Zelda II - The Adventure of Link (Rev 2) T-Spa (2016)(jackic).nes" size="262160" crc="d31d09ae"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="zeldaii" sourcefile="nes/d_nes.cpp">
+		<description>Zelda II: The Adventure of Link (USA)</description>
+		<year>1988</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Zelda II - The Adventure of Link (USA)(1988)(Nintendo).nes" size="262160" crc="e3c788b0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
