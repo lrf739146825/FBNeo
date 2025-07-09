@@ -2317,7 +2317,7 @@ static int retro_dat_romset_path(const struct retro_game_info* info)
 }
 
 static void LoadIpsDatWithRomdata(const struct retro_game_info* info){
-	// Feature: Load IPS patch (.dat) via Romdata if base Romset is missing from BurnDrv list.
+	// Feature: Load IPS .dat via Romdata when base Romset is missing from BurnDrv
 	char szRomset[MAX_PATH] = {0};
 	char szDatDir[MAX_PATH] = {0};
 	const char* dir = NULL;
@@ -2331,10 +2331,11 @@ static void LoadIpsDatWithRomdata(const struct retro_game_info* info){
 	if (lastSlash) {
 		strncpy(szRomset, lastSlash + 1, sizeof(szRomset) - 1);
 	}
-	// If the Romset (e.g., "kof2k2expand") is not in the BurnDrv list:
+	// If the Romset (e.g., "kof2k2expand") is not in the BurnDrv
 	//   - Search for its .dat file in [SYSTEM_DIRECTORY]/fbneo/romdata/ (e.g., "kof2k2expand.dat")
 	//   - If found, load it via RomdataGetDrvName() and initialize with RomDataInit()
 	if (~0U == BurnDrvGetIndexByName(szRomset)) {
+
 		if (environ_cb(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY, &dir) && dir)
 		{
 			memcpy(szSysDir, dir, sizeof(szSysDir));
@@ -2343,8 +2344,6 @@ static void LoadIpsDatWithRomdata(const struct retro_game_info* info){
 
 			if (NULL != RomdataGetDrvName()){
 				RomDataInit();
-			} else {
-				HandleMessage(RETRO_LOG_ERROR, "Failed to load IPS .dat with Romdata.\n Romdata file not found: %s\n", szRomdataName);
 			}
 		}
 	}
