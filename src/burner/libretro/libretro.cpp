@@ -2316,6 +2316,40 @@ static int retro_dat_romset_path(const struct retro_game_info* info)
 	return nRet;
 }
 
+static void LoadIpsDatWithRomdata(const struct retro_game_info* info)
+	// Feature: Load IPS patch (.dat) via Romdata if base Romset is missing from BurnDrv list.
+	char szRomset[MAX_PATH] = {0};
+	char szDatDir[MAX_PATH] = {0};
+	const char* dir = NULL;
+	char szSysDir[MAX_PATH] = {0};
+
+	// Extract the directory path of the IPS .dat file (e.g., "E:/ips/kof2k2expand")
+	extract_directory(szDatDir, info->path, sizeof(szDatDir));
+
+	// Get the Romset name from the path (e.g., "kof2k2expand")
+	const char* lastSlash = strrchr(szDatDir, PATH_DEFAULT_SLASH_C());
+	if (lastSlash) {
+		strncpy(szRomset, lastSlash + 1, sizeof(szRomset) - 1);
+	}
+	// If the Romset (e.g., "kof2k2expand") is not in the BurnDrv list:
+	//   - Search for its .dat file in [SYSTEM_DIRECTORY]/fbneo/romdata/ (e.g., "kof2k2expand.dat")
+	//   - If found, load it via RomdataGetDrvName() and initialize with RomDataInit()
+	if (~0U == BurnDrvGetIndexByName(szRomset)) {
+		if (environ_cb(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY, &dir) && dir)
+		{
+			memcpy(szSysDir, dir, sizeof(szSysDir));
+			memset(szRomdataName, 0, MAX_PATH);
+			snprintf(szRomdataName, MAX_PATH - 1, "%s%cfbneo%cromdata%c%s.dat", szSysDir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), szRomset);
+
+			if (NULL != RomdataGetDrvName()){
+				RomDataInit();
+			} else {
+				HandleMessage(RETRO_LOG_ERROR, "Failed to load IPS .dat with Romdata.\n Romdata file not found: %s\n", szRomdataPath);
+			}
+		}
+	}
+}
+
 bool retro_load_game(const struct retro_game_info *info)
 {
 	if (!info)
@@ -2329,40 +2363,10 @@ bool retro_load_game(const struct retro_game_info *info)
 			RomDataInit();
 			break;
 
-		case 2:{
-			// #### Feature: IPS .dat Loading with Romdata Support ####
-			char szRomset[MAX_PATH] = {0};
-			char szDatDir[MAX_PATH] = {0};
-			const char* dir = NULL;
-			char szSysDir[MAX_PATH] = {0};
-
-			// Extract the directory path of the IPS .dat file (e.g., "E:/ips/captcommkr/")
-			extract_directory(szDatDir, info->path, sizeof(szDatDir));
-
-			// Get the Romset name from the path (e.g., "captcommkr")
-			const char* lastSlash = strrchr(szDatDir, PATH_DEFAULT_SLASH_C());
-			if (lastSlash) {
-				strncpy(szRomset, lastSlash + 1, sizeof(szRomset) - 1);
-			}
-			// If the Romset (e.g., "captcommkr") is not in the BurnDrv list:
-			//   - Search for its .dat file in [SYSTEM_DIRECTORY]/fbneo/romdata/ (e.g., "captcommkr.dat")
-			//   - If found, load it via RomdataGetDrvName() and initialize with RomDataInit()
-			if (~0U == BurnDrvGetIndexByName(szRomset)) {
-			    if (environ_cb(RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY, &dir) && dir)
-				{
-					memcpy(szSysDir, dir, sizeof(szSysDir));
-					memset(szRomdataName, 0, MAX_PATH);
-					snprintf(szRomdataName, MAX_PATH - 1, "%s%cfbneo%cromdata%c%s.dat", szSysDir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), szRomset);
-
-					if (NULL != RomdataGetDrvName()){
-						RomDataInit();
-					}
-				}
-			}
-			// #### #### #### #### #### #### #### #### #### #### ####
+		case 2:
+			LoadIpsDatWithRomdata(info);
 			IpsPatchInit();
 			break;
-		}
 
 		default:
 			break;
