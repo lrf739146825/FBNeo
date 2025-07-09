@@ -337,14 +337,14 @@ static struct retro_core_option_v2_definition var_fbneo_socd = {
 	NULL,
 	NULL,
 	{
-		{ "0",       "disabled" },
-		{ "1",       "Simultaneous Neutral" },
-		{ "2",       "Last Input Priority (4 Way)" },
-		{ "3",       "Last Input Priority (8 Way)" },
-		{ "4",       "First Input Priority" },
-		{ "5",       "Up Priority (Up-override Down)" },
-		{ "6",       "Down Priority (Left/Right Last Input Priority)" },
-		{ NULL,      NULL },
+		{ "0",  "disabled" },
+		{ "1",  "Simultaneous Neutral" },
+		{ "2",  "Last Input Priority (4 Way)" },
+		{ "3",  "Last Input Priority (8 Way)" },
+		{ "4",  "First Input Priority" },
+		{ "5",  "Up Priority (Up-override Down)" },
+		{ "6",  "Down Priority (Left/Right Last Input Priority)" },
+		{ NULL, NULL },
 	},
 	"3"
 };
