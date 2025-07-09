@@ -2316,7 +2316,7 @@ static int retro_dat_romset_path(const struct retro_game_info* info)
 	return nRet;
 }
 
-static void LoadIpsDatWithRomdata(const struct retro_game_info* info)
+static void LoadIpsDatWithRomdata(const struct retro_game_info* info){
 	// Feature: Load IPS patch (.dat) via Romdata if base Romset is missing from BurnDrv list.
 	char szRomset[MAX_PATH] = {0};
 	char szDatDir[MAX_PATH] = {0};
@@ -2344,7 +2344,7 @@ static void LoadIpsDatWithRomdata(const struct retro_game_info* info)
 			if (NULL != RomdataGetDrvName()){
 				RomDataInit();
 			} else {
-				HandleMessage(RETRO_LOG_ERROR, "Failed to load IPS .dat with Romdata.\n Romdata file not found: %s\n", szRomdataPath);
+				HandleMessage(RETRO_LOG_ERROR, "Failed to load IPS .dat with Romdata.\n Romdata file not found: %s\n", szRomdataName);
 			}
 		}
 	}
