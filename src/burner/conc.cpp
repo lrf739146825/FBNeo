@@ -1147,7 +1147,7 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 		if (_tcsncmp(szLine, gName, strlen(gName)) == 0) {
 #endif
 			foundData = true;
-			
+
 			// Add the current line to CurrentMameCheatContent
 			for (TCHAR* p = szLine; *p; ++p) {
 				if (*p != _T('\0')) {
