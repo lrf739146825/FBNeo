@@ -515,6 +515,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="advenbaybil" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Adventures of Bayou Billy, The (USA)</description>
 		<year>1989</year>
 		<manufacturer>Konami</manufacturer>
@@ -794,6 +795,14 @@
 		<year>1996</year>
 		<manufacturer>J.Y. Company</manufacturer>
 		<rom name="Aladdin 4 (Taiwan)(Unl)(1996)(J.Y. Company).nes" size="524304" crc="dda79434"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="aladdin2" sourcefile="nes/d_nes.cpp">
+		<description>Aladdin II (Taiwan) (Unl)</description>
+		<year>1995</year>
+		<manufacturer>Hummer Team</manufacturer>
+		<rom name="Aladdin II (Taiwan)(Unl)(1995)(Hummer Team).nes" size="393232" crc="7c0664a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1149,6 +1158,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="arkanoidj" cloneof="arkanoid" romof="arkanoid" sourcefile="nes/d_nes.cpp">
+		<description>Arkanoid (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Arkanoid (Japan)(1986)(Taito).nes" size="49168" crc="04f6fd68"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="arkanoid" sourcefile="nes/d_nes.cpp">
 		<description>Arkanoid (USA)</description>
 		<year>1987</year>
@@ -1167,6 +1184,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="arkanoidii" sourcefile="nes/d_nes.cpp">
+		<comment>Arkanoid: Revenge of DoH</comment>
 		<description>Arkanoid II (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Taito Corp.</manufacturer>
@@ -1282,7 +1300,7 @@
 		<description>Assimilate (HB)</description>
 		<year>2012</year>
 		<manufacturer>Nessylum</manufacturer>
-		<rom name="Assimilate (HB).nes" size="262160" crc="a2d504a8"/>
+		<rom name="Assimilate (2012)(Nessylum).nes" size="262160" crc="a2d504a8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1361,6 +1379,15 @@
 		<year>1985</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Astro Robo Sasa (Japan)(1985)(ASCII).nes" size="40976" crc="cab240b1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="astrosmash" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Original title developed for Intellivision in 1981</comment>
+		<description>Astrosmash (HB)</description>
+		<year>2014</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Astrosmash (2014)(Intellivision).nes" size="24592" crc="e8af01ee"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1474,6 +1501,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="babyboomer" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Baby Boomer (USA)</description>
 		<year>1989</year>
 		<manufacturer>Color Dreams</manufacturer>
@@ -1683,6 +1711,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="barkebilstrish" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Barker Bill's Trick Shooting (USA)</description>
 		<year>1990</year>
 		<manufacturer>Nintendo</manufacturer>
@@ -2212,12 +2241,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="bionicom" cloneof="bioniccommando" romof="bioniccommando" sourcefile="nes/d_nes.cpp">
+	<game name="hitlenofukte" cloneof="bioniccommando" romof="bioniccommando" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Bionic Commando - Return of Hitler (Hack)</description>
-		<year>2006</year>
-		<manufacturer>Chris Covell</manufacturer>
-		<rom name="Bionic Commando - Return of Hitler (2006)(Chris Covell).nes" size="262160" crc="519a3005"/>
+		<description>Bionic Commando: Return of Hitler (Hack, English v1.04)</description>
+		<year>2017</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="Bionic Commando - Return of Hitler T-Eng v1.04 (2017)(Stardust Crusaders).nes" size="262160" crc="519a3005"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2409,6 +2438,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bloodjur" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Blood of Jurassic (China) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>Shanghai PS&amp;T</manufacturer>
@@ -3456,6 +3486,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chiller" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Chiller (USA)</description>
 		<year>1990</year>
 		<manufacturer>AGCI</manufacturer>
@@ -3473,7 +3504,7 @@
 	</game>
 	<game name="chipndalresrasc" cloneof="chipndalresra" romof="chipndalresra" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Chip 'n Dale - Rescue Rangers (Hack, Chinese v1.1)</description>
+		<description>Chip 'n Dale: Rescue Rangers (Hack, Chinese v1.1)</description>
 		<year>2015</year>
 		<manufacturer>HHNM Team</manufacturer>
 		<rom name="Chip 'n Dale - Rescue Rangers T-Chi v1.1 (2015)(HHNM Team).nes" size="393232" crc="1c63b350"/>
@@ -3482,7 +3513,7 @@
 	</game>
 	<game name="chipndalresrac" cloneof="chipndalresra" romof="chipndalresra" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Chip 'n Dale - Rescue Rangers (Hack, Spanish v2.1)</description>
+		<description>Chip 'n Dale: Rescue Rangers (Hack, Spanish v2.1)</description>
 		<year>2021</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Chip 'n Dale Rescue Rangers T-Spa 2.1 (2021)(Wave).nes" size="262160" crc="a4a43d5a"/>
@@ -3490,7 +3521,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chipndalresra" sourcefile="nes/d_nes.cpp">
-		<description>Chip 'n Dale - Rescue Rangers (USA)</description>
+		<description>Chip 'n Dale: Rescue Rangers (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Chip 'n Dale - Rescue Rangers (USA)(1990)(Capcom).nes" size="262160" crc="11da7e45"/>
@@ -3499,7 +3530,7 @@
 	</game>
 	<game name="chipndalresra2sc" cloneof="chipndalresra2" romof="chipndalresra2" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Chip 'n Dale - Rescue Rangers 2 (Hack, Chinese v1.13)</description>
+		<description>Chip 'n Dale: Rescue Rangers 2 (Hack, Chinese v1.13)</description>
 		<year>2015</year>
 		<manufacturer>HHNM Team</manufacturer>
 		<rom name="Chip 'n Dale - Rescue Rangers 2 T-Chi v1.13 (2015)(HHNM Team).nes" size="393232" crc="4acc32ba"/>
@@ -3508,7 +3539,7 @@
 	</game>
 	<game name="chipndalresra2c" cloneof="chipndalresra2" romof="chipndalresra2" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Chip 'n Dale - Rescue Rangers 2 (Hack, Spanish v0.99)</description>
+		<description>Chip 'n Dale: Rescue Rangers 2 (Hack, Spanish v0.99)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Chip 'n Dale - Rescue Rangers 2 T-Spa v0.99 (2019)(jackic).nes" size="262160" crc="aa6e37e6"/>
@@ -3516,7 +3547,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chipndalresra2" sourcefile="nes/d_nes.cpp">
-		<description>Chip 'n Dale - Rescue Rangers 2 (USA)</description>
+		<description>Chip 'n Dale: Rescue Rangers 2 (USA)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Chip 'n Dale - Rescue Rangers 2 (USA)(1994)(Capcom).nes" size="262160" crc="91e4a289"/>
@@ -3793,6 +3824,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="cobramission" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Cobra Mission (Asia)</description>
 		<year>1994</year>
 		<manufacturer>Asder</manufacturer>
@@ -3934,24 +3966,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="contramdl" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Contra - Demon Contra (Hack, Chinese)</description>
-		<year>2020</year>
-		<manufacturer>Huan Tian</manufacturer>
-		<rom name="Contra - Demon Contra T-Chi (2020)(Huan Tian).nes" size="541200" crc="78e3d5a4"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="contracs" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Contra - The Last Rebirth (Hack, Chinese)</description>
-		<year>2022</year>
-		<manufacturer>Jing Jing Bu Xiang Wo</manufacturer>
-		<rom name="Contra - The Last Rebirth T-Chi (2022)(Jing Jing Bu Xiang Wo).nes" size="541200" crc="e7e2ffa3"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="contra168in1" sourcefile="nes/d_nes.cpp">
 		<description>Contra 168-in-1 (Unl)</description>
 		<year>199?</year>
@@ -4003,6 +4017,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="contramdl" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra: Demon Contra (Hack, Chinese)</description>
+		<year>2020</year>
+		<manufacturer>Huan Tian</manufacturer>
+		<rom name="Contra - Demon Contra T-Chi (2020)(Huan Tian).nes" size="541200" crc="78e3d5a4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="contrredfalwar" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Contra: Red Falcon War (Hack)</description>
@@ -4018,6 +4041,15 @@
 		<year>2016</year>
 		<manufacturer>Trax</manufacturer>
 		<rom name="Contra - Revenge of the Red Falcon (2016)(Trax).nes" size="262160" crc="fa28193b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="contracs" cloneof="contra" romof="contra" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra: The Last Rebirth (Hack, Chinese)</description>
+		<year>2022</year>
+		<manufacturer>Jing Jing Bu Xiang Wo</manufacturer>
+		<rom name="Contra - The Last Rebirth T-Chi (2022)(Jing Jing Bu Xiang Wo).nes" size="541200" crc="e7e2ffa3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4203,7 +4235,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="crayoshicha" sourcefile="nes/d_nes.cpp">
-		<description>Crayon Shin-chan - Ora to Poi Poi (Japan)</description>
+		<description>Crayon Shin-chan: Ora to Poi Poi (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Crayon Shin-chan - Ora to Poi Poi (Japan).nes" size="262160" crc="564205d0"/>
@@ -4245,6 +4277,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="crimebusters" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Crime Busters (USA)</description>
 		<year>1989</year>
 		<manufacturer>Gradiente</manufacturer>
@@ -5880,6 +5913,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="duckhunt" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Duck Hunt (USA)</description>
 		<year>1984-85</year>
 		<manufacturer>Nintendo</manufacturer>
@@ -6500,7 +6534,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fallingtiles" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Zapper compatible game</comment>
 		<description>Falling Tiles (HB, Rev B)</description>
 		<year>2020</year>
 		<manufacturer>Doug Fraker</manufacturer>
@@ -7374,6 +7408,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="freedomforce" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Freedom Force (USA)</description>
 		<year>1988</year>
 		<manufacturer>Sunsoft</manufacturer>
@@ -8246,6 +8281,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gotcha" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Gotcha! - The Sport! (USA)</description>
 		<year>1987</year>
 		<manufacturer>Ljn</manufacturer>
@@ -8481,6 +8517,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gumshoe" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Gumshoe (USA)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
@@ -9059,6 +9096,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hogansalley" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Hogan's Alley (USA)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>
@@ -9083,16 +9121,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="hokutonoken2c" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Hokuto no Ken 2 (Hack, Spanish v1.1)</description>
-		<year>2018</year>
-		<manufacturer>Jonathan</manufacturer>
-		<rom name="Hokuto no Ken 2 T-Spa v1.1 (2018)(Jonathan).nes" size="131088" crc="3a3cd6df"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="hokutonoken2" sourcefile="nes/d_nes.cpp">
+	<game name="hokutonoken2j" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
 		<description>Hokuto no Ken 2 (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Toei Animation</manufacturer>
@@ -9100,9 +9129,27 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="hokutonoken2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hokuto no Ken 2 ~ Fist of the North Star (Hack, English)</description>
+		<year>2022</year>
+		<manufacturer>Rani Baker</manufacturer>
+		<rom name="Hokuto no Ken 2 T-Eng (2022)(Rani Baker).nes" size="131088" crc="c3b2a869"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hokutonoken2c" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hokuto no Ken 2 ~ Fist of the North Star (Hack, Spanish v1.1)</description>
+		<year>2018</year>
+		<manufacturer>Jonathan</manufacturer>
+		<rom name="Hokuto no Ken 2 T-Spa v1.1 (2018)(Jonathan).nes" size="131088" crc="3a3cd6df"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hokutonoken3c" cloneof="hokutonoken3" romof="hokutonoken3" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Hokuto no Ken 3: Shin Seiki Souzou Seiken Restuden (Hack, Spanish)</description>
+		<description>Hokuto no Ken 3: La Leyenda del Puno Maldito (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>RMGlitch</manufacturer>
 		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Restuden T-Spa (2019)(RMGlitch).nes" size="262160" crc="9e7cc5dc"/>
@@ -9400,6 +9447,23 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="idolhakte" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Idol Hakkenden (Hack, English)</description>
+		<year>2018</year>
+		<manufacturer>LIPEMCO! Translations</manufacturer>
+		<rom name="Idol Hakkenden T-Eng (2018)(LIPEMCO! Translations).nes" size="393232" crc="dc790cdb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="idolhakj" cloneof="idolhakte" romof="idolhakte" sourcefile="nes/d_nes.cpp">
+		<description>Idol Hakkenden (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Natsume</manufacturer>
+		<rom name="Idol Hakkenden (Japan)(1989)(Natsume).nes" size="262160" crc="e017c417"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="ikariwarriors" sourcefile="nes/d_nes.cpp">
 		<description>Ikari Warriors (USA, Rev A)</description>
 		<year>1987</year>
@@ -9531,7 +9595,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gadget" cloneof="gumshoe" romof="gumshoe" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
+		<comment>Hack, Zapper compatible game</comment>
 		<description>Inspector Gadget (Hack)</description>
 		<year>2022</year>
 		<manufacturer>Garrett Gilchrist</manufacturer>
@@ -10077,7 +10141,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="junkoid" sourcefile="nes/d_nes.cpp">
+	<game name="junkoid" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Homebrew, A GlobalHack of 'Metroid'</comment>
 		<description>Junkoid (GlobalHack, v1.1)</description>
 		<year>2022</year>
@@ -10918,21 +10982,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="kyoursenjuu" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kyouryu Sentai Juranger (Hack, English)</description>
+		<year>2009</year>
+		<manufacturer>Grimm Translations</manufacturer>
+		<rom name="Kyouryuu Sentai Juuranger T-Eng (2009)(Grimm Translations).nes" size="262160" crc="7a272f4c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kyoursenjuuc" cloneof="kyoursenjuu" romof="kyoursenjuu" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Kyouryuu Sentai Juuranger (Hack, Chinese)</description>
 		<year>2023</year>
 		<manufacturer>LSP Team</manufacturer>
 		<rom name="Kyouryuu Sentai Juuranger T-Chi (2023)(LSP Team).nes" size="393232" crc="2cebf5e7"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="kyoursenjuu" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kyouryuu Sentai Juuranger (Hack, English)</description>
-		<year>2009</year>
-		<manufacturer>Grimm Translations</manufacturer>
-		<rom name="Kyouryuu Sentai Juuranger T-Eng (2009)(Grimm Translations).nes" size="262160" crc="7a272f4c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11023,6 +11087,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="laserinvasion" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Laser Invasion (USA)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
@@ -11209,23 +11274,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="triforcegc" cloneof="triforceg" romof="triforceg" sourcefile="nes/d_nes.cpp">
-		<description>Legend of Zelda - San Shen Zhi Li (China)</description>
-		<year>2004</year>
-		<manufacturer>Waixing</manufacturer>
-		<rom name="Legend of Zelda - San Shen Zhi Li (China)(2004)(Waixing).nes" size="2097168" crc="3a1b4502"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="triforceg" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Zelda - Triforce of the Gods (Hack, English)</description>
-		<year>2018</year>
-		<manufacturer>pacnsacdave</manufacturer>
-		<rom name="Legend of Zelda - Triforce of the Gods T-Eng (2018)(pacnsacdave).nes" size="2097168" crc="0be2d8fd"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="legenzeldx" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Legend of Zelda DX, The (Graphics Hack)</description>
@@ -11276,6 +11324,23 @@
 		<year>2023</year>
 		<manufacturer>pacnsacdave</manufacturer>
 		<rom name="Legend of Zelda, The - Dark Labyrinth (2023)(pacnsacdave).nes" size="524304" crc="c190ffc1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="triforcegc" cloneof="triforceg" romof="triforceg" sourcefile="nes/d_nes.cpp">
+		<description>Legend of Zelda: San Shen Zhi Li (China) (Unl)</description>
+		<year>2004</year>
+		<manufacturer>Waixing</manufacturer>
+		<rom name="Legend of Zelda - San Shen Zhi Li (China)(Unl)(2004)(Waixing).nes" size="2097168" crc="3a1b4502"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="triforceg" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda: Triforce of the Gods (Hack, English)</description>
+		<year>2018</year>
+		<manufacturer>pacnsacdave</manufacturer>
+		<rom name="Legend of Zelda - Triforce of the Gods T-Eng (2018)(pacnsacdave).nes" size="2097168" crc="0be2d8fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11570,6 +11635,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="lonerangerthe" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Lone Ranger, The (USA)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
@@ -11722,7 +11788,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="madcityc" cloneof="advenbaybil" romof="advenbaybil" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
+		<comment>Hack, Zapper compatible game</comment>
 		<description>Mad City (Hack, Chinese v2)</description>
 		<year>2018</year>
 		<manufacturer>Tan Xiao Feng Sheng</manufacturer>
@@ -11731,7 +11797,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="madcity" cloneof="advenbaybil" romof="advenbaybil" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
+		<comment>Hack, Zapper compatible game</comment>
 		<description>Mad City (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
@@ -11740,6 +11806,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="madcityj" cloneof="advenbaybil" romof="advenbaybil" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Mad City (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
@@ -12389,6 +12456,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mechaatt" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Mechanized Attack (USA)</description>
 		<year>1990</year>
 		<manufacturer>SNK</manufacturer>
@@ -12543,11 +12611,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="meikyuujima" sourcefile="nes/d_nes.cpp">
-		<description>Meikyuu-jima (Japan)</description>
+	<game name="meikyuujima" cloneof="kicklecubicle" romof="kicklecubicle" sourcefile="nes/d_nes.cpp">
+		<description>Meikyuu Jima (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Meikyuu-jima (Japan)(1990)(Irem).nes" size="262160" crc="93b8cfce"/>
+		<rom name="Meikyuu Jima (Japan)(1990)(Irem).nes" size="262160" crc="93b8cfce"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13251,6 +13319,22 @@
 		<year>1987</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Momotarou Densetsu ~ The Peach Boy Legend (Japan)(1987)(Hudson Soft).nes" size="262160" crc="e4be2f0c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="moneygame2" cloneof="wallstreetkid" romof="wallstreetkid" sourcefile="nes/d_nes.cpp">
+		<description>Money Game II, The: Kabutochou no Kiseki (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Sofel</manufacturer>
+		<rom name="Money Game II, The - Kabutochou no Kiseki (Japan)(1989)(Sofel).nes" size="262160" crc="fad933e9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="moneygame" sourcefile="nes/d_nes.cpp">
+		<description>Money Game, The (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Sofel</manufacturer>
+		<rom name="Money Game, The (Japan)(1988)(Sofel).nes" size="163856" crc="f5014d25"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14402,7 +14486,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="operationwolfj" cloneof="operationwolf" romof="operationwolf" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
+		<description>Operation Wolf (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Operation Wolf (Japan)(1989)(Taito).nes" size="262160" crc="afc504dc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="operationwolf" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Operation Wolf (USA)</description>
 		<year>1989</year>
 		<manufacturer>Taito</manufacturer>
@@ -17100,11 +17194,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="sharkshark" sourcefile="nes/d_nes.cpp">
-		<comment>Original title developed for Intellivision in 1982</comment>
+		<comment>Homebrew, Original title developed for Intellivision in 1982</comment>
 		<description>Shark! Shark! (HB)</description>
 		<year>2014</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Shark! Shark! (2014).nes" size="24592" crc="5f33e5b4"/>
+		<rom name="Shark! Shark! (2014)(Intellivision).nes" size="24592" crc="5f33e5b4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17185,7 +17279,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shootufo" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Homebrew, A GlobalHack of 'Duck Hunt'</comment>
+		<comment>Hack, Homebrew, A GlobalHack of 'Duck Hunt' - Zapper compatible game</comment>
 		<description>Shoot UFO (GlobalHack)</description>
 		<year>2015</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
@@ -17194,6 +17288,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shootingrange" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Shooting Range (USA)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
@@ -17562,6 +17657,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="snowball" sourcefile="nes/d_nes.cpp">
+		<description>Snow Ball (Unl)</description>
+		<year>2002</year>
+		<manufacturer>Power Joy</manufacturer>
+		<rom name="Snow Ball (Unl)(2002)(Power Joy).nes" size="40976" crc="46fa1304"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="snowbrosj" cloneof="snowbrothers" romof="snowbrothers" sourcefile="nes/d_nes.cpp">
 		<description>Snow Bros. (Japan)</description>
 		<year>1991</year>
@@ -17747,6 +17850,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="spacebattle" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Original title developed for Intellivision in 1979</comment>
+		<description>Space Battle (HB)</description>
+		<year>2014</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Space Battle (2014)(Intellivision).nes" size="24592" crc="cc0d3168"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="spacecat" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Space Cat (HB)</description>
@@ -17761,6 +17873,15 @@
 		<year>1989</year>
 		<manufacturer>Takara</manufacturer>
 		<rom name="Space Harrier (Japan)(1989)(Takara).nes" size="131088" crc="91930e95"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="spacehawk" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Original title developed for Intellivision in 1981</comment>
+		<description>Space Hawk (HB)</description>
+		<year>2014</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Space Hawk (2014)(Intellivision).nes" size="24592" crc="84e68209"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18455,6 +18576,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="subhunt" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Original title developed for Intellivision in 1981</comment>
+		<description>Sub Hunt (HB)</description>
+		<year>2014</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Sub Hunt (2014)(Intellivision).nes" size="24592" crc="75f94401"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="sudoku23" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Sudoku 23 (HB)</description>
@@ -18521,6 +18651,14 @@
 		<manufacturer>Sunsoft</manufacturer>
 		<rom name="Sunman (Euro, Proto)(1992)(Sunsoft).nes" size="262160" crc="2bce4dc7"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="superaladdin" sourcefile="nes/d_nes.cpp">
+		<description>Super Aladdin (Unl)</description>
+		<year>1995</year>
+		<manufacturer>Super Game</manufacturer>
+		<rom name="Super Aladdin (Unl)(1995)(Super Game).nes" size="524304" crc="c35332e0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="superarabian" sourcefile="nes/d_nes.cpp">
@@ -18973,7 +19111,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="srroulette" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Zapper compatible game</comment>
 		<description>Super Russian Roulette (HB)</description>
 		<year>2017</year>
 		<manufacturer>Andrew Reitano</manufacturer>
@@ -19450,6 +19588,23 @@
 		<year>1990</year>
 		<manufacturer>YS</manufacturer>
 		<rom name="Tank H 1990 (1990)(YS).nes" size="40976" crc="86d9aa5d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="taote" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Tao (Hack, English)</description>
+		<year>2011</year>
+		<manufacturer>snark</manufacturer>
+		<rom name="Tao T-Eng (2011)(snark).nes" size="262160" crc="97976da6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="taoj" cloneof="taote" romof="taote" sourcefile="nes/d_nes.cpp">
+		<description>Tao (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Vap Inc.</manufacturer>
+		<rom name="Tao (Japan)(1989)(Vap).nes" size="262160" crc="264a8560"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20270,6 +20425,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="totheearth" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>To The Earth (USA)</description>
 		<year>1989</year>
 		<manufacturer>Nintendo</manufacturer>
@@ -20539,6 +20695,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="trackfieldii" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Track &amp; Field II (USA, Rev A)</description>
 		<year>1989</year>
 		<manufacturer>Konami</manufacturer>
@@ -21218,7 +21375,7 @@
 	</game>
 	<game name="waiwaiwor2" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Wai Wai World 2 - SOS!! Paseri Jou (Hack, English)</description>
+		<description>Wai Wai World 2: SOS!! Paseri Jou (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>chronix</manufacturer>
 		<rom name="Wai Wai World 2 - SOS!! Paseri Jou T-Eng (2018)(chronix).nes" size="393232" crc="45fadda1"/>
@@ -21226,7 +21383,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="waiwaiwor2j" cloneof="waiwaiwor2" romof="waiwaiwor2" sourcefile="nes/d_nes.cpp">
-		<description>Wai Wai World 2 - SOS!! Paseri Jou (Japan)</description>
+		<description>Wai Wai World 2: SOS!! Paseri Jou (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Wai Wai World 2 - SOS!! Paseri Jou (Japan)(1991)(Konami).nes" size="393232" crc="ebd96a66"/>
@@ -21462,6 +21619,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="wildgunman" sourcefile="nes/d_nes.cpp">
+		<comment>Zapper compatible game</comment>
 		<description>Wild Gunman (World, Rev A)</description>
 		<year>1984</year>
 		<manufacturer>Nintendo</manufacturer>

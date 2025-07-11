@@ -11009,8 +11009,8 @@
 		<description>Metal Slug 3 (Legend TD v6.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="256-p1cqt.p1" size="1048576" crc="5ae59189"/>
-		<rom name="256-p2cqt.sp2" size="8388608" crc="50fd39dc"/>
+		<rom name="256-p1cqt.p1" size="1048576" crc="ebb9e075"/>
+		<rom name="256-p2cqt.sp2" size="8388608" crc="4d38e566"/>
 		<rom name="256-c1d.c1" size="8388608" crc="3540398c"/>
 		<rom name="256-c2d.c2" size="8388608" crc="bdd220f0"/>
 		<rom name="256-c3d.c3" size="8388608" crc="bfaade82"/>
@@ -11190,11 +11190,11 @@
 	</game>
 	<game name="mslug3cqi" cloneof="mslug3" romof="mslug3" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Metal Slug 3 (Legendary Unlimited Fire v6.0, Hack)</description>
+		<description>Metal Slug 3 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="256-p1cqi.p1" size="1048576" crc="7c352790"/>
-		<rom name="256-p2cqi.sp2" size="8388608" crc="0b32c957"/>
+		<rom name="256-p1cqi.p1" size="1048576" crc="62c572e0"/>
+		<rom name="256-p2cqi.sp2" size="8388608" crc="679274ad"/>
 		<rom name="256-c1d.c1" size="8388608" crc="3540398c"/>
 		<rom name="256-c2d.c2" size="8388608" crc="bdd220f0"/>
 		<rom name="256-c3d.c3" size="8388608" crc="bfaade82"/>
@@ -12486,11 +12486,11 @@
 	</game>
 	<game name="mslug4cqi" cloneof="mslug4" romof="mslug4" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Metal Slug 4 (Legendary Unlimited Fire v6.0, Hack, Hack)</description>
+		<description>Metal Slug 4 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="263-p1cqi.p1" size="1048576" crc="2ea44ba5"/>
-		<rom name="263-p2cqi.sp2" size="8388608" crc="87659fef"/>
+		<rom name="263-p1cqi.p1" size="1048576" crc="98bdd962"/>
+		<rom name="263-p2cqi.sp2" size="8388608" crc="dca90ac3"/>
 		<rom name="263-s1d.s1" size="131072" crc="a9446774"/>
 		<rom name="263-c1d.c1" size="8388608" crc="a75ffcde"/>
 		<rom name="263-c2d.c2" size="8388608" crc="5ab0d12b"/>
@@ -13781,10 +13781,10 @@
 	</game>
 	<game name="mslug5cqi" cloneof="mslug5" romof="mslug5" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Metal Slug 5 (Legendary Unlimited Fire v6.0, Hack)</description>
+		<description>Metal Slug 5 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="268-p1cq.p1" size="10485760" crc="6a78dd0a"/>
+		<rom name="268-p1cq.p1" size="10485760" crc="c0faa4aa"/>
 		<rom name="268-s1d.s1" size="131072" crc="64952683"/>
 		<rom name="268-c1d.c1" size="8388608" crc="e8239365"/>
 		<rom name="268-c2d.c2" size="8388608" crc="89b21d4c"/>
@@ -15493,11 +15493,11 @@
 	</game>
 	<game name="mslugxcqi" cloneof="mslugx" romof="mslugx" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Metal Slug X - Super Vehicle-001 (Legendary Unlimited Fire v6.0, Hack)</description>
+		<description>Metal Slug X - Super Vehicle-001 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="250-p1cqi.p1" size="1048576" crc="774d4b6e"/>
-		<rom name="250-p2cqi.ep1" size="8388608" crc="62aa22c8"/>
+		<rom name="250-p1cqi.p1" size="1048576" crc="4fc439b6"/>
+		<rom name="250-p2cqi.ep1" size="8388608" crc="cc71939a"/>
 		<rom name="250-s1sc.s1" size="131072" crc="03bce893"/>
 		<rom name="250-c1.c1" merge="250-c1.c1" size="8388608" crc="09a52c6f"/>
 		<rom name="250-c2.c2" merge="250-c2.c2" size="8388608" crc="31679821"/>
