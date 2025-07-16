@@ -64,7 +64,7 @@
 		<description>Alex Kidd in Miracle World (Taiwan, SMS Mode) (Unl)</description>
 		<year>198?</year>
 		<manufacturer>Hung Tao Hsin</manufacturer>
-		<rom name="alex kidd in miracle world [sms-gg] (tw).bin" size="131072" crc="6f8e46cf"/>
+		<rom name="Alex Kidd in Miracle World (Taiwan, SMS Mode)(Unl)(198x)(Hung Tao Hsin).gg" size="131072" crc="6f8e46cf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -542,7 +542,7 @@
 		<description>Cheese Cat-astrophe Starring Speedy Gonzales (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="cheese catastrophe (euro).bin" size="524288" crc="4e78fd36"/>
+		<rom name="Cheese Cat-astrophe Starring Speedy Gonzales (Euro)(1995)(Sega).gg" size="524288" crc="4e78fd36"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1071,7 +1071,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dcrystalj" cloneof="dcrystal" romof="dcrystal" sourcefile="sms/d_sms.cpp">
-		<description>Dragon Crystal - Tsurani no Meikyuu (Japan)</description>
+		<description>Dragon Crystal: Tsurani no Meikyuu (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Dragon Crystal - Tsurani no Meikyuu (Japan)(1990)(Sega).gg" size="131072" crc="89f12e1e"/>
@@ -2458,7 +2458,7 @@
 		<description>MLBPA Baseball (USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="mlbpa baseball (usa).bin" size="524288" crc="1ecf07b4"/>
+		<rom name="MLBPA Baseball (USA)(1995)(Electronic Arts).gg" size="524288" crc="1ecf07b4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2472,10 +2472,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="moldoran" sourcefile="sms/d_sms.cpp">
-		<description>Moldorian - Hikari to Yami no Sister (Japan)</description>
+		<description>Moldorian: Hikari to Yami no Sister (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="moldorian - hikari to yami no sister (japan).bin" size="524288" crc="4d5d15fb"/>
+		<rom name="Moldorian - Hikari to Yami no Sister (Japan)(1994)(Sega).gg" size="524288" crc="4d5d15fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2492,15 +2492,15 @@
 		<description>Monster Truck Wars (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="mpr-17420-s.ic1" size="262144" crc="453c5cec"/>
+		<rom name="Monster Truck Wars (Euro, USA)(1994)(Acclaim).gg" size="262144" crc="453c5cec"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mworld2" cloneof="wboydtrp" romof="wboydtrp" sourcefile="sms/d_sms.cpp">
-		<description>Monster World II - Dragon no Wana (Japan)</description>
+		<description>Monster World II: Dragon no Wana (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="monster world ii - dragon no wana (japan).bin" size="262144" crc="ea89e0e7"/>
+		<rom name="Monster World II - Dragon no Wana (Japan)(1992)(Sega).gg" size="262144" crc="ea89e0e7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2540,7 +2540,7 @@
 		<description>Ms. Pac-Man (USA)</description>
 		<year>1993</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="ms. pac-man (usa).bin" size="131072" crc="5ee88bd5"/>
+		<rom name="Ms. Pac-Man (USA)(1993)(Namco).gg" size="131072" crc="5ee88bd5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2989,7 +2989,7 @@
 		<description>Pet Club Neko Daisuki! (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="neko daisuki! (japan).bin" size="524288" crc="3679be80"/>
+		<rom name="Pet Club Neko Daisuki! (Japan)(1996)(Sega).gg" size="524288" crc="3679be80"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3887,7 +3887,7 @@
 		<description>Soukoban (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Riverhill Software</manufacturer>
-		<rom name="soukoban (japan).bin" size="131072" crc="0f3e3840"/>
+		<rom name="Soukoban (Japan)(1990)(Riverhill Software).gg" size="131072" crc="0f3e3840"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3895,7 +3895,7 @@
 		<description>Space Harrier (World)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14346.ic1" size="131072" crc="600c15b3"/>
+		<rom name="Space Harrier (World)(1991)(Sega).gg" size="131072" crc="600c15b3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4355,7 +4355,7 @@
 		<description>Taisen Mahjong HaoPai (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="taisen mahjong haopai (japan).bin" size="131072" crc="cf9c607c"/>
+		<rom name="Taisen Mahjong HaoPai (Japan)(1990)(Sega).gg" size="131072" crc="cf9c607c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4363,7 +4363,7 @@
 		<description>Taisen Mahjong HaoPai 2 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="taisen mahjong haopai 2 (japan).bin" size="524288" crc="20527530"/>
+		<rom name="Taisen Mahjong HaoPai 2 (Japan)(1993)(Sega).gg" size="524288" crc="20527530"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4644,7 +4644,7 @@
 		<description>VR Troopers (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="vr troopers (usa, europe).bin" size="524288" crc="b0f22745"/>
+		<rom name="VR Troopers (Euro, USA)(1995)(Sega).gg" size="524288" crc="b0f22745"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4652,7 +4652,7 @@
 		<description>Wagyan Land (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="mpr-13930.ic1" size="262144" crc="29e697b2"/>
+		<rom name="Wagyan Land (Japan)(1991)(Namcot).gg" size="262144" crc="29e697b2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4660,7 +4660,7 @@
 		<description>Wagyan Land (Japan, Alt)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="wagan land (j) [a1].bin" size="262144" crc="d5369192"/>
+		<rom name="Wagyan Land (Japan, Alt)(1991)(Namcot).gg" size="262144" crc="d5369192"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4668,7 +4668,7 @@
 		<description>Wheel of Fortune (USA)</description>
 		<year>1992</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="wheel of fortune (usa).bin" size="131072" crc="e91cdb2a"/>
+		<rom name="Wheel of Fortune (USA)(1992)(GameTek).gg" size="131072" crc="e91cdb2a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4677,7 +4677,7 @@
 		<description>WildSnake (Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Spectrum HoloByte</manufacturer>
-		<rom name="WildSnake [Proto].gg" size="131072" crc="d460cc7f"/>
+		<rom name="WildSnake (Proto)(1994)(Spectrum HoloByte).gg" size="131072" crc="d460cc7f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4685,7 +4685,7 @@
 		<description>Wimbledon (World)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14994.ic1" size="131072" crc="ce1108fd"/>
+		<rom name="Wimbledon (World)(1992)(Sega).gg" size="131072" crc="ce1108fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4702,7 +4702,7 @@
 		<description>Winter Olympics - Lillehammer '94 (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="mpr-16024.ic1" size="524288" crc="d15d335b"/>
+		<rom name="Winter Olympics - Lillehammer '94 (Euro, USA)(1993)(U.S. Gold).sms" size="524288" crc="d15d335b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4710,7 +4710,7 @@
 		<description>Winter Olympics - Lillehammer '94 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16350.ic1" size="524288" crc="d5195a39"/>
+		<rom name="Winter Olympics - Lillehammer '94 (Japan)(1994)(Sega).gg" size="524288" crc="d5195a39"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4718,7 +4718,7 @@
 		<description>Wizard Pinball (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="wizard pinball (europe).bin" size="262144" crc="9e03f96c"/>
+		<rom name="Wizard Pinball (Euro)(1995)(Domark).gg" size="262144" crc="9e03f96c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4726,7 +4726,7 @@
 		<description>Wolfchild (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="mpr-15717-s.ic1" size="262144" crc="840a8f8e"/>
+		<rom name="Wolfchild (Euro)(1993)(Virgin Interactive).gg" size="262144" crc="840a8f8e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4734,7 +4734,7 @@
 		<description>Wonder Boy (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13912.ic1" size="131072" crc="ea2dd3a7"/>
+		<rom name="Wonder Boy (Euro)(1991)(Sega).gg" size="131072" crc="ea2dd3a7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4742,24 +4742,24 @@
 		<description>Wonder Boy (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy (japan).bin" size="131072" crc="9977fcb3"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="wboydtrp" sourcefile="sms/d_sms.cpp">
-		<description>Wonder Boy - The Dragon's Trap (Euro)</description>
-		<year>1992</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14768.ic1" size="262144" crc="a74c97a7"/>
+		<rom name="Wonder Boy (Japan)(1990)(Sega).gg" size="131072" crc="9977fcb3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wboydtrpp" cloneof="wboydtrp" romof="wboydtrp" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Wonder Boy III - The Dragon's Trap (Euro, Prototype)</description>
+		<description>Wonder Boy III: The Dragon's Trap (Euro, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="wonder boy iii - the dragon's trap (europe) (beta).bin" size="262144" crc="db1b5b44"/>
+		<rom name="Wonder Boy III - The Dragon's Trap (Euro, Proto)(1992)(Sega).gg" size="262144" crc="db1b5b44"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wboydtrp" sourcefile="sms/d_sms.cpp">
+		<description>Wonder Boy: The Dragon's Trap (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Wonder Boy - The Dragon's Trap (Euro)(1992)(Sega).gg" size="262144" crc="a74c97a7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4767,7 +4767,7 @@
 		<description>Woody Pop (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="woody pop (usa, europe).bin" size="32768" crc="9c0e5a04"/>
+		<rom name="Woody Pop (Euro, USA)(1991)(Sega).gg" size="32768" crc="9c0e5a04"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4775,7 +4775,7 @@
 		<description>Woody Pop (Euro, USA, v1.1)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13808.ic1" size="32768" crc="b74f3a4f"/>
+		<rom name="Woody Pop (Euro, USA, v1.1)(1991)(Sega).gg" size="32768" crc="b74f3a4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4783,7 +4783,7 @@
 		<description>World Class Leader Board (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-14251.ic1" size="262144" crc="868fe528"/>
+		<rom name="World Class Leader Board (Euro, USA)(1991)(Sega).gg" size="262144" crc="868fe528"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4791,7 +4791,7 @@
 		<description>World Cup USA 94 (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="world cup usa 94 (usa, europe) (en,fr,de,es,it,nl,pt,sv).bin" size="524288" crc="d2bb3690"/>
+		<rom name="World Cup USA 94 (Euro, USA)(1994)(U.S. Gold).gg" size="524288" crc="d2bb3690"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4799,7 +4799,7 @@
 		<description>World Derby (Japan)</description>
 		<year>1994</year>
 		<manufacturer>CRI</manufacturer>
-		<rom name="world derby (japan).bin" size="524288" crc="1e81861f"/>
+		<rom name="World Derby (Japan)(1994)(CRI).gg" size="524288" crc="1e81861f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4807,7 +4807,7 @@
 		<description>WWF Raw (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="wwf raw (usa, europe).bin" size="524288" crc="8dc68d92"/>
+		<rom name="WWF Raw (Euro, USA)(1992)(Acclaim).gg" size="524288" crc="8dc68d92"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4815,7 +4815,7 @@
 		<description>WWF Wrestlemania Steel Cage Challenge (Euro, SMS Mode)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="wwf wrestlemania steel cage challenge (europe).bin" size="262144" crc="da8e95a9"/>
+		<rom name="WWF Wrestlemania Steel Cage Challenge (Euro, SMS Mode)(1993)(Flying Edge).gg" size="262144" crc="da8e95a9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

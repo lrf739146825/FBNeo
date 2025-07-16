@@ -815,7 +815,7 @@
 	</game>
 	<game name="hikarshi" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, Myth of Light Palutena's Mirror, The</comment>
-		<description>Hikari Shinwa - Palutena no Kagami (Hack, English)</description>
+		<description>Hikari Shinwa: Palutena no Kagami (Hack, English)</description>
 		<year>2023</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Hikari Shinwa - Palutena no Kagami T-Eng (2023)(BlackPaladin).fds" size="131000" crc="78a03745"/>
@@ -824,7 +824,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hikarshij" cloneof="hikarshi" romof="hikarshi" sourcefile="nes/d_nes.cpp">
-		<description>Hikari Shinwa - Palutena no Kagami (Japan)</description>
+		<description>Hikari Shinwa: Palutena no Kagami (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Hikari Shinwa - Palutena no Kagami (Japan)(1986)(Nintendo).fds" size="131000" crc="32516fcf"/>
@@ -843,7 +843,7 @@
 	</game>
 	<game name="idolhl" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Idol Hotline - Nakayama Miho no Tokimeki High School (Hack, English)</description>
+		<description>Idol Hotline: Nakayama Miho no Tokimeki High School (Hack, English)</description>
 		<year>2022</year>
 		<manufacturer>FCandChill</manufacturer>
 		<rom name="Idol Hotline - Nakayama Miho no Tokimeki High School T-Eng (2022)(FCandChill).fds" size="131000" crc="772a6bcc"/>
@@ -852,7 +852,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="idolhlj" cloneof="idolhl" romof="idolhl" sourcefile="nes/d_nes.cpp">
-		<description>Idol Hotline - Nakayama Miho no Tokimeki High School (Japan)</description>
+		<description>Idol Hotline: Nakayama Miho no Tokimeki High School (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Idol Hotline - Nakayama Miho no Tokimeki High School (Japan)(DV10)(1987)(Nintendo).fds" size="131000" crc="9c9616b8"/>

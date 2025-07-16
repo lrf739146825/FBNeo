@@ -170,35 +170,9 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="alexhitwc" cloneof="alexhitw" romof="alexhitw" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Alex Kidd - High-Tech World (Hack, Spanish)</description>
-		<year>2017</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="Alex Kidd - High-Tech World T-Spa (2017)(Wave).sms" size="131072" crc="aeb143f2"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="alexlostc" cloneof="alexlost" romof="alexlost" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Alex Kidd - The Lost Stars (Hack, Spanish)</description>
-		<year>2018</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="Alex Kidd - The Lost Stars T-Spa (2018)(Wave).sms" size="262144" crc="d3fa9af0"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="alexlost" sourcefile="sms/d_sms.cpp">
-		<description>Alex Kidd - The Lost Stars (World)</description>
-		<year>1988</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Alex Kidd - The Lost Stars (World)(1988)(Sega).sms" size="262144" crc="c13896d5"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="alexkidd3" cloneof="alexkidd3f" romof="alexkidd3f" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Alex Kidd 3 - Curse in Miracle World (GlobalHack, Demo v.4)</description>
+		<description>Alex Kidd 3: Curse in Miracle World (GlobalHack, Demo v.4)</description>
 		<year>2016</year>
 		<manufacturer>Yeti</manufacturer>
 		<rom name="Alex Kidd 3 - Curse in Miracle World (2016)(Yeti-Demo4).sms" size="1048576" crc="35b498a4"/>
@@ -207,7 +181,7 @@
 	</game>
 	<game name="alexkidd3f" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Alex Kidd 3 - Curse in Miracle World (GlobalHack, v3.0)</description>
+		<description>Alex Kidd 3: Curse in Miracle World (GlobalHack, v3.0)</description>
 		<year>2021</year>
 		<manufacturer>Yeti</manufacturer>
 		<rom name="Alex Kidd 3 - Curse in Miracle World v3.0 (2021)(Yeti).sms" size="524288" crc="2096b9f1"/>
@@ -330,6 +304,32 @@
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Alex Kidd - High-Tech World (Euro, USA)(1989)(Sega).sms" size="131072" crc="013c0a94"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="alexhitwc" cloneof="alexhitw" romof="alexhitw" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Alex Kidd: High-Tech World (Hack, Spanish)</description>
+		<year>2017</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Alex Kidd - High-Tech World T-Spa (2017)(Wave).sms" size="131072" crc="aeb143f2"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="alexlostc" cloneof="alexlost" romof="alexlost" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Alex Kidd: The Lost Stars (Hack, Spanish)</description>
+		<year>2018</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Alex Kidd - The Lost Stars T-Spa (2018)(Wave).sms" size="262144" crc="d3fa9af0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="alexlost" sourcefile="sms/d_sms.cpp">
+		<description>Alex Kidd: The Lost Stars (World)</description>
+		<year>1988</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Alex Kidd - The Lost Stars (World)(1988)(Sega).sms" size="262144" crc="c13896d5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -797,6 +797,78 @@
 		<year>2016</year>
 		<manufacturer>psidum, sim, slimeball</manufacturer>
 		<rom name="Be No Sqr v1.01 (2016)(Tech-Demo).sms" size="524288" crc="ee701be6"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom8a" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The (Korea, 8 in 1 Ver. A)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 8-in-1 - The Best Game collection A (Korea)(1990)(Hi-Com).sms" size="262144" crc="fba94148"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom8b" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The (Korea, 8 in 1 Ver. B)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 8-in-1 - The Best Game collection B (Korea)(1990)(Hi-Com).sms" size="262144" crc="8333c86e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom8c" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The (Korea, 8 in 1 Ver. C)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 8-in-1 - The Best Game collection C (Korea)(1990)(Hi-Com).sms" size="262144" crc="00e9809f"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3e" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Ghost House + Teddy Boy Blues + Seishun Scandal (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection E (Korea)(1990)(Hi-Com).sms" size="131072" crc="82c09b57"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3b" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Great Baseball + Great Soccer + Super Tennis (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection B (Korea)(1990)(Hi-Com).sms" size="131072" crc="6ebfe1c3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Hang On + Pit Pot + Spy vs Spy (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection A (Korea)(1990)(Hi-Com).sms" size="131072" crc="98af0236"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3f" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Satellite-7 + Great Baseball + Seishun Scandal (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection F (Korea)(1990)(Hi-Com).sms" size="131072" crc="4088eeb4"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3d" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Teddy Boy Blues + Great Soccer + Comical Machine Gun Joe (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection D (Korea)(1990)(Hi-Com).sms" size="131072" crc="8d2d695d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hicom3c" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
+		<description>Best Game Collection, The: Teddy Boy Blues + Pit-Pot + Astro Flash (Korea)</description>
+		<year>1990</year>
+		<manufacturer>Hi-Com</manufacturer>
+		<rom name="Hi-Com 3-in-1 - The Best Game Collection C (Korea)(1990)(Hi-Com).sms" size="131072" crc="81a36a4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1448,7 +1520,7 @@
 		<description>Desert Strike (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="desert strike (europe) (en,fr,de,es).bin" size="524288" crc="6c1433f9"/>
+		<rom name="Desert Strike (Euro)(1992)(Domark).sms" size="524288" crc="6c1433f9"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1605,7 +1677,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="doubltgt" cloneof="quartet" romof="quartet" sourcefile="sms/d_sms.cpp">
-		<description>Double Target - Cynthia no Nemuri (Japan)</description>
+		<description>Double Target: Cynthia no Nemuri (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Double Target - Cynthia no Nemuri (Japan)(1987)(Sega).sms" size="131072" crc="52b83072"/>
@@ -1675,7 +1747,7 @@
 		<description>Dynamite Duke (Euro, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite duke (europe).bin" size="262144" crc="07306947"/>
+		<rom name="Dynamite Duke (Euro, Brazil)(1991)(Sega).sms" size="262144" crc="07306947"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1683,7 +1755,7 @@
 		<description>Dynamite Dux (Euro, Brazil)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dynamite dux (europe).bin" size="262144" crc="0e1cc1e0"/>
+		<rom name="Dynamite Dux (Euro, Brazil)(1989)(Sega).sms" size="262144" crc="0e1cc1e0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1700,7 +1772,7 @@
 		<description>Dynamite Headdy (Brazil)</description>
 		<year>1995</year>
 		<manufacturer>Tec Toy</manufacturer>
-		<rom name="dynamite headdy (brazil).bin" size="524288" crc="7db5b0fa"/>
+		<rom name="Dynamite Headdy (Brazil)(1995)(Tec Toy).sms" size="524288" crc="7db5b0fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1724,7 +1796,7 @@
 		<description>E.I. - Exa Innova (Korea)</description>
 		<year>19??</year>
 		<manufacturer>HiCom</manufacturer>
-		<rom name="e.i. - exa innova (kr).sms" size="32768" crc="dd74bcf1"/>
+		<rom name="E.I. - Exa Innova (Korea)(19xx)(HiCom).sms" size="32768" crc="dd74bcf1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1732,7 +1804,7 @@
 		<description>Eagles 5 (Korea)</description>
 		<year>1990</year>
 		<manufacturer>Zemina</manufacturer>
-		<rom name="eagles 5 (kr).bin" size="32768" crc="f06f2ccb"/>
+		<rom name="Eagles 5 (Korea)(1990)(Zemina).sms" size="32768" crc="f06f2ccb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1753,7 +1825,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ecco2" sourcefile="sms/d_sms.cpp">
-		<description>Ecco the Dolphin II - The Tides of Time (Brazil)</description>
+		<description>Ecco the Dolphin II: The Tides of Time (Brazil)</description>
 		<year>1996</year>
 		<manufacturer>Tec Toy</manufacturer>
 		<rom name="Ecco the Dolphin II - The Tides of Time (Brazil)(1996)(Tec Toy).sms" size="524288" crc="7c28703a"/>
@@ -1952,7 +2024,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fantzon2j" cloneof="fantzon2" romof="fantzon2" sourcefile="sms/d_sms.cpp">
-		<description>Fantasy Zone II - Opa Opa no Namida (Japan)</description>
+		<description>Fantasy Zone II: Opa Opa no Namida (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Fantasy Zone II - Opa Opa no Namida (Japan)(1987)(Sega).sms" size="262144" crc="c722fb42"/>
@@ -2361,7 +2433,7 @@
 		<description>Gokuaku Doumei Dump Matsumoto (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="gokuaku doumei dump matsumoto (japan).bin" size="131072" crc="a249fa9d"/>
+		<rom name="Gokuaku Doumei Dump Matsumoto (Japan)(1986)(Sega).sms" size="131072" crc="a249fa9d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3072,6 +3144,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jurl" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Jurl (HB, v0.5b)</description>
+		<year>2024</year>
+		<manufacturer>Tonsomo Entertainment</manufacturer>
+		<rom name="Jurl v0.5b (2024)(Tonsomo Entertainment).sms" size="32768" crc="0f692fef"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kenseid" sourcefile="sms/d_sms.cpp">
 		<description>Kenseiden (Euro, USA, Brazil)</description>
 		<year>1988</year>
@@ -3372,10 +3453,10 @@
 	</game>
 	<game name="lunarskirmish" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Lunar Skirmish (HB, v63)</description>
+		<description>Lunar Skirmish (HB, v64)</description>
 		<year>2025</year>
 		<manufacturer>MikGames</manufacturer>
-		<rom name="Lunar Skirmish v63 (2025)(MikGames).sms" size="425984" crc="08577d0c"/>
+		<rom name="Lunar Skirmish v64 (2025)(MikGames).sms" size="425984" crc="461a369a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5310,6 +5391,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="stella" sourcefile="sms/d_sms.cpp">
+		<comment>Hack, Homebrew</comment>
+		<description>Stella in Adventure World (GlobalHack)</description>
+		<year>2024-25</year>
+		<manufacturer>TSP</manufacturer>
+		<rom name="Stella in Adventure World (2024-25)(TSP).sms" size="524288" crc="2efda49b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sf2" sourcefile="sms/d_sms.cpp">
 		<description>Street Fighter II (Brazil)</description>
 		<year>1997</year>
@@ -5852,78 +5942,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="hicom8a" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection (Korea, 8 in 1 Ver. A)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 8-in-1 the best game collection a (kr).sms" size="262144" crc="fba94148"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom8b" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection (Korea, 8 in 1 Ver. B)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 8-in-1 the best game collection b (kr).sms" size="262144" crc="8333c86e"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom8c" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection (Korea, 8 in 1 Ver. C)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 8-in-1 the best game collection c (kr).sms" size="262144" crc="00e9809f"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3e" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Ghost House + Teddy Boy Blues + Seishun Scandal (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection e (kr).sms" size="131072" crc="82c09b57"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3b" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Great Baseball + Great Soccer + Super Tennis (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection b (kr).sms" size="131072" crc="6ebfe1c3"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Hang On + Pit Pot + Spy vs Spy (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection a (kr).sms" size="131072" crc="98af0236"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3f" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Satellite-7 + Great Baseball + Seishun Scandal (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection f (kr).sms" size="131072" crc="4088eeb4"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3d" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Teddy Boy Blues + Great Soccer + Comical Machine Gun Joe (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection d (kr).sms" size="131072" crc="8d2d695d"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="hicom3c" cloneof="hicom3a" romof="hicom3a" sourcefile="sms/d_sms.cpp">
-		<description>The Best Game Collection - Teddy Boy Blues + Pit-Pot + Astro Flash (Korea)</description>
-		<year>1990</year>
-		<manufacturer>Hi-Com</manufacturer>
-		<rom name="hi-com 3-in-1 the best game collection c (kr).sms" size="131072" crc="81a36a4f"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="3dragon" sourcefile="sms/d_sms.cpp">
 		<description>Three Dragon Story, The (Korea)</description>
 		<year>1989</year>
@@ -5962,6 +5980,15 @@
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Time Soldiers (Euro, USA, Brazil)(1989)(Sega).sms" size="262144" crc="51bd14be"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="timesoldpro" cloneof="timesold" romof="timesold" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Time Soldiers Pro (Hack)</description>
+		<year>2023</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Time Soldiers Pro (2023)(BcnAbel76).sms" size="262144" crc="1558b8c6"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6111,7 +6138,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultima4" sourcefile="sms/d_sms.cpp">
-		<description>Ultima IV - Quest of the Avatar (Euro, Brazil)</description>
+		<description>Ultima IV: Quest of the Avatar (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ultima IV - Quest of the Avatar (Euro, Brazil)(1990)(Sega).sms" size="524288" crc="b52d60c8"/>
@@ -6120,7 +6147,7 @@
 	</game>
 	<game name="ultima4p" cloneof="ultima4" romof="ultima4" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Ultima IV - Quest of the Avatar (Euro, Prototype)</description>
+		<description>Ultima IV: Quest of the Avatar (Euro, Prototype)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ultima IV - Quest of the Avatar (Euro, Proto)(1990)(Sega).sms" size="524288" crc="de9f8517"/>
@@ -6180,7 +6207,7 @@
 	</game>
 	<game name="voyage" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, Homebrew</comment>
-		<description>Voyage - A Sorceress Vacation (GlobalHack, v1.05)</description>
+		<description>Voyage: A Sorceress Vacation (GlobalHack, v1.05)</description>
 		<year>2021</year>
 		<manufacturer>SNAGS</manufacturer>
 		<rom name="Voyage - A Sorceress Vacation v1.05 (GlobalHack)(2021)(SNAGS).sms" size="524288" crc="76a1d277"/>
@@ -6224,10 +6251,10 @@
 	</game>
 	<game name="wsbyronsr" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Whack 'Em Smack 'Em Byrons Remarked (HB, RC1)</description>
+		<description>Whack 'Em Smack 'Em Byrons Remarked (HB)</description>
 		<year>2025</year>
 		<manufacturer>ArugulaZ</manufacturer>
-		<rom name="Whack 'Em Smack 'Em Byrons Remarked RC1 (2025)(ArugulaZ).sms" size="131072" crc="3bd2d27a"/>
+		<rom name="Whack 'Em Smack 'Em Byrons Remarked (2025)(ArugulaZ).sms" size="131072" crc="be34ae87"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

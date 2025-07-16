@@ -2095,7 +2095,7 @@
 		<description>Avalon (48K)</description>
 		<year>1984</year>
 		<manufacturer>Hewson Consultants</manufacturer>
-		<rom name="Avalon (1984)(Hewson Consultants).z80" size="33778" crc="e65ee95c"/>
+		<rom name="Avalon 48K (1984)(Hewson Consultants).z80" size="33778" crc="e65ee95c"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -3586,6 +3586,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="boni" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Boni (48K-128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Steve Tyson</manufacturer>
+		<rom name="Boni 48K-128K (2025)(Steve Tyson).tap" size="33435" crc="f59d067b"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bonnieclyde" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Bonnie and Clyde (128K) (HB)</description>
@@ -4362,10 +4373,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="canywarr" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Canyon Warrior (128K)</description>
+		<description>Canyon Warrior (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Mastertronic Plus</manufacturer>
-		<rom name="Canyon Warrior (1989)(Mastertronic Plus).tap" size="52451" crc="5574dd40"/>
+		<rom name="Canyon Warrior 48K-128K (1989)(Mastertronic Plus).tap" size="52451" crc="5574dd40"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -4524,7 +4535,7 @@
 		<description>Cashdash (48K)</description>
 		<year>19xx</year>
 		<manufacturer>Tynesoft</manufacturer>
-		<rom name="Cash Dash (19xx)(Tynesoft).tap" size="47712" crc="a278579f"/>
+		<rom name="Cash Dash 48K (19xx)(Tynesoft).tap" size="47712" crc="a278579f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4696,7 +4707,7 @@
 		<description>Cavelon (48K)</description>
 		<year>1984</year>
 		<manufacturer>Ocean Software</manufacturer>
-		<rom name="Cavelon 48K (1984)(Ocean).tap" size="33603" crc="df2fa332"/>
+		<rom name="Cavelon 48K (1984)(Ocean).tzx" size="34393" crc="430ca1b5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -5169,10 +5180,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="chubby" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Chubby Gristle (128K)</description>
+		<description>Chubby Gristle (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Chubby Gristle 128K (1988)(Grandslam).tap" size="52414" crc="46a7bdd3"/>
+		<rom name="Chubby Gristle 48K-128K (1988)(Grandslam).tap" size="52414" crc="46a7bdd3"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9540,6 +9551,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fp2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Falcon Patrol 2 (48K)</description>
+		<year>1985</year>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Falcon Patrol 2 48K (1985)(Virgin Games).tzx" size="32540" crc="8db8c950"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fallenang" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Select '2) Sinclair SJS' to use controller</comment>
 		<description>Fallen Angel (48K)</description>
@@ -12717,6 +12737,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="huntredoct" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Hunt for Red October, The (128K)</description>
+		<year>1991</year>
+		<manufacturer>Grandslam Entertainments</manufacturer>
+		<rom name="Hunt for Red October, The 128K (1991)(Grandslam).tap" size="134844" crc="5a390bfb"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hunter" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Hunter (48K)</description>
 		<year>1991</year>
@@ -14664,10 +14694,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ksdizzy" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Kwik Snax Dizzy (128K)</description>
+		<description>Kwik Snax Dizzy (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Kwik Snax Dizzy 128K (1990)(Codemasters).tap" size="100738" crc="0b234319"/>
+		<rom name="Kwik Snax Dizzy 48K-128K (1990)(Codemasters).tzx" size="100777" crc="c90db9ca"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -14842,7 +14872,7 @@
 		<description>Laser Zone (48K)</description>
 		<year>1983</year>
 		<manufacturer>Salamander Software</manufacturer>
-		<rom name="Laser Zone (1983)(Salamander Software).tap" size="17800" crc="701e7685"/>
+		<rom name="Laser Zone 48K (1983)(Salamander Software).tap" size="17800" crc="701e7685"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14861,7 +14891,7 @@
 		<description>Last Duel (48K)</description>
 		<year>1989</year>
 		<manufacturer>Go!</manufacturer>
-		<rom name="Last Duel (1989)(Go!).tap" size="171660" crc="ca2ae42a"/>
+		<rom name="Last Duel 48K (1989)(Go!).tap" size="171660" crc="ca2ae42a"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14881,7 +14911,7 @@
 		<description>Last Mission, The (Spanish) (128K)</description>
 		<year>1987</year>
 		<manufacturer>Opera Soft</manufacturer>
-		<rom name="Last Mission, The 128K ES (1987)(Opera Soft).tap" size="45998" crc="2e93fbe9"/>
+		<rom name="Last Mission, The ES 128K (1987)(Opera Soft).tap" size="45998" crc="2e93fbe9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15411,10 +15441,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ladbust" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Los Angeles Drugs Bust (128K)</description>
+		<description>Los Angeles Drugs Bust (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Players Software</manufacturer>
-		<rom name="LA Drugs Bust 128K (1990)(Players Software).tap" size="50858" crc="20fbc4bd"/>
+		<rom name="LA Drugs Bust 48K-128K (1990)(Players Software).tap" size="50858" crc="20fbc4bd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16749,19 +16779,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="michelfutbolchamp" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Michel Futbol Master - Championship (Spanish) (48K)</description>
+		<description>Michel Futbol Master: Championship (Spanish) (48K)</description>
 		<year>1989</year>
 		<manufacturer>Dinamic Software</manufacturer>
-		<rom name="Michel Futbol Master (1989)(Dinamic).tap" size="42768" crc="38824765"/>
+		<rom name="Michel Futbol Master - Championship ES 48K (1989)(Dinamic Software).tap" size="42768" crc="38824765"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="michelfutbolskills" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Michel Futbol Master - Super Skills (Spanish) (48K)</description>
+		<description>Michel Futbol Master: Super Skills (Spanish) (48K)</description>
 		<year>1989</year>
 		<manufacturer>Dinamic Software</manufacturer>
-		<rom name="Michel Super Skills (1989)(Dinamic).tap" size="43013" crc="035d9ad3"/>
+		<rom name="Michel Futbol Master - Super Skills ES 48K (1989)(Dinamic Software).tap" size="43013" crc="035d9ad3"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -16797,10 +16827,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="micromouse" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Micro Mouse Goes De-bugging (128K)</description>
+		<description>Micro Mouse Goes De-bugging (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Mastertronic Plus</manufacturer>
-		<rom name="Micro Mouse Goes De-bugging 128K (1989)(Mastertronic Plus).tap" size="47636" crc="6a8a8635"/>
+		<rom name="Micro Mouse Goes De-bugging 48K-128K (1989)(Mastertronic Plus).tap" size="47636" crc="6a8a8635"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16846,20 +16876,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="micrsoccint" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>MicroProse Soccer - International Challenge (128K)</description>
+		<description>MicroProse Soccer: International Challenge (128K)</description>
 		<year>1989</year>
 		<manufacturer>MicroProse</manufacturer>
-		<rom name="MicroProse Soccer - Int. Challenge 128K (1989)(MicroProse).tap" size="98198" crc="2d03b320"/>
+		<rom name="MicroProse Soccer - International Challenge 128K (1989)(MicroProse).tap" size="98198" crc="2d03b320"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="micrsocc6sd" cloneof="micrsoccint" romof="micrsoccint" sourcefile="spectrum/d_spectrum.cpp">
-		<description>MicroProse Soccer - Six-a-Side Challenge (128K)</description>
+		<description>MicroProse Soccer: Six-a-Side Challenge (128K)</description>
 		<year>1989</year>
 		<manufacturer>MicroProse</manufacturer>
-		<rom name="MicroProse Soccer - 6aside Challenge 128K (1989)(MicroProse).tap" size="98198" crc="3c0a7349"/>
+		<rom name="MicroProse Soccer - Six-a-Side Challenge 128K (1989)(MicroProse).tap" size="98198" crc="3c0a7349"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19049,7 +19079,7 @@
 		<description>Pac-Land (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Pac-Land 48K-128K (1989)(Grandslam Entertainments).tzx" size="68609" crc="1d47afc4"/>
+		<rom name="Pac-Land 48K-128K (1989)(Grandslam).tzx" size="68609" crc="1d47afc4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19119,7 +19149,7 @@
 		<description>Pac-Mania (128K)</description>
 		<year>1988</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Pac-Mania 128K (1988)(Grandslam Entertainments).z80" size="43027" crc="938c60ff"/>
+		<rom name="Pac-Mania 128K (1988)(Grandslam).z80" size="43027" crc="938c60ff"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19605,7 +19635,7 @@
 		<description>Peter Shilton's Handball Maradona (48K)</description>
 		<year>1986</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Peter Shilton's Handball Maradona (1986)(Grandslam Entertainments).z80" size="40447" crc="5d4a8e4d"/>
+		<rom name="Peter Shilton's Handball Maradona 48K (1986)(Grandslam).z80" size="40447" crc="5d4a8e4d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -20811,10 +20841,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="rallycross" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Rally Cross (128K)</description>
+		<description>Rally Cross (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Anco Software</manufacturer>
-		<rom name="Rally Cross 128K (1989)(Anco Software).tap" size="81416" crc="e6e3cfb8"/>
+		<rom name="Rally Cross 48K-128K (1989)(Anco Software).tzx" size="81492" crc="40d4ae57"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22040,6 +22070,16 @@
 		<year>2020</year>
 		<manufacturer>Roman Gikryt</manufacturer>
 		<rom name="Run! 128K (2020)(Roman Gikryt).tap" size="72853" crc="4691c976"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="runningman" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Running Man, The (48K-128K)</description>
+		<year>1989</year>
+		<manufacturer>Grandslam Entertainments</manufacturer>
+		<rom name="Running Man, The 48K-128K (1989)(Grandslam).tap" size="103097" crc="24c5e838"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23514,6 +23554,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="skyrunner" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Sky Runner (48K)</description>
+		<year>1987</year>
+		<manufacturer>Cascade Games</manufacturer>
+		<rom name="Sky Runner 48K (1987)(Cascade Games).tzx" size="48021" crc="d750da65"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="skyneten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>SKYNET Road to 1984 (English) (128K) (HB)</description>
@@ -24552,7 +24601,7 @@
 		<description>Star Blade (48K)</description>
 		<year>1995</year>
 		<manufacturer>Barry Addams</manufacturer>
-		<rom name="Star Blade (1995)(Barry Addams).z80" size="38880" crc="96e096c6"/>
+		<rom name="Star Blade 48K (1995)(Barry Addams).z80" size="38880" crc="96e096c6"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -26031,7 +26080,7 @@
 		<description>Terramex (128K)</description>
 		<year>1987</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Terramex 128K (1987)(Grandslam Entertainments).tap" size="82251" crc="eaf717b6"/>
+		<rom name="Terramex 128K (1987)(Grandslam).tap" size="82251" crc="eaf717b6"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -26287,12 +26336,21 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="thundbirds" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Thunderbirds (48K)</description>
+		<year>1985</year>
+		<manufacturer>Firebird Software</manufacturer>
+		<rom name="Thunderbirds 48K (1985)(Firebird Software).tzx" size="52582" crc="167c1d59"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="thundbirds1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Press SPACE to change character</comment>
 		<description>Thunderbirds - Mission 1: Mine Menace (128K)</description>
 		<year>1989</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Thunderbirds - Part 1 128K (1989)(Grandslam Entertainments).tap" size="52409" crc="a914189f"/>
+		<rom name="Thunderbirds - Part 1 128K (1989)(Grandslam).tap" size="52409" crc="a914189f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -26303,7 +26361,7 @@
 		<description>Thunderbirds - Mission 2: Sub Crash (128K)</description>
 		<year>1989</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Thunderbirds - Part 2 128K (1989)(Grandslam Entertainments).tap" size="52409" crc="0869b04e"/>
+		<rom name="Thunderbirds - Part 2 128K (1989)(Grandslam).tap" size="52409" crc="0869b04e"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -26314,7 +26372,7 @@
 		<description>Thunderbirds - Mission 3: Bank Job (128K)</description>
 		<year>1989</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Thunderbirds - Part 3 128K (1989)(Grandslam Entertainments).tap" size="52409" crc="b156bc82"/>
+		<rom name="Thunderbirds - Part 3 128K (1989)(Grandslam).tap" size="52409" crc="b156bc82"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -26325,14 +26383,14 @@
 		<description>Thunderbirds - Mission 4: Evil Hood (128K)</description>
 		<year>1989</year>
 		<manufacturer>Grandslam Entertainments</manufacturer>
-		<rom name="Thunderbirds - Part 4 128K (1989)(Grandslam Entertainments).tap" size="52409" crc="9aafecf7"/>
+		<rom name="Thunderbirds - Part 4 128K (1989)(Grandslam).tap" size="52409" crc="9aafecf7"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="thundcats" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Thundercats (128K)</description>
+		<description>Thundercats (48K-128K)</description>
 		<year>1987</year>
 		<manufacturer>Elite Systems</manufacturer>
 		<rom name="Thundercats 48K-128K (1987)(Elite Systems).tap" size="94147" crc="76e19a9c"/>
@@ -27333,7 +27391,7 @@
 		<description>UVE Atac (48K)</description>
 		<year>1985</year>
 		<manufacturer>MicroHobby</manufacturer>
-		<rom name="UVE Atac (1985)(MicroHobby).tap" size="17979" crc="78f60aea"/>
+		<rom name="UVE Atac 48K (1985)(MicroHobby).tap" size="17979" crc="78f60aea"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

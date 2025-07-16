@@ -29,6 +29,7 @@ fbneo.dat
 /.github
 *.so
 *.o
+*.d
 src/burner/libretro/ctvmake
 src/burner/libretro/m68kmake
 src/burner/libretro/pgmspritecreate

@@ -1132,6 +1132,25 @@ INT32 SekShouldInterrupt()
 	}
 }
 
+INT32 SekGetIRQLevel()
+{
+#ifdef EMU_C68K
+	if ((nSekCpuCore == SEK_CORE_C68K) && nSekCPUType[nSekActive] == 0x68000) {
+		return (INT32)c68k[nSekActive].irq;
+	} else {
+#endif
+
+#ifdef EMU_M68K
+		return m68k_get_irq();
+#else
+		return 0;
+#endif
+
+#ifdef EMU_C68K
+	}
+#endif
+}
+
 void SekBurnUntilInt()
 {
 	if(nSekCpuCore == SEK_CORE_M68K) {
@@ -1791,6 +1810,26 @@ UINT32 SekGetPPC(INT32)
 
 #ifdef EMU_M68K
 		return m68k_get_reg(NULL, M68K_REG_PPC);
+#else
+		return 0;
+#endif
+
+#ifdef EMU_C68K
+	}
+#endif
+}
+
+UINT32 SekGetDAR(INT32 n)
+{
+#ifdef EMU_C68K
+	if ((nSekCpuCore == SEK_CORE_C68K) && nSekCPUType[nSekActive] == 0x68000) {
+		n &= 0xf;
+		return (n < 8 ? c68k[nSekActive].d[n] : c68k[nSekActive].a[n-8]);
+	} else {
+#endif
+
+#ifdef EMU_M68K
+		return m68k_get_dar(n);
 #else
 		return 0;
 #endif

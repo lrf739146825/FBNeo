@@ -17738,6 +17738,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ultimasavempte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Ultima Kyouryuu Teikoku - The Savage Empire (Hack, English v1.02)</description>
+		<year>2025</year>
+		<manufacturer>Nytegard</manufacturer>
+		<rom name="Ultima Kyouryuu Teikoku - The Savage Empire T-Eng v1.02 (2025)(Nytegard).sfc" size="1572864" crc="b9dbbd96"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ultimasavempj" cloneof="ultimasavempte" romof="ultimasavempte" sourcefile="snes/d_snes.cpp">
+		<description>Ultima Kyouryuu Teikoku - The Savage Empire (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Pony Canyon</manufacturer>
+		<rom name="Ultima Kyouryuu Teikoku - The Savage Empire (J)(1995)(Pony Canyon).sfc" size="1572864" crc="dddb20ad"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ultimavij" cloneof="ultimavi" romof="ultimavi" sourcefile="snes/d_snes.cpp">
 		<description>Ultima VI - Itsuwari no Yogensha (Japan)</description>
 		<year>1993</year>
