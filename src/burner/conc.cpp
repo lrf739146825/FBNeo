@@ -61,7 +61,8 @@ const char* DetectFileEncoding(const std::vector<wchar_t>& wideData) {
 #else
 	// On non-Windows, assume wchar_t is UTF-32 or similar and convert to UTF-8
 	std::vector<char> utf8Data;
-	for (const auto& wc : wideData) {
+	for (std::vector<wchar_t>::const_iterator it = wideData.begin(); it != wideData.end(); ++it) {
+		const wchar_t wc = *it;
 		// For simplicity, assume each wchar_t is a single UTF-8 character (not always correct)
 		utf8Data.push_back(static_cast<char>(wc));
 	}
