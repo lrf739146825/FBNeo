@@ -877,7 +877,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="agentx2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Agent X II - The Mad Prof's Back! (128K)</description>
+		<description>Agent X II: The Mad Prof's Back! (128K)</description>
 		<year>1987</year>
 		<manufacturer>Mastertronic</manufacturer>
 		<rom name="Agent X II - The Mad Prof's Back! 128K (1987)(Mastertronic).tap" size="144693" crc="889a8e99"/>
@@ -886,13 +886,13 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ahdiddums" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Ah Diddums (48K)</description>
+	<game name="ahdiddums" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Q: up - A: down - N: left - M: right - W: pickup/drop - ENTER: fire</comment>
+		<description>Ah Diddums (16K)</description>
 		<year>1983</year>
 		<manufacturer>Imagine Software</manufacturer>
-		<rom name="Ah Diddums (1983)(Imagine).tap" size="8490" crc="e5b88c3b"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Ah Diddums 16K (1983)(Imagine Software).tap" size="9046" crc="b67d4be0"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1622,10 +1622,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="arcadia" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>N: left - M: right - Q: fire - A: thrust</comment>
 		<description>Arcadia (16K)</description>
 		<year>1982</year>
 		<manufacturer>Imagine Software</manufacturer>
-		<rom name="Arcadia (1982)(Imagine)(16K).tap" size="8522" crc="63ef88a9"/>
+		<rom name="Arcadia 16K (1982)(Imagine Software).tap" size="8522" crc="63ef88a9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -1642,7 +1643,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="archon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Archon - The Light and the Dark (48K)</description>
+		<description>Archon: The Light and the Dark (48K)</description>
 		<year>1985</year>
 		<manufacturer>Ariolasoft UK</manufacturer>
 		<rom name="Archon - The Light and the Dark 48K (1985)(Ariolasoft UK).tap" size="50271" crc="97a9d660"/>
@@ -3024,6 +3025,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bnb" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Birds and the Bees, The (48K)</description>
+		<year>1983</year>
+		<manufacturer>Bug-Byte Software</manufacturer>
+		<rom name="Birds and the Bees, The 48K (1983)(Bug-Byte).tzx" size="24836" crc="e707d7e2"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="birdycant" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Birdy Cantabile (48K) (HB)</description>
@@ -3594,6 +3604,15 @@
 		<rom name="Boni 48K-128K (2025)(Steve Tyson).tap" size="33435" crc="f59d067b"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bonkers" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Bonkers (16K)</description>
+		<year>1983</year>
+		<manufacturer>Procom Software</manufacturer>
+		<rom name="Bonkers 16K (1983)(Procom).tap" size="15988" crc="d8639de2"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7040,7 +7059,7 @@
 		<description>Day in the Life, A (48K)</description>
 		<year>1985</year>
 		<manufacturer>Micromega</manufacturer>
-		<rom name="Day in the Life, A (1985)(Micromega).tap" size="50099" crc="80e1e221"/>
+		<rom name="Day in the Life, A 48K (1985)(Micromega).tap" size="50099" crc="80e1e221"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8103,23 +8122,14 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="dkarcade" cloneof="dkarcadev2" romof="dkarcadev2" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="dkarcade" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Donkey Kong Arcade (48K) (HB)</description>
-		<year>2024</year>
-		<manufacturer>Artonapilos</manufacturer>
-		<rom name="Donkey Kong Arcade 48K (2024)(Artonapilos).tap" size="45523" crc="9e2622c3"/>
-		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="dkarcadev2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, AY Sound supported</comment>
-		<description>Donkey Kong Arcade 48K (HB, v2)</description>
+		<description>Donkey Kong Arcade (48K-128K) (HB)</description>
 		<year>2024-25</year>
 		<manufacturer>Artonapilos</manufacturer>
-		<rom name="Donkey Kong Arcade v2 48K-AY (2024-25)(Artonapilos).tap" size="46672" crc="5e370f50"/>
-		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<rom name="Donkey Kong Arcade 48K-128K (2024-25)(Artonapilos).tap" size="46672" crc="97c64298"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10927,7 +10937,7 @@
 		<description>Ghost Hunters (48K)</description>
 		<year>1987</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Ghost Hunters (1987)(Codemasters).tap" size="48896" crc="dfa7ffcb"/>
+		<rom name="Ghost Hunters 48K (1987)(Codemasters).tap" size="48896" crc="dfa7ffcb"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -11440,32 +11450,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gpsimulator1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="gpsimulator1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Grand Prix Simulator (48K)</description>
 		<year>1987</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Grand Prix Simulator (1987)(Codemasters).tap" size="55033" crc="379b30e6"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Grand Prix Simulator 48K (1987)(Codemasters).tzx" size="55067" crc="e4e0423c"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gpsimii128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Grand Prix Simulator 2 (128K)</description>
+	<game name="gpsimulator2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Select 'Player 3' to use Kempston joystick</comment>
+		<description>Grand Prix Simulator 2 (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Grand Prix Simulator 2 (1989)(Codemasters)(48K-128K).tap" size="53178" crc="2e2014ef"/>
+		<rom name="Grand Prix Simulator 2 48K-128K (1989)(Codemasters).tzx" size="53037" crc="f06ff9c5"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="gpsimii48" cloneof="gpsimii128" romof="gpsimii128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Grand Prix Simulator 2 (48K)</description>
-		<year>1989</year>
-		<manufacturer>Codemasters</manufacturer>
-		<rom name="Grand Prix Simulator 2 (1989)(Codemasters)(48K-128K).tap" merge="Grand Prix Simulator 2 (1989)(Codemasters)(48K-128K).tap" size="53178" crc="2e2014ef"/>
-		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11538,10 +11539,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="grellandfalla" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Grell and Falla (128K)</description>
+		<comment>Press ENTER to change the character</comment>
+		<description>Grell and Falla in the Enchanted Garden (48K-128K)</description>
 		<year>1992</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Grell and Falla (1987)(Codemasters).z80" size="92473" crc="8929d289"/>
+		<rom name="Grell and Falla in the Enchanted Garden 48K-128K (1992)(Codemasters).tzx" size="65157" crc="6569e0af"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -14149,11 +14151,20 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jungletrouble" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Jungle Trouble (16K)</description>
+		<year>1983</year>
+		<manufacturer>Durell Software</manufacturer>
+		<rom name="Jungle Trouble 16K (1983)(Durell).tzx" size="16246" crc="cc906385"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="junglewarfare" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Jungle Warfare (48K)</description>
 		<year>1989</year>
-		<manufacturer>Codemasters</manufacturer>
-		<rom name="Jungle Warfare (1989)(Codemasters).tap" size="43631" crc="eb977230"/>
+		<manufacturer>Virgin Mastertronic</manufacturer>
+		<rom name="Jungle Warfare 48K (1989)(Virgin Mastertronic).tzx" size="43659" crc="7d93472a"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -16026,7 +16037,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mminer" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Manic Miner (Bug-Byte Software) (48K)</description>
+		<description>Manic Miner (Bug-Byte) (48K)</description>
 		<year>1983</year>
 		<manufacturer>Bug-Byte Software</manufacturer>
 		<rom name="Manic Miner 48K (1983)(Bug-Byte).tap" size="33689" crc="e6bac4e8"/>
@@ -17879,14 +17890,24 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mushromsoup" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="mushromsoup128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mushrom Soup (128K) (HB)</description>
-		<year>2024</year>
+		<description>Mushroom Soup (128K) (HB, v1.2)</description>
+		<year>2024-25</year>
 		<manufacturer>Ottersoft</manufacturer>
-		<rom name="Mushrom Soup 128K (2024)(Ottersoft).tap" size="45638" crc="8c755a93"/>
+		<rom name="Mushroom Soup v1.2 128K (2024-25)(Ottersoft).tap" size="46862" crc="74f2a5ba"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mushromsoup48" cloneof="mushromsoup128" romof="mushromsoup128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mushroom Soup (48K) (HB, v1.2)</description>
+		<year>2024-25</year>
+		<manufacturer>Ottersoft</manufacturer>
+		<rom name="Mushroom Soup v1.2 48K (2024-25)(Ottersoft).tap" size="38834" crc="d75be282"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20385,7 +20406,7 @@
 		<description>Psi Chess (48K)</description>
 		<year>1986</year>
 		<manufacturer>The Edge</manufacturer>
-		<rom name="Psi Chess 48K (1986)(The Edge).tap" size="49152" crc="deca5027"/>
+		<rom name="Psi Chess 48K (1986)(The Edge).tzx" size="51053" crc="99e95e9d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -20436,6 +20457,15 @@
 		<rom name="Psyqo Santa 128K (2023)(IAMAI Creation).tap" size="56501" crc="2dc3a9d9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="psytraxx" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Psytraxx (48K)</description>
+		<year>1984</year>
+		<manufacturer>The Edge</manufacturer>
+		<rom name="Psytraxx 48K (1984)(The Edge).z80" size="44693" crc="362277ef"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22983,7 +23013,7 @@
 		<description>Shadow Dancer (128K)</description>
 		<year>1991</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Shadow Dancer (1991)(U.S. Gold).tap" size="145911" crc="faa90676"/>
+		<rom name="Shadow Dancer 128K (1991)(U.S. Gold).tap" size="145911" crc="faa90676"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -25126,6 +25156,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="styx" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Styx (16K)</description>
+		<year>1983</year>
+		<manufacturer>Bug-Byte Software</manufacturer>
+		<rom name="Styx 16K (1983)(Bug-Byte).tap" size="9848" crc="db814fed"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="subchase" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Q: left - P: right - keys from 1 to 9: use depth charges</comment>
 		<description>Sub Chase (16K)</description>
@@ -25497,7 +25536,7 @@
 		<description>Super Trux (128K)</description>
 		<year>1988</year>
 		<manufacturer>Elite Systems</manufacturer>
-		<rom name="Super Trux (1988)(Elite Systems).tap" size="56629" crc="65fcf302"/>
+		<rom name="Super Trux 128K (1988)(Elite Systems).tap" size="56629" crc="65fcf302"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
