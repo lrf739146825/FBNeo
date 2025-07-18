@@ -2430,7 +2430,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="blodilan" sourcefile="nes/d_nes.cpp">
-		<description>Blodia Land - Puzzle Quest (Japan)</description>
+		<description>Blodia Land: Puzzle Quest (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Tonkin House</manufacturer>
 		<rom name="Blodia Land - Puzzle Quest (Japan)(1990)(Tonkin House).nes" size="262160" crc="6d3d0c1e"/>
@@ -3085,7 +3085,7 @@
 		<description>Castle Quest (Hack, English v2.01)</description>
 		<year>2012</year>
 		<manufacturer>Stardust Crusaders, Hubz</manufacturer>
-		<rom name="Castle Quest T-Eng (2012)(Stardust Crusaders).nes" size="262160" crc="faabff04"/>
+		<rom name="Castle Quest T-Eng v2.01 (2012)(Stardust Crusaders).nes" size="262160" crc="faabff04"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3192,20 +3192,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="catnintey" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Cat Ninden Teyandee (Hack, English)</description>
-		<year>2012</year>
-		<manufacturer>Dark Mark</manufacturer>
-		<rom name="Cat Ninden Teyandee T-Eng (2012)(Dark Mark).nes" size="393232" crc="60f29773"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="catninteyj" cloneof="catnintey" romof="catnintey" sourcefile="nes/d_nes.cpp">
 		<description>Cat Ninden Teyandee (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Cat Ninden Teyandee (Japan)(1991)(Tecmo).nes" size="262160" crc="6f1485ed"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="catnintey" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Cat Ninden Teyandee ~ Samurai Pizza Cats (Hack, English)</description>
+		<year>2012</year>
+		<manufacturer>Dark Mark</manufacturer>
+		<rom name="Cat Ninden Teyandee T-Eng (2012)(Dark Mark).nes" size="393232" crc="60f29773"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7283,7 +7283,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="flintresdinhopj" cloneof="flintresdinhop" romof="flintresdinhop" sourcefile="nes/d_nes.cpp">
-		<description>Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)</description>
+		<description>Flintstones, The: The Rescue of Dino &amp; Hoppy (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (Japan)(1991)(Taito).nes" size="393232" crc="12f38740"/>
@@ -7291,7 +7291,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="flintresdinhop" sourcefile="nes/d_nes.cpp">
-		<description>Flintstones, The - The Rescue of Dino &amp; Hoppy (USA)</description>
+		<description>Flintstones, The: The Rescue of Dino &amp; Hoppy (USA)</description>
 		<year>1991</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Flintstones, The - The Rescue of Dino &amp; Hoppy (USA)(1991)(Taito).nes" size="393232" crc="0b804cdc"/>
@@ -7299,7 +7299,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="flintsuratdinpe" sourcefile="nes/d_nes.cpp">
-		<description>Flintstones, The - The Surprise at Dinosaur Peak! (USA)</description>
+		<description>Flintstones, The: The Surprise at Dinosaur Peak! (USA)</description>
 		<year>1994</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Flintstones, The - The Surprise at Dinosaur Peak! (USA)(1994)(Taito).nes" size="393232" crc="feda0b39"/>
@@ -7585,7 +7585,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="galaga" sourcefile="nes/d_nes.cpp">
-		<description>Galaga - Demons of Death (USA)</description>
+		<description>Galaga: Demons of Death (USA)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Galaga - Demons of Death (USA)(1988)(Bandai).nes" size="40976" crc="e36d5991"/>
@@ -8989,6 +8989,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="hinothouhenj" cloneof="hinothouhen" romof="hinothouhen" sourcefile="nes/d_nes.cpp">
+		<description>Hi no Tori Houou Hen: Gaou no Bouken (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Hi no Tori Houou Hen - Gaou no Bouken (Japan)(1987)(Konami).nes" size="131088" crc="19ccf008"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="higem" sourcefile="nes/d_nes.cpp">
 		<description>Higemaru Makaijima: Nanatsu no Shima Daibouken (Japan)</description>
 		<year>1987</year>
@@ -9027,23 +9035,6 @@
 		<year>1987</year>
 		<manufacturer>Takara</manufacturer>
 		<rom name="Hikari no Senshi Photon - The Ultimate Game on Planet Earth (Japan)(1987)(Takara).nes" size="131088" crc="924ae9e4"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="hinothouhen" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Hinotori Houou Hen: Gaou no Bouken (Hack, English)</description>
-		<year>2014</year>
-		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Hinotori Houou Hen - Gaou no Bouken T-Eng (2014)(Stardust Crusaders).nes" size="262160" crc="5f228691"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="hinothouhenj" cloneof="hinothouhen" romof="hinothouhen" sourcefile="nes/d_nes.cpp">
-		<description>Hinotori Houou Hen: Gaou no Bouken (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Hinotori Houou Hen - Gaou no Bouken (Japan)(1987)(Konami).nes" size="131088" crc="19ccf008"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15089,6 +15080,15 @@
 		<year>1990</year>
 		<manufacturer>FCI Inc. - Pony Canyon</manufacturer>
 		<rom name="Phantom Fighter (USA)(1990)(FCI Inc. - Pony Canyon).nes" size="262160" crc="9dde4e60"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hinothouhen" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Phoenix Karma: Gao's Adventure (Hack, English v1.01)</description>
+		<year>2014</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="Hi no Tori Houou Hen - Gaou no Bouken T-Eng v1.01 (2014)(Stardust Crusaders).nes" size="262160" crc="5f228691"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

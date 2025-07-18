@@ -3259,8 +3259,8 @@ DRV		BurnDrvnes_castlevaniacom;
 DRV		BurnDrvnes_castlevaniahr;
 DRV		BurnDrvnes_castlevanialt;
 DRV		BurnDrvMSX_cat;
-DRV		BurnDrvnes_catnintey;
 DRV		BurnDrvnes_catninteyj;
+DRV		BurnDrvnes_catnintey;
 DRV		BurnDrvCatacomb;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvCatapult;		// Bad dump [NOT WORKING]
@@ -7104,12 +7104,12 @@ DRV		BurnDrvmd_flintj;
 DRV		BurnDrvmd_flintu;
 DRV		BurnDrvsnes_Flintstones;
 DRV		BurnDrvnes_flintresdinhopc;
-DRV		BurnDrvnes_flintresdinhopj;
-DRV		BurnDrvnes_flintresdinhop;
-DRV		BurnDrvnes_flintsuratdinpe;
 DRV		BurnDrvsnes_Flintstonestsme;
 DRV		BurnDrvsnes_Flintstonestsmj;
 DRV		BurnDrvsnes_Flintstonestsm;
+DRV		BurnDrvnes_flintresdinhopj;
+DRV		BurnDrvnes_flintresdinhop;
+DRV		BurnDrvnes_flintsuratdinpe;
 DRV		BurnDrvsg1k_segaflipt;
 DRV		BurnDrvFlipjack;
 DRV		BurnDrvMSX_flipper;
@@ -7466,7 +7466,6 @@ DRV		BurnDrvGalagao;
 DRV		BurnDrvGalagap;
 DRV		BurnDrvcv_galaga;
 DRV		BurnDrvsg1k_galaga;
-DRV		BurnDrvnes_galaga;
 DRV		BurnDrvgg_galaga2;
 DRV		BurnDrvGalaga3a;
 DRV		BurnDrvGalaga3;
@@ -7476,6 +7475,7 @@ DRV		BurnDrvGalaga3m;
 DRV		BurnDrvNeogalag;
 DRV		BurnDrvNeogalaga;
 DRV		BurnDrvGalagawm;
+DRV		BurnDrvnes_galaga;
 DRV		BurnDrvmd_galahad;
 DRV		BurnDrvmd_galahads;
 DRV		BurnDrvGalaktron;
@@ -8911,6 +8911,7 @@ DRV		BurnDrvHexpool;
 DRV		BurnDrvHexa;
 DRV		BurnDrvHexionb;
 DRV		BurnDrvHexion;
+DRV		BurnDrvnes_hinothouhenj;
 DRV		BurnDrvHidnctcha;
 DRV		BurnDrvHidnctch;
 DRV		BurnDrvHidctch2a;
@@ -8945,8 +8946,6 @@ DRV		BurnDrvfds_hikarshij;
 DRV		BurnDrvsnes_Hilda;
 DRV		BurnDrvHimesiki;
 DRV		BurnDrvsnes_Hindstrike;
-DRV		BurnDrvnes_hinothouhen;
-DRV		BurnDrvnes_hinothouhenj;
 DRV		BurnDrvHipoly;
 DRV		BurnDrvHippodrm;
 DRV		BurnDrvnes_hiryunoken;
@@ -14424,6 +14423,8 @@ DRV		BurnDrvsms_papicom;
 DRV		BurnDrvmd_papi;
 DRV		BurnDrvmd_papirmx;
 DRV		BurnDrvnes_papillongals;
+DRV		BurnDrvmd_paprium;
+DRV		BurnDrvmd_papriumini;
 DRV		BurnSpecPapyrus;
 DRV		BurnSpecParachute;
 DRV		BurnDrvMSX_pjoe;
@@ -14734,6 +14735,7 @@ DRV		BurnDrvPhoenix3;
 DRV		BurnDrvPhoenixj;
 DRV		BurnDrvPhoenixt;
 DRV		BurnSpecphoenix;
+DRV		BurnDrvnes_hinothouhen;
 DRV		BurnDrvPhoenxp2;
 DRV		BurnDrvPhotof;
 DRV		BurnDrvphotoy2k102j;
@@ -26016,7 +26018,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_blockout,		// Blockout (World)
 	&BurnSpecblockz,			// BlockZ (128K) (HB)
 	&BurnDrvpce_blodia,			// Blodia (Japan)
-	&BurnDrvnes_blodilan,		// Blodia Land - Puzzle Quest (Japan)
+	&BurnDrvnes_blodilan,		// Blodia Land: Puzzle Quest (Japan)
 	&BurnSpecBloktris128,		// Bloktris (128K) (HB)
 	&BurnSpecBloktris48,		// Bloktris (48K) (HB)
 	&BurnDrvMSX_bloktris,		// Bloktris (HB)
@@ -27013,8 +27015,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_castlevaniahr,	// Castlevania: The Holy Relics (Hack)
 	&BurnDrvnes_castlevanialt,	// Castlevania: The Last Tear (Hack, v4.0)
 	&BurnDrvMSX_cat,			// Cat (HB)
-	&BurnDrvnes_catnintey,		// Cat Ninden Teyandee (Hack, English)
 	&BurnDrvnes_catninteyj,		// Cat Ninden Teyandee (Japan)
+	&BurnDrvnes_catnintey,		// Cat Ninden Teyandee ~ Samurai Pizza Cats (Hack, English)
 	&BurnDrvCatacomb,			// Catacomb
 #if defined FBNEO_DEBUG
 	&BurnDrvCatapult,			// Catapult [Bad dump, NOT WORKING]
@@ -30636,7 +30638,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsFfightae,		// Final Fight 30th Anniversary Edition (World, hack)
 	&BurnDrvsnes_Ffightguyj,	// Final Fight Guy (Japan)
 	&BurnDrvsnes_Ffightguy,		// Final Fight Guy (USA)
-	&BurnDrvmd_ffightmd,		// Final Fight MD (HB, v0.83b)
+	&BurnDrvmd_ffightmd,		// Final Fight MD (HB, v0.86b)
 	&BurnDrvsnes_Ffight3j,		// Final Fight Tough (Japan)
 	&BurnDrvCpsFfightaec2,		// Final Fight: Anniversary Edition (CPS2 hardware)
 	&BurnDrvCpsFfightaec2ds,	// Final Fight: Anniversary Edition (Deadly Streets, Hack)(CPS2 Hardware)
@@ -30858,12 +30860,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_flintu,			// Flintstones, The (USA)
 	&BurnDrvsnes_Flintstones,	// Flintstones, The (USA)
 	&BurnDrvnes_flintresdinhopc,// Flintstones, The - The Rescue of Dino & Hoppy (Hack, Chinese)
-	&BurnDrvnes_flintresdinhopj,// Flintstones, The - The Rescue of Dino & Hoppy (Japan)
-	&BurnDrvnes_flintresdinhop,	// Flintstones, The - The Rescue of Dino & Hoppy (USA)
-	&BurnDrvnes_flintsuratdinpe,// Flintstones, The - The Surprise at Dinosaur Peak! (USA)
 	&BurnDrvsnes_Flintstonestsme,// Flintstones, The - The Treasure of Sierra Madrock (Euro)
 	&BurnDrvsnes_Flintstonestsmj,// Flintstones, The - The Treasure of Sierra Madrock (Japan)
 	&BurnDrvsnes_Flintstonestsm,// Flintstones, The - The Treasure of Sierra Madrock (USA)
+	&BurnDrvnes_flintresdinhopj,// Flintstones, The: The Rescue of Dino & Hoppy (Japan)
+	&BurnDrvnes_flintresdinhop,	// Flintstones, The: The Rescue of Dino & Hoppy (USA)
+	&BurnDrvnes_flintsuratdinpe,// Flintstones, The: The Surprise at Dinosaur Peak! (USA)
 	&BurnDrvsg1k_segaflipt,		// Flipper (Taiwan)
 	&BurnDrvFlipjack,			// Flipper Jack
 	&BurnDrvMSX_flipper,		// Flipper Slipper (Japan)
@@ -31220,7 +31222,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGalagap,			// Galaga (Patched)
 	&BurnDrvcv_galaga,			// Galaga (SGM) (HB)
 	&BurnDrvsg1k_galaga,		// Galaga (Taiwan)
-	&BurnDrvnes_galaga,			// Galaga - Demons of Death (USA)
 	&BurnDrvgg_galaga2,			// Galaga 2 (Euro)
 	&BurnDrvGalaga3a,			// Galaga 3 (GP3 rev. C)
 	&BurnDrvGalaga3,			// Galaga 3 (GP3 rev. D)
@@ -31230,6 +31231,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvNeogalag,			// Galaga Demo (HB, set 1)
 	&BurnDrvNeogalaga,			// Galaga Demo (HB, set 2)
 	&BurnDrvGalagawm,			// Galaga Wave Mixer (Hack)
+	&BurnDrvnes_galaga,			// Galaga: Demons of Death (USA)
 	&BurnDrvmd_galahad,			// Galahad (Euro, USA)
 	&BurnDrvmd_galahads,		// Galahad (Hack, Spanish)
 	&BurnDrvGalaktron,			// Galaktron (Petaco S.A.)
@@ -32665,6 +32667,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvHexa,				// Hexa
 	&BurnDrvHexionb,			// Hexion (Asia ver AAA, bootleg)
 	&BurnDrvHexion,				// Hexion (Japan ver JAB)
+	&BurnDrvnes_hinothouhenj,	// Hi no Tori Houou Hen: Gaou no Bouken (Japan)
 	&BurnDrvHidnctcha,			// Hidden Catch (World) / Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.02)
 	&BurnDrvHidnctch,			// Hidden Catch (World) / Tul Lin Gu Lim Chat Ki '98 (Korea) (pcb ver 3.03)
 	&BurnDrvHidctch2a,			// Hidden Catch 2 (pcb ver 1.00) (Kor/Eng/Jpn/Chi)
@@ -32699,8 +32702,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Hilda,			// Hilda (HB)
 	&BurnDrvHimesiki,			// Himeshikibu (Japan)
 	&BurnDrvsnes_Hindstrike,	// Hind Strike (HB)
-	&BurnDrvnes_hinothouhen,	// Hinotori Houou Hen: Gaou no Bouken (Hack, English)
-	&BurnDrvnes_hinothouhenj,	// Hinotori Houou Hen: Gaou no Bouken (Japan)
 	&BurnDrvHipoly,				// Hipoly (bootleg of Hyper Olympic) [no comment, NOT WORKING]
 	&BurnDrvHippodrm,			// Hippodrome (US)
 	&BurnDrvnes_hiryunoken,		// Hiryuu no Ken - Ougi no Sho (Japan)
@@ -33799,7 +33800,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Jpark2,		// Jurassic Park II - The Chaos Continues (USA)
 	&BurnDrvsnes_Jpark2redux,	// Jurassic Park II - The Chaos Continues Redux (Hack)
 	&BurnSpecJurl,				// Jurl (48K) (HB)
-	&BurnDrvsms_jurl,			// Jurl (HB, v0.5b)
+	&BurnDrvsms_jurl,			// Jurl (HB, v0.9a)
 	&BurnSpecJustagal,			// Just A Gal (48K) (HB)
 	&BurnDrvnes_justbreed,		// Just Breed (Hack, English)
 	&BurnDrvnes_justbreedc,		// Just Breed (Hack, Spanish v2.0)
@@ -38178,6 +38179,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_papi,			// Papi Commando MD (HB)
 	&BurnDrvmd_papirmx,			// Papi Commando Remix MD (HB)
 	&BurnDrvnes_papillongals,	// Papillon Gals (Japan) (Unl)
+	&BurnDrvmd_paprium,			// Paprium (World) (HB)
+	&BurnDrvmd_papriumini,		// Paprium Minigame (HB)
 	&BurnSpecPapyrus,			// Papyrus (48K) (HB)
 	&BurnSpecParachute,			// Parachute (128K) (HB)
 	&BurnDrvMSX_pjoe,			// Parachuteless Joe (HB)
@@ -38488,6 +38491,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPhoenixj,			// Phoenix (Taito Japan)
 	&BurnDrvPhoenixt,			// Phoenix (Taito)
 	&BurnSpecphoenix,			// Phoenix - Text Adventure (48K)
+	&BurnDrvnes_hinothouhen,	// Phoenix Karma: Gao's Adventure (Hack, English v1.01)
 	&BurnDrvPhoenxp2,			// Phoenix Part 2
 	&BurnDrvPhotof,				// Photo Finish (bootleg?)
 	&BurnDrvphotoy2k102j,		// Photo Y2K / Chaoji Bi Yi Bi / Dajia Lai Zhao Cha / Real and Fake (ver. 102, Japanese Board)
@@ -38511,7 +38515,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_picpuzzle,		// Picture Puzzle (Japan)
 	&BurnDrvMSX_picpuzzle2,		// Picture Puzzle 2nd version (HB)
 	&BurnDrvsnes_Pieces,		// Pieces (USA)
-	&BurnDrvmd_psolar,			// Pier Solar and the Great Architects (World) (En,Es,Pt) (Rev C) (HB)
+	&BurnDrvmd_psolar,			// Pier Solar and the Great Architects (World, Rev C) (HB)
 	&BurnDrvsnes_Pierrelechef,	// Pierre le Chef is... Out to Lunch (Euro)
 	&BurnDrvPigskinb,			// Pigskin 621AD (rev 1.1 6/05/90)
 	&BurnDrvPigskin,			// Pigskin 621AD (rev 1.1K 8/01/90)
@@ -50745,8 +50749,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_castlevaniahr", "nes/d_nes.cpp"},
 	{ "nes_castlevanialt", "nes/d_nes.cpp"},
 	{ "msx_cat", "msx/d_msx.cpp"},
-	{ "nes_catnintey", "nes/d_nes.cpp"},
 	{ "nes_catninteyj", "nes/d_nes.cpp"},
+	{ "nes_catnintey", "nes/d_nes.cpp"},
 	{ "catacomb", "galaxian/d_galaxian.cpp"},
 	{ "catapult", "pre90s/d_epos.cpp"},
 	{ "msx_catbox", "msx/d_msx.cpp"},
@@ -54562,12 +54566,12 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_flintu", "megadrive/d_megadrive.cpp"},
 	{ "snes_flintstones", "snes/d_snes.cpp"},
 	{ "nes_flintresdinhopc", "nes/d_nes.cpp"},
-	{ "nes_flintresdinhopj", "nes/d_nes.cpp"},
-	{ "nes_flintresdinhop", "nes/d_nes.cpp"},
-	{ "nes_flintsuratdinpe", "nes/d_nes.cpp"},
 	{ "snes_flintstonestsme", "snes/d_snes.cpp"},
 	{ "snes_flintstonestsmj", "snes/d_snes.cpp"},
 	{ "snes_flintstonestsm", "snes/d_snes.cpp"},
+	{ "nes_flintresdinhopj", "nes/d_nes.cpp"},
+	{ "nes_flintresdinhop", "nes/d_nes.cpp"},
+	{ "nes_flintsuratdinpe", "nes/d_nes.cpp"},
 	{ "sg1k_segaflipt", "sg1000/d_sg1000.cpp"},
 	{ "flipjack", "pre90s/d_flipjack.cpp"},
 	{ "msx_flipper", "msx/d_msx.cpp"},
@@ -54918,7 +54922,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "galagap", "pre90s/d_galaga.cpp"},
 	{ "cv_galaga", "coleco/d_coleco.cpp"},
 	{ "sg1k_galaga", "sg1000/d_sg1000.cpp"},
-	{ "nes_galaga", "nes/d_nes.cpp"},
 	{ "gg_galaga2", "sms/d_sms.cpp"},
 	{ "galaga3a", "pre90s/d_gaplus.cpp"},
 	{ "galaga3", "pre90s/d_gaplus.cpp"},
@@ -54928,6 +54931,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "neogalag", "neogeo/d_neogeo.cpp"},
 	{ "neogalaga", "neogeo/d_neogeo.cpp"},
 	{ "galagawm", "pre90s/d_galaga.cpp"},
+	{ "nes_galaga", "nes/d_nes.cpp"},
 	{ "md_galahad", "megadrive/d_megadrive.cpp"},
 	{ "md_galahads", "megadrive/d_megadrive.cpp"},
 	{ "galaktron", "galaxian/d_galaxian.cpp"},
@@ -56355,6 +56359,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "hexa", "taito/d_arkanoid.cpp"},
 	{ "hexionb", "konami/d_hexion.cpp"},
 	{ "hexion", "konami/d_hexion.cpp"},
+	{ "nes_hinothouhenj", "nes/d_nes.cpp"},
 	{ "hidnctcha", "pst90s/d_eolith.cpp"},
 	{ "hidnctch", "pst90s/d_eolith.cpp"},
 	{ "hidctch2a", "pst90s/d_eolith.cpp"},
@@ -56389,8 +56394,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_hilda", "snes/d_snes.cpp"},
 	{ "himesiki", "pre90s/d_himesiki.cpp"},
 	{ "snes_hindstrike", "snes/d_snes.cpp"},
-	{ "nes_hinothouhen", "nes/d_nes.cpp"},
-	{ "nes_hinothouhenj", "nes/d_nes.cpp"},
 	{ "hipoly", "konami/d_trackfld.cpp"},
 	{ "hippodrm", "dataeast/d_dec0.cpp"},
 	{ "nes_hiryunoken", "nes/d_nes.cpp"},
@@ -61820,6 +61823,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_papi", "megadrive/d_megadrive.cpp"},
 	{ "md_papirmx", "megadrive/d_megadrive.cpp"},
 	{ "nes_papillongals", "nes/d_nes.cpp"},
+	{ "md_paprium", "megadrive/d_megadrive.cpp"},
+	{ "md_papriumini", "megadrive/d_megadrive.cpp"},
 	{ "spec_papyrus", "spectrum/d_spectrum.cpp"},
 	{ "spec_parachute", "spectrum/d_spectrum.cpp"},
 	{ "msx_pjoe", "msx/d_msx.cpp"},
@@ -62126,6 +62131,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "phoenixj", "pre90s/d_phoenix.cpp"},
 	{ "phoenixt", "pre90s/d_phoenix.cpp"},
 	{ "spec_phoenix", "spectrum/d_spectrum.cpp"},
+	{ "nes_hinothouhen", "nes/d_nes.cpp"},
 	{ "phoenxp2", "galaxian/d_galaxian.cpp"},
 	{ "photof", "pre90s/d_lasso.cpp"},
 	{ "photoy2k102j", "pgm/d_pgm.cpp"},
