@@ -2248,28 +2248,46 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 
 	// Handle megadrive
 	if ((nHardwareCode & HARDWARE_PUBLIC_MASK) == HARDWARE_SEGA_MEGADRIVE) {
-		// Street Fighter 2 mapping (which is the only 6 button megadrive game ?)
-		// Use same layout as arcade
+		// Those games were clearly designed to be played with 6 buttons
+		// So let's use the original 6-buttons layout for them.
 		if ((parentrom && strcmp(parentrom, "md_sf2") == 0) ||
-			(drvname && strcmp(drvname, "md_sf2") == 0)
+			(drvname && strcmp(drvname, "md_sf2") == 0) ||
+			(parentrom && strcmp(parentrom, "md_ssf2") == 0) ||
+			(drvname && strcmp(drvname, "md_ssf2") == 0) ||
+			(parentrom && strcmp(parentrom, "md_eternalc") == 0) ||
+			(drvname && strcmp(drvname, "md_eternalc") == 0) ||
+			(parentrom && strcmp(parentrom, "md_paprium") == 0) ||
+			(drvname && strcmp(drvname, "md_paprium") == 0) ||
+			(parentrom && strcmp(parentrom, "md_mk") == 0) ||
+			(drvname && strcmp(drvname, "md_mk") == 0) ||
+			(parentrom && strcmp(parentrom, "md_mk3") == 0) ||
+			(drvname && strcmp(drvname, "md_mk3") == 0) ||
+			(parentrom && strcmp(parentrom, "md_umk3") == 0) ||
+			(drvname && strcmp(drvname, "md_umk3") == 0) ||
+			(parentrom && strcmp(parentrom, "md_umk3t") == 0) ||
+			(drvname && strcmp(drvname, "md_umk3t") == 0) ||
+			// mk2 requires enabling 6-buttons in options, while others auto-detect it,
+			// is this maybe an emulation bug ?
+			(parentrom && strcmp(parentrom, "md_mk2") == 0) ||
+			(drvname && strcmp(drvname, "md_mk2") == 0)
 		) {
 			if (strcmp("Button A", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_1ST_COL_BOTTOM, "Weak Kick");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_1ST_COL_BOTTOM, description);
 			}
 			if (strcmp("Button B", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_2ND_COL_BOTTOM, "Medium Kick");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_2ND_COL_BOTTOM, description);
 			}
 			if (strcmp("Button C", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_BOTTOM, "Strong Kick");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_BOTTOM, description);
 			}
 			if (strcmp("Button X", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_1ST_COL_TOP, "Weak Punch");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_1ST_COL_TOP, description);
 			}
 			if (strcmp("Button Y", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_2ND_COL_TOP, "Medium Punch");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_2ND_COL_TOP, description);
 			}
 			if (strcmp("Button Z", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_TOP, "Strong Punch");
+				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_3RD_COL_TOP, description);
 			}
 		}
 		// Generic megadrive mapping
