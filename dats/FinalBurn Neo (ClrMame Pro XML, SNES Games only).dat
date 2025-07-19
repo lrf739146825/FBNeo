@@ -75,7 +75,7 @@
 	</game>
 	<game name="46okunmonotsc" cloneof="evo" romof="evo" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>46 Okunen Monogatari - Harukanaru Eden e (Hack, Simplified Chinese v1.01)</description>
+		<description>46 Okunen Monogatari: Harukanaru Eden e (Hack, Simplified Chinese v1.01)</description>
 		<year>2025</year>
 		<manufacturer>aGuGu</manufacturer>
 		<rom name="46 Okunen Monogatari - Harukanaru Eden e T-Chs v1.01 (2025)(aGuGu).sfc" size="2097152" crc="7c984801"/>
@@ -84,7 +84,7 @@
 	</game>
 	<game name="46okunmonottc" cloneof="evo" romof="evo" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>46 Okunen Monogatari - Harukanaru Eden e (Hack, Traditional Chinese v1.01)</description>
+		<description>46 Okunen Monogatari: Harukanaru Eden e (Hack, Traditional Chinese v1.01)</description>
 		<year>2025</year>
 		<manufacturer>aGuGu</manufacturer>
 		<rom name="46 Okunen Monogatari - Harukanaru Eden e T-Cht v1.01 (2025)(aGuGu).sfc" size="2097152" crc="5265768a"/>
@@ -92,7 +92,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="46okunmono" cloneof="evo" romof="evo" sourcefile="snes/d_snes.cpp">
-		<description>46 Okunen Monogatari - Harukanaru Eden e (Japan)</description>
+		<description>46 Okunen Monogatari: Harukanaru Eden e (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Enix/Almanic</manufacturer>
 		<rom name="46 Okunen Monogatari - Harukanaru Eden e (J)(1992)(Enix - Almanic).sfc" size="1572864" crc="b090235a"/>
@@ -1679,7 +1679,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="beethovene" cloneof="beethoven" romof="beethoven" sourcefile="snes/d_snes.cpp">
-		<description>Beethoven - The Ultimate Canine Caper! (Euro)</description>
+		<description>Beethoven: The Ultimate Canine Caper! (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
 		<rom name="Beethoven - The Ultimate Canine Caper! (E)(1993)(Hi Tech Expressions).sfc" size="524288" crc="4d1352ad"/>
@@ -1687,7 +1687,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="beethoven" sourcefile="snes/d_snes.cpp">
-		<description>Beethoven - The Ultimate Canine Caper! (USA)</description>
+		<description>Beethoven: The Ultimate Canine Caper! (USA)</description>
 		<year>1993</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
 		<rom name="Beethoven - The Ultimate Canine Caper! (U)(1993)(Hi Tech Expressions).sfc" size="524288" crc="beebafa2"/>
@@ -2682,7 +2682,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="cardmaster" cloneof="arcana" romof="arcana" sourcefile="snes/d_snes.cpp">
-		<description>Card Master - Rimusaria no Fuuin (Japan)</description>
+		<description>Card Master: Rimusaria no Fuuin (Japan)</description>
 		<year>1992</year>
 		<manufacturer>HAL Laboratory</manufacturer>
 		<rom name="Card Master - Rimusaria no Fuuin (J)(1992)(HAL Laboratory).sfc" size="1048576" crc="9e772b8f"/>
@@ -4391,7 +4391,7 @@
 	</game>
 	<game name="doremifantasyts" cloneof="doremifantasyte" romof="doremifantasyte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>DoReMi Fantasy - La Busqueda de Milon (Hack, Spanish v1.2)</description>
+		<description>DoReMi Fantasy: La Busqueda de Milon (Hack, Spanish v1.2)</description>
 		<year>2018</year>
 		<manufacturer>Crimental</manufacturer>
 		<rom name="DoReMi Fantasy - La Busqueda de Milon T-Spa v1.2 (2018)(Crimental).sfc" size="2621440" crc="b54b37dc"/>
@@ -4399,7 +4399,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="doremifantasyj" cloneof="doremifantasyte" romof="doremifantasyte" sourcefile="snes/d_snes.cpp">
-		<description>DoReMi Fantasy - Milon no Dokidoki Daibouken (Japan)</description>
+		<description>DoReMi Fantasy: Milon no Dokidoki Daibouken (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="DoReMi Fantasy - Milon no Dokidoki Daibouken (J)(1996)(Hudson Soft).sfc" size="2097152" crc="9f2c2633"/>
@@ -4408,7 +4408,7 @@
 	</game>
 	<game name="doremifantasyte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>DoReMi Fantasy - Milon's Quest (Hack, English v1.3)</description>
+		<description>DoReMi Fantasy: Milon's Quest (Hack, English v1.3)</description>
 		<year>2019</year>
 		<manufacturer>Gaijin, RPGONE</manufacturer>
 		<rom name="DoReMi Fantasy - Milon's Quest T-Eng v1.3 (2019)(Gaijin, RPGONE).sfc" size="2621440" crc="aa378e8c"/>
@@ -4417,7 +4417,7 @@
 	</game>
 	<game name="doremifantasytde" cloneof="doremifantasyte" romof="doremifantasyte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>DoReMi Fantasy - Milons Abenteuer (Hack, German v1.3)</description>
+		<description>DoReMi Fantasy: Milons Abenteuer (Hack, German v1.3)</description>
 		<year>2019</year>
 		<manufacturer>Ghettoyouth</manufacturer>
 		<rom name="DoReMi Fantasy - Milons Abenteuer T-Ger v1.3 (2019)(Ghettoyouth).sfc" size="2621440" crc="4557f89e"/>
@@ -6428,7 +6428,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="garoudensetsu2" cloneof="fatalfury2" romof="fatalfury2" sourcefile="snes/d_snes.cpp">
-		<description>Garou Densetsu 2 - Aratanaru Tatakai (Japan)</description>
+		<description>Garou Densetsu 2: Aratanaru Tatakai (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Takara Co.</manufacturer>
 		<rom name="Garou Densetsu 2 - Aratanaru Tatakai (J)(1993)(Takara).sfc" size="2621440" crc="fbf3abdf"/>
@@ -6533,7 +6533,7 @@
 	</game>
 	<game name="getsumentsc" cloneof="getsumenj" romof="getsumenj" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Getsumen no Anubis / Anubis of the Moon's Surface (Hack, Simplified Chinese v1.0)</description>
+		<description>Getsumen no Anubis ~ Anubis of the Moon's Surface (Hack, Simplified Chinese)</description>
 		<year>2025</year>
 		<manufacturer>CLARK.H</manufacturer>
 		<rom name="Getsumen no Anubis - Anubis of the Moon's Surface T-Chs v1.0 (2025)(CLARK.H).sfc" size="4194304" crc="779b5bc5"/>
@@ -6541,7 +6541,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="getsumenj" sourcefile="snes/d_snes.cpp">
-		<description>Getsumen no Anubis / Anubis of the Moon's Surface (Japan)</description>
+		<description>Getsumen no Anubis ~ Anubis of the Moon's Surface (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Imagineer</manufacturer>
 		<rom name="Getsumen no Anubis - Anubis of the Moon's Surface (J)(1995)(Imagineer).sfc" size="3145728" crc="78432ddc"/>
@@ -17730,17 +17730,9 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ultimarovii" sourcefile="snes/d_snes.cpp">
-		<description>Ultima - Runes of Virtue II (USA)</description>
-		<year>1994</year>
-		<manufacturer>Origin - FCI Inc.</manufacturer>
-		<rom name="Ultima - Runes of Virtue II (U)(1994)(Origin - FCI).sfc" size="1048576" crc="cc4eebf4"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="ultimasavempte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Ultima Kyouryuu Teikoku - The Savage Empire (Hack, English v1.02)</description>
+		<description>Ultima Kyouryuu Teikoku: The Savage Empire (Hack, English v1.02)</description>
 		<year>2025</year>
 		<manufacturer>Nytegard</manufacturer>
 		<rom name="Ultima Kyouryuu Teikoku - The Savage Empire T-Eng v1.02 (2025)(Nytegard).sfc" size="1572864" crc="b9dbbd96"/>
@@ -17748,7 +17740,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultimasavempj" cloneof="ultimasavempte" romof="ultimasavempte" sourcefile="snes/d_snes.cpp">
-		<description>Ultima Kyouryuu Teikoku - The Savage Empire (Japan)</description>
+		<description>Ultima Kyouryuu Teikoku: The Savage Empire (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Pony Canyon</manufacturer>
 		<rom name="Ultima Kyouryuu Teikoku - The Savage Empire (J)(1995)(Pony Canyon).sfc" size="1572864" crc="dddb20ad"/>
@@ -17756,7 +17748,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultimavij" cloneof="ultimavi" romof="ultimavi" sourcefile="snes/d_snes.cpp">
-		<description>Ultima VI - Itsuwari no Yogensha (Japan)</description>
+		<description>Ultima VI: Itsuwari no Yogensha (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Pony Canyon</manufacturer>
 		<rom name="Ultima VI - Itsuwari no Yogensha (J)(1993)(Pony Canyon).sfc" size="1048576" crc="7dd62a5e"/>
@@ -17764,7 +17756,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultimavi" sourcefile="snes/d_snes.cpp">
-		<description>Ultima VI - The False Prophet (USA)</description>
+		<description>Ultima VI: The False Prophet (USA)</description>
 		<year>1993</year>
 		<manufacturer>FCI Inc.</manufacturer>
 		<rom name="Ultima VI - The False Prophet (U)(1993)(FCI).sfc" size="1048576" crc="9277c9f7"/>
@@ -17772,10 +17764,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultimavii" sourcefile="snes/d_snes.cpp">
-		<description>Ultima VII - The Black Gate (USA)</description>
+		<description>Ultima VII: The Black Gate (USA)</description>
 		<year>1994</year>
 		<manufacturer>Origin - FCI Inc.</manufacturer>
 		<rom name="Ultima VII - The Black Gate (U)(1994)(Origin - FCI).sfc" size="1048576" crc="e790f52f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ultimarovii" sourcefile="snes/d_snes.cpp">
+		<description>Ultima: Runes of Virtue II (USA)</description>
+		<year>1994</year>
+		<manufacturer>Origin - FCI Inc.</manufacturer>
+		<rom name="Ultima - Runes of Virtue II (U)(1994)(Origin - FCI).sfc" size="1048576" crc="cc4eebf4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17828,10 +17828,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultraman" sourcefile="snes/d_snes.cpp">
-		<description>Ultraman (USA)</description>
+		<description>Ultraman: Towards the Future (USA)</description>
 		<year>1991</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="Ultraman (U)(1991)(Bandai).sfc" size="524288" crc="1ded2814"/>
+		<rom name="Ultraman - Towards the Future (U)(1991)(Bandai).sfc" size="524288" crc="1ded2814"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

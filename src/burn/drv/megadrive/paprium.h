@@ -543,13 +543,11 @@ reload:
 		if ( tile == 0 ) continue;
 		if ( spriteCount >= 94 ) continue;
 
-
 		sprAttr  = (tileAttr & 0x8000) ? 0x8000 : (objAttr & 0x8000);
 		sprAttr += (tileAttr & 0x6000) ? (tileAttr & 0x6000) : (objAttr & 0x6000);
 		sprAttr += (tileAttr & 0x1800) ^ (objAttr & 0x1800);
 
-
-		if ( (spr_y >= 128) && (spr_y + size_y*8 < 368) ) {
+		if ( (spr_y + size_y*8 >= (128-16)) && (spr_y + size_y*8 < (368+16)) ) {
 			if ( (!flip_h && ((spr_x + size_x*8 >= 128) && spr_x < 448)) ||
 				 (flip_h && ((spr_x - size_x*8 < 448) && spr_x >= 128)) ) {
 				if ( spriteCount < 80 ) {
@@ -1057,7 +1055,15 @@ static void paprium_init()
 	if (!samples_buffer)
 		samples_buffer = (INT16*)BurnMalloc(0x1000 * 2 * 2);
 
-	BurnSampleInit(0 + ((MegadriveDIP[2] & 1) ? 0x8000 : 0)); // setting nostore / load on demand via dip
+	INT32 load_all_samples = MegadriveDIP[2] & 1;
+
+#if !defined BUILD_X64_EXE && !defined __LIBRETRO__
+	// 32bit process can't handle it
+	// libretro is a more complex case so let's not enable that limitation for now
+	load_all_samples = 0;
+#endif
+
+	BurnSampleInit(0 + (load_all_samples ? 0x8000 : 0)); // setting nostore / load on demand via dip
 
 	paprium_map();
 }

@@ -26,6 +26,8 @@
 	#include <wchar.h>
 	#include <string>
 #endif
+
+#define HAVE_64BIT_OFFSETS
 #include "streams/file_stream_transforms.h"
 
 extern int kNetGame;
