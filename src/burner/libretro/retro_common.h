@@ -5,6 +5,7 @@
 #include <sstream>
 #include <algorithm>
 #include <vector>
+#include <map>
 #include "burner.h"
 #include "retro_string.h"
 
@@ -258,6 +259,7 @@ extern char g_rom_dir[MAX_PATH];
 extern TCHAR szAppPathDefPath[MAX_PATH];
 extern TCHAR szAppIpsesPath[MAX_PATH];
 extern TCHAR szAppRomdatasPath[MAX_PATH];
+extern TCHAR szAppCommandPath[MAX_PATH];
 extern UINT32 nDiagInputHoldCounter;
 
 char* str_char_replace(char* destination, char c_find, char c_replace);
@@ -275,6 +277,15 @@ INT32 apply_ipses_from_variables();
 INT32 create_variables_from_romdatas();
 INT32 reset_romdatas_from_variables();
 INT32 apply_romdatas_from_variables();
+
+//for Mame command.dat
+struct SymbolMapping {
+	const char* key;
+	const char* value;
+};
+int get_command_dat_count();
+int AddCommandDatOptions(int command_idx_var,retro_core_option_v2_definition *option_defs_us);
+
 #ifdef USE_CYCLONE
 void SetSekCpuCore();
 #endif

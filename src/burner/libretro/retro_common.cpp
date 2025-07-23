@@ -1198,12 +1198,13 @@ void set_environment()
 	int nbr_cheats   = cheat_core_options.size();
 	int nbr_ipses    = ips_core_options.size();
 	int nbr_romdatas = romdata_core_options.size();
+	int nbr_command_dat = get_command_dat_count();
 
 #if 0
 	log_cb(RETRO_LOG_INFO, "set_environment: SYSTEM: %d, DIPSWITCH: %d\n", nbr_vars, nbr_dips);
 #endif
 
-	option_defs_us = (struct retro_core_option_v2_definition*)calloc(nbr_vars + nbr_dips + nbr_cheats + nbr_ipses + nbr_romdatas + 1, sizeof(struct retro_core_option_v2_definition));
+	option_defs_us = (struct retro_core_option_v2_definition*)calloc(nbr_vars + nbr_dips + nbr_cheats + nbr_ipses + nbr_romdatas + nbr_command_dat + 1, sizeof(struct retro_core_option_v2_definition));
 
 	int idx_var = 0;
 
@@ -1280,6 +1281,8 @@ void set_environment()
 		idx_var++;
 	}
 
+	idx_var = AddCommandDatOptions(idx_var,option_defs_us);
+
 	option_defs_us[idx_var] = var_empty;
 
 	static struct retro_core_option_v2_category option_cats_us[] =
@@ -1318,6 +1321,11 @@ void set_environment()
 			"romdata",
 			"RomData",
 			RETRO_ROMDATA_CAT_INFO
+		},
+		{
+			"command_dat",
+			RETRO_COMMAND_DESC,
+			RETRO_COMMAND_INFO
 		},
 #ifdef FBNEO_DEBUG
 		{
@@ -2096,3 +2104,393 @@ void SetSekCpuCore()
 	nSekCpuCore = (bCycloneEnabled ? 0 : 1);
 }
 #endif
+
+
+/* load command.dat to core options．[SYSTEM_DIRECTORY]/fbneo/command/command.dat */
+
+// TODO：Mapping tables need to refer to mame source code: https://github.com/mamedev/mame/blob/master/plugins/data/button_char.lua
+// command.dat Download: https://www.progettosnaps.net/command
+// Try to use unicode to express mame's built-in icons, which cannot be perfectly expressed.
+/*👊🦵⚪🛡🐉💥⚡➕➖*/
+/*
+static SymbolMapping SymbolList[] = {
+	{ "_A", "Ⓐ" }, { "_$", "▲" }, { "@L-punch", "[ⓁⓅ]" },
+	{ "_B", "Ⓑ" }, { "_#", "▣" }, { "@M-punch", "[ⓂⓅ]" },
+	{ "_C", "Ⓒ" }, { "_]", "□" }, { "@S-punch", "[ⓈⓅ]" },
+	{ "_D", "Ⓓ" }, { "_[", "■" }, { "@L-kick", "[ⓁⓀ]" },
+	{ "_H", "Ⓗ" }, { "_{", "▽" }, { "@M-kick", "[ⓂⓀ]" },
+	{ "_Z", "Ⓩ" }, { "_}", "▼" }, { "@S-kick", "[ⓈⓀ]" },
+	{ "_a", "①" }, { "_<", "◇" }, { "@3-kick", "[③Ⓚ]" },
+	{ "_b", "②" }, { "_>", "◆" }, { "@3-punch", "[③Ⓟ]" },
+	{ "_c", "③" }, { "^s", "Ⓢ" }, { "@2-kick", "[②Ⓚ]" },
+	{ "_d", "④" }, { "^S", "[Ⓢⓔⓛ]" }, { "@2-punch", "[②Ⓟ]" },
+	{ "_e", "⑤" }, { "^E", "[ⓁⓅ]" }, { "@custom1", "①" },
+	{ "_f", "⑥" }, { "^F", "[ⓂⓅ]" }, { "@custom2", "②" },
+	{ "_g", "⑦" }, { "^G", "[ⓈⓅ]" }, { "@custom3", "③" },
+	{ "_h", "⑧" }, { "^H", "[ⓁⓀ]" }, { "@custom4", "④" },
+	{ "_i", "⑨" }, { "^I", "[ⓂⓀ]" }, { "@custom5", "⑤" },
+	{ "_j", "⑩" }, { "^J", "[ⓈⓀ]" }, { "@custom6", "⑥" },
+	{ "_+", "＋" }, { "^T", "[③Ⓚ]" }, { "@custom7", "⑦" },
+	{ "_.", "…" }, { "^U", "[③Ⓟ]" }, { "@custom8", "⑧" },
+	{ "_1", "↙" }, { "^V", "[②Ⓚ]" }, { "@up", "↑" },
+	{ "_2", "↓" }, { "^W", "[②Ⓟ]" }, { "@down", "↓" },
+	{ "_3", "↘" }, { "^!", "↳" }, { "@left", "←" },
+	{ "_4", "←" }, { "^1", "⇙" }, { "@right", "→" },
+	{ "_5", "●" }, { "^2", "⇓" }, { "@lever", "[Ⓟⓝ]" },
+	{ "_6", "→" }, { "^3", "⇘" }, { "@nplayer", "[Ⓟⓝ]" },
+	{ "_7", "↖" }, { "^4", "⇐" }, { "@1player", "[Ⓟ①]" },
+	{ "_8", "↑" }, { "^6", "⇒" }, { "@2player", "[Ⓟ②]" },
+	{ "_9", "↗" }, { "^7", "⇖" }, { "@3player", "[Ⓟ③]" },
+	{ "_N", "N" }, { "^8", "⇑" }, { "@4player", "[Ⓟ④]" },
+	{ "_S", "[Ⓢⓣ]" }, { "^9", "⇗" }, { "@5player", "[Ⓟ⑤]" },
+	{ "_P", "Ⓟ" }, { "^M", "[Ⓜⓐⓧ]" }, { "@6player", "[Ⓟ⑥]" },
+	{ "_K", "Ⓚ" }, { "^-", "⇥" }, { "@7player", "[Ⓟ⑦]" },
+	{ "_G", "Ⓖ" }, { "^=", "⇤" }, { "@8player", "[Ⓟ⑧]" },
+	{ "_!", "→" }, { "^*", "[ⓢⓉⓐⓟ]" }, { "@-->","→" },
+	{ "_k", "[←◒]" }, { "^?", "[Ⓑⓣⓝ?]" }, { "@==>", "↳" },
+	{ "_l", "[→◓]" }, { "@A-button", "Ⓐ" }, { "@hcb", "[←◒]" },
+	{ "_m", "[→◒]" }, { "@B-button", "Ⓑ" }, { "@huf", "[→◓]" },
+	{ "_n", "[←◓]" }, { "@C-button", "Ⓒ" }, { "@hcf", "[→◒]" },
+	{ "_o", "[↓◶]" }, { "@D-button", "Ⓓ" }, { "@hub", "[←◓]" },
+	{ "_p", "[←◵]" }, { "@E-button", "Ⓔ" }, { "@qfd", "[↓◶]" },
+	{ "_q", "[↑◴]" }, { "@F-button", "Ⓕ" }, { "@qdb", "[←◵]" },
+	{ "_r", "[→◷]" }, { "@G-button", "Ⓖ" }, { "@qbu", "[↑◴]" },
+	{ "_s", "[↓◵]" }, { "@H-button", "Ⓗ" }, { "@quf", "[→◷]" },
+	{ "_t", "[↑◶]" }, { "@I-button", "Ⓘ" }, { "@qbd", "[↓◵]" },
+	{ "_u", "[↑◷]" }, { "@J-button", "Ⓙ" }, { "@qdf", "[↑◶]" },
+	{ "_v", "[←◴]" }, { "@K-button", "Ⓚ" }, { "@qfu", "[↑◷]" },
+	{ "_w", "[↻◯]" }, { "@L-button", "Ⓛ" }, { "@qub", "[←◴]" },
+	{ "_x", "[↻◯]" }, { "@M-button", "Ⓜ" }, { "@fdf", "[↻◯]" },
+	{ "_y", "[↺◯]" }, { "@N-button", "Ⓝ" }, { "@fub", "[↻◯]" },
+	{ "_z", "[↺◯]" }, { "@O-button", "Ⓞ" }, { "@fuf", "[↺◯]" },
+	{ "_L", "↠" }, { "@P-button", "Ⓟ" }, { "@fdb", "[↺◯]" },
+	{ "_M", "↞" }, { "@Q-button", "Ⓠ" }, { "@xff", "⇥" },
+	{ "_Q", "[Ⓓⓡⓐⓖⓞⓝ⇒]" }, { "@R-button", "Ⓡ" }, { "@xbb", "⇤" },
+	{ "_R", "[Ⓓⓡⓐⓖⓞⓝ⇐]" }, { "@S-button", "Ⓢ" }, { "@dsf", "[Ⓓⓡⓐⓖⓞⓝ⇒]" },
+	{ "_^", "[Ⓐⓘⓡ]" }, { "@T-button", "Ⓣ" }, { "@dsb", "[Ⓓⓡⓐⓖⓞⓝ⇐]" },
+	{ "_?", "[Ⓓⓘⓡ]" }, { "@U-button", "Ⓤ" }, { "@AIR", "[Ⓐⓘⓡ]" },
+	{ "_X", "[Ⓣⓐⓟ]" }, { "@V-button", "Ⓥ" }, { "@DIR", "[Ⓓⓘⓡ]" },
+	{ "_|", "[Ⓙⓤⓜⓟ]" }, { "@W-button", "Ⓦ" }, { "@MAX", "[Ⓜⓐⓧ]" },
+	{ "_O", "[Ⓗⓞⓛⓓ]" }, { "@X-button", "Ⓧ" }, { "@TAP", "[Ⓣⓐⓟ]" },
+	{ "_-", "[Ⓐⓘⓡ]" }, { "@Y-button", "Ⓨ" }, { "@jump", "[Ⓙⓤⓜⓟ]" },
+	{ "_=", "[Ⓢⓠⓤⓐⓣ]" }, { "@Z-button", "Ⓩ" }, { "@hold", "[Ⓗⓞⓛⓓ]" },
+	{ "_~", "[Ⓒⓗⓐⓡⓖⓔ]" }, { "@decrease", "⊕" }, { "@air", "[ⓐⓘⓡ]" },
+	{ "_`", "•" }, { "@increase", "⊖" }, { "@sit", "[Ⓢⓠⓤⓐⓣ]" },
+	{ "_@", "◎" }, { "@BALL", "●" }, { "@close", "⇥" },
+	{ "_)", "○" }, { "@start", "[Ⓢⓣ]" }, { "@away", "⇤" },
+	{ "_(", "●" }, { "@select", "[Ⓢⓔⓛ]" }, { "@charge", "[Ⓒⓗⓐⓡⓖⓔ]" },
+	{ "_*", "☆" }, { "@punch", "Ⓟ" }, { "@tap", "[ⓢⓉⓐⓟ]" },
+	{ "_&", "★" }, { "@kick", "Ⓚ" }, { "@button", "[Ⓑⓣⓝ?]" },
+	{ "_%", "△" }, { "@guard", "Ⓖ" }
+};
+*/
+// Fail, default Font Unable display all icons. Need Change RetroArch used Font !!!
+static SymbolMapping SymbolList[] = {
+    { "_A", "\u24B6" }, { "_$", "\u25B2" }, { "@L-punch", "[\u24C1\u24C5]" },
+    { "_B", "\u24B7" }, { "_#", "\u25A3" }, { "@M-punch", "[\u24C2\u24C5]" },
+    { "_C", "\u24B8" }, { "_]", "\u25A1" }, { "@S-punch", "[\u24C8\u24C5]" },
+    { "_D", "\u24B9" }, { "_[", "\u25A0" }, { "@L-kick", "[\u24C1\u24C0]" },
+    { "_H", "\u24BD" }, { "_{", "\u25BD" }, { "@M-kick", "[\u24C2\u24C0]" },
+    { "_Z", "\u24CF" }, { "_}", "\u25BC" }, { "@S-kick", "[\u24C8\u24C0]" },
+    { "_a", "\u2460" }, { "_<", "\u25C7" }, { "@3-kick", "[\u2462\u24C0]" },
+    { "_b", "\u2461" }, { "_>", "\u25C6" }, { "@3-punch", "[\u2462\u24C5]" },
+    { "_c", "\u2462" }, { "^s", "\u24C8" }, { "@2-kick", "[\u2461\u24C0]" },
+    { "_d", "\u2463" }, { "^S", "[\u24C8\u24D4\u24DB]" }, { "@2-punch", "[\u2461\u24C5]" },
+    { "_e", "\u2464" }, { "^E", "[\u24C1\u24C5]" }, { "@custom1", "\u2460" },
+    { "_f", "\u2465" }, { "^F", "[\u24C2\u24C5]" }, { "@custom2", "\u2461" },
+    { "_g", "\u2466" }, { "^G", "[\u24C8\u24C5]" }, { "@custom3", "\u2462" },
+    { "_h", "\u2467" }, { "^H", "[\u24C1\u24C0]" }, { "@custom4", "\u2463" },
+    { "_i", "\u2468" }, { "^I", "[\u24C2\u24C0]" }, { "@custom5", "\u2464" },
+    { "_j", "\u2469" }, { "^J", "[\u24C8\u24C0]" }, { "@custom6", "\u2465" },
+    { "_+", "\uFF0B" }, { "^T", "[\u2462\u24C0]" }, { "@custom7", "\u2466" },
+    { "_.", "\u2026" }, { "^U", "[\u2462\u24C5]" }, { "@custom8", "\u2467" },
+    { "_1", "\u2199" }, { "^V", "[\u2461\u24C0]" }, { "@up", "\u2191" },
+    { "_2", "\u2193" }, { "^W", "[\u2461\u24C5]" }, { "@down", "\u2193" },
+    { "_3", "\u2198" }, { "^!", "\u21B3" }, { "@left", "\u2190" },
+    { "_4", "\u2190" }, { "^1", "\u21D9" }, { "@right", "\u2192" },
+    { "_5", "\u25CF" }, { "^2", "\u21D3" }, { "@lever", "[\u24C5\u24DD]" },
+    { "_6", "\u2192" }, { "^3", "\u21D8" }, { "@nplayer", "[\u24C5\u24DD]" },
+    { "_7", "\u2196" }, { "^4", "\u21D0" }, { "@1player", "[\u24C5\u2460]" },
+    { "_8", "\u2191" }, { "^6", "\u21D2" }, { "@2player", "[\u24C5\u2461]" },
+    { "_9", "\u2197" }, { "^7", "\u21D6" }, { "@3player", "[\u24C5\u2462]" },
+    { "_N", "N" }, { "^8", "\u21D1" }, { "@4player", "[\u24C5\u2463]" },
+    { "_S", "[\u24C8\u24E3]" }, { "^9", "\u21D7" }, { "@5player", "[\u24C5\u2464]" },
+    { "_P", "\u24C5" }, { "^M", "[\u24C2\u24E0\u24C9]" }, { "@6player", "[\u24C5\u2465]" },
+    { "_K", "\u24C0" }, { "^-", "\u21E5" }, { "@7player", "[\u24C5\u2466]" },
+    { "_G", "\u24BC" }, { "^=", "\u21E4" }, { "@8player", "[\u24C5\u2467]" },
+    { "_!", "\u2192" }, { "^*", "[\u24E3\u24C9\u24D0\u24DF]" }, { "@-->","\u2192" },
+    { "_k", "[\u2190\u25D6]" }, { "^?", "[\u24B7\u24E3\u2463]" }, { "@==>", "\u21B3" },
+    { "_l", "[\u2192\u25D7]" }, { "@A-button", "\u24B6" }, { "@hcb", "[\u2190\u25D6]" },
+    { "_m", "[\u2192\u25D6]" }, { "@B-button", "\u24B7" }, { "@huf", "[\u2192\u25D7]" },
+    { "_n", "[\u2190\u25D7]" }, { "@C-button", "\u24B8" }, { "@hcf", "[\u2192\u25D6]" },
+    { "_o", "[\u2193\u25D6]" }, { "@D-button", "\u24B9" }, { "@hub", "[\u2190\u25D7]" },
+    { "_p", "[\u2190\u25D7]" }, { "@E-button", "\u24BA" }, { "@qfd", "[\u2193\u25D6]" },
+    { "_q", "[\u2191\u25D7]" }, { "@F-button", "\u24BB" }, { "@qdb", "[\u2190\u25D7]" },
+    { "_r", "[\u2192\u25D7]" }, { "@G-button", "\u24BC" }, { "@qbu", "[\u2191\u25D7]" },
+    { "_s", "[\u2193\u25D7]" }, { "@H-button", "\u24BD" }, { "@quf", "[\u2192\u25D7]" },
+    { "_t", "[\u2191\u25D6]" }, { "@I-button", "\u24BE" }, { "@qbd", "[\u2193\u25D7]" },
+    { "_u", "[\u2191\u25D7]" }, { "@J-button", "\u24BF" }, { "@qdf", "[\u2191\u25D6]" },
+    { "_v", "[\u2190\u25D7]" }, { "@K-button", "\u24C0" }, { "@qfu", "[\u2191\u25D7]" },
+    { "_w", "[\u21BB\u25CB]" }, { "@L-button", "\u24C1" }, { "@qub", "[\u2190\u25D7]" },
+    { "_x", "[\u21BB\u25CB]" }, { "@M-button", "\u24C2" }, { "@fdf", "[\u21BB\u25CB]" },
+    { "_y", "[\u21BA\u25CB]" }, { "@N-button", "\u24C3" }, { "@fub", "[\u21BB\u25CB]" },
+    { "_z", "[\u21BA\u25CB]" }, { "@O-button", "\u24C4" }, { "@fuf", "[\u21BA\u25CB]" },
+    { "_L", "\u21A0" }, { "@P-button", "\u24C5" }, { "@fdb", "[\u21BA\u25CB]" },
+    { "_M", "\u219E" }, { "@Q-button", "\u24C6" }, { "@xff", "\u21E5" },
+    { "_Q", "[\u24B9\u24E1\u24D0\u24D6\u24DE\u24DD\u21D2]" }, { "@R-button", "\u24C7" }, { "@xbb", "\u21E4" },
+    { "_R", "[\u24B9\u24E1\u24D0\u24D6\u24DE\u24DD\u21D0]" }, { "@S-button", "\u24C8" }, { "@dsf", "[\u24B9\u24E1\u24D0\u24D6\u24DE\u24DD\u21D2]" },
+    { "_^", "[\u24B6\u24D8\u24E1]" }, { "@T-button", "\u24C9" }, { "@dsb", "[\u24B9\u24E1\u24D0\u24D6\u24DE\u24DD\u21D0]" },
+    { "_?", "[\u24B9\u24D8\u24E1]" }, { "@U-button", "\u24CA" }, { "@AIR", "[\u24B6\u24D8\u24E1]" },
+    { "_X", "[\u24C9\u24D0\u24DF]" }, { "@V-button", "\u24CB" }, { "@DIR", "[\u24B9\u24D8\u24E1]" },
+    { "_|", "[\u24BF\u24E4\u24DC\u24DF]" }, { "@W-button", "\u24CC" }, { "@MAX", "[\u24C2\u24E0\u24C9]" },
+    { "_O", "[\u24BD\u24DE\u24DB\u24C3]" }, { "@X-button", "\u24CD" }, { "@TAP", "[\u24C9\u24D0\u24DF]" },
+    { "_-", "[\u24B6\u24D8\u24E1]" }, { "@Y-button", "\u24CE" }, { "@jump", "[\u24BF\u24E4\u24DC\u24DF]" },
+    { "_=", "[\u24C8\u24E0\u24E4\u24D0\u24C9]" }, { "@Z-button", "\u24CF" }, { "@hold", "[\u24BD\u24DE\u24DB\u24C3]" },
+    { "_~", "[\u24B8\u24D7\u24D0\u24E1\u24D6\u24D4]" }, { "@decrease", "\u2295" }, { "@air", "[\u24D0\u24D8\u24E1]" },
+    { "_`", "\u2022" }, { "@increase", "\u2296" }, { "@sit", "[\u24C8\u24E0\u24E4\u24D0\u24C9]" },
+    { "_@", "\u25CE" }, { "@BALL", "\u25CF" }, { "@close", "\u21E5" },
+    { "_)", "\u25CB" }, { "@start", "[\u24C8\u24E3]" }, { "@away", "\u21E4" },
+    { "_(", "\u25CF" }, { "@select", "[\u24C8\u24D4\u24DB]" }, { "@charge", "[\u24B8\u24D7\u24D0\u24E1\u24D6\u24D4]" },
+    { "_*", "\u2606" }, { "@punch", "\u24C5" }, { "@tap", "[\u24E3\u24C9\u24D0\u24DF]" },
+    { "_&", "\u2605" }, { "@kick", "\u24C0" }, { "@button", "[\u24B7\u24E3\u2463]" },
+    { "_%", "\u25B3" }, { "@guard", "\u24BC" }
+};
+
+static SymbolMapping SymbolList_ChineseAlignment[] = {
+	{ "═", "\uFF1D" },  // Full-width equals sign
+	{ "│", "\uFF5C" },  // Full-width vertical bar
+	{ "  ", "\u3000" }  // Full-width space (double-width space)
+	//{ " ", "\u2002" } // Half-width space alternative (non-breaking space)
+};
+
+static std::map<std::string, std::string> symbolMap;
+static std::map<std::string, std::string> symbolMap_ChineseAlignment;
+static void InitializeSymbolMap() {
+	int SymbolListSize = sizeof(SymbolList) / sizeof(SymbolList[0]);
+	for (int i = 0; i < SymbolListSize; ++i) {
+		symbolMap[SymbolList[i].key] = SymbolList[i].value;
+	}
+}
+
+static void InitializeSymbolMap_ChineseAlignment() {
+	int SymbolListSize = sizeof(SymbolList_ChineseAlignment) / sizeof(SymbolList_ChineseAlignment[0]);
+	for (int i = 0; i < SymbolListSize; ++i) {
+		symbolMap_ChineseAlignment[SymbolList_ChineseAlignment[i].key] = SymbolList_ChineseAlignment[i].value;
+	}
+}
+
+// Replace custom symbols in MAME move lists based on symbolMap
+static std::string ReplaceSymbols(const std::string& input) {
+	std::string result = input;
+	std::map<std::string, std::string>::iterator it;
+
+	for (it = symbolMap.begin(); it != symbolMap.end(); ++it) {
+		size_t pos = 0;
+		while ((pos = result.find(it->first, pos)) != std::string::npos) {
+			result.replace(pos, it->first.length(), it->second);
+			pos += it->second.length();
+		}
+	}
+	return result;
+}
+
+//  Replace characters using symbolMap_ChineseAlignment to maintain visual guide alignment
+static std::string ReplaceSymbols_ChineseAlignment(const std::string& input) {
+	std::string result = input;
+	std::map<std::string, std::string>::iterator it;
+
+	for (it = symbolMap_ChineseAlignment.begin(); it != symbolMap_ChineseAlignment.end(); ++it) {
+		size_t pos = 0;
+		while ((pos = result.find(it->first, pos)) != std::string::npos) {
+			result.replace(pos, it->first.length(), it->second);
+			pos += it->second.length();
+		}
+	}
+	return result;
+}
+
+static std::vector<std::string> CommandDataLine; // Store multiple CommandDataLine entries
+
+static std::string TrimNewLine(char* line) {
+
+	std::string lineStr(line);
+	lineStr.erase(std::remove(lineStr.begin(), lineStr.end(), '\r'), lineStr.end()); // delete '\r'
+	lineStr.erase(std::remove(lineStr.begin(), lineStr.end(), '\n'), lineStr.end()); // delete '\n'
+
+	return lineStr;
+}
+
+static bool ReadCommand_Dat() {
+	TCHAR line[4096] = {0};
+	TCHAR buffer[256] = {0};
+	std::string LineStr;
+	std::string LastLineStr;
+	std::string token;
+	std::string drv_name(BurnDrvGetText(DRV_NAME));
+	TCHAR szFilename[MAX_PATH] = _T("");
+	bool foundInfo = false; // Flag indicating whether a valid $info line is found (i.e., move list entry for this ROM is detected)
+	FILE* cmdFile = NULL;
+	bool containsChinese = false;// Check if line contains Chinese characters; replace two spaces with full-width space for alignment in certain visual guides (e.g., kovplus)
+
+	InitializeSymbolMap();
+
+	sprintf(szFilename, "%scommand.dat", szAppCommandPath);
+	cmdFile = fopen(szFilename, _T("rt"));
+	if (cmdFile == NULL) {
+		return false; // open file fail
+	}
+
+	while (_fgetts(line, sizeof(line), cmdFile) != NULL) {
+		// Skip lines starting with '#'
+		if (line[0] == '#') {
+			continue;
+		}
+
+		// Check if line starts with "$info="
+		if (!foundInfo) {
+			if (strncmp(line, "$info=", 6) == 0) {
+				std::string info_line(line + 6);
+				std::istringstream iss(info_line);
+				while (std::getline(iss, token, ',')) {
+					strncpy(buffer, token.c_str(), sizeof(buffer) - 1);
+					buffer[sizeof(buffer) - 1] = '\0';
+					token = TrimNewLine(buffer);
+					if (token == drv_name) {
+						foundInfo = true; // Mark that a valid $info line has been found
+						break;
+					}
+				}
+				continue;
+			}
+		}
+
+		// Continue searching for "$end" and blank lines
+		if (foundInfo) {
+
+			// Process the current line
+			LineStr = TrimNewLine(line);
+
+			//  Check if current line is "$cmd" and skip it
+			if (strncmp(LineStr.c_str(), "$cmd", 4) == 0) {
+				// If previous line was "$end", insert empty symbol (equivalent to adding blank line)
+				if (strncmp(LastLineStr.c_str(), "$end", 4) == 0) {
+					CommandDataLine.push_back("");
+				}
+				LastLineStr = LineStr;
+				continue;
+			}
+			// Check if current line is "$end" and skip it
+			if (strncmp(LineStr.c_str(), "$end", 4) == 0) {
+				LastLineStr = LineStr;
+				continue;
+			}
+			// Handle empty lines by adding blank line or breaking extraction as needed
+			if (LineStr.empty()) {
+				// Prevent consecutive blank lines to save core option space
+				if (LastLineStr.empty()) {
+					continue;
+				}
+				CommandDataLine.push_back("");
+				LastLineStr = LineStr;
+				continue;
+			}
+			// Terminate immediately upon encountering another "$info=" line
+			if (strncmp(LineStr.c_str(), "$info=", 6) == 0) {
+				break;
+			}
+			CommandDataLine.push_back(ReplaceSymbols(LineStr));
+			LastLineStr = LineStr;
+		}
+	}
+
+	while (!CommandDataLine.empty() && CommandDataLine.back().empty()) {
+		CommandDataLine.pop_back(); // Remove trailing empty element
+	}
+
+	// Check if CommandDataLine contains Chinese characters
+	if (!CommandDataLine.empty()) {
+		for (int i = 0; i < CommandDataLine.size(); ++i) {
+			for (int j = 0; j < CommandDataLine[i].size(); ++j) {
+				unsigned char c1 = CommandDataLine[i][j];
+				if ((c1 & 0xF0) == 0xE0) { // Verify first byte starts with '1110' (UTF-8 3-byte header)
+					if (j + 2 < CommandDataLine[i].size()) {
+						unsigned char c2 = CommandDataLine[i][j + 1];
+						unsigned char c3 = CommandDataLine[i][j + 2];
+						if ((c2 & 0xC0) == 0x80 && (c3 & 0xC0) == 0x80) { // Confirm second/third bytes start with '10' (UTF-8 continuation)
+							unsigned int unicode = ((c1 & 0x0F) << 12) | ((c2 & 0x3F) << 6) | (c3 & 0x3F);
+							if (unicode >= 0x4E00 && unicode <= 0x9FFF) { // Common Chinese character range
+								containsChinese = true;
+								break; //Exit detection after finding first Chinese character
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Perform symbol substitution if Chinese characters exist to maintain visual guide alignment
+	if (containsChinese) {
+		InitializeSymbolMap_ChineseAlignment();
+		for (int i = 0; i < CommandDataLine.size(); ++i) {
+			CommandDataLine[i] = ReplaceSymbols_ChineseAlignment(CommandDataLine[i]);
+		}
+	}
+
+	fclose(cmdFile);
+	return foundInfo;
+}
+
+int get_command_dat_count() {
+	if (CommandDataLine.size() == 0) {
+		if (!ReadCommand_Dat()) {
+			return 0;
+		}
+	}
+	return CommandDataLine.size();
+}
+
+static std::vector<std::string> CommandKeys;
+int AddCommandDatOptions(int command_idx_var, retro_core_option_v2_definition *option_defs_us) {
+	if (CommandDataLine.size() == 0) {
+		if (!ReadCommand_Dat()) {
+			return command_idx_var;
+		}
+	}
+
+	const int maxCommandBlocks = CommandDataLine.size();
+	char key[64];
+
+	for (int i = 0; i < maxCommandBlocks; i++) {
+		snprintf(key, sizeof(key), "fbneo-commanddat-%d", i);
+		CommandKeys.push_back(key);
+	}
+
+	for (int j = 0; j < maxCommandBlocks; j++) {
+		option_defs_us[command_idx_var].key 				= CommandKeys[j].c_str();
+		option_defs_us[command_idx_var].desc 				= " ";
+		option_defs_us[command_idx_var].desc_categorized	= CommandDataLine[j].c_str();
+		option_defs_us[command_idx_var].info				= NULL;
+		option_defs_us[command_idx_var].category_key		= "command_dat";
+		option_defs_us[command_idx_var].values[0].value		= " ";
+		option_defs_us[command_idx_var].values[1].value		= NULL;
+		option_defs_us[command_idx_var].default_value		= " ";
+		command_idx_var++;
+	}
+/*  //Log extracted move list information for debugging purposes
+	TCHAR szFilename2[MAX_PATH] = _T("");
+	FILE* cmdFile2 = NULL;
+	sprintf(szFilename2, "%scommand.log", szAppCommandPath);
+	cmdFile2 = fopen(szFilename2, _T("w"));
+	if (cmdFile2 != NULL) {
+		// Write CommandDataLine contents to a file
+		for (int m = 0; m < CommandDataLine.size(); ++m) {
+			fwrite(CommandDataLine[m].c_str(), 1, CommandDataLine[m].size(), cmdFile2);
+			fwrite("\n", 1, 1, cmdFile2);
+		}
+		fclose(cmdFile2);
+	}
+*/
+	return command_idx_var;
+}
+/* load command.dat to core options ended */

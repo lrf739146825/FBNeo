@@ -2,7 +2,7 @@
 #define __RETRO_STRING__
 
 #define NUM_STRING	149
-#define NUM_STRING_EXT	2
+#define NUM_STRING_EXT	4
 
 extern const char* pSelLangStr[NUM_STRING];
 extern const char* pSelLangStrExt[NUM_STRING_EXT];
@@ -150,6 +150,8 @@ void set_multi_language_strings();
 
 #define RETRO_IGNORE_CRC_DESC				pSelLangStrExt[  0]
 #define RETRO_IGNORE_CRC_INFO				pSelLangStrExt[  1]
+#define RETRO_COMMAND_DESC					pSelLangStrExt[  2]
+#define RETRO_COMMAND_INFO					pSelLangStrExt[  3]
 
 /* UGUI */
 #define RETRO_ERROR_MESSAGES_00				pSelLangStr[ 59]
