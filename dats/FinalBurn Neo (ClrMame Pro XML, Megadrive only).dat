@@ -1103,6 +1103,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="leynoste" cloneof="trgearth" romof="trgearth" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Assault Suit Leynos Re-Localization (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>GoodLuckTrying</manufacturer>
+		<rom name="Assault Suit Leynos Re-Localization T-Eng (2025)(GoodLuckTrying).bin" size="1048576" crc="9c14a66b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="astebros" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Astebros (HB)</description>
@@ -3111,8 +3120,8 @@
 		<comment>Hack</comment>
 		<description>Chakan (Hack, Portuguese)</description>
 		<year>2002</year>
-		<manufacturer>Nenhum</manufacturer>
-		<rom name="Chakan PT-BR (2002)(Nenhum).bin" size="1048576" crc="59b93489"/>
+		<manufacturer>hack (Volstag, Panca Loca)</manufacturer>
+		<rom name="Chakan PT-BR (2002)(Volstag, Panca Loca).bin" size="1048576" crc="59b93489"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4932,8 +4941,8 @@
 		<comment>Hack</comment>
 		<description>Disney's Aladdin (Hack, Portuguese)</description>
 		<year>2007</year>
-		<manufacturer>Nenhum</manufacturer>
-		<rom name="Disney's Aladdin PT-BR (2007)(Nenhum).bin" size="2097152" crc="e2090f4a"/>
+		<manufacturer>hack (Nicolas Mega)</manufacturer>
+		<rom name="Disney's Aladdin PT-BR (2007)(Nicolas Mega).bin" size="2097152" crc="e2090f4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6793,10 +6802,10 @@
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.86b)</description>
+		<description>Final Fight MD (HB, v0.87b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.86b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="791b4d0f"/>
+		<rom name="Final Fight MD v0.87b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="6f5be1bc"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9323,7 +9332,7 @@
 		<description>Junker's High (Japan, Prototype)</description>
 		<year>1992</year>
 		<manufacturer>Sims Co.</manufacturer>
-		<rom name="Junker's High (Japan, Proto)(1992)(Sims).bin" size="1048576" crc="23534949"/>
+		<rom name="Junker's High (Japan, Proto)(1992)(Sims Co.).bin" size="1048576" crc="23534949"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12730,7 +12739,7 @@
 		<description>New Zealand Story, The (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the new zealand story (hack, spanish).bin" size="524288" crc="684d738a"/>
+		<rom name="New Zealand Story, The T-Spa (2019)(Wave).bin" size="524288" crc="684d738a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12797,7 +12806,7 @@
 		<description>NFL Football '94 Starring Joe Montana (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="nfl football '94 (jpn).bin" size="2097152" crc="e490dc4a"/>
+		<rom name="NFL Football '94 Starring Joe Montana (Japan)(1994)(Sega).bin" size="2097152" crc="e490dc4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12805,7 +12814,7 @@
 		<description>NFL Football '94 Starring Joe Montana (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="nfl football '94 starring joe montana (usa).bin" size="2097152" crc="0d486ed5"/>
+		<rom name="NFL Football '94 Starring Joe Montana (USA)(1993)(Sega).bin" size="2097152" crc="0d486ed5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12813,7 +12822,7 @@
 		<description>NFL Quarterback Club (World)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="nfl quarterback club (world).bin" size="3145728" crc="94542eaf"/>
+		<rom name="NFL Quarterback Club (World)(1994)(Acclaim).bin" size="3145728" crc="94542eaf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12821,7 +12830,7 @@
 		<description>NFL Quarterback Club 96 (Euro, USA)</description>
 		<year>1996</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="nfl quarterback club 96 (euro, usa).bin" size="4194304" crc="d5a37cab"/>
+		<rom name="NFL Quarterback Club 96 (Euro, USA)(1996)(Acclaim).bin" size="4194304" crc="d5a37cab"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12829,7 +12838,7 @@
 		<description>NFL Sports Talk Football '93 Starring Joe Montana (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15005+mpr-15006.bin" size="1572864" crc="ce0b1fe1"/>
+		<rom name="NFL Sports Talk Football '93 Starring Joe Montana (Euro, USA)(1992)(Sega).bin" size="1572864" crc="ce0b1fe1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12846,7 +12855,7 @@
 		<description>NHK Taiga Drama - Taiheiki (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="nhk taiga drama - taiheiki (jpn).bin" size="1048576" crc="09fbb30e"/>
+		<rom name="NHK Taiga Drama - Taiheiki (Japan)(1991)(Sega).bin" size="1048576" crc="09fbb30e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13282,7 +13291,7 @@
 		<description>Osomatsu-kun Hachamecha Gekijou (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="osomatsu-kun hachamecha gekijou (jpn).bin" size="262144" crc="2453350c"/>
+		<rom name="Osomatsu-kun Hachamecha Gekijou (Japan)(1988)(Sega).bin" size="262144" crc="2453350c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13290,7 +13299,7 @@
 		<description>Ottifants, The (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ottifants, the (euro).bin" size="1048576" crc="41ac8003"/>
+		<rom name="Ottifants, The (Euro)(1993)(Sega).bin" size="1048576" crc="41ac8003"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13299,7 +13308,7 @@
 		<description>Ottifants, The (Euro, German, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ottifants, the (germany) (beta).bin" size="1048576" crc="c6e3dd23"/>
+		<rom name="Ottifants, The (Euro, German, Proto)(1993)(Sega).bin" size="1048576" crc="c6e3dd23"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13333,7 +13342,7 @@
 		<description>Outlander (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="outlander (euro).bin" size="1048576" crc="fe6f2350"/>
+		<rom name="Outlander (Euro)(1992)(Mindscape).bin" size="1048576" crc="fe6f2350"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13341,7 +13350,7 @@
 		<description>Outlander (USA)</description>
 		<year>1992</year>
 		<manufacturer>Mindscape</manufacturer>
-		<rom name="outlander (usa).bin" size="1048576" crc="c5ba7bbf"/>
+		<rom name="Outlander (USA)(1992)(Mindscape).bin" size="1048576" crc="c5ba7bbf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13400,7 +13409,7 @@
 		<description>OutRun 2019 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sims Co.</manufacturer>
-		<rom name="OutRun 2019 (Japan)(1993).bin" size="1048576" crc="0eac7440"/>
+		<rom name="OutRun 2019 (Japan)(1993)(Sims Co.).bin" size="1048576" crc="0eac7440"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14299,7 +14308,7 @@
 		<description>Pirates of Dark Water, The (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the pirates of dark water (hack, spanish).bin" size="2097152" crc="30c39d61"/>
+		<rom name="Pirates of Dark Water, The T-Spa (2018)(Wave).bin" size="2097152" crc="30c39d61"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14853,7 +14862,7 @@
 		<description>Punisher, The (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the punisher (hack, spanish).bin" size="2097152" crc="d1315970"/>
+		<rom name="Punisher, The (2018)(Wave).bin" size="2097152" crc="d1315970"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15371,6 +15380,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="revshinre" cloneof="revshin" romof="revshin" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Revenge of Shinobi Restoration, The (Hack)</description>
+		<year>2025</year>
+		<manufacturer>SCD, Psyklax</manufacturer>
+		<rom name="Revenge of Shinobi Restoration, The (2025)(SCD, Psyklax).bin" size="524288" crc="5beba755"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="revshin2" cloneof="revshin" romof="revshin" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Revenge of Shinobi, The (Euro, USA)</description>
 		<year>1989</year>
@@ -15400,7 +15418,7 @@
 		<description>Revenge of Shinobi, The (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the revenge of shinobi (hack, spanish).bin" size="524288" crc="99f889c1"/>
+		<rom name="Revenge of Shinobi, The T-Spa (2017)(Wave).bin" size="524288" crc="99f889c1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16762,8 +16780,8 @@
 		<comment>Hack</comment>
 		<description>Shining Force II (Hack, Portuguese)</description>
 		<year>2007</year>
-		<manufacturer>Nenhum</manufacturer>
-		<rom name="Shining Force II PT-BR (2007)(Nenhum).bin" size="2097152" crc="39afbe56"/>
+		<manufacturer>hack (Various)</manufacturer>
+		<rom name="Shining Force II PT-BR (2007)(Various).bin" size="2097152" crc="39afbe56"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18073,7 +18091,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="sparkstrj" cloneof="sparkstr" romof="sparkstr" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Sparkster - Rocket Knight Adventures 2 (Japan)</description>
+		<description>Sparkster: Rocket Knight Adventures 2 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Sparkster - Rocket Knight Adventures 2 (Japan)(1994)(Konami).bin" size="1048576" crc="914ec662"/>
@@ -18115,7 +18133,7 @@
 	</game>
 	<game name="speedbl2p" cloneof="speedbl2" romof="speedbl2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
-		<description>Speedball 2 - Brutal Deluxe (Prototype)</description>
+		<description>Speedball 2: Brutal Deluxe (Prototype)</description>
 		<year>1991</year>
 		<manufacturer>Arena Entertainment</manufacturer>
 		<rom name="Speedball 2 - Brutal Deluxe (Proto)(1991)(Arena Entertainment).bin" size="524288" crc="13c803b7"/>
@@ -18123,7 +18141,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="speedbl2u" cloneof="speedbl2" romof="speedbl2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Speedball 2 - Brutal Deluxe (USA)</description>
+		<description>Speedball 2: Brutal Deluxe (USA)</description>
 		<year>1991</year>
 		<manufacturer>Arena Entertainment</manufacturer>
 		<rom name="Speedball 2 - Brutal Deluxe (USA)(1991)(Arena Entertainment).bin" size="524288" crc="9fc340a7"/>
@@ -18701,15 +18719,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sf2hce" cloneof="sf2" romof="sf2" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Street Fighter II' - Hyper Champion Edition (Hack)</description>
-		<year>2020</year>
-		<manufacturer>Lord Hiryu</manufacturer>
-		<rom name="street fighter ii' - hyper champion edition (hack).bin" size="3145728" crc="be0805cf"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="sf2hce2" cloneof="sf2" romof="sf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Street Fighter II' - Hyper Champion Edition (Hack, v2)</description>
@@ -19119,7 +19128,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="strider2u" cloneof="strider2" romof="strider2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Strider Returns - Journey from Darkness (USA)</description>
+		<description>Strider Returns: Journey from Darkness (USA)</description>
 		<year>1990</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Strider Returns - Journey from Darkness (USA)(1990)(U.S. Gold).bin" size="1048576" crc="42589b79"/>
@@ -19786,15 +19795,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ssf2fh" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Super Street Fighter II - The New Challengers (Hack, Final)</description>
-		<year>2020</year>
-		<manufacturer>Lord Hiryu</manufacturer>
-		<rom name="super street fighter ii - the new challengers (hack, final).bin" size="5242880" crc="8e6772aa"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="ssf2s" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Super Street Fighter II - The New Challengers (Hack, Spanish v2.0)</description>
@@ -20333,7 +20333,7 @@
 		<description>Tecmo Super Baseball (USA)</description>
 		<year>1994</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super baseball (usa).bin" size="1048576" crc="227a1178"/>
+		<rom name="Tecmo Super Baseball (USA)(1994)(Tecmo).bin" size="1048576" crc="227a1178"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20341,7 +20341,7 @@
 		<description>Tecmo Super Bowl (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl (jpn).bin" size="1048576" crc="90c6e20c"/>
+		<rom name="Tecmo Super Bowl (Japan)(1993)(Tecmo).bin" size="1048576" crc="90c6e20c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20349,7 +20349,7 @@
 		<description>Tecmo Super Bowl (USA, 199309)</description>
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl (usa) (september 1993).bin" size="1048576" crc="bd5933ee"/>
+		<rom name="Tecmo Super Bowl (USA, 199309)(Tecmo).bin" size="1048576" crc="bd5933ee"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20357,15 +20357,7 @@
 		<description>Tecmo Super Bowl (USA, 199310)</description>
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl (usa) (october 1993).bin" size="1048576" crc="21f27d34"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="tecmosb2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Tecmo Super Bowl II (USA)</description>
-		<year>1994</year>
-		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl ii - special edition (usa).bin" size="2097152" crc="0a0e67d8"/>
+		<rom name="Tecmo Super Bowl (USA, 199310)(Tecmo).bin" size="1048576" crc="21f27d34"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20373,7 +20365,15 @@
 		<description>Tecmo Super Bowl II - Special Edition (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl ii - special edition (jpn).bin" size="2097152" crc="32fb633d"/>
+		<rom name="Tecmo Super Bowl II - Special Edition (Japan)(1994)(Tecmo).bin" size="2097152" crc="32fb633d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tecmosb2" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Tecmo Super Bowl II - Special Edition (USA)</description>
+		<year>1994</year>
+		<manufacturer>Tecmo</manufacturer>
+		<rom name="Tecmo Super Bowl II - Special Edition (USA)(1994)(Tecmo).bin" size="2097152" crc="0a0e67d8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20381,7 +20381,7 @@
 		<description>Tecmo Super Bowl III - Final Edition (USA)</description>
 		<year>1995</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super bowl iii - final edition (usa).bin" size="2097152" crc="aae4089f"/>
+		<rom name="Tecmo Super Bowl III - Final Edition (USA)(1995)(Tecmo).bin" size="2097152" crc="aae4089f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20389,7 +20389,7 @@
 		<description>Tecmo Super Hockey (USA)</description>
 		<year>1994</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super hockey (usa).bin" size="1048576" crc="5f86ddc9"/>
+		<rom name="Tecmo Super Hockey (USA)(1994)(Tecmo).bin" size="1048576" crc="5f86ddc9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20397,7 +20397,7 @@
 		<description>Tecmo Super NBA Basketball (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super nba basketball (jpn).bin" size="1048576" crc="79f33eb6"/>
+		<rom name="Tecmo Super NBA Basketball (Japan)(1994)(Tecmo).bin" size="1048576" crc="79f33eb6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20405,15 +20405,15 @@
 		<description>Tecmo Super NBA Basketball (USA)</description>
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo super nba basketball (usa).bin" size="1048576" crc="53913991"/>
+		<rom name="Tecmo Super NBA Basketball (USA)(1993)(Tecmo).bin" size="1048576" crc="53913991"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tecmow92" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Tecmo World Cup '92 (Japan)</description>
 		<year>1992</year>
-		<manufacturer>Sims</manufacturer>
-		<rom name="tecmo world cup '92 (jpn).bin" size="262144" crc="5e93c8b0"/>
+		<manufacturer>Tecmo - Sims Co.</manufacturer>
+		<rom name="Tecmo World Cup '92 (Japan)(1992)(Tecmo - Sims Co.).bin" size="262144" crc="5e93c8b0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20421,7 +20421,7 @@
 		<description>Tecmo World Cup (USA)</description>
 		<year>1990</year>
 		<manufacturer>Tecmo</manufacturer>
-		<rom name="tecmo world cup (usa).bin" size="262144" crc="caf8eb2c"/>
+		<rom name="Tecmo World Cup (USA)(1990)(Tecmo).bin" size="262144" crc="caf8eb2c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20429,7 +20429,7 @@
 		<description>Teddy Boy Blues (Japan, SegaNet)</description>
 		<year>1985-1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="teddy boy blues (jpn) (sn).bin" size="262144" crc="733d2eb3"/>
+		<rom name="Teddy Boy Blues (Japan, SegaNet)(1992)(Sega).bin" size="262144" crc="733d2eb3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20828,7 +20828,7 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="tbolt2" sourcefile="megadrive/d_megadrive.cpp">
+	<game name="tbolt2" cloneof="tbolt2piko" romof="tbolt2piko" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
 		<description>Thunderbolt II (Prototype) (Unl)</description>
 		<year>1995</year>
@@ -20837,12 +20837,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="tbolt2a" sourcefile="megadrive/d_megadrive.cpp">
+	<game name="tbolt2a" cloneof="tbolt2piko" romof="tbolt2piko" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
 		<description>Thunderbolt II (Prototype, Alt) (Unl)</description>
 		<year>1995</year>
 		<manufacturer>Sun Green</manufacturer>
 		<rom name="Thunderbolt II (Prototype, Alt)(Unl)(1995)(Sun Green).bin" size="524288" crc="a2ef16de"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tbolt2piko" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Thunderbolt II</description>
+		<year>1995-2019</year>
+		<manufacturer>Piko Interactive</manufacturer>
+		<rom name="Thunderbolt II (1995-2019)(Piko Interactive).bin" size="524288" crc="ace388b3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
