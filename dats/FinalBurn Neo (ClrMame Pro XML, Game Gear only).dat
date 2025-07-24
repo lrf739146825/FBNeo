@@ -2339,14 +2339,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="lastbibl" sourcefile="sms/d_sms.cpp">
-		<description>Megami Tensei Gaiden - Last Bible (Japan)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Megami Tensei Gaiden - Last Bible (Japan)(1994)(Sega).gg" size="524288" crc="2e4ec17b"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="lastbibse" cloneof="lastbibs" romof="lastbibs" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Megami Tensei Gaiden - Last Bible S (Hack, English v1.02)</description>
@@ -2356,8 +2348,16 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lastbibl" sourcefile="sms/d_sms.cpp">
+		<description>Megami Tensei Gaiden ~ Last Bible (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Megami Tensei Gaiden - Last Bible (Japan)(1994)(Sega).gg" size="524288" crc="2e4ec17b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lastbibs" sourcefile="sms/d_sms.cpp">
-		<description>Megami Tensei Gaiden - Last Bible S (Japan)</description>
+		<description>Megami Tensei Gaiden ~ Last Bible S (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Megami Tensei Gaiden - Last Bible S (Japan)(1995)(Sega).gg" size="524288" crc="4ec30806"/>
@@ -2373,10 +2373,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="legndillj" cloneof="legndill" romof="legndill" sourcefile="sms/d_sms.cpp">
-		<description>Mickey Mouse Densetsu no Oukoku - Legend of Illusion (Japan)</description>
+		<description>Mickey Mouse Densetsu no Oukoku ~ Legend of Illusion (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mickey mouse densetsu no oukoku - legend of illusion (japan).bin" size="524288" crc="fe12a92f"/>
+		<rom name="Mickey Mouse Densetsu no Oukoku - Legend of Illusion (Japan)(1995)(Sega).gg" size="524288" crc="fe12a92f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2384,7 +2384,7 @@
 		<description>Mickey Mouse no Castle Illusion (Japan, SMS Mode)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mickey mouse no castle illusion (japan).bin" size="262144" crc="9942b69b"/>
+		<rom name="Mickey Mouse no Castle Illusion (Japan, SMS Mode)(1991)(Sega).gg" size="262144" crc="9942b69b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2392,7 +2392,7 @@
 		<description>Mickey Mouse no Mahou no Crystal (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mickey mouse no mahou no crystal (japan).bin" size="524288" crc="0117c3df"/>
+		<rom name="Mickey Mouse no Mahou no Crystal (Japan)(1993)(Sega).gg" size="524288" crc="0117c3df"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2400,7 +2400,7 @@
 		<description>Mickey's Ultimate Challenge (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
-		<rom name="mickey's ultimate challenge (usa, europe).bin" size="262144" crc="eccf7a4f"/>
+		<rom name="Mickey's Ultimate Challenge (Euro, USA)(1994)(Hi Tech).gg" size="262144" crc="eccf7a4f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2795,7 +2795,7 @@
 		<description>Ninja Gaiden (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ninja gaiden (usa, europe).bin" size="131072" crc="c578756b"/>
+		<rom name="Ninja Gaiden (Euro, USA)(1991)(Sega).gg" size="131072" crc="c578756b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2803,7 +2803,7 @@
 		<description>Ninja Gaiden (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ninja gaiden (japan).bin" size="131072" crc="20ef017a"/>
+		<rom name="Ninja Gaiden (Japan)(1991)(Sega).gg" size="131072" crc="20ef017a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2811,23 +2811,23 @@
 		<description>Ninku (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-18000.ic1" size="524288" crc="c3056e15"/>
+		<rom name="Ninku (Japan)(1995)(Sega).gg" size="524288" crc="c3056e15"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ninku2" sourcefile="sms/d_sms.cpp">
-		<description>Ninku 2 - Tenkuuryuu e no Michi (Japan)</description>
+		<description>Ninku 2: Tenkuuryuu e no Michi (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-18695.ic1" size="524288" crc="06247dd2"/>
+		<rom name="Ninku 2 - Tenkuuryuu e no Michi (Japan)(1995)(Sega).gg" size="524288" crc="06247dd2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ninkug" sourcefile="sms/d_sms.cpp">
-		<description>Ninku Gaiden - Hiroyuki Daikatsugeki (Japan)</description>
+		<description>Ninku Gaiden: Hiroyuki Daikatsugeki (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-18313.ic1" size="524288" crc="9140f239"/>
+		<rom name="Ninku Gaiden - Hiroyuki Daikatsugeki (Japan)(1995)(Sega).gg" size="524288" crc="9140f239"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2835,7 +2835,7 @@
 		<description>Nomo's World Series Baseball (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-18562.ic1" size="524288" crc="4ed45bda"/>
+		<rom name="Nomo's World Series Baseball (Japan)(1995)(Sega).gg" size="524288" crc="4ed45bda"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2843,7 +2843,7 @@
 		<description>Olympic Gold (Euro, v1, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="mpr-14752-f.ic1" size="262144" crc="1d93246e"/>
+		<rom name="Olympic Gold (Euro, v1, SMS Mode)(1992)(U.S. Gold).gg" size="262144" crc="1d93246e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2851,7 +2851,7 @@
 		<description>Olympic Gold (Japan, USA, v0, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="olympic gold (japan, usa) (en,fr,de,es,it,nl,pt,sv).bin" size="262144" crc="a2f9c7af"/>
+		<rom name="Olympic Gold (Japan, USA, v0, SMS Mode)(1992)(U.S. Gold).gg" size="262144" crc="a2f9c7af"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2859,7 +2859,7 @@
 		<description>Ottifants, The (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ottifants, the (europe) (en,fr,de,es,it).bin" size="262144" crc="1e673168"/>
+		<rom name="Ottifants, The (Euro)(1992)(Sega).gg" size="262144" crc="1e673168"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2867,7 +2867,7 @@
 		<description>Out Run (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="out run.bin" size="131072" crc="9014b322"/>
+		<rom name="Out Run (Euro)(1991)(Sega).gg" size="131072" crc="9014b322"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2875,7 +2875,7 @@
 		<description>Out Run (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="out run (japan).bin" size="131072" crc="d58cb27c"/>
+		<rom name="Out Run (Japan)(1991)(Sega).gg" size="131072" crc="d58cb27c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2883,7 +2883,7 @@
 		<description>Out Run Europa (Euro, Brazil, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="out run europa (euro).bin" size="262144" crc="01eab89d"/>
+		<rom name="Out Run Europa (Euro, Brazil, SMS Mode)(1992)(U.S. Gold).gg" size="262144" crc="01eab89d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2891,7 +2891,7 @@
 		<description>Out Run Europa (USA, SMS Mode)</description>
 		<year>1992</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="out run europa (usa).bin" size="262144" crc="f037ec00"/>
+		<rom name="Out Run Europa (USA, SMS Mode)(1992)(U.S. Gold).gg" size="262144" crc="f037ec00"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2899,7 +2899,7 @@
 		<description>Pac-Attack (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="pac-attack (usa, europe).bin" size="131072" crc="9273ee2c"/>
+		<rom name="Pac-Attack (Euro, USA)(1994)(Namco).gg" size="131072" crc="9273ee2c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2908,7 +2908,7 @@
 		<description>Pac-In-Time (Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="pac-in-time (unknown) (proto).bin" size="262144" crc="64c28e20"/>
+		<rom name="Pac-In-Time (Proto)(1994)(Namco).gg" size="262144" crc="64c28e20"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2916,7 +2916,7 @@
 		<description>Pac-Man (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Namcot</manufacturer>
-		<rom name="mpr-13660.ic1" size="131072" crc="a16c5e58"/>
+		<rom name="Pac-Man (Japan)(1991)(Namcot).gg" size="131072" crc="a16c5e58"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2924,7 +2924,7 @@
 		<description>Pac-Man (USA)</description>
 		<year>1991</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="pac-man (usa).bin" size="131072" crc="b318dd37"/>
+		<rom name="Pac-Man (USA)(1991)(Namco).gg" size="131072" crc="b318dd37"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2932,7 +2932,7 @@
 		<description>Panzer Dragoon Mini (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="panzer dragoon mini (japan).bin" size="524288" crc="e9783cea"/>
+		<rom name="Panzer Dragoon Mini (Japan)(1996)(Sega).gg" size="524288" crc="e9783cea"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2940,7 +2940,7 @@
 		<description>Paperboy (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="paperboy (usa, europe).bin" size="131072" crc="f54b6803"/>
+		<rom name="Paperboy (Euro, USA)(1991)(Tengen).gg" size="131072" crc="f54b6803"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2948,7 +2948,7 @@
 		<description>Paperboy II (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Tengen</manufacturer>
-		<rom name="paperboy ii (usa, europe).bin" size="262144" crc="8b2c454b"/>
+		<rom name="Paperboy II (Euro, USA)(1992)(Tengen).gg" size="262144" crc="8b2c454b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2965,7 +2965,7 @@
 		<description>Pengo (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-13804-s.ic1" size="32768" crc="0da23cc1"/>
+		<rom name="Pengo (Euro, USA)(1991)(Sega).gg" size="32768" crc="0da23cc1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2973,7 +2973,7 @@
 		<description>Pengo (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pengo (japan).bin" size="32768" crc="ce863dba"/>
+		<rom name="Pengo (Japan)(1990)(Sega).gg" size="32768" crc="ce863dba"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2981,7 +2981,7 @@
 		<description>Pet Club Inu Daisuki! (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pet club inu daisuki! (japan).bin" size="524288" crc="b42d8430"/>
+		<rom name="Pet Club Inu Daisuki! (Japan)(1996)(Sega).gg" size="524288" crc="b42d8430"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2997,7 +2997,7 @@
 		<description>Pete Sampras Tennis (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="pete sampras tennis (europe).bin" size="262144" crc="c1756bee"/>
+		<rom name="Pete Sampras Tennis (Euro)(1994)(Codemasters).gg" size="262144" crc="c1756bee"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3871,7 +3871,7 @@
 		<description>Sonic The Hedgehog 2 (Rolling Demo)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="sonic_2_auto_demo_prototype_(1991-12-05)_tmr_sega_cb06_ffff.bin" size="262144" crc="15ad37a5"/>
+		<rom name="Sonic The Hedgehog 2 (Rolling Demo)(1992)(Sega).gg" size="262144" crc="15ad37a5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3879,7 +3879,7 @@
 		<description>Sonic The Hedgehog 2 (World)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15169 j02.ic1" size="524288" crc="95a18ec7"/>
+		<rom name="Sonic The Hedgehog 2 (World)(1992)(Sega).gg" size="524288" crc="95a18ec7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3899,19 +3899,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="spidermn" sourcefile="sms/d_sms.cpp">
-		<description>Spider-Man - Return of the Sinister Six (Euro, USA)</description>
-		<year>1993</year>
-		<manufacturer>Flying Edge</manufacturer>
-		<rom name="spider-man - return of the sinister six (usa, europe).bin" size="262144" crc="bc240779"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="spidxmen" sourcefile="sms/d_sms.cpp">
 		<description>Spider-Man and the X-Men in Arcade's Revenge (USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="spider-man and the x-men in arcade's revenge (usa).bin" size="524288" crc="742a372b"/>
+		<rom name="Spider-Man and the X-Men in Arcade's Revenge (USA)(1992)(Flying Edge).gg" size="524288" crc="742a372b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3919,7 +3911,15 @@
 		<description>Spider-Man vs. The Kingpin (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="spider-man vs. the kingpin (usa, europe).bin" size="262144" crc="2651024e"/>
+		<rom name="Spider-Man vs. The Kingpin (Euro, USA)(1992)(Flying Edge).gg" size="262144" crc="2651024e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spidermn" sourcefile="sms/d_sms.cpp">
+		<description>Spider-Man: Return of the Sinister Six (Euro, USA)</description>
+		<year>1993</year>
+		<manufacturer>Flying Edge</manufacturer>
+		<rom name="Spider-Man: Return of the Sinister Six (Euro, USA)(1993)(Flying Edge).gg" size="262144" crc="bc240779"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4100,7 +4100,7 @@
 		<description>Street Hero (USA, Prototype Alt, SMS Mode)</description>
 		<year>1993</year>
 		<manufacturer>Innovation Tech</manufacturer>
-		<rom name="street hero [proto 1] (us).bin" size="524288" crc="fb481971"/>
+		<rom name="Street Hero (USA, Proto Alt, SMS Mode)(1993)(Innovation Tech).gg" size="524288" crc="fb481971"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4109,7 +4109,7 @@
 		<description>Street Hero (USA, Prototype, SMS Mode)</description>
 		<year>1993</year>
 		<manufacturer>Innovation Tech</manufacturer>
-		<rom name="street hero [proto 0] (us).bin" size="524288" crc="9fa727a0"/>
+		<rom name="Street Hero (USA, Proto, SMS Mode)(1993)(Innovation Tech).gg" size="524288" crc="9fa727a0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4117,7 +4117,7 @@
 		<description>Streets of Rage (World) ~ Bare Knuckle (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="streets of rage (world).bin" size="262144" crc="3d8bcf1d"/>
+		<rom name="Streets of Rage (World)(1992)(Sega).gg" size="262144" crc="3d8bcf1d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4126,15 +4126,15 @@
 		<description>Streets of Rage II (Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Streets of Rage II (Proto).gg" size="524288" crc="6c395a69"/>
+		<rom name="Streets of Rage II (Proto)(1993)(Sega).gg" size="524288" crc="6c395a69"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sor2" sourcefile="sms/d_sms.cpp">
-		<description>Streets of Rage II (World) ~ Bare Knuckle II - Shitou e no Chingonka (Japan)</description>
+		<description>Streets of Rage II (World) ~ Bare Knuckle II: Shitou e no Chingonka (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15665.ic1" size="524288" crc="0b618409"/>
+		<rom name="Streets of Rage II (World)(1993)(Sega).gg" size="524288" crc="0b618409"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4142,7 +4142,7 @@
 		<description>Striker (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="striker (europe) (en,fr,de,es,it).bin" size="524288" crc="b421c057"/>
+		<rom name="Striker (Euro, M5)(1995)(Sega).gg" size="524288" crc="b421c057"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4150,7 +4150,7 @@
 		<description>Super Battletank (USA)</description>
 		<year>1992</year>
 		<manufacturer>Majesco</manufacturer>
-		<rom name="super battletank (usa).bin" size="262144" crc="73d6745a"/>
+		<rom name="Super Battletank (USA)(1992)(Majesco).gg" size="262144" crc="73d6745a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4208,15 +4208,15 @@
 		<description>Super Kick Off (Euro, SMS Mode)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="super kick off (euro).bin" size="262144" crc="10dbbef4"/>
+		<rom name="Super Kick Off (Euro, SMS Mode)(1991)(Sega).gg" size="262144" crc="10dbbef4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="smomo3" sourcefile="sms/d_sms.cpp">
 		<description>Super Momotarou Dentetsu III (Japan)</description>
 		<year>1995</year>
-		<manufacturer>Hudson</manufacturer>
-		<rom name="mpr-18440.ic1" size="524288" crc="b731bb80"/>
+		<manufacturer>Hudson Soft</manufacturer>
+		<rom name="Super Momotarou Dentetsu III (Japan)(1995)(Hudson Soft).gg" size="524288" crc="b731bb80"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4518,11 +4518,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="term2" sourcefile="sms/d_sms.cpp">
-		<comment>Glitchy graphics, use the SMS version, instead!</comment>
-		<description>Terminator 2 - Judgment Day (Euro, USA)</description>
+		<comment>NB: Glitchy graphics, use the SMS version, instead!</comment>
+		<description>Terminator 2: Judgment Day (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
-		<rom name="terminator 2 - judgment day (usa, europe).bin" size="262144" crc="1bd15773"/>
+		<rom name="Terminator 2 - Judgment Day (Euro, USA)(1993)(Flying Edge).gg" size="262144" crc="1bd15773"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4530,7 +4530,7 @@
 		<description>Terminator, The (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="terminator, the (usa, europe).bin" size="262144" crc="c029a5fd"/>
+		<rom name="Terminator, The (Euro, USA)(1992)(Virgin Interactive).gg" size="262144" crc="c029a5fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4538,7 +4538,7 @@
 		<description>Tesserae (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="tesserae (usa, europe).bin" size="131072" crc="ca0e11cc"/>
+		<rom name="Tesserae (Euro, USA)(1993)(GameTek).gg" size="131072" crc="ca0e11cc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4555,7 +4555,7 @@
 		<description>Tintin in Tibet (Euro)</description>
 		<year>1996</year>
 		<manufacturer>Infogrames</manufacturer>
-		<rom name="tintin in tibet (europe) (en,fr,de,es,nl,sv).bin" size="524288" crc="969cf389"/>
+		<rom name="Tintin in Tibet (Euro, M6)(1996)(Infogrames).gg" size="524288" crc="969cf389"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4563,7 +4563,7 @@
 		<description>Tom and Jerry - The Movie (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry - the movie (jp).bin" size="262144" crc="a1453efa"/>
+		<rom name="Tom and Jerry - The Movie (Japan)(1993)(Sega).gg" size="262144" crc="a1453efa"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4571,7 +4571,7 @@
 		<description>Tom and Jerry - The Movie (USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry - the movie (usa).bin" size="262144" crc="5cd33ff2"/>
+		<rom name="Tom and Jerry - The Movie (USA)(1993)(Sega).gg" size="262144" crc="5cd33ff2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4579,7 +4579,7 @@
 		<description>Torarete Tamaru ka!? (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16707.ic1" size="524288" crc="5bcf9b97"/>
+		<rom name="Torarete Tamaru ka!! (Japan)(1994)(Sega).gg" size="524288" crc="5bcf9b97"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4587,7 +4587,7 @@
 		<description>True Lies (World)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
-		<rom name="true lies (world).bin" size="524288" crc="5173b02a"/>
+		<rom name="True Lies (World)(1995)(Acclaim).gg" size="524288" crc="5173b02a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

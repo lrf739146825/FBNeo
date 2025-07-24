@@ -9503,7 +9503,7 @@
 		<description>Metal Slug - Super Vehicle-001 (Origins Item Random v2, Hack)</description>
 		<year>2025</year>
 		<manufacturer>Alice</manufacturer>
-		<rom name="201-p1dyf2.p1" size="2097152" crc="23bf5414"/>
+		<rom name="201-p1dyf2.p1" size="2097152" crc="84c96797"/>
 		<rom name="201-s1.s1" merge="201-s1.s1" size="131072" crc="2f55958d"/>
 		<rom name="201-c1.c1" merge="201-c1.c1" size="4194304" crc="72813676"/>
 		<rom name="201-c2.c2" merge="201-c2.c2" size="4194304" crc="96f62574"/>
@@ -11193,8 +11193,8 @@
 		<description>Metal Slug 3 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="256-p1cqi.p1" size="1048576" crc="62c572e0"/>
-		<rom name="256-p2cqi.sp2" size="8388608" crc="679274ad"/>
+		<rom name="256-p1cqi.p1" size="1048576" crc="f4c15b2b"/>
+		<rom name="256-p2cqi.sp2" size="8388608" crc="b0a9fda3"/>
 		<rom name="256-c1d.c1" size="8388608" crc="3540398c"/>
 		<rom name="256-c2d.c2" size="8388608" crc="bdd220f0"/>
 		<rom name="256-c3d.c3" size="8388608" crc="bfaade82"/>
@@ -12490,7 +12490,7 @@
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
 		<rom name="263-p1cqi.p1" size="1048576" crc="98bdd962"/>
-		<rom name="263-p2cqi.sp2" size="8388608" crc="dca90ac3"/>
+		<rom name="263-p2cqi.sp2" size="8388608" crc="4d8ff476"/>
 		<rom name="263-s1d.s1" size="131072" crc="a9446774"/>
 		<rom name="263-c1d.c1" size="8388608" crc="a75ffcde"/>
 		<rom name="263-c2d.c2" size="8388608" crc="5ab0d12b"/>
@@ -15496,8 +15496,8 @@
 		<description>Metal Slug X - Super Vehicle-001 (Legendary Unlimited Fire v7.0, Hack)</description>
 		<year>2025</year>
 		<manufacturer>AKS &amp; Sakura</manufacturer>
-		<rom name="250-p1cqi.p1" size="1048576" crc="4fc439b6"/>
-		<rom name="250-p2cqi.ep1" size="8388608" crc="cc71939a"/>
+		<rom name="250-p1cqi.p1" size="1048576" crc="ab07db9b"/>
+		<rom name="250-p2cqi.ep1" size="8388608" crc="307f1787"/>
 		<rom name="250-s1sc.s1" size="131072" crc="03bce893"/>
 		<rom name="250-c1.c1" merge="250-c1.c1" size="8388608" crc="09a52c6f"/>
 		<rom name="250-c2.c2" merge="250-c2.c2" size="8388608" crc="31679821"/>

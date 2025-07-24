@@ -4289,8 +4289,8 @@
 		<comment>Zapper compatible game</comment>
 		<description>Crime Busters (USA)</description>
 		<year>1989</year>
-		<manufacturer>Gradiente</manufacturer>
-		<rom name="Crime Busters (USA).nes" size="163856" crc="86c7d81e"/>
+		<manufacturer>Bit Corp.</manufacturer>
+		<rom name="Crime Busters (USA)(1989)(Bit Corp.).nes" size="163856" crc="86c7d81e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4299,7 +4299,7 @@
 		<description>Crisis Force (Hack, English)</description>
 		<year>2008</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Crisis Force (T-Eng).nes" size="262160" crc="8a053054"/>
+		<rom name="Crisis Force T-Eng (2008)(Stardust Crusaders).nes" size="262160" crc="8a053054"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4307,7 +4307,7 @@
 		<description>Crisis Force (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Crisis Force (Japan).nes" size="262160" crc="c4520781"/>
+		<rom name="Crisis Force (Japan)(1991)(Konami).nes" size="262160" crc="c4520781"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4640,6 +4640,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="deadlytowersc" cloneof="deadlytowers" romof="deadlytowers" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Deadly Towers (Hack, Spanish)</description>
+		<year>2020</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Deadly Towers T-Spa (2020)(Wave).nes" size="131088" crc="f93607ce"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="deadlytowers" sourcefile="nes/d_nes.cpp">
 		<description>Deadly Towers (USA)</description>
 		<year>1987</year>
@@ -4805,6 +4814,22 @@
 		<year>2024</year>
 		<manufacturer>NicoVision</manufacturer>
 		<rom name="Desert Escape! v1.1 (2024)(NicoVision).nes" size="40976" crc="12fd1d24"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="desertstormsc" cloneof="desertstorm" romof="desertstorm" sourcefile="nes/d_nes.cpp">
+		<description>Desert Storm (China, Chinese) (Unl)</description>
+		<year>1996</year>
+		<manufacturer>Waixing</manufacturer>
+		<rom name="Desert Storm - Nightmare Snaps Soul (China, CH)(Unl)(1996)(Waixing).nes" size="393232" crc="984fbc0b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="desertstorm" sourcefile="nes/d_nes.cpp">
+		<description>Desert Storm: Nightmare Snaps Soul (China, English) (Unl)</description>
+		<year>1996</year>
+		<manufacturer>Waixing</manufacturer>
+		<rom name="Desert Storm - Nightmare Snaps Soul (China, EN)(Unl)(1996)(Waixing).nes" size="393232" crc="ae05c80f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8921,6 +8946,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="hellsbells" cloneof="deadlytowers" romof="deadlytowers" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hell's Bells (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Hell's Bells T-Eng (2025)(BlackPaladin).nes" size="131088" crc="f8d5b162"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hellokitnooha" sourcefile="nes/d_nes.cpp">
 		<description>Hello Kitty no Ohanabatake (Japan)</description>
 		<year>1992</year>
@@ -9536,6 +9570,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="imagefightj" cloneof="imagefight" romof="imagefight" sourcefile="nes/d_nes.cpp">
+		<description>Image Fight (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Image Fight (Japan)(1989)(Irem).nes" size="262160" crc="2ee6db21"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="imagefight" sourcefile="nes/d_nes.cpp">
 		<description>Image Fight (USA)</description>
 		<year>1990</year>
@@ -10079,6 +10121,14 @@
 		<year>2019</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Journey to the Center of the Alien ES (2019)(The Mojon Twins).nes" size="73744" crc="0d68dad3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="joustj" cloneof="joust" romof="joust" sourcefile="nes/d_nes.cpp">
+		<description>Joust (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="Joust (Japan)(1987)(Atari Games).nes" size="24592" crc="19e0e420"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12383,6 +12433,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="mashou" cloneof="deadlytowers" romof="deadlytowers" sourcefile="nes/d_nes.cpp">
+		<description>Mashou (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Mashou (Japan)(1986)(Irem).nes" size="131088" crc="d288e8c0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="maskedninhan" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Masked Ninja Hanamaru (Hack, English v1.1)</description>
@@ -13223,6 +13281,15 @@
 		<year>1986</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Mississippi Satsujin Jiken (Japan)(1986)(Jaleco).nes" size="163856" crc="5d003ead"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="misterscaryd" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mister Scary: Where Are You? (HB, Demo)</description>
+		<year>2025</year>
+		<manufacturer>CalGames</manufacturer>
+		<rom name="Mister Scary - Where Are You (2025)(CalGames).nes" size="524304" crc="0d27e7fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16157,6 +16224,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="relicdung" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Relic Dungeon (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Libra Bits</manufacturer>
+		<rom name="Relic Dungeon v1.1 (2025)(Libra Bits).nes" size="524304" crc="12e8c8c2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="renstisho" sourcefile="nes/d_nes.cpp">
 		<description>Ren &amp; Stimpy Show, The - Buckeroo$! (USA)</description>
 		<year>1993</year>
@@ -17398,12 +17474,28 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="sidepockete" cloneof="sidepocket" romof="sidepocket" sourcefile="nes/d_nes.cpp">
+		<description>Side Pocket (Euro)</description>
+		<year>1987</year>
+		<manufacturer>Data East</manufacturer>
+		<rom name="Side Pocket (Euro)(1987)(Data East).nes" size="131088" crc="40f76343"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
 	<game name="sidepocketc" cloneof="sidepocket" romof="sidepocket" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Side Pocket (Hack, Chinese v2)</description>
 		<year>2020</year>
 		<manufacturer>Xing Kong</manufacturer>
 		<rom name="Side Pocket T-Chi v2 (2020)(Xing Kong).nes" size="188432" crc="e34da569"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sidepocketj" cloneof="sidepocket" romof="sidepocket" sourcefile="nes/d_nes.cpp">
+		<description>Side Pocket (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Side Pocket (Japan)(1987)(Namcot).nes" size="163856" crc="3a04ae26"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21877,6 +21969,15 @@
 		<year>1991</year>
 		<manufacturer>Romstar</manufacturer>
 		<rom name="World Champ (USA)(1991)(Romstar).nes" size="262160" crc="af00ed3f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="wcbaseball" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Original title developed for Intellivision in 1983</comment>
+		<description>World Championship Baseball (HB)</description>
+		<year>2014</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="World Championship Baseball (2014)(Intellivision).nes" size="24592" crc="a70f46a3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

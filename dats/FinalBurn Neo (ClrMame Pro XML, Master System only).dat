@@ -20,6 +20,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="4lexkiddnw" sourcefile="sms/d_sms.cpp">
+		<comment>Hack, Homebrew</comment>
+		<description>4lex Kidd in Nightmare World (GlobalHack)</description>
+		<year>2023</year>
+		<manufacturer>pinkeyeFR</manufacturer>
+		<rom name="4lex Kidd in Nightmare World (GlobalHack)(2023)(pinkeyeFR).sms" size="524288" crc="d2586223"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="94swc" sourcefile="sms/d_sms.cpp">
 		<description>94 Super World Cup Soccer (Korea)</description>
 		<year>1994</year>
@@ -205,14 +214,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="alexkiddb" cloneof="alexkidd" romof="alexkidd" sourcefile="sms/d_sms.cpp">
-		<description>Alex Kidd in Miracle World (Brazil, v1, Pirate)</description>
-		<year>1986</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Alex Kidd in Miracle World (Brazil, v1, Pirate)(1986).bin" size="131072" crc="7545d7c2"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="alexkidd1" cloneof="alexkidd" romof="alexkidd" sourcefile="sms/d_sms.cpp">
 		<description>Alex Kidd in Miracle World (Euro, USA, v0)</description>
 		<year>1986</year>
@@ -240,10 +241,10 @@
 	</game>
 	<game name="alexkiddee" cloneof="alexkidd" romof="alexkidd" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Alex Kidd In Miracle World - Extended Edition (Hack, v1.3 Final)</description>
+		<description>Alex Kidd in Miracle World - Extended Edition (Hack, v1.3 Final)</description>
 		<year>2024</year>
 		<manufacturer>Adrian Gauna</manufacturer>
-		<rom name="Alex Kidd In Miracle World - Extended Edition v1.3 Final (2024)(Adrian Gauna).sms" size="524288" crc="1ae81c0b"/>
+		<rom name="Alex Kidd in Miracle World - Extended Edition v1.3 Final (2024)(Adrian Gauna).sms" size="524288" crc="1ae81c0b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -290,6 +291,24 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="alexshinpt" cloneof="alexshin" romof="alexshin" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Alex Kidd no Mundo de Shinobi (Hack, Portuguese)</description>
+		<year>2017</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Alex Kidd no Mundo de Shinobi T-Por (2017)(PO.B.R.E.).sms" size="262144" crc="005ede22"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="alexkiddb" cloneof="alexkidd" romof="alexkidd" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Alex Kidd no Mundo dos Milagres (Hack, Portuguese)</description>
+		<year>2017</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Alex Kidd no Mundo dos Milagres T-Por (2017)(PO.B.R.E.).sms" size="262144" crc="4c7c2042"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alexlostse" cloneof="alexlost" romof="alexlost" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Alex Kidd, The Lost Stars - Stella Edition (Hack)</description>
@@ -304,6 +323,15 @@
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Alex Kidd - High-Tech World (Euro, USA)(1989)(Sega).sms" size="131072" crc="013c0a94"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="alexhitwpt" cloneof="alexhitw" romof="alexhitw" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Alex Kidd: High-Tech World (Hack, Portuguese)</description>
+		<year>2005</year>
+		<manufacturer>Games BR</manufacturer>
+		<rom name="Alex Kidd - High-Tech World T-Por (2005)(Games BR).sms" size="131072" crc="dd6277fb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -975,6 +1003,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="boxguyadv2" cloneof="sonic" romof="sonic" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Boxguy Adventure 2 (Hack, v10)</description>
+		<year>2025</year>
+		<manufacturer>PoyoPoyo</manufacturer>
+		<rom name="Boxguy Adventure 2 v10 (2025)(PoyoPoyo).sms" size="262144" crc="12921814"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dracula" sourcefile="sms/d_sms.cpp">
 		<description>Bram Stoker's Dracula (Euro)</description>
 		<year>1993</year>
@@ -1554,6 +1591,15 @@
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Disney's Aladdin (Euro, Brazil, Korea)(1994)(Sega).sms" size="524288" crc="c8718d40"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aladdinpt" cloneof="aladdin" romof="aladdin" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Disney's Aladdin (Hack, Portuguese v2.0)</description>
+		<year>2024</year>
+		<manufacturer>SatY Traducoes</manufacturer>
+		<rom name="Disney's Aladdin T-Por v2.0 (2024)(SatY Traducoes).sms" size="524288" crc="01ff1acc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3079,7 +3125,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="robocod" sourcefile="sms/d_sms.cpp">
-		<description>James Pond 2 - Codename RoboCod (Euro, Brazil)</description>
+		<description>James Pond 2: Codename RoboCod (Euro, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="James Pond 2 - Codename RoboCod (Euro, Brazil)(1993)(U.S. Gold).sms" size="524288" crc="102d5fea"/>
@@ -3985,6 +4031,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ngaidenpt" cloneof="ngaiden" romof="ngaiden" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Ninja Gaiden (Hack, Portuguese v1.2)</description>
+		<year>2008-2021</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Ninja Gaiden T-Por v1.2 (2008-2021)(PO.B.R.E.).sms" size="262144" crc="c73a614c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ninja" sourcefile="sms/d_sms.cpp">
 		<description>Ninja, The (Euro, USA)</description>
 		<year>1986</year>
@@ -4399,6 +4454,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="psychicwpt" cloneof="psychicw" romof="psychicw" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Psychic World ~ Mundo Psiquico (Hack, Portuguese)</description>
+		<year>2019</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Psychic World - Mundo Psiquico T-Por (2019)(PO.B.R.E.).sms" size="262144" crc="b9f22a5e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="psychof" sourcefile="sms/d_sms.cpp">
 		<description>Psycho Fox (Euro, USA, Brazil)</description>
 		<year>1989</year>
@@ -4525,14 +4589,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rambo2" cloneof="secret" romof="secret" sourcefile="sms/d_sms.cpp">
-		<description>Rambo - First Blood Part II (USA)</description>
-		<year>1986</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Rambo - First Blood Part II (USA)(1986)(Sega).sms" size="131072" crc="bbda65f0"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="rambo3" sourcefile="sms/d_sms.cpp">
 		<comment>Light Phaser game</comment>
 		<description>Rambo III (Euro, USA, Brazil)</description>
@@ -4548,6 +4604,14 @@
 		<year>2018</year>
 		<manufacturer>Sega - fatnick</manufacturer>
 		<rom name="Rambo III FM-Mod (2018)(fatnick).sms" size="262144" crc="c2073674"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rambo2" cloneof="secret" romof="secret" sourcefile="sms/d_sms.cpp">
+		<description>Rambo: First Blood Part II (USA)</description>
+		<year>1986</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Rambo - First Blood Part II (USA)(1986)(Sega).sms" size="131072" crc="bbda65f0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4572,6 +4636,15 @@
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Rastan (Euro, USA, Brazil)(1988)(Sega).sms" size="262144" crc="c547eb1b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rastanpt" cloneof="rastan" romof="rastan" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Rastan (Hack, Portuguese v1.05)</description>
+		<year>2019</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="Rastan T-Por v1.05 (2019)(Antigeno).sms" size="262144" crc="d10011cd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5012,6 +5085,15 @@
 		<year>1996</year>
 		<manufacturer>Infogrames</manufacturer>
 		<rom name="Smurfs 2, The (Euro, Proto)(1996)(Infogrames).sms" size="262144" crc="7982ae67"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smurfspt" cloneof="smurfs" romof="smurfs" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Smurfs, Os (Hack, Portuguese)</description>
+		<year>2024</year>
+		<manufacturer>SatY Traducoes</manufacturer>
+		<rom name="Smurfs, Os T-Por (2024)(SatY Traducoes).sms" size="262144" crc="2261a06c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5901,7 +5983,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="term2" sourcefile="sms/d_sms.cpp">
-		<description>Terminator 2 - Judgment Day (Euro)</description>
+		<description>Terminator 2: Judgment Day (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
 		<rom name="Terminator 2 - Judgment Day (Euro)(1993)(Flying Edge).sms" size="262144" crc="ac56104f"/>
@@ -5910,7 +5992,7 @@
 	</game>
 	<game name="term2c" cloneof="term2" romof="term2" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Terminator 2 - Judgment Day (Hack, Spanish)</description>
+		<description>Terminator 2: Judgment Day (Hack, Spanish)</description>
 		<year>2016</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Terminator 2 - Judgment Day T-Spa (2016)(Wave).sms" size="262144" crc="87a3290f"/>
@@ -5930,6 +6012,15 @@
 		<year>1992</year>
 		<manufacturer>Virgin Games</manufacturer>
 		<rom name="Terminator, The (Euro)(1992)(Virgin Games).sms" size="262144" crc="edc5c012"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="termntrpt" cloneof="termntr" romof="termntr" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Terminator, The (Hack, Portuguese v1.09)</description>
+		<year>2024</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="Terminator, The T-Por v1.09 (2024)(Antigeno).sms" size="262144" crc="e829e26e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6375,9 +6466,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wboy3" sourcefile="sms/d_sms.cpp">
+		<description>Wonder Boy III: The Dragon's Trap (Euro, USA, Korea)</description>
+		<year>1989</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)(1989)(Sega).sms" size="262144" crc="679e1676"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wboy3fm" cloneof="wboy3" romof="wboy3" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
-		<description>Wonder Boy III - The Dragon's Trap (Hack, FM Mod)</description>
+		<description>Wonder Boy III: The Dragon's Trap (Hack, FM Mod)</description>
 		<year>1999</year>
 		<manufacturer>Sega - Bock</manufacturer>
 		<rom name="Wonder Boy III - The Dragon's Trap FM Mod (1999)(Bock).sms" size="262144" crc="9442cfff"/>
@@ -6386,18 +6485,10 @@
 	</game>
 	<game name="wboy3c" cloneof="wboy3" romof="wboy3" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Wonder Boy III - The Dragon's Trap (Hack, Spanish)</description>
+		<description>Wonder Boy III: The Dragon's Trap (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Wonder Boy III - The Dragon's Trap (Hack, Spanish)(2017)(Wave).sms" size="262144" crc="fed045bf"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="wboy3" sourcefile="sms/d_sms.cpp">
-		<description>Wonder Boy III: The Dragon's Trap (Euro, USA, Korea)</description>
-		<year>1989</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Wonder Boy III - The Dragon's Trap (Euro, USA, Korea)(1989)(Sega).sms" size="262144" crc="679e1676"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
