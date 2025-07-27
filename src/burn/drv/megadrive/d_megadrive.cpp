@@ -39155,7 +39155,7 @@ struct BurnDriver BurnDrvmd_fightveng = {
 
 // Final Fight MD (HB, v0.87b)
 static struct BurnRomInfo md_ffightmdRomDesc[] = {
-	{ "Final Fight MD v0.87b (2025)(MXRetroDev - CFX).bin", 3932160, 0x6f5be1bc, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+	{ "Final Fight MD v0.88b (2025)(MXRetroDev - CFX).bin", 3932160, 0xfa21d81e, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
 };
 
 STD_ROM_PICK(md_ffightmd)
@@ -39163,7 +39163,7 @@ STD_ROM_FN(md_ffightmd)
 
 struct BurnDriver BurnDrvmd_ffightmd = {
 	"md_ffightmd", NULL, NULL, NULL, "2025",
-	"Final Fight MD (HB, v0.87b)\0", "Patreon release", "MXRetroDev - CFX", "Genesis / Mega Drive",
+	"Final Fight MD (HB, v0.88b)\0", "Patreon release", "MXRetroDev - CFX", "Genesis / Mega Drive",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 2, HARDWARE_SEGA_MEGADRIVE, GBF_SCRFIGHT, 0,
 	MegadriveGetZipName, md_ffightmdRomInfo, md_ffightmdRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
@@ -40516,6 +40516,82 @@ struct BurnDriver BurnDrvmd_papriumini = {
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_SCRFIGHT, 0,
 	MegadriveGetZipName, md_papriuminiRomInfo, md_papriuminiRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
 	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// The Secret of the 4 Winds
+
+static struct BurnSampleInfo Sot4wSampleDesc[] = {
+	{ "01", SAMPLE_AUTOLOOP },
+	{ "02", SAMPLE_AUTOLOOP },
+	{ "03", SAMPLE_AUTOLOOP },
+	{ "04", SAMPLE_AUTOLOOP },
+	{ "05", SAMPLE_AUTOLOOP },
+	{ "06", SAMPLE_AUTOLOOP },
+	{ "07", SAMPLE_AUTOLOOP },
+	{ "08", SAMPLE_AUTOLOOP },
+	{ "09", SAMPLE_AUTOLOOP },
+	{ "10", SAMPLE_AUTOLOOP },
+	{ "11", SAMPLE_AUTOLOOP },
+	{ "12", SAMPLE_AUTOLOOP },
+	{ "13", SAMPLE_AUTOLOOP },
+	{ "14", SAMPLE_AUTOLOOP },
+	{ "15", SAMPLE_AUTOLOOP },
+	{ "16", SAMPLE_AUTOLOOP },
+	{ "17", SAMPLE_AUTOLOOP },
+	{ "18", SAMPLE_AUTOLOOP },
+	{ "19", SAMPLE_AUTOLOOP },
+	{ "20", SAMPLE_AUTOLOOP },
+	{ "21", SAMPLE_AUTOLOOP },
+	{ "22", SAMPLE_AUTOLOOP },
+	{ "23", SAMPLE_AUTOLOOP },
+	{ "24", SAMPLE_AUTOLOOP },
+	{ "25", SAMPLE_AUTOLOOP },
+	{ "26", SAMPLE_AUTOLOOP },
+	{ "27", SAMPLE_AUTOLOOP },
+	{ "28", SAMPLE_AUTOLOOP },
+	{ "29", SAMPLE_AUTOLOOP },
+	{ "30", SAMPLE_AUTOLOOP },
+	{ "31", SAMPLE_AUTOLOOP },
+	{ "32", SAMPLE_AUTOLOOP },
+	{ "33", SAMPLE_AUTOLOOP },
+	{ "34", SAMPLE_AUTOLOOP },
+	{ "35", SAMPLE_AUTOLOOP },
+	{ "36", SAMPLE_AUTOLOOP },
+	{ "37", SAMPLE_AUTOLOOP },
+	{ "38", SAMPLE_AUTOLOOP },
+	{ "39", SAMPLE_AUTOLOOP },
+	{ "40", SAMPLE_AUTOLOOP },
+	{ "41", SAMPLE_AUTOLOOP },
+	{ "42", SAMPLE_AUTOLOOP },
+	{ "43", SAMPLE_AUTOLOOP },
+	{ "44", SAMPLE_AUTOLOOP },
+	{ "45", SAMPLE_AUTOLOOP },
+	{ "46", SAMPLE_AUTOLOOP },
+	{ "47", SAMPLE_AUTOLOOP },
+	{ "48", SAMPLE_AUTOLOOP },
+	{ "49", SAMPLE_AUTOLOOP },
+	{ "50", SAMPLE_AUTOLOOP },
+	{ "", 0 }
+};
+
+STD_SAMPLE_PICK(Sot4w)
+STD_SAMPLE_FN(Sot4w)
+
+static struct BurnRomInfo md_Sot4wRomDesc[] = {
+	{ "The Secret of the 4 Winds (2025)(Kai Magazine).bin", 4194304, 0xf081e18b, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000 },
+};
+
+STD_ROM_PICK(md_Sot4w)
+STD_ROM_FN(md_Sot4w)
+
+struct BurnDriver Burnmd_Sot4w = {
+	"md_sot4w", NULL, NULL, "sot4w", "2025",
+	"The Secret of the 4 Winds\0", NULL, "Kai Magazine", "Sega Megadrive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_MISC, 0,
+	MegadriveGetZipName, md_Sot4wRomInfo, md_Sot4wRomName, NULL, NULL, Sot4wSampleInfo, Sot4wSampleName, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInitSot4w, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
 

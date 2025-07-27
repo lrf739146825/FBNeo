@@ -6802,10 +6802,10 @@
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.87b)</description>
+		<description>Final Fight MD (HB, v0.88b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.87b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="6f5be1bc"/>
+		<rom name="Final Fight MD v0.88b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="fa21d81e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20675,6 +20675,65 @@
 		<rom name="Tetris (Unl)(199x).bin" size="524288" crc="eb024ab2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
+	</game>
+	<game name="sot4w" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>The Secret of the 4 Winds</description>
+		<year>2025</year>
+		<manufacturer>Kai Magazine</manufacturer>
+		<rom name="The Secret of the 4 Winds (2025)(Kai Magazine).bin" size="4194304" crc="f081e18b"/>
+		<sample name="01" />
+		<sample name="02" />
+		<sample name="03" />
+		<sample name="04" />
+		<sample name="05" />
+		<sample name="06" />
+		<sample name="07" />
+		<sample name="08" />
+		<sample name="09" />
+		<sample name="10" />
+		<sample name="11" />
+		<sample name="12" />
+		<sample name="13" />
+		<sample name="14" />
+		<sample name="15" />
+		<sample name="16" />
+		<sample name="17" />
+		<sample name="18" />
+		<sample name="19" />
+		<sample name="20" />
+		<sample name="21" />
+		<sample name="22" />
+		<sample name="23" />
+		<sample name="24" />
+		<sample name="25" />
+		<sample name="26" />
+		<sample name="27" />
+		<sample name="28" />
+		<sample name="29" />
+		<sample name="30" />
+		<sample name="31" />
+		<sample name="32" />
+		<sample name="33" />
+		<sample name="34" />
+		<sample name="35" />
+		<sample name="36" />
+		<sample name="37" />
+		<sample name="38" />
+		<sample name="39" />
+		<sample name="40" />
+		<sample name="41" />
+		<sample name="42" />
+		<sample name="43" />
+		<sample name="44" />
+		<sample name="45" />
+		<sample name="46" />
+		<sample name="47" />
+		<sample name="48" />
+		<sample name="49" />
+		<sample name="50" />
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
 	</game>
 	<game name="themeprk" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Theme Park (Euro, USA)</description>

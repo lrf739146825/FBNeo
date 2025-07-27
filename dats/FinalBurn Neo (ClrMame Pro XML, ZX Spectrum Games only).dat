@@ -351,6 +351,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="a10thunderbolt" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>A-10 Thunderbolt (48K-128K) (HB)</description>
+		<year>1995</year>
+		<manufacturer>Gadget Software Unlimited</manufacturer>
+		<rom name="A-10 Thunderbolt 48K-128K (1995)(Gadget Software Unlimited).tap" size="48034" crc="d2d4da4a"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ateamp1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>SPACE: smart bomb</comment>
 		<description>A-Team, The ~ Equipo A, El - Part 1 (Spanish) (48K-128K)</description>
@@ -9867,6 +9878,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="firenice" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Fire 'N Ice (128K) (HB)</description>
+		<year>1987-2003</year>
+		<manufacturer>n-Discovery</manufacturer>
+		<rom name="Fire 'N Ice 128K (1987-2003)(n-Discovery).tap" size="569884" crc="05b70672"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fireforget" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Fire and Forget (48K-128K)</description>
 		<year>1988</year>
@@ -12239,7 +12261,7 @@
 		<description>HeliChopper (48K)</description>
 		<year>1985</year>
 		<manufacturer>Firebird Software</manufacturer>
-		<rom name="HeliChopper 48K (1985)(Firebird Software).z80" size="33920" crc="28c9aa3f"/>
+		<rom name="HeliChopper 48K (1985)(Firebird Software).tap" size="48038" crc="5160aec4"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19043,11 +19065,22 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="p47freedomf" cloneof="p47thunderbolt" romof="p47thunderbolt" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Hack, Trainer, Speedup, AY</comment>
+		<description>P-47 The Freedom Fighter (128K) (Hack)</description>
+		<year>1990-2022</year>
+		<manufacturer>Slider, Goodboy, Tiboh</manufacturer>
+		<rom name="P-47 The Feedom Fighter 128K (Hack)(1990-2022)(SGT - Slider, Goodboy, Tiboh).tap" size="119134" crc="9ec5769f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="p47thunderbolt" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>P-47 Thunderbolt (128K)</description>
 		<year>1990</year>
 		<manufacturer>Firebird Software</manufacturer>
-		<rom name="P-47 Thunderbolt 128K (1990)(Firebird Software).z80" size="72894" crc="9efaf7fc"/>
+		<rom name="P-47 Thunderbolt 48K-128K (1990)(Firebird Software).tap" size="81239" crc="3d1ffa84"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>

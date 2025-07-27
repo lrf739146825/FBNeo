@@ -1459,7 +1459,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="garfield" sourcefile="sms/d_sms.cpp">
-		<description>Garfield - Caught in the Act (Euro, USA)</description>
+		<description>Garfield: Caught in the Act (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Garfield - Caught in the Act (Euro, USA)(1995)(Sega).gg" size="1048576" crc="cd53f3af"/>
@@ -1540,7 +1540,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ggport" sourcefile="sms/d_sms.cpp">
-		<description>GG Portrait - Pai Chen (Japan)</description>
+		<description>GG Portrait: Pai Chen (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="GG Portrait - Pai Chen (Japan)(1996)(Sega).gg" size="524288" crc="695cc120"/>
@@ -1548,7 +1548,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ggport1" sourcefile="sms/d_sms.cpp">
-		<description>GG Portrait - Yuuki Akira (Japan)</description>
+		<description>GG Portrait: Yuuki Akira (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="GG Portrait - Yuuki Akira (Japan)(1996)(Sega).gg" size="524288" crc="51159f8f"/>
@@ -1590,7 +1590,7 @@
 	</game>
 	<game name="godzillae" cloneof="godzilla" romof="godzilla" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Godzilla - Kaijuu Daishingeki (Hack, English v1.1)</description>
+		<description>Godzilla: Kaijuu Daishingeki (Hack, English v1.1)</description>
 		<year>2019</year>
 		<manufacturer>Supper</manufacturer>
 		<rom name="Godzilla - Kaijuu Daishingeki T-Eng (2019)(Supper).gg" size="1048576" crc="fc0ac103"/>
