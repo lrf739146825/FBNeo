@@ -3274,10 +3274,10 @@
 	</game>
 	<game name="celestemariodl" cloneof="smb" romof="smb" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Celeste Mario's Zap &amp; Dash DELUXE! v2.00 (Hack)</description>
+		<description>Celeste Mario's Zap &amp; Dash DELUXE! v2.00c (Hack)</description>
 		<year>2025</year>
 		<manufacturer>w7n</manufacturer>
-		<rom name="Celeste Mario's Zap &amp; Dash DELUXE! v2.00 (2025)(w7n).nes" size="655376" crc="3a8afc37"/>
+		<rom name="Celeste Mario's Zap &amp; Dash DELUXE! v2.00c (2025)(w7n).nes" size="655376" crc="387485d3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3633,6 +3633,15 @@
 		<year>1991</year>
 		<manufacturer>Takara</manufacturer>
 		<rom name="Choujinrou Senki Warwolf (Japan)(1991)(Takara).nes" size="262160" crc="58e8c244"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="choujsenwarte" cloneof="werew" romof="werew" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Choujinrou Senki Warwolf ~ Warwolf Chronicles (Hack, English)</description>
+		<year>2011</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="Warwolf Chronicles T-Eng (2011)(Stardust Crusaders).nes" size="262160" crc="d1490b26"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4473,20 +4482,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="daikunogensan2c" cloneof="daikunogensan2" romof="daikunogensan2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Daiku no Gen-san 2 - Akage no Dan no Gyakushuu (Hack, Chinese)</description>
-		<year>2019</year>
-		<manufacturer>Advance Team &amp; DMG Team</manufacturer>
-		<rom name="Daiku no Gen-san 2 - Akage no Dan no Gyakushuu T-Chi (2019)(Adv Team, DMG Team).nes" size="524304" crc="66c08cd8"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="daikunogensan2" sourcefile="nes/d_nes.cpp">
 		<description>Daiku no Gen-san 2 - Akage no Dan no Gyakushuu (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Irem Corp.</manufacturer>
 		<rom name="Daiku no Gen-san 2 - Akage no Dan no Gyakushuu (Japan)(1993)(Irem).nes" size="524304" crc="3774121e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="daikunogensan2c" cloneof="daikunogensan2" romof="daikunogensan2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Daiku no Gen-san 2: Akage no Dan no Gyakushuu (Hack, Chinese)</description>
+		<year>2019</year>
+		<manufacturer>Advance Team &amp; DMG Team</manufacturer>
+		<rom name="Daiku no Gen-san 2 - Akage no Dan no Gyakushuu T-Chi (2019)(Adv Team, DMG Team).nes" size="524304" crc="66c08cd8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5770,6 +5779,31 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="dragonquestte" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Quest (Hack, English v1.3)</description>
+		<year>2020</year>
+		<manufacturer>Polinym</manufacturer>
+		<rom name="Dragon Quest T-Eng v1.3 (2020)(Polinym).nes" size="65552" crc="b36b799c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragonquest" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
+		<description>Dragon Quest (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Enix</manufacturer>
+		<rom name="Dragon Quest (Japan)(1986)(Enix).nes" size="65552" crc="c72e2739"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragoquestii" cloneof="dragowarii" romof="dragowarii" sourcefile="nes/d_nes.cpp">
+		<description>Dragon Quest II (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Enix</manufacturer>
+		<rom name="Dragon Quest II (Japan)(1987)(Enix).nes" size="131088" crc="7b3d483f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="dragonrunning" sourcefile="nes/d_nes.cpp">
 		<description>Dragon Running (Unl)</description>
 		<year>199?</year>
@@ -5827,12 +5861,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="dragonwarriorc" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
+	<game name="dragonwarriortp" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dragon Warrior (Hack, Spanish)</description>
-		<year>2019</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="Dragon Warrior T-Spa (2019)(Wave).nes" size="81936" crc="7442bd9f"/>
+		<description>Dragon Warrior (Hack, Portuguese)</description>
+		<year>2021</year>
+		<manufacturer>TeacherGus</manufacturer>
+		<rom name="Dragon Warrior T-Por (2021)(TeacherGus).nes" size="81936" crc="aecd1c3c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragonwarriorts" cloneof="dragonwarrior" romof="dragonwarrior" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Warrior (Hack, Spanish v1.01)</description>
+		<year>2022</year>
+		<manufacturer>Rod Merida</manufacturer>
+		<rom name="Dragon Warrior T-Spa v1.01 (2022)(Rod Merida).nes" size="81936" crc="26debef8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8298,6 +8341,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gooniesttc" cloneof="goonies" romof="goonies" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Goonies, The (Hack, Traditional Chinese)</description>
+		<year>2025</year>
+		<manufacturer>NOKOH</manufacturer>
+		<rom name="Goonies, The T-Cht (2025)(NOKOH).nes" size="131088" crc="dc21318d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="goonies" sourcefile="nes/d_nes.cpp">
 		<description>Goonies, The (Japan)</description>
 		<year>1986</year>
@@ -8709,6 +8761,15 @@
 		<year>1989</year>
 		<manufacturer>Ultra Games</manufacturer>
 		<rom name="Gyruss (USA)(1989)(Ultra Games).nes" size="65552" crc="526ad690"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="habit" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>HABiT! (HB, v2.22)</description>
+		<year>2024</year>
+		<manufacturer>Habit Soft</manufacturer>
+		<rom name="HABiT! v2.22 (2024)(Habit Soft).nes" size="40976" crc="52c12962"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9382,7 +9443,7 @@
 	</game>
 	<game name="hyakuen" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Hyaku no Sekai no Monogatari - The 100 World Story (Hack, English)</description>
+		<description>Hyaku no Sekai no Monogatari ~ The 100 World Story (Hack, English)</description>
 		<year>2007</year>
 		<manufacturer>AlanMidas</manufacturer>
 		<rom name="Hyaku no Sekai no Monogatari - The 100 World Story T-Eng (2007)(AlanMidas).nes" size="262160" crc="1385e8a5"/>
@@ -11383,6 +11444,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="legenzeltp" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda, The (Hack, Portuguese v2.0)</description>
+		<year>2022</year>
+		<manufacturer>SatY Traducoes</manufacturer>
+		<rom name="Legend of Zelda, The T-Por v2.0 (2022)(SatY Traducoes).nes" size="131088" crc="44d4d62c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="legenzel" sourcefile="nes/d_nes.cpp">
 		<description>Legend of Zelda, The (USA, Rev A)</description>
 		<year>1987</year>
@@ -11550,6 +11620,14 @@
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Lion King, The T-Spa (2019)(Wave).nes" size="262160" crc="562245ae"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lionkingunl" sourcefile="nes/d_nes.cpp">
+		<description>Lion King, The (Unl, v1.1)</description>
+		<year>1995</year>
+		<manufacturer>Super Game</manufacturer>
+		<rom name="Lion King, The v1.1 (Unl)(1995)(Super Game).nes" size="524304" crc="f242c3b6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11906,7 +11984,7 @@
 	</game>
 	<game name="madwizsds" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mad Wizard, The - A Candelabra Chronicle (HB) (Sly Dog Studios)</description>
+		<description>Mad Wizard, The: A Candelabra Chronicle (HB) (Sly Dog Studios)</description>
 		<year>2014</year>
 		<manufacturer>Sly Dog Studios</manufacturer>
 		<rom name="Mad Wizard, The - A Candelabra Chronicle (2014)(Sly Dog Studios).nes" size="131088" crc="5481d022"/>
@@ -11915,7 +11993,7 @@
 	</game>
 	<game name="madwiz" cloneof="madwizsds" romof="madwizsds" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mad Wizard, The - A Candelabra Chronicle (HB)</description>
+		<description>Mad Wizard, The: A Candelabra Chronicle (HB)</description>
 		<year>2014</year>
 		<manufacturer>Robert L. Bryant</manufacturer>
 		<rom name="Mad Wizard, The - A Candelabra Chronicle (2014)(Robert L. Bryant).nes" size="131088" crc="7750dac6"/>
@@ -12485,7 +12563,7 @@
 	</game>
 	<game name="mattockmike" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mattock Mike - The Legend of Pete (HB)</description>
+		<description>Mattock Mike: The Legend of Pete (HB)</description>
 		<year>2023</year>
 		<manufacturer>NESLurker</manufacturer>
 		<rom name="Mattock Mike - The Legend of Pete (2023)(NESLurker).nes" size="524304" crc="b0c8187a"/>
@@ -12524,6 +12602,15 @@
 		<year>1990</year>
 		<manufacturer>Vap Inc.</manufacturer>
 		<rom name="Max Warrior - Wakusei Kaigenrei (Japan)(1990)(Vap).nes" size="262160" crc="d4dddcb9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="mazezam" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>MazezaM Challenge (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Alekmaul Studio</manufacturer>
+		<rom name="MazezaM Challenge v1.1 (2025)(Alekmaul Studio).nes" size="524304" crc="0afef2fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12953,21 +13040,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="mkrotfs" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
-		<description>Micro Knight - Revenge of the Four Skulls (HB)</description>
-		<year>2017</year>
-		<manufacturer>sdm</manufacturer>
-		<rom name="Micro Knight RotFS (2017)(sdm).nes" size="131088" crc="bc44af32"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="mknight2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Micro Knight II (HB, v1.1)</description>
 		<year>2015</year>
 		<manufacturer>sdm</manufacturer>
 		<rom name="Micro Knight II v1.1 (2015)(sdm).nes" size="131088" crc="992b1f12"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="mkrotfs" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Micro Knight: Revenge of the Four Skulls (HB)</description>
+		<year>2017</year>
+		<manufacturer>sdm</manufacturer>
+		<rom name="Micro Knight RotFS (2017)(sdm).nes" size="131088" crc="bc44af32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12990,7 +13077,7 @@
 	</game>
 	<game name="micromages2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Micro Mages - Second Quest (HB)</description>
+		<description>Micro Mages: Second Quest (HB)</description>
 		<year>2022</year>
 		<manufacturer>Morphcat Games</manufacturer>
 		<rom name="Micro Mages - Second Quest (2022)(Morphcat Games).nes" size="40976" crc="bbc0ef28"/>
@@ -13235,10 +13322,10 @@
 	</game>
 	<game name="miscastle" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mischief Castle (HB)</description>
+		<description>Mischief Castle (HB, v1.01)</description>
 		<year>2024</year>
 		<manufacturer>kn56k</manufacturer>
-		<rom name="Mischief Castle (2024)(kn56k).nes" size="524304" crc="39fc03f4"/>
+		<rom name="Mischief Castle v1.01 (2024)(kn56k).nes" size="524304" crc="d27dcd86"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14049,12 +14136,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="nessyrobot" sourcefile="nes/d_nes.cpp">
+	<game name="nessyrobot" cloneof="nessyrobotv2" romof="nessyrobotv2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Nessy the NES Robot (HB, v1.30)</description>
 		<year>2021</year>
 		<manufacturer>Daniel T. Gaming</manufacturer>
 		<rom name="Nessy the NES Robot v1.30 (2021)(Daniel T. Gaming).nes" size="524304" crc="709d7dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nessyrobotv2" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Nessy the NES Robot (HB, v2.00)</description>
+		<year>2023</year>
+		<manufacturer>Daniel T. Gaming</manufacturer>
+		<rom name="Nessy the NES Robot v2.00 (2023)(Daniel T. Gaming).nes" size="524304" crc="ac701ed8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14501,10 +14597,10 @@
 	</game>
 	<game name="noseyjoe" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Nosey Joe - The Power Mystery (HB, v1.2)</description>
-		<year>2023</year>
-		<manufacturer>baardbi</manufacturer>
-		<rom name="Nosey Joe - The Power Mystery v1.2 (2023)(baardbi).nes" size="524304" crc="ca912d20"/>
+		<description>Nosey Joe: The Power Mystery (HB, v2.0)</description>
+		<year>2024</year>
+		<manufacturer>board-b</manufacturer>
+		<rom name="Nosey Joe - The Power Mystery v2.0 (2024)(board-b).nes" size="524304" crc="bb967aba"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14578,10 +14674,10 @@
 	</game>
 	<game name="oozerdx" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Ooze Redux (HB)</description>
-		<year>2021</year>
+		<description>Ooze Redux (HB, v2.0)</description>
+		<year>2020-24</year>
 		<manufacturer>Hippokittie Productions</manufacturer>
-		<rom name="Ooze Redux (2021)(Hippokittie Prod.).nes" size="524304" crc="047a83d5"/>
+		<rom name="Ooze Redux v2.0 (2020-24)(Hippokittie Productions).nes" size="524304" crc="402e4530"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16662,6 +16758,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="rockm6ttc" cloneof="megaman6" romof="megaman6" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Rockman 6: Shijou Saidai no Tatakai!! (Hack, Traditional Chinese)</description>
+		<year>2025</year>
+		<manufacturer>NOKOH</manufacturer>
+		<rom name="Rockman 6 - Shijou Saidai no Tatakai!! T-Cht (2025)(NOKOH).nes" size="524304" crc="375e5982"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="rockm6" cloneof="megaman6" romof="megaman6" sourcefile="nes/d_nes.cpp">
 		<description>Rockman 6: Shijou Saidai no Tatakai!! (Japan)</description>
 		<year>1993</year>
@@ -16725,6 +16830,15 @@
 		<year>2019</year>
 		<manufacturer>Optovania</manufacturer>
 		<rom name="Rollie (2019)(Optovania).nes" size="40976" crc="8165c356"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="rollinghare2" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Rolling Hare 2 ~ Rollin' Hare 2 (HB)</description>
+		<year>2025</year>
+		<manufacturer>Doby Games</manufacturer>
+		<rom name="Rolling Hare 2 (2025)(Doby Games).nes" size="524304" crc="70807df5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16924,20 +17038,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="saiyuwor2c" cloneof="whompem" romof="whompem" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Saiyuuki World 2 - Tenjoukai no Majin (Hack, Chinese)</description>
-		<year>2019</year>
-		<manufacturer>nineswords</manufacturer>
-		<rom name="Saiyuuki World 2 - Tenjoukai no Majin T-Chi (2019)(nineswords).nes" size="262160" crc="784fc411"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="saiyuwor2" cloneof="whompem" romof="whompem" sourcefile="nes/d_nes.cpp">
 		<description>Saiyuuki World 2 - Tenjoukai no Majin (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Saiyuuki World 2 - Tenjoukai no Majin (Japan)(1990)(Jaleco).nes" size="262160" crc="0a7eedbb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="saiyuwor2c" cloneof="whompem" romof="whompem" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Saiyuuki World 2: Tenjoukai no Majin (Hack, Chinese)</description>
+		<year>2019</year>
+		<manufacturer>nineswords</manufacturer>
+		<rom name="Saiyuuki World 2 - Tenjoukai no Majin T-Chi (2019)(nineswords).nes" size="262160" crc="784fc411"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17725,10 +17839,10 @@
 	</game>
 	<game name="slowmoleplus" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Slow Mole Plus (HB, v0.9b)</description>
-		<year>2023</year>
+		<description>Slow Mole+ (HB)</description>
+		<year>2024</year>
 		<manufacturer>Slow Mole Studio</manufacturer>
-		<rom name="Slow Mole Plus v0.9b (2023)(Slow Mole Studio).nes" size="524304" crc="c578495c"/>
+		<rom name="Slow Mole+ (2024)(Slow Mole Studio).nes" size="524304" crc="e828e9a9"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18139,14 +18253,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="speluiij" cloneof="speluii" romof="speluii" sourcefile="nes/d_nes.cpp">
-		<description>Spelunker II - Yuusha e no Chousen (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Irem Corp.</manufacturer>
-		<rom name="Spelunker II - Yuusha e no Chousen (Japan)(1987)(Irem).nes" size="131088" crc="f076f168"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="speluii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Spelunker II: A Hero's Challenge (Hack, English)</description>
@@ -18156,9 +18262,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="speluiij" cloneof="speluii" romof="speluii" sourcefile="nes/d_nes.cpp">
+		<description>Spelunker II: Yuusha e no Chousen (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Irem Corp.</manufacturer>
+		<rom name="Spelunker II - Yuusha e no Chousen (Japan)(1987)(Irem).nes" size="131088" crc="f076f168"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="spidemanc" cloneof="spideman" romof="spideman" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Spider-Man - Return of the Sinister Six (Hack, Chinese)</description>
+		<description>Spider-Man: Return of the Sinister Six (Hack, Chinese)</description>
 		<year>2021</year>
 		<manufacturer>Ni You De Wu Cai Yu</manufacturer>
 		<rom name="Spider-Man - Return of the Sinister Six T-Chi (2021)(Ni You De Wu Cai Yu).nes" size="393232" crc="a116d626"/>
@@ -18166,7 +18280,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="spideman" sourcefile="nes/d_nes.cpp">
-		<description>Spider-Man - Return of the Sinister Six (USA)</description>
+		<description>Spider-Man: Return of the Sinister Six (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ljn</manufacturer>
 		<rom name="Spider-Man - Return of the Sinister Six (USA)(1992)(Ljn).nes" size="393232" crc="095b180b"/>
@@ -18745,20 +18859,29 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="sugorque" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Sugoro Quest - Dice no Senshitachi (Hack, English)</description>
-		<year>2007</year>
-		<manufacturer>AlanMidas</manufacturer>
-		<rom name="Sugoro Quest - Dice no Senshitachi T-Eng (2007)(AlanMidas).nes" size="262160" crc="d2cdeb7b"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="sugorquej" cloneof="sugorque" romof="sugorque" sourcefile="nes/d_nes.cpp">
-		<description>Sugoro Quest - Dice no Senshitachi (Japan)</description>
+		<description>Sugoro Quest: Dice no Senshitachi (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Sugoro Quest - Dice no Senshitachi (Japan)(1991)(Technos).nes" size="262160" crc="0ac48932"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sugorquetsc" cloneof="sugorque" romof="sugorque" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Sugoro Quest: Quest of Dice Heros, The (Hack, Chinese)</description>
+		<year>2012</year>
+		<manufacturer>Jiu Ban</manufacturer>
+		<rom name="Sugoro Quest - Quest of Dice Heros, The T-Chs (2012)(Jiu Ban).nes" size="524304" crc="f94149c0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sugorque" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Sugoro Quest: Quest of Dice Heros, The (Hack, English)</description>
+		<year>2007</year>
+		<manufacturer>AlanMidas</manufacturer>
+		<rom name="Sugoro Quest - Quest of Dice Heros, The T-Eng (2007)(AlanMidas).nes" size="262160" crc="d2cdeb7b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20381,11 +20504,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="thunderbolt2" sourcefile="nes/d_nes.cpp">
+	<game name="thunderbolt2" cloneof="thunderbolt" romof="thunderbolt" sourcefile="nes/d_nes.cpp">
 		<description>Thunderbolt 2 (Taiwan) (Unl)</description>
 		<year>1993</year>
 		<manufacturer>Gamtec</manufacturer>
 		<rom name="Thunderbolt 2 (Taiwan)(Unl)(1993)(Gamtec).nes" size="262160" crc="ce1813c9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="thunderbolt" sourcefile="nes/d_nes.cpp">
+		<description>Thunderbolt Fighting Plane (World)</description>
+		<year>1993-2019</year>
+		<manufacturer>Piko Interactive</manufacturer>
+		<rom name="Thunderbolt Fighting Plane (1993-2019)(Piko Interactive)" size="262160" crc="933e2aa8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21696,10 +21827,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="werew" sourcefile="nes/d_nes.cpp">
-		<description>Werewolf - The Last Warrior (USA)</description>
+		<description>Werewolf: The Last Warrior (USA)</description>
 		<year>1990</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Werewolf - The Last Warrior (USA)(1990)(Data East).nes" size="262160" crc="19af4032"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="westkids" cloneof="cowboykid" romof="cowboykid" sourcefile="nes/d_nes.cpp">
+		<description>Western Kids (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Visco Corp.</manufacturer>
+		<rom name="Western Kids (Japan)(1991)(Visco).nes" size="524304" crc="8c9bc742"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22024,7 +22163,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="wurm" sourcefile="nes/d_nes.cpp">
-		<description>Wurm - Journey to the Center of the Earth! (USA)</description>
+		<description>Wurm: Journey to the Center of the Earth! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Asmik</manufacturer>
 		<rom name="Wurm - Journey to the Center of the Earth! (USA)(1991)(Asmik).nes" size="262160" crc="c1133e82"/>
@@ -22078,6 +22217,14 @@
 		<year>2022</year>
 		<manufacturer>Rani Baker</manufacturer>
 		<rom name="Xiao Hong Mao - Little Red Hood OVERHAUL Project (2022)(Rani Baker).nes" size="40976" crc="58e376ec"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="xiaomali" sourcefile="nes/d_nes.cpp">
+		<description>Xiao Mali (China) (Unl)</description>
+		<year>1991</year>
+		<manufacturer>Nei-Hu</manufacturer>
+		<rom name="Xiao Mali (China)(Unl)(1991)(Nei-Hu).nes" size="24592" crc="c8f9a5ab"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22408,9 +22555,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="zelda1j" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
+		<description>Zelda no Densetsu 1: The Hyrule Fantasy (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Zelda no Densetsu 1 - The Hyrule Fantasy (Japan)(1992)(Nintendo).nes" size="131088" crc="92ac5e18"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="zeldanodenc" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
 		<comment>Hack, FDS to NES Hack</comment>
-		<description>Zelda no Densetsu - The Hyrule Fantasy (Hack, Chinese)</description>
+		<description>Zelda no Densetsu: The Hyrule Fantasy (Hack, Chinese)</description>
 		<year>2022</year>
 		<manufacturer>NOKOH</manufacturer>
 		<rom name="Zelda no Densetsu - The Hyrule Fantasy T-Chi (2022)(NOKOH).nes" size="131088" crc="4522aa89"/>

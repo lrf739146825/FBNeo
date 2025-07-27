@@ -1048,7 +1048,7 @@
 	</game>
 	<game name="linknobou" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Link no Bouken - The Legend of Zelda 2 (Hack, English)</description>
+		<description>Link no Bouken: The Legend of Zelda 2 (Hack, English)</description>
 		<year>2017</year>
 		<manufacturer>columbo</manufacturer>
 		<rom name="Link no Bouken - The Legend of Zelda 2 T-Eng (2017)(columbo).fds" size="131000" crc="359d3f2b"/>
@@ -1057,7 +1057,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="linknobouj" cloneof="linknobou" romof="linknobou" sourcefile="nes/d_nes.cpp">
-		<description>Link no Bouken - The Legend of Zelda 2 (Japan)</description>
+		<description>Link no Bouken: The Legend of Zelda 2 (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Link no Bouken - The Legend of Zelda 2 (Japan)(1987)(Nintendo).fds" size="131016" crc="a118214f"/>
@@ -1067,7 +1067,7 @@
 	</game>
 	<game name="linknobouc" cloneof="linknobou" romof="linknobou" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Link no Bouken - The Legend of Zelda II (Rev 1) (Hack, Spanish)</description>
+		<description>Link no Bouken: The Legend of Zelda II (Rev 1) (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Link no Bouken - The Legend of Zelda II (Rev 1) T-Spa (2019)(jackic).fds" size="131000" crc="60a26198"/>
@@ -1801,7 +1801,7 @@
 	</game>
 	<game name="zeldanoden" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Zelda no Densetsu - The Hyrule Fantasy (Hack, English v1.1)</description>
+		<description>Zelda no Densetsu: The Hyrule Fantasy (Hack, English v1.1)</description>
 		<year>2016</year>
 		<manufacturer>Jordiway73</manufacturer>
 		<rom name="Zelda no Densetsu - The Hyrule Fantasy T-Eng (2016)(Jordiway73).fds" size="131016" crc="ee11aa63"/>
@@ -1810,7 +1810,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="zeldanodenj" cloneof="zeldanoden" romof="zeldanoden" sourcefile="nes/d_nes.cpp">
-		<description>Zelda no Densetsu - The Hyrule Fantasy (Japan)</description>
+		<description>Zelda no Densetsu: The Hyrule Fantasy (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Zelda no Densetsu - The Hyrule Fantasy (Japan)(1986)(Nintendo).fds" size="131016" crc="3fbdddcd"/>

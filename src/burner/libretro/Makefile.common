@@ -224,7 +224,7 @@ INCLUDE_DIRS := $(FBNEO_BURNER_DIR)/win32 \
 	$(SH4_CPU_DIR) \
 	$(FBNEO_LIB_DIR)/zlib \
 	$(FBNEO_LIB_DIR)/lib7z \
-	$(FBNEO_LIB_DIR)/dr_lib \
+	$(FBNEO_LIB_DIR)/dr_libs \
 	$(CAPCOM_DIR) \
 	$(KONAMI_DIR) \
 	$(DATAEAST_DIR) \
