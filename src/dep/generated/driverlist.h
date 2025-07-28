@@ -17179,6 +17179,7 @@ DRV		BurnDrvsnes_Secretmana;
 DRV		BurnDrvsnes_Secretmanaplus;
 DRV		BurnDrvcv_moai;
 DRV		BurnDrvnes_necronancy;
+DRV		Burnmd_Sot4w;
 DRV		BurnDrvnes_secretties;
 DRV		BurnSpecSecrets;
 DRV		BurnDrvSectionza;
@@ -19699,6 +19700,7 @@ DRV		BurnDrvnes_supermarallstanes;
 DRV		BurnDrvsnes_Smallstarse;
 DRV		BurnDrvsnes_Smallstars;
 DRV		BurnDrvsnes_Smallstarsworlde;
+DRV		BurnDrvsnes_Smallstarswldttc;
 DRV		BurnDrvsnes_Smallstarsworld;
 DRV		BurnDrvnes_smbroop;
 DRV		BurnDrvnes_smb8en;
@@ -19731,6 +19733,7 @@ DRV		BurnDrvfds_supermarbro;
 DRV		BurnDrvfds_supermarbro2fix;
 DRV		BurnDrvfds_supermarbro2;
 DRV		BurnDrvfds_supermarbro2e;
+DRV		BurnDrvsnes_Smcollectionttc;
 DRV		BurnDrvsnes_Smcollection;
 DRV		BurnDrvsnes_Supermkarte;
 DRV		BurnDrvsnes_Supermkartj;
@@ -19743,6 +19746,7 @@ DRV		BurnDrvsnes_Smrpg;
 DRV		BurnDrvnes_smunlimdx;
 DRV		BurnDrvsnes_Supermarioworlde;
 DRV		BurnDrvsnes_Supermarioworldtp;
+DRV		BurnDrvsnes_Smworldttc;
 DRV		BurnDrvnes_supermarwor;
 DRV		BurnDrvsnes_Supermarioworld;
 DRV		BurnDrvsnes_Supermarioworld30th;
@@ -21158,7 +21162,6 @@ DRV		BurnDrvRoldfroga;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvSetaroul;		// no comment [NOT WORKING]
 #endif
-DRV		Burnmd_Sot4w;
 DRV		BurnDrvSimpsons2pa;
 DRV		BurnDrvSimpsons2pj;
 DRV		BurnDrvSimpsons2p;
@@ -40984,6 +40987,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Secretmanaplus,// Secret of Mana Plus (Hack, v2.04)
 	&BurnDrvcv_moai,			// Secret of Moai (SGM) (HB)
 	&BurnDrvnes_necronancy,		// Secret of NecroNancy, The (HB, Prototype)
+	&Burnmd_Sot4w,				// Secret of the 4 Winds, The (HB)
 	&BurnDrvnes_secretties,		// Secret Ties (USA, Prototype)
 	&BurnSpecSecrets,			// Secrets: Castle of Doom (48K) (HB)
 	&BurnDrvSectionza,			// Section Z (Japan, rev. A)
@@ -43504,6 +43508,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Smallstarse,	// Super Mario All-Stars (Euro)
 	&BurnDrvsnes_Smallstars,	// Super Mario All-Stars (USA)
 	&BurnDrvsnes_Smallstarsworlde,// Super Mario All-Stars + Super Mario World (Euro)
+	&BurnDrvsnes_Smallstarswldttc,// Super Mario All-Stars + Super Mario World (Hack, Traditional Chinese)
 	&BurnDrvsnes_Smallstarsworld,// Super Mario All-Stars + Super Mario World (USA)
 	&BurnDrvnes_smbroop,		// Super Mario Bro-Op (Hack, v1.1)
 	&BurnDrvnes_smb8en,			// Super Mario Bros 8 (GlobalHack, English)
@@ -43536,6 +43541,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvfds_supermarbro2fix,// Super Mario Brothers 2 (Hack, Bugs Fix)
 	&BurnDrvfds_supermarbro2,	// Super Mario Brothers 2 (Japan)
 	&BurnDrvfds_supermarbro2e,	// Super Mario Brothers 2 (Japan, DV 2)
+	&BurnDrvsnes_Smcollectionttc,// Super Mario Collection (Hack, Traditional Chinese v1.1)
 	&BurnDrvsnes_Smcollection,	// Super Mario Collection (Japan, Rev. 1)
 	&BurnDrvsnes_Supermkarte,	// Super Mario Kart (Euro)
 	&BurnDrvsnes_Supermkartj,	// Super Mario Kart (Japan)
@@ -43548,6 +43554,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_smunlimdx,		// Super Mario Unlimited Deluxe (GlobalHack, v2.4)
 	&BurnDrvsnes_Supermarioworlde,// Super Mario World (Euro, Rev. 1)
 	&BurnDrvsnes_Supermarioworldtp,// Super Mario World (Hack, Portuguese v2.0)
+	&BurnDrvsnes_Smworldttc,	// Super Mario World (Hack, Traditional Chinese)
 	&BurnDrvnes_supermarwor,	// Super Mario World (Taiwan) (Unl)
 	&BurnDrvsnes_Supermarioworld,// Super Mario World (USA)
 	&BurnDrvsnes_Supermarioworld30th,// Super Mario World - 30th Anniversary Edition (Hack)
@@ -44963,7 +44970,6 @@ static struct BurnDriver* pDriver[] = {
 #if defined FBNEO_DEBUG
 	&BurnDrvSetaroul,			// The Roulette (Visco) [no comment, NOT WORKING]
 #endif
-	&Burnmd_Sot4w,				// The Secret of the 4 Winds
 	&BurnDrvSimpsons2pa,		// The Simpsons (2 Players Asia)
 	&BurnDrvSimpsons2pj,		// The Simpsons (2 Players Japan)
 	&BurnDrvSimpsons2p,			// The Simpsons (2 Players World, set 1)
@@ -64655,6 +64661,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_secretmanaplus", "snes/d_snes.cpp"},
 	{ "cv_moai", "coleco/d_coleco.cpp"},
 	{ "nes_necronancy", "nes/d_nes.cpp"},
+	{ "md_sot4w", "megadrive/d_megadrive.cpp"},
 	{ "nes_secretties", "nes/d_nes.cpp"},
 	{ "spec_secrets", "spectrum/d_spectrum.cpp"},
 	{ "sectionza", "pre90s/d_lwings.cpp"},
@@ -67137,6 +67144,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_smallstarse", "snes/d_snes.cpp"},
 	{ "snes_smallstars", "snes/d_snes.cpp"},
 	{ "snes_smallstarsworlde", "snes/d_snes.cpp"},
+	{ "snes_smallstarswldttc", "snes/d_snes.cpp"},
 	{ "snes_smallstarsworld", "snes/d_snes.cpp"},
 	{ "nes_smbroop", "nes/d_nes.cpp"},
 	{ "nes_smb8en", "nes/d_nes.cpp"},
@@ -67169,6 +67177,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "fds_supermarbro2fix", "nes/d_nes.cpp"},
 	{ "fds_supermarbro2", "nes/d_nes.cpp"},
 	{ "fds_supermarbro2e", "nes/d_nes.cpp"},
+	{ "snes_smcollectionttc", "snes/d_snes.cpp"},
 	{ "snes_smcollection", "snes/d_snes.cpp"},
 	{ "snes_supermkarte", "snes/d_snes.cpp"},
 	{ "snes_supermkartj", "snes/d_snes.cpp"},
@@ -67181,6 +67190,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_smunlimdx", "nes/d_nes.cpp"},
 	{ "snes_supermarioworlde", "snes/d_snes.cpp"},
 	{ "snes_supermarioworldtp", "snes/d_snes.cpp"},
+	{ "snes_smworldttc", "snes/d_snes.cpp"},
 	{ "nes_supermarwor", "nes/d_nes.cpp"},
 	{ "snes_supermarioworld", "snes/d_snes.cpp"},
 	{ "snes_supermarioworld30th", "snes/d_snes.cpp"},
@@ -68588,7 +68598,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "roldfrog", "pst90s/d_splash.cpp"},
 	{ "roldfroga", "pst90s/d_splash.cpp"},
 	{ "setaroul", "pst90s/d_seta.cpp"},
-	{ "md_sot4w", "megadrive/d_megadrive.cpp"},
 	{ "simpsons2pa", "konami/d_simpsons.cpp"},
 	{ "simpsons2pj", "konami/d_simpsons.cpp"},
 	{ "simpsons2p", "konami/d_simpsons.cpp"},
