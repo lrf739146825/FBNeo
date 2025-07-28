@@ -20516,7 +20516,7 @@
 		<description>Thunderbolt Fighting Plane (World)</description>
 		<year>1993-2019</year>
 		<manufacturer>Piko Interactive</manufacturer>
-		<rom name="Thunderbolt Fighting Plane (1993-2019)(Piko Interactive)" size="262160" crc="933e2aa8"/>
+		<rom name="Thunderbolt Fighting Plane (1993-2019)(Piko Interactive).nes" size="262160" crc="933e2aa8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

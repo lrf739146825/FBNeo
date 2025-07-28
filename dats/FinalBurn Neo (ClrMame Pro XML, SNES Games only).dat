@@ -15567,11 +15567,29 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="smallstarswldttc" cloneof="smallstarsworld" romof="smallstarsworld" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario All-Stars + Super Mario World (Hack, Traditional Chinese)</description>
+		<year>2025</year>
+		<manufacturer>NOKOH</manufacturer>
+		<rom name="Super Mario All-Stars + Super Mario World T-Cht (2025)(NOKOH).sfc" size="4194304" crc="438960ae"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="smallstarsworld" sourcefile="snes/d_snes.cpp">
 		<description>Super Mario All-Stars + Super Mario World (USA)</description>
 		<year>1993</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Super Mario All-Stars + Super Mario World (U)(1993)(Nintendo).sfc" size="2621440" crc="f84305b1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smcollectionttc" cloneof="smallstars" romof="smallstars" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario Collection (Hack, Traditional Chinese v1.1)</description>
+		<year>2025</year>
+		<manufacturer>NOKOH</manufacturer>
+		<rom name="Super Mario Collection T-Cht v1.1 (2025)(NOKOH).sfc" size="4194304" crc="761f5b75"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15673,6 +15691,15 @@
 		<year>2022</year>
 		<manufacturer>bMatSantos</manufacturer>
 		<rom name="Super Mario World PT-BR v2.0 (2022)(bMatSantos).sfc" size="1048576" crc="cf28cbdc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smworldttc" cloneof="supermarioworld" romof="supermarioworld" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario World (Hack, Traditional Chinese)</description>
+		<year>2025</year>
+		<manufacturer>NOKOH</manufacturer>
+		<rom name="Super Mario World T-Cht (2025)(NOKOH).sfc" size="786432" crc="dc68b8cb"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
