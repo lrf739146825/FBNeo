@@ -3652,6 +3652,12 @@
     <ClCompile Include="..\..\src\burn\snd\astrocde_snd.cpp">
       <Filter>burn\snd</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\burner\win32\mbtwc.cpp">
+      <Filter>burner\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\burn\drv\pst90s\d_igs011.cpp">
+      <Filter>burn\drv\pst90s</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="burn">
