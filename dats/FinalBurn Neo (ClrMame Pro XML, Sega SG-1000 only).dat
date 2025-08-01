@@ -16,7 +16,7 @@
 		<description>007 James Bond (Japan, v2.6, OMV)</description>
 		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="007 james bond [v2.6] [40k map].bin" size="40960" crc="a8b5b57f"/>
+		<rom name="007 James Bond (Japan, v2.6, OMV)(1984)(Tsukuda Original).sg" size="40960" crc="a8b5b57f"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -24,15 +24,15 @@
 		<description>007 James Bond (Japan, v2.7, OMV)</description>
 		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="james bond 007 (japan) (v2.7) (om).bin" size="16384" crc="90160849"/>
+		<rom name="007 James Bond (Japan, v2.7, OMV)(1984)(Tsukuda Original).sg" size="16384" crc="90160849"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="jb007t" cloneof="jb007" romof="jb007" sourcefile="sg1000/d_sg1000.cpp">
 		<description>007 James Bond (Taiwan)</description>
-		<year>1984?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="james bond 007 (tw).bin" size="16384" crc="76d6c64d"/>
+		<rom name="007 James Bond (Taiwan)(198x)(Aaronix).sg" size="16384" crc="76d6c64d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -90,7 +90,7 @@
 	</game>
 	<game name="blckonyxee" cloneof="blckonyx" romof="blckonyx" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Hack</comment>
-		<description>Black Onyx Enhanced, The (Hack, T-Eng)</description>
+		<description>Black Onyx Enhanced, The (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>SSTranslations</manufacturer>
 		<rom name="Black Onyx Enhanced, the T-Eng (2010)(SSTranslations).sg" size="65535" crc="3003d9bd"/>
@@ -99,7 +99,7 @@
 	</game>
 	<game name="blckonyxe" cloneof="blckonyx" romof="blckonyx" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Hack</comment>
-		<description>Black Onyx, The (Hack, T-Eng)</description>
+		<description>Black Onyx, The (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>SSTranslations</manufacturer>
 		<rom name="Black Onyx, the T-Eng (2010)(SSTranslations).sg" size="65535" crc="626e30cc"/>
@@ -176,6 +176,14 @@
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="C_So! (Japan)(1985)(Sega).sg" size="32768" crc="be7ed0eb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csot" cloneof="cso" romof="cso" sourcefile="sg1000/d_sg1000.cpp">
+		<description>C_So! (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="C_So! (Taiwan)(198x).sg" size="32768" crc="82c4e3e5"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -347,6 +355,14 @@
 		<year>198?</year>
 		<manufacturer>Samsung</manufacturer>
 		<rom name="Champion Ice Hockey (Korea)(198x)(Samsung).sg" size="32768" crc="ec0b862c"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="champicet" cloneof="champice" romof="champice" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Champion Ice Hockey ~ Qugunqiu (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Champion Ice Hockey - Qugunqiu (Taiwan)(198x).sg" size="32768" crc="c6e5192f"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -539,6 +555,14 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dacike" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Da Cike ~ Yie Ar Kung-Fu II (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>DahJee</manufacturer>
+		<rom name="Da Cike - Yie Ar Kung-Fu II (Taiwan)(198x)(DahJee).sg" size="49152" crc="fc87463c"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dayu" cloneof="chackn" romof="chackn" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Da Yu ~ Chack'n Pop</description>
 		<year>198?</year>
@@ -549,9 +573,9 @@
 	</game>
 	<game name="elevatort" cloneof="elevator" romof="elevator" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Die Dui Die (Taiwan)</description>
-		<year>1985?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="elevator action (tw).bin" size="32768" crc="6846e36d"/>
+		<rom name="Die Dui Die (Taiwan)(198x)(Aaronix).sg" size="32768" crc="6846e36d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -559,7 +583,7 @@
 		<description>Dokidoki Penguin Land (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dokidoki penguin land (japan).bin" size="32768" crc="346556b9"/>
+		<rom name="Dokidoki Penguin Land (Japan)(1985)(Sega).sg" size="32768" crc="346556b9"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -567,7 +591,7 @@
 		<description>Dragon Wang (Japan, v0)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dragon wang (japan) (alt).bin" size="32768" crc="60f30138"/>
+		<rom name="Dragon Wang (Japan, v0)(1985)(Sega).sg" size="32768" crc="60f30138"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -575,7 +599,24 @@
 		<description>Dragon Wang (Japan, v1)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="dragon wang (japan).bin" size="32768" crc="99c3de21"/>
+		<rom name="Dragon Wang (Japan, v1)(1985)(Sega).sg" size="32768" crc="99c3de21"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jingwumn" cloneof="dragwang" romof="dragwang" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Dragon Wang ~ Jing Wumen (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>Aaronix</manufacturer>
+		<rom name="Dragon Wang - Jing Wumen (Taiwan)(198x)(Aaronix).sg" size="32768" crc="7c7d4397"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jingwumna" cloneof="dragwang" romof="dragwang" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>English logo</comment>
+		<description>Dragon Wang ~ Jing Wumen (Taiwan, Alt)</description>
+		<year>198?</year>
+		<manufacturer>Aaronix</manufacturer>
+		<rom name="Dragon Wang - Jing Wumen (Taiwan, Alt)(198x)(Aaronix).sg" size="32768" crc="6f94e5c0"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -591,15 +632,15 @@
 		<description>Drol (Korea)</description>
 		<year>198?</year>
 		<manufacturer>Samsung</manufacturer>
-		<rom name="drol (kr).bin" size="32768" crc="1d7c53bb"/>
+		<rom name="Drol (Korea)(198x)(Samsung).sg" size="32768" crc="1d7c53bb"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="drolt" cloneof="drol" romof="drol" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Drol (Taiwan)</description>
-		<year>1985?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="drol (tw).bin" size="32768" crc="b7fc033d"/>
+		<rom name="Drol (Taiwan)(198x)(Aaronix).sg" size="32768" crc="b7fc033d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -607,7 +648,7 @@
 		<description>Elevator Action (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="elevator action (japan).bin" size="32768" crc="5af8f69d"/>
+		<rom name="Elevator Action (Japan)(1985)(Sega).sg" size="32768" crc="5af8f69d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -615,7 +656,7 @@
 		<description>Exerion (Euro, Japan)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-5692.ic1" size="16384" crc="a2c45b61"/>
+		<rom name="Exerion (Euro, Japan)(1983)(Sega).sg" size="16384" crc="a2c45b61"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -623,15 +664,15 @@
 		<description>Exerion (Korea)</description>
 		<year>198?</year>
 		<manufacturer>Samsung</manufacturer>
-		<rom name="exerion (kr).bin" size="32768" crc="fc628d0d"/>
+		<rom name="Exerion (Korea)(198x)(Samsung).sg" size="32768" crc="fc628d0d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="exeriont" cloneof="exerion" romof="exerion" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Exerion (Taiwan)</description>
-		<year>1983?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="exerion (tw).bin" size="16384" crc="b5c84a32"/>
+		<rom name="Exerion (Taiwan)(198x)(Aaronix).sg" size="16384" crc="b5c84a32"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -671,7 +712,7 @@
 		<description>Flicky (Japan, v0)</description>
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="flicky (japan).bin" size="32768" crc="bd24d27b"/>
+		<rom name="Flicky (Japan, v0)(1984)(Sega).sg" size="32768" crc="bd24d27b"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -679,15 +720,15 @@
 		<description>Flicky (Japan, v1)</description>
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="flicky [v1].bin" size="32768" crc="26d2862c"/>
+		<rom name="Flicky (Japan, v1)(1984)(Sega).sg" size="32768" crc="26d2862c"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="flickyt" cloneof="flicky" romof="flicky" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Flicky (Taiwan)</description>
-		<year>1984?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="flicky (tw).bin" size="32768" crc="cd0666a7"/>
+		<rom name="Flicky (Taiwan)(198x)(Aaronix).sg" size="32768" crc="cd0666a7"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -809,7 +850,7 @@
 		<description>H.E.R.O. (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="h.e.r.o. (japan).bin" size="32768" crc="4587de6e"/>
+		<rom name="H.E.R.O. (Japan)(1985)(Sega).sg" size="32768" crc="4587de6e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -817,23 +858,24 @@
 		<description>Hang-On II (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="hang-on ii (japan).bin" size="32768" crc="9be3c6bd"/>
+		<rom name="Hang-On II (Japan)(1985)(Sega).sg" size="32768" crc="9be3c6bd"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hangon2t1" cloneof="hangon2" romof="hangon2" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>English logo</comment>
 		<description>Hang-On II (Taiwan)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="hang-on ii [english logo] (tw).bin" size="32768" crc="cabd451b"/>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Hang-On II (Taiwan)(198x).sg" size="32768" crc="cabd451b"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="heibaiqi" cloneof="othello" romof="othello" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Hei Bai Qi (Taiwan)</description>
-		<year>1985?</year>
+		<description>Heibai Qi (Taiwan)</description>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="othello (tw).bin" size="32768" crc="1d1a0ca3"/>
+		<rom name="Heibai Qi (Taiwan)(198x)(Aaronix).sg" size="32768" crc="1d1a0ca3"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -841,7 +883,7 @@
 		<description>Home Mahjong (Japan, v0)</description>
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="home mahjong (japan) (v1.0).bin" size="49152" crc="c9d1ae7d"/>
+		<rom name="Home Mahjong (Japan, v0)(1984)(Sega).sg" size="49152" crc="c9d1ae7d"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -849,7 +891,7 @@
 		<description>Home Mahjong (Japan, v1)</description>
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="home mahjong (japan) (v1.1).bin" size="49152" crc="e7e0f0e3"/>
+		<rom name="Home Mahjong (Japan, v1)(1984)(Sega).sg" size="49152" crc="e7e0f0e3"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -863,10 +905,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="huohuli" cloneof="zoom909" romof="zoom909" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Huo Hu Li ~ Zoom 909 (Taiwan)</description>
-		<year>1985?</year>
+		<description>Huo Huli ~ Zoom 909 (Taiwan)</description>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="Huo Hu Li (Taiwan)(198x)(Aaronix).sg" size="32768" crc="9943fc2b"/>
+		<rom name="Huo Huli (Taiwan)(198x)(Aaronix).sg" size="32768" crc="9943fc2b"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -920,9 +962,9 @@
 	</game>
 	<game name="iq" cloneof="sokoban" romof="sokoban" sourcefile="sg1000/d_sg1000.cpp">
 		<description>I.Q. (Korea)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="soukoban [iq logo] (kr).bin" size="32768" crc="89bafec5"/>
+		<year>1985</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="I.Q. (Korea)(1985).sg" size="32768" crc="89bafec5"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -943,22 +985,6 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="jingwumn" cloneof="dragwang" romof="dragwang" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Jing Wu Men (Taiwan)</description>
-		<year>1985?</year>
-		<manufacturer>Aaronix</manufacturer>
-		<rom name="dragon wang (tw).bin" size="32768" crc="7c7d4397"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="jingwumna" cloneof="dragwang" romof="dragwang" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Jing Wu Men (Taiwan, Alt)</description>
-		<year>1985?</year>
-		<manufacturer>Aaronix</manufacturer>
-		<rom name="dragon wang [v0] [english logo] (tw).bin" size="32768" crc="6f94e5c0"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="jinzita" sourcefile="sg1000/d_sg1000.cpp">
 		<description>King's Valley, Jinzita (Taiwan)</description>
 		<year>198?</year>
@@ -973,14 +999,6 @@
 		<year>2020</year>
 		<manufacturer>Under4Mhz</manufacturer>
 		<rom name="Klondike Solitaire v1.04 (2020)(Under4Mhz).sg" size="32768" crc="5f9f8b15"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="moyuchua" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Knightmare, Moyu Chuanqi (Taiwan)</description>
-		<year>1986?</year>
-		<manufacturer>Jumbo</manufacturer>
-		<rom name="knightmare [jumbo] (tw).bin" size="49152" crc="281d2888"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1008,6 +1026,14 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cloderunt" cloneof="cloderun" romof="cloderun" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Lode Runner II ~ Xun bao er dai (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Xun bao er dai (Taiwan)(198x).sg" size="32768" crc="ec95ebcb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mkidwiz" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Stuck at boot logo?</comment>
 		<description>Magical Kid Wiz (Taiwan)</description>
@@ -1029,7 +1055,7 @@
 		<description>Mahjong (Japan)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mahjong (japan).bin" size="24576" crc="6d909857"/>
+		<rom name="Mahjong (Japan)(1983)(Sega).sg" size="24576" crc="6d909857"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1037,15 +1063,15 @@
 		<description>Mahjong (Japan, Alt)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mahjong [big 1983].bin" size="24576" crc="1c137cab"/>
+		<rom name="Mahjong (Japan, Alt)(1983)(Sega).sg" size="24576" crc="1c137cab"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mahjongt" cloneof="mahjong" romof="mahjong" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Mahjong (Taiwan)</description>
-		<year>1983?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="mahjong (tw).bin" size="24576" crc="bc823a89"/>
+		<rom name="Mahjong (Taiwan)(198x)(Aaronix).sg" size="24576" crc="bc823a89"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1093,11 +1119,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="moyuchua" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Mo Yu Chuanqi ~ Knightmare (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>Jumbo</manufacturer>
+		<rom name="Mo Yu Chuanqi ~ Knightmare (Taiwan)(198x)(Jumbo).sg" size="49152" crc="281d2888"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="monacogpb" cloneof="monacogp" romof="monacogp" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Monaco GP (Japan, v0)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="monaco gp [24k].bin" size="40960" crc="8572d73a"/>
+		<rom name="Monaco GP (Japan, v0)(1983)(Sega).sg" size="40960" crc="8572d73a"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1105,7 +1139,7 @@
 		<description>Monaco GP (Japan, v1)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="monaco gp [32k].bin" size="32768" crc="da2d57f3"/>
+		<rom name="Monaco GP (Japan, v1)(1983)(Sega).sg" size="32768" crc="da2d57f3"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1113,23 +1147,24 @@
 		<description>Monaco GP (Japan, v2)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="monaco gp [32k] [v2].bin" size="32768" crc="02e5d66a"/>
+		<rom name="Monaco GP (Japan, v2)(1983)(Sega).sg" size="32768" crc="02e5d66a"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="monacogpt" cloneof="monacogp" romof="monacogp" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Monaco GP (Taiwan)</description>
-		<year>1983?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="monaco gp (tw).bin" size="32768" crc="01cda679"/>
+		<rom name="Monaco GP (Taiwan)(198x)(Aaronix).sg" size="32768" crc="01cda679"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="hangon2t2" cloneof="hangon2" romof="hangon2" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Chinese logo</comment>
 		<description>Motuo Feiche (Taiwan)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="hang-on ii [chinese logo] (tw).bin" size="32768" crc="e98a111e"/>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Motuo Feiche (Taiwan)(198x).sg" size="32768" crc="e98a111e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1145,7 +1180,7 @@
 		<description>N-Sub (Euro?)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="n-sub (europe) (1988).bin" size="16384" crc="09196fc5"/>
+		<rom name="N-Sub (1988)(Sega).sg" size="16384" crc="09196fc5"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1153,7 +1188,7 @@
 		<description>N-Sub (Japan)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="n-sub [16k].bin" size="16384" crc="652bbd1e"/>
+		<rom name="N-Sub (Japan)(1983)(Sega).sg" size="16384" crc="652bbd1e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1161,24 +1196,24 @@
 		<description>N-Sub (Japan, Alt)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="n-sub [40k].bin" size="40960" crc="b377d6e1"/>
+		<rom name="N-Sub (Japan, Alt)(1983)(Sega).sg" size="40960" crc="b377d6e1"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="nsubt" cloneof="nsub" romof="nsub" sourcefile="sg1000/d_sg1000.cpp">
 		<description>N-Sub (Taiwan)</description>
-		<year>1983?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="n-sub (tw).bin" size="16384" crc="3e371769"/>
+		<rom name="N-Sub (Taiwan)(198x)(Aaronix).sg" size="16384" crc="3e371769"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="ninjaprie" cloneof="ninjapri" romof="ninjapri" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Hack</comment>
-		<description>Ninja Princess (Hack, T-Eng)</description>
+		<description>Ninja Princess (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>goldenband</manufacturer>
-		<rom name="Ninja Princess (T-Eng)(2010)(goldenband).bin" size="32768" crc="bdb6cf0e"/>
+		<rom name="Ninja Princess T-Eng (2010)(goldenband).bin" size="32768" crc="bdb6cf0e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1186,39 +1221,39 @@
 		<description>Ninja Princess (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="ninja princess (japan).bin" size="32768" crc="3b912408"/>
+		<rom name="Ninja Princess (Japan)(1986)(Sega).sg" size="32768" crc="3b912408"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="matchpg" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Okamoto Ayako no Match Play Golf (Japan, OMV)</description>
-		<year>1984?</year>
+		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="okamoto ayako no match play golf [b] (jp).bin" size="32768" crc="49d3db2c"/>
+		<rom name="Okamoto Ayako no Match Play Golf (Japan, OMV)(1984)(Tsukuda Original).sg" size="32768" crc="49d3db2c"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="matchpga" cloneof="matchpg" romof="matchpg" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Okamoto Ayako no Match Play Golf (Japan, OMV, Alt)</description>
-		<year>1984?</year>
+		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="okamoto ayako no match play golf [a] (jp).bin" size="32768" crc="547dd7fd"/>
+		<rom name="Okamoto Ayako no Match Play Golf (Japan, OMV, Alt)(1984)(Tsukuda Original).sg" size="32768" crc="547dd7fd"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="matchpgt" cloneof="matchpg" romof="matchpg" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Okamoto Ayako no Match Play Golf (Taiwan)</description>
-		<year>1984?</year>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="okamoto ayako no match play golf (tw).bin" size="32768" crc="b60492d5"/>
+		<rom name="Okamoto Ayako no Match Play Golf (Taiwan)(198x)(Aaronix).sg" size="32768" crc="b60492d5"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="orguss" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Orguss (Euro, Japan)</description>
+		<description>Orguss (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-5743.ic1" size="32768" crc="f4f78b76"/>
+		<rom name="Orguss (Japan)(1984)(Sega).sg" size="32768" crc="f4f78b76"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1226,15 +1261,15 @@
 		<description>Othello (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="othello (japan).bin" size="32768" crc="af4f14bc"/>
+		<rom name="Othello (Japan)(1985)(Sega).sg" size="32768" crc="af4f14bc"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pacar" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Pacar (Euro, Japan)</description>
+		<description>Pacar (Japan)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-5556.ic1" size="16384" crc="30c52e5e"/>
+		<rom name="Pacar (Japan)(1983)(Sega).sg" size="16384" crc="30c52e5e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1242,7 +1277,7 @@
 		<description>Pacar (Japan, Alt)</description>
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="pacar [40k map].bin" size="40960" crc="19949375"/>
+		<rom name="Pacar (Japan, Alt)(1983)(Sega).sg" size="40960" crc="19949375"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1250,7 +1285,7 @@
 		<description>Pacar (Taiwan)</description>
 		<year>1983?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="pacar (tw).bin" size="16384" crc="dd6817a0"/>
+		<rom name="Pacar (Taiwan)(198x)(Aaronix).sg" size="16384" crc="dd6817a0"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1354,26 +1389,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="qie" cloneof="dokidoki" romof="dokidoki" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Qi E (Taiwan)</description>
-		<year>1985?</year>
+		<description>Qi E ~ Dokidoki Penguin Land (Taiwan)</description>
+		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
-		<rom name="doki doki penguin land (19xx)(-)(tw).bin" size="32768" crc="fdc095bc"/>
+		<rom name="Qi E - Dokidoki Penguin Land (Taiwan)(198x)(Aaronix).sg" size="32768" crc="fdc095bc"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="herot" cloneof="hero" romof="hero" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Qing Feng Xia (Taiwan)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="h.e.r.o. (tw).bin" size="32768" crc="83958998"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="champicet" cloneof="champice" romof="champice" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Qugunqiu (Taiwan)</description>
 		<year>198?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Qugunqiu (Taiwan)(198x).sg" size="32768" crc="c6e5192f"/>
+		<rom name="Qing Feng Xia (Taiwan)(198x).sg" size="32768" crc="83958998"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1387,9 +1414,9 @@
 	</game>
 	<game name="ninjaprit" cloneof="ninjapri" romof="ninjapri" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Renzhe Gongzhu (Taiwan)</description>
-		<year>1986?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="ninja princess (tw).bin" size="32768" crc="464d144b"/>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Renzhe Gongzhu (Taiwan)(198x).sg" size="32768" crc="464d144b"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1538,6 +1565,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sxpao" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Shuangxiang Pao ~ Twinbee (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>Jumbo</manufacturer>
+		<rom name="Shuangxiang Pao - Twinbee (Taiwan)(198x)(Jumbo).sg" size="49152" crc="c550b4f0"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="homemjt" cloneof="homemj" romof="homemj" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Si Ren Maque (Taiwan)</description>
+		<year>198?</year>
+		<manufacturer>Aaronix</manufacturer>
+		<rom name="Si Ren Maque (Taiwan)(198x)(Aaronix).sg" size="49152" crc="0583a9fa"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sindbadm" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Sindbad Mystery (Euro, Japan)</description>
 		<year>1983</year>
@@ -1563,27 +1606,36 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="solarfoxii" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Solar Fox II (HB)</description>
+		<year>2025</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Solar Fox II (2025)(Jess Creations).sg" size="40960" crc="2ce5cf6f"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sokoban" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Soukoban (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="soukoban (japan).bin" size="32768" crc="922c5468"/>
+		<rom name="Soukoban (Japan)(1985)(Sega).sg" size="32768" crc="922c5468"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sokobank" cloneof="sokoban" romof="sokoban" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Soukoban (Korea)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="soukoban (kr).bin" size="32768" crc="148ea752"/>
+		<year>1989</year>
+		<manufacturer>Samsung</manufacturer>
+		<rom name="Soukoban (Korea)(1989)(Samsung).sg" size="32768" crc="148ea752"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sokobant" cloneof="sokoban" romof="sokoban" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Soukoban (Taiwan)</description>
-		<year>1985?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="soukoban (tw).bin" size="32768" crc="a2c3fc97"/>
+		<year>198?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Soukoban (Taiwan)(198x).sg" size="32768" crc="a2c3fc97"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1591,7 +1643,7 @@
 		<description>Space Armor (Japan, v10, OMV)</description>
 		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="space armor [v0] [40k map].bin" size="40960" crc="d23b0e3e"/>
+		<rom name="Space Armor (Japan, v10, OMV)(1984)(Tsukuda Original).sg" size="40960" crc="d23b0e3e"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1599,7 +1651,7 @@
 		<description>Space Armor (Japan, v20, OMV)</description>
 		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="space armor [v2].bin" size="16384" crc="ac4f0a5c"/>
+		<rom name="Space Armor (Japan, v20, OMV)(1984)(Tsukuda Original).sg" size="16384" crc="ac4f0a5c"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1607,7 +1659,7 @@
 		<description>Space Armor (Japan, v20, OMV, Alt)</description>
 		<year>1984</year>
 		<manufacturer>Tsukuda Original</manufacturer>
-		<rom name="space armor [v1].bin" size="16384" crc="d5fdb4a3"/>
+		<rom name="Space Armor (Japan, v20, OMV, Alt)(1984)(Tsukuda Original).sg" size="16384" crc="d5fdb4a3"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1733,22 +1785,6 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wboyt" cloneof="wboy" romof="wboy" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Taotailang (Taiwan)</description>
-		<year>198?</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Taotailang (Taiwan)(198x).sg" size="32768" crc="953fc2b2"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="sxpao" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Twinbee (Taiwan)</description>
-		<year>1986?</year>
-		<manufacturer>Jumbo</manufacturer>
-		<rom name="twinbee [jumbo] (tw).bin" size="49152" crc="c550b4f0"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="ultdungesc" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Homebrew</comment>
 		<description>Ultimate Dungeon Escape (HB)</description>
@@ -1764,14 +1800,6 @@
 		<year>2020-23</year>
 		<manufacturer>Under4Mhz</manufacturer>
 		<rom name="Vexed v1.08 (2023)(Under4Mhz).sg" size="32768" crc="124b2a43"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="csot" cloneof="cso" romof="cso" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Wanpi Gui (Taiwan)</description>
-		<year>198?</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Wanpi Gui (Taiwan)(198x).sg" size="32768" crc="82c4e3e5"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1800,11 +1828,11 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="cloderunt" cloneof="cloderun" romof="cloderun" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Xun Bao Er Dai (Taiwan)</description>
+	<game name="wboyt" cloneof="wboy" romof="wboy" sourcefile="sg1000/d_sg1000.cpp">
+		<description>Wonder Boy (Taiwan)</description>
 		<year>198?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Xun Bao Er Dai (Taiwan)(198x).sg" size="32768" crc="ec95ebcb"/>
+		<rom name="Wonder Boy (Taiwan)(198x).sg" size="32768" crc="953fc2b2"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1855,22 +1883,6 @@
 		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
 		<rom name="Yie Ar Kung-Fu (Taiwan)(198x)(Aaronix).sg" size="32768" crc="bb0f1930"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="dacike" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Yie Ar Kung-Fu II, Da Cike (Taiwan)</description>
-		<year>1986?</year>
-		<manufacturer>DahJee</manufacturer>
-		<rom name="yie ar kung-fu ii [dahjee] (tw).bin" size="49152" crc="fc87463c"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="homemjt" cloneof="homemj" romof="homemj" sourcefile="sg1000/d_sg1000.cpp">
-		<description>Yon-nin Mahjong (Taiwan)</description>
-		<year>1984?</year>
-		<manufacturer>Aaronix</manufacturer>
-		<rom name="home mahjong (tw).bin" size="49152" crc="0583a9fa"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

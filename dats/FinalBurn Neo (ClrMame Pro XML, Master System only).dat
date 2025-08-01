@@ -3216,6 +3216,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kenseidpt" cloneof="kenseid" romof="kenseid" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Kenseiden (Hack, Portuguese v1.4)</description>
+		<year>2020</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Kenseiden T-Por v1.4 (2020)(PO.B.R.E.).sms" size="262144" crc="495a613c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kenseidj" cloneof="kenseid" romof="kenseid" sourcefile="sms/d_sms.cpp">
 		<description>Kenseiden (Japan)</description>
 		<year>1988</year>
@@ -3624,6 +3633,15 @@
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Master of Darkness T-Spa v1.2 (2018)(Wave).sms" size="262144" crc="56aff22c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mastdarkpt" cloneof="mastdark" romof="mastdark" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Master of Darkness ~ Mestre das Trevas (Hack, Portuguese)</description>
+		<year>2017</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Master of Darkness - Mestre das Trevas T-Por (2017)(PO.B.R.E.).sms" size="262144" crc="30703780"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6818,6 +6836,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="zillionpt" cloneof="zillion" romof="zillion" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Zillion (Hack, Portuguese v1.2)</description>
+		<year>2008-2020</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Zillion T-Por v1.2 (2008-2020)(PO.B.R.E.).sms" size="131072" crc="ce74ab80"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zilliona" cloneof="zillion" romof="zillion" sourcefile="sms/d_sms.cpp">
 		<description>Zillion (USA, v1.1)</description>
 		<year>1987</year>
@@ -6831,6 +6858,15 @@
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Zillion II - The Tri Formation (World)(1987)(Sega).sms" size="131072" crc="2f2e3bc9"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zillion2pt" cloneof="zillion2" romof="zillion2" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Zillion II: The Tri Formation (Hack, Portuguese v1.1)</description>
+		<year>2009-2020</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Zillion - II The Tri Formation T-Por v1.1 (2009-2020)(PO.B.R.E.).sms" size="131072" crc="70846349"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

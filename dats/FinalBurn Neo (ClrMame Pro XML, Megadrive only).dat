@@ -877,7 +877,7 @@
 	</game>
 	<game name="genchohic" cloneof="genghis2" romof="genghis2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Aoki Ookami to Shiroki Mejika - Genchou Hishi (Hack, Chinese)</description>
+		<description>Aoki Ookami to Shiroki Mejika: Genchou Hishi (Hack, Chinese)</description>
 		<year>199?</year>
 		<manufacturer>SKOB</manufacturer>
 		<rom name="Aoki Ookami to Shiroki Mejika - Genchou Hishi T-Chi (199x)(SKOB).bin" size="1310720" crc="7c161c48"/>
@@ -1154,6 +1154,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="atomrobopt" cloneof="atomrobo" romof="atomrobo" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Atomic Robo-Kid (Hack, Portuguese v1.11)</description>
+		<year>2019</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="Atomic Robo-Kid PT-BR v1.11 (2019)(Antigeno).bin" size="524288" crc="c0cbbca8"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="atomrobos" cloneof="atomrobo" romof="atomrobo" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Atomic Robo-Kid (Hack, Spanish)</description>
@@ -1184,6 +1193,15 @@
 		<year>1992</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Atomic Runner (Euro)(1992)(Data East).bin" size="1048576" crc="b3c05418"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="atomrunpt" cloneof="atomrun" romof="atomrun" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Atomic Runner (Hack, Portuguese v1.05)</description>
+		<year>2019</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="Atomic Runner PT-BR v1.05 (2019)(Antigeno).bin" size="1048576" crc="458c12f6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1646,7 +1664,7 @@
 		<comment>Hack, Audio fix hack</comment>
 		<description>Barver Battle Saga (China) (Hack)</description>
 		<year>2023</year>
-		<manufacturer>Chuanpu / Ken_Tse</manufacturer>
+		<manufacturer>Chuanpu, Ken_Tse</manufacturer>
 		<rom name="Tai Kong Zhan Shi (Chinese)" size="2097152" crc="5c70016a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4821,9 +4839,9 @@
 	</game>
 	<game name="dgwcyscs" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Di Guo Wang Chao - Ya Se Chuan Shuo (Chinese)</description>
+		<description>Di Guo Wang Chao: Ya Se Chuan Shuo (Chinese)</description>
 		<year>2023</year>
-		<manufacturer>Chuan Pu Ke Ji / Ken_Tse</manufacturer>
+		<manufacturer>Chuanpu, Ken_Tse</manufacturer>
 		<rom name="Di Guo Wang Chao - Ya Se Chuan Shuo (Chinese)" size="2097152" crc="87ac7f92"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -5759,6 +5777,33 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion (English)(HB)</description>
+		<year>2025</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion (En)(2025)(Ancient).bin" size="7864320" crc="f2cc6b7e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionj" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion (Japanese)(HB)</description>
+		<year>2025</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion (Jp)(2025)(Ancient).bin" size="7864320" crc="f1948b8f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionp" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion (Portuguese)(HB)</description>
+		<year>2025</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion (Pt)(2025)(Ancient).bin" size="7864320" crc="2677de3e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ejim" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Earthworm Jim (Euro)</description>
 		<year>1994</year>
@@ -6598,7 +6643,7 @@
 		<comment>Hack</comment>
 		<description>Feng Shen Ying Jie Zhuan (Chinese)</description>
 		<year>2023</year>
-		<manufacturer>Chuan Pu Ke Ji / Ken_Tse</manufacturer>
+		<manufacturer>Chuanpu, Ken_Tse</manufacturer>
 		<rom name="Feng Shen Ying Jie Zhuan (Chinese)" size="2097152" crc="88664e2f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -7104,20 +7149,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="slamdunkc" cloneof="slamdunk" romof="slamdunk" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>From TV Animation Slam Dunk - Kyougou Makkou Taiketsu! (Hack, Chinese)</description>
-		<year>200?</year>
-		<manufacturer>Bear Team</manufacturer>
-		<rom name="From TV Animation Slam Dunk - Kyougou Makkou Taiketsu! T-Chi (200x)(Bear Team).bin" size="2097152" crc="89253739"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="slamdunk" sourcefile="megadrive/d_megadrive.cpp">
 		<description>From TV Animation Slam Dunk - Kyougou Makkou Taiketsu! (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="From TV Animation Slam Dunk - Kyougou Makkou Taiketsu! (Japan)(1995)(Bandai).bin" size="2097152" crc="cdf5678f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slamdunkc" cloneof="slamdunk" romof="slamdunk" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>From TV Animation Slam Dunk: Kyougou Makkou Taiketsu! (Hack, Chinese)</description>
+		<year>200?</year>
+		<manufacturer>Bear Team</manufacturer>
+		<rom name="From TV Animation Slam Dunk - Kyougou Makkou Taiketsu! T-Chi (200x)(Bear Team).bin" size="2097152" crc="89253739"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8704,12 +8749,21 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="insectxpt" cloneof="insectx" romof="insectx" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Insector X (Hack, Portuguese v1.15)</description>
+		<year>2017</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="Insector X PT-BR v1.15 (2017)(Antigeno).bin" size="524288" crc="3c366f22"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="insectxs" cloneof="insectx" romof="insectx" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Insector X (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="Insector X T-Spa T-Spa (2019)(Wave).bin" size="524288" crc="0a96a725"/>
+		<rom name="Insector X T-Spa (2019)(Wave).bin" size="524288" crc="0a96a725"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9872,8 +9926,8 @@
 		<comment>Hack</comment>
 		<description>Landstalker: Koutei no Zaihou (Hack, Chinese)</description>
 		<year>2007</year>
-		<manufacturer>Yi Zhi Zhi Lu</manufacturer>
-		<rom name="Landstalker - Koutei no Zaihou T-Chi (2007)(Yi Zhi Zhi Lu).bin" size="2293760" crc="d2982a65"/>
+		<manufacturer>Ken_Tse</manufacturer>
+		<rom name="Landstalker - Koutei no Zaihou T-Chi (2007)(Ken_Tse).bin" size="2293760" crc="d2982a65"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10657,7 +10711,7 @@
 		<description>Magical Hat's Turbo Flying Adventure! (Hack, Portuguese v0.8)</description>
 		<year>2024</year>
 		<manufacturer>RLGC</manufacturer>
-		<rom name="Magical Hat's Turbo Flying Adventure! BR-PT v0.8 (2024)(RLGC).bin" size="535218" crc="376d60aa"/>
+		<rom name="Magical Hat's Turbo Flying Adventure! PT-BR v0.8 (2024)(RLGC).bin" size="535218" crc="376d60aa"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12842,20 +12896,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="nhktaidrc" cloneof="nhktaidr" romof="nhktaidr" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>NHK Taiga Drama - Taiheiki (Hack, Chinese)</description>
-		<year>199?</year>
-		<manufacturer>cslrxyz</manufacturer>
-		<rom name="NHK Taiga Drama - Taiheiki T-Chi (199x)(cslrxyz).bin" size="1048576" crc="19864175"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="nhktaidr" sourcefile="megadrive/d_megadrive.cpp">
 		<description>NHK Taiga Drama - Taiheiki (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="NHK Taiga Drama - Taiheiki (Japan)(1991)(Sega).bin" size="1048576" crc="09fbb30e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nhktaidrc" cloneof="nhktaidr" romof="nhktaidr" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>NHK Taiga Drama: Taiheiki (Hack, Chinese)</description>
+		<year>199?</year>
+		<manufacturer>cslrxyz</manufacturer>
+		<rom name="NHK Taiga Drama - Taiheiki T-Chi (199x)(cslrxyz).bin" size="1048576" crc="19864175"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13094,15 +13148,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="nobuhaoc" cloneof="nobuhao" romof="nobuhao" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Nobunaga no Yabou - Haouden (Hack, Chinese)</description>
-		<year>199?</year>
-		<manufacturer>Xu Yong Sheng</manufacturer>
-		<rom name="Nobunaga no Yabou - Haouden T-Chi (199x)(Xu Yong Sheng).bin" size="2097152" crc="0a0993cf"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="nobuhao" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Nobunaga no Yabou - Haouden (Japan)</description>
 		<year>1994</year>
@@ -13116,6 +13161,15 @@
 		<year>1993</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Nobunaga no Yabou - Zenkokuban (Japan)(1993)(Koei).bin" size="524288" crc="1381b313"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nobuhaoc" cloneof="nobuhao" romof="nobuhao" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Nobunaga no Yabou: Haouden (Hack, Chinese)</description>
+		<year>199?</year>
+		<manufacturer>Xu Yong Sheng</manufacturer>
+		<rom name="Nobunaga no Yabou - Haouden T-Chi (199x)(Xu Yong Sheng).bin" size="2097152" crc="0a0993cf"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13500,7 +13554,7 @@
 	</game>
 	<game name="pacman2c" cloneof="pacman2" romof="pacman2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Pac-Man 2 - The New Adventures (Hack, Chinese v1.1)</description>
+		<description>Pac-Man 2: The New Adventures (Hack, Chinese v1.1)</description>
 		<year>2018</year>
 		<manufacturer>Axi</manufacturer>
 		<rom name="Pac-Man 2 - The New Adventures T-Chi v1.1 (2018)(Axi).bin" size="2621440" crc="9dde7643"/>
@@ -13966,15 +14020,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="pstar4c" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star - The End of the Millennium (Hack, Chinese v1.6)</description>
-		<year>2022</year>
-		<manufacturer>Ken_Tse</manufacturer>
-		<rom name="Phantasy Star - The End of the Millennium T-Chi v1.6 (2022)(Ken_Tse).bin" size="3276800" crc="0db82dd1"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="pstar4p2" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
 		<description>Phantasy Star - The End of the Millennium (Prototype, 19941027)</description>
@@ -14208,6 +14253,15 @@
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Phantasy Star III - Toki no Keishousha (Japan)(1990)(Sega).bin" size="786432" crc="6c48c06f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4c" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star: The End of the Millennium (Hack, Chinese v1.6)</description>
+		<year>2022</year>
+		<manufacturer>Ken_Tse</manufacturer>
+		<rom name="Phantasy Star - The End of the Millennium T-Chi v1.6 (2022)(Ken_Tse).bin" size="3276800" crc="0db82dd1"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16810,14 +16864,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shinfrcej" cloneof="shinfrce" romof="shinfrce" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Shining Force - Kamigami no Isan (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Shining Force - Kamigami no Isan (Japan)(1992)(Sega).bin" size="1572864" crc="9378fbcd"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="shinfrc2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Shining Force II (Euro)</description>
 		<year>1994</year>
@@ -16881,18 +16927,44 @@
 	</game>
 	<game name="shinfrc2c" cloneof="shinfrc2" romof="shinfrc2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Shining Force II - Koe no Fuuin (Hack, Chinese v2)</description>
+		<description>Shining Force II: Koe no Fuuin (Hack, Chinese v2)</description>
 		<year>2007</year>
-		<manufacturer>Yi Zhi Zhi Lu</manufacturer>
-		<rom name="Shining Force II - Koe no Fuuin T-Chi, v2 (2007)(Yi Zhi Zhi Lu).bin" size="3145728" crc="5dd08aea"/>
+		<manufacturer>Ken_Tse</manufacturer>
+		<rom name="Shining Force II - Koe no Fuuin T-Chi, v2 (2007)(Ken_Tse).bin" size="3145728" crc="5dd08aea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="shinfrc2j" cloneof="shinfrc2" romof="shinfrc2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Shining Force II - Koe no Fuuin (Japan)</description>
+		<description>Shining Force II: Koe no Fuuin (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining Force II - Koe no Fuuin (Japan)(1993)(Sega).bin" size="2097152" crc="0288f3e1"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shinfrcetsc" cloneof="shinfrce" romof="shinfrce" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Shining Force: Kamigami no Isan (Hack, Simplified Chinese)</description>
+		<year>2013</year>
+		<manufacturer>zymgundam</manufacturer>
+		<rom name="Shining Force - Kamigami no Isan T-Chs (2013)(zymgundam).bin" size="2097152" crc="6aec9557"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shinfrcettc" cloneof="shinfrce" romof="shinfrce" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Shining Force: Kamigami no Isan (Hack, Traditional Chinese)</description>
+		<year>20xx</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Shining Force - Kamigami no Isan T-Cht (20xx).bin" size="2097152" crc="6ee8cbda"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shinfrcej" cloneof="shinfrce" romof="shinfrce" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Shining Force: Kamigami no Isan (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Shining Force - Kamigami no Isan (Japan)(1992)(Sega).bin" size="1572864" crc="9378fbcd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16909,6 +16981,15 @@
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shining in the Darkness (Euro, USA)(1991)(Sega).bin" size="1048576" crc="4d2785bc"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shindarkttc" cloneof="shindark" romof="shindark" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Shining in the Darkness (Hack, Traditional Chinese)</description>
+		<year>20xx</year>
+		<manufacturer>WINSEN, Xiaoguihun</manufacturer>
+		<rom name="Shining in the Darkness T-Cht (20xx)(WINSEN, Xiaoguihun).bin" size="2097152" crc="ea770243"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17085,7 +17166,7 @@
 		<comment>Hack</comment>
 		<description>Shui Hu Zhuan (Chinese)</description>
 		<year>2023</year>
-		<manufacturer>Chuan Pu Ke Ji / Ken_Tse</manufacturer>
+		<manufacturer>Chuanpu , Ken_Tse</manufacturer>
 		<rom name="Shui Hu Zhuan (Chinese)" size="2097152" crc="84c2f352"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -18743,15 +18824,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="thorc" cloneof="thor" romof="thor" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Story of Thor, The - Hikari o Tsugumono (Hack, Chinese)</description>
-		<year>2004</year>
-		<manufacturer>YUZO</manufacturer>
-		<rom name="Story of Thor, The - Hikari o Tsugumono T-Chi (2004)(YUZO).bin" size="3145728" crc="3ca3fcd7"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="thorj" cloneof="thor" romof="thor" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Story of Thor, The - Hikari o Tsugumono (Japan)</description>
 		<year>1995</year>
@@ -18766,6 +18838,15 @@
 		<year>2020</year>
 		<manufacturer>Anime_World</manufacturer>
 		<rom name="Lenda de Thor, A - O Sucessor da Luz PT-BR (2020)(Anime_World).bin" size="4194304" crc="2550a20d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="thorc" cloneof="thor" romof="thor" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Story of Thor, The: Hikari o Tsugumono (Hack, Chinese)</description>
+		<year>2004</year>
+		<manufacturer>YUZO</manufacturer>
+		<rom name="Story of Thor, The - Hikari o Tsugumono T-Chi (2004)(YUZO).bin" size="3145728" crc="3ca3fcd7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19965,8 +20046,8 @@
 		<comment>Hack</comment>
 		<description>Surging Aura (Hack, Chinese)</description>
 		<year>199?</year>
-		<manufacturer>Yi Zhi Zhi Lu</manufacturer>
-		<rom name="Surging Aura T-Chi (199x)(YiZhi Zhi Lu).bin" size="2359296" crc="38a17fd0"/>
+		<manufacturer>Ken_Tse</manufacturer>
+		<rom name="Surging Aura T-Chi (199x)(Ken_Tse).bin" size="2359296" crc="38a17fd0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -1681,6 +1681,16 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultra2" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ultraman 2 - Sally Forth, Science Patrol (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Ultraman 2 - Sally Forth, Science Patrol T-Eng (2025)(BlackPaladin).fds" size="131000" crc="12d4da55"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ultra2j" cloneof="ultra2" romof="ultra2" sourcefile="nes/d_nes.cpp">
 		<description>Ultraman 2 - Shutsugeki Katoku Tai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>

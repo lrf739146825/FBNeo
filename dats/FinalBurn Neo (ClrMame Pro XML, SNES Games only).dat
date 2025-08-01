@@ -38,6 +38,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="3ninjaskbtp" cloneof="3ninjaskb" romof="3ninjaskb" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>3 Ninjas Kick Back (Hack, Portuguese v1.7)</description>
+		<year>2020</year>
+		<manufacturer>Antigeno</manufacturer>
+		<rom name="3 Ninjas Kick Back PT-BR v1.7 (2020)(Antigeno).sfc" size="2097152" crc="4ac5454d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="3ninjaskb" sourcefile="snes/d_snes.cpp">
 		<description>3 Ninjas Kick Back (USA)</description>
 		<year>1994</year>
@@ -1249,7 +1258,7 @@
 	</game>
 	<game name="ballz3d" romof="dsp1b" sourcefile="snes/d_snes.cpp">
 		<comment>DSP-1B enhancement chip</comment>
-		<description>Ballz 3D - Fighting at Its Ballziest (USA)</description>
+		<description>Ballz 3D: Fighting at Its Ballziest (USA)</description>
 		<year>1994</year>
 		<manufacturer>Accolade</manufacturer>
 		<rom name="Ballz 3D - Fighting at Its Ballziest (U)(1994)(Accolade).sfc" size="1048576" crc="1c058b7d"/>
@@ -1816,14 +1825,6 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="slrmoonanstoryj" cloneof="slrmoonanstoryte" romof="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
-		<description>Bishoujo Senshi Sailor Moon - Another Story (Japan)</description>
-		<year>1995</year>
-		<manufacturer>Angel(Bandai)</manufacturer>
-		<rom name="Bishoujo Senshi Sailor Moon - Another Story (J)(1995)(Angel).sfc" size="3145728" crc="02a442b8"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="slrmoonrj" cloneof="slrmoonrte" romof="slrmoonrte" sourcefile="snes/d_snes.cpp">
 		<description>Bishoujo Senshi Sailor Moon R (Japan)</description>
 		<year>1993</year>
@@ -1833,7 +1834,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="slrmoonffpj" cloneof="slrmoonffpte" romof="slrmoonffpte" sourcefile="snes/d_snes.cpp">
-		<description>Bishoujo Senshi Sailor Moon Super S - Fuwa Fuwa Panic (Japan)</description>
+		<description>Bishoujo Senshi Sailor Moon Super S: Fuwa Fuwa Panic (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Bishoujo Senshi Sailor Moon Super S - Fuwa Fuwa Panic (J)(1995)(Bandai).sfc" size="1048576" crc="b6b92ae0"/>
@@ -1841,10 +1842,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="slrmoonfightsj" cloneof="slrmoonfightste" romof="slrmoonfightste" sourcefile="snes/d_snes.cpp">
-		<description>Bishoujo Senshi Sailor Moon Super S - Zenin Sanka!! Shuyaku Soudatsusen (Japan)</description>
+		<description>Bishoujo Senshi Sailor Moon Super S: Zenin Sanka!! Shuyaku Soudatsusen (Japan)</description>
 		<year>1996</year>
-		<manufacturer>Angel(Bandai)</manufacturer>
+		<manufacturer>Angel (Bandai)</manufacturer>
 		<rom name="Bishoujo Senshi Sailor Moon Super S - Zenin Sanka!! Shuyaku Soudatsusen (J)(1996)(Angel).sfc" size="3145728" crc="25440331"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slrmoonanstoryj" cloneof="slrmoonanstoryte" romof="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
+		<description>Bishoujo Senshi Sailor Moon: Another Story (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Angel (Bandai)</manufacturer>
+		<rom name="Bishoujo Senshi Sailor Moon - Another Story (J)(1995)(Angel).sfc" size="3145728" crc="02a442b8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1874,7 +1883,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="blackthornej" cloneof="blackthorne" romof="blackthorne" sourcefile="snes/d_snes.cpp">
-		<description>Blackthorne - Fukushuu no Kuroki Toge (Japan)</description>
+		<description>Blackthorne: Fukushuu no Kuroki Toge (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Kemco</manufacturer>
 		<rom name="Blackthorne - Fukushuu no Kuroki Toge (J)(1995)(Kemco).sfc" size="1048576" crc="edf476b3"/>
@@ -2190,8 +2199,8 @@
 		<comment>Hack</comment>
 		<description>Breath of Fire (Hack, Portuguese v1.1)</description>
 		<year>2001</year>
-		<manufacturer>Hexagon</manufacturer>
-		<rom name="Breath of Fire PT-BR v1.1 (2001)(Hexagon).sfc" size="1572864" crc="08098770"/>
+		<manufacturer>Hexagon Traducoes</manufacturer>
+		<rom name="Breath of Fire PT-BR v1.1 (2001)(Hexagon Traducoes).sfc" size="1572864" crc="08098770"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3821,8 +3830,8 @@
 		<comment>Hack</comment>
 		<description>Demon's Crest (Hack, Portuguese v1.1)</description>
 		<year>2001</year>
-		<manufacturer>Hexagon</manufacturer>
-		<rom name="Demon's Crest PT-BR v1.1 (2001)(Hexagon).sfc" size="2097152" crc="f8ee6a77"/>
+		<manufacturer>Hexagon Traducoes</manufacturer>
+		<rom name="Demon's Crest PT-BR v1.1 (2001)(Hexagon Traducoes).sfc" size="2097152" crc="f8ee6a77"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4854,6 +4863,15 @@
 		<manufacturer>JVC Musical Industries</manufacturer>
 		<rom name="Dungeon Master (U)(1992)(JVC Musical Industries).sfc" size="1048576" crc="0dfd9ceb"/>
 		<rom name="dsp2.bin" merge="dsp2.bin" size="10240" crc="8e9fbd9b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="evotp" cloneof="evo" romof="evo" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>E.V.O. - Em Busca do Paraiso (Hack, Portuguese)</description>
+		<year>2011</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="E.V.O. - Em Busca do Paraiso PR-BR (2011)(PO.B.R.E.).sfc" size="2097152" crc="6291ff7c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6243,7 +6261,7 @@
 	</game>
 	<game name="mystdung2tsc" cloneof="mystdung2te" romof="mystdung2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Fushigi no Dungeon 2 - Fuurai no Shiren (Hack, Simplified Chinese v1.0)</description>
+		<description>Fushigi no Dungeon 2: Fuurai no Shiren (Hack, Simplified Chinese v1.0)</description>
 		<year>2011</year>
 		<manufacturer>Werther, Phoenix, Kenyo</manufacturer>
 		<rom name="Fushigi no Dungeon 2 - Fuurai no Shiren T-Chs v1.0 (2011)(Werther, Phoenix, Kenyo).sfc" size="4194304" crc="b8d26134"/>
@@ -6251,7 +6269,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mystdung2j" cloneof="mystdung2te" romof="mystdung2te" sourcefile="snes/d_snes.cpp">
-		<description>Fushigi no Dungeon 2 - Fuurai no Shiren (Japan)</description>
+		<description>Fushigi no Dungeon 2: Fuurai no Shiren (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Chun Soft</manufacturer>
 		<rom name="Fushigi no Dungeon 2 - Fuurai no Shiren (J)(1995)(Chun Soft).sfc" size="4194304" crc="af5703ee"/>
@@ -7642,6 +7660,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="inspgadgettp" cloneof="inspgadget" romof="inspgadget" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Inspector Gadget ~ Inspetor Bugiganga (Hack, Portuguese v1.6)</description>
+		<year>2009</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Inspector Gadget - Inspetor Bugiganga PT-BR (2009)(PO.B.R.E.).sfc" size="1572864" crc="5684022d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="intsensiblesoccer" cloneof="champsoccer" romof="champsoccer" sourcefile="snes/d_snes.cpp">
 		<description>International Sensible Soccer - World Champions (Euro, Rev. 1)</description>
 		<year>1994</year>
@@ -8819,49 +8846,6 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="legendofzeldafr" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<description>Legend of Zelda, The - A Link to the Past (Canada, French)</description>
-		<year>1992</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Legend of Zelda, The - A Link to the Past (Can, Fr)(1992)(Nintendo).sfc" size="1048576" crc="47760381"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="legendofzeldati" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Zelda, The - A Link to the Past (Hack, Italian v1.1)</description>
-		<year>2001</year>
-		<manufacturer>Mickey - 'SadNES cITy'</manufacturer>
-		<rom name="Legend of Zelda, The - A Link to the Past T-Ita v1.1 (2001)(Mickey, SadNES cITy).sfc" size="1048576" crc="6d879a98"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="legendofzeldats" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Zelda, The - A Link to the Past (Hack, Spanish v1.11)</description>
-		<year>2021</year>
-		<manufacturer>D_Skywalk</manufacturer>
-		<rom name="Legend of Zelda, The - A Link to the Past T-Spa v1.11 (2021)(D_Skywalk).sfc" size="2097152" crc="69f58bba"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<description>Legend of Zelda, The - A Link to the Past (USA)</description>
-		<year>1991-92</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Legend of Zelda, The - A Link to the Past (U)(1991-92)(Nintendo).sfc" size="1048576" crc="777aac2f"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="legendofzeldardx" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Zelda, The - A Link to the Past Redux (Hack, v10.2.3)</description>
-		<year>2024</year>
-		<manufacturer>ShadowOne333</manufacturer>
-		<rom name="Legend of Zelda, The - A Link to the Past Redux v10.2.3 (2024)(ShadowOne333).sfc" size="2097152" crc="b0b544c1"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="legendofzeldapw" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Legend of Zelda, The - Parallel Worlds (Hack, v1.23)</description>
@@ -8877,6 +8861,66 @@
 		<year>2021-22</year>
 		<manufacturer>MaxwelHacks</manufacturer>
 		<rom name="Legend of Zelda, The - The Mini Quest v1.1 (2022)(MaxwelHacks).sfc" size="3145728" crc="caa6a1f3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldafr" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<description>Legend of Zelda, The: A Link to the Past (Canada, French)</description>
+		<year>1992</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past (Can, Fr)(1992)(Nintendo).sfc" size="1048576" crc="47760381"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldae" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<description>Legend of Zelda, The: A Link to the Past (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past (E)(1992)(Nintendo).sfc" size="1048576" crc="04d55e12"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldati" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda, The: A Link to the Past (Hack, Italian v1.1)</description>
+		<year>2001</year>
+		<manufacturer>Mickey - 'SadNES cITy'</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past T-Ita v1.1 (2001)(Mickey, SadNES cITy).sfc" size="1048576" crc="6d879a98"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldatsc" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda, The: A Link to the Past (Hack, Simplified Chinese)</description>
+		<year>2020</year>
+		<manufacturer>Dark_Link, hlken</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past T-Chs v1.1 (2020)(Dark_Link, hlken).sfc" size="2097152" crc="c1d16a61"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldats" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda, The: A Link to the Past (Hack, Spanish v1.11)</description>
+		<year>2021</year>
+		<manufacturer>D_Skywalk</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past T-Spa v1.11 (2021)(D_Skywalk).sfc" size="2097152" crc="69f58bba"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<description>Legend of Zelda, The: A Link to the Past (USA)</description>
+		<year>1991-92</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past (U)(1991-92)(Nintendo).sfc" size="1048576" crc="777aac2f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="legendofzeldardx" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Legend of Zelda, The: A Link to the Past Redux (Hack, v10.2.3)</description>
+		<year>2024</year>
+		<manufacturer>ShadowOne333</manufacturer>
+		<rom name="Legend of Zelda, The - A Link to the Past Redux v10.2.3 (2024)(ShadowOne333).sfc" size="2097152" crc="b0b544c1"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9726,7 +9770,7 @@
 	</game>
 	<game name="mystdung2ts" cloneof="mystdung2te" romof="mystdung2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Mazmorra Misteriosa 2 - Shiren al Vagabundo (Hack, Spanish v1.1)</description>
+		<description>Mazmorra Misteriosa 2: Shiren al Vagabundo (Hack, Spanish v1.1)</description>
 		<year>2024</year>
 		<manufacturer>semco</manufacturer>
 		<rom name="Mazmorra Misteriosa 2 - Shiren al Vagabundo T-Spa v1.1 (2024)(semco).sfc" size="4194304" crc="2d75818b"/>
@@ -9797,6 +9841,15 @@
 		<year>1995</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man 7 (U)(1995)(Capcom).sfc" size="2097152" crc="2d947536"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megaman7re" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man 7 Restoration (Hack, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>SCD</manufacturer>
+		<rom name="Mega Man 7 Restoration v1.2 (2025)(SCD).sfc" size="3145728" crc="f7ecba9d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10527,7 +10580,7 @@
 	</game>
 	<game name="mystdung2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Mysterious Dungeon 2 - Shiren the Wanderer (Hack, English)</description>
+		<description>Mysterious Dungeon 2: Shiren the Wanderer (Hack, English)</description>
 		<year>2006</year>
 		<manufacturer>Aeon Genesis</manufacturer>
 		<rom name="Mysterious Dungeon 2 - Shiren the Wanderer T-Eng (2006)(Aeon Genesis).sfc" size="4194304" crc="f9789079"/>
@@ -11935,15 +11988,6 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Pretty Soldier Sailor Moon - Another Story (Hack, English v2.08)</description>
-		<year>2021</year>
-		<manufacturer>Bishoujo Senshi Translations, mteam, FlamePurge</manufacturer>
-		<rom name="Pretty Soldier Sailor Moon - Another Story T-Eng v2.08 (2021)(Bishoujo Senshi Translations).sfc" size="4194304" crc="003b74f1"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="slrmoonfightste" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Pretty Soldier Sailor Moon Fighter S (Hack, English + Improvements v1.67)</description>
@@ -11964,10 +12008,28 @@
 	</game>
 	<game name="slrmoonffpte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Pretty Soldier Sailor Moon Super S - Fuwa Fuwa Panic (Hack, English v1.01)</description>
+		<description>Pretty Soldier Sailor Moon Super S: Fuwa Fuwa Panic (Hack, English v1.01)</description>
 		<year>2016</year>
 		<manufacturer>Dynamic-Designs</manufacturer>
 		<rom name="Sailor Moon Super S - Fuwa Fuwa Panic T-Eng v1.01 (2016)(Dynamic-Designs).sfc" size="1572864" crc="1062aa44"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Pretty Soldier Sailor Moon: Another Story (Hack, English v2.08)</description>
+		<year>2021</year>
+		<manufacturer>Bishoujo Senshi Translations, mteam, FlamePurge</manufacturer>
+		<rom name="Pretty Soldier Sailor Moon - Another Story T-Eng v2.08 (2021)(Bishoujo Senshi Translations).sfc" size="4194304" crc="003b74f1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slrmoonanstorytp" cloneof="slrmoonanstoryte" romof="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Pretty Soldier Sailor Moon: Another Story (Hack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>Dindo</manufacturer>
+		<rom name="Pretty Soldier Sailor Moon - Another Story PT-BR (2025)(Dindo).sfc" size="4194304" crc="44c322eb"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12125,6 +12187,14 @@
 		<year>2022</year>
 		<manufacturer>Oziphantom</manufacturer>
 		<rom name="Qwak CBM2SNES v1.3 (2022)(Oziphantom).sfc" size="262144" crc="cfb44991"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rtypeiiie" cloneof="rtypeiii" romof="rtypeiii" sourcefile="snes/d_snes.cpp">
+		<description>R-Type III - The Third Lightning (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Irem</manufacturer>
+		<rom name="R-Type III (E)(1994)(Irem).sfc" size="2097152" crc="5a183e62"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12626,7 +12696,7 @@
 	</game>
 	<game name="rockman7tc" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Rockman 7: Shukumei no Taiketsu! (Hack, Trad. Chinese)</description>
+		<description>Rockman 7: Shukumei no Taiketsu! (Hack, Chinese)</description>
 		<year>2025</year>
 		<manufacturer>NOKOH</manufacturer>
 		<rom name="Rockman 7 - Shukumei no Taiketsu! T-Cht v20250406 (2025)(NOKOH).sfc" size="3145728" crc="c1928f06"/>
@@ -13581,7 +13651,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="skuljagger" sourcefile="snes/d_snes.cpp">
-		<description>Skuljagger - Revolt of the Westicans (USA)</description>
+		<description>Skuljagger: Revolt of the Westicans (USA)</description>
 		<year>1992</year>
 		<manufacturer>American Softworks</manufacturer>
 		<rom name="Skuljagger - Revolt of the Westicans (U)(1992)(American Softworks).sfc" size="524288" crc="e58a6d01"/>
@@ -13694,6 +13764,15 @@
 		<year>2007</year>
 		<manufacturer>Aeon Genesis</manufacturer>
 		<rom name="Snoopy Concert T-Eng (2007)(Aeon Genesis).sfc" size="2097152" crc="8ad05744"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="snoopyconcerttp" cloneof="snoopyconcertte" romof="snoopyconcertte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, 'SNES Mouse' compatible game (Set Dipswitches)</comment>
+		<description>Snoopy Concert (Hack, Portuguese)</description>
+		<year>2009</year>
+		<manufacturer>PO.B.R.E. - Aeon Genesis</manufacturer>
+		<rom name="Snoopy Concert PT-BR (2009)(PO.B.R.E. - Aeon Genesis).sfc" size="2097152" crc="cba81d3d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16999,6 +17078,32 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tenchimuyoutp" cloneof="tenchimuyouj" romof="tenchimuyouj" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Tenchi Muyo! - O Jogo (Hack, Portuguese v2.0)</description>
+		<year>2010</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Tenchi Muyo! - O Jogo PT-BR v2.0 (2010)(PO.B.R.E.).sfc" size="3145776" crc="609694b7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tenchimuyouj" sourcefile="snes/d_snes.cpp">
+		<description>Tenchi Muyou! - Game Hen (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Banpresto</manufacturer>
+		<rom name="Tenchi Muyou! - Game Hen (J)(1995)(Banpresto).sfc" size="2097152" crc="69d9caa9"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tenchisouzoutsc" cloneof="terranigmae" romof="terranigmae" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Tenchi Souzou (Hack, Simplified Chinese)</description>
+		<year>2020</year>
+		<manufacturer>Necrosaro, hlken</manufacturer>
+		<rom name="Tenchi Souzou T-Chs (2020)(Necrosaro, hlken).sfc" size="4194304" crc="629953e2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tenchisouzou" cloneof="terranigmae" romof="terranigmae" sourcefile="snes/d_snes.cpp">
 		<description>Tenchi Souzou (Japan)</description>
 		<year>1996</year>
@@ -18473,7 +18578,7 @@
 	</game>
 	<game name="wprojectjte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, 'SNES Mouse' compatible game (Set Dipswitches)</comment>
-		<description>Wonder Project J - Kikai no Shounen Pino (Hack, English v1.04)</description>
+		<description>Wonder Project J: Kikai no Shounen Pino (Hack, English v1.04)</description>
 		<year>2016</year>
 		<manufacturer>WakdHacks</manufacturer>
 		<rom name="Wonder Project J - Kikai no Shounen Pino T-Eng v1.04 (2016)(WakdHacks).sfc" size="3203584" crc="c3891fcb"/>
@@ -18482,7 +18587,7 @@
 	</game>
 	<game name="wprojectjti" cloneof="wprojectjte" romof="wprojectjte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, 'SNES Mouse' compatible game (Set Dipswitches)</comment>
-		<description>Wonder Project J - Kikai no Shounen Pino (Hack, Italian v1.0b)</description>
+		<description>Wonder Project J: Kikai no Shounen Pino (Hack, Italian v1.0b)</description>
 		<year>2002</year>
 		<manufacturer>Mog Tom</manufacturer>
 		<rom name="Wonder Project J - Kikai no Shounen Pino T-Ita v1.0b (2002)(Mog Tom).sfc" size="3203072" crc="2f02cd52"/>
@@ -18491,7 +18596,7 @@
 	</game>
 	<game name="wprojectjtp" cloneof="wprojectjte" romof="wprojectjte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Wonder Project J - Kikai no Shounen Pino (Hack, Portuguese v0.99)</description>
+		<description>Wonder Project J: Kikai no Shounen Pino (Hack, Portuguese v0.99)</description>
 		<year>2005</year>
 		<manufacturer>RaphFS</manufacturer>
 		<rom name="Wonder Project J - Kikai no Shounen Pino PT-BR v0.99 (2005)(RaphFS).sfc" size="3211264" crc="f24b7cb2"/>
@@ -18500,7 +18605,7 @@
 	</game>
 	<game name="wprojectjts" cloneof="wprojectjte" romof="wprojectjte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, 'SNES Mouse' compatible game (Set Dipswitches)</comment>
-		<description>Wonder Project J - Kikai no Shounen Pino (Hack, Spanish v1.2)</description>
+		<description>Wonder Project J: Kikai no Shounen Pino (Hack, Spanish v1.2)</description>
 		<year>2018</year>
 		<manufacturer>Semco</manufacturer>
 		<rom name="Wonder Project J - Kikai no Shounen Pino T-Spa v1.2 (2018)(Semco).sfc" size="3211776" crc="daba478d"/>
@@ -18509,7 +18614,7 @@
 	</game>
 	<game name="wprojectjj" cloneof="wprojectjte" romof="wprojectjte" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
-		<description>Wonder Project J - Kikai no Shounen Pino (Japan)</description>
+		<description>Wonder Project J: Kikai no Shounen Pino (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Enix</manufacturer>
 		<rom name="Wonder Project J - Kikai no Shounen Pino (J)(1994)(Enix).sfc" size="3145728" crc="af8f4db9"/>
@@ -18864,7 +18969,7 @@
 	</game>
 	<game name="yuuyuuhak2tp" cloneof="yuuyuuhak2j" romof="yuuyuuhak2j" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Yu Yu Hakusho 2 - The Fighting Chapter (Hack, Portuguese)</description>
+		<description>Yu Yu Hakusho 2: The Fighting Chapter (Hack, Portuguese)</description>
 		<year>2024</year>
 		<manufacturer>Hextinkers</manufacturer>
 		<rom name="Yu Yu Hakusho 2 - The Fighting Chapter PT-BR v1.0 (2024)(Hextinkers).sfc" size="2097152" crc="52ac1195"/>
@@ -18887,16 +18992,8 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuuyuutoku" sourcefile="snes/d_snes.cpp">
-		<description>Yuu Yuu Hakusho - Tokubetsu Hen (Japan)</description>
-		<year>1994</year>
-		<manufacturer>Namcot</manufacturer>
-		<rom name="Yuu Yuu Hakusho - Tokubetsu Hen (J)(1994)(Namcot).sfc" size="2097152" crc="535cccac"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="yuuyuuhak2j" sourcefile="snes/d_snes.cpp">
-		<description>Yuu Yuu Hakusho 2 - Kakutou no Shou (Japan)</description>
+		<description>Yuu Yuu Hakusho 2: Kakutou no Shou (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Yuu Yuu Hakusho 2 - Kakutou no Shou (J)(1994)(Namcot).sfc" size="2097152" crc="eef45a93"/>
@@ -18904,15 +19001,23 @@
 		<driver status="good"/>
 	</game>
 	<game name="yuuyuufin" sourcefile="snes/d_snes.cpp">
-		<description>Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (Japan)</description>
+		<description>Yuu Yuu Hakusho Final: Makai Saikyou Retsuden (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Yuu Yuu Hakusho Final - Makai Saikyou Retsuden (J)(1995)(Namcot).sfc" size="3145728" crc="5617a42e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="yuuyuutoku" sourcefile="snes/d_snes.cpp">
+		<description>Yuu Yuu Hakusho: Tokubetsu Hen (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Yuu Yuu Hakusho - Tokubetsu Hen (J)(1994)(Namcot).sfc" size="2097152" crc="535cccac"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zeldanodensetsu" cloneof="legendofzelda" romof="legendofzelda" sourcefile="snes/d_snes.cpp">
-		<description>Zelda no Densetsu - Kamigami no Triforce (Japan)</description>
+		<description>Zelda no Densetsu: Kamigami no Triforce (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Zelda no Densetsu - Kamigami no Triforce (J)(1991)(Nintendo).sfc" size="1048576" crc="3322effc"/>

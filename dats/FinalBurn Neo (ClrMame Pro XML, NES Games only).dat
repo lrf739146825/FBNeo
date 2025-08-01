@@ -598,6 +598,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="advofrip" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Adventures of Rip (HB, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>Jay-GFDgaming</manufacturer>
+		<rom name="Adventures of Rip v1.2 (2025)(Jay-GFDgaming).nes" size="524304" crc="7542b323"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="advenrocandbulandfr" sourcefile="nes/d_nes.cpp">
 		<description>Adventures of Rocky and Bullwinkle and Friends, The (USA)</description>
 		<year>1992</year>
@@ -787,6 +796,14 @@
 		<year>1990</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Al Unser Jr. Turbo Racing (USA)(1990)(Data East).nes" size="262160" crc="023c7774"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="aladdinunl" sourcefile="nes/d_nes.cpp">
+		<description>Aladdin (Taiwan) (Unl)</description>
+		<year>199?</year>
+		<manufacturer>Realtec</manufacturer>
+		<rom name="Aladdin (Taiwan)(Unl)(199x)(Realtec).nes" size="524304" crc="264b4efb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -997,7 +1014,7 @@
 	</game>
 	<game name="anguna" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Anguna - Scourge of the Goblin King (HB)</description>
+		<description>Anguna: Scourge of the Goblin King (HB)</description>
 		<year>2021</year>
 		<manufacturer>The 6502 Collective</manufacturer>
 		<rom name="Anguna - Scourge of the Goblin King (2021)(The 6502 Collective).nes" size="524304" crc="1119efff"/>
@@ -2625,10 +2642,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="boogerman" sourcefile="nes/d_nes.cpp">
-		<description>Boogerman (Unl)</description>
+		<description>Boogerman (Taiwan) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>Realtec</manufacturer>
-		<rom name="Boogerman (Unl)(1997)(Realtec).nes" size="524304" crc="f10d5e5b"/>
+		<rom name="Boogerman (Taiwan)(Unl)(1997)(Realtec).nes" size="524304" crc="fc5ae371"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3131,6 +3148,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="castliie" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
+		<description>Castlevania II: Simon's Quest (Euro)</description>
+		<year>1990</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Castlevania II - Simon's Quest (Euro)(1990)(Konami).nes" size="262160" crc="bb441910"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
 	<game name="castliih" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Castlevania II: Simon's Quest (Hack, Re-translation + Map)</description>
@@ -3140,12 +3165,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="castliitsc" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania II: Simon's Quest (Hack, Simplified Chinese v1.2)</description>
+		<year>2013</year>
+		<manufacturer>Nonamed</manufacturer>
+		<rom name="Castlevania II - Simon's Quest T-Chs v1.2 (2013)(Nonamed).nes" size="524304" crc="cb170ca0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="castliic" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Castlevania II: Simon's Quest (Hack, Spanish v2.0)</description>
 		<year>2013</year>
 		<manufacturer>Julian L.</manufacturer>
 		<rom name="Castlevania II - Simon's Quest T-Spa v2.0 (2013)(Julian L.).nes" size="262160" crc="38d393a9"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="castliittc" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania II: Simon's Quest (Hack, Traditional Chinese v1.2)</description>
+		<year>2013</year>
+		<manufacturer>Nonamed</manufacturer>
+		<rom name="Castlevania II - Simon's Quest T-Cht v1.2 (2013)(Nonamed).nes" size="524304" crc="b6a932fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3680,6 +3723,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="christmascrisis2" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Christmas Crisis 2 (HB)</description>
+		<year>2024</year>
+		<manufacturer>German Garage Games</manufacturer>
+		<rom name="Christmas Crisis 2 (2024)(German Garage Games).nes" size="524304" crc="81296414"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="chknight" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Chrono Knight (HB)</description>
@@ -3989,6 +4041,15 @@
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Contra 168-in-1 (Unl)(199x).nes" size="1048592" crc="c6fd114e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="contra2in1" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Contra 2-in-1 (Hack)</description>
+		<year>2023</year>
+		<manufacturer>FlameCyclone</manufacturer>
+		<rom name="Contra 2-in-1 (2023)(FlameCyclone).nes" size="524304" crc="db96ef78"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6845,7 +6906,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="faria" sourcefile="nes/d_nes.cpp">
-		<description>Faria - A World of Mystery &amp; Danger! (USA)</description>
+		<description>Faria: A World of Mystery &amp; Danger! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Nexoft</manufacturer>
 		<rom name="Faria - A World of Mystery &amp; Danger! (USA)(1991)(Nexoft).nes" size="262160" crc="1c059dfb"/>
@@ -6853,7 +6914,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fariaj" cloneof="faria" romof="faria" sourcefile="nes/d_nes.cpp">
-		<description>Faria - Fuuin no Tsurugi (Japan)</description>
+		<description>Faria: Fuuin no Tsurugi (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Game Arts</manufacturer>
 		<rom name="Faria - Fuuin no Tsurugi (Japan)(1989)(Game Arts).nes" size="262160" crc="a17079e4"/>
@@ -7189,23 +7250,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="fireemb" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Hack, English)</description>
-		<year>2011</year>
-		<manufacturer>Quirino</manufacturer>
-		<rom name="Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (T-Eng).nes" size="393232" crc="dc848ddd"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="fireembj" cloneof="fireemb" romof="fireemb" sourcefile="nes/d_nes.cpp">
-		<description>Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Japan)</description>
-		<year>1990</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Japan).nes" size="393232" crc="ab8057b9"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="fireembgaic" cloneof="fireembgai" romof="fireembgai" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem Gaiden (Hack, Chinese v2.0)</description>
@@ -7220,7 +7264,7 @@
 		<description>Fire Emblem Gaiden (Hack, English)</description>
 		<year>2009</year>
 		<manufacturer>Artemis251</manufacturer>
-		<rom name="Fire Emblem Gaiden (T-Eng).nes" size="393232" crc="ed74e1fa"/>
+		<rom name="Fire Emblem Gaiden T-Eng (2009)(Artemis251).nes" size="393232" crc="ed74e1fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7228,7 +7272,24 @@
 		<description>Fire Emblem Gaiden (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Nintendo</manufacturer>
-		<rom name="Fire Emblem Gaiden (Japan).nes" size="393232" crc="0a187cb4"/>
+		<rom name="Fire Emblem Gaiden (Japan)(1992)(Nintendo).nes" size="393232" crc="0a187cb4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireemb" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem: Ankoku Ryuu to Hikari no Tsurugi (Hack, English)</description>
+		<year>2011</year>
+		<manufacturer>Quirino</manufacturer>
+		<rom name="Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi T-Eng (2011)(Quirino).nes" size="393232" crc="dc848ddd"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="fireembj" cloneof="fireemb" romof="fireemb" sourcefile="nes/d_nes.cpp">
+		<description>Fire Emblem: Ankoku Ryuu to Hikari no Tsurugi (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Fire Emblem - Ankoku Ryuu to Hikari no Tsurugi (Japan)(1990)(Nintendo).nes" size="393232" crc="3452e97c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -7236,7 +7297,7 @@
 		<description>Fire Hawk (USA)</description>
 		<year>1992</year>
 		<manufacturer>Camerica - Codemasters</manufacturer>
-		<rom name="Fire Hawk (USA)(1992)(Camerica).nes" size="131088" crc="a2259bd3"/>
+		<rom name="Fire Hawk (USA)(1992)(Camerica - Codemasters).nes" size="131088" crc="a2259bd3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11692,7 +11753,7 @@
 	</game>
 	<game name="littlnemc" cloneof="littlnem" romof="littlnem" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Little Nemo - The Dream Master (Hack, Chinese)</description>
+		<description>Little Nemo: The Dream Master (Hack, Chinese)</description>
 		<year>2017</year>
 		<manufacturer>Ice Team</manufacturer>
 		<rom name="Little Nemo - The Dream Master T-Chi (2017)(Ice Team).nes" size="327696" crc="841cbcd1"/>
@@ -11700,7 +11761,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="littlnem" sourcefile="nes/d_nes.cpp">
-		<description>Little Nemo - The Dream Master (USA)</description>
+		<description>Little Nemo: The Dream Master (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Little Nemo - The Dream Master (USA)(1990)(Capcom).nes" size="262160" crc="71d868c4"/>
@@ -12212,6 +12273,15 @@
 		<year>2023</year>
 		<manufacturer>Yutaka</manufacturer>
 		<rom name="Mahou no Princess Minky Momo - Remember Dream (Japan)(1992)(Yutaka).nes" size="262160" crc="d1b65a3e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="mainurse" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mai Nurse (HB, v1.03)</description>
+		<year>2024-25</year>
+		<manufacturer>lunoka</manufacturer>
+		<rom name="Mai Nurse v1.03 (2024-25)(lunoka).nes" size="131088" crc="1c909b75"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14011,6 +14081,14 @@
 		<year>1987</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Nekketsu Kouha Kunio-kun (Japan)(1987)(Technos).nes" size="131088" crc="94dab06a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nekkedodgebtts" cloneof="superdodgeball" romof="superdodgeball" sourcefile="nes/d_nes.cpp">
+		<description>Nekketsu Koukou Dodgeball Bu (Hack, Simplified Chinese)</description>
+		<year>2005</year>
+		<manufacturer>Old Liu</manufacturer>
+		<rom name="Nekketsu Koukou Dodgeball Bu T-Chs (2005)(Old Liu).nes" size="262160" crc="c1b03e1c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18443,7 +18521,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="stanley" sourcefile="nes/d_nes.cpp">
-		<description>Stanley - The Search for Dr. Livingston (USA)</description>
+		<description>Stanley: The Search for Dr. Livingston (USA)</description>
 		<year>1992</year>
 		<manufacturer>Electro Brain</manufacturer>
 		<rom name="Stanley - The Search for Dr. Livingston (USA)(1992)(Electro Brain).nes" size="262160" crc="4871ef6e"/>
@@ -18595,7 +18673,7 @@
 	</game>
 	<game name="starwaresbeas" cloneof="starwaresb" romof="starwaresb" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Star Wars - The Empire Strikes Back - Easy (Hack)</description>
+		<description>Star Wars: The Empire Strikes Back - Easy (Hack)</description>
 		<year>2019</year>
 		<manufacturer>chronix</manufacturer>
 		<rom name="Star Wars - The Empire Strikes Back - Easy (Hack)(2019)(chronix).nes" size="524304" crc="11be60fe"/>
@@ -18690,10 +18768,10 @@
 	</game>
 	<game name="steellegion" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Steel Legion (HB)</description>
+		<description>Steel Legion (HB, v1.1)</description>
 		<year>2024</year>
 		<manufacturer>Aeon &amp; Star Interactive</manufacturer>
-		<rom name="Steel Legion (2024)(Aeon &amp; Star Interactive).nes" size="524304" crc="af212481"/>
+		<rom name="Steel Legion v1.1 (2024)(Aeon &amp; Star Interactive).nes" size="524304" crc="8e4c48fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18927,11 +19005,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
-	<game name="superaladdin" sourcefile="nes/d_nes.cpp">
-		<description>Super Aladdin (Unl)</description>
-		<year>1995</year>
-		<manufacturer>Super Game</manufacturer>
-		<rom name="Super Aladdin (Unl)(1995)(Super Game).nes" size="524304" crc="c35332e0"/>
+	<game name="superaladdin" cloneof="aladdinunl" romof="aladdinunl" sourcefile="nes/d_nes.cpp">
+		<description>Super Aladdin (Taiwan) (Unl)</description>
+		<year>199?</year>
+		<manufacturer>Realtec</manufacturer>
+		<rom name="Super Aladdin (Taiwan)(Unl)(199x)(Realtec).nes" size="524304" crc="c35332e0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18949,6 +19027,14 @@
 		<year>2011</year>
 		<manufacturer>Morphcat Games</manufacturer>
 		<rom name="Super Bat Puncher (Demo)(2011)(Morphcat Games).nes" size="131088" crc="d04302fa"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sboogerman" cloneof="boogerman" romof="boogerman" sourcefile="nes/d_nes.cpp">
+		<description>Super Boogerman (Taiwan) (Unl)</description>
+		<year>1997</year>
+		<manufacturer>Realtec</manufacturer>
+		<rom name="Super Boogerman (Taiwan)(Unl)(1997)(Realtec).nes" size="524304" crc="f10d5e5b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19015,6 +19101,22 @@
 		<year>1989</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Super Dodge Ball (USA)(1989)(Sony Imagesoft).nes" size="262160" crc="052a50d7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="superdodgeballec" cloneof="superdodgeball" romof="superdodgeball" sourcefile="nes/d_nes.cpp">
+		<description>Super Dodge Ball (USA, Evercade release)</description>
+		<year>1989</year>
+		<manufacturer>Sony Imagesoft</manufacturer>
+		<rom name="Super Dodge Ball - Evercade release (USA)(1989)(Sony Imagesoft).nes" size="262160" crc="69fd97b8"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="superdonkeykong" sourcefile="nes/d_nes.cpp">
+		<description>Super Donkey Kong (Taiwan) (Unl)</description>
+		<year>1997</year>
+		<manufacturer>Hosenkan Electronics</manufacturer>
+		<rom name="Super Donkey Kong (Taiwan)(Unl)(1997)(Hosenkan Electronics).nes" size="262160" crc="11790c6e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19394,10 +19496,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="supershi" sourcefile="nes/d_nes.cpp">
-		<description>Super Shinobi, The (Unl)</description>
+		<description>Super Shinobi, The (Taiwan) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Realtec</manufacturer>
-		<rom name="Super Shinobi, The (Unl)(199x)(Realtec).nes" size="524304" crc="a36c26e7"/>
+		<rom name="Super Shinobi, The (Taiwan)(Unl)(199x)(Realtec).nes" size="524304" crc="a36c26e7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19673,10 +19775,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="tagindragon" sourcefile="nes/d_nes.cpp">
-		<description>Tagin' Dragon (Unl)</description>
+		<description>Tagin' Dragon (USA)</description>
 		<year>1990</year>
 		<manufacturer>Bunch Games</manufacturer>
-		<rom name="Tagin' Dragon (Unl).nes" size="49168" crc="163720d6"/>
+		<rom name="Tagin' Dragon (USA)(1990)(Bunch Games).nes" size="49168" crc="163720d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
