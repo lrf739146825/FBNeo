@@ -41,12 +41,12 @@ filter_out2 = $(call filter_out1,$(call filter_out1,$1))
 # make -j4 ARCH=x86_32 -C ./src/burner/libretro
 # !!!!!! gcc-multilib g++-multilib  Conflict With ARM TOOLS  gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 #ifeq ($(ARCH),x86_32)
-#  CC = gcc -m32
+#  CC  = gcc -m32
 #  CXX = g++ -m32
-#  AR = ar
-#  CFLAGS += -O2
-#  CXXFLAGS += $(CFLAGS) -std=c++11
-#  LDFLAGS += -ldl -lpthread
+#  AR  = ar
+#  CFLAGS   += -std=gnu99 -O2
+#  CXXFLAGS += -std=c++11 -O2
+#  LDFLAGS  += -ldl -lpthread
 #endif
 
 # ARMv7-NEON Cross-compilation
