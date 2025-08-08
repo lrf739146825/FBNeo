@@ -53,27 +53,28 @@ filter_out2 = $(call filter_out1,$(call filter_out1,$1))
 # sudo apt-get install git build-essential gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 # make -j4 platform=armv7-neon -C ./src/burner/libretro
 ifeq ($(platform), armv7-neon)
-  CC  = arm-linux-gnueabihf-gcc
-  CXX = arm-linux-gnueabihf-g++
-  ARCH = arm
-  CFLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard -O2
-  CXXFLAGS += $(CFLAGS) -std=c++11
+  CC        = arm-linux-gnueabihf-gcc
+  CXX       = arm-linux-gnueabihf-g++
+  ARCH      = arm
+  COMMON_FLAGS += -march=armv7-a -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=hard
+  CFLAGS    = -std=gnu99 $(COMMON_FLAGS)
+  CXXFLAGS  = -std=c++11 $(COMMON_FLAGS)
   HAVE_NEON = 1
   USE_CYCLONE = 1
   override platform += unix
 endif
-
 # AArch64 Cross-compilation
 # sudo apt-get install git build-essential gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 # make -j6 platform=aarch64 -C ./src/burner/libretro
 ifeq ($(platform), aarch64)
-  CC  = aarch64-linux-gnu-gcc
-  CXX = aarch64-linux-gnu-g++
-  ARCH = arm64
-  CFLAGS += -march=armv8-a -mtune=cortex-a53 -O2
-  CXXFLAGS += $(CFLAGS) -std=c++11
-  HAVE_NEON = 1
-  USE_CYCLONE = 1
+  CC        = aarch64-linux-gnu-gcc
+  CXX       = aarch64-linux-gnu-g++
+  ARCH      = arm64
+  COMMON_FLAGS += -march=armv8-a -mtune=cortex-a53
+  CFLAGS    = -std=gnu99 $(COMMON_FLAGS)
+  CXXFLAGS  = -std=c++11 $(COMMON_FLAGS)
+  HAVE_NEON = 0
+  USE_CYCLONE = 0
   override platform += unix
 endif
 ####
