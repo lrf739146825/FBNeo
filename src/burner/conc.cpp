@@ -304,13 +304,22 @@ TCHAR* CHAR2TCHAR_ANSI(const char* pszInString, TCHAR* pszOutString, int nOutSiz
 #endif
 }
 
+/*
+1.Extract the corresponding line from cheat.dat to a global variable, and pass the variable to ConfigParseMAMEFile_internal.
+2.Extract the corresponding <drvname.ini> from cheat.zip or cheat.7z, process the 'include' line to extract another corresponding ini, 
+  store to a global variable, and pass the variable to ConfigParseFile.
+
+Overall, reseting and applying cheats will directly jump to the step(use mamedat or zip/7z or ini or nebula dat) that was determined during 
+the loading of the game, without further processing of dat and zip/7z files.This will prevent a brief freezing when returning to the game.
+*/
+std::vector<TCHAR> CurrentMameCheatContent; // Global
+std::vector<TCHAR> CurrentIniCheatContent; // Global
+int usedCheatType = 0; //Global so we'll know if cheatload is already done or which cheat type it uses?
+
 // GameGenie stuff is handled a little differently..
 #define HW_NES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_NES) || ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_FDS) )
 #define HW_SNES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_SNES) )
 #define HW_GGENIE ( HW_NES || HW_SNES )
-std::vector<TCHAR> CurrentMameCheatContent; // Global
-std::vector<TCHAR> CurrentIniCheatContent; // Global
-int usedCheatType = 0; //Global so we'll know if cheatload is already done or which cheat type it uses?
 
 static bool SkipComma(TCHAR** s)
 {
@@ -1343,6 +1352,220 @@ static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, s
 	return 0;
 }
 
+static int encodeNES(int address, int value, int compare, char *result) {
+	const char ALPHABET_NES[2][16+1] = { { "APZLGITYEOXUKSVN" }, { "apzlgityeoxuksvn" } };
+
+	bool address_lower = !(address & 0x8000);
+
+	unsigned int genie = ((value & 0x80) >> 4) | (value & 0x7);
+    unsigned int temp = ((address & 0x80) >> 4) | ((value & 0x70) >> 4);
+	genie <<= 4;
+	genie |= temp;
+
+	temp = (address & 0x70) >> 4;
+
+	if (compare != -1) {
+		temp |= 0x8;
+	}
+
+	genie <<= 4;
+	genie |= temp;
+
+	temp = (address & 0x8) | ((address & 0x7000) >> 12);
+	genie <<= 4;
+	genie |= temp;
+
+	temp = ((address & 0x800) >> 8) | (address & 0x7);
+	genie <<= 4;
+	genie |= temp;
+
+	if (compare != -1) {
+
+		temp = (compare & 0x8) | ((address & 0x700) >> 8);
+		genie <<= 4;
+		genie |= temp;
+
+		temp = ((compare & 0x80) >> 4) | (compare & 0x7);
+		genie <<= 4;
+		genie |= temp;
+
+		temp = (value & 0x8) | ((compare & 0x70) >> 4);
+		genie <<= 4;
+		genie |= temp;
+	} else {
+		temp = (value & 0x8) | ((address & 0x700) >> 8);
+		genie <<= 4;
+		genie |= temp;
+	}
+
+	result[6] = result[7] = result[8] = 0;
+
+	for (int i = 0; i < ((compare != -1) ? 8 : 6); i++) {
+		result[((compare != -1) ? 8 : 6) - 1 - i] = ALPHABET_NES[address_lower][(genie >> (i * 4)) & 0xF];
+	}
+
+	return 0;
+}
+
+#ifdef _MSC_VER
+#define strtok_r strtok_s
+#endif
+
+// VirtuaNES .vct format
+static INT32 ConfigParseVCT(TCHAR* pszFilename)
+{
+#define AddressInfoGameGenie() { \
+		pCurrentCheat->pOption[n]->AddressInfo[nCurrentAddress].nTotalByte = 1;	\
+		pCurrentCheat->pOption[n]->AddressInfo[nCurrentAddress].nAddress = 0xffff; \
+		strcpy(pCurrentCheat->pOption[n]->AddressInfo[nCurrentAddress].szGenieCode, szGGenie); \
+		nCurrentAddress++;	\
+	}
+
+#define OptionName(a)	\
+	if (pCurrentCheat->pOption[n] == NULL) {						\
+		pCurrentCheat->pOption[n] = (CheatOption*)malloc(sizeof(CheatOption));		\
+	}											\
+	memset(pCurrentCheat->pOption[n], 0, sizeof(CheatOption));				\
+	_tcsncpy (pCurrentCheat->pOption[n]->szOptionName, a, QUOTE_MAX * sizeof(TCHAR));	\
+
+#define tmpcpy(a)	\
+	_tcsncpy (tmp, szLine + c0[a] + 1, c0[a+1] - (c0[a]+1));	\
+	tmp[c0[a+1] - (c0[a]+1)] = '\0';				\
+
+	TCHAR tmp[256];
+	TCHAR szLine[1024];
+	char szGGenie[256] = { 0, };
+
+	INT32 nLen;
+	INT32 n = 0;
+	INT32 nCurrentAddress = 0;
+
+	CheatInfo* pCurrentCheat = NULL;
+
+	TCHAR* pszReadMode = AdaptiveEncodingReads(pszFilename);
+	if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+	FILE* h = _tfopen(pszFilename, pszReadMode);
+	if (h == NULL) {
+		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
+			TCHAR szAlternative[MAX_PATH] = { 0 };
+			_stprintf(szAlternative, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+
+			pszReadMode = AdaptiveEncodingReads(szAlternative);
+			if (NULL == pszReadMode) pszReadMode = _T("rt");
+
+			if (NULL == (h = _tfopen(szAlternative, pszReadMode)))
+				return 1;
+		} else {
+			return 1;	// Parent driver
+		}
+	}
+
+
+	while (1)
+	{
+		if (_fgetts(szLine, 1024, h) == NULL)
+			break;
+
+		nLen = _tcslen (szLine);
+
+		if (szLine[0] == ';') continue;
+
+		INT32 c0[16], c1 = 0, cprev = 0; // find columns / break
+		for (INT32 i = 0; i < nLen; i++)
+			if ((szLine[i] == ' ' && c1 < 2) || szLine[i] == '\t' || szLine[i] == '\r' || szLine[i] == '\n')
+			{
+				if (cprev + 1 != i) c0[c1++] = i;
+				cprev = i;
+			}
+
+		tmpcpy(0);
+		strcpy(szGGenie, TCHARToANSI(tmp, NULL, 0));
+		szGGenie[255] = '\0';
+		tmpcpy(1);
+
+		if (HW_GGENIE) {
+			//szGGenie "0077-01-FF" or "0077-04-80808080"
+			char *tok_main = NULL;
+			char temp2[256] = { 0, };
+			UINT32 fAddr = 0;
+			UINT32 fCount = 0;
+			UINT32 fAttr = 0; // always = 0, oneshot = 1, greater = 2 (mem[addr] > bytes), less = 3 (mem[addr] < bytes)
+			UINT32 fBytes = 0;
+
+			strcpy(temp2, szGGenie);
+
+			// split up "0077-01-FF" "address-bytecount-bytes_to_program"
+			char *tok = strtok_r(temp2, "-", &tok_main);
+			if (!tok) continue;
+			sscanf(tok, "%x", &fAddr);
+
+			tok = strtok_r(NULL, "-", &tok_main);
+			if (!tok) continue;
+			sscanf(tok, "%x", &fCount);
+			fAttr = (fCount & 0x30) >> 4;
+			fCount &= 0x07;
+			if (fCount < 1 || fCount > 4) fCount = 1;
+
+			tok = strtok_r(NULL, "-", &tok_main);
+			if (!tok) continue;
+			sscanf(tok, "%x", &fBytes);
+
+			bprintf(0, _T(".vct: addr[%x] count[%x] bytes[%x]\n"), fAddr, fCount, fBytes);
+
+			// -- add to cheat engine --
+			n = 0;
+			nCurrentAddress = 0;
+
+			// Link new node into the list
+			CheatInfo* pPreviousCheat = pCurrentCheat;
+			pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
+			if (pCheatInfo == NULL) {
+				pCheatInfo = pCurrentCheat;
+			}
+
+			memset(pCurrentCheat, 0, sizeof(CheatInfo));
+			pCurrentCheat->pPrevious = pPreviousCheat;
+			if (pPreviousCheat) {
+				pPreviousCheat->pNext = pCurrentCheat;
+			}
+
+			// Fill in defaults
+			pCurrentCheat->nType = 0;							    // Default to cheat type 0 (apply each frame)
+			pCurrentCheat->nStatus = -1;							// Disable cheat
+			pCurrentCheat->nDefault = 0;							// Set default option
+			pCurrentCheat->bOneShot = 0;							// Set default option (off)
+			pCurrentCheat->bWatchMode = 0;							// Set default option (off)
+
+			_tcsncpy (pCurrentCheat->szCheatName, tmp, QUOTE_MAX);
+
+			OptionName(_T("Disabled"));
+			n++;
+			OptionName(_T("Enabled"));
+
+			for (int i = 0; i < fCount; i++) {
+				memset(szGGenie, 0, sizeof(szGGenie));
+				encodeNES(fAddr + i, fBytes >> (i*8), -1, szGGenie);
+				INT32 cLen = strlen(szGGenie);
+				szGGenie[cLen] = '0' + fAttr; // append the attribute to the end of the GameGenie code (handled in drv/nes/nes.cpp)
+				AddressInfoGameGenie();
+			}
+		}
+
+		continue;
+	}
+
+	// if no cheat was found, don't return success code
+	if (pCurrentCheat == NULL) return 1;
+
+	return 0;
+}
+
+#ifdef _MSC_VER
+#undef strtok_r
+#endif
+
+
 INT32 ConfigCheatLoad() {
 	TCHAR szFilename[MAX_PATH] = _T("");
 	INT32 ret = 1;
@@ -1356,9 +1579,17 @@ INT32 ConfigCheatLoad() {
 	// 3:first ConfigCheatLoad() used ini cheat in Zip/7Z,we directly reload existing cache from cheat.zip/7z
 	// 4:first ConfigCheatLoad() used ini cheat in folder,we directly reload from <drvname>.ini
 	// 5:first ConfigCheatLoad() used NebulaDatCheat in folder,we directly reload from <drvname>.dat
-	// 6:first ConfigCheatLoad() no cheats found,we do nothing,never check again.
+	// 6:first ConfigCheatLoad() used NES <drvname>.vct
+	//-1:first ConfigCheatLoad() no cheats found,we do nothing,never check again.
 	switch (usedCheatType) {
 		case 0:
+			if (HW_NES) { // only for NES/FC!
+				_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+				ConfigParseVCT(szFilename);
+				usedCheatType = 6;
+				break;
+			} // keep loading & adding stuff even if .vct file loads.
+			
 			if (ConfigParseMAMEFile()) {
 				ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
 				if (ret == 0) {
@@ -1373,7 +1604,7 @@ INT32 ConfigCheatLoad() {
 						_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 						ret = ConfigParseNebulaFile(szFilename);
 						if (ret != 0) {
-							usedCheatType = 6;
+							usedCheatType = -1;
 						}
 					}
 				}
@@ -1398,7 +1629,11 @@ INT32 ConfigCheatLoad() {
 			_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 			ret = ConfigParseNebulaFile(szFilename);
 			break;
-		default: //case 6 aswell
+		case 6:
+			_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			ret = ConfigParseVCT(szFilename);
+			break;
+		default: //case -1 aswell
 			ret = 1;
 			break;
 	}
