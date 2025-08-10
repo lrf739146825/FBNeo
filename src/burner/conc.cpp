@@ -1480,7 +1480,11 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 			}
 
 		tmpcpy(0);
+#if defined(BUILD_WIN32)
 		strcpy(szGGenie, TCHARToANSI(tmp, NULL, 0));
+#else
+		strcpy(szGGenie, tmp);
+#endif
 		szGGenie[255] = '\0';
 		tmpcpy(1);
 
