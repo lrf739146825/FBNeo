@@ -1549,7 +1549,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 			if (!tok) continue;
 			sscanf(tok, "%x", &fBytes);
 
-			bprintf(0, _T(".vct: addr[%x] count[%x] bytes[%x]\n"), fAddr, fCount, fBytes);
+			// bprintf(0, _T(".vct: addr[%x] count[%x] bytes[%x]\n"), fAddr, fCount, fBytes);
 
 			// -- add to cheat engine --
 			n = 0;
