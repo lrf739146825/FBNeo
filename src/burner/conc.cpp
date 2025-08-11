@@ -1411,6 +1411,32 @@ static int encodeNES(int address, int value, int compare, char *result) {
 #define strtok_r strtok_s
 #endif
 
+void normalize_spaces(TCHAR* str) {
+    TCHAR* dest = str;
+    TCHAR* src = str;
+    bool prev_blank = false;
+
+    while (*src == ' ' || *src == '\t') src++;
+
+    while (*src) {
+        if (*src == ' ' || *src == '\t') {
+            if (!prev_blank) {
+                *dest++ = ' ';
+                prev_blank = true;
+            }
+            src++;
+        } else {
+            *dest++ = *src++;
+            prev_blank = false;
+        }
+    }
+
+    if (dest > str && (dest[-1] == ' ' || dest[-1] == '\t')) {
+        dest--;
+    }
+    *dest = '\0';
+}
+
 // VirtuaNES .vct format
 static INT32 ConfigParseVCT(TCHAR* pszFilename)
 {
@@ -1431,6 +1457,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 #define tmpcpy(a)	\
 	_tcsncpy (tmp, szLine + c0[a] + 1, c0[a+1] - (c0[a]+1));	\
 	tmp[c0[a+1] - (c0[a]+1)] = '\0';				\
+	normalize_spaces(tmp); \
 
 	TCHAR tmp[256];
 	TCHAR szLine[1024];
@@ -1472,13 +1499,20 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 		if (szLine[0] == ';') continue;
 
 		INT32 c0[16], c1 = 0, cprev = 0; // find columns / break
-		for (INT32 i = 0; i < nLen; i++)
-			if ((szLine[i] == ' ' && c1 < 2) || szLine[i] == '\t' || szLine[i] == '\r' || szLine[i] == '\n')
-			{
-				if (cprev + 1 != i) c0[c1++] = i;
-				cprev = i;
+		bool in_blank = false;
+		for (INT32 i = 0; i < nLen; i++) {
+			if (szLine[i] == ' ' || szLine[i] == '\t' || szLine[i] == '\r' || szLine[i] == '\n') {
+				if (!in_blank) {
+					if (cprev + 1 != i) {
+						c0[c1++] = i;
+					}
+					cprev = i;
+					in_blank = true;
+				}
+			} else {
+				in_blank = false;
 			}
-
+		}
 		tmpcpy(0);
 #if defined(BUILD_WIN32)
 		strcpy(szGGenie, TCHARToANSI(tmp, NULL, 0));
