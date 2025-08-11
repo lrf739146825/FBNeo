@@ -321,6 +321,9 @@ int usedCheatType = 0; //Global so we'll know if cheatload is already done or wh
 #define HW_SNES ( ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) == HARDWARE_SNES) )
 #define HW_GGENIE ( HW_NES || HW_SNES )
 
+static CheatInfo* pCurrentCheat = NULL;
+static CheatInfo* pPreviousCheat = NULL;
+
 static bool SkipComma(TCHAR** s)
 {
 	while (**s && **s != _T(',')) {
@@ -375,6 +378,46 @@ static void CheatError(TCHAR* pszFilename, INT32 nLineNumber, CheatInfo* pCheat,
 #endif
 }
 
+static TCHAR* getFilenameFromPath(TCHAR* path) {
+	if (!path) {
+		return NULL;
+	}
+
+    TCHAR* filename = path;
+
+    for (TCHAR* p = path; *p != '\0'; p++) {
+        if (*p == '/' || *p == '\\') {
+            filename = p + 1;
+        }
+    }
+    return filename;
+}
+
+static void CheatLinkNewNode(TCHAR *szDerp)
+{
+	// Link new node into the list
+	pPreviousCheat = pCurrentCheat;
+	pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
+	if (pCheatInfo == NULL) {
+		pCheatInfo = pCurrentCheat;
+	}
+
+	memset(pCurrentCheat, 0, sizeof(CheatInfo));
+	pCurrentCheat->pPrevious = pPreviousCheat;
+	if (pPreviousCheat) {
+		pPreviousCheat->pNext = pCurrentCheat;
+	}
+
+	// Fill in defaults
+	pCurrentCheat->nType = 0;							    // Default to cheat type 0 (apply each frame)
+	pCurrentCheat->nStatus = -1;							// Disable cheat
+	pCurrentCheat->nDefault = 0;							// Set default option
+	pCurrentCheat->bOneShot = 0;							// Set default option (off)
+	pCurrentCheat->bWatchMode = 0;							// Set default option (off)
+
+	_tcsncpy (pCurrentCheat->szCheatName, szDerp, QUOTE_MAX);
+}
+
 // pszFilename only uses for cheaterror as string while iniContent,not as file
 // while no iniContent,process ini File
 static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniContent = NULL)
@@ -388,12 +431,13 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniCo
 
 	INT32 nLine = 0;
 	TCHAR nInside = INSIDE_NOTHING;
-
-	CheatInfo* pCurrentCheat = NULL;
+	bool bFirst = true;
 
 	FILE* h = NULL;
 	const TCHAR* iniPtr = NULL;
 
+	TCHAR* pszFileHeading = getFilenameFromPath(pszFilename);
+	
 	if (iniContent) {
 		iniPtr = iniContent->data();
 	} else {
@@ -411,6 +455,8 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniCo
 
 				if (NULL == (h = _tfopen(szAlternative, pszReadMode)))
 					return 1;
+				pszFileHeading = getFilenameFromPath(szAlternative);
+
 			} else {
 				return 1;	// Parent driver
 			}
@@ -515,25 +561,18 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniCo
 #endif
 			nInside = *s;
 
-			// Link new node into the list
-			CheatInfo* pPreviousCheat = pCurrentCheat;
-			pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
-			if (pCheatInfo == NULL) {
-				pCheatInfo = pCurrentCheat;
+			if (bFirst) {
+				TCHAR szHeading[256];
+#ifndef __LIBRETRO__
+				_stprintf(szHeading, _T("[ Cheats \"%s\" ]"), pszFileHeading);
+#else
+				_stprintf(szHeading, _T("[%s] "), pszFileHeading);
+#endif
+				CheatLinkNewNode(szHeading);
+				bFirst = false;
 			}
 
-			memset(pCurrentCheat, 0, sizeof(CheatInfo));
-			pCurrentCheat->pPrevious = pPreviousCheat;
-			if (pPreviousCheat) {
-				pPreviousCheat->pNext = pCurrentCheat;
-			}
-
-			// Fill in defaults
-			pCurrentCheat->nType = 0;								// Default to cheat type 0 (apply each frame)
-			pCurrentCheat->nStatus = -1;							// Disable cheat
-
-			memcpy(pCurrentCheat->szCheatName, szQuote, QUOTE_MAX);
-
+			CheatLinkNewNode(szQuote);
 			continue;
 		}
 
@@ -701,6 +740,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 	if (NULL == pszReadMode) pszReadMode = _T("rt");
 
 	FILE *fp = _tfopen(pszFilename, pszReadMode);
+	TCHAR* pszFileHeading = getFilenameFromPath(pszFilename);
 	if (fp == NULL) {
 		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
 			TCHAR szAlternative[MAX_PATH] = { 0 };
@@ -711,6 +751,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 
 			if (NULL == (fp = _tfopen(szAlternative, pszReadMode)))
 				return 1;
+			pszFileHeading = getFilenameFromPath(szAlternative);
 		} else {
 			return 1;	// Parent driver
 		}
@@ -720,8 +761,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 	INT32 i, j, n = 0;
 	TCHAR tmp[32];
 	TCHAR szLine[1024];
-
-	CheatInfo* pCurrentCheat = NULL;
+	bool bFirst = true;
 
 	while (1)
 	{
@@ -736,25 +776,18 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 		{
 			n = 0;
 
-			// Link new node into the list
-			CheatInfo* pPreviousCheat = pCurrentCheat;
-			pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
-			if (pCheatInfo == NULL) {
-				pCheatInfo = pCurrentCheat;
+			if (bFirst) {
+				TCHAR szHeading[256];
+#ifndef __LIBRETRO__
+				_stprintf(szHeading, _T("[ Cheats \"%s\" (Nebula) ]"), pszFileHeading);
+#else
+				_stprintf(szHeading, _T("[%s] "), pszFileHeading);
+#endif
+				bFirst = false;
 			}
 
-			memset(pCurrentCheat, 0, sizeof(CheatInfo));
-			pCurrentCheat->pPrevious = pPreviousCheat;
-			if (pPreviousCheat) {
-				pPreviousCheat->pNext = pCurrentCheat;
-			}
+			CheatLinkNewNode(szLine + 5);
 
-			// Fill in defaults
-			pCurrentCheat->nType = 0;							// Default to cheat type 0 (apply each frame)
-			pCurrentCheat->nStatus = -1;							// Disable cheat
-			pCurrentCheat->nDefault = 0;							// Set default option
-
-			_tcsncpy (pCurrentCheat->szCheatName, szLine + 5, QUOTE_MAX);
 			pCurrentCheat->szCheatName[nLen-6] = _T('\0');
 
 			continue;
@@ -838,7 +871,7 @@ static INT32 ConfigParseNebulaFile(TCHAR* pszFilename)
 
 #define IS_MIDWAY ((BurnDrvGetHardwareCode() & HARDWARE_PREFIX_MIDWAY) == HARDWARE_PREFIX_MIDWAY)
 
-static INT32 ConfigParseMAMEFile_internal(const TCHAR *name)
+static INT32 ConfigParseMAMEFile_internal(const TCHAR *name, const TCHAR *pszFileHeading)
 {
 #define AddressInfo()	\
 	INT32 k = (flags >> 20) & 3;	\
@@ -893,8 +926,8 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name)
 	UINT32 nAddress = 0;
 	UINT32 nValue = 0;
 	UINT32 nAttrib = 0;
+	bool bFirst = true;
 
-	CheatInfo* pCurrentCheat = NULL;
 	_stprintf(gName, _T(":%s:"), name);
 
 	const TCHAR* iniPtr = CurrentMameCheatContent.data();
@@ -1005,25 +1038,18 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name)
 			menu = 0;
 			nCurrentAddress = 0;
 
-			// Link new node into the list
-			CheatInfo* pPreviousCheat = pCurrentCheat;
-			pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
-			if (pCheatInfo == NULL) {
-				pCheatInfo = pCurrentCheat;
+			if (bFirst) {
+				TCHAR szHeading[256];
+#ifndef __LIBRETRO__
+				_stprintf(szHeading, _T("[ Cheats \"%s\" ]"), pszFileHeading);
+#else
+				_stprintf(szHeading, _T("[%s] "), pszFileHeading);
+#endif
+				CheatLinkNewNode(szHeading);
+				bFirst = false;
 			}
 
-			memset(pCurrentCheat, 0, sizeof(CheatInfo));
-			pCurrentCheat->pPrevious = pPreviousCheat;
-			if (pPreviousCheat) {
-				pPreviousCheat->pNext = pCurrentCheat;
-			}
-
-			// Fill in defaults
-			pCurrentCheat->nType = 0;								// Default to cheat type 0 (apply each frame)
-			pCurrentCheat->nStatus = -1;							// Disable cheat
-			pCurrentCheat->nDefault = 0;							// Set default option
-			pCurrentCheat->bOneShot = 0;							// Set default option (off)
-			pCurrentCheat->bWatchMode = 0;							// Set default option (off)
+			CheatLinkNewNode(tmp);						// Set default option (off)
 
 			_tcsncpy (pCurrentCheat->szCheatName, tmp, QUOTE_MAX);
 
@@ -1170,21 +1196,28 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 	return foundData ? 0 : 1;
 }
 
-static INT32 ConfigParseMAMEFile()
+static INT32 ConfigParseMAMEFile(int is_wayder)
 {
 	TCHAR szFileName[MAX_PATH] = _T("");
-	if (HW_NES) {
-		_stprintf(szFileName, _T("%scheatnes.dat"), szAppCheatsPath);
-	} else if (HW_SNES) {
-		_stprintf(szFileName, _T("%scheatsnes.dat"), szAppCheatsPath);
+
+	if (is_wayder) {
+		if (HW_NES || HW_SNES) return 1;
+		_stprintf(szFileName, _T("%swayder_cheat.dat"), szAppCheatsPath);
 	} else {
-		_stprintf(szFileName, _T("%scheat.dat"), szAppCheatsPath);
+		if (HW_NES) {
+			_stprintf(szFileName, _T("%scheatnes.dat"), szAppCheatsPath);
+		} else if (HW_SNES) {
+			_stprintf(szFileName, _T("%scheatsnes.dat"), szAppCheatsPath);
+		} else {
+			_stprintf(szFileName, _T("%scheat.dat"), szAppCheatsPath);
+		}
 	}
 
 	TCHAR* pszReadMode = AdaptiveEncodingReads(szFileName);
 	if (NULL == pszReadMode) pszReadMode = _T("rt");
 
 	FILE *fz = _tfopen(szFileName, pszReadMode);
+	TCHAR* pszFileHeading = getFilenameFromPath(szFileName);
 
 	INT32 ret = 1;
 
@@ -1193,7 +1226,7 @@ static INT32 ConfigParseMAMEFile()
 	if (fz) {
 		ret = ExtractMameCheatFromDat(fz, DrvName);
 		if (ret == 0) {
-			ret = ConfigParseMAMEFile_internal(DrvName);
+			ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading);
 			usedCheatType = (ret == 0) ? 1 : usedCheatType;	// see usedCheatType define
 		}
 		// let's try using parent entry as a fallback if no cheat was found for this romset
@@ -1202,7 +1235,7 @@ static INT32 ConfigParseMAMEFile()
 			DrvName = BurnDrvGetText(DRV_PARENT);
 			ret = ExtractMameCheatFromDat(fz, DrvName);
 			if (ret == 0) {
-				ret = ConfigParseMAMEFile_internal(DrvName);
+				ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading);
 				usedCheatType = (ret == 0) ? 2 : usedCheatType; // see usedCheatType define
 			}
 		}
@@ -1467,12 +1500,13 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 	INT32 n = 0;
 	INT32 nCurrentAddress = 0;
 
-	CheatInfo* pCurrentCheat = NULL;
+	bool bFirst = true;
 
 	TCHAR* pszReadMode = AdaptiveEncodingReads(pszFilename);
 	if (NULL == pszReadMode) pszReadMode = _T("rt");
 
 	FILE* h = _tfopen(pszFilename, pszReadMode);
+	TCHAR* pszFileHeading = getFilenameFromPath(pszFilename);
 	if (h == NULL) {
 		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
 			TCHAR szAlternative[MAX_PATH] = { 0 };
@@ -1483,6 +1517,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 
 			if (NULL == (h = _tfopen(szAlternative, pszReadMode)))
 				return 1;
+			pszFileHeading = getFilenameFromPath(szAlternative);
 		} else {
 			return 1;	// Parent driver
 		}
@@ -1533,7 +1568,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 
 			strcpy(temp2, szGGenie);
 
-			// split up "0077-01-FF" "address-bytecount-bytes_to_program"
+			// split up "0077-01-FF" format: "address-[attribute][bytecount]-bytes_to_program"
 			char *tok = strtok_r(temp2, "-", &tok_main);
 			if (!tok) continue;
 			sscanf(tok, "%x", &fAddr);
@@ -1549,33 +1584,20 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 			if (!tok) continue;
 			sscanf(tok, "%x", &fBytes);
 
-			// bprintf(0, _T(".vct: addr[%x] count[%x] bytes[%x]\n"), fAddr, fCount, fBytes);
+			//bprintf(0, _T(".vct: addr[%x] count[%x] bytes[%x]\n"), fAddr, fCount, fBytes);
+
+			if (bFirst) {
+				TCHAR szHeading[256];
+				_stprintf(szHeading, _T("[ Cheats \"%s\" ]"), pszFileHeading);
+				CheatLinkNewNode(szHeading);
+				bFirst = false;
+			}
 
 			// -- add to cheat engine --
 			n = 0;
 			nCurrentAddress = 0;
 
-			// Link new node into the list
-			CheatInfo* pPreviousCheat = pCurrentCheat;
-			pCurrentCheat = (CheatInfo*)malloc(sizeof(CheatInfo));
-			if (pCheatInfo == NULL) {
-				pCheatInfo = pCurrentCheat;
-			}
-
-			memset(pCurrentCheat, 0, sizeof(CheatInfo));
-			pCurrentCheat->pPrevious = pPreviousCheat;
-			if (pPreviousCheat) {
-				pPreviousCheat->pNext = pCurrentCheat;
-			}
-
-			// Fill in defaults
-			pCurrentCheat->nType = 0;							    // Default to cheat type 0 (apply each frame)
-			pCurrentCheat->nStatus = -1;							// Disable cheat
-			pCurrentCheat->nDefault = 0;							// Set default option
-			pCurrentCheat->bOneShot = 0;							// Set default option (off)
-			pCurrentCheat->bWatchMode = 0;							// Set default option (off)
-
-			_tcsncpy (pCurrentCheat->szCheatName, tmp, QUOTE_MAX);
+			CheatLinkNewNode(tmp);
 
 			OptionName(_T("Disabled"));
 			n++;
@@ -1606,6 +1628,10 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 
 INT32 ConfigCheatLoad() {
 	TCHAR szFilename[MAX_PATH] = _T("");
+
+	pCurrentCheat = NULL;
+	pPreviousCheat = NULL;
+
 	INT32 ret = 1;
 
 	// During running game,while ConfigCheatLoad is called the second time or more,
@@ -1628,7 +1654,7 @@ INT32 ConfigCheatLoad() {
 				break;
 			} // keep loading & adding stuff even if .vct file loads.
 			
-			if (ConfigParseMAMEFile()) {
+			if (ConfigParseMAMEFile(0)) {
 				ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
 				if (ret == 0) {
 					// pszFilename only uses for cheaterror as string,not a file
@@ -1649,10 +1675,10 @@ INT32 ConfigCheatLoad() {
 			}
 			break;
 		case 1:
-			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_NAME));
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_NAME),_T("cheat.dat"));
 			break;
 		case 2:
-			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT));
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("cheat.dat"));
 			break;
 		case 3:
 			// pszFilename only uses for cheaterror as string, not a file in this step
