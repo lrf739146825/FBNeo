@@ -1597,7 +1597,7 @@
 		<description>Bare Knuckle III (Hack, Spanish) (Uncensored) (All Unlocked)</description>
 		<year>2012</year>
 		<manufacturer>pepodmc</manufacturer>
-		<rom name="Bare Knuckle III (Hack, Spanish) (Uncensored) (All Unlocked).bin" size="3146096" crc="d848ee12"/>
+		<rom name="Bare Knuckle III T-Spa (Uncensored, All Unlocked)(2012)(pepodmc).bin" size="3146096" crc="d848ee12"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2545,7 +2545,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="brutal" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Brutal - Paws of Fury (Euro)</description>
+		<description>Brutal: Paws of Fury (Euro)</description>
 		<year>1994</year>
 		<manufacturer>GameTek</manufacturer>
 		<rom name="Brutal - Paws of Fury (Euro)(1994)(GameTek).bin" size="2097152" crc="7e9a8d32"/>
@@ -2553,7 +2553,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="brutalu" cloneof="brutal" romof="brutal" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Brutal - Paws of Fury (USA)</description>
+		<description>Brutal: Paws of Fury (USA)</description>
 		<year>1994</year>
 		<manufacturer>GameTek</manufacturer>
 		<rom name="Brutal - Paws of Fury (USA)(1994)(GameTek).bin" size="2097152" crc="98d502cd"/>
@@ -2577,20 +2577,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="bubbau" cloneof="bubba" romof="bubba" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Bubba'n'Stix - A Strategy Adventure (USA)</description>
-		<year>1993</year>
-		<manufacturer>Core Design</manufacturer>
-		<rom name="Bubba'n'Stix - A Strategy Adventure (USA)(1993)(Core Design).bin" size="1048576" crc="d45cb46f"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="bubbas" cloneof="bubba" romof="bubba" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Bubba'n'Stix: A Strategy Adventure (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Bubba'n'Stix - A Strategy Adventure T-Spa (2019)(Wave).bin" size="1048576" crc="dcd45650"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bubbau" cloneof="bubba" romof="bubba" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Bubba'n'Stix: A Strategy Adventure (USA)</description>
+		<year>1993</year>
+		<manufacturer>Core Design</manufacturer>
+		<rom name="Bubba'n'Stix - A Strategy Adventure (USA)(1993)(Core Design).bin" size="1048576" crc="d45cb46f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4375,8 +4375,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dariusev" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Homebrew</comment>
-		<description>Darius Extra Version (HB)</description>
+		<description>Darius Extra Version (World)</description>
 		<year>2020</year>
 		<manufacturer>Taito - Strictly Limited Games</manufacturer>
 		<rom name="Darius Extra Version (2020)(Strictly Limited Games).bin" size="4194304" crc="7fdc6236"/>
@@ -5779,28 +5778,64 @@
 	</game>
 	<game name="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (English)(HB)</description>
+		<description>Earthion (HB, English v2.0.1)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion (En)(2025)(Ancient).bin" size="7864320" crc="f2cc6b7e"/>
+		<rom name="Earthion v2.0.1 (English)(2025)(Ancient).bin" size="7864320" crc="47d6ac2c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionj" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (Japanese)(HB)</description>
+		<description>Earthion (HB, Japanese v2.0.1)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion (Jp)(2025)(Ancient).bin" size="7864320" crc="f1948b8f"/>
+		<rom name="Earthion v2.0.1 (Japanese)(2025)(Ancient).bin" size="7864320" crc="7f751480"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionp" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (Portuguese)(HB)</description>
+		<description>Earthion (HB, Portuguese v2.0.1)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion (Pt)(2025)(Ancient).bin" size="7864320" crc="2677de3e"/>
+		<rom name="Earthion v2.0.1 (Portuguese)(2025)(Ancient).bin" size="7864320" crc="a087dfd7"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionep" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew, Prototype</comment>
+		<description>Earthion - Early Prototype (HB, Prototype)</description>
+		<year>2024</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion - Early Prototype (2024)(Ancient).bin" size="655360" crc="27423e6c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionfd" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion - Fall 2024 Demo (HB)</description>
+		<year>2024</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion - Fall 2024 Demo (2024)(Ancient).bin" size="6946816" crc="13b8a4a3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionsd" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion - Summer 2024 Demo (HB)</description>
+		<year>2024</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion - Summer 2024 Demo (2024)(Ancient).bin" size="6946816" crc="c6461075"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="earthionwd" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Earthion - Winter 2024 Demo (HB)</description>
+		<year>2024</year>
+		<manufacturer>Ancient</manufacturer>
+		<rom name="Earthion - Winter 2024 Demo (2024)(Ancient).bin" size="7602176" crc="36838b4b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9072,7 +9107,7 @@
 		<description>Jammit (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="jammit (hack, spanish).bin" size="2097152" crc="70c27091"/>
+		<rom name="Jammit T-Spa (2019)(Wave).bin" size="2097152" crc="70c27091"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9681,7 +9716,7 @@
 		<description>King's Bounty - The Conqueror's Quest (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="king's bounty - the conqueror's quest (hack, spanish).bin" size="524288" crc="06f79c46"/>
+		<rom name="King's Bounty - The Conqueror's Quest T-Spa (2020)(Wave).bin" size="524288" crc="06f79c46"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9816,7 +9851,7 @@
 		<description>Kung Fu Panda 2 (Russia) (Unl)</description>
 		<year>201?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="kung fu panda 2 (unl).bin" size="4194304" crc="a08c3b25"/>
+		<rom name="Kung Fu Panda 2 (Russia)(Unl)(201x).bin" size="4194304" crc="a08c3b25"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9842,7 +9877,7 @@
 		<description>Kuzya - Ekologiya V Opasnosti (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="agent hugo - environment at risk (unl).bin" size="2097152" crc="be32d65b"/>
+		<rom name="Kuzya - Ekologiya V Opasnosti (Russia)(Unl)(199x).bin" size="2097152" crc="be32d65b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9851,7 +9886,7 @@
 		<description>Kuzya - V Mire Dinozavrov (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="agent hugo - in the world of dinosaurs (unl).bin" size="2097152" crc="bd0ebe1c"/>
+		<rom name="Kuzya - V Mire Dinozavrov (Russia)(Unl)(199x).bin" size="2097152" crc="bd0ebe1c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10422,19 +10457,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="lotr" cloneof="strmlord" romof="strmlord" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Lord of the Rings (Russia, Hack of Stormlord)</description>
-		<year>199?</year>
+		<comment>Hack, Hack of Stormlord</comment>
+		<description>Lord of the Rings (Russia) (Unl)</description>
+		<year>200?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="lord of the rings (unl).bin" size="524288" crc="e2a2342a"/>
+		<rom name="Lord of the Rings (Russia, Hack of Stormlord)(Unl)(200x).bin" size="524288" crc="e2a2342a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="lotrgs" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lord of the Rings - The Return of the King (Russia) (Unl)</description>
+		<description>Lord of the Rings: The Return of the King (Russia) (Unl)</description>
 		<year>200?</year>
 		<manufacturer>Glorysun</manufacturer>
-		<rom name="lord of the rings (unl).bin" size="2097152" crc="513ea675"/>
+		<rom name="Lord of the Rings - The Return of the King (Russia)(Unl)(200x)(Glorysun).bin" size="2097152" crc="513ea675"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10563,21 +10598,21 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="madagopp" cloneof="magichat" romof="magichat" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Madagascar - Operatsiya Pingvin (Russia) (Unl)</description>
-		<year>20??</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Madagascar - Operatsiya Pingvin (Russia)(Unl)(20xx).bin" size="1048576" crc="6d28ace5"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="madagsc3" cloneof="dinotale" romof="dinotale" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Madagascar 3 (Russia) (Unl)</description>
 		<year>20??</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Madagascar 3 (Russia)(Unl)(20xx).bin" size="1048576" crc="0bd6d0a5"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="madagopp" cloneof="magichat" romof="magichat" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Madagascar: Operatsiya Pingvin (Russia) (Unl)</description>
+		<year>20??</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Madagascar - Operatsiya Pingvin (Russia)(Unl)(20xx).bin" size="1048576" crc="6d28ace5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10643,7 +10678,7 @@
 		<description>Mafia (Russia) (Unl)</description>
 		<year>2010</year>
 		<manufacturer>BMB</manufacturer>
-		<rom name="mafia (unl).bin" size="1048576" crc="ede60834"/>
+		<rom name="Mafia (Russia)(Unl)(2010)(BMB).bin" size="1048576" crc="ede60834"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10757,6 +10792,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mainurse" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Mai Nurse (HB, v1.02)</description>
+		<year>2024-25</year>
+		<manufacturer>lunoka</manufacturer>
+		<rom name="Mai Nurse v1.02 (2024-25)(lunoka).bin" size="262144" crc="fc7c2995"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="whacacri" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Mallet Legend's Whac-a-Critter (USA, Taiwan) (Unl)</description>
 		<year>1993</year>
@@ -10790,18 +10834,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="mario3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mario 3 - Vokrug Sveta (Russia) (Unl)</description>
+		<description>Mario 3: Vokrug Sveta (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="mario 3 (unl).bin" size="2097152" crc="69f5b02f"/>
+		<rom name="Mario 3 - Vokrug Sveta (Russia)(Unl)(199x).bin" size="2097152" crc="69f5b02f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mario4" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mario 4 - Kosmicheskaya Odissyeya (Russia) (Unl)</description>
+		<description>Mario 4: Kosmicheskaya Odissyeya (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="mario 4 (unl).bin" size="2097152" crc="96b0ecd9"/>
+		<rom name="Mario 4 - Kosmicheskaya Odissyeya (Russia)(Unl)(199x).bin" size="2097152" crc="96b0ecd9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11015,6 +11059,15 @@
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="McDonald's Treasure Land Adventure (USA)(1993)(Sega).bin" size="1048576" crc="04ef4899"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mcdonaldre" cloneof="mcdonald" romof="mcdonald" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>McDonald's Treasure Land Adventure Restoration (Hack)</description>
+		<year>2025</year>
+		<manufacturer>SCD</manufacturer>
+		<rom name="McDonald's Treasure Land Adventure Restoration (2025)(SCD).bin" size="1048576" crc="28398d66"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11335,11 +11388,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="megaturrdc" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Homebrew</comment>
-		<description>Mega Turrican - Director's Cut (HB)</description>
+		<description>Mega Turrican - Director's Cut (World)</description>
 		<year>2021</year>
 		<manufacturer>Factor 5 - Strictly Limited Games</manufacturer>
-		<rom name="Mega Turrican - Director's Cut (2021)(Strictly Limited Games).smd" size="5242880" crc="3226ec36"/>
+		<rom name="Mega Turrican - Director's Cut (2021)(Strictly Limited Games).bin" size="5242880" crc="3226ec36"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11490,7 +11542,7 @@
 		<description>Metal Gear Solid (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Glorysun</manufacturer>
-		<rom name="metal gear solid (unl).bin" size="524288" crc="b38191eb"/>
+		<rom name="Metal Gear Solid (Russia)(Unl)(199x)(Glorysun).bin" size="524288" crc="b38191eb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11829,14 +11881,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mmprfe" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mighty Morphin Power Rangers - The Fighting Edition (Russia) (Unl)</description>
-		<year>199?</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="mighty morphin power ranger - the fighting edition (unl).bin" size="2097152" crc="b53ff16c"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="mmprtm" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Mighty Morphin Power Rangers - The Movie (Euro)</description>
 		<year>1995</year>
@@ -11877,6 +11921,14 @@
 		<year>1995</year>
 		<manufacturer>Sega - Banpresto</manufacturer>
 		<rom name="Mighty Morphin Power Rangers - The Movie (USA, Proto, 19950724)(Sega- Banpresto).bin" size="2097152" crc="3429fa3a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mmprfe" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Mighty Morphin Power Rangers: The Fighting Edition (Russia) (Unl)</description>
+		<year>199?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Mighty Morphin Power Rangers: The Fighting Edition (Russia)(Unl)(199x).bin" size="2097152" crc="b53ff16c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12088,7 +12140,7 @@
 		<description>Monsters, Inc. (Russia) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="monsters inc. (unl).bin" size="524288" crc="3f4657d5"/>
+		<rom name="Monsters, Inc. (Russia)(Unl)(199x).bin" size="524288" crc="3f4657d5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12455,7 +12507,7 @@
 		<description>Narnia 3 (Russia) (Unl)</description>
 		<year>200?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="narnia 3 (unl).bin" size="1220032" crc="ab69bcd3"/>
+		<rom name="Narnia 3 (Russia)(Unl)(200x).bin" size="1220032" crc="ab69bcd3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12482,7 +12534,7 @@
 		<description>NBA 2000 (Russia) (Unl)</description>
 		<year>2000</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="nba 2000 (unl).bin" size="2097152" crc="2cef6950"/>
+		<rom name="NBA 2000 (Russia)(Unl)(2000).bin" size="2097152" crc="2cef6950"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12491,7 +12543,7 @@
 		<description>NBA 2005 (Russia) (Unl)</description>
 		<year>2005</year>
 		<manufacturer>Glorysun</manufacturer>
-		<rom name="nba 2005 (unl).bin" size="2097152" crc="e8610238"/>
+		<rom name="NBA 2005 (Russia)(Unl)(2005)(Glorysun).bin" size="2097152" crc="e8610238"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13995,57 +14047,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="pstar4pt" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star - O Fim do Milenio (Hack, Portuguese v1.0a)</description>
-		<year>2021</year>
-		<manufacturer>Mad-Dentist</manufacturer>
-		<rom name="Phantasy Star - O Fim do Milenio PT-BR v1.0a (2021)(Mad-Dentist).bin" size="3145728" crc="a2314303"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar4j" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star - Sennenki no Owari ni (Japan)</description>
-		<year>1993</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star - Sennenki no Owari ni (Japan)(1993)(Sega).bin" size="3145728" crc="f0bfad42"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star - The End of the Millennium (Euro)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star - The End of the Millennium (Euro)(1994)(Sega).bin" size="3145728" crc="389c2968"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar4p2" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Prototype</comment>
-		<description>Phantasy Star - The End of the Millennium (Prototype, 19941027)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star - The End of the Millennium (Proto, 19941027)(Sega).bin" size="3145728" crc="12a2590a"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar4p1" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Prototype</comment>
-		<description>Phantasy Star - The End of the Millennium (Prototype, 19941107)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star - The End of the Millennium (Proto, 19941107)(Sega).bin" size="3145728" crc="bda29cdf"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar4u" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star - The End of the Millennium (USA)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star - The End of the Millennium (USA)(1994)(Sega).bin" size="3145728" crc="fe236442"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="pstar2br" cloneof="pstar2" romof="pstar2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Phantasy Star II (Brazil)</description>
 		<year>199?</year>
@@ -14070,133 +14071,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="ps2aae" cloneof="ps2aa" romof="ps2aa" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Amia's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Amia's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="7fdb5fe9"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2aa" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Amia's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Amia's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="a3a724aa"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2abe" cloneof="ps2ab" romof="ps2ab" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Anne's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Anne's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="355fad11"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ab" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Anne's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Anne's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="fafa5b6f"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ace" cloneof="ps2ac" romof="ps2ac" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Huey's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Huey's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="db2cce50"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ac" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Huey's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Huey's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="1a076f83"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pstar2j" cloneof="pstar2" romof="pstar2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Kaerazaru Toki no Owari ni (Japan)</description>
-		<year>1989</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Kaerazaru Toki no Owari ni (Japan)(1989)(Sega).bin" size="786432" crc="bec8eb5a"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ade" cloneof="ps2ad" romof="ps2ad" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Kinds's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Kinds's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="e91051e3"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ad" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Kinds's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Kinds's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="c334f308"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2aee" cloneof="ps2ae" romof="ps2ae" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Nei's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Nei's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="b0ce897c"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ae" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Nei's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Nei's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="3d9ad465"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2afe" cloneof="ps2af" romof="ps2af" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Rudger's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Rudger's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="3cd3bc1c"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2af" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Rudger's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Rudger's Adventure (Japan, SegaNet)(1991(Sega).bin" size="262144" crc="6b5916d2"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2age" cloneof="ps2ag" romof="ps2ag" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Phantasy Star II - Shilka's Adventure (Hack, English)</description>
-		<year>2010</year>
-		<manufacturer>Jon Najar</manufacturer>
-		<rom name="Phantasy Star II - Shilka's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="76e56009"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="ps2ag" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Shilka's Adventure (Japan, SegaNet)</description>
-		<year>1991</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Phantasy Star II - Shilka's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="1f83beb2"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="pstar2ser" cloneof="pstar2" romof="pstar2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Phantasy Star II - Sound Engine Replacement (Hack)</description>
@@ -14206,9 +14080,127 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ps2aae" cloneof="ps2aa" romof="ps2aa" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Amia's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Amia's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="7fdb5fe9"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2aa" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Amia's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Amia's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="a3a724aa"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ab" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Anne's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Anne's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="fafa5b6f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ace" cloneof="ps2ac" romof="ps2ac" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Huey's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Huey's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="db2cce50"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ac" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Huey's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Huey's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="1a076f83"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar2j" cloneof="pstar2" romof="pstar2" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Kaerazaru Toki no Owari ni (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Kaerazaru Toki no Owari ni (Japan)(1989)(Sega).bin" size="786432" crc="bec8eb5a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ade" cloneof="ps2ad" romof="ps2ad" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Kinds's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Kinds's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="e91051e3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ad" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Kinds's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Kinds's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="c334f308"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2aee" cloneof="ps2ae" romof="ps2ae" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Nei's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Nei's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="b0ce897c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ae" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Nei's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Nei's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="3d9ad465"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2afe" cloneof="ps2af" romof="ps2af" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Rudger's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Rudger's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="3cd3bc1c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2af" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Rudger's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Rudger's Adventure (Japan, SegaNet)(1991(Sega).bin" size="262144" crc="6b5916d2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2age" cloneof="ps2ag" romof="ps2ag" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II: Shilka's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Shilka's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="76e56009"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ps2ag" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star II: Shilka's Adventure (Japan, SegaNet)</description>
+		<year>1991</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star II - Shilka's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="1f83beb2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ps2ahe" cloneof="ps2ah" romof="ps2ah" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Phantasy Star II - Yushis's Adventure (Hack, English)</description>
+		<description>Phantasy Star II: Yushis's Adventure (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>Jon Najar</manufacturer>
 		<rom name="Phantasy Star II - Yushis's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="5395a7e2"/>
@@ -14216,15 +14208,24 @@
 		<driver status="good"/>
 	</game>
 	<game name="ps2ah" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star II - Yushis's Adventure (Japan, SegaNet)</description>
+		<description>Phantasy Star II: Yushis's Adventure (Japan, SegaNet)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Phantasy Star II - Yushis's Adventure (Japan, SegaNet)(1991)(Sega).bin" size="262144" crc="d40c76d6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ps2abe" cloneof="ps2ab" romof="ps2ab" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star II:Anne's Adventure (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>Jon Najar</manufacturer>
+		<rom name="Phantasy Star II - Anne's Adventure T-Eng (2010)(Jon Najar).bin" size="262144" crc="355fad11"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pstar3br" cloneof="pstar3" romof="pstar3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star III - Generations of Doom (Brazil)</description>
+		<description>Phantasy Star III: Generations of Doom (Brazil)</description>
 		<year>1998</year>
 		<manufacturer>Tec Toy</manufacturer>
 		<rom name="Phantasy Star III - Generations of Doom (Brazil)(1998)(Tec Toy).bin" size="786432" crc="2e9b4c23"/>
@@ -14232,7 +14233,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pstar3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star III - Generations of Doom (Euro, USA, Korea)</description>
+		<description>Phantasy Star III: Generations of Doom (Euro, USA, Korea)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Phantasy Star III - Generations of Doom (Euro, USA, Korea)(1990)(Sega).bin" size="786432" crc="c6b42b0f"/>
@@ -14241,7 +14242,7 @@
 	</game>
 	<game name="pstar3st" cloneof="pstar3" romof="pstar3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Phantasy Star III - Successors of Time (Hack, v1.2)</description>
+		<description>Phantasy Star III: Successors of Time (Hack, v1.2)</description>
 		<year>2020</year>
 		<manufacturer>Rebecca Capowski, lory1990, Peaches</manufacturer>
 		<rom name="Phantasy Star III - Successors of Time v1.2 (2020)(Rebecca Capowski, lory1990, Peaches).bin" size="828012" crc="4db28d1f"/>
@@ -14249,10 +14250,35 @@
 		<driver status="good"/>
 	</game>
 	<game name="pstar3j" cloneof="pstar3" romof="pstar3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Phantasy Star III - Toki no Keishousha (Japan)</description>
+		<description>Phantasy Star III: Toki no Keishousha (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Phantasy Star III - Toki no Keishousha (Japan)(1990)(Sega).bin" size="786432" crc="6c48c06f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4pt" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Phantasy Star: O Fim do Milenio (Hack, Portuguese v1.0a)</description>
+		<year>2021</year>
+		<manufacturer>Mad-Dentist</manufacturer>
+		<rom name="Phantasy Star - O Fim do Milenio PT-BR v1.0a (2021)(Mad-Dentist).bin" size="3145728" crc="a2314303"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4j" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star: Sennenki no Owari ni (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star - Sennenki no Owari ni (Japan)(1993)(Sega).bin" size="3145728" crc="f0bfad42"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star: The End of the Millennium (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star - The End of the Millennium (Euro)(1994)(Sega).bin" size="3145728" crc="389c2968"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14262,6 +14288,32 @@
 		<year>2022</year>
 		<manufacturer>Ken_Tse</manufacturer>
 		<rom name="Phantasy Star - The End of the Millennium T-Chi v1.6 (2022)(Ken_Tse).bin" size="3276800" crc="0db82dd1"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4p2" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Prototype</comment>
+		<description>Phantasy Star: The End of the Millennium (Prototype, 19941027)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star - The End of the Millennium (Proto, 19941027)(Sega).bin" size="3145728" crc="12a2590a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4p1" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Prototype</comment>
+		<description>Phantasy Star: The End of the Millennium (Prototype, 19941107)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star - The End of the Millennium (Proto, 19941107)(Sega).bin" size="3145728" crc="bda29cdf"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pstar4u" cloneof="pstar4" romof="pstar4" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Phantasy Star: The End of the Millennium (USA)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Phantasy Star - The End of the Millennium (USA)(1994)(Sega).bin" size="3145728" crc="fe236442"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15554,6 +15606,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rickdangerousdx" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Rick Dangerous DX (HB)</description>
+		<year>2025</year>
+		<manufacturer>Z-Team</manufacturer>
+		<rom name="Rick Dangerous DX (2025)(Z-Team).bin" size="1572864" crc="12e804a4"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="riddle" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Riddle Wired (Japan, SegaNet)</description>
 		<year>1991</year>
@@ -16053,15 +16114,15 @@
 		<description>Romance of the Three Kingdoms II (USA)</description>
 		<year>1991</year>
 		<manufacturer>Koei</manufacturer>
-		<rom name="romance of the three kingdoms ii (usa).bin" size="1048576" crc="3d842478"/>
+		<rom name="Romance of the Three Kingdoms II (USA)(1991)(Koei).bin" size="1048576" crc="3d842478"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="roman3k3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Romance of the Three Kingdoms III - Dragon of Destiny (USA)</description>
+		<description>Romance of the Three Kingdoms III: Dragon of Destiny (USA)</description>
 		<year>1993</year>
 		<manufacturer>Koei</manufacturer>
-		<rom name="romance of the three kingdoms iii - dragon of destiny (usa).bin" size="1310720" crc="7e41c8fe"/>
+		<rom name="Romance of the Three Kingdoms III - Dragon of Destiny (USA)(1993)(Koei).bin" size="1310720" crc="7e41c8fe"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16094,7 +16155,7 @@
 		<description>Rugby World Cup 1995 (Euro, USA)</description>
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="rugby world cup 1995 (euro, usa).bin" size="2097152" crc="61f90a8a"/>
+		<rom name="Rugby World Cup 1995 (Euro, USA)(1994)(Electronic Arts).bin" size="2097152" crc="61f90a8a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16286,7 +16347,7 @@
 		<description>Sangokushi II (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Koei</manufacturer>
-		<rom name="mpr-14455.bin" size="1048576" crc="437ba326"/>
+		<rom name="Sangokushi II (Japan)(1991)(Koei).bin" size="1048576" crc="437ba326"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16294,7 +16355,7 @@
 		<description>Sangokushi III (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Koei</manufacturer>
-		<rom name="sangokushi iii (jpn).bin" size="1572864" crc="a8de6aea"/>
+		<rom name="Sangokushi III (Japan)(1992)(Koei).bin" size="1572864" crc="a8de6aea"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17067,7 +17128,7 @@
 		<description>Ship (Prototype)</description>
 		<year>199?</year>
 		<manufacturer>Technopop</manufacturer>
-		<rom name="ship (prototype).bin" size="131072" crc="4cdc9f16"/>
+		<rom name="Ship (Prototype)(199x)(Technopop).bin" size="131072" crc="4cdc9f16"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17076,7 +17137,7 @@
 		<description>Ship (Visitor Prototype)</description>
 		<year>199?</year>
 		<manufacturer>Technopop</manufacturer>
-		<rom name="ship (visitor prototype).bin" size="262144" crc="852b5511"/>
+		<rom name="Ship (Visitor Prototype)(199x)(Technopop).bin" size="262144" crc="852b5511"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17092,7 +17153,7 @@
 		<description>Shougi no Hoshi (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Home Data</manufacturer>
-		<rom name="shougi no hoshi (jpn).bin" size="262144" crc="4148f816"/>
+		<rom name="Shougi no Hoshi (Japan)(1991)(Home Data).bin" size="262144" crc="4148f816"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17221,22 +17282,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="bartvssm1" cloneof="bartvssm" romof="bartvssm" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Simpsons, The - Bart Vs The Space Mutants (Euro, USA)</description>
-		<year>1992</year>
-		<manufacturer>Flying Edge</manufacturer>
-		<rom name="Simpsons, The - Bart Vs The Space Mutants (Euro, USA)(1992)(Flying Edge).bin" size="524288" crc="c8620574"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="bartvssm" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Simpsons, The - Bart Vs The Space Mutants (Euro, USA, Rev. A)</description>
-		<year>1992</year>
-		<manufacturer>Flying Edge</manufacturer>
-		<rom name="Simpsons, The - Bart Vs The Space Mutants (Euro, USA, Rev A)(1992)(Flying Edge).bin" size="524288" crc="db70e8ca"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="bartvssms" cloneof="bartvssm" romof="bartvssm" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Simpsons, The - Bart Vs The Space Mutants (Hack, Spanish)</description>
@@ -17246,8 +17291,24 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bartvssm1" cloneof="bartvssm" romof="bartvssm" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Simpsons, The: Bart Vs The Space Mutants (Euro, USA)</description>
+		<year>1992</year>
+		<manufacturer>Flying Edge</manufacturer>
+		<rom name="Simpsons, The - Bart Vs The Space Mutants (Euro, USA)(1992)(Flying Edge).bin" size="524288" crc="c8620574"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bartvssm" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Simpsons, The: Bart Vs The Space Mutants (Euro, USA, Rev. A)</description>
+		<year>1992</year>
+		<manufacturer>Flying Edge</manufacturer>
+		<rom name="Simpsons, The - Bart Vs The Space Mutants (Euro, USA, Rev A)(1992)(Flying Edge).bin" size="524288" crc="db70e8ca"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bartnigh" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Simpsons, The - Bart's Nightmare (Euro, USA)</description>
+		<description>Simpsons, The: Bart's Nightmare (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
 		<rom name="Simpsons, The - Bart's Nightmare (Euro, USA)(1993)(Flying Edge).bin" size="1048576" crc="24d7507c"/>
@@ -19314,7 +19375,7 @@
 		<description>SubTerrania (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>m0sca</manufacturer>
-		<rom name="subterrania (hack, spanish).bin" size="2097152" crc="5bfd7998"/>
+		<rom name="Subterrania T-Spa (2020)(m0sca).bin" size="2097152" crc="5bfd7998"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19391,7 +19452,7 @@
 		<description>Sunset Riders (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="sunset riders (hack, spanish).bin" size="524288" crc="63909c3d"/>
+		<rom name="Sunset Riders T-Spa (2019)(Wave).bin" size="524288" crc="63909c3d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19488,7 +19549,7 @@
 		<description>Super Fantasy Zone (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="super fantasy zone (hack, spanish).bin" size="1048576" crc="e79f6216"/>
+		<rom name="Super Fantasy Zone T-Spa (2019)(Wave).bin" size="1048576" crc="e79f6216"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19513,7 +19574,7 @@
 		<description>Super Hang-On (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="super hang-on (hack, spanish).bin" size="524288" crc="9586e314"/>
+		<rom name="Super Hang-On T-Spa (2017)(Wave).bin" size="524288" crc="9586e314"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19761,7 +19822,7 @@
 		<description>Super Off Road (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="super off road (hack, spanish).bin" size="524288" crc="050bbb2d"/>
+		<rom name="Super Off Road T-Spa (2019)(Wave).bin" size="524288" crc="050bbb2d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19887,7 +19948,7 @@
 		<description>Super Smash TV (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="super smash tv (hack, spanish).bin" size="524288" crc="349b2a6c"/>
+		<rom name="Super Smash TV T-Spa (2019)(Wave).bin" size="524288" crc="349b2a6c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20013,7 +20074,7 @@
 		<description>Superman (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="superman (hack, spanish).bin" size="1048576" crc="5d538528"/>
+		<rom name="Superman T-Spa (2018)(Wave).bin" size="1048576" crc="5d538528"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20090,7 +20151,7 @@
 		<description>Sword of Sodan (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="sword of sodan (hack, spanish).bin" size="524288" crc="5e504f77"/>
+		<rom name="Sword of Sodan T-Spa (2019)(Wave).bin" size="524288" crc="5e504f77"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21227,10 +21288,10 @@
 	</game>
 	<game name="tokis" cloneof="toki" romof="toki" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Toki - Going Ape Spit ~ JuJu Densetsu (Hack, Spanish v1.2)</description>
+		<description>Toki: Going Ape Spit ~ JuJu Densetsu (Hack, Spanish v1.2)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="toki - going ape spit ~ juJu densetsu (hack, spanish).bin" size="524288" crc="ef5bf668"/>
+		<rom name="Toki - Going ape spit - JuJu Densetsu T-Spa v1.2 (2017)(Wave).bin" size="524288" crc="ef5bf668"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21259,18 +21320,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="tomjerry" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Tom and Jerry - Frantic Antics (USA, 1993)</description>
+		<description>Tom and Jerry: Frantic Antics (USA, 1993)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry - frantic antics (usa) (1993).bin" size="1048576" crc="b9992e1c"/>
+		<rom name="Tom and Jerry - Frantic Antics (USA)(1993)(Sega).bin" size="1048576" crc="b9992e1c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tomjerry1" cloneof="tomjerry" romof="tomjerry" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Tom and Jerry - Frantic Antics (USA, 1994)</description>
+		<description>Tom and Jerry: Frantic Antics (USA, Rev. B)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tom and jerry - frantic antics (usa) (1994).bin" size="1048576" crc="3044460c"/>
+		<rom name="Tom and Jerry - Frantic Antics (USA, Rev B)(1994)(Sega).bin" size="1048576" crc="3044460c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21320,7 +21381,7 @@
 		<description>Tony La Russa Baseball (USA, Oceania)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="tony la russa baseball (usa, aus).bin" size="1048576" crc="24629c78"/>
+		<rom name="Tony La Russa Baseball (USA, Oceania)(1993)(Electronic Arts).bin" size="1048576" crc="24629c78"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21344,7 +21405,7 @@
 		<description>Top Gear 2 (USA)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="top gear 2 (usa).bin" size="1048576" crc="bd3074d2"/>
+		<rom name="Top Gear 2 (USA)(1994)(Vic Tokai).bin" size="1048576" crc="bd3074d2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21352,7 +21413,7 @@
 		<description>Top Pro Golf (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Soft Vision</manufacturer>
-		<rom name="mpr-14853.bin" size="1048576" crc="62bad606"/>
+		<rom name="Top Pro Golf (Japan)(1992)(Soft Vision).bin" size="1048576" crc="62bad606"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21360,7 +21421,7 @@
 		<description>Top Pro Golf 2 (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Soft Vision</manufacturer>
-		<rom name="top pro golf 2 (jpn).bin" size="1048576" crc="b8ce98b3"/>
+		<rom name="Top Pro Golf 2 (Japan)(1993)(Soft Vision).bin" size="1048576" crc="b8ce98b3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21368,7 +21429,7 @@
 		<description>Total Football (Euro)</description>
 		<year>1995</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="total football (euro).bin" size="2097152" crc="8360b66a"/>
+		<rom name="Total Football (Euro)(1995)(Domark).bin" size="2097152" crc="8360b66a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21376,7 +21437,7 @@
 		<description>Toughman Contest (Euro, USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
-		<rom name="toughman contest (euro, usa).bin" size="4194304" crc="e19fbc93"/>
+		<rom name="Toughman Contest (Euro, USA)(1995)(Electronic Arts).bin" size="4194304" crc="e19fbc93"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21438,7 +21499,7 @@
 		<description>Toxic Crusaders (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="toxic crusaders (hack, spanish).bin" size="524288" crc="c2541e0a"/>
+		<rom name="Toxic Crusaders T-Spa (2018)(Wave).bin" size="524288" crc="c2541e0a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21463,7 +21524,7 @@
 		<description>Toy Story (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="toy story (hack, spanish).bin" size="4194304" crc="82cf5f0e"/>
+		<rom name="Toy Story T-Spa (2018)(Wave).bin" size="4194304" crc="82cf5f0e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21546,7 +21607,7 @@
 		<description>Trouble Shooter (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="trouble shooter (hack, spanish).bin" size="524288" crc="6549645a"/>
+		<rom name="Trouble Shooter T-Spa (2018)(Wave).bin" size="524288" crc="6549645a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21579,7 +21640,7 @@
 		<description>True Lies (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="true lies (hack, spanish).bin" size="2097152" crc="97821532"/>
+		<rom name="True Lies T-Spa (2018)(Wave).bin" size="2097152" crc="97821532"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21604,7 +21665,7 @@
 		<description>Truxton (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="truxton (hack, spanish).bin" size="524288" crc="0c92ea14"/>
+		<rom name="Truxton T-Spa (2019)(Wave).bin" size="524288" crc="0c92ea14"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21901,10 +21962,10 @@
 	</game>
 	<game name="umk3osc" cloneof="umk3" romof="umk3" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Ultimate Mortal Kombat 3 OSC (Hack, v31)</description>
+		<description>Ultimate Mortal Kombat 3 OSC (Hack, v31a)</description>
 		<year>2025</year>
 		<manufacturer>Bonus</manufacturer>
-		<rom name="Ultimate Mortal Kombat 3 OSC v31 (2025)(Bonus).bin" size="5459844" crc="63a27314"/>
+		<rom name="Ultimate Mortal Kombat 3 OSC v31a (2025)(Bonus).bin" size="5459844" crc="4d83ac52"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

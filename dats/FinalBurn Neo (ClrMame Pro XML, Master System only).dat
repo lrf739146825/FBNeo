@@ -1187,6 +1187,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="castlilli" cloneof="castlill" romof="castlill" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Castle of Illusion Starring Mickey Mouse (Hack, Italian v0.99)</description>
+		<year>2005</year>
+		<manufacturer>darq</manufacturer>
+		<rom name="Castle of Illusion Starring Mickey Mouse T-Ita v0.99 (2005)(darq).sms" size="262144" crc="56a3aefc"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="castlillc" cloneof="castlill" romof="castlill" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Castle of Illusion Starring Mickey Mouse (Hack, Spanish v2.0)</description>
@@ -1331,7 +1340,7 @@
 	<game name="cloudmst" sourcefile="sms/d_sms.cpp">
 		<description>Cloud Master (Euro, USA)</description>
 		<year>1989</year>
-		<manufacturer>Sega</manufacturer>
+		<manufacturer>Sega - Hot-B</manufacturer>
 		<rom name="Cloud Master (Euro, USA)(1989)(Sega).sms" size="262144" crc="e7f62e6d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -1673,7 +1682,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dokidoki" cloneof="pengland" romof="pengland" sourcefile="sms/d_sms.cpp">
-		<description>Doki Doki Penguin Land - Uchuu Daibouken (Japan)</description>
+		<description>Doki Doki Penguin Land: Uchuu Daibouken (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Doki Doki Penguin Land - Uchuu Daibouken (Japan)(1987)(Sega).sms" size="131072" crc="2bcdb8fa"/>
@@ -1682,7 +1691,7 @@
 	</game>
 	<game name="dokidokip" cloneof="pengland" romof="pengland" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Doki Doki Penguin Land - Uchuu Daibouken (Japan, Prototype)</description>
+		<description>Doki Doki Penguin Land: Uchuu Daibouken (Japan, Prototype)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Doki Doki Penguin Land - Uchuu Daibouken (Japan, Proto)(1987)(Sega).sms" size="131072" crc="56bd2455"/>
@@ -2477,10 +2486,10 @@
 	</game>
 	<game name="gkrescue" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Goblin Kart Rescue (HB, v1.0.3)</description>
+		<description>Goblin Kart Rescue (HB, v1.0.7)</description>
 		<year>2024</year>
 		<manufacturer>raphnet</manufacturer>
-		<rom name="Goblin Kart Rescue v1.0.3 (2024)(raphnet).sms" size="393216" crc="db7b9954"/>
+		<rom name="Goblin Kart Rescue v1.0.7 (2024)(raphnet).sms" size="393216" crc="bb1b448f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2500,15 +2509,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="goldnaxetf" cloneof="goldnaxe" romof="goldnaxe" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Golden Axe - Tyris Flare Edition (Hack)</description>
-		<year>2022</year>
-		<manufacturer>Pyxosoft</manufacturer>
-		<rom name="Golden Axe - Tyris Flare Edition (2022)(Pyxosoft).sms" size="573440" crc="53aec4a5"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="gaxewarr" sourcefile="sms/d_sms.cpp">
 		<description>Golden Axe Warrior (Euro, USA, Brazil)</description>
 		<year>1990</year>
@@ -2523,6 +2523,15 @@
 		<year>2013</year>
 		<manufacturer>Pikachumanson</manufacturer>
 		<rom name="Golden Axe Warrior T-Spa (2013)(Pikachumanson).sms" size="262144" crc="d5c88c4d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="goldnaxetf" cloneof="goldnaxe" romof="goldnaxe" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Golden Axe: Tyris Flare Edition (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Pyxosoft</manufacturer>
+		<rom name="Golden Axe - Tyris Flare Edition (2022)(Pyxosoft).sms" size="573440" crc="53aec4a5"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3117,19 +3126,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="jb007b" cloneof="jb007" romof="jb007" sourcefile="sms/d_sms.cpp">
-		<description>James Bond 007 - The Duel (Brazil)</description>
-		<year>1993</year>
-		<manufacturer>Tec Toy</manufacturer>
-		<rom name="James Bond 007 - The Duel (Brazil)(1993)(Tec Toy).sms" size="262144" crc="8feff688"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="jb007" sourcefile="sms/d_sms.cpp">
 		<description>James Bond 007 - The Duel (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Domark</manufacturer>
 		<rom name="James Bond 007 - The Duel (Euro)(1993)(Domark).sms" size="262144" crc="8d23587f"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jb007b" cloneof="jb007" romof="jb007" sourcefile="sms/d_sms.cpp">
+		<description>James Bond 007: The Duel (Brazil)</description>
+		<year>1993</year>
+		<manufacturer>Tec Toy</manufacturer>
+		<rom name="James Bond 007 - The Duel (Brazil)(1993)(Tec Toy).sms" size="262144" crc="8feff688"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3464,7 +3473,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="loretta" sourcefile="sms/d_sms.cpp">
-		<description>Loretta no Shouzou - Sherlock Holmes (Japan)</description>
+		<description>Loretta no Shouzou: Sherlock Holmes (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Loretta no Shouzou - Sherlock Holmes (Japan)(1987)(Sega).sms" size="131072" crc="323f357f"/>
@@ -4166,6 +4175,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pacmanmm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Pac-Man Master Museum (HB, v2.10)</description>
+		<year>2025</year>
+		<manufacturer>Lack of Track</manufacturer>
+		<rom name="Pac-Man Master Museum v2.10 (2025)(Lack of Track).sms" size="131072" crc="e4057636"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pacmansms" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Pac-Man SMS (HB, v1.10)</description>
@@ -4775,10 +4793,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="sangoku3" sourcefile="sms/d_sms.cpp">
-		<description>Sangokushi 3 (Korea) (Unl)</description>
+		<description>Samgukji III: Cheonha Jaengpae (Korea) (Unl)</description>
 		<year>1994</year>
 		<manufacturer>Game Line</manufacturer>
-		<rom name="Sangokushi 3 (Korea)(Unl)(1994)(Game Line).sms" size="1048576" crc="97d03541"/>
+		<rom name="Samgukji III - Cheonha Jaengpae (Korea)(Unl)(1994)(Game Line).sms" size="1048576" crc="97d03541"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4819,6 +4837,15 @@
 		<year>1985</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Satellite 7 (Japan, Pirate)(1985).sms" size="32768" crc="87b9ecb8"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="scope" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Scope (HB, v1.2)</description>
+		<year>2016</year>
+		<manufacturer>dragonfeet</manufacturer>
+		<rom name="Scope v1.2 (2016)(dragonfeet).sms" size="262144" crc="cafc5493"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5040,12 +5067,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="skbn" sourcefile="sms/d_sms.cpp">
+	<game name="skbn" cloneof="skbnv2" romof="skbnv2" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>SKBN (HB, v1.3)</description>
+		<description>SKBN (HB, v1.4)</description>
 		<year>2021</year>
 		<manufacturer>raphnet</manufacturer>
-		<rom name="SKBN v1.3 (2021)(raphnet).sms" size="131072" crc="1d811c2a"/>
+		<rom name="SKBN v1.4 (2021)(raphnet).sms" size="131072" crc="2ea2517a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="skbnv2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>SKBN (HB, v2.0)</description>
+		<year>2022</year>
+		<manufacturer>raphnet</manufacturer>
+		<rom name="SKBN v2.0 (2022)(raphnet).sms" size="524288" crc="0bacfde4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5160,7 +5196,7 @@
 	</game>
 	<game name="solomonen" cloneof="solomon" romof="solomon" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Solomon's Key - Tears of Princess Lihita (Hack, English)</description>
+		<description>Solomon's Key: Tears of Princess Lihita (Hack, English)</description>
 		<year>2023</year>
 		<manufacturer>FlashPV</manufacturer>
 		<rom name="Solomon's Key - Tears of Princess Lihita T-Eng (2023)(FlashPV).sms" size="131072" crc="66de9f40"/>
@@ -5321,10 +5357,10 @@
 	</game>
 	<game name="sptonbow" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, YM2413 FM sound chip supported</comment>
-		<description>Space Tonbow (HB, v1.1)</description>
-		<year>2024</year>
+		<description>Space Tonbow (HB, v1.1.1)</description>
+		<year>2024-25</year>
 		<manufacturer>SteelFinger Studios</manufacturer>
-		<rom name="Space Tonbow v1.1 (2024)(SteelFinger Studios).sms" size="131072" crc="4c3d2616"/>
+		<rom name="Space Tonbow v1.1.1 (2024-25)(SteelFinger Studios).sms" size="131072" crc="d847b8c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5627,7 +5663,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="sukeban" sourcefile="sms/d_sms.cpp">
-		<description>Sukeban Deka II - Shoujo Tekkamen Densetsu (Japan)</description>
+		<description>Sukeban Deka II: Shoujo Tekkamen Densetsu (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Sukeban Deka II - Shoujo Tekkamen Densetsu (Japan)(1987)(Sega).sms" size="131072" crc="b13df647"/>
@@ -6249,9 +6285,9 @@
 	</game>
 	<game name="ttoriui" cloneof="myhero" romof="myhero" sourcefile="sms/d_sms.cpp">
 		<description>Ttoriui Moheom (Korea)</description>
-		<year>19??</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Ttoriui Moheom (Korea)(19xx).sms" size="32768" crc="178801d2"/>
+		<year>198?</year>
+		<manufacturer>Samsung</manufacturer>
+		<rom name="Ttoriui Moheom (Korea)(198x)(Samsung).sms" size="32768" crc="178801d2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6454,10 +6490,10 @@
 	</game>
 	<game name="wingwarriors" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Wing Warriors (HB, v1.00 fix)</description>
+		<description>Wing Warriors (HB, v1.04)</description>
 		<year>2020-24</year>
 		<manufacturer>Kitmaker Entertainment</manufacturer>
-		<rom name="Wing Warriors v1.00 fix (2020-24)(Kitmaker Ent.).sms" size="131072" crc="11d3d834"/>
+		<rom name="Wing Warriors v1.04 (2020-24)(Kitmaker Entertainment).sms" size="131072" crc="11d3d834"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6762,6 +6798,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ysj" cloneof="ys" romof="ys" sourcefile="sms/d_sms.cpp">
+		<comment>YM2413 FM sound chip supported</comment>
 		<description>Ys (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
@@ -6770,7 +6807,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ys" sourcefile="sms/d_sms.cpp">
-		<description>Ys - The Vanished Omens (Euro, USA, Brazil)</description>
+		<description>Ys: The Vanished Omens (Euro, USA, Brazil)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ys - The Vanished Omens (Euro, USA, Brazil)(1988)(Sega).sms" size="262144" crc="b33e2827"/>
@@ -6779,7 +6816,7 @@
 	</game>
 	<game name="ysfm" cloneof="ys" romof="ys" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
-		<description>Ys - The Vanished Omens (Hack, FM Mod v1.2)</description>
+		<description>Ys: The Vanished Omens (Hack, FM Mod v1.2)</description>
 		<year>2009</year>
 		<manufacturer>Sega - SSTranslations</manufacturer>
 		<rom name="Ys - The Vanished Omens FM Mod v1.2 (2009)(SSTranslations).sms" size="262144" crc="7ed5dca2"/>
@@ -6787,7 +6824,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ysd" cloneof="ys" romof="ys" sourcefile="sms/d_sms.cpp">
-		<description>Ys - The Vanished Omens (USA, Demo)</description>
+		<description>Ys: The Vanished Omens (USA, Demo)</description>
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ys - The Vanished Omens (USA, Demo)(1988)(Sega).sms" size="262144" crc="e8b82066"/>

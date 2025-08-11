@@ -240,19 +240,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bakubakuj" cloneof="bakubaku" romof="bakubaku" sourcefile="sms/d_sms.cpp">
+		<description>Baku Baku Animal (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Baku Baku Animal (Japan)(1996)(Sega).gg" size="262144" crc="7174b802"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bakubakuu" cloneof="bakubaku" romof="bakubaku" sourcefile="sms/d_sms.cpp">
 		<description>Baku Baku Animal (USA)</description>
 		<year>1996</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Baku Baku Animal (USA)(1996)(Sega).gg" size="262144" crc="8d8bfdc4"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="bakubakuj" cloneof="bakubaku" romof="bakubaku" sourcefile="sms/d_sms.cpp">
-		<description>Baku Baku Animal: Sekai Shiikugakari Senshu-ken (Japan)</description>
-		<year>1996</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Baku Baku Animal - Sekai Shiikugakari Senshu-ken (Japan)(1996)(Sega).gg" size="262144" crc="7174b802"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -721,7 +721,7 @@
 	</game>
 	<game name="crayone" cloneof="crayon" romof="crayon" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Crayon Shin-chan - Taiketsu! Kantamu Panic!! (Hack, English)</description>
+		<description>Crayon Shin-chan: Shodown! Quantum Panic!! (Hack, English)</description>
 		<year>2018</year>
 		<manufacturer>Psyklax</manufacturer>
 		<rom name="Crayon Shin-Chan - Taiketsu! Tankam Panic!! T-Eng (2018)(Psyklax).gg" size="524288" crc="48c18828"/>
@@ -1184,6 +1184,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ernieeg" sourcefile="sms/d_sms.cpp">
+		<comment>NB: corrupted background graphics</comment>
 		<description>Ernie Els Golf (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
@@ -1354,10 +1355,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="fray" sourcefile="sms/d_sms.cpp">
-		<description>Fray: Shugyou Hen (Japan)</description>
+		<description>Fray: Shugyouhen (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Micro Cabin</manufacturer>
-		<rom name="Fray - Shugyou Hen (Japan)(1991)(Micro Cabin).gg" size="262144" crc="e123d9b8"/>
+		<rom name="Fray - Shugyouhen (Japan)(1991)(Micro Cabin).gg" size="262144" crc="e123d9b8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1704,10 +1705,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ddanpei" sourcefile="sms/d_sms.cpp">
-		<description>Honoo no Toukyuuji - Dodge Danpei (Japan)</description>
+		<description>Honoo no Toukyuuji Dodge Danpei (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Honoo no Toukyuuji - Dodge Danpei (Japan)(1992)(Sega).gg" size="131072" crc="dfa805a0"/>
+		<rom name="Honoo no Toukyuuji Dodge Danpei (Japan)(1992)(Sega).gg" size="131072" crc="dfa805a0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1824,7 +1825,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jb007" sourcefile="sms/d_sms.cpp">
-		<description>James Bond 007 - The Duel (Euro)</description>
+		<description>James Bond 007: The Duel (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Domark</manufacturer>
 		<rom name="James Bond 007 - The Duel (Euro)(1993)(Domark).gg" size="262144" crc="881a4524"/>
@@ -1832,7 +1833,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jpond3" sourcefile="sms/d_sms.cpp">
-		<description>James Pond 3 - Operation Starfish (Euro)</description>
+		<description>James Pond 3: Operation Starfish (Euro)</description>
 		<year>1994</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="James Pond 3 - Operation Starfish (Euro)(1994)(U.S. Gold).gg" size="524288" crc="68bb7f71"/>
@@ -1840,7 +1841,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="robocod" sourcefile="sms/d_sms.cpp">
-		<description>James Pond II - Codename RoboCod (Euro)</description>
+		<description>James Pond II: Codename RoboCod (Euro)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="James Pond II - Codename RoboCod (Euro)(1993)(U.S. Gold).gg" size="524288" crc="c2f7928b"/>
@@ -1848,7 +1849,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="robocodu" cloneof="robocod" romof="robocod" sourcefile="sms/d_sms.cpp">
-		<description>James Pond II - Codename RoboCod (USA)</description>
+		<description>James Pond II: Codename RoboCod (USA)</description>
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="James Pond II - Codename RoboCod (USA)(1993)(U.S. Gold).gg" size="524288" crc="9fb5c155"/>
@@ -1858,8 +1859,8 @@
 	<game name="jangpun2" sourcefile="sms/d_sms.cpp">
 		<description>Jang Pung II (Korea, SMS Mode)</description>
 		<year>1993</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Jang Pung II (Korea, SMS Mode)(1993).gg" size="262144" crc="76c5bdfb"/>
+		<manufacturer>Sieco</manufacturer>
+		<rom name="Jang Pung II (Korea, SMS Mode)(1993)(Sieco).gg" size="262144" crc="76c5bdfb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2150,10 +2151,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="lunar" sourcefile="sms/d_sms.cpp">
-		<description>Lunar - Sanposuru Gakuen (Japan)</description>
+		<description>Lunar: Sanpo-suru Gakuen (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Game Arts</manufacturer>
-		<rom name="Lunar - Sanposuru Gakuen (Japan)(1995)(Game Arts).gg" size="524288" crc="58459edd"/>
+		<rom name="Lunar - Sanpo-suru Gakuen (Japan)(1995)(Game Arts).gg" size="524288" crc="58459edd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2183,7 +2184,7 @@
 	</game>
 	<game name="madoumone" cloneof="madoumon" romof="madoumon" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Madou Monogatari I: 3-Tsu no Madoukyuu (Hack, English)</description>
+		<description>Madou Monogatari I: 3 Magic Spheres (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>SSTranslations</manufacturer>
 		<rom name="Madou Monogatari I - 3-Tsu no Madoukyuu T-Eng (2010)(SSTranslations).gg" size="524288" crc="b289011d"/>
@@ -2198,15 +2199,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="madoumn2e" cloneof="madoumn2" romof="madoumn2" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Madou Monogatari II: Arle 16-Sai (Hack, English v1.2)</description>
-		<year>2020</year>
-		<manufacturer>Supper</manufacturer>
-		<rom name="Madou Monogatari II - Arle 16-Sai T-Eng v1.2 (2020)(Supper).gg" size="1048576" crc="ef7d7c02"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="madoumn2" sourcefile="sms/d_sms.cpp">
 		<description>Madou Monogatari II: Arle 16-Sai (Japan)</description>
 		<year>1994</year>
@@ -2215,12 +2207,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="madoumn3e" cloneof="madoumn3" romof="madoumn3" sourcefile="sms/d_sms.cpp">
+	<game name="madoumn2e" cloneof="madoumn2" romof="madoumn2" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
-		<description>Madou Monogatari III: Kyuukyoku Joou-sama (Hack, English v1.2)</description>
+		<description>Madou Monogatari II: Arle, Age 16 (Hack, English v1.2)</description>
 		<year>2020</year>
 		<manufacturer>Supper</manufacturer>
-		<rom name="Madou Monogatari III - Kyuukyoku Joou-sama T-Spa v1.2 (2020)(Supper).gg" size="1048576" crc="e90126c0"/>
+		<rom name="Madou Monogatari II - Arle 16-Sai T-Eng v1.2 (2020)(Supper).gg" size="1048576" crc="ef7d7c02"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2237,6 +2229,15 @@
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Madou Monogatari III - Kyuukyoku Joou-sama (Japan, v1.1)(1994)(Sega).gg" size="524288" crc="568f4825"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="madoumn3e" cloneof="madoumn3" romof="madoumn3" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Madou Monogatari III: The Ultimate Queen (Hack, English v1.2)</description>
+		<year>2020</year>
+		<manufacturer>Supper</manufacturer>
+		<rom name="Madou Monogatari III - Kyuukyoku Joou-sama T-Spa v1.2 (2020)(Supper).gg" size="1048576" crc="e90126c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2339,20 +2340,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="lastbibse" cloneof="lastbibs" romof="lastbibs" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Megami Tensei Gaiden - Last Bible S (Hack, English v1.02)</description>
-		<year>2018</year>
-		<manufacturer>MrRichard999</manufacturer>
-		<rom name="Megami Tensei Gaiden - Last Bible S T-Eng v1.02 (2018)(MrRichard999).gg" size="524288" crc="1a1cb7f8"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="lastbibl" sourcefile="sms/d_sms.cpp">
 		<description>Megami Tensei Gaiden ~ Last Bible (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Megami Tensei Gaiden - Last Bible (Japan)(1994)(Sega).gg" size="524288" crc="2e4ec17b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lastbibse" cloneof="lastbibs" romof="lastbibs" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Megami Tensei Gaiden ~ Last Bible S (Hack, English v1.02)</description>
+		<year>2018</year>
+		<manufacturer>MrRichard999</manufacturer>
+		<rom name="Megami Tensei Gaiden - Last Bible S T-Eng v1.02 (2018)(MrRichard999).gg" size="524288" crc="1a1cb7f8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2462,20 +2463,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="moldorane" cloneof="moldoran" romof="moldoran" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Moldorian - Hikari to Yami no Sister (Hack, English v1.1)</description>
-		<year>2019</year>
-		<manufacturer>Supper</manufacturer>
-		<rom name="Moldorian - Hikari to Yami no Sister T-Eng v1.1 (2019)(Supper).gg" size="1048576" crc="7ab0081f"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="moldoran" sourcefile="sms/d_sms.cpp">
 		<description>Moldorian: Hikari to Yami no Sister (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Moldorian - Hikari to Yami no Sister (Japan)(1994)(Sega).gg" size="524288" crc="4d5d15fb"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="moldorane" cloneof="moldoran" romof="moldoran" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Moldorian: The Sisters of Light and Darkness (Hack, English v1.1)</description>
+		<year>2019</year>
+		<manufacturer>Supper</manufacturer>
+		<rom name="Moldorian - Hikari to Yami no Sister T-Eng v1.1 (2019)(Supper).gg" size="1048576" crc="7ab0081f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2694,6 +2695,14 @@
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="NBA Jam Tournament Edition (World)(1994)(Acclaim).gg" size="524288" crc="86c32e5b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nekodais" sourcefile="sms/d_sms.cpp">
+		<description>Neko Dai Suki! (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Neko Dai Suki! (Japan)(1996)(Sega).gg" size="524288" crc="3679be80"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2985,14 +2994,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="nekodais" sourcefile="sms/d_sms.cpp">
-		<description>Pet Club Neko Daisuki! (Japan)</description>
-		<year>1996</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Pet Club Neko Daisuki! (Japan)(1996)(Sega).gg" size="524288" crc="3679be80"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="sampras" sourcefile="sms/d_sms.cpp">
 		<description>Pete Sampras Tennis (Euro)</description>
 		<year>1994</year>
@@ -3244,35 +3245,35 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="puyopuyo" sourcefile="sms/d_sms.cpp">
-		<description>Puyo Puyo (Japan)</description>
-		<year>1993</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-15464.ic1" size="262144" crc="d173a06f"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="puyopuy2" sourcefile="sms/d_sms.cpp">
 		<description>Puyo Puyo 2 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Compile</manufacturer>
-		<rom name="mpr-17537.ic1" size="524288" crc="3ab2393b"/>
+		<rom name="Puyo Puyo 2 (Japan)(1994)(Compile).gg" size="524288" crc="3ab2393b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="puyopuyo" sourcefile="sms/d_sms.cpp">
+		<description>Puyo Puyo ~ Puzlowkids (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Puyo Puyo (Japan)(1993)(Sega).gg" size="262144" crc="d173a06f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tantr" sourcefile="sms/d_sms.cpp">
-		<description>Puzzle and Action Tant~R (Japan)</description>
+		<description>Puzzle &amp; Action Tant~R (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="mpr-16607.ic1" size="524288" crc="09151743"/>
+		<rom name="Puzzle &amp; Action Tant-R (Japan)(1994)(Sega).gg" size="524288" crc="09151743"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pbobble" cloneof="bam" romof="bam" sourcefile="sms/d_sms.cpp">
 		<description>Puzzle Bobble (Japan)</description>
 		<year>1996</year>
-		<manufacturer>Taito</manufacturer>
-		<rom name="puzzle bobble (japan).bin" size="262144" crc="8e54ee04"/>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="Puzzle Bobble (Japan)(1996)(Taito).gg" size="262144" crc="8e54ee04"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3288,7 +3289,7 @@
 		<description>Quest for the Shaven Yak Starring Ren Hoek and Stimpy (Euro, USA)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="quest for the shaven yak starring ren hoek and stimpy (usa, europe).bin" size="524288" crc="6c451ee1"/>
+		<rom name="Quest for the Shaven Yak Starring Ren Hoek and Stimpy (Euro, USA)(1993)(Sega).gg" size="524288" crc="6c451ee1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4691,10 +4692,10 @@
 	</game>
 	<game name="wingwarriors" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Wing Warriors GG (HB, v1.00 fix)</description>
+		<description>Wing Warriors (HB, v1.00 fix)</description>
 		<year>2020-24</year>
-		<manufacturer>Kitmaker</manufacturer>
-		<rom name="Wing Warriors v1.00 fix (2020-24)(Kitmaker Ent.).gg" size="131072" crc="7fc13192"/>
+		<manufacturer>Kitmaker Entertainment</manufacturer>
+		<rom name="Wing Warriors v1.00 fix (2020-24)(Kitmaker Entertainment).gg" size="131072" crc="7fc13192"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

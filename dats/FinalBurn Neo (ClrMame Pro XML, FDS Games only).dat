@@ -145,7 +145,7 @@
 	</game>
 	<game name="aspic" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Aspic - Curse of the Snakelord (Hack, English)</description>
+		<description>Aspic: Curse of the Snakelord (Hack, English)</description>
 		<year>2023</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Aspic - Curse of the Snakelord T-Eng (2023)(BlackPaladin).fds" size="131000" crc="9f1976dd"/>
@@ -154,10 +154,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="aspicj" cloneof="aspic" romof="aspic" sourcefile="nes/d_nes.cpp">
-		<description>Aspic - Majaou no Noroi (Japan)</description>
+		<description>Aspic: Majaou no Noroi (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bothtec</manufacturer>
 		<rom name="Aspic - Majaou no Noroi (Japan)(1988)(Bothtec).fds" size="131000" crc="1999addb"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="backgammon" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<description>Backgammon (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Backgammon (Japan)(1990)(Nintendo).fds" size="65500" crc="97ff65a0"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -282,7 +291,7 @@
 	</game>
 	<game name="dandy" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dandy - Zeuon no Fukkatsu (Hack, English)</description>
+		<description>Dandy: The Resurrection of Zeuon (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
 		<rom name="Dandy - Zeuon no Fukkatsu T-Eng (2021)(Stardust Crusaders).fds" size="131383" crc="29a1613f"/>
@@ -291,7 +300,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dandyj" cloneof="dandy" romof="dandy" sourcefile="nes/d_nes.cpp">
-		<description>Dandy - Zeuon no Fukkatsu (Japan)</description>
+		<description>Dandy: Zeuon no Fukkatsu (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Pony Canyon</manufacturer>
 		<rom name="Dandy - Zeuon no Fukkatsu (Japan)(1988)(Pony Canyon).fds" size="131016" crc="a2bfcbcc"/>
@@ -314,6 +323,44 @@
 		<year>1986</year>
 		<manufacturer>Sunsoft</manufacturer>
 		<rom name="Dead Zone (Japan)(1986)(Sunsoft).fds" size="131000" crc="de673254"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="deepdung2" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Deep Dungeon II: The The Hero's Crest (Hack, English)</description>
+		<year>2010</year>
+		<manufacturer>KingMike's Translations</manufacturer>
+		<rom name="Deep Dungeon II - The Hero's Crest T-Eng (2010)(KingMike's Translations).fds" size="131000" crc="d4eca4d4"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="deepdung2j" cloneof="deepdung2" romof="deepdung2" sourcefile="nes/d_nes.cpp">
+		<description>Deep Dungeon II: Yuushi no Monshou (Japan)</description>
+		<year>1987</year>
+		<manufacturer>HummingBird Soft</manufacturer>
+		<rom name="Deep Dungeon II - Yuushi no Monshou (Japan, v1.1)(1987)(HummingBird Soft).fds" size="131000" crc="4e5298e4"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="deepdungj" cloneof="deepdung" romof="deepdung" sourcefile="nes/d_nes.cpp">
+		<description>Deep Dungeon: Madou Senki (Japan)</description>
+		<year>1986</year>
+		<manufacturer>HummingBird Soft</manufacturer>
+		<rom name="Deep Dungeon - Madou Senki (Japan)(1986)(HummingBird Soft).fds" size="131000" crc="ed9011d0"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="deepdung" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Deep Dungeon: The Heretic War (Hack, English)</description>
+		<year>2006</year>
+		<manufacturer>KingMike's Translations</manufacturer>
+		<rom name="Deep Dungeon - The Heretic War T-Eng (2006)(KingMike's Translations).fds" size="131016" crc="29f8cf56"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -973,7 +1020,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="kikikaij" cloneof="kikikai" romof="kikikai" sourcefile="nes/d_nes.cpp">
-		<description>Kiki Kaikai - Dotou Hen (Japan, Rev 1)</description>
+		<description>Kiki Kaikai - Dotou Hen (Japan, Rev. 1)</description>
 		<year>1987</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Kiki Kaikai Dotou Hen (Japan, Rev 1)(1987)(Taito).fds" size="131000" crc="007aa4fd"/>
@@ -1067,7 +1114,7 @@
 	</game>
 	<game name="linknobouc" cloneof="linknobou" romof="linknobou" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Link no Bouken: The Legend of Zelda II (Rev 1) (Hack, Spanish)</description>
+		<description>Link no Bouken: The Legend of Zelda II (Rev. 1) (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Link no Bouken - The Legend of Zelda II (Rev 1) T-Spa (2019)(jackic).fds" size="131000" crc="60a26198"/>
@@ -1431,21 +1478,31 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="sdgunworgacsescwac" cloneof="sdgunworgacsescwa" romof="sdgunworgacsescwa" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>SD Gundam World - Gachapon Senshi - Scramble Wars (Hack, Spanish)</description>
-		<year>2020</year>
-		<manufacturer>Max1323</manufacturer>
-		<rom name="SD Gundam World - Gachapon Senshi - Scramble Wars T-Spa (2020)(Max1323).fds" size="131016" crc="53f73319"/>
+	<game name="sdgunworgacsescwaj" cloneof="sdgunworgacsescwa" romof="sdgunworgacsescwa" sourcefile="nes/d_nes.cpp">
+		<description>SD Gundam World: Gachapon Senshi - Scramble Wars (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Bandai</manufacturer>
+		<rom name="SD Gundam World - Gachapon Senshi - Scramble Wars (Japan)(1987)(Bandai).fds" size="131000" crc="9d287c3f"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="sdgunworgacsescwa" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>SD Gundam World - Gachapon Senshi - Scramble Wars (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Bandai</manufacturer>
-		<rom name="SD Gundam World - Gachapon Senshi - Scramble Wars (Japan)(1987)(Bandai).fds" size="131000" crc="9d287c3f"/>
+		<comment>Hack</comment>
+		<description>SD Gundam World: Gachapon Soldier - Scramble Wars (Hack, English v1.01)</description>
+		<year>2018</year>
+		<manufacturer>MrRichard999</manufacturer>
+		<rom name="SD Gundam World - Gachapon Soldier - Scramble Wars T-Eng v1.01 (2018)(MrRichard999).fds" size="131016" crc="1cac22d0"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgunworgacsescwac" cloneof="sdgunworgacsescwa" romof="sdgunworgacsescwa" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>SD Gundam World: Gachapon Soldier - Scramble Wars (Hack, Spanish)</description>
+		<year>2020</year>
+		<manufacturer>Max1323</manufacturer>
+		<rom name="SD Gundam World - Gachapon Senshi - Scramble Wars T-Spa (2020)(Max1323).fds" size="131016" crc="53f73319"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1671,18 +1728,9 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="ultra" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Ultraman - Kaijuu Teikoku no Gyakushuu (Japan)</description>
-		<year>1986</year>
-		<manufacturer>Bandai</manufacturer>
-		<rom name="Ultraman - Kaijuu Teikoku no Gyakushuu (Japan)(1986)(Bandai).fds" size="131016" crc="2ab0c9bd"/>
-		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="ultra2" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ultraman 2 - Sally Forth, Science Patrol (Hack, English)</description>
+		<description>Ultraman 2: Sally Forth, Science Patrol (Hack, English)</description>
 		<year>2025</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Ultraman 2 - Sally Forth, Science Patrol T-Eng (2025)(BlackPaladin).fds" size="131000" crc="12d4da55"/>
@@ -1691,7 +1739,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultra2j" cloneof="ultra2" romof="ultra2" sourcefile="nes/d_nes.cpp">
-		<description>Ultraman 2 - Shutsugeki Katoku Tai (Japan)</description>
+		<description>Ultraman 2: Shutsugeki Katoku Tai (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Ultraman 2 - Shutsugeki Katoku Tai (Japan)(1987)(Bandai).fds" size="131016" crc="4010e726"/>
@@ -1700,10 +1748,29 @@
 		<driver status="good"/>
 	</game>
 	<game name="ultraclu" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Ultraman Club - Chikyuu Dakkan Sakusen (Japan)</description>
+		<description>Ultraman Club: Chikyuu Dakkan Sakusen (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Ultraman Club - Chikyuu Dakkan Sakusen (Japan)(1988)(Bandai).fds" size="131000" crc="fd150e81"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ultraj" cloneof="ultra" romof="ultra" sourcefile="nes/d_nes.cpp">
+		<description>Ultraman: Kaijuu Teikoku no Gyakushuu (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Bandai</manufacturer>
+		<rom name="Ultraman - Kaijuu Teikoku no Gyakushuu (Japan)(1986)(Bandai).fds" size="131016" crc="2ab0c9bd"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ultra" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ultraman: Wrath of the Kaiju Empire (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Ultraman - Wrath of the Kaiju Empire T-Eng (2025)(BlackPaladin).fds" size="131000" crc="9b9f0120"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
