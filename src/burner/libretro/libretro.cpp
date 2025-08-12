@@ -746,8 +746,8 @@ static int create_variables_from_cheats()
 					if (pCurrentCheat->nDefault == i) cheat_option->default_value = SSTR( i << " - " << option_value_name.c_str());
 				}
 			}
-			num++;
 		}
+		num++;
 		pCurrentCheat = pCurrentCheat->pNext;
 	}
 	return 0;
