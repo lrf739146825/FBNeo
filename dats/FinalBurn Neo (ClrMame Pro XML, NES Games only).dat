@@ -5358,6 +5358,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="doubledragonpt" cloneof="doubledragon" romof="doubledragon" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Double Dragon (Hack, Portuguese v1.2)</description>
+		<year>2008</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Double Dragon T-Por v1.2 (2008)(PO.B.R.E.).nes" size="262160" crc="f3cbef86"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="doubledragonc" cloneof="doubledragon" romof="doubledragon" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Double Dragon (Hack, Spanish v1.1)</description>
@@ -5383,6 +5392,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="doubldraiipt" cloneof="doubldraii" romof="doubldraii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Double Dragon II: A Revanche (Hack, Portuguese v1.2)</description>
+		<year>2020</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Double Dragon II - A Revanche T-Por v1.2 (2020)(PO.B.R.E.).nes" size="262160" crc="a0380893"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="doubldraiic" cloneof="doubldraii" romof="doubldraii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Double Dragon II: The Revenge (Hack, Spanish)</description>
@@ -5405,6 +5423,15 @@
 		<year>1990</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Double Dragon II - The Revenge (USA)(1990)(Acclaim).nes" size="262160" crc="cecfbf92"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="doubldraiiipt" cloneof="doubldraiii" romof="doubldraiii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Double Dragon III: As Pedras de Rosetta (Hack, Portuguese)</description>
+		<year>2017</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Double Dragon III - As Pedras de Rosetta T-Por (2017)(PO.B.R.E.).nes" size="262160" crc="ba399f1e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5866,6 +5893,15 @@
 		<year>2010</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
 		<rom name="Dragon Ninja T-Eng (2010)(Stardust Crusaders).nes" size="262160" crc="d4e941c6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragninjapt" cloneof="baddudes" romof="baddudes" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Dragon Ninja (Hack, Portuguese v1.1)</description>
+		<year>2019</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Dragon Ninja T-Por v1.1 (2019)(PO.B.R.E.).nes" size="262160" crc="381718c7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6634,6 +6670,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="termi2pt" cloneof="termi2" romof="termi2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Exterminador do Futuro 2: O Julgamento Final (Hack, Portuguese v1.1)</description>
+		<year>2018</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Exterminador do Futuro 2 - O Julgamento Final T-Por v1.1 (2018)(PO.B.R.E.).nes" size="262160" crc="b1d2f26e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="eyra" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Eyra - The Crow Maiden (HB)</description>
@@ -6981,6 +7026,15 @@
 		<year>2019</year>
 		<manufacturer>Unsavory Maggot</manufacturer>
 		<rom name="Faxanadu T-Eng (2019)(Unsavory Maggot).nes" size="524304" crc="ed0a6836"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="faxanadupt" cloneof="faxanadu" romof="faxanadu" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Faxanadu (Hack, Portuguese v1.1)</description>
+		<year>2017</year>
+		<manufacturer>Emu Brasil, PO.B.R.E., BR Games</manufacturer>
+		<rom name="Faxanadu T-Por v1.1 (2017)(Emu Brasil, PO.B.R.E., BR Games).nes" size="262160" crc="87235621"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8698,6 +8752,15 @@
 		<year>1987</year>
 		<manufacturer>Irem Corp.</manufacturer>
 		<rom name="Guardic Gaiden (Japan)(1987)(Irem).nes" size="131088" crc="e9d15ff1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="grrdeargospt" cloneof="rygar" romof="rygar" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Guerreiro de Argos, O (Hack, Portuguese)</description>
+		<year>2017</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Guerreiro de Argos, O T-Por (2017)(PO.B.R.E.).nes" size="131088" crc="7e314a61"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19633,6 +19696,15 @@
 		<year>2016</year>
 		<manufacturer>NESRocks</manufacturer>
 		<rom name="Super Pitfall 30th AE (2016)(NESRocks).nes" size="131088" crc="e55ba70d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sprgsolbrainpt" cloneof="shatterhand" romof="shatterhand" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Super Resgate Solbrain (Hack, Portuguese v1.1)</description>
+		<year>2009</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Super Resgate Solbrain T-Por v1.1 (2009)(PO.B.R.E.).nes" size="262160" crc="fca739ea"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

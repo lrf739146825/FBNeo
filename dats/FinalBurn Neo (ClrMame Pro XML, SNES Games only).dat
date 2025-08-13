@@ -3911,7 +3911,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="desertfightj" cloneof="asp" romof="asp" sourcefile="snes/d_snes.cpp">
-		<description>Desert Fighter - Suna no Arashi Sakusen (Japan)</description>
+		<description>Desert Fighter: Suna no Arashi Sakusen (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Seta Co.</manufacturer>
 		<rom name="Desert Fighter - Suna no Arashi Sakusen (J)(1993)(Seta).sfc" size="1048576" crc="9edc5a7d"/>
@@ -3919,7 +3919,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="desertstrikee" cloneof="desertstrike" romof="desertstrike" sourcefile="snes/d_snes.cpp">
-		<description>Desert Strike - Return to the Gulf (Euro)</description>
+		<description>Desert Strike: Return to the Gulf (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Desert Strike - Return to the Gulf (E)(1992)(Electronic Arts).sfc" size="1048576" crc="8eed024a"/>
@@ -3927,7 +3927,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="desertstrike" sourcefile="snes/d_snes.cpp">
-		<description>Desert Strike - Return to the Gulf (USA)</description>
+		<description>Desert Strike: Return to the Gulf (USA)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Desert Strike - Return to the Gulf (U)(1992)(Electronic Arts).sfc" size="1048576" crc="4ce26787"/>
@@ -3935,7 +3935,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="desertstrikej" cloneof="desertstrike" romof="desertstrike" sourcefile="snes/d_snes.cpp">
-		<description>Desert Strike - Wangan Sakusen (Japan)</description>
+		<description>Desert Strike: Wangan Sakusen (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Desert Strike - Wangan Sakusen (J)(1992)(Electronic Arts).sfc" size="1048576" crc="fcdf43ca"/>
@@ -8097,7 +8097,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="junglestrikej" cloneof="junglestrike" romof="junglestrike" sourcefile="snes/d_snes.cpp">
-		<description>Jungle Strike - Uketsugareta Kyouki (Japan)</description>
+		<description>Jungle Strike: Uketsugareta Kyouki (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Jungle Strike - Uketsugareta Kyouki (J)(1995)(Electronic Arts).sfc" size="2097152" crc="5bdf5a87"/>
@@ -8658,6 +8658,41 @@
 		<year>1995</year>
 		<manufacturer>Williams Entertainment</manufacturer>
 		<rom name="Kyle Petty's No Fear Racing (U)(1995)(Williams).sfc" size="3145728" crc="aee90a85"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kmtenseite" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Kyuuyaku Megami Tensei (Hack, English v1.1)</description>
+		<year>2014</year>
+		<manufacturer>DDSTranslation</manufacturer>
+		<rom name="Kyuuyaku Megami Tensei T-Eng v1.1 (2014)(DDSTranslation).sfc" size="2359296" crc="119523a6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kmtenseitp" cloneof="kmtenseite" romof="kmtenseite" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Kyuuyaku Megami Tensei (Hack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>Razuea</manufacturer>
+		<rom name="Kyuuyaku Megami Tensei PT-BR (2025)(Razuea).sfc" size="2359296" crc="75033317"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kmtenseits" cloneof="kmtenseite" romof="kmtenseite" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Kyuuyaku Megami Tensei (Hack, Spanish v0.98)</description>
+		<year>2020</year>
+		<manufacturer>jackic</manufacturer>
+		<rom name="Kyuuyaku Megami Tensei T-Spa v0.98 (2020)(jackic).sfc" size="4194304" crc="1d20ce88"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kmtenseij" cloneof="kmtenseite" romof="kmtenseite" sourcefile="snes/d_snes.cpp">
+		<description>Kyuuyaku Megami Tensei (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Kyuuyaku Megami Tensei (J)(1995)(Atlus).sfc" size="2097152" crc="c8d286c9"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12030,6 +12065,15 @@
 		<year>2025</year>
 		<manufacturer>Dindo</manufacturer>
 		<rom name="Pretty Soldier Sailor Moon - Another Story PT-BR (2025)(Dindo).sfc" size="4194304" crc="44c322eb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slrmoonanstoryts" cloneof="slrmoonanstoryte" romof="slrmoonanstoryte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Pretty Soldier Sailor Moon: Another Story (Hack, Spanish)</description>
+		<year>2025</year>
+		<manufacturer>Max1323</manufacturer>
+		<rom name="Pretty Soldier Sailor Moon - Another Story T-Spa (2025)(Max1323).sfc" size="4194304" crc="9d273e64"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15816,6 +15860,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="smw4magicwandse" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>Super Mario World: The 4 Magic Wands (GlobalHack, English v1.0.2)</description>
+		<year>2025</year>
+		<manufacturer>Green Jerry</manufacturer>
+		<rom name="Super Mario World - The 4 Magic Wands EN v1.0.2 (2025)(Green Jerry).sfc" size="2097152" crc="95d9672e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supermetroide" cloneof="supermetroid" romof="supermetroid" sourcefile="snes/d_snes.cpp">
 		<description>Super Metroid (Euro)</description>
 		<year>1994</year>
@@ -15846,6 +15899,15 @@
 		<year>1993</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Super Morph (E)(1993)(Sony Imagesoft).sfc" size="1048576" crc="388f6daa"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smw4magicwandsp" cloneof="smw4magicwandse" romof="smw4magicwandse" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<description>Super Mundo Mario: As 4 Varinhas Magicas (GlobalHack, Portuguese v1.0.2)</description>
+		<year>2025</year>
+		<manufacturer>Green Jerry</manufacturer>
+		<rom name="Super Mundo Mario - As 4 Varinhas Magicas PT V1.0.2 (2025)(Green Jerry).sfc" size="2097152" crc="921ad698"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

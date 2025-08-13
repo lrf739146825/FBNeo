@@ -711,8 +711,8 @@ static int create_variables_from_cheats()
 	std::string heading_name;
 
 	while (pCurrentCheat) {
-		if (pCurrentCheat->pOption[0] == NULL && pCurrentCheat->szCheatName[0] == '[') {
-			// This is a heading line with the filename, we'll use it later
+		if (pCurrentCheat->pOption[0] == NULL && (pCurrentCheat->szCheatName[0] != '\0' && pCurrentCheat->szCheatName[0] != ' ')) {
+			// This is a heading line, we'll use it later
 			heading_name = nl_remover(pCurrentCheat->szCheatName);
 		} else {
 			// Ignore "empty" cheats, they seem common in cheat bundles (as separators and/or hints ?)
@@ -726,8 +726,9 @@ static int create_variables_from_cheats()
 				cheat_core_options.push_back(cheat_core_option());
 				cheat_core_option *cheat_option = &cheat_core_options.back();
 				std::string option_name = nl_remover(pCurrentCheat->szCheatName);
-				cheat_option->friendly_name = SSTR( "[Cheat]" << heading_name.c_str() << option_name.c_str() );
-				cheat_option->friendly_name_categorized = SSTR( heading_name.c_str() << option_name.c_str() );
+				std::string option_filename = nl_remover(pCurrentCheat->szCheatFilename);
+				cheat_option->friendly_name = SSTR( "[Cheat][" << option_filename.c_str() << "] " << heading_name.c_str() << option_name.c_str() );
+				cheat_option->friendly_name_categorized = SSTR( "[" << option_filename.c_str() << "] " << heading_name.c_str() << option_name.c_str() );
 				std::replace( option_name.begin(), option_name.end(), ' ', '_');
 				std::replace( option_name.begin(), option_name.end(), '=', '_');
 				std::replace( option_name.begin(), option_name.end(), ':', '_');

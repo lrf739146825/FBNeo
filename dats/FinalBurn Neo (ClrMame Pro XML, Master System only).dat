@@ -6903,7 +6903,7 @@
 		<description>Zillion II: The Tri Formation (Hack, Portuguese v1.1)</description>
 		<year>2009-2020</year>
 		<manufacturer>PO.B.R.E.</manufacturer>
-		<rom name="Zillion - II The Tri Formation T-Por v1.1 (2009-2020)(PO.B.R.E.).sms" size="131072" crc="70846349"/>
+		<rom name="Zillion II - The Tri Formation T-Por v1.1 (2009-2020)(PO.B.R.E.).sms" size="131072" crc="70846349"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
