@@ -17212,7 +17212,7 @@
 		<description>Shrek (Russia) (Unl)</description>
 		<year>200?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Shrek (Russia)(Unl)(200?).bin" size="1048576" crc="561e84b9"/>
+		<rom name="Shrek (Russia)(Unl)(200x).bin" size="1048576" crc="561e84b9"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17221,7 +17221,7 @@
 		<description>Shrek 2 (Russia) (Unl)</description>
 		<year>200?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Shrek 2 (Russia)(Unl)(200?).bin" size="1048576" crc="0ccd3651"/>
+		<rom name="Shrek 2 (Russia)(Unl)(200x).bin" size="1048576" crc="0ccd3651"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
