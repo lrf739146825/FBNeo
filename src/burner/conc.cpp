@@ -1371,6 +1371,8 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 	return ret;
 }
 
+int use_z7_ini_parent = 0;
+
  //Extract matched INI in cheat.zip or 7z
 static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheat) {
 
@@ -1379,6 +1381,8 @@ static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, s
 		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
 			if (LoadIniContentFromZip(BurnDrvGetText(DRV_PARENT), zipFileName, CurrentIniCheatContent) != 0) {
 				return 1;
+			}else{
+				use_z7_ini_parent = 1;
 			}
 		} else {
 			return 1;
@@ -1725,7 +1729,11 @@ INT32 ConfigCheatLoad() {
 					ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
 					if (ret == 0) {
 						// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
-						_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+						if(use_z7_ini_parent){
+							_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+						}else{
+							_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+						}
 						ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 					}
 					// try use Nebula cheat
@@ -1756,7 +1764,11 @@ INT32 ConfigCheatLoad() {
 			break;
 		case 3:
 			// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
-			_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			if(use_z7_ini_parent){
+				_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+			}else{
+				_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			}
 			ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 			break;
 		case 4:
