@@ -1374,10 +1374,15 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
  //Extract matched INI in cheat.zip or 7z
 static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheat) {
 
-	if (LoadIniContentFromZip(DrvName, zipFileName, CurrentIniCheatContent) != 0
+	if (LoadIniContentFromZip(DrvName, zipFileName, CurrentIniCheatContent) != 0) {
 		// try load parent cheat
-		&& LoadIniContentFromZip(BurnDrvGetText(DRV_PARENT), zipFileName, CurrentIniCheatContent) != 0){
-		return 1;
+		if ((BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
+			if (LoadIniContentFromZip(BurnDrvGetText(DRV_PARENT), zipFileName, CurrentIniCheatContent) != 0) {
+				return 1;
+			}
+		} else {
+			return 1;
+		}
 	}
 
 	int depth = 0;
