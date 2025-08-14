@@ -1725,7 +1725,7 @@ INT32 ConfigCheatLoad() {
 					ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
 					if (ret == 0) {
 						// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
-						_stprintf(szFilename, _T("%sx_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+						_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 						ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 					}
 					// try use Nebula cheat
@@ -1756,7 +1756,7 @@ INT32 ConfigCheatLoad() {
 			break;
 		case 3:
 			// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
-			_stprintf(szFilename, _T("%sx_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 			ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
 			break;
 		case 4:
