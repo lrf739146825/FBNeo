@@ -1710,7 +1710,7 @@ INT32 ConfigCheatLoad() {
 				ConfigParseVCT(szFilename);
 				usedCheatType = 6;
 				break;
-			} // keep loading & adding stuff even if .vct file loads.
+			}
 
 			cheat_dat_ret = ConfigParseMAMEFile(!is_wayder);
 			wayder_cheat_dat_ret = ConfigParseMAMEFile(is_wayder);
