@@ -1682,6 +1682,14 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 #undef strtok_r
 #endif
 
+// variable for multiple cheat
+int multiple_cheat_init = 1;
+int use_vct = 0;
+int use_mame_cheat = 0;
+int use_wayder_cheat = 0;
+int use_ini = 0;
+int use_z7_ini = 0;
+int use_nebula = 0;
 
 INT32 ConfigCheatLoad() {
 	TCHAR szFilename[MAX_PATH] = _T("");
@@ -1695,7 +1703,8 @@ INT32 ConfigCheatLoad() {
 
 	INT32 ret = 1;
 
-	// Load single cheat types { nes vct > cheat.dat,cheatnes.dat,cheatsnes.dat,wayder_cheat.dat > ini > 7z/zip ini > nebula dat }
+/*
+	// Load single cheat types { virtuanes .vct > cheat.dat,cheatnes.dat,cheatsnes.dat,wayder_cheat.dat > .ini > 7z/zip .ini > nebula .dat }
 	// During running game,while ConfigCheatLoad is called the second time or more,
 	// Try to load cheat directly,skip unnecessary steps.
 	// usedCheatType define:
@@ -1786,6 +1795,92 @@ INT32 ConfigCheatLoad() {
 		default: //case -1 aswell
 			ret = 1;
 			break;
+	}
+*/
+
+	// Load multiple cheat types  { virtuanes .vct + cheat.dat,cheatnes.dat,cheatsnes.dat,wayder_cheat.dat + .ini > 7z/zip .ini + nebula .dat }
+	if(multiple_cheat_init){
+
+		if (HW_NES) { // only for NES/FC!
+			_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+			if(!ConfigParseVCT(szFilename)){
+				use_vct = 1;
+			}
+		} // keep loading & adding stuff even if .vct file loads.
+
+		// mame cheat
+		if(!ConfigParseMAMEFile(!is_wayder)){
+			use_mame_cheat = 1;
+		}
+		if(!ConfigParseMAMEFile(is_wayder)){
+			use_wayder_cheat = 1;
+		}
+
+		//use single ini first
+		_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		if(!ConfigParseFile(szFilename,NULL)){
+			use_ini = 1;
+		}else{
+			//try load ini from zip/7z
+			ret = ExtractIniFromZip(BurnDrvGetText(DRV_NAME), _T("cheat"), CurrentIniCheatContent);
+			if (ret == 0) {
+				// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
+				if(use_z7_ini_parent){
+					_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+				}else{
+					_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+				}
+				if(!ConfigParseFile(szFilename, &CurrentIniCheatContent)){
+					use_z7_ini = 1;
+				}
+			}
+		}
+
+		//Nebula cheat
+		_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		if(!ConfigParseNebulaFile(szFilename)){
+			use_nebula = 1;
+		}
+
+		multiple_cheat_init = 0;
+	}
+
+	if(use_vct){
+		_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		ret = ConfigParseVCT(szFilename);
+	}
+	if(use_mame_cheat){
+		if(mame_cheat_use_itself){
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_NAME),_T("cheat.dat"),!is_wayder);
+		}
+		if(mame_cheat_use_parent){
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("cheat.dat"),!is_wayder);
+		}
+	}
+	if(use_wayder_cheat){
+		if(wayder_cheat_use_itself){
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_NAME),_T("wayder_cheat.dat"),is_wayder);
+		}
+		if(wayder_cheat_use_parent){
+			ret = ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("wayder_cheat.dat"),is_wayder);
+		}
+	}
+	if(use_ini){
+		_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		ret = ConfigParseFile(szFilename, NULL);
+	}
+	if(use_z7_ini){
+		// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
+		if(use_z7_ini_parent){
+			_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_PARENT));
+		}else{
+			_stprintf(szFilename, _T("%sz7_%s.ini"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		}
+		ret = ConfigParseFile(szFilename, &CurrentIniCheatContent);
+	}
+	if(use_nebula){
+		_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
+		ret = ConfigParseNebulaFile(szFilename);
 	}
 
 	if (pCheatInfo) {
