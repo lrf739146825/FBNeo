@@ -1704,7 +1704,7 @@ INT32 ConfigCheatLoad() {
 	INT32 ret = 1;
 
 /*
-	// Load single cheat types { virtuanes .vct > cheat.dat,cheatnes.dat,cheatsnes.dat,wayder_cheat.dat > .ini > 7z/zip .ini > nebula .dat }
+	// Load single cheat types { VirtuaNes .vct > cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat > .ini > 7z/zip .ini > Nebula .dat }
 	// During running game,while ConfigCheatLoad is called the second time or more,
 	// Try to load cheat directly,skip unnecessary steps.
 	// usedCheatType define:
@@ -1798,7 +1798,7 @@ INT32 ConfigCheatLoad() {
 	}
 */
 
-	// Load multiple cheat types  { virtuanes .vct + cheat.dat,cheatnes.dat,cheatsnes.dat,wayder_cheat.dat + .ini > 7z/zip .ini + nebula .dat }
+	// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
 	if(multiple_cheat_init){
 
 		if (HW_NES) { // only for NES/FC!
