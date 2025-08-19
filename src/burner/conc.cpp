@@ -504,6 +504,16 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniCo
 			nLen--;
 		}
 
+		// Get rid of the linefeed at the begin
+		INT32 nSkipped = 0;
+		while (nLen > 0 && (szLine[nSkipped] == 0x0A || szLine[nSkipped] == 0x0D)) {
+			nSkipped++;
+		}
+		if (nSkipped > 0) {
+			memmove(szLine, szLine + nSkipped, (nLen - nSkipped + 1) * sizeof(TCHAR));
+			nLen -= nSkipped;
+		}
+
 		s = szLine;													// Start parsing
 
 		if (s[0] == _T('/') && s[1] == _T('/')) {					// Comment
@@ -1497,25 +1507,21 @@ static int encodeNES(int address, int value, int compare, char *result) {
 
 void normalize_spaces(TCHAR* str) {
     TCHAR* dest = str;
-    TCHAR* src = str;
     bool prev_blank = false;
 
-    while (*src == ' ' || *src == '\t') src++;
-
-    while (*src) {
+    for (TCHAR* src = str; *src; ++src) {
         if (*src == ' ' || *src == '\t') {
             if (!prev_blank) {
                 *dest++ = ' ';
                 prev_blank = true;
             }
-            src++;
         } else {
-            *dest++ = *src++;
+            *dest++ = *src;
             prev_blank = false;
         }
     }
 
-    if (dest > str && (dest[-1] == ' ' || dest[-1] == '\t')) {
+    if (dest > str && dest[-1] == ' ') {
         dest--;
     }
     *dest = '\0';
@@ -1538,6 +1544,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 	memset(pCurrentCheat->pOption[n], 0, sizeof(CheatOption));				\
 	_tcsncpy (pCurrentCheat->pOption[n]->szOptionName, a, QUOTE_MAX * sizeof(TCHAR));	\
 
+// Add normalize_spaces.Prevent garbled characters from appearing in the TAB section of the RetroArch cheat menu when using .vct cheat files.
 #define tmpcpy(a)	\
 	_tcsncpy (tmp, szLine + c0[a] + 1, c0[a+1] - (c0[a]+1));	\
 	tmp[c0[a+1] - (c0[a]+1)] = '\0';				\
