@@ -1021,8 +1021,10 @@ static void UpdatePreviousGameList()
 
 static bool bSramLoad = true; // always true, unless BurnerLoadDriver() is called from StartFromReset()
 
-static void QuitGame() {
+static void QuitGame()
+{
 	AudBlankSound();
+
 	if (nVidFullscreen) {
 		nVidFullscreen = 0;
 		VidExit();
@@ -1070,6 +1072,8 @@ int BurnerLoadDriver(TCHAR *pszDriverName)
 	}
 	if (nDrvIdx < 0)
 		return -1;
+
+	memset(szRomdataName, 0, sizeof(szRomdataName));
 	if (bCurrentRD) {
 		_tcscpy(szRomdataName, szBackup);
 		RomDataInit();
@@ -3929,6 +3933,10 @@ int ScrnSize()
 	int nGameAspectX = 4, nGameAspectY = 3;
 	int nMaxSize;
 
+	if (hScrnWnd == NULL || nVidFullscreen) {
+		return 1;
+	}
+
 	// SystemWorkArea = resolution of desktop
 	// RealWorkArea = resolution of desktop - taskbar (if avail)
 	RECT RealWorkArea;
@@ -3941,10 +3949,6 @@ int ScrnSize()
 	mi.cbSize = sizeof(mi);
 	GetMonitorInfo(monitor, &mi);
 	SystemWorkArea = mi.rcMonitor; // needs to be set to monitor's resolution for proper aspect calculation
-
-	if (hScrnWnd == NULL || nVidFullscreen) {
-		return 1;
-	}
 
 	if (bDrvOkay) {
 		if ((BurnDrvGetFlags() & BDF_ORIENTATION_VERTICAL) && (nVidRotationAdjust & 1)) {
@@ -4277,4 +4281,13 @@ void Reinitialise()
 {
 	POST_INITIALISE_MESSAGE;
 	VidReInitialise();
+}
+
+// Reinit's video with new resolution and/or aspect ratio.
+// Note: doesn't re-create window like Reinitialise()
+void ReinitialiseVideo()
+{
+	VidReInitialise();
+	VidInit();
+	ScrnSize();
 }
