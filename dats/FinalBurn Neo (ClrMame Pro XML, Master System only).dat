@@ -2184,6 +2184,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="forestescape" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Forest Escape: A Knight's Quest (HB)</description>
+		<year>2025</year>
+		<manufacturer>IrataHack</manufacturer>
+		<rom name="Forest Escape - A Knight's Quest (2025)(IrataHack).sms" size="81920" crc="b56748ba"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="forgottn" sourcefile="sms/d_sms.cpp">
 		<description>Forgotten Worlds (Euro, Brazil, Australia)</description>
 		<year>1991</year>
@@ -2575,6 +2584,15 @@
 		<year>2024-25</year>
 		<manufacturer>RetroWorks</manufacturer>
 		<rom name="Gommy Medieval Defender v1.1 (2025)(RetroWorks).sms" size="49152" crc="b3bdc4bf"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="goodzilla" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Goodzilla (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Zhamul, Kronk, borbware, Keith</manufacturer>
+		<rom name="Goodzilla v1.1 (2025)(Zhamul, Kronk, borbware, Keith).sms" size="98304" crc="6c6c5ad8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4177,10 +4195,10 @@
 	</game>
 	<game name="pacmanmm" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Pac-Man Master Museum (HB, v2.10)</description>
+		<description>Pac-Man Master Museum (HB, v2.20)</description>
 		<year>2025</year>
 		<manufacturer>Lack of Track</manufacturer>
-		<rom name="Pac-Man Master Museum v2.10 (2025)(Lack of Track).sms" size="131072" crc="e4057636"/>
+		<rom name="Pac-Man Master Museum v2.20 (2025)(Lack of Track).sms" size="131072" crc="9725b67f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6629,6 +6647,15 @@
 		<year>2017</year>
 		<manufacturer>Ichigo Bankai</manufacturer>
 		<rom name="Wonder Boy in Monster World - Restoration (2017)(Ichigo Bankai).sms" size="524288" crc="754d1333"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wonderkidp" sourcefile="sms/d_sms.cpp">
+		<comment>Prototype</comment>
+		<description>Wonder Kid (Korea, Prototype)</description>
+		<year>1993</year>
+		<manufacturer>Open Corp.</manufacturer>
+		<rom name="Wonder Kid (Korea, Proto)(1993)(Open Corp.).sms" size="131072" crc="5e7b18c8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

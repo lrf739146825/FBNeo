@@ -3360,7 +3360,7 @@
 	</game>
 	<game name="ristarp2" cloneof="ristar" romof="ristar" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Ristar - The Shooting Star (Prototype, 19941101)</description>
+		<description>Ristar: The Shooting Star (Prototype, 19941101)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ristar - The Shooting Star (Proto, 19941101)(Sega).gg" size="524288" crc="44fa6ae6"/>
@@ -3369,7 +3369,7 @@
 	</game>
 	<game name="ristarp1" cloneof="ristar" romof="ristar" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Ristar - The Shooting Star (Prototype, 19941102)</description>
+		<description>Ristar: The Shooting Star (Prototype, 19941102)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ristar - The Shooting Star (Proto, 19941102)(Sega).gg" size="524288" crc="302d2b4b"/>
@@ -3377,7 +3377,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ristar" sourcefile="sms/d_sms.cpp">
-		<description>Ristar - The Shooting Star (World)</description>
+		<description>Ristar: The Shooting Star (World)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ristar - The Shooting Star (World)(1995)(Sega).gg" size="524288" crc="efe65b3b"/>
@@ -3434,15 +3434,15 @@
 		<driver status="good"/>
 	</game>
 	<game name="ryukyu" cloneof="solitarp" romof="solitarp" sourcefile="sms/d_sms.cpp">
-		<description>Ryuukyuu (Japan)</description>
+		<description>Ryuu Kyuu (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Face</manufacturer>
-		<rom name="Ryuukyuu (Japan)(1991)(Face).gg" size="131072" crc="95efd52b"/>
+		<rom name="Ryuu Kyuu (Japan)(1991)(Face).gg" size="131072" crc="95efd52b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sslucifr" sourcefile="sms/d_sms.cpp">
-		<description>S.S. Lucifer - Man Overboard! (Euro)</description>
+		<description>S.S. Lucifer: Man Overboard! (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="S.S. Lucifer - Man Overboard! (Euro)(1994)(Codemasters).gg" size="262144" crc="d9a7f170"/>
@@ -3469,7 +3469,7 @@
 		<description>Scratch Golf (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="mpr-16454.ic1" size="262144" crc="ec0f2c72"/>
+		<rom name="Scratch Golf (Japan)(1994)(Vic Tokai).gg" size="262144" crc="ec0f2c72"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3477,15 +3477,15 @@
 		<description>Scratch Golf (USA)</description>
 		<year>1994</year>
 		<manufacturer>Vic Tokai</manufacturer>
-		<rom name="scratch golf (us).bin" size="262144" crc="c10df4ce"/>
+		<rom name="Scratch Golf (USA)(1994)(Vic Tokai).gg" size="262144" crc="c10df4ce"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="sdgundam" sourcefile="sms/d_sms.cpp">
-		<description>SD Gundam - Winner's History (Japan)</description>
+		<description>SD Gundam Winner's History (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Bandai</manufacturer>
-		<rom name="mpr-17848.ic1" size="524288" crc="5e2b39b8"/>
+		<rom name="SD Gundam Winner's History (Japan)(1995)(Bandai).gg" size="524288" crc="5e2b39b8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3622,7 +3622,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bartvssm" sourcefile="sms/d_sms.cpp">
-		<description>Simpsons, The - Bart vs. The Space Mutants (Euro, USA)</description>
+		<description>Simpsons, The: Bart vs. The Space Mutants (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
 		<rom name="Simpsons, The - Bart vs. The Space Mutants (Euro, USA)(1992)(Flying Edge).gg" size="262144" crc="c0009274"/>
@@ -3630,7 +3630,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bartvswd" sourcefile="sms/d_sms.cpp">
-		<description>Simpsons, The - Bart vs. The World (World)</description>
+		<description>Simpsons, The: Bart vs. The World (World)</description>
 		<year>1993</year>
 		<manufacturer>Flying Edge</manufacturer>
 		<rom name="Simpsons, The - Bart vs. The World (World)(1993)(Flying Edge).gg" size="262144" crc="da7bd5c7"/>
@@ -3638,7 +3638,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bartman" sourcefile="sms/d_sms.cpp">
-		<description>Simpsons, The - Bartman Meets Radioactive Man (USA)</description>
+		<description>Simpsons, The: Bartman Meets Radioactive Man (USA)</description>
 		<year>1992</year>
 		<manufacturer>Flying Edge</manufacturer>
 		<rom name="Simpsons, The - Bartman Meets Radioactive Man (USA)(1992)(Flying Edge).gg" size="262144" crc="ffa447a9"/>
@@ -3851,23 +3851,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sonictri" sourcefile="sms/d_sms.cpp">
-		<description>Sonic The Hedgehog - Triple Trouble (Euro, USA)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Sonic The Hedgehog - Triple Trouble (Euro, USA)(1994)(Sega).gg" size="524288" crc="d23a2a93"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="sonictrip" cloneof="sonictri" romof="sonictri" sourcefile="sms/d_sms.cpp">
-		<comment>Prototype</comment>
-		<description>Sonic The Hedgehog - Triple Trouble (Prototype)</description>
-		<year>1994</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Sonic The Hedgehog - Triple Trouble (Proto)(1994)(Sega).gg" size="524288" crc="80eb7cfb"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="sonic2d" cloneof="sonic2" romof="sonic2" sourcefile="sms/d_sms.cpp">
 		<description>Sonic The Hedgehog 2 (Rolling Demo)</description>
 		<year>1992</year>
@@ -3881,6 +3864,23 @@
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Sonic The Hedgehog 2 (World)(1992)(Sega).gg" size="524288" crc="95a18ec7"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sonictri" sourcefile="sms/d_sms.cpp">
+		<description>Sonic The Hedgehog: Triple Trouble (Euro, USA)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Sonic The Hedgehog - Triple Trouble (Euro, USA)(1994)(Sega).gg" size="524288" crc="d23a2a93"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sonictrip" cloneof="sonictri" romof="sonictri" sourcefile="sms/d_sms.cpp">
+		<comment>Prototype</comment>
+		<description>Sonic The Hedgehog: Triple Trouble (Prototype)</description>
+		<year>1994</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Sonic The Hedgehog - Triple Trouble (Proto)(1994)(Sega).gg" size="524288" crc="80eb7cfb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4262,27 +4262,27 @@
 		<driver status="good"/>
 	</game>
 	<game name="stetris" sourcefile="sms/d_sms.cpp">
-		<description>Super Tetris (Korea, SMS Mode?)</description>
+		<description>Super Tetris (Korea, SMS Mode)</description>
 		<year>199?</year>
-		<manufacturer>Unknown</manufacturer>
-		<rom name="super tetris (k) [s][!].bin" size="65536" crc="bd1cc7df"/>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Super Tetris (Korea, SMS Mode)(199x).gg" size="65536" crc="bd1cc7df"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="superman" sourcefile="sms/d_sms.cpp">
-		<description>Superman - The Man of Steel (Euro)</description>
+		<description>Superman: The Man of Steel (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="mpr-15504-f.ic1" size="262144" crc="73df5a15"/>
+		<rom name="Superman - The Man of Steel (Euro)(1993)(Virgin Interactive).gg" size="262144" crc="73df5a15"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="supermanp" cloneof="superman" romof="superman" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Superman - The Man of Steel (Euro, Prototype)</description>
+		<description>Superman: The Man of Steel (Euro, Prototype)</description>
 		<year>1993</year>
 		<manufacturer>Virgin Interactive</manufacturer>
-		<rom name="superman - the man of steel (proto).bin" size="262144" crc="aa3f2172"/>
+		<rom name="Superman - The Man of Steel (Euro, Proto)(1993)(Virgin Interactive).gg" size="262144" crc="aa3f2172"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4290,7 +4290,7 @@
 		<description>Surf Ninjas (USA, Brazil)</description>
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="surf ninjas (usa).bin" size="524288" crc="284482a8"/>
+		<rom name="Surf Ninjas (USA, Brazil)(1993)(Sega).gg" size="524288" crc="284482a8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
