@@ -811,6 +811,11 @@ void Reinitialise(void)
 	nNextGeometryCall = RETRO_ENVIRONMENT_SET_GEOMETRY;
 }
 
+void ReinitialiseVideo()
+{
+	Reinitialise();
+}
+
 static void ForceFrameStep()
 {
 #ifdef FBNEO_DEBUG
