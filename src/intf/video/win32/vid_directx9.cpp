@@ -1274,8 +1274,9 @@ static int dx9Init()
 
 		GetClientScreenRect(hVidWnd, &rect);
 		rect.top += nMenuHeight; rect.bottom += nMenuHeight;
-		pD3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);
-		pD3DDevice->Present(&rect, &rect, NULL, NULL);
+		// this clear interferes with bezel (other blitters dont clear the entire screen!)
+//		pD3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);
+//		pD3DDevice->Present(&rect, &rect, NULL, NULL);
 	}
 
 	// Create osd font
@@ -1335,6 +1336,39 @@ static int dx9Reset()
 static int dx9Scale(RECT* pRect, int nWidth, int nHeight)
 {
 	return VidSScaleImage(pRect, nWidth, nHeight, bVidScanRotate);
+}
+
+template <bool restore_viewport>
+static void ClearD3D9SurfaceEntirety()
+{
+	if (nVidFullscreen) {
+		D3DVIEWPORT9 vp;
+
+		// set the viewport to the entire screen
+		vp.X = 0;
+		vp.Y = 0;
+		vp.Width = nVidScrnWidth;
+		vp.Height = nVidScrnHeight;
+		vp.MinZ = 0.0f;
+		vp.MaxZ = 1.0f;
+
+		pD3DDevice->SetViewport(&vp);
+
+		// clear it
+		pD3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 0.0f, 0);
+
+		if (restore_viewport) {
+			// set the viewport back to game's dimensions
+			vp.X = Dest.left;
+			vp.Y = Dest.top;
+			vp.Width = Dest.right - Dest.left;
+			vp.Height = Dest.bottom - Dest.top;
+			vp.MinZ = 0.0f;
+			vp.MaxZ = 1.0f;
+
+			pD3DDevice->SetViewport(&vp);
+		}
+	}
 }
 
 // Copy BlitFXsMem to pddsBlitFX
@@ -1519,6 +1553,8 @@ static int dx9MemToSurf()
 	}
 	ProfileProfileStart(0);
 #endif
+
+	ClearD3D9SurfaceEntirety<false>();
 
 	{
 		D3DVIEWPORT9 vp;
@@ -2316,8 +2352,9 @@ static int dx9AltInit()
 		RECT rect;
 		GetClientScreenRect(hVidWnd, &rect);
 
-		pD3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);
-		pD3DDevice->Present(&rect, &rect, NULL, NULL);
+		// this clear interferes with bezel (other blitters dont clear the entire screen!)
+		//pD3DDevice->Clear(0, NULL, D3DCLEAR_TARGET, D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);
+		//pD3DDevice->Present(&rect, &rect, NULL, NULL);
 	}
 
 	// Create osd font
@@ -2479,6 +2516,8 @@ static int dx9AltRender()  // MemToSurf
 			pD3DDevice->SetViewport(&vp);
 		}
 	}
+
+	ClearD3D9SurfaceEntirety<true>();
 
 	UpdateShaderVariables(); // once per frame
 
