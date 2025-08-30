@@ -276,6 +276,10 @@ ifeq ($(HAVE_NEON), 1)
 	endif
 endif
 
+ifeq ($(SUPPORT_LARGE_FILES), 1)
+	FBNEO_DEFINES += -D_FILE_OFFSET_BITS=64
+endif
+
 ifeq ($(EXTERNAL_ZLIB), 1)
 	FBNEO_DEFINES += -DEXTERNAL_ZLIB
 	LDFLAGS += -lz
