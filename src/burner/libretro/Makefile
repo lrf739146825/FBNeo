@@ -16,6 +16,7 @@ HAVE_NEON = 0
 USE_EXPERIMENTAL_FLAGS = 0
 USE_CYCLONE = 0
 HAVE_UWP = 0
+SUPPORT_LARGE_FILES = 1
 # Use a temporary file to hold the list of objects, as it can exceed windows shell command limits
 SPLIT_UP_LINK ?= 0
 REGEN_HEADERS ?= 0
@@ -518,7 +519,7 @@ FBNEO_SOBJ := $(SOURCES_S:.S=.o)
 OBJS := $(FBNEO_COBJ) $(FBNEO_CXXOBJ) $(FBNEO_SOBJ)
 DEPS := $(OBJS:.o=.d)
 
-FBNEO_DEFINES += -D__LIBRETRO__ -D_FILE_OFFSET_BITS=64 \
+FBNEO_DEFINES += -D__LIBRETRO__ \
 	$(ENDIANNESS_DEFINES) \
 	$(PLATFORM_DEFINES) \
 	$(NEON_FLAGS) \
