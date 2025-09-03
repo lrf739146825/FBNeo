@@ -498,11 +498,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="bbears" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Prototype</comment>
+		<comment>Prototype, Not playable Demo</comment>
 		<description>Berenstain Bears, The (Prototype)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="bbears.bin" size="8192" crc="18864abc"/>
+		<rom name="Berenstain Bears, The (Proto)(1984)(Coleco).rom" size="8192" crc="18864abc"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -924,11 +924,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="carnival" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Carnival</description>
+		<description>Carnival (USA, Euro)</description>
 		<year>1982</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="carnival.1" size="8192" crc="3cab8c1f"/>
-		<rom name="carnival.2" size="8192" crc="4cf856a9"/>
+		<rom name="Carnival (USA, Euro)(1982)(Coleco).rom" size="16384" crc="70f315c2"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -937,10 +936,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="castelo" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Castelo</description>
+		<description>Castelo (Brazil) (Unl)</description>
 		<year>1985</year>
 		<manufacturer>Splice Vision</manufacturer>
-		<rom name="castelo.bin" size="8192" crc="07a3d3db"/>
+		<rom name="Castelo (Brazil)(Unl)(1985)(Splice Vision).rom" size="8192" crc="07a3d3db"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1234,11 +1233,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="cavengera" cloneof="cavenger" romof="cavenger" sourcefile="coleco/d_coleco.cpp">
-		<description>Cosmic Avenger (Alt)</description>
+		<description>Cosmic Avenger (USA, Alt)</description>
 		<year>1982</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="cavenger.1" merge="cavenger.1" size="8192" crc="c852bee7"/>
-		<rom name="cavengera.2" size="8192" crc="58d86f66"/>
+		<rom name="Cosmic Avenger (USA, Alt)(1982)(Coleco).rom" size="16384" crc="14d6ced6"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1247,11 +1245,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="cavenger" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Cosmic Avenger</description>
+		<description>Cosmic Avenger (USA, Euro)</description>
 		<year>1982</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="cavenger.1" size="8192" crc="c852bee7"/>
-		<rom name="cavenger.2" size="8192" crc="75da80eb"/>
+		<rom name="Cosmic Avenger (USA, Euro)(1982)(Coleco).rom" size="16384" crc="39d4215b"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1445,14 +1442,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="destruct" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Select w/ Controller #2</comment>
-		<description>Destructor</description>
+		<comment>NB: select skill level with Controller #2</comment>
+		<description>Destructor (USA, Euro)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="destruct.1" size="8192" crc="7026e237"/>
-		<rom name="destruct.2" size="8192" crc="c1c0b46c"/>
-		<rom name="destruct.3" size="8192" crc="f7737e17"/>
-		<rom name="destruct.4" size="8192" crc="87c11b21"/>
+		<rom name="Destructor (USA, Euro)(1984)(Coleco).rom" size="32768" crc="56c358a6"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1461,7 +1455,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="destructsce" cloneof="destruct" romof="destruct" sourcefile="coleco/d_coleco.cpp">
-		<comment>Hack, Homebrew, Published by Team Pixelboy</comment>
+		<comment>Hack, Published by Team Pixelboy</comment>
 		<description>Destructor S.C.E. (Hack, Standard Controller Edition)</description>
 		<year>2010</year>
 		<manufacturer>Coleco</manufacturer>
@@ -1832,11 +1826,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="fathom" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Fathom</description>
+		<description>Fathom (USA)</description>
 		<year>1983</year>
 		<manufacturer>Imagic</manufacturer>
-		<rom name="fathom.1" size="8192" crc="bf04e505"/>
-		<rom name="fathom.2" size="8192" crc="606061c7"/>
+		<rom name="Fathom (USA)(1983)(Imagic).rom" size="16384" crc="b3b767ae"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1897,11 +1890,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="flipslip" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Flipper Slipper</description>
+		<description>Flipper Slipper (USA, Euro)</description>
 		<year>1983</year>
 		<manufacturer>Spectravideo</manufacturer>
-		<rom name="flipslip.1" size="8192" crc="e26569f3"/>
-		<rom name="flipslip.2" size="8192" crc="d4ab0e71"/>
+		<rom name="Flipper Slipper (USA, Euro)(1983)(Spectravideo).rom" size="16384" crc="2a49f507"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1964,39 +1956,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ffreddy" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Frantic Freddy</description>
+		<description>Frantic Freddy (USA)</description>
 		<year>1983</year>
 		<manufacturer>Spectravideo</manufacturer>
-		<rom name="ffreddy.1" size="8192" crc="e33ccf02"/>
-		<rom name="ffreddy.2" size="8192" crc="d3ece1bc"/>
-		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
-		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
-		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
-		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="frenzya" cloneof="frenzy" romof="frenzy" sourcefile="coleco/d_coleco.cpp">
-		<description>Frenzy (Alt 1)</description>
-		<year>1983</year>
-		<manufacturer>Coleco</manufacturer>
-		<rom name="frenzy.1" merge="frenzy.1" size="8192" crc="5111bca0"/>
-		<rom name="frenzy.2" merge="frenzy.2" size="8192" crc="5453c668"/>
-		<rom name="frenzya.3" size="8192" crc="2561345b"/>
-		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
-		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
-		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
-		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="frenzya2" cloneof="frenzy" romof="frenzy" sourcefile="coleco/d_coleco.cpp">
-		<description>Frenzy (Alt 2)</description>
-		<year>1983</year>
-		<manufacturer>Coleco</manufacturer>
-		<rom name="frenzy.1" merge="frenzy.1" size="8192" crc="5111bca0"/>
-		<rom name="frenzy.2" merge="frenzy.2" size="8192" crc="5453c668"/>
-		<rom name="frenzya2.3" size="8192" crc="9f5f1082"/>
+		<rom name="Frantic Freddy (USA)(1983)(Spectravideo).rom" size="16384" crc="8615c6e8"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2005,12 +1968,34 @@
 		<driver status="good"/>
 	</game>
 	<game name="frenzy" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Frenzy</description>
+		<description>Frenzy (USA)</description>
 		<year>1983</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="frenzy.1" size="8192" crc="5111bca0"/>
-		<rom name="frenzy.2" size="8192" crc="5453c668"/>
-		<rom name="frenzy.3" size="8192" crc="0c7bedf0"/>
+		<rom name="Frenzy (USA)(1983)(Coleco).rom" size="20480" crc="3cacddfb"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="frenzya" cloneof="frenzy" romof="frenzy" sourcefile="coleco/d_coleco.cpp">
+		<description>Frenzy (USA, Alt 1)</description>
+		<year>1983</year>
+		<manufacturer>Coleco</manufacturer>
+		<rom name="Frenzy (USA, Alt 1)(1983)(Coleco).rom" size="24576" crc="960616af"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="frenzya2" cloneof="frenzy" romof="frenzy" sourcefile="coleco/d_coleco.cpp">
+		<description>Frenzy (USA, Alt 2)</description>
+		<year>1983</year>
+		<manufacturer>Coleco</manufacturer>
+		<rom name="Frenzy (USA, Alt 2)(1983)(Coleco).rom" size="24576" crc="bf1ccf04"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2055,13 +2040,23 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="frontlina" cloneof="frontlin" romof="frontlin" sourcefile="coleco/d_coleco.cpp">
-		<description>Front Line (Alt)</description>
+	<game name="frontlin" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<description>Front Line (USA)</description>
 		<year>1983</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="frontlina.1" size="8192" crc="715c764b"/>
-		<rom name="frontlina.2" size="8192" crc="eee3a3d3"/>
-		<rom name="frontlina.3" size="8192" crc="77885ebd"/>
+		<rom name="Front Line (USA)(1983)(Coleco).rom" size="24576" crc="d0110137"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="frontlina" cloneof="frontlin" romof="frontlin" sourcefile="coleco/d_coleco.cpp">
+		<description>Front Line (USA, Alt)</description>
+		<year>1983</year>
+		<manufacturer>Coleco</manufacturer>
+		<rom name="Front Line (USA, Alt)(1983)(Coleco).rom" size="24576" crc="9c551386"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2070,25 +2065,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="frntlnsce" cloneof="frontlin" romof="frontlin" sourcefile="coleco/d_coleco.cpp">
-		<comment>Hack, Homebrew, Published by Team Pixelboy</comment>
+		<comment>Hack, Published by Team Pixelboy</comment>
 		<description>Front Line S.C.E. (Hack, Standard Controller Edition)</description>
 		<year>2015</year>
-		<manufacturer>Taito</manufacturer>
+		<manufacturer>Coleco - Taito</manufacturer>
 		<rom name="Front Line S.C.E. (2015)(Team Pixelboy).rom" size="32768" crc="832586bf"/>
-		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
-		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
-		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
-		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="frontlin" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Front Line</description>
-		<year>1983</year>
-		<manufacturer>Coleco</manufacturer>
-		<rom name="frontlin.1" size="8192" crc="7b46a5b7"/>
-		<rom name="frontlin.2" size="8192" crc="3ea9a9bd"/>
-		<rom name="frontlin.3" size="8192" crc="91530316"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2122,14 +2103,11 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="galaxiana" cloneof="galaxian" romof="galaxian" sourcefile="coleco/d_coleco.cpp">
-		<description>Galaxian (Alt)</description>
+	<game name="galaxian" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<description>Galaxian (USA)</description>
 		<year>1983</year>
 		<manufacturer>Atarisoft</manufacturer>
-		<rom name="galaxian.1" merge="galaxian.1" size="8192" crc="7d84e0e3"/>
-		<rom name="galaxiana.2" size="8192" crc="4e701bc1"/>
-		<rom name="galaxiana.3" size="8192" crc="96acb931"/>
-		<rom name="galaxian.4" merge="galaxian.4" size="8192" crc="b4293435"/>
+		<rom name="Galaxian (USA)(1983)(Atarisoft).rom" size="32768" crc="fe1d0b6a"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2137,14 +2115,11 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="galaxian" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Galaxian</description>
+	<game name="galaxiana" cloneof="galaxian" romof="galaxian" sourcefile="coleco/d_coleco.cpp">
+		<description>Galaxian (USA, Alt)</description>
 		<year>1983</year>
 		<manufacturer>Atarisoft</manufacturer>
-		<rom name="galaxian.1" size="8192" crc="7d84e0e3"/>
-		<rom name="galaxian.2" size="8192" crc="9390df8b"/>
-		<rom name="galaxian.3" size="8192" crc="dd5465ce"/>
-		<rom name="galaxian.4" size="8192" crc="b4293435"/>
+		<rom name="Galaxian (USA, Alt)(1983)(Atarisoft).rom" size="32768" crc="987bc7ac"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2426,11 +2401,23 @@
 		<driver status="good"/>
 	</game>
 	<game name="gyruss" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Gyruss</description>
+		<description>Gyruss (USA)</description>
 		<year>1984</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="gyruss.1" size="8192" crc="05543060"/>
-		<rom name="gyruss.2" size="8192" crc="8efb3614"/>
+		<rom name="Gyruss (USA)(1984)(Parker Brothers).rom" size="16384" crc="27cbf26d"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gyrussp" cloneof="gyruss" romof="gyruss" sourcefile="coleco/d_coleco.cpp">
+		<comment>Prototype, Incomplete version</comment>
+		<description>Gyruss (USA, Prototype)</description>
+		<year>1984</year>
+		<manufacturer>Parker Brothers</manufacturer>
+		<rom name="Gyruss (USA, Proto)(1984)(Parker Brothers).rom" size="8448" crc="b35d4dc9"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3876,8 +3863,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="nethdungeon" cloneof="sydneyhunt" romof="sydneyhunt" sourcefile="coleco/d_coleco.cpp">
-		<comment>Hack, Homebrew, A 'Sydney Hunter and the Sacred Tribe' Hack</comment>
-		<description>Nether Dungeon (Hack, HB)</description>
+		<comment>Hack, Homebrew, Hacked version of 'Sydney Hunter and the Sacred Tribe'</comment>
+		<description>Nether Dungeon (HB)</description>
 		<year>2018</year>
 		<manufacturer>CollectorVision Games</manufacturer>
 		<rom name="Nether Dungeon (2018)(CollectorVision).rom" size="131072" crc="4657bb8c"/>
@@ -5067,7 +5054,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="danslither" cloneof="slither" romof="slither" sourcefile="coleco/d_coleco.cpp">
-		<comment>Hack, Homebrew</comment>
+		<comment>Hack</comment>
 		<description>Slither (Hack, Joystick Version)</description>
 		<year>2010</year>
 		<manufacturer>Daniel Bienvenu</manufacturer>
@@ -5523,11 +5510,23 @@
 		<driver status="good"/>
 	</game>
 	<game name="starwars" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Star Wars: The Arcade Game</description>
+		<description>Star Wars: The Arcade Game (USA)</description>
 		<year>1984</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="starwars.1" size="8192" crc="a0ea5c68"/>
-		<rom name="starwars.2" size="8192" crc="e7d55444"/>
+		<rom name="Star Wars - The Arcade Game (USA)(1984)(Parker Brothers).rom" size="16384" crc="0e75b3bf"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="starwarsp" cloneof="starwars" romof="starwars" sourcefile="coleco/d_coleco.cpp">
+		<comment>Prototype</comment>
+		<description>Star Wars: The Arcade Game (USA, Prototype)</description>
+		<year>1984</year>
+		<manufacturer>Parker Brothers</manufacturer>
+		<rom name="Star Wars - The Arcade Game (USA, Proto)(1984)(Parker Brothers).rom" size="16384" crc="d7febc67"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5680,13 +5679,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="saftsocc" cloneof="sasoccer" romof="sasoccer" sourcefile="coleco/d_coleco.cpp">
-		<description>Super Action Football (Super Action Soccer clone)</description>
+		<description>Super Action Football (Euro)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="saftsocc.1" size="8192" crc="fb9f52cb"/>
-		<rom name="sasoccer.2" merge="sasoccer.2" size="8192" crc="014ecf5f"/>
-		<rom name="sasoccer.3" merge="sasoccer.3" size="8192" crc="780e3e49"/>
-		<rom name="saftsocc.4" size="8192" crc="b23e1847"/>
+		<rom name="Super Action Football (Euro)(1984)(Coleco).rom" size="32768" crc="4d6c0458"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5695,13 +5691,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="safootb" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Super Action Football</description>
+		<description>Super Action Football (USA)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="safootb.1" size="8192" crc="f1fdec05"/>
-		<rom name="safootb.2" size="8192" crc="84104709"/>
-		<rom name="safootb.3" size="8192" crc="496d3acb"/>
-		<rom name="safootb.4" size="8192" crc="dcc8042d"/>
+		<rom name="Super Action Football (USA)(1984)(Coleco).rom" size="32768" crc="62619dc0"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5710,25 +5703,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="sasoccer" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Super Action Soccer</description>
+		<description>Super Action Soccer (USA)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="sasoccer.1" size="8192" crc="17447e87"/>
-		<rom name="sasoccer.2" size="8192" crc="014ecf5f"/>
-		<rom name="sasoccer.3" size="8192" crc="780e3e49"/>
-		<rom name="sasoccer.4" size="8192" crc="4f5ce13d"/>
-		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
-		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
-		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
-		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="scobraa" cloneof="scobra" romof="scobra" sourcefile="coleco/d_coleco.cpp">
-		<description>Super Cobra (Alt)</description>
-		<year>1983</year>
-		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="scobraa.bin" size="8192" crc="f84622d2"/>
+		<rom name="Super Action Soccer (USA)(1984)(Coleco).rom" size="32768" crc="acac69dd"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5737,10 +5715,22 @@
 		<driver status="good"/>
 	</game>
 	<game name="scobra" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Super Cobra</description>
+		<description>Super Cobra (USA)</description>
 		<year>1983</year>
 		<manufacturer>Parker Brothers</manufacturer>
-		<rom name="scobra.bin" size="8192" crc="6cb5cb8f"/>
+		<rom name="Super Cobra (USA)(1983)(Parker Brothers).rom" size="8192" crc="6cb5cb8f"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="scobraa" cloneof="scobra" romof="scobra" sourcefile="coleco/d_coleco.cpp">
+		<description>Super Cobra (USA, Alt)</description>
+		<year>1983</year>
+		<manufacturer>Parker Brothers</manufacturer>
+		<rom name="Super Cobra (USA, Alt)(1983)(Parker Brothers).rom" size="8192" crc="f84622d2"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5988,13 +5978,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="tapper" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<description>Tapper</description>
+		<description>Tapper (USA)</description>
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
-		<rom name="tapper.1" size="8192" crc="7f8b5222"/>
-		<rom name="tapper.2" size="8192" crc="e2ef863f"/>
-		<rom name="tapper.3" size="8192" crc="c14b28fa"/>
-		<rom name="tapper.4" size="8192" crc="d6a41476"/>
+		<rom name="Tapper (USA)(1984)(Coleco).rom" size="32768" crc="8afd7db2"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>

@@ -4135,7 +4135,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="opwolf" sourcefile="sms/d_sms.cpp">
-		<comment>Light Phaser game</comment>
+		<comment>Light Phaser game (use button 2 on controller #2 to throw the grenades)</comment>
 		<description>Operation Wolf (Euro, Brazil)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
@@ -4998,12 +4998,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="shootagem" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, Light Phaser game</comment>
+		<description>Shootagem (HB)</description>
+		<year>2023</year>
+		<manufacturer>Joe Kennedy</manufacturer>
+		<rom name="Shootagem (2023)(Joe Kennedy).sms" size="49152" crc="ef2d3069"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="shooting" sourcefile="sms/d_sms.cpp">
 		<comment>Light Phaser game</comment>
 		<description>Shooting Gallery (Euro, USA, Brazil)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shooting Gallery (Euro, USA, Brazil)(1987)(Sega).sms" size="131072" crc="4b051022"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shootstars" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, Light Phaser game</comment>
+		<description>Shooting Stars (HB, v1.01)</description>
+		<year>2013</year>
+		<manufacturer>dragonfeet</manufacturer>
+		<rom name="Shooting Stars v1.01 (2013)(dragonfeet).sms" size="32768" crc="d0955eb8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5192,6 +5210,15 @@
 		<year>2021</year>
 		<manufacturer>Under4Mhz</manufacturer>
 		<rom name="Snake v1.04 (2021)(Under4Mhz).sms" size="32768" crc="995f8fd2"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="snakekq" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Snake [KingQuack] (HB)</description>
+		<year>2024</year>
+		<manufacturer>KingQuack</manufacturer>
+		<rom name="Snake v1.0 (2024)(KingQuack).sms" size="65536" crc="99634c20"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5918,6 +5945,15 @@
 		<year>2022</year>
 		<manufacturer>X7R</manufacturer>
 		<rom name="Sutoroku (2022)(X7R).sms" size="49152" crc="f4804329"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="svellas" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Svellas (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Svellas (2025)(Inufuto).sms" size="16384" crc="b94bd12f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
