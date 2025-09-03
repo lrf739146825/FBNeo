@@ -27301,22 +27301,22 @@ struct BurnDriver BurnDrvCndi = {
 };
 
 
-// Double Dragon One (Demo)
+// Double Dragon One (Beta Version)
 // https://ozzyouzo.itch.io/double-dragon
 
 static struct BurnRomInfo doubled1RomDesc[] = {
-	{ "doubled-p1.bin",		0x0100000, 0x0dd47ea6, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
-	{ "doubled-p2.bin",		0x0400000, 0x719b98e6, 1 | BRF_ESS | BRF_PRG }, //  1
+	{ "doubled-p1.bin",		0x0100000, 0x83d2ec24, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "doubled-p2.bin",		0x0400000, 0x7e5ed6b8, 1 | BRF_ESS | BRF_PRG }, //  1
 
-	{ "doubled-s1.bin",		0x0020000, 0xbbb20072, 2 | BRF_GRA },           //  2 Text layer tiles
+	{ "doubled-s1.bin",		0x0020000, 0x714afb4b, 2 | BRF_GRA },           //  2 Text layer tiles
 
-	{ "doubled-c1.bin",		0x1000000, 0xd4c50841, 3 | BRF_GRA },           //  3 Sprite data
-	{ "doubled-c2.bin",		0x1000000, 0x728eb8ae, 3 | BRF_GRA },           //  4
+	{ "doubled-c1.bin",		0x1000000, 0xfd883db8, 3 | BRF_GRA },           //  3 Sprite data
+	{ "doubled-c2.bin",		0x1000000, 0x718050d3, 3 | BRF_GRA },           //  4
 
-	{ "doubled-m1.bin",		0x0010000, 0x128a9f84, 4 | BRF_ESS | BRF_PRG }, //  5 Z80 code
+	{ "doubled-m1.bin",		0x0010000, 0x43295479, 4 | BRF_ESS | BRF_PRG }, //  5 Z80 code
 
-	{ "doubled-v1.bin",		0x0800000, 0x5018b7a9, 5 | BRF_SND },           //  6 Sound data
-	{ "doubled-v2.bin",		0x0800000, 0xf5c8192f, 5 | BRF_SND },           //  7
+	{ "doubled-v1.bin",		0x0800000, 0xf01e97dc, 5 | BRF_SND },           //  6 Sound data
+	{ "doubled-v2.bin",		0x0800000, 0x79156c41, 5 | BRF_SND },           //  7
 };
 
 STDROMPICKEXT(doubled1, doubled1, neogeo)
@@ -27324,10 +27324,74 @@ STD_ROM_FN(doubled1)
 
 struct BurnDriver BurnDrvDoubled1 = {
 	"doubled1", NULL, "neogeo", NULL, "2025",
-	"Double Dragon One (Demo)\0", NULL, "OzzyOuzo", "Neo Geo MVS",
+	"Double Dragon One (Beta Version)\0", NULL, "OzzyOuzo", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SNK_NEOGEO, GBF_SCRFIGHT, 0,
+	NULL, doubled1RomInfo, doubled1RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	304, 224, 4, 3
+};
+
+
+// Bad Dudes - Burger Edition (Demo Version)
+// https://ozzyouzo.itch.io/bad-dudes
+
+static struct BurnRomInfo bdudesRomDesc[] = {
+	{ "bdudes-p1.bin",		0x0100000, 0x77a74315, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "bdudes-p2.bin",		0x0700000, 0xf827dd6e, 1 | BRF_ESS | BRF_PRG }, //  1
+
+	{ "bdudes-s1.bin",		0x0020000, 0x83b0f6c4, 2 | BRF_GRA },           //  2 Text layer tiles
+
+	{ "bdudes-c1.bin",		0x1000000, 0xfe7bb928, 3 | BRF_GRA },           //  3 Sprite data
+	{ "bdudes-c2.bin",		0x1000000, 0x68deb392, 3 | BRF_GRA },           //  4
+
+	{ "bdudes-m1.bin",		0x0010000, 0x2854b516, 4 | BRF_ESS | BRF_PRG }, //  5 Z80 code
+
+	{ "bdudes-v1.bin",		0x0800000, 0xd8ac5857, 5 | BRF_SND },           //  6 Sound data
+	{ "bdudes-v2.bin",		0x0800000, 0xf37bd666, 5 | BRF_SND },           //  7
+};
+
+STDROMPICKEXT(bdudes, bdudes, neogeo)
+STD_ROM_FN(bdudes)
+
+struct BurnDriver BurnDrvBdudes = {
+	"bdudes", NULL, "neogeo", NULL, "2025",
+	"Bad Dudes - Burger Edition (Demo Version)\0", NULL, "Balek Corp", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_DEMO, 1, HARDWARE_SNK_NEOGEO, GBF_SCRFIGHT, 0,
-	NULL, doubled1RomInfo, doubled1RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NULL, bdudesRomInfo, bdudesRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	304, 224, 4, 3
+};
+
+
+// In The Hunt (Demo Version)
+// https://ozzyouzo.itch.io/inthehunt
+
+static struct BurnRomInfo inthehuntRomDesc[] = {
+	{ "inthehunt-p1.bin",	0x0100000, 0x58e3317a, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "inthehunt-p2.bin",	0x0100000, 0xc6494f12, 1 | BRF_ESS | BRF_PRG }, //  1
+
+	{ "inthehunt-s1.bin",	0x0020000, 0x35c8a6e0, 2 | BRF_GRA },           //  2 Text layer tiles
+
+	{ "inthehunt-c1.bin",	0x1000000, 0x1b32eaf5, 3 | BRF_GRA },           //  3 Sprite data
+	{ "inthehunt-c2.bin",	0x1000000, 0x87b8def8, 3 | BRF_GRA },           //  4
+
+	{ "inthehunt-m1.bin",	0x0010000, 0xdd055711, 4 | BRF_ESS | BRF_PRG }, //  5 Z80 code
+
+	{ "inthehunt-v1.bin",	0x0800000, 0xeb947c63, 5 | BRF_SND },           //  6 Sound data
+	{ "inthehunt-v2.bin",	0x0800000, 0x79156c41, 5 | BRF_SND },           //  7
+};
+
+STDROMPICKEXT(inthehunt, inthehunt, neogeo)
+STD_ROM_FN(inthehunt)
+
+struct BurnDriver BurnDrvInthehunt = {
+	"inthehunt", NULL, "neogeo", NULL, "2025",
+	"In The Hunt (Demo Version)\0", NULL, "OzzyOuzo", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_DEMO, 1, HARDWARE_SNK_NEOGEO, GBF_SHOOT, 0,
+	NULL, inthehuntRomInfo, inthehuntRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };

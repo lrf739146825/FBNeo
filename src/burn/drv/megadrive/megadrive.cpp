@@ -106,6 +106,7 @@ struct PicoVideo {
 	UINT8 addr_u;       // bit16 of .addr (for 128k)
 	INT32 status;		// Status bits
 	UINT8 pending_ints;	// pending interrupts: ??VH????
+	UINT16 hv_latch;
 	INT8 lwrite_cnt;    // VDP write count during active display line
 	UINT16 v_counter;   // V-counter
 	INT32 field;		// for interlace mode 2.  -dink
@@ -569,19 +570,6 @@ static UINT16 __fastcall MegadriveReadWord(UINT32 address)
 
 static void __fastcall MegadriveWriteByte(UINT32 sekAddress, UINT8 byteValue)
 {
-	if(sekAddress >= 0xA13004 && sekAddress < 0xA13040) {
-		bprintf(0, _T("---------dumb 12-in-1 banking stuff.\n"));
-		// dumb 12-in-1 or 4-in-1 banking support
-		sekAddress &= 0x3f;
-		sekAddress <<= 16;
-		INT32 len = RomSize - sekAddress;
-		if (len <= 0) return; // invalid/missing bank
-		if (len > 0x200000) len = 0x200000; // 2 megs
-		// code which does this is in RAM so this is safe.
-		memcpy(RomMain, RomMain + sekAddress, len);
-		return;
-	}
-
 	if (sekAddress >= 0xa00000 && sekAddress <= 0xa07fff) {
 		Megadrive68K_Z80WriteByte(sekAddress, byteValue);
 		return;
@@ -1100,7 +1088,7 @@ static UINT16 __fastcall MegadriveVideoReadWord(UINT32 sekAddress)
 			else d = hcounts_32[d];
 
 			//elprintf(EL_HVCNT, "hv: %02x %02x (%i) @ %06x", d, Pico.video.v_counter, SekCyclesDone(), SekPc);
-			return d | (RamVReg->v_counter << 8);
+			return (RamVReg->reg[0]&2) ? RamVReg->hv_latch : (d | (RamVReg->v_counter << 8));
 		}
 		break;
 
@@ -1213,6 +1201,20 @@ static void __fastcall MegadriveVideoWriteWord(UINT32 sekAddress, UINT16 wordVal
 				// update IRQ level (Lemmings, Wiz 'n' Liz intro, ... )
 				// may break if done improperly:
 				// International Superstar Soccer Deluxe (crash), Street Racer (logos), Burning Force (gfx), Fatal Rewind (hang), Sesame Street Counting Cafe
+				if (num == 0) {
+					if ( (oldreg^RamVReg->reg[num]) & 2) {
+						UINT32 d;
+
+						d = (SekCyclesLine()) & 0x1ff;
+
+						if (RamVReg->reg[12]&1)
+							d = hcounts_40[d];
+						else d = hcounts_32[d];
+
+						//elprintf(EL_HVCNT, "latch hv: %02x %02x (%i) @ %06x", d, Pico.video.v_counter, SekCyclesDone(), SekPc);
+						RamVReg->hv_latch = d | (RamVReg->v_counter << 8);
+					}
+				}
 				if(num < 2 && !SekShouldInterrupt()) {
 
 					INT32 irq = 0;
@@ -1536,6 +1538,8 @@ static INT32 res_check(); // forward
 static void vx_reset();
 static void __fastcall Ssf2BankWriteByte(UINT32 sekAddress, UINT8 byteValue); // forward
 
+static INT32 last_hardware = -1;
+
 static INT32 MegadriveResetDo()
 {
 	memset (RamStart, 0, RamEnd - RamStart);
@@ -1572,38 +1576,43 @@ static INT32 MegadriveResetDo()
 
 	MegadriveCheckHardware();
 
-	if (Hardware & 0x40) {
+	if (last_hardware != Hardware) {
+		bprintf(0, _T("**  Megadrive Region/Hardware change, %dhz\n"), (Hardware & 0x40) ? 50 : 60);
+		if (Hardware & 0x40) {
 
-		BurnSetRefreshRate(50.0);
-		Reinitialise();
+			BurnSetRefreshRate(50.0);
+			Reinitialise();
 
-		BurnMD2612Exit();
-		BurnMD2612Init(1, 1, MegadriveSynchroniseStreamPAL, 1);
-		BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_1, 0.75, BURN_SND_ROUTE_LEFT);
-		BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_2, 0.75, BURN_SND_ROUTE_RIGHT);
+			BurnMD2612Exit();
+			BurnMD2612Init(1, 1, MegadriveSynchroniseStreamPAL, 1);
+			BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_1, 0.75, BURN_SND_ROUTE_LEFT);
+			BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_2, 0.75, BURN_SND_ROUTE_RIGHT);
 
-		BurnMD2612Reset();
+			BurnMD2612Reset();
 
-		SN76496Exit();
-		SN76496Init(0, OSC_PAL / 15, 0);
-		SN76496SetBuffered(SekCyclesDoneFrameF, OSC_PAL / 7);
-		SN76496SetRoute(0, 0.50, BURN_SND_ROUTE_BOTH);
-	} else {
-		BurnSetRefreshRate(60.0);
-		Reinitialise();
+			SN76496Exit();
+			SN76496Init(0, OSC_PAL / 15, 0);
+			SN76496SetBuffered(SekCyclesDoneFrameF, OSC_PAL / 7);
+			SN76496SetRoute(0, 0.50, BURN_SND_ROUTE_BOTH);
+		} else {
+			BurnSetRefreshRate(60.0);
+			Reinitialise();
 
-		BurnMD2612Exit();
-		BurnMD2612Init(1, 0, MegadriveSynchroniseStream, 1);
-		BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_1, 0.75, BURN_SND_ROUTE_LEFT);
-		BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_2, 0.75, BURN_SND_ROUTE_RIGHT);
+			BurnMD2612Exit();
+			BurnMD2612Init(1, 0, MegadriveSynchroniseStream, 1);
+			BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_1, 0.75, BURN_SND_ROUTE_LEFT);
+			BurnMD2612SetRoute(0, BURN_SND_MD2612_MD2612_ROUTE_2, 0.75, BURN_SND_ROUTE_RIGHT);
 
-		BurnMD2612Reset();
+			BurnMD2612Reset();
 
-		SN76496Exit();
-		SN76496Init(0, OSC_NTSC / 15, 0);
-		SN76496SetBuffered(SekCyclesDoneFrameF, OSC_NTSC / 7);
-		SN76496SetRoute(0, 0.50, BURN_SND_ROUTE_BOTH);
+			SN76496Exit();
+			SN76496Init(0, OSC_NTSC / 15, 0);
+			SN76496SetBuffered(SekCyclesDoneFrameF, OSC_NTSC / 7);
+			SN76496SetRoute(0, 0.50, BURN_SND_ROUTE_BOTH);
+		}
 	}
+
+	last_hardware = Hardware;
 
 	// other reset
 	//memset(RamMisc, 0, sizeof(struct PicoMisc)); // do not clear because Mappers/SRam are set up in here when the driver inits
@@ -2451,13 +2460,31 @@ static void __fastcall Sup19in1BankWriteWord(UINT32 sekAddress, UINT16 /*wordVal
 
 static void __fastcall Mc12in1BankWriteByte(UINT32 sekAddress, UINT8 /*byteValue*/)
 {
-	INT32 Offset = (sekAddress - 0xa13000) >> 1;
-	memcpy(RomMain + 0x000000, OriginalRom + ((Offset & 0x3f) << 17), 0x100000);
+	RamMisc->MapperBank[0] = ((sekAddress - 0xa13000) >> 1) & 0x3f;
 }
 
 static void __fastcall Mc12in1BankWriteWord(UINT32 sekAddress, UINT16 wordValue)
 {
 	bprintf(PRINT_NORMAL, _T("Mc12in1Bank write word value %04x to location %08x\n"), wordValue, sekAddress);
+}
+
+static UINT8 __fastcall Mc12in1ReadByteRom(UINT32 sekAddress)
+{
+	if (sekAddress < 0x200000) {
+		return RomMain[((RamMisc->MapperBank[0] * 0x20000) + sekAddress)^1];
+	} else {
+		return 0xff;
+	}
+}
+
+static UINT16 __fastcall Mc12in1ReadWordRom(UINT32 sekAddress)
+{
+	if (sekAddress < 0x200000) {
+		UINT16 *Rom = (UINT16*)RomMain;
+		return Rom[((RamMisc->MapperBank[0] * 0x20000) + sekAddress) >> 1];
+	} else {
+		return 0xffff;
+	}
 }
 
 static UINT8 __fastcall TopfigReadByte(UINT32 sekAddress)
@@ -3163,15 +3190,13 @@ static void SetupCustomCartridgeMappers()
 	}
 
 	if ((BurnDrvGetHardwareCode() & 0x3f) == HARDWARE_SEGA_MEGADRIVE_PCB_MC_12IN1) {
-		OriginalRom = (UINT8*)BurnMalloc(RomSize * 2); // add a little buffer on the end so memcpy @ the last bank doesn't crash
-		memcpy(OriginalRom, RomMain, RomSize);
-
-		memcpy(RomMain + 0x000000, OriginalRom + 0x000000, 0x200000);
-
 		SekOpen(0);
 		SekMapHandler(7, 0xa13000, 0xa1303f, MAP_WRITE);
 		SekSetWriteByteHandler(7, Mc12in1BankWriteByte);
 		SekSetWriteWordHandler(7, Mc12in1BankWriteWord);
+		SekMapHandler(8, 0x000000, 0x1fffff, MAP_READ | MAP_FETCH);
+		SekSetReadByteHandler(8, Mc12in1ReadByteRom);
+		SekSetReadWordHandler(8, Mc12in1ReadWordRom);
 		SekClose();
 	}
 
@@ -3759,6 +3784,8 @@ INT32 MegadriveInit()
 	if (sot4wmode) {
 		vx_init();
 	}
+
+	last_hardware = -1;
 
 	MegadriveResetDo();
 

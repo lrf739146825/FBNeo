@@ -4401,26 +4401,26 @@
 		<driver status="good"/>
 	</game>
 	<game name="tamalymp" sourcefile="sms/d_sms.cpp">
-		<description>Tama and Friends Sanchoume Kouen - Tamalympic (Japan)</description>
+		<description>Tama &amp; Friends: 3 Choume Kouen Tamalympic (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tama and friends sanchoume kouen - tamalympic (japan).bin" size="262144" crc="dd1d2ebf"/>
+		<rom name="Tama &amp; Friends: 3 Choume Kouen Tamalympic (Japan)(1995)(Sega).gg" size="262144" crc="dd1d2ebf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tarot" sourcefile="sms/d_sms.cpp">
-		<description>Tarot no Yakata (Japan)</description>
+		<description>Tarot no Yakata ~ House of Tarot (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tarot no yakata (japan).bin" size="131072" crc="57834c03"/>
+		<rom name="Tarot no Yakata - House of Tarot (Japan)(1991)(Sega).gg" size="131072" crc="57834c03"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tarzan" sourcefile="sms/d_sms.cpp">
-		<description>Tarzan - Lord of the Jungle (Euro)</description>
+		<description>Tarzan: Lord of the Jungle (Euro)</description>
 		<year>1994</year>
 		<manufacturer>GameTek</manufacturer>
-		<rom name="tarzan - lord of the jungle (europe).bin" size="262144" crc="ef3afe8b"/>
+		<rom name="Tarzan - Lord of the Jungle (Euro)(1994)(GameTek).gg" size="262144" crc="ef3afe8b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4428,7 +4428,7 @@
 		<description>Tatakae! Pro Yakyuu Twin League (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="tatakae! pro yakyuu twin league (japan).bin" size="524288" crc="bec57602"/>
+		<rom name="Tatakae! Pro Yakyuu Twin League (Japan)(1995)(Sega).gg" size="524288" crc="bec57602"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4577,10 +4577,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="torarete" sourcefile="sms/d_sms.cpp">
-		<description>Torarete Tamaru ka!? (Japan)</description>
+		<description>Torarete Tamaruka!? (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Torarete Tamaru ka!! (Japan)(1994)(Sega).gg" size="524288" crc="5bcf9b97"/>
+		<rom name="Torarete Tamaruka!! (Japan)(1994)(Sega).gg" size="524288" crc="5bcf9b97"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4609,7 +4609,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="vampire" cloneof="mastdark" romof="mastdark" sourcefile="sms/d_sms.cpp">
-		<description>Vampire - Master of Darkness (USA)</description>
+		<description>Vampire: Master of Darkness (USA)</description>
 		<year>1993</year>
 		<manufacturer>SIMS Co. - Sega</manufacturer>
 		<rom name="Vampire - Master of Darkness (USA)(1993)(SIMS Co. - Sega).gg" size="262144" crc="7ec64025"/>
@@ -4889,19 +4889,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuyu" sourcefile="sms/d_sms.cpp">
-		<description>Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)</description>
+	<game name="yuyu2" sourcefile="sms/d_sms.cpp">
+		<description>Yu Yu Hakusho II: Gekitou! Nanakyou no Tatakai (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)(1994)(Sega).gg" size="524288" crc="88ebbf9e"/>
+		<rom name="Yu Yu Hakusho II - Gekitou! Nanakyou no Tatakai (Japan)(1994)(Sega).gg" size="524288" crc="46ae9159"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="yuyu2" sourcefile="sms/d_sms.cpp">
-		<description>Yu Yu Hakusho 2 - Gekitou! Nanakyou no Tatakai (Japan)</description>
+	<game name="yuyu" sourcefile="sms/d_sms.cpp">
+		<description>Yu Yu Hakusho: Horobishimono no Gyakushuu (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Yu Yu Hakusho 2 - Gekitou! Nanakyou no Tatakai (Japan)(1994)(Sega).gg" size="524288" crc="46ae9159"/>
+		<rom name="Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)(1994)(Sega).gg" size="524288" crc="88ebbf9e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
