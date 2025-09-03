@@ -4,7 +4,7 @@
 #include "z80_intf.h"
 #include "sn76496.h"
 #include "burn_ym2413.h"
-#include "burn_gun.h" // paddle
+#include "burn_gun.h" // paddle & phaser
 
 static UINT8 *AllMem;
 static UINT8 *MemEnd;
@@ -19,6 +19,7 @@ UINT8 SMSJoy2[12];
 UINT8 SMSDips[3];
 
 static INT32 has_paddle = 0;
+static INT32 has_gun = 0;
 static INT16 Analog[2]; // paddle
 
 static struct BurnDIPInfo SMSDIPList[] = {
@@ -46,9 +47,15 @@ static struct BurnDIPInfo SMSPaddleDIPList[] = {
 	{0x00, 0xff, 0xff, 0x00, NULL							},
 };
 
+static struct BurnDIPInfo SMSPhaserDIPList[] = {
+	DIP_OFFSET(0x0b)
+	{0x00, 0xff, 0xff, 0x00, NULL							},
+};
+
 STDDIPINFOEXT(SMS, SMSDefault, SMS)
 STDDIPINFOEXT(SMSFM, SMSFM, SMS)
 STDDIPINFOEXT(SMSPaddle, SMSPaddle, SMS)
+STDDIPINFOEXT(SMSPhaser, SMSPhaser, SMS)
 
 static struct BurnDIPInfo GGDIPList[]=
 {
@@ -108,6 +115,26 @@ static struct BurnInputInfo SMSPaddleInputList[] = {
 
 STDINPUTINFO(SMSPaddle)
 
+static struct BurnInputInfo SMSPhaserInputList[] = {
+	A("P1 Gun X",     	BIT_ANALOG_REL, &Analog[0],		"p1 x-axis"),
+	A("P1 Gun Y",     	BIT_ANALOG_REL, &Analog[1],		"p1 y-axis"),
+	{"P1 Button 1",		BIT_DIGITAL,	SMSJoy1 + 7,	"p1 fire 1"	},
+
+	{"P2 Up",		    BIT_DIGITAL,	SMSJoy2 + 3,	"p2 up"		},
+	{"P2 Down",		    BIT_DIGITAL,	SMSJoy2 + 4,	"p2 down"	},
+	{"P2 Left",		    BIT_DIGITAL,	SMSJoy2 + 5,	"p2 left"	},
+	{"P2 Right",		BIT_DIGITAL,	SMSJoy2 + 6,	"p2 right"	},
+	{"P2 Button 1",		BIT_DIGITAL,	SMSJoy2 + 7,	"p2 fire 1"	},
+	{"P2 Button 2",		BIT_DIGITAL,	SMSJoy2 + 8,	"p2 fire 2"	},
+
+	{"Pause",			BIT_DIGITAL,	SMSJoy1 + 1,	"p1 start"	},
+
+	{"Reset",		    BIT_DIGITAL,	&DrvReset,	    "reset"		},
+	{"Dip A",		    BIT_DIPSWITCH,	SMSDips + 0,	"dip"       },
+};
+
+STDINPUTINFO(SMSPhaser)
+
 static INT32 MemIndex()
 {
 	UINT8 *Next = AllMem;
@@ -137,6 +164,11 @@ INT32 SMSExit()
 	if (has_paddle) {
 		has_paddle = 0;
 		BurnTrackballExit();
+	}
+
+	if (has_gun) {
+		has_gun = 0;
+		BurnGunExit();
 	}
 
 	BurnFreeMemIndex();
@@ -173,10 +205,12 @@ void DrvCalcPalette()
 }
 
 INT32 SMSDraw()
-{	
+{
 	DrvCalcPalette();
 
 	BurnTransferCopy(DrvPalette);
+
+	if (has_gun) BurnGunDrawTargets();
 
 	return 0;
 }
@@ -207,13 +241,22 @@ INT32 SMSFrame()
 			if (SMSJoy2[7]) input.pad[1] |= INPUT_BUTTON1;
 		} else {
 			// Player 1
-			if (SMSJoy1[3]) input.pad[0] |= INPUT_UP;
-			if (SMSJoy1[4]) input.pad[0] |= INPUT_DOWN;
-			if (SMSJoy1[5]) input.pad[0] |= INPUT_LEFT;
-			if (SMSJoy1[6]) input.pad[0] |= INPUT_RIGHT;
-			if (SMSJoy1[7]) input.pad[0] |= INPUT_BUTTON2;
-			if (SMSJoy1[8]) input.pad[0] |= INPUT_BUTTON1;
-			DrvClearOpposites(&input.pad[0]);
+			if (has_gun) {
+				BurnGunMakeInputs(0, Analog[0], Analog[1]);
+				input.analog[0] = BurnGunReturnX(0);
+				input.analog[1] = BurnGunReturnY(0) * 192 / 256;
+				if (SMSJoy1[7]) input.pad[0] |= INPUT_BUTTON1; // gun trigger
+			} else {
+				if (SMSJoy1[3]) input.pad[0] |= INPUT_UP;
+				if (SMSJoy1[4]) input.pad[0] |= INPUT_DOWN;
+				if (SMSJoy1[5]) input.pad[0] |= INPUT_LEFT;
+				if (SMSJoy1[6]) input.pad[0] |= INPUT_RIGHT;
+				if (SMSJoy1[7]) input.pad[0] |= INPUT_BUTTON2;
+				if (SMSJoy1[8]) input.pad[0] |= INPUT_BUTTON1;
+				DrvClearOpposites(&input.pad[0]);
+			}
+			if (SMSJoy1[1]) input.system |= (IS_GG) ? INPUT_START : INPUT_PAUSE;
+
 			// Player 2
 			if (SMSJoy2[3]) input.pad[1] |= INPUT_UP;
 			if (SMSJoy2[4]) input.pad[1] |= INPUT_DOWN;
@@ -222,7 +265,6 @@ INT32 SMSFrame()
 			if (SMSJoy2[7]) input.pad[1] |= INPUT_BUTTON2;
 			if (SMSJoy2[8]) input.pad[1] |= INPUT_BUTTON1;
 			DrvClearOpposites(&input.pad[1]);
-			if (SMSJoy1[1]) input.system |= (IS_GG) ? INPUT_START : INPUT_PAUSE;
 		}
 
 		gg_overscanmode = (SMSDips[0] & 0x08);
@@ -375,6 +417,15 @@ static INT32 load_rom()
 		has_paddle = 1;
 		BurnTrackballInit(2);
 
+	} else
+	if ((BurnDrvGetHardwareCode() & HARDWARE_SMS_CONTROL_PHASER) == HARDWARE_SMS_CONTROL_PHASER) {
+		bprintf(0, _T("** HAS GUN **\n"));
+		system_assign_device(PORT_A, DEVICE_PHASER);
+		system_assign_device(PORT_B, DEVICE_PAD2B);
+
+		has_gun = 1;
+		BurnGunInit(1, true);
+
 	} else {
 		system_assign_device(PORT_A, DEVICE_PAD2B);
 		system_assign_device(PORT_B, DEVICE_PAD2B);
@@ -422,6 +473,8 @@ INT32 SMSInit()
     system_init();
 
 	memset(cart.sram,    0, sizeof(cart.sram));
+
+	system_reset();
 
 	return 0;
 }
@@ -491,6 +544,10 @@ INT32 SMSScan(INT32 nAction, INT32 *pnMin)
 		SCAN_VAR(cart.fcr);
 
 		ScanVar(SMSPalette, 0x2000 * sizeof(UINT32), "LinePalette");
+
+		if (has_gun) {
+			BurnGunScan();
+		}
 
 		if (sms.use_fm) // put it down here so we keep compatibility with non-fm states.
 			BurnYM2413Scan(nAction, pnMin);
@@ -1219,8 +1276,8 @@ struct BurnDriver BurnDrvsms_assaultc = {
 	"sms_assaultc", NULL, NULL, NULL, "1990",
 	"Assault City (Euro, Brazil, Light Phaser version)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_assaultcRomInfo, sms_assaultcRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_assaultcRomInfo, sms_assaultcRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -4063,8 +4120,8 @@ struct BurnDriver BurnDrvsms_gangster = {
 	"sms_gangster", NULL, NULL, NULL, "1987",
 	"Gangster Town (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 2, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_gangsterRomInfo, sms_gangsterRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 2, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_gangsterRomInfo, sms_gangsterRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -4729,7 +4786,7 @@ struct BurnDriver BurnDrvsms_hangonsh = {
 	"sms_hangonsh", NULL, NULL, NULL, "1986",
 	"Hang-On & Safari Hunt (USA)\0", "Safari Hunt is a Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_MISC, 0,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_RACING | GBF_SHOOT, 0,
 	SMSGetZipName, sms_hangonshRomInfo, sms_hangonshRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
@@ -5413,8 +5470,8 @@ struct BurnDriver BurnDrvsms_lghost = {
 	"sms_lghost", NULL, NULL, NULL, "1991",
 	"Laser Ghost (Euro)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_lghostRomInfo, sms_lghostRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_lghostRomInfo, sms_lghostRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -5737,8 +5794,8 @@ struct BurnDriver BurnDrvsms_marksman = {
 	"sms_marksman", NULL, NULL, NULL, "1986",
 	"Marksman Shooting and Trap Shooting and Safari Hunt (Euro, Brazil)\0", "Light Phaser games", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_marksmanRomInfo, sms_marksmanRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_marksmanRomInfo, sms_marksmanRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -5755,8 +5812,8 @@ struct BurnDriver BurnDrvsms_marksmanu = {
 	"sms_marksmanu", "sms_marksman", NULL, NULL, "1986",
 	"Marksman Shooting and Trap Shooting (USA)\0", "Light Phaser games", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_marksmanuRomInfo, sms_marksmanuRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_marksmanuRomInfo, sms_marksmanuRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -5971,8 +6028,8 @@ struct BurnDriver BurnDrvsms_missil3d = {
 	"sms_missil3d", NULL, NULL, NULL, "19??",
 	"Missile Defense 3-D (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_missil3dRomInfo, sms_missil3dRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_missil3dRomInfo, sms_missil3dRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -6473,10 +6530,10 @@ STD_ROM_FN(sms_opwolf)
 
 struct BurnDriver BurnDrvsms_opwolf = {
 	"sms_opwolf", NULL, NULL, NULL, "1990",
-	"Operation Wolf (Euro, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
+	"Operation Wolf (Euro, Brazil)\0", "Light Phaser game (use button 2 on controller #2 to throw the grenades)", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_DISPLAY_PAL, GBF_SHOOT, 0,
-	SMSGetZipName, sms_opwolfRomInfo, sms_opwolfRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_DISPLAY_PAL | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_opwolfRomInfo, sms_opwolfRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -7213,8 +7270,8 @@ struct BurnDriver BurnDrvsms_rambo3 = {
 	"sms_rambo3", NULL, NULL, NULL, "1988",
 	"Rambo III (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_rambo3RomInfo, sms_rambo3RomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_rambo3RomInfo, sms_rambo3RomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -7357,8 +7414,8 @@ struct BurnDriver BurnDrvsms_rescuems = {
 	"sms_rescuems", NULL, NULL, NULL, "1988",
 	"Rescue Mission (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_rescuemsRomInfo, sms_rescuemsRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_rescuemsRomInfo, sms_rescuemsRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -7752,7 +7809,7 @@ STD_ROM_FN(sms_sdmilhao)
 struct BurnDriver BurnDrvsms_sdmilhao = {
 	"sms_sdmilhao", NULL, NULL, NULL, "2003",
 	"Show do Milhao (Brazil, Prototype)\0", NULL, "Tec Toy", "Sega Master System",
-	NULL, NULL, NULL, NULL,
+	L"Show do Milh\u00e3o (Brazil, Prototype)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_PROTOTYPE, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_QUIZ, 0,
 	SMSGetZipName, sms_sdmilhaoRomInfo, sms_sdmilhaoRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -8077,8 +8134,8 @@ struct BurnDriver BurnDrvsms_shooting = {
 	"sms_shooting", NULL, NULL, NULL, "1987",
 	"Shooting Gallery (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_shootingRomInfo, sms_shootingRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_shootingRomInfo, sms_shootingRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -8475,8 +8532,8 @@ struct BurnDriver BurnDrvsms_spacegun = {
 	"sms_spacegun", NULL, NULL, NULL, "1992",
 	"Space Gun (Euro)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_DISPLAY_PAL, GBF_SHOOT, 0,
-	SMSGetZipName, sms_spacegunRomInfo, sms_spacegunRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_DISPLAY_PAL | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_spacegunRomInfo, sms_spacegunRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -9789,8 +9846,8 @@ struct BurnDriver BurnDrvsms_wanted = {
 	"sms_wanted", NULL, NULL, NULL, "1989",
 	"Wanted (Euro, USA, Brazil)\0", "Light Phaser game", "Sega", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_wantedRomInfo, sms_wantedRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_wantedRomInfo, sms_wantedRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -16154,7 +16211,7 @@ STD_ROM_FN(gg_mworld2)
 struct BurnDriver BurnDrvgg_mworld2 = {
 	"gg_mworld2", "gg_wboydtrp", NULL, NULL, "1992",
 	"Monster World II: Dragon no Wana (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Monster World II: Dragon no Wana (Japan)\0\u30e2\u30f3\u30b9\u30bf\u30fc\u30ef\u30fc\u30eb\u30c9II \u30c9\u30e9\u30b4\u30f3\u306e\u7f60\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SEGA_GAME_GEAR, GBF_ADV | GBF_PLATFORM, 0,
 	GGGetZipName, gg_mworld2RomInfo, gg_mworld2RomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -19071,7 +19128,7 @@ STD_ROM_FN(gg_sokoban)
 struct BurnDriver BurnDrvgg_sokoban = {
 	"gg_sokoban", NULL, NULL, NULL, "1990",
 	"Soukoban (Japan)\0", NULL, "Riverhill Software", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Soukoban (Japan)\0\u5009\u5eab\u756a\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_PUZZLE, 0,
 	GGGetZipName, gg_sokobanRomInfo, gg_sokobanRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -20158,11 +20215,9 @@ struct BurnDriver BurnDrvgg_talespin = {
 	256, 192, 4, 3
 };
 
-
-// Tama and Friends Sanchoume Kouen - Tamalympic (Japan)
-
+// Tama & Friends: 3 Choume Kouen Tamalympic (Japan)
 static struct BurnRomInfo gg_tamalympRomDesc[] = {
-	{ "tama and friends sanchoume kouen - tamalympic (japan).bin",	0x40000, 0xdd1d2ebf, BRF_PRG | BRF_ESS },
+	{ "Tama & Friends: 3 Choume Kouen Tamalympic (Japan)(1995)(Sega).gg",	0x40000, 0xdd1d2ebf, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_tamalymp)
@@ -20170,19 +20225,17 @@ STD_ROM_FN(gg_tamalymp)
 
 struct BurnDriver BurnDrvgg_tamalymp = {
 	"gg_tamalymp", NULL, NULL, NULL, "1995",
-	"Tama and Friends Sanchoume Kouen - Tamalympic (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_MISC, 0,
+	"Tama & Friends: 3 Choume Kouen Tamalympic (Japan)\0", NULL, "Sega", "Sega Game Gear",
+	L"Tama & Friends: 3 Choume Kouen Tamalympic (Japan)\0\u30bf\u30de\uff06\u30d5\u30ec\u30f3\u30ba 3\u4e01\u76ee\u516c\u5712 \u30bf\u30de\u30ea\u30f3\u30d4\u30c3\u30af\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_MINIGAMES, 0,
 	GGGetZipName, gg_tamalympRomInfo, gg_tamalympRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
 
-
-// Tarot no Yakata (Japan)
-
+// Tarot no Yakata ~ House of Tarot (Japan)
 static struct BurnRomInfo gg_tarotRomDesc[] = {
-	{ "tarot no yakata (japan).bin",	0x20000, 0x57834c03, BRF_PRG | BRF_ESS },
+	{ "Tarot no Yakata - House of Tarot (Japan)(1991)(Sega).gg",	0x20000, 0x57834c03, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_tarot)
@@ -20190,7 +20243,7 @@ STD_ROM_FN(gg_tarot)
 
 struct BurnDriver BurnDrvgg_tarot = {
 	"gg_tarot", NULL, NULL, NULL, "1991",
-	"Tarot no Yakata (Japan)\0", NULL, "Sega", "Sega Game Gear",
+	"Tarot no Yakata ~ House of Tarot (Japan)\0", NULL, "Sega", "Sega Game Gear",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_CARD, 0,
 	GGGetZipName, gg_tarotRomInfo, gg_tarotRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
@@ -20198,11 +20251,9 @@ struct BurnDriver BurnDrvgg_tarot = {
 	256, 192, 4, 3
 };
 
-
-// Tarzan - Lord of the Jungle (Euro)
-
+// Tarzan: Lord of the Jungle (Euro)
 static struct BurnRomInfo gg_tarzanRomDesc[] = {
-	{ "tarzan - lord of the jungle (europe).bin",	0x40000, 0xef3afe8b, BRF_PRG | BRF_ESS },
+	{ "Tarzan - Lord of the Jungle (Euro)(1994)(GameTek).gg",	0x40000, 0xef3afe8b, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_tarzan)
@@ -20210,7 +20261,7 @@ STD_ROM_FN(gg_tarzan)
 
 struct BurnDriver BurnDrvgg_tarzan = {
 	"gg_tarzan", NULL, NULL, NULL, "1994",
-	"Tarzan - Lord of the Jungle (Euro)\0", NULL, "GameTek", "Sega Game Gear",
+	"Tarzan: Lord of the Jungle (Euro)\0", NULL, "GameTek", "Sega Game Gear",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR | HARDWARE_SMS_DISPLAY_PAL, GBF_PLATFORM, 0,
 	GGGetZipName, gg_tarzanRomInfo, gg_tarzanRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
@@ -20218,11 +20269,9 @@ struct BurnDriver BurnDrvgg_tarzan = {
 	256, 192, 4, 3
 };
 
-
 // Tatakae! Pro Yakyuu Twin League (Japan)
-
 static struct BurnRomInfo gg_proyaktlRomDesc[] = {
-	{ "tatakae! pro yakyuu twin league (japan).bin",	0x80000, 0xbec57602, BRF_PRG | BRF_ESS },
+	{ "Tatakae! Pro Yakyuu Twin League (Japan)(1995)(Sega).gg",	0x80000, 0xbec57602, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_proyaktl)
@@ -20231,7 +20280,7 @@ STD_ROM_FN(gg_proyaktl)
 struct BurnDriver BurnDrvgg_proyaktl = {
 	"gg_proyaktl", NULL, NULL, NULL, "1995",
 	"Tatakae! Pro Yakyuu Twin League (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Tatakae! Pro Yakyuu Twin League (Japan)\0\u95d8\u3048! \u30d7\u30ed\u91ce\u7403 \u30c4\u30a4\u30f3\u30ea\u30fc\u30b0\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SEGA_GAME_GEAR, GBF_SPORTSMISC, 0,
 	GGGetZipName, gg_proyaktlRomInfo, gg_proyaktlRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -20526,9 +20575,9 @@ struct BurnDriver BurnDrvgg_tomjermv = {
 	256, 192, 4, 3
 };
 
-// Torarete Tamaru ka!? (Japan)
+// Torarete Tamaruka!? (Japan)
 static struct BurnRomInfo gg_torareteRomDesc[] = {
-	{ "Torarete Tamaru ka!! (Japan)(1994)(Sega).gg",	0x80000, 0x5bcf9b97, BRF_PRG | BRF_ESS },
+	{ "Torarete Tamaruka!! (Japan)(1994)(Sega).gg",	0x80000, 0x5bcf9b97, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_torarete)
@@ -20536,9 +20585,9 @@ STD_ROM_FN(gg_torarete)
 
 struct BurnDriver BurnDrvgg_torarete = {
 	"gg_torarete", NULL, NULL, NULL, "1994",
-	"Torarete Tamaru ka!? (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_MISC, 0,
+	"Torarete Tamaruka!? (Japan)\0", NULL, "Sega", "Sega Game Gear",
+	L"Torarete Tamaruka!? (Japan)\0\u3068\u3089\u308c\u3066 \u305f\u307e\u308b\u304b!?\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_ACTION | GBF_PUZZLE, 0,
 	GGGetZipName, gg_torareteRomInfo, gg_torareteRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
@@ -20592,13 +20641,13 @@ struct BurnDriver BurnDrvgg_ustrike = {
 	"gg_ustrike", NULL, NULL, NULL, "1995",
 	"Urban Strike (Euro, USA)\0", NULL, "Black Pearl Software", "Sega Game Gear",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_SHOOT, 0,
+	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_MULTISHOOT, 0,
 	GGGetZipName, gg_ustrikeRomInfo, gg_ustrikeRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
 
-// Vampire - Master of Darkness (USA)
+// Vampire: Master of Darkness (USA)
 static struct BurnRomInfo gg_vampireRomDesc[] = {
 	{ "Vampire - Master of Darkness (USA)(1993)(SIMS Co. - Sega).gg",	0x40000, 0x7ec64025, BRF_PRG | BRF_ESS },
 };
@@ -20608,7 +20657,7 @@ STD_ROM_FN(gg_vampire)
 
 struct BurnDriver BurnDrvgg_vampire = {
 	"gg_vampire", "gg_mastdark", NULL, NULL, "1993",
-	"Vampire - Master of Darkness (USA)\0", NULL, "SIMS Co. - Sega", "Sega Game Gear",
+	"Vampire: Master of Darkness (USA)\0", NULL, "SIMS Co. - Sega", "Sega Game Gear",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SEGA_GAME_GEAR, GBF_SCRFIGHT | GBF_PLATFORM, 0,
 	GGGetZipName, gg_vampireRomInfo, gg_vampireRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
@@ -20645,7 +20694,7 @@ STD_ROM_FN(gg_vfmini)
 struct BurnDriver BurnDrvgg_vfmini = {
 	"gg_vfmini", "gg_vfa", NULL, NULL, "1996",
 	"Virtua Fighter Mini (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Virtua Fighter Mini (Japan)\0\u30d0\u30fc\u30c1\u30e3\u30d5\u30a1\u30a4\u30bf\u30fcMini\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SEGA_GAME_GEAR, GBF_VSFIGHT, 0,
 	GGGetZipName, gg_vfminiRomInfo, gg_vfminiRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -20681,7 +20730,7 @@ STD_ROM_FN(gg_wagyan)
 struct BurnDriver BurnDrvgg_wagyan = {
 	"gg_wagyan", NULL, NULL, NULL, "1991",
 	"Wagyan Land (Japan)\0", NULL, "Namcot", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Wagyan Land (Japan)\0\u30ef\u30ae\u30e3\u30f3\u30e9\u30f3\u30c9\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_PLATFORM, 0,
 	GGGetZipName, gg_wagyanRomInfo, gg_wagyanRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -20699,7 +20748,7 @@ STD_ROM_FN(gg_wagyana)
 struct BurnDriver BurnDrvgg_wagyana = {
 	"gg_wagyana", "gg_wagyan", NULL, NULL, "1991",
 	"Wagyan Land (Japan, Alt)\0", NULL, "Namcot", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Wagyan Land (Japan, Alt)\0\u30ef\u30ae\u30e3\u30f3\u30e9\u30f3\u30c9\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SEGA_GAME_GEAR, GBF_PLATFORM, 0,
 	GGGetZipName, gg_wagyanaRomInfo, gg_wagyanaRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -20987,7 +21036,7 @@ STD_ROM_FN(gg_wderby)
 struct BurnDriver BurnDrvgg_wderby = {
 	"gg_wderby", NULL, NULL, NULL, "1994",
 	"World Derby (Japan)\0", NULL, "CRI", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"World Derby (Japan)\0\u30ef\u30fc\u30eb\u30c9\u30c0\u30fc\u30d3\u30fc\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_SEGA_GAME_GEAR, GBF_SPORTSMISC, 0,
 	GGGetZipName, gg_wderbyRomInfo, gg_wderbyRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -21156,7 +21205,7 @@ struct BurnDriver BurnDrvgg_yogibear = {
 	256, 192, 4, 3
 };
 
-// Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)
+// Yu Yu Hakusho: Horobishimono no Gyakushuu (Japan)
 static struct BurnRomInfo gg_yuyuRomDesc[] = {
 	{ "Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)(1994)(Sega).gg",	0x80000, 0x88ebbf9e, BRF_PRG | BRF_ESS },
 };
@@ -21166,17 +21215,17 @@ STD_ROM_FN(gg_yuyu)
 
 struct BurnDriver BurnDrvgg_yuyu = {
 	"gg_yuyu", NULL, NULL, NULL, "1994",
-	"Yu Yu Hakusho - Horobishimono no Gyakushuu (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	"Yu Yu Hakusho: Horobishimono no Gyakushuu (Japan)\0", NULL, "Sega", "Sega Game Gear",
+	L"Yu Yu Hakusho: Horobishimono no Gyakushuu (Japan)\0\u5e7d\u904a\u767d\u66f8\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SEGA_GAME_GEAR, GBF_SCRFIGHT, 0,
 	GGGetZipName, gg_yuyuRomInfo, gg_yuyuRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
 
-// Yu Yu Hakusho 2 - Gekitou! Nanakyou no Tatakai (Japan)
+// Yu Yu Hakusho II: Gekitou! Nanakyou no Tatakai (Japan)
 static struct BurnRomInfo gg_yuyu2RomDesc[] = {
-	{ "Yu Yu Hakusho 2 - Gekitou! Nanakyou no Tatakai (Japan)(1994)(Sega).gg",	0x80000, 0x46ae9159, BRF_PRG | BRF_ESS },
+	{ "Yu Yu Hakusho II - Gekitou! Nanakyou no Tatakai (Japan)(1994)(Sega).gg",	0x80000, 0x46ae9159, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(gg_yuyu2)
@@ -21184,8 +21233,8 @@ STD_ROM_FN(gg_yuyu2)
 
 struct BurnDriver BurnDrvgg_yuyu2 = {
 	"gg_yuyu2", NULL, NULL, NULL, "1994",
-	"Yu Yu Hakusho 2 - Gekitou! Nanakyou no Tatakai (Japan)\0", NULL, "Sega", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	"Yu Yu Hakusho II: Gekitou! Nanakyou no Tatakai (Japan)\0", NULL, "Sega", "Sega Game Gear",
+	L"Yu Yu Hakusho II: Gekitou! Nanakyou no Tatakai (Japan)\0\u5e7d\u904a\u767d\u66f8 II\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SEGA_GAME_GEAR, GBF_VSFIGHT, 0,
 	GGGetZipName, gg_yuyu2RomInfo, gg_yuyu2RomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -21203,7 +21252,7 @@ STD_ROM_FN(gg_zangear)
 struct BurnDriver BurnDrvgg_zangear = {
 	"gg_zangear", NULL, NULL, NULL, "1990",
 	"Zan Gear (Japan)\0", NULL, "Wolf Team", "Sega Game Gear",
-	NULL, NULL, NULL, NULL,
+	L"Zan Gear (Japan)\0\u65ac Gear\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SEGA_GAME_GEAR, GBF_STRATEGY, 0,
 	GGGetZipName, gg_zangearRomInfo, gg_zangearRomName, NULL, NULL, NULL, NULL, SMSInputInfo, GGDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
@@ -23413,8 +23462,8 @@ struct BurnDriver BurnDrvsms_rambo3fm = {
 	"sms_rambo3fm", "sms_rambo3", NULL, NULL, "2018",
 	"Rambo III (Hack, FM Mod)\0", "Light Phaser game - YM2413 FM support", "Sega - fatnick", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_SHOOT, 0,
-	SMSGetZipName, sms_rambo3fmRomInfo, sms_rambo3fmRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSFMDIPInfo,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_rambo3fmRomInfo, sms_rambo3fmRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -23487,6 +23536,42 @@ struct BurnDriver BurnDrvsms_scope = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION, 0,
 	SMSGetZipName, sms_scopeRomInfo, sms_scopeRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
+// Shootagem (HB)
+static struct BurnRomInfo sms_shootagemRomDesc[] = {
+	{ "Shootagem (2023)(Joe Kennedy).sms",	49152, 0xef2d3069, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_shootagem)
+STD_ROM_FN(sms_shootagem)
+
+struct BurnDriver BurnDrvsms_shootagem = {
+	"sms_shootagem", NULL, NULL, NULL, "2023",
+	"Shootagem (HB)\0", "Light Phaser game", "Joe Kennedy", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER, GBF_SHOOT, 0,
+	SMSGetZipName, sms_shootagemRomInfo, sms_shootagemRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
+// Shooting Stars (HB, v1.01)
+static struct BurnRomInfo sms_shootstarsRomDesc[] = {
+	{ "Shooting Stars v1.01 (2013)(dragonfeet).sms",	32768, 0xd0955eb8, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_shootstars)
+STD_ROM_FN(sms_shootstars)
+
+struct BurnDriver BurnDrvsms_shootstars = {
+	"sms_shootstars", NULL, NULL, NULL, "2013",
+	"Shooting Stars (HB, v1.01)\0", "Light Phaser game", "dragonfeet", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM | HARDWARE_SMS_CONTROL_PHASER | HARDWARE_SMS_DISPLAY_PAL, GBF_SHOOT, 0,
+	SMSGetZipName, sms_shootstarsRomInfo, sms_shootstarsRomName, NULL, NULL, NULL, NULL, SMSPhaserInputInfo, SMSPhaserDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -23595,6 +23680,24 @@ struct BurnDriver BurnDrvsms_snake = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION, 0,
 	SMSGetZipName, sms_snakeRomInfo, sms_snakeRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
+// Snake [KingQuack] (HB)
+static struct BurnRomInfo sms_snakekqRomDesc[] = {
+	{ "Snake v1.0 (2024)(KingQuack).sms",	65536, 0x99634c20, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_snakekq)
+STD_ROM_FN(sms_snakekq)
+
+struct BurnDriver BurnDrvsms_snakekq = {
+	"sms_snakekq", NULL, NULL, NULL, "2024",
+	"Snake [KingQuack] (HB)\0", NULL, "KingQuack", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION, 0,
+	SMSGetZipName, sms_snakekqRomInfo, sms_snakekqRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -23941,6 +24044,24 @@ struct BurnDriver BurnDrvsms_sutoroku = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_PUZZLE, 0,
 	SMSGetZipName, sms_sutorokuRomInfo, sms_sutorokuRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
+// Svellas (HB)
+static struct BurnRomInfo sms_svellasRomDesc[] = {
+	{ "Svellas (2025)(Inufuto).sms",	16384, 0xb94bd12f, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_svellas)
+STD_ROM_FN(sms_svellas)
+
+struct BurnDriver BurnDrvsms_svellas = {
+	"sms_svellas", NULL, NULL, NULL, "2025",
+	"Svellas (HB)\0", "YM2413 FM sound chip supported", "Inufuto", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION | GBF_MAZE, 0,
+	SMSGetZipName, sms_svellasRomInfo, sms_svellasRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSFMDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
