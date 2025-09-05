@@ -1681,6 +1681,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="archonii" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Archon II: Adept (48K)</description>
+		<year>1989</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Archon II - Adept 48K (1989)(Electronic Arts).tzx" size="32376" crc="a8b6537f"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="archon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Archon: The Light and the Dark (48K)</description>
 		<year>1985</year>
@@ -1743,7 +1752,7 @@
 	</game>
 	<game name="arkanoid2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Z: left - M: right - ENTER: fire and start</comment>
-		<description>Arkanoid II - Revenge of Doh (128K)</description>
+		<description>Arkanoid II: Revenge of Doh (128K)</description>
 		<year>1988</year>
 		<manufacturer>Imagine Software</manufacturer>
 		<rom name="Arkanoid - Revenge of Doh 128K (1988)(Imagine Software).tap" size="43938" crc="fd20d4e8"/>
@@ -1754,7 +1763,7 @@
 	</game>
 	<game name="arkanoid2_48" cloneof="arkanoid2" romof="arkanoid2" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Z: left - M: right - ENTER: fire and start</comment>
-		<description>Arkanoid II - Revenge of Doh (48K)</description>
+		<description>Arkanoid II: Revenge of Doh (48K)</description>
 		<year>1988</year>
 		<manufacturer>Imagine Software</manufacturer>
 		<rom name="Arkanoid - Revenge of Doh 48K (1988)(Imagine Software).tap" size="40118" crc="cb8aa807"/>
@@ -2045,10 +2054,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="atomant" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Atom Ant (128K)</description>
+		<description>Atom Ant (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Hi-Tec Software</manufacturer>
-		<rom name="Atom Ant (1990)(Hi-Tec).tap" size="61884" crc="bb656d10"/>
+		<rom name="Atom Ant 48K-128K (1990)(Hi-Tec).tap" size="61884" crc="bb656d10"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -2113,13 +2122,13 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="autocrash" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>AutoCrash (Spanish) (128K)</description>
+	<game name="autocrash" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>AY Sound supported</comment>
+		<description>AutoCrash (Spanish) (48K)</description>
 		<year>1991</year>
 		<manufacturer>Zigurat Software</manufacturer>
-		<rom name="Autocrash (1991)(Zigurat).tap" size="49550" crc="02fe192c"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Autocrash 48K-AY (1991)(Zigurat).tap" size="49550" crc="02fe192c"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2163,7 +2172,7 @@
 	</game>
 	<game name="avespacial2" cloneof="avespacial1" romof="avespacial1" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>PASSWORD: CANES VENATICI</comment>
-		<description>Aventura Espacial, La - En los Dominios del Cerebelo (Spanish) (48K)</description>
+		<description>Aventura Espacial, La: En los Dominios del Cerebelo (Spanish) (48K)</description>
 		<year>1990</year>
 		<manufacturer>Aventuras A.D.</manufacturer>
 		<rom name="Aventura Espacial, La - En los Dominios del Cerebelo 48K (1990)(Aventuras AD).z80" size="40915" crc="06d2fd5c"/>
@@ -2172,7 +2181,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="avespacial1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Aventura Espacial, La - Explorando Mundos (Spanish) (48K)</description>
+		<description>Aventura Espacial, La: Explorando Mundos (Spanish) (48K)</description>
 		<year>1990</year>
 		<manufacturer>Aventuras A.D.</manufacturer>
 		<rom name="Aventura Espacial, La - Explorando Mundos 48K (1990)(Aventuras AD).z80" size="45676" crc="c46932a5"/>
@@ -2181,7 +2190,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="avoriginal1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Aventura Original - Parte 1 - La Busqueda (Spanish) (48K)</description>
+		<description>Aventura Original I: La Busqueda (Spanish) (48K)</description>
 		<year>1989</year>
 		<manufacturer>Aventuras A.D.</manufacturer>
 		<rom name="Aventura Original - Parte 1 - La Busqueda 48K (1989)(Aventuras AD).z80" size="46750" crc="ce246950"/>
@@ -2191,7 +2200,7 @@
 	</game>
 	<game name="avoriginal2" cloneof="avoriginal1" romof="avoriginal1" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>PASSWORD: TIMACUS</comment>
-		<description>Aventura Original - Parte 2 - El Encuentro (Spanish) (48K)</description>
+		<description>Aventura Original II: El Encuentro (Spanish) (48K)</description>
 		<year>1989</year>
 		<manufacturer>Aventuras A.D.</manufacturer>
 		<rom name="Aventura Original - Parte 2 - El Encuentro 48K (1989)(Aventuras AD).z80" size="47212" crc="126a3c19"/>
@@ -5093,6 +5102,15 @@
 		<rom name="ChernobylAI 128K (2025)(Juntelart).tap" size="65641" crc="e2896db5"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cm2000" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Chessmaster 2000, The (Spanish) (48K)</description>
+		<year>1990</year>
+		<manufacturer>Dro Soft</manufacturer>
+		<rom name="Chessmaster 2000, The ES 48K (1990)(Dro Soft).tzx" size="41993" crc="3efd34cc"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8994,12 +9012,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ecclesia" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ecclesia (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>AmikoSoft</manufacturer>
+		<rom name="Ecclesia 128K (2025)(AmikoSoft).tap" size="69126" crc="dd39c357"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="eclipsiap1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Eclipsia Part 1 - Beginning (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>ICreateworlds</manufacturer>
-		<rom name="Eclipsia part 1 - Beginning 48K (2023)(ICreateworlds).tap" size="48336" crc="fe2d5769"/>
+		<rom name="Eclipsia Part 1 - Beginning 48K (2023)(ICreateworlds).tap" size="48336" crc="fe2d5769"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9009,7 +9038,7 @@
 		<description>Eclipsia part 2 - Awaken (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>ICreateworlds</manufacturer>
-		<rom name="Eclipsia part 2 - Awaken 48K (2023)(ICreateworlds).tap" size="48557" crc="ea18f33b"/>
+		<rom name="Eclipsia Part 2 - Awaken 48K (2023)(ICreateworlds).tap" size="48557" crc="ea18f33b"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9019,7 +9048,7 @@
 		<description>Eclipsia Part 3 - Starlost (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>ICreateworlds</manufacturer>
-		<rom name="Eclipsia part 3 - Starlost 48K (2023)(ICreateworlds).tap" size="48560" crc="bb923bfc"/>
+		<rom name="Eclipsia Part 3 - Starlost 48K (2023)(ICreateworlds).tap" size="48560" crc="bb923bfc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10620,6 +10649,26 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="frostlanden" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Frost Land (English) (48K) (HB, v1.01)</description>
+		<year>2025</year>
+		<manufacturer>Roman Skorik</manufacturer>
+		<rom name="Frost Land EN v1.01 48K (2025)(Roman Skorik).tap" size="44395" crc="22968217"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="frostlandru" cloneof="frostlanden" romof="frostlanden" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Frost Land (Russian) (48K) (HB, v1.01)</description>
+		<year>2025</year>
+		<manufacturer>Roman Skorik</manufacturer>
+		<rom name="Frost Land RU v1.01 48K (2025)(Roman Skorik).tap" size="44478" crc="773d596e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="frozpenguin" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Frozen Penguin (48K)</description>
 		<year>1984</year>
@@ -10901,20 +10950,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="gamessummered" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Games - Summer Edition, The (128K)</description>
+		<description>Games, The: Summer Edition (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Games - Summer Edition, The (1989)(U.S. Gold).tap" size="354208" crc="e8b9a3d0"/>
+		<rom name="Games, The - Summer Edition 48K-128K (1989)(U.S. Gold).tap" size="354208" crc="e8b9a3d0"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="gameswintered" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Games - Winter Edition, The (48K)</description>
+		<description>Games, The: Winter Edition (48K)</description>
 		<year>1988</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Games - Winter Edition, The (1988)(U.S. Gold).tap" size="146925" crc="15935233"/>
+		<rom name="Games, The - Winter Edition 48K (1988)(U.S. Gold).tap" size="146925" crc="15935233"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -11565,7 +11614,7 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="goldenaxe1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="goldenaxe" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Golden Axe (128K)</description>
 		<year>1990</year>
 		<manufacturer>Virgin Games</manufacturer>
@@ -13968,7 +14017,7 @@
 		<description>Jail Break (48K)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Jail Break 48K (1987)(Konami).z80" size="44911" crc="9ee208aa"/>
+		<rom name="Jail Break 48K (1987)(Konami).tzx" size="49175" crc="9921e8d7"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14002,6 +14051,15 @@
 		<rom name="Janosik 128K (2013)(Rafal Miazga, Alex Heather).tap" size="44357" crc="365cc37f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jpatience" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Japanese Patience (48K)</description>
+		<year>1989</year>
+		<manufacturer>Daton Software</manufacturer>
+		<rom name="Japanese Patience 48K (1989)(Daton Software).tap" size="32875" crc="895e4ff1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18650,6 +18708,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="newmarket" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Newmarket (48K)</description>
+		<year>1989</year>
+		<manufacturer>Daton Software</manufacturer>
+		<rom name="Newmarket 48K (1989)(Daton Software).tap" size="37856" crc="25f5ce8c"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="niftylifty" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Nifty Lifty (48K)</description>
 		<year>1984</year>
@@ -21176,13 +21243,12 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rtype" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>R-Type (128K)</description>
+	<game name="rtype" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>R-Type (48K)</description>
 		<year>1988</year>
 		<manufacturer>Electric Dreams</manufacturer>
-		<rom name="R-Type 128K (1988)(Electric Dreams).tap" size="132823" crc="a03330a0"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="R-Type 48K (1988)(Electric Dreams).tap" size="132823" crc="a03330a0"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22508,10 +22574,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ruffreddy" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Ruff and Reddy in the Space Adventure (128K)</description>
+		<description>Ruff and Reddy in the Space Adventure (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Hi-Tec Software</manufacturer>
-		<rom name="Ruff and Reddy in the Space Adventure 128K (1990)(Hi-Tec).tap" size="54708" crc="ffe8fec1"/>
+		<rom name="Ruff and Reddy in the Space Adventure 48K-128K (1990)(Hi-Tec).tzx" size="54783" crc="b76edfed"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22919,7 +22985,7 @@
 	</game>
 	<game name="sambooncm" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sam Boon - A Case of Murder (128K) (HB)</description>
+		<description>Sam Boon: A Case of Murder (128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Taskmaster Software</manufacturer>
 		<rom name="Sam Boon - A Case of Murder 128K (2023)(Taskmaster Software).tap" size="84818" crc="74af3999"/>
@@ -22930,7 +22996,7 @@
 	</game>
 	<game name="samboondc" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sam Boon - The Dragnet Case (128K) (HB)</description>
+		<description>Sam Boon: The Dragnet Case (128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Taskmaster Software</manufacturer>
 		<rom name="Sam Boon - The Dragnet Case 128K (2023)(Taskmaster Software).tap" size="80368" crc="5198feda"/>
@@ -22941,7 +23007,7 @@
 	</game>
 	<game name="samallardes" cloneof="samallarden" romof="samallarden" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sam Mallard - el Caso del Cisne Desaparecido (Spanish) (48K) (HB, v1.2)</description>
+		<description>Sam Mallard: El Caso del Cisne Desaparecido (Spanish) (48K) (HB, v1.2)</description>
 		<year>2016-21</year>
 		<manufacturer>Ersh</manufacturer>
 		<rom name="Sam Mallard ES v1.2 48K (2016-21)(Ersh).tap" size="40825" crc="1f33d48e"/>
@@ -22951,7 +23017,7 @@
 	</game>
 	<game name="samallarden" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sam Mallard - the Case of the Missing Swan (English) (48K) (HB, v1.2)</description>
+		<description>Sam Mallard: The Case of the Missing Swan (English) (48K) (HB, v1.2)</description>
 		<year>2016-21</year>
 		<manufacturer>Ersh</manufacturer>
 		<rom name="Sam Mallard EN v1.2 48K (2016-21)(Ersh).tap" size="40161" crc="dd71d04f"/>
@@ -22961,7 +23027,7 @@
 	</game>
 	<game name="samslade" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sam Slade - Robo-Hunter (48K) (HB)</description>
+		<description>Sam Slade: Robo-Hunter (48K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>Monsterbytes</manufacturer>
 		<rom name="Sam Slade - Robo-Hunter 48K (2022)(Monsterbytes).tap" size="37981" crc="d5815f2f"/>
@@ -22969,12 +23035,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="samanthapup" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Adult Game</comment>
+	<game name="samanthapup" cloneof="samanthapupv2" romof="samanthapupv2" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Adult game</comment>
 		<description>Samantha Fox Pin Up Poker (48K-128K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>DF Design</manufacturer>
 		<rom name="Samantha Fox Pin Up Poker 48K-128K (2025)(DF Design).tap" size="185261" crc="14b73595"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="samanthapupv2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Adult game</comment>
+		<description>Samantha Fox Pin Up Poker (48K-128K) (HB, v2.0)</description>
+		<year>2025</year>
+		<manufacturer>DF Design</manufacturer>
+		<rom name="Samantha Fox Pin Up Poker v2.0 48K-128K (2025)(DF Design).tap" size="185424" crc="b501829e"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -24361,7 +24438,7 @@
 		<description>Soko Ban 1000 (48K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>Serdjuk</manufacturer>
-		<rom name="Soko Ban 1000 48K (2025)(Serdjuk).tap" size="44833" crc="513de6b4"/>
+		<rom name="Soko Ban 1000 48K (2025)(Serdjuk).tap" size="45089" crc="22c579e2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -24899,7 +24976,7 @@
 		<description>Speedboat Assassins (48K)</description>
 		<year>1989</year>
 		<manufacturer>Mastertronic Plus</manufacturer>
-		<rom name="Speedboat Assassins 48K (1989)(Mastertronic Plus).tzx" size="56757" crc="6b03161f"/>
+		<rom name="Speedboat Assassins 48K (1989)(Mastertronic Plus).tap" size="46337" crc="d05f75cd"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -25974,7 +26051,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shangon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Super Hang-On - Part 1 - Beginner (48K)</description>
+		<description>Super Hang-On - Level 1 Beginner (48K)</description>
 		<year>1986</year>
 		<manufacturer>Electric Dreams</manufacturer>
 		<rom name="Super Hang-On - Part 1 - Beginner 48K (1986)(Electric Dreams Software).z80" size="34840" crc="6021b420"/>
@@ -25983,7 +26060,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shangon2" cloneof="shangon" romof="shangon" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Super Hang-On - Part 2 - Junior (48K)</description>
+		<description>Super Hang-On - Level 2 Junior (48K)</description>
 		<year>1986</year>
 		<manufacturer>Electric Dreams</manufacturer>
 		<rom name="Super Hang-On - Part 2 - Junior 48K (1986)(Electric Dreams Software).z80" size="34448" crc="d8180d70"/>
@@ -25992,7 +26069,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shangon3" cloneof="shangon" romof="shangon" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Super Hang-On - Part 3 - Senior (48K)</description>
+		<description>Super Hang-On - Level 3 Senior (48K)</description>
 		<year>1986</year>
 		<manufacturer>Electric Dreams</manufacturer>
 		<rom name="Super Hang-On - Part 3 - Senior 48K (1986)(Electric Dreams Software).z80" size="35548" crc="363567ec"/>
@@ -26001,7 +26078,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shangon4" cloneof="shangon" romof="shangon" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Super Hang-On - Part 4 - Expert (48K)</description>
+		<description>Super Hang-On - Level 4 Expert (48K)</description>
 		<year>1986</year>
 		<manufacturer>Electric Dreams</manufacturer>
 		<rom name="Super Hang-On - Part 4 - Expert 48K (1986)(Electric Dreams Software).z80" size="34442" crc="8cb2ac52"/>
