@@ -5844,7 +5844,7 @@
 		<description>Dragon Ball Z: Assault of the Saiyans (Hack, English v2)</description>
 		<year>2025</year>
 		<manufacturer>injoon84, RedComet</manufacturer>
-		<rom name=" Dragon Ball Z - Assault of the Saiyans T-Eng (2025)(injoon84, RedComet).nes" size="524304" crc="78017d32"/>
+		<rom name="Dragon Ball Z - Assault of the Saiyans T-Eng (2025)(injoon84, RedComet).nes" size="524304" crc="78017d32"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9825,7 +9825,7 @@
 	</game>
 	<game name="hurdles" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Hurdles (HB)</description>
+		<description>Hurdles! (HB)</description>
 		<year>2025</year>
 		<manufacturer>AUVIMA Software</manufacturer>
 		<rom name="Hurdles! (2025)(AUVIMA Software).nes" size="40976" crc="4b724112"/>
