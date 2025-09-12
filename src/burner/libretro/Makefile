@@ -455,6 +455,7 @@ else ifeq ($(platform), emscripten)
 	INCLUDE_7Z_SUPPORT = 0
 	EXTERNAL_ZLIB = 1
 	STATIC_LINKING = 1
+	FASTMATH = 0
 
 # Windows MSVC 2017 all architectures
 else ifneq (,$(findstring windows_msvc2017,$(platform)))
