@@ -1862,6 +1862,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="batmanreturnstp" cloneof="batmanreturns" romof="batmanreturns" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Batman O Retorno (Hack, Portuguese)</description>
+		<year>2020</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Batman O Retorno T-Por (2020)(PO.B.R.E.).nes" size="393232" crc="980b84a6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="batmanreturns" sourcefile="nes/d_nes.cpp">
 		<description>Batman Returns (USA)</description>
 		<year>1993</year>
@@ -1902,6 +1911,15 @@
 		<year>2020</year>
 		<manufacturer>HHNM Team</manufacturer>
 		<rom name="Batman - The Video Game T-Chi (2020)(HHNM Team).nes" size="393232" crc="4b2de665"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="batmavidgamtp" cloneof="batmavidgam" romof="batmavidgam" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Batman: The Video Game (Hack, Portuguese v1.2)</description>
+		<year>2019</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Batman - The Video Game T-Por v1.2 (2019)(PO.B.R.E.).nes" size="262160" crc="01b06ae3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2046,6 +2064,15 @@
 		<year>1993</year>
 		<manufacturer>Mindscape</manufacturer>
 		<rom name="Battleship (USA)(1993)(Mindscape).nes" size="65552" crc="89d3bdbc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="battletoadstp" cloneof="battletoads" romof="battletoads" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Battletoads (Hack, Portuguese v1.1 + Bug Fixes)</description>
+		<year>2018</year>
+		<manufacturer>PO.B.R.E. - Ti</manufacturer>
+		<rom name="Battletoads T-Por v1.1 + Bug Fixes (2018)(PO.B.R.E. - Ti).nes" size="262160" crc="7d2bfe54"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14837,6 +14864,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="ninjagaidentp" cloneof="ninjagaiden" romof="ninjagaiden" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ninja Gaiden (Hack, Portuguese v1.0u)</description>
+		<year>2021</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Ninja Gaiden T-Por v1.0u (2021)(PO.B.R.E.).nes" size="262160" crc="c072e8d1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="ninjagaidenc" cloneof="ninjagaiden" romof="ninjagaiden" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Ninja Gaiden (Hack, Spanish + Addendum)</description>
@@ -14854,6 +14890,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="ninjagaiiitp" cloneof="ninjagaiii" romof="ninjagaiii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ninja Gaiden II: A Espada Demoniaca das Trevas (Hack, Portuguese)</description>
+		<year>2021</year>
+		<manufacturer>PO.B.R.E.</manufacturer>
+		<rom name="Ninja Gaiden II - A Espada Demoniaca das Trevas (2021)(PO.B.R.E.).nes" size="262160" crc="7063b62e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="ninjagaiiic" cloneof="ninjagaiii" romof="ninjagaiii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Ninja Gaiden II: The Dark Sword of Chaos (Hack, Spanish + Addendum)</description>
@@ -14868,6 +14913,15 @@
 		<year>1990</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Ninja Gaiden II - The Dark Sword of Chaos (USA)(1990)(Tecmo).nes" size="262160" crc="9d135a8e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ninjagaiiiitp" cloneof="ninjagaiiii" romof="ninjagaiiii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ninja Gaiden III: A Arca do Inferno (Hack, Portuguese v1.0rh + Restored)</description>
+		<year>2021</year>
+		<manufacturer>PO.B.R.E. - MottZilla</manufacturer>
+		<rom name="Ninja Gaiden III - A Arca do Inferno v1.0rh + Restored (2021)(PO.B.R.E. - MottZilla).nes" size="262160" crc="814beb61"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
