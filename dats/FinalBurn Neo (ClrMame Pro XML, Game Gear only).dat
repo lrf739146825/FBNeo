@@ -60,6 +60,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aerialm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Aerial Mini (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Aerial Mini (2023)(Inufuto).gg" size="16384" crc="fe76beb0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alexkidd" sourcefile="sms/d_sms.cpp">
 		<description>Alex Kidd in Miracle World (Taiwan, SMS Mode) (Unl)</description>
 		<year>198?</year>
@@ -105,6 +114,15 @@
 		<year>1993</year>
 		<manufacturer>TecMagik</manufacturer>
 		<rom name="Andre Agassi Tennis (USA)(1993)(TecMagik).gg" size="262144" crc="46c9fa3e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="antiairm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>AntiAir Mini (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="AntiAir Mini (2024)(Inufuto).gg" size="16384" crc="b781327e"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -479,6 +497,15 @@
 		<year>1994</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Buster Fight (Japan)(1994)(Sega).gg" size="262144" crc="a72a1753"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cacormm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Cacorm Mini (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Cacorm Mini (2023)(Inufuto).gg" size="16368" crc="d1880cca"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1728,6 +1755,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hopmanm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Hopman Mini (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Hopman Mini (2023)(Inufuto).gg" size="16368" crc="84fd672d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hurrican" sourcefile="sms/d_sms.cpp">
 		<description>Hurricanes (Euro)</description>
 		<year>1994</year>
@@ -1749,6 +1785,15 @@
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Hyper Pro Yakyuu '92 (Japan)(1992)(Sega).gg" size="131072" crc="056cae74"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetusm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Impetus Mini (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus Mini (2023)(Inufuto).gg" size="32768" crc="07e1fa70"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2332,6 +2377,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mazym" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Mazy Mini (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Mazy Mini (2023)(Inufuto).gg" size="16384" crc="fc3a058c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megaman" sourcefile="sms/d_sms.cpp">
 		<description>Mega Man (Euro, USA)</description>
 		<year>1995</year>
@@ -2418,6 +2472,15 @@
 		<year>1995</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Micro Machines 2 - Turbo Tournament (Euro)(1995)(Codemasters).gg" size="524288" crc="dbe8895c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mieyenm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Mieyen Mini (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Mieyen Mini (2025)(Inufuto).gg" size="16384" crc="c3eb27e8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3433,6 +3496,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ruptusm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Ruptus Mini (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Ruptus Mini (2023)(Inufuto).gg" size="16384" crc="591350a8"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ryukyu" cloneof="solitarp" romof="solitarp" sourcefile="sms/d_sms.cpp">
 		<description>Ryuu Kyuu (Japan)</description>
 		<year>1991</year>
@@ -4245,6 +4317,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sp2092ex" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, Port of the homonymous Game Boy game</comment>
+		<description>Super Princess' 2092 Exodus (HB, v1.1)</description>
+		<year>2024</year>
+		<manufacturer>toxa</manufacturer>
+		<rom name="Super Princess' 2092 Exodus v1.1 (2024)(toxa).gg" size="131072" crc="273218ca"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="suprjedi" sourcefile="sms/d_sms.cpp">
 		<description>Super Return of the Jedi (Euro, USA)</description>
 		<year>1995</year>
@@ -4300,6 +4381,15 @@
 		<year>2021-24</year>
 		<manufacturer>MONIS GAMES</manufacturer>
 		<rom name="Sushi Nights v1.04 (2021-24)(MONIS GAMES).gg" size="131072" crc="934523bb"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="svellasm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Svellas Micro (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Svellas Micro (2025)(Inufuto).gg" size="16384" crc="d0a447dd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
