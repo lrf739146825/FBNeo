@@ -3079,48 +3079,75 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cavestoryb" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Cave Story Doukutsu (HB, Brazilian Portuguese v0.8.8)</description>
+		<year>2025</year>
+		<manufacturer>Studio Pixel</manufacturer>
+		<rom name="Cave Story Doukutsu v0.8.8 (BR)(2025)(Studio Pixel).bin" size="4194304" crc="3c40f1bf"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cavestoryc" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Chinese v0.8.0)</description>
-		<year>2022</year>
+		<description>Cave Story Doukutsu (HB, Chinese v0.8.8)</description>
+		<year>2025</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu v0.8.0 (ZH)(2022)(Studio Pixel).bin" size="4194304" crc="0c1517fc"/>
+		<rom name="Cave Story Doukutsu v0.8.8 (ZH)(2025)(Studio Pixel).bin" size="4194304" crc="a342ab5e"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, English v0.8.0)</description>
-		<year>2022</year>
+		<description>Cave Story Doukutsu (HB, English v0.8.8)</description>
+		<year>2025</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu v0.8.0 (EN)(2022)(Studio Pixel).bin" size="4194304" crc="d476a108"/>
+		<rom name="Cave Story Doukutsu v0.8.8 (EN)(2025)(Studio Pixel).bin" size="4194304" crc="4318aa05"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cavestoryp" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Cave Story Doukutsu (HB, European Portuguese v0.8.8)</description>
+		<year>2025</year>
+		<manufacturer>Studio Pixel</manufacturer>
+		<rom name="Cave Story Doukutsu v0.8.8 (PT)(2025)(Studio Pixel).bin" size="4194304" crc="a57002ef"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cavestoryf" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Cave Story Doukutsu (HB, French v0.8.8)</description>
+		<year>2025</year>
+		<manufacturer>Studio Pixel</manufacturer>
+		<rom name="Cave Story Doukutsu v0.8.8 (FR)(2025)(Studio Pixel).bin" size="4194304" crc="6a9c8fae"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestoryi" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Italian v0.8.0)</description>
-		<year>2022</year>
+		<description>Cave Story Doukutsu (HB, Italian v0.8.8)</description>
+		<year>2025</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu v0.8.0 (IT)(2022)(Studio Pixel).bin" size="4194304" crc="8ec855f9"/>
+		<rom name="Cave Story Doukutsu v0.8.8 (IT)(2025)(Studio Pixel).bin" size="4194304" crc="b1db86f5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestoryj" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Japanese v0.8.0)</description>
-		<year>2022</year>
+		<description>Cave Story Doukutsu (HB, Japanese v0.8.8)</description>
+		<year>2025</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu v0.8.0 (JP)(2022)(Studio Pixel).bin" size="4194304" crc="21acbe48"/>
+		<rom name="Cave Story Doukutsu v0.8.8 (JP)(2025)(Studio Pixel).bin" size="4194304" crc="baa38769"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="cavestorys" cloneof="cavestory" romof="cavestory" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cave Story Doukutsu (HB, Spanish v0.8.0)</description>
-		<year>2022</year>
+		<description>Cave Story Doukutsu (HB, Spanish v0.8.8)</description>
+		<year>2025</year>
 		<manufacturer>Studio Pixel</manufacturer>
-		<rom name="Cave Story Doukutsu v0.8.0 (ES)(2022)(Studio Pixel).bin" size="4194304" crc="06405697"/>
+		<rom name="Cave Story Doukutsu v0.8.8 (ES)(2025)(Studio Pixel).bin" size="4194304" crc="5c2e57ee"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6898,10 +6925,10 @@
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.88b)</description>
+		<description>Final Fight MD (HB, v0.89b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.88b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="fa21d81e"/>
+		<rom name="Final Fight MD v0.89b (2025)(MXRetroDev - CFX).bin" size="3932160" crc="ab36a032"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9883,10 +9910,10 @@
 	</game>
 	<game name="knnsf" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Kunio no Nekketsu School Fighters (HB, Beta v.05b)</description>
-		<year>2023</year>
+		<description>Kunio no Nekketsu School Fighters (HB, v1.6)</description>
+		<year>2025</year>
 		<manufacturer>UsagiRu</manufacturer>
-		<rom name="Kunio no Nekketsu School Fighters Beta v.05b (2023)(UsagiRu).bin" size="4194304" crc="1054a215"/>
+		<rom name="Kunio no Nekketsu School Fighters v1.6 (2025)(UsagiRu).bin" size="5767168" crc="3b0db849"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
