@@ -550,13 +550,13 @@ else ifneq (,$(findstring windows_msvc2017,$(platform)))
 	PSS_STYLE :=2
 	LDFLAGS += -DLL
 
-# Windows
+# Windows MINGW
 else
 	TARGET := $(TARGET_NAME)_libretro.dll
 	CC ?= gcc
 	CXX ?= g++
 	SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(VERSION_SCRIPT)
-	LDFLAGS += -static-libgcc -static-libstdc++
+	LDFLAGS += -static -Wl,--gc-sections -Wl,--as-needed
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	SPLIT_UP_LINK = 1
 endif
