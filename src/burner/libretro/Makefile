@@ -556,6 +556,9 @@ else
 	CC ?= gcc
 	CXX ?= g++
 	SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(VERSION_SCRIPT)
+#   use RetroArch root folder Dynamic Library libwinpthread-1.dll
+	# LDFLAGS += -static-libgcc -static-libstd
+#   use inner Static Library libwinpthread.a
 	LDFLAGS += -static -Wl,--gc-sections -Wl,--as-needed
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	SPLIT_UP_LINK = 1
