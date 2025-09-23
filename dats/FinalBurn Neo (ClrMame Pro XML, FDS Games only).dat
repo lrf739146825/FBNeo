@@ -115,11 +115,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="appletowmon" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Apple Town Monogatari - Little Computer People (Japan)</description>
+	<game name="appletowmon" cloneof="appletowstory" romof="appletowstory" sourcefile="nes/d_nes.cpp">
+		<description>Apple Town Monogatari: Little Computer People (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Squaresoft</manufacturer>
 		<rom name="Apple Town Monogatari - Little Computer People (Japan)(1987)(Squaresoft).fds" size="131016" crc="bf89dd4a"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="appletowstory" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Apple Town Story: Little Computer People (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Apple Town Story - Little Computer People T-Eng (2025)(BlackPaladin).fds" size="131000" crc="4a72fdd0"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -385,7 +395,7 @@
 	</game>
 	<game name="dirtypai" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Dirty Pair - Project Eden (Hack, English)</description>
+		<description>Dirty Pair: Project Eden (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>Stardust Crusaders</manufacturer>
 		<rom name="Dirty Pair - Project Eden T-Eng (2021)(stardust Crusaders).fds" size="131000" crc="5707b40a"/>
@@ -394,7 +404,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dirtypaij" cloneof="dirtypai" romof="dirtypai" sourcefile="nes/d_nes.cpp">
-		<description>Dirty Pair - Project Eden (Japan)</description>
+		<description>Dirty Pair: Project Eden (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Dirty Pair - Project Eden (Japan)(1987)(Bandai).fds" size="131016" crc="0bba3177"/>

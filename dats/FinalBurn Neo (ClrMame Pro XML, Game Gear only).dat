@@ -2331,8 +2331,8 @@
 		<comment>Homebrew</comment>
 		<description>Mai Nurse (HB)</description>
 		<year>2024</year>
-		<manufacturer>Lunoka</manufacturer>
-		<rom name="Mai Nurse (2024)(Lunoka).gg" size="131072" crc="36a2da11"/>
+		<manufacturer>lunoka</manufacturer>
+		<rom name="Mai Nurse (2024)(lunoka).gg" size="131072" crc="36a2da11"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

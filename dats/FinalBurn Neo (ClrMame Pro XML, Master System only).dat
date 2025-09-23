@@ -2624,10 +2624,10 @@
 	</game>
 	<game name="grailgods" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Grail of the Gods (HB, v0.48)</description>
+		<description>Grail of the Gods (HB, v0.49b)</description>
 		<year>2023-25</year>
 		<manufacturer>Guydebaville</manufacturer>
-		<rom name="Grail of the Gods v0.48 (2023-25)(Guydebaville).sms" size="65536" crc="df1f88de"/>
+		<rom name="Grail of the Gods v0.49b (2023-25)(Guydebaville).sms" size="65536" crc="e6afde12"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3581,8 +3581,8 @@
 		<comment>Homebrew</comment>
 		<description>Mai Nurse (HB)</description>
 		<year>2024</year>
-		<manufacturer>Lunoka</manufacturer>
-		<rom name="Mai Nurse (2024)(Lunoka).sms" size="131072" crc="6b974d30"/>
+		<manufacturer>lunoka</manufacturer>
+		<rom name="Mai Nurse (2024)(lunoka).sms" size="131072" crc="cbcb62f8"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4556,6 +4556,15 @@
 		<year>1990</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Puznic (Korea)(1990)(Zemina).sms" size="32768" crc="76e8265f"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pyramidescape" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Pyramid Escape (HB)</description>
+		<year>2025</year>
+		<manufacturer>IrataHack</manufacturer>
+		<rom name="Pyramid Escape (2025)(IrataHack).sms" size="114688" crc="705c8342"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

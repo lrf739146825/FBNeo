@@ -5397,10 +5397,10 @@
 	</game>
 	<game name="chuckiemail" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Chuckie Mail (48K) (HB)</description>
+		<description>Chuckie Mail (48K) (HB, Rev1.0)</description>
 		<year>2025</year>
 		<manufacturer>Proteusy</manufacturer>
-		<rom name="Chuckie Mail 48K (2025)(Proteusy).tap" size="24664" crc="c5145769"/>
+		<rom name="Chuckie Mail Rev1.0 48K (2025)(Proteusy).tap" size="25130" crc="d7a7b13a"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -21481,7 +21481,7 @@
 		<description>Racetrack Riches (48K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>bedroom-coders</manufacturer>
-		<rom name="Racetrack Riches 48K (2025)(bedroom-coders).tap" size="44828" crc="ba32d423"/>
+		<rom name="Racetrack Riches 48K (2025)(bedroom-coders).tap" size="46109" crc="1fe06ca6"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

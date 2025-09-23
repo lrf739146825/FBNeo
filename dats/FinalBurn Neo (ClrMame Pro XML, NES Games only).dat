@@ -9583,10 +9583,19 @@
 	</game>
 	<game name="hoboalbo" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Hobo Albo's Big Adventure (HB)</description>
-		<year>2024</year>
-		<manufacturer>RetroBro85</manufacturer>
-		<rom name="Hobo Albo's Big Adventure (2024)(RetroBro85).nes" size="524304" crc="d276c4db"/>
+		<description>Hobo Albo's Big Adventure (HB, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>RBG Entertainment</manufacturer>
+		<rom name="Hobo Albo's Big Adventure v1.2 (2025)(RBG Entertainment).nes" size="524304" crc="0e907f78"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hoboalboha" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Hobo Albo's Halloween Adventure (HB, v1.5)</description>
+		<year>2025</year>
+		<manufacturer>RBG Entertainment</manufacturer>
+		<rom name="Hobo Albo's Halloween Adventure v1.5 (2025)(RBG Entertainment).nes" size="524304" crc="889637a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
