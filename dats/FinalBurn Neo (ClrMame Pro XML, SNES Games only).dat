@@ -881,7 +881,7 @@
 	</game>
 	<game name="arabnightste" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Arabian Nights - Desert Spirit King (Hack, English)</description>
+		<description>Arabian Nights: Desert Spirit King (Hack, English)</description>
 		<year>2013</year>
 		<manufacturer>LostTemplar</manufacturer>
 		<rom name="Arabian Nights - Desert Spirit King T-Eng (2013)(LostTemplar).sfc" size="3145728" crc="be092358"/>
@@ -889,7 +889,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="arabnightsj" cloneof="arabnightste" romof="arabnightste" sourcefile="snes/d_snes.cpp">
-		<description>Arabian Nights - Sabaku no Seirei Ou (Japan)</description>
+		<description>Arabian Nights: Sabaku no Seirei Ou (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Takara - Pandora Box</manufacturer>
 		<rom name="Arabian Nights - Sabaku no Seirei Ou (J)(1996)(Takara - Pandora Box).sfc" size="2621440" crc="b6dbf57b"/>
@@ -3405,6 +3405,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="crashbanden" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Crash Bandicoot and the Retro Dimension (GlobalHack, English)</description>
+		<year>2025</year>
+		<manufacturer>Bindicoot</manufacturer>
+		<rom name="Crash Bandicoot and the Retro Dimension (English)(2025)(Bandicoot).sfc" size="4194304" crc="ce281f37"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="crashbandpt" cloneof="crashbanden" romof="crashbanden" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Crash Bandicoot e a Dimensao Retro (GlobalHack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>Bandicoot</manufacturer>
+		<rom name="Crash Bandicoot e a Dimensao Retro (Portuguese)(2025)(Bandicoot).sfc" size="4194304" crc="49118dcf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="crayonshinchan" sourcefile="snes/d_snes.cpp">
 		<description>Crayon Shin-chan - Arashi o Yobu Enji (Japan)</description>
 		<year>1993</year>
@@ -3902,6 +3920,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="derwanderknecht" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Der Wanderknecht (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Goldlocke</manufacturer>
+		<rom name="Der Wanderknecht v1.1 (2025)(Goldlocke).sfc" size="262144" crc="d5d30c22"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="desertfighte" cloneof="asp" romof="asp" sourcefile="snes/d_snes.cpp">
 		<description>Desert Fighter (Euro)</description>
 		<year>1994</year>
@@ -3939,6 +3966,15 @@
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Desert Strike - Wangan Sakusen (J)(1992)(Electronic Arts).sfc" size="1048576" crc="fcdf43ca"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="desolate" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Desolate (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Crisp</manufacturer>
+		<rom name="Desolate v1.1 (2025)(Crisps).sfc" size="262143" crc="1570c9e2"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5189,12 +5225,21 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="eyratp" cloneof="eyra" romof="eyra" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew</comment>
+		<description>Eyra: The Crow Maiden (Hack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>diegoshark</manufacturer>
+		<rom name="Eyra - The Crow Maiden T-Por (2025)(diegoshark).sfc" size="2097152" crc="68573ad7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="eyra" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
-		<description>Eyra the Crow Maiden (HB)</description>
+		<description>Eyra: The Crow Maiden (HB)</description>
 		<year>2022-23</year>
 		<manufacturer>Second Dimension</manufacturer>
-		<rom name="Eyra the Crow Maiden (2022-23)(Second Dimension).sfc" size="2097152" crc="891c5bad"/>
+		<rom name="Eyra - The Crow Maiden (2022-23)(Second Dimension).sfc" size="2097152" crc="891c5bad"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9515,6 +9560,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mainurse" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mai Nurse (HB, v1.02)</description>
+		<year>2024</year>
+		<manufacturer>lunoka</manufacturer>
+		<rom name="Mai Nurse v1.02 (2024)(lunoka).sfc" size="262144" crc="7cd0eecd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="majtenseite" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Majin Tensei (Hack, English v4.0)</description>
@@ -11071,6 +11125,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nosferatuaa" cloneof="nosferatu" romof="nosferatu" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Nosferatu - Arcade Action (Hack)</description>
+		<year>2025</year>
+		<manufacturer>advancedpillow</manufacturer>
+		<rom name="Nosferatu - Arcade Action (2025)(advancedpillow).sfc" size="2097152" crc="23425c63"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="obitus" sourcefile="snes/d_snes.cpp">
 		<description>Obitus (USA)</description>
 		<year>1993</year>
@@ -11157,8 +11220,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="onegaidlc" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
-		<description>Onegai My Melody - Detour Land Conquest (GlobalHack)</description>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Onegai My Melody: Detour Land Conquest (GlobalHack)</description>
 		<year>2024</year>
 		<manufacturer>Big Brawler</manufacturer>
 		<rom name="Onegai My Melody - Detour Land Conquest (2024)(Big Brawler).sfc" size="3145728" crc="ca03c75c"/>
@@ -11166,8 +11229,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="onegaimma" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
-		<description>Onegai My Melody - My Melody Adventure (GlobalHack, v1.1)</description>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Onegai My Melody: My Melody Adventure (GlobalHack, v1.1)</description>
 		<year>2024</year>
 		<manufacturer>Big Brawler</manufacturer>
 		<rom name="Onegai My Melody - My Melody Adventure v1.1 (2024)(Big Brawler).sfc" size="4194304" crc="6c66776a"/>
@@ -13030,7 +13093,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="saunamarioworld" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Sauna Mario World 2 (GlobalHack, v1.1)</description>
 		<year>2025</year>
 		<manufacturer>pnaha</manufacturer>
@@ -13092,10 +13155,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="seaquestdsv" sourcefile="snes/d_snes.cpp">
-		<description>seaQuest DSV (USA)</description>
+		<description>SeaQuest DSV (USA)</description>
 		<year>1994</year>
 		<manufacturer>Malibu Games</manufacturer>
-		<rom name="seaQuest DSV (U)(1994)(Malibu Games).sfc" size="2097152" crc="a6579e03"/>
+		<rom name="SeaQuest DSV (U)(1994)(Malibu Games).sfc" size="2097152" crc="a6579e03"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13528,7 +13591,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="sicari2" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Sicari 2 - The Brink of Time (GlobalHack, v1.061)</description>
 		<year>2022</year>
 		<manufacturer>Yukivee</manufacturer>
@@ -13537,7 +13600,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="sicarir" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Sicari Remastered (GlobalHack, v1.05)</description>
 		<year>2018-21</year>
 		<manufacturer>Yukivee</manufacturer>
@@ -13687,7 +13750,7 @@
 	</game>
 	<game name="skippfrds" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
-		<description>Skipp and Friends - Unexpected Journey (HB)</description>
+		<description>Skipp and Friends: Unexpected Journey (HB)</description>
 		<year>2013</year>
 		<manufacturer>Mukunda Johnson</manufacturer>
 		<rom name="Skipp and Friends - Unexpected Journey (2013)(Mukunda Johnson).sfc" size="1048576" crc="c1c4ac32"/>
@@ -13794,7 +13857,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smwfnr" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>SMW Friends and Rivalry (GlobalHack, v1.03)</description>
 		<year>2025</year>
 		<manufacturer>Bandicoot</manufacturer>
@@ -15103,6 +15166,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="superbughunters" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Bug Hunters (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Maxwel Olinda</manufacturer>
+		<rom name="Super Bug Hunters v1.1 (2025)(Maxwel Olinda).sfc" size="262144" crc="f9305a4f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="superbbros" sourcefile="snes/d_snes.cpp">
 		<description>Super Buster Bros. (USA, Rev. 1)</description>
 		<year>1992</year>
@@ -15634,7 +15706,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="superjunkoid" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Metroid</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Metroid</comment>
 		<description>Super Junkoid (GlobalHack, v1.3)</description>
 		<year>2023</year>
 		<manufacturer>P. Yoshi</manufacturer>
@@ -15861,7 +15933,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smw4magicwandse" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Super Mario World: The 4 Magic Wands (GlobalHack, English v1.0.2)</description>
 		<year>2025</year>
 		<manufacturer>Green Jerry</manufacturer>
@@ -15894,6 +15966,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supermetroidxf" cloneof="supermetroid" romof="supermetroid" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Metroid X-Fusion (Hack, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>Metaquarius</manufacturer>
+		<rom name="Super Metroid X-Fusion v1.2 (2025)(Metaquarius).sfc" size="4194304" crc="0526898e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supermorph" sourcefile="snes/d_snes.cpp">
 		<description>Super Morph (Euro)</description>
 		<year>1993</year>
@@ -15903,7 +15984,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="smw4magicwandsp" cloneof="smw4magicwandse" romof="smw4magicwandse" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Super Mundo Mario: As 4 Varinhas Magicas (GlobalHack, Portuguese v1.0.2)</description>
 		<year>2025</year>
 		<manufacturer>Green Jerry</manufacturer>
@@ -16809,6 +16890,23 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="swordworldte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Sword World SFC (Hack, English v0.99b)</description>
+		<year>2025</year>
+		<manufacturer>bent</manufacturer>
+		<rom name="Sword World SFC T-Eng v0.99b (2025)(bent).sfc" size="1572864" crc="15e07e45"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="swordworldj" cloneof="swordworldte" romof="swordworldte" sourcefile="snes/d_snes.cpp">
+		<description>Sword World SFC (Japan)</description>
+		<year>1993</year>
+		<manufacturer>T&amp;E Soft</manufacturer>
+		<rom name="Sword World SFC (J)(1993)(T&amp;E Soft).sfc" size="1572864" crc="b4e8a680"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sydneyhunt" cloneof="sydneyhuntee" romof="sydneyhuntee" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
 		<description>Sydney Hunter and the Caverns of Death (HB)</description>
@@ -17054,7 +17152,7 @@
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Tecmo Super NBA Basketball (U, SNS-NA)(1993)(Tecmo).sfc" size="1048576" crc="a002eda1"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tecmosnbaxm" sourcefile="snes/d_snes.cpp">
@@ -17063,7 +17161,7 @@
 		<year>1993</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Tecmo Super NBA Basketball (U, SNS-XM)(1993)(Tecmo).sfc" size="1048576" crc="1b6f0b43"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="tmntive" cloneof="tmntiv" romof="tmntiv" sourcefile="snes/d_snes.cpp">
@@ -18972,7 +19070,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="yoshistrangequest" sourcefile="snes/d_snes.cpp">
-		<comment>Hack, Homebrew, A complete overhaul of Super Mario World</comment>
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
 		<description>Yoshi's Strange Quest (GlobalHack, v1.3)</description>
 		<year>2014</year>
 		<manufacturer>Yoshifanatic</manufacturer>

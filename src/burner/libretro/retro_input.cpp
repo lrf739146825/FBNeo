@@ -796,30 +796,6 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 	const char * drvname	= BurnDrvGetTextA(DRV_NAME);
 	int nHardwareCode = BurnDrvGetHardwareCode();
 
-	if (strncmp("Volume", description, 6) == 0)
-	{
-		if ((parentrom && strcmp(parentrom, "revx") == 0) ||
-			(drvname && strcmp(drvname, "revx") == 0)
-		) {
-			// revx needs this to navigate diagnostic menu
-			if (strcmp("Volume Up", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_R3, description);
-			}
-			if (strcmp("Volume Down", description) == 0) {
-				GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_L3, description);
-			}
-		} else {
-			// We don't map volume buttons
-			pgi->nInput = GIT_SWITCH;
-			if (!bInputInitialized) {
-				pgi->Input.Switch.nCode = (UINT16)(nSwitchCode++);
-				HandleMessage(RETRO_LOG_DEBUG, "[FBNeo] nSwitchCode 0x%02X : P%d %s (not mapped)\n", pgi->Input.Switch.nCode, nPlayer+1, szn);
-			}
-			bButtonMapped = true;
-			return 0;
-		}
-	}
-
 	// This one is such a special case : "Lucky & Wild" has 2 x-axis inputs, and we don't want the steering one to be caught by the pointer/lightgun/mouse logic
 	if ((parentrom && strcmp(parentrom, "luckywld") == 0) ||
 		(drvname && strcmp(drvname, "luckywld") == 0)
@@ -2832,6 +2808,17 @@ static INT32 GameInpOtherOne(struct GameInp* pgi, char* szi, char *szn)
 		(drvname && strcmp(drvname, "pulirula") == 0)) {
 		if (strcmp("Service", szn) == 0) {
 			GameInpDigital2RetroInpKey(pgi, 0, RETRO_DEVICE_ID_JOYPAD_R3, szn);
+		}
+	}
+
+	// revx needs this to navigate diagnostic menu
+	if ((parentrom && strcmp(parentrom, "revx") == 0) ||
+		(drvname && strcmp(drvname, "revx") == 0)) {
+		if (strcmp(szi, "volumeup") == 0) {
+			GameInpDigital2RetroInpKey(pgi, 0, RETRO_DEVICE_ID_JOYPAD_R3, szn);
+		}
+		if (strcmp(szi, "volumedown") == 0) {
+			GameInpDigital2RetroInpKey(pgi, 0, RETRO_DEVICE_ID_JOYPAD_L3, szn);
 		}
 	}
 
