@@ -2188,6 +2188,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bjreborndemo" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Black Jewel Reborn (HB, Demo v2.11)</description>
+		<year>2022</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Black Jewel Reborn v2.11 (2022)(PSCD Games).bin" size="3407872" crc="0adee51c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bladeven" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Blades of Vengeance (Euro, USA)</description>
 		<year>1993</year>
@@ -21707,6 +21716,15 @@
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Transformers 3 (Russia)(Unl)(199x).bin" size="1117472" crc="8632246d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="traysias" cloneof="traysia" romof="traysia" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Traysia (Hack, Spanish)</description>
+		<year>2025</year>
+		<manufacturer>Team Alacant</manufacturer>
+		<rom name="Traysia T-Spa (2025)(Team Alacant).bin" size="2097152" crc="f9170727"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

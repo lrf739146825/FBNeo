@@ -127,10 +127,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="1stdivmanager" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>1st Division Manager (128K)</description>
+		<description>1st Division Manager (48K-128K)</description>
 		<year>1991</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="1st Division Manager (1991)(Codemasters).z80" size="47446" crc="57fed4fa"/>
+		<rom name="1st Division Manager 48K-128K (1991)(Codemasters).tzx" size="53668" crc="138bb0e1"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -1373,6 +1373,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supercartransam" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>American Turbo King ~ Super Car Trans-Am (48K-128K)</description>
+		<year>1989</year>
+		<manufacturer>Virgin Mastertronic</manufacturer>
+		<rom name="American Turbo King - Super Car Trans-Am 48K-128K (1989)(Virgin Mastertronic).tzx" size="43376" crc="38544788"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="amidar" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Amidar (Spanish) (48K) (HB)</description>
@@ -1607,6 +1617,15 @@
 		<year>2015</year>
 		<manufacturer>Neil Parsons</manufacturer>
 		<rom name="Aquanoids 48K (2015)(Neil Parsons).tap" size="38587" crc="6ead57d1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aquarius" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Aquarius (48K)</description>
+		<year>1983</year>
+		<manufacturer>Bug-Byte Software</manufacturer>
+		<rom name="Aquarius 48K (1983)(Bug-Byte).tzx" size="15643" crc="b9005d23"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4425,10 +4444,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="byfairmeansorfoul" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>By Fair Means...or Foul (48K)</description>
+		<description>By Fair Means... or Foul (48K)</description>
 		<year>1989</year>
-		<manufacturer>Superior</manufacturer>
-		<rom name="By Fair Means Or Foul (1989)(Superior).z80" size="44540" crc="8f8c6d0e"/>
+		<manufacturer>Superior Software</manufacturer>
+		<rom name="By Fair Means... or Foul 48K (1989)(Superior).tap" size="49412" crc="ff098b75"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -4680,10 +4699,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="casanova" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Casanova (48K)</description>
+		<description>Casanova (Spanish) (48K)</description>
 		<year>1989</year>
 		<manufacturer>Iber Software</manufacturer>
-		<rom name="Casanova (1989)(Iber Software).tap" size="45005" crc="1c66d96d"/>
+		<rom name="Casanova ES 48K (1989)(Iber Software).tzx" size="48265" crc="aa30e60b"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10132,7 +10151,7 @@
 		<description>Final Fight (128K)</description>
 		<year>1991</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Final Fight (1991)(U.S. Gold).tap" size="199327" crc="8993d2c6"/>
+		<rom name="Final Fight 128K (1991)(U.S. Gold).tap" size="199327" crc="8993d2c6"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10862,10 +10881,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="fury" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Fury, The (128K)</description>
+		<description>Fury, The (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Martech Games</manufacturer>
-		<rom name="Fury, The 128K (1988)(Martech Games).tap" size="47954" crc="7ecbb308"/>
+		<rom name="Fury, The 48K-128K (1988)(Martech Games).tzx" size="48064" crc="2ee45bca"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -11220,6 +11239,15 @@
 		<rom name="Genesis dawn of a new day 128K (2010)(RetroWorks).tap" size="63025" crc="3a5fb7db"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gcstrongman" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Geoff Capes Strong Man (48K)</description>
+		<year>1985</year>
+		<manufacturer>Martech Games</manufacturer>
+		<rom name="Geoff Capes Strong Man 48K (1985)(Martech Games).tap" size="48796" crc="d7acea88"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12327,6 +12355,39 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hammerknighten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Hammer Knight (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Hicks</manufacturer>
+		<rom name="Hammer Knight EN 128K (2025)(Hicks).tap" size="66203" crc="e4d72ad4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hammerknightpt" cloneof="hammerknighten" romof="hammerknighten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Hammer Knight (Portuguese) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Hicks</manufacturer>
+		<rom name="Hammer Knight PT 128K (2025)(Hicks).tap" size="66646" crc="55478f9f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hammerknightes" cloneof="hammerknighten" romof="hammerknighten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Hammer Knight (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Hicks</manufacturer>
+		<rom name="Hammer Knight ES 128K (2025)(Hicks).tap" size="65722" crc="fbe5f563"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hammerfist" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Hammerfist (48K)</description>
 		<year>1990</year>
@@ -12741,6 +12802,15 @@
 		<rom name="Hero Quest - Return of the Witch Lord 128K (1991)(Gremlin Graphics).tap" size="131173" crc="65141180"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="heroeskarn" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Heroes of Karn (48K)</description>
+		<year>1984</year>
+		<manufacturer>Interceptor Software</manufacturer>
+		<rom name="Heroes of Karn 48K (1984)(Interceptor).tzx" size="48068" crc="51aa280e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13380,10 +13450,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ikariwarriors" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Ikari Warriors (128K)</description>
-		<year>1988</year>
+		<description>Ikari Warriors (48K-128K)</description>
+		<year>1987</year>
 		<manufacturer>Elite Systems</manufacturer>
-		<rom name="Ikari Warriors (1988)(Elite Systems).tap" size="47889" crc="f3fac369"/>
+		<rom name="Ikari Warriors 48K-128K (1987)(Elite Systems).tap" size="47889" crc="f3fac369"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -14588,6 +14658,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="join" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Join (48K) (HB)</description>
+		<year>2011</year>
+		<manufacturer>RetroSouls</manufacturer>
+		<rom name="Join 48K (2011)(RetroSouls).tap" size="9966" crc="9d00882c"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="jonathan" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Jonathan - Trick or Treat (48K) (HB)</description>
@@ -14919,6 +14999,16 @@
 		<rom name="King Valley 128K (1994)(WeByBelarus).tap" size="39820" crc="1d1ebe53"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kingskeep" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Select '1) Keyboard' to use controller</comment>
+		<description>King's Keep, The (48K)</description>
+		<year>1986</year>
+		<manufacturer>Firebird Software</manufacturer>
+		<rom name="King's Keep, The 48K (1986)(Firebird Software).tzx" size="56634" crc="1a779ec5"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16477,6 +16567,16 @@
 		<year>2020</year>
 		<manufacturer>Quantum Sheep</manufacturer>
 		<rom name="Main Course - The Retro Cut 48K (2020)(Quantum Sheep).tap" size="47151" crc="b64ed2bf"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maisieday" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Maisie Day is not Okay (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>KTB Productions</manufacturer>
+		<rom name="Maisie Day is not Okay 48K (2025)(KTB Productions).tap" size="40048" crc="a96d00e9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19887,6 +19987,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="painter" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Painter (48K)</description>
+		<year>1983</year>
+		<manufacturer>A'n'F Software</manufacturer>
+		<rom name="Painter 48K (1983)(A'n'F Software).tap" size="31833" crc="08ae2406"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="painterman128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Painter Man (128K) (HB)</description>
@@ -20784,7 +20893,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="popeye3" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Popeye 3 - Wrestle Crazy (128K)</description>
+		<description>Popeye 3: Wrestle Crazy (128K)</description>
 		<year>1992</year>
 		<manufacturer>Alternative Software</manufacturer>
 		<rom name="Popeye 3 - Wrestle Crazy 128K (1992)(Alternative).tap" size="124204" crc="aa3d43e3"/>
@@ -20804,7 +20913,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="poseidon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Poseidon - Planet Eleven (48K)</description>
+		<description>Poseidon: Planet Eleven (48K)</description>
 		<year>1990</year>
 		<manufacturer>Hi-Tec Software</manufacturer>
 		<rom name="Poseidon - Planet Eleven 48K (1990)(Hi-Tec).z80" size="35217" crc="73a2cdf2"/>
@@ -20822,7 +20931,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="postman" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Postman Pat - The Computer Game (48K)</description>
+		<description>Postman Pat: The Computer Game (48K)</description>
 		<year>1989</year>
 		<manufacturer>Alternative Software</manufacturer>
 		<rom name="Postman Pat - The Computer Game 48K (1989)(Alternative).z80" size="43141" crc="c991a405"/>
@@ -23085,7 +23194,7 @@
 		<description>Sabre Wulf (48K)</description>
 		<year>1984</year>
 		<manufacturer>Ultimate Play The Game</manufacturer>
-		<rom name="Sabre Wulf (1984)(Ultimate Play The Game).z80" size="39457" crc="75fe1462"/>
+		<rom name="Sabre Wulf 48K (1984)(Ultimate Play The Game).tzx" size="45805" crc="5a39df63"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -26170,16 +26279,6 @@
 		<year>2023</year>
 		<manufacturer>ZX Evolution</manufacturer>
 		<rom name="Super Bomberman 2 Remix v1.1 128K (2023)(ZX Evolution).tap" size="55559" crc="2343539f"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="supercartransam" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Super Car Trans Am - American Turbo King (128K)</description>
-		<year>1989</year>
-		<manufacturer>Virgin Mastertronic</manufacturer>
-		<rom name="Super Car Trans Am - American Turbo King (1989)(Virgin Mastertronic).tap" size="43374" crc="eb2361c5"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -29386,7 +29485,7 @@
 		<description>Xeno (48K)</description>
 		<year>1986</year>
 		<manufacturer>A'n'F Software</manufacturer>
-		<rom name="Xeno 48K (1986)(A'n'F).z80" size="37264" crc="4d10e27a"/>
+		<rom name="Xeno 48K (1986)(A'n'F Software).z80" size="37264" crc="4d10e27a"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

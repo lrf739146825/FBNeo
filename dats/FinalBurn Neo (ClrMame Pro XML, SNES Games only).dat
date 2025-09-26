@@ -1221,6 +1221,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="badapple" sourcefile="snes/d_snes.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>Bad Apple (HB, Tech-Demo)</description>
+		<year>2021</year>
+		<manufacturer>Ladida</manufacturer>
+		<rom name="Bad Apple Tech-Demo (2021)(Ladida).sfc" size="8388608" crc="b2e98625"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bahalagoonte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Bahamut Lagoon (Hack, English v1.3)</description>
@@ -4346,7 +4355,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dkongcntry2e" cloneof="dkongcntry2" romof="dkongcntry2" sourcefile="snes/d_snes.cpp">
-		<description>Donkey Kong Country 2 - Diddy's Kong Quest (Euro, Rev. 1)</description>
+		<description>Donkey Kong Country 2: Diddy's Kong Quest (Euro, Rev. 1)</description>
 		<year>1995</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Donkey Kong Country 2 - Diddy's Kong Quest (E, Rev 1)(1995)(Nintendo - Rare).sfc" size="4194304" crc="2ea6b7e8"/>
@@ -4354,15 +4363,24 @@
 		<driver status="good"/>
 	</game>
 	<game name="dkongcntry2" sourcefile="snes/d_snes.cpp">
-		<description>Donkey Kong Country 2 - Diddy's Kong Quest (USA, Rev. 1)</description>
+		<description>Donkey Kong Country 2: Diddy's Kong Quest (USA, Rev. 1)</description>
 		<year>1995</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Donkey Kong Country 2 - Diddy's Kong Quest (U, Rev 1)(1995)(Nintendo - Rare).sfc" size="4194304" crc="4e2d90f4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dkongcntry2p4k" cloneof="dkongcntry2" romof="dkongcntry2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Donkey Kong Country 2: The Project 4 Kongs (Hack)</description>
+		<year>2024</year>
+		<manufacturer>The Kong's Team</manufacturer>
+		<rom name="Donkey Kong Country 2  - The Project 4 Kongs (2024)(The Kong's Team).sfc" size="6291456" crc="19742050"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dkongcntry3e" cloneof="dkongcntry3" romof="dkongcntry3" sourcefile="snes/d_snes.cpp">
-		<description>Donkey Kong Country 3 - Dixie Kong's Double Trouble! (Euro)</description>
+		<description>Donkey Kong Country 3: Dixie Kong's Double Trouble! (Euro)</description>
 		<year>1996</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Donkey Kong Country 3 - Dixie Kong's Double Trouble! (E)(1996)(Nintnedo - Rare).sfc" size="4194304" crc="0551fe84"/>
@@ -4370,10 +4388,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="dkongcntry3" sourcefile="snes/d_snes.cpp">
-		<description>Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA)</description>
+		<description>Donkey Kong Country 3: Dixie Kong's Double Trouble! (USA)</description>
 		<year>1996</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Donkey Kong Country 3 - Dixie Kong's Double Trouble! (U)(1996)(Nintnedo - Rare).sfc" size="4194304" crc="448eec19"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dkongcntrysr25" cloneof="dkongcntry" romof="dkongcntry" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Donkey Kong Country: Seiryuki Remix 2025 (Hack)</description>
+		<year>2025</year>
+		<manufacturer>Sudesh Sookdeo</manufacturer>
+		<rom name="Donkey Kong Country - Seiryuki Remix 2025 (2025)(Sudesh Sookdeo).sfc" size="4194304" crc="043ee352"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6097,7 +6124,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="flyingheroj" cloneof="flyingherote" romof="flyingherote" sourcefile="snes/d_snes.cpp">
-		<description>Flying Hero - Bugyuru no Daibouken (Japan)</description>
+		<description>Flying Hero: Bugyuru no Daibouken (Japan)</description>
 		<year>1992</year>
 		<manufacturer>SOFEL</manufacturer>
 		<rom name="Flying Hero - Bugyuru no Daibouken (J)(1992)(SOFEL).sfc" size="1048576" crc="1a19fc3a"/>
@@ -6106,7 +6133,7 @@
 	</game>
 	<game name="flyingherote" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Flying Hero - Bugyuru's Adventure (Hack, English)</description>
+		<description>Flying Hero: Bugyuru's Adventure (Hack, English)</description>
 		<year>2012</year>
 		<manufacturer>KingMike's Translations</manufacturer>
 		<rom name="Flying Hero - Bugyuru's Adventure T-Eng (2012)(KingMike).sfc" size="1048576" crc="24ccf556"/>
@@ -6238,7 +6265,7 @@
 	</game>
 	<game name="fmgunhazardte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Front Mission - Gun Hazard (Hack, English v1.01)</description>
+		<description>Front Mission: Gun Hazard (Hack, English v1.01)</description>
 		<year>2004</year>
 		<manufacturer>Aeon Genesis</manufacturer>
 		<rom name="Front Mission - Gun Hazard T-Eng (2004)(Aeon Genesis).sfc" size="3145728" crc="e4628064"/>
@@ -6246,7 +6273,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fmgunhazardj" cloneof="fmgunhazardte" romof="fmgunhazardte" sourcefile="snes/d_snes.cpp">
-		<description>Front Mission - Gun Hazard (Japan)</description>
+		<description>Front Mission: Gun Hazard (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Squaresoft</manufacturer>
 		<rom name="Front Mission - Gun Hazard (J)(1996)(Squaresoft).sfc" size="3145728" crc="fd3fdbac"/>
@@ -12560,6 +12587,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="460" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="returndoubledragonev" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+		<description>Return of Double Dragon (Evercade)</description>
+		<year>2020</year>
+		<manufacturer>Blaze Entertainment</manufacturer>
+		<rom name="Return of Double Dragon (Evercade)(2020)(Blaze Entertainment).sfc" size="1572864" crc="bb2684c3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="returndoubledragon" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
 		<description>Return of Double Dragon (Japan)</description>
 		<year>1992</year>
@@ -12759,11 +12794,45 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rrracinge" cloneof="rrracing" romof="rrracing" sourcefile="snes/d_snes.cpp">
+		<description>Rock N' Roll Racing (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="Rock N' Roll Racing (E)(1993)(Interplay).sfc" size="1048576" crc="b02daf39"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rrracingj" cloneof="rrracing" romof="rrracing" sourcefile="snes/d_snes.cpp">
+		<description>Rock N' Roll Racing (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="Rock N' Roll Racing (J)(1993)(Interplay).sfc" size="1048576" crc="a206384c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rrracing" sourcefile="snes/d_snes.cpp">
 		<description>Rock N' Roll Racing (USA)</description>
 		<year>1993</year>
-		<manufacturer>Inteplay</manufacturer>
+		<manufacturer>Interplay</manufacturer>
 		<rom name="Rock N' Roll Racing (U)(1993)(Interplay).sfc" size="1048576" crc="7d06f473"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rrracingdemo" cloneof="rrracing" romof="rrracing" sourcefile="snes/d_snes.cpp">
+		<comment>Demo</comment>
+		<description>Rock N' Roll Racing (USA, Demo)</description>
+		<year>1993-2014</year>
+		<manufacturer>Blizzard</manufacturer>
+		<rom name="Rock N' Roll Racing (U, Demo)(1993-2014)(Blizzard).sfc" size="1048576" crc="2313d87e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rrracingart" cloneof="rrracing" romof="rrracing" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Rock N' Roll Racing - Alternate Race Tracks (Hack)</description>
+		<year>2025</year>
+		<manufacturer>DarthMarino</manufacturer>
+		<rom name="Rock N' Roll Racing - Alternate Race Tracks v1.2 (2025)(DarthMarino).sfc" size="1048576" crc="21cf199e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12966,6 +13035,23 @@
 		<year>1996</year>
 		<manufacturer>Squaresoft</manufacturer>
 		<rom name="Rudra no Hihou (J)(1996)(Squaresoft).sfc" size="4194304" crc="5d8cb7ac"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="runsabere" cloneof="runsaber" romof="runsaber" sourcefile="snes/d_snes.cpp">
+		<description>Run Saber (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Atlus Co.</manufacturer>
+		<rom name="Run Saber (E)(1993)(Atlus).sfc" size="1048576" crc="2820f702"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="runsabertp" cloneof="runsaber" romof="runsaber" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Run Saber (Hack, Portuguese)</description>
+		<year>2021</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Run Saber T-Por (2021).sfc" size="1048576" crc="8296fc8e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15340,7 +15426,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="superdkong2" cloneof="dkongcntry2" romof="dkongcntry2" sourcefile="snes/d_snes.cpp">
-		<description>Super Donkey Kong 2 - Dixie &amp; Diddy (Japan, Rev. 1)</description>
+		<description>Super Donkey Kong 2: Dixie &amp; Diddy (Japan, Rev. 1)</description>
 		<year>1995</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Super Donkey Kong 2 - Dixie &amp; Diddy (J, Rev 1)(1995)(Nintendo).sfc" size="4194304" crc="46079c0f"/>
@@ -15348,7 +15434,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="superdkong3" cloneof="dkongcntry3" romof="dkongcntry3" sourcefile="snes/d_snes.cpp">
-		<description>Super Donkey Kong 3 - Nazo no Kremis-tou (Japan, Rev. 1)</description>
+		<description>Super Donkey Kong 3: Nazo no Kremis-tou (Japan, Rev. 1)</description>
 		<year>1996</year>
 		<manufacturer>Nintendo - Rare</manufacturer>
 		<rom name="Super Donkey Kong 3 - Nazo no Kremis-tou (J, Rev 1)(1996)(Nintendo).sfc" size="4194304" crc="5b337fb6"/>
@@ -15380,7 +15466,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="superdriftout" sourcefile="snes/d_snes.cpp">
-		<description>Super Drift Out - World Rally Championships (USA)</description>
+		<description>Super Drift Out: World Rally Championships (USA)</description>
 		<year>1994</year>
 		<manufacturer>Visco Corp.</manufacturer>
 		<rom name="Super Drift Out - World Rally Championships (U)(1994)(Visco Corp.).sfc" size="2097152" crc="ec8c1cca"/>
@@ -16478,6 +16564,15 @@
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Super Soccer Champ (U)(1992)(Taito).sfc" size="524288" crc="b31d35a5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sokonyan" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Sokonyan (HB, v2)</description>
+		<year>2025</year>
+		<manufacturer>Acedio</manufacturer>
+		<rom name="Super Sokonyan v2 (2025)(Acedio).sfc" size="131072" crc="9550c61f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
