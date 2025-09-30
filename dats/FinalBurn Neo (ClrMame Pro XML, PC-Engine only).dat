@@ -1146,6 +1146,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jurl" sourcefile="pce/d_pce.cpp">
+		<comment>Homebrew</comment>
+		<description>Jurl (HB, v0.9b)</description>
+		<year>2024</year>
+		<manufacturer>Tonsomo Entertainment</manufacturer>
+		<rom name="Jurl v0.9b (2024)(Tonsomo Entertainment).pce" size="262144" crc="c28d92a1"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="juuouki" sourcefile="pce/d_pce.cpp">
 		<description>Juuouki (Japan)</description>
 		<year>1989</year>

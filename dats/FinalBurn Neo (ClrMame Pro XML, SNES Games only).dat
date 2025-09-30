@@ -1866,6 +1866,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bjreborndemo" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Black Jewel Reborn (HB, Demo)</description>
+		<year>2024</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Black Jewel Reborn Demo (2024)(PSCD Games).sfc" size="1048576" crc="5cf1f05c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="blackhawk" cloneof="blackthorne" romof="blackthorne" sourcefile="snes/d_snes.cpp">
 		<description>Blackhawk (Euro)</description>
 		<year>1994</year>
@@ -2351,6 +2360,15 @@
 		<year>1994</year>
 		<manufacturer>GameTek</manufacturer>
 		<rom name="Brutal - Paws of Fury (U)(1994)(GameTek).sfc" size="2097152" crc="8fe49f80"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="brzombies" cloneof="zombies" romof="zombies" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Brutal Zombies Ate My Neighbors (Hack, v3.0)</description>
+		<year>2017</year>
+		<manufacturer>Skylar Brock</manufacturer>
+		<rom name="Brutal Zombies Ate My Neighbors v3.0 (2017)(Skylar Brock).sfc" size="1081799" crc="710ed3ce"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4375,7 +4393,7 @@
 		<description>Donkey Kong Country 2: The Project 4 Kongs (Hack)</description>
 		<year>2024</year>
 		<manufacturer>The Kong's Team</manufacturer>
-		<rom name="Donkey Kong Country 2  - The Project 4 Kongs (2024)(The Kong's Team).sfc" size="6291456" crc="19742050"/>
+		<rom name="Donkey Kong Country 2 - The Project 4 Kongs (2024)(The Kong's Team).sfc" size="6291456" crc="19742050"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7531,6 +7549,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hyperstreetkart" cloneof="supermkart" romof="supermkart" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, DSP-1B enhancement chip</comment>
+		<description>Hyper Street Kart. The Road Warriors (Hack, v1.1)</description>
+		<year>2016</year>
+		<manufacturer>The Real Phoenix &amp; Ten Shu</manufacturer>
+		<rom name="Hyper Street Kart. The Road Warriors v1.1 (2016)(The Real Phoenix &amp; Ten Shu).sfc" size="1048576" crc="c18caa11"/>
+		<rom name="dsp1b.bin" merge="dsp1b.bin" size="10240" crc="453557e0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hypervballe" cloneof="hypervball" romof="hypervball" sourcefile="snes/d_snes.cpp">
 		<description>Hyper V-Ball (Euro)</description>
 		<year>1994</year>
@@ -8254,6 +8282,15 @@
 		<year>2025</year>
 		<manufacturer>BillyTime! Games</manufacturer>
 		<rom name="Jurassic Park II - The Chaos Continues Redux (2025)(BillyTime! Games).sfc" size="2097152" crc="620de6a3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jurl" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jurl (HB, v0.5a)</description>
+		<year>2025</year>
+		<manufacturer>Tonsomo Entertainment</manufacturer>
+		<rom name="Jurl v0.5a (2025)(Tonsomo Entertainment).sfc" size="262144" crc="eccff965"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10127,10 +10164,10 @@
 	</game>
 	<game name="msglorydcte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Metal Slader Glory - Director's Cut (Hack, English)</description>
+		<description>Metal Slader Glory - Director's Cut (Hack, English v1.1)</description>
 		<year>2025</year>
 		<manufacturer>FCandChill</manufacturer>
-		<rom name="Metal Slader Glory - Director's Cut T-Eng (2025)(FCandChill).sfc" size="3145728" crc="2b41a062"/>
+		<rom name="Metal Slader Glory - Director's Cut T-Eng v1.1 (2025)(FCandChill).sfc" size="3145728" crc="00419052"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11297,6 +11334,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="oscare" cloneof="oscar" romof="oscar" sourcefile="snes/d_snes.cpp">
+		<description>Oscar (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Oscar (E)(1996)(Titus).sfc" size="524288" crc="b458fdbc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="oscar" sourcefile="snes/d_snes.cpp">
 		<description>Oscar (USA)</description>
 		<year>1996</year>
@@ -11661,7 +11706,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="pierrelechef" sourcefile="snes/d_snes.cpp">
+	<game name="pierrelechef" cloneof="outlunch" romof="outlunch" sourcefile="snes/d_snes.cpp">
 		<description>Pierre le Chef is... Out to Lunch (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Mindscape</manufacturer>
@@ -11815,11 +11860,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="plok" sourcefile="snes/d_snes.cpp">
-		<description>Plok (USA)</description>
+	<game name="ploke" cloneof="plok" romof="plok" sourcefile="snes/d_snes.cpp">
+		<description>Plok! (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Tradewest</manufacturer>
-		<rom name="Plok (U)(1993)(Tradewest).sfc" size="1048576" crc="bbd678f6"/>
+		<rom name="Plok! (E)(1993)(Tradewest).sfc" size="1048576" crc="026f2c19"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="plokf" cloneof="plok" romof="plok" sourcefile="snes/d_snes.cpp">
+		<description>Plok! (Euro, French)</description>
+		<year>1993</year>
+		<manufacturer>Tradewest</manufacturer>
+		<rom name="Plok! (E, France)(1993)(Tradewest).sfc" size="1048576" crc="e5e84e18"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="plokg" cloneof="plok" romof="plok" sourcefile="snes/d_snes.cpp">
+		<description>Plok! (Euro, German)</description>
+		<year>1993</year>
+		<manufacturer>Tradewest</manufacturer>
+		<rom name="Plok! (E, Germany)(1993)(Tradewest).sfc" size="1048576" crc="edc2befd"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11828,6 +11889,14 @@
 		<year>1993</year>
 		<manufacturer>Activision</manufacturer>
 		<rom name="Plok! (J)(1993)(Activision).sfc" size="1048576" crc="57dcd2a1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="plok" sourcefile="snes/d_snes.cpp">
+		<description>Plok! (USA)</description>
+		<year>1993</year>
+		<manufacturer>Tradewest</manufacturer>
+		<rom name="Plok! (U)(1993)(Tradewest).sfc" size="1048576" crc="bbd678f6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12523,6 +12592,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="realme" cloneof="realm" romof="realm" sourcefile="snes/d_snes.cpp">
+		<description>Realm (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Realm (E)(1996)(Titus).sfc" size="1048576" crc="9be46820"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="realm" sourcefile="snes/d_snes.cpp">
 		<description>Realm (USA)</description>
 		<year>1996</year>
@@ -12627,6 +12704,15 @@
 		<year>2009</year>
 		<manufacturer>SENSOR&amp;SATAN&amp;SAN</manufacturer>
 		<rom name="Return of Double Dragon - Guarding Law h9v8-30031023 (2009)(SENSOR&amp;SATAN&amp;SAN).sfc" size="1048576" crc="3157c8d9"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="returndoubledragonkh" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Return of Double Dragon - Kencho hacks (Hack)</description>
+		<year>2017</year>
+		<manufacturer>Jesus Alonso Abad</manufacturer>
+		<rom name="Return of Double Dragon - Kencho hacks (2017)(Jesus Alonso Abad).sfc" size="1048576" crc="a83cc8b3"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16612,10 +16698,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="superstarwars" sourcefile="snes/d_snes.cpp">
-		<description>Super Star Wars - Episode IV (USA)</description>
+		<description>Super Star Wars - Episode IV (USA, Rev. 1)</description>
 		<year>1992</year>
 		<manufacturer>JVC - LucasArts</manufacturer>
-		<rom name="Super Star Wars (U)(1992)(JVC - LucasArts).sfc" size="1048576" crc="acbcae7c"/>
+		<rom name="Super Star Wars (U, Rev 1)(1992)(JVC - LucasArts).sfc" size="1048576" crc="be47f6c6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superstarwarsrx" cloneof="superstarwars" romof="superstarwars" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Star Wars - Episode IV Redux (Hack)</description>
+		<year>2025</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Super Star Wars Redux (2025)(BillyTime! Games).sfc" size="1572864" crc="b331a037"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16636,10 +16731,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="superstarwarsesb" sourcefile="snes/d_snes.cpp">
-		<description>Super Star Wars - Episode V - The Empire Strikes Back (USA)</description>
+		<description>Super Star Wars - Episode V - The Empire Strikes Back (USA, Rev. 1)</description>
 		<year>1993</year>
 		<manufacturer>JVC - LucasArts</manufacturer>
-		<rom name="Super Star Wars - The Empire Strikes Back (U)(1993)(JVC - LucasArts).sfc" size="1572864" crc="f45b15be"/>
+		<rom name="Super Star Wars - The Empire Strikes Back (U, Rev 1)(1993)(JVC - LucasArts).sfc" size="1572864" crc="1e7ea62c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superstarwarsesbrx" cloneof="superstarwarsesb" romof="superstarwarsesb" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Star Wars - Episode V - The Empire Strikes Back Redux (Hack)</description>
+		<year>2025</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Super Star Wars - The Empire Strikes Back Redux (2025)(BillyTime! Games).sfc" size="1572864" crc="1fdef9ed"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16660,10 +16764,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="superstarwarsrj" sourcefile="snes/d_snes.cpp">
-		<description>Super Star Wars - Episode VI - Return of the Jedi (USA)</description>
+		<description>Super Star Wars - Episode VI - Return of the Jedi (USA, Rev. 1)</description>
 		<year>1994</year>
 		<manufacturer>JVC - LucasArts</manufacturer>
-		<rom name="Super Star Wars - Return of the Jedi (U)(1994)(JVC - LucasArts).sfc" size="2097152" crc="c709ec69"/>
+		<rom name="Super Star Wars - Return of the Jedi (U, Rev 1)(1994)(JVC - LucasArts).sfc" size="2097152" crc="4a5f30d8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superstarwarsrjrx" cloneof="superstarwarsrj" romof="superstarwarsrj" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Star Wars - Episode VI - Return of the Jedi Redux (Hack)</description>
+		<year>2025</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Super Star Wars - Return of the Jedi Redux (2025)(BillyTime! Games).sfc" size="2097152" crc="04698461"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17771,10 +17884,10 @@
 	</game>
 	<game name="tmntfightgme" cloneof="tmntfight" romof="tmntfight" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>TMNT: Tournament Fighters - Grandmasters Edition (Hack, v1.2)</description>
+		<description>TMNT: Tournament Fighters - Grandmasters Edition (Hack, v2.1)</description>
 		<year>2025</year>
 		<manufacturer>Allo</manufacturer>
-		<rom name="TMNT Tournament Fighters - Grandmasters Edition v1.2 (2025)(Allo).sfc" size="4194304" crc="ce1d413f"/>
+		<rom name="TMNT Tournament Fighters - Grandmasters Edition v2.1 (2025)(Allo).sfc" size="4194304" crc="276a5820"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19295,11 +19408,36 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="zombiese" cloneof="zombies" romof="zombies" sourcefile="snes/d_snes.cpp">
+		<description>Zombies (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Konami - LucasArts</manufacturer>
+		<rom name="Zombies (E)(1993)(Konami - LucasArts).sfc" size="1048576" crc="fabff8bd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zombieslrg" cloneof="zombies" romof="zombies" sourcefile="snes/d_snes.cpp">
+		<description>Zombies Ate My Neighbors (Limited Run Games)</description>
+		<year>2021</year>
+		<manufacturer>Limited Run Games</manufacturer>
+		<rom name="Zombies Ate My Neighbors (2021)(Limited Run Games).sfc" size="1048576" crc="b57c9228"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zombies" sourcefile="snes/d_snes.cpp">
 		<description>Zombies Ate My Neighbors (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami - LucasArts</manufacturer>
 		<rom name="Zombies Ate My Neighbors (U)(1993)(Konami - LucasArts).sfc" size="1048576" crc="7cfc0c7c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zombiessq" cloneof="zombies" romof="zombies" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Zombies Ate My Neighbors. The Sequel (Hack, v1.1)</description>
+		<year>2017-18</year>
+		<manufacturer>Droter</manufacturer>
+		<rom name="Zombies Ate My Neighbors. The Sequel v1.1 (2017-18)(Droter).sfc" size="1081344" crc="633b9cfb"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19309,6 +19447,14 @@
 		<year>2024</year>
 		<manufacturer>RyuHayabusa</manufacturer>
 		<rom name="Zombies Ate My Neighbors - Ultimate Edition (2024)(RyuHayabusa).sfc" size="1057280" crc="42fd2a8b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zoole" cloneof="zool" romof="zool" sourcefile="snes/d_snes.cpp">
+		<description>Zool - Ninja of the Nth Dimension (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Gremlin Graphics</manufacturer>
+		<rom name="Zool - Ninja of the Nth Dimension (E)(1993)(Gremlin Graphics).sfc" size="1048576" crc="1188c64e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

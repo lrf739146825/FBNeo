@@ -162,6 +162,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="satyrhell" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>A Satyr In Hell (HB)</description>
+		<year>2022</year>
+		<manufacturer>kakoeimon</manufacturer>
+		<rom name="A Satyr In Hell (2022)(kakoeimon).bin" size="655360" crc="f4148d5c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aaharima" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Aa Harimanada (Japan)</description>
 		<year>1993</year>
@@ -7628,6 +7637,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="genmtetris" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Genesis Megatetris (HB)</description>
+		<year>2023-25</year>
+		<manufacturer>Danisc23</manufacturer>
+		<rom name="Genesis Megatetris (2023-25)(Danisc23).bin" size="393216" crc="caf8c2dd"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="genghis2" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Genghis Khan II: Clan of the Gray Wolf (USA)</description>
 		<year>1993</year>
@@ -9570,6 +9588,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jurl" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Jurl (HB, v1.0c)</description>
+		<year>2025</year>
+		<manufacturer>Tonsomo Entertainment</manufacturer>
+		<rom name="Jurl v1.0c (2025)(Tonsomo Entertainment).bin" size="393216" crc="a7a56b9b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="jleagues" cloneof="jleague" romof="jleague" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Justice League Task Force (Hack, Spanish)</description>
@@ -9691,6 +9718,15 @@
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
 		<rom name="Killing Game Show, The (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="b8e7668a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kingball" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>King &amp; Balloon (HB)</description>
+		<year>2025</year>
+		<manufacturer>abadede919302</manufacturer>
+		<rom name="King &amp; Balloon (2025)(abadede919302).bin" size="393216" crc="4e6b7134"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11231,6 +11267,15 @@
 		<year>2016</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Mega Cheril Perils (2016)(The Mojon Twins).bin" size="2088832" crc="77afa0b1"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megaflappy" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Mega Flappy Sis (HB)</description>
+		<year>2016-18</year>
+		<manufacturer>Beetroot</manufacturer>
+		<rom name="Mega Flappy Sis (2016-18)(Beetroot).bin" size="478706" crc="d2ca75b7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
