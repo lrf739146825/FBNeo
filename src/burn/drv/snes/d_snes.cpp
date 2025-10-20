@@ -517,9 +517,8 @@ static INT32 DrvFrame()
 		DrvDraw();
 	}
 
-	if (pBurnSoundOut) {
-		snes_setSamples(snes, pBurnSoundOut, nBurnSoundLen);
-	}
+	// always run, even if pBurnSoundOut == NULL
+	snes_setSamples(snes, pBurnSoundOut, nBurnSoundLen);
 
 	return 0;
 }
@@ -3477,6 +3476,25 @@ struct BurnDriver BurnDrvsnes_Barkley = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_BarkleyRomInfo, snes_BarkleyRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Barkley Shut Up and Jam! (Euro)
+
+static struct BurnRomInfo snes_BarkleyeRomDesc[] = {
+	{ "Barkley Shut Up and Jam! (E)(1994)(Accolade).sfc", 1572864, 0x29fbd13d, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Barkleye)
+STD_ROM_FN(snes_Barkleye)
+
+struct BurnDriver BurnDrvsnes_Barkleye = {
+	"snes_barkleye", "snes_barkley", NULL, NULL, "1994",
+	"Barkley Shut Up and Jam! (Euro)\0", NULL, "Accolade", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_BarkleyeRomInfo, snes_BarkleyeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -16640,6 +16658,25 @@ struct BurnDriver BurnDrvsnes_Hurricanes = {
 	512, 448, 4, 3
 };
 
+// Hurricanes (Euro)
+
+static struct BurnRomInfo snes_HurricaneseRomDesc[] = {
+	{ "Hurricanes (E)(1994)(U.S. Gold).sfc", 1048576, 0xde5f9d73, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Hurricanese)
+STD_ROM_FN(snes_Hurricanese)
+
+struct BurnDriver BurnDrvsnes_Hurricanese = {
+	"snes_hurricanese", "snes_hurricanes", NULL, NULL, "1994",
+	"Hurricanes (Euro)\0", NULL, "U.S. Gold", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_HurricaneseRomInfo, snes_HurricaneseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Hyper Iria (Japan)
 
 static struct BurnRomInfo snes_HypeririajRomDesc[] = {
@@ -17058,6 +17095,25 @@ struct BurnDriver BurnDrvsnes_Incantation = {
 	512, 448, 4, 3
 };
 
+// Incantation (Euro)
+
+static struct BurnRomInfo snes_IncantationeRomDesc[] = {
+	{ "Incantation (E)(1996)(Titus).sfc", 524288, 0x34fad701, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Incantatione)
+STD_ROM_FN(snes_Incantatione)
+
+struct BurnDriver BurnDrvsnes_Incantatione = {
+	"snes_incantatione", "snes_incantation", NULL, NULL, "1996",
+	"Incantation (Euro)\0", NULL, "Titus", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_IncantationeRomInfo, snes_IncantationeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Indiana Jones' Greatest Adventures (USA)
 
 static struct BurnRomInfo snes_IndianajonesRomDesc[] = {
@@ -17210,6 +17266,25 @@ struct BurnDriver BurnDrvsnes_Inttennistour = {
 	512, 448, 4, 3
 };
 
+// International Tennis Tour (Euro)
+
+static struct BurnRomInfo snes_InttennistoureRomDesc[] = {
+	{ "International Tennis Tour (E)(1993)(Loriciel).sfc", 1048576, 0x6bbcea4f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Inttennistoure)
+STD_ROM_FN(snes_Inttennistoure)
+
+struct BurnDriver BurnDrvsnes_Inttennistoure = {
+	"snes_inttennistoure", "snes_inttennistour", NULL, NULL, "1993",
+	"International Tennis Tour (Euro)\0", NULL, "Loriciel", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_InttennistoureRomInfo, snes_InttennistoureRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Irem Skins Game, The (USA)
 
 static struct BurnRomInfo snes_IremskinsgameRomDesc[] = {
@@ -17286,6 +17361,25 @@ struct BurnDriver BurnDrvsnes_Iss = {
 	512, 448, 4, 3
 };
 
+// International Superstar Soccer (Euro)
+
+static struct BurnRomInfo snes_IsseRomDesc[] = {
+	{ "International Superstar Soccer (E)(1995)(Konami).sfc", 1048576, 0x6cd568a9, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Isse)
+STD_ROM_FN(snes_Isse)
+
+struct BurnDriver BurnDrvsnes_Isse = {
+	"snes_isse", "snes_iss", NULL, NULL, "1995",
+	"International Superstar Soccer (Euro)\0", NULL, "Konami", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSFOOTBALL, 0,
+	SNESGetZipName, snes_IsseRomInfo, snes_IsseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // International Superstar Soccer Deluxe (USA)
 
 static struct BurnRomInfo snes_IssdxRomDesc[] = {
@@ -17301,6 +17395,25 @@ struct BurnDriver BurnDrvsnes_Issdx = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSFOOTBALL, 0,
 	SNESGetZipName, snes_IssdxRomInfo, snes_IssdxRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// International Superstar Soccer Deluxe (Euro)
+
+static struct BurnRomInfo snes_IssdxeRomDesc[] = {
+	{ "International Superstar Soccer Deluxe (E)(1995)(Konami).sfc", 2097152, 0xcba724ba, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Issdxe)
+STD_ROM_FN(snes_Issdxe)
+
+struct BurnDriver BurnDrvsnes_Issdxe = {
+	"snes_issdxe", "snes_issdx", NULL, NULL, "1995",
+	"International Superstar Soccer Deluxe (Euro)\0", NULL, "Konami", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSFOOTBALL, 0,
+	SNESGetZipName, snes_IssdxeRomInfo, snes_IssdxeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -17381,6 +17494,25 @@ struct BurnDriver BurnDrvsnes_Jacknicklausgolf = {
 	512, 448, 4, 3
 };
 
+// Jack Nicklaus Golf (Euro)
+
+static struct BurnRomInfo snes_JacknicklausgolfeRomDesc[] = {
+	{ "Jack Nicklaus Golf (E)(1991)(Tradewest).sfc", 524288, 0xa7f0652f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Jacknicklausgolfe)
+STD_ROM_FN(snes_Jacknicklausgolfe)
+
+struct BurnDriver BurnDrvsnes_Jacknicklausgolfe = {
+	"snes_jacknicklausgolfe", "snes_jacknicklausgolf", NULL, NULL, "1991",
+	"Jack Nicklaus Golf (Euro)\0", NULL, "Tradewest", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_JacknicklausgolfeRomInfo, snes_JacknicklausgolfeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // James Bond Jr. (USA)
 
 static struct BurnRomInfo snes_JbondjrRomDesc[] = {
@@ -17398,6 +17530,63 @@ struct BurnDriver BurnDrvsnes_Jbondjr = {
 	SNESGetZipName, snes_JbondjrRomInfo, snes_JbondjrRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 478, 4, 3
+};
+
+// James Bond Jr. (Euro)
+
+static struct BurnRomInfo snes_JbondjreRomDesc[] = {
+	{ "James Bond Jr. (E)(1992)(THQ).sfc", 524288, 0x7414a4c2, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Jbondjre)
+STD_ROM_FN(snes_Jbondjre)
+
+struct BurnDriver BurnDrvsnes_Jbondjre = {
+	"snes_jbondjre", "snes_jbondjr", NULL, NULL, "1992",
+	"James Bond Jr. (Euro)\0", NULL, "THQ Inc.", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_HORSHOOT, 0,
+	SNESGetZipName, snes_JbondjreRomInfo, snes_JbondjreRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 478, 4, 3
+};
+
+// James Pond's Crazy Sports (Euro)
+
+static struct BurnRomInfo snes_JpcrazysportsRomDesc[] = {
+	{ "James Pond's Crazy Sports (E)(1993)(Sales Curve).sfc", 524288, 0x66f00725, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Jpcrazysports)
+STD_ROM_FN(snes_Jpcrazysports)
+
+struct BurnDriver BurnDrvsnes_Jpcrazysports = {
+	"snes_jpcrazysports", "snes_supaquagames", NULL, NULL, "1993",
+	"James Pond's Crazy Sports (Euro)\0", NULL, "Sales Curve", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_JpcrazysportsRomInfo, snes_JpcrazysportsRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// James Pond 3: Operation Starfi5h (Euro)
+
+static struct BurnRomInfo snes_Jamespond3RomDesc[] = {
+	{ "James Pond 3 - Operation Starfi5h (E)(1995)(U.S. Gold - Millennium).sfc", 2097152, 0x9d3e313f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Jamespond3)
+STD_ROM_FN(snes_Jamespond3)
+
+struct BurnDriver BurnDrvsnes_Jamespond3 = {
+	"snes_jamespond3", NULL, NULL, NULL, "1995",
+	"James Pond 3: Operation Starfi5h (Euro)\0", NULL, "U.S. Gold - Millennium", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_Jamespond3RomInfo, snes_Jamespond3RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
 };
 
 // Jelly Boy (Euro)
@@ -17894,6 +18083,25 @@ struct BurnDriver BurnDrvsnes_Johnmaddenfootball93 = {
 	512, 448, 4, 3
 };
 
+// John Madden Football '93 (Euro)
+
+static struct BurnRomInfo snes_Johnmaddenfootball93eRomDesc[] = {
+	{ "John Madden Football '93 (E)(1992)(Electronic Arts).sfc", 1048576, 0xb07b2a60, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Johnmaddenfootball93e)
+STD_ROM_FN(snes_Johnmaddenfootball93e)
+
+struct BurnDriver BurnDrvsnes_Johnmaddenfootball93e = {
+	"snes_johnmaddenfootball93e", "snes_johnmaddenfootball93", NULL, NULL, "1992",
+	"John Madden Football '93 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Johnmaddenfootball93eRomInfo, snes_Johnmaddenfootball93eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // JoJo no Kimyou na Bouken (Japan)
 
 static struct BurnRomInfo snes_JojobajRomDesc[] = {
@@ -17966,6 +18174,25 @@ struct BurnDriver BurnDrvsnes_Lordoftherings = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_ACTION | GBF_RPG | GBF_ADV, 0,
 	SNESGetZipName, snes_LordoftheringsRomInfo, snes_LordoftheringsRomName, NULL, NULL, NULL, NULL, SNESMouseInputInfo, SNESMouseDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// J.R.R. Tolkien's The Lord of the Rings - Volume One (Euro)
+
+static struct BurnRomInfo snes_LordoftheringseRomDesc[] = {
+	{ "J.R.R. Tolkien's The Lord of the Rings - Volume One (E)(1994)(Interplay).sfc", 1048576, 0x247c17d3, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lordoftheringse)
+STD_ROM_FN(snes_Lordoftheringse)
+
+struct BurnDriver BurnDrvsnes_Lordoftheringse = {
+	"snes_lordoftheringse", "snes_lordoftherings", NULL, NULL, "1994",
+	"J.R.R. Tolkien's The Lord of the Rings - Volume One (Euro)\0", "'SNES Mouse' compatible game (Set Dipswitches)", "Interplay", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_ACTION | GBF_RPG | GBF_ADV, 0,
+	SNESGetZipName, snes_LordoftheringseRomInfo, snes_LordoftheringseRomName, NULL, NULL, NULL, NULL, SNESMouseInputInfo, SNESMouseDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -18137,25 +18364,6 @@ struct BurnDriver BurnDrvsnes_Jparks = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_RUNGUN | GBF_ADV, 0,
 	SNESGetZipName, snes_JparksRomInfo, snes_JparksRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
-	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
-	512, 448, 4, 3
-};
-
-// James Pond's Crazy Sports (Euro)
-
-static struct BurnRomInfo snes_JpcrazysportsRomDesc[] = {
-	{ "James Pond's Crazy Sports (E)(1993)(Sales Curve).sfc", 524288, 0x66f00725, BRF_ESS | BRF_PRG },
-};
-
-STD_ROM_PICK(snes_Jpcrazysports)
-STD_ROM_FN(snes_Jpcrazysports)
-
-struct BurnDriver BurnDrvsnes_Jpcrazysports = {
-	"snes_jpcrazysports", "snes_supaquagames", NULL, NULL, "1993",
-	"James Pond's Crazy Sports (Euro)\0", NULL, "Sales Curve", "SNES / Super Famicom",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_SNES, GBF_SPORTSMISC, 0,
-	SNESGetZipName, snes_JpcrazysportsRomInfo, snes_JpcrazysportsRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -18346,6 +18554,25 @@ struct BurnDriver BurnDrvsnes_Junglestrike = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_MULTISHOOT, 0,
 	SNESGetZipName, snes_JunglestrikeRomInfo, snes_JunglestrikeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Jungle Strike (Euro)
+
+static struct BurnRomInfo snes_JunglestrikeeRomDesc[] = {
+	{ "Jungle Strike (E)(1995)(Electronic Arts).sfc", 2097152, 0xfb770320, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Junglestrikee)
+STD_ROM_FN(snes_Junglestrikee)
+
+struct BurnDriver BurnDrvsnes_Junglestrikee = {
+	"snes_junglestrikee", "snes_junglestrike", NULL, NULL, "1995",
+	"Jungle Strike (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_MULTISHOOT, 0,
+	SNESGetZipName, snes_JunglestrikeeRomInfo, snes_JunglestrikeeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -18939,6 +19166,25 @@ struct BurnDriver BurnDrvsnes_Kingdragons = {
 	512, 448, 4, 3
 };
 
+// King of Dragons, The (Euro)
+
+static struct BurnRomInfo snes_KingdragonseRomDesc[] = {
+	{ "King of Dragons, The (E)(1994)(Capcom).sfc", 2097152, 0x78f0820b, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Kingdragonse)
+STD_ROM_FN(snes_Kingdragonse)
+
+struct BurnDriver BurnDrvsnes_Kingdragonse = {
+	"snes_kingdragonse", "snes_kingdragons", NULL, NULL, "1994",
+	"King of Dragons, The (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	SNESGetZipName, snes_KingdragonseRomInfo, snes_KingdragonseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Kirby's Dream Land 3 (USA)
 
 static struct BurnRomInfo snes_Kirby3RomDesc[] = {
@@ -19205,6 +19451,25 @@ struct BurnDriver BurnDrvsnes_Knightsround = {
 	512, 448, 4, 3
 };
 
+// Knights of the Round (Euro)
+
+static struct BurnRomInfo snes_KnightsroundeRomDesc[] = {
+	{ "Knights of the Round (E)(1994)(Capcom).sfc", 1572864, 0x9b40082d, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Knightsrounde)
+STD_ROM_FN(snes_Knightsrounde)
+
+struct BurnDriver BurnDrvsnes_Knightsrounde = {
+	"snes_knightsrounde", "snes_knightsround", NULL, NULL, "1994",
+	"Knights of the Round (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	SNESGetZipName, snes_KnightsroundeRomInfo, snes_KnightsroundeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // King of the Monsters (USA)
 
 static struct BurnRomInfo snes_KotmRomDesc[] = {
@@ -19220,6 +19485,25 @@ struct BurnDriver BurnDrvsnes_Kotm = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SCRFIGHT | GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_KotmRomInfo, snes_KotmRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// King of the Monsters (Euro)
+
+static struct BurnRomInfo snes_KotmeRomDesc[] = {
+	{ "King of the Monsters (E)(1992)(Takara).sfc", 1048576, 0x799b1787, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Kotme)
+STD_ROM_FN(snes_Kotme)
+
+struct BurnDriver BurnDrvsnes_Kotme = {
+	"snes_kotme", "snes_kotm", NULL, NULL, "1992",
+	"King of the Monsters (Euro)\0", NULL, "Takara Co.", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT | GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_KotmeRomInfo, snes_KotmeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -19490,6 +19774,25 @@ struct BurnDriver BurnDrvsnes_Lamborghini = {
 	512, 448, 4, 3
 };
 
+// Lamborghini American Challenge (Euro)
+
+static struct BurnRomInfo snes_LamborghinieRomDesc[] = {
+	{ "Lamborghini American Challenge (E)(1993)(Titus).sfc", 524288, 0x263178b2, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lamborghinie)
+STD_ROM_FN(snes_Lamborghinie)
+
+struct BurnDriver BurnDrvsnes_Lamborghinie = {
+	"snes_lamborghinie", "snes_lamborghini", NULL, NULL, "1993",
+	"Lamborghini American Challenge (Euro)\0", "'SNES Mouse' compatible game (Set Dipswitches)", "Titus", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_RACING, 0,
+	SNESGetZipName, snes_LamborghinieRomInfo, snes_LamborghinieRomName, NULL, NULL, NULL, NULL, SNESMouseInputInfo, SNESMouseDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Laplace no Ma (Japan)
 
 static struct BurnRomInfo snes_LaplacejRomDesc[] = {
@@ -19566,6 +19869,25 @@ struct BurnDriver BurnDrvsnes_Lastacthero = {
 	512, 448, 4, 3
 };
 
+// Last Action Hero (Euro)
+
+static struct BurnRomInfo snes_LastactheroeRomDesc[] = {
+	{ "Last Action Hero (E)(1993)(Sony Imagesoft).sfc", 1048576, 0x91633d95, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lastactheroe)
+STD_ROM_FN(snes_Lastactheroe)
+
+struct BurnDriver BurnDrvsnes_Lastactheroe = {
+	"snes_lastactheroe", "snes_lastacthero", NULL, NULL, "1993",
+	"Last Action Hero (Euro)\0", NULL, "Sony Imagesoft", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	SNESGetZipName, snes_LastactheroeRomInfo, snes_LastactheroeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Last Bible III (Japan)
 
 static struct BurnRomInfo snes_Lastbible3jRomDesc[] = {
@@ -19626,7 +19948,7 @@ struct BurnDriver BurnDrvsnes_Lastbible3ts = {
 // Lawnmower Man, The (USA)
 
 static struct BurnRomInfo snes_LawnmowermanRomDesc[] = {
-	{ "Lawnmower Man, The (U)(1993)(THQ).sfc", 1048576, 0x2736b607, BRF_ESS | BRF_PRG },
+	{ "Lawnmower Man, The (U)(1993)(The Sales Curve).sfc", 1048576, 0x2736b607, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Lawnmowerman)
@@ -19634,10 +19956,29 @@ STD_ROM_FN(snes_Lawnmowerman)
 
 struct BurnDriver BurnDrvsnes_Lawnmowerman = {
 	"snes_lawnmowerman", NULL, NULL, NULL, "1993",
-	"Lawnmower Man, The (USA)\0", NULL, "THQ", "SNES / Super Famicom",
+	"Lawnmower Man, The (USA)\0", NULL, "The Sales Curve", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_PLATFORM | GBF_SHOOT, 0,
 	SNESGetZipName, snes_LawnmowermanRomInfo, snes_LawnmowermanRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Lawnmower Man, The (Euro)
+
+static struct BurnRomInfo snes_LawnmowermaneRomDesc[] = {
+	{ "Lawnmower Man, The (E)(1993)(The Sales Curve).sfc", 1048576, 0x1a97c479, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lawnmowermane)
+STD_ROM_FN(snes_Lawnmowermane)
+
+struct BurnDriver BurnDrvsnes_Lawnmowermane = {
+	"snes_lawnmowermane", "snes_lawnmowerman", NULL, NULL, "1993",
+	"Lawnmower Man, The (Euro)\0", NULL, "The Sales Curve", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM | GBF_SHOOT, 0,
+	SNESGetZipName, snes_LawnmowermaneRomInfo, snes_LawnmowermaneRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20040,6 +20381,25 @@ struct BurnDriver BurnDrvsnes_Lethalenf = {
 	512, 448, 4, 3
 };
 
+// Lethal Enforcers (Euro)
+
+static struct BurnRomInfo snes_LethalenfeRomDesc[] = {
+	{ "Lethal Enforcers (E)(1993)(Konami).sfc", 2097152, 0xaa6ee29c, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lethalenfe)
+STD_ROM_FN(snes_Lethalenfe)
+
+struct BurnDriver BurnDrvsnes_Lethalenfe = {
+	"snes_lethalenfe", "snes_lethalenf", NULL, NULL, "1993",
+	"Lethal Enforcers (Euro)\0", NULL, "Konami", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES_JUSTIFIER, GBF_SHOOT, 0,
+	SNESGetZipName, snes_LethalenfeRomInfo, snes_LethalenfeRomName, NULL, NULL, NULL, NULL, SNESJustifierInputInfo, SNESJustifierDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Lethal Weapon (USA)
 
 static struct BurnRomInfo snes_LethalweapRomDesc[] = {
@@ -20055,6 +20415,25 @@ struct BurnDriver BurnDrvsnes_Lethalweap = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_LethalweapRomInfo, snes_LethalweapRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Lethal Weapon (Euro)
+
+static struct BurnRomInfo snes_LethalweapeRomDesc[] = {
+	{ "Lethal Weapon (E)(1992)(Ocean).sfc", 1048576, 0x13cd7fc1, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lethalweape)
+STD_ROM_FN(snes_Lethalweape)
+
+struct BurnDriver BurnDrvsnes_Lethalweape = {
+	"snes_lethalweape", "snes_lethalweap", NULL, NULL, "1992",
+	"Lethal Weapon (Euro)\0", NULL, "Ocean", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_LethalweapeRomInfo, snes_LethalweapeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20131,6 +20510,25 @@ struct BurnDriver BurnDrvsnes_Lionking = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_LionkingRomInfo, snes_LionkingRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Disney's The Lion King (Euro)
+
+static struct BurnRomInfo snes_LionkingeRomDesc[] = {
+	{ "Lion King, The (E)(1994)(Virgin Interactive).sfc", 3145728, 0x8a46ed37, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lionkinge)
+STD_ROM_FN(snes_Lionkinge)
+
+struct BurnDriver BurnDrvsnes_Lionkinge = {
+	"snes_lionkinge", "snes_lionking", NULL, NULL, "1994",
+	"Disney's The Lion King (Euro)\0", NULL, "Virgin Int. - Disney Int.", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_LionkingeRomInfo, snes_LionkingeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20287,6 +20685,25 @@ struct BurnDriver BurnDrvsnes_Lostviking = {
 	512, 448, 4, 3
 };
 
+// Lost Vikings, The (Euro)
+
+static struct BurnRomInfo snes_LostvikingeRomDesc[] = {
+	{ "Lost Vikings, The (E)(1992)(Interplay).sfc", 1048576, 0x66989491, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lostvikinge)
+STD_ROM_FN(snes_Lostvikinge)
+
+struct BurnDriver BurnDrvsnes_Lostvikinge = {
+	"snes_lostvikinge", "snes_lostviking", NULL, NULL, "1992",
+	"Lost Vikings, The (Euro)\0", NULL, "Interplay - Silicon & Synapse", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_PUZZLE, 0,
+	SNESGetZipName, snes_LostvikingeRomInfo, snes_LostvikingeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Lost Vikings, The (Euro, Spanish)
 
 static struct BurnRomInfo snes_LostvikingsRomDesc[] = {
@@ -20321,6 +20738,25 @@ struct BurnDriver BurnDrvsnes_Lostviking2 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_PUZZLE, 0,
 	SNESGetZipName, snes_Lostviking2RomInfo, snes_Lostviking2RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Lost Vikings II, The (Euro)
+
+static struct BurnRomInfo snes_Lostviking2eRomDesc[] = {
+	{ "Lost Vikings II, The (E)(1997)(Interplay).sfc", 1048576, 0x3c49a285, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Lostviking2e)
+STD_ROM_FN(snes_Lostviking2e)
+
+struct BurnDriver BurnDrvsnes_Lostviking2e = {
+	"snes_lostviking2e", "snes_lostviking2", NULL, NULL, "1997",
+	"Lost Vikings II, The (Euro)\0", NULL, "Interplay - Blizzard Entertainment", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_PUZZLE, 0,
+	SNESGetZipName, snes_Lostviking2eRomInfo, snes_Lostviking2eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20416,6 +20852,25 @@ struct BurnDriver BurnDrvsnes_Ltbball = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_LtbballRomInfo, snes_LtbballRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Looney Tunes Basketball (Euro)
+
+static struct BurnRomInfo snes_LtbballeRomDesc[] = {
+	{ "Looney Tunes Basketball (E)(1994)(Sunsoft).sfc", 2097152, 0xfdf2f478, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Ltbballe)
+STD_ROM_FN(snes_Ltbballe)
+
+struct BurnDriver BurnDrvsnes_Ltbballe = {
+	"snes_ltbballe", "snes_ltbball", NULL, NULL, "1994",
+	"Looney Tunes Basketball (Euro)\0", NULL, "Sunsoft", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_LtbballeRomInfo, snes_LtbballeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20705,6 +21160,25 @@ struct BurnDriver BurnDrvsnes_Madden94 = {
 	512, 448, 4, 3
 };
 
+// Madden NFL '94 (Euro)
+
+static struct BurnRomInfo snes_Madden94eRomDesc[] = {
+	{ "Madden NFL '94 (E)(1993)(Electronic Arts).sfc", 1048576, 0xa7d31544, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Madden94e)
+STD_ROM_FN(snes_Madden94e)
+
+struct BurnDriver BurnDrvsnes_Madden94e = {
+	"snes_madden94e", "snes_madden94", NULL, NULL, "1993",
+	"Madden NFL '94 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Madden94eRomInfo, snes_Madden94eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Madden NFL '95 (USA)
 
 static struct BurnRomInfo snes_Madden95RomDesc[] = {
@@ -20720,6 +21194,25 @@ struct BurnDriver BurnDrvsnes_Madden95 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Madden95RomInfo, snes_Madden95RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Madden NFL '95 (Euro)
+
+static struct BurnRomInfo snes_Madden95eRomDesc[] = {
+	{ "Madden NFL '95 (E)(1994)(Electronic Arts).sfc", 1048576, 0x4b0c7993, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Madden95e)
+STD_ROM_FN(snes_Madden95e)
+
+struct BurnDriver BurnDrvsnes_Madden95e = {
+	"snes_madden95e", "snes_madden95", NULL, NULL, "1994",
+	"Madden NFL '95 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Madden95eRomInfo, snes_Madden95eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -20838,6 +21331,25 @@ struct BurnDriver BurnDrvsnes_Magicboy = {
 	512, 448, 4, 3
 };
 
+// Magic Boy (Euro)
+
+static struct BurnRomInfo snes_MagicboyeRomDesc[] = {
+	{ "Magic Boy (E)(1993)(JVC Musical Industries).sfc", 524288, 0x7718c867, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Magicboye)
+STD_ROM_FN(snes_Magicboye)
+
+struct BurnDriver BurnDrvsnes_Magicboye = {
+	"snes_magicboye", "snes_magicboy", NULL, NULL, "1993",
+	"Magic Boy (Euro)\0", NULL, "JVC Musical Industries", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MagicboyeRomInfo, snes_MagicboyeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Magical Drop (Japan)
 
 static struct BurnRomInfo snes_MagicdropjRomDesc[] = {
@@ -20933,6 +21445,25 @@ struct BurnDriver BurnDrvsnes_Magicalquest = {
 	512, 448, 4, 3
 };
 
+// Magical Quest Starring Mickey Mouse, The (Euro)
+
+static struct BurnRomInfo snes_MagicalquesteRomDesc[] = {
+	{ "Magical Quest Starring Mickey Mouse, The (E)(1992)(Capcom).sfc", 1048576, 0xd5caf96a, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Magicalqueste)
+STD_ROM_FN(snes_Magicalqueste)
+
+struct BurnDriver BurnDrvsnes_Magicalqueste = {
+	"snes_magicalqueste", "snes_magicalquest", NULL, NULL, "1992",
+	"Magical Quest Starring Mickey Mouse, The (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MagicalquesteRomInfo, snes_MagicalquesteRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Magical Quest 3 Starring Mickey and Donald (Hack, English v1.5)
 // https://www.romhacking.net/translations/553/
 static struct BurnRomInfo snes_Magicquest3RomDesc[] = {
@@ -20986,6 +21517,25 @@ struct BurnDriver BurnDrvsnes_Magicsword = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_SCRFIGHT | GBF_PLATFORM, 0,
 	SNESGetZipName, snes_MagicswordRomInfo, snes_MagicswordRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Magic Sword (Euro)
+
+static struct BurnRomInfo snes_MagicswordeRomDesc[] = {
+	{ "Magic Sword (E)(1992)(Capcom).sfc", 1048576, 0x9e50509f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Magicsworde)
+STD_ROM_FN(snes_Magicsworde)
+
+struct BurnDriver BurnDrvsnes_Magicsworde = {
+	"snes_magicsworde", "snes_magicsword", NULL, NULL, "1992",
+	"Magic Sword (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_SCRFIGHT | GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MagicswordeRomInfo, snes_MagicswordeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -21788,6 +22338,25 @@ struct BurnDriver BurnDrvsnes_Megaman7 = {
 	512, 448, 4, 3
 };
 
+// Mega Man 7 (Euro)
+
+static struct BurnRomInfo snes_Megaman7eRomDesc[] = {
+	{ "Mega Man 7 (E)(1995)(Capcom).sfc", 2097152, 0x03579738, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Megaman7e)
+STD_ROM_FN(snes_Megaman7e)
+
+struct BurnDriver BurnDrvsnes_Megaman7e = {
+	"snes_megaman7e", "snes_megaman7", NULL, NULL, "1995",
+	"Mega Man 7 (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_Megaman7eRomInfo, snes_Megaman7eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Mega Man & Bass (Hack, English v1.1)
 // https://www.romhacking.net/translations/621/
 // https://www.romhacking.net/translations/6128/
@@ -21827,6 +22396,25 @@ struct BurnDriver BurnDrvsnes_Megamanx = {
 	512, 448, 4, 3
 };
 
+// Mega Man X (Euro)
+
+static struct BurnRomInfo snes_MegamanxeRomDesc[] = {
+	{ "Mega Man X (E)(1993)(Capcom).sfc", 1572864, 0x41965122, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Megamanxe)
+STD_ROM_FN(snes_Megamanxe)
+
+struct BurnDriver BurnDrvsnes_Megamanxe = {
+	"snes_megamanxe", "snes_megamanx", NULL, NULL, "1993",
+	"Mega Man X (Euro)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_MegamanxeRomInfo, snes_MegamanxeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Mega Man X2 (USA)
 
 static struct BurnRomInfo snes_Megamanx2RomDesc[] = {
@@ -21846,6 +22434,25 @@ struct BurnDriver BurnDrvsnes_Megamanx2 = {
 	512, 448, 4, 3
 };
 
+// Mega Man X2 (Euro)
+
+static struct BurnRomInfo snes_Megamanx2eRomDesc[] = {
+	{ "Mega Man X2 (E)(1994)(Capcom).sfc", 1572864, 0x3c49c39c, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Megamanx2e)
+STD_ROM_FN(snes_Megamanx2e)
+
+struct BurnDriver BurnDrvsnes_Megamanx2e = {
+	"snes_megamanx2e", "snes_megamanx2", NULL, NULL, "1994",
+	"Mega Man X2 (Euro)\0", "CX4 enhancement chip", "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_Megamanx2eRomInfo, snes_Megamanx2eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Mega Man X3 (USA)
 
 static struct BurnRomInfo snes_Megamanx3RomDesc[] = {
@@ -21861,6 +22468,25 @@ struct BurnDriver BurnDrvsnes_Megamanx3 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_Megamanx3RomInfo, snes_Megamanx3RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Mega Man X3 (Euro)
+
+static struct BurnRomInfo snes_Megamanx3eRomDesc[] = {
+	{ "Mega Man X3 (E)(1995)(Capcom).sfc", 2097152, 0xc504ddfd, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Megamanx3e)
+STD_ROM_FN(snes_Megamanx3e)
+
+struct BurnDriver BurnDrvsnes_Megamanx3e = {
+	"snes_megamanx3e", "snes_megamanx3", NULL, NULL, "1995",
+	"Mega Man X3 (Euro)\0", "CX4 enhancement chip", "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_Megamanx3eRomInfo, snes_Megamanx3eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23385,6 +24011,25 @@ struct BurnDriver BurnDrvsnes_Nbaallstars = {
 	512, 448, 4, 3
 };
 
+// NBA All-Star Challenge (Euro)
+
+static struct BurnRomInfo snes_NbaallstarseRomDesc[] = {
+	{ "NBA All-Star Challenge (E)(1992)(Ljn - Beam Software).sfc", 1048576, 0xb5693b18, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbaallstarse)
+STD_ROM_FN(snes_Nbaallstarse)
+
+struct BurnDriver BurnDrvsnes_Nbaallstarse = {
+	"snes_nbaallstarse", "snes_nbaallstars", NULL, NULL, "1992",
+	"NBA All-Star Challenge (Euro)\0", NULL, "Ljn - Beam Software", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NbaallstarseRomInfo, snes_NbaallstarseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NBA Give 'n Go (USA)
 
 static struct BurnRomInfo snes_NbagivengoRomDesc[] = {
@@ -23400,6 +24045,25 @@ struct BurnDriver BurnDrvsnes_Nbagivengo = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_NbagivengoRomInfo, snes_NbagivengoRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NBA Give 'n Go (Euro)
+
+static struct BurnRomInfo snes_NbagivengoeRomDesc[] = {
+	{ "NBA Give 'n Go (E)(1995)(Konami).sfc", 2097152, 0xe52b9af6, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbagivengoe)
+STD_ROM_FN(snes_Nbagivengoe)
+
+struct BurnDriver BurnDrvsnes_Nbagivengoe = {
+	"snes_nbagivengoe", "snes_nbagivengo", NULL, NULL, "1995",
+	"NBA Give 'n Go (Euro)\0", NULL, "Konami", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NbagivengoeRomInfo, snes_NbagivengoeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23423,6 +24087,25 @@ struct BurnDriver BurnDrvsnes_Nbahangtime = {
 	512, 448, 4, 3
 };
 
+// NBA Hang Time (Euro)
+
+static struct BurnRomInfo snes_NbahangtimeeRomDesc[] = {
+	{ "NBA Hang Time (E)(1996)(Midway).sfc", 3145728, 0x7bbfe8c0, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbahangtimee)
+STD_ROM_FN(snes_Nbahangtimee)
+
+struct BurnDriver BurnDrvsnes_Nbahangtimee = {
+	"snes_nbahangtimee", "snes_nbahangtime", NULL, NULL, "1996",
+	"NBA Hang Time (Euro)\0", NULL, "Midway", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NbahangtimeeRomInfo, snes_NbahangtimeeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NBA Jam (USA, Rev. 1)
 
 static struct BurnRomInfo snes_NbajamRomDesc[] = {
@@ -23438,6 +24121,25 @@ struct BurnDriver BurnDrvsnes_Nbajam = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_NbajamRomInfo, snes_NbajamRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NBA Jam (Euro, Rev. 1)
+
+static struct BurnRomInfo snes_NbajameRomDesc[] = {
+	{ "NBA Jam (E, Rev 1)(1993)(Acclaim Entertainment).sfc", 2097152, 0xfa9a577a, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbajame)
+STD_ROM_FN(snes_Nbajame)
+
+struct BurnDriver BurnDrvsnes_Nbajame = {
+	"snes_nbajame", "snes_nbajam", NULL, NULL, "1993",
+	"NBA Jam (Euro, Rev. 1)\0", NULL, "Acclaim Entertainment", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NbajameRomInfo, snes_NbajameRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23461,6 +24163,25 @@ struct BurnDriver BurnDrvsnes_Nbajamte = {
 	512, 448, 4, 3
 };
 
+// NBA Jam - Tournament Edition (Euro)
+
+static struct BurnRomInfo snes_NbajamteeRomDesc[] = {
+	{ "NBA Jam - Tournament Edition (E)(1994)(Acclaim Entertainment).sfc", 3145728, 0xd48c8041, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbajamtee)
+STD_ROM_FN(snes_Nbajamtee)
+
+struct BurnDriver BurnDrvsnes_Nbajamtee = {
+	"snes_nbajamtee", "snes_nbajamte", NULL, NULL, "1994",
+	"NBA Jam - Tournament Edition (Euro)\0", NULL, "Acclaim Entertainment", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NbajamteeRomInfo, snes_NbajamteeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NBA Live 95 (USA)
 
 static struct BurnRomInfo snes_Nbalive95RomDesc[] = {
@@ -23476,6 +24197,25 @@ struct BurnDriver BurnDrvsnes_Nbalive95 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Nbalive95RomInfo, snes_Nbalive95RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NBA Live 95 (Euro)
+
+static struct BurnRomInfo snes_Nbalive95eRomDesc[] = {
+	{ "NBA Live 95 (E)(1994)(Electronic Arts).sfc", 1572864, 0x56fdbb8c, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbalive95e)
+STD_ROM_FN(snes_Nbalive95e)
+
+struct BurnDriver BurnDrvsnes_Nbalive95e = {
+	"snes_nbalive95e", "snes_nbalive95", NULL, NULL, "1994",
+	"NBA Live 95 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nbalive95eRomInfo, snes_Nbalive95eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23499,6 +24239,25 @@ struct BurnDriver BurnDrvsnes_Nbalive96 = {
 	512, 448, 4, 3
 };
 
+// NBA Live 96 (Euro)
+
+static struct BurnRomInfo snes_Nbalive96eRomDesc[] = {
+	{ "NBA Live 96 (E)(1995)(Electronic Arts).sfc", 1572864, 0x17689c62, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbalive96e)
+STD_ROM_FN(snes_Nbalive96e)
+
+struct BurnDriver BurnDrvsnes_Nbalive96e = {
+	"snes_nbalive96e", "snes_nbalive96", NULL, NULL, "1995",
+	"NBA Live 96 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nbalive96eRomInfo, snes_Nbalive96eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NBA Live 97 (USA)
 
 static struct BurnRomInfo snes_Nbalive97RomDesc[] = {
@@ -23514,6 +24273,25 @@ struct BurnDriver BurnDrvsnes_Nbalive97 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Nbalive97RomInfo, snes_Nbalive97RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NBA Live 97 (Euro)
+
+static struct BurnRomInfo snes_Nbalive97eRomDesc[] = {
+	{ "NBA Live 97 (E)(1996)(Electronic Arts).sfc", 2097152, 0x2c680c99, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nbalive97e)
+STD_ROM_FN(snes_Nbalive97e)
+
+struct BurnDriver BurnDrvsnes_Nbalive97e = {
+	"snes_nbalive97e", "snes_nbalive97", NULL, NULL, "1996",
+	"NBA Live 97 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nbalive97eRomInfo, snes_Nbalive97eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23746,6 +24524,25 @@ struct BurnDriver BurnDrvsnes_Newmanhaasindycar = {
 	512, 448, 4, 3
 };
 
+// Newman Haas IndyCar featuring Nigel Mansell (Euro)
+
+static struct BurnRomInfo snes_NewmanhaasindycareRomDesc[] = {
+	{ "Newman Haas IndyCar featuring Nigel Mansell (E)(1994)(Acclaim Entertainment).sfc", 2097152, 0x595684af, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Newmanhaasindycare)
+STD_ROM_FN(snes_Newmanhaasindycare)
+
+struct BurnDriver BurnDrvsnes_Newmanhaasindycare = {
+	"snes_newmanhaasindycare", "snes_newmanhaasindycar", NULL, NULL, "1994",
+	"Newman Haas IndyCar featuring Nigel Mansell (Euro)\0", NULL, "Acclaim Entertainment", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_RACING, 0,
+	SNESGetZipName, snes_NewmanhaasindycareRomInfo, snes_NewmanhaasindycareRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NFL Football (USA)
 
 static struct BurnRomInfo snes_NflfbRomDesc[] = {
@@ -23761,6 +24558,25 @@ struct BurnDriver BurnDrvsnes_Nflfb = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_NflfbRomInfo, snes_NflfbRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NFL Football (Euro)
+
+static struct BurnRomInfo snes_NflfbeRomDesc[] = {
+	{ "NFL Football (E)(1993)(Konami).sfc", 1048576, 0x5ee9d7e4, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nflfbe)
+STD_ROM_FN(snes_Nflfbe)
+
+struct BurnDriver BurnDrvsnes_Nflfbe = {
+	"snes_nflfbe", "snes_nflfb", NULL, NULL, "1993",
+	"NFL Football (Euro)\0", NULL, "Konami", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NflfbeRomInfo, snes_NflfbeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23784,6 +24600,25 @@ struct BurnDriver BurnDrvsnes_Nflqc = {
 	512, 448, 4, 3
 };
 
+// NFL Quarterback Club (Euro)
+
+static struct BurnRomInfo snes_NflqceRomDesc[] = {
+	{ "NFL Quarterback Club (E)(1994)(Ljn).sfc", 3145728, 0x87bc35af, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nflqce)
+STD_ROM_FN(snes_Nflqce)
+
+struct BurnDriver BurnDrvsnes_Nflqce = {
+	"snes_nflqce", "snes_nflqc", NULL, NULL, "1994",
+	"NFL Quarterback Club (Euro)\0", NULL, "Ljn", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_NflqceRomInfo, snes_NflqceRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NFL Quarterback Club '96 (USA)
 
 static struct BurnRomInfo snes_Nflqc96RomDesc[] = {
@@ -23799,6 +24634,25 @@ struct BurnDriver BurnDrvsnes_Nflqc96 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 5, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Nflqc96RomInfo, snes_Nflqc96RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NFL Quarterback Club '96 (Euro)
+
+static struct BurnRomInfo snes_Nflqc96eRomDesc[] = {
+	{ "NFL Quarterback Club '96 (E)(1995)(Acclaim Entertainment).sfc", 3145728, 0x9708abe3, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nflqc96e)
+STD_ROM_FN(snes_Nflqc96e)
+
+struct BurnDriver BurnDrvsnes_Nflqc96e = {
+	"snes_nflqc96e", "snes_nflqc96", NULL, NULL, "1995",
+	"NFL Quarterback Club '96 (Euro)\0", NULL, "Acclaim Entertainment", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 5, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nflqc96eRomInfo, snes_Nflqc96eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23822,6 +24676,25 @@ struct BurnDriver BurnDrvsnes_Nhl94 = {
 	512, 448, 4, 3
 };
 
+// NHL '94 (Euro)
+
+static struct BurnRomInfo snes_Nhl94eRomDesc[] = {
+	{ "NHL '94 (E)(1993)(Electronic Arts).sfc", 1048576, 0x208fbf59, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nhl94e)
+STD_ROM_FN(snes_Nhl94e)
+
+struct BurnDriver BurnDrvsnes_Nhl94e = {
+	"snes_nhl94e", "snes_nhl94", NULL, NULL, "1993",
+	"NHL '94 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nhl94eRomInfo, snes_Nhl94eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NHL '95 (USA)
 
 static struct BurnRomInfo snes_Nhl95RomDesc[] = {
@@ -23837,6 +24710,25 @@ struct BurnDriver BurnDrvsnes_Nhl95 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Nhl95RomInfo, snes_Nhl95RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NHL '95 (Euro)
+
+static struct BurnRomInfo snes_Nhl95eRomDesc[] = {
+	{ "NHL '95 (E)(1994)(Electronic Arts).sfc", 1048576, 0x6930b67a, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nhl95e)
+STD_ROM_FN(snes_Nhl95e)
+
+struct BurnDriver BurnDrvsnes_Nhl95e = {
+	"snes_nhl95e", "snes_nhl95", NULL, NULL, "1994",
+	"NHL '95 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nhl95eRomInfo, snes_Nhl95eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23860,6 +24752,25 @@ struct BurnDriver BurnDrvsnes_Nhl96 = {
 	512, 448, 4, 3
 };
 
+// NHL '96 (Euro)
+
+static struct BurnRomInfo snes_Nhl96eRomDesc[] = {
+	{ "NHL '96 (E)(1995)(Electronic Arts).sfc", 1572864, 0x148b2734, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nhl96e)
+STD_ROM_FN(snes_Nhl96e)
+
+struct BurnDriver BurnDrvsnes_Nhl96e = {
+	"snes_nhl96e", "snes_nhl96", NULL, NULL, "1995",
+	"NHL '96 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nhl96eRomInfo, snes_Nhl96eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // NHL '97 (USA, Rev. 1)
 
 static struct BurnRomInfo snes_Nhl97RomDesc[] = {
@@ -23875,6 +24786,25 @@ struct BurnDriver BurnDrvsnes_Nhl97 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_Nhl97RomInfo, snes_Nhl97RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// NHL '97 (Euro, Rev. 1)
+
+static struct BurnRomInfo snes_Nhl97eRomDesc[] = {
+	{ "NHL '97 (E, Rev 1)(1996)(Electronic Arts).sfc", 1572864, 0x1a53b7a8, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nhl97e)
+STD_ROM_FN(snes_Nhl97e)
+
+struct BurnDriver BurnDrvsnes_Nhl97e = {
+	"snes_nhl97e", "snes_nhl97", NULL, NULL, "1996",
+	"NHL '97 (Euro, Rev. 1)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nhl97eRomInfo, snes_Nhl97eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -23936,6 +24866,25 @@ struct BurnDriver BurnDrvsnes_Nhlpahockey93 = {
 	512, 448, 4, 3
 };
 
+// NHLPA Hockey 93 (Euro)
+
+static struct BurnRomInfo snes_Nhlpahockey93eRomDesc[] = {
+	{ "NHLPA Hockey 93 (E)(1992)(Electronic Arts).sfc", 524288, 0xad70faf2, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nhlpahockey93e)
+STD_ROM_FN(snes_Nhlpahockey93e)
+
+struct BurnDriver BurnDrvsnes_Nhlpahockey93e = {
+	"snes_nhlpahockey93e", "snes_nhlpahockey93", NULL, NULL, "1992",
+	"NHLPA Hockey 93 (Euro)\0", NULL, "Electronic Arts", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_Nhlpahockey93eRomInfo, snes_Nhlpahockey93eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Nickelodeon GUTS (USA)
 
 static struct BurnRomInfo snes_NickelodeongutsRomDesc[] = {
@@ -23970,6 +24919,25 @@ struct BurnDriver BurnDrvsnes_Nigelmansell = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_RACING, 0,
 	SNESGetZipName, snes_NigelmansellRomInfo, snes_NigelmansellRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 478, 4, 3
+};
+
+// Nigel Mansell's World Championship Racing (Euro, Rev. 1)
+
+static struct BurnRomInfo snes_NigelmanselleRomDesc[] = {
+	{ "Nigel Mansell's World Championship Racing (E, Rev 1)(1993)(Gremlin Graphics).sfc", 1048576, 0xc65e0e5b, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Nigelmanselle)
+STD_ROM_FN(snes_Nigelmanselle)
+
+struct BurnDriver BurnDrvsnes_Nigelmanselle = {
+	"snes_nigelmanselle", "snes_nigelmansell", NULL, NULL, "1993",
+	"Nigel Mansell's World Championship Racing (Euro, Rev. 1)\0", NULL, "Gremlin Graphics", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_RACING, 0,
+	SNESGetZipName, snes_NigelmanselleRomInfo, snes_NigelmanselleRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 478, 4, 3
 };
@@ -24065,6 +25033,25 @@ struct BurnDriver BurnDrvsnes_Ninjawarriors = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_SCRFIGHT, 0,
 	SNESGetZipName, snes_NinjawarriorsRomInfo, snes_NinjawarriorsRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Ninjawarriors (Euro)
+
+static struct BurnRomInfo snes_NinjawarriorseRomDesc[] = {
+	{ "Ninjawarriors (E)(1995)(Titus - Natsume).sfc", 1572864, 0x733764d7, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Ninjawarriorse)
+STD_ROM_FN(snes_Ninjawarriorse)
+
+struct BurnDriver BurnDrvsnes_Ninjawarriorse = {
+	"snes_ninjawarriorse", "snes_ninjawarriors", NULL, NULL, "1995",
+	"Ninjawarriors (Euro)\0", NULL, "Titus - Natsume", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	SNESGetZipName, snes_NinjawarriorseRomInfo, snes_NinjawarriorseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -24346,10 +25333,29 @@ STD_ROM_FN(snes_Olympicsg)
 
 struct BurnDriver BurnDrvsnes_Olympicsg = {
 	"snes_olympicsg", NULL, NULL, NULL, "1996",
-	"Olympic Summer Games (USA)\0", NULL, "THQ Inc. - Black Pearl Software", "SNES / Super Famicom",
+	"Olympic Summer Games (USA)\0", NULL, "U.S. Gold - Black Pearl Software", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 4, HARDWARE_SNES, GBF_SPORTSMISC, 0,
 	SNESGetZipName, snes_OlympicsgRomInfo, snes_OlympicsgRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Olympic Summer Games (Euro)
+
+static struct BurnRomInfo snes_OlympicsgeRomDesc[] = {
+	{ "Olympic Summer Games (E)(1996)(Black Pearl).sfc", 2097152, 0x3ed21333, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Olympicsge)
+STD_ROM_FN(snes_Olympicsge)
+
+struct BurnDriver BurnDrvsnes_Olympicsge = {
+	"snes_olympicsge", "snes_olympicsg", NULL, NULL, "1996",
+	"Olympic Summer Games (Euro)\0", NULL, "U.S. Gold - Black Pearl Software", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_SNES, GBF_SPORTSMISC, 0,
+	SNESGetZipName, snes_OlympicsgeRomInfo, snes_OlympicsgeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -24373,6 +25379,25 @@ struct BurnDriver BurnDrvsnes_Ontheball = {
 	512, 448, 4, 3
 };
 
+// On the Ball (Euro)
+
+static struct BurnRomInfo snes_OntheballeRomDesc[] = {
+	{ "On the Ball (E)(1993)(Taito).sfc", 1048576, 0xb577815d, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Ontheballe)
+STD_ROM_FN(snes_Ontheballe)
+
+struct BurnDriver BurnDrvsnes_Ontheballe = {
+	"snes_ontheballe", "snes_ontheball", NULL, NULL, "1993",
+	"On the Ball (Euro)\0", "'SNES Mouse' compatible game (Set Dipswitches)", "Taito", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_ACTION, 0,
+	SNESGetZipName, snes_OntheballeRomInfo, snes_OntheballeRomName, NULL, NULL, NULL, NULL, SNESMouseInputInfo, SNESMouseDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Operation Logic Bomb - The Ultimate Search & Destroy (USA)
 
 static struct BurnRomInfo snes_OplogicbombRomDesc[] = {
@@ -24388,6 +25413,25 @@ struct BurnDriver BurnDrvsnes_Oplogicbomb = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_RUNGUN, 0,
 	SNESGetZipName, snes_OplogicbombRomInfo, snes_OplogicbombRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Operation Logic Bomb - The Ultimate Search & Destroy (Euro)
+
+static struct BurnRomInfo snes_OplogicbombeRomDesc[] = {
+	{ "Operation Logic Bomb - The Ultimate Search & Destroy (E)(1993)(Jaleco).sfc", 1048576, 0x0f956136, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Oplogicbombe)
+STD_ROM_FN(snes_Oplogicbombe)
+
+struct BurnDriver BurnDrvsnes_Oplogicbombe = {
+	"snes_oplogicbombe", "snes_oplogicbomb", NULL, NULL, "1993",
+	"Operation Logic Bomb - The Ultimate Search & Destroy (Euro)\0", NULL, "Jaleco", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_RUNGUN, 0,
+	SNESGetZipName, snes_OplogicbombeRomInfo, snes_OplogicbombeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -24601,6 +25645,25 @@ struct BurnDriver BurnDrvsnes_Outlander = {
 	512, 448, 4, 3
 };
 
+// Outlander (Euro)
+
+static struct BurnRomInfo snes_OutlandereRomDesc[] = {
+	{ "Outlander (E)(1992)(Mindscape).sfc", 1048576, 0x5822a4e1, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Outlandere)
+STD_ROM_FN(snes_Outlandere)
+
+struct BurnDriver BurnDrvsnes_Outlandere = {
+	"snes_outlandere", "snes_outlander", NULL, NULL, "1992",
+	"Outlander (Euro)\0", NULL, "Mindscape", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_RUNGUN | GBF_RACING, 0,
+	SNESGetZipName, snes_OutlandereRomInfo, snes_OutlandereRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Out to Lunch (USA)
 
 static struct BurnRomInfo snes_OutlunchRomDesc[] = {
@@ -24654,6 +25717,25 @@ struct BurnDriver BurnDrvsnes_Pacattack = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_PUZZLE, 0,
 	SNESGetZipName, snes_PacattackRomInfo, snes_PacattackRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Pac-Attack (Euro)
+
+static struct BurnRomInfo snes_PacattackeRomDesc[] = {
+	{ "Pac-Attack (E)(1993)(Namco).sfc", 524288, 0x79941300, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Pacattacke)
+STD_ROM_FN(snes_Pacattacke)
+
+struct BurnDriver BurnDrvsnes_Pacattacke = {
+	"snes_pacattacke", "snes_pacattack", NULL, NULL, "1993",
+	"Pac-Attack (Euro)\0", NULL, "Namco", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PUZZLE, 0,
+	SNESGetZipName, snes_PacattackeRomInfo, snes_PacattackeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -24867,6 +25949,25 @@ struct BurnDriver BurnDrvsnes_Pagemaster = {
 	512, 478, 4, 3
 };
 
+// Pagemaster, The (Euro)
+
+static struct BurnRomInfo snes_PagemastereRomDesc[] = {
+	{ "Pagemaster, The (E)(1994)(Fox Interactive - Probe).sfc", 2097152, 0x3c42a7b6, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Pagemastere)
+STD_ROM_FN(snes_Pagemastere)
+
+struct BurnDriver BurnDrvsnes_Pagemastere = {
+	"snes_pagemastere", "snes_pagemaster", NULL, NULL, "1994",
+	"Pagemaster, The (Euro)\0", NULL, "Fox Interactive - Probe", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_PagemastereRomInfo, snes_PagemastereRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 478, 4, 3
+};
+
 // Paladin's Quest (USA)
 
 static struct BurnRomInfo snes_PaladinsquestRomDesc[] = {
@@ -24965,7 +26066,7 @@ struct BurnDriver BurnDrvsnes_Panicworldte = {
 // Paperboy 2 (USA)
 
 static struct BurnRomInfo snes_Paperboy2RomDesc[] = {
-	{ "Paperboy 2 (U)(1991)(Minscape).sfc", 524288, 0xc85aa66a, BRF_ESS | BRF_PRG },
+	{ "Paperboy 2 (U)(1991)(Mindscape - Tengen).sfc", 524288, 0xc85aa66a, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Paperboy2)
@@ -24973,10 +26074,29 @@ STD_ROM_FN(snes_Paperboy2)
 
 struct BurnDriver BurnDrvsnes_Paperboy2 = {
 	"snes_paperboy2", NULL, NULL, NULL, "1991",
-	"Paperboy 2 (USA)\0", NULL, "Mindscape", "SNES / Super Famicom",
+	"Paperboy 2 (USA)\0", NULL, "Mindscape - Tengen", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_ACTION, 0,
 	SNESGetZipName, snes_Paperboy2RomInfo, snes_Paperboy2RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Paperboy 2 (Euro)
+
+static struct BurnRomInfo snes_Paperboy2eRomDesc[] = {
+	{ "Paperboy 2 (E)(1992)(Mindscape - Tengen).sfc", 524288, 0x282611cd, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Paperboy2e)
+STD_ROM_FN(snes_Paperboy2e)
+
+struct BurnDriver BurnDrvsnes_Paperboy2e = {
+	"snes_paperboy2e", "snes_paperboy2", NULL, NULL, "1992",
+	"Paperboy 2 (Euro)\0", NULL, "Mindscape - Tengen", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_ACTION, 0,
+	SNESGetZipName, snes_Paperboy2eRomInfo, snes_Paperboy2eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -25209,6 +26329,25 @@ struct BurnDriver BurnDrvsnes_Phalanx = {
 	512, 448, 4, 3
 };
 
+// Phalanx (Euro)
+
+static struct BurnRomInfo snes_PhalanxeRomDesc[] = {
+	{ "Phalanx (E)(1992)(Kemco - Zoom).sfc", 1048576, 0x1fd515d6, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Phalanxe)
+STD_ROM_FN(snes_Phalanxe)
+
+struct BurnDriver BurnDrvsnes_Phalanxe = {
+	"snes_phalanxe", "snes_phalanx", NULL, NULL, "1992",
+	"Phalanx (Euro)\0", NULL, "Kemco - Zoom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_HORSHOOT, 0,
+	SNESGetZipName, snes_PhalanxeRomInfo, snes_PhalanxeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Phantom 2040 (USA)
 
 static struct BurnRomInfo snes_Phantom2040RomDesc[] = {
@@ -25380,6 +26519,25 @@ struct BurnDriver BurnDrvsnes_Pinballdreams = {
 	512, 448, 4, 3
 };
 
+// Pinball Dreams (Euro)
+
+static struct BurnRomInfo snes_PinballdreamseRomDesc[] = {
+	{ "Pinball Dreams (E)(1993)(GameTek).sfc", 1048576, 0x4c922f36, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Pinballdreamse)
+STD_ROM_FN(snes_Pinballdreamse)
+
+struct BurnDriver BurnDrvsnes_Pinballdreamse = {
+	"snes_pinballdreamse", "snes_pinballdreams", NULL, NULL, "1993",
+	"Pinball Dreams (Euro)\0", NULL, "GameTek", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 8, HARDWARE_SNES, GBF_PINBALL, 0,
+	SNESGetZipName, snes_PinballdreamseRomInfo, snes_PinballdreamseRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Pinball Fantasies (USA)
 
 static struct BurnRomInfo snes_PinballfantaRomDesc[] = {
@@ -25395,6 +26553,25 @@ struct BurnDriver BurnDrvsnes_Pinballfanta = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 8, HARDWARE_SNES, GBF_PINBALL, 0,
 	SNESGetZipName, snes_PinballfantaRomInfo, snes_PinballfantaRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Pinball Fantasies (Euro)
+
+static struct BurnRomInfo snes_PinballfantaeRomDesc[] = {
+	{ "Pinball Fantasies (E)(1994)(GameTek).sfc", 1048576, 0x2a8f0e3b, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Pinballfantae)
+STD_ROM_FN(snes_Pinballfantae)
+
+struct BurnDriver BurnDrvsnes_Pinballfantae = {
+	"snes_pinballfantae", "snes_pinballfanta", NULL, NULL, "1994",
+	"Pinball Fantasies (Euro)\0", NULL, "GameTek", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 8, HARDWARE_SNES, GBF_PINBALL, 0,
+	SNESGetZipName, snes_PinballfantaeRomInfo, snes_PinballfantaeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -25433,6 +26610,25 @@ struct BurnDriver BurnDrvsnes_Pinkholly = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_PinkhollyRomInfo, snes_PinkhollyRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Pink Goes to Hollywood (Euro)
+
+static struct BurnRomInfo snes_PinkhollyeRomDesc[] = {
+	{ "Pink Goes to Hollywood (E)(1993)(TecMagik).sfc", 1048576, 0x94da9bd9, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Pinkhollye)
+STD_ROM_FN(snes_Pinkhollye)
+
+struct BurnDriver BurnDrvsnes_Pinkhollye = {
+	"snes_pinkhollye", "snes_pinkholly", NULL, NULL, "1993",
+	"Pink Goes to Hollywood (Euro)\0", NULL, "TecMagik", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_PinkhollyeRomInfo, snes_PinkhollyeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -27005,7 +28201,7 @@ STD_ROM_PICK(snes_Returndoubledragon)
 STD_ROM_FN(snes_Returndoubledragon)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragon = {
-	"snes_returndoubledragon", "snes_superdoubledragon", NULL, NULL, "1992",
+	"snes_returndoubledragon", "snes_returndoubledragonev", NULL, NULL, "1992",
 	"Return of Double Dragon (Japan)\0", NULL, "Technos Japan", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -27181,6 +28377,25 @@ struct BurnDriver BurnDrvsnes_Roadrunnerdeathrally = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_RoadrunnerdeathrallyRomInfo, snes_RoadrunnerdeathrallyRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Road Runner (Euro)
+
+static struct BurnRomInfo snes_RoadrunnereRomDesc[] = {
+	{ "Road Runner (E)(1992)(Sunsoft).sfc", 1048576, 0xbb2b8e2e, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Roadrunnere)
+STD_ROM_FN(snes_Roadrunnere)
+
+struct BurnDriver BurnDrvsnes_Roadrunnere = {
+	"snes_roadrunnere", "snes_roadrunnerdeathrally", NULL, NULL, "1992",
+	"Road Runner (Euro)\0", NULL, "Sunsoft", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_RoadrunnereRomInfo, snes_RoadrunnereRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -33942,10 +35157,10 @@ STD_ROM_PICK(snes_Superdoubledragon)
 STD_ROM_FN(snes_Superdoubledragon)
 
 struct BurnDriver BurnDrvsnes_Superdoubledragon = {
-	"snes_superdoubledragon", NULL, NULL, NULL, "1992",
+	"snes_superdoubledragon", "snes_returndoubledragonev", NULL, NULL, "1992",
 	"Super Double Dragon (USA)\0", NULL, "Tradewest - Technos", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
 	SNESGetZipName, snes_SuperdoubledragonRomInfo, snes_SuperdoubledragonRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
@@ -33961,7 +35176,7 @@ STD_ROM_PICK(snes_Superdoubledragone)
 STD_ROM_FN(snes_Superdoubledragone)
 
 struct BurnDriver BurnDrvsnes_Superdoubledragone = {
-	"snes_superdoubledragone", "snes_superdoubledragon", NULL, NULL, "1992",
+	"snes_superdoubledragone", "snes_returndoubledragonev", NULL, NULL, "1992",
 	"Super Double Dragon (Euro)\0", NULL, "Tradewest - Technos", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -39901,6 +41116,25 @@ struct BurnDriver BurnDrvsnes_Whu = {
 	512, 448, 4, 3
 };
 
+// World Heroes (Euro)
+
+static struct BurnRomInfo snes_WheRomDesc[] = {
+	{ "World Heroes (E)(1993)(Sunsoft).sfc", 2097152, 0xfbb6e0d8, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Whe)
+STD_ROM_FN(snes_Whe)
+
+struct BurnDriver BurnDrvsnes_Whe = {
+	"snes_whe", "snes_whu", NULL, NULL, "1993",
+	"World Heroes (Euro)\0", NULL, "Sunsoft", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_WheRomInfo, snes_WheRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // World League Soccer (USA)
 
 static struct BurnRomInfo snes_WorldlsoccerRomDesc[] = {
@@ -40376,6 +41610,25 @@ struct BurnDriver BurnDrvsnes_Wwfraw = {
 	512, 448, 4, 3
 };
 
+// WWF Raw (Euro)
+
+static struct BurnRomInfo snes_WwfraweRomDesc[] = {
+	{ "WWF Raw (E)(1994)(Ljn).sfc", 3145728, 0xa5a3bfbc, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Wwfrawe)
+STD_ROM_FN(snes_Wwfrawe)
+
+struct BurnDriver BurnDrvsnes_Wwfrawe = {
+	"snes_wwfrawe", "snes_wwfraw", NULL, NULL, "1994",
+	"WWF Raw (Euro)\0", NULL, "Ljn", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_SNES, GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_WwfraweRomInfo, snes_WwfraweRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // WWF Royal Rumble (USA)
 
 static struct BurnRomInfo snes_WwfrrRomDesc[] = {
@@ -40391,6 +41644,25 @@ struct BurnDriver BurnDrvsnes_Wwfrr = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_WwfrrRomInfo, snes_WwfrrRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// WWF Royal Rumble (Euro)
+
+static struct BurnRomInfo snes_WwfrreRomDesc[] = {
+	{ "WWF Royal Rumble (E)(1993)(Ljn).sfc", 2097152, 0xf9206a29, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Wwfrre)
+STD_ROM_FN(snes_Wwfrre)
+
+struct BurnDriver BurnDrvsnes_Wwfrre = {
+	"snes_wwfrre", "snes_wwfrr", NULL, NULL, "1993",
+	"WWF Royal Rumble (Euro)\0", NULL, "Ljn", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_WwfrreRomInfo, snes_WwfrreRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -40414,6 +41686,25 @@ struct BurnDriver BurnDrvsnes_Wwfswm = {
 	512, 448, 4, 3
 };
 
+// WWF Super WrestleMania (Euro)
+
+static struct BurnRomInfo snes_WwfswmeRomDesc[] = {
+	{ "WWF Super WrestleMania (E)(1991)(Ljn).sfc", 1048576, 0x17c027c4, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Wwfswme)
+STD_ROM_FN(snes_Wwfswme)
+
+struct BurnDriver BurnDrvsnes_Wwfswme = {
+	"snes_wwfswme", "snes_wwfswm", NULL, NULL, "1991",
+	"WWF Super WrestleMania (Euro)\0", NULL, "Ljn", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_WwfswmeRomInfo, snes_WwfswmeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // WWF WrestleMania - The Arcade Game (USA)
 
 static struct BurnRomInfo snes_WwfwrestlemaniaarcadeRomDesc[] = {
@@ -40429,6 +41720,25 @@ struct BurnDriver BurnDrvsnes_Wwfwrestlemaniaarcade = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_WwfwrestlemaniaarcadeRomInfo, snes_WwfwrestlemaniaarcadeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// WWF WrestleMania - The Arcade Game (Euro)
+
+static struct BurnRomInfo snes_WwfwrestlemaniaarcadeeRomDesc[] = {
+	{ "WWF WrestleMania - The Arcade Game (E)(1995)(Acclaim Ent. - Midway).sfc", 3145728, 0x6b8c5603, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Wwfwrestlemaniaarcadee)
+STD_ROM_FN(snes_Wwfwrestlemaniaarcadee)
+
+struct BurnDriver BurnDrvsnes_Wwfwrestlemaniaarcadee = {
+	"snes_wwfwrestlemaniaarcadee", "snes_wwfwrestlemaniaarcade", NULL, NULL, "1995",
+	"WWF WrestleMania - The Arcade Game (Euro)\0", NULL, "Acclaim Entertainment - Midway", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_WwfwrestlemaniaarcadeeRomInfo, snes_WwfwrestlemaniaarcadeeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -40486,6 +41796,25 @@ struct BurnDriver BurnDrvsnes_Xkaliber2097 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_PLATFORM | GBF_VSFIGHT, 0,
 	SNESGetZipName, snes_Xkaliber2097RomInfo, snes_Xkaliber2097RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// X-Kaliber 2097 (Euro)
+
+static struct BurnRomInfo snes_Xkaliber2097eRomDesc[] = {
+	{ "X-Kaliber 2097 (E)(1994)(Activision).sfc", 1048576, 0xd7e4732f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Xkaliber2097e)
+STD_ROM_FN(snes_Xkaliber2097e)
+
+struct BurnDriver BurnDrvsnes_Xkaliber2097e = {
+	"snes_xkaliber2097e", "snes_xkaliber2097", NULL, NULL, "1994",
+	"X-Kaliber 2097 (Euro)\0", NULL, "Activision", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PLATFORM | GBF_VSFIGHT, 0,
+	SNESGetZipName, snes_Xkaliber2097eRomInfo, snes_Xkaliber2097eRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -40626,7 +41955,7 @@ struct BurnDriver BurnDrvsnes_Yamyamj = {
 // Yogi Bear (USA)
 
 static struct BurnRomInfo snes_YogibearRomDesc[] = {
-	{ "Yogi Bear (U)(1994)(Cybersoft).sfc", 1048576, 0x7448d45c, BRF_ESS | BRF_PRG },
+	{ "Yogi Bear (U)(1994)(Cybersoft - Empire Software).sfc", 1048576, 0x7448d45c, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Yogibear)
@@ -40634,10 +41963,29 @@ STD_ROM_FN(snes_Yogibear)
 
 struct BurnDriver BurnDrvsnes_Yogibear = {
 	"snes_yogibear", NULL, NULL, NULL, "1994",
-	"Yogi Bear (USA)\0", NULL, "Cybersoft", "SNES / Super Famicom",
+	"Yogi Bear (USA)\0", NULL, "Cybersoft - Empire Software", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_YogibearRomInfo, snes_YogibearRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Yogi Bear (Euro)
+
+static struct BurnRomInfo snes_YogibeareRomDesc[] = {
+	{ "Yogi Bear (E)(1994)(Empire Software).sfc", 1048576, 0x31703471, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Yogibeare)
+STD_ROM_FN(snes_Yogibeare)
+
+struct BurnDriver BurnDrvsnes_Yogibeare = {
+	"snes_yogibeare", "snes_yogibear", NULL, NULL, "1994",
+	"Yogi Bear (Euro)\0", NULL, "Empire Software", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_YogibeareRomInfo, snes_YogibeareRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -40657,6 +42005,25 @@ struct BurnDriver BurnDrvsnes_Yoshicookie = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_PUZZLE, 0,
 	SNESGetZipName, snes_YoshicookieRomInfo, snes_YoshicookieRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 478, 4, 3
+};
+
+// Yoshi's Cookie (Euro)
+
+static struct BurnRomInfo snes_YoshicookieeRomDesc[] = {
+	{ "Yoshi's Cookie (E)(1993)(Bullet Proof Software).sfc", 524288, 0x5fb6e4e9, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Yoshicookiee)
+STD_ROM_FN(snes_Yoshicookiee)
+
+struct BurnDriver BurnDrvsnes_Yoshicookiee = {
+	"snes_yoshicookiee", "snes_yoshicookie", NULL, NULL, "1993",
+	"Yoshi's Cookie (Euro)\0", NULL, "Bullet Proof Software", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_PUZZLE, 0,
+	SNESGetZipName, snes_YoshicookieeRomInfo, snes_YoshicookieeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 478, 4, 3
 };
@@ -40771,6 +42138,25 @@ struct BurnDriver BurnDrvsnes_Youngmerlin = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_ACTION | GBF_ADV, 0,
 	SNESGetZipName, snes_YoungmerlinRomInfo, snes_YoungmerlinRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Young Merlin (Euro)
+
+static struct BurnRomInfo snes_YoungmerlineRomDesc[] = {
+	{ "Young Merlin (E)(1993)(Virgin Games).sfc", 2097152, 0xd5e69dc4, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Youngmerline)
+STD_ROM_FN(snes_Youngmerline)
+
+struct BurnDriver BurnDrvsnes_Youngmerline = {
+	"snes_youngmerline", "snes_youngmerlin", NULL, NULL, "1993",
+	"Young Merlin (Euro)\0", NULL, "Virgin Games", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_ACTION | GBF_ADV, 0,
+	SNESGetZipName, snes_YoungmerlineRomInfo, snes_YoungmerlineRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -40984,6 +42370,25 @@ struct BurnDriver BurnDrvsnes_Zerokami = {
 	512, 448, 4, 3
 };
 
+// Zero the Kamikaze Squirrel (Euro, Rev. 1)
+
+static struct BurnRomInfo snes_ZerokamieRomDesc[] = {
+	{ "Zero the Kamikaze Squirrel (E, Rev 1)(1994)(Sunsoft).sfc", 2097152, 0xf4830329, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Zerokamie)
+STD_ROM_FN(snes_Zerokamie)
+
+struct BurnDriver BurnDrvsnes_Zerokamie = {
+	"snes_zerokamie", "snes_zerokami", NULL, NULL, "1994",
+	"Zero the Kamikaze Squirrel (Euro, Rev. 1)\0", NULL, "Sunsoft", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
+	SNESGetZipName, snes_ZerokamieRomInfo, snes_ZerokamieRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Zig Zag Cat - Dachou Club mo Oosawagi da (Japan)
 
 static struct BurnRomInfo snes_ZigzagcatjRomDesc[] = {
@@ -41101,7 +42506,7 @@ struct BurnDriver BurnDrvsnes_Zoolj = {
 // Zoop (USA)
 
 static struct BurnRomInfo snes_ZoopRomDesc[] = {
-	{ "Zoop (1995)(Viacom New Media).sfc", 524288, 0x06f0e94c, BRF_ESS | BRF_PRG },
+	{ "Zoop (U)(1995)(Viacom New Media).sfc", 524288, 0x06f0e94c, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Zoop)
@@ -41113,6 +42518,25 @@ struct BurnDriver BurnDrvsnes_Zoop = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_SNES, GBF_PUZZLE, 0,
 	SNESGetZipName, snes_ZoopRomInfo, snes_ZoopRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Zoop (Euro)
+
+static struct BurnRomInfo snes_ZoopeRomDesc[] = {
+	{ "Zoop (E)(1995)(Viacom New Media).sfc", 524288, 0xafd45d27, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Zoope)
+STD_ROM_FN(snes_Zoope)
+
+struct BurnDriver BurnDrvsnes_Zoope = {
+	"snes_zoope", "snes_zoop", NULL, NULL, "1995",
+	"Zoop (Euro)\0", NULL, "Viacom New Media", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 1, HARDWARE_SNES, GBF_PUZZLE, 0,
+	SNESGetZipName, snes_ZoopeRomInfo, snes_ZoopeRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -43847,20 +45271,20 @@ struct BurnDriver BurnDrvsnes_Ranmahb2tefr = {
 	512, 448, 4, 3
 };
 
-// Return of Double Dragon (Evercade)
+// Return of Double Dragon (World) (Evercade)
 
 static struct BurnRomInfo snes_ReturndoubledragonevRomDesc[] = {
-	{ "Return of Double Dragon (Evercade)(2020)(Blaze Entertainment).sfc", 1572864, 0xbb2684c3, BRF_ESS | BRF_PRG },
+	{ "Return of Double Dragon (W)(Evercade)(1992-2020)(Technos Japan - Blaze Entertainment).sfc", 1572864, 0xbb2684c3, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Returndoubledragonev)
 STD_ROM_FN(snes_Returndoubledragonev)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonev = {
-	"snes_returndoubledragonev", "snes_superdoubledragon", NULL, NULL, "2020",
-	"Return of Double Dragon (Evercade)\0", NULL, "Blaze Entertainment", "SNES / Super Famicom",
+	"snes_returndoubledragonev", NULL, NULL, NULL, "1992-2020",
+	"Return of Double Dragon (World) (Evercade)\0", NULL, "Technos Japan - Blaze Entertainment", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
+	BDF_GAME_WORKING, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
 	SNESGetZipName, snes_ReturndoubledragonevRomInfo, snes_ReturndoubledragonevRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
@@ -43876,7 +45300,7 @@ STD_ROM_PICK(snes_Returndoubledragonfr)
 STD_ROM_FN(snes_Returndoubledragonfr)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonfr = {
-	"snes_returndoubledragonfr", "snes_superdoubledragon", NULL, NULL, "2023",
+	"snes_returndoubledragonfr", "snes_returndoubledragonev", NULL, NULL, "2023",
 	"Return of Double Dragon - FastROM (Hack, v2.0)\0", NULL, "kandowontu", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43895,7 +45319,7 @@ STD_ROM_PICK(snes_Returndoubledragonh8v4)
 STD_ROM_FN(snes_Returndoubledragonh8v4)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonh8v4 = {
-	"snes_returndoubledragonh8v4", "snes_superdoubledragon", NULL, NULL, "2009",
+	"snes_returndoubledragonh8v4", "snes_returndoubledragonev", NULL, NULL, "2009",
 	"Return of Double Dragon - Crime Syndicate (Hack, h8v4fullfix-11120953)\0", NULL, "SENSOR&KV&SATAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43914,7 +45338,7 @@ STD_ROM_PICK(snes_Returndoubledragonh9v8)
 STD_ROM_FN(snes_Returndoubledragonh9v8)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonh9v8 = {
-	"snes_returndoubledragonh9v8", "snes_superdoubledragon", NULL, NULL, "2009",
+	"snes_returndoubledragonh9v8", "snes_returndoubledragonev", NULL, NULL, "2009",
 	"Return of Double Dragon - Guarding Law (Hack, h9v8-30031023)\0", NULL, "SENSOR&SATAN&SAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43933,7 +45357,7 @@ STD_ROM_PICK(snes_Returndoubledragonkh)
 STD_ROM_FN(snes_Returndoubledragonkh)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonkh = {
-	"snes_returndoubledragonkh", "snes_superdoubledragon", NULL, NULL, "2017",
+	"snes_returndoubledragonkh", "snes_returndoubledragonev", NULL, NULL, "2017",
 	"Return of Double Dragon - Kencho hacks (Hack)\0", NULL, "Jesus Alonso Abad", "SNES / Super Famicom",
 	NULL, NULL, L"Jes\u00fas Alonso Abad", NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43952,7 +45376,7 @@ STD_ROM_PICK(snes_Returndoubledragonh10v2)
 STD_ROM_FN(snes_Returndoubledragonh10v2)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonh10v2 = {
-	"snes_returndoubledragonh10v2", "snes_superdoubledragon", NULL, NULL, "2010",
+	"snes_returndoubledragonh10v2", "snes_returndoubledragonev", NULL, NULL, "2010",
 	"Return of Double Dragon - Rise of Evil (Hack, h10v2-15121037)\0", NULL, "SENSOR&SATAN&SAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43971,7 +45395,7 @@ STD_ROM_PICK(snes_Returndoubledragonh10v3)
 STD_ROM_FN(snes_Returndoubledragonh10v3)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonh10v3 = {
-	"snes_returndoubledragonh10v3", "snes_superdoubledragon", NULL, NULL, "2010",
+	"snes_returndoubledragonh10v3", "snes_returndoubledragonev", NULL, NULL, "2010",
 	"Return of Double Dragon - Rise of Evil (Hack, h10v3-22081235)\0", NULL, "SENSOR&SATAN&SAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -43990,7 +45414,7 @@ STD_ROM_PICK(snes_Returndoubledragonh6v2)
 STD_ROM_FN(snes_Returndoubledragonh6v2)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonh6v2 = {
-	"snes_returndoubledragonh6v2", "snes_superdoubledragon", NULL, NULL, "2009",
+	"snes_returndoubledragonh6v2", "snes_returndoubledragonev", NULL, NULL, "2009",
 	"Return of Double Dragon - Threat from the East (Hack, h6v2-0808096)\0", NULL, "SENSOR&KV&SATAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
@@ -44009,7 +45433,7 @@ STD_ROM_PICK(snes_Returndoubledragonh7)
 STD_ROM_FN(snes_Returndoubledragonh7)
 
 struct BurnDriver BurnDrvsnes_Returndoubledragonte7 = {
-	"snes_returndoubledragonh7", "snes_superdoubledragon", NULL, NULL, "2009",
+	"snes_returndoubledragonh7", "snes_returndoubledragonev", NULL, NULL, "2009",
 	"Return of Double Dragon - Threat from the East (Hack, h7hard-1909096)\0", NULL, "SENSOR&KV&SATAN", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_SNES, GBF_SCRFIGHT, 0,
