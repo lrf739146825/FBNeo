@@ -3747,6 +3747,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="colocodx" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Coloco DX (HB)</description>
+		<year>2025</year>
+		<manufacturer>Mega Cat Studios, Tuxedo GameDevs</manufacturer>
+		<rom name="Coloco DX (2025)(MegaCat Studio, Tuxedo GameDevs).bin" size="8388608" crc="48074b89"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="columns1" cloneof="columns" romof="columns" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Columns (World)</description>
 		<year>1990</year>
@@ -4829,7 +4838,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="devinpii" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Devi and Pii (Japan) (Mega Drive Mini 2 Edition)</description>
+		<description>Devi &amp; Pii (Japan) (Mega Drive Mini 2 Edition)</description>
 		<year>2022</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Devi and Pii (2022)(Mega Drive Mini 2 Ed.).bin" size="524288" crc="425e9e31"/>
@@ -7049,7 +7058,7 @@
 		<description>Flash Point (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="flash point (hack, spanish) ( prototype).bin" size="131072" crc="cedef845"/>
+		<rom name="Flash Point T-Spa (2019)(Wave).bin" size="131072" crc="cedef845"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7292,7 +7301,7 @@
 		<description>Fun Car Rally (Prototype) (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="fun car rally (hack, spanish) (prototype).bin" size="1048576" crc="d53f67c7"/>
+		<rom name="Fun Car Rally T-Spa (Proto)(2019)(Wave).bin" size="1048576" crc="d53f67c7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7369,7 +7378,7 @@
 		<description>Gadget Twins (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="gadget twins (hack, spanish).bin" size="1048576" crc="b5e21dcb"/>
+		<rom name="Gadget Twins T-Spa (2019)(Wave).bin" size="1048576" crc="b5e21dcb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7998,7 +8007,7 @@
 		<description>Granada (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="granada (hack, spanish).bin" size="524288" crc="491b0a71"/>
+		<rom name="Granada T-Spa (2018)(Wave).bin" size="524288" crc="491b0a71"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8065,7 +8074,7 @@
 		<description>Great Circus Mystery Starring Mickey &amp; Minnie, The (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the great circus mystery starring mickey &amp; minnie (hack, spanish).bin" size="2097152" crc="58cd70c5"/>
+		<rom name="Great Circus Mystery Starring Mickey &amp; Minnie, The T-Spa (2018)(Wave).bin" size="2097152" crc="58cd70c5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8118,20 +8127,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="greendogs" cloneof="greendog" romof="greendog" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Greendog - The Beached Surfer Dude! (Hack, Spanish)</description>
-		<year>2017</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="greendog - the beached surfer dude! (hack, spanish).bin" size="524288" crc="e0abaaeb"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="greendog" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Greendog: The Beached Surfer Dude! (Euro, USA)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Greendog - The Beached Surfer Dude! (Euro, USA)(1992)(Sega).bin" size="524288" crc="c4820a03"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="greendogs" cloneof="greendog" romof="greendog" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Greendog: The Beached Surfer Dude! (Hack, Spanish)</description>
+		<year>2017</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Greendog - The Beached Surfer Dude! T-Spa (2017)(Wave).bin" size="524288" crc="e0abaaeb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8175,7 +8184,7 @@
 		<description>Growl (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="growl (hack, spanish).bin" size="524288" crc="95308c0a"/>
+		<rom name="Growl T-Spa (2018)(Wave).bin" size="524288" crc="95308c0a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8233,7 +8242,7 @@
 		<description>Gunstar Heroes (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="gunstar heroes (hack, spanish).bin" size="1048576" crc="f296f1c6"/>
+		<rom name="Gunstar Heroes T-Spa (2017)(Wave).bin" size="1048576" crc="f296f1c6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8356,7 +8365,7 @@
 		<description>Haunting Starring Polterguy (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="haunting starring polterguy (hack, spanish).bin" size="2097152" crc="2b8e0550"/>
+		<rom name="Haunting Starring Polterguy T-Spa (2020)(Wave).bin" size="2097152" crc="2b8e0550"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8765,7 +8774,7 @@
 		<description>Immortal, The (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the immortal (hack, spanish).bin" size="1048576" crc="2b411d4a"/>
+		<rom name="Immortal, The T-Spa (2020)(Wave).bin" size="1048576" crc="2b411d4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9345,7 +9354,7 @@
 		<description>Joe &amp; Mac (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="joe &amp; mac (hack, spanish).bin" size="1048576" crc="aa290350"/>
+		<rom name="Joe &amp; Mac T-Spa (2019)(Wave).bin" size="1048576" crc="aa290350"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9469,7 +9478,7 @@
 		<description>Junction (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="junction (hack, spanish).bin" size="524288" crc="8d2cce27"/>
+		<rom name="Junction T-Spa (2018)(Wave).bin" size="524288" crc="8d2cce27"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9527,7 +9536,7 @@
 		<description>Jurassic Park (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="jurassic park (hack, spanish).bin" size="2097152" crc="53d3dd70"/>
+		<rom name="Jurassic Park T-Spa (2018)(Wave).bin" size="2097152" crc="53d3dd70"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9568,7 +9577,7 @@
 		<description>Jurassic Park - Rampage Edition (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="jurassic park - rampage edition (hack, spanish).bin" size="2097152" crc="954efbf2"/>
+		<rom name="Jurassic Park - Rampage Edition T-Spa (2018)(Wave).bin" size="2097152" crc="954efbf2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9602,7 +9611,7 @@
 		<description>Justice League Task Force (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="justice league task force (hack, spanish).bin" size="3145728" crc="09844391"/>
+		<rom name="Justice League Task Force T-Spa (2019)(Wave).bin" size="3145728" crc="09844391"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9640,15 +9649,15 @@
 	</game>
 	<game name="kagekis" cloneof="kageki" romof="kageki" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Ka-Ge-Ki - Fists of Steel (Hack, Spanish)</description>
+		<description>Ka-Ge-Ki: Fists of Steel (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="ka-ge-ki - fists of steel (hack, spanish).bin" size="1048576" crc="7978b1e4"/>
+		<rom name="Ka-Ge-Ki - Fists of Steel T-Spa (2019)(Wave).bin" size="1048576" crc="7978b1e4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="kageki" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Ka-Ge-Ki - Fists of Steel (USA)</description>
+		<description>Ka-Ge-Ki: Fists of Steel (USA)</description>
 		<year>1991</year>
 		<manufacturer>Sage's Creation</manufacturer>
 		<rom name="Ka-Ge-Ki - Fists of Steel (USA)(1991)(Sage's Creation).bin" size="1048576" crc="effc0fa6"/>
@@ -9701,7 +9710,7 @@
 		<description>Kid Chameleon (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="kid chameleon (hack, spanish).bin" size="1048576" crc="4871962f"/>
+		<rom name="Kid Chameleon T-Spa (2018)(Wave).bin" size="1048576" crc="4871962f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9818,20 +9827,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kingsbtys" cloneof="kingsbty" romof="kingsbty" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>King's Bounty - The Conqueror's Quest (Hack, Spanish)</description>
-		<year>2020</year>
-		<manufacturer>Wave</manufacturer>
-		<rom name="King's Bounty - The Conqueror's Quest T-Spa (2020)(Wave).bin" size="524288" crc="06f79c46"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="kingsbty" sourcefile="megadrive/d_megadrive.cpp">
 		<description>King's Bounty: The Conqueror's Quest (Euro, USA)</description>
 		<year>1991</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="King's Bounty - The Conqueror's Quest (Euro, USA)(1991)(Electronic Arts).bin" size="524288" crc="aa68a92e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kingsbtys" cloneof="kingsbty" romof="kingsbty" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>King's Bounty: The Conqueror's Quest (Hack, Spanish)</description>
+		<year>2020</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="King's Bounty - The Conqueror's Quest T-Spa (2020)(Wave).bin" size="524288" crc="06f79c46"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10512,7 +10521,7 @@
 		<description>Lion King, The (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
-		<rom name="the lion king (hack, spanish).bin" size="3145728" crc="5c8cf251"/>
+		<rom name="Lion King, The T-Spa (2018)(Wave).bin" size="3145728" crc="5c8cf251"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10607,7 +10616,7 @@
 		<description>Lost Vikings, The (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>jackic</manufacturer>
-		<rom name="the lost vikings (hack, spanish).bin" size="1048576" crc="8b88b1e8"/>
+		<rom name="Lost Vikings T-Spa (2020)(jackic).bin" size="1048576" crc="8b88b1e8"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11335,8 +11344,17 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megamanswred" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Mega Man The Sequel Wars - Episode Red (HB, v1.1)</description>
+		<year>2023</year>
+		<manufacturer>Woodfrog</manufacturer>
+		<rom name="Mega Man The Sequel Wars - Episode Red v1.1 (2023)(Woodfrog).bin" size="4194304" crc="9c6433ce"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megamaneu" cloneof="megaman" romof="megaman" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mega Man - The Wily Wars (Euro)</description>
+		<description>Mega Man: The Wily Wars (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="mega man - the wily wars (euro).bin" size="2097152" crc="dcf6e8b2"/>
@@ -11345,7 +11363,7 @@
 	</game>
 	<game name="megamans" cloneof="megaman" romof="megaman" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mega Man - The Wily Wars (Hack, Spanish)</description>
+		<description>Mega Man: The Wily Wars (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Mega Man - The Wily Wars T-Spa (2018)(Wave).bin" size="2097152" crc="c6c7f5b1"/>
@@ -11353,7 +11371,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="megamanrb" cloneof="megaman" romof="megaman" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mega Man - The Wily Wars (Retro-bit)</description>
+		<description>Mega Man: The Wily Wars (Retro-bit)</description>
 		<year>2021</year>
 		<manufacturer>Capcom - Retro-bit</manufacturer>
 		<rom name="Mega Man - The Wily Wars (2021)(Retro-bit).bin" size="2097152" crc="0831020b"/>
@@ -11361,7 +11379,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="megaman" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mega Man - The Wily Wars (USA)</description>
+		<description>Mega Man: The Wily Wars (USA)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="mega man - the wily wars (usa).bin" size="2097152" crc="0cd405db"/>
@@ -11370,19 +11388,10 @@
 	</game>
 	<game name="megamanfix" cloneof="megaman" romof="megaman" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mega Man - The Wily Wars Fixer Upper (Hack, v1.0.5)</description>
+		<description>Mega Man: The Wily Wars - Fixer Upper (Hack, v1.0.5)</description>
 		<year>2022</year>
 		<manufacturer>Josephine Lithius</manufacturer>
-		<rom name="Mega Man - The Wily Wars Fixer Upper (2022) (Josephine Lithius).bin" size="2097152" crc="82b377f4"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="megamanswred" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Homebrew</comment>
-		<description>Mega Man The Sequel Wars - Episode Red (HB, v1.1)</description>
-		<year>2023</year>
-		<manufacturer>Woodfrog</manufacturer>
-		<rom name="Mega Man The Sequel Wars - Episode Red v1.1 (2023)(Woodfrog).bin" size="4194304" crc="9c6433ce"/>
+		<rom name="Mega Man - The Wily Wars - Fixer Upper (2022)(Josephine Lithius).bin" size="2097152" crc="82b377f4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13726,6 +13735,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pacman" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Pac-Man (World)</description>
+		<year>2018</year>
+		<manufacturer>BNEI</manufacturer>
+		<rom name="Pac-Man (2018)(BNEI).bin" size="262144" crc="0e75af51"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pacman2c" cloneof="pacman2" romof="pacman2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Pac-Man 2: The New Adventures (Hack, Chinese v1.1)</description>
@@ -13748,14 +13765,6 @@
 		<year>1991</year>
 		<manufacturer>Tengen</manufacturer>
 		<rom name="Pac-Mania (Euro, USA)(1991)(Tengen).bin" size="262144" crc="74bba09b"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="pacman" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Pac-Man</description>
-		<year>2018</year>
-		<manufacturer>BNEI</manufacturer>
-		<rom name="Pac-Man (2018)(BNEI).bin" size="262144" crc="0e75af51"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

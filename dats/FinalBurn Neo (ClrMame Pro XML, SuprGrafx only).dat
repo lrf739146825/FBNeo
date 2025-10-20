@@ -66,7 +66,7 @@
 		<description>Daimakaimura - Improvement Hack (Hack, SGX)</description>
 		<year>2024</year>
 		<manufacturer>Upsilandre</manufacturer>
-		<rom name="Daimakaimura Improvement Hack (2024)(Upsilandre).pce" size="1048576" crc="460d8892"/>
+		<rom name="Daimakaimura Improvement Hack (2024)(Upsilandre).pce" size="1048576" crc="86c295a0"/>
 		<video type="raster" orientation="horizontal" width="352" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
