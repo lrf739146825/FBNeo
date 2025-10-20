@@ -1309,6 +1309,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="barkleye" cloneof="barkley" romof="barkley" sourcefile="snes/d_snes.cpp">
+		<description>Barkley Shut Up and Jam! (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Accolade</manufacturer>
+		<rom name="Barkley Shut Up and Jam! (E)(1994)(Accolade).sfc" size="1572864" crc="29fbd13d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="barkley" sourcefile="snes/d_snes.cpp">
 		<description>Barkley Shut Up and Jam! (USA)</description>
 		<year>1994</year>
@@ -4229,6 +4237,14 @@
 		<year>1994</year>
 		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
 		<rom name="Disney's The Jungle Book (U)(1994)(Virgin Int. - Disney Int.).sfc" size="2097152" crc="3511efb3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lionkinge" cloneof="lionking" romof="lionking" sourcefile="snes/d_snes.cpp">
+		<description>Disney's The Lion King (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
+		<rom name="Lion King, The (E)(1994)(Virgin Interactive).sfc" size="3145728" crc="8a46ed37"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7515,6 +7531,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hurricanese" cloneof="hurricanes" romof="hurricanes" sourcefile="snes/d_snes.cpp">
+		<description>Hurricanes (Euro)</description>
+		<year>1994</year>
+		<manufacturer>U.S. Gold</manufacturer>
+		<rom name="Hurricanes (E)(1994)(U.S. Gold).sfc" size="1048576" crc="de5f9d73"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hurricanes" sourcefile="snes/d_snes.cpp">
 		<description>Hurricanes (USA)</description>
 		<year>1994</year>
@@ -7663,6 +7687,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="incantatione" cloneof="incantation" romof="incantation" sourcefile="snes/d_snes.cpp">
+		<description>Incantation (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Incantation (E)(1996)(Titus).sfc" size="524288" crc="34fad701"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="incantation" sourcefile="snes/d_snes.cpp">
 		<description>Incantation (USA)</description>
 		<year>1996</year>
@@ -7777,6 +7809,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="isse" cloneof="iss" romof="iss" sourcefile="snes/d_snes.cpp">
+		<description>International Superstar Soccer (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="International Superstar Soccer (E)(1995)(Konami).sfc" size="1048576" crc="6cd568a9"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="iss" sourcefile="snes/d_snes.cpp">
 		<description>International Superstar Soccer (USA)</description>
 		<year>1995</year>
@@ -7785,11 +7825,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="issdxe" cloneof="issdx" romof="issdx" sourcefile="snes/d_snes.cpp">
+		<description>International Superstar Soccer Deluxe (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="International Superstar Soccer Deluxe (E)(1995)(Konami).sfc" size="2097152" crc="cba724ba"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="issdx" sourcefile="snes/d_snes.cpp">
 		<description>International Superstar Soccer Deluxe (USA)</description>
 		<year>1995</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="International Superstar Soccer Deluxe (U)(1995)(Konami).sfc" size="2097152" crc="0a20e602"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="inttennistoure" cloneof="inttennistour" romof="inttennistour" sourcefile="snes/d_snes.cpp">
+		<description>International Tennis Tour (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Loriciel</manufacturer>
+		<rom name="International Tennis Tour (E)(1993)(Loriciel).sfc" size="1048576" crc="6bbcea4f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7883,12 +7939,29 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lordoftheringse" cloneof="lordoftherings" romof="lordoftherings" sourcefile="snes/d_snes.cpp">
+		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
+		<description>J.R.R. Tolkien's The Lord of the Rings - Volume One (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Interplay</manufacturer>
+		<rom name="J.R.R. Tolkien's The Lord of the Rings - Volume One (E)(1994)(Interplay).sfc" size="1048576" crc="247c17d3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lordoftherings" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
 		<description>J.R.R. Tolkien's The Lord of the Rings - Volume One (USA)</description>
 		<year>1994</year>
 		<manufacturer>Interplay</manufacturer>
 		<rom name="J.R.R. Tolkien's The Lord of the Rings - Volume One (U)(1994)(Interplay).sfc" size="1048576" crc="cd2150c8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jacknicklausgolfe" cloneof="jacknicklausgolf" romof="jacknicklausgolf" sourcefile="snes/d_snes.cpp">
+		<description>Jack Nicklaus Golf (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Tradewest</manufacturer>
+		<rom name="Jack Nicklaus Golf (E)(1991)(Tradewest).sfc" size="524288" crc="a7f0652f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7900,12 +7973,28 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jbondjre" cloneof="jbondjr" romof="jbondjr" sourcefile="snes/d_snes.cpp">
+		<description>James Bond Jr. (Euro)</description>
+		<year>1992</year>
+		<manufacturer>THQ Inc.</manufacturer>
+		<rom name="James Bond Jr. (E)(1992)(THQ).sfc" size="524288" crc="7414a4c2"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="jbondjr" sourcefile="snes/d_snes.cpp">
 		<description>James Bond Jr. (USA)</description>
 		<year>1992</year>
 		<manufacturer>THQ Inc.</manufacturer>
 		<rom name="James Bond Jr. (U)(1992)(THQ).sfc" size="524288" crc="69c2f850"/>
 		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jamespond3" sourcefile="snes/d_snes.cpp">
+		<description>James Pond 3: Operation Starfi5h (Euro)</description>
+		<year>1995</year>
+		<manufacturer>U.S. Gold - Millennium</manufacturer>
+		<rom name="James Pond 3 - Operation Starfi5h (E)(1995)(U.S. Gold - Millennium).sfc" size="2097152" crc="9d3e313f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="jpcrazysports" cloneof="supaquagames" romof="supaquagames" sourcefile="snes/d_snes.cpp">
@@ -8097,6 +8186,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="johnmaddenfootball93e" cloneof="johnmaddenfootball93" romof="johnmaddenfootball93" sourcefile="snes/d_snes.cpp">
+		<description>John Madden Football '93 (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="John Madden Football '93 (E)(1992)(Electronic Arts).sfc" size="1048576" crc="b07b2a60"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="johnmaddenfootball93" sourcefile="snes/d_snes.cpp">
 		<description>John Madden Football '93 (USA, Rev. 1)</description>
 		<year>1992</year>
@@ -8185,6 +8282,14 @@
 		<year>1994</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Jungle no Ouja Taa-chan - Sekaimanyuu Daikakutou no Maki (J)(1994)(Bandai).sfc" size="1048576" crc="eec6a20f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="junglestrikee" cloneof="junglestrike" romof="junglestrike" sourcefile="snes/d_snes.cpp">
+		<description>Jungle Strike (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Jungle Strike (E)(1995)(Electronic Arts).sfc" size="2097152" crc="fb770320"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8580,6 +8685,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kingdragonse" cloneof="kingdragons" romof="kingdragons" sourcefile="snes/d_snes.cpp">
+		<description>King of Dragons, The (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="King of Dragons, The (E)(1994)(Capcom).sfc" size="2097152" crc="78f0820b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kingdragons" sourcefile="snes/d_snes.cpp">
 		<description>King of Dragons, The (USA)</description>
 		<year>1994</year>
@@ -8601,6 +8714,14 @@
 		<year>2000</year>
 		<manufacturer>DVS Electronic</manufacturer>
 		<rom name="King of Fighters 2000, The (U)(Unl)(2000)(DVS Electronic).sfc" size="3145728" crc="ee339f08"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kotme" cloneof="kotm" romof="kotm" sourcefile="snes/d_snes.cpp">
+		<description>King of the Monsters (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Takara Co.</manufacturer>
+		<rom name="King of the Monsters (E)(1992)(Takara).sfc" size="1048576" crc="799b1787"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8700,6 +8821,14 @@
 		<year>1996</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Kishin Douji Zenki - Tenchi Meidou (J)(1996)(Hudson Soft).sfc" size="2097152" crc="d910990c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightsrounde" cloneof="knightsround" romof="knightsround" sourcefile="snes/d_snes.cpp">
+		<description>Knights of the Round (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Knights of the Round (E)(1994)(Capcom).sfc" size="1572864" crc="9b40082d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8846,6 +8975,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lamborghinie" cloneof="lamborghini" romof="lamborghini" sourcefile="snes/d_snes.cpp">
+		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
+		<description>Lamborghini American Challenge (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Titus</manufacturer>
+		<rom name="Lamborghini American Challenge (E)(1993)(Titus).sfc" size="524288" crc="263178b2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lamborghini" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
 		<description>Lamborghini American Challenge (USA)</description>
@@ -8887,6 +9025,14 @@
 		<year>1993</year>
 		<manufacturer>HAL Laboratory</manufacturer>
 		<rom name="Las Vegas Dream in Golden Paradise (J)(1993)(HAL Laboratory).sfc" size="1048576" crc="a6bb5a7a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lastactheroe" cloneof="lastacthero" romof="lastacthero" sourcefile="snes/d_snes.cpp">
+		<description>Last Action Hero (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Sony Imagesoft</manufacturer>
+		<rom name="Last Action Hero (E)(1993)(Sony Imagesoft).sfc" size="1048576" crc="91633d95"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8933,11 +9079,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lawnmowermane" cloneof="lawnmowerman" romof="lawnmowerman" sourcefile="snes/d_snes.cpp">
+		<description>Lawnmower Man, The (Euro)</description>
+		<year>1993</year>
+		<manufacturer>The Sales Curve</manufacturer>
+		<rom name="Lawnmower Man, The (E)(1993)(The Sales Curve).sfc" size="1048576" crc="1a97c479"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lawnmowerman" sourcefile="snes/d_snes.cpp">
 		<description>Lawnmower Man, The (USA)</description>
 		<year>1993</year>
-		<manufacturer>THQ</manufacturer>
-		<rom name="Lawnmower Man, The (U)(1993)(THQ).sfc" size="1048576" crc="2736b607"/>
+		<manufacturer>The Sales Curve</manufacturer>
+		<rom name="Lawnmower Man, The (U)(1993)(The Sales Curve).sfc" size="1048576" crc="2736b607"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9144,11 +9298,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lethalenfe" cloneof="lethalenf" romof="lethalenf" sourcefile="snes/d_snes.cpp">
+		<description>Lethal Enforcers (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Lethal Enforcers (E)(1993)(Konami).sfc" size="2097152" crc="aa6ee29c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lethalenf" sourcefile="snes/d_snes.cpp">
 		<description>Lethal Enforcers (USA)</description>
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Lethal Enforcers (U)(1993)(Konami).sfc" size="2097152" crc="5aff8cd5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lethalweape" cloneof="lethalweap" romof="lethalweap" sourcefile="snes/d_snes.cpp">
+		<description>Lethal Weapon (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Lethal Weapon (E)(1992)(Ocean).sfc" size="1048576" crc="13cd7fc1"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9299,11 +9469,35 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ltbballe" cloneof="ltbball" romof="ltbball" sourcefile="snes/d_snes.cpp">
+		<description>Looney Tunes Basketball (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Looney Tunes Basketball (E)(1994)(Sunsoft).sfc" size="2097152" crc="fdf2f478"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lostviking2e" cloneof="lostviking2" romof="lostviking2" sourcefile="snes/d_snes.cpp">
+		<description>Lost Vikings II, The (Euro)</description>
+		<year>1997</year>
+		<manufacturer>Interplay - Blizzard Entertainment</manufacturer>
+		<rom name="Lost Vikings II, The (E)(1997)(Interplay).sfc" size="1048576" crc="3c49a285"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lostviking2" sourcefile="snes/d_snes.cpp">
 		<description>Lost Vikings II, The (USA)</description>
 		<year>1997</year>
 		<manufacturer>Interplay - Blizzard Entertainment</manufacturer>
 		<rom name="Lost Vikings II, The (U)(1997)(Interplay).sfc" size="1048576" crc="3aa01dbd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lostvikinge" cloneof="lostviking" romof="lostviking" sourcefile="snes/d_snes.cpp">
+		<description>Lost Vikings, The (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Interplay - Silicon &amp; Synapse</manufacturer>
+		<rom name="Lost Vikings, The (E)(1992)(Interplay).sfc" size="1048576" crc="66989491"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9433,11 +9627,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="madden94e" cloneof="madden94" romof="madden94" sourcefile="snes/d_snes.cpp">
+		<description>Madden NFL '94 (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Madden NFL '94 (E)(1993)(Electronic Arts).sfc" size="1048576" crc="a7d31544"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="madden94" sourcefile="snes/d_snes.cpp">
 		<description>Madden NFL '94 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Madden NFL '94 (U)(1993)(Electronic Arts).sfc" size="1048576" crc="8bed5914"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="madden95e" cloneof="madden95" romof="madden95" sourcefile="snes/d_snes.cpp">
+		<description>Madden NFL '95 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Madden NFL '95 (E)(1994)(Electronic Arts).sfc" size="1048576" crc="4b0c7993"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9507,6 +9717,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="magicboye" cloneof="magicboy" romof="magicboy" sourcefile="snes/d_snes.cpp">
+		<description>Magic Boy (Euro)</description>
+		<year>1993</year>
+		<manufacturer>JVC Musical Industries</manufacturer>
+		<rom name="Magic Boy (E)(1993)(JVC Musical Industries).sfc" size="524288" crc="7718c867"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="magicboy" sourcefile="snes/d_snes.cpp">
 		<description>Magic Boy (USA)</description>
 		<year>1993</year>
@@ -9521,6 +9739,14 @@
 		<year>2022</year>
 		<manufacturer>mteam</manufacturer>
 		<rom name="Magic Knight Rayearth T-Eng v1.02 (2022)(mteam).sfc" size="1572864" crc="50cc4c9c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="magicsworde" cloneof="magicsword" romof="magicsword" sourcefile="snes/d_snes.cpp">
+		<description>Magic Sword (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Magic Sword (E)(1992)(Capcom).sfc" size="1048576" crc="9e50509f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9580,6 +9806,14 @@
 		<year>2020</year>
 		<manufacturer>RPGONE</manufacturer>
 		<rom name="Magical Quest 3 Starring Mickey and Donald T-Eng v1.5 (2020)(RPGONE).sfc" size="2621440" crc="7ec8f9a5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="magicalqueste" cloneof="magicalquest" romof="magicalquest" sourcefile="snes/d_snes.cpp">
+		<description>Magical Quest Starring Mickey Mouse, The (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Magical Quest Starring Mickey Mouse, The (E)(1992)(Capcom).sfc" size="1048576" crc="d5caf96a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9989,6 +10223,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megaman7e" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<description>Mega Man 7 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Mega Man 7 (E)(1995)(Capcom).sfc" size="2097152" crc="03579738"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megaman7" sourcefile="snes/d_snes.cpp">
 		<description>Mega Man 7 (USA)</description>
 		<year>1995</year>
@@ -10003,6 +10245,14 @@
 		<year>2025</year>
 		<manufacturer>SCD</manufacturer>
 		<rom name="Mega Man 7 Restoration v1.2 (2025)(SCD).sfc" size="3145728" crc="f7ecba9d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanxe" cloneof="megamanx" romof="megamanx" sourcefile="snes/d_snes.cpp">
+		<description>Mega Man X (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Mega Man X (E)(1993)(Capcom).sfc" size="1572864" crc="41965122"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10032,12 +10282,30 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megamanx2e" cloneof="megamanx2" romof="megamanx2" sourcefile="snes/d_snes.cpp">
+		<comment>CX4 enhancement chip</comment>
+		<description>Mega Man X2 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Mega Man X2 (E)(1994)(Capcom).sfc" size="1572864" crc="3c49c39c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megamanx2" sourcefile="snes/d_snes.cpp">
 		<comment>CX4 enhancement chip</comment>
 		<description>Mega Man X2 (USA)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man X2 (U)(1994)(Capcom).sfc" size="1572864" crc="947b0355"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanx3e" cloneof="megamanx3" romof="megamanx3" sourcefile="snes/d_snes.cpp">
+		<comment>CX4 enhancement chip</comment>
+		<description>Mega Man X3 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Mega Man X3 (E)(1995)(Capcom).sfc" size="2097152" crc="c504ddfd"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10789,11 +11057,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nbaallstarse" cloneof="nbaallstars" romof="nbaallstars" sourcefile="snes/d_snes.cpp">
+		<description>NBA All-Star Challenge (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Ljn - Beam Software</manufacturer>
+		<rom name="NBA All-Star Challenge (E)(1992)(Ljn - Beam Software).sfc" size="1048576" crc="b5693b18"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nbaallstars" sourcefile="snes/d_snes.cpp">
 		<description>NBA All-Star Challenge (USA)</description>
 		<year>1992</year>
 		<manufacturer>Ljn - Beam Software</manufacturer>
 		<rom name="NBA All-Star Challenge (U)(1992)(Ljn - Beam Software).sfc" size="1048576" crc="a905a565"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nbagivengoe" cloneof="nbagivengo" romof="nbagivengo" sourcefile="snes/d_snes.cpp">
+		<description>NBA Give 'n Go (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="NBA Give 'n Go (E)(1995)(Konami).sfc" size="2097152" crc="e52b9af6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10805,11 +11089,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nbahangtimee" cloneof="nbahangtime" romof="nbahangtime" sourcefile="snes/d_snes.cpp">
+		<description>NBA Hang Time (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Midway</manufacturer>
+		<rom name="NBA Hang Time (E)(1996)(Midway).sfc" size="3145728" crc="7bbfe8c0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nbahangtime" sourcefile="snes/d_snes.cpp">
 		<description>NBA Hang Time (USA)</description>
 		<year>1996</year>
 		<manufacturer>Midway</manufacturer>
 		<rom name="NBA Hang Time (U)(1996)(Midway).sfc" size="3145728" crc="262ce76b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nbajame" cloneof="nbajam" romof="nbajam" sourcefile="snes/d_snes.cpp">
+		<description>NBA Jam (Euro, Rev. 1)</description>
+		<year>1993</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="NBA Jam (E, Rev 1)(1993)(Acclaim Entertainment).sfc" size="2097152" crc="fa9a577a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10821,11 +11121,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nbajamtee" cloneof="nbajamte" romof="nbajamte" sourcefile="snes/d_snes.cpp">
+		<description>NBA Jam - Tournament Edition (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="NBA Jam - Tournament Edition (E)(1994)(Acclaim Entertainment).sfc" size="3145728" crc="d48c8041"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nbajamte" sourcefile="snes/d_snes.cpp">
 		<description>NBA Jam - Tournament Edition (USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="NBA Jam - Tournament Edition (U)(1994)(Acclaim Entertainment).sfc" size="3145728" crc="1fbc1ddb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nbalive95e" cloneof="nbalive95" romof="nbalive95" sourcefile="snes/d_snes.cpp">
+		<description>NBA Live 95 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NBA Live 95 (E)(1994)(Electronic Arts).sfc" size="1572864" crc="56fdbb8c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10837,11 +11153,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nbalive96e" cloneof="nbalive96" romof="nbalive96" sourcefile="snes/d_snes.cpp">
+		<description>NBA Live 96 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NBA Live 96 (E)(1995)(Electronic Arts).sfc" size="1572864" crc="17689c62"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nbalive96" sourcefile="snes/d_snes.cpp">
 		<description>NBA Live 96 (USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="NBA Live 96 (U)(1995)(Electronic Arts).sfc" size="1572864" crc="042a6495"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nbalive97e" cloneof="nbalive97" romof="nbalive97" sourcefile="snes/d_snes.cpp">
+		<description>NBA Live 97 (Euro)</description>
+		<year>1996</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NBA Live 97 (E)(1996)(Electronic Arts).sfc" size="2097152" crc="2c680c99"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10970,11 +11302,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="newmanhaasindycare" cloneof="newmanhaasindycar" romof="newmanhaasindycar" sourcefile="snes/d_snes.cpp">
+		<description>Newman Haas IndyCar featuring Nigel Mansell (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="Newman Haas IndyCar featuring Nigel Mansell (E)(1994)(Acclaim Entertainment).sfc" size="2097152" crc="595684af"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="newmanhaasindycar" sourcefile="snes/d_snes.cpp">
 		<description>Newman Haas IndyCar featuring Nigel Mansell (USA)</description>
 		<year>1994</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="Newman Haas IndyCar featuring Nigel Mansell (U)(1994)(Acclaim Entertainment).sfc" size="2097152" crc="a0f80c02"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nflfbe" cloneof="nflfb" romof="nflfb" sourcefile="snes/d_snes.cpp">
+		<description>NFL Football (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="NFL Football (E)(1993)(Konami).sfc" size="1048576" crc="5ee9d7e4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10986,11 +11334,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nflqc96e" cloneof="nflqc96" romof="nflqc96" sourcefile="snes/d_snes.cpp">
+		<description>NFL Quarterback Club '96 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Acclaim Entertainment</manufacturer>
+		<rom name="NFL Quarterback Club '96 (E)(1995)(Acclaim Entertainment).sfc" size="3145728" crc="9708abe3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nflqc96" sourcefile="snes/d_snes.cpp">
 		<description>NFL Quarterback Club '96 (USA)</description>
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="NFL Quarterback Club '96 (U)(1995)(Acclaim Entertainment).sfc" size="3145728" crc="e557689f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nflqce" cloneof="nflqc" romof="nflqc" sourcefile="snes/d_snes.cpp">
+		<description>NFL Quarterback Club (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Ljn</manufacturer>
+		<rom name="NFL Quarterback Club (E)(1994)(Ljn).sfc" size="3145728" crc="87bc35af"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11002,11 +11366,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nhl94e" cloneof="nhl94" romof="nhl94" sourcefile="snes/d_snes.cpp">
+		<description>NHL '94 (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NHL '94 (E)(1993)(Electronic Arts).sfc" size="1048576" crc="208fbf59"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nhl94" sourcefile="snes/d_snes.cpp">
 		<description>NHL '94 (USA)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="NHL '94 (U)(1993)(Electronic Arts).sfc" size="1048576" crc="42212a77"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nhl95e" cloneof="nhl95" romof="nhl95" sourcefile="snes/d_snes.cpp">
+		<description>NHL '95 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NHL '95 (E)(1994)(Electronic Arts).sfc" size="1048576" crc="6930b67a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11018,11 +11398,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nhl96e" cloneof="nhl96" romof="nhl96" sourcefile="snes/d_snes.cpp">
+		<description>NHL '96 (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NHL '96 (E)(1995)(Electronic Arts).sfc" size="1572864" crc="148b2734"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nhl96" sourcefile="snes/d_snes.cpp">
 		<description>NHL '96 (USA)</description>
 		<year>1995</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="NHL '96 (U)(1995)(Electronic Arts).sfc" size="1572864" crc="b6c6e7f3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nhl97e" cloneof="nhl97" romof="nhl97" sourcefile="snes/d_snes.cpp">
+		<description>NHL '97 (Euro, Rev. 1)</description>
+		<year>1996</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NHL '97 (E, Rev 1)(1996)(Electronic Arts).sfc" size="1572864" crc="1a53b7a8"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11050,6 +11446,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nhlpahockey93e" cloneof="nhlpahockey93" romof="nhlpahockey93" sourcefile="snes/d_snes.cpp">
+		<description>NHLPA Hockey 93 (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="NHLPA Hockey 93 (E)(1992)(Electronic Arts).sfc" size="524288" crc="ad70faf2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nhlpahockey93" sourcefile="snes/d_snes.cpp">
 		<description>NHLPA Hockey 93 (USA, Rev. 1)</description>
 		<year>1992</year>
@@ -11064,6 +11468,14 @@
 		<manufacturer>Viacom New Media</manufacturer>
 		<rom name="Nickelodeon GUTS (U)(1994)(Viacom New Media).sfc" size="1572864" crc="233fec8c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nigelmanselle" cloneof="nigelmansell" romof="nigelmansell" sourcefile="snes/d_snes.cpp">
+		<description>Nigel Mansell's World Championship Racing (Euro, Rev. 1)</description>
+		<year>1993</year>
+		<manufacturer>Gremlin Graphics</manufacturer>
+		<rom name="Nigel Mansell's World Championship Racing (E, Rev 1)(1993)(Gremlin Graphics).sfc" size="1048576" crc="c65e0e5b"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="nigelmansell" sourcefile="snes/d_snes.cpp">
@@ -11105,6 +11517,14 @@
 		<year>1995</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Ninja Ryuuken Den Tomoe (J)(1995)(Tecmo).sfc" size="1572864" crc="5995cf46"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ninjawarriorse" cloneof="ninjawarriors" romof="ninjawarriors" sourcefile="snes/d_snes.cpp">
+		<description>Ninjawarriors (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Titus - Natsume</manufacturer>
+		<rom name="Ninjawarriors (E)(1995)(Titus - Natsume).sfc" size="1572864" crc="733764d7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11257,10 +11677,18 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="olympicsge" cloneof="olympicsg" romof="olympicsg" sourcefile="snes/d_snes.cpp">
+		<description>Olympic Summer Games (Euro)</description>
+		<year>1996</year>
+		<manufacturer>U.S. Gold - Black Pearl Software</manufacturer>
+		<rom name="Olympic Summer Games (E)(1996)(Black Pearl).sfc" size="2097152" crc="3ed21333"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="olympicsg" sourcefile="snes/d_snes.cpp">
 		<description>Olympic Summer Games (USA)</description>
 		<year>1996</year>
-		<manufacturer>THQ Inc. - Black Pearl Software</manufacturer>
+		<manufacturer>U.S. Gold - Black Pearl Software</manufacturer>
 		<rom name="Olympic Summer Games (U)(1996)(Black Pearl).sfc" size="2097152" crc="6b882d11"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -11271,6 +11699,15 @@
 		<year>1997</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Omega Brazil '97 (U)(Unl)(1997).sfc" size="1310720" crc="53f41be4"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ontheballe" cloneof="ontheball" romof="ontheball" sourcefile="snes/d_snes.cpp">
+		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
+		<description>On the Ball (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Taito</manufacturer>
+		<rom name="On the Ball (E)(1993)(Taito).sfc" size="1048576" crc="b577815d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11306,6 +11743,14 @@
 		<year>1994</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Operation Europe - Path to Victory 1939-45 (U)(1994)(Koei).sfc" size="1310720" crc="f84c2bb6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="oplogicbombe" cloneof="oplogicbomb" romof="oplogicbomb" sourcefile="snes/d_snes.cpp">
+		<description>Operation Logic Bomb - The Ultimate Search &amp; Destroy (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Operation Logic Bomb - The Ultimate Search &amp; Destroy (E)(1993)(Jaleco).sfc" size="1048576" crc="0f956136"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11416,6 +11861,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="outlandere" cloneof="outlander" romof="outlander" sourcefile="snes/d_snes.cpp">
+		<description>Outlander (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Mindscape</manufacturer>
+		<rom name="Outlander (E)(1992)(Mindscape).sfc" size="1048576" crc="5822a4e1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="outlander" sourcefile="snes/d_snes.cpp">
 		<description>Outlander (USA)</description>
 		<year>1992</year>
@@ -11437,6 +11890,14 @@
 		<year>1995</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="P.T.O. II - Pacific Theater of Operations (U)(1995)(Koei).sfc" size="3145728" crc="a614d268"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pacattacke" cloneof="pacattack" romof="pacattack" sourcefile="snes/d_snes.cpp">
+		<description>Pac-Attack (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Namco</manufacturer>
+		<rom name="Pac-Attack (E)(1993)(Namco).sfc" size="524288" crc="79941300"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11512,6 +11973,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pagemastere" cloneof="pagemaster" romof="pagemaster" sourcefile="snes/d_snes.cpp">
+		<description>Pagemaster, The (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Fox Interactive - Probe</manufacturer>
+		<rom name="Pagemaster, The (E)(1994)(Fox Interactive - Probe).sfc" size="2097152" crc="3c42a7b6"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pagemaster" sourcefile="snes/d_snes.cpp">
 		<description>Pagemaster, The (USA)</description>
 		<year>1994</year>
@@ -11562,11 +12031,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="paperboy2e" cloneof="paperboy2" romof="paperboy2" sourcefile="snes/d_snes.cpp">
+		<description>Paperboy 2 (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Mindscape - Tengen</manufacturer>
+		<rom name="Paperboy 2 (E)(1992)(Mindscape - Tengen).sfc" size="524288" crc="282611cd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="paperboy2" sourcefile="snes/d_snes.cpp">
 		<description>Paperboy 2 (USA)</description>
 		<year>1991</year>
-		<manufacturer>Mindscape</manufacturer>
-		<rom name="Paperboy 2 (U)(1991)(Minscape).sfc" size="524288" crc="c85aa66a"/>
+		<manufacturer>Mindscape - Tengen</manufacturer>
+		<rom name="Paperboy 2 (U)(1991)(Mindscape - Tengen).sfc" size="524288" crc="c85aa66a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11673,6 +12150,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="phalanxe" cloneof="phalanx" romof="phalanx" sourcefile="snes/d_snes.cpp">
+		<description>Phalanx (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Kemco - Zoom</manufacturer>
+		<rom name="Phalanx (E)(1992)(Kemco - Zoom).sfc" size="1048576" crc="1fd515d6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="phalanx" sourcefile="snes/d_snes.cpp">
 		<description>Phalanx (USA)</description>
 		<year>1992</year>
@@ -11752,11 +12237,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pinballdreamse" cloneof="pinballdreams" romof="pinballdreams" sourcefile="snes/d_snes.cpp">
+		<description>Pinball Dreams (Euro)</description>
+		<year>1993</year>
+		<manufacturer>GameTek</manufacturer>
+		<rom name="Pinball Dreams (E)(1993)(GameTek).sfc" size="1048576" crc="4c922f36"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pinballdreams" sourcefile="snes/d_snes.cpp">
 		<description>Pinball Dreams (USA)</description>
 		<year>1993</year>
 		<manufacturer>GameTek</manufacturer>
 		<rom name="Pinball Dreams (U)(1993)(GameTek).sfc" size="1048576" crc="81107ce2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pinballfantae" cloneof="pinballfanta" romof="pinballfanta" sourcefile="snes/d_snes.cpp">
+		<description>Pinball Fantasies (Euro)</description>
+		<year>1994</year>
+		<manufacturer>GameTek</manufacturer>
+		<rom name="Pinball Fantasies (E)(1994)(GameTek).sfc" size="1048576" crc="2a8f0e3b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11773,6 +12274,14 @@
 		<year>1994</year>
 		<manufacturer>Coconuts Japan</manufacturer>
 		<rom name="Pinball Pinball (J)(1994)(Coconuts Japan).sfc" size="1048576" crc="9bf79a7d"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pinkhollye" cloneof="pinkholly" romof="pinkholly" sourcefile="snes/d_snes.cpp">
+		<description>Pink Goes to Hollywood (Euro)</description>
+		<year>1993</year>
+		<manufacturer>TecMagik</manufacturer>
+		<rom name="Pink Goes to Hollywood (E)(1993)(TecMagik).sfc" size="1048576" crc="94da9bd9"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12664,15 +13173,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="460" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonev" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
-		<description>Return of Double Dragon (Evercade)</description>
-		<year>2020</year>
-		<manufacturer>Blaze Entertainment</manufacturer>
-		<rom name="Return of Double Dragon (Evercade)(2020)(Blaze Entertainment).sfc" size="1572864" crc="bb2684c3"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="returndoubledragon" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragon" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<description>Return of Double Dragon (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Technos Japan</manufacturer>
@@ -12680,7 +13181,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh8v4" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonev" sourcefile="snes/d_snes.cpp">
+		<description>Return of Double Dragon (World) (Evercade)</description>
+		<year>1992-2020</year>
+		<manufacturer>Technos Japan - Blaze Entertainment</manufacturer>
+		<rom name="Return of Double Dragon (W)(Evercade)(1992-2020)(Technos Japan - Blaze Entertainment).sfc" size="1572864" crc="bb2684c3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="returndoubledragonh8v4" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Crime Syndicate (Hack, h8v4fullfix-11120953)</description>
 		<year>2009</year>
@@ -12689,7 +13198,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonfr" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonfr" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - FastROM (Hack, v2.0)</description>
 		<year>2023</year>
@@ -12698,7 +13207,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh9v8" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonh9v8" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Guarding Law (Hack, h9v8-30031023)</description>
 		<year>2009</year>
@@ -12707,7 +13216,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonkh" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonkh" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Kencho hacks (Hack)</description>
 		<year>2017</year>
@@ -12716,7 +13225,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh10v2" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonh10v2" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Rise of Evil (Hack, h10v2-15121037)</description>
 		<year>2010</year>
@@ -12725,7 +13234,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh10v3" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonh10v3" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Rise of Evil (Hack, h10v3-22081235)</description>
 		<year>2010</year>
@@ -12734,7 +13243,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh6v2" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonh6v2" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Threat from the East (Hack, h6v2-0808096)</description>
 		<year>2009</year>
@@ -12743,7 +13252,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="returndoubledragonh7" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="returndoubledragonh7" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Return of Double Dragon - Threat from the East (Hack, h7hard-1909096)</description>
 		<year>2009</year>
@@ -12829,6 +13338,14 @@
 		<year>1992</year>
 		<manufacturer>THQ Inc.</manufacturer>
 		<rom name="Road Riot 4WD (U)(1992)(THQ).sfc" size="524288" crc="20367643"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roadrunnere" cloneof="roadrunnerdeathrally" romof="roadrunnerdeathrally" sourcefile="snes/d_snes.cpp">
+		<description>Road Runner (Euro)</description>
+		<year>1992</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Road Runner (E)(1992)(Sunsoft).sfc" size="1048576" crc="bb2b8e2e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15527,7 +16044,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="superdoubledragone" cloneof="superdoubledragon" romof="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="superdoubledragone" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<description>Super Double Dragon (Euro)</description>
 		<year>1992</year>
 		<manufacturer>Tradewest - Technos</manufacturer>
@@ -15535,7 +16052,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="superdoubledragon" sourcefile="snes/d_snes.cpp">
+	<game name="superdoubledragon" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
 		<description>Super Double Dragon (USA)</description>
 		<year>1992</year>
 		<manufacturer>Tradewest - Technos</manufacturer>
@@ -19005,6 +19522,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="whe" cloneof="whu" romof="whu" sourcefile="snes/d_snes.cpp">
+		<description>World Heroes (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="World Heroes (E)(1993)(Sunsoft).sfc" size="2097152" crc="fbb6e0d8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="whj" cloneof="whu" romof="whu" sourcefile="snes/d_snes.cpp">
 		<description>World Heroes (Japan)</description>
 		<year>1993</year>
@@ -19094,11 +19619,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wwfrawe" cloneof="wwfraw" romof="wwfraw" sourcefile="snes/d_snes.cpp">
+		<description>WWF Raw (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Ljn</manufacturer>
+		<rom name="WWF Raw (E)(1994)(Ljn).sfc" size="3145728" crc="a5a3bfbc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wwfraw" sourcefile="snes/d_snes.cpp">
 		<description>WWF Raw (USA)</description>
 		<year>1994</year>
 		<manufacturer>Ljn</manufacturer>
 		<rom name="WWF Raw (U)(1994)(Ljn).sfc" size="3145728" crc="3e0038bf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wwfrre" cloneof="wwfrr" romof="wwfrr" sourcefile="snes/d_snes.cpp">
+		<description>WWF Royal Rumble (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Ljn</manufacturer>
+		<rom name="WWF Royal Rumble (E)(1993)(Ljn).sfc" size="2097152" crc="f9206a29"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19110,11 +19651,27 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wwfswme" cloneof="wwfswm" romof="wwfswm" sourcefile="snes/d_snes.cpp">
+		<description>WWF Super WrestleMania (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Ljn</manufacturer>
+		<rom name="WWF Super WrestleMania (E)(1991)(Ljn).sfc" size="1048576" crc="17c027c4"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wwfswm" sourcefile="snes/d_snes.cpp">
 		<description>WWF Super WrestleMania (USA)</description>
 		<year>1991</year>
 		<manufacturer>Ljn</manufacturer>
 		<rom name="WWF Super WrestleMania (U)(1991)(Ljn).sfc" size="1048576" crc="676cb638"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wwfwrestlemaniaarcadee" cloneof="wwfwrestlemaniaarcade" romof="wwfwrestlemaniaarcade" sourcefile="snes/d_snes.cpp">
+		<description>WWF WrestleMania - The Arcade Game (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Acclaim Entertainment - Midway</manufacturer>
+		<rom name="WWF WrestleMania - The Arcade Game (E)(1995)(Acclaim Ent. - Midway).sfc" size="3145728" crc="6b8c5603"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19141,6 +19698,14 @@
 		<year>1992</year>
 		<manufacturer>Kemco</manufacturer>
 		<rom name="X Zone (U, J)(1992)(Kemco).sfc" size="524288" crc="99627bb0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="xkaliber2097e" cloneof="xkaliber2097" romof="xkaliber2097" sourcefile="snes/d_snes.cpp">
+		<description>X-Kaliber 2097 (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Activision</manufacturer>
+		<rom name="X-Kaliber 2097 (E)(1994)(Activision).sfc" size="1048576" crc="d7e4732f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19226,11 +19791,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="yogibeare" cloneof="yogibear" romof="yogibear" sourcefile="snes/d_snes.cpp">
+		<description>Yogi Bear (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Empire Software</manufacturer>
+		<rom name="Yogi Bear (E)(1994)(Empire Software).sfc" size="1048576" crc="31703471"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="yogibear" sourcefile="snes/d_snes.cpp">
 		<description>Yogi Bear (USA)</description>
 		<year>1994</year>
-		<manufacturer>Cybersoft</manufacturer>
-		<rom name="Yogi Bear (U)(1994)(Cybersoft).sfc" size="1048576" crc="7448d45c"/>
+		<manufacturer>Cybersoft - Empire Software</manufacturer>
+		<rom name="Yogi Bear (U)(1994)(Cybersoft - Empire Software).sfc" size="1048576" crc="7448d45c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19249,6 +19822,14 @@
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Yoshi no Road Hunting (J)(1993)(Nintendo).sfc" size="1048576" crc="52948f3c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="yoshicookiee" cloneof="yoshicookie" romof="yoshicookie" sourcefile="snes/d_snes.cpp">
+		<description>Yoshi's Cookie (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Bullet Proof Software</manufacturer>
+		<rom name="Yoshi's Cookie (E)(1993)(Bullet Proof Software).sfc" size="524288" crc="5fb6e4e9"/>
+		<video type="raster" orientation="horizontal" width="512" height="478" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="yoshicookie" sourcefile="snes/d_snes.cpp">
@@ -19291,6 +19872,14 @@
 		<year>1995</year>
 		<manufacturer>Kadokawa Digital Ent.</manufacturer>
 		<rom name="Youkai Buster - Ruka no Daibouken (J)(1995)(Kadokawa Digital Ent.).sfc" size="1048576" crc="e6d19429"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="youngmerline" cloneof="youngmerlin" romof="youngmerlin" sourcefile="snes/d_snes.cpp">
+		<description>Young Merlin (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Young Merlin (E)(1993)(Virgin Games).sfc" size="2097152" crc="d5e69dc4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19392,6 +19981,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="zerokamie" cloneof="zerokami" romof="zerokami" sourcefile="snes/d_snes.cpp">
+		<description>Zero the Kamikaze Squirrel (Euro, Rev. 1)</description>
+		<year>1994</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Zero the Kamikaze Squirrel (E, Rev 1)(1994)(Sunsoft).sfc" size="2097152" crc="f4830329"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zerokami" sourcefile="snes/d_snes.cpp">
 		<description>Zero the Kamikaze Squirrel (USA)</description>
 		<year>1994</year>
@@ -19474,11 +20071,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="zoope" cloneof="zoop" romof="zoop" sourcefile="snes/d_snes.cpp">
+		<description>Zoop (Euro)</description>
+		<year>1995</year>
+		<manufacturer>Viacom New Media</manufacturer>
+		<rom name="Zoop (E)(1995)(Viacom New Media).sfc" size="524288" crc="afd45d27"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="zoop" sourcefile="snes/d_snes.cpp">
 		<description>Zoop (USA)</description>
 		<year>1995</year>
 		<manufacturer>Viacom New Media</manufacturer>
-		<rom name="Zoop (1995)(Viacom New Media).sfc" size="524288" crc="06f0e94c"/>
+		<rom name="Zoop (U)(1995)(Viacom New Media).sfc" size="524288" crc="06f0e94c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
