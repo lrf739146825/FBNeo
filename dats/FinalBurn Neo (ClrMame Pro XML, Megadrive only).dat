@@ -793,6 +793,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="altbeast2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Altered Beast II - The Seven Depths of Hell (HB, Alpha-4)</description>
+		<year>2024-25</year>
+		<manufacturer>Fabianodigital</manufacturer>
+		<rom name="Altered Beast II - The Seven Depths of Hell Alpha-4 (2024-25)(Fabianodigital).bin" size="2490368" crc="d6a8b0ab"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="alterego" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>AlterEgo Remastered (HB)</description>
@@ -1265,6 +1274,15 @@
 		<year>2022</year>
 		<manufacturer>The 8-bit Guy</manufacturer>
 		<rom name="Attack of the Petscii Robots (2022)(The 8-bit Guy).bin" size="2097152" crc="a7004964"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aureole" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Aureole - Wings of Hope (HB)</description>
+		<year>2025</year>
+		<manufacturer>JanduSoft</manufacturer>
+		<rom name="Aureole - Wings of Hope (2025)(JanduSoft).bin" size="1179648" crc="51aef53d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5857,28 +5875,28 @@
 	</game>
 	<game name="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, English v3.3.0)</description>
+		<description>Earthion (HB, English v4.0.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v3.3.0 (English)(2025)(Ancient).bin" size="7340032" crc="ae5f1fb1"/>
+		<rom name="Earthion v4.0.0 (English)(2025)(Ancient).bin" size="7340032" crc="e5516900"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionj" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, Japanese v3.3.0)</description>
+		<description>Earthion (HB, Japanese v4.0.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v3.3.0 (Japanese)(2025)(Ancient).bin" size="7340032" crc="65ebc8e0"/>
+		<rom name="Earthion v4.0.0 (Japanese)(2025)(Ancient).bin" size="7340032" crc="0655e663"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionp" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, Portuguese v3.3.0)</description>
+		<description>Earthion (HB, Portuguese v4.0.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v3.3.0 (Portuguese)(2025)(Ancient).bin" size="7340032" crc="f44386a4"/>
+		<rom name="Earthion v4.0.0 (Portuguese)(2025)(Ancient).bin" size="7340032" crc="c564f290"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9973,10 +9991,10 @@
 	</game>
 	<game name="knnsf" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Kunio no Nekketsu School Fighters (HB, v1.6)</description>
+		<description>Kunio no Nekketsu School Fighters (HB, v1.7)</description>
 		<year>2025</year>
 		<manufacturer>UsagiRu</manufacturer>
-		<rom name="Kunio no Nekketsu School Fighters v1.6 (2025)(UsagiRu).bin" size="5767168" crc="3b0db849"/>
+		<rom name="Kunio no Nekketsu School Fighters v1.7 (2025)(UsagiRu).bin" size="5767168" crc="49eb730d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

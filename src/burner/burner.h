@@ -136,6 +136,7 @@ struct tIniStruct {
 	TCHAR ini[MAX_PATH];
 	bool dips_in_preset;
 	INT32 hw[8];
+//	TCHAR possible[80];
 	char gameinfotoken[80];
 };
 
@@ -307,3 +308,4 @@ extern TCHAR szAppControlsPath[MAX_PATH];
 extern TCHAR szAppCabinetsPath[MAX_PATH];
 extern TCHAR szAppPCBsPath[MAX_PATH];
 extern TCHAR szAppHistoryPath[MAX_PATH];
+extern TCHAR szAppCommandPath[MAX_PATH];
