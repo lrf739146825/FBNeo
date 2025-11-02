@@ -379,6 +379,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="advbatmantp" cloneof="advbatman" romof="advbatman" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Adventures of Batman &amp; Robin, The (Hack, Portuguese v1-BETA)</description>
+		<year>2025</year>
+		<manufacturer>Kyle Romhacker</manufacturer>
+		<rom name="Adventures of Batman &amp; Robin, The PT-BR v1-BETA (2025)(Kyle Romhacker).sfc" size="4194304" crc="fe9cdcda"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="advbatman" sourcefile="snes/d_snes.cpp">
 		<description>Adventures of Batman &amp; Robin, The (USA)</description>
 		<year>1994</year>
@@ -4404,6 +4413,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dkongcntry2ssq" cloneof="dkongcntry2" romof="dkongcntry2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Donkey Kong Country 2: Squitter's Spider Quest (Hack, v1.1)</description>
+		<year>2022</year>
+		<manufacturer>Saetta06</manufacturer>
+		<rom name="Donkey Kong Country 2 - Squitter's Spider Quest v1.1 (2022)(Saetta06).sfc" size="4194304" crc="214b511e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dkongcntry2p4k" cloneof="dkongcntry2" romof="dkongcntry2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Donkey Kong Country 2: The Project 4 Kongs (Hack)</description>
@@ -5844,6 +5862,33 @@
 		<year>1995</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Final Fight 3 (U)(1995)(Capcom).sfc" size="3145728" crc="a916e708"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffight3boss" cloneof="ffight3" romof="ffight3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Final Fight 3 - Boss (Hack)</description>
+		<year>20xx</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Final Fight 3 - Boss (20xx).sfc" size="4194304" crc="b82cbdff"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffight3he" cloneof="ffight3" romof="ffight3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Final Fight 3 - Hard Edition (Hack)</description>
+		<year>2019</year>
+		<manufacturer>Programer Peru</manufacturer>
+		<rom name="Final Fight 3 - Hard Edition (2019)(Programer Peru).sfc" size="3145728" crc="cd812d3a"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffight3te" cloneof="ffight3" romof="ffight3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Final Fight 3 - Tough Edition (Hack)</description>
+		<year>2023</year>
+		<manufacturer>Samir Rolemberg</manufacturer>
+		<rom name="Final Fight 3 - Tough Edition (2023)(Samir Rolemberg).sfc" size="3145728" crc="bc1c4134"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10236,6 +10281,24 @@
 		<year>1995</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man 7 (U)(1995)(Capcom).sfc" size="2097152" crc="2d947536"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megaman7js" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man 7 Jet Suit (Hack)</description>
+		<year>2025</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Mega Man 7 Jet Suit (2025)(BillyTime! Games).sfc" size="2097152" crc="06442631"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megaman7psx" cloneof="megaman7" romof="megaman7" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man 7 PSX Sprite (Hack)</description>
+		<year>20xx</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Mega Man 7 PSX Sprite (20xx).sfc" size="2097152" crc="34b84d00"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18825,6 +18888,15 @@
 		<year>1996</year>
 		<manufacturer>Williams Entertainment</manufacturer>
 		<rom name="Ultimate Mortal Kombat 3 (U)(1996)(Williams).sfc" size="4194304" crc="f5bfe41e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="umk3bzero" cloneof="umk3" romof="umk3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Ultimate Mortal Kombat 3 BZero Edition (Hack, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>B-Zero TV</manufacturer>
+		<rom name="Ultimate Mortal Kombat 3 BZero Edition v1.1 (2025)(B-Zero TV).sfc" size="8388608" crc="4ae4d7ad"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

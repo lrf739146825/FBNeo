@@ -601,6 +601,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="astroclimber" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Astro Climber (HB, v1.2.1)</description>
+		<year>2025</year>
+		<manufacturer>BadComputer</manufacturer>
+		<rom name="Astro Climber v1.2.1 (2025)(BadComputer).sms" size="65536" crc="7f66528c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="astrofl" cloneof="transbot" romof="transbot" sourcefile="sms/d_sms.cpp">
 		<description>Astro Flash (Japan, MyCard)</description>
 		<year>1985</year>
@@ -1172,10 +1181,10 @@
 	</game>
 	<game name="castlescapev2" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Castle Escape (HB, v2.0)</description>
+		<description>Castle Escape (HB, v2.1.3)</description>
 		<year>2025</year>
 		<manufacturer>IrataHack</manufacturer>
-		<rom name="Castle Escape v2.0 (2025)(IrataHack).sms" size="65536" crc="c8e4298d"/>
+		<rom name="Castle Escape v2.1.3 (2025)(IrataHack).sms" size="65536" crc="6498510f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2186,10 +2195,10 @@
 	</game>
 	<game name="forestescape" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Forest Escape: A Knight's Quest (HB)</description>
+		<description>Forest Escape: A Knight's Quest (HB, v1.2.1)</description>
 		<year>2025</year>
 		<manufacturer>IrataHack</manufacturer>
-		<rom name="Forest Escape - A Knight's Quest (2025)(IrataHack).sms" size="81920" crc="b56748ba"/>
+		<rom name="Forest Escape - A Knight's Quest v1.2.1 (2025)(IrataHack).sms" size="81920" crc="22d0c6eb"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2205,8 +2214,8 @@
 		<comment>Homebrew</comment>
 		<description>Frontier Force (HB, Alpha Demo v0.1.2.3)</description>
 		<year>2024</year>
-		<manufacturer>Badcomputer</manufacturer>
-		<rom name="Frontier Force - Alpha Demo v0.1.2.3 (2024)(Badcomputer).sms" size="262144" crc="def51eb0"/>
+		<manufacturer>BadComputer</manufacturer>
+		<rom name="Frontier Force - Alpha Demo v0.1.2.3 (2024)(BadComputer).sms" size="262144" crc="def51eb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2214,8 +2223,8 @@
 		<comment>Homebrew</comment>
 		<description>Frontier Force (HB, v1.1)</description>
 		<year>2025</year>
-		<manufacturer>Badcomputer</manufacturer>
-		<rom name="Frontier Force v1.1 (2025)(Badcomputer).sms" size="524288" crc="fd09f46d"/>
+		<manufacturer>BadComputer</manufacturer>
+		<rom name="Frontier Force v1.1 (2025)(BadComputer).sms" size="524288" crc="fd09f46d"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2624,10 +2633,10 @@
 	</game>
 	<game name="grailgods" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Grail of the Gods (HB, v0.49b)</description>
+		<description>Grail of the Gods (HB, v0.50b)</description>
 		<year>2023-25</year>
 		<manufacturer>Guydebaville</manufacturer>
-		<rom name="Grail of the Gods v0.49b (2023-25)(Guydebaville).sms" size="65536" crc="e6afde12"/>
+		<rom name="Grail of the Gods v0.50b (2023-25)(Guydebaville).sms" size="65536" crc="2bfe75d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2799,7 +2808,7 @@
 		<description>Green Beret Remake (HB, v2)</description>
 		<year>2022</year>
 		<manufacturer>MikGames</manufacturer>
-		<rom name="Green Beret Remake (2022)(MikGames).sms" size="131072" crc="529172bd"/>
+		<rom name="Green Beret Remake v2 (2022)(MikGames).sms" size="131072" crc="529172bd"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2808,7 +2817,7 @@
 		<description>Grime Z80 (HB)</description>
 		<year>2018</year>
 		<manufacturer>Chibi Akumas</manufacturer>
-		<rom name="Grime Z80 (Chibi Akumas)(2018).sms" size="32768" crc="6664c3d5"/>
+		<rom name="Grime Z80 (2018)(Chibi Akumas).sms" size="32768" crc="6664c3d5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3375,6 +3384,15 @@
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Land of Illusion Starring Mickey Mouse (Euro, Brazil)(1992)(Sega).sms" size="524288" crc="24e97200"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="laranjamec" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Laranja Mecanico (HB, Portuguese)</description>
+		<year>2023</year>
+		<manufacturer>Jaguarete Retro Games</manufacturer>
+		<rom name="Laranja Mecanico (2023)(Jaguarete Retro Games).sms" size="524288" crc="8126ac1a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4110,6 +4128,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="noturno" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Noturno (HB, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>LMS Retro</manufacturer>
+		<rom name="Noturno (2025)(LMS Retro).sms" size="524288" crc="47be6422"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="olympgld" sourcefile="sms/d_sms.cpp">
 		<description>Olympic Gold (Euro)</description>
 		<year>1992</year>
@@ -4160,20 +4187,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="outrunch" cloneof="outrun" romof="outrun" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Out Run (Color Hack)</description>
-		<year>2023</year>
-		<manufacturer>Slogra</manufacturer>
-		<rom name="OutRun (Color Hack)(2023)(Slogra).sms" size="262208" crc="0fc1cf7a"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="outrun" sourcefile="sms/d_sms.cpp">
 		<description>Out Run (World)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Out Run (World)(1987)(Sega).sms" size="262144" crc="5589d8d2"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="outrunch" cloneof="outrun" romof="outrun" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Out Run - Color Hack (Hack)</description>
+		<year>2023</year>
+		<manufacturer>Slogra</manufacturer>
+		<rom name="OutRun - Color Hack (2023)(Slogra).sms" size="262208" crc="0fc1cf7a"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4500,20 +4527,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="psychicwen" cloneof="psychicw" romof="psychicw" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Psychic World (Enhanced Hack, v1.2)</description>
-		<year>2020</year>
-		<manufacturer>BcnAbel76</manufacturer>
-		<rom name="Psychic World (Enhanced Hack, v1.2)(2020)(BcnAbel76).sms" size="262144" crc="f0ec4500"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="psychicw" sourcefile="sms/d_sms.cpp">
 		<description>Psychic World (Euro, Brazil)</description>
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Psychic World (Euro, Brazil)(1991)(Sega).sms" size="262144" crc="5c0b1f0f"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="psychicwen" cloneof="psychicw" romof="psychicw" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Psychic World - Enhanced Colors (Hack, v1.2)</description>
+		<year>2020</year>
+		<manufacturer>BcnAbel76</manufacturer>
+		<rom name="Psychic World - Enhanced Colors v1.2 (2020)(BcnAbel76).sms" size="262144" crc="f0ec4500"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4615,7 +4642,7 @@
 		<description>R-Type Arcade Style (Hack, v1.1a)</description>
 		<year>2025</year>
 		<manufacturer>Datchy</manufacturer>
-		<rom name="R-Type Arcade Style Hack v1.1a (2025)(Datchy).sms" size="524288" crc="a9d2c2dc"/>
+		<rom name="R-Type Arcade Style v1.1a (2025)(Datchy).sms" size="524288" crc="a9d2c2dc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4636,15 +4663,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rbislando" cloneof="rbisland" romof="rbisland" sourcefile="sms/d_sms.cpp">
-		<comment>Hack</comment>
-		<description>Rainbow Islands - The Story of Bubble Bobble 2 (Over the Rainbow + Color Hack)</description>
-		<year>2021</year>
-		<manufacturer>Tom, BcnAbel76</manufacturer>
-		<rom name="rainbow islands - the story of bubble bobble 2 (over the rainbow + color hack).bin" size="262144" crc="7e43bed5"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="rbislandb" cloneof="rbisland" romof="rbisland" sourcefile="sms/d_sms.cpp">
 		<description>Rainbow Islands: The Story of Bubble Bobble 2 (Brazil)</description>
 		<year>1993</year>
@@ -4661,6 +4679,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rbislando" cloneof="rbisland" romof="rbisland" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Rainbow Islands: The Story of Bubble Bobble 2 (Over the Rainbow + Color Hack)</description>
+		<year>2021</year>
+		<manufacturer>Tom, BcnAbel76</manufacturer>
+		<rom name="Rainbow Islands - The Story of Bubble Bobble 2 (Over the Rainbow + Color Hack)(2021)(Tom, BcnAbel76).sms" size="262144" crc="7e43bed5"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rambo3" sourcefile="sms/d_sms.cpp">
 		<comment>Light Phaser game</comment>
 		<description>Rambo III (Euro, USA, Brazil)</description>
@@ -4674,8 +4701,8 @@
 		<comment>Hack, Light Phaser game - YM2413 FM support</comment>
 		<description>Rambo III (Hack, FM Mod)</description>
 		<year>2018</year>
-		<manufacturer>Sega - fatnick</manufacturer>
-		<rom name="Rambo III FM-Mod (2018)(fatnick).sms" size="262144" crc="c2073674"/>
+		<manufacturer>fatnick</manufacturer>
+		<rom name="Rambo III - FM Mod (2018)(fatnick).sms" size="262144" crc="c2073674"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

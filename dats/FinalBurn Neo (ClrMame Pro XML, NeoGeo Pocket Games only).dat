@@ -347,6 +347,17 @@
 		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fruitypalsr" romof="ngp" sourcefile="pst90s/d_ngp.cpp">
+		<comment>Homebrew</comment>
+		<description>Fruity Pals' Revenge (HB, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>Infinite State Games</manufacturer>
+		<rom name="Fruity Pals' Revenge v1.2 (2025)(Infinite State Games).ngp" size="2097152" crc="f92db309"/>
+		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
+		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
+		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ganbaren" romof="ngp" sourcefile="pst90s/d_ngp.cpp">
 		<description>Ganbare Neo Poke-kun (Japan)</description>
 		<year>2000</year>
@@ -439,6 +450,17 @@
 		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kofparae" cloneof="kofpara" romof="kofpara" sourcefile="pst90s/d_ngp.cpp">
+		<comment>Hack, Force B&amp;W mode to unlock the hidden game 'Yosaku'</comment>
+		<description>King of Fighters, The: Battle de Paradise (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>marc_max</manufacturer>
+		<rom name="King of Fighters, The - Battle de Paradise T-Eng (2025)(marc_max).ngp" size="2097152" crc="e08dc918"/>
+		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
+		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
+		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kofpara" romof="ngp" sourcefile="pst90s/d_ngp.cpp">
 		<comment>Force B&amp;W mode to unlock the hidden game 'Yosaku'</comment>
 		<description>King of Fighters, The: Battle de Paradise (Japan)</description>
@@ -495,6 +517,17 @@
 		<year>1999</year>
 		<manufacturer>Data East</manufacturer>
 		<rom name="Magical Drop Pocket (Japan, Demo)(1999)(Data East).ngp" size="1048576" crc="d76f1a47"/>
+		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
+		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
+		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mminer" romof="ngp" sourcefile="pst90s/d_ngp.cpp">
+		<comment>Homebrew</comment>
+		<description>Manic Miner (HB, v1.0)</description>
+		<year>2001</year>
+		<manufacturer>Lindon Dodd</manufacturer>
+		<rom name="Manic Miner v1.0 (2001)(Lindon Dodd).ngp" size="524288" crc="7b23af97"/>
 		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
 		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
 		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
@@ -1030,6 +1063,17 @@
 		<year>1999</year>
 		<manufacturer>SNK - Yumekobo</manufacturer>
 		<rom name="Renketsu Puzzle Tsunagete Pon! Color (Japan)(1999)(SNK - Yumekobo).ngp" size="524288" crc="c3f3e83c"/>
+		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
+		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
+		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rockmanbe" cloneof="rockmanb" romof="rockmanb" sourcefile="pst90s/d_ngp.cpp">
+		<comment>Hack</comment>
+		<description>Rockman: Battle &amp; Fighters (Hack, English v0.9)</description>
+		<year>2018</year>
+		<manufacturer>marc_max</manufacturer>
+		<rom name="Rockman - Battle &amp; Fighters T-Eng v0.9 (2018)(marc_max).ngp" size="2097152" crc="65985356"/>
 		<rom name="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket BIOS (1998)(SNK)(en-ja).bin" size="65536" crc="6232df8d"/>
 		<rom name="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" merge="SNK Neo-Geo Pocket Color BIOS (1999)(SNK)(en-ja).bin" size="65536" crc="6eeb6f40"/>
 		<video type="raster" orientation="horizontal" width="160" height="152" aspectx="4" aspecty="3"/>

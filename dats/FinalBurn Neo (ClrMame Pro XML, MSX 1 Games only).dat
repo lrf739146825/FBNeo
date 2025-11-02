@@ -238,6 +238,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="abadcrim" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>To use main character: A, K, L and SPACE</comment>
 		<description>Abadia del Crimen, La (Euro, Spanish)</description>
 		<year>1988</year>
 		<manufacturer>Opera Soft</manufacturer>
@@ -5127,7 +5128,7 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="desperado" romof="msx" sourcefile="msx/d_msx.cpp">
+	<game name="desperado" cloneof="gunsmokee" romof="gunsmokee" sourcefile="msx/d_msx.cpp">
 		<comment>At title &amp; options screen turn the Tape to Side B</comment>
 		<description>Desperado (Euro, Spanish)</description>
 		<year>1987</year>
@@ -5404,7 +5405,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="donquijote1" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Don Quijote - Parte I (Euro, Spanish)</description>
+		<description>Don Quijote - Part I (Euro, Spanish)</description>
 		<year>1987</year>
 		<manufacturer>Dinamic Software</manufacturer>
 		<rom name="Don Quijote (Euro, ES)(1987)(Dinamic Software)(Side A)[RUN'CAS-'].cas" size="54252" crc="68395271"/>
@@ -5416,7 +5417,7 @@
 	</game>
 	<game name="donquijote2" cloneof="donquijote1" romof="donquijote1" sourcefile="msx/d_msx.cpp">
 		<comment>Password: EL BALSAMO DE FIERABRAS</comment>
-		<description>Don Quijote - Parte II (Euro, Spanish)</description>
+		<description>Don Quijote - Part II (Euro, Spanish)</description>
 		<year>1987</year>
 		<manufacturer>Dinamic Software</manufacturer>
 		<rom name="Don Quijote (Euro, ES)(1987)(Dinamic Software)(Side B)[RUN'CAS-'].cas" size="51442" crc="833d4f52"/>
@@ -7992,13 +7993,24 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="hammboy" romof="msx" sourcefile="msx/d_msx.cpp">
+	<game name="hammerboy1" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Keyboard controls only: O, P and Space</comment>
-		<description>Hammer Boy (Euro, Spanish)</description>
+		<description>Hammer Boy - Part 1 (Euro)</description>
 		<year>1991</year>
 		<manufacturer>Dinamic Software</manufacturer>
-		<rom name="Hammer Boy (Euro, ES)(1991)(Dinamic Software)(Side A)[RUN'CAS-'].cas" size="55954" crc="907a6931"/>
-		<rom name="Hammer Boy (Euro, ES)(1991)(Dinamic Software)(Side B)[RUN'CAS-'].cas" size="55954" crc="2e7eba8e"/>
+		<rom name="Hammer Boy (Euro)(1991)(Dinamic Software)(Side A)[RUN'CAS-'].cas" size="55954" crc="907a6931"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hammerboy2" cloneof="hammerboy1" romof="hammerboy1" sourcefile="msx/d_msx.cpp">
+		<comment>Keyboard controls only: O, P and Space</comment>
+		<description>Hammer Boy - Part 2 (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Dinamic Software</manufacturer>
+		<rom name="Hammer Boy (Euro)(1991)(Dinamic Software)(Side B)[RUN'CAS-'].cas" size="55954" crc="2e7eba8e"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -10390,6 +10402,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="livingstone2" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Password Part 2: 15215</comment>
 		<description>Livingstone Supongo II (Euro, Spanish)</description>
 		<year>1989</year>
 		<manufacturer>Opera Soft</manufacturer>
@@ -15257,11 +15270,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="satan" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Satan (Euro)</description>
+	<game name="satan1" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Satan - Part 1 (Euro)</description>
 		<year>1989</year>
 		<manufacturer>Dinamic Software</manufacturer>
 		<rom name="Satan (Euro)(1989)(Dinamic Software)(Side A)[RUN'CAS-'].cas" size="55857" crc="6c16e392"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="satan2" cloneof="satan1" romof="satan1" sourcefile="msx/d_msx.cpp">
+		<comment>Password: 01020304</comment>
+		<description>Satan - Part 2 (Euro)</description>
+		<year>1989</year>
+		<manufacturer>Dinamic Software</manufacturer>
 		<rom name="Satan (Euro)(1989)(Dinamic Software)(Side B)[RUN'CAS-'].cas" size="55857" crc="10914f8a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -16010,11 +16034,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="soviet" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Soviet (Euro)</description>
+	<game name="soviet1" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Soviet - Part 1 (Euro)</description>
 		<year>1990</year>
 		<manufacturer>Opera Soft</manufacturer>
 		<rom name="Soviet (Euro)(1990)(Opera Soft)(Side A)[BLOAD'CAS-',R].cas" size="102992" crc="eac0c700"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="soviet2" cloneof="soviet1" romof="soviet1" sourcefile="msx/d_msx.cpp">
+		<comment>Password: REDWOLF</comment>
+		<description>Soviet - Part 2 (Euro)</description>
+		<year>1990</year>
+		<manufacturer>Opera Soft</manufacturer>
 		<rom name="Soviet (Euro)(1990)(Opera Soft)(Side B)[BLOAD'CAS-',R].cas" size="119128" crc="183dcfb4"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -17854,11 +17889,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="titanic" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Titanic (Euro, Spanish)</description>
+	<game name="titanic1" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Titanic - Part 1 (Euro, Spanish)</description>
 		<year>1988</year>
 		<manufacturer>Topo Soft</manufacturer>
 		<rom name="Titanic (Euro, ES)(1988)(Topo Soft)(Side A)[RUN'CAS-'].cas" size="49920" crc="7e7a8653"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="titanic2" cloneof="titanic1" romof="titanic1" sourcefile="msx/d_msx.cpp">
+		<comment>Password: SUSIE</comment>
+		<description>Titanic - Part 2 (Euro, Spanish)</description>
+		<year>1988</year>
+		<manufacturer>Topo Soft</manufacturer>
 		<rom name="Titanic (Euro, ES)(1988)(Topo Soft)(Side B)[RUN'CAS-'].cas" size="51484" crc="45b1c035"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -18507,7 +18553,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="viajecentro" romof="msx" sourcefile="msx/d_msx.cpp">
-		<comment>PASSWORDS: Fase 2: EVAMARIASEFUE / Fase 3: LOU REED</comment>
+		<comment>Passwords: Fase 2: EVAMARIASEFUE / Fase 3: LOU REED</comment>
 		<description>Viaje al Centro de la Tierra (Euro, Spanish)</description>
 		<year>1989</year>
 		<manufacturer>Topo Soft</manufacturer>

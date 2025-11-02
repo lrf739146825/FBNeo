@@ -38,7 +38,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="1943" sourcefile="nes/d_nes.cpp">
-		<description>1943 - The Battle of Midway (USA)</description>
+		<description>1943: The Battle of Midway (USA)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="1943 - The Battle of Midway (USA)(1988)(Capcom).nes" size="131088" crc="d131bf15"/>
@@ -46,7 +46,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="1943j" cloneof="1943" romof="1943" sourcefile="nes/d_nes.cpp">
-		<description>1943 - The Battle of Valhalla (Japan)</description>
+		<description>1943: The Battle of Valhalla (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="1943 - The Battle of Valhalla (Japan)(1988)(Capcom).nes" size="131088" crc="8db59be8"/>
@@ -61,11 +61,11 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="2010" sourcefile="nes/d_nes.cpp">
-		<description>2010 - Street Fighter (Japan)</description>
+	<game name="2010sf" cloneof="streefig201" romof="streefig201" sourcefile="nes/d_nes.cpp">
+		<description>2010 Street Fighter (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
-		<rom name="2010 - Street Fighter (Japan)(1990)(Capcom).nes" size="262160" crc="c5a04eff"/>
+		<rom name="2010 Street Fighter (Japan)(1990)(Capcom).nes" size="262160" crc="a311678a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -618,10 +618,10 @@
 	</game>
 	<game name="advofrip" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Adventures of Rip (HB, v1.2)</description>
+		<description>Adventures of Rip (HB, v1.4)</description>
 		<year>2025</year>
 		<manufacturer>Jay-GFDgaming</manufacturer>
-		<rom name="Adventures of Rip v1.2 (2025)(Jay-GFDgaming).nes" size="524304" crc="7542b323"/>
+		<rom name="Adventures of Rip v1.4 (2025)(Jay-GFDgaming).nes" size="524304" crc="49edfa50"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -867,12 +867,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="alfonsarcadv" sourcefile="nes/d_nes.cpp">
+	<game name="alfonsarcadv" cloneof="alfonsarcadvr" romof="alfonsarcadvr" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Alfonzo's Arctic Adventure (HB)</description>
 		<year>2018</year>
 		<manufacturer>Spoony Bard Productions</manufacturer>
 		<rom name="Alfonzo's Arctic Adventure (2018)(Spoony Bard Productions).nes" size="262160" crc="cd2ada76"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="alfonsarcadvr" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Alfonzo's Arctic Adventure (HB, 1.4)</description>
+		<year>2020</year>
+		<manufacturer>Spoony Bard Productions</manufacturer>
+		<rom name="Alfonzo's Arctic Adventure v1.4 (2020)(Spoony Bard Productions).nes" size="262160" crc="b1736cf6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2613,10 +2622,10 @@
 	</game>
 	<game name="bobsixseven" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Bobby Six Seven: Time Travelling Detective (HB)</description>
-		<year>2022-23</year>
+		<description>Bobby Six Seven: Time Travelling Detective (HB, v1.1)</description>
+		<year>2022-25</year>
 		<manufacturer>CalGames</manufacturer>
-		<rom name="Bobby Six Seven - Time Traveling Detective (2023)(Calgames).nes" size="524304" crc="bc33f79b"/>
+		<rom name="Bobby Six Seven - Time Traveling Detective v1.1 (2022-25)(Calgames).nes" size="524304" crc="d9839626"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3755,10 +3764,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="choujyou" sourcefile="nes/d_nes.cpp">
-		<description>Choujikuu Yousai - Macross (Japan)</description>
+		<description>Choujikuu Yousai Macross (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Namco</manufacturer>
-		<rom name="Choujikuu Yousai - Macross (Japan)(1985)(Namco).nes" size="24592" crc="a3ca24d2"/>
+		<rom name="Choujikuu Yousai Macross (Japan)(1985)(Namco).nes" size="24592" crc="a3ca24d2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4576,7 +4585,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="cyclerac" sourcefile="nes/d_nes.cpp">
-		<description>Cycle Race - Road Man (Japan)</description>
+		<description>Cycle Race: Road Man (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Tokyo Shoseki</manufacturer>
 		<rom name="Cycle Race - Road Man (Japan)(1988)(Tokyo Shoseki).nes" size="262160" crc="899ad1fd"/>
@@ -4980,6 +4989,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="delverquest" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Delver Quest - Tournament Edition (HB)</description>
+		<year>2025</year>
+		<manufacturer>Save Gaming Dev</manufacturer>
+		<rom name="Delver Quest - Tournament Edition (2025)(Save Gaming Dev).nes" size="524304" crc="13fd6ca3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="demondistrict" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Demon District (HB)</description>
@@ -5045,6 +5063,15 @@
 		<year>2024</year>
 		<manufacturer>NicoVision</manufacturer>
 		<rom name="Desert Escape! v1.1 (2024)(NicoVision).nes" size="40976" crc="12fd1d24"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="desertundeaddc" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Desert of the Undead - Director's Cut (HB, v1.4)</description>
+		<year>2025</year>
+		<manufacturer>RBG Entertainment</manufacturer>
+		<rom name="Desert of the Undead - Director's Cut v1.4 (2025)(RBG Entertainment).nes" size="524304" crc="6f5f526a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8120,6 +8147,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="gameofthrones" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Game of Thrones (HB)</description>
+		<year>2023</year>
+		<manufacturer>Pacnsac Games</manufacturer>
+		<rom name="Game of Thrones (2023)(Pacnsac Games).nes" size="524304" crc="0241d1e2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="gameparty" sourcefile="nes/d_nes.cpp">
 		<description>Game Party (Japan)</description>
 		<year>1990</year>
@@ -9375,12 +9411,30 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="halloween87" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Haunted Halloween '87 - Year of the Witch (HB)</description>
+		<year>2025</year>
+		<manufacturer>Retrotainment Games</manufacturer>
+		<rom name="Haunted Halloween '87 - Year of the Witch (2025)(Retrotainment Games).nes" size="524304" crc="066bc7ee"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hauntedadv" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Haunted House Adventure (HB)</description>
 		<year>2019</year>
 		<manufacturer>M. Stave</manufacturer>
 		<rom name="Haunted House Adventure (2019)(M. Stave).nes" size="524304" crc="d0c3acbc"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hazard" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Hazard: Let Us Out! (HB)</description>
+		<year>2025</year>
+		<manufacturer>G.V. Gaming</manufacturer>
+		<rom name="Hazard - Let Us Out (2025)(G.V. Gaming).nes" size="524304" crc="7f01f224"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10568,7 +10622,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jetsonsj" cloneof="jetsons" romof="jetsons" sourcefile="nes/d_nes.cpp">
-		<description>Jetsons, The - Cogswell's Caper! (Japan)</description>
+		<description>Jetsons, The: Cogswell's Caper! (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Jetsons, The - Cogswell's Caper! (Japan)(1993)(Taito).nes" size="393232" crc="4733c232"/>
@@ -10576,7 +10630,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jetsons" sourcefile="nes/d_nes.cpp">
-		<description>Jetsons, The - Cogswell's Caper! (USA)</description>
+		<description>Jetsons, The: Cogswell's Caper! (USA)</description>
 		<year>1992</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Jetsons, The - Cogswell's Caper! (USA)(1992)(Taito).nes" size="393232" crc="0f945df6"/>
@@ -10601,7 +10655,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jikuuyuu" sourcefile="nes/d_nes.cpp">
-		<description>Jikuu Yuuden - Debias (Japan)</description>
+		<description>Jikuu Yuuden: Debias (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Jikuu Yuuden - Debias (Japan)(1987)(Namcot).nes" size="196624" crc="0f40cdc2"/>
@@ -12011,15 +12065,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="legenzeltp" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Legend of Zelda, The (Hack, Portuguese v2.0)</description>
-		<year>2022</year>
-		<manufacturer>SatY Traducoes</manufacturer>
-		<rom name="Legend of Zelda, The T-Por v2.0 (2022)(SatY Traducoes).nes" size="131088" crc="44d4d62c"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="legenzel" sourcefile="nes/d_nes.cpp">
 		<description>Legend of Zelda, The (USA, Rev. A)</description>
 		<year>1987</year>
@@ -12120,6 +12165,15 @@
 		<year>2023</year>
 		<manufacturer>Nintendo Lemmings Improvement Team</manufacturer>
 		<rom name="Lemmings Improvement v1.3 (2023)(Nintendo Lemmings Improvement Team).nes" size="262160" crc="97ccd458"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="legenzeltp" cloneof="legenzel" romof="legenzel" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Lenda de Zelda, A (Hack, Portuguese v2.0)</description>
+		<year>2022</year>
+		<manufacturer>SatY Traducoes</manufacturer>
+		<rom name="Lenda de Zelda, A T-Por v2.0 (2022)(SatY Traducoes).nes" size="131088" crc="44d4d62c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14027,12 +14081,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="misterscaryd" sourcefile="nes/d_nes.cpp">
+	<game name="misterscary" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mister Scary: Where Are You? (HB, Demo)</description>
+		<description>Mister Scary: Where Are You? (HB, v2.2)</description>
 		<year>2025</year>
 		<manufacturer>CalGames</manufacturer>
-		<rom name="Mister Scary - Where Are You (2025)(CalGames).nes" size="524304" crc="0d27e7fd"/>
+		<rom name="Mister Scary - Where Are You v2.2 (2025)(CalGames).nes" size="524304" crc="55e818a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19188,6 +19242,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="splatworld" sourcefile="nes/d_nes.cpp">
+		<comment>Prototype</comment>
+		<description>Splatter World (Japan, Prototype)</description>
+		<year>1993</year>
+		<manufacturer>Namcot</manufacturer>
+		<rom name="Splatter World (Japan, Proto)(1993)(Namcot).nes" size="524304" crc="cb9ef0ba"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="splitsecond" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Split Second (HB)</description>
@@ -19617,7 +19680,7 @@
 	</game>
 	<game name="streefig201tp" cloneof="streefig201" romof="streefig201" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Street Fighter 2010 - A Luta Final (Hack, Portuguese v1.3)</description>
+		<description>Street Fighter 2010: A Luta Final (Hack, Portuguese v1.3)</description>
 		<year>2018</year>
 		<manufacturer>PO.B.R.E.</manufacturer>
 		<rom name="Street Fighter 2010 - A Luta Final T-Por v1.3 (2018)(PO.B.R.E.).nes" size="262160" crc="6a8bb09a"/>
@@ -19626,7 +19689,7 @@
 	</game>
 	<game name="streefig201c" cloneof="streefig201" romof="streefig201" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Street Fighter 2010 - The Final Fight (Hack, Spanish)</description>
+		<description>Street Fighter 2010: The Final Fight (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Street Fighter 2010 - The Final Fight T-Spa (2017)(Wave).nes" size="262160" crc="0c963bf7"/>
@@ -19634,7 +19697,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="streefig201" sourcefile="nes/d_nes.cpp">
-		<description>Street Fighter 2010 - The Final Fight (USA)</description>
+		<description>Street Fighter 2010: The Final Fight (USA)</description>
 		<year>1990</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Street Fighter 2010 - The Final Fight (USA)(1990)(Capcom).nes" size="262160" crc="a7355946"/>
@@ -19985,6 +20048,24 @@
 		<year>2023</year>
 		<manufacturer>NesDraug</manufacturer>
 		<rom name="Super Mario Bro-Op v1.1 (2023)(NesDraug).nes" size="73744" crc="1ce829ca"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="smb6en" cloneof="tinytooadv" romof="tinytooadv" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario Bros 6 (Hack, v1.1, English)</description>
+		<year>2025</year>
+		<manufacturer>Kensuyjin33</manufacturer>
+		<rom name="Super Mario Bros 6 v1.1 (Hack, English)(2025)(Kensuyjin33).nes" size="262160" crc="851a4fbe"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="smb6es" cloneof="tinytooadv" romof="tinytooadv" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario Bros 6 (Hack, v1.1, Spanish)</description>
+		<year>2025</year>
+		<manufacturer>Kensuyjin33</manufacturer>
+		<rom name="Super Mario Bros 6 v1.1 (Hack, Spanish)(2025)(Kensuyjin33).nes" size="262160" crc="852e3ccb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -21170,6 +21251,15 @@
 		<year>1996</year>
 		<manufacturer>J.Y. Company</manufacturer>
 		<rom name="Tekken 3 (Taiwan)(Unl)(1996)(J.Y. Company).nes" size="393232" crc="c61358ab"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="temperedveng" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Tempered Vengeance (HB)</description>
+		<year>2023</year>
+		<manufacturer>Pacnsac Games</manufacturer>
+		<rom name="Tempered Vengeance (2023)(Pacnsac Games).nes" size="524304" crc="71d67b86"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -23325,14 +23415,6 @@
 		<year>1988</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Youkai Douchuuki (Japan)(1988)(Namcot).nes" size="262160" crc="390210b2"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="youkaikurabu" sourcefile="nes/d_nes.cpp">
-		<description>Youkai Kurabu (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Jaleco</manufacturer>
-		<rom name="Youkai Kurabu (Japan)(1987)(Jaleco).nes" size="163856" crc="d2ad7f8e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
