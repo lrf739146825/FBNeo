@@ -352,6 +352,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="aburner" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>At title screen turn the Tape to Side B</comment>
 		<description>After Burner (Euro)</description>
 		<year>1988</year>
 		<manufacturer>Activision</manufacturer>
@@ -1014,6 +1015,18 @@
 		<year>1986</year>
 		<manufacturer>Sein Soft</manufacturer>
 		<rom name="Aramo (Japan)(1986)(Sein Soft).rom" size="32768" crc="ab6b56ba"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="arcadefever" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, R-Type doesn't work</comment>
+		<description>Arcade Fever (HB)</description>
+		<year>2025</year>
+		<manufacturer>SMX Team</manufacturer>
+		<rom name="Arcade Fever (2025)(SMX Team).rom" size="1998848" crc="5cc305c3"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -2163,6 +2176,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="blastbomb" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, DSK2ROM conversion</comment>
+		<description>Blaster Bomb (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>GameCast Entertainment</manufacturer>
+		<rom name="Blaster Bomb v1.1 (2025)(GameCast).rom" size="753664" crc="333086d5"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="blasteroids" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Blasteroids (Euro)</description>
 		<year>1987</year>
@@ -2178,7 +2203,7 @@
 		<comment>Homebrew</comment>
 		<description>Blastoid (HB)</description>
 		<year>2022</year>
-		<manufacturer>Ludogix ltd</manufacturer>
+		<manufacturer>Ludogix ltd.</manufacturer>
 		<rom name="Blastoid (2022)(Ludogix ltd).rom" size="32768" crc="9ebd4cf0"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -3375,6 +3400,18 @@
 		<year>1989</year>
 		<manufacturer>Iber Soft</manufacturer>
 		<rom name="Casanova (Euro, ES)(1989)(Iber Soft)[RUN'CAS-'].cas" size="57542" crc="53e5e55b"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="casiocoll" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Casio Collection (HB)</description>
+		<year>2025</year>
+		<manufacturer>SMX Team</manufacturer>
+		<rom name="Casio Collection (2025)(SMX Team).rom" size="827392" crc="cb857ad7"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -4681,7 +4718,7 @@
 		<description>Cure, The (HB)</description>
 		<year>2005</year>
 		<manufacturer>XL2S Entertainment</manufacturer>
-		<rom name="Cure, The (2005)(XL2S Ent.).rom" size="49152" crc="7f855276"/>
+		<rom name="Cure, The (2005)(XL2S Entertainment).rom" size="49152" crc="7f855276"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -5246,20 +5283,8 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="megamite" cloneof="megamit" romof="megamit" sourcefile="msx/d_msx.cpp">
-		<comment>Hack</comment>
-		<description>Digital Devil Monogatari - Megami Tensei (Hack, English)</description>
-		<year>2024</year>
-		<manufacturer>Kaisaan</manufacturer>
-		<rom name="Digital Devil Monogatari Megami Tensei T-Eng (2024)(Kaisaan).rom" size="139264" crc="91987fb2"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="megamit" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Digital Devil Monogatari - Megami Tensei (Japan)</description>
+		<description>Digital Devil Monogatari: Megami Tensei (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nihon Telenet</manufacturer>
 		<rom name="Digital Devil Monogatari Megami Tensei (Japan)(1987)(Nihon Telenet).rom" size="131072" crc="25fc11fa"/>
@@ -5270,7 +5295,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="megamita" cloneof="megamit" romof="megamit" sourcefile="msx/d_msx.cpp">
-		<description>Digital Devil Monogatari - Megami Tensei (Japan, Alt)</description>
+		<description>Digital Devil Monogatari: Megami Tensei (Japan, Alt)</description>
 		<year>1987</year>
 		<manufacturer>Nihon Telenet</manufacturer>
 		<rom name="Digital Devil Monogatari Megami Tensei (Japan, Alt)(1987)(Nihon Telenet).rom" size="131072" crc="367d385e"/>
@@ -5280,9 +5305,33 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megamite" cloneof="megamit" romof="megamit" sourcefile="msx/d_msx.cpp">
+		<comment>Hack</comment>
+		<description>Digital Devil Story: Megami Tensei (Hack, English)</description>
+		<year>2024</year>
+		<manufacturer>Kaisaan</manufacturer>
+		<rom name="Digital Devil Monogatari Megami Tensei T-Eng (2024)(Kaisaan).rom" size="139264" crc="91987fb2"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dinamictrs" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, Selection of Dinamic Software games from 1985 to 1991</comment>
+		<description>Dinamic Treasures (Spanish) (HB)</description>
+		<year>2025</year>
+		<manufacturer>SMX Team</manufacturer>
+		<rom name="Dinamic Treasures ES (2025)(SMX Team).rom" size="1908736" crc="1bbbc643"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="jinj2" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Dinj 2 - Belmonte's Revenge (HB)</description>
+		<description>Dinj 2: Belmonte's Revenge (HB)</description>
 		<year>2012</year>
 		<manufacturer>Retroworks</manufacturer>
 		<rom name="Dinj 2 - Belmonte's Revenge (2012)(Retroworks).rom" size="32768" crc="d43cf107"/>
@@ -5620,22 +5669,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="dquest2a" cloneof="dquest2" romof="dquest2" sourcefile="msx/d_msx.cpp">
-		<description>Dragon Quest II - - Akuryou no Kamigami (Japan, Alt)</description>
+	<game name="dquest2" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Dragon Quest II: Akuryou no Kamigami (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Enix</manufacturer>
-		<rom name="Dragon Quest II (Japan, Alt)(1987)(Enix).rom" size="262144" crc="d44165a3"/>
+		<rom name="Dragon Quest II (Japan)(1987)(Enix).rom" size="262144" crc="8076fec6"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="dquest2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Dragon Quest II - Akuryou no Kamigami (Japan)</description>
+	<game name="dquest2a" cloneof="dquest2" romof="dquest2" sourcefile="msx/d_msx.cpp">
+		<description>Dragon Quest II: Akuryou no Kamigami (Japan, Alt)</description>
 		<year>1987</year>
 		<manufacturer>Enix</manufacturer>
-		<rom name="Dragon Quest II (Japan)(1987)(Enix).rom" size="262144" crc="8076fec6"/>
+		<rom name="Dragon Quest II (Japan, Alt)(1987)(Enix).rom" size="262144" crc="d44165a3"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -5654,7 +5703,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dslayer4" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Dragon Slayer IV - Drasle Family (Japan)</description>
+		<description>Dragon Slayer IV: Drasle Family (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Nihon Falcom</manufacturer>
 		<rom name="Dragon Slayer IV - Drasle Family (Japan)(1987)(Nihon Falcom).rom" size="262144" crc="87dcd309"/>
@@ -5666,7 +5715,7 @@
 	</game>
 	<game name="romanciaen" cloneof="romancia" romof="romancia" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
-		<description>Dragon Slayer Jr. - Romancia (Hack, English)</description>
+		<description>Dragon Slayer Jr. ~ Romancia (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>MSX Translations</manufacturer>
 		<rom name="Dragon Slayer Jr. - Romancia T-Eng (2010)(MSX Translations).rom" size="131072" crc="885773f9"/>
@@ -5677,7 +5726,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="romancia" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Dragon Slayer Jr. - Romancia (Japan)</description>
+		<description>Dragon Slayer Jr. ~ Romancia (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nihon Falcom</manufacturer>
 		<rom name="Dragon Slayer Jr. - Romancia (Japan)(1986)(Falcom).rom" size="131072" crc="387c1de7"/>
@@ -6446,7 +6495,7 @@
 		<description>Farty Pig (HB, beta)</description>
 		<year>2020</year>
 		<manufacturer>The Geps</manufacturer>
-		<rom name="Farty Pig - Beta (2020)(The Geps).rom" size="16384" crc="5ddd1e48"/>
+		<rom name="Farty Pig (beta)(2020)(The Geps).rom" size="16384" crc="5ddd1e48"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -6624,6 +6673,18 @@
 		<year>1985</year>
 		<manufacturer>dB-Soft</manufacturer>
 		<rom name="Flappy - Limited 85 (Japan)(1985)(dB-Soft).rom" size="16384" crc="4a4f3084"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="flappypata" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Flappy Patastrato (HB)</description>
+		<year>2025</year>
+		<manufacturer>PlattySoft</manufacturer>
+		<rom name="Flappy Patastrato (2025)(PlattySoft).rom" size="49152" crc="b6343889"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -12359,6 +12420,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="multic31in1" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, H.E.R.O doesn't work</comment>
+		<description>MultiCart 31in1 (HB)</description>
+		<year>2019</year>
+		<manufacturer>RetroHard</manufacturer>
+		<rom name="MultiCart 31in1 (2019)(RetroHard).rom" size="1048576" crc="0613d8db"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="multiverse" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Multiverse (HB)</description>
@@ -14895,22 +14968,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="robocop" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Robocop (Euro)</description>
+		<description>RoboCop (Euro)</description>
 		<year>1988</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Robocop (Euro, GB)(1988)(Ocean)(Side A)[BLOAD'CAS-',R].cas" size="81634" crc="fb8aa367"/>
-		<rom name="Robocop (Euro, GB)(1988)(Ocean)(Side B)[BLOAD'CAS-',R].cas" size="57586" crc="8a43b63f"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="seicorobocop" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>RoboCop (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Sieco</manufacturer>
-		<rom name="RoboCop (Japan)(1992)(Sieco).rom" size="131072" crc="4628ef05"/>
+		<rom name="RoboCop (Euro, GB)(1988)(Ocean)(Side A)[BLOAD'CAS-',R].cas" size="81634" crc="fb8aa367"/>
+		<rom name="RoboCop (Euro, GB)(1988)(Ocean)(Side B)[BLOAD'CAS-',R].cas" size="57586" crc="8a43b63f"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15126,6 +15188,18 @@
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Ruptus (2021)(Inufuto).rom" size="16384" crc="59ece025"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shmups" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, River Raid doesn't work</comment>
+		<description>S H M U P S (HB)</description>
+		<year>2019</year>
+		<manufacturer>RetroHard</manufacturer>
+		<rom name="S H M U P S (2019)(RetroHard).rom" size="1048576" crc="0241b504"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -16521,6 +16595,17 @@
 		<year>1984</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Starship Simulator (Japan, Alt)(1984)(ASCII).rom" size="16384" crc="87824af6"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="seicorobocop" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Steel RoboCop (Korea)</description>
+		<year>1992</year>
+		<manufacturer>Sieco</manufacturer>
+		<rom name="Steel RoboCop (Korea)(1992)(Sieco).rom" size="131072" crc="4628ef05"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>

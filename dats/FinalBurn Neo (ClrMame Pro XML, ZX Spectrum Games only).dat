@@ -3738,6 +3738,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bolalela" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Bolalela 5 (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Beyker Soft</manufacturer>
+		<rom name="Bolalela 5 48K (2025)(Beyker Soft).tap" size="34623" crc="b0fa7e49"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bomb" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Bomb (48K) (HB)</description>
@@ -5140,13 +5150,22 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="chainreaction" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="chainreact128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Chain Reaction (128K)</description>
 		<year>1987</year>
 		<manufacturer>Durell Software</manufacturer>
-		<rom name="Chain Reaction 128K (1987)(Durell).tap" size="51862" crc="42c4cd17"/>
+		<rom name="Chain Reaction 128K (1987)(Durell).tzx" size="52005" crc="0257b3b0"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chainreact48" cloneof="chainreact128" romof="chainreact128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Chain Reaction (48K)</description>
+		<year>1987</year>
+		<manufacturer>Durell Software</manufacturer>
+		<rom name="Chain Reaction 48K (1987)(Durell).tzx" size="52005" crc="bcbdd521"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6318,6 +6337,16 @@
 		<rom name="Cosmic Payback 128K (2020)(John Connolly).tap" size="58570" crc="c91aa72f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cosmicraiders" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>2: down - 4: up - 8: thrust - 0: fire - Z: reverse - M: smart bomb</comment>
+		<description>Cosmic Raiders (16K)</description>
+		<year>1983</year>
+		<manufacturer>Mikro-Gen</manufacturer>
+		<rom name="Cosmic Raiders 16K (1983)(Mikro-Gen).tzx" size="9367" crc="1e8ec357"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19726,6 +19755,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ninjasac1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ninja Secret Agent - Chapter 1 (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Itho Games</manufacturer>
+		<rom name="Ninja Secret Agent Chapter 1 128K (2025)(Itho Games).tap" size="58403" crc="5c22d5e6"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ninjaspirit" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Ninja Spirit (128K)</description>
 		<year>1990</year>
@@ -20262,6 +20302,16 @@
 		<year>1990</year>
 		<manufacturer>Players Premier</manufacturer>
 		<rom name="Operation Hanoi 48K-128K (1990)(Players Premier).tap" size="74134" crc="8f259898"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ophormuz" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Operation Hormuz (48K-128K)</description>
+		<year>1989</year>
+		<manufacturer>Again Again - Durell Software</manufacturer>
+		<rom name="Operation Hormuz 48K-128K (1989)(Again Again).tzx" size="49106" crc="1c657b1e"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -22242,6 +22292,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="quiviria" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Quivira (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Softimar</manufacturer>
+		<rom name="Quivira 128K (2025)(Softimar).tap" size="153908" crc="e4817a3d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rtype" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>R-Type (48K)</description>
 		<year>1988</year>
@@ -23620,6 +23681,72 @@
 		<manufacturer>Jason Taylor</manufacturer>
 		<rom name="Rondure Sorcerer 48K (2023)(Jason Taylor).tap" size="46528" crc="3444bd49"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilken1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 1 (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 1 EN 128K (2025)(Splatter Soft).tap" size="58213" crc="18e216a7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilkpt1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 1 (Portuguese) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 1 PT 128K (2025)(Splatter Soft).tap" size="58314" crc="f365e8a5"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilkes1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 1 (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 1 ES 128K (2025)(Splatter Soft).tap" size="58312" crc="f3518526"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilken2" cloneof="roshimilken1" romof="roshimilken1" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 2 (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 2 EN 128K (2025)(Splatter Soft).tap" size="59237" crc="253c75fb"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilkpt2" cloneof="roshimilkpt1" romof="roshimilkpt1" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 2 (Portuguese) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 2 PT 128K (2025)(Splatter Soft).tap" size="59352" crc="757dcdb7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="roshimilkes2" cloneof="roshimilkes1" romof="roshimilkes1" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Roshi Milk Course - Part 2 (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Splatter Soft</manufacturer>
+		<rom name="Roshi Milk Course - Part 2 ES 128K (2025)(Splatter Soft).tap" size="59340" crc="5e3ef4ba"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25019,6 +25146,25 @@
 		<manufacturer>Firebird Software</manufacturer>
 		<rom name="Sidewize 48K (1987)(Firebird Software).tap" size="41672" crc="db066855"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sigma7128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Sigma 7 (128K)</description>
+		<year>1987</year>
+		<manufacturer>Durell Software</manufacturer>
+		<rom name="Sigma 7 128K (1987)(Durell).tzx" size="44613" crc="64794396"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sigma748" cloneof="sigma7128" romof="sigma7128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Sigma 7 (48K)</description>
+		<year>1987</year>
+		<manufacturer>Durell Software</manufacturer>
+		<rom name="Sigma 7 48K (1987)(Durell).tzx" size="49372" crc="7c6ae893"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

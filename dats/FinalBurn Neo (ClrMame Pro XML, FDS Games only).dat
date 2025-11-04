@@ -1528,19 +1528,19 @@
 	</game>
 	<game name="seikepsy" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Seiken Psychocalibur - Majuu no Mori Densetsu (Hack, English)</description>
-		<year>2013</year>
+		<description>Seiken Psycho Calibur (Hack, English)</description>
+		<year>2000</year>
 		<manufacturer>The Spoony Bard</manufacturer>
-		<rom name="Seiken Psychocalibur - Majuu no Mori Densetsu T-Eng (2013)(The Spoony Bard).fds" size="131000" crc="1ec1552b"/>
+		<rom name="Seiken Psycho Calibur T-Eng (2000)(The Spoony Bard).fds" size="131000" crc="1ec1552b"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="seikepsyj" cloneof="seikepsy" romof="seikepsy" sourcefile="nes/d_nes.cpp">
-		<description>Seiken Psychocalibur - Majuu no Mori Densetsu (Japan)</description>
+		<description>Seiken Psycho Calibur: Majuu no Mori Densetsu (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Imagineer</manufacturer>
-		<rom name="Seiken Psychocalibur - Majuu no Mori Densetsu (Japan)(1987)(Imagineer).fds" size="131000" crc="aea5691a"/>
+		<rom name="Seiken Psycho Calibur - Majuu no Mori Densetsu (Japan)(1987)(Imagineer).fds" size="131000" crc="aea5691a"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1559,16 +1559,7 @@
 		<description>Silviana (Hack, English)</description>
 		<year>2002</year>
 		<manufacturer>Mute</manufacturer>
-		<rom name="Silviana - Ai Ippai no Little Angel T-Eng (2002)(Mute).fds" size="131000" crc="c5b1bff7"/>
-		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="silvij" cloneof="silvi" romof="silvi" sourcefile="nes/d_nes.cpp">
-		<description>Silviana - Ai Ippai no Little Angel (Japan)</description>
-		<year>1988</year>
-		<manufacturer>Pack-In-Video</manufacturer>
-		<rom name="Silviana - Ai Ippai no Little Angel (Japan)(1988)(Pack-In-Video).fds" size="131016" crc="4d721d90"/>
+		<rom name="Silviana T-Eng (2002)(Mute).fds" size="131000" crc="c5b1bff7"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1674,8 +1665,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="silvij" cloneof="silvi" romof="silvi" sourcefile="nes/d_nes.cpp">
+		<description>Sylviana: Ai Ippai no Little Angel (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Pack-In-Video</manufacturer>
+		<rom name="Sylviana - Ai Ippai no Little Angel (Japan)(1988)(Pack-In-Video).fds" size="131016" crc="4d721d90"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="tamafri" romof="fdsbios" sourcefile="nes/d_nes.cpp">
-		<description>Tama &amp; Friends - 3 Choume Daibouken (Japan)</description>
+		<description>Tama &amp; Friends: 3 Choume Daibouken (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Tama &amp; Friends - 3 Choume Daibouken (Japan)(1989)(Bandai).fds" size="131016" crc="8751a949"/>
@@ -1688,6 +1688,25 @@
 		<year>1986</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Tennis (Japan)(1986)(Nintendo).fds" size="65516" crc="136c64ed"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="titanicj" cloneof="titanic" romof="titanic" sourcefile="nes/d_nes.cpp">
+		<description>Titanic Mystery: Ao no Senritsu (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Gakken - Activision</manufacturer>
+		<rom name="Titanic Mystery - Ao no Senritsu (Japan)(1987)(Gakken - Activision).fds" size="131000" crc="fb36075c"/>
+		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="titanic" romof="fdsbios" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Titanic Mystery: Rumblings from the Blue (Hack, English)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Titanic Mystery - Rumblings from the Blue T-Eng (2025)(BlackPaladin).fds" size="131000" crc="dab26a4e"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
@@ -1712,8 +1731,8 @@
 	</game>
 	<game name="trans" romof="fdsbios" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Transformers - The Headmasters (Hack, English)</description>
-		<year>1987</year>
+		<description>Transformers: The Headmasters (Hack, English)</description>
+		<year>2025</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Transformers - The Headmasters T-Eng (2025)(BlackPaladin).fds" size="131000" crc="e3165537"/>
 		<rom name="fdsbios.nes" merge="fdsbios.nes" size="8192" crc="5e607dcf"/>
@@ -1721,7 +1740,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="transj" cloneof="trans" romof="trans" sourcefile="nes/d_nes.cpp">
-		<description>Transformers - The Headmasters (Japan)</description>
+		<description>Transformers: The Headmasters (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Takara</manufacturer>
 		<rom name="Transformers - The Headmasters (Japan)(1987)(Takara).fds" size="131016" crc="8bd904cd"/>
