@@ -16,6 +16,7 @@ SOURCES_CXX += $(FBNEO_CPU_DIR)/m68000_intf.cpp \
 	$(FBNEO_BURN_SND_DIR)/burn_ym2610.cpp \
 	$(FBNEO_BURN_SND_DIR)/burn_ym2612.cpp \
 	$(FBNEO_BURN_DEVICES_DIR)/joyprocess.cpp \
+	$(FBNEO_BURN_DEVICES_DIR)/resnet.cpp \
 	$(NEOGEO_DIR)/d_neogeo.cpp \
 	$(NEOGEO_DIR)/neo_decrypt.cpp \
 	$(NEOGEO_DIR)/neo_palette.cpp \
