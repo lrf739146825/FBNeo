@@ -1,6 +1,10 @@
 #include "retro_common.h"
 #include "retro_input.h"
 
+#include <file/file_path.h>
+#include <retro_dirent.h>
+#include <streams/file_stream.h>
+
 struct RomBiosInfo neogeo_bioses[] = {
 	{"sp-s3.sp1",         0x91b64be3, 0x00, "MVS Asia/Europe ver. 6 (1 slot)", NEOGEO_MVS | NEOGEO_EUR, 0 },
 	{"sp-s2.sp1",         0x9036d879, 0x01, "MVS Asia/Europe ver. 5 (1 slot)", NEOGEO_MVS | NEOGEO_EUR, 0 },
@@ -903,17 +907,7 @@ void set_environment()
 {
 	std::vector<const retro_core_option_v2_definition*> vars_systems;
 	struct retro_core_option_v2_definition *option_defs_us;
-#ifdef _MSC_VER
-#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_APP)
-	#ifndef FORCE_USE_VFS
-	#define FORCE_USE_VFS
-	#endif
-#endif
-#endif
-
-#ifdef FORCE_USE_VFS
 	struct retro_vfs_interface_info vfs_iface_info;
-#endif
 
 	// Add the Global core options
 	var_fbneo_allow_depth_32.desc                          = RETRO_DEPTH32_CAT_DESC;
@@ -1489,14 +1483,14 @@ error:
 		}
 	}
 
-	// Initialize VFS
-	// Only on UWP for now, since EEPROM saving is not VFS aware
-#ifdef FORCE_USE_VFS
 	vfs_iface_info.required_interface_version = FILESTREAM_REQUIRED_VFS_VERSION;
 	vfs_iface_info.iface                      = NULL;
 	if (environ_cb(RETRO_ENVIRONMENT_GET_VFS_INTERFACE, &vfs_iface_info))
+	{
+		dirent_vfs_init(&vfs_iface_info);
 		filestream_vfs_init(&vfs_iface_info);
-#endif
+		path_vfs_init(&vfs_iface_info);
+	}
 }
 
 TCHAR* AdaptiveEncodingReads(const TCHAR* pszFileName)
