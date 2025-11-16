@@ -377,6 +377,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aliencat2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Alien Cat 2 (HB)</description>
+		<year>2025</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Alien Cat 2 (2025)(PSCD Games).sms" size="344064" crc="7acff9b3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="astorm" sourcefile="sms/d_sms.cpp">
 		<description>Alien Storm (Euro, Brazil)</description>
 		<year>1991</year>
@@ -3492,6 +3501,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lilsamson" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Little Samson Tribute (GlobalHack, v1.1, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>LMS Retro</manufacturer>
+		<rom name="Little Samson Tribute v1.1 (GlobalHack)(2025)(LMS Retro).sms" size="524288" crc="17a73ba7"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lordswrdj" cloneof="lordswrd" romof="lordswrd" sourcefile="sms/d_sms.cpp">
 		<description>Lord of Sword (Japan)</description>
 		<year>1988</year>
@@ -4129,11 +4147,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="noturno" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew</comment>
-		<description>Noturno (HB, Portuguese)</description>
+		<comment>Hack</comment>
+		<description>Noturno (GlobalHack, Portuguese)</description>
 		<year>2025</year>
 		<manufacturer>LMS Retro</manufacturer>
 		<rom name="Noturno (2025)(LMS Retro).sms" size="524288" crc="47be6422"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="noturnomg" cloneof="noturno" romof="noturno" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Noturno Mini Game (Edicao de Halloween) (GlobalHack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>LMS Retro</manufacturer>
+		<rom name="Noturno Mini Game (Edicao de Halloween) (2025)(LMS Retro).sms" size="524288" crc="038489c0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4222,10 +4249,10 @@
 	</game>
 	<game name="pacmanmm" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Pac-Man Master Museum (HB, v2.20)</description>
+		<description>Pac-Man Master Museum (HB, v3.10)</description>
 		<year>2025</year>
 		<manufacturer>Lack of Track</manufacturer>
-		<rom name="Pac-Man Master Museum v2.20 (2025)(Lack of Track).sms" size="131072" crc="9725b67f"/>
+		<rom name="Pac-Man Master Museum v3.10 (2025)(Lack of Track).sms" size="262144" crc="75419b59"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

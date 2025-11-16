@@ -21554,6 +21554,24 @@ struct BurnDriver BurnDrvsms_alexlostse = {
 	256, 192, 4, 3
 };
 
+// Alien Cat 2 (HB)
+static struct BurnRomInfo sms_aliencat2RomDesc[] = {
+	{ "Alien Cat 2 (2025)(PSCD Games).sms",	344064, 0x7acff9b3, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_aliencat2)
+STD_ROM_FN(sms_aliencat2)
+
+struct BurnDriver BurnDrvsms_aliencat2 = {
+	"sms_aliencat2", NULL, NULL, NULL, "2025",
+	"Alien Cat 2 (HB)\0", NULL, "PSCD Games", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION | GBF_PUZZLE, 0,
+	SMSGetZipName, sms_aliencat2RomInfo, sms_aliencat2RomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
 // AntiAir (HB)
 static struct BurnRomInfo sms_antiairRomDesc[] = {
 	{ "AntiAir (2024)(Inufuto).sms",	16384, 0xe49dfb4e, BRF_PRG | BRF_ESS },
@@ -22960,6 +22978,24 @@ struct BurnDriver BurnDrvsms_linerunner = {
 	256, 192, 4, 3
 };
 
+// Little Samson Tribute (GlobalHack, v1.1, Portuguese)
+static struct BurnRomInfo sms_lilsamsonRomDesc[] = {
+	{ "Little Samson Tribute v1.1 (GlobalHack)(2025)(LMS Retro).sms",	524288, 0x17a73ba7, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_lilsamson)
+STD_ROM_FN(sms_lilsamson)
+
+struct BurnDriver BurnDrvsms_lilsamson = {
+	"sms_lilsamson", NULL, NULL, NULL, "2025",
+	"Little Samson Tribute (GlobalHack, v1.1, Portuguese)\0", NULL, "LMS Retro", "Sega Master System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HACK, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_PLATFORM | GBF_SCRFIGHT, 0,
+	SMSGetZipName, sms_lilsamsonRomInfo, sms_lilsamsonRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSFMDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
 // Lost Raider (HB, v1.01)
 static struct BurnRomInfo sms_lostraider101RomDesc[] = {
 	{ "LostRaider v1.01 (2015)(Vingazole & Ichigo Bankai).sms",	131072, 0x2553b745, BRF_PRG | BRF_ESS },
@@ -23286,7 +23322,7 @@ struct BurnDriver BurnDrvsms_novdmvdp = {
 	256, 192, 4, 3
 };
 
-// Noturno (HB, Portuguese)
+// Noturno (GlobalHack, Portuguese)
 static struct BurnRomInfo sms_noturnoRomDesc[] = {
 	{ "Noturno (2025)(LMS Retro).sms",	524288, 0x47be6422, BRF_PRG | BRF_ESS },
 };
@@ -23296,10 +23332,28 @@ STD_ROM_FN(sms_noturno)
 
 struct BurnDriver BurnDrvsms_noturno = {
 	"sms_noturno", NULL, NULL, NULL, "2025",
-	"Noturno (HB, Portuguese)\0", NULL, "LMS Retro", "Sega Master System",
+	"Noturno (GlobalHack, Portuguese)\0", NULL, "LMS Retro", "Sega Master System",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_PLATFORM | GBF_SCRFIGHT, 0,
+	BDF_GAME_WORKING | BDF_HACK, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_PLATFORM | GBF_SCRFIGHT, 0,
 	SMSGetZipName, sms_noturnoRomInfo, sms_noturnoRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSFMDIPInfo,
+	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
+	256, 192, 4, 3
+};
+
+// Noturno Mini Game (Edição de Halloween) (GlobalHack, Portuguese)
+static struct BurnRomInfo sms_noturnomgRomDesc[] = {
+	{ "Noturno Mini Game (Edicao de Halloween) (2025)(LMS Retro).sms",	524288, 0x038489c0, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sms_noturnomg)
+STD_ROM_FN(sms_noturnomg)
+
+struct BurnDriver BurnDrvsms_noturnomg = {
+	"sms_noturnomg", "sms_noturno", NULL, NULL, "2025",
+	"Noturno Mini Game (Edicao de Halloween) (GlobalHack, Portuguese)\0", NULL, "LMS Retro", "Sega Master System",
+	L"Noturno Mini Game (Edi\u00e7\u00e3o de Halloween) (GlobalHack, Portuguese)\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SEGA_MASTER_SYSTEM, GBF_PLATFORM | GBF_SCRFIGHT, 0,
+	SMSGetZipName, sms_noturnomgRomInfo, sms_noturnomgRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSFMDIPInfo,
 	SMSInit, SMSExit, SMSFrame, SMSDraw, SMSScan, &SMSPaletteRecalc, 0x1E00,
 	256, 192, 4, 3
 };
@@ -23340,9 +23394,9 @@ struct BurnDriver BurnDrvsms_outrunch = {
 	256, 192, 4, 3
 };
 
-// Pac-Man Master Museum (HB, v2.20)
+// Pac-Man Master Museum (HB, v3.10)
 static struct BurnRomInfo sms_pacmanmmRomDesc[] = {
-	{ "Pac-Man Master Museum v2.20 (2025)(Lack of Track).sms",	131072, 0x9725b67f, BRF_PRG | BRF_ESS },
+	{ "Pac-Man Master Museum v3.10 (2025)(Lack of Track).sms",	262144, 0x75419b59, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(sms_pacmanmm)
@@ -23350,7 +23404,7 @@ STD_ROM_FN(sms_pacmanmm)
 
 struct BurnDriver BurnDrvsms_pacmanmm = {
 	"sms_pacmanmm", NULL, NULL, NULL, "2025",
-	"Pac-Man Master Museum (HB, v2.20)\0", NULL, "Lack of Track", "Sega Master System",
+	"Pac-Man Master Museum (HB, v3.10)\0", NULL, "Lack of Track", "Sega Master System",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_SEGA_MASTER_SYSTEM, GBF_ACTION | GBF_MAZE, 0,
 	SMSGetZipName, sms_pacmanmmRomInfo, sms_pacmanmmRomName, NULL, NULL, NULL, NULL, SMSInputInfo, SMSDIPInfo,
