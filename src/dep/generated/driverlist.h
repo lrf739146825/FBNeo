@@ -194,7 +194,6 @@ DRV		BurnDrvStreet64ja;
 DRV		BurnDrvStreet64;
 DRV		BurnDrvmd_688atsub;
 DRV		BurnDrvOrdi7;
-DRV		BurnDrvnes_7lsal;
 DRV		BurnSpec7777;
 DRV		BurnSpec70908;
 DRV		BurnSpec720deg;
@@ -24703,7 +24702,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvStreet64,			// 64th. Street: A Detective Story (World)
 	&BurnDrvmd_688atsub,		// 688 Attack Sub (Euro, USA)
 	&BurnDrvOrdi7,				// 7 Ordi (Korea)
-	&BurnDrvnes_7lsal,			// 7-Lucky Slot-A-Lot (HB)
 	&BurnSpec7777,				// 7.7.7.7. (128K) (HB)
 	&BurnSpec70908,				// 70908 (128K) (HB, Tech-Demo)
 	&BurnSpec720deg,			// 720 Degrees (48K)
@@ -49212,7 +49210,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "64street", "pre90s/d_megasys1.cpp"},
 	{ "md_688atsub", "megadrive/d_megadrive.cpp"},
 	{ "7ordi", "pst90s/d_nmg5.cpp"},
-	{ "nes_7lsal", "nes/d_nes.cpp"},
 	{ "spec_7777", "spectrum/d_spectrum.cpp"},
 	{ "spec_70908", "spectrum/d_spectrum.cpp"},
 	{ "spec_720deg", "spectrum/d_spectrum.cpp"},
