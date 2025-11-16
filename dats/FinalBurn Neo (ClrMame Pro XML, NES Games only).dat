@@ -103,6 +103,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="7lsal" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>7-Lucky Slot-A-Lot (HB)</description>
+		<year>2025</year>
+		<manufacturer>Demon Ark</manufacturer>
+		<rom name="7-Lucky Slot-A-Lot (2025)(Demon Ark).nes" size="40976" crc="67ca711a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="720degrees" sourcefile="nes/d_nes.cpp">
 		<description>720 Degrees (USA)</description>
 		<year>1989</year>
@@ -916,6 +925,15 @@
 		<year>1993</year>
 		<manufacturer>Ljn</manufacturer>
 		<rom name="Alien 3 (USA)(1993)(Ljn).nes" size="262160" crc="efb4ca05"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="aliencat2" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Alien Cat 2 (HB)</description>
+		<year>2025</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Alien Cat 2 (2025)(PSCD Games).nes" size="262160" crc="550e30b3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2229,7 +2247,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="biknekiroku" cloneof="crashnboy" romof="crashnboy" sourcefile="nes/d_nes.cpp">
-		<description>Bikkuri Nekketsu Shin Kiroku! - Harukanaru Kin Medal (Japan)</description>
+		<description>Bikkuri Nekketsu Shin Kiroku!: Harukanaru Kin Medal (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Technos Japan</manufacturer>
 		<rom name="Bikkuri Nekketsu Shin Kiroku! - Harukanaru Kin Medal (Japan)(1992)(Technos).nes" size="262160" crc="f5202c9e"/>
@@ -4405,7 +4423,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="crashnboy" sourcefile="nes/d_nes.cpp">
-		<description>Crash 'n' the Boys - Street Challenge (USA)</description>
+		<description>Crash 'n' the Boys: Street Challenge (USA)</description>
 		<year>1992</year>
 		<manufacturer>Technos</manufacturer>
 		<rom name="Crash 'n' the Boys - Street Challenge (USA)(1992)(Technos).nes" size="262160" crc="ed63ccc5"/>
@@ -8636,26 +8654,34 @@
 		<driver status="good"/>
 	</game>
 	<game name="godsla" cloneof="crystalis" romof="crystalis" sourcefile="nes/d_nes.cpp">
-		<description>God Slayer - Haruka Tenkuu no Sonata (Japan)</description>
+		<description>God Slayer: Haruka Tenkuu no Sonata (Japan)</description>
 		<year>1990</year>
 		<manufacturer>SNK</manufacturer>
 		<rom name="God Slayer - Haruka Tenkuu no Sonata (Japan)(1990)(SNK).nes" size="393232" crc="718fd0af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="godzi" sourcefile="nes/d_nes.cpp">
-		<description>Godzilla - Monster of Monsters! (USA)</description>
-		<year>1989</year>
+	<game name="godzij" cloneof="godzi" romof="godzi" sourcefile="nes/d_nes.cpp">
+		<description>Godzilla (Japan)</description>
+		<year>1988</year>
 		<manufacturer>Toho Co.</manufacturer>
-		<rom name="Godzilla - Monster of Monsters! (USA)(1989)(Toho).nes" size="262160" crc="198b4e3b"/>
+		<rom name="Godzilla (Japan)(1988)(Toho).nes" size="262160" crc="e785f399"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="godzi2" sourcefile="nes/d_nes.cpp">
-		<description>Godzilla 2 - War of the Monsters (USA)</description>
+		<description>Godzilla 2: War of the Monsters (USA)</description>
 		<year>1992</year>
 		<manufacturer>Toho Co.</manufacturer>
 		<rom name="Godzilla 2 - War of the Monsters (USA)(1992)(Toho).nes" size="262160" crc="f200080d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="godzi" sourcefile="nes/d_nes.cpp">
+		<description>Godzilla: Monster of Monsters! (USA)</description>
+		<year>1989</year>
+		<manufacturer>Toho Co.</manufacturer>
+		<rom name="Godzilla - Monster of Monsters! (USA)(1989)(Toho).nes" size="262160" crc="198b4e3b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11057,20 +11083,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="kaguyae" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kaguya Hime Densetsu (Hack, English)</description>
-		<year>2022</year>
-		<manufacturer>FCandChill</manufacturer>
-		<rom name="Kaguya Hime Densetsu T-Eng (2022)(FCandChill).nes" size="524304" crc="80de5290"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="kaguyaj" cloneof="kaguyae" romof="kaguyae" sourcefile="nes/d_nes.cpp">
 		<description>Kaguya Hime Densetsu (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Victor</manufacturer>
 		<rom name="Kaguya Hime Densetsu (Japan)(1988)(Victor).nes" size="262160" crc="69565d0e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kaguyae" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kaguya Hime Densetsu ~ Legend of Princess Kaguya, The (Hack, English)</description>
+		<year>2022</year>
+		<manufacturer>FCandChill</manufacturer>
+		<rom name="Kaguya Hime Densetsu T-Eng (2022)(FCandChill).nes" size="524304" crc="80de5290"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15408,6 +15434,15 @@
 		<year>2018</year>
 		<manufacturer>NovaSquirrel</manufacturer>
 		<rom name="Nova the Squirrel (2018)(NovaSquirrel).nes" size="262160" crc="0b752bee"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="nullsummo" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Null the Summoner (HB)</description>
+		<year>2025</year>
+		<manufacturer>Shinryakuwu</manufacturer>
+		<rom name="Null the Summoner (2025)(Shinryakuwu).nes" size="40976" crc="73c44286"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

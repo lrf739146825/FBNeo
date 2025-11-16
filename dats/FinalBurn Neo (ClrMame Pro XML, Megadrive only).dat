@@ -6979,10 +6979,10 @@
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.90b)</description>
+		<description>Final Fight MD (HB, v0.91b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.90b (2025)(MXRetroDev - CFX).bin" size="4194304" crc="816d52d8"/>
+		<rom name="Final Fight MD v0.91b (2025)(MXRetroDev - CFX).bin" size="4063232" crc="a125cc7d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

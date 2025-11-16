@@ -1674,17 +1674,17 @@
 		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="b2b2d" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+	<game name="b2b2" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Demo, Homebrew</comment>
 		<description>Bang Bang Busters 2 (HB, Demo)</description>
 		<year>2025</year>
 		<manufacturer>PixelHeart</manufacturer>
-		<rom name="070-p1.p1" size="1048576" crc="3659f253"/>
-		<rom name="070-s1.s1" size="131072" crc="e53ef3d0"/>
-		<rom name="070-c1.c1" size="8388608" crc="739173e2"/>
-		<rom name="070-c2.c2" size="8388608" crc="9a439c98"/>
-		<rom name="070-m1.m1" size="65536" crc="bff0ad49"/>
-		<rom name="070-v1.v1" size="4194304" crc="f1dda8dd"/>
+		<rom name="b2b2-p1.p1" size="1048576" crc="3659f253"/>
+		<rom name="b2b2-s1.s1" size="131072" crc="e53ef3d0"/>
+		<rom name="b2b2-c1.c1" size="8388608" crc="739173e2"/>
+		<rom name="b2b2-c2.c2" size="8388608" crc="9a439c98"/>
+		<rom name="b2b2-m1.m1" size="65536" crc="bff0ad49"/>
+		<rom name="b2b2-v1.v1" size="4194304" crc="f1dda8dd"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
@@ -7575,12 +7575,12 @@
 		<description>Jurl (HB, v0.3c)</description>
 		<year>2025</year>
 		<manufacturer>Tonsomo Entertainment</manufacturer>
-		<rom name="202-p1.p1" size="524288" crc="601b540e"/>
-		<rom name="202-s1.s1" size="131072" crc="d6c058c9"/>
-		<rom name="202-c1.c1" size="1048576" crc="02811fe9"/>
-		<rom name="202-c2.c2" size="1048576" crc="953bb9a9"/>
-		<rom name="202-m1.m1" size="131072" crc="b758c5d2"/>
-		<rom name="202-v1.v1" size="4194304" crc="16db022e"/>
+		<rom name="jurl-p1.p1" size="524288" crc="601b540e"/>
+		<rom name="jurl-s1.s1" size="131072" crc="d6c058c9"/>
+		<rom name="jurl-c1.c1" size="1048576" crc="02811fe9"/>
+		<rom name="jurl-c2.c2" size="1048576" crc="953bb9a9"/>
+		<rom name="jurl-m1.m1" size="131072" crc="b758c5d2"/>
+		<rom name="jurl-v1.v1" size="4194304" crc="16db022e"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
