@@ -2184,6 +2184,7 @@ static SymbolMapping SymbolList[] = {
 	{ "_%", "△" }, { "@guard", "Ⓖ" }
 };
 */
+/*
 // Fail, default Font Unable display all icons. Need Change RetroArch used Font !!!
 static SymbolMapping SymbolList[] = {
     { "_A", "\u24B6" }, { "_$", "\u25B2" }, { "@L-punch", "[\u24C1\u24C5]" },
@@ -2255,10 +2256,83 @@ static SymbolMapping SymbolList[] = {
     { "_&", "\u2605" }, { "@kick", "\u24C0" }, { "@button", "[\u24B7\u24E3\u2463]" },
     { "_%", "\u25B3" }, { "@guard", "\u24BC" }
 };
+*/
 
+// version 2025-11-17 sync from master \src\burner\win32\gameinfo.cpp
+static SymbolMapping SymbolList[] = {
+    // 完整按钮映射（双模式兼容）
+    { "@A-button", "Btn-A" }, { "@B-button", "Btn-B" }, { "@C-button", "Btn-C" },
+    { "@D-button", "Btn-D" }, { "@E-button", "Btn-E" }, { "@F-button", "Btn-F" },
+    { "@G-button", "Btn-G" }, { "@H-button", "Btn-H" }, { "@I-button", "Btn-I" },
+    { "@J-button", "Btn-J" }, { "@K-button", "Btn-K" }, { "@L-button", "Btn-L" },
+    { "@M-button", "Btn-M" }, { "@N-button", "Btn-N" }, { "@O-button", "Btn-O" },
+    { "@P-button", "Btn-P" }, { "@Q-button", "Btn-Q" }, { "@R-button", "Btn-R" },
+    { "@S-button", "Btn-S" }, { "@T-button", "Btn-T" }, { "@U-button", "Btn-U" },
+    { "@V-button", "Btn-V" }, { "@W-button", "Btn-W" }, { "@X-button", "Btn-X" },
+    { "@Y-button", "Btn-Y" }, { "@Z-button", "Btn-Z" },
+
+    // 基础按钮（标准化字母+原始符号双模式）
+    { "_A", "A" }, { "_B", "B" }, { "_C", "C" }, { "_D", "D" },
+    { "_H", "H" }, { "_Z", "Z" },
+    { "_a", "a" }, { "_b", "b" }, { "_c", "c" }, { "_d", "d" },
+    { "_e", "e" }, { "_f", "f" }, { "_g", "g" }, { "_h", "h" },
+    { "_i", "i" }, { "_j", "j" },
+
+    // 功能符号（文本描述+标准符号）
+    { "_k", " [Half Circle Back] " }, { "_l", " [Half Circle Front Up] " },
+    { "_m", " [Half Circle Front] " }, { "_n", " [Half Circle Back Up] " },
+    { "_o", " [1/4 Circle Forward 2 Down] " }, { "_p", " [1/4 Circle Down 2 Back] " },
+    { "_q", " [1/4 Circle Back 2 Up] " }, { "_r", " [1/4 Circle Up 2 Forward] " },
+    { "_s", " [1/4 Circle Back 2 Down] " }, { "_t", " [1/4 Circle Down 2 Forward] " },
+    { "_u", " [1/4 Circle Forward 2 Up] " }, { "_v", " [1/4 Circle Up 2 Back] " },
+    { "_w", " [Full Clock Forward] " }, { "_x", " [Full Clock Back] " },
+    { "_y", " [Full Count Forward] " }, { "_z", " [Full Count Back] " },
+    { "_L", " [2x Forward] " }, { "_M", " [2x Back] " },
+    { "_Q", " [Dragon Screw Forward] " }, { "_R", " [Dragon Screw Back] " },
+    { "_S", "[Start]" }, { "_P", "[Punch]" }, { "_K", "[Kick]" },
+    { "_G", "[Guard]" }, { "^S", "[Select]" }, { "_N", "N" },
+
+    // 特殊符号（兼容性优化）
+    { "^s", "\u24C8" },
+    { "_*", "\u2605" },
+    { "_`", "." }, { "_)", "○" }, { "_@", "◎" },
+    { "_(", "●" }, { "_&", "\u2B50" },
+    { "_#", "□" }, { "_]", "□" }, { "_[", "■" },
+    { "_%", "△" }, { "_$", "▲" }, { "_<", "◆" }, { "_>", "◇" },
+    { "_+", "+" }, { "_^", "[air]" }, { "_?", "[dir]" },
+    { "_X", "[tap]" }, { "_|", "[Jump]" }, { "_O", "[Hold]" },
+    { "_-", "[Air]" }, { "_=", "[Squat]" }, { "_~", "[Charge]" },
+    { "_!", "→" },
+
+    // 方向箭头（标准符号）
+    { "_9", "↗" }, { "_8", "↑" }, { "_7", "↖" }, { "_6", "→" },
+    { "_5", "●" }, { "_4", "←" }, { "_3", "↘" }, { "_2", "↓" },
+    { "_1", "↙" }, { "_.", "..." },
+    { "^9", "2x↗" }, { "^8", "2x↑" }, { "^7", "2x↖" }, { "^6", "2x→" },
+    { "^4", "2x←" }, { "^3", "2x↘" }, { "^2", "2x↓" }, { "^1", "2x↙" },
+    { "^-", "[Close]" }, { "^=", "[Away]" },
+    { "^*", "[Spam Button]" }, { "^?", "[Any Button]" },
+
+    // 组合键（缩写标准化）
+    { "@L-punch", "[LP]" }, { "@M-punch", "[MP]" }, { "@S-punch", "[SP]" },
+    { "@L-kick", "[LK]" }, { "@M-kick", "[MK]" }, { "@S-kick", "[SK]" },
+    { "@3-kick", "[3K]" }, { "@3-punch", "[3P]" },
+    { "@2-kick", "[2K]" }, { "@2-punch", "[2P]" },
+
+    // 高级功能
+    { "^E", "[LP]" }, { "^F", "[MP]" }, { "^G", "[SP]" },
+    { "^H", "[LK]" }, { "^I", "[MK]" }, { "^J", "[SK]" },
+    { "^T", "[3K]" }, { "^U", "[3P]" }, { "^V", "[2K]" },
+    { "^W", "[2P]" }, { "^!", "↘" }, { "^M", "MAX" },
+
+    // 玩家标识
+    { "@1player", "P1" }, { "@2player", "P2" }, { "@3player", "P3" },
+    { "@4player", "P4" }, { "@5player", "P5" }, { "@6player", "P6" },
+    { "@7player", "P7" }, { "@8player", "P8" }, { "@nplayer", "PN" },
+};
 static SymbolMapping SymbolList_ChineseAlignment[] = {
 	{ "═", "\uFF1D" },  // Full-width equals sign
-	{ "│", "\uFF5C" },  // Full-width vertical bar
+	{ "│", "\u2223" },  // Full-width vertical bar
 	{ "  ", "\u3000" }  // Full-width space (double-width space)
 	//{ " ", "\u2002" } // Half-width space alternative (non-breaking space)
 };
