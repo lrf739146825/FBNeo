@@ -155,7 +155,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="aresshmd" sourcefile="megadrive/d_megadrive.cpp">
-		<description>A Ressha de Ikou MD - Take the 'A' Train (Japan)</description>
+		<description>A Ressha de Ikou MD ~ Take the 'A' Train (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="A Ressha de Ikou MD - Take the 'A' Train (Japan)(1992)(Sega).bin" size="524288" crc="3d45de4f"/>
@@ -795,7 +795,7 @@
 	</game>
 	<game name="altbeast2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Altered Beast II - The Seven Depths of Hell (HB, Alpha-4)</description>
+		<description>Altered Beast II: The Seven Depths of Hell (HB, Alpha-4)</description>
 		<year>2024-25</year>
 		<manufacturer>Fabianodigital</manufacturer>
 		<rom name="Altered Beast II - The Seven Depths of Hell Alpha-4 (2024-25)(Fabianodigital).bin" size="2490368" crc="d6a8b0ab"/>
@@ -884,6 +884,15 @@
 		<year>1994</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Animaniacs (USA)(1994)(Konami).bin" size="1048576" crc="86224d86"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="annexedter" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Annexed Territory (HB)</description>
+		<year>2025</year>
+		<manufacturer>Tym01</manufacturer>
+		<rom name="Annexed Territory (2025)(Tym01).bin" size="1048576" crc="890bde10"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1279,7 +1288,7 @@
 	</game>
 	<game name="aureole" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Aureole - Wings of Hope (HB)</description>
+		<description>Aureole: Wings of Hope (HB)</description>
 		<year>2025</year>
 		<manufacturer>JanduSoft</manufacturer>
 		<rom name="Aureole - Wings of Hope (2025)(JanduSoft).bin" size="1179648" crc="51aef53d"/>
@@ -3020,23 +3029,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="castlilljte" cloneof="castlill" romof="castlill" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Hack</comment>
-		<description>Castle of Illusion - Fushigi no Oshiro Daibouken (Hack, English)</description>
-		<year>2023</year>
-		<manufacturer>Radio Tails</manufacturer>
-		<rom name="Castle of Illusion - Fushigi no Oshiro Daibouken T-Eng (2023)(Radio Tails).bin" size="1048576" crc="c301ae64"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="castlillj" cloneof="castlill" romof="castlill" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Castle of Illusion - Fushigi no Oshiro Daibouken (Japan)</description>
-		<year>1990</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="Castle of Illusion - Fushigi no Oshiro Daibouken (Japan)(1990)(Sega).bin" size="524288" crc="ce8333c6"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="castlill" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Castle of Illusion Starring Mickey Mouse (Euro, USA)</description>
 		<year>1990</year>
@@ -3051,6 +3043,23 @@
 		<year>2023</year>
 		<manufacturer>Jate</manufacturer>
 		<rom name="Castle of illusion Starring Mickey Mouse T-Spa v2.0 (2023)(Jate).bin" size="1048576" crc="0d72c89d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="castlilljte" cloneof="castlill" romof="castlill" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Castle of Illusion: Fushigi no Oshiro Daibouken (Hack, English)</description>
+		<year>2023</year>
+		<manufacturer>Radio Tails</manufacturer>
+		<rom name="Castle of Illusion - Fushigi no Oshiro Daibouken T-Eng (2023)(Radio Tails).bin" size="1048576" crc="c301ae64"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="castlillj" cloneof="castlill" romof="castlill" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Castle of Illusion: Fushigi no Oshiro Daibouken (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="Castle of Illusion - Fushigi no Oshiro Daibouken (Japan)(1990)(Sega).bin" size="524288" crc="ce8333c6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12123,6 +12132,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="minermole" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Miner Mole (HB)</description>
+		<year>2025</year>
+		<manufacturer>Geri</manufacturer>
+		<rom name="Miner Mole (2025)(Geri).bin" size="3801088" crc="d5db4972"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="miniplanets" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Miniplanets (HB, Rev03)</description>
@@ -16530,10 +16548,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="sanguoyan" sourcefile="megadrive/d_megadrive.cpp">
-		<description>San Guo Yan Yi - Huo Shao Chi Bi (China) (Unl)</description>
+		<description>San Guo Yan Yi: Huo Shao Chi Bi (China) (Unl)</description>
 		<year>199?</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="San Guo Yan Yi - Huo Shao Chi Bi (China)(Unl)(199x).bin" size="2097152" crc="3a71e961"/>
+		<manufacturer>Li Cheng</manufacturer>
+		<rom name="San Guo Yan Yi - Huo Shao Chi Bi (China)(Unl)(199x)(Li Cheng).bin" size="2097152" crc="3a71e961"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
