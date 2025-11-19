@@ -2314,9 +2314,9 @@ static SymbolMapping SymbolList[] = {
     { "@-->", "\u2192" }, { "@==>", "\u21B3" },
 
     { "_-", "[Air]" }, { "@AIR", "[Air]" },
+	{ "_^", "[air]" }, { "@air", "[air]" },
     { "_=", "[Squat]" }, { "@sit", "[Squat]" },
-	{ "_~", "[Charge]" },{ "@charge", "[Charge]" }
-    { "_^", "[air]" }, { "@air", "[air]" }
+	{ "_~", "[Charge]" },{ "@charge", "[Charge]" },
 	{ "_?", "[Dir]" },{ "@Dir", "[Dir]" },
     { "_|", "[Jump]" }, { "@jump", "[Jump]" },
     { "_O", "[Hold]" }, { "@hold", "[Hold]" },
