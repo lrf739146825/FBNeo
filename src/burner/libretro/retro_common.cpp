@@ -2258,9 +2258,9 @@ static SymbolMapping SymbolList[] = {
 };
 */
 
-// version 2025-11-17 sync from master \src\burner\win32\gameinfo.cpp
+// version 2025-11-19 sync from master \src\burner\win32\gameinfo.cpp
 static SymbolMapping SymbolList[] = {
-    // 完整按钮映射（双模式兼容）
+
     { "@A-button", "Btn-A" }, { "@B-button", "Btn-B" }, { "@C-button", "Btn-C" },
     { "@D-button", "Btn-D" }, { "@E-button", "Btn-E" }, { "@F-button", "Btn-F" },
     { "@G-button", "Btn-G" }, { "@H-button", "Btn-H" }, { "@I-button", "Btn-I" },
@@ -2271,67 +2271,101 @@ static SymbolMapping SymbolList[] = {
     { "@V-button", "Btn-V" }, { "@W-button", "Btn-W" }, { "@X-button", "Btn-X" },
     { "@Y-button", "Btn-Y" }, { "@Z-button", "Btn-Z" },
 
-    // 基础按钮（标准化字母+原始符号双模式）
-    { "_A", "A" }, { "_B", "B" }, { "_C", "C" }, { "_D", "D" },
-    { "_H", "H" }, { "_Z", "Z" },
-    { "_a", "a" }, { "_b", "b" }, { "_c", "c" }, { "_d", "d" },
-    { "_e", "e" }, { "_f", "f" }, { "_g", "g" }, { "_h", "h" },
-    { "_i", "i" }, { "_j", "j" },
+    { "@hcb", "[Half Circle Back]" }, { "_k", "[Half Circle Back]" },
+    { "@huf", "[Half Circle Front Up]" }, { "_l", "[Half Circle Front Up]" },
+    { "@hcf", "[Half Circle Front]" }, { "_m", "[Half Circle Front]" },
+    { "@hub", "[Half Circle Back Up]" }, { "_n", "[Half Circle Back Up]" },
 
-    // 功能符号（文本描述+标准符号）
-    { "_k", " [Half Circle Back] " }, { "_l", " [Half Circle Front Up] " },
-    { "_m", " [Half Circle Front] " }, { "_n", " [Half Circle Back Up] " },
-    { "_o", " [1/4 Circle Forward 2 Down] " }, { "_p", " [1/4 Circle Down 2 Back] " },
-    { "_q", " [1/4 Circle Back 2 Up] " }, { "_r", " [1/4 Circle Up 2 Forward] " },
-    { "_s", " [1/4 Circle Back 2 Down] " }, { "_t", " [1/4 Circle Down 2 Forward] " },
-    { "_u", " [1/4 Circle Forward 2 Up] " }, { "_v", " [1/4 Circle Up 2 Back] " },
-    { "_w", " [Full Clock Forward] " }, { "_x", " [Full Clock Back] " },
-    { "_y", " [Full Count Forward] " }, { "_z", " [Full Count Back] " },
-    { "_L", " [2x Forward] " }, { "_M", " [2x Back] " },
-    { "_Q", " [Dragon Screw Forward] " }, { "_R", " [Dragon Screw Back] " },
-    { "_S", "[Start]" }, { "_P", "[Punch]" }, { "_K", "[Kick]" },
-    { "_G", "[Guard]" }, { "^S", "[Select]" }, { "_N", "N" },
+    { "@qfd", "[1/4 Circle Forward 2 Down]" }, { "_o", "[1/4 Circle Forward 2 Down]" },
+    { "@qdb", "[1/4 Circle Down 2 Back]" }, { "_p", "[1/4 Circle Down 2 Back]" },
+    { "@qbu", "[1/4 Circle Back 2 Up]" }, { "_q", "[1/4 Circle Back 2 Up]" },
+    { "@quf", "[1/4 Circle Up 2 Forward]" }, { "_r", "[1/4 Circle Up 2 Forward]" },
+    { "@qbd", "[1/4 Circle Back 2 Down]" },{ "_s", "[1/4 Circle Back 2 Down]" },
+	{ "@qdf", "[1/4 Circle Down 2 Forward]" },{ "_t", "[1/4 Circle Down 2 Forward]" },
+    { "@qfu", "[1/4 Circle Forward 2 Up]" }, { "_u", "[1/4 Circle Forward 2 Up]" },
+    { "@qub", "[1/4 Circle Up 2 Back]" }, { "_v", "[1/4 Circle Up 2 Back]" },
 
-    // 特殊符号（兼容性优化）
-    { "^s", "\u24C8" },
-    { "_*", "\u2605" },
-    { "_`", "." }, { "_)", "○" }, { "_@", "◎" },
-    { "_(", "●" }, { "_&", "\u2B50" },
+    { "@fdf", "[Full Circle Down 2 Front]" }, { "_w", "[Full Clock Forward]" },
+    { "@fub", "[Full Circle Up 2 Back]" }, { "_x", "[Full Clock Back]" },
+    { "@fuf", "[Full Circle Up 2 Front]" }, { "_y", "[Full Count Forward]" },
+    { "@fdb", "[Full Circle Down 2 Back]" }, { "_z", "[Full Count Back]" },
+
+    { "@xff", "[2x Forward]" }, { "_L", "[2x Forward]" },
+    { "@xbb", "[2x Back]" }, { "_M", "[2x Back]" },
+
+    { "@dsf", "[Dragon Screw Forward]" }, { "_Q", "[Dragon Screw Forward]" },
+    { "@dsb", "[Dragon Screw Back]" }, { "_R", "[Dragon Screw Back]" },
+
+    { "@up", "↑" }, { "_8", "↑" },
+    { "@down", "↓" }, { "_2", "↓" },
+    { "@left", "←" }, { "_4", "←" },
+    { "@right", "→" }, { "_6", "→" },
+    { "_9", "↗" }, { "_7", "↖" }, { "_3", "↘" }, { "_1", "↙" },
+    { "^9", "2x↗" }, { "^7", "2x↖" }, { "^3", "2x↘" }, { "^1", "2x↙" },
+    { "^8", "2x↑" }, { "^2", "2x↓" }, { "^4", "2x←" }, { "^6", "2x→" },
+	{ "_N", "N" },{ "_5", "●" }, { "_(", "●" }, { "@BALL", "●" },
+
+    { "_!", "→" }, { "^!", "↘" },
+    { "_&", "★" }, { "_*", "*" },
     { "_#", "□" }, { "_]", "□" }, { "_[", "■" },
-    { "_%", "△" }, { "_$", "▲" }, { "_<", "◆" }, { "_>", "◇" },
-    { "_+", "+" }, { "_^", "[air]" }, { "_?", "[dir]" },
-    { "_X", "[tap]" }, { "_|", "[Jump]" }, { "_O", "[Hold]" },
-    { "_-", "[Air]" }, { "_=", "[Squat]" }, { "_~", "[Charge]" },
-    { "_!", "→" },
+    { "_%", "△" }, { "_$", "▲" }, { "_{", "▽" },
+    { "_}", "▼" }, { "_<", "◆" }, { "_>", "◇" },
+    { "_@", "◎" }, { "_)", "○" }, { "_`", "." }, { "_.", "..." },
+    { "@-->", "\u2192" }, { "@==>", "\u21B3" },
 
-    // 方向箭头（标准符号）
-    { "_9", "↗" }, { "_8", "↑" }, { "_7", "↖" }, { "_6", "→" },
-    { "_5", "●" }, { "_4", "←" }, { "_3", "↘" }, { "_2", "↓" },
-    { "_1", "↙" }, { "_.", "..." },
-    { "^9", "2x↗" }, { "^8", "2x↑" }, { "^7", "2x↖" }, { "^6", "2x→" },
-    { "^4", "2x←" }, { "^3", "2x↘" }, { "^2", "2x↓" }, { "^1", "2x↙" },
-    { "^-", "[Close]" }, { "^=", "[Away]" },
-    { "^*", "[Spam Button]" }, { "^?", "[Any Button]" },
+    { "_-", "[Air]" }, { "@AIR", "[Air]" },
+    { "_=", "[Squat]" }, { "@sit", "[Squat]" },
+	{ "_~", "[Charge]" },{ "@charge", "[Charge]" }
+    { "_^", "[air]" }, { "@air", "[air]" }
+	{ "_?", "[Dir]" },{ "@Dir", "[Dir]" },
+    { "_|", "[Jump]" }, { "@jump", "[Jump]" },
+    { "_O", "[Hold]" }, { "@hold", "[Hold]" },
+    { "_X", "[Tap]" }, { "@TAP", "[Tap]" },
+    { "_+", "+" },  { "@increase", "+" },
+	{ "@decrease", "-" },
 
-    // 组合键（缩写标准化）
-    { "@L-punch", "[LP]" }, { "@M-punch", "[MP]" }, { "@S-punch", "[SP]" },
-    { "@L-kick", "[LK]" }, { "@M-kick", "[MK]" }, { "@S-kick", "[SK]" },
-    { "@3-kick", "[3K]" }, { "@3-punch", "[3P]" },
-    { "@2-kick", "[2K]" }, { "@2-punch", "[2P]" },
+    { "_P", "[Punch]" }, { "@punch", "[Punch]" },
+    { "_K", "[Kick]" }, { "@kick", "[Kick]" },
+    { "_G", "[Guard]" }, { "@guard", "[Guard]" },
+    { "_S", "[Start]" }, { "@start", "[Start]" },
+    { "^S", "[Select]" }, { "@select", "[Select]" },
 
-    // 高级功能
-    { "^E", "[LP]" }, { "^F", "[MP]" }, { "^G", "[SP]" },
-    { "^H", "[LK]" }, { "^I", "[MK]" }, { "^J", "[SK]" },
-    { "^T", "[3K]" }, { "^U", "[3P]" }, { "^V", "[2K]" },
-    { "^W", "[2P]" }, { "^!", "↘" }, { "^M", "MAX" },
+    { "@L-punch", "[LP]" }, { "^E", "[LP]" },
+    { "@M-punch", "[MP]" }, { "^F", "[MP]" },
+    { "@S-punch", "[SP]" }, { "^G", "[SP]" },
+    { "@L-kick", "[LK]" }, { "^H", "[LK]" },
+    { "@M-kick", "[MK]" }, { "^I", "[MK]" },
+    { "@S-kick", "[SK]" }, { "^J", "[SK]" },
+    { "@3-kick", "[3K]" }, { "^T", "[3K]" },
+    { "@3-punch", "[3P]" }, { "^U", "[3P]" },
+    { "@2-kick", "[2K]" }, { "^V", "[2K]" },
+    { "@2-punch", "[2P]" }, { "^W", "[2P]" },
 
-    // 玩家标识
     { "@1player", "P1" }, { "@2player", "P2" }, { "@3player", "P3" },
     { "@4player", "P4" }, { "@5player", "P5" }, { "@6player", "P6" },
     { "@7player", "P7" }, { "@8player", "P8" }, { "@nplayer", "PN" },
+    { "@lever", "PN" },
+
+    { "@custom1", "(1)" }, { "_a", "(1)" },
+    { "@custom2", "(2)" }, { "_b", "(2)" },
+    { "@custom3", "(3)" }, { "_c", "(3)" },
+    { "@custom4", "(4)" }, { "_d", "(4)" },
+    { "@custom5", "(5)" }, { "_e", "(5)" },
+    { "@custom6", "(6)" }, { "_f", "(6)" },
+    { "@custom7", "(7)" }, { "_g", "(7)" },
+    { "@custom8", "(8)" }, { "_h", "(8)" },
+    { "_i", "(9)" }, { "_j", "(10)" },
+    { "_A", "(A)" }, { "_B", "(B)" }, { "_C", "(C)" }, { "_D", "(D)" },
+    { "_H", "(H)" }, { "_Z", "(Z)" },
+
+    { "^-", "[Close]" }, { "@close", "[close]" },
+    { "^=", "[Away]" }, { "@away", "[Away]" },
+    { "^*", "[Spam Button]" }, { "^?", "[Any Button]" },
+    { "^M", "MAX" },{ "^s", "(S)" },
 };
+
 static SymbolMapping SymbolList_ChineseAlignment[] = {
-	{ "═", "\uFF1D" },  // Full-width equals sign
+	{ "═", "\uff1d" },  // Full-width equals sign
 	{ "│", "\u2223" },  // Full-width vertical bar
 	{ "  ", "\u3000" }  // Full-width space (double-width space)
 	//{ " ", "\u2002" } // Half-width space alternative (non-breaking space)
