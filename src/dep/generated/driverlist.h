@@ -194,7 +194,6 @@ DRV		BurnDrvStreet64ja;
 DRV		BurnDrvStreet64;
 DRV		BurnDrvmd_688atsub;
 DRV		BurnDrvOrdi7;
-DRV		BurnDrvnes_7lsal;
 DRV		BurnSpec7777;
 DRV		BurnSpec70908;
 DRV		BurnSpec720deg;
@@ -952,6 +951,7 @@ DRV		BurnDrvsnes_Animaniacs;
 DRV		BurnDrvpce_ankoku;
 DRV		BurnDrvsms_anmitsu;
 DRV		BurnDrvMSX_anexoen;
+DRV		BurnDrvmd_annexedter;
 DRV		BurnDrvmd_anotherw;
 DRV		BurnDrvsnes_Anotherworld;
 DRV		BurnSpecAntattack;
@@ -3326,8 +3326,6 @@ DRV		BurnDrvnes_castleofdeceit;
 DRV		BurnSpecCodg;
 DRV		BurnDrvnes_castleofdragts;
 DRV		BurnDrvnes_castleofdragon;
-DRV		BurnDrvmd_castlilljte;
-DRV		BurnDrvmd_castlillj;
 DRV		BurnDrvsms_castlill;
 DRV		BurnDrvmd_castlill;
 DRV		BurnDrvgg_castlill;
@@ -3336,6 +3334,8 @@ DRV		BurnDrvmd_castlills;
 DRV		BurnDrvsms_castlillc;
 DRV		BurnDrvsms_castlillu;
 DRV		BurnDrvsms_castlills;
+DRV		BurnDrvmd_castlilljte;
+DRV		BurnDrvmd_castlillj;
 DRV		BurnSpecCastleofsorrow;
 DRV		BurnDrvnes_cstlquest;
 DRV		BurnDrvnes_cstlquestj;
@@ -12950,6 +12950,7 @@ DRV		BurnDrvnes_minelsag;
 DRV		BurnDrvnes_minelsagj;
 DRV		BurnDrvcv_mine2049a;
 DRV		BurnDrvcv_mine2049;
+DRV		BurnDrvmd_minermole;
 DRV		BurnDrvMineswpr4;
 DRV		BurnDrvMineswpr;
 DRV		BurnDrvnes_minibrix;
@@ -14881,6 +14882,8 @@ DRV		BurnSpecPaletoj2sp;
 DRV		BurnDrvsg1k_palikat;
 DRV		BurnSpecPanamajoe;
 DRV		BurnDrvnes_pandababy;
+DRV		BurnDrvPandajump;
+DRV		BurnDrvPandajump2;
 DRV		BurnDrvnes_pandaworld;
 DRV		BurnDrvPandoras;
 DRV		BurnDrvsnes_Paneldeponte;
@@ -24703,7 +24706,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvStreet64,			// 64th. Street: A Detective Story (World)
 	&BurnDrvmd_688atsub,		// 688 Attack Sub (Euro, USA)
 	&BurnDrvOrdi7,				// 7 Ordi (Korea)
-	&BurnDrvnes_7lsal,			// 7-Lucky Slot-A-Lot (HB)
 	&BurnSpec7777,				// 7.7.7.7. (128K) (HB)
 	&BurnSpec70908,				// 70908 (128K) (HB, Tech-Demo)
 	&BurnSpec720deg,			// 720 Degrees (48K)
@@ -24733,7 +24735,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_94swc,			// 94 Super World Cup Soccer (Korea)
 	&BurnDrvMSX_anaza,			// A Na Za: Kaleidoscope Special (Japan)
 	&BurnDrvnes_atrainj,		// A Ressha de Ikou (Japan)
-	&BurnDrvmd_aresshmd,		// A Ressha de Ikou MD - Take the 'A' Train (Japan)
+	&BurnDrvmd_aresshmd,		// A Ressha de Ikou MD ~ Take the 'A' Train (Japan)
 	&BurnDrvnes_atrain,			// A Ressha de Ikou ~ A-Train (Hack, English)
 	&BurnDrvmd_satyrhell,		// A Satyr In Hell (HB)
 	&BurnSpecA10thunderbolt,	// A-10 Thunderbolt (48K-128K)
@@ -25361,7 +25363,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAltbeast6,			// Altered Beast (set 6) (8751 317-0076)
 	&BurnDrvAltbeast,			// Altered Beast (set 8) (8751 317-0078)
 	&BurnDrvmd_altbeastrt,		// Altered Beast - ReToned (Hack, v1.16)
-	&BurnDrvmd_altbeast2,		// Altered Beast II - The Seven Depths of Hell (HB, Alpha-4)
+	&BurnDrvmd_altbeast2,		// Altered Beast II: The Seven Depths of Hell (HB, Alpha-4)
 	&BurnDrvmd_alterego,		// AlterEgo Remastered (HB)
 	&BurnDrvnes_awakening,		// Alwa's Awakening (HB)
 	&BurnDrvnes_awakeningp,		// Alwa's Awakening (HB, Prototype)
@@ -25461,6 +25463,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_ankoku,			// Ankoku Densetsu (Japan)
 	&BurnDrvsms_anmitsu,		// Anmitsu Hime (Japan)
 	&BurnDrvMSX_anexoen,		// Annex 1, The Algorithm (English) (HB)
+	&BurnDrvmd_annexedter,		// Annexed Territory (HB)
 	&BurnDrvmd_anotherw,		// Another World (Euro)
 	&BurnDrvsnes_Anotherworld,	// Another World (Euro)
 	&BurnSpecAntattack,			// Ant Attack (48K)
@@ -25924,7 +25927,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAurail1d,			// Aurail (set 2, World) (bootleg of FD1089B 317-0168 set)
 	&BurnDrvAurail1,			// Aurail (set 2, World) (FD1089B 317-0168)
 	&BurnDrvAurail,				// Aurail (set 3, US) (unprotected)
-	&BurnDrvmd_aureole,			// Aureole - Wings of Hope (HB)
+	&BurnDrvmd_aureole,			// Aureole: Wings of Hope (HB)
 	&BurnDrvmd_austrarl,		// Australian Rugby League (Euro)
 	&BurnDrvmd_austrarlp,		// Australian Rugby League (USA, Prototype)
 	&BurnSpecAutocrash,			// AutoCrash (Spanish) (48K)
@@ -27835,8 +27838,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecCodg,				// Castle of DR Game, The (48K) (HB)
 	&BurnDrvnes_castleofdragts,	// Castle of Dragon (Hack, Spanish v1.1)
 	&BurnDrvnes_castleofdragon,	// Castle of Dragon (USA)
-	&BurnDrvmd_castlilljte,		// Castle of Illusion - Fushigi no Oshiro Daibouken (Hack, English)
-	&BurnDrvmd_castlillj,		// Castle of Illusion - Fushigi no Oshiro Daibouken (Japan)
 	&BurnDrvsms_castlill,		// Castle of Illusion Starring Mickey Mouse (Euro, Brazil)
 	&BurnDrvmd_castlill,		// Castle of Illusion Starring Mickey Mouse (Euro, USA)
 	&BurnDrvgg_castlill,		// Castle of Illusion Starring Mickey Mouse (Euro, USA, SMS Mode)
@@ -27845,6 +27846,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_castlillc,		// Castle of Illusion Starring Mickey Mouse (Hack, Spanish v2.0)
 	&BurnDrvsms_castlillu,		// Castle of Illusion Starring Mickey Mouse (USA)
 	&BurnDrvsms_castlills,		// Castle of Illusion Starring Mickey Mouse (USA, Display Unit Sample)
+	&BurnDrvmd_castlilljte,		// Castle of Illusion: Fushigi no Oshiro Daibouken (Hack, English)
+	&BurnDrvmd_castlillj,		// Castle of Illusion: Fushigi no Oshiro Daibouken (Japan)
 	&BurnSpecCastleofsorrow,	// Castle of Sorrow (48K) (HB)
 	&BurnDrvnes_cstlquest,		// Castle Quest (Hack, English v2.01)
 	&BurnDrvnes_cstlquestj,		// Castle Quest (Japan)
@@ -37459,6 +37462,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_minelsagj,		// Minelvaton Saga - Ragon no Fukkatsu (Japan)
 	&BurnDrvcv_mine2049a,		// Miner 2049er (USA, Euro)
 	&BurnDrvcv_mine2049,		// Miner 2049er (USA, Euro, v1.1)
+	&BurnDrvmd_minermole,		// Miner Mole (HB)
 	&BurnDrvMineswpr4,			// Minesweeper (4-Player)
 	&BurnDrvMineswpr,			// Minesweeper
 	&BurnDrvnes_minibrix,		// Mini Brix Battle (HB)
@@ -39390,6 +39394,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_palikat,		// Palikat (HB)
 	&BurnSpecPanamajoe,			// Panama Joe ~ Montezuma's Revenge (48K)
 	&BurnDrvnes_pandababy,		// Panda Baby (Unl)
+	&BurnDrvPandajump,			// Panda Jump (set 1)
+	&BurnDrvPandajump2,			// Panda Jump (set 2)
 	&BurnDrvnes_pandaworld,		// Panda World (Unl)
 	&BurnDrvPandoras,			// Pandora's Palace
 	&BurnDrvsnes_Paneldeponte,	// Panel de Pon (Hack, English)
@@ -41973,7 +41979,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKovsgqyzb,			// San Guo Qun Ying Zhuan - Zheng Zong Plus (bootleg of Knights of Valour Plus, set 3)
 	&BurnDrvKovsgqyzc,			// San Guo Qun Ying Zhuan - Zheng Zong Plus (bootleg of Knights of Valour Plus, set 4)
 	&BurnDrvKovsgqyzd,			// San Guo Qun Ying Zhuan - Zheng Zong Plus (bootleg of Knights of Valour Plus, set 5)
-	&Burnmd_Sanguoyan,			// San Guo Yan Yi - Huo Shao Chi Bi (China) (Unl)
+	&Burnmd_Sanguoyan,			// San Guo Yan Yi: Huo Shao Chi Bi (China) (Unl)
 	&BurnDrvKov2pfwll,			// San Guo Zhan Ji 2 - Feng Wu Long Yin (ver. 205S, Hack of San Guo Zhan Ji 2 - Qun Xiong Zheng Ba)
 	&BurnDrvkov2pfwlys,			// San Guo Zhan Ji 2 - Feng Wu Long Yin (ver. S0709, Hack of San Guo Zhan Ji 2 - Qun Xiong Zheng Ba)
 	&BurnDrvmd_sanguo,			// San Guo Zhi Lie Zhuan - Luan Shi Qun Ying (China)
@@ -49212,7 +49218,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "64street", "pre90s/d_megasys1.cpp"},
 	{ "md_688atsub", "megadrive/d_megadrive.cpp"},
 	{ "7ordi", "pst90s/d_nmg5.cpp"},
-	{ "nes_7lsal", "nes/d_nes.cpp"},
 	{ "spec_7777", "spectrum/d_spectrum.cpp"},
 	{ "spec_70908", "spectrum/d_spectrum.cpp"},
 	{ "spec_720deg", "spectrum/d_spectrum.cpp"},
@@ -49966,6 +49971,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pce_ankoku", "pce/d_pce.cpp"},
 	{ "sms_anmitsu", "sms/d_sms.cpp"},
 	{ "msx_anexoen", "msx/d_msx.cpp"},
+	{ "md_annexedter", "megadrive/d_megadrive.cpp"},
 	{ "md_anotherw", "megadrive/d_megadrive.cpp"},
 	{ "snes_anotherworld", "snes/d_snes.cpp"},
 	{ "spec_antattack", "spectrum/d_spectrum.cpp"},
@@ -52322,8 +52328,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_codg", "spectrum/d_spectrum.cpp"},
 	{ "nes_castleofdragts", "nes/d_nes.cpp"},
 	{ "nes_castleofdragon", "nes/d_nes.cpp"},
-	{ "md_castlilljte", "megadrive/d_megadrive.cpp"},
-	{ "md_castlillj", "megadrive/d_megadrive.cpp"},
 	{ "sms_castlill", "sms/d_sms.cpp"},
 	{ "md_castlill", "megadrive/d_megadrive.cpp"},
 	{ "gg_castlill", "sms/d_sms.cpp"},
@@ -52332,6 +52336,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_castlillc", "sms/d_sms.cpp"},
 	{ "sms_castlillu", "sms/d_sms.cpp"},
 	{ "sms_castlills", "sms/d_sms.cpp"},
+	{ "md_castlilljte", "megadrive/d_megadrive.cpp"},
+	{ "md_castlillj", "megadrive/d_megadrive.cpp"},
 	{ "spec_castleofsorrow", "spectrum/d_spectrum.cpp"},
 	{ "nes_cstlquest", "nes/d_nes.cpp"},
 	{ "nes_cstlquestj", "nes/d_nes.cpp"},
@@ -61874,6 +61880,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_minelsagj", "nes/d_nes.cpp"},
 	{ "cv_mine2049a", "coleco/d_coleco.cpp"},
 	{ "cv_mine2049", "coleco/d_coleco.cpp"},
+	{ "md_minermole", "megadrive/d_megadrive.cpp"},
 	{ "mineswpr4", "pre90s/d_blockade.cpp"},
 	{ "mineswpr", "pre90s/d_blockade.cpp"},
 	{ "nes_minibrix", "nes/d_nes.cpp"},
@@ -63789,6 +63796,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_palikat", "sg1000/d_sg1000.cpp"},
 	{ "spec_panamajoe", "spectrum/d_spectrum.cpp"},
 	{ "nes_pandababy", "nes/d_nes.cpp"},
+	{ "pandajump", "galaxian/d_galaxian.cpp"},
+	{ "pandajump2", "galaxian/d_galaxian.cpp"},
 	{ "nes_pandaworld", "nes/d_nes.cpp"},
 	{ "pandoras", "konami/d_pandoras.cpp"},
 	{ "snes_paneldeponte", "snes/d_snes.cpp"},
