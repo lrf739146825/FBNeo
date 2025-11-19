@@ -2324,8 +2324,8 @@ static SymbolMapping SymbolList[] = {
     { "_+", "+" },  { "@increase", "+" },
 	{ "@decrease", "-" },
 
-    { "_P", "[Punch]" }, { "@punch", "[Punch]" },
-    { "_K", "[Kick]" }, { "@kick", "[Kick]" },
+    { "_P", "[P]" }, { "@punch", "[P]" },
+    { "_K", "[K]" }, { "@kick", "[K]" },
     { "_G", "[Guard]" }, { "@guard", "[Guard]" },
     { "_S", "[Start]" }, { "@start", "[Start]" },
     { "^S", "[Select]" }, { "@select", "[Select]" },
@@ -2362,8 +2362,11 @@ static SymbolMapping SymbolList[] = {
     { "^=", "[Away]" }, { "@away", "[Away]" },
     { "^*", "[Spam Button]" }, { "^?", "[Any Button]" },
     { "^M", "MAX" },{ "^s", "(S)" },
-};
 
+	//fix unable display
+	{"\t","    "},
+	{"©","(c)"}
+};
 static SymbolMapping SymbolList_ChineseAlignment[] = {
 	{ "═", "\uff1d" },  // Full-width equals sign
 	{ "│", "\u2223" },  // Full-width vertical bar
