@@ -1063,7 +1063,7 @@
 		<description>American Dream (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Coconuts Japan</manufacturer>
-		<rom name="American Dream (Japan)(Coconuts Japan).nes" size="262160" crc="5249764c"/>
+		<rom name="American Dream (Japan)(1989)(Coconuts Japan).nes" size="262160" crc="5249764c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5656,20 +5656,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="doublmooden" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Double Moon Densetsu (Hack, English)</description>
-		<year>2020</year>
-		<manufacturer>Stardust Crusaders</manufacturer>
-		<rom name="Double Moon Densetsu T-Eng (2020)(Stardust Crusaders).nes" size="524304" crc="2c2c43a4"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="doublmoodenj" cloneof="doublmooden" romof="doublmooden" sourcefile="nes/d_nes.cpp">
 		<description>Double Moon Densetsu (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Masaya</manufacturer>
 		<rom name="Double Moon Densetsu (Japan)(1992)(Masaya).nes" size="524304" crc="e6ecf970"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="doublmooden" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Double Moon Densetsu ~ The Legend of Double Moon (Hack, English)</description>
+		<year>2020</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="Double Moon Densetsu T-Eng (2020)(Stardust Crusaders).nes" size="524304" crc="2c2c43a4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6929,7 +6929,7 @@
 	</game>
 	<game name="eyra" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Eyra - The Crow Maiden (HB)</description>
+		<description>Eyra: The Crow Maiden (HB)</description>
 		<year>2020</year>
 		<manufacturer>Second Dimension</manufacturer>
 		<rom name="Eyra the Crow Maiden (2020)(Second Dimension).nes" size="40976" crc="1415153d"/>
@@ -8168,8 +8168,8 @@
 	<game name="gameparty" sourcefile="nes/d_nes.cpp">
 		<description>Game Party (Japan)</description>
 		<year>1990</year>
-		<manufacturer>Coconuts</manufacturer>
-		<rom name="Game Party (Japan)(1990)(Coconuts).nes" size="262160" crc="9c744bc3"/>
+		<manufacturer>Coconuts Japan</manufacturer>
+		<rom name="Game Party (Japan)(1990)(Coconuts Japan).nes" size="262160" crc="9c744bc3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8505,6 +8505,15 @@
 		<year>2019</year>
 		<manufacturer>NesRocks</manufacturer>
 		<rom name="Ghostbusters Remastered v1.1 (2019)(Nesrocks).nes" size="98320" crc="29c2e0d0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ghostsgraves" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Ghosts and Graves (HB)</description>
+		<year>2025</year>
+		<manufacturer>Anthony Bongers</manufacturer>
+		<rom name="Ghosts and Graves (2025)(Anthony Bongers).nes" size="73744" crc="d330929b"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10872,7 +10881,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jumpikid" sourcefile="nes/d_nes.cpp">
-		<description>Jumpin' Kid - Jack to Mame no Ki Monogatari (Japan)</description>
+		<description>Jumpin' Kid: Jack to Mame no Ki Monogatari (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Asmik</manufacturer>
 		<rom name="Jumpin' Kid - Jack to Mame no Ki Monogatari (Japan)(1990)(Asmik).nes" size="262160" crc="93e52908"/>
@@ -11132,10 +11141,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="kamennoninaka" sourcefile="nes/d_nes.cpp">
-		<description>Kamen no Ninja - Akakage (Japan)</description>
+		<description>Kamen no Ninja Akakage (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Toei Animation</manufacturer>
-		<rom name="Kamen no Ninja - Akakage (Japan)(1988)(Toei Animation).nes" size="131088" crc="1bc800e1"/>
+		<rom name="Kamen no Ninja Akakage (Japan)(1988)(Toei Animation).nes" size="131088" crc="1bc800e1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14343,6 +14352,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="mortakomiiae" cloneof="mortakomiispe" romof="mortakomiispe" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Mortal Kombat 2 Arkade Edition (Hack, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Drax01</manufacturer>
+		<rom name="Mortal Kombat 2 Arkade Edition v1.1 (2025)(Drax01).nes" size="1048592" crc="113ab60b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="mortakom3" cloneof="mortakomiispe" romof="mortakomiispe" sourcefile="nes/d_nes.cpp">
 		<description>Mortal Kombat 3 - Special 56 Peoples (Taiwan) (Unl)</description>
 		<year>1995</year>
@@ -17172,7 +17190,7 @@
 	</game>
 	<game name="reknum2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Reknum - Souls Adventure (HB)</description>
+		<description>Reknum: Souls Adventure (HB)</description>
 		<year>2021</year>
 		<manufacturer>NAPE Games</manufacturer>
 		<rom name="Reknum - Souls Adventure (2021)(NAPE Games).nes" size="524304" crc="ccdc9c66"/>
@@ -17181,7 +17199,7 @@
 	</game>
 	<game name="reknum1" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew, No Sound</comment>
-		<description>Reknum - The Awakening (HB)</description>
+		<description>Reknum: The Awakening (HB)</description>
 		<year>2019</year>
 		<manufacturer>NAPE Games</manufacturer>
 		<rom name="Reknum - The Awakening (2019)(NAPE Games).nes" size="524304" crc="e2e0ea31"/>
@@ -17263,6 +17281,15 @@
 		<year>2023</year>
 		<manufacturer>Kyoske Maeda</manufacturer>
 		<rom name="Revolving Gems (2023)(Kyoske Maeda).nes" size="65552" crc="a159af5a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="rickmortyrdw" cloneof="aliensyndrome" romof="aliensyndrome" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Rick and Morty REDRAW (Hack)</description>
+		<year>2018-22</year>
+		<manufacturer>pacnsacdave, Rani Baker</manufacturer>
+		<rom name="Rick and Morty REDRAW (2018-22)(pacnsacdave, Rani Baker).nes" size="262160" crc="d784d139"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19618,8 +19645,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="startiits" cloneof="startii" romof="startii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Startropics II: Zoda's Revenge (Hack, Spanish)</description>
+		<year>2025</year>
+		<manufacturer>Cyneprepou4uk, Jackic</manufacturer>
+		<rom name="Startropics II - Zoda's Revenge T-Spa (2025)(Cyneprepou4uk, Jackic).nes" size="524304" crc="9ef79a15"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="startii" sourcefile="nes/d_nes.cpp">
-		<description>Startropics II - Zoda's Revenge (USA)</description>
+		<description>Startropics II: Zoda's Revenge (USA)</description>
 		<year>1994</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Startropics II - Zoda's Revenge (USA)(1994)(Nintendo).nes" size="524304" crc="76124d08"/>
@@ -19671,7 +19707,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="stickhun" sourcefile="nes/d_nes.cpp">
-		<description>Stick Hunter - Exciting Ice Hockey (Japan)</description>
+		<description>Stick Hunter: Exciting Ice Hockey (Japan)</description>
 		<year>1987</year>
 		<manufacturer>KAC</manufacturer>
 		<rom name="Stick Hunter - Exciting Ice Hockey (Japan)(1987)(KAC).nes" size="131088" crc="67495228"/>
@@ -19730,9 +19766,18 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="streefigiihac" cloneof="streefigiii" romof="streefigiii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Street Fighter II Hack (Hack of SFIII)</description>
+		<year>199?</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Street Fighter II Hack (Hack of SFIII)(199x).nes" size="655376" crc="470ce47e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="streefigiic" cloneof="streefigii" romof="streefigii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Street Fighter II - The World Warrior (Hack, Spanish)</description>
+		<description>Street Fighter II: The World Warrior (Hack, Spanish)</description>
 		<year>201?</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Street Fighter II - The World Warrior T-Spa (201x)(Wave).nes" size="262160" crc="03861489"/>
@@ -19740,19 +19785,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="streefigii" sourcefile="nes/d_nes.cpp">
-		<description>Street Fighter II - The World Warrior (Unl)</description>
+		<description>Street Fighter II: The World Warrior (Unl)</description>
 		<year>1992</year>
 		<manufacturer>Yoko Soft</manufacturer>
 		<rom name="Street Fighter II - The World Warrior (Unl)(1992)(Yoko Soft).nes" size="262160" crc="dedfa5bb"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="streefigiihac" cloneof="streefigiii" romof="streefigiii" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Street Fighter II Hack (Hack of SFIII)</description>
-		<year>199?</year>
-		<manufacturer>&lt;unknown&gt;</manufacturer>
-		<rom name="Street Fighter II Hack (Hack of SFIII)(199x).nes" size="655376" crc="470ce47e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20360,8 +20396,8 @@
 	<game name="superpinball" sourcefile="nes/d_nes.cpp">
 		<description>Super Pinball (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Coconuts/C-Dream</manufacturer>
-		<rom name="Super Pinball (Japan)(1988)(Coconuts - C-Dream).nes" size="131088" crc="c8ee3210"/>
+		<manufacturer>Coconuts Japan - C-Dream</manufacturer>
+		<rom name="Super Pinball (Japan)(1988)(Coconuts Japan - C-Dream).nes" size="131088" crc="c8ee3210"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
