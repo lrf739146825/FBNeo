@@ -228,6 +228,8 @@ Here is a list of samples currently in use :
 | carnival     |                                                                        |
 | cheekyms     | Not from MAME                                                          |
 | congo        |                                                                        |
+| depthch      |                                                                        |
+| digger       | Not from MAME                                                          |
 | dkongjr      |                                                                        |
 | dkong        |                                                                        |
 | donpachi     | Not from MAME, optional, replace OG music by HQ music, requires dipsw. |
@@ -401,6 +403,15 @@ You can convert your unsupported dumps by following this tutorial :
 ### Why can't i launch Killer instinct ? I heard it's supported.
 
 That driver was disabled for now, it didn't meet our quality criteria.
+
+### Where is the hires dipswitch on vector games ? It seems gone.
+
+It has been replaced by a more global "Resolution" core option affecting all vector games at once.
+
+For best visual results, it's recommended to match your screen's height, some examples using a 1080p screen :
+* for horizontal games, you'll want to use 1440x1080
+* for vertical games (tempest, tacscan), if you are running them on a vertical screen with the settings to rotate them, you'll also want to use 1440x1080
+* for those same vertical games, if you are running them at default settings on a horizontal screen, you'll want to use 1080x810
 
 ### Why are vertical games not working properly ?
 

@@ -138,7 +138,9 @@ static struct retro_core_option_v2_definition var_fbneo_resolution = {
 		{ "1080x810",       NULL },
 		{ "1280x960",       NULL },
 		{ "1440x1080",      NULL },
+		{ "1600x1200",      NULL },
 		{ "1920x1440",      NULL },
+		{ "2160x1620",      NULL },
 		{ "2880x2160",      NULL },
 	},
 	"640x480"
@@ -1588,10 +1590,20 @@ void check_variables(void)
 			nNewWidth = 2880;
 			nNewHeight = 2160;
 		}
+		else if (strcmp(var.value, "2160x1620") == 0)
+		{
+			nNewWidth = 1080;
+			nNewHeight = 810;
+		}
 		else if (strcmp(var.value, "1920x1440") == 0)
 		{
 			nNewWidth = 1920;
 			nNewHeight = 1440;
+		}
+		else if (strcmp(var.value, "1600x1200") == 0)
+		{
+			nNewWidth = 1600;
+			nNewHeight = 1200;
 		}
 		else if (strcmp(var.value, "1440x1080") == 0)
 		{
