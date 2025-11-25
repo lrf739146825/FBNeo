@@ -244,6 +244,8 @@ extern bool bPatchedRomsetsEnabled;
 extern bool bLibretroSupportsAudioBuffStatus;
 extern bool bLowPassFilterEnabled;
 extern UINT32 nVerticalMode;
+extern UINT32 nNewWidth;
+extern UINT32 nNewHeight;
 extern UINT32 nFrameskip;
 extern UINT32 nFrameskipType;
 extern UINT32 nFrameskipThreshold;
