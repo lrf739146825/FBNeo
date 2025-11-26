@@ -943,6 +943,9 @@ void set_environment()
 	var_fbneo_vertical_mode.values[4].value                = RETRO_VERTICAL_VALUE_4;
 	vars_systems.push_back(&var_fbneo_vertical_mode);
 
+	var_fbneo_resolution.desc                              = RETRO_RESOLUTION_DESC;
+	var_fbneo_resolution.info                              = RETRO_RESOLUTION_INFO;
+
 	var_fbneo_force_60hz.desc                              = RETRO_FORCE60_CAT_DESC;
 	var_fbneo_force_60hz.info                              = RETRO_FORCE60_CAT_INFO;
 	vars_systems.push_back(&var_fbneo_force_60hz);

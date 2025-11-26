@@ -154,7 +154,9 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"Last Input Priority (8 Way)",
 		"First Input Priority",
 		"Up Priority (Up-override Down)",
-		"Down Priority (Left/Right Last Input Priority)"
+		"Down Priority (Left/Right Last Input Priority)",
+		"Resolution",
+		"Set resolution in certain games (vector)"
 	},
 	{	// Simplified Chinese
 		"\u5c3d\u53ef\u80fd\u4f7f\u7528 32 \u4f4d\u8272\u6df1",
@@ -305,7 +307,9 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"\u6700\u540e\u8f93\u5165\u4f18\u5148\uff088\u65b9\u5411\uff09",
 		"\u521d\u59cb\u8f93\u5165\u4f18\u5148",
 		"\u4e0a\u65b9\u5411\u4f18\u5148\uff08\u4e0a\u8986\u76d6\u4e0b\uff09",
-		"\u4e0b\u65b9\u5411\u4f18\u5148\uff08\u5de6\u53f3\u6700\u540e\u8f93\u5165\u4f18\u5148\uff09"
+		"\u4e0b\u65b9\u5411\u4f18\u5148\uff08\u5de6\u53f3\u6700\u540e\u8f93\u5165\u4f18\u5148\uff09",
+		"\u5206\u8fa8\u7387",
+		"\u8bbe\u7f6e\u7279\u5b9a\u77e2\u91cf\u6e38\u620f\u7684\u5206\u8fa8\u7387"
 	},
 	{	// Traditional Chinese
 		"\u76e1\u53ef\u80fd\u4f7f\u7528 32 \u4f4d\u8272\u6df1",
@@ -456,7 +460,9 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"\u6700\u5f8c\u8f38\u5165\u512a\u5148\uff088\u65b9\u5411\uff09",
 		"\u521d\u59cb\u8f38\u5165\u512a\u5148",
 		"\u4e0a\u65b9\u5411\u512a\u5148\uff08\u4e0a\u8986\u84cb\u4e0b\uff09",
-		"\u4e0b\u65b9\u5411\u512a\u5148\uff08\u5de6\u53f3\u6700\u5f8c\u8f38\u5165\u512a\u5148\uff09"
+		"\u4e0b\u65b9\u5411\u512a\u5148\uff08\u5de6\u53f3\u6700\u5f8c\u8f38\u5165\u512a\u5148\uff09",
+		"\u89e3\u6790\u5ea6",
+		"\u8a2d\u5b9a\u7279\u5b9a\u77e2\u91cf\u904a\u6232\u7684\u89e3\u6790\u5ea6"
 	}
 };
 
