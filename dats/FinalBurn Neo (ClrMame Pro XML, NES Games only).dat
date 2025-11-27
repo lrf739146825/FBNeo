@@ -13954,6 +13954,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="minesweeper" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Minesweeper (HB, v1.2)</description>
+		<year>2025</year>
+		<manufacturer>FireSide_01</manufacturer>
+		<rom name="Minesweeper v1.2 (2025)(FireSide_01).nes" size="40976" crc="1e374b66"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="minibrix" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Mini Brix Battle (HB)</description>
@@ -21477,7 +21486,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tetrisj" cloneof="tetris" romof="tetris" sourcefile="nes/d_nes.cpp">
+	<game name="tetrisj" sourcefile="nes/d_nes.cpp">
 		<description>Tetris (BPS) (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Bullet-Proof Software</manufacturer>
@@ -21485,7 +21494,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tetrisjcc" cloneof="tetris" romof="tetris" sourcefile="nes/d_nes.cpp">
+	<game name="tetrisjcc" cloneof="tetrisj" romof="tetrisj" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Tetris (BPS) - Conventional-Controls Edition (Hack)</description>
 		<year>2023</year>
@@ -21494,7 +21503,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tetrisu" cloneof="tetris" romof="tetris" sourcefile="nes/d_nes.cpp">
+	<game name="tetris" sourcefile="nes/d_nes.cpp">
+		<description>Tetris (Nintendo) (USA)</description>
+		<year>1989</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Tetris (USA)(1989)(Nintendo).nes" size="49168" crc="6d72c53a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="tetrisu" sourcefile="nes/d_nes.cpp">
 		<description>Tetris (Tengen) (USA)</description>
 		<year>1989</year>
 		<manufacturer>Tengen</manufacturer>
@@ -21502,11 +21519,19 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tetris" sourcefile="nes/d_nes.cpp">
-		<description>Tetris (USA)</description>
-		<year>1989</year>
-		<manufacturer>Nintendo</manufacturer>
-		<rom name="Tetris (USA)(1989)(Nintendo).nes" size="49168" crc="6d72c53a"/>
+	<game name="tetris18" sourcefile="nes/d_nes.cpp">
+		<description>Tetris (Tetris Holding, 2018) (Unl)</description>
+		<year>1985-2018</year>
+		<manufacturer>Tetris Holding</manufacturer>
+		<rom name="Tetris (Unl)(1985-2018)(Tetris Holding).nes" size="393232" crc="92591b5c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="tetris23" sourcefile="nes/d_nes.cpp">
+		<description>Tetris (Tetris Holding, 2023) (Unl)</description>
+		<year>1985-2023</year>
+		<manufacturer>Tetris Holding</manufacturer>
+		<rom name="Tetris (Unl)(1985-2023)(Tetris Holding).nes" size="393232" crc="a6d0a179"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

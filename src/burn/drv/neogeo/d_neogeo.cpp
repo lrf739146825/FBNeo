@@ -12563,6 +12563,41 @@ struct BurnDriver BurnDrvWjammers = {
 };
 
 
+// Windjammers / Flying Power Disc (Let me play longer, Hack)
+// https://github.com/Boomchil/wjammers-lmpl
+
+static struct BurnRomInfo wjammlmplRomDesc[] = {
+	{ "065-p1lmpl.p1",    0x100000, 0xbd442f8f, 1 | BRF_ESS | BRF_PRG }, //  0 68K code 		/ mask rom TC538200
+
+	{ "065-s1lmpl.s1",    0x020000, 0xd282ba6d, 2 | BRF_GRA },           //  1 Text layer tiles / mask rom TC531000
+
+	{ "065-c1.c1",    0x100000, 0xc7650204, 3 | BRF_GRA },           //  2 Sprite data		/ mask rom TC538200
+	{ "065-c2.c2",    0x100000, 0xd9f3e71d, 3 | BRF_GRA },           //  3 					/ mask rom TC538200
+	{ "065-c3.c3",    0x100000, 0x40986386, 3 | BRF_GRA },           //  4 					/ mask rom TC538200
+	{ "065-c4.c4",    0x100000, 0x715e15ff, 3 | BRF_GRA },           //  5 					/ mask rom TC538200
+
+	{ "065-m1.m1",    0x020000, 0x52c23cfc, 4 | BRF_ESS | BRF_PRG }, //  6 Z80 code			/ mask rom TC531001
+
+	{ "065-v1.v1",    0x100000, 0xce8b3698, 5 | BRF_SND },           //  7 Sound data		/ mask rom TC538200
+	{ "065-v2.v2",    0x100000, 0x659f9b96, 5 | BRF_SND },           //  8 					/ mask rom TC538200
+	{ "065-v3.v3",    0x100000, 0x39f73061, 5 | BRF_SND },           //  9 					/ mask rom TC538200
+	{ "065-v4.v4",    0x100000, 0x5dee7963, 5 | BRF_SND },           // 10 					/ mask rom TC538200
+};
+
+STDROMPICKEXT(wjammlmpl, wjammlmpl, neogeo)
+STD_ROM_FN(wjammlmpl)
+
+struct BurnDriver BurnDrvWjammlmpl = {
+	"wjammlmpl", "wjammers", "neogeo", NULL, "2025",
+	"Windjammers / Flying Power Disc (Let me play longer, Hack)\0", NULL, "Boomchil", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_SPORTSMISC, 0,
+	NULL, wjammlmplRomInfo, wjammlmplRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	304, 224, 4, 3
+};
+
+
 // Karnov's Revenge / Fighter's History Dynamite
 
 static struct BurnRomInfo karnovrRomDesc[] = {
@@ -16967,7 +17002,7 @@ struct BurnDriver BurnDrvKarnovre = {
 };
 
 
-// Magician Lord - AGAIN CHANGES FROM HELL (Hack, v1.0.0)
+// Magician Lord - Again Changes from Hell (Hack, English v1.0.0)
 // https://github.com/Boomchil/maglord-acfh/
 
 static struct BurnRomInfo maglordacfhRomDesc[] = {
@@ -16994,10 +17029,46 @@ STD_ROM_FN(maglordacfh)
 
 struct BurnDriver BurnDrvMaglordacfh = {
 	"maglordacfh", "maglord", "neogeo", NULL, "2025",
-	"Magician Lord - AGAIN CHANGES FROM HELL (Hack, v1.0.0)\0", NULL, "Boomchil", "Neo Geo MVS",
+	"Magician Lord - Again Changes from Hell (Hack, English v1.0.0)\0", NULL, "Boomchil", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PLATFORM | GBF_RUNGUN, 0,
 	NULL, maglordacfhRomInfo, maglordacfhRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	320, 224, 4, 3
+};
+
+
+// Magician Lord - Again Changes from Hell (Hack, French v1.0.0)
+// https://github.com/Boomchil/maglord-acfh/
+
+static struct BurnRomInfo maglordfacfhRomDesc[] = {
+	{ "005-p1facfh.p1",	0x080000, 0xf201c65a, 1 | BRF_ESS | BRF_PRG }, //  0 68K code 		/ MB834200
+
+	{ "005-s1acfh.s1",	0x020000, 0x0e1839b2, 2 | BRF_GRA },           //  1 Text layer tiles / MB831000
+
+	{ "005-c1.c1",		0x080000, 0x806aee34, 3 | BRF_GRA },           //  2 Sprite data 		/ MB834200
+	{ "005-c2.c2",		0x080000, 0x34aa9a86, 3 | BRF_GRA },           //  3 					/ MB834200
+	{ "005-c3.c3",		0x080000, 0xc4c2b926, 3 | BRF_GRA },           //  4 					/ MB834200
+	{ "005-c4.c4",		0x080000, 0x9c46dcf4, 3 | BRF_GRA },           //  5 					/ MB834200
+	{ "005-c5.c5",		0x080000, 0x69086dec, 3 | BRF_GRA },           //  6 					/ MB834200
+	{ "005-c6.c6",		0x080000, 0xab7ac142, 3 | BRF_GRA },           //  7 					/ MB834200
+
+	{ "005-m1.m1",		0x040000, 0x26259f0f, 4 | BRF_ESS | BRF_PRG }, //  8 Z80 code 		/ MB832000
+
+	{ "005-v11.v11",	0x080000, 0xcc0455fd, 5 | BRF_SND },           //  9 Sound data 		/ MB834000
+	{ "005-v21.v21",	0x080000, 0xf94ab5b7, 6 | BRF_SND },           // 10 					/ MB834000
+	{ "005-v22.v22",	0x080000, 0x232cfd04, 6 | BRF_SND },           // 11 					/ MB834000
+};
+
+STDROMPICKEXT(maglordfacfh, maglordfacfh, neogeo)
+STD_ROM_FN(maglordfacfh)
+
+struct BurnDriver BurnDrvMaglordfacfh = {
+	"maglordfacfh", "maglord", "neogeo", NULL, "2025",
+	"Magician Lord - Again Changes from Hell (Hack, French v1.0.0)\0", NULL, "Boomchil", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PLATFORM | GBF_RUNGUN, 0,
+	NULL, maglordfacfhRomInfo, maglordfacfhRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	320, 224, 4, 3
 };
@@ -28718,6 +28789,36 @@ struct BurnDriver BurnDrvFlapchck = {
 };
 
 
+// Galaxian - Neo Geo Conversion (HB, Beta2)
+// https://tcdev.itch.io/galaxian
+
+static struct BurnRomInfo galaxianngRomDesc[] = {
+	{ "galaxian-p1.p1",    0x100000, 0x68f8097c, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+
+	{ "galaxian-s1.s1",    0x020000, 0x05192811, 2 | BRF_GRA },           //  1 Text layer tiles
+
+	{ "galaxian-c1.c1",    0x100000, 0xf2f2187a, 3 | BRF_GRA },           //  2 Sprite data
+	{ "galaxian-c2.c2",    0x100000, 0x70c8f4d2, 3 | BRF_GRA },           //  3
+
+	{ "galaxian-m1.m1",    0x010000, 0x43f557ca, 4 | BRF_ESS | BRF_PRG }, //  4 Z80 code
+
+	{ "galaxian-v1.v1",    0x080000, 0x67d1fe70, 5 | BRF_SND },           //  5 Sound data
+};
+
+STDROMPICKEXT(galaxianng, galaxianng, neogeo)
+STD_ROM_FN(galaxianng)
+
+struct BurnDriver BurnDrvGalaxianng = {
+	"galaxianng", NULL, "neogeo", NULL, "1979-2023",
+	"Galaxian - Neo Geo Conversion (HB, Beta2)\0", NULL, "Namco - tcdev", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL | BDF_HOMEBREW, 1, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VERSHOOT, 0,
+	NULL, galaxianngRomInfo, galaxianngRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	224, 304, 3, 4
+};
+
+
 // Jurl (HB, v0.3c)
 // https://tonsomo.itch.io/jurl-neo-geo-edition
 
@@ -28907,7 +29008,8 @@ struct BurnDriver BurnDrvHorekidb3 = {
 };
 
 
-// Xevious - Neo Geo Conversion (HB)
+// Xevious - Neo Geo Conversion (HB, Beta1)
+// https://tcdev.itch.io/xevious
 
 static struct BurnRomInfo xeviousngRomDesc[] = {
 	{ "xevious-p1.p1",    0x100000, 0x11dff034, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
@@ -28927,10 +29029,39 @@ STD_ROM_FN(xeviousng)
 
 struct BurnDriver BurnDrvXeviousng = {
 	"xeviousng", NULL, "neogeo", NULL, "1982-2023",
-	"Xevious - Neo Geo Conversion (HB)\0", NULL, "Namco - tcdev", "Neo Geo MVS",
+	"Xevious - Neo Geo Conversion (HB, Beta1)\0", NULL, "Namco - tcdev", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_ORIENTATION_VERTICAL | BDF_HOMEBREW, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VERSHOOT, 0,
 	NULL, xeviousngRomInfo, xeviousngRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	224, 304, 3, 4
+};
+
+
+// Zetsu Xevious - Neo Geo Conversion (HB)
+
+static struct BurnRomInfo zetsuxevingRomDesc[] = {
+	{ "zetsu-p1.p1",      0x100000, 0x31092abe, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+
+	{ "xevious-s1.s1",    0x020000, 0xf41d121a, 2 | BRF_GRA },           //  1 Text layer tiles
+
+	{ "zetsu-c1.c1",      0x100000, 0x52ff5807, 3 | BRF_GRA },           //  2 Sprite data
+	{ "zetsu-c2.c2",      0x100000, 0x160d4ca2, 3 | BRF_GRA },           //  3
+
+	{ "xevious-m1.m1",    0x010000, 0x6f31c601, 4 | BRF_ESS | BRF_PRG }, //  4 Z80 code
+
+	{ "xevious-v1.v1",    0x100000, 0x37ef6dc5, 5 | BRF_SND },           //  5 Sound data
+};
+
+STDROMPICKEXT(zetsuxeving, zetsuxeving, neogeo)
+STD_ROM_FN(zetsuxeving)
+
+struct BurnDriver BurnDrvZetsuxeving = {
+	"zetsuxeving", "xeviousng", "neogeo", NULL, "1982-2035",
+	"Zetsu Xevious - Neo Geo Conversion (HB)\0", NULL, "Namco - zeroco", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_HOMEBREW, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VERSHOOT, 0,
+	NULL, zetsuxevingRomInfo, zetsuxevingRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	224, 304, 3, 4
 };
@@ -29559,3 +29690,33 @@ struct BurnDriver BurnDrvShinobing = {
 	0x1000, 320, 224, 4, 3
 };
 
+
+// World Racer (HB)
+// https://www.patreon.com/posts/worldracer-rom-143726462
+// 3 & 4 players not working (needs Multitap)
+
+static struct BurnRomInfo wrldracrRomDesc[] = {
+	{ "wrldracr-p1.p1",   0x100000, 0xcc59276f, 1 | BRF_ESS | BRF_PRG },	//  0 68K Code
+
+	{ "wrldracr-s1.s1",   0x020000, 0x312508af, 2 | BRF_GRA },				//  1 Text data
+
+	{ "wrldracr-c1.c1",   0x080000, 0x44423f83, 3 | BRF_GRA },				//  2 Sprite data
+	{ "wrldracr-c2.c2",   0x080000, 0x57008242, 3 | BRF_GRA },				//  3
+
+	{ "wrldracr-m1.m1",   0x010000, 0x6178075b, 4 | BRF_ESS | BRF_PRG },	//  4 Z80 code
+
+	{ "wrldracr-v1.v1",   0x080000, 0xa4763f5d, 5 | BRF_SND },				//  5 Sound data
+};
+
+STDROMPICKEXT(wrldracr, wrldracr, neogeo)
+STD_ROM_FN(wrldracr)
+
+struct BurnDriver BurnDrvWrldracr = {
+	"wrldracr", NULL, "neogeo", NULL, "2025",
+	"World Racer (HB)\0", NULL, "Blastar", "Neo Geo",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_SNK_NEOGEO, GBF_RACING, 0,
+	NULL, wrldracrRomInfo, wrldracrRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000,	304, 224, 4, 3
+};

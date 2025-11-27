@@ -2215,12 +2215,21 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
+	<game name="bssf2gqc" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack, NB: also applied 'NoPause' patch.</comment>
-		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9A)</description>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9B Censored)</description>
 		<year>2025</year>
 		<manufacturer>Yoni Arousement</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9A (2025)(Yoni Arousement).bin" size="5242880" crc="ccd8889f"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9B Censored (2025)(Yoni Arousement).bin" size="5242880" crc="c7d4e6fa"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack, NB: also applied 'NoPause' patch.</comment>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9B)</description>
+		<year>2025</year>
+		<manufacturer>Yoni Arousement</manufacturer>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9B (2025)(Yoni Arousement).bin" size="5242880" crc="0349ea04"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2823,6 +2832,15 @@
 		<year>2018</year>
 		<manufacturer>Tor Landeel</manufacturer>
 		<rom name="Cadash - Arcade Colors (2018)(Tor Landeel).bin" size="524288" crc="84480043"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cadilacdino" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Cadilac Dinosauro (HB, v1.2)</description>
+		<year>2023</year>
+		<manufacturer>Manganga Team</manufacturer>
+		<rom name="Cadilac Dinosauro v1.2 (2023)(Manganga Team).bin" size="3145728" crc="5f20f907"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3960,6 +3978,15 @@
 		<year>199?</year>
 		<manufacturer>Visual Concepts</manufacturer>
 		<rom name="Congo (Proto)(199x)(Visual Concepts).bin" size="1015094" crc="13746716"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ctetris" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Console Tetris (HB)</description>
+		<year>2020</year>
+		<manufacturer>Retro Game Dev</manufacturer>
+		<rom name="Console Tetris (2020)(Retro Game Dev).bin" size="1966080" crc="f6da47a4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6950,6 +6977,33 @@
 		<year>2022</year>
 		<manufacturer>Genesis Fight Engine</manufacturer>
 		<rom name="Fight for Vengeance - Tournament Edition (2022)(Genesis Fight Engine).bin" size="4194304" crc="813a61a6"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fightg3500" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Fight Game 3 500 (HB)</description>
+		<year>2022</year>
+		<manufacturer>Manganga Team</manufacturer>
+		<rom name="Fight Game 3 500 (2022)(Manganga Team).bin" size="4063232" crc="ec16f8e3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fightgii1k" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Fight Game II 1000 (HB)</description>
+		<year>2022</year>
+		<manufacturer>Manganga Team</manufacturer>
+		<rom name="Fight Game II 1000 (2022)(Manganga Team).bin" size="4063232" crc="d754b607"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fightgii3k" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Fight Game II 3000 (HB)</description>
+		<year>2022</year>
+		<manufacturer>Manganga Team</manufacturer>
+		<rom name="Fight Game II 3000 (2022)(Manganga Team).bin" size="4194304" crc="769de2f6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

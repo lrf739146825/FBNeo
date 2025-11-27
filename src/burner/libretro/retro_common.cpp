@@ -55,6 +55,8 @@ bool bAllowIgnoreCrc                  = false;
 bool bLibretroSupportsAudioBuffStatus = false;
 bool bLowPassFilterEnabled            = false;
 UINT32 nVerticalMode                  = 0;
+UINT32 nNewWidth                      = 640;
+UINT32 nNewHeight                     = 480;
 UINT32 nFrameskip                     = 1;
 INT32 g_audio_samplerate              = 48000;
 UINT32 nMemcardMode                   = 0;
@@ -122,6 +124,27 @@ static struct retro_core_option_v2_definition var_fbneo_force_60hz = {
 		{ NULL,       NULL },
 	},
 	"disabled"
+};
+static struct retro_core_option_v2_definition var_fbneo_resolution = {
+	"fbneo-resolution",
+	"Resolution",
+	NULL,
+	"Set resolution in certain games (vector)",
+	NULL,
+	NULL,
+	{
+		{ "640x480",        NULL },
+		{ "800x600",        NULL },
+		{ "1024x768",       NULL },
+		{ "1080x810",       NULL },
+		{ "1280x960",       NULL },
+		{ "1440x1080",      NULL },
+		{ "1600x1200",      NULL },
+		{ "1920x1440",      NULL },
+		{ "2160x1620",      NULL },
+		{ "2880x2160",      NULL },
+	},
+	"640x480"
 };
 static struct retro_core_option_v2_definition var_fbneo_fixed_frameskip = {
 	"fbneo-fixed-frameskip",
@@ -935,9 +958,14 @@ void set_environment()
 	var_fbneo_vertical_mode.values[4].value                = RETRO_VERTICAL_VALUE_4;
 	vars_systems.push_back(&var_fbneo_vertical_mode);
 
+	var_fbneo_resolution.desc                              = RETRO_RESOLUTION_DESC;
+	var_fbneo_resolution.info                              = RETRO_RESOLUTION_INFO;
+
 	var_fbneo_force_60hz.desc                              = RETRO_FORCE60_CAT_DESC;
 	var_fbneo_force_60hz.info                              = RETRO_FORCE60_CAT_INFO;
 	vars_systems.push_back(&var_fbneo_force_60hz);
+
+	vars_systems.push_back(&var_fbneo_resolution);
 
 	var_fbneo_allow_patched_romsets.desc                   = RETRO_PATCHED_CAT_DESC;
 	var_fbneo_allow_patched_romsets.info                   = RETRO_PATCHED_CAT_INFO;
@@ -1574,6 +1602,61 @@ void check_variables(void)
 		}
 		else
 			bForce60Hz = false;
+	}
+
+	var.key = var_fbneo_resolution.key;
+	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
+	{
+		if (strcmp(var.value, "2880x2160") == 0)
+		{
+			nNewWidth = 2880;
+			nNewHeight = 2160;
+		}
+		else if (strcmp(var.value, "2160x1620") == 0)
+		{
+			nNewWidth = 1080;
+			nNewHeight = 810;
+		}
+		else if (strcmp(var.value, "1920x1440") == 0)
+		{
+			nNewWidth = 1920;
+			nNewHeight = 1440;
+		}
+		else if (strcmp(var.value, "1600x1200") == 0)
+		{
+			nNewWidth = 1600;
+			nNewHeight = 1200;
+		}
+		else if (strcmp(var.value, "1440x1080") == 0)
+		{
+			nNewWidth = 1440;
+			nNewHeight = 1080;
+		}
+		else if (strcmp(var.value, "1280x960") == 0)
+		{
+			nNewWidth = 1280;
+			nNewHeight = 960;
+		}
+		else if (strcmp(var.value, "1080x810") == 0)
+		{
+			nNewWidth = 1080;
+			nNewHeight = 810;
+		}
+		else if (strcmp(var.value, "1024x768") == 0)
+		{
+			nNewWidth = 1024;
+			nNewHeight = 768;
+		}
+		else if (strcmp(var.value, "800x600") == 0)
+		{
+			nNewWidth = 800;
+			nNewHeight = 600;
+		}
+		else
+		{
+			nNewWidth = 640;
+			nNewHeight = 480;
+		}
 	}
 
 	if (bLibretroSupportsAudioBuffStatus)

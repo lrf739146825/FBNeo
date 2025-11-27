@@ -968,6 +968,24 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="impetus" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Impetus (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus (2022)(Inufuto).sg" size="16624" crc="42179ce3"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetusplus" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Impetus+ (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus+ (2025)(Inufuto).sg" size="24576" crc="57f3ceec"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="jetpaco" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Homebrew</comment>
 		<description>Jet Paco and Jet Puri (HB)</description>
@@ -1433,6 +1451,15 @@
 		<year>198?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Renzhe Gongzhu (Taiwan)(198x).sg" size="32768" crc="464d144b"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="retropipe" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>RetroPIPE (HB, v0.2)</description>
+		<year>2025</year>
+		<manufacturer>Visrealm</manufacturer>
+		<rom name="RetroPIPE v0.2 (2025)(Visrealm).sg" size="32768" crc="3885a1f3"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

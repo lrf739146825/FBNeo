@@ -7450,6 +7450,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="gobrick" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, DSK2ROM conversion</comment>
+		<description>Go Brick (HB)</description>
+		<year>2025</year>
+		<manufacturer>GameCast Entertainment</manufacturer>
+		<rom name="Go Brick (2025)(Gamecast).rom" size="753664" crc="4605a36b"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="goblin" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Goblin, The (HB, v1.2)</description>
@@ -7519,7 +7531,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gokiburi" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Gokiburi Daisakusen - Bug Bomb (Japan)</description>
+		<description>Gokiburi Daisakusen ~ Bug Bomb (Japan)</description>
 		<year>1983</year>
 		<manufacturer>Magicsoft</manufacturer>
 		<rom name="Gokiburi Daisakusen - Bug Bomb (Japan)(1983)(Magicsoft).rom" size="16384" crc="69ecb2ed"/>
@@ -8549,6 +8561,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hydlide2en" cloneof="hydlide2" romof="hydlide2" sourcefile="msx/d_msx.cpp">
+		<comment>Hack</comment>
+		<description>Hydlide II: Shine of Darkness (Hack, English)</description>
+		<year>20??</year>
+		<manufacturer>Rieks W. Torringa</manufacturer>
+		<rom name="Hydlide II - Shine Of Darkness T-Eng (20xx)(Rieks W. Torringa).rom" size="131072" crc="a0fd57cf"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hydlide2" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Hydlide II: Shine of Darkness (Japan)</description>
 		<year>1986</year>
@@ -8792,22 +8816,22 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="iganinpo" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Iga Ninpouchou - Small Ninja (Japan)</description>
-		<year>1985</year>
+	<game name="iganinp2" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Iga Ninpouchou 2 ~ Small Ninja 2 (Japan)</description>
+		<year>1986</year>
 		<manufacturer>Casio</manufacturer>
-		<rom name="Iga Ninpouchou - Small Ninja (Japan)(1985)(Casio).rom" size="16384" crc="51727e48"/>
+		<rom name="Iga Ninpouchou 2 - Small Ninja 2 (Japan)(1986)(Casio).rom" size="32768" crc="4aa97644"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="iganinp2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Iga Ninpouchou 2 - Small Ninja 2 (Japan)</description>
-		<year>1986</year>
+	<game name="iganinpo" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Iga Ninpouchou ~ Small Ninja (Japan)</description>
+		<year>1985</year>
 		<manufacturer>Casio</manufacturer>
-		<rom name="Iga Ninpouchou 2 - Small Ninja 2 (Japan)(1986)(Casio).rom" size="32768" crc="4aa97644"/>
+		<rom name="Iga Ninpouchou - Small Ninja (Japan)(1985)(Casio).rom" size="16384" crc="51727e48"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8831,6 +8855,18 @@
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Impetus (2021)(Inufuto).rom" size="16352" crc="6f7e32ca"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetusplus" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Impetus+ (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus+ (2025)(Inufuto).cas" size="16870" crc="f8941854"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8895,7 +8931,7 @@
 	</game>
 	<game name="ink" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>INK - Exxon Surfing (HB)</description>
+		<description>INK: Exxon Surfing (HB)</description>
 		<year>2006</year>
 		<manufacturer>Matra</manufacturer>
 		<rom name="INK - Exxon Surfing (2006)(Matra).rom" size="49152" crc="35823fd5"/>
@@ -9395,7 +9431,7 @@
 		<description>Kaeru Shooter (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="Kaeru Shooter (Jpn)(1984)(Hudson Soft).rom" size="16384" crc="253192ff"/>
+		<rom name="Kaeru Shooter (Japan)(1984)(Hudson Soft).rom" size="16384" crc="253192ff"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -9403,7 +9439,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="legkage" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Kage no Densetsu - Legend of Kage, The (Japan)</description>
+		<description>Kage no Densetsu ~ The Legend of Kage (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Taito Corp.</manufacturer>
 		<rom name="Kage no Densetsu - Legend of Kage, The (Japan)(1986)(Taito).rom" size="32768" crc="69367e10"/>
@@ -9414,10 +9450,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="karamaru" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Karamaru - Chindou Chuu (Japan)</description>
-		<year>1985</year>
+		<description>Karamaru: Chindou Chuu (Japan)</description>
+		<year>1984</year>
 		<manufacturer>HAL Laboratory</manufacturer>
-		<rom name="Karamaru - Chindou Chuu (Japan)(1985)(HAL Laboratory).rom" size="16384" crc="12be29fc"/>
+		<rom name="Karamaru - Chindou Chuu (Japan)(1984)(HAL Laboratory).rom" size="16384" crc="12be29fc"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15293,6 +15329,30 @@
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Salamander (Japan)(1987)(Konami).rom" size="131072" crc="c36f559d"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="salamanda" cloneof="salamand" romof="salamand" sourcefile="msx/d_msx.cpp">
+		<comment>Speech by WYZ/ARTRAG 2016</comment>
+		<description>Salamander (Japan, Digi speech version)</description>
+		<year>1987</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Salamander (Japan, Digi speech version)(1987)(Konami).rom" size="278528" crc="787a4408"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="salamandb" cloneof="salamand" romof="salamand" sourcefile="msx/d_msx.cpp">
+		<comment>?</comment>
+		<description>Salamander (Japan, Extra Stage version)</description>
+		<year>1987</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Salamander (Japan, Extra Stage version)(1987)(Konami).rom" size="262144" crc="cd646cbe"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
