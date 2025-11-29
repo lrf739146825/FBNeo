@@ -1237,6 +1237,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="arkacolor" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>ArkaColor (HB)</description>
+		<year>2025</year>
+		<manufacturer>felpashito</manufacturer>
+		<rom name="ArkaColor (2025)(felpashito).nes" size="40976" crc="058e51b6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="arkaderush" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Arkade Rush (HB)</description>
@@ -7564,7 +7573,7 @@
 	</game>
 	<game name="firenicell" cloneof="firenice" romof="firenice" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Fire 'n Ice - The Lost Levels (Hack, v1.1)</description>
+		<description>Fire 'n Ice: The Lost Levels (Hack, v1.1)</description>
 		<year>2021</year>
 		<manufacturer>Renaldo</manufacturer>
 		<rom name="Fire 'n Ice - The Lost Levels v1.1 (2021)(Renaldo).nes" size="262160" crc="99e61dff"/>
@@ -8199,9 +8208,35 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="ganbagoegai2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ganbare Goemon Gaiden 2: Tenka no Zaihou (Hack, English)</description>
+		<year>2019</year>
+		<manufacturer>Adventurous Translations</manufacturer>
+		<rom name="Ganbare Goemon Gaiden 2 - Tenka no Zaihou T-Eng (2019)(Adventurous Translations).nes" size="524304" crc="3de94076"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbagoegai2c" cloneof="ganbagoegai2" romof="ganbagoegai2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Ganbare Goemon Gaiden 2: Tenka no Zaihou (Hack, Spanish v0.98)</description>
+		<year>2020</year>
+		<manufacturer>jackic</manufacturer>
+		<rom name="Ganbare Goemon Gaiden 2 - Tenka no Zaihou T-Spa v0.98 (2018)(jackic).nes" size="524304" crc="c2e96c08"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbagoegai2j" cloneof="ganbagoegai2" romof="ganbagoegai2" sourcefile="nes/d_nes.cpp">
+		<description>Ganbare Goemon Gaiden 2: Tenka no Zaihou (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Ganbare Goemon Gaiden 2 - Tenka no Zaihou (Japan)(1992)(Konami).nes" size="524304" crc="ad961658"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="ganbagoegai" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ganbare Goemon Gaiden - Kieta Ougon Kiseru (Hack, English)</description>
+		<description>Ganbare Goemon Gaiden: Kieta Ougon Kiseru (Hack, English)</description>
 		<year>2017</year>
 		<manufacturer>Adventurous Translations</manufacturer>
 		<rom name="Ganbare Goemon Gaiden - Kieta Ougon Kiseru T-Eng (2017)(Adventurous Translations).nes" size="524304" crc="a1c4c69e"/>
@@ -8210,7 +8245,7 @@
 	</game>
 	<game name="ganbagoegaic" cloneof="ganbagoegai" romof="ganbagoegai" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ganbare Goemon Gaiden - Kieta Ougon Kiseru (Hack, Spanish v0.99)</description>
+		<description>Ganbare Goemon Gaiden: Kieta Ougon Kiseru (Hack, Spanish v0.99)</description>
 		<year>2021</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Ganbare Goemon Gaiden - Kieta Ougon Kiseru T-Spa v0.99 (2021)(jackic).nes" size="524304" crc="90ac0bda"/>
@@ -8218,42 +8253,25 @@
 		<driver status="good"/>
 	</game>
 	<game name="ganbagoegaij" cloneof="ganbagoegai" romof="ganbagoegai" sourcefile="nes/d_nes.cpp">
-		<description>Ganbare Goemon Gaiden - Kieta Ougon Kiseru (Japan)</description>
+		<description>Ganbare Goemon Gaiden: Kieta Ougon Kiseru (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Ganbare Goemon Gaiden - Kieta Ougon Kiseru (Japan).nes" size="524304" crc="1d2dbc90"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="ganbagoegai2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Ganbare Goemon Gaiden 2 - Tenka no Zaihou (Hack, English)</description>
-		<year>2019</year>
-		<manufacturer>Adventurous Translations</manufacturer>
-		<rom name="Ganbare Goemon Gaiden 2 - Tenka no Zaihou T-Eng (2019)(Adventurous Translations).nes" size="524304" crc="3de94076"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="ganbagoegai2j" cloneof="ganbagoegai2" romof="ganbagoegai2" sourcefile="nes/d_nes.cpp">
-		<description>Ganbare Goemon Gaiden 2 - Tenka no Zaihou (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Ganbare Goemon Gaiden 2 - Tenka no Zaihou (Japan).nes" size="524304" crc="ad961658"/>
+		<rom name="Ganbare Goemon Gaiden - Kieta Ougon Kiseru (Japan)(1990)(Konami).nes" size="524304" crc="1d2dbc90"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="ganbagoe" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ganbare Goemon! - Karakuri Douchuu (Hack, English)</description>
+		<description>Ganbare Goemon! Karakuri Douchuu (Hack, English)</description>
 		<year>2010</year>
 		<manufacturer>Spinner 8 and friends</manufacturer>
-		<rom name="Ganbare Goemon! - Karakuri Douchuu (T-Eng).nes" size="262160" crc="83fab5ff"/>
+		<rom name="Ganbare Goemon! Karakuri Douchuu T-Eng (2010)(Spinner 8 and friends).nes" size="262160" crc="83fab5ff"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="ganbagoec" cloneof="ganbagoe" romof="ganbagoe" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ganbare Goemon! - Karakuri Douchuu (Hack, Spanish)</description>
+		<description>Ganbare Goemon! Karakuri Douchuu (Hack, Spanish)</description>
 		<year>2020</year>
 		<manufacturer>jackic</manufacturer>
 		<rom name="Ganbare Goemon! - Karakuri Douchuu T-Spa (2020)(jackic).nes" size="262160" crc="bf99d7e4"/>
@@ -8261,10 +8279,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ganbagoej" cloneof="ganbagoe" romof="ganbagoe" sourcefile="nes/d_nes.cpp">
-		<description>Ganbare Goemon! - Karakuri Douchuu (Japan)</description>
+		<description>Ganbare Goemon! Karakuri Douchuu (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Ganbare Goemon! - Karakuri Douchuu (Japan).nes" size="262160" crc="50fdb91f"/>
+		<rom name="Ganbare Goemon! Karakuri Douchuu (Japan)(1986)(Konami).nes" size="262160" crc="50fdb91f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8272,13 +8290,13 @@
 		<description>Ganbare Pennant Race! (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Ganbare Pennant Race! (Japan).nes" size="262160" crc="d15edc9a"/>
+		<rom name="Ganbare Pennant Race! (Japan)(1989)(Konami).nes" size="262160" crc="d15edc9a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="gansosai" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Ganso Saiyuuki - Super Monkey Daibouken (Hack, English)</description>
+		<description>Ganso Saiyuuki: Super Monkey Daibouken (Hack, English)</description>
 		<year>2015</year>
 		<manufacturer>GAFF Translations</manufacturer>
 		<rom name="Ganso Saiyuuki - Super Monkey Daibouken T-Eng (2015)(GAFF Translations).nes" size="65552" crc="f6bc9964"/>
@@ -8286,7 +8304,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gansosaij" cloneof="gansosai" romof="gansosai" sourcefile="nes/d_nes.cpp">
-		<description>Ganso Saiyuuki - Super Monkey Daibouken (Japan)</description>
+		<description>Ganso Saiyuuki: Super Monkey Daibouken (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Vap Inc.</manufacturer>
 		<rom name="Ganso Saiyuuki - Super Monkey Daibouken (Japan)(1986)(Vap).nes" size="65552" crc="74de437a"/>
@@ -10553,7 +10571,7 @@
 	</game>
 	<game name="jamg" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>JAMG - The Lost Coins (HB)</description>
+		<description>JAMG: The Lost Coins (HB)</description>
 		<year>2018</year>
 		<manufacturer>OCDreproductions</manufacturer>
 		<rom name="JAMG - The Lost Coins (2018)(OCDreproductions).nes" size="262160" crc="7a8877aa"/>
@@ -10583,6 +10601,15 @@
 		<year>1992</year>
 		<manufacturer>Daou Infosys Corp.</manufacturer>
 		<rom name="Janggun-ui Adeul (Korea)(1992)(Daou Infosys).nes" size="655376" crc="54171ca4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="jauntyman" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jauntyman and the Three Pigs (HB, v0.16)</description>
+		<year>2025</year>
+		<manufacturer>spadix</manufacturer>
+		<rom name="Jauntyman and the Three Pigs v0.16 (2025)(spadix).nes" size="696336" crc="7def9bdc"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10717,7 +10744,7 @@
 	</game>
 	<game name="jimpower" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Jim Power - The Lost Dimension (HB)</description>
+		<description>Jim Power: The Lost Dimension (HB)</description>
 		<year>2020</year>
 		<manufacturer>Piko Interactive</manufacturer>
 		<rom name="Jim Power - The Lost Dimension (2020)(Piko).nes" size="524304" crc="3f088114"/>
@@ -18247,6 +18274,23 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="sdkbladej" cloneof="sdkblade" romof="sdkblade" sourcefile="nes/d_nes.cpp">
+		<description>SD Keiji Blader (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Taito Corp.</manufacturer>
+		<rom name="SD Keiji Blader (Japan)(1991)(Taito).nes" size="262160" crc="452c373c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdkblade" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>SD Keiji Blader ~ SD Detective Blader (Hack, English)</description>
+		<year>2021</year>
+		<manufacturer>Stardust Crusaders</manufacturer>
+		<rom name="SD Keiji Blader T-Eng (2021)(Stardust Crusaders).nes" size="393232" crc="1fa8a57d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="grimshire" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew, Visual Novel</comment>
 		<description>Secret of Grimshire (HB)</description>
@@ -18291,7 +18335,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="seikima2" sourcefile="nes/d_nes.cpp">
-		<description>Seikima II - Akuma no Gyakushuu (Japan)</description>
+		<description>Seikima II: Akuma no Gyakushuu (Japan)</description>
 		<year>1986</year>
 		<manufacturer>CBS - Sony Group</manufacturer>
 		<rom name="Seikima II - Akuma no Gyakushuu (Japan)(1986)(CBS - Sony Group).nes" size="65552" crc="b546589d"/>
@@ -18307,7 +18351,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="shancaraj" cloneof="shancara" romof="shancara" sourcefile="nes/d_nes.cpp">
-		<description>Seiryaku Simulation: Inbou no Wakusei - Shancara (Japan)</description>
+		<description>Seiryaku Simulation: Inbou no Wakusei ~ Shancara (Japan)</description>
 		<year>1992</year>
 		<manufacturer>IGS Corporation</manufacturer>
 		<rom name="Seiryaku Simulation - Inbou no Wakusei - Shancara (Japan)(1992)(IGS).nes" size="262160" crc="dcfe4112"/>
@@ -18316,14 +18360,14 @@
 	</game>
 	<game name="shancara" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Seiryaku Simulation: Planet of Conspiracy - Shancara (Hack, English v1.01)</description>
+		<description>Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.01)</description>
 		<year>2024</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.01 (2024)(BlackPaladin).nes" size="262160" crc="7ea7e5df"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="senjounoookami" sourcefile="nes/d_nes.cpp">
+	<game name="senjounoookami" cloneof="commando" romof="commando" sourcefile="nes/d_nes.cpp">
 		<description>Senjou no Ookami (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Capcom</manufacturer>
@@ -19004,20 +19048,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="solonokagi2h" cloneof="firenice" romof="firenice" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, 100 new levels</comment>
-		<description>Solomon no Kagi 2 - Kitsune Attacks! (Hack, v1.6)</description>
-		<year>2022</year>
-		<manufacturer>FoxyShadow</manufacturer>
-		<rom name="Solomon no Kagi 2 - Kitsune Attacks! (Hack, v1.6).nes" size="262160" crc="039d14fd"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="solonokagi2" cloneof="firenice" romof="firenice" sourcefile="nes/d_nes.cpp">
 		<description>Solomon no Kagi 2: Coolmintou Kyuushutsu Sakusen (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Solomon no Kagi 2 - Coolmintou Kyuushutsu Sakusen (Japan)(1992)(Tecmo).nes" size="262160" crc="f033b827"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="solonokagi2h" cloneof="firenice" romof="firenice" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, 100 new levels</comment>
+		<description>Solomon no Kagi 2: Kitsune Attacks! (Hack, v1.6)</description>
+		<year>2022</year>
+		<manufacturer>FoxyShadow</manufacturer>
+		<rom name="Solomon no Kagi 2 - Kitsune Attacks! (Hack, v1.6).nes" size="262160" crc="039d14fd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -19030,8 +19074,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="solstrttk" cloneof="solst" romof="solst" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Solstice - Return to the Kastlerock (Hack, v1.0 hotfix1)</description>
+		<comment>Hack, All new map with 253 rooms to explore</comment>
+		<description>Solstice: Return to the Kastlerock (Hack, v1.0 hotfix1)</description>
 		<year>2024</year>
 		<manufacturer>Jp32</manufacturer>
 		<rom name="Solstice - Return to the Kastlerock v1.0 hotfix1 (2024)(Jp32).nes" size="131088" crc="0c054e39"/>
