@@ -1607,56 +1607,7 @@ void check_variables(void)
 	var.key = var_fbneo_resolution.key;
 	if (environ_cb(RETRO_ENVIRONMENT_GET_VARIABLE, &var) && var.value)
 	{
-		if (strcmp(var.value, "2880x2160") == 0)
-		{
-			nNewWidth = 2880;
-			nNewHeight = 2160;
-		}
-		else if (strcmp(var.value, "2160x1620") == 0)
-		{
-			nNewWidth = 1080;
-			nNewHeight = 810;
-		}
-		else if (strcmp(var.value, "1920x1440") == 0)
-		{
-			nNewWidth = 1920;
-			nNewHeight = 1440;
-		}
-		else if (strcmp(var.value, "1600x1200") == 0)
-		{
-			nNewWidth = 1600;
-			nNewHeight = 1200;
-		}
-		else if (strcmp(var.value, "1440x1080") == 0)
-		{
-			nNewWidth = 1440;
-			nNewHeight = 1080;
-		}
-		else if (strcmp(var.value, "1280x960") == 0)
-		{
-			nNewWidth = 1280;
-			nNewHeight = 960;
-		}
-		else if (strcmp(var.value, "1080x810") == 0)
-		{
-			nNewWidth = 1080;
-			nNewHeight = 810;
-		}
-		else if (strcmp(var.value, "1024x768") == 0)
-		{
-			nNewWidth = 1024;
-			nNewHeight = 768;
-		}
-		else if (strcmp(var.value, "800x600") == 0)
-		{
-			nNewWidth = 800;
-			nNewHeight = 600;
-		}
-		else
-		{
-			nNewWidth = 640;
-			nNewHeight = 480;
-		}
+		sscanf(var.value, "%dx%d", &nNewWidth, &nNewHeight);
 	}
 
 	if (bLibretroSupportsAudioBuffStatus)

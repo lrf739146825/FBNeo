@@ -9837,10 +9837,12 @@ DRV		BurnDrvMSX_invazm;
 DRV		BurnDrvnes_inversion;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvInvcarht;		// No sound
-DRV		BurnDrvInvds;			// No sound
-DRV		BurnDrvInvho2;			// No sound
-DRV		BurnDrvInvinco;			// No sound
 #endif
+DRV		BurnDrvInvds;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvInvho2;			// No sound
+#endif
+DRV		BurnDrvInvinco;
 DRV		BurnDrvIqblock;
 DRV		BurnDrvmd_iraqwara;
 DRV		BurnDrvmd_iraqwar;
@@ -34377,10 +34379,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_inversion,		// Inversion (HB, v1.4)
 #if defined FBNEO_DEBUG
 	&BurnDrvInvcarht,			// Invinco / Car Hunt (Germany) [No sound]
-	&BurnDrvInvds,				// Invinco / Deep Scan [No sound]
-	&BurnDrvInvho2,				// Invinco / Head On 2 (set 1) [No sound]
-	&BurnDrvInvinco,			// Invinco [No sound]
 #endif
+	&BurnDrvInvds,				// Invinco / Deep Scan
+#if defined FBNEO_DEBUG
+	&BurnDrvInvho2,				// Invinco / Head On 2 (set 1) [No sound]
+#endif
+	&BurnDrvInvinco,			// Invinco
 	&BurnDrvIqblock,			// IQ-Block (V100U)
 	&BurnDrvmd_iraqwara,		// Iraq War 2003 (Alt) (Unl)
 	&BurnDrvmd_iraqwar,			// Iraq War 2003 (Unl)
