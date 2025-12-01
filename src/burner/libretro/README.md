@@ -406,7 +406,7 @@ That driver was disabled for now, it didn't meet our quality criteria.
 
 ### Where is the hires dipswitch on vector games ? It seems gone.
 
-It has been replaced by a more global "Resolution" core option affecting all vector games at once.
+It was streamlined into a global `Resolution` core option affecting all vector games at once, with new resolutions available.
 
 For best visual results, it's recommended to match your screen's height, some examples using a 1080p screen :
 * for horizontal games, you'll want to use 1440x1080
