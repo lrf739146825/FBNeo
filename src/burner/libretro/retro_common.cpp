@@ -1595,8 +1595,8 @@ void check_variables(void)
 		}
 		else if (strcmp(var.value, "2160x1620") == 0)
 		{
-			nNewWidth = 1080;
-			nNewHeight = 810;
+			nNewWidth = 2160;
+			nNewHeight = 1620;
 		}
 		else if (strcmp(var.value, "1920x1440") == 0)
 		{
