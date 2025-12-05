@@ -38258,12 +38258,12 @@
 	<game name="zetsuxeving" cloneof="xeviousng" romof="xeviousng" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Homebrew</comment>
 		<description>Zetsu Xevious - Neo Geo Conversion (HB)</description>
-		<year>1982-2035</year>
+		<year>1982-2025</year>
 		<manufacturer>Namco - zeroco</manufacturer>
-		<rom name="zetsu-p1.p1" size="1048576" crc="31092abe"/>
+		<rom name="zetsu-p1.p1" size="1048576" crc="19025936"/>
 		<rom name="xevious-s1.s1" merge="xevious-s1.s1" size="131072" crc="f41d121a"/>
-		<rom name="zetsu-c1.c1" size="1048576" crc="52ff5807"/>
-		<rom name="zetsu-c2.c2" size="1048576" crc="160d4ca2"/>
+		<rom name="zetsu-c1.c1" size="1048576" crc="4ce910ee"/>
+		<rom name="zetsu-c2.c2" size="1048576" crc="d8f980cf"/>
 		<rom name="xevious-m1.m1" merge="xevious-m1.m1" size="65536" crc="6f31c601"/>
 		<rom name="xevious-v1.v1" merge="xevious-v1.v1" size="1048576" crc="37ef6dc5"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
