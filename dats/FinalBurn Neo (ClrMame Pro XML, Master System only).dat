@@ -6680,6 +6680,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wboy3i" cloneof="wboy3" romof="wboy3" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Wonder Boy III: The Dragon's Trap (Hack, Italian v1.2)</description>
+		<year>2024</year>
+		<manufacturer>Michele Di Somma</manufacturer>
+		<rom name="Wonder Boy III - The Dragon's Trap T-Ita v1.2 (2024)(Michele Di Somma).sms" size="262144" crc="6c5915d7"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wboy3c" cloneof="wboy3" romof="wboy3" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Wonder Boy III: The Dragon's Trap (Hack, Spanish)</description>

@@ -2217,19 +2217,19 @@
 	</game>
 	<game name="bssf2gqc" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack, NB: also applied 'NoPause' patch.</comment>
-		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9B Censored)</description>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9C Censored)</description>
 		<year>2025</year>
 		<manufacturer>Yoni Arousement</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9B Censored (2025)(Yoni Arousement).bin" size="5242880" crc="c7d4e6fa"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9C Censored (2025)(Yoni Arousement).bin" size="5242880" crc="bc29b098"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="bssf2gq" cloneof="ssf2" romof="ssf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack, NB: also applied 'NoPause' patch.</comment>
-		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9B)</description>
+		<description>Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9C)</description>
 		<year>2025</year>
 		<manufacturer>Yoni Arousement</manufacturer>
-		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9B (2025)(Yoni Arousement).bin" size="5242880" crc="0349ea04"/>
+		<rom name="Bishoujo Super Street Fighter II - Glamor Queen v2.9C (2025)(Yoni Arousement).bin" size="5242880" crc="10db162f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
