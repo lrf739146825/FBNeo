@@ -1795,6 +1795,7 @@ INT32 ConfigCheatLoad()
 			ret = 1;
 			break;
 	}
+	// Load single cheat types end.
 */
 
 	// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
@@ -1843,7 +1844,6 @@ INT32 ConfigCheatLoad()
 
 		multiple_cheat_init = 0;
 	}
-
 	if(use_vct){
 		_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 		ret = ConfigParseVCT(szFilename);
@@ -1881,6 +1881,7 @@ INT32 ConfigCheatLoad()
 		_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, BurnDrvGetText(DRV_NAME));
 		ret = ConfigParseNebulaFile(szFilename);
 	}
+	// Load multiple cheat types end.
 
 	if (pCheatInfo) {
 		INT32 nCurrentCheat = 0;
