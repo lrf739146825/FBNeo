@@ -1501,10 +1501,6 @@ static int encodeNES(int address, int value, int compare, char *result) {
 	return 0;
 }
 
-#ifdef _MSC_VER
-#define strtok_r strtok_s
-#endif
-
 void normalize_spaces(TCHAR* str) {
     TCHAR* dest = str;
     bool prev_blank = false;
@@ -1617,7 +1613,6 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 
 		if (HW_GGENIE) {
 			//szGGenie "0077-01-FF" or "0077-04-80808080"
-			char *tok_main = NULL;
 			char temp2[256] = { 0, };
 			UINT32 fAddr = 0;
 			UINT32 fCount = 0;
@@ -1627,18 +1622,18 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 			strcpy(temp2, szGGenie);
 
 			// split up "0077-01-FF" format: "address-[attribute][bytecount]-bytes_to_program"
-			char *tok = strtok_r(temp2, "-", &tok_main);
+			char *tok = strtok(temp2, "-");
 			if (!tok) continue;
 			sscanf(tok, "%x", &fAddr);
 
-			tok = strtok_r(NULL, "-", &tok_main);
+			tok = strtok(NULL, "-");
 			if (!tok) continue;
 			sscanf(tok, "%x", &fCount);
 			fAttr = (fCount & 0x30) >> 4;
 			fCount &= 0x07;
 			if (fCount < 1 || fCount > 4) fCount = 1;
 
-			tok = strtok_r(NULL, "-", &tok_main);
+			tok = strtok(NULL, "-");
 			if (!tok) continue;
 			sscanf(tok, "%x", &fBytes);
 
@@ -1685,10 +1680,6 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 	return 0;
 }
 
-#ifdef _MSC_VER
-#undef strtok_r
-#endif
-
 // variable for multiple cheat
 int multiple_cheat_init = 1;
 int use_vct = 0;
@@ -1698,7 +1689,8 @@ int use_ini = 0;
 int use_z7_ini = 0;
 int use_nebula = 0;
 
-INT32 ConfigCheatLoad() {
+INT32 ConfigCheatLoad()
+{
 	TCHAR szFilename[MAX_PATH] = _T("");
 
 	pCurrentCheat = NULL;
