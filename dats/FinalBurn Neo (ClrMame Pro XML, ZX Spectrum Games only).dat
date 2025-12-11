@@ -371,11 +371,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="911ts" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Z, X, O, and P to play</comment>
-		<description>911 TS - Tiger Shark (48K)</description>
+		<description>911 TS ~ 911 Tiger Shark (48K)</description>
 		<year>1985</year>
 		<manufacturer>Elite Systems</manufacturer>
-		<rom name="911 TS - Tiger Shark 48K (1985)(Elite Systems).tap" size="47921" crc="303db330"/>
+		<rom name="911 TS - 911 Tiger Shark 48K (1985)(Elite Systems).tap" size="47921" crc="303db330"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -3367,10 +3366,10 @@
 	</game>
 	<game name="blacksea" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Black Sea - Treasure Hunters (128K) (HB)</description>
+		<description>Black Sea - Treasure Hunters (48K-128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Mananuk</manufacturer>
-		<rom name="Black Sea - Treasure Hunters 128K (2021)(Mananuk).tap" size="45089" crc="00ad4735"/>
+		<rom name="Black Sea - Treasure Hunters 48K-128K (2021)(Mananuk).tap" size="45089" crc="00ad4735"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -3443,6 +3442,16 @@
 		<rom name="Blazing Thunder 48K-128K (1990)(Hi-Tec).tzx" size="46602" crc="b61515dc"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blendpic" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Blendpic (48K) (HB)</description>
+		<year>2023</year>
+		<manufacturer>g0blinish</manufacturer>
+		<rom name="Blendpic 48K-AY (2023)(g0blinish).tap" size="19476" crc="c602f5bc"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5367,11 +5376,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="cheqflag" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>'A-F' to steer, '0' to accelerate, 'I' to brake and 'M-N' to shift gears</comment>
+		<comment>Use 'A-F' to steer, '0' to accelerate, 'I' to brake and 'M-N' to shift gears</comment>
 		<description>Chequered Flag (48K)</description>
-		<year>1982</year>
+		<year>1983</year>
 		<manufacturer>Sinclair Research</manufacturer>
-		<rom name="Chequered Flag 48K (1982)(Sinclair Research).z80" size="36463" crc="be6e657f"/>
+		<rom name="Chequered Flag 48K (1983)(Sinclair Research).tzx" size="48707" crc="c9368910"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -5799,7 +5808,7 @@
 	</game>
 	<game name="cocoa2e1" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 1 (English) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 1 (English) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP1 EN 128K (2020)(Minilop).tap" size="49168" crc="091c933d"/>
@@ -5810,7 +5819,7 @@
 	</game>
 	<game name="cocoa2e1pt" cloneof="cocoa2e1" romof="cocoa2e1" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 1 (Portuguese) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 1 (Portuguese) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP1 PT 128K (2020)(Minilop).tap" size="49168" crc="12e1984a"/>
@@ -5821,7 +5830,7 @@
 	</game>
 	<game name="cocoa2e1sp" cloneof="cocoa2e1" romof="cocoa2e1" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 1 (Spanish) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 1 (Spanish) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP1 ES 128K (2020)(Minilop).tap" size="49168" crc="98b01da0"/>
@@ -5832,7 +5841,7 @@
 	</game>
 	<game name="cocoa2e2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 2 (English) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 2 (English) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP2 EN 128K (2020)(Minilop).tap" size="49204" crc="cc0c836f"/>
@@ -5843,7 +5852,7 @@
 	</game>
 	<game name="cocoa2e2pt" cloneof="cocoa2e2" romof="cocoa2e2" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 2 (Portuguese) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 2 (Portuguese) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP2 PT 128K (2020)(Minilop).tap" size="49204" crc="66efddd9"/>
@@ -5854,7 +5863,7 @@
 	</game>
 	<game name="cocoa2e2sp" cloneof="cocoa2e2" romof="cocoa2e2" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 2 (Spanish) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 2 (Spanish) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP2 ES 128K (2020)(Minilop).tap" size="49204" crc="acf1b30d"/>
@@ -5865,7 +5874,7 @@
 	</game>
 	<game name="cocoa2e3" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 3 (English) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 3 (English) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP3 EN 128K (2020)(Minilop).tap" size="49200" crc="28595082"/>
@@ -5876,7 +5885,7 @@
 	</game>
 	<game name="cocoa2e3pt" cloneof="cocoa2e3" romof="cocoa2e3" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 3 (Portuguese) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 3 (Portuguese) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP3 PT 128K (2020)(Minilop).tap" size="49200" crc="c135051e"/>
@@ -5887,7 +5896,7 @@
 	</game>
 	<game name="cocoa2e3sp" cloneof="cocoa2e3" romof="cocoa2e3" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Supporter Edition</comment>
-		<description>Cocoa 2, 24 Hour Parsley People - Episode 3 (Spanish) (128K) (HB)</description>
+		<description>Cocoa 2: 24 Hour Parsley People - Episode 3 (Spanish) (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Minilop</manufacturer>
 		<rom name="Cocoa 2 Twenty Four Hour Parsley People EP3 ES 128K (2020)(Minilop).tap" size="49200" crc="80202e0a"/>
@@ -6533,6 +6542,17 @@
 		<year>2021</year>
 		<manufacturer>Furillo Productions</manufacturer>
 		<rom name="Coza De La Poza, La 128K (2021)(Furillo Productions).tap" size="120638" crc="315bbb22"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="crabby2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Crabby is back (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Gabriele Amore</manufacturer>
+		<rom name="Crabby is back 128K (2025)(Gabriele Amore).tap" size="54124" crc="36912cb7"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9442,6 +9462,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="earshaver" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>EarShaver (48K) (HB, Tech-Demo)</description>
+		<year>2023</year>
+		<manufacturer>Shiru</manufacturer>
+		<rom name="EarShaver 48K (2023)(Shiru).tap" size="34305" crc="57d93455"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="earthshaker" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Earth Shaker (48K)</description>
 		<year>1990</year>
@@ -10838,6 +10868,17 @@
 		<year>1989</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
 		<rom name="Footballer of the Year 2 48K-128K (1989)(Gremlin Graphics).tap" size="47843" crc="7da8008f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="footble" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Footble Smellble (48K-128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>DjPoke</manufacturer>
+		<rom name="Footble Smellble 48K-128K (2025)(DjPoke).tap" size="34773" crc="9275ea28"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15881,6 +15922,17 @@
 		<manufacturer>Gremlin Graphics</manufacturer>
 		<rom name="Krakout 48K (1987)(Gremlin Graphics).tap" size="49145" crc="71d2a0f6"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kremash" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>Kremash (128K) (HB, Tech-Demo)</description>
+		<year>2023</year>
+		<manufacturer>MB Maniax &amp; CI5</manufacturer>
+		<rom name="Kremash 128K (2023)(MB Maniax &amp; CI5).tap" size="68634" crc="64e4608e"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -24784,7 +24836,7 @@
 		<description>Scooby Doo in the Castle Mystery (48K)</description>
 		<year>1986</year>
 		<manufacturer>Elite Systems</manufacturer>
-		<rom name="Scooby Doo in the Castle Mystery 48K (1986)(Elite Systems).tap" size="46057" crc="f1436e40"/>
+		<rom name="Scooby Doo in the Castle Mystery 48K (1986)(Elite Systems).tzx" size="49595" crc="d8bef944"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

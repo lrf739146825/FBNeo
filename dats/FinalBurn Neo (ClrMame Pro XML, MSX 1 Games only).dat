@@ -2097,7 +2097,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="blckony2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Black Onyx II, The - Search For The Fire Crystal (Japan)</description>
+		<description>Black Onyx II, The: Search For The Fire Crystal (Japan)</description>
 		<year>1986</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Black Onyx II, The (Japan)(1986)(ASCII).rom" size="131072" crc="67bf8337"/>
@@ -2157,8 +2157,8 @@
 		<comment>Hack</comment>
 		<description>Blagger Enhanced (Hack)</description>
 		<year>2013</year>
-		<manufacturer>JLTurSan</manufacturer>
-		<rom name="Blagger Enhanced (2013)(JLTurSan).rom" size="16384" crc="bdbdf44a"/>
+		<manufacturer>Jose Luis Tur</manufacturer>
+		<rom name="Blagger Enhanced (2013)(Jose Luis Tur).rom" size="16384" crc="bdbdf44a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -3534,10 +3534,10 @@
 	</game>
 	<game name="catspots" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>CatsPots (HB, v1.2)</description>
+		<description>Cats Pots!!! (HB, v1.2)</description>
 		<year>2021</year>
 		<manufacturer>Amaury Carvalho</manufacturer>
-		<rom name="CatsPots v1.2 (2021)(Amaury Carvalho).rom" size="32768" crc="8d5a8ea0"/>
+		<rom name="Cats Pots!!! v1.2 (2021)(Amaury Carvalho).rom" size="32768" crc="8d5a8ea0"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -3560,8 +3560,8 @@
 		<comment>Homebrew</comment>
 		<description>Caverns of Titan (HB)</description>
 		<year>2005</year>
-		<manufacturer>JLTurSan</manufacturer>
-		<rom name="Caverns of Titan (2005)(JLTurSan).rom" size="16384" crc="9e02db6c"/>
+		<manufacturer>Jose Luis Tur</manufacturer>
+		<rom name="Caverns of Titan (2005)(Jose Luis Tur).rom" size="16384" crc="9e02db6c"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -4119,8 +4119,8 @@
 		<comment>Homebrew</comment>
 		<description>Cold Blood (HB)</description>
 		<year>2010</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Cold Blood (2010)(Paxanga Soft).rom" size="32768" crc="0d622a32"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Cold Blood (2010)(Paxanga Software).rom" size="32768" crc="0d622a32"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -4507,12 +4507,24 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="cow" romof="msx" sourcefile="msx/d_msx.cpp">
+	<game name="cowabduct" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Cow Abductors (HB)</description>
 		<year>2009</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Cow Abductors (2009)(Paxanga Soft).rom" size="16384" crc="790623de"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Cow Abductors (2009)(Paxanga Software).rom" size="16384" crc="790623de"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cowtoo" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Cow Abductors TOO! (HB)</description>
+		<year>2025</year>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Cow Abductors TOO! (2025)(Paxanga Software).rom" size="32768" crc="48b823af"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -5966,8 +5978,8 @@
 		<comment>Homebrew</comment>
 		<description>Eat Blue! (HB, v2)</description>
 		<year>2004</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Eat Blue! 2004 v2 (2004)(Paxanga Soft).rom" size="8192" crc="1ac005a0"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Eat Blue! 2004 v2 (2004)(Paxanga Software).rom" size="8192" crc="1ac005a0"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -6008,7 +6020,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="meikyusha" cloneof="eggerlnd2" romof="eggerlnd2" sourcefile="msx/d_msx.cpp">
-		<description>Eggerland Mystery 2 - Meikyu Shinwa (Japan, Alt)</description>
+		<description>Eggerland Mystery 2: Meikyu Shinwa (Japan, Alt)</description>
 		<year>1986</year>
 		<manufacturer>HAL Laboratory</manufacturer>
 		<rom name="Eggerland Mystery 2 - Meikyu Shinwa (Japan, Alt)(1986)(HAL Laboratory).rom" size="131072" crc="1d1ec602"/>
@@ -6020,7 +6032,7 @@
 	</game>
 	<game name="eggerlnd2" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Mapper SCC version</comment>
-		<description>Eggerland Mystery 2 - Meikyuu Shinwa (Japan)</description>
+		<description>Eggerland Mystery 2: Meikyuu Shinwa (Japan)</description>
 		<year>1986</year>
 		<manufacturer>HAL Laboratory</manufacturer>
 		<rom name="Eggerland Mystery 2 - Meikyu Shinwa (Japan)(1986)(HAL Laboratory).rom" size="147456" crc="6d3b8c46"/>
@@ -7162,10 +7174,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="gambler" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Gambler Jikochuushinha (Japan)</description>
+		<description>Gambler Jiko Chuushinha (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Game Arts</manufacturer>
-		<rom name="Gambler Jikochuushinha (Japan)(1988)(Game Arts).rom" size="262144" crc="91955bcd"/>
+		<rom name="Gambler Jiko Chuushinha (Japan)(1988)(Game Arts).rom" size="262144" crc="91955bcd"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -7500,7 +7512,7 @@
 		<comment>Homebrew</comment>
 		<description>Godzilla Balls (HB)</description>
 		<year>2024</year>
-		<manufacturer>Paxanga Soft</manufacturer>
+		<manufacturer>Paxanga Software</manufacturer>
 		<rom name="Godzilla Balls (2024)(Paxanga Software).rom" size="65536" crc="8c3e2b27"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -9670,17 +9682,6 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kinnikuma" cloneof="kinnikum" romof="kinnikum" sourcefile="msx/d_msx.cpp">
-		<description>Kinnikuman - Colosseum Deathmatch (Japan, Alt)</description>
-		<year>1985</year>
-		<manufacturer>Bandai</manufacturer>
-		<rom name="Kinnikuman - Colosseum Deathmatch (Japan, Alt)(1985)(Bandai).rom" size="32768" crc="500d112d"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="kinnikume" cloneof="kinnikum" romof="kinnikum" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
 		<description>Kinnikuman: Colosseum Deathmatch (Hack, English)</description>
@@ -9698,6 +9699,17 @@
 		<year>1985</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Kinnikuman - Colosseum Deathmatch (Japan)(1985)(Bandai).rom" size="32768" crc="166781b7"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kinnikuma" cloneof="kinnikum" romof="kinnikum" sourcefile="msx/d_msx.cpp">
+		<description>Kinnikuman: Colosseum Deathmatch (Japan, Alt)</description>
+		<year>1985</year>
+		<manufacturer>Bandai</manufacturer>
+		<rom name="Kinnikuman - Colosseum Deathmatch (Japan, Alt)(1985)(Bandai).rom" size="32768" crc="500d112d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13558,8 +13570,8 @@
 		<comment>Homebrew</comment>
 		<description>Parachuteless Joe (HB)</description>
 		<year>2005</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Parachuteless Joe (2005)(Paxanga Soft).rom" size="32768" crc="bff072fe"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Parachuteless Joe (2005)(Paxanga Software).rom" size="32768" crc="bff072fe"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -13809,8 +13821,8 @@
 		<comment>Homebrew</comment>
 		<description>Perfect Fit (HB)</description>
 		<year>2008</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Perfect Fit (2008)(Paxanga Soft).rom" size="32768" crc="91f8b81f"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Perfect Fit (2008)(Paxanga Software).rom" size="32768" crc="91f8b81f"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -14878,6 +14890,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="rescatl" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Fase 2: DE768EC7 - Fase 3: 1E0EBBC7</comment>
 		<description>Rescate Atlantida (Euro, Spanish)</description>
 		<year>1989</year>
 		<manufacturer>Dinamic Software</manufacturer>
@@ -15728,8 +15741,8 @@
 		<comment>Homebrew</comment>
 		<description>Shouganai (HB)</description>
 		<year>2013</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Shoganai (2013)(Paxanga Soft).rom" size="16384" crc="d27ea890"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Shoganai (2013)(Paxanga Software).rom" size="16384" crc="d27ea890"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -16672,6 +16685,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="stellarburrow" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, DSK2ROM conversion</comment>
+		<description>Stellar Burrow (HB)</description>
+		<year>2025</year>
+		<manufacturer>Meichnpp</manufacturer>
+		<rom name="Stellar Burrow (2025)(Meichnpp).rom" size="753664" crc="bf564955"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="step" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Step (HB, v1.2)</description>
@@ -17373,8 +17398,8 @@
 		<comment>Homebrew</comment>
 		<description>Tam Tam Twins (HB)</description>
 		<year>2007</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Tam Tam Twins (2007)(Paxanga Soft).rom" size="131072" crc="88980b3a"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Tam Tam Twins (2007)(Paxanga Software).rom" size="131072" crc="88980b3a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -19430,8 +19455,8 @@
 		<comment>Homebrew</comment>
 		<description>Yokai no Atsuki Tatakai ~ Heated Yokai Battle, The (HB)</description>
 		<year>2017</year>
-		<manufacturer>Paxanga Soft</manufacturer>
-		<rom name="Yokai no Atuki Tatakai - Heated Yokai Battle, The (2017)(Paxanga Soft).rom" size="65536" crc="e5a9b2ba"/>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Yokai no Atuki Tatakai - Heated Yokai Battle, The (2017)(Paxanga Software).rom" size="65536" crc="e5a9b2ba"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
