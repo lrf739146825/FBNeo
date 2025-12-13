@@ -10032,6 +10032,7 @@ DRV		BurnDrvmd_jpond;
 DRV		BurnDrvmd_jponds;
 DRV		BurnDrvnes_jamg;
 DRV		BurnDrvnes_jamhoney;
+DRV		BurnDrvJammin;
 DRV		BurnDrvmd_jammits;
 DRV		BurnDrvmd_jammit;
 DRV		BurnDrvJjparad2;
@@ -28866,7 +28867,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_cracky,		// Cracky (HB)
 	&BurnDrvnes_crapjob,		// Crap Job (HB)
 	&BurnDrvnes_crashnboy,		// Crash 'n' the Boys: Street Challenge (USA)
-	&BurnDrvCrasha,				// Crash (alt)
+	&BurnDrvCrasha,				// Crash (Alt)
 	&BurnDrvHocrash,			// Crash (bootleg of Head On)
 	&BurnDrvcrashh,				// Crash (Pac-Man)
 	&BurnDrvmd_crash,			// Crash Bandicoot (Russia) (Unl)
@@ -34595,6 +34596,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_jponds,			// James Pond: Underwater Agent (Hack, Spanish)
 	&BurnDrvnes_jamg,			// JAMG: The Lost Coins (HB)
 	&BurnDrvnes_jamhoney,		// Jammin Honey (HB)
+	&BurnDrvJammin,				// Jammin' (prototype)
 	&BurnDrvmd_jammits,			// Jammit (Hack, Spanish)
 	&BurnDrvmd_jammit,			// Jammit (USA)
 	&BurnDrvJjparad2,			// Jan Jan Paradise 2
@@ -59092,6 +59094,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_jponds", "megadrive/d_megadrive.cpp"},
 	{ "nes_jamg", "nes/d_nes.cpp"},
 	{ "nes_jamhoney", "nes/d_nes.cpp"},
+	{ "jammin", "pre90s/d_dkong.cpp"},
 	{ "md_jammits", "megadrive/d_megadrive.cpp"},
 	{ "md_jammit", "megadrive/d_megadrive.cpp"},
 	{ "jjparad2", "pst90s/d_suprnova.cpp"},
