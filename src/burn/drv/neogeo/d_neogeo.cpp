@@ -27372,20 +27372,20 @@ struct BurnDriver BurnDrvNeodemo = {
 	0x1000,	304, 224, 4, 3
 };
 
-// Bang Bang Busters 2 (HB, Demo)
+// Bang Bang Busters 2 (HB, Demo 2)
 
 static struct BurnRomInfo b2b2RomDesc[] = {
-	{ "b2b2-p1.p1",    	   0x100000, 0x3659f253, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "b2b2-p1.p1",		0x100000, 0xb6f02669, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
 
-	{ "b2b2-s1.s1",    	   0x020000, 0xe53ef3d0, 2 | BRF_GRA },           //  1 Text layer tiles
+	{ "b2b2-s1.s1",		0x020000, 0xe53ef3d0, 2 | BRF_GRA },           //  1 Text layer tiles
 
-	{ "b2b2-c1.c1",    	   0x800000, 0x739173e2, 3 | BRF_GRA },           //  2 Sprite data
-	{ "b2b2-c2.c2",    	   0x800000, 0x9a439c98, 3 | BRF_GRA },           //  3
+	{ "b2b2-c1.c1",		0x800000, 0xc887be9b, 3 | BRF_GRA },           //  2 Sprite data
+	{ "b2b2-c2.c2",		0x800000, 0x13c6dd38, 3 | BRF_GRA },           //  3
 
-	{ "b2b2-m1.m1",    	   0x010000, 0xbff0ad49, 4 | BRF_ESS | BRF_PRG }, //  6 Z80 code
+	{ "b2b2-m1.m1",		0x010000, 0x4c134828, 4 | BRF_ESS | BRF_PRG }, //  6 Z80 code
 
-	{ "b2b2-v1.v1",    	   0x400000, 0xf1dda8dd, 5 | BRF_SND },           //  7 Sound data
-
+	{ "b2b2-v1.v1",		0x400000, 0xda7cb2b8, 5 | BRF_SND },           //  7 Sound data
+	{ "b2b2-v2.v2",		0x400000, 0x0043d4f2, 5 | BRF_SND },           //  8
 };
 
 STDROMPICKEXT(b2b2, b2b2, neogeo)
@@ -27393,7 +27393,7 @@ STD_ROM_FN(b2b2)
 
 struct BurnDriver BurnDrvB2b2 = {
 	"b2b2", NULL, "neogeo", NULL, "2025",
-	"Bang Bang Busters 2 (HB, Demo)\0", NULL, "PixelHeart", "Neo Geo MVS",
+	"Bang Bang Busters 2 (HB, Demo 2)\0", NULL, "PixelHeart", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW | BDF_DEMO, 1, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PLATFORM, 0,
 	NULL, b2b2RomInfo, b2b2RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
@@ -29041,16 +29041,16 @@ struct BurnDriver BurnDrvXeviousng = {
 // Zetsu Xevious - Neo Geo Conversion (HB)
 
 static struct BurnRomInfo zetsuxevingRomDesc[] = {
-	{ "zetsu-p1.p1",      0x100000, 0x8a1e9214, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "420.p1",				0x100000, 0x8a1e9214, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
 
-	{ "xevious-s1.s1",    0x020000, 0xf41d121a, 2 | BRF_GRA },           //  1 Text layer tiles
+	{ "xevious-s1.s1",		0x020000, 0xf41d121a, 2 | BRF_GRA },           //  1 Text layer tiles
 
-	{ "zetsu-c1.c1",      0x100000, 0x8759341e, 3 | BRF_GRA },           //  2 Sprite data
-	{ "zetsu-c2.c2",      0x100000, 0xf1c31214, 3 | BRF_GRA },           //  3
+	{ "420.c1",				0x100000, 0x8759341e, 3 | BRF_GRA },           //  2 Sprite data
+	{ "420.c2",				0x100000, 0xf1c31214, 3 | BRF_GRA },           //  3
 
-	{ "xevious-m1.m1",    0x010000, 0x06773aff, 4 | BRF_ESS | BRF_PRG }, //  4 Z80 code
+	{ "420.m1",				0x010000, 0x06773aff, 4 | BRF_ESS | BRF_PRG }, //  4 Z80 code
 
-	{ "xevious-v1.v1",    0x100000, 0x929b34ab, 5 | BRF_SND },           //  5 Sound data
+	{ "420.v1",				0x100000, 0x929b34ab, 5 | BRF_SND },           //  5 Sound data
 };
 
 STDROMPICKEXT(zetsuxeving, zetsuxeving, neogeo)
@@ -29691,32 +29691,32 @@ struct BurnDriver BurnDrvShinobing = {
 };
 
 
-// World Racer (HB)
-// https://www.patreon.com/posts/worldracer-rom-143726462
+// World Racer 32Kb (HB)
+// https://www.patreon.com/posts/its-done-is-145694400
 // 3 & 4 players not working (needs Multitap)
 
-static struct BurnRomInfo wrldracrRomDesc[] = {
-	{ "wrldracr-p1.p1",   0x100000, 0xcc59276f, 1 | BRF_ESS | BRF_PRG },	//  0 68K Code
+static struct BurnRomInfo wrldrc32RomDesc[] = {
+	{ "wrldrc32-p1.p1",   0x100000, 0xd9f8921c, 1 | BRF_ESS | BRF_PRG },	//  0 68K Code
 
-	{ "wrldracr-s1.s1",   0x020000, 0x312508af, 2 | BRF_GRA },				//  1 Text data
+	{ "wrldrc32-s1.s1",   0x020000, 0x312508af, 2 | BRF_GRA },				//  1 Text data
 
-	{ "wrldracr-c1.c1",   0x080000, 0x44423f83, 3 | BRF_GRA },				//  2 Sprite data
-	{ "wrldracr-c2.c2",   0x080000, 0x57008242, 3 | BRF_GRA },				//  3
+	{ "wrldrc32-c1.c1",   0x080000, 0xec05e878, 3 | BRF_GRA },				//  2 Sprite data
+	{ "wrldrc32-c2.c2",   0x080000, 0xff4755b9, 3 | BRF_GRA },				//  3
 
-	{ "wrldracr-m1.m1",   0x010000, 0x6178075b, 4 | BRF_ESS | BRF_PRG },	//  4 Z80 code
+	{ "wrldrc32-m1.m1",   0x010000, 0x6178075b, 4 | BRF_ESS | BRF_PRG },	//  4 Z80 code
 
-	{ "wrldracr-v1.v1",   0x080000, 0xa4763f5d, 5 | BRF_SND },				//  5 Sound data
+	{ "wrldrc32-v1.v1",   0x080000, 0xa4763f5d, 5 | BRF_SND },				//  5 Sound data
 };
 
-STDROMPICKEXT(wrldracr, wrldracr, neogeo)
-STD_ROM_FN(wrldracr)
+STDROMPICKEXT(wrldrc32, wrldrc32, neogeo)
+STD_ROM_FN(wrldrc32)
 
-struct BurnDriver BurnDrvWrldracr = {
-	"wrldracr", NULL, "neogeo", NULL, "2025",
-	"World Racer (HB)\0", NULL, "Blastar", "Neo Geo",
+struct BurnDriver BurnDrvWrldrc32 = {
+	"wrldrc32", NULL, "neogeo", NULL, "2025",
+	"World Racer 32Kb (HB)\0", NULL, "Blastar", "Neo Geo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_SNK_NEOGEO, GBF_RACING, 0,
-	NULL, wrldracrRomInfo, wrldracrRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NULL, wrldrc32RomInfo, wrldrc32RomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };

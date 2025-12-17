@@ -9,19 +9,29 @@
 
 ;@ SVN repository can be found at http://code.google.com/p/cyclone68000/
 
+  .arm
+
   .text
   .align 4
 
-  .global CycloneInitJT
-  .global CycloneResetJT
+  .global CycloneInit
+  .type CycloneInit, %function
+  .global CycloneReset
+  .type CycloneReset, %function
   .global CycloneRun
+  .type CycloneRun, %function
   .global CycloneSetSr
+  .type CycloneSetSr, %function
   .global CycloneGetSr
+  .type CycloneGetSr, %function
   .global CycloneFlushIrq
+  .type CycloneFlushIrq, %function
   .global CyclonePack
+  .type CyclonePack, %function
   .global CycloneUnpack
+  .type CycloneUnpack, %function
   .global CycloneVer
-  .global CycloneJumpTab
+  .type CycloneVer, %function
 
 CycloneVer: .long 0x0099
 
@@ -31,13 +41,14 @@ CycloneRun:
   mov r7,r0          ;@ r7 = Pointer to Cpu Context
                      ;@ r0-3 = Temporary registers
   ldrb r10,[r7,#0x46]    ;@ r10 = Flags (NZCV)
-  ldr r6,[r7,#0x54]  ;@ r6 = Opcode Jump table (from reset)
+  ldr r6,=CycloneJumpTab ;@ r6 = Opcode Jump table
   ldr r5,[r7,#0x5c]  ;@ r5 = Cycles
   ldr r4,[r7,#0x40]  ;@ r4 = Current PC + Memory Base
                      ;@ r8 = Current Opcode
   ldr r1,[r7,#0x44]  ;@ Get SR high T_S__III and irq level
   mov r10,r10,lsl #28;@ r10 = Flags 0xf0000000, cpsr format
                      ;@ r11 = Source value / Memory Base
+  str r6,[r7,#0x54]  ;@ make a copy to avoid literal pools
 
   mov r2,#0
   str r2,[r7,#0x98]  ;@ clear custom CycloneEnd
@@ -81,15 +92,13 @@ CycloneEndNoBack:
   .ltorg
 
 
-CycloneInitJT:
+CycloneInit:
 ;@ decompress jump table
-  mov r12,r0 ;@ jump table
+  ldr r12,=CycloneJumpTab
   add r0,r12,#0xe000*4 ;@ ctrl code pointer
   ldr r1,[r0,#-4]
   tst r1,r1
   movne pc,lr ;@ already uncompressed
-  stmfd sp!,{r7,lr}
-  mov r7,r12 ;@ jump table
   add r3,r12,#0xa000*4 ;@ handler table pointer, r12=dest
 unc_loop:
   ldrh r1,[r0],#2
@@ -111,8 +120,9 @@ unc_loop_in:
   bgt unc_loop_in
   b unc_loop
 unc_finish:
+  ldr r12,=CycloneJumpTab
   ;@ set a-line and f-line handlers
-  add r0,r7,#0xa000*4
+  add r0,r12,#0xa000*4
   ldr r1,[r0,#4] ;@ a-line handler
   ldr r3,[r0,#8] ;@ f-line handler
   mov r2,#0x1000
@@ -120,19 +130,18 @@ unc_fill3:
   subs r2,r2,#1
   str r1,[r0],#4
   bgt unc_fill3
-  add r0,r7,#0xf000*4
+  add r0,r12,#0xf000*4
   mov r2,#0x1000
 unc_fill4:
   subs r2,r2,#1
   str r3,[r0],#4
   bgt unc_fill4
-  ldmfd sp!,{r7,pc}
+  bx lr
   .ltorg
 
-CycloneResetJT:
+CycloneReset:
   stmfd sp!,{r7,lr}
   mov r7,r0
-  str r1,[r7,#0x54] ;@ save CycloneJumpTab avoid literal pools
   mov r0,#0
   str r0,[r7,#0x58] ;@ state_flags
   str r0,[r7,#0x48] ;@ OSP
@@ -150,9 +159,6 @@ CycloneResetJT:
   bl m68k_checkpc ;@ Call checkpc()
   str r0,[r7,#0x40] ;@ PC + base
   ldmfd sp!,{r7,pc}
-
-CycloneSetRealTAS_JT:
-  bx lr
 
 CycloneSetSr:
   mov r2,r1,lsr #8
@@ -276,6 +282,9 @@ CycloneFlushIrqEnd:
   ldmia sp!,{r4,r5,r7,r8,r10,r11,lr}
   bx lr
 
+
+CycloneSetRealTAS:
+  bx lr
 
 ;@ DoInterrupt - r0=IRQ level
 CycloneDoInterruptGoBack:
@@ -594,7 +603,7 @@ Op__al: ;@ Unrecognised a-line opcode
   bl Exception
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#34 ;@ Subtract cycles
+  subs r5,r5,#4 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -604,7 +613,7 @@ Op__fl: ;@ Unrecognised f-line opcode
   bl Exception
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#34 ;@ Subtract cycles
+  subs r5,r5,#4 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -3342,7 +3351,7 @@ Op013c:
   orreq r10,r10,#0x40000000 ;@ Get Z flag
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#10 ;@ Subtract cycles
+  subs r5,r5,#8 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -3359,8 +3368,6 @@ Op0140:
   ldr r0,[r7,r8,lsl #2]
 
   and r11,r11,#31 ;@ reg - do mod 32
-  tst r11,#0x10   ;@ extra cycles
-  subne r5,r5,#2
 
   mov r1,#1
   tst r0,r1,lsl r11 ;@ Do arithmetic
@@ -3373,7 +3380,7 @@ Op0140:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#6 ;@ Subtract cycles
+  subs r5,r5,#8 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -3802,8 +3809,6 @@ Op0180:
   ldr r0,[r7,r8,lsl #2]
 
   and r11,r11,#31 ;@ reg - do mod 32
-  tst r11,#0x10   ;@ extra cycles
-  subne r5,r5,#2
 
   mov r1,#1
   tst r0,r1,lsl r11 ;@ Do arithmetic
@@ -3816,7 +3821,7 @@ Op0180:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#8 ;@ Subtract cycles
+  subs r5,r5,#10 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -4232,8 +4237,6 @@ Op01c0:
   ldr r0,[r7,r8,lsl #2]
 
   and r11,r11,#31 ;@ reg - do mod 32
-  tst r11,#0x10   ;@ extra cycles
-  subne r5,r5,#2
 
   mov r1,#1
   tst r0,r1,lsl r11 ;@ Do arithmetic
@@ -4246,7 +4249,7 @@ Op01c0:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#6 ;@ Subtract cycles
+  subs r5,r5,#8 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -5357,7 +5360,7 @@ Op0280:
   str r1,[r7,r11,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#16 ;@ Subtract cycles
+  subs r5,r5,#14 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -7779,8 +7782,6 @@ Op0840:
   mov r11,#1
   bic r10,r10,#0x40000000 ;@ Blank Z flag
   and r0,r0,#0x1F ;@ reg - do mod 32
-  tst r0,#0x10    ;@ extra cycles
-  subne r5,r5,#2
   mov r11,r11,lsl r0 ;@ Make bit mask
 
 ;@ EaCalc : Get register index into r8:
@@ -7797,7 +7798,7 @@ Op0840:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#10 ;@ Subtract cycles
+  subs r5,r5,#12 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -8183,8 +8184,6 @@ Op0880:
   mov r11,#1
   bic r10,r10,#0x40000000 ;@ Blank Z flag
   and r0,r0,#0x1F ;@ reg - do mod 32
-  tst r0,#0x10    ;@ extra cycles
-  subne r5,r5,#2
   mov r11,r11,lsl r0 ;@ Make bit mask
 
 ;@ EaCalc : Get register index into r8:
@@ -8201,7 +8200,7 @@ Op0880:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#12 ;@ Subtract cycles
+  subs r5,r5,#14 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -8587,8 +8586,6 @@ Op08c0:
   mov r11,#1
   bic r10,r10,#0x40000000 ;@ Blank Z flag
   and r0,r0,#0x1F ;@ reg - do mod 32
-  tst r0,#0x10    ;@ extra cycles
-  subne r5,r5,#2
   mov r11,r11,lsl r0 ;@ Make bit mask
 
 ;@ EaCalc : Get register index into r8:
@@ -8605,7 +8602,7 @@ Op08c0:
   str r1,[r7,r8,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#10 ;@ Subtract cycles
+  subs r5,r5,#12 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24644,7 +24641,7 @@ chktrap4180: ;@ CHK exception:
   mov r0,#6
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#38 ;@ Subtract cycles
+  subs r5,r5,#50 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24694,7 +24691,7 @@ chktrap4190: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#54 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24745,7 +24742,7 @@ chktrap4198: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#54 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24797,7 +24794,7 @@ chktrap41a0: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#44 ;@ Subtract cycles
+  subs r5,r5,#56 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24848,7 +24845,7 @@ chktrap41a8: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24908,7 +24905,7 @@ chktrap41b0: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#60 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -24956,7 +24953,7 @@ chktrap41b8: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -25006,7 +25003,7 @@ chktrap41b9: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#50 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -25057,7 +25054,7 @@ chktrap41ba: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -25116,7 +25113,7 @@ chktrap41bb: ;@ CHK exception:
   bl Exception
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#60 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -25156,7 +25153,7 @@ chktrap41bc: ;@ CHK exception:
   mov r0,#6
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#54 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -28530,35 +28527,37 @@ no_sp_swap46fc:
 
 ;@ ---------- [4800] nbcd d0 uses Op4800 ----------
 Op4800:
-;@ EaCalc : Get register index into r11:
-  and r11,r8,#0x000f
-;@ EaRead : Read register[r11] into r0:
-  ldrb r0,[r7,r11,lsl #2]
+;@ EaCalc : Get register index into r6:
+  and r6,r8,#0x000f
+;@ EaRead : Read register[r6] into r0:
+  ldr r0,[r7,r6,lsl #2]
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4800
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: r1 into register[r11]:
-  mov r1,r1,lsr #24
-  strb r1,[r7,r11,lsl #2]
+;@ EaWrite: r1 into register[r6]:
+  strb r1,[r7,r6,lsl #2]
 
 finish4800:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28572,40 +28571,43 @@ Op4810:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '(a0)' into r11:
+;@ EaCalc : Get '(a0)' into r6:
   and r2,r8,#0x000f
   orr r2,r2,#0x8 ;@ A0-7
-  ldr r11,[r7,r2,lsl #2]
-;@ EaRead : Read '(a0)' (address in r11) into r0:
+  ldr r6,[r7,r2,lsl #2]
+;@ EaRead : Read '(a0)' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4810
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '(a0)' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '(a0)' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4810:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28620,41 +28622,44 @@ Op4818:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '(a0)+' into r11:
+;@ EaCalc : Get '(a0)+' into r6:
   and r2,r8,#0x000f
-  ldr r11,[r7,r2,lsl #2]
-  add r3,r11,#1 ;@ Post-increment An
+  ldr r6,[r7,r2,lsl #2]
+  add r3,r6,#1 ;@ Post-increment An
   str r3,[r7,r2,lsl #2]
-;@ EaRead : Read '(a0)+' (address in r11) into r0:
+;@ EaRead : Read '(a0)+' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4818
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '(a0)+' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '(a0)+' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4818:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28669,40 +28674,43 @@ Op481f:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '(a7)+' into r11:
-  ldr r11,[r7,#0x3c] ;@ A7
-  add r3,r11,#2 ;@ Post-increment An
+;@ EaCalc : Get '(a7)+' into r6:
+  ldr r6,[r7,#0x3c] ;@ A7
+  add r3,r6,#2 ;@ Post-increment An
   str r3,[r7,#0x3c] ;@ A7
-;@ EaRead : Read '(a7)+' (address in r11) into r0:
+;@ EaRead : Read '(a7)+' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish481f
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '(a7)+' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '(a7)+' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish481f:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28717,42 +28725,45 @@ Op4820:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '-(a0)' into r11:
+;@ EaCalc : Get '-(a0)' into r6:
   and r2,r8,#0x000f
   orr r2,r2,#0x8 ;@ A0-7
-  ldr r11,[r7,r2,lsl #2]
-  sub r11,r11,#1 ;@ Pre-decrement An
-  str r11,[r7,r2,lsl #2]
-;@ EaRead : Read '-(a0)' (address in r11) into r0:
+  ldr r6,[r7,r2,lsl #2]
+  sub r6,r6,#1 ;@ Pre-decrement An
+  str r6,[r7,r2,lsl #2]
+;@ EaRead : Read '-(a0)' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4820
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '-(a0)' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '-(a0)' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4820:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28767,40 +28778,43 @@ Op4827:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '-(a7)' into r11:
-  ldr r11,[r7,#0x3c] ;@ A7
-  sub r11,r11,#2 ;@ Pre-decrement An
-  str r11,[r7,#0x3c] ;@ A7
-;@ EaRead : Read '-(a7)' (address in r11) into r0:
+;@ EaCalc : Get '-(a7)' into r6:
+  ldr r6,[r7,#0x3c] ;@ A7
+  sub r6,r6,#2 ;@ Pre-decrement An
+  str r6,[r7,#0x3c] ;@ A7
+;@ EaRead : Read '-(a7)' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4827
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '-(a7)' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '-(a7)' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4827:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28815,41 +28829,44 @@ Op4828:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '($3333,a0)' into r11:
+;@ EaCalc : Get '($3333,a0)' into r6:
   ldrsh r0,[r4],#2 ;@ Fetch offset
   and r2,r8,#0x000f
   ldr r2,[r7,r2,lsl #2]
-  add r11,r0,r2 ;@ Add on offset
-;@ EaRead : Read '($3333,a0)' (address in r11) into r0:
+  add r6,r0,r2 ;@ Add on offset
+;@ EaRead : Read '($3333,a0)' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4828
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '($3333,a0)' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '($3333,a0)' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4828:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28864,7 +28881,7 @@ Op4830:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '($33,a0,d3.w*2)' into r11:
+;@ EaCalc : Get '($33,a0,d3.w*2)' into r6:
 ;@ Get extension word into r3:
   ldrh r3,[r4],#2 ;@ ($Disp,PC,Rn)
   mov r2,r3,lsr #10
@@ -28877,37 +28894,40 @@ Op4830:
   and r2,r8,#0x000f
   orr r2,r2,#0x8 ;@ A0-7
   ldr r2,[r7,r2,lsl #2]
-  add r11,r2,r3 ;@ r11=Disp+An+Rn
-;@ EaRead : Read '($33,a0,d3.w*2)' (address in r11) into r0:
+  add r6,r2,r3 ;@ r6=Disp+An+Rn
+;@ EaRead : Read '($33,a0,d3.w*2)' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4830
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '($33,a0,d3.w*2)' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '($33,a0,d3.w*2)' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4830:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28922,38 +28942,41 @@ Op4838:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '$3333.w' into r11:
-  ldrsh r11,[r4],#2 ;@ Fetch Absolute Short address
-;@ EaRead : Read '$3333.w' (address in r11) into r0:
+;@ EaCalc : Get '$3333.w' into r6:
+  ldrsh r6,[r4],#2 ;@ Fetch Absolute Short address
+;@ EaRead : Read '$3333.w' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4838
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '$3333.w' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '$3333.w' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4838:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -28968,40 +28991,43 @@ Op4839:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
 
-;@ EaCalc : Get '$33333333.l' into r11:
+;@ EaCalc : Get '$33333333.l' into r6:
   ldrh r2,[r4],#2 ;@ Fetch Absolute Long address
   ldrh r0,[r4],#2
-  orr r11,r0,r2,lsl #16
-;@ EaRead : Read '$33333333.l' (address in r11) into r0:
+  orr r6,r0,r2,lsl #16
+;@ EaRead : Read '$33333333.l' (address in r6) into r0:
   str r4,[r7,#0x40] ;@ Save PC
-  bic r0,r11,#0xff000000
+  bic r0,r6,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
   ldr r2,[r7,#0x4c]
   bic r10,r10,#0xb0000000 ;@ clear all flags, except Z
+  mov r0,r0,asl #24
   and r2,r2,#0x20000000
-  rsb r1,r0,#0 ;@ do arithmetic
-  subs r1,r1,r2,lsr #29 ;@ X
+  add r2,r0,r2,lsr #5 ;@ add X
+  rsb r11,r2,#0x9a000000 ;@ do arithmetic
+  cmp r11,#0x9a000000
   beq finish4839
 
-  movs r1,r1,lsl #24
-  orrmi r10,r10,#0x10000000 ;@ Undefined V behavior
-  orr r2,r1,r0,lsl #24
-  tst r2,#0x0f000000
-  andeq r1,r1,#0xf0000000
-  orreq r1,r1,#0x06000000
-  adds r1,r1,#0x9a000000
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  mvn r3,r11,lsr #31 ;@ Undefined V behavior
+  and r2,r11,#0x0f000000
+  cmp r2,#0x0a000000
+  andeq r11,r11,#0xf0000000
+  addeq r11,r11,#0x10000000
+  and r3,r3,r11,lsr #31 ;@ Undefined V behavior part II
+  movs r1,r11,asr #24
   bicne r10,r10,#0x40000000 ;@ Z
+  orr r10,r10,r3,lsl #28 ;@ save V
   orr r10,r10,#0x20000000 ;@ C
 
-;@ EaWrite: Write r1 into '$33333333.l' (address in r11):
-  mov r1,r1,lsr #24
-  bic r0,r11,#0xff000000
+;@ EaWrite: Write r1 into '$33333333.l' (address in r6):
+  and r1,r1,#0xff
+  bic r0,r6,#0xff000000
   bl m68k_write8 ;@ Call write8(r0,r1) handler
 
 finish4839:
+  tst r11,r11
+  orrmi r10,r10,#0x80000000 ;@ N
   str r10,[r7,#0x4c] ;@ Save X
 
   ldr r6,[r7,#0x54]
@@ -30451,7 +30477,7 @@ Op4ad0:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#18 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30482,7 +30508,7 @@ Op4ad8:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#18 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30512,7 +30538,7 @@ Op4adf:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#18 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30544,7 +30570,7 @@ Op4ae0:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#16 ;@ Subtract cycles
+  subs r5,r5,#20 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30574,7 +30600,7 @@ Op4ae7:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#16 ;@ Subtract cycles
+  subs r5,r5,#20 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30605,7 +30631,7 @@ Op4ae8:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#18 ;@ Subtract cycles
+  subs r5,r5,#22 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30645,7 +30671,7 @@ Op4af0:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#24 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30673,7 +30699,7 @@ Op4af8:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#18 ;@ Subtract cycles
+  subs r5,r5,#22 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -30703,7 +30729,7 @@ Op4af9:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#22 ;@ Subtract cycles
+  subs r5,r5,#26 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -31542,7 +31568,7 @@ Op4e40:
 
   ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#34 ;@ Subtract cycles
+  subs r5,r5,#38 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -31821,7 +31847,7 @@ Op4e76:
   mov r5,#0
 
   tst r10,#0x10000000
-  subne r5,r5,#30
+  subne r5,r5,#34
   movne r0,#7 ;@ TRAPV exception
   blne Exception
   ldr r0,[r7,#0x5c] ;@ Load Cycles
@@ -32621,7 +32647,7 @@ Op5048:
   str r1,[r7,r11,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#8 ;@ Subtract cycles
+  subs r5,r5,#4 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -38195,7 +38221,7 @@ Op5e48:
   str r1,[r7,r11,lsl #2]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#8 ;@ Subtract cycles
+  subs r5,r5,#4 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -38708,7 +38734,7 @@ Op5eb9:
 Op5ec0:
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
   subpl r5,r5,#2 ;@ Extra cycles
 
@@ -38726,7 +38752,7 @@ Op5ec0:
 Op5ec8:
 ;@ Is the condition true?
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
 ;@ If so, don't dbra
   bpl DbraTrue
 
@@ -38761,7 +38787,7 @@ Op5ed0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
@@ -38787,7 +38813,7 @@ Op5ed8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
@@ -38814,7 +38840,7 @@ Op5edf:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '(a7)+' into r0:
@@ -38840,7 +38866,7 @@ Op5ee0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
@@ -38868,7 +38894,7 @@ Op5ee7:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '-(a7)' into r0:
@@ -38894,7 +38920,7 @@ Op5ee8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
@@ -38921,7 +38947,7 @@ Op5ef0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
@@ -38957,7 +38983,7 @@ Op5ef8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
@@ -38981,7 +39007,7 @@ Op5ef9:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnpl r1,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
@@ -39912,7 +39938,7 @@ Op5fb9:
 Op5fc0:
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
   submi r5,r5,#2 ;@ Extra cycles
 
@@ -39930,7 +39956,7 @@ Op5fc0:
 Op5fc8:
 ;@ Is the condition true?
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
 ;@ If so, don't dbra
   bmi DbraTrue
 
@@ -39965,7 +39991,7 @@ Op5fd0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
@@ -39991,7 +40017,7 @@ Op5fd8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
@@ -40018,7 +40044,7 @@ Op5fdf:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '(a7)+' into r0:
@@ -40044,7 +40070,7 @@ Op5fe0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
@@ -40072,7 +40098,7 @@ Op5fe7:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '-(a7)' into r0:
@@ -40098,7 +40124,7 @@ Op5fe8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
@@ -40125,7 +40151,7 @@ Op5ff0:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
@@ -40161,7 +40187,7 @@ Op5ff8:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
@@ -40185,7 +40211,7 @@ Op5ff9:
 
   mov r1,#0
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   mvnmi r1,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
@@ -40784,7 +40810,7 @@ Op6e00:
   str r5,[r7,#0x5c] ;@ Save Cycles
 
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bmi BccDontBranch16
 
   ldrsh r11,[r4] ;@ Fetch Branch offset
@@ -40804,7 +40830,7 @@ Op6e00:
 ;@ ---------- [6e02] bgt 4 uses Op6e02 ----------
 Op6e02:
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bmi BccDontBranch8
 
   mov r11,r8,asl #24 ;@ Shift 8-bit signed offset up...
@@ -40820,7 +40846,7 @@ Op6e02:
 ;@ ---------- [6e03] bgt 5 uses Op6e03 ----------
 Op6e03:
   eor r0,r10,r10,lsl #3 ;@ gt: !Z && N == V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bmi BccDontBranch8
 
   mov r11,r8,asl #24 ;@ Shift 8-bit signed offset up...
@@ -40840,7 +40866,7 @@ Op6f00:
   str r5,[r7,#0x5c] ;@ Save Cycles
 
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bpl BccDontBranch16
 
   ldrsh r11,[r4] ;@ Fetch Branch offset
@@ -40860,7 +40886,7 @@ Op6f00:
 ;@ ---------- [6f02] ble 4 uses Op6f02 ----------
 Op6f02:
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bpl BccDontBranch8
 
   mov r11,r8,asl #24 ;@ Shift 8-bit signed offset up...
@@ -40876,7 +40902,7 @@ Op6f02:
 ;@ ---------- [6f03] ble 5 uses Op6f03 ----------
 Op6f03:
   eor r0,r10,r10,lsl #3 ;@ le: Z || N != V
-  orrs r0,r0,r10,lsl #1
+  orrs r0,r10,lsl #1
   bpl BccDontBranch8
 
   mov r11,r8,asl #24 ;@ Shift 8-bit signed offset up...
@@ -42173,11 +42199,6 @@ Op80c0:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80c0 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42188,17 +42209,19 @@ Shift80c0:
   movls r1,r1,lsl #1
   bcc Shift80c0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80c0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80c0
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80c0 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42210,7 +42233,7 @@ Divide80c0:
 
 endofop80c0:
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#10 ;@ Subtract cycles
+  subs r5,r5,#140 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42218,7 +42241,7 @@ divzero80c0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#38 ;@ Subtract cycles
+  subs r5,r5,#178 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42227,7 +42250,6 @@ divzero80c0:
 Op80d0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
   and r2,r8,#0x000f
@@ -42248,11 +42270,6 @@ Op80d0:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80d0 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42263,17 +42280,19 @@ Shift80d0:
   movls r1,r1,lsl #1
   bcc Shift80d0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80d0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80d0
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80d0 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42284,20 +42303,18 @@ Divide80d0:
   str r1,[r7,r11,lsr #7]
 
 endofop80d0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#144 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80d0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#182 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42306,7 +42323,6 @@ divzero80d0:
 Op80d8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
   and r2,r8,#0x000f
@@ -42328,11 +42344,6 @@ Op80d8:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80d8 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42343,17 +42354,19 @@ Shift80d8:
   movls r1,r1,lsl #1
   bcc Shift80d8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80d8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80d8
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80d8 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42364,20 +42377,18 @@ Divide80d8:
   str r1,[r7,r11,lsr #7]
 
 endofop80d8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#144 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80d8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#182 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42386,7 +42397,6 @@ divzero80d8:
 Op80e0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
   and r2,r8,#0x000f
@@ -42409,11 +42419,6 @@ Op80e0:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80e0 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42424,17 +42429,19 @@ Shift80e0:
   movls r1,r1,lsl #1
   bcc Shift80e0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80e0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80e0
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80e0 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42445,20 +42452,18 @@ Divide80e0:
   str r1,[r7,r11,lsr #7]
 
 endofop80e0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#16 ;@ Subtract cycles
+  subs r5,r5,#146 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80e0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#44 ;@ Subtract cycles
+  subs r5,r5,#184 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42467,7 +42472,6 @@ divzero80e0:
 Op80e8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch offset
@@ -42489,11 +42493,6 @@ Op80e8:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80e8 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42504,17 +42503,19 @@ Shift80e8:
   movls r1,r1,lsl #1
   bcc Shift80e8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80e8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80e8
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80e8 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42525,20 +42526,18 @@ Divide80e8:
   str r1,[r7,r11,lsr #7]
 
 endofop80e8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#18 ;@ Subtract cycles
+  subs r5,r5,#148 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80e8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#186 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42547,7 +42546,6 @@ divzero80e8:
 Op80f0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
 ;@ Get extension word into r3:
@@ -42578,11 +42576,6 @@ Op80f0:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80f0 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42593,17 +42586,19 @@ Shift80f0:
   movls r1,r1,lsl #1
   bcc Shift80f0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80f0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80f0
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80f0 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42614,20 +42609,18 @@ Divide80f0:
   str r1,[r7,r11,lsr #7]
 
 endofop80f0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#150 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80f0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#188 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42636,7 +42629,6 @@ divzero80f0:
 Op80f8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch Absolute Short address
@@ -42655,11 +42647,6 @@ Op80f8:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80f8 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42670,17 +42657,19 @@ Shift80f8:
   movls r1,r1,lsl #1
   bcc Shift80f8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80f8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80f8
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80f8 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42691,20 +42680,18 @@ Divide80f8:
   str r1,[r7,r11,lsr #7]
 
 endofop80f8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#18 ;@ Subtract cycles
+  subs r5,r5,#148 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80f8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#186 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42713,7 +42700,6 @@ divzero80f8:
 Op80f9:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
   ldrh r2,[r4],#2 ;@ Fetch Absolute Long address
@@ -42734,11 +42720,6 @@ Op80f9:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80f9 ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42749,17 +42730,19 @@ Shift80f9:
   movls r1,r1,lsl #1
   bcc Shift80f9
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80f9:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80f9
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80f9 ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42770,20 +42753,18 @@ Divide80f9:
   str r1,[r7,r11,lsr #7]
 
 endofop80f9:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#22 ;@ Subtract cycles
+  subs r5,r5,#152 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80f9:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#50 ;@ Subtract cycles
+  subs r5,r5,#190 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42792,7 +42773,6 @@ divzero80f9:
 Op80fa:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,pc)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -42814,11 +42794,6 @@ Op80fa:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80fa ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42829,17 +42804,19 @@ Shift80fa:
   movls r1,r1,lsl #1
   bcc Shift80fa
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80fa:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80fa
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80fa ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42850,20 +42827,18 @@ Divide80fa:
   str r1,[r7,r11,lsr #7]
 
 endofop80fa:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#18 ;@ Subtract cycles
+  subs r5,r5,#148 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80fa:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#186 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42872,7 +42847,6 @@ divzero80fa:
 Op80fb:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,pc,d3.w*2)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -42902,11 +42876,6 @@ Op80fb:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80fb ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42917,17 +42886,19 @@ Shift80fb:
   movls r1,r1,lsl #1
   bcc Shift80fb
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80fb:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80fb
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80fb ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -42938,20 +42909,18 @@ Divide80fb:
   str r1,[r7,r11,lsr #7]
 
 endofop80fb:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#150 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero80fb:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#188 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -42972,11 +42941,6 @@ Op80fc:
 
   mov r0,r1,lsr #16 ;@ use only 16 bits of divisor
 
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop80fc ;@ overflow!
-
 ;@ Divide r2 by r0
   mov r3,#0
   mov r1,r0
@@ -42987,17 +42951,19 @@ Shift80fc:
   movls r1,r1,lsl #1
   bcc Shift80fc
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide80fc:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide80fc
 
 ;@r3==quotient,r2==remainder
+  movs r1,r3,lsr #16 ;@ check for overflow condition
+  orrne r10,r10,#0x10000000 ;@ set overflow flag
+  bne endofop80fc ;@ overflow!
+
   movs r1,r3,lsl #16 ;@ Clip to 16-bits
   and r10,r1,#0x80000000 ;@ r10=N_flag
   orreq r10,r10,#0x40000000 ;@ get NZ, clear CV
@@ -43009,7 +42975,7 @@ Divide80fc:
 
 endofop80fc:
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#14 ;@ Subtract cycles
+  subs r5,r5,#144 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -43017,7 +42983,7 @@ divzero80fc:
   mov r0,#5 ;@ Divide by zero
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#182 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -43035,30 +43001,27 @@ Op8100:
 ;@ EaRead : Read register[r11] into r0:
   ldr r0,[r7,r11,lsr #7]
 
+  mov r6,r6,asl #24
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  mov r12,#0 ;@ corf
-  adc r1,r1,#0
-  sub r1,r2,r1
-  cmp r1,#0x0f
-  movhi r12,#6
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  sub r1,r1,r6
-  tst r1,#0x80
-  orrne r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r1,r12
-  orrlt r10,r10,#0x20000000 ;@ C
-  cmp r1,#0xff
-  addhi r1,r1,#0xa0
-  sub r12,r1,r12
-  movs r0,r12,lsl #24
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r6,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r1,lsr #4
+  sub r0,r0,r2
+  subne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  subhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  sub r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
+  orrhi r10,r10,#0xa0000000 ;@ N and C
+  addhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -43087,7 +43050,7 @@ Op8108:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a0)' into r11:
   and r2,r8,#0x0e00
@@ -43099,30 +43062,26 @@ Op8108:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  mov r12,#0 ;@ corf
-  adc r1,r1,#0
-  sub r1,r2,r1
-  cmp r1,#0x0f
-  movhi r12,#6
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  sub r1,r1,r6
-  tst r1,#0x80
-  orrne r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r1,r12
-  orrlt r10,r10,#0x20000000 ;@ C
-  cmp r1,#0xff
-  addhi r1,r1,#0xa0
-  sub r12,r1,r12
-  movs r0,r12,lsl #24
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r6,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r1,lsr #4
+  sub r0,r0,r2
+  subne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  subhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  sub r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
+  orrhi r10,r10,#0xa0000000 ;@ N and C
+  addhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -43152,7 +43111,7 @@ Op810f:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a0)' into r11:
   and r2,r8,#0x0e00
@@ -43164,30 +43123,26 @@ Op810f:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  mov r12,#0 ;@ corf
-  adc r1,r1,#0
-  sub r1,r2,r1
-  cmp r1,#0x0f
-  movhi r12,#6
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  sub r1,r1,r6
-  tst r1,#0x80
-  orrne r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r1,r12
-  orrlt r10,r10,#0x20000000 ;@ C
-  cmp r1,#0xff
-  addhi r1,r1,#0xa0
-  sub r12,r1,r12
-  movs r0,r12,lsl #24
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r6,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r1,lsr #4
+  sub r0,r0,r2
+  subne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  subhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  sub r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
+  orrhi r10,r10,#0xa0000000 ;@ N and C
+  addhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -44110,7 +44065,6 @@ Op81c0:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44118,14 +44072,9 @@ Op81c0:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81c0
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81c0 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44137,25 +44086,20 @@ Shift81c0:
   movls r1,r1,lsl #1
   bcc Shift81c0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81c0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81c0
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44174,7 +44118,7 @@ wrendofop81c0:
 
 endofop81c0:
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#16 ;@ Subtract cycles
+  subs r5,r5,#158 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44182,7 +44126,7 @@ divzero81c0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#44 ;@ Subtract cycles
+  subs r5,r5,#196 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44191,7 +44135,6 @@ divzero81c0:
 Op81d0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
   and r2,r8,#0x000f
@@ -44213,7 +44156,6 @@ Op81d0:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44221,14 +44163,9 @@ Op81d0:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81d0
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81d0 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44240,25 +44177,20 @@ Shift81d0:
   movls r1,r1,lsl #1
   bcc Shift81d0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81d0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81d0
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44276,20 +44208,18 @@ wrendofop81d0:
   str r1,[r7,r11,lsr #7]
 
 endofop81d0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#162 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81d0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#200 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44298,7 +44228,6 @@ divzero81d0:
 Op81d8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
   and r2,r8,#0x000f
@@ -44321,7 +44250,6 @@ Op81d8:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44329,14 +44257,9 @@ Op81d8:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81d8
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81d8 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44348,25 +44271,20 @@ Shift81d8:
   movls r1,r1,lsl #1
   bcc Shift81d8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81d8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81d8
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44384,20 +44302,18 @@ wrendofop81d8:
   str r1,[r7,r11,lsr #7]
 
 endofop81d8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#162 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81d8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#200 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44406,7 +44322,6 @@ divzero81d8:
 Op81e0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
   and r2,r8,#0x000f
@@ -44430,7 +44345,6 @@ Op81e0:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44438,14 +44352,9 @@ Op81e0:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81e0
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81e0 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44457,25 +44366,20 @@ Shift81e0:
   movls r1,r1,lsl #1
   bcc Shift81e0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81e0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81e0
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44493,20 +44397,18 @@ wrendofop81e0:
   str r1,[r7,r11,lsr #7]
 
 endofop81e0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#22 ;@ Subtract cycles
+  subs r5,r5,#164 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81e0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#50 ;@ Subtract cycles
+  subs r5,r5,#202 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44515,7 +44417,6 @@ divzero81e0:
 Op81e8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch offset
@@ -44538,7 +44439,6 @@ Op81e8:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44546,14 +44446,9 @@ Op81e8:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81e8
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81e8 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44565,25 +44460,20 @@ Shift81e8:
   movls r1,r1,lsl #1
   bcc Shift81e8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81e8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81e8
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44601,20 +44491,18 @@ wrendofop81e8:
   str r1,[r7,r11,lsr #7]
 
 endofop81e8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#24 ;@ Subtract cycles
+  subs r5,r5,#166 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81e8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#52 ;@ Subtract cycles
+  subs r5,r5,#204 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44623,7 +44511,6 @@ divzero81e8:
 Op81f0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
 ;@ Get extension word into r3:
@@ -44655,7 +44542,6 @@ Op81f0:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44663,14 +44549,9 @@ Op81f0:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81f0
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81f0 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44682,25 +44563,20 @@ Shift81f0:
   movls r1,r1,lsl #1
   bcc Shift81f0
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81f0:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81f0
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44718,20 +44594,18 @@ wrendofop81f0:
   str r1,[r7,r11,lsr #7]
 
 endofop81f0:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#26 ;@ Subtract cycles
+  subs r5,r5,#168 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81f0:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#54 ;@ Subtract cycles
+  subs r5,r5,#206 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44740,7 +44614,6 @@ divzero81f0:
 Op81f8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch Absolute Short address
@@ -44760,7 +44633,6 @@ Op81f8:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44768,14 +44640,9 @@ Op81f8:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81f8
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81f8 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44787,25 +44654,20 @@ Shift81f8:
   movls r1,r1,lsl #1
   bcc Shift81f8
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81f8:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81f8
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44823,20 +44685,18 @@ wrendofop81f8:
   str r1,[r7,r11,lsr #7]
 
 endofop81f8:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#24 ;@ Subtract cycles
+  subs r5,r5,#166 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81f8:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#52 ;@ Subtract cycles
+  subs r5,r5,#204 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44845,7 +44705,6 @@ divzero81f8:
 Op81f9:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
   ldrh r2,[r4],#2 ;@ Fetch Absolute Long address
@@ -44867,7 +44726,6 @@ Op81f9:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44875,14 +44733,9 @@ Op81f9:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81f9
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81f9 ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -44894,25 +44747,20 @@ Shift81f9:
   movls r1,r1,lsl #1
   bcc Shift81f9
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81f9:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81f9
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -44930,20 +44778,18 @@ wrendofop81f9:
   str r1,[r7,r11,lsr #7]
 
 endofop81f9:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#28 ;@ Subtract cycles
+  subs r5,r5,#170 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81f9:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#56 ;@ Subtract cycles
+  subs r5,r5,#208 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -44952,7 +44798,6 @@ divzero81f9:
 Op81fa:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,pc)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -44975,7 +44820,6 @@ Op81fa:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -44983,14 +44827,9 @@ Op81fa:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81fa
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81fa ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -45002,25 +44841,20 @@ Shift81fa:
   movls r1,r1,lsl #1
   bcc Shift81fa
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81fa:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81fa
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -45038,20 +44872,18 @@ wrendofop81fa:
   str r1,[r7,r11,lsr #7]
 
 endofop81fa:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#24 ;@ Subtract cycles
+  subs r5,r5,#166 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81fa:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#52 ;@ Subtract cycles
+  subs r5,r5,#204 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -45060,7 +44892,6 @@ divzero81fa:
 Op81fb:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,pc,d3.w*2)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -45091,7 +44922,6 @@ Op81fb:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -45099,14 +44929,9 @@ Op81fb:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81fb
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81fb ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -45118,25 +44943,20 @@ Shift81fb:
   movls r1,r1,lsl #1
   bcc Shift81fb
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81fb:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81fb
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -45154,20 +44974,18 @@ wrendofop81fb:
   str r1,[r7,r11,lsr #7]
 
 endofop81fb:
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#26 ;@ Subtract cycles
+  subs r5,r5,#168 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
 divzero81fb:
   mov r0,#5 ;@ Divide by zero
   bl Exception
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#54 ;@ Subtract cycles
+  subs r5,r5,#206 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -45189,7 +45007,6 @@ Op81fc:
   mov r12,#0 ;@ r12 = 1 or 2 if the result is negative
   tst r2,r2
   orrmi r12,r12,#2
-  submi r5,r5,#2
   rsbmi r2,r2,#0 ;@ Make r2 positive
 
   movs r0,r1,asr #16
@@ -45197,14 +45014,9 @@ Op81fc:
   rsbmi r0,r0,#0 ;@ Make r0 positive
 
 ;@ detect the nasty 0x80000000 / -1 situation
-  subs r3,r2,#0x80000000
-  addeqs r3,r1,#0x00010000
+  mov r3,r2,asr #31
+  eors r3,r3,r1,asr #16
   beq wrendofop81fc
-
-;@ Overflow?
-  cmp r0,r2,lsr #16
-  orrls r10,r10,#0x10000000 ;@ set overflow flag
-  bls endofop81fc ;@ overflow!
 
 ;@ Divide r2 by r0
   mov r3,#0
@@ -45216,25 +45028,20 @@ Shift81fc:
   movls r1,r1,lsl #1
   bcc Shift81fc
 
-  sub r5,r5,#8*16 ;@ Maximum cycles divide loop can take
 Divide81fc:
   cmp r2,r1
   adc r3,r3,r3 ;@ Double r3 and add 1 if carry set
   subcs r2,r2,r1
-  addcs r5,r5,#2
   teq r1,r0
   movne r1,r1,lsr #1
   bne Divide81fc
 
 ;@r3==quotient,r2==remainder
-  sub r5,r5,#8
   and r1,r12,#1
   teq r1,r12,lsr #1
   rsbne r3,r3,#0 ;@ negate if quotient is negative
-  subne r5,r5,#2
   tst r12,#2
   rsbne r2,r2,#0 ;@ negate the remainder if divident was negative
-  subne r5,r5,#2
 
   mov r1,r3,asl #16
   cmp r3,r1,asr #16 ;@ signed overflow?
@@ -45253,7 +45060,7 @@ wrendofop81fc:
 
 endofop81fc:
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#20 ;@ Subtract cycles
+  subs r5,r5,#162 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -45261,7 +45068,7 @@ divzero81fc:
   mov r0,#5 ;@ Divide by zero
   bl Exception
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#200 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -45281,7 +45088,7 @@ Op8f08:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a7)' into r11:
   ldr r11,[r7,#0x3c] ;@ A7
@@ -45291,30 +45098,26 @@ Op8f08:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  mov r12,#0 ;@ corf
-  adc r1,r1,#0
-  sub r1,r2,r1
-  cmp r1,#0x0f
-  movhi r12,#6
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  sub r1,r1,r6
-  tst r1,#0x80
-  orrne r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r1,r12
-  orrlt r10,r10,#0x20000000 ;@ C
-  cmp r1,#0xff
-  addhi r1,r1,#0xa0
-  sub r12,r1,r12
-  movs r0,r12,lsl #24
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r6,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r1,lsr #4
+  sub r0,r0,r2
+  subne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  subhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  sub r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
+  orrhi r10,r10,#0xa0000000 ;@ N and C
+  addhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -45344,7 +45147,7 @@ Op8f0f:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a7)' into r11:
   ldr r11,[r7,#0x3c] ;@ A7
@@ -45354,30 +45157,26 @@ Op8f0f:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  mov r12,#0 ;@ corf
-  adc r1,r1,#0
-  sub r1,r2,r1
-  cmp r1,#0x0f
-  movhi r12,#6
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  sub r1,r1,r6
-  tst r1,#0x80
-  orrne r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r1,r12
-  orrlt r10,r10,#0x20000000 ;@ C
-  cmp r1,#0xff
-  addhi r1,r1,#0xa0
-  sub r12,r1,r12
-  movs r0,r12,lsl #24
-  bicmi r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r6,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r1,lsr #4
+  sub r0,r0,r2
+  subne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  subhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  sub r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
+  orrhi r10,r10,#0xa0000000 ;@ N and C
+  addhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -52999,23 +52798,6 @@ Opc0c0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53029,7 +52811,7 @@ Opc0c0:
   str r1,[r7,r11,lsr #7]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#38 ;@ Subtract cycles
+  subs r5,r5,#54 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53037,7 +52819,6 @@ Opc0c0:
 Opc0d0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
   and r2,r8,#0x000f
@@ -53054,23 +52835,6 @@ Opc0d0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53083,10 +52847,9 @@ Opc0d0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53094,7 +52857,6 @@ Opc0d0:
 Opc0d8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
   and r2,r8,#0x000f
@@ -53112,23 +52874,6 @@ Opc0d8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53141,10 +52886,9 @@ Opc0d8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53152,7 +52896,6 @@ Opc0d8:
 Opc0e0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
   and r2,r8,#0x000f
@@ -53171,23 +52914,6 @@ Opc0e0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53200,10 +52926,9 @@ Opc0e0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#44 ;@ Subtract cycles
+  subs r5,r5,#60 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53211,7 +52936,6 @@ Opc0e0:
 Opc0e8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch offset
@@ -53229,23 +52953,6 @@ Opc0e8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53258,10 +52965,9 @@ Opc0e8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53269,7 +52975,6 @@ Opc0e8:
 Opc0f0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
 ;@ Get extension word into r3:
@@ -53296,23 +53001,6 @@ Opc0f0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53325,10 +53013,9 @@ Opc0f0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#64 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53336,7 +53023,6 @@ Opc0f0:
 Opc0f8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch Absolute Short address
@@ -53351,23 +53037,6 @@ Opc0f8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53380,10 +53049,9 @@ Opc0f8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53391,7 +53059,6 @@ Opc0f8:
 Opc0f9:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
   ldrh r2,[r4],#2 ;@ Fetch Absolute Long address
@@ -53408,23 +53075,6 @@ Opc0f9:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53437,10 +53087,9 @@ Opc0f9:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#50 ;@ Subtract cycles
+  subs r5,r5,#66 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53448,7 +53097,6 @@ Opc0f9:
 Opc0fa:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,pc)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -53466,23 +53114,6 @@ Opc0fa:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53495,10 +53126,9 @@ Opc0fa:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53506,7 +53136,6 @@ Opc0fa:
 Opc0fb:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,pc,d3.w*2)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -53532,23 +53161,6 @@ Opc0fb:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53561,10 +53173,9 @@ Opc0fb:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#64 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53580,23 +53191,6 @@ Opc0fc:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  mov r0,r1
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,lsr #16
   mov r2,r2,lsl #16
@@ -53610,7 +53204,7 @@ Opc0fc:
   str r1,[r7,r11,lsr #7]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -53627,27 +53221,28 @@ Opc100:
 ;@ EaRead : Read register[r11] into r0:
   ldr r0,[r7,r11,lsr #7]
 
+  mov r6,r6,asl #24
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  adc r1,r2,r1
-  cmp r1,#9
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  add r1,r1,r6
-  mov r12,r1
-  addhi r12,r12,#6 ;@ Decimal adjust units
-  tst r1,#0x80
-  orreq r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r12,#0x9f
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r1,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r6,lsr #4
+  add r0,r0,r2
+  addne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  addhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  add r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
   orrhi r10,r10,#0x20000000 ;@ C
-  subhi r12,r12,#0xa0
-  movs r0,r12,lsl #24
-  bicpl r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  subhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
+  orrmi r10,r10,#0x90000000 ;@ Undefined N+V behavior
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -53676,7 +53271,7 @@ Opc108:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a0)' into r11:
   and r2,r8,#0x0e00
@@ -53688,27 +53283,27 @@ Opc108:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  adc r1,r2,r1
-  cmp r1,#9
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  add r1,r1,r6
-  mov r12,r1
-  addhi r12,r12,#6 ;@ Decimal adjust units
-  tst r1,#0x80
-  orreq r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r12,#0x9f
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r1,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r6,lsr #4
+  add r0,r0,r2
+  addne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  addhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  add r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
   orrhi r10,r10,#0x20000000 ;@ C
-  subhi r12,r12,#0xa0
-  movs r0,r12,lsl #24
-  bicpl r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  subhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
+  orrmi r10,r10,#0x90000000 ;@ Undefined N+V behavior
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -53738,7 +53333,7 @@ Opc10f:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a0)' into r11:
   and r2,r8,#0x0e00
@@ -53750,27 +53345,27 @@ Opc10f:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  adc r1,r2,r1
-  cmp r1,#9
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  add r1,r1,r6
-  mov r12,r1
-  addhi r12,r12,#6 ;@ Decimal adjust units
-  tst r1,#0x80
-  orreq r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r12,#0x9f
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r1,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r6,lsr #4
+  add r0,r0,r2
+  addne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  addhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  add r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
   orrhi r10,r10,#0x20000000 ;@ C
-  subhi r12,r12,#0xa0
-  movs r0,r12,lsl #24
-  bicpl r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  subhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
+  orrmi r10,r10,#0x90000000 ;@ Undefined N+V behavior
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -54737,25 +54332,6 @@ Opc1c0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -54769,7 +54345,7 @@ Opc1c0:
   str r1,[r7,r11,lsr #7]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#38 ;@ Subtract cycles
+  subs r5,r5,#54 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -54777,7 +54353,6 @@ Opc1c0:
 Opc1d0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)' into r0:
   and r2,r8,#0x000f
@@ -54794,25 +54369,6 @@ Opc1d0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -54825,10 +54381,9 @@ Opc1d0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -54836,7 +54391,6 @@ Opc1d0:
 Opc1d8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '(a0)+' into r0:
   and r2,r8,#0x000f
@@ -54854,25 +54408,6 @@ Opc1d8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -54885,10 +54420,9 @@ Opc1d8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -54896,7 +54430,6 @@ Opc1d8:
 Opc1e0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '-(a0)' into r0:
   and r2,r8,#0x000f
@@ -54915,25 +54448,6 @@ Opc1e0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -54946,10 +54460,9 @@ Opc1e0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#44 ;@ Subtract cycles
+  subs r5,r5,#60 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -54957,7 +54470,6 @@ Opc1e0:
 Opc1e8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,a0)' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch offset
@@ -54975,25 +54487,6 @@ Opc1e8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55006,10 +54499,9 @@ Opc1e8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55017,7 +54509,6 @@ Opc1e8:
 Opc1f0:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,a0,d3.w*2)' into r0:
 ;@ Get extension word into r3:
@@ -55044,25 +54535,6 @@ Opc1f0:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55075,10 +54547,9 @@ Opc1f0:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#64 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55086,7 +54557,6 @@ Opc1f0:
 Opc1f8:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$3333.w' into r0:
   ldrsh r0,[r4],#2 ;@ Fetch Absolute Short address
@@ -55101,25 +54571,6 @@ Opc1f8:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55132,10 +54583,9 @@ Opc1f8:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55143,7 +54593,6 @@ Opc1f8:
 Opc1f9:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '$33333333.l' into r0:
   ldrh r2,[r4],#2 ;@ Fetch Absolute Long address
@@ -55160,25 +54609,6 @@ Opc1f9:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55191,10 +54621,9 @@ Opc1f9:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#50 ;@ Subtract cycles
+  subs r5,r5,#66 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55202,7 +54631,6 @@ Opc1f9:
 Opc1fa:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($3333,pc)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -55220,25 +54648,6 @@ Opc1fa:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55251,10 +54660,9 @@ Opc1fa:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#46 ;@ Subtract cycles
+  subs r5,r5,#62 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55262,7 +54670,6 @@ Opc1fa:
 Opc1fb:
   str r4,[r7,#0x50] ;@ Save prev PC + 2
   str r5,[r7,#0x5c] ;@ Save Cycles
-  mov r5,#0
 
 ;@ EaCalc : Get '($33,pc,d3.w*2)' into r0:
   ldr r0,[r7,#0x60] ;@ Get Memory base
@@ -55288,25 +54695,6 @@ Opc1fb:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55319,10 +54707,9 @@ Opc1fb:
 ;@ EaWrite: r1 into register[r11]:
   str r1,[r7,r11,lsr #7]
 
-  ldr r0,[r7,#0x5c] ;@ Load Cycles
+  ldr r5,[r7,#0x5c] ;@ Load Cycles
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  add r5,r0,r5
-  subs r5,r5,#48 ;@ Subtract cycles
+  subs r5,r5,#64 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55338,25 +54725,6 @@ Opc1fc:
   ldr r2,[r7,r11,lsr #7]
 
   movs r1,r0,asl #16
-;@ Calculate cycles needed: 2*(#bits set in multiplier engine mask)
-  eor r0,r1,r1,asr #1
-  tst r0,#0x8000 ;@ handle 17th bit
-  subne r5,r5,#2
-  mov r3,#0x55000000 ;@ count top 16 bits, the O(1) way
-  orr r3,r3,r3,lsr #8
-  and r3,r3,r0,lsr #1
-  sub r0,r0,r3
-  mov r3,#0x33000000
-  orr r3,r3,r3,lsr #8
-  and r12,r3,r0,lsr #2
-  and r0,r3,r0
-  add r0,r0,r12
-  mov r3,#0x0f000000
-  orr r3,r3,r3,lsr #8
-  add r0,r0,r0,lsr #4
-  and r0,r3,r0
-  add r0,r0,r0,lsl #8
-  sub r5,r5,r0,lsr #23 ;@ cycles -= 2*bitcount(mask)
 ;@ Get 16-bit signs right:
   mov r0,r1,asr #16
   mov r2,r2,lsl #16
@@ -55370,7 +54738,7 @@ Opc1fc:
   str r1,[r7,r11,lsr #7]
 
   ldrh r8,[r4],#2 ;@ Fetch next opcode
-  subs r5,r5,#42 ;@ Subtract cycles
+  subs r5,r5,#58 ;@ Subtract cycles
   ldrgt pc,[r6,r8,asl #2] ;@ Jump to opcode handler
   b CycloneEnd
 
@@ -55389,7 +54757,7 @@ Opcf08:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a7)' into r11:
   ldr r11,[r7,#0x3c] ;@ A7
@@ -55399,27 +54767,27 @@ Opcf08:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  adc r1,r2,r1
-  cmp r1,#9
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  add r1,r1,r6
-  mov r12,r1
-  addhi r12,r12,#6 ;@ Decimal adjust units
-  tst r1,#0x80
-  orreq r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r12,#0x9f
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r1,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r6,lsr #4
+  add r0,r0,r2
+  addne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  addhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  add r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
   orrhi r10,r10,#0x20000000 ;@ C
-  subhi r12,r12,#0xa0
-  movs r0,r12,lsl #24
-  bicpl r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  subhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
+  orrmi r10,r10,#0x90000000 ;@ Undefined N+V behavior
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 
@@ -55449,7 +54817,7 @@ Opcf0f:
   str r4,[r7,#0x40] ;@ Save PC
   bic r0,r0,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
-  mov r6,r0
+  mov r6,r0,asl #24
 
 ;@ EaCalc : Get '-(a7)' into r11:
   ldr r11,[r7,#0x3c] ;@ A7
@@ -55459,27 +54827,27 @@ Opcf0f:
   bic r0,r11,#0xff000000
   bl m68k_read8 ;@ Call read8(r0) handler
 
+  mov r1,r0,asl #24
+
   bic r10,r10,#0xb1000000 ;@ clear all flags except old Z
-  ldr r1,[r7,#0x4c] ;@ Get X bit
-  and r2,r0,#0x0f
-  movs r12,r1,lsl #3 ;@ X into carry
-  and r1,r6,#0x0f
-  adc r1,r2,r1
-  cmp r1,#9
-  and r0,r0,#0xf0
-  and r6,r6,#0xf0
-  add r1,r1,r0
-  add r1,r1,r6
-  mov r12,r1
-  addhi r12,r12,#6 ;@ Decimal adjust units
-  tst r1,#0x80
-  orreq r10,r10,#0x10000000 ;@ Undefined V behavior
-  cmp r12,#0x9f
+  ldr r0,[r7,#0x4c] ;@ Get X bit
+  mov r3,#0x00f00000
+  and r2,r3,r1,lsr #4
+  tst r0,#0x20000000
+  and r0,r3,r6,lsr #4
+  add r0,r0,r2
+  addne r0,r0,#0x00100000
+  cmp r0,#0x00900000
+  addhi r0,r0,#0x00600000 ;@ Decimal adjust units
+  mov r2,r1,lsr #28
+  add r0,r0,r2,lsl #24
+  mov r2,r6,lsr #28
+  add r0,r0,r2,lsl #24
+  cmp r0,#0x09900000
   orrhi r10,r10,#0x20000000 ;@ C
-  subhi r12,r12,#0xa0
-  movs r0,r12,lsl #24
-  bicpl r10,r10,#0x10000000 ;@ Undefined V behavior part II
-  orrmi r10,r10,#0x80000000 ;@ Undefined N behavior
+  subhi r0,r0,#0x0a000000
+  movs r0,r0,lsl #4
+  orrmi r10,r10,#0x90000000 ;@ Undefined N+V behavior
   bicne r10,r10,#0x40000000 ;@ Z flag
   str r10,[r7,#0x4c] ;@ Save X bit
 

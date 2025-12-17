@@ -40,7 +40,7 @@ INT32 CoreRomDataPathsLoad()
 
 	strcpy(CoreRomDataPaths[0], szAppRomdatasPath);				// CoreRomDataPaths[0] = g_system_dir/fbneo/romdata
 
-	snprintf(
+	snprintf_nowarn(
 		szConfig, MAX_PATH - 1, "%sromdata_path.opt",
 		szAppPathDefPath
 	);															// g_system_dir/fbneo/path/romdata_path.opt
@@ -48,7 +48,7 @@ INT32 CoreRomDataPathsLoad()
 	if (NULL == (h = _tfopen(szConfig, _T("rt"))))
 	{
 		memset(szConfig, 0, MAX_PATH * sizeof(TCHAR));
-		snprintf(
+		snprintf_nowarn(
 			szConfig, MAX_PATH - 1, "%s%cromdata_path.opt",
 			g_rom_dir, PATH_DEFAULT_SLASH_C()
 		);														// g_rom_dir/romdata_path.opt
@@ -446,7 +446,7 @@ INT32 create_variables_from_romdatas()
 		if ((NULL != p) && ('\0' == p[1])) p[0] = '\0';
 
 		TCHAR szFilePathSearch[MAX_PATH] = { 0 }, szDatPaths[MAX_PATH] = { 0 };
-		snprintf(szFilePathSearch, MAX_PATH - 1, "%s%c", CoreRomDataPaths[i], PATH_DEFAULT_SLASH_C());
+		snprintf_nowarn(szFilePathSearch, MAX_PATH - 1, "%s%c", CoreRomDataPaths[i], PATH_DEFAULT_SLASH_C());
 
 		// romdata_dirs/
 		strcpy(szDatPaths, szFilePathSearch);
@@ -523,7 +523,7 @@ INT32 create_variables_from_romdatas()
 					if (bDrvOK && bDescOK)
 					{
 						char szKey[100] = { 0 };
-						snprintf(szKey, 100 - 1, "fbneo-romdata-%s-%d", pszDrvName, nRet);
+						snprintf_nowarn(szKey, 100 - 1, "fbneo-romdata-%s-%d", pszDrvName, nRet);
 
 						romdata_core_options.push_back(romdata_core_option());
 						romdata_core_option* romdata_option = &romdata_core_options.back();

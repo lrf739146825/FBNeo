@@ -1676,15 +1676,16 @@
 	</game>
 	<game name="b2b2" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Demo, Homebrew</comment>
-		<description>Bang Bang Busters 2 (HB, Demo)</description>
+		<description>Bang Bang Busters 2 (HB, Demo 2)</description>
 		<year>2025</year>
 		<manufacturer>PixelHeart</manufacturer>
-		<rom name="b2b2-p1.p1" size="1048576" crc="3659f253"/>
+		<rom name="b2b2-p1.p1" size="1048576" crc="b6f02669"/>
 		<rom name="b2b2-s1.s1" size="131072" crc="e53ef3d0"/>
-		<rom name="b2b2-c1.c1" size="8388608" crc="739173e2"/>
-		<rom name="b2b2-c2.c2" size="8388608" crc="9a439c98"/>
-		<rom name="b2b2-m1.m1" size="65536" crc="bff0ad49"/>
-		<rom name="b2b2-v1.v1" size="4194304" crc="f1dda8dd"/>
+		<rom name="b2b2-c1.c1" size="8388608" crc="c887be9b"/>
+		<rom name="b2b2-c2.c2" size="8388608" crc="13c6dd38"/>
+		<rom name="b2b2-m1.m1" size="65536" crc="4c134828"/>
+		<rom name="b2b2-v1.v1" size="4194304" crc="da7cb2b8"/>
+		<rom name="b2b2-v2.v2" size="4194304" crc="0043d4f2"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
@@ -37937,17 +37938,17 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wrldracr" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+	<game name="wrldrc32" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Homebrew</comment>
-		<description>World Racer (HB)</description>
+		<description>World Racer 32Kb (HB)</description>
 		<year>2025</year>
 		<manufacturer>Blastar</manufacturer>
-		<rom name="wrldracr-p1.p1" size="1048576" crc="cc59276f"/>
-		<rom name="wrldracr-s1.s1" size="131072" crc="312508af"/>
-		<rom name="wrldracr-c1.c1" size="524288" crc="44423f83"/>
-		<rom name="wrldracr-c2.c2" size="524288" crc="57008242"/>
-		<rom name="wrldracr-m1.m1" size="65536" crc="6178075b"/>
-		<rom name="wrldracr-v1.v1" size="524288" crc="a4763f5d"/>
+		<rom name="wrldrc32-p1.p1" size="1048576" crc="d9f8921c"/>
+		<rom name="wrldrc32-s1.s1" size="131072" crc="312508af"/>
+		<rom name="wrldrc32-c1.c1" size="524288" crc="ec05e878"/>
+		<rom name="wrldrc32-c2.c2" size="524288" crc="ff4755b9"/>
+		<rom name="wrldrc32-m1.m1" size="65536" crc="6178075b"/>
+		<rom name="wrldrc32-v1.v1" size="524288" crc="a4763f5d"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
@@ -38260,12 +38261,12 @@
 		<description>Zetsu Xevious - Neo Geo Conversion (HB)</description>
 		<year>1982-2025</year>
 		<manufacturer>Namco - zeroco</manufacturer>
-		<rom name="zetsu-p1.p1" size="1048576" crc="8a1e9214"/>
+		<rom name="420.p1" size="1048576" crc="8a1e9214"/>
 		<rom name="xevious-s1.s1" merge="xevious-s1.s1" size="131072" crc="f41d121a"/>
-		<rom name="zetsu-c1.c1" size="1048576" crc="8759341e"/>
-		<rom name="zetsu-c2.c2" size="1048576" crc="f1c31214"/>
-		<rom name="xevious-m1.m1" size="65536" crc="06773aff"/>
-		<rom name="xevious-v1.v1" size="1048576" crc="929b34ab"/>
+		<rom name="420.c1" size="1048576" crc="8759341e"/>
+		<rom name="420.c2" size="1048576" crc="f1c31214"/>
+		<rom name="420.m1" size="65536" crc="06773aff"/>
+		<rom name="420.v1" size="1048576" crc="929b34ab"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
