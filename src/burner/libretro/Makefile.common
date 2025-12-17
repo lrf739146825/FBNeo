@@ -337,7 +337,8 @@ SOURCES_C += $(UGUI_DIR)/ugui.c \
 	$(LIBRETRO_DIR)/ugui_tools.c
 
 # GIT HASH
-GIT_VERSION := " $(shell git rev-parse --short HEAD || echo unknown)"
-ifneq ($(GIT_VERSION)," unknown")
-	CXXFLAGS += -DGIT_VERSION=\"$(GIT_VERSION)\"
+GIT_VERSION := $(shell git rev-parse --short HEAD || echo unknown)
+ifneq ($(GIT_VERSION),unknown)
+	GIT_DATE := $(shell git log -1 --format="%at" | xargs -I{} date -d @{} +%y%m%d)
+	CXXFLAGS += -DGIT_DATE=\"$(GIT_DATE)\" -DGIT_VERSION=\"GIT$(GIT_VERSION)\"
 endif

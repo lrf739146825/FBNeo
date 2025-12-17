@@ -60,7 +60,7 @@ INT32 CoreIpsPathsLoad()
 
 	_tcscpy(CoreIpsPaths[0], szAppIpsesPath);						// CoreIpsPaths[0] = g_system_dir/fbneo/ips
 
-	snprintf(
+	snprintf_nowarn(
 		szConfig, MAX_PATH - 1, "%sips_path.opt",
 		szAppPathDefPath
 	);																// g_system_dir/fbneo/path/ips_path.opt
@@ -68,7 +68,7 @@ INT32 CoreIpsPathsLoad()
 	if (NULL == (h = _tfopen(szConfig, _T("rt"))))
 	{
 		memset(szConfig, 0, MAX_PATH * sizeof(TCHAR));
-		snprintf(
+		snprintf_nowarn(
 			szConfig, MAX_PATH - 1, "%s%cips_path.opt",
 			g_rom_dir, PATH_DEFAULT_SLASH_C()
 		);															// g_rom_dir/ips_path.opt
@@ -251,7 +251,7 @@ INT32 create_variables_from_ipses()
 		if ((NULL != p) && ('\0' == p[1])) p[0] = '\0';
 
 		char szFilePathSearch[MAX_PATH] = { 0 }, szPatchPaths[MAX_PATH] = { 0 };
-		snprintf(
+		snprintf_nowarn(
 			szFilePathSearch, MAX_PATH - 1, "%s%c%s%c",
 			CoreIpsPaths[i], PATH_DEFAULT_SLASH_C(), pszDrvName, PATH_DEFAULT_SLASH_C()
 		);

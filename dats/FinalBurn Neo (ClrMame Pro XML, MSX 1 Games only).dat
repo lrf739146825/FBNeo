@@ -1790,7 +1790,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="batmanmv" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Batman - The Movie (Euro)</description>
+		<description>Batman: The Movie (Euro)</description>
 		<year>1989</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Batman - The Movie (Euro, GB)(1989)(Ocean)(Side A)[RUN'CAS-'].cas" size="126901" crc="b51ff961"/>
@@ -2694,7 +2694,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bdash2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Boulder Dash II - Rockford's Riot (Euro)</description>
+		<description>Boulder Dash II: Rockford's Riot (Euro)</description>
 		<year>1986</year>
 		<manufacturer>Databyte</manufacturer>
 		<rom name="Boulder Dash II - Rockford's Riot (Euro)(1986)(Databyte)[RUN'CAS-'].cas" size="18006" crc="b5bf54a3"/>
@@ -3927,7 +3927,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="zaider" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Chou Senshi Zaider - Battle of Peguss (Japan)</description>
+		<description>Chou Senshi Zaider: Battle of Peguss (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Cosmos Computer</manufacturer>
 		<rom name="Chou Senshi Zaider - Battle of Peguss (Japan)(1986)(Cosmos Computer).rom" size="32768" crc="beccf133"/>
@@ -3938,7 +3938,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="zaidera" cloneof="zaider" romof="zaider" sourcefile="msx/d_msx.cpp">
-		<description>Chou Senshi Zaider - Battle of Peguss (Japan, Alt)</description>
+		<description>Chou Senshi Zaider: Battle of Peguss (Japan, Alt)</description>
 		<year>1986</year>
 		<manufacturer>Cosmos Computer</manufacturer>
 		<rom name="Chou Senshi Zaider - Battle of Peguss (Japan, Alt)(1986)(Cosmos Computer).rom" size="32768" crc="453bcd36"/>
@@ -4004,7 +4004,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="chuheib1" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Chuugaku Hisshuu Eibunpou 1 (Japan)</description>
+		<description>Chuugaku Hisshuu Eibunpou [Chuugaku 1-Nen] (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Stratford Computer Center</manufacturer>
 		<rom name="Chugaku Hisshu Eibunpo 1 (Japan)(1984)(SCC).rom" size="32768" crc="097e4a7e"/>
@@ -9761,52 +9761,8 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="knightmr" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare - Majou Densetsu (Japan)</description>
-		<year>1986</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Knightmare - Majou Densetsu (Japan)(1986)(Konami).rom" size="32768" crc="0db84205"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="knightmrb" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare - Majou Densetsu (Japan, Alt 2)</description>
-		<year>1986</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Knightmare - Majou Densetsu (Japan, Alt 2)(1986)(Konami).rom" size="32768" crc="5876a372"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="knightmra" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare - Majou Densetsu (Japan, Alt)</description>
-		<year>1986</year>
-		<manufacturer>Konami</manufacturer>
-		<rom name="Knightmare - Majou Densetsu (Japan, Alt 1)(1986)(Konami).rom" size="32768" crc="ca9f791b"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="knightmrk" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare - Majou Densetsu (Korea) (Unl)</description>
-		<year>198?</year>
-		<manufacturer>Zemina</manufacturer>
-		<rom name="Knightmare - Majou Densetsu (Korea)(Unl)(198x)(Zemina).rom" size="32768" crc="b9819ea6"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="knightm2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare II - The Maze of Galious (Japan)</description>
+		<description>Knightmare II: The Maze of Galious (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Knightmare II - The Maze of Galious (Japan)(1987)(Konami).rom" size="131072" crc="fe23d253"/>
@@ -9817,7 +9773,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="knightm2k" cloneof="knightm2" romof="knightm2" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare II - The Maze of Galious (Korea) (Unl)</description>
+		<description>Knightmare II: The Maze of Galious (Korea) (Unl)</description>
 		<year>1987</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Knightmare II - The Maze of Galious (Korea)(1987)(Zemina).rom" size="131072" crc="d7f35938"/>
@@ -9829,7 +9785,7 @@
 	</game>
 	<game name="knightm3en" cloneof="knightm3" romof="knightm3" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
-		<description>Knightmare III - Shalom (Hack, English)</description>
+		<description>Knightmare III: Shalom (Hack, English)</description>
 		<year>2002</year>
 		<manufacturer>SLotman</manufacturer>
 		<rom name="Knightmare III - Shalom - Konami T-Eng (2002)(SLotman).rom" size="524288" crc="816d3ce0"/>
@@ -9841,7 +9797,7 @@
 	</game>
 	<game name="knightm3sp" cloneof="knightm3" romof="knightm3" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
-		<description>Knightmare III - Shalom (Hack, Spanish)</description>
+		<description>Knightmare III: Shalom (Hack, Spanish)</description>
 		<year>2012</year>
 		<manufacturer>Pablibiris</manufacturer>
 		<rom name="Knightmare III - Shalom - Konami T-Spa (2012)(Pablibiris).rom" size="524288" crc="a9f72c17"/>
@@ -9852,10 +9808,54 @@
 		<driver status="good"/>
 	</game>
 	<game name="knightm3" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Knightmare III - Shalom (Japan)</description>
+		<description>Knightmare III: Shalom (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Knightmare III - Shalom (Japan)(1987)(Konami).rom" size="262144" crc="cf60fa7d"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightmr" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Knightmare: Majou Densetsu (Japan)</description>
+		<year>1986</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Knightmare - Majou Densetsu (Japan)(1986)(Konami).rom" size="32768" crc="0db84205"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightmrb" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
+		<description>Knightmare: Majou Densetsu (Japan, Alt 2)</description>
+		<year>1986</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Knightmare - Majou Densetsu (Japan, Alt 2)(1986)(Konami).rom" size="32768" crc="5876a372"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightmra" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
+		<description>Knightmare: Majou Densetsu (Japan, Alt)</description>
+		<year>1986</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Knightmare - Majou Densetsu (Japan, Alt 1)(1986)(Konami).rom" size="32768" crc="ca9f791b"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightmrk" cloneof="knightmr" romof="knightmr" sourcefile="msx/d_msx.cpp">
+		<description>Knightmare: Majou Densetsu (Korea) (Unl)</description>
+		<year>198?</year>
+		<manufacturer>Zemina</manufacturer>
+		<rom name="Knightmare - Majou Densetsu (Korea)(Unl)(198x)(Zemina).rom" size="32768" crc="b9819ea6"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -17860,6 +17860,18 @@
 		<year>1989</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Three Dragon Story, The (Korea)(1989)(Zemina).rom" size="32768" crc="f052e5fb"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="3weekspr" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Three Weeks in Paradise (HB)</description>
+		<year>2025</year>
+		<manufacturer>Fregarni</manufacturer>
+		<rom name="Three Weeks in Paradise (2025)(Fregarni).rom" size="131072" crc="e4230d8a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>

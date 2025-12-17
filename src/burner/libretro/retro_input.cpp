@@ -80,6 +80,8 @@ UINT32 nDiagInputHoldCounter = 0;
 #define RETRO_DEVICE_ID_FIRE09 RETRO_DEVICE_ID_JOYPAD_R3
 #define RETRO_DEVICE_ID_FIRE10 RETRO_DEVICE_ID_JOYPAD_L3
 
+#define ENABLE_2_AND_3_BUTTONS_MACROS 0
+
 void SetDiagInpHoldFrameDelay(unsigned val)
 {
 	nDiagInputHoldFrameDelay = val;
@@ -322,7 +324,7 @@ static void AnalyzeGameLayout()
 			nMacroCount++;
 			pgi++;
 		}
-#if 0
+#if ENABLE_2_AND_3_BUTTONS_MACROS
 		if (nRealFireButtons <= 3)
 		{
 			if (nRealFireButtons >= 2 && (HW_MISC || HW_NES))
@@ -626,6 +628,8 @@ static INT32 GameInpAnalog2RetroInpAnalog(struct GameInp* pgi, unsigned port, un
 			descriptor.port = port;
 			descriptor.device = (index == RETRO_DEVICE_INDEX_ANALOG_BUTTON ? RETRO_DEVICE_JOYPAD : RETRO_DEVICE_ANALOG);
 			descriptor.index = (index == RETRO_DEVICE_INDEX_ANALOG_BUTTON ? 0 : index);
+			if (index == RETRO_DEVICE_INDEX_ANALOG_BUTTON)
+				bDigitalMappingDone[port][id] = true;
 			descriptor.id = id;
 			descriptor.description = szn;
 			normal_input_descriptors.push_back(descriptor);
@@ -1005,10 +1009,16 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 
 	// Space Duel
 	// Scud Hammer
+	// Invinco / Head On 2
+	// Invinco / Deep Scan
 	if ((parentrom && strcmp(parentrom, "spacduel") == 0) ||
 		(drvname && strcmp(drvname, "spacduel") == 0) ||
 		(parentrom && strcmp(parentrom, "scudhamm") == 0) ||
-		(drvname && strcmp(drvname, "scudhamm") == 0)
+		(drvname && strcmp(drvname, "scudhamm") == 0) ||
+		(parentrom && strcmp(parentrom, "invds") == 0) ||
+		(drvname && strcmp(drvname, "invds") == 0) ||
+		(parentrom && strcmp(parentrom, "invho2") == 0) ||
+		(drvname && strcmp(drvname, "invho2") == 0)
 	) {
 		if (strcmp("Select", description) == 0) {
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_R3, description);
@@ -2106,7 +2116,7 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 		if (strncmp("Buttons CD", description, 10) == 0)
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_FIRE06, description, RETRO_DEVICE_JOYPAD, GIT_MACRO_AUTO);
 	}
-#if 0
+#if ENABLE_2_AND_3_BUTTONS_MACROS
 	// This code will assign macros to the next unmapped retropad buttons based on order preference from the device type
 	// However, is it really ok ? Disabled for now
 	if (nRealFireButtons == 2 || nRealFireButtons == 3) {
