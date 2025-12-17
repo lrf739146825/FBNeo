@@ -1009,10 +1009,16 @@ static INT32 GameInpSpecialOne(struct GameInp* pgi, INT32 nPlayer, char* szb, ch
 
 	// Space Duel
 	// Scud Hammer
+	// Invinco / Head On 2
+	// Invinco / Deep Scan
 	if ((parentrom && strcmp(parentrom, "spacduel") == 0) ||
 		(drvname && strcmp(drvname, "spacduel") == 0) ||
 		(parentrom && strcmp(parentrom, "scudhamm") == 0) ||
-		(drvname && strcmp(drvname, "scudhamm") == 0)
+		(drvname && strcmp(drvname, "scudhamm") == 0) ||
+		(parentrom && strcmp(parentrom, "invds") == 0) ||
+		(drvname && strcmp(drvname, "invds") == 0) ||
+		(parentrom && strcmp(parentrom, "invho2") == 0) ||
+		(drvname && strcmp(drvname, "invho2") == 0)
 	) {
 		if (strcmp("Select", description) == 0) {
 			GameInpDigital2RetroInpKey(pgi, nPlayer, RETRO_DEVICE_ID_JOYPAD_R3, description);
