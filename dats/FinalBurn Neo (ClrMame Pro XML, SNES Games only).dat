@@ -11893,10 +11893,10 @@
 	</game>
 	<game name="otogirisoute" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Otogirisou - Hypericum Perforatum (Hack, English v1.1)</description>
+		<description>Otogirisou - Hypericum Perforatum (Hack, English v1.2)</description>
 		<year>2025</year>
 		<manufacturer>ButThouMust</manufacturer>
-		<rom name="Otogirisou T-Eng v1.1 (2025)(ButThouMust).sfc" size="1572864" crc="33c8391d"/>
+		<rom name="Otogirisou T-Eng v1.2 (2025)(ButThouMust).sfc" size="1572864" crc="454d3b37"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

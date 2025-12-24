@@ -1529,18 +1529,27 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dangdem" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Dangerous Demolition (HB)</description>
+		<year>2022</year>
+		<manufacturer>Dr.Ludos</manufacturer>
+		<rom name="Dangerous Demolition (2022)(Dr.Ludos).sms" size="49152" crc="3f7c5b40"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="darc10" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, YM2413 FM sound chip supported</comment>
 		<description>DARC (HB, v1.0)</description>
 		<year>2015</year>
 		<manufacturer>Zipper</manufacturer>
-		<rom name="DARC (2015)(Zipper).sms" size="524288" crc="61b3c657"/>
+		<rom name="DARC v1.0 (2015)(Zipper).sms" size="524288" crc="61b3c657"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="datastorm10" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Data Storm (HB, v1.0)</description>
+		<description>Data Storm (HB)</description>
 		<year>2016</year>
 		<manufacturer>haroldoop</manufacturer>
 		<rom name="Data Storm (2016)(haroldoop).sms" size="32768" crc="37b775d6"/>
@@ -2642,10 +2651,10 @@
 	</game>
 	<game name="grailgods" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Grail of the Gods (HB, v0.50b)</description>
+		<description>Grail of the Gods (HB, v0.99)</description>
 		<year>2023-25</year>
 		<manufacturer>Guydebaville</manufacturer>
-		<rom name="Grail of the Gods v0.50b (2023-25)(Guydebaville).sms" size="65536" crc="2bfe75d4"/>
+		<rom name="Grail of the Gods v0.99 (2023-25)(Guydebaville).sms" size="131072" crc="fb3a8ab3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

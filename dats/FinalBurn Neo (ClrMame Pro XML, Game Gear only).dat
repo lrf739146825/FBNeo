@@ -307,6 +307,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="battlemarine" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Battle Marine (HB)</description>
+		<year>2024</year>
+		<manufacturer>Suzuki Plan</manufacturer>
+		<rom name="Battle Marine (2024)(Suzuki Plan).gg" size="524288" crc="f49a00ba"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bship" sourcefile="sms/d_sms.cpp">
 		<description>Battleship (Euro, USA)</description>
 		<year>1993</year>
@@ -805,12 +814,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="dangdem" sourcefile="sms/d_sms.cpp">
+	<game name="dangdem" cloneof="dangdemv2" romof="dangdemv2" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Dangerous Demolition (HB, v1.0)</description>
 		<year>2020</year>
-		<manufacturer>DrLudos</manufacturer>
-		<rom name="Dangerous Demolition (2020)(DrLudos).gg" size="32768" crc="638c4252"/>
+		<manufacturer>Dr.Ludos</manufacturer>
+		<rom name="Dangerous Demolition v1.0 (2020)(Dr.Ludos).gg" size="32768" crc="638c4252"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dangdemv2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Dangerous Demolition (HB, v2.0)</description>
+		<year>2022</year>
+		<manufacturer>Dr.Ludos</manufacturer>
+		<rom name="Dangerous Demolition v2.0 (2022)(Dr.Ludos).gg" size="49152" crc="bff5cf71"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1794,6 +1812,15 @@
 		<year>2023</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Impetus Mini (2023)(Inufuto).gg" size="32768" crc="07e1fa70"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetuspm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Impetus+ Micro (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus+ Micro (2025)(Inufuto).gg" size="24576" crc="8e6e9131"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4390,6 +4417,15 @@
 		<year>2025</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Svellas Micro (2025)(Inufuto).gg" size="16384" crc="d0a447dd"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="swordstone" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Sword of Stone, The (HB, v2.4)</description>
+		<year>2024-25</year>
+		<manufacturer>2Minds - Cireza</manufacturer>
+		<rom name="Sword of Stone, The v2.4 (2024-25)(2Minds - Cireza).gg" size="524288" crc="3a92a9ed"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
