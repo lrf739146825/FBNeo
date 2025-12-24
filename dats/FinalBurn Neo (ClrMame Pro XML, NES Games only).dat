@@ -16422,6 +16422,32 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="portopiaj" cloneof="portopiate" romof="portopiate" sourcefile="nes/d_nes.cpp">
+		<description>Portopia Renzoku Satsujin Jiken (Japan)</description>
+		<year>1985</year>
+		<manufacturer>Enix</manufacturer>
+		<rom name="Portopia Renzoku Satsujin Jiken (Japan)(1985)(Enix).nes" size="40976" crc="9b2b749b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="portopiate" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Portopia Serial Murder Case, The (Hack, English Rev. B)</description>
+		<year>2010</year>
+		<manufacturer>DvD Translations</manufacturer>
+		<rom name="Portopia Serial Murder Case, The T-Eng Rev. B (2010)(DvD Translations).nes" size="73744" crc="88679d11"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="portopiati" cloneof="portopiate" romof="portopiate" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Portopia Serial Murder Case, The (Hack, Italian v0.98)</description>
+		<year>2024</year>
+		<manufacturer>Wolfgare</manufacturer>
+		<rom name="Portopia Serial Murder Case, The T-Ita v0.98 (2024)(Wolfgare).nes" size="73744" crc="603731b2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="porunchan" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Porun-chan No Onigiri Daisuki (HB, v1.1)</description>

@@ -72,6 +72,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="astrododge" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Astrododge (HB)</description>
+		<year>2012</year>
+		<manufacturer>Revival Studios</manufacturer>
+		<rom name="Astrododge (2012)(Revival Studios).sg" size="32768" crc="b895942d"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bankp" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Bank Panic (Japan)</description>
 		<year>1985</year>
