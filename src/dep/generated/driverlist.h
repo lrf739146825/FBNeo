@@ -12851,6 +12851,7 @@ DRV		BurnDrvsms_mickeyuc;
 DRV		BurnDrvgg_mickeyuc;
 DRV		BurnDrvmd_mickeyuc;
 DRV		BurnDrvsnes_Mickultchall;
+DRV		BurnDrvMicon2;
 DRV		BurnSpecMicroinc;
 DRV		BurnDrvnes_mknight;
 DRV		BurnDrvnes_mknight2;
@@ -18966,6 +18967,7 @@ DRV		BurnDrvMSX_spacmazeb;
 DRV		BurnDrvMSX_spacmazea;
 DRV		BurnDrvsnes_Spacemforce;
 DRV		BurnDrvsnes_Spacemforcefr;
+DRV		BurnDrvSmiconk;
 DRV		BurnDrvSpcmission;
 DRV		BurnSpecThehardy;
 DRV		BurnDrvsg1k_spacemnt;
@@ -37451,6 +37453,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvgg_mickeyuc,		// Mickey's Ultimate Challenge (Euro, USA)
 	&BurnDrvmd_mickeyuc,		// Mickey's Ultimate Challenge (USA)
 	&BurnDrvsnes_Mickultchall,	// Mickey's Ultimate Challenge (USA)
+	&BurnDrvMicon2,				// Micon-Kit Part II
 	&BurnSpecMicroinc,			// Micro INC (48K) (HB)
 	&BurnDrvnes_mknight,		// Micro Knight (HB, v1.3)
 	&BurnDrvnes_mknight2,		// Micro Knight II (HB, v1.1)
@@ -43566,6 +43569,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_spacmazea,		// Space Maze Attack (Japan, Alt)
 	&BurnDrvsnes_Spacemforce,	// Space Megaforce (USA)
 	&BurnDrvsnes_Spacemforcefr,	// Space Megaforce - FastROM (Hack)
+	&BurnDrvSmiconk,			// Space Micon Kit
 	&BurnDrvSpcmission,			// Space Mission (SegaSA / Sonic, Spanish bootleg of Scramble)
 	&BurnSpecThehardy,			// Space Monsters meet The Hardy (128K) (HB)
 	&BurnDrvsg1k_spacemnt,		// Space Mountain (Japan, OMV)
@@ -61959,6 +61963,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gg_mickeyuc", "sms/d_sms.cpp"},
 	{ "md_mickeyuc", "megadrive/d_megadrive.cpp"},
 	{ "snes_mickultchall", "snes/d_snes.cpp"},
+	{ "micon2", "pre90s/d_miconkit.cpp"},
 	{ "spec_microinc", "spectrum/d_spectrum.cpp"},
 	{ "nes_mknight", "nes/d_nes.cpp"},
 	{ "nes_mknight2", "nes/d_nes.cpp"},
@@ -68026,6 +68031,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_spacmazea", "msx/d_msx.cpp"},
 	{ "snes_spacemforce", "snes/d_snes.cpp"},
 	{ "snes_spacemforcefr", "snes/d_snes.cpp"},
+	{ "smiconk", "pre90s/d_miconkit.cpp"},
 	{ "spcmission", "galaxian/d_galaxian.cpp"},
 	{ "spec_thehardy", "spectrum/d_spectrum.cpp"},
 	{ "sg1k_spacemnt", "sg1000/d_sg1000.cpp"},

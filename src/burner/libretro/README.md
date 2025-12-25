@@ -336,7 +336,6 @@ For the unsupported romhacks, there are 3 methods, but those romhacks are not al
 
 * Put the patched version of the romset into `SYSTEM_DIRECTORY/fbneo/patched`, this folder has special privileges allowing it to ignore crcs. Sizes and names still need to match the original romset though.
 * Optional : you could strip the patched version from any file that don't differ from the original romset.
-* Note : **The romset you must launch is still the original non-patched romset (its content will be overriden at runtime by the content of the patched one)**.
 
 #### Using IPS Patches
 
@@ -348,6 +347,8 @@ For the unsupported romhacks, there are 3 methods, but those romhacks are not al
 
 * Put all RomData files (including: driver name directory/**.dat) into the `SYSTEM_DIRECTORY/fbneo/romdata/` folder
 * RomData will become available through core options (`Quick Menu > Core Options`) afterward. To apply them, you need to launch the game, enable them in core options, then use RetroArch's "restart" action.
+
+Please note that all 3 methods still require that you launch the original non-patched romset, it will be patched/replaced at runtime.
 
 ### How can i run that unibios i bought from http://unibios.free.fr/ ?
 
