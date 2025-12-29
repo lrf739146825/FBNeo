@@ -6783,6 +6783,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="felix" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Felix the Cat (Russian)</description>
+		<year>2011</year>
+		<manufacturer>BMB</manufacturer>
+		<rom name="Felix the Cat.bin" size="1048576" crc="bf9ba3bc"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fengkuan" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Feng Kuang Tao Hua Yuan (Taiwan) (Unl)</description>
 		<year>1998</year>
@@ -7041,11 +7050,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="ffightmd" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Homebrew, Patreon release</comment>
-		<description>Final Fight MD (HB, v0.91b)</description>
+		<comment>Homebrew, Public version Christmas 2025</comment>
+		<description>Final Fight MD (HB, v0.92b)</description>
 		<year>2025</year>
 		<manufacturer>MXRetroDev - CFX</manufacturer>
-		<rom name="Final Fight MD v0.91b (2025)(MXRetroDev - CFX).bin" size="4063232" crc="a125cc7d"/>
+		<rom name="Final Fight MD v0.92b (2025)(MXRetroDev - CFX).bin" size="4194304" crc="ae245026"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

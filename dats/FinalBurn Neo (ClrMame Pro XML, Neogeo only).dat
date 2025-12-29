@@ -38315,7 +38315,7 @@
 		<description>Zetsu Xevious - Neo Geo Conversion (HB)</description>
 		<year>1982-2025</year>
 		<manufacturer>Namco - zeroco</manufacturer>
-		<rom name="420.p1" size="1048576" crc="8a1e9214"/>
+		<rom name="420.p1" size="1048576" crc="dfa5538b"/>
 		<rom name="xevious-s1.s1" merge="xevious-s1.s1" size="131072" crc="f41d121a"/>
 		<rom name="420.c1" size="1048576" crc="8759341e"/>
 		<rom name="420.c2" size="1048576" crc="f1c31214"/>

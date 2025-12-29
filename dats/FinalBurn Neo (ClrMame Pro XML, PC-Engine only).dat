@@ -16,15 +16,15 @@
 		<description>1943 Kai (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Naxat Soft</manufacturer>
-		<rom name="1943 kai (japan).pce" size="524288" crc="fde08d6d"/>
+		<rom name="1943 Kai (Japan)(1991)(Naxat Soft).pce" size="524288" crc="fde08d6d"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="21emon" sourcefile="pce/d_pce.cpp">
-		<description>21 Emon - Mezase Hotel ou!! (Japan)</description>
+		<description>21 Emon: Mezase Hotel ou!! (Japan)</description>
 		<year>1994</year>
 		<manufacturer>NEC Home Electronics</manufacturer>
-		<rom name="21 emon - mezase hotel ou!! (japan).pce" size="524288" crc="73614660"/>
+		<rom name="21 Emon - Mezase Hotel Ou!! (japan)(1994)(NEC Home Electronics).pce" size="524288" crc="73614660"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -32,7 +32,7 @@
 		<description>Adventure Island (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="adventure island (japan).pce" size="262144" crc="8e71d4f3"/>
+		<rom name="Adventure Island (Japan)(1991)(Hudson Soft).pce" size="262144" crc="8e71d4f3"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -40,7 +40,7 @@
 		<description>Aero Blasters (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
-		<rom name="aero blasters (japan).pce" size="524288" crc="25be2b81"/>
+		<rom name="Aero Blasters (Japan)(1990)(Hudson Soft).pce" size="524288" crc="25be2b81"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -48,7 +48,7 @@
 		<description>After Burner II (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="after burner ii (japan).pce" size="524288" crc="ca72a828"/>
+		<rom name="After Burner II (Japan)(1990)(NEC Avenue).pce" size="524288" crc="ca72a828"/>
 		<video type="raster" orientation="horizontal" width="1024" height="232" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -61,7 +61,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ankoku" sourcefile="pce/d_pce.cpp">
-		<description>Ankoku Densetsu (Japan)</description>
+		<description>Ankoku Densetsu ~ The Legendary Axe 2 (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Victor Interactive Software</manufacturer>
 		<rom name="Ankoku Densetsu (Japan)(1990)(Victor).pce" size="262144" crc="cacc06fb"/>
@@ -504,7 +504,7 @@
 		<description>Darius Alpha (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="darius alpha (japan).pce" size="393216" crc="b0ba689f"/>
+		<rom name="Darius Alpha (Japan)(1990)(NEC Avenue).pce" size="393216" crc="b0ba689f"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -512,12 +512,12 @@
 		<description>Darius Plus (Japan)</description>
 		<year>1990</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="darius plus (japan).pce" size="786432" crc="bebfe042"/>
+		<rom name="Darius Plus (Japan)(1990)(NEC Avenue).pce" size="786432" crc="bebfe042"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="deadmoon" sourcefile="pce/d_pce.cpp">
-		<description>Dead Moon - Tsuki Sekai no Akumu (Japan)</description>
+		<description>Dead Moon: Tsuki Sekai no Akumu (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Natsume</manufacturer>
 		<rom name="Dead Moon - Tsuki Sekai no Akumu (Japan)(1991)(Natsume).pce" size="524288" crc="56739bc7"/>
@@ -525,7 +525,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="deepblue" sourcefile="pce/d_pce.cpp">
-		<description>Deep Blue - Kaitei Shinwa (Japan)</description>
+		<description>Deep Blue: Kaitei Shinwa (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Pack-In-Video</manufacturer>
 		<rom name="Deep Blue - Kaitei Shinwa (Japan)(1989)(Pack-In-Video).pce" size="262144" crc="053a0f83"/>
@@ -533,18 +533,27 @@
 		<driver status="good"/>
 	</game>
 	<game name="twinbee" sourcefile="pce/d_pce.cpp">
-		<description>Detana!! Twinbee (Japan)</description>
+		<description>Detana!! TwinBee (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Detana!! Twinbee (Japan)(1992)(Konami).pce" size="524288" crc="5cf59d80"/>
+		<rom name="Detana!! TwinBee (Japan)(1992)(Konami).pce" size="524288" crc="5cf59d80"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="devlcrsh" sourcefile="pce/d_pce.cpp">
-		<description>Devil Crash - Naxat Pinball (Japan)</description>
+		<description>Devil Crash: Naxat Pinball (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Naxat Soft</manufacturer>
 		<rom name="Devil Crash - Naxat Pinball (Japan)(1990)(Naxat Soft).pce" size="393216" crc="4ec81a80"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="diehardte" cloneof="diehard" romof="diehard" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Die Hard (Hack, English)</description>
+		<year>2011</year>
+		<manufacturer>Spinner 8 &amp; friends</manufacturer>
+		<rom name="Die Hard T-Eng (2011)(Spinner 8 &amp; friends).pce" size="524288" crc="91be0dec"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -859,6 +868,15 @@
 		<year>1994</year>
 		<manufacturer>Human</manufacturer>
 		<rom name="formation soccer - on j. league (japan).pce" size="524288" crc="7146027c"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="necroste" cloneof="necros" romof="necros" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Fortress of Necros (Hack, English v1.1)</description>
+		<year>2025</year>
+		<manufacturer>washbear</manufacturer>
+		<rom name="Fortress of Necros T-Eng v1.1 (2025)(washbear).pce" size="524288" crc="e9138d89"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1334,7 +1352,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ldrun" sourcefile="pce/d_pce.cpp">
-		<description>Lode Runner - Lost Labyrinth (Japan)</description>
+		<description>Lode Runner: Lost Labyrinth (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Pack-In-Video</manufacturer>
 		<rom name="Lode Runner - Lost Labyrinth (Japan)(1990)(Pack-In-Video).pce" size="262144" crc="e6ee1468"/>
@@ -1546,10 +1564,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="mnstprow" sourcefile="pce/d_pce.cpp">
-		<description>Monster Pro Wres (Japan)</description>
+		<description>Monster Pro Wrestling (Japan)</description>
 		<year>1991</year>
 		<manufacturer>ASK</manufacturer>
-		<rom name="monster puroresu (japan).pce" size="524288" crc="f2e46d25"/>
+		<rom name="Monster Pro Wrestling (Japan)(1991)(ASK).pce" size="524288" crc="f2e46d25"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1557,7 +1575,7 @@
 		<description>Morita Shougi PC (Japan)</description>
 		<year>1991</year>
 		<manufacturer>NEC Avenue</manufacturer>
-		<rom name="morita shougi pc (japan).pce" size="524288" crc="2546efe0"/>
+		<rom name="Morita Shougi PC (Japan)(1991)(NEC Avenue).pce" size="524288" crc="2546efe0"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1565,7 +1583,7 @@
 		<description>Moto Roader (Japan)</description>
 		<year>1989</year>
 		<manufacturer>NCS</manufacturer>
-		<rom name="moto roader (japan).pce" size="262144" crc="428f36cd"/>
+		<rom name="Moto Roader (Japan)(1989)(NCS).pce" size="262144" crc="428f36cd"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1611,10 +1629,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="blodwolf" sourcefile="pce/d_pce.cpp">
-		<description>Narazumono Sentai Butai - Bloody Wolf (Japan)</description>
+		<description>Narazumono Sentou Butai: Bloody Wolf (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Data East</manufacturer>
-		<rom name="Narazumono Sentai Butai - Bloody Wolf (Japan)(1989)(Data East).pce" size="524288" crc="b01f70c2"/>
+		<rom name="Narazumono Sentou Butai - Bloody Wolf (Japan)(1989)(Data East).pce" size="524288" crc="b01f70c2"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2841,7 +2859,7 @@
 	</game>
 	<game name="xevioussc" cloneof="xevious" romof="xevious" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
-		<description>Xevious - Fardraut Densetsu (Hack, Simplified Chinese v1.0)</description>
+		<description>Xevious: Fardraut Densetsu (Hack, Simplified Chinese v1.0)</description>
 		<year>2025</year>
 		<manufacturer>Feiyue Wujin Ankong</manufacturer>
 		<rom name="Xevious - Fardraut Densetsu T-Chs v1.0 (2025)(Feiyue Wujin Ankong).pce" size="262144" crc="dcd579cf"/>
@@ -2849,7 +2867,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="xevious" sourcefile="pce/d_pce.cpp">
-		<description>Xevious - Fardraut Densetsu (Japan)</description>
+		<description>Xevious: Fardraut Densetsu (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Namcot</manufacturer>
 		<rom name="Xevious - Fardraut Densetsu (Japan)(1990)(Namcot).pce" size="262144" crc="f8f85eec"/>

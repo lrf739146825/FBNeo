@@ -1894,7 +1894,7 @@
 		<description>Battlot (HB)</description>
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Battlot (2021)(Inufuto).rom" size="9662" crc="4f14d982"/>
+		<rom name="Battlot (2021)(Inufuto).cas" size="9771" crc="f29c8e55"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -3595,7 +3595,7 @@
 		<description>Cavit (HB)</description>
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Cavit (2021)(Inufuto).rom" size="9791" crc="32ad4281"/>
+		<rom name="Cavit (2021)(Inufuto).cas" size="9892" crc="fc10fe98"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -7383,10 +7383,10 @@
 	</game>
 	<game name="genesis" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Genesis: dawn of a new day (HB)</description>
+		<description>Genesis: Dawn of a New Day (HB)</description>
 		<year>2012</year>
 		<manufacturer>Retroworks</manufacturer>
-		<rom name="Genesis dawn of a new day (2012)(Retroworks).rom" size="131072" crc="391e6f9a"/>
+		<rom name="Genesis - Dawn of a New Day (2012)(Retroworks).rom" size="131072" crc="391e6f9a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -7896,10 +7896,22 @@
 	</game>
 	<game name="grielex" cloneof="griel" romof="griel" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Griel's Quest for the Sangraal - Extended Version (HB)</description>
+		<description>Griel's Quest for the Sangraal: Extended Version (HB)</description>
 		<year>2005</year>
 		<manufacturer>Karoshi Corporation</manufacturer>
 		<rom name="Griel's Quest for the Sangraal EX (2005)(Karoshi Corp.).rom" size="32768" crc="c9427fe2"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gssoccer" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>GS Soccer (HB, v1.3)</description>
+		<year>2025</year>
+		<manufacturer>Fausto Pracek</manufacturer>
+		<rom name="GS Soccer v1.3 (2025)(Fausto Pracek).rom" size="16384" crc="80706f87"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8013,7 +8025,7 @@
 		<description>Guntus (HB)</description>
 		<year>2022</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Guntus (2022)(Inufuto).rom" size="11733" crc="54722d30"/>
+		<rom name="Guntus (2022)(Inufuto).cas" size="11755" crc="38f7d711"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8328,10 +8340,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="helitank" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Helitank (Japan)</description>
+		<description>Heli-tank (Japan)</description>
 		<year>1984</year>
 		<manufacturer>ASCII Corp.</manufacturer>
-		<rom name="Helitank (Japan)(1984)(ASCII).rom" size="16384" crc="cd63cd50"/>
+		<rom name="Heli-tank (Japan)(1984)(ASCII).rom" size="16384" crc="cd63cd50"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8339,7 +8351,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hercules" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Hercules - Slayer of the Damned (Euro)</description>
+		<description>Hercules: Slayer of the Damned (Euro)</description>
 		<year>1988</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
 		<rom name="Hercules - Slayer of the Damned (Euro, GB)(1988)(Gremlin Graphics)[BLOAD'CAS-',R].cas" size="138666" crc="2b3fc6f5"/>
@@ -8476,7 +8488,7 @@
 		<description>Hopman (HB)</description>
 		<year>2023</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Hopman (2023)(Inufuto).rom" size="9803" crc="d262daa4"/>
+		<rom name="Hopman (2023)(Inufuto).cas" size="9825" crc="a2b74631"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -8910,7 +8922,7 @@
 		<description>Impetus (HB)</description>
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Impetus (2021)(Inufuto).rom" size="16352" crc="6f7e32ca"/>
+		<rom name="Impetus (2021)(Inufuto).cas" size="16374" crc="038bc2db"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -12804,7 +12816,7 @@
 		<description>Neuras (HB)</description>
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Neuras (2021)(Inufuto).rom" size="8760" crc="27b5df15"/>
+		<rom name="Neuras (2021)(Inufuto).cas" size="8803" crc="68760271"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15088,6 +15100,18 @@
 		<year>1986</year>
 		<manufacturer>Eaglesoft</manufacturer>
 		<rom name="Robot Wars (Euro, NL)(1986)(Eaglesoft)[RUN'CAS-'].cas" size="50306" crc="08f5270d"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="robotik" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, DSK2ROM conversion</comment>
+		<description>Robotik (HB)</description>
+		<year>2025</year>
+		<manufacturer>GameCast Entertainment</manufacturer>
+		<rom name="Robotik (2025)(GameCast).rom" size="753664" crc="633ddad5"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -19489,7 +19513,7 @@
 		<description>Yewdow (HB)</description>
 		<year>2023</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Yewdow (2023)(Inufuto).rom" size="8927" crc="c99ba689"/>
+		<rom name="Yewdow (2023)(Inufuto).cas" size="8919" crc="370b2706"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>

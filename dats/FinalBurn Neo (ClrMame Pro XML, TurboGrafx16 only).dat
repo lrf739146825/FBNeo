@@ -207,7 +207,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="devlcrsh" sourcefile="pce/d_pce.cpp">
-		<description>Devil's Crush - Naxat Pinball (USA)</description>
+		<description>Devil's Crush: Naxat Pinball (USA)</description>
 		<year>1990</year>
 		<manufacturer>NEC</manufacturer>
 		<rom name="Devil's Crush - Naxat Pinball (USA)(1990)(NEC).pce" size="393216" crc="157b4492"/>
