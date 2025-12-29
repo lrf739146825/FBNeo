@@ -4383,28 +4383,28 @@
 	</game>
 	<game name="pstarje" cloneof="pstar" romof="pstar" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
-		<description>Phantasy Star (Japan) (Hack, English v2.5)</description>
-		<year>2024</year>
+		<description>Phantasy Star (Japan) (Hack, English v2.6.1)</description>
+		<year>2025</year>
 		<manufacturer>SMS Power!</manufacturer>
-		<rom name="Phantasy Star T-Eng v2.5 (Japan)(2024)(SMS Power!).sms" size="524288" crc="98d2b825"/>
+		<rom name="Phantasy Star T-Eng v2.6.1 (Japan)(2025)(SMS Power!).sms" size="524288" crc="2cd659d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pstarjp" cloneof="pstar" romof="pstar" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
-		<description>Phantasy Star (Japan) (Hack, Portuguese v2.5)</description>
-		<year>2024</year>
+		<description>Phantasy Star (Japan) (Hack, Portuguese v2.6.1)</description>
+		<year>2025</year>
 		<manufacturer>SMS Power!</manufacturer>
-		<rom name="Phantasy Star T-Por v2.5 (Japan)(2024)(SMS Power!).sms" size="524288" crc="0c8a42b3"/>
+		<rom name="Phantasy Star T-Por v2.6.1 (Japan)(2025)(SMS Power!).sms" size="524288" crc="fe0d37e2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pstarjs" cloneof="pstar" romof="pstar" sourcefile="sms/d_sms.cpp">
 		<comment>Hack, YM2413 FM sound chip supported</comment>
-		<description>Phantasy Star (Japan) (Hack, Spanish v2.5)</description>
-		<year>2024</year>
+		<description>Phantasy Star (Japan) (Hack, Spanish v2.6.1)</description>
+		<year>2025</year>
 		<manufacturer>SMS Power!</manufacturer>
-		<rom name="Phantasy Star T-Spa v2.5 (Japan)(2024)(SMS Power!).sms" size="524288" crc="14cdc932"/>
+		<rom name="Phantasy Star T-Spa v2.6.1 (Japan)(2025)(SMS Power!).sms" size="524288" crc="04d4e21b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

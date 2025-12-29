@@ -26411,6 +26411,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="soystompjr" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Soy Stomper Junior (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>The Death Squad</manufacturer>
+		<rom name="Soy Stomper Junior 48K-AY (2025)(The Death Squad).tap" size="33526" crc="82954604"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spacebros" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Space Bros (128K) (HB, v1.2)</description>
@@ -27077,6 +27087,17 @@
 		<year>1988</year>
 		<manufacturer>Mastertronic Added Dimension</manufacturer>
 		<rom name="Star Wars Droids 128K (1988)(Mastertronic Added Dimension).tap" size="40659" crc="6e6acfe4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="starball" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Starball (48K-128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Wizbit Games</manufacturer>
+		<rom name="Starball 48K-128K (2025)(Wizbit Games).tap" size="42390" crc="241b841e"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -28745,22 +28766,43 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="throbhead" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="throbchead128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Throbbing Headache (48K) (HB)</description>
+		<description>Throbbin' Christmas Headaches (128K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>KTB Productions</manufacturer>
-		<rom name="Throbbing Headache 48K (2025)(KTB Productions).tap" size="20404" crc="51f1295d"/>
+		<rom name="Throbbin' Christmas Headaches 128K (2025)(KTB Productions).tap" size="36258" crc="f91fb57e"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="throbchead48" cloneof="throbchead128" romof="throbchead128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Throbbin' Christmas Headaches (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>KTB Productions</manufacturer>
+		<rom name="Throbbin' Christmas Headaches 48K (2025)(KTB Productions).tap" size="31986" crc="c2e3c54a"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="throbhead" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Throbbin' Headache (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>KTB Productions</manufacturer>
+		<rom name="Throbbin' Headache 48K (2025)(KTB Productions).tap" size="20404" crc="51f1295d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="throbheadx128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Throbbing Headache DX (128K) (HB)</description>
+		<description>Throbbin' Headache DX (128K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>KTB Productions</manufacturer>
-		<rom name="Throbbing Headache DX 128K (2025)(KTB Productions).tap" size="34352" crc="422ec716"/>
+		<rom name="Throbbin' Headache DX 128K (2025)(KTB Productions).tap" size="34352" crc="422ec716"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -28768,10 +28810,10 @@
 	</game>
 	<game name="throbheadx48" cloneof="throbheadx128" romof="throbheadx128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Throbbing Headache DX (48K) (HB)</description>
+		<description>Throbbin' Headache DX (48K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>KTB Productions</manufacturer>
-		<rom name="Throbbing Headache DX 48K (2025)(KTB Productions).tap" size="38601" crc="c6d51a67"/>
+		<rom name="Throbbin' Headache DX 48K (2025)(KTB Productions).tap" size="38601" crc="c6d51a67"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
