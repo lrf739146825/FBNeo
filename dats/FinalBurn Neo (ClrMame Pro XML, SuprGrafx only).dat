@@ -13,7 +13,7 @@
 		<clrmamepro forcenodump="ignore"/>
 	</header>
 	<game name="1941" sourcefile="pce/d_pce.cpp">
-		<description>1941 - Counter Attack (Japan) (SGX)</description>
+		<description>1941: Counter Attack (Japan) (SGX)</description>
 		<year>1991</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="1941 - Counter Attack (Japan)(1991)(Hudson Soft).pce" size="1048576" crc="8c4588e2"/>
@@ -63,10 +63,10 @@
 	</game>
 	<game name="daimakaii" cloneof="daimakai" romof="daimakai" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
-		<description>Daimakaimura - Improvement Hack (Hack, SGX)</description>
+		<description>Daimakaimura - Improvement Hack (SGX) (Hack)</description>
 		<year>2024</year>
 		<manufacturer>Upsilandre</manufacturer>
-		<rom name="Daimakaimura Improvement Hack (2024)(Upsilandre).pce" size="1048576" crc="86c295a0"/>
+		<rom name="Daimakaimura - Improvement Hack (2024)(Upsilandre).pce" size="1048576" crc="86c295a0"/>
 		<video type="raster" orientation="horizontal" width="352" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
