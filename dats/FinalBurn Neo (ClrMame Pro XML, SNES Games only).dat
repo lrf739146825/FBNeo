@@ -2290,6 +2290,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bof2tp" cloneof="bof2" romof="bof2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Breath of Fire II (Hack, Portuguese v1.01)</description>
+		<year>2025</year>
+		<manufacturer>Dindo</manufacturer>
+		<rom name="Breath of Fire II PT-BR v1.01 (2025)(Dindo).sfc" size="4194304" crc="464a870e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bof2ts" cloneof="bof2" romof="bof2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Breath of Fire II (Hack, Spanish v1.2)</description>
@@ -2876,6 +2885,15 @@
 		<year>2014</year>
 		<manufacturer>Dynamic-Designs</manufacturer>
 		<rom name="Chaos Seed T-Eng v1.02 (2014)(Dynamic-Designs).sfc" size="3145728" crc="988a1fdf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chaosseedtp" cloneof="chaosseedte" romof="chaosseedte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Chaos Seed: Cronicas do Feng Shui (Hack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>Dindo</manufacturer>
+		<rom name="Chaos Seed - Cronicas do Feng Shui PT-BR (2025)(Dindo).sfc" size="3145728" crc="357e7441"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10134,6 +10152,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="marveloustp" cloneof="marvelouste" romof="marvelouste" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, SA-1 enhancement CPU</comment>
+		<description>Marvelous: Outra Ilha do Tesouro (Hack, Portuguese)</description>
+		<year>2025</year>
+		<manufacturer>Dindo</manufacturer>
+		<rom name="Marvelous - Outra Ilha do Tesouro PT-BR (2025)(Dindo).sfc" size="4194304" crc="d2417812"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="msfranken" sourcefile="snes/d_snes.cpp">
 		<description>Mary Shelley's Frankenstein (USA)</description>
 		<year>1994</year>
@@ -14097,6 +14124,15 @@
 		<year>2013</year>
 		<manufacturer>Traducciones Magno</manufacturer>
 		<rom name="Seiken Densetsu 3 T-Spa (2013)(Traducciones Magno).sfc" size="4194304" crc="11b87dea"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="seikdens3tp" cloneof="seikdens3te" romof="seikdens3te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Seiken Densetsu 3 ~ Trials of Mana (Hack, Portuguese v1.03)</description>
+		<year>2024</year>
+		<manufacturer>Dindo</manufacturer>
+		<rom name="Seiken Densetsu 3 - Trials of Mana PT-BR v1.03 (2024)(Dindo).sfc" size="4194304" crc="0c61a7bf"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
