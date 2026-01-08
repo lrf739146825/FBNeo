@@ -8115,6 +8115,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="galagap" sourcefile="nes/d_nes.cpp">
+		<comment>Not related to Namco version at all.</comment>
+		<description>Galaga (Atari Prototype)</description>
+		<year>1983</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Galaga (1983)(HAL Labs for Atari prototype).nes" size="24592" crc="32ec7074"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="galagaj" cloneof="galaga" romof="galaga" sourcefile="nes/d_nes.cpp">
 		<description>Galaga (Japan)</description>
 		<year>1985</year>
@@ -19160,10 +19169,10 @@
 	</game>
 	<game name="sonic" cloneof="somari" romof="somari" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Sonic the Hedgehog (Hack)</description>
-		<year>2020</year>
+		<description>Sonic the Hedgehog (Hack, v1.7)</description>
+		<year>2025</year>
 		<manufacturer>Terwilf</manufacturer>
-		<rom name="Sonic the Hedgehog (Hack)(2020)(Terwilf).nes" size="786448" crc="b9ebd682"/>
+		<rom name="Sonic the Hedgehog v1.7 (Hack)(2025)(Terwilf).nes" size="786448" crc="9ea1ffbe"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
