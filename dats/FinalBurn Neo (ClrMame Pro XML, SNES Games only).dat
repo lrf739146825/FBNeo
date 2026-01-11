@@ -15956,10 +15956,10 @@
 	</game>
 	<game name="superbughunters" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
-		<description>Super Bug Hunters (HB, v1.1)</description>
+		<description>Super Bug Hunters (HB, v1.2)</description>
 		<year>2025</year>
 		<manufacturer>Maxwel Olinda</manufacturer>
-		<rom name="Super Bug Hunters v1.1 (2025)(Maxwel Olinda).sfc" size="262144" crc="f9305a4f"/>
+		<rom name="Super Bug Hunters v1.2 (2025)(Maxwel Olinda).sfc" size="262144" crc="23386931"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16364,12 +16364,21 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supergngp" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Prototype</comment>
+		<description>Super Ghouls'n Ghosts (USA, Prototype)</description>
+		<year>1991</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Super Ghouls'n Ghosts (U, Proto)(1991)(Capcom).sfc" size="2097152" crc="f1073bb3"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supergngr" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Super Ghouls'n Ghosts Restoration (Hack)</description>
-		<year>2023</year>
+		<year>2023-25</year>
 		<manufacturer>SCD</manufacturer>
-		<rom name="Super Ghouls'n Ghosts Restoration Hack (2023)(SCD).sfc" size="2097152" crc="acaed88a"/>
+		<rom name="Super Ghouls'n Ghosts Restoration Hack (2023-25)(SCD).sfc" size="2097152" crc="d983a882"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -814,6 +814,7 @@ DRV		BurnDrvAligatorun;
 DRV		BurnDrvAligator;
 DRV		BurnDrvnes_almika;
 DRV		BurnDrvnes_almosthero;
+DRV		BurnDrvsms_alocos;
 DRV		BurnDrvMSX_alphablaster;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvAlphaho;			// No sound
@@ -13897,6 +13898,7 @@ DRV		BurnDrvgg_nbajam;
 DRV		BurnDrvsnes_Nbajamtee;
 DRV		BurnDrvsnes_Nbajamte;
 DRV		BurnDrvNbajamre;
+DRV		BurnDrvNbajamse502;
 DRV		BurnDrvNbajamse;
 DRV		BurnDrvNbajamten;
 DRV		BurnDrvNbajamtep2;
@@ -17348,7 +17350,9 @@ DRV		BurnDrvRygar2;
 DRV		BurnDrvRygar3;
 DRV		BurnDrvRygarb;
 DRV		BurnDrvnes_rygar;
+DRV		BurnDrvsms_rygarat;
 DRV		BurnSpecRygar2020;
+DRV		BurnDrvsms_rygarct;
 DRV		BurnSpecrygar;
 DRV		BurnDrvRyujina;
 DRV		BurnDrvRyujin;
@@ -20314,6 +20318,7 @@ DRV		BurnDrvsnes_Supergenjin;
 DRV		BurnDrvsnes_Supergenjin2;
 DRV		BurnDrvsnes_Supergnge;
 DRV		BurnDrvsnes_Supergng;
+DRV		BurnDrvsnes_Supergngp;
 DRV		BurnDrvsnes_Supergngr;
 DRV		BurnDrvsprglobp;
 DRV		BurnDrvsprglbpg;
@@ -25442,6 +25447,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAligator,			// Alligator Hunt (World, protected, checksum 2B34128B)
 	&BurnDrvnes_almika,			// Almika The Star Rider Densetsu Gaiden (HB)
 	&BurnDrvnes_almosthero,		// Almost Hero (HB)
+	&BurnDrvsms_alocos,			// Alocos (Taiwan) (Unl)
 	&BurnDrvMSX_alphablaster,	// Alpha Blaster (Euro)
 #if defined FBNEO_DEBUG
 	&BurnDrvAlphaho,			// Alpha Fighter / Head On [No sound]
@@ -38525,7 +38531,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Nbajamtee,		// NBA Jam - Tournament Edition (Euro)
 	&BurnDrvsnes_Nbajamte,		// NBA Jam - Tournament Edition (USA)
 	&BurnDrvNbajamre,			// NBA Jam Rewind (Hack, v1.1)
-	&BurnDrvNbajamse,			// NBA JAM Special Edition (rev 5.02 4/26/25)
+	&BurnDrvNbajamse502,		// NBA JAM Special Edition (T-Unit, rev 5.02 4/26/25)
+	&BurnDrvNbajamse,			// NBA Jam Special Edition (Wolf-Unit, rev 5.05 12/23/25)
 	&BurnDrvNbajamten,			// NBA Jam Tournament Edition (Nani Edition, rev 5.2 8/11/95, prototype)
 	&BurnDrvNbajamtep2,			// NBA Jam Tournament Edition (proto 2.00 12/17/93)
 	&BurnDrvNbajamte1,			// NBA Jam Tournament Edition (rev 1.00 1/17/94)
@@ -41976,7 +41983,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvRygar3,				// Rygar (US set 3 Old Version)
 	&BurnDrvRygarb,				// Rygar (US, bootleg)
 	&BurnDrvnes_rygar,			// Rygar (USA, Rev. A)
+	&BurnDrvsms_rygarat,		// Rygar - Arcade Title (Hack)
 	&BurnSpecRygar2020,			// Rygar - Colour Enhancement (48K) (Hack)
+	&BurnDrvsms_rygarct,		// Rygar - Custom Title (Hack)
 	&BurnSpecrygar,				// Rygar - Legendary Warrior (48K)
 	&BurnDrvRyujina,			// Ryu Jin (Japan, ET910000A PCB)
 	&BurnDrvRyujin,				// Ryu Jin (Japan, ET910000B PCB)
@@ -44809,7 +44818,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSbubsm,				// Super Bubble Bobble (Sun Mixing, Mega Drive clone hardware)
 	&BurnDrvmd_suprbubl,		// Super Bubble Bobble MD (Taiwan) (Unl)
 	&BurnDrvsbp,				// Super Bubble Pop
-	&BurnDrvsnes_Superbughunters,// Super Bug Hunters (HB, v1.1)
+	&BurnDrvsnes_Superbughunters,// Super Bug Hunters (HB, v1.2)
 	&BurnDrvSupbtimej,			// Super Burger Time (Japan)
 	&BurnDrvSupbtime,			// Super Burger Time (World, set 1)
 	&BurnDrvSupbtimea,			// Super Burger Time (World, set 2)
@@ -44942,6 +44951,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Supergenjin2,	// Super Genjin 2 (Japan)
 	&BurnDrvsnes_Supergnge,		// Super Ghouls'n Ghosts (Euro)
 	&BurnDrvsnes_Supergng,		// Super Ghouls'n Ghosts (USA)
+	&BurnDrvsnes_Supergngp,		// Super Ghouls'n Ghosts (USA, Prototype)
 	&BurnDrvsnes_Supergngr,		// Super Ghouls'n Ghosts Restoration (Hack)
 	&BurnDrvsprglobp,			// Super Glob (Pac-Man hardware)
 	&BurnDrvsprglbpg,			// Super Glob (Pac-Man hardware, German bootleg)
@@ -48561,7 +48571,7 @@ static struct BurnDriver* pDriver[] = {
 #if defined FBNEO_DEBUG
 	&BurnDrvWpksoc,				// World PK Soccer [no comment, NOT WORKING]
 #endif
-	&BurnDrvWrldrc32,			// World Racer 32Kb (HB)
+	&BurnDrvWrldrc32,			// World Racer 32Kb (HB, 251226)
 	&BurnDrvWrally2d,			// World Rally 2: Twin Racing (version 09-06, checksum 50A2)
 	&BurnDrvWrally2c,			// World Rally 2: Twin Racing (version 09-06, checksum 7BE1)
 	&BurnDrvWrally2,			// World Rally 2: Twin Racing (version 20-07, checksum B1B8)
@@ -50070,6 +50080,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "aligator", "pst90s/d_gaelco2.cpp"},
 	{ "nes_almika", "nes/d_nes.cpp"},
 	{ "nes_almosthero", "nes/d_nes.cpp"},
+	{ "sms_alocos", "sms/d_sms.cpp"},
 	{ "msx_alphablaster", "msx/d_msx.cpp"},
 	{ "alphaho", "pre90s/d_vicdual.cpp"},
 	{ "nes_alphamission", "nes/d_nes.cpp"},
@@ -63051,7 +63062,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_nbajamtee", "snes/d_snes.cpp"},
 	{ "snes_nbajamte", "snes/d_snes.cpp"},
 	{ "nbajamre", "midway/d_tunit.cpp"},
-	{ "nbajamse", "midway/d_tunit.cpp"},
+	{ "nbajamse502", "midway/d_tunit.cpp"},
+	{ "nbajamse", "midway/d_wunit.cpp"},
 	{ "nbajamten", "midway/d_tunit.cpp"},
 	{ "nbajamtep2", "midway/d_tunit.cpp"},
 	{ "nbajamte1", "midway/d_tunit.cpp"},
@@ -66480,7 +66492,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "rygar3", "pre90s/d_tecmo.cpp"},
 	{ "rygarb", "pre90s/d_tecmo.cpp"},
 	{ "nes_rygar", "nes/d_nes.cpp"},
+	{ "sms_rygarat", "sms/d_sms.cpp"},
 	{ "spec_rygar2020", "spectrum/d_spectrum.cpp"},
+	{ "sms_rygarct", "sms/d_sms.cpp"},
 	{ "spec_rygar", "spectrum/d_spectrum.cpp"},
 	{ "ryujina", "taito/d_taitob.cpp"},
 	{ "ryujin", "taito/d_taitob.cpp"},
@@ -69410,6 +69424,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_supergenjin2", "snes/d_snes.cpp"},
 	{ "snes_supergnge", "snes/d_snes.cpp"},
 	{ "snes_supergng", "snes/d_snes.cpp"},
+	{ "snes_supergngp", "snes/d_snes.cpp"},
 	{ "snes_supergngr", "snes/d_snes.cpp"},
 	{ "sprglobp", "pre90s/d_pacman.cpp"},
 	{ "sprglbpg", "pre90s/d_pacman.cpp"},
