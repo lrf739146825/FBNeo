@@ -37994,14 +37994,14 @@
 	</game>
 	<game name="wrldrc32" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Homebrew</comment>
-		<description>World Racer 32Kb (HB)</description>
+		<description>World Racer 32Kb (HB, 251226)</description>
 		<year>2025</year>
 		<manufacturer>Blastar</manufacturer>
-		<rom name="wrldrc32-p1.p1" size="1048576" crc="d9f8921c"/>
-		<rom name="wrldrc32-s1.s1" size="131072" crc="312508af"/>
-		<rom name="wrldrc32-c1.c1" size="524288" crc="ec05e878"/>
-		<rom name="wrldrc32-c2.c2" size="524288" crc="ff4755b9"/>
-		<rom name="wrldrc32-m1.m1" size="65536" crc="6178075b"/>
+		<rom name="wrldrc32-p1.p1" size="1048576" crc="3350fa1b"/>
+		<rom name="wrldrc32-s1.s1" size="131072" crc="2290a5b3"/>
+		<rom name="wrldrc32-c1.c1" size="524288" crc="51858e96"/>
+		<rom name="wrldrc32-c2.c2" size="524288" crc="43dc168f"/>
+		<rom name="wrldrc32-m1.m1" size="65536" crc="f10683ac"/>
 		<rom name="wrldrc32-v1.v1" size="524288" crc="a4763f5d"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>

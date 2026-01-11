@@ -227,6 +227,8 @@ Here is a list of samples currently in use :
 | buckrog      |                                                                        |
 | carnival     |                                                                        |
 | cheekyms     | Not from MAME                                                          |
+| circus       | Not from MAME                                                          |
+| crash        | Not from MAME                                                          |
 | congo        |                                                                        |
 | depthch      |                                                                        |
 | digger       | Not from MAME                                                          |
@@ -240,6 +242,8 @@ Here is a list of samples currently in use :
 | gridlee      |                                                                        |
 | heiankyo     | Not from MAME                                                          |
 | invaders     |                                                                        |
+| invds        |                                                                        |
+| invinco      |                                                                        |
 | journey      |                                                                        |
 | mario        |                                                                        |
 | mmagic       |                                                                        |
@@ -256,6 +260,7 @@ Here is a list of samples currently in use :
 | seawolf      |                                                                        |
 | sfz3mix      | Not from MAME, optional, replace OG music by HQ music, no dipsw.       |
 | sharkatt     |                                                                        |
+| sot4w        | Not from MAME, megadrive                                               |
 | spacefb      |                                                                        |
 | spacfury     |                                                                        |
 | stinger      | Not from MAME                                                          |
@@ -322,7 +327,8 @@ If present, the line `Verify the following romsets : <romset> <parent> <bios>` g
 
 Otherwise, a `Romset is unknown` message means the romset couldn't be found by its filename in our database.
 
-Both problems result from not reading the [arcade documentation](https://docs.libretro.com/guides/arcade-getting-started/#step-3-use-the-correct-version-romsets-for-that-emulator). Exceptionally there might be false positives due to your files being unreadable for some reason (file corruption during transfer, file permission, damaged disk drive, ...). This is a rabbit hole and something you should only concern yourself after using clrmamepro to verify your romsets.
+Both problems result from not reading the [arcade documentation](https://docs.libretro.com/guides/arcade-getting-started/#step-3-use-the-correct-version-romsets-for-that-emulator).
+Exceptionally there might be false positives due to your files being unreadable for some reason (file corruption during transfer, file permission, damaged disk drive, [retroarch regression](https://github.com/libretro/RetroArch/issues/18582), ...). This is usually a rabbit hole and something you should only concern yourself after using clrmamepro to verify your romsets.
 
 Rarely you could get a "Failed initializing driver" message, this is something you should report [here](https://github.com/finalburnneo/FBNeo/issues)
 
@@ -428,12 +434,15 @@ Additionally :
 * If you are playing on a vertical screen, you'll want to use the `Vertical Mode` core option to rotate the display for your needs, it should also be possible to rotate display from `Settings > Video > Output > Video Rotation` but that method might handle the aspect ratio incorrectly.
 * If you are using a bezel pack, make sure it's compatible with FBNeo (apparently, some were written specifically to work with MAME's internal rotation) and to follow its official instructions. In some case it seems enabling `Settings > On-Screen Display > On-Screen Overlay > Auto-Scale Overlay` (`input_overlay_auto_scale = "true"` in `retroarch.cfg`) can help.
 
-### Why is the music high-pitched, too fast and/or different from upstream ?
+### Why is the music high-pitched, too fast and/or different from what i think it should be ?
 
-For better or worse, it was decided to use different default audio settings from standalone in the libretro port. 
+The first question you should be asking yourself is "what am i comparing this to ?", emulation is meant to be faithful to real hardware (here the original arcade board), not to some console port, remaster, other emulator, or ost.
+
+If you are comparing this to FBNeo standalone, you must be warned that the libretro port is using different default audio settings. 
 By default standalone has 44100 samplerate and both interpolations off, and that's what you should set in core options if you want the same audio output.
 
-You might also want to make sure you are running the game at the correct speed, most crt games don't run at 60Hz and if you want the proper refresh rate to be emulated you'll need to make sure `Force 60Hz` isn't enabled in core options and `Settings > Video > Synchronization > Sync to Exact Content Framerate` is enabled (`vrr_runloop_enable = "true"` in `retroarch.cfg`). Please note that your screen might not handle well the correct refresh rate, in which case you'll have to make a choice between smoothness and correct refresh rate.
+Last but not least, you might also want to make sure you are running the game at the correct speed, most crt games don't run at 60Hz and if you want the proper refresh rate to be emulated you'll need to make sure `Force 60Hz` isn't enabled in core options and `Settings > Video > Synchronization > Sync to Exact Content Framerate` is enabled (`vrr_runloop_enable = "true"` in `retroarch.cfg`). 
+Please note that it'll likely cause frame duping if your hardware is not compatible with VRR (Variable Refresh Rate), in which case you'll have to make a choice between animation smoothness and correct refresh rate.
 
 ### Why do i get a black screen and/or can't i change bios in neogeo games ?
 
