@@ -35490,6 +35490,25 @@ struct BurnDriver BurnDrvsnes_Supergnge = {
 	512, 448, 4, 3
 };
 
+// Super Ghouls'n Ghosts (USA, Prototype)
+
+static struct BurnRomInfo snes_SupergngpRomDesc[] = {
+	{ "Super Ghouls'n Ghosts (U, Proto)(1991)(Capcom).sfc", 2097152, 0xf1073bb3, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_Supergngp)
+STD_ROM_FN(snes_Supergngp)
+
+struct BurnDriver BurnDrvsnes_Supergngp = {
+	"snes_supergngp", "snes_supergng", NULL, NULL, "1991",
+	"Super Ghouls'n Ghosts (USA, Prototype)\0", NULL, "Capcom", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_PROTOTYPE, 1, HARDWARE_SNES, GBF_RUNGUN | GBF_PLATFORM, 0,
+	SNESGetZipName, snes_SupergngpRomInfo, snes_SupergngpRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Super Goal! (Euro)
 
 static struct BurnRomInfo snes_SupergoalRomDesc[] = {
@@ -46146,10 +46165,10 @@ struct BurnDriver BurnDrvsnes_Supcooked = {
 	512, 448, 4, 3
 };
 
-// Super Bug Hunters (HB, v1.1)
-
+// Super Bug Hunters (HB, v1.2)
+// https://maxwelolinda.itch.io/super-bug-hunters
 static struct BurnRomInfo snes_SuperbughuntersRomDesc[] = {
-	{ "Super Bug Hunters v1.1 (2025)(Maxwel Olinda).sfc", 262144, 0xf9305a4f, BRF_ESS | BRF_PRG },
+	{ "Super Bug Hunters v1.2 (2025)(Maxwel Olinda).sfc", 262144, 0x23386931, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Superbughunters)
@@ -46157,7 +46176,7 @@ STD_ROM_FN(snes_Superbughunters)
 
 struct BurnDriver BurnDrvsnes_Superbughunters = {
 	"snes_superbughunters", NULL, NULL, NULL, "2025",
-	"Super Bug Hunters (HB, v1.1)\0", NULL, "Maxwel Olinda", "Nintendo",
+	"Super Bug Hunters (HB, v1.2)\0", NULL, "Maxwel Olinda", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_SNES, GBF_HORSHOOT, 0,
 	SNESGetZipName, snes_SuperbughuntersRomInfo, snes_SuperbughuntersRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -46187,14 +46206,14 @@ struct BurnDriver BurnDrvsnes_Supercastlevania4uh = {
 // Super Ghouls'n Ghosts Restoration (Hack)
 // https://www.romhacking.net/hacks/3473/
 static struct BurnRomInfo snes_SupergngrRomDesc[] = {
-	{ "Super Ghouls'n Ghosts Restoration Hack (2023)(SCD).sfc", 2097152, 0xacaed88a, BRF_ESS | BRF_PRG },
+	{ "Super Ghouls'n Ghosts Restoration Hack (2023-25)(SCD).sfc", 2097152, 0xd983a882, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Supergngr)
 STD_ROM_FN(snes_Supergngr)
 
 struct BurnDriver BurnDrvsnes_Supergngr = {
-	"snes_supergngr", "snes_supergng", NULL, NULL, "2023",
+	"snes_supergngr", "snes_supergng", NULL, NULL, "2023-25",
 	"Super Ghouls'n Ghosts Restoration (Hack)\0", NULL, "SCD", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_PLATFORM | GBF_RUNGUN, 0,
