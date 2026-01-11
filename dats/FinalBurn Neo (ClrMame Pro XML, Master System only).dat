@@ -436,6 +436,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="alocos" cloneof="argosnj" romof="argosnj" sourcefile="sms/d_sms.cpp">
+		<description>Alocos (Taiwan) (Unl)</description>
+		<year>19xx</year>
+		<manufacturer>Hung Tao Hsin</manufacturer>
+		<rom name="Alocos (Taiwan) (Unl)(19xx)(Hung Tao Hsin).sms" size="131072" crc="5e4b454e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="altbeast" sourcefile="sms/d_sms.cpp">
 		<description>Altered Beast (Euro, USA, Brazil)</description>
 		<year>1988</year>
@@ -4871,6 +4879,24 @@
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Ruptus (2021)(Inufuto).sms" size="17461" crc="f4e44d46"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rygarat" cloneof="argosnj" romof="argosnj" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Rygar - Arcade Title (Hack)</description>
+		<year>2017</year>
+		<manufacturer>Psyklax</manufacturer>
+		<rom name="Rygar - Arcade Title (2017)(Psyklax).sms" size="147456" crc="3bd1bd68"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rygarct" cloneof="argosnj" romof="argosnj" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Rygar - Custom Title (Hack)</description>
+		<year>2013</year>
+		<manufacturer>Kevinmos3</manufacturer>
+		<rom name="Rygar - Custom Title (2013)(Kevinmos3).sms" size="131072" crc="6f197c21"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
