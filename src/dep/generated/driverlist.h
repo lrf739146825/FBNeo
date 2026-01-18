@@ -5651,6 +5651,8 @@ DRV		BurnDrvDorodon;
 DRV		BurnDrvDorodon2;
 DRV		BurnDrvmd_doroppu;
 DRV		BurnDrvsnes_Dgbattlete;
+DRV		BurnDrvsnes_Dgbattletea;
+DRV		BurnDrvsnes_Dgbattlets;
 DRV		BurnDrvsnes_Dgbattlej;
 DRV		BurnDrvMSX_dotattack;
 DRV		BurnDrvsnes_Dottiedreds;
@@ -20276,6 +20278,7 @@ DRV		BurnDrvsnes_Superdkong2;
 DRV		BurnDrvsnes_Superdkong3;
 DRV		BurnDrvMSX_superdoors;
 DRV		BurnDrvsnes_Superdoubledragone;
+DRV		BurnDrvsnes_Superdoubledragonep;
 DRV		BurnDrvsnes_Superdoubledragon;
 DRV		BurnDrvCsdtenis;
 DRV		BurnSpecSuperdragonslayer;
@@ -21135,6 +21138,8 @@ DRV		BurnDrvTapperg;
 DRV		BurnDrvTapper;
 DRV		BurnDrvTapperb;
 DRV		BurnDrvRbtapper;
+DRV		BurnDrvStapper1;
+DRV		BurnDrvStapper;
 DRV		BurnDrvSutapper;
 DRV		BurnDrvcv_tapper;
 DRV		BurnSpecTardigrade;
@@ -30283,7 +30288,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDorodon,			// Dorodon (set 1)
 	&BurnDrvDorodon2,			// Dorodon (set 2)
 	&BurnDrvmd_doroppu,			// Doroppu (HB)
-	&BurnDrvsnes_Dgbattlete,	// Dossun! Ganseki Battle (Hack, English)
+	&BurnDrvsnes_Dgbattlete,	// Dossun! Ganseki Battle (Hack, English v1.1)
+	&BurnDrvsnes_Dgbattletea,	// Dossun! Ganseki Battle (Hack, English, Alt)
+	&BurnDrvsnes_Dgbattlets,	// Dossun! Ganseki Battle (Hack, Spanish v1.1)
 	&BurnDrvsnes_Dgbattlej,		// Dossun! Ganseki Battle (Japan)
 	&BurnDrvMSX_dotattack,		// Dot Attack (HB, v2)
 	&BurnDrvsnes_Dottiedreds,	// Dottie dreads nought (HB, v1.1)
@@ -44909,6 +44916,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Superdkong3,	// Super Donkey Kong 3: Nazo no Kremis-tou (Japan, Rev. 1)
 	&BurnDrvMSX_superdoors,		// Super Doors (Japan)
 	&BurnDrvsnes_Superdoubledragone,// Super Double Dragon (Euro)
+	&BurnDrvsnes_Superdoubledragonep,// Super Double Dragon (Euro, Prototype)
 	&BurnDrvsnes_Superdoubledragon,// Super Double Dragon (USA)
 	&BurnDrvCsdtenis,			// Super Doubles Tennis (DECO Cassette) (Japan)
 	&BurnSpecSuperdragonslayer,	// Super Dragon Slayer (128K)
@@ -45768,6 +45776,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTapper,				// Tapper (Budweiser, 1/27/84)
 	&BurnDrvTapperb,			// Tapper (Budweiser, 12/9/83)
 	&BurnDrvRbtapper,			// Tapper (Root Beer)
+	&BurnDrvStapper1,			// Tapper (Simpsons Hack ver.81)
+	&BurnDrvStapper,			// Tapper (Simpsons Hack)
 	&BurnDrvSutapper,			// Tapper (Suntory)
 	&BurnDrvcv_tapper,			// Tapper (USA)
 	&BurnSpecTardigrade,		// Tardigrade (48K) (HB)
@@ -47844,7 +47854,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvViostormub,			// Violent Storm (ver UAB)
 	&BurnDrvViostormubbl,		// Violent Storm (ver UAB, bootleg)
 	&BurnDrvViostormu,			// Violent Storm (ver UAC)
-	&BurnDrvViolentv,			// Violent Vengeance: The Universe Hero (Beta 1.4)
+	&BurnDrvViolentv,			// Violent Vengeance: The Universe Hero (Beta 2.5)
 	&BurnDrvsnes_Hamelinte,		// Violinist of Hameln, The (Hack, English)
 	&BurnDrvsnes_Hamelintde,	// Violinist von Hameln, Der (Hack, German)
 	&BurnDrvsnes_Hamelints,		// Violinista de Hameln, El (Hack, Spanish v1.1)
@@ -54877,6 +54887,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "dorodon2", "pre90s/d_ladybug.cpp"},
 	{ "md_doroppu", "megadrive/d_megadrive.cpp"},
 	{ "snes_dgbattlete", "snes/d_snes.cpp"},
+	{ "snes_dgbattletea", "snes/d_snes.cpp"},
+	{ "snes_dgbattlets", "snes/d_snes.cpp"},
 	{ "snes_dgbattlej", "snes/d_snes.cpp"},
 	{ "msx_dotattack", "msx/d_msx.cpp"},
 	{ "snes_dottiedreds", "snes/d_snes.cpp"},
@@ -69382,6 +69394,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_superdkong3", "snes/d_snes.cpp"},
 	{ "msx_superdoors", "msx/d_msx.cpp"},
 	{ "snes_superdoubledragone", "snes/d_snes.cpp"},
+	{ "snes_superdoubledragonep", "snes/d_snes.cpp"},
 	{ "snes_superdoubledragon", "snes/d_snes.cpp"},
 	{ "csdtenis", "dataeast/d_decocass.cpp"},
 	{ "spec_superdragonslayer", "spectrum/d_spectrum.cpp"},
@@ -70233,6 +70246,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tapper", "pre90s/d_mcr.cpp"},
 	{ "tapperb", "pre90s/d_mcr.cpp"},
 	{ "rbtapper", "pre90s/d_mcr.cpp"},
+	{ "stapper1", "pre90s/d_mcr.cpp"},
+	{ "stapper", "pre90s/d_mcr.cpp"},
 	{ "sutapper", "pre90s/d_mcr.cpp"},
 	{ "cv_tapper", "coleco/d_coleco.cpp"},
 	{ "spec_tardigrade", "spectrum/d_spectrum.cpp"},
