@@ -36910,17 +36910,17 @@
 	</game>
 	<game name="violentv" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Homebrew</comment>
-		<description>Violent Vengeance: The Universe Hero (Beta 1.4)</description>
+		<description>Violent Vengeance: The Universe Hero (Beta 2.5)</description>
 		<year>2025</year>
 		<manufacturer>OzzyOuzo</manufacturer>
-		<rom name="violentv-p1.bin" size="1048576" crc="fc6852b8"/>
-		<rom name="violentv-p2.bin" size="8388608" crc="a810b0ab"/>
+		<rom name="violentv-p1.bin" size="1048576" crc="9836c86f"/>
+		<rom name="violentv-p2.bin" size="8388608" crc="66ed28cb"/>
 		<rom name="violentv-s1.bin" size="131072" crc="f7302142"/>
-		<rom name="violentv-c1.bin" size="16777216" crc="a5b714a5"/>
-		<rom name="violentv-c2.bin" size="16777216" crc="9c9b726c"/>
-		<rom name="violentv-m1.bin" size="65536" crc="988f0366"/>
-		<rom name="violentv-v1.bin" size="8388608" crc="f8def124"/>
-		<rom name="violentv-v2.bin" size="8388608" crc="357babe6"/>
+		<rom name="violentv-c1.bin" size="16777216" crc="261d65ae"/>
+		<rom name="violentv-c2.bin" size="16777216" crc="500965ca"/>
+		<rom name="violentv-m1.bin" size="65536" crc="a78e1e3f"/>
+		<rom name="violentv-v1.bin" size="8388608" crc="065669cc"/>
+		<rom name="violentv-v2.bin" size="8388608" crc="1e9d342d"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>

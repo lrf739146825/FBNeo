@@ -82,27 +82,27 @@ Refer to a [clrmamepro tutorial](https://docs.libretro.com/guides/arcade-getting
 
 ## Features
 
-| Feature           | Supported |
-|-------------------|-----------|
-| Saves             | ✔         |
-| States            | ✔         |
-| Rewind            | ✔         |
-| Run-Ahead         | ✔         |
-| Preemptive Frames | ✔         |
-| Netplay           | ✔         |
-| RetroAchievements | ✔         |
-| RetroArch Cheats  | ✔         |
-| Native Cheats     | ✔         |
-| Controllers       | ✔         |
-| Multi-Mouse       | ✔         |
-| Rumble            | ✕         |
-| Sensors           | ✕         |
-| Camera            | ✕         |
-| Location          | ✕         |
-| Subsystem         | ✔         |
-| IPS Patch         | ✔         |
-| RomData           | ✔         |
-| Multi-language    | ✔         |
+| Feature                                                           | Supported |
+|-------------------------------------------------------------------|-----------|
+| Saves                                                             | ✔         |
+| States                                                            | ✔         |
+| Rewind                                                            | ✔         |
+| Run-Ahead                                                         | ✔         |
+| Preemptive Frames                                                 | ✔         |
+| Netplay                                                           | ✔         |
+| [Memory Monitoring (achievements)](../guides/memorymonitoring.md) | ✔         |
+| RetroArch Cheats                                                  | ✔         |
+| Native Cheats                                                     | ✔         |
+| Controllers                                                       | ✔         |
+| Multi-Mouse                                                       | ✔         |
+| Rumble                                                            | ✕         |
+| Sensors                                                           | ✕         |
+| Camera                                                            | ✕         |
+| Location                                                          | ✕         |
+| Subsystem                                                         | ✔         |
+| IPS Patch                                                         | ✔         |
+| RomData                                                           | ✔         |
+| Multi-language                                                    | ✔         |
 
 ## Mapping
 
@@ -227,8 +227,8 @@ Here is a list of samples currently in use :
 | buckrog      |                                                                        |
 | carnival     |                                                                        |
 | cheekyms     | Not from MAME                                                          |
-| circus       | Not from MAME                                                          |
-| crash        | Not from MAME                                                          |
+| circus       |                                                                        |
+| crash        |                                                                        |
 | congo        |                                                                        |
 | depthch      |                                                                        |
 | digger       | Not from MAME                                                          |
@@ -242,7 +242,7 @@ Here is a list of samples currently in use :
 | gridlee      |                                                                        |
 | heiankyo     | Not from MAME                                                          |
 | invaders     |                                                                        |
-| invds        |                                                                        |
+| invds        | Not from MAME                                                          |
 | invinco      |                                                                        |
 | journey      |                                                                        |
 | mario        |                                                                        |
