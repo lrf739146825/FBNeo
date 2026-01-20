@@ -38043,7 +38043,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Mk3ne,			// Mortal Kombat 3 New Edition (Hack)
 	&BurnDrvnes_mortalkombat4h,	// Mortal Kombat 4 (Hack, UMK3)
 	&BurnDrvnes_mortalkombat4,	// Mortal Kombat 4 (Unl)
-	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0a)
+	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0d)
 	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v2.2)
 	&BurnDrvsms_mk2,			// Mortal Kombat II (Euro, Brazil)
 	&BurnDrvsnes_Mkiie,			// Mortal Kombat II (Euro, Rev. 1)
