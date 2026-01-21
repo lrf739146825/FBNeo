@@ -12445,10 +12445,10 @@
 	</game>
 	<game name="mkae" cloneof="mk" romof="mk" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mortal Kombat Arcade Edition (Hack, v1.0a)</description>
-		<year>2021</year>
-		<manufacturer>Linkuei</manufacturer>
-		<rom name="Mortal Kombat Arcade Edition v1.0a (2021)(Linkuei).bin" size="4194304" crc="aa8fb151"/>
+		<description>Mortal Kombat Arcade Edition (Hack, v1.0d)</description>
+		<year>2026</year>
+		<manufacturer>Master Linkuei</manufacturer>
+		<rom name="Mortal Kombat Arcade Edition v1.0d (2026)(Master Linkuei).bin" size="4194304" crc="8688c9b2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

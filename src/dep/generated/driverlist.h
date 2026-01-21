@@ -14811,6 +14811,7 @@ DRV		BurnDrvPacnchmp;
 DRV		BurnSpecpacman;
 DRV		BurnDrvPacmanbl;
 DRV		BurnDrvPacmanbla;
+DRV		BurnDrvPacmanblb;
 DRV		BurnDrvPacmanblc;
 DRV		BurnDrvCHF_pacman;
 DRV		BurnDrvCHF_pacmanv2;
@@ -38042,7 +38043,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Mk3ne,			// Mortal Kombat 3 New Edition (Hack)
 	&BurnDrvnes_mortalkombat4h,	// Mortal Kombat 4 (Hack, UMK3)
 	&BurnDrvnes_mortalkombat4,	// Mortal Kombat 4 (Unl)
-	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0a)
+	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0d)
 	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v2.2)
 	&BurnDrvsms_mk2,			// Mortal Kombat II (Euro, Brazil)
 	&BurnDrvsnes_Mkiie,			// Mortal Kombat II (Euro, Rev. 1)
@@ -39449,6 +39450,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecpacman,			// Pac-Man (Atarisoft) (48K)
 	&BurnDrvPacmanbl,			// Pac-Man (bootleg on Galaxian hardware, set 1)
 	&BurnDrvPacmanbla,			// Pac-Man (bootleg on Galaxian hardware, set 2)
+	&BurnDrvPacmanblb,			// Pac-Man (bootleg on Moon Alien 'AL-10A1' hardware)
 	&BurnDrvPacmanblc,			// Pac-Man (Calfesa, Spanish bootleg on Galaxian hardware)
 	&BurnDrvCHF_pacman,			// Pac-Man (HB)
 	&BurnDrvCHF_pacmanv2,		// Pac-Man (HB, v2)
@@ -63981,6 +63983,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_pacman", "spectrum/d_spectrum.cpp"},
 	{ "pacmanbl", "galaxian/d_galaxian.cpp"},
 	{ "pacmanbla", "galaxian/d_galaxian.cpp"},
+	{ "pacmanblb", "galaxian/d_galaxian.cpp"},
 	{ "pacmanblc", "galaxian/d_galaxian.cpp"},
 	{ "chf_pacman", "channelf/d_channelf.cpp"},
 	{ "chf_pacmanv2", "channelf/d_channelf.cpp"},
