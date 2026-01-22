@@ -2208,6 +2208,9 @@ DRV		BurnDrvsnes_Slrmoonfightsj;
 DRV		BurnDrvsnes_Slrmoonanstoryj;
 DRV		BurnDrvmd_bssf2gqc;
 DRV		BurnDrvmd_bssf2gq;
+DRV		BurnSpecBit101en;
+DRV		BurnSpecBit101pt;
+DRV		BurnSpecBit101es;
 DRV		BurnDrvsms_bitlogic;
 DRV		BurnDrvMSX_bitlogicfv;
 DRV		BurnDrvMSX_bitlogic;
@@ -10955,6 +10958,8 @@ DRV		BurnDrvMSX_koedoli;
 DRV		BurnDrvngpc_koikoi;
 DRV		BurnDrvKoikois2;
 DRV		BurnDrvRockragej;
+DRV		BurnSpecKojizes;
+DRV		BurnSpecKojizen;
 DRV		BurnDrvnes_kokoadventure;
 DRV		BurnDrvEto;
 DRV		BurnDrvEtoa;
@@ -17357,6 +17362,7 @@ DRV		BurnDrvsms_rygarat;
 DRV		BurnSpecRygar2020;
 DRV		BurnDrvsms_rygarct;
 DRV		BurnSpecrygar;
+DRV		BurnSpecKojizit;
 DRV		BurnDrvRyujina;
 DRV		BurnDrvRyujin;
 DRV		BurnDrvRyukyud;
@@ -23623,6 +23629,10 @@ DRV		BurnDrvCpsWillowuo;
 DRV		BurnDrvnes_willow;
 DRV		BurnDrvCpsWillowu;
 DRV		BurnDrvCpsWillow;
+DRV		BurnSpecWillyimp1en;
+DRV		BurnSpecWillyimp1fr;
+DRV		BurnSpecWillyimp2en;
+DRV		BurnSpecWillyimp2fr;
 DRV		BurnSpecWitm;
 DRV		BurnSpecWwasp;
 DRV		BurnSpecWwasp2;
@@ -26847,6 +26857,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Slrmoonanstoryj,// Bishoujo Senshi Sailor Moon: Another Story (Japan)
 	&BurnDrvmd_bssf2gqc,		// Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9C Censored)
 	&BurnDrvmd_bssf2gq,			// Bishoujo Super Street Fighter II: Glamor Queen (Hack, v2.9C)
+	&BurnSpecBit101en,			// BIT 101 saves Christmas (English) (128K) (HB)
+	&BurnSpecBit101pt,			// BIT 101 saves Christmas (Portuguese) (128K) (HB)
+	&BurnSpecBit101es,			// BIT 101 saves Christmas (Spanish) (128K) (HB)
 	&BurnDrvsms_bitlogic,		// BitLogic a Cyberpunk Arcade Adventure (HB)
 	&BurnDrvMSX_bitlogicfv,		// BitLogic a Cyberpunk Arcade Adventure (HB, Final Version)
 	&BurnDrvMSX_bitlogic,		// BitLogic a Cyberpunk Arcade Adventure (HB, MSXdev'15 ed.)
@@ -26875,7 +26888,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_blckonyx,		// Black Onyx, The (Japan)
 	&BurnDrvsg1k_blckonyx,		// Black Onyx, The (Japan)
 	&BurnDrvBlkpnthr,			// Black Panther
-	&BurnSpecBlacksea,			// Black Sea - Treasure Hunters (48K-128K) (HB)
+	&BurnSpecBlacksea,			// Black Sea: Treasure Hunters (48K-128K) (HB)
 	&BurnDrvMSX_blacksea,		// Black Sea: Treasure Hunters (HB)
 	&BurnSpecblackstar,			// Black Star (48K) (HB)
 	&BurnSpecblktiger,			// Black Tiger (128K)
@@ -35594,6 +35607,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvngpc_koikoi,		// Koi Koi Mahjong (Japan)
 	&BurnDrvKoikois2,			// Koi Koi Shimasho 2 - Super Real Hanafuda (Japan)
 	&BurnDrvRockragej,			// Koi no Hotrock (Japan)
+	&BurnSpecKojizes,			// Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)
+	&BurnSpecKojizen,			// Koji to the rescue of Superalloy Z (English) (128K) (HB)
 	&BurnDrvnes_kokoadventure,	// Koko Adventure (Korea)
 	&BurnDrvEto,				// Kokontouzai Eto Monogatari (Japan)
 	&BurnDrvEtoa,				// Kokontouzai Eto Monogatari (Japan, prototype?)
@@ -41996,6 +42011,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecRygar2020,			// Rygar - Colour Enhancement (48K) (Hack)
 	&BurnDrvsms_rygarct,		// Rygar - Custom Title (Hack)
 	&BurnSpecrygar,				// Rygar - Legendary Warrior (48K)
+	&BurnSpecKojizit,			// Ryo in soccorso della Superlega Z (Italian) (128K) (HB)
 	&BurnDrvRyujina,			// Ryu Jin (Japan, ET910000A PCB)
 	&BurnDrvRyujin,				// Ryu Jin (Japan, ET910000B PCB)
 	&BurnDrvRyukyud,			// RyuKyu (Japan) (bootleg of FD1094 317-5023 set)
@@ -48262,6 +48278,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_willow,			// Willow (USA)
 	&BurnDrvCpsWillowu,			// Willow (USA)
 	&BurnDrvCpsWillow,			// Willow (World)
+	&BurnSpecWillyimp1en,		// Willy in the Islands of Mystery - Part 1: Exploration (English) (128K) (HB)
+	&BurnSpecWillyimp1fr,		// Willy in the Islands of Mystery - Part 1: Exploration (French) (128K) (HB)
+	&BurnSpecWillyimp2en,		// Willy in the Islands of Mystery - Part 2: The Temple (English) (128K) (HB)
+	&BurnSpecWillyimp2fr,		// Willy in the Islands of Mystery - Part 2: The Temple (French) (128K) (HB)
 	&BurnSpecWitm,				// WiLLY iN ThE MiRRoRVeRSE (48K) (HB)
 	&BurnSpecWwasp,				// Willy The Wasp (48K-128K) (HB)
 	&BurnSpecWwasp2,			// Willy The Wasp 2 (128K) (HB)
@@ -51476,6 +51496,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_slrmoonanstoryj", "snes/d_snes.cpp"},
 	{ "md_bssf2gqc", "megadrive/d_megadrive.cpp"},
 	{ "md_bssf2gq", "megadrive/d_megadrive.cpp"},
+	{ "spec_bit101en", "spectrum/d_spectrum.cpp"},
+	{ "spec_bit101pt", "spectrum/d_spectrum.cpp"},
+	{ "spec_bit101es", "spectrum/d_spectrum.cpp"},
 	{ "sms_bitlogic", "sms/d_sms.cpp"},
 	{ "msx_bitlogicfv", "msx/d_msx.cpp"},
 	{ "msx_bitlogic", "msx/d_msx.cpp"},
@@ -60155,6 +60178,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ngp_koikoi", "pst90s/d_ngp.cpp"},
 	{ "koikois2", "pst90s/d_ssv.cpp"},
 	{ "rockragej", "konami/d_rockrage.cpp"},
+	{ "spec_kojizes", "spectrum/d_spectrum.cpp"},
+	{ "spec_kojizen", "spectrum/d_spectrum.cpp"},
 	{ "nes_kokoadventure", "nes/d_nes.cpp"},
 	{ "eto", "taito/d_asuka.cpp"},
 	{ "etoa", "taito/d_asuka.cpp"},
@@ -66511,6 +66536,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_rygar2020", "spectrum/d_spectrum.cpp"},
 	{ "sms_rygarct", "sms/d_sms.cpp"},
 	{ "spec_rygar", "spectrum/d_spectrum.cpp"},
+	{ "spec_kojizit", "spectrum/d_spectrum.cpp"},
 	{ "ryujina", "taito/d_taitob.cpp"},
 	{ "ryujin", "taito/d_taitob.cpp"},
 	{ "ryukyud", "sega/d_sys16b.cpp"},
@@ -72703,6 +72729,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_willow", "nes/d_nes.cpp"},
 	{ "willowu", "capcom/d_cps1.cpp"},
 	{ "willow", "capcom/d_cps1.cpp"},
+	{ "spec_willyimp1en", "spectrum/d_spectrum.cpp"},
+	{ "spec_willyimp1fr", "spectrum/d_spectrum.cpp"},
+	{ "spec_willyimp2en", "spectrum/d_spectrum.cpp"},
+	{ "spec_willyimp2fr", "spectrum/d_spectrum.cpp"},
 	{ "spec_witm", "spectrum/d_spectrum.cpp"},
 	{ "spec_wwasp", "spectrum/d_spectrum.cpp"},
 	{ "spec_wwasp2", "spectrum/d_spectrum.cpp"},
