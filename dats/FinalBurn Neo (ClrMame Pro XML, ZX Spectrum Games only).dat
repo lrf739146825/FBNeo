@@ -3371,6 +3371,39 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bit101en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>BIT 101 saves Christmas (English) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Isaias Diaz</manufacturer>
+		<rom name="BIT 101 saves Christmas EN 128K (2026)(Isaias Diaz).tap" size="58261" crc="e5189aff"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bit101pt" cloneof="bit101en" romof="bit101en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>BIT 101 saves Christmas (Portuguese) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Isaias Diaz</manufacturer>
+		<rom name="BIT 101 saves Christmas PT 128K (2026)(Isaias Diaz).tap" size="58347" crc="179aadb9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bit101es" cloneof="bit101en" romof="bit101en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>BIT 101 saves Christmas (Spanish) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Isaias Diaz</manufacturer>
+		<rom name="BIT 101 saves Christmas ES 128K (2026)(Isaias Diaz).tap" size="58264" crc="c8e18c62"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bnw" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Use SPACE and ENTER to set options</comment>
 		<description>Black &amp; White (128K) (HB, v1.1)</description>
@@ -3405,7 +3438,7 @@
 	</game>
 	<game name="blacksea" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Black Sea - Treasure Hunters (48K-128K) (HB)</description>
+		<description>Black Sea: Treasure Hunters (48K-128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Mananuk</manufacturer>
 		<rom name="Black Sea - Treasure Hunters 48K-128K (2021)(Mananuk).tap" size="45089" crc="00ad4735"/>
@@ -15898,6 +15931,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kojizes" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Koji al rescate de la Superaleacion Z ES 128K (2025)(Clanbyte).tap" size="72751" crc="9dfed9f1"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kojizen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Koji to the rescue of Superalloy Z (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Koji to the rescue of Superalloy Z EN 128K (2025)(Clanbyte).tap" size="72571" crc="ee3f26ad"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="komando2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Komando II (Slovak) (48K)</description>
 		<year>1992</year>
@@ -24363,6 +24418,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kojizit" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ryo in soccorso della Superlega Z (Italian) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Ryo in soccorso della Superlega Z IT 128K (2025)(Clanbyte).tap" size="72683" crc="e6626e6c"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sascombatsim" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>S.A.S. Combat Simulator (48K)</description>
 		<year>1988</year>
@@ -25058,7 +25124,6 @@
 		<driver status="good"/>
 	</game>
 	<game name="scumball" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
 		<description>Scumball (48K)</description>
 		<year>1987</year>
 		<manufacturer>Mastertronic</manufacturer>
@@ -30819,6 +30884,50 @@
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Wild West Seymour 48K (1992)(Codemasters).z80" size="46251" crc="bf324d91"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="willyimp1en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Willy in the Islands of Mystery - Part 1: Exploration (English) (128K) (HB)</description>
+		<year>2007</year>
+		<manufacturer>Herve Ast</manufacturer>
+		<rom name="Willy in the Islands of Mystery - Part 1 - Exploration EN 128K (2007)(Herve Ast).tap" size="118898" crc="9c43df25"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="willyimp1fr" cloneof="willyimp1en" romof="willyimp1en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Willy in the Islands of Mystery - Part 1: Exploration (French) (128K) (HB)</description>
+		<year>2007</year>
+		<manufacturer>Herve Ast</manufacturer>
+		<rom name="Willy in the Islands of Mystery - Part 1 - Exploration FR 128K (2007)(Herve Ast).tap" size="118898" crc="c5de41e9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="willyimp2en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Willy in the Islands of Mystery - Part 2: The Temple (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Herve Ast &amp; Daniel Gromann</manufacturer>
+		<rom name="Willy in the Islands of Mystery - Part 2 - The Temple EN 128K (2025)(Herve Ast, Daniel Gromann).tap" size="125825" crc="a9f3d888"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="willyimp2fr" cloneof="willyimp2en" romof="willyimp2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Willy in the Islands of Mystery - Part 2: The Temple (French) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Herve Ast &amp; Daniel Gromann</manufacturer>
+		<rom name="Willy in the Islands of Mystery - Part 2 - The Temple FR 128K (2025)(Herve Ast, Daniel Gromann).tap" size="125825" crc="3698218a"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
