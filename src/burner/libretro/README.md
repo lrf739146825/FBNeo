@@ -488,6 +488,12 @@ NVRAM/EEPROM are saved in the `SAVEFILES_DIRECTORY/fbneo` folder, and you can ge
 
 You should **NEVER** use that feature with this core, it already converts analog to digital and digital to analog internally. Exceptionally it might not do that conversion because each of those controls are already doing their own thing.
 
+### Why is my old savestate not working anymore after updating my core ?
+
+Savestates are tied to how a game is emulated, and updating a core might significantly change how that game is emulated, invalidating older savestates in the process.
+This does apply to any core, and likely to be more frequent for multi-system emulators actively developed like FBNeo. 
+You should be wary of updating your cores if this is a major concern for you.
+
 ### Where is SYSTEM_DIRECTORY ?
 
 Open your `retroarch.cfg` file and look for `system_directory`, or check `Settings > Directory > System/BIOS`.
