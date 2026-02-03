@@ -1034,19 +1034,19 @@
 	</game>
 	<game name="amazorundiej" cloneof="amazorundie" romof="amazorundie" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Amazons Running Diet (HB, Japan)</description>
+		<description>Amazon's Running Diet (HB, Japan)</description>
 		<year>2017</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Amazons Running Diet (Japan).nes" size="524304" crc="1eced454"/>
+		<rom name="Amazon's Running Diet (Japan)(2017)(Ancient).nes" size="524304" crc="1eced454"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="amazorundie" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Amazons Running Diet (HB, USA)</description>
+		<description>Amazon's Running Diet (HB, USA)</description>
 		<year>2017</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Amazons Running Diet (USA).nes" size="524304" crc="4db6acdd"/>
+		<rom name="Amazon's Running Diet (USA)(2017)(Ancient).nes" size="524304" crc="4db6acdd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1376,7 +1376,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="asojpn" cloneof="alphamission" romof="alphamission" sourcefile="nes/d_nes.cpp">
-		<description>ASO - Armored Scrum Object (Japan)</description>
+		<description>ASO: Armored Scrum Object (Japan)</description>
 		<year>1986</year>
 		<manufacturer>SNK</manufacturer>
 		<rom name="ASO - Armored Scrum Object (Japan)(1986)(SNK).nes" size="65552" crc="142a80b3"/>
@@ -2042,21 +2042,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="battlkid" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
-		<description>Battle Kid - Fortress of Peril (HB, Japan)</description>
-		<year>2010</year>
-		<manufacturer>Sivak Games</manufacturer>
-		<rom name="Battle Kid - Fortress of Peril (Japan)(2010)(Sivak Games).nes" size="524304" crc="c7f3a581"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="battlkid2" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Battle Kid 2 - Mountain of Torment (HB, USA)</description>
+		<description>Battle Kid 2: Mountain of Torment (HB, USA)</description>
 		<year>2012</year>
 		<manufacturer>Sivak Games</manufacturer>
 		<rom name="Battle Kid 2 - Mountain of Torment (USA)(2012)(Sivak Games).nes" size="524304" crc="4916dc6d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="battlkid" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Battle Kid: Fortress of Peril (HB, Japan)</description>
+		<year>2010</year>
+		<manufacturer>Sivak Games</manufacturer>
+		<rom name="Battle Kid - Fortress of Peril (Japan)(2010)(Sivak Games).nes" size="524304" crc="c7f3a581"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13369,6 +13369,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="megakaijubb" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mega Kaiju Boom Ball (HB, v1.1)</description>
+		<year>2025</year>
+		<manufacturer>Orebody Inc.</manufacturer>
+		<rom name="Mega Kaiju Boom Ball v1.1 (2025)(Orebody Inc.).nes" size="524304" crc="00181827"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="megamanc" cloneof="megaman" romof="megaman" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Mega Man (Hack, Spanish)</description>
@@ -15530,6 +15539,14 @@
 		<year>2024</year>
 		<manufacturer>RetroSouls</manufacturer>
 		<rom name="Old Towers v1.1 (2024)(RetroSouls).nes" size="262160" crc="d9b8e753"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="olytatakai" cloneof="battloly" romof="battloly" sourcefile="nes/d_nes.cpp">
+		<description>Olympus no Tatakai (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Imagineer, Infinity</manufacturer>
+		<rom name="Olympus no Tatakai (Japan)(1988)(Imagineer, Infinity).nes" size="131088" crc="d115f85e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

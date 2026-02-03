@@ -5,6 +5,7 @@ BURN_BLACKLIST += $(ADSP2100_CPU_DIR)/2100ops.c \
 	$(H6280_CPU_DIR)/tblh6280.c \
 	$(HD6309_CPU_DIR)/6309tbl.c \
 	$(HD6309_CPU_DIR)/6309ops.c \
+	$(HMCS40_CPU_DIR)/hmcs40op.cpp \
 	$(I386_CPU_DIR)/i386dasm.c \
 	$(I386_CPU_DIR)/i386op16.c \
 	$(I386_CPU_DIR)/i386op32.c \

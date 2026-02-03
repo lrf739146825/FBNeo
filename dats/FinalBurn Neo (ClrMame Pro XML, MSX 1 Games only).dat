@@ -2463,8 +2463,8 @@
 	<game name="bombmank1" cloneof="bombman" romof="bombman" sourcefile="msx/d_msx.cpp">
 		<description>Bomber Man (Korea)</description>
 		<year>1986</year>
-		<manufacturer>Korea Soft Bank</manufacturer>
-		<rom name="Bomber Man (Korea)(1986)(Korea Soft Bank).rom" size="16384" crc="3df1f56f"/>
+		<manufacturer>Korea SoftBank</manufacturer>
+		<rom name="Bomber Man (Korea)(1986)(Korea SoftBank).rom" size="16384" crc="3df1f56f"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -2474,8 +2474,8 @@
 	<game name="bombmank2" cloneof="bombman" romof="bombman" sourcefile="msx/d_msx.cpp">
 		<description>Bomber Man (Korea, Alt)</description>
 		<year>1986</year>
-		<manufacturer>Korea Soft Bank</manufacturer>
-		<rom name="Bomber Man (Korea, Alt)(1986)(Korea Soft Bank).rom" size="8192" crc="c9a2c37e"/>
+		<manufacturer>Korea SoftBank</manufacturer>
+		<rom name="Bomber Man (Korea, Alt)(1986)(Korea SoftBank).rom" size="8192" crc="c9a2c37e"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -3850,10 +3850,10 @@
 	</game>
 	<game name="chimneyman" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew, DSK2ROM conversion</comment>
-		<description>ChimneyMan (HB, v1.5)</description>
+		<description>Chimney Man (HB, v1.5)</description>
 		<year>2024</year>
 		<manufacturer>GameCast Entertainment</manufacturer>
-		<rom name="ChimneyMan v1.5 (2024)(GameCast).rom" size="753664" crc="3a36ef6a"/>
+		<rom name="Chimney Man v1.5 (2024)(GameCast).rom" size="753664" crc="3a36ef6a"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -9955,8 +9955,8 @@
 	<game name="koedoli" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Koedoli (Korea)</description>
 		<year>1988</year>
-		<manufacturer>Aproman</manufacturer>
-		<rom name="Koedoli (Korea)(1988)(Aproman).rom" size="32768" crc="cb345bcc"/>
+		<manufacturer>Mickey Soft</manufacturer>
+		<rom name="Koedoli (Korea)(1988)(Mickey Soft).rom" size="32768" crc="cb345bcc"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -11137,10 +11137,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="gabalin" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Mashou no Yakata - Gabalin (Japan)</description>
+		<description>Mashou no Yakata Gabalin (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Mashou no Yakata - Gabalin (Japan)(1987)(Pony Canyon).rom" size="65536" crc="d34d74f7"/>
+		<rom name="Mashou no Yakata Gabalin (Japan)(1987)(Pony Canyon).rom" size="65536" crc="d34d74f7"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -11148,10 +11148,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="gabalina" cloneof="gabalin" romof="gabalin" sourcefile="msx/d_msx.cpp">
-		<description>Mashou no Yakata - Gabalin (Japan, Alt)</description>
+		<description>Mashou no Yakata Gabalin (Japan, Alt)</description>
 		<year>1987</year>
 		<manufacturer>Pony Canyon</manufacturer>
-		<rom name="Mashou no Yakata - Gabalin (Japan, Alt)(1987)(Pony Canyon).rom" size="65536" crc="6ef086eb"/>
+		<rom name="Mashou no Yakata Gabalin (Japan, Alt)(1987)(Pony Canyon).rom" size="65536" crc="6ef086eb"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -11160,7 +11160,7 @@
 	</game>
 	<game name="gabalinen" cloneof="gabalin" romof="gabalin" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
-		<description>Mashou no Yakata - Gabalin ~ Evil Mansion - Goblin (Hack, English)</description>
+		<description>Mashou no Yakata Gabalin ~ Evil Mansion - Goblin (Hack, English)</description>
 		<year>2008</year>
 		<manufacturer>hap, Zan</manufacturer>
 		<rom name="Mashou no Yakata - Gabalin T-Eng (2008)(hap, Zan).rom" size="65536" crc="cb766c4a"/>
@@ -11187,6 +11187,18 @@
 		<year>1988</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
 		<rom name="Mask III - Venom Strikes Back (Euro, GB)(1988)(Gremlin Graphics)[BLOAD'CAS-',R].cas" size="69362" crc="c6774b56"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mastermind" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Master Mind (HB)</description>
+		<year>2026</year>
+		<manufacturer>Y.R. Sova</manufacturer>
+		<rom name="Master Mind (2026)(Y.R. Sova).rom" size="32768" crc="82e05cff"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -11287,7 +11299,7 @@
 		<comment>Homebrew</comment>
 		<description>Mecha-8 (HB)</description>
 		<year>2012</year>
-		<manufacturer>Oscar Toledo G.</manufacturer>
+		<manufacturer>Oscar Toledo Gutierrez</manufacturer>
 		<rom name="Mecha 8 (2012)(Oscar Toledo Gutierrez).rom" size="32768" crc="c60e346e"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -11299,7 +11311,7 @@
 		<comment>Homebrew</comment>
 		<description>Mecha-8 EX (HB)</description>
 		<year>2012-13</year>
-		<manufacturer>Oscar Toledo G.</manufacturer>
+		<manufacturer>Oscar Toledo Gutierrez</manufacturer>
 		<rom name="Mecha 8 EX (2013)(Oscar Toledo Gutierrez).rom" size="65536" crc="b722cb45"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -11311,7 +11323,7 @@
 		<comment>Homebrew</comment>
 		<description>Mecha-9 (HB)</description>
 		<year>2015</year>
-		<manufacturer>Oscar Toledo G.</manufacturer>
+		<manufacturer>Oscar Toledo Gutierrez</manufacturer>
 		<rom name="Mecha 9 (2015)(Oscar Toledo Gutierrez).rom" size="131072" crc="a29176e3"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -14395,7 +14407,7 @@
 		<comment>Homebrew</comment>
 		<description>Princess Quest (HB)</description>
 		<year>2012</year>
-		<manufacturer>Oscar Toledo G.</manufacturer>
+		<manufacturer>Oscar Toledo Gutierrez</manufacturer>
 		<rom name="Princess Quest (2012)(Oscar Toledo G.).rom" size="65536" crc="aa31ac36"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
@@ -15771,10 +15783,10 @@
 	</game>
 	<game name="shadswitch" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Shadow Switcher (HB, v1.0)</description>
+		<description>Shadow Switcher (HB)</description>
 		<year>2022</year>
 		<manufacturer>Robosoft</manufacturer>
-		<rom name="Shadow Switcher v1.0 (2022)(Robosoft).rom" size="32768" crc="43075381"/>
+		<rom name="Shadow Switcher (2022)(Robosoft).rom" size="32768" crc="43075381"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15804,11 +15816,36 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="shift" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Shift (HB)</description>
+		<year>2026</year>
+		<manufacturer>Haplo</manufacturer>
+		<rom name="Shift (2026)(Haplo).rom" size="32768" crc="9f559331"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sinbad" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Shindobaddo Nanatsu no Bouken ~ Seven Adventures of Sindbad, The (Japan)</description>
+		<comment>Seven Adventures of Sindbad, The</comment>
+		<description>Shindobaddo Nanatsu no Bouken (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Casio</manufacturer>
 		<rom name="Shindobaddo Nanatsu no Bouken (Japan)(1986)(Casio).rom" size="16384" crc="8273fd0e"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shiper" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Shiper (HB)</description>
+		<year>2026</year>
+		<manufacturer>GameCast Entertainment</manufacturer>
+		<rom name="Shiper (2026)(GameCast).rom" size="32768" crc="e3717928"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -19839,7 +19876,7 @@
 		<comment>Homebrew</comment>
 		<description>Zombie Near (HB)</description>
 		<year>2011</year>
-		<manufacturer>Oscar Toledo G.</manufacturer>
+		<manufacturer>Oscar Toledo Gutierrez</manufacturer>
 		<rom name="Zombie Near (2011)(Oscar Toledo G.).rom" size="131072" crc="edea8c56"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
