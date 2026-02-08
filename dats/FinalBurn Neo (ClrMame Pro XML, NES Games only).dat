@@ -3867,6 +3867,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="radiasen" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Chronicle of the Radia War (Hack, English)</description>
+		<year>1999</year>
+		<manufacturer>Dreamless, Jair, [cx]</manufacturer>
+		<rom name="Radia Senki - Reimei Hen T-Eng (1999)(Dreamless, Jair, -cx-).nes" size="393232" crc="1d76af30"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="chknight" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Chrono Knight (HB)</description>
@@ -4982,7 +4991,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dejavu" sourcefile="nes/d_nes.cpp">
-		<description>Deja Vu: A Nightmare Comes True!! (USA)</description>
+		<description>Deja Vu (USA)</description>
 		<year>1990</year>
 		<manufacturer>Kemco</manufacturer>
 		<rom name="Deja Vu - A Nightmare Comes True!! (USA)(1990)(Kemco).nes" size="393232" crc="67b25db5"/>
@@ -4991,10 +5000,18 @@
 	</game>
 	<game name="dejavuhack" cloneof="dejavu" romof="dejavu" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Deja Vu: A Nightmare Comes True!! - Uncensored (Hack)</description>
-		<year>2021</year>
-		<manufacturer>Zhukorop</manufacturer>
-		<rom name="Deja Vu - A Nightmare Comes True!! - Uncensored (2021)(Zhukorop).nes" size="393232" crc="d0b73a99"/>
+		<description>Deja Vu - Uncensored (Hack, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>koda</manufacturer>
+		<rom name="Deja Vu - Uncensored v1.1 (2026)(koda).nes" size="393232" crc="71a79093"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="dejavuj" cloneof="dejavu" romof="dejavu" sourcefile="nes/d_nes.cpp">
+		<description>Deja Vu: A Nightmare Comes True!! (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Deja Vu - A Nightmare Comes True!! (Japan)(1988)(Kemco).nes" size="393232" crc="1ae28a7c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -14549,6 +14566,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="mrvampire" cloneof="phantomfighter" romof="phantomfighter" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Mr. Vampire (Hack, English)</description>
+		<year>2026</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Mr. Vampire T-Eng (2026)(BlackPaladin).nes" size="262160" crc="b758c962"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="mspacmanu" cloneof="mspacman" romof="mspacman" sourcefile="nes/d_nes.cpp">
 		<description>Ms. Pac-Man (USA) (Namco)</description>
 		<year>1993</year>
@@ -16715,6 +16741,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="punishermsc" cloneof="punisherthe" romof="punisherthe" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Punisher, The (Hack, in-game music)</description>
+		<year>2026</year>
+		<manufacturer>the jabu</manufacturer>
+		<rom name="Punisher, The - ingame music (2026)(the jabu).nes" size="262160" crc="9bd59301"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="punisherthe" sourcefile="nes/d_nes.cpp">
 		<description>Punisher, The (USA)</description>
 		<year>1990</year>
@@ -17055,17 +17090,8 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="radiasen" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Radia Senki - Reimei Hen (Hack, English)</description>
-		<year>1999</year>
-		<manufacturer>Dreamless, Jair, [cx]</manufacturer>
-		<rom name="Radia Senki - Reimei Hen T-Eng (1999)(Dreamless, Jair, -cx-).nes" size="393232" crc="1d76af30"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="radiasenj" cloneof="radiasen" romof="radiasen" sourcefile="nes/d_nes.cpp">
-		<description>Radia Senki - Reimei Hen (Japan)</description>
+		<description>Radia Senki: Reimei Hen (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Radia Senki - Reimei Hen (Japan)(1991)(Tecmo).nes" size="393232" crc="3bca1cd7"/>

@@ -81,6 +81,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="awass" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Awass (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Awass (2026)(Inufuto).sg" size="16384" crc="bbff7ebf"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bankp" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Bank Panic (Japan)</description>
 		<year>1985</year>
@@ -690,6 +699,15 @@
 		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
 		<rom name="Exerion (Taiwan)(198x)(Aaronix).sg" size="16384" crc="b5c84a32"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="eyebrawls" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Eye Brawls (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>Jess Creations - ArugulaZ</manufacturer>
+		<rom name="Eye Brawls v1.2 (2026)(Jess Creations, ArugulaZ).sg" size="32768" crc="e2ce44f0"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
