@@ -223,6 +223,7 @@ Here is a list of samples currently in use :
 
 | Sample name  | Note                                                                   |
 |--------------|------------------------------------------------------------------------|
+| ad59mc07     | Known as `equites` in MAME                                             |
 | blockade     |                                                                        |
 | buckrog      |                                                                        |
 | carnival     |                                                                        |
