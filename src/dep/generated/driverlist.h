@@ -1454,6 +1454,8 @@ DRV		BurnSpecAvoriginal2;
 DRV		BurnDrvsnes_Advhouraits;
 DRV		BurnDrvMSX_Averno;
 DRV		BurnSpecAverno;
+DRV		BurnSpecAwass;
+DRV		BurnDrvMSX_awass;
 DRV		BurnDrvsg1k_awass;
 DRV		BurnDrvmd_awepossm;
 DRV		BurnDrvmd_awepossmp;
@@ -5032,6 +5034,7 @@ DRV		BurnDrvdmnfrnta;
 DRV		BurnDrvdmnfrnt103;
 DRV		BurnDrvDmnfrnt;
 DRV		BurnDrvDmnfrntpcb;
+DRV		BurnSpecDemonpages;
 DRV		BurnDrvnes_demonsword;
 DRV		BurnDrvsnes_Demonsblazon;
 DRV		BurnDrvsnes_Demonscreste;
@@ -6697,6 +6700,7 @@ DRV		BurnDrvExvania;
 DRV		BurnDrvExzisusa;
 DRV		BurnDrvExzisus;
 DRV		BurnDrvExzisust;
+DRV		BurnDrvMSX_eyebrawls;
 DRV		BurnDrvsg1k_eyebrawls;
 DRV		BurnDrvsnes_Eyebehold;
 DRV		BurnDrveyesb;
@@ -16428,6 +16432,7 @@ DRV		BurnDrvgg_rcgp;
 DRV		BurnDrvnes_rcproam;
 DRV		BurnDrvnes_rcproamii;
 DRV		BurnSpecRovr;
+DRV		BurnDrvR2dtank;
 DRV		BurnDrvMSX_rabbian;
 DRV		BurnDrvRabbita;
 DRV		BurnDrvRabbit;
@@ -24597,6 +24602,7 @@ DRV		BurnDrvZintrkcd;
 DRV		BurnSpecZquestg;
 DRV		BurnSpecZquestt;
 DRV		BurnSpecZquest2p1;
+DRV		BurnSpecZquest2p2;
 DRV		BurnDrvZipzap;
 DRV		BurnDrvZipzapa;
 DRV		BurnSpecZipzap;
@@ -26171,6 +26177,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Advhouraits,	// Aventuras de Hourai High, Las (Hack, Spanish v1.1)
 	&BurnDrvMSX_Averno,			// Averno (Euro, Spanish)
 	&BurnSpecAverno,			// Averno (Spanish) (48K)
+	&BurnSpecAwass,				// Awass (48K) (HB)
+	&BurnDrvMSX_awass,			// Awass (HB)
 	&BurnDrvsg1k_awass,			// Awass (HB)
 	&BurnDrvmd_awepossm,		// Awesome Possum (USA)
 	&BurnDrvmd_awepossmp,		// Awesome Possum (USA, Prototype)
@@ -28831,7 +28839,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvComplexx,			// Complex X
 	&BurnSpecComplicadx,		// Complica DX (128K) (HB)
 	&BurnDrvMSX_cbilliar,		// Computer Billiards (Japan)
-	&BurnDrvMSX_cnyumon,		// Computer Nyuumon ~ Computer Lessons (Japan)
+	&BurnDrvMSX_cnyumon,		// Computer Nyuumon (Japan)
 	&BurnDrvMSX_cpachi,			// Computer Pachinko (Japan)
 	&BurnDrvcv_comspace,		// Computer Space (HB)
 	&BurnDrvMSX_condori,		// Con-Dori (Japan)
@@ -29749,6 +29757,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvdmnfrnt103,			// Demon Front / Moyu Zhanxian (68k label V103, ROM M103XX 07/05/02) (ARM label V103, ROM 07/05/02 S103XX)
 	&BurnDrvDmnfrnt,			// Demon Front / Moyu Zhanxian (68k label V105, ROM M105XX 08/05/02) (ARM label V105, ROM 08/05/02 S105XX)
 	&BurnDrvDmnfrntpcb,			// Demon Front V1.1 / Moyu Zhanxian V1.1 (68k label V107KR, ROM M107KR 11/03/03) (ARM label V106KR, ROM 10/16/03 S106KR) (JAMMA PCB)
+	&BurnSpecDemonpages,		// Demon Pages (128K) (HB)
 	&BurnDrvnes_demonsword,		// Demon Sword (USA)
 	&BurnDrvsnes_Demonsblazon,	// Demon's Blazon - Makaimura Monshou Hen (Japan)
 	&BurnDrvsnes_Demonscreste,	// Demon's Crest (Euro)
@@ -31414,6 +31423,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvExzisusa,			// Exzisus (Japan, conversion)
 	&BurnDrvExzisus,			// Exzisus (Japan, dedicated)
 	&BurnDrvExzisust,			// Exzisus (TAD license)
+	&BurnDrvMSX_eyebrawls,		// Eye Brawls (HB)
 	&BurnDrvsg1k_eyebrawls,		// Eye Brawls (HB, v1.2)
 	&BurnDrvsnes_Eyebehold,		// Eye of the Beholder ~ Advanced Dungeons & Dragons (USA)
 	&BurnDrveyesb,				// Eyes (bootleg, set 1)
@@ -41145,6 +41155,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_rcproam,		// R.C. Pro-Am (USA, Rev. A)
 	&BurnDrvnes_rcproamii,		// R.C. Pro-Am II (USA)
 	&BurnSpecRovr,				// R.O.V.R. (128K) (HB)
+	&BurnDrvR2dtank,			// R2D Tank
 	&BurnDrvMSX_rabbian,		// Rabbian (Japan)
 	&BurnDrvRabbita,			// Rabbit (Asia 1/28?)
 	&BurnDrvRabbit,				// Rabbit (Asia 3/6)
@@ -49314,6 +49325,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecZquestg,			// Ziona Quest - Game (128K) (HB)
 	&BurnSpecZquestt,			// Ziona Quest - Training (128K) (HB)
 	&BurnSpecZquest2p1,			// Ziona Quest II - Part 1 (128K) (HB, v1.1)
+	&BurnSpecZquest2p2,			// Ziona Quest II - Part 2 (128K) (HB)
 	&BurnDrvZipzap,				// Zip & Zap (Explicit)
 	&BurnDrvZipzapa,			// Zip & Zap (Less Explicit)
 	&BurnSpecZipzap,			// Zip-Zap (48K)
@@ -50882,6 +50894,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_advhouraits", "snes/d_snes.cpp"},
 	{ "msx_averno", "msx/d_msx.cpp"},
 	{ "spec_averno", "spectrum/d_spectrum.cpp"},
+	{ "spec_awass", "spectrum/d_spectrum.cpp"},
+	{ "msx_awass", "msx/d_msx.cpp"},
 	{ "sg1k_awass", "sg1000/d_sg1000.cpp"},
 	{ "md_awepossm", "megadrive/d_megadrive.cpp"},
 	{ "md_awepossmp", "megadrive/d_megadrive.cpp"},
@@ -54432,6 +54446,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "dmnfrnt103", "pgm/d_pgm.cpp"},
 	{ "dmnfrnt", "pgm/d_pgm.cpp"},
 	{ "dmnfrntpcb", "pgm/d_pgm.cpp"},
+	{ "spec_demonpages", "spectrum/d_spectrum.cpp"},
 	{ "nes_demonsword", "nes/d_nes.cpp"},
 	{ "snes_demonsblazon", "snes/d_snes.cpp"},
 	{ "snes_demonscreste", "snes/d_snes.cpp"},
@@ -56089,6 +56104,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "exzisusa", "taito/d_exzisus.cpp"},
 	{ "exzisus", "taito/d_exzisus.cpp"},
 	{ "exzisust", "taito/d_exzisus.cpp"},
+	{ "msx_eyebrawls", "msx/d_msx.cpp"},
 	{ "sg1k_eyebrawls", "sg1000/d_sg1000.cpp"},
 	{ "snes_eyebehold", "snes/d_snes.cpp"},
 	{ "eyesb", "pre90s/d_pacman.cpp"},
@@ -65742,6 +65758,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_rcproam", "nes/d_nes.cpp"},
 	{ "nes_rcproamii", "nes/d_nes.cpp"},
 	{ "spec_rovr", "spectrum/d_spectrum.cpp"},
+	{ "r2dtank", "pre90s/d_r2dtank.cpp"},
 	{ "msx_rabbian", "msx/d_msx.cpp"},
 	{ "rabbita", "pst90s/d_rabbit.cpp"},
 	{ "rabbit", "pst90s/d_rabbit.cpp"},
@@ -73819,6 +73836,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_zquestg", "spectrum/d_spectrum.cpp"},
 	{ "spec_zquestt", "spectrum/d_spectrum.cpp"},
 	{ "spec_zquest2p1", "spectrum/d_spectrum.cpp"},
+	{ "spec_zquest2p2", "spectrum/d_spectrum.cpp"},
 	{ "zipzap", "pst90s/d_expro02.cpp"},
 	{ "zipzapa", "pst90s/d_expro02.cpp"},
 	{ "spec_zipzap", "spectrum/d_spectrum.cpp"},

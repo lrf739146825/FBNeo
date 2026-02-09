@@ -2374,6 +2374,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="awass" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Awass (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Awass 48K-AY (2026)(Inufuto).tzx" size="11355" crc="211c14bf"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aztec" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Aztec (48K) (HB, pre-release)</description>
@@ -7950,6 +7960,17 @@
 		<year>1990</year>
 		<manufacturer>Thalamus - Twilight</manufacturer>
 		<rom name="Delta Charge! 128K (1990)(Thalamus).tap" size="56562" crc="3f0b7368"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="demonpages" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Demon Pages (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>JuanGM</manufacturer>
+		<rom name="Demon Pages 128K (2026)(JuanGM).tap" size="75671" crc="adc661dd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31755,6 +31776,17 @@
 		<year>2025</year>
 		<manufacturer>IAMAI Creation</manufacturer>
 		<rom name="Ziona Quest II - Part 1 v1.1 128K (2025)(IAMAI Creation).tap" size="56938" crc="650a133a"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zquest2p2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ziona Quest II - Part 2 (128K) (HB)</description>
+		<year>2025-26</year>
+		<manufacturer>IAMAI Creation</manufacturer>
+		<rom name="Ziona Quest II - Part 2 128K (2026)(IAMAI Creation).tap" size="56617" crc="bedf5bee"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
