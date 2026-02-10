@@ -491,9 +491,17 @@ You should **NEVER** use that feature with this core, it already converts analog
 
 ### Why is my old savestate not working anymore after updating my core ?
 
-Savestates are tied to how a game is emulated, and updating a core might significantly change how that game is emulated, invalidating older savestates in the process.
-This does apply to any core, and likely to be more frequent for multi-system emulators actively developed like FBNeo. 
+A core's savestates are only guaranteed to keep working as long as you NEVER update that core.
+Savestates are tied to how a game is emulated, and updating a core might significantly change how that game is emulated, breaking older savestates in the process.
+This does apply to any core, but is likely to be more frequent for actively developed multi-system emulators like FBNeo.
 You should be wary of updating your cores if this is a major concern for you.
+Note that rollback netplay with mismatching core versions can also be affected by this.
+
+### Why am i having trouble playing with a keyboard ?
+
+Keyboards, especially cheaper ones, are often affected by ghosting, which will prevent some key combinations from working and hinder your experience. You can test your keyboard [here](https://www.microsoft.com/applied-sciences/projects/anti-ghosting-demo).
+
+Additionally, keyboards are kind of unsuitable for arcade emulation, because they allow things that were impossible on real hardware, like pressing opposite directions. This commonly leads to problems while doing special moves involving opposite directions in fighting games. The FBNeo core has a core option called SOCD to mitigate this, and some value might work better than another for your play style.
 
 ### Where is SYSTEM_DIRECTORY ?
 
