@@ -1418,6 +1418,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="awass" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Awass (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Awass (2026)(Inufuto).cas" size="9356" crc="01a17136"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="a8bitjam" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Azzurro 8bit Jam (HB, v1.1)</description>
@@ -4293,7 +4305,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="cnyumon" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Computer Nyuumon ~ Computer Lessons (Japan)</description>
+		<description>Computer Nyuumon (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Casio</manufacturer>
 		<rom name="Computer Nyuumon - Computer Lessons (Japan)(1985)(Casio).rom" size="32768" crc="50bb1930"/>
@@ -4905,7 +4917,7 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="dskeiba" romof="msx" sourcefile="msx/d_msx.cpp">
+	<game name="dskeiba" cloneof="exjockey" romof="exjockey" sourcefile="msx/d_msx.cpp">
 		<description>Dai Shougai Keiba (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Casio</manufacturer>
@@ -6361,6 +6373,18 @@
 		<year>1987</year>
 		<manufacturer>Eaglesoft</manufacturer>
 		<rom name="Exterminator (Euro, NL)(1987)(Eaglesoft)[RUN'CAS-'].cas" size="27056" crc="ccec8d53"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="eyebrawls" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Eye Brawls (HB)</description>
+		<year>2026</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Eye Brawls (2026)(Jess Creations).rom" size="32768" crc="c1a37604"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
