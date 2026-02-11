@@ -7541,6 +7541,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="galagapp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Galaga (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Galaga (2023)(My Arcade).bin" size="131072" crc="eeca829d"/>
+		<video type="raster" orientation="vertical" width="224" height="320" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
 	<game name="galahad" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Galahad (Euro, USA)</description>
 		<year>1992</year>
@@ -7556,6 +7564,14 @@
 		<manufacturer>Wave</manufacturer>
 		<rom name="Galahad T-Spa (2017)(Wave).bin" size="1048576" crc="29cb154b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="galaxianpp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Galaxian (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Galaxian (Rev 1)(2023)(My Arcade).bin" size="65536" crc="1608a3a9"/>
+		<video type="raster" orientation="vertical" width="224" height="320" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
 	<game name="gforce2s" cloneof="gforce2" romof="gforce2" sourcefile="megadrive/d_megadrive.cpp">
@@ -12584,6 +12600,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mspacmanpp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Ms. Pac-Man (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Ms. Pac-Man (2023)(My Arcade).bin" size="524288" crc="9638da23"/>
+		<video type="raster" orientation="vertical" width="224" height="320" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
 	<game name="valisj" cloneof="valis" romof="valis" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Mugen Senshi Valis (Japan)</description>
 		<year>1991</year>
@@ -13876,6 +13900,14 @@
 		<manufacturer>Namco</manufacturer>
 		<rom name="Pac-Attack (USA)(1993)(Namco).bin" size="262144" crc="5df382f7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pacmanpp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Pac-Man (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Pac-Man (2023)(My Arcade).bin" size="262144" crc="c6f8d28c"/>
+		<video type="raster" orientation="vertical" width="224" height="320" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
 	<game name="pacman" sourcefile="megadrive/d_megadrive.cpp">
@@ -18594,6 +18626,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spaceinvpp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Space Invaders (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Space Invaders (2023)(My Arcade).bin" size="131072" crc="39b16291"/>
+		<video type="raster" orientation="vertical" width="224" height="320" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
 	<game name="sinv90" cloneof="sinv91" romof="sinv91" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Space Invaders 90 (Japan)</description>
 		<year>1990</year>
@@ -21241,6 +21281,14 @@
 		<rom name="Tetris (Japan)(1989)(Sega).bin" size="262144" crc="4ce90db0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
+	</game>
+	<game name="tetrispp" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Tetris (Pocket Player Pro)</description>
+		<year>2023</year>
+		<manufacturer>My Arcade</manufacturer>
+		<rom name="Tetris (2023)(My Arcade).bin" size="2097152" crc="eea3028b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="preliminary"/>
 	</game>
 	<game name="tetris1" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Tetris (Unl)</description>

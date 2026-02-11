@@ -7787,6 +7787,7 @@ DRV		BurnDrvGalagamk;
 DRV		BurnDrvGalaga;
 DRV		BurnDrvGalagao;
 DRV		BurnDrvGalagap;
+DRV		BurnDrvmd_galagapp;
 DRV		BurnDrvcv_galaga;
 DRV		BurnDrvsg1k_galaga;
 DRV		BurnDrvgg_galaga2;
@@ -7822,6 +7823,7 @@ DRV		BurnDrvGalaxianm;
 DRV		BurnDrvGalaxianmo;
 DRV		BurnDrvGalaxian;
 DRV		BurnDrvGalaxiana;
+DRV		BurnDrvmd_galaxianpp;
 DRV		BurnDrvGalaxrf;
 DRV		BurnDrvGalaxianrp;
 DRV		BurnDrvGalaxianbl3;
@@ -13637,6 +13639,7 @@ DRV		BurnDrvmspacmanlai;
 DRV		BurnDrvmspacmbmc;
 DRV		BurnDrvmspacmap;
 DRV		BurnDrvmd_mspacmanpir;
+DRV		BurnDrvmd_mspacmanpp;
 DRV		BurnDrvmspacmnf;
 DRV		BurnDrvnes_mspacmanu;
 DRV		BurnDrvnes_mspacman;
@@ -14877,6 +14880,7 @@ DRV		BurnDrvpacmod;
 DRV		BurnDrvpacmanf;
 DRV		BurnDrvPacmanmr;
 DRV		BurnDrvpacmanp;
+DRV		BurnDrvmd_pacmanpp;
 DRV		BurnDrvpacmanso;
 DRV		BurnDrvnes_pacmanu;
 DRV		BurnDrvnes_pacman;
@@ -19028,6 +19032,7 @@ DRV		BurnDrvmd_spaceinv;
 DRV		BurnDrvMSX_spaceinv;
 DRV		BurnDrvnes_spaceinvaders;
 DRV		BurnDrvsg1k_spaceinv;
+DRV		BurnDrvmd_spaceinvpp;
 DRV		BurnDrvSisv1;
 DRV		BurnDrvSisv2;
 DRV		BurnDrvSisv3;
@@ -21607,6 +21612,7 @@ DRV		BurnDrvMSX_tetris;
 DRV		BurnDrvMSX_tetrisa;
 DRV		BurnSpectetris;
 DRV		BurnDrvnes_tetris;
+DRV		BurnDrvmd_tetrispp;
 DRV		BurnDrvAtetris;
 DRV		BurnDrvTetris1d;
 DRV		BurnDrvTetris1;
@@ -32510,6 +32516,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGalaga,				// Galaga (Namco rev. B)
 	&BurnDrvGalagao,			// Galaga (Namco)
 	&BurnDrvGalagap,			// Galaga (Patched)
+	&BurnDrvmd_galagapp,		// Galaga (Pocket Player Pro)
 	&BurnDrvcv_galaga,			// Galaga (SGM) (HB)
 	&BurnDrvsg1k_galaga,		// Galaga (Taiwan)
 	&BurnDrvgg_galaga2,			// Galaga 2 (Euro)
@@ -32545,6 +32552,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGalaxianmo,			// Galaxian (Midway set 2)
 	&BurnDrvGalaxian,			// Galaxian (Namco set 1)
 	&BurnDrvGalaxiana,			// Galaxian (Namco set 2)
+	&BurnDrvmd_galaxianpp,		// Galaxian (Pocket Player Pro)
 	&BurnDrvGalaxrf,			// Galaxian (Recreativos Franco S.A. Spanish bootleg)
 	&BurnDrvGalaxianrp,			// Galaxian (Rene Pierre bootleg)
 	&BurnDrvGalaxianbl3,		// Galaxian (Spanish bootleg)
@@ -38360,6 +38368,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmspacmbmc,			// Ms. Pac-Man (Marti Colls bootleg)
 	&BurnDrvmspacmap,			// Ms. Pac-Man (Patched)
 	&BurnDrvmd_mspacmanpir,		// Ms. Pac-Man (Pirate, Ripped from Golden 10 in 1) (Unl)
+	&BurnDrvmd_mspacmanpp,		// Ms. Pac-Man (Pocket Player Pro)
 	&BurnDrvmspacmnf,			// Ms. Pac-Man (speedup hack)
 	&BurnDrvnes_mspacmanu,		// Ms. Pac-Man (USA) (Namco)
 	&BurnDrvnes_mspacman,		// Ms. Pac-Man (USA) (Tengen)
@@ -39600,6 +39609,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpacmanf,			// Pac-Man (Midway, speedup hack)
 	&BurnDrvPacmanmr,			// Pac-Man (Model Racing bootleg)
 	&BurnDrvpacmanp,			// Pac-Man (Patched)
+	&BurnDrvmd_pacmanpp,		// Pac-Man (Pocket Player Pro)
 	&BurnDrvpacmanso,			// Pac-Man (SegaSA / Sonic)
 	&BurnDrvnes_pacmanu,		// Pac-Man (USA) (Namco)
 	&BurnDrvnes_pacman,			// Pac-Man (USA) (Tengen)
@@ -43751,6 +43761,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_spaceinv,		// Space Invaders (Japan)
 	&BurnDrvnes_spaceinvaders,	// Space Invaders (Japan)
 	&BurnDrvsg1k_spaceinv,		// Space Invaders (Japan)
+	&BurnDrvmd_spaceinvpp,		// Space Invaders (Pocket Player Pro)
 	&BurnDrvSisv1,				// Space Invaders (SV Version rev 1) [no comment, NOT WORKING]
 	&BurnDrvSisv2,				// Space Invaders (SV Version rev 2)
 	&BurnDrvSisv3,				// Space Invaders (SV Version rev 3)
@@ -46330,6 +46341,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_tetrisa,		// Tetris (Korea, Alt) (Unl)
 	&BurnSpectetris,			// Tetris (Mirrorsoft) (128K)
 	&BurnDrvnes_tetris,			// Tetris (Nintendo) (USA)
+	&BurnDrvmd_tetrispp,		// Tetris (Pocket Player Pro) [no comment, NOT WORKING]
 	&BurnDrvAtetris,			// Tetris (set 1)
 	&BurnDrvTetris1d,			// Tetris (set 1, Japan, System 16B) (bootleg of FD1094 317-0091 set)
 	&BurnDrvTetris1,			// Tetris (set 1, Japan, System 16B) (FD1094 317-0091)
@@ -57181,6 +57193,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "galaga", "pre90s/d_galaga.cpp"},
 	{ "galagao", "pre90s/d_galaga.cpp"},
 	{ "galagap", "pre90s/d_galaga.cpp"},
+	{ "md_galagapp", "megadrive/d_megadrive.cpp"},
 	{ "cv_galaga", "coleco/d_coleco.cpp"},
 	{ "sg1k_galaga", "sg1000/d_sg1000.cpp"},
 	{ "gg_galaga2", "sms/d_sms.cpp"},
@@ -57216,6 +57229,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "galaxianmo", "galaxian/d_galaxian.cpp"},
 	{ "galaxian", "galaxian/d_galaxian.cpp"},
 	{ "galaxiana", "galaxian/d_galaxian.cpp"},
+	{ "md_galaxianpp", "megadrive/d_megadrive.cpp"},
 	{ "galaxrf", "galaxian/d_galaxian.cpp"},
 	{ "galaxianrp", "galaxian/d_galaxian.cpp"},
 	{ "galaxianbl3", "galaxian/d_galaxian.cpp"},
@@ -62985,6 +62999,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mspacmbmc", "pre90s/d_pacman.cpp"},
 	{ "mspacmap", "pre90s/d_pacman.cpp"},
 	{ "md_mspacmanpir", "megadrive/d_megadrive.cpp"},
+	{ "md_mspacmanpp", "megadrive/d_megadrive.cpp"},
 	{ "mspacmnf", "pre90s/d_pacman.cpp"},
 	{ "nes_mspacmanu", "nes/d_nes.cpp"},
 	{ "nes_mspacman", "nes/d_nes.cpp"},
@@ -64217,6 +64232,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pacmanf", "pre90s/d_pacman.cpp"},
 	{ "pacmanmr", "pre90s/d_pacman.cpp"},
 	{ "pacmanp", "pre90s/d_pacman.cpp"},
+	{ "md_pacmanpp", "megadrive/d_megadrive.cpp"},
 	{ "pacmanso", "pre90s/d_pacman.cpp"},
 	{ "nes_pacmanu", "nes/d_nes.cpp"},
 	{ "nes_pacman", "nes/d_nes.cpp"},
@@ -68334,6 +68350,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_spaceinv", "msx/d_msx.cpp"},
 	{ "nes_spaceinvaders", "nes/d_nes.cpp"},
 	{ "sg1k_spaceinv", "sg1000/d_sg1000.cpp"},
+	{ "md_spaceinvpp", "megadrive/d_megadrive.cpp"},
 	{ "sisv1", "pre90s/d_invaders.cpp"},
 	{ "sisv2", "pre90s/d_invaders.cpp"},
 	{ "sisv3", "pre90s/d_invaders.cpp"},
@@ -70883,6 +70900,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_tetrisa", "msx/d_msx.cpp"},
 	{ "spec_tetris", "spectrum/d_spectrum.cpp"},
 	{ "nes_tetris", "nes/d_nes.cpp"},
+	{ "md_tetrispp", "megadrive/d_megadrive.cpp"},
 	{ "atetris", "pre90s/d_atetris.cpp"},
 	{ "tetris1d", "sega/d_sys16b.cpp"},
 	{ "tetris1", "sega/d_sys16b.cpp"},
