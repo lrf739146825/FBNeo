@@ -17849,20 +17849,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="mask2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>MASK II (128K)</description>
+		<description>MASK II (48K-128K)</description>
 		<year>1987</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="MASK II 128K (1987)(Gremlin Graphics).tap" size="79774" crc="972b746c"/>
+		<rom name="MASK II 48K-128K (1987)(Gremlin Graphics).tap" size="79774" crc="972b746c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="mask3" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>MASK III: VENOM Strikes Back (128K)</description>
+		<description>MASK III: VENOM Strikes Back (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="MASK III - VENOM Strikes Back 128K (1988)(Gremlin Graphics).tap" size="51714" crc="afcf673d"/>
+		<rom name="MASK III - VENOM Strikes Back 48K-128K (1988)(Gremlin Graphics).tap" size="51714" crc="afcf673d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18160,10 +18160,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="meanstreak" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Mean Streak (128K)</description>
+		<description>Mean Streak (48K-128K)</description>
 		<year>1987</year>
 		<manufacturer>Mirrorsoft</manufacturer>
-		<rom name="Mean Streak 128K (1987)(Mirrorsoft).tap" size="66912" crc="eaa7cbc4"/>
+		<rom name="Mean Streak 48K-128K (1987)(Mirrorsoft).tap" size="66912" crc="eaa7cbc4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -25425,9 +25425,20 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sgthelmet" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Select '0' to prevent graphic glitches</comment>
+		<description>Sgt. Helmet Zero (128K) (HB)</description>
+		<year>2009</year>
+		<manufacturer>The Mojon Twins</manufacturer>
+		<rom name="Sgt. Helmet Zero 128K (2009)(The Mojon Twins).tap" size="62412" crc="d182aa2e"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sgthtraindayen" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sgt. Helmet - Training Day (English) (48K) (HB)</description>
+		<description>Sgt. Helmet: Training Day (English) (48K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Sgt. Helmet - Training Day EN 48K (2013)(The Mojon Twins).tap" size="43229" crc="aed97757"/>
@@ -25437,22 +25448,11 @@
 	</game>
 	<game name="sgthtraindayes" cloneof="sgthtraindayen" romof="sgthtraindayen" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Sgt. Helmet - Training Day (Spanish) (48K) (HB)</description>
+		<description>Sgt. Helmet: Training Day (Spanish) (48K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Sgt. Helmet - Training Day ES 48K (2013)(The Mojon Twins).tap" size="43285" crc="2de72a6c"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="sgthelmet" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, Select '0' to prevent graphic glitches</comment>
-		<description>Sgt. Helmet Zero (128K) (HB)</description>
-		<year>2009</year>
-		<manufacturer>The Mojon Twins</manufacturer>
-		<rom name="Sgt. Helmet Zero 128K (2009)(The Mojon Twins).tap" size="62412" crc="d182aa2e"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -27974,6 +27974,17 @@
 		<year>2014</year>
 		<manufacturer>Stonechat Productions</manufacturer>
 		<rom name="Sun Bucket 128K (2014)(Stonechat Productions).tap" size="44159" crc="d9761fa3"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supaplex" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Supaplex (128K) (HB)</description>
+		<year>2009</year>
+		<manufacturer>Triumph Game Labs</manufacturer>
+		<rom name="Supaplex 128K (2009)(Triumph Game Labs).tap" size="107665" crc="5f745967"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
