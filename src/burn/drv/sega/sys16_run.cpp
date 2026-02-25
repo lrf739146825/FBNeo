@@ -143,7 +143,6 @@ bool Lockonph = false;
 bool AltbeastMode = false;
 bool ThndrbldMode = false;
 bool TturfMode = false;
-bool System16Z80Enable = true;
 bool System1668KEnable = true;
 
 INT32 nSystem16CyclesDone[4]; // because *Run() outside of sys16_run.cpp
@@ -349,6 +348,7 @@ static INT32 System16DoReset()
 				BurnYM2413Reset();
 			} else {
 				ZetOpen(0);
+				bprintf(0, _T("reset 2151---------\n"));
 				BurnYM2151Reset();
 				ZetClose();
 			}
@@ -2087,10 +2087,11 @@ INT32 System16Init()
 			BurnYM2413Init(5000000);
 			BurnYM2413SetAllRoutes(1.00, BURN_SND_ROUTE_BOTH);
 		} else {
-			BurnYM2151Init(4000000);
+			BurnYM2151InitBuffered(4000000, 1, NULL, 0);
+			BurnTimerAttachZet(5000000);
 			BurnYM2151SetAllRoutes(0.23, BURN_SND_ROUTE_BOTH);
 		}
-		
+
 		if (System16UPD7759DataSize) {
 			UPD7759Init(0, UPD7759_STANDARD_CLOCK, NULL);
 			UPD7759SetDrqCallback(0, System16UPD7759DrqCallback);
@@ -2738,7 +2739,6 @@ INT32 System16Exit()
 	ThndrbldMode = false;
 	TturfMode = false;
 	System1668KEnable = true;
-	System16Z80Enable = true;
 
 	bSystem16BootlegRender = false;
  	
@@ -2931,18 +2931,21 @@ INT32 System16AFrame()
 
 INT32 System16BFrame()
 {
-	INT32 nInterleave = 256;
-	
-	if ((BurnDrvGetHardwareCode() & HARDWARE_SEGA_YM2413) || Lockonph) nInterleave = System16YM2413IRQInterval;
-	
+	const bool has_z80 = (System16Z80RomNum || (BurnDrvGetHardwareCode() & HARDWARE_SEGA_ISGSM) );
+	const bool has_ym2413 = (BurnDrvGetHardwareCode() & HARDWARE_SEGA_YM2413);
+
+	INT32 nInterleave = (has_ym2413) ? System16YM2413IRQInterval : 256;
+
+//	bprintf(0, _T("has z80 %d   has 2413 %d   intrl %d\n"), has_z80, has_ym2413, nInterleave);
+
 	if (System16Reset) System16DoReset();
-	
+
 	System16MakeInputs();
 	if (AlienSyndrome) {
 		System16ClearOpposites(&System16Input[1]); // P1
 		System16ClearOpposites(&System16Input[2]); // P2
 	}
-	
+
 	nCyclesTotal[0] = (INT32)((INT64)System16ClockSpeed * nBurnCPUSpeedAdjust / (0x0100 * 60));
 	nCyclesTotal[1] = System16Z80ClockSpeed / 60;
 	nCyclesTotal[2] = (8000000 / 12) / 60;
@@ -2950,10 +2953,8 @@ INT32 System16BFrame()
 	nSystem16CyclesDone[1] = nExtraCycles[1];
 	nSystem16CyclesDone[2] = nExtraCycles[2];
 
-	INT32 nSoundBufferPos = 0;
-
 	SekNewFrame();
-	if (System16Z80RomNum || ((BurnDrvGetHardwareCode() & HARDWARE_SEGA_ISGSM) && System16Z80Enable)) ZetNewFrame();
+	if (has_z80) ZetNewFrame();
 
 	SekOpen(0);
 	for (INT32 i = 0; i < nInterleave; i++) {
@@ -2961,7 +2962,7 @@ INT32 System16BFrame()
 		if (System1668KEnable) {
 			CPU_RUN(0, Sek);
 
-			if ((BurnDrvGetHardwareCode() & HARDWARE_SEGA_YM2413) || Lockonph) {
+			if (has_ym2413 || Lockonph) {
 				SekSetIRQLine(2, CPU_IRQSTATUS_AUTO);
 			}
 		} else {
@@ -2969,18 +2970,14 @@ INT32 System16BFrame()
 		}
 
 		// Run Z80
-		if (System16Z80RomNum || ((BurnDrvGetHardwareCode() & HARDWARE_SEGA_ISGSM) && System16Z80Enable)) {
+		if (has_z80) {
 			ZetOpen(0);
-			if (System16UPD7759DataSize) { // upd7759 uses BurnTimer
-				CPU_RUN_TIMER(1);
-			} else {
-				CPU_RUN(1, Zet);
-			}
+			CPU_RUN_TIMER(1);
 			ZetClose();
 		} else {
 			CPU_IDLE_NULL(1);
 		}
-		
+
 		if (System16I8751RomNum) {
 			CPU_RUN(2, mcs51);
 
@@ -2997,51 +2994,27 @@ INT32 System16BFrame()
 				}
 			}
 		}
-
-		if (pBurnSoundOut) {
-			INT32 nSegmentLength = nBurnSoundLen / nInterleave;
-			INT16* pSoundBuf = pBurnSoundOut + (nSoundBufferPos << 1);
-			
-			if (BurnDrvGetHardwareCode() & HARDWARE_SEGA_YM2413) {
-				BurnYM2413Render(pSoundBuf, nSegmentLength);
-			} else {
-				ZetOpen(0);
-				BurnYM2151Render(pSoundBuf, nSegmentLength);
-				if (System16MSM6295RomSize) MSM6295Render(0, pSoundBuf, nSegmentLength);
-				ZetClose();
-			}
-			nSoundBufferPos += nSegmentLength;
-		}
 	}
 
 	// Make sure the buffer is entirely filled.
 	if (pBurnSoundOut) {
-		INT32 nSegmentLength = nBurnSoundLen - nSoundBufferPos;
-		INT16* pSoundBuf = pBurnSoundOut + (nSoundBufferPos << 1);
-
-		if (nSegmentLength) {
-			if (BurnDrvGetHardwareCode() & HARDWARE_SEGA_YM2413) {
-				BurnYM2413Render(pSoundBuf, nSegmentLength);
-			} else {
-				ZetOpen(0);
-				BurnYM2151Render(pSoundBuf, nSegmentLength);
-				if (System16MSM6295RomSize) MSM6295Render(0, pSoundBuf, nSegmentLength);
-				ZetClose();
-			}
+		if (has_ym2413) {
+			BurnYM2413Render(pBurnSoundOut, nBurnSoundLen);
+		} else {
+			BurnYM2151Render(pBurnSoundOut, nBurnSoundLen);
+			if (System16MSM6295RomSize) MSM6295Render(0, pBurnSoundOut, nBurnSoundLen);
 		}
 
 		biq_shelf.filter_buffer(pBurnSoundOut, nBurnSoundLen); // ym high-shelf filter @ 2khz -8db
 
 		if (System16UPD7759DataSize) {
-			ZetOpen(0);
 			UPD7759Render(0, pBurnSoundOut, nBurnSoundLen);
-			ZetClose();
 		}
 	}
-	
+
 	if (!System16I8751RomNum && System1668KEnable) SekSetIRQLine(4, CPU_IRQSTATUS_AUTO);
 	SekClose();
-		
+
 	if (Simulate8751) Simulate8751();
 
 	nExtraCycles[0] = nSystem16CyclesDone[0] - nCyclesTotal[0];
@@ -3724,7 +3697,6 @@ INT32 System16Scan(INT32 nAction,INT32 *pnMin)
 		SCAN_VAR(System18VdpMixing);
 		SCAN_VAR(System18VdpEnable);
 		SCAN_VAR(RF5C68PCMBankAddress);
-		SCAN_VAR(System16Z80Enable);
 		SCAN_VAR(System1668KEnable);
 		SCAN_VAR(System16MCUData);
 

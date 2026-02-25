@@ -11303,27 +11303,13 @@ void __fastcall IsgsmWriteByte(UINT32 a, UINT8 d)
 
 		case 0xfe0007: {
 			System16SoundLatch = d & 0xff;
-			ZetOpen(0);
-			ZetSetIRQLine(0, CPU_IRQSTATUS_ACK);
-			ZetClose();
+			ZetSetIRQLine(0, 0, CPU_IRQSTATUS_ACK);
 			return;
 		}
 
 		case 0xfe0009: {
-			if (d == 0) {
-				ZetOpen(0);
-				ZetReset();
-				ZetClose();
-				System16Z80Enable = true;
-			}
-
-			if (d == 1) {
-				ZetOpen(0);
-				ZetReset();
-				ZetClose();
-				System16Z80Enable = false;
-			}
-
+			ZetReset(0); // always reset?
+			ZetSetRESETLine(0, d & 1);
 			return;
 		}
 

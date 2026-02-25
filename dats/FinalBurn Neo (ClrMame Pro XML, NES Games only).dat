@@ -18429,10 +18429,10 @@
 	</game>
 	<game name="shancara" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.01)</description>
-		<year>2024</year>
+		<description>Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.02)</description>
+		<year>2026</year>
 		<manufacturer>BlackPaladin</manufacturer>
-		<rom name="Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.01 (2024)(BlackPaladin).nes" size="262160" crc="7ea7e5df"/>
+		<rom name="Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.02 (2026)(BlackPaladin).nes" size="262160" crc="0115817e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

@@ -1975,7 +1975,7 @@ static INT32 DrvExit()
 
 	SekExit();
 	ZetExit();
-	
+
 	if (sound_config == 0) {
 		BurnYM2610Exit();
 	} else {
@@ -2138,24 +2138,18 @@ static void hiticeFramebufferStateload(); // several pages below...
 
 static INT32 DrvScan(INT32 nAction, INT32 *pnMin)
 {
-	struct BurnArea ba;
-
 	if (pnMin) {
 		*pnMin = 0x029708;
 	}
 
 	if (nAction & ACB_VOLATILE) {
-		memset(&ba, 0, sizeof(ba));
-
-		ba.Data	  = TaitoRamStart;
-		ba.nLen	  = TaitoRamEnd - TaitoRamStart;
-		ba.szName = "All Ram";
-		BurnAcb(&ba);
+		ScanVar(TaitoRamStart, TaitoRamEnd - TaitoRamStart, "All Ram");
 
 		SekScan(nAction);
 		ZetScan(nAction);
 
 		TaitoICScan(nAction);
+		EEPROMScan(nAction, pnMin);
 
 		if (sound_config == 0) {
 			BurnYM2610Scan(nAction, pnMin);
@@ -2164,10 +2158,13 @@ static INT32 DrvScan(INT32 nAction, INT32 *pnMin)
 			MSM6295Scan(nAction, pnMin);
 		}
 
+		SCAN_VAR(eeprom_latch);
+		SCAN_VAR(coin_control);
 		SCAN_VAR(TaitoZ80Bank);
 		SCAN_VAR(TaitoWatchdog);
 		if (has_trackball) BurnTrackballScan();
 		SCAN_VAR(frame_counter);
+		SCAN_VAR(LastScrollX);
 
 		SCAN_VAR(nCyclesExtra);
 	}

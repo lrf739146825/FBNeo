@@ -5920,28 +5920,28 @@
 	</game>
 	<game name="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, English v4.0.0)</description>
+		<description>Earthion (HB, English v5.3.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v4.0.0 (English)(2025)(Ancient).bin" size="7340032" crc="e5516900"/>
+		<rom name="Earthion v5.3.0 (English)(2025)(Ancient).bin" size="7340032" crc="2b3148ca"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionj" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, Japanese v4.0.0)</description>
+		<description>Earthion (HB, Japanese v5.3.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v4.0.0 (Japanese)(2025)(Ancient).bin" size="7340032" crc="0655e663"/>
+		<rom name="Earthion v5.3.0 (Japanese)(2025)(Ancient).bin" size="7340032" crc="f25c384f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="earthionp" cloneof="earthione" romof="earthione" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Earthion (HB, Portuguese v4.0.0)</description>
+		<description>Earthion (HB, Portuguese v5.3.0)</description>
 		<year>2025</year>
 		<manufacturer>Ancient</manufacturer>
-		<rom name="Earthion v4.0.0 (Portuguese)(2025)(Ancient).bin" size="7340032" crc="c564f290"/>
+		<rom name="Earthion v5.3.0 (Portuguese)(2025)(Ancient).bin" size="7340032" crc="1aed4d7f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6353,7 +6353,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="eswat" sourcefile="megadrive/d_megadrive.cpp">
-		<description>ESWAT - City Under Siege (Euro, USA, Rev. A)</description>
+		<description>ESWAT: City Under Siege (Euro, USA, Rev. A)</description>
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="ESWAT - City Under Siege (Euro, USA, Rev A)(1990)(Sega).bin" size="524288" crc="e72f8a36"/>
@@ -6362,7 +6362,7 @@
 	</game>
 	<game name="eswats" cloneof="eswat" romof="eswat" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>ESWAT - City Under Siege (Hack, Spanish)</description>
+		<description>ESWAT: City Under Siege (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="ESWAT - City Under Siege T-Spa (2018)(Wave).bin" size="524288" crc="63611cb7"/>
@@ -6479,10 +6479,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="exilej" cloneof="exile" romof="exile" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Exile - Toki no Hazama e (Japan)</description>
+		<description>Exile: Toki no Hazama he (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Riot</manufacturer>
-		<rom name="Exile - Toki no Hazama e (Japan)(1991)(Riot).bin" size="1048576" crc="880bf311"/>
+		<rom name="Exile - Toki no Hazama he (Japan)(1991)(Riot).bin" size="1048576" crc="880bf311"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6512,7 +6512,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="exodus" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Exodus - Journey to the Promised Land (USA) (Unl)</description>
+		<description>Exodus: Journey to the Promised Land (USA) (Unl)</description>
 		<year>1993</year>
 		<manufacturer>Wisdom Tree</manufacturer>
 		<rom name="Exodus - Journey to the Promised Land (USA)(Unl)(1993)(Wisdom Tree).bin" size="524288" crc="22e6fc04"/>
@@ -8703,10 +8703,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="ddanpei" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Honoo no Toukyuuji - Dodge Danpei (Japan)</description>
+		<description>Honoo no Toukyuuji Dodge Danpei (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
-		<rom name="Honoo no Toukyuuji - Dodge Danpei (Japan)(1992)(Sega).bin" size="524288" crc="630f07c6"/>
+		<rom name="Honoo no Toukyuuji Dodge Danpei (Japan)(1992)(Sega).bin" size="524288" crc="630f07c6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8744,7 +8744,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="huanle" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Huan Le Tao Qi Shu - Smart Mouse (China) (Unl)</description>
+		<description>Huan Le Tao Qi Shu: Smart Mouse (China) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Ming Super Chip</manufacturer>
 		<rom name="Huan Le Tao Qi Shu - Smart Mouse (China)(Unl)(199x)(Ming Super Chip).bin" size="524288" crc="decdf740"/>
@@ -8803,7 +8803,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hyokkohj" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Hyokkori Hyoutan Jima - Daitouryou o Mezase! (Japan)</description>
+		<description>Hyokkori Hyoutan Jima: Daitouryou o Mezase! (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Hyokkori Hyoutan Jima - Daitouryou o Mezase! (Japan)(1992)(Sega).bin" size="524288" crc="72253bdb"/>
@@ -9855,14 +9855,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="patlabor" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Kidou Keisatsu Patlabor 98-shiki Kidou Seyo! (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Ma-Ba</manufacturer>
-		<rom name="Kidou Keisatsu Patlabor 98-shiki Kidou Seyo! (Japan)(1992)(Ma-Ba).bin" size="524288" crc="21a0e749"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="killshow" cloneof="fatalrew" romof="fatalrew" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Killing Game Show, The (Japan)</description>
 		<year>1993</year>
@@ -10619,15 +10611,15 @@
 		<driver status="good"/>
 	</game>
 	<game name="supmagic" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Linghuan Daoshi Super Magician (China) (Unl)</description>
+		<description>Linghuan Daoshi ~ Super Magician (China) (Unl)</description>
 		<year>1994</year>
 		<manufacturer>Ming Super Chip</manufacturer>
-		<rom name="Linghuan Daoshi Super Magician (China)(Unl)(1994)(Ming Super Chip).bin" size="1048576" crc="e24ac6b2"/>
+		<rom name="Linghuan Daoshi - Super Magician (China)(Unl)(1994)(Ming Super Chip).bin" size="1048576" crc="e24ac6b2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="lionkin3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lion King 3, The - Shi Zi Wang 3 (Taiwan) (Unl)</description>
+		<description>Lion King 3, The ~ Shi Zi Wang 3 (Taiwan) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>X Boy - Gamtec</manufacturer>
 		<rom name="Lion King 3, The - Shi Zi Wang 3 (Taiwan)(Unl)(1997)(X Boy - Gamtec).bin" size="2097152" crc="c004219d"/>
@@ -10635,7 +10627,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="lionkin3b" cloneof="lionkin3" romof="lionkin3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lion King 3, The - Shi Zi Wang 3 (Taiwan, Alt 2) (Unl)</description>
+		<description>Lion King 3, The ~ Shi Zi Wang 3 (Taiwan, Alt 2) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>X Boy - Gamtec</manufacturer>
 		<rom name="Lion King 3, The - Shi Zi Wang 3 (Taiwan, Alt 2)(Unl)(1997)(X Boy - Gamtec).bin" size="2097152" crc="8e0555e4"/>
@@ -10643,7 +10635,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="lionkin3a" cloneof="lionkin3" romof="lionkin3" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lion King 3, The - Shi Zi Wang 3 (Taiwan, Alt) (Unl)</description>
+		<description>Lion King 3, The ~ Shi Zi Wang 3 (Taiwan, Alt) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>X Boy - Gamtec</manufacturer>
 		<rom name="Lion King 3, The - Shi Zi Wang 3 (Taiwan, Alt)(Unl)(1997)(X Boy - Gamtec).bin" size="2097152" crc="87e86943"/>
@@ -10651,7 +10643,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="lionkin2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lion King II, The - Shi Zi Wang II (China) (Unl)</description>
+		<description>Lion King II, The ~ Shi Zi Wang II (China) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Gamtec</manufacturer>
 		<rom name="Lion King II, The - Shi Zi Wang II (China)(Unl)(199x)(Gamtec).bin" size="2097152" crc="aff46765"/>
@@ -10659,7 +10651,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="lionkin2a" cloneof="lionkin2" romof="lionkin2" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Lion King II, The - Shi Zi Wang II (China, Alt) (Unl)</description>
+		<description>Lion King II, The ~ Shi Zi Wang II (China, Alt) (Unl)</description>
 		<year>199?</year>
 		<manufacturer>Gamtec</manufacturer>
 		<rom name="Lion King II, The - Shi Zi Wang II (China, Alt)(Unl)(199x)(Gamtec).bin" size="2097152" crc="721b4981"/>
@@ -11056,7 +11048,7 @@
 		<driver status="preliminary"/>
 	</game>
 	<game name="mahjongc" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mahjong Cop Ryuu - Shiro Ookami no Yabou (Japan)</description>
+		<description>Mahjong Cop Ryuu: Shiro Ookami no Yabou (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Mahjong Cop Ryuu - Shiro Ookami no Yabou (Japan)(1989)(Sega).bin" size="262144" crc="1ccbc782"/>
@@ -11081,7 +11073,7 @@
 		<driver status="preliminary"/>
 	</game>
 	<game name="mamono" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mamono Hunter Youko - Dai 7 no Keishou (Japan)</description>
+		<description>Mamono Hunter Youko: Dai 7 no Keishou (Japan)</description>
 		<year>1991</year>
 		<manufacturer>NCS Corp.</manufacturer>
 		<rom name="Mamono Hunter Youko - Dai 7 no Keishou (Japan)(1991)(NCS).bin" size="524288" crc="10bb359b"/>
@@ -11276,7 +11268,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mazinsagu" cloneof="mazinwar" romof="mazinwar" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Mazin Saga (USA)</description>
+		<description>Mazin Saga: Mutant Fighter (USA)</description>
 		<year>1993</year>
 		<manufacturer>Vic Tokai</manufacturer>
 		<rom name="Mazin Saga - Mutant Fighter (USA)(1993)(Vic Tokai).bin" size="1048576" crc="1bd9fef1"/>
@@ -11759,7 +11751,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="menghu" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Meng Huan Shui Guo Pan - 777 Casino (Taiwan) (Unl)</description>
+		<description>Meng Huan Shui Guo Pan: 777 Casino (Taiwan) (Unl)</description>
 		<year>1996</year>
 		<manufacturer>Gamtec</manufacturer>
 		<rom name="Meng Huan Shui Guo Pan - 777 Casino (Taiwan)(Unl)(1996)(Gamtec).bin" size="1048576" crc="42dc03e4"/>
@@ -14260,6 +14252,14 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="patlabor" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Patlabor: 98-shiki Kidou Seyo! (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Ma-Ba</manufacturer>
+		<rom name="Patlabor - 98-shiki Kidou Seyo! (Japan)(1992)(Ma-Ba).bin" size="524288" crc="21a0e749"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="peacocking2" cloneof="mystdef" romof="mystdef" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Peacock King 2: Castle of Illusion (Hack, English + Gameplay Upgrade v2.42)</description>
@@ -16578,20 +16578,20 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="manover" sourcefile="megadrive/d_megadrive.cpp">
-		<description>S.S. Lucifer - Man Overboard! (Euro)</description>
-		<year>1994</year>
-		<manufacturer>Codemasters</manufacturer>
-		<rom name="S.S. Lucifer - Man Overboard! (Euro)(1994)(Codemasters).bin" size="1048576" crc="cae0e3a6"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="manovers" cloneof="manover" romof="manover" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>S.S. Lucifer - Man Overboard! (Hack, Spanish)</description>
 		<year>2019</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="S.S. Lucifer - Man Overboard! T-Spa (2019)(Wave).bin" size="1048576" crc="17edbbfe"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="manover" sourcefile="megadrive/d_megadrive.cpp">
+		<description>S.S. Lucifer: Man Overboard! (Euro)</description>
+		<year>1994</year>
+		<manufacturer>Codemasters</manufacturer>
+		<rom name="S.S. Lucifer - Man Overboard! (Euro)(1994)(Codemasters).bin" size="1048576" crc="cae0e3a6"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -79,8 +79,7 @@ struct upd7759_chip
 	INT16 *     out_buf;
 	INT16 *     out_buf_linear;
 	INT16 *     out_buf_linear_resampled;
-	INT32       out_buf_size;
-	INT32       out_pos;
+	UINT32       out_pos;
 
 	// filter
 	BIQ biquadL;
@@ -94,6 +93,9 @@ struct upd7759_chip
 	double		volume;
 	INT32		output_dir;
 };
+
+const UINT32       out_buf_size = 0x2000;
+const UINT32       out_buf_mask = out_buf_size - 1;
 
 static struct upd7759_chip *Chips[2] = { NULL, NULL }; // more?
 static struct upd7759_chip *Chip = NULL;
@@ -382,7 +384,7 @@ void UPD7759Update(INT32 chip, INT32 nLength)
 		while (nLength != 0)
 		{
 			Chip->out_buf[Chip->out_pos] = Sample * 128;
-			Chip->out_pos = (Chip->out_pos + 1) % Chip->out_buf_size;
+			Chip->out_pos = (Chip->out_pos + 1) & out_buf_mask;
 
 			Chip->sample_counts++;
 
@@ -420,7 +422,7 @@ void UPD7759Update(INT32 chip, INT32 nLength)
 
 	while (nLength > 0) { // fill unused with nothing
 		Chip->out_buf[Chip->out_pos] = 0;
-		Chip->out_pos = (Chip->out_pos + 1) % Chip->out_buf_size;
+		Chip->out_pos = (Chip->out_pos + 1) & out_buf_mask;
 
 		Chip->sample_counts++;
 
@@ -474,7 +476,7 @@ void UPD7759Render(INT32 chip, INT16 *pSoundBuf, INT32 samples)
 
 	// copy frame worth of samples out of circular buffer into linear buffer.
 	for (INT32 i = 0; i < nFrameLength; i++) {
-		INT32 cpos = (Chip->out_pos + nFrameLength + i) % Chip->out_buf_size;
+		INT32 cpos = (Chip->out_pos + nFrameLength + i) & out_buf_mask;
 		Chip->out_buf_linear[i] = Chip->out_buf[cpos];
 	    Chip->out_buf[cpos] = 0;
 	}
@@ -510,7 +512,7 @@ static void UPD7759ResetINT(INT32 chip)
 	upd7759_chip *rChip = Chips[chip];
 
 	if (SlaveMode) {
-		BurnTimerReset();
+		BurnTimerSetRetrig((TimerIndex << 1) + 0, 0.0);
 	}
 
 	rChip->pos                = 0;
@@ -578,10 +580,9 @@ void UPD7759Init(INT32 chip, INT32 clock, UINT8* pSoundData)
 	// out_buf - circular buffer @ clock/4 rate
 	// out_buf_linear - linearized right before resampling and rendering
 	// out_buf_linear_resampled - resampled and ready to be filtered
-	Chip->out_buf_size = (clock / 4) * 100 / (nBurnFPS / 2); // word-size (byte size = *2)
-	Chip->out_buf = (INT16*)BurnMalloc(Chip->out_buf_size * sizeof(INT16));
-	Chip->out_buf_linear = (INT16*)BurnMalloc(Chip->out_buf_size * sizeof(INT16));
-	Chip->out_buf_linear_resampled = (INT16*)BurnMalloc(Chip->out_buf_size * sizeof(INT16));
+	Chip->out_buf = (INT16*)BurnMalloc(out_buf_size * sizeof(INT16));
+	Chip->out_buf_linear = (INT16*)BurnMalloc(out_buf_size * sizeof(INT16));
+	Chip->out_buf_linear_resampled = (INT16*)BurnMalloc(out_buf_size * sizeof(INT16));
 	Chip->out_pos = 0;
 
 	if (pSoundData) {
@@ -590,6 +591,7 @@ void UPD7759Init(INT32 chip, INT32 clock, UINT8* pSoundData)
 	} else {
 		SlaveMode = 1;
 		TimerIndex = BurnTimerInit(&slave_timer_cb, NULL); // for high-freq timer
+		bprintf(0, _T("UPD7759 Slave Mode.  Timer Index: %d\n"), TimerIndex);
 	}
 	
 	Chip->reset = 1;

@@ -50163,18 +50163,18 @@ struct BurnDriver BurnDrvnes_seiredenlic = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
-// Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.01)
+// Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.02)
 // https://www.romhacking.net/translations/7239/
 static struct BurnRomInfo nes_shancaraRomDesc[] = {
-	{ "Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.01 (2024)(BlackPaladin).nes",          262160, 0x7ea7e5df, BRF_ESS | BRF_PRG },
+	{ "Seiryaku Simulation - Planet of Conspiracy - Shancara T-Eng v1.02 (2026)(BlackPaladin).nes",          262160, 0x0115817e, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(nes_shancara)
 STD_ROM_FN(nes_shancara)
 
 struct BurnDriver BurnDrvnes_shancara = {
-	"nes_shancara", NULL, NULL, NULL, "2024",
-	"Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.01)\0", NULL, "BlackPaladin", "NES / Famicom",
+	"nes_shancara", NULL, NULL, NULL, "2026",
+	"Seiryaku Simulation: Planet of Conspiracy ~ Shancara (Hack, English v1.02)\0", NULL, "BlackPaladin", "NES / Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HACK, 4, HARDWARE_NES, GBF_STRATEGY, 0,
 	NESGetZipName, nes_shancaraRomInfo, nes_shancaraRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
