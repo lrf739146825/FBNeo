@@ -373,6 +373,7 @@ DRV		BurnDrvsms_herolancc;
 DRV		BurnSpecadvlawn2;
 DRV		BurnSpecAdvancedpinballsim;
 DRV		BurnSpecAdvsocsim;
+DRV		BurnDrvAdcanoe;
 DRV		BurnDrvnes_adventureislandc;
 DRV		BurnDrvpce_advislnd;
 DRV		BurnDrvcv_advisland;
@@ -25113,6 +25114,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecadvlawn2,			// Advanced Lawnmower Simulator II (128K)
 	&BurnSpecAdvancedpinballsim,// Advanced Pinball Simulator (48K-128K)
 	&BurnSpecAdvsocsim,			// Advanced Soccer Simulator (48K)
+	&BurnDrvAdcanoe,			// Adventure Canoe
 	&BurnDrvnes_adventureislandc,// Adventure Island (Hack, Spanish v2.0)
 	&BurnDrvpce_advislnd,		// Adventure Island (Japan)
 	&BurnDrvcv_advisland,		// Adventure Island (SGM) (HB)
@@ -49853,6 +49855,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_advlawn2", "spectrum/d_spectrum.cpp"},
 	{ "spec_advancedpinballsim", "spectrum/d_spectrum.cpp"},
 	{ "spec_advsocsim", "spectrum/d_spectrum.cpp"},
+	{ "adcanoe", "taito/d_taitosj.cpp"},
 	{ "nes_adventureislandc", "nes/d_nes.cpp"},
 	{ "pce_advislnd", "pce/d_pce.cpp"},
 	{ "cv_advisland", "coleco/d_coleco.cpp"},

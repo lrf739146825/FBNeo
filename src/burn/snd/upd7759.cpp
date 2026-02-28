@@ -600,8 +600,11 @@ void UPD7759Init(INT32 chip, INT32 clock, UINT8* pSoundData)
 	Chip->output_dir = BURN_SND_ROUTE_BOTH;
 	
 	nNumChips = chip;
-	
+
+	int slavetemp = SlaveMode;
+	SlaveMode = 0; // don't mess with timer/cpu now
 	UPD7759Reset();
+	SlaveMode = slavetemp;
 }
 
 void UPD7759SetStartDelay(INT32 chip, INT32 nDelay)

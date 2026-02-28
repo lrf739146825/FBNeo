@@ -187,6 +187,30 @@ static struct BurnInputInfo AlpineInputList[] = {
 
 STDINPUTINFO(Alpine)
 
+static struct BurnInputInfo AdcanoeInputList[] = {
+	{"P1 Coin",			BIT_DIGITAL,	DrvJoy3 + 5,	"p1 coin"		},
+	{"P1 Start",		BIT_DIGITAL,	DrvJoy3 + 6,	"p1 start"		},
+	{"P1 Left",			BIT_DIGITAL,	DrvJoy2 + 0,	"p1 left"		},
+	{"P1 Right",		BIT_DIGITAL,	DrvJoy2 + 1,	"p1 right"		},
+	{"P1 Button 1",		BIT_DIGITAL,	DrvJoy2 + 4,	"p1 fire 1"		},
+	{"P1 Button 2",		BIT_DIGITAL,	DrvJoy2 + 5,	"p1 fire 2"		},
+
+	{"P2 Coin",			BIT_DIGITAL,	DrvJoy3 + 0,	"p2 coin"		},
+	{"P2 Start",		BIT_DIGITAL,	DrvJoy3 + 7,	"p2 start"		},
+	{"P2 Left",			BIT_DIGITAL,	DrvJoy1 + 0,	"p2 left"		},
+	{"P2 Right",		BIT_DIGITAL,	DrvJoy1 + 1,	"p2 right"		},
+	{"P2 Button 1",		BIT_DIGITAL,	DrvJoy1 + 4,	"p2 fire 1"		},
+	{"P2 Button 2",		BIT_DIGITAL,	DrvJoy1 + 5,	"p2 fire 2"		},
+
+	{"Reset",			BIT_DIGITAL,	&DrvReset,		"reset"			},
+	{"Tilt",			BIT_DIGITAL,	DrvJoy4 + 5,	"tilt"			},
+	{"Dip A",			BIT_DIPSWITCH,	DrvDips + 0,	"dip"			},
+	{"Dip B",			BIT_DIPSWITCH,	DrvDips + 1,	"dip"			},
+	{"Dip C",			BIT_DIPSWITCH,	DrvDips + 2,	"dip"			},
+};
+
+STDINPUTINFO(Adcanoe)
+
 static struct BurnInputInfo TimetunlInputList[] = {
 	{"P1 Coin",				BIT_DIGITAL,	DrvJoy3 + 5,	"p1 coin"	},
 	{"P1 Start",			BIT_DIGITAL,	DrvJoy3 + 6,	"p1 start"	},
@@ -703,6 +727,44 @@ static struct BurnDIPInfo AlpineaDIPList[]=
 };
 
 STDDIPINFO(Alpinea)
+
+static struct BurnDIPInfo AdcanoeDIPList[]=
+{
+	DIP_OFFSET(0x0e)
+	{0x00, 0xff, 0xff, 0xdf, NULL						},
+	{0x01, 0xff, 0xff, 0x00, NULL						},
+	{0x02, 0xff, 0xff, 0xff, NULL						},
+
+	{0   , 0xfe, 0   ,    4, "Lives"					},
+	{0x00, 0x01, 0x03, 0x00, "3"						},
+	{0x00, 0x01, 0x03, 0x01, "4"						},
+	{0x00, 0x01, 0x03, 0x02, "5"						},
+	{0x00, 0x01, 0x03, 0x03, "6"						},
+
+	{0   , 0xfe, 0   ,    2, "Extend"					},
+	{0x00, 0x01, 0x04, 0x00, "5000"						},
+	{0x00, 0x01, 0x04, 0x04, "10000"					},
+
+	{0   , 0xfe, 0   ,    2, "Year Display"				},
+	{0x00, 0x01, 0x08, 0x00, "Off"						},
+	{0x00, 0x01, 0x08, 0x08, "On"						},
+
+	{0   , 0xfe, 0   ,    2, "No Hit (Debug)"			},
+	{0x00, 0x01, 0x10, 0x10, "Off"						},
+	{0x00, 0x01, 0x10, 0x00, "On"						},
+
+	{0   , 0xfe, 0   ,    2, "Flip Screen"				},
+	{0x00, 0x01, 0x40, 0x40, "Off"						},
+	{0x00, 0x01, 0x40, 0x00, "On"						},
+
+	{0   , 0xfe, 0   ,    2, "Cabinet"					},
+	{0x00, 0x01, 0x80, 0x80, "Upright"					},
+	{0x00, 0x01, 0x80, 0x00, "Cocktail"					},
+
+	COMMON_COIN_DIPS(0x01)
+};
+
+STDDIPINFO(Adcanoe)
 
 static struct BurnDIPInfo TimetunlDIPList[]=
 {
@@ -3138,6 +3200,48 @@ struct BurnDriver BurnDrvAlpinea = {
 	BDF_GAME_WORKING | BDF_RUNAHEAD_DRAWSYNC | BDF_CLONE | BDF_ORIENTATION_VERTICAL | BDF_HISCORE_SUPPORTED, 2, HARDWARE_TAITO_MISC, GBF_SPORTSMISC, 0,
 	NULL, alpineaRomInfo, alpineaRomName, NULL, NULL, NULL, NULL, AlpineInputInfo, AlpineaDIPInfo,
 	alpineaInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x40,
+	224, 256, 3, 4
+};
+
+
+// Adventure Canoe
+
+static struct BurnRomInfo adcanoeRomDesc[] = {
+	{ "ac_12.ic69",						0x001000, 0x4179cdc7,  1 | BRF_PRG | BRF_ESS },	//  0 maincpu
+	{ "ac_13.ic68",						0x001000, 0x17d97740,  1 | BRF_PRG | BRF_ESS },	//  1 
+	{ "ac_14.ic67",						0x001000, 0x4b0c895e,  1 | BRF_PRG | BRF_ESS },	//  2 
+	{ "ac_15.ic66",						0x001000, 0x262f4ce2,  1 | BRF_PRG | BRF_ESS },	//  3 
+	{ "ac_16.ic65",						0x001000, 0xe68c7053,  1 | BRF_PRG | BRF_ESS },	//  4 
+	{ "ac_17.ic64",						0x001000, 0x0bdd9efe,  1 | BRF_PRG | BRF_ESS },	//  5 
+	{ "ac_18.ic55",						0x001000, 0x959a143b,  1 | BRF_PRG | BRF_ESS },	//  6 
+	{ "ac_19.ic54",						0x001000, 0x9e7693f6,  1 | BRF_PRG | BRF_ESS },	//  7 
+
+	{ "ac_09.ic70",						0x001000, 0xbed871c5,  2 | BRF_PRG | BRF_ESS },	//  8 audiocpu
+
+	{ "ac_20.ic1",						0x001000, 0x21b49aae,  3 | BRF_GRA },			//  9 gfx
+	{ "ac_21.ic2",						0x001000, 0xd7efd8f7,  3 | BRF_GRA },			// 10 
+	{ "ac_22.ic3",						0x001000, 0x44290adf,  3 | BRF_GRA },			// 11 
+	{ "ac_23.ic4",						0x001000, 0x011daec9,  3 | BRF_GRA },			// 12 
+	{ "ac_24.ic5",						0x001000, 0x42943c3d,  3 | BRF_GRA },			// 13 
+
+	{ "eb16.22",						0x000100, 0xb833b5ea,  4 | BRF_GRA },			// 14 proms
+};
+
+STD_ROM_PICK(adcanoe)
+STD_ROM_FN(adcanoe)
+
+static INT32 adcanoeInit()
+{
+	return CommonInit(1, 0, 0);
+}
+
+struct BurnDriver BurnDrvAdcanoe = {
+	"adcanoe", NULL, NULL, NULL, "1982",
+	"Adventure Canoe\0", NULL, "Taito Corporation", "Taito SJ System",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_RUNAHEAD_DRAWSYNC | BDF_ORIENTATION_VERTICAL | BDF_ORIENTATION_FLIPPED | BDF_HISCORE_SUPPORTED, 2, HARDWARE_TAITO_MISC, GBF_MISC, 0,
+	NULL, adcanoeRomInfo, adcanoeRomName, NULL, NULL, NULL, NULL, AdcanoeInputInfo, AdcanoeDIPInfo,
+	adcanoeInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x40,
 	224, 256, 3, 4
 };
 

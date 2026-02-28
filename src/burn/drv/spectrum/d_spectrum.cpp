@@ -15644,7 +15644,7 @@ struct BurnDriver BurnSpecjetpac = {
 // Jet Set Willy (48K)
 
 static struct BurnRomInfo SpecjswillyRomDesc[] = {
-	{ "Jet Set Willy 48K (1984)(Software Projects).tap", 33280, 0x17ec8978, BRF_ESS | BRF_PRG },
+	{ "Jet Set Willy 48K (1984)(Software Projects)(Original, 4 bug fix, no keycode).tzx", 33298, 0x93c0db2f, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(Specjswilly, Specjswilly, Spectrum)
