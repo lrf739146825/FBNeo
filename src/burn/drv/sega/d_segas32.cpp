@@ -770,7 +770,7 @@ static struct BurnInputInfo RadrInputList[] = {
 	A("P1 Brake",		BIT_ANALOG_REL, &Analog[2],		"p1 z-axis"	),
 
 	{"Reset",			BIT_DIGITAL,	&DrvReset,		"reset"		},
-	{"Service Mode",	BIT_DIGITAL,	DrvJoy5 + 1,	"service"	},
+	{"Service Mode",	BIT_DIGITAL,	DrvJoy5 + 1,	"diag"		},
 	{"Service 1",		BIT_DIGITAL,	DrvJoy5 + 0,	"service"	},
 	{"Service 2",		BIT_DIGITAL,	DrvJoy6 + 4,	"service"	},
 	{"Service 3",		BIT_DIGITAL,	DrvJoy6 + 5,	"service"	},

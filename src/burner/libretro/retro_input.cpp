@@ -2772,6 +2772,13 @@ static INT32 GameInpOtherOne(struct GameInp* pgi, char* szi, char *szn)
 		}
 	}
 
+	// Sega Y-Board require this to navigate in service menu
+	if ((nHardwareCode & HARDWARE_PUBLIC_MASK) == HARDWARE_SEGA_SYSTEMY) {
+		if (strcmp("Service", szn) == 0) {
+			GameInpDigital2RetroInpKey(pgi, 0, RETRO_DEVICE_ID_JOYPAD_R3, szn);
+		}
+	}
+
 	// Some cv1k games require this for special mode
 	if ((nHardwareCode & HARDWARE_PUBLIC_MASK) == HARDWARE_CAVE_CV1000) {
 		if (strcmp("Service", szn) == 0) {
