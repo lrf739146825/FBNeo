@@ -15169,7 +15169,7 @@
 		<description>Jet Set Willy (48K)</description>
 		<year>1984</year>
 		<manufacturer>Software Projects</manufacturer>
-		<rom name="Jet Set Willy 48K (1984)(Software Projects).tap" size="33280" crc="17ec8978"/>
+		<rom name="Jet Set Willy 48K (1984)(Software Projects)(Original, 4 bug fix, no keycode).tzx" size="33298" crc="93c0db2f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

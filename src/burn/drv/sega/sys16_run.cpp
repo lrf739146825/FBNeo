@@ -324,7 +324,9 @@ static INT32 System16DoReset()
 	}
 	
 	if (System16UPD7759DataSize) {
+		ZetOpen(0);
 		UPD7759Reset();
+		ZetClose();
 		UPD7759BankAddress = 0;
 	}
 	
