@@ -1632,7 +1632,7 @@ static void System16BAltRenderTextLayer(INT32 PriorityDraw)
 Sprite Rendering
 ====================================================*/
 
-static void System16ADrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel)
+inline static void System16ADrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel)
 {
 	x += System16SpriteXOffset;
 
@@ -1743,7 +1743,7 @@ static void System16ARenderSpriteLayer()
 	}
 }
 
-static void System16BDrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel, UINT16* PalRAM)
+inline static void System16BDrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel, UINT16* PalRAM)
 {
 	x += System16SpriteXOffset;
 	if (x >= 0 && x <= 319 && pix != 0 && pix != 15) {
@@ -3472,7 +3472,7 @@ static void System18RenderTextLayer(INT32 PriorityDraw, INT32 tpri)
 	}
 }
 
-static void System18DrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel)
+inline static void System18DrawPixel(INT32 x, INT32 pix, INT32 colour, UINT16* pPixel)
 {
 	x += System16SpriteXOffset;
 	if (x >= 0 && x <= 319 && pix != 0 && pix != 15) {
