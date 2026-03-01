@@ -129,19 +129,19 @@ typedef struct
 	INT32 status;
 	INT32 flash_mode;
 	INT32 flash_master_lock;
-} flash_chip;
+} cps3_flash_chip;
 
-static flash_chip main_flash;
+static cps3_flash_chip main_flash;
 
-void cps3_flash_init(flash_chip * chip/*, void *data*/)
+void cps3_flash_init(cps3_flash_chip * chip/*, void *data*/)
 {
-	memset(chip, 0, sizeof(flash_chip));
+	memset(chip, 0, sizeof(cps3_flash_chip));
 	chip->status = 0x80;
 	chip->flash_mode = FM_NORMAL;
 	chip->flash_master_lock = 0;
 }
 
-UINT32 cps3_flash_read(flash_chip * chip, UINT32 addr)
+UINT32 cps3_flash_read(cps3_flash_chip * chip, UINT32 addr)
 {
 	switch( chip->flash_mode ) {
 	case FM_READAMDID3:
@@ -167,7 +167,7 @@ UINT32 cps3_flash_read(flash_chip * chip, UINT32 addr)
 	}
 }
 
-void cps3_flash_write(flash_chip * chip, UINT32 addr, UINT32 data)
+void cps3_flash_write(cps3_flash_chip * chip, UINT32 addr, UINT32 data)
 {
 	bprintf(1, _T("FLASH to write long value %8x to location %8x\n"), data, addr);
 	

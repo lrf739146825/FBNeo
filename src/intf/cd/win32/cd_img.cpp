@@ -220,7 +220,7 @@ static int cdimgParseSubFile()
 	fseek(h, 0, SEEK_END);
 
 	INT32 subQidx = 0;
-	INT32 subQsize = ftell(h);
+	UINT32 subQsize = ftell(h);
 	UINT8 *subQdata = (UINT8*)malloc(subQsize);
 	memset(subQdata, 0, subQsize);
 

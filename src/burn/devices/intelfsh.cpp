@@ -35,7 +35,7 @@ enum
 	FM_BYTEPROGRAM
 };
 
-struct flash_chip
+struct intelfsh_flash_chip
 {
 	int type;
 	int size;
@@ -50,11 +50,11 @@ struct flash_chip
 	void *flash_memory;
 };
 
-static struct flash_chip chips[FLASH_CHIPS_MAX];
+static struct intelfsh_flash_chip chips[FLASH_CHIPS_MAX];
 
 static void erase_finished( int chip )
 {
-	struct flash_chip *c;
+	struct intelfsh_flash_chip *c;
 
 	c = &chips[ chip ];
 
@@ -75,14 +75,14 @@ static void erase_finished( int chip )
 void intelflash_exit()
 {
 	for (INT32 i = 0; i < FLASH_CHIPS_MAX; i++) {
-		struct flash_chip *c = &chips[i];
+		struct intelfsh_flash_chip *c = &chips[i];
 		if (c->flash_memory) BurnFree(c->flash_memory);
 	}
 }
 
 void intelflash_init(int chip, int type, void *data)
 {
-	struct flash_chip *c;
+	struct intelfsh_flash_chip *c;
 	if( chip >= FLASH_CHIPS_MAX )
 	{
 		logerror( "intelflash_init: invalid chip %d\n", chip );
@@ -145,7 +145,7 @@ void intelflash_init(int chip, int type, void *data)
 UINT32 intelflash_read(int chip, UINT32 address)
 {
 	UINT32 data = 0;
-	struct flash_chip *c;
+	struct intelfsh_flash_chip *c;
 	if( chip >= FLASH_CHIPS_MAX )
 	{
 		logerror( "intelflash_read: invalid chip %d\n", chip );
@@ -227,7 +227,7 @@ UINT32 intelflash_read(int chip, UINT32 address)
 
 void intelflash_write_raw( int chip, UINT32 address, UINT8 value )
 {
-	struct flash_chip *c;
+	struct intelfsh_flash_chip *c;
 	if( chip >= FLASH_CHIPS_MAX )
 	{
 		logerror( "intelflash_write: invalid chip %d\n", chip );
@@ -242,7 +242,7 @@ void intelflash_write_raw( int chip, UINT32 address, UINT8 value )
 
 void intelflash_write(int chip, UINT32 address, UINT32 data)
 {
-	struct flash_chip *c;
+	struct intelfsh_flash_chip *c;
 	if( chip >= FLASH_CHIPS_MAX )
 	{
 		logerror( "intelflash_write: invalid chip %d\n", chip );
@@ -492,7 +492,7 @@ INT32 intelflash_scan(INT32 nAction, INT32 *pnMin)
 	if (nAction & ACB_VOLATILE)
 	{
 		for (INT32 i = 0; i < FLASH_CHIPS_MAX; i++) {
-			ScanVar(&chips[i], STRUCT_SIZE_HELPER(struct flash_chip, timer_frame), "intelfish");
+			ScanVar(&chips[i], STRUCT_SIZE_HELPER(struct intelfsh_flash_chip, timer_frame), "intelfish");
 		}
 	}
 
@@ -503,7 +503,7 @@ INT32 intelflash_scan(INT32 nAction, INT32 *pnMin)
 		for (INT32 i = 0; i < FLASH_CHIPS_MAX; i++)
 		{
 			char name[128];
-			struct flash_chip *c = &chips[i];
+			struct intelfsh_flash_chip *c = &chips[i];
 
 			memset(&ba, 0, sizeof(ba));
 			sprintf (name, "Intel FLASH ROM #%d", i);
