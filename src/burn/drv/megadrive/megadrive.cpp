@@ -106,7 +106,7 @@ static void z80CyclesSync()
 typedef void (*MegadriveCb)();
 static MegadriveCb MegadriveCallback;
 
-struct PicoVideo {
+struct MegadrivePicoVideo {
 	UINT8 reg[0x20];
 	UINT32 command;		// 32-bit Command
 	UINT8 pending;		// 1 if waiting for second half of 32-bit command
@@ -238,7 +238,7 @@ static UINT8 *RamIO;
 static UINT16 *RamPal;
 static UINT16 *RamVid;
 static UINT16 *RamSVid;
-static struct PicoVideo *RamVReg;
+static struct MegadrivePicoVideo *RamVReg;
 static struct PicoMisc *RamMisc;
 static struct MegadriveJoyPad *JoyPad;
 
@@ -443,7 +443,7 @@ static INT32 MemIndex()
 	RamPal		= (UINT16 *) Next; Next += 0x000040 * sizeof(UINT16);
 	RamSVid		= (UINT16 *) Next; Next += 0x000040 * sizeof(UINT16);	// VSRam
 	RamVid		= (UINT16 *) Next; Next += 0x010000 * sizeof(UINT16);	// Video Ram
-	RamVReg		= (struct PicoVideo *)Next; Next += sizeof(struct PicoVideo);
+	RamVReg		= (struct MegadrivePicoVideo *)Next; Next += sizeof(struct MegadrivePicoVideo);
 
 	JoyPad		= (struct MegadriveJoyPad *) Next; Next += sizeof(struct MegadriveJoyPad);
 
@@ -931,7 +931,7 @@ static void DmaFill(INT32 data)
 
 static void CommandChange()
 {
-	//struct PicoVideo *pvid=&Pico.video;
+	//struct MegadrivePicoVideo *pvid=&Pico.video;
 	UINT32 cmd = RamVReg->command;
 	UINT32 addr = 0;
 
@@ -1685,7 +1685,7 @@ static INT32 MegadriveResetDo()
 	clear_opposite.reset();
 
 	// default VDP register values (based on Fusion)
-	memset(RamVReg, 0, sizeof(struct PicoVideo));
+	memset(RamVReg, 0, sizeof(struct MegadrivePicoVideo));
 	RamVReg->reg[0x00] = 0x04;
 	RamVReg->reg[0x01] = 0x04;
 	RamVReg->reg[0x0c] = 0x81;

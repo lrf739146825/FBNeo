@@ -1724,7 +1724,7 @@ struct MovieExtInfo
 	UINT32 hour, minute, second;
 };
 
-#if !defined(BUILD_SDL) && !defined(BUILD_SDL2) && !defined(BUILD_MACOS)
+#if !defined(BUILD_SDL) && !defined(BUILD_SDL2) && !defined(BUILD_MACOS) && !defined(__LIBRETRO__)
 extern struct MovieExtInfo MovieInfo; // from replay.cpp
 #else
 struct MovieExtInfo MovieInfo = { 0, 0, 0, 0, 0, 0, 0 };

@@ -71,7 +71,7 @@ static INT32 is_ribbit = 0;
 
 static INT32 has_dial = 0;
 
-struct PicoVideo {
+struct SegaC2PicoVideo {
 	UINT8 reg[0x20];
 	UINT32 command;		// 32-bit Command
 	UINT8 pending;		// 1 if waiting for second half of 32-bit command
@@ -133,7 +133,7 @@ struct TileStrip
 static UINT16 *RamPal;
 static UINT16 *RamVid;
 static UINT16 *RamSVid;
-static struct PicoVideo *RamVReg;
+static struct SegaC2PicoVideo *RamVReg;
 
 static UINT16 *HighCol;
 static UINT16 *HighColFull;
@@ -1422,7 +1422,7 @@ static void DmaFill(INT32 data)
 
 static void CommandChange()
 {
-	//struct PicoVideo *pvid=&Pico.video;
+	//struct SegaC2PicoVideo *pvid=&Pico.video;
 	UINT32 cmd = RamVReg->command;
 	UINT32 addr = 0;
 
@@ -1965,7 +1965,7 @@ static INT32 DrvDoReset()
 	irq6_line = 224;
 
 	// default VDP register values (based on Fusion)
-	memset(RamVReg, 0, sizeof(struct PicoVideo));
+	memset(RamVReg, 0, sizeof(struct SegaC2PicoVideo));
 	RamVReg->reg[0x00] = 0x04;
 	RamVReg->reg[0x01] = 0x04;
 	RamVReg->reg[0x0c] = 0x81;
@@ -2003,7 +2003,7 @@ static INT32 MemIndex()
 	RamPal		= (UINT16 *) Next; Next += 0x000040 * sizeof(UINT16);
 	RamSVid		= (UINT16 *) Next; Next += 0x000040 * sizeof(UINT16);	// VSRam
 	RamVid		= (UINT16 *) Next; Next += 0x010000 * sizeof(UINT16);	// Video Ram
-	RamVReg		= (struct PicoVideo *)Next; Next += sizeof(struct PicoVideo);
+	RamVReg		= (struct SegaC2PicoVideo *)Next; Next += sizeof(struct SegaC2PicoVideo);
 
 	RamEnd		= Next;
 

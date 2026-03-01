@@ -104,11 +104,11 @@ static INT32 Brapboys = 0;
 typedef void (*MCURun)();
 static MCURun ToyboxMCURun;
 
-typedef INT32 (*ParseSprite)(INT32, struct tempsprite*);
+typedef INT32 (*ParseSprite)(INT32, struct kaneko16_tempsprite*);
 static ParseSprite Kaneko16ParseSprite;
-static INT32 Kaneko16ParseSpriteType0(INT32 i, struct tempsprite *s);
-static INT32 Kaneko16ParseSpriteType1(INT32 i, struct tempsprite *s);
-static INT32 Kaneko16ParseSpriteType2(INT32 i, struct tempsprite *s);
+static INT32 Kaneko16ParseSpriteType0(INT32 i, struct kaneko16_tempsprite *s);
+static INT32 Kaneko16ParseSpriteType1(INT32 i, struct kaneko16_tempsprite *s);
+static INT32 Kaneko16ParseSpriteType2(INT32 i, struct kaneko16_tempsprite *s);
 
 static INT32 nCyclesDone[2], nCyclesTotal[2];
 static INT32 nCyclesExtra;
@@ -117,7 +117,7 @@ static INT32 Kaneko16Watchdog;
 
 static void ShogwarrConfigSoundBank(INT32 oki, INT32 nBank, INT32 nStart, INT32 nSize);
 
-struct tempsprite
+struct kaneko16_tempsprite
 {
 	INT32 code,color;
 	INT32 x,y;
@@ -128,7 +128,7 @@ struct tempsprite
 
 static struct
 {
-	struct tempsprite *first_sprite;
+	struct kaneko16_tempsprite *first_sprite;
 }	spritelist;
 
 /*==============================================================================================
@@ -4590,7 +4590,7 @@ static void Kaneko16VideoInit()
 {
 	GenericTilesInit();
 
-	spritelist.first_sprite = (struct tempsprite *)BurnMalloc(0x400 * sizeof(spritelist.first_sprite[0]));
+	spritelist.first_sprite = (struct kaneko16_tempsprite *)BurnMalloc(0x400 * sizeof(spritelist.first_sprite[0]));
 
 	Kaneko16ParseSprite = Kaneko16ParseSpriteType0;
 
@@ -6205,7 +6205,7 @@ Sprite Rendering
 #define USE_LATCHED_CODE	2
 #define USE_LATCHED_COLOUR	4
 
-static INT32 Kaneko16ParseSpriteType0(INT32 i, struct tempsprite *s)
+static INT32 Kaneko16ParseSpriteType0(INT32 i, struct kaneko16_tempsprite *s)
 {
 	INT32 Attr, xOffs, Offset;
 	UINT16 *SpriteRam = (UINT16*)Kaneko16SpriteRam;
@@ -6232,7 +6232,7 @@ static INT32 Kaneko16ParseSpriteType0(INT32 i, struct tempsprite *s)
 	return ((Attr & 0x2000) ? USE_LATCHED_XY : 0) | ((Attr & 0x4000) ? USE_LATCHED_COLOUR: 0) | ((Attr & 0x8000) ? USE_LATCHED_CODE : 0);
 }
 
-static INT32 Kaneko16ParseSpriteType1(INT32 i, struct tempsprite *s)
+static INT32 Kaneko16ParseSpriteType1(INT32 i, struct kaneko16_tempsprite *s)
 {
 	INT32 Attr, xOffs, Offset;
 	UINT16 *SpriteRam = (UINT16*)Kaneko16SpriteRam;
@@ -6261,7 +6261,7 @@ static INT32 Kaneko16ParseSpriteType1(INT32 i, struct tempsprite *s)
 	return ((Attr & 0x2000) ? USE_LATCHED_XY : 0) | ((Attr & 0x4000) ? USE_LATCHED_COLOUR: 0) | ((Attr & 0x8000) ? USE_LATCHED_CODE : 0);
 }
 
-static INT32 Kaneko16ParseSpriteType2(INT32 i, struct tempsprite *s)
+static INT32 Kaneko16ParseSpriteType2(INT32 i, struct kaneko16_tempsprite *s)
 {
 	INT32 Attr, xOffs, Offset;
 	UINT16 *SpriteRam = (UINT16*)Kaneko16SpriteRam;
@@ -6374,7 +6374,7 @@ static void Kaneko16RenderSprite(UINT32 Code, UINT32 Colour, INT32 FlipX, INT32 
 
 static void Kaneko16RenderSprites(INT32 PriorityDraw)
 {
-	struct tempsprite *s = spritelist.first_sprite;
+	struct kaneko16_tempsprite *s = spritelist.first_sprite;
 
 	INT32 i = 0;
 	INT32 x = 0;
@@ -6549,7 +6549,7 @@ static void Kaneko16RenderSprite_PrioBuffer(UINT32 Code, UINT32 Colour, INT32 Fl
 
 static void Kaneko16RenderSprites_PrioBuffer()
 {
-	struct tempsprite *s = spritelist.first_sprite;
+	struct kaneko16_tempsprite *s = spritelist.first_sprite;
 
 	INT32 i = 0;
 	INT32 x = 0;

@@ -4,12 +4,12 @@
 // which was based on an old version of MAME. It is considered "good enough" for the purpose of giving the impression
 // of the star layers without being totally accurate
 
-struct Star
+struct gal_star
 {
 	INT32 x, y, Colour;
 };
 
-static struct Star Stars[252];
+static struct gal_star Stars[252];
 
 INT32 GalStarsEnable     = 0;
 INT32 GalStarsScrollPos  = 0;

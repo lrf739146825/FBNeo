@@ -729,13 +729,13 @@ static INT32 gg_decode(char *gg_code, UINT32 &address, UINT8 &value)
 static const INT32 cheat_MAX = 0x100;
 static INT32 cheats_active = 0;
 
-struct cheat_struct {
+struct snes_cheat_struct {
 	char code[0x10]; // gamegenie, par code
 	UINT32 address;
 	UINT8 value;
 };
 
-static cheat_struct cheats[cheat_MAX];
+static snes_cheat_struct cheats[cheat_MAX];
 
 static void snes_add_cheat(char *code, int fbn_cheat_id /*currently unused in snes*/)
 {
@@ -760,12 +760,12 @@ static void snes_add_cheat(char *code, int fbn_cheat_id /*currently unused in sn
 
 static void snes_remove_cheat(char *code)
 {
-	cheat_struct cheat_temp[cheat_MAX];
+	snes_cheat_struct cheat_temp[cheat_MAX];
 	INT32 temp_num = 0;
 
 	for (INT32 i = 0; i < cheats_active; i++) {
 		if (strcmp(code, cheats[i].code) != 0) {
-			memcpy(&cheat_temp[temp_num], &cheats[i], sizeof(cheat_struct));
+			memcpy(&cheat_temp[temp_num], &cheats[i], sizeof(snes_cheat_struct));
 			temp_num++;
 		} else {
 			bprintf(0, _T("cheat %S disabled.\n"), cheats[i].code);

@@ -32,7 +32,7 @@ static UINT32 sprite_pen_mask;
 static UINT32 sprite_pri_usage;
 static INT32 sprite_extra_planes = 0;
 
-struct tempsprite
+struct taitof3_tempsprite
 {
 	INT32 code, color;
 	INT32 flipx, flipy;
@@ -42,8 +42,8 @@ struct tempsprite
 	INT32 rampos;
 };
 
-static struct tempsprite *m_spritelist;
-static const struct tempsprite *m_sprite_end;
+static struct taitof3_tempsprite *m_spritelist;
+static const struct taitof3_tempsprite *m_sprite_end;
 
 void TaitoF3VideoReset()
 {
@@ -720,7 +720,7 @@ static void get_sprite_info(UINT16 *spriteram16_ptr)
 
 	INT32 x_addition_left = 8, y_addition_left = 8;
 
-	struct tempsprite *sprite_ptr = m_spritelist;
+	struct taitof3_tempsprite *sprite_ptr = m_spritelist;
 
 	INT32 total_sprites=0;
 	INT32 jumpcnt = 0;
@@ -993,7 +993,7 @@ static void get_sprite_info(UINT16 *spriteram16_ptr)
 
 static void draw_sprites()
 {
-	const struct tempsprite *sprite_ptr;
+	const struct taitof3_tempsprite *sprite_ptr;
 	sprite_ptr = m_sprite_end;
 	sprite_pri_usage=0;
 
@@ -2681,7 +2681,7 @@ void TaitoF3VideoInit()
 	m_twidth_mask=(extended_layers) ? 0x7f : 0x3f;
 	m_twidth_mask_bit=(extended_layers) ? 7 : 6;
 
-	m_spritelist = (struct tempsprite*)BurnMalloc(0x400 * sizeof(struct tempsprite));
+	m_spritelist = (struct taitof3_tempsprite*)BurnMalloc(0x400 * sizeof(struct taitof3_tempsprite));
 	m_sprite_end = m_spritelist;
 
 

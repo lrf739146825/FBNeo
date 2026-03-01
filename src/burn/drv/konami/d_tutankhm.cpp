@@ -261,13 +261,13 @@ static INT32 DrvDoReset(INT32 clear_ram)
 	return 0;
 }
 
-struct Star {
+struct tutankhm_star {
 	UINT16 x, y;
 	UINT8 Colour, Set;
 };
 
 #define MAX_STARS 252
-static struct Star StarSeedTab[MAX_STARS];
+static struct tutankhm_star StarSeedTab[MAX_STARS];
 
 static void DrvInitStars()
 {
