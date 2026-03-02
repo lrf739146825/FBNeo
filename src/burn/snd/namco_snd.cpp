@@ -24,7 +24,7 @@ typedef struct
 	UINT32 noise_counter;
 	INT32 noise_hold;
 	INT32 waveform_select;
-} sound_channel;
+} namco_snd_sound_channel;
 
 static UINT8 *namco_soundregs = NULL;
 static UINT8 *namco_wavedata = NULL;
@@ -33,8 +33,8 @@ static INT32 namco_waveformdatasize = 0;
 
 struct namco_sound
 {
-	sound_channel channel_list[MAX_VOICES];
-	sound_channel *last_channel;
+	namco_snd_sound_channel channel_list[MAX_VOICES];
+	namco_snd_sound_channel *last_channel;
 
 	INT32 wave_size;
 	INT32 num_voices;
@@ -222,7 +222,7 @@ static inline UINT32 namco_stereo_update_one(INT16 *buffer, INT32 length, const 
 
 static void NamcoSoundUpdate_INT(INT16* buffer, INT32 length)
 {
-	sound_channel *voice;
+	namco_snd_sound_channel *voice;
 
 	memset(buffer, 0, length * 2 * sizeof(INT16));
 
@@ -307,7 +307,7 @@ static void NamcoSoundUpdate_INT(INT16* buffer, INT32 length)
 
 static void NamcoSoundUpdateStereo_INT(INT16* buffer, INT32 length)
 {
-	sound_channel *voice;
+	namco_snd_sound_channel *voice;
 
 	memset(buffer, 0, length * 2 * sizeof(INT16));
 
@@ -420,7 +420,7 @@ void NamcoSoundWrite(UINT32 offset, UINT8 data)
 	if (!DebugSnd_NamcoSndInitted) bprintf(PRINT_ERROR, _T("NamcoSoundWrite called without init\n"));
 #endif
 
-	sound_channel *voice;
+	namco_snd_sound_channel *voice;
 	INT32 ch;
 
 	data &= 0x0f;
@@ -492,7 +492,7 @@ static void namcos1_sound_write(INT32 offset, INT32 data)
 		return;
 
 	/* recompute the voice parameters */
-	sound_channel *voice = chip->channel_list + ch;
+	namco_snd_sound_channel *voice = chip->channel_list + ch;
 
 	switch (offset - ch * 8)
 	{
@@ -542,7 +542,7 @@ void namco_15xx_write(INT32 offset, UINT8 data)
 		return;
 
 	/* recompute the voice parameters */
-	sound_channel *voice = chip->channel_list + ch;
+	namco_snd_sound_channel *voice = chip->channel_list + ch;
 	switch (offset - ch * 8)
 	{
 	case 0x03:
@@ -671,7 +671,7 @@ void NamcoSoundReset()
 	if (!DebugSnd_NamcoSndInitted) bprintf(PRINT_ERROR, _T("NamcoSoundReset called without init\n"));
 #endif
 
-	sound_channel *voice;
+	namco_snd_sound_channel *voice;
 
 	/* reset all the voices */
 	for (voice = chip->channel_list; voice < chip->last_channel; voice++)
@@ -693,7 +693,7 @@ void NamcoSoundInit(INT32 clock, INT32 num_voices, INT32 bAdd)
 	DebugSnd_NamcoSndInitted = 1;
 	
 	INT32 clock_multiple;
-	sound_channel *voice;
+	namco_snd_sound_channel *voice;
 	
 	chip = (struct namco_sound*)BurnMalloc(sizeof(*chip));
 	memset(chip, 0, sizeof(*chip));

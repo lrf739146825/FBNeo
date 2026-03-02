@@ -34,13 +34,6 @@
 #endif
 
 int counter;           // General purpose variable used when debugging
-struct MovieExtInfo
-{
-	// date & time
-	UINT32 year, month, day;
-	UINT32 hour, minute, second;
-};
-struct MovieExtInfo MovieInfo = { 0, 0, 0, 0, 0, 0 };
 
 static void log_dummy(enum retro_log_level level, const char *fmt, ...) { }
 

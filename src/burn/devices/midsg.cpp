@@ -14,13 +14,13 @@ static INT32 which_cpu, which_dac;
 static UINT16 *sg_ram = NULL;
 
 // muting & pop-supression logic (tested: rampage, powerdrv, stargrds)
-struct anti_pop {
+struct midsg_anti_pop {
 	UINT16 last_tval;
 	INT32 booting;
 	UINT16 mask;
 };
 
-static anti_pop ml;
+static midsg_anti_pop ml;
 
 void soundsgood_set_antipop_mask(UINT16 nMask)
 {
