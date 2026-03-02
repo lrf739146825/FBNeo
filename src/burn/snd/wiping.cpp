@@ -17,7 +17,7 @@ static const INT32 defgain = 48;
 #define MAX_VOICES 8
 
 /* this structure defines the parameters for a channel */
-struct sound_channel
+struct wiping_sound_channel
 {
 	INT32 frequency;
 	INT32 counter;
@@ -28,8 +28,8 @@ struct sound_channel
 };
 
 /* data about the sound system */
-static sound_channel m_channel_list[MAX_VOICES];
-static sound_channel *m_last_channel;
+static wiping_sound_channel m_channel_list[MAX_VOICES];
+static wiping_sound_channel *m_last_channel;
 
 /* global sound parameters */
 static UINT8 *m_sound_prom;
@@ -56,7 +56,7 @@ void wipingsnd_scan(INT32 , INT32 *)
 
 		memset(&ba, 0, sizeof(ba));
 		ba.Data	  = &m_channel_list[i];
-		ba.nLen	  = STRUCT_SIZE_HELPER(struct sound_channel, oneshotplaying);
+		ba.nLen	  = STRUCT_SIZE_HELPER(struct wiping_sound_channel, oneshotplaying);
 		ba.szName = szName;
 		BurnAcb(&ba);
 	}
@@ -90,10 +90,10 @@ void wipingsnd_exit()
 
 void wipingsnd_reset()
 {
-	memset(m_channel_list, 0, sizeof(sound_channel)*MAX_VOICES);
+	memset(m_channel_list, 0, sizeof(wiping_sound_channel)*MAX_VOICES);
 	memset(m_soundregs, 0, sizeof(UINT8)*0x4000);
 
-	sound_channel *voice;
+	wiping_sound_channel *voice;
 
 	m_num_voices = 8;
 	m_last_channel = m_channel_list + m_num_voices;
@@ -131,7 +131,7 @@ static void make_mixer_table(INT32 voices, INT32 gain)
 
 void wipingsnd_write(INT32 offset, UINT8 data)
 {
-	sound_channel *voice;
+	wiping_sound_channel *voice;
 	INT32 base;
 
 	offset &= 0x3fff;
@@ -182,7 +182,7 @@ void wipingsnd_write(INT32 offset, UINT8 data)
 
 void wipingsnd_update(INT16 *outputs, INT32 samples_len)
 {
-	sound_channel *voice;
+	wiping_sound_channel *voice;
 
 	// compute # of samples @ soundcore native (48khz) rate
 	INT32 samples = (((((samplerate*1000) / nBurnFPS) * samples_len) / nBurnSoundLen)) / 10;

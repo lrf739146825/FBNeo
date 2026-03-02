@@ -17,7 +17,7 @@ static INT32 pia_select;
 static INT32 cpu_select;
 
 // muting & pop-supression logic
-struct anti_pop {
+struct midscd_anti_pop {
     UINT16 lastdacvalue;
     UINT16 cm30ctr;
     INT32 ending;
@@ -25,7 +25,7 @@ struct anti_pop {
     INT32 booting;
 };
 
-static anti_pop ml;
+static midscd_anti_pop ml;
 
 static void csd_porta_w(UINT16, UINT8 data)
 {
