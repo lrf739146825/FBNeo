@@ -58,7 +58,7 @@ typedef enum
 	INTTB	= 1 << 16,
 	BRKN	= 1 << 17,
 	BRKS	= 1 << 18
-} INTSOURCES;
+} V25_INTSOURCES;
 
 /* internal RAM and register banks */
 typedef union
@@ -152,7 +152,7 @@ typedef enum {
 	BP = 0x14/2,
 	IX = 0x12/2,
 	IY = 0x10/2
-} WREGS;
+} V25_WREGS;
 
 #ifdef LSB_FIRST
 typedef enum {
@@ -164,7 +164,7 @@ typedef enum {
    DH = 0x1b, //NATIVE_ENDIAN_VALUE_LE_BE(0x1B, 0x1A),
    BL = 0x18, //NATIVE_ENDIAN_VALUE_LE_BE(0x18, 0x19),
    BH = 0x19  //NATIVE_ENDIAN_VALUE_LE_BE(0x19, 0x18)
-} BREGS;
+} V25_BREGS;
 #else
 typedef enum {
    AL = 0x1f, //NATIVE_ENDIAN_VALUE_LE_BE(0x1E, 0x1F),
@@ -175,8 +175,19 @@ typedef enum {
    DH = 0x1a, //NATIVE_ENDIAN_VALUE_LE_BE(0x1B, 0x1A),
    BL = 0x19, //NATIVE_ENDIAN_VALUE_LE_BE(0x18, 0x19),
    BH = 0x18  //NATIVE_ENDIAN_VALUE_LE_BE(0x19, 0x18)
-} BREGS;
+} V25_BREGS;
 #endif
+
+static struct {
+	struct {
+		V25_WREGS w[256];
+		V25_BREGS b[256];
+	} reg;
+	struct {
+		V25_WREGS w[256];
+		V25_BREGS b[256];
+	} RM;
+} Mod_RM;
 
 #define SetRB(x)		do { nec_state->RBW = (x) << 4; nec_state->RBB = (x) << 5; } while (0)
 

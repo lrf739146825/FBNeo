@@ -105,6 +105,17 @@ typedef enum {
 } BREGS;
 #endif
 
+static struct {
+	struct {
+		WREGS w[256];
+		BREGS b[256];
+	} reg;
+	struct {
+		WREGS w[256];
+		BREGS b[256];
+	} RM;
+} Mod_RM;
+
 #define Sreg(x)			nec_state->sregs[x]
 #define Wreg(x)			nec_state->regs.w[x]
 #define Breg(x)			nec_state->regs.b[x]
