@@ -235,7 +235,7 @@ void Sh3SetTimerGranularity(INT32 timergransh)
 
 //-- timer jibbajabba --------------------+1
 // simple timer system -dink 2019, v2 (2022-upgreydde ver.)
-struct dtimer2
+struct sh4_dtimer
 {
 	INT32 running;
 	UINT32 time_trig;
@@ -352,9 +352,9 @@ struct dtimer2
 	}
 };
 
-static dtimer2 m_timer[3];
-static dtimer2 m_dma_timer[4];
-static dtimer2 cave_blitter_delay;
+static sh4_dtimer m_timer[3];
+static sh4_dtimer m_dma_timer[4];
+static sh4_dtimer cave_blitter_delay;
 
 static void sh4_run_timers(INT32 cycles) {
 	m_timer[0].run_prescale(cycles);

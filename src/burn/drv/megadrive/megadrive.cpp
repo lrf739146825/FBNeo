@@ -196,7 +196,7 @@ struct PicoMisc {
 	UINT8 MapperBank[0x10];
 };
 
-struct TileStrip
+struct MegadriveTileStrip
 {
 	INT32 nametab; // Position in VRAM of name table (for this tile line)
 	INT32 line;    // Line number in pixels 0x000-0x3ff within the virtual tilemap
@@ -4118,7 +4118,7 @@ TileFlipMaker(TileFlip_and, pix_and)
 
 // --------------------------------------------
 
-static void DrawStrip(struct TileStrip *ts, INT32 lflags, INT32 cellskip)
+static void DrawStrip(struct MegadriveTileStrip *ts, INT32 lflags, INT32 cellskip)
 {
   UINT8 *pd = HighCol;
   INT32 tilex,dx,ty,code=0,addr=0,cells;
@@ -4178,7 +4178,7 @@ static void DrawStrip(struct TileStrip *ts, INT32 lflags, INT32 cellskip)
   if (oldcode == -1) RamVReg->rendstatus |= PDRAW_PLANE_HI_PRIO;
 }
 
-static void DrawStripVSRam(struct TileStrip *ts, INT32 plane_sh, INT32 cellskip)
+static void DrawStripVSRam(struct MegadriveTileStrip *ts, INT32 plane_sh, INT32 cellskip)
 {
   UINT8 *pd = HighCol;
   UINT32 *hc = ts->hc;
@@ -4262,7 +4262,7 @@ static void DrawStripVSRam(struct TileStrip *ts, INT32 plane_sh, INT32 cellskip)
 
   if (oldcode == -1) RamVReg->rendstatus |= PDRAW_PLANE_HI_PRIO;
 }
-static void DrawStripInterlace(struct TileStrip *ts, INT32 plane_sh)
+static void DrawStripInterlace(struct MegadriveTileStrip *ts, INT32 plane_sh)
 {
   UINT8 *pd = HighCol;
   INT32 tilex=0,dx=0,ty=0,code=0,addr=0,cells;
@@ -4322,14 +4322,14 @@ static void DrawStripInterlace(struct TileStrip *ts, INT32 plane_sh)
 static void DrawLayer(INT32 plane_sh, UINT32 *hcache, INT32 cellskip, INT32 maxcells)
 {
   const char shift[4]={5,6,5,7}; // 32,64 or 128 sized tilemaps (2 is invalid)
-  struct TileStrip ts;
+  struct MegadriveTileStrip ts;
   INT32 width, height, ymask;
   INT32 vscroll, htab;
 
   ts.hc=hcache;
   ts.cells=maxcells;
 
-  // Work out the TileStrip to draw
+  // Work out the MegadriveTileStrip to draw
 
   // Work out the name table size: 32 64 or 128 tiles (0-3)
   width=RamVReg->reg[16];

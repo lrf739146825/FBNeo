@@ -1,14 +1,3 @@
-static struct {
-	struct {
-		WREGS w[256];
-		BREGS b[256];
-	} reg;
-	struct {
-		WREGS w[256];
-		BREGS b[256];
-	} RM;
-} Mod_RM;
-
 #define RegWord(ModRM) Wreg(Mod_RM.reg.w[ModRM])
 #define RegByte(ModRM) Breg(Mod_RM.reg.b[ModRM])
 

@@ -237,7 +237,7 @@ int v25_reset()
 	return 0;
 }
 
-static void nec_interrupt(v25_state_t *nec_state, unsigned int_num, INTSOURCES source)
+static void nec_interrupt(v25_state_t *nec_state, unsigned int_num, V25_INTSOURCES source)
 {
 	UINT32 dest_seg, dest_off;
 
@@ -432,8 +432,8 @@ void v25_common_init(int)
 
 	unsigned int i, j, c;
 
-	static const WREGS wreg_name[8]={ AW, CW, DW, BW, SP, BP, IX, IY };
-	static const BREGS breg_name[8]={ AL, CL, DL, BL, AH, CH, DH, BH };
+	static const V25_WREGS wreg_name[8]={ AW, CW, DW, BW, SP, BP, IX, IY };
+	static const V25_BREGS breg_name[8]={ AL, CL, DL, BL, AH, CH, DH, BH };
 
 	for (i = 0; i < 256; i++)
 	{
