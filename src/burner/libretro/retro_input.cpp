@@ -3529,6 +3529,15 @@ void InputMake(void)
 
 					nJoy = AnalogDeadZone(nJoy, nDeadZone);
 
+					// dinkNOTE: at 0x100 analog speed, it returns +-824,
+					// but some axis return +-820.
+
+					const INT32 scale_to = (32767 * nAnalogSpeed) >> 13;
+					const INT32 scale_from = scale_to - nDeadZone;
+
+					// note: negative numbers are 1 more than their positive counterpart
+					nJoy = scalerangei(nJoy, -(scale_from + 1), scale_from, -(scale_to + 1), scale_to);
+
 					// Clip axis to 8 bits
 					if (nJoy < -32768) {
 						nJoy = -32768;
