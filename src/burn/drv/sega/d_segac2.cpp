@@ -120,7 +120,7 @@ struct SegaC2PicoVideo {
 
 static UINT8 HighLnSpr[240][3 + MAX_LINE_SPRITES]; // sprite_count, ^flags, tile_count, [spritep]...
 
-struct TileStrip
+struct SegaC2TileStrip
 {
 	INT32 nametab; // Position in VRAM of name table (for this tile line)
 	INT32 line;    // Line number in pixels 0x000-0x3ff within the virtual tilemap
@@ -2253,7 +2253,7 @@ TileFlipMaker(TileFlip_and, pix_and)
 // --------------------------------------------
 
 
-static void DrawStrip(struct TileStrip *ts, int lflags, int cellskip)
+static void DrawStrip(struct SegaC2TileStrip *ts, int lflags, int cellskip)
 {
   UINT16 *pd = HighCol;
   int tilex,dx,ty,code=0,addr=0,cells;
@@ -2311,7 +2311,7 @@ static void DrawStrip(struct TileStrip *ts, int lflags, int cellskip)
   if (oldcode == -1) RamVReg->rendstatus |= PDRAW_PLANE_HI_PRIO;
 }
 
-static void DrawStripVSRam(struct TileStrip *ts, int plane_sh, int cellskip)
+static void DrawStripVSRam(struct SegaC2TileStrip *ts, int plane_sh, int cellskip)
 {
   UINT16 *pd = HighCol;
   int tilex,dx,code=0,addr=0,cell=0;
@@ -2381,7 +2381,7 @@ static void DrawStripVSRam(struct TileStrip *ts, int plane_sh, int cellskip)
   if (oldcode == -1) RamVReg->rendstatus |= PDRAW_PLANE_HI_PRIO;
 }
 
-void DrawStripInterlace(struct TileStrip *ts)
+void DrawStripInterlace(struct SegaC2TileStrip *ts)
 {
   UINT16 *pd = HighCol;
   int tilex=0,dx=0,ty=0,code=0,addr=0,cells;
@@ -2440,14 +2440,14 @@ static void DrawLayer(int plane_sh, int *hcache, int cellskip, int maxcells)
 {
   const char shift[4]={5,6,5,7}; // 32,64 or 128 sized tilemaps (2 is invalid)
   const unsigned char h_masks[4] = { 0x00, 0x07, 0xf8, 0xff };
-  struct TileStrip ts;
+  struct SegaC2TileStrip ts;
   int width, height, ymask;
   int vscroll, htab;
 
   ts.hc=hcache;
   ts.cells=maxcells;
 
-  // Work out the TileStrip to draw
+  // Work out the SegaC2TileStrip to draw
 
   // Work out the name table size: 32 64 or 128 tiles (0-3)
   width=RamVReg->reg[16];
