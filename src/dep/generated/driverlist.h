@@ -5662,6 +5662,7 @@ DRV		BurnDrvnes_doordoor;
 DRV		BurnDrvDorachan;
 DRV		BurnDrvnes_doraemon;
 DRV		BurnDrvnes_dorae;
+DRV		BurnDrvsnes_Doraemonte;
 DRV		BurnDrvsnes_Doraemonj;
 DRV		BurnDrvsnes_Doraemon2j;
 DRV		BurnDrvsnes_Doraemon3j;
@@ -30403,6 +30404,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDorachan,			// Dora-chan (Japan)
 	&BurnDrvnes_doraemon,		// Doraemon (Japan, Rev. A)
 	&BurnDrvnes_dorae,			// Doraemon - Giga Zombie no Gyakushuu (Hack, English)
+	&BurnDrvsnes_Doraemonte,	// Doraemon - Nobita to Yousei no Kuni (Hack, English v0.98)
 	&BurnDrvsnes_Doraemonj,		// Doraemon - Nobita to Yousei no Kuni (Japan, Rev. 1)
 	&BurnDrvsnes_Doraemon2j,	// Doraemon 2 - Nobita no Toys Land Daibouken (Japan)
 	&BurnDrvsnes_Doraemon3j,	// Doraemon 3 - Nobita to Toki no Hougyoku (Japan)
@@ -55104,6 +55106,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "dorachan", "pre90s/d_dorachan.cpp"},
 	{ "nes_doraemon", "nes/d_nes.cpp"},
 	{ "nes_dorae", "nes/d_nes.cpp"},
+	{ "snes_doraemonte", "snes/d_snes.cpp"},
 	{ "snes_doraemonj", "snes/d_snes.cpp"},
 	{ "snes_doraemon2j", "snes/d_snes.cpp"},
 	{ "snes_doraemon3j", "snes/d_snes.cpp"},
