@@ -4570,7 +4570,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="doraemonj" sourcefile="snes/d_snes.cpp">
+	<game name="doraemonte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Doraemon - Nobita to Yousei no Kuni (Hack, English v0.98)</description>
+		<year>2026</year>
+		<manufacturer>torvusY</manufacturer>
+		<rom name="Doraemon - Nobita to Yousei no Kuni T-Eng v0.98 (2026)(torvusY).sfc" size="524288" crc="19d069a2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="doraemonj" cloneof="doraemonte" romof="doraemonte" sourcefile="snes/d_snes.cpp">
 		<description>Doraemon - Nobita to Yousei no Kuni (Japan, Rev. 1)</description>
 		<year>1993</year>
 		<manufacturer>Epoch Co.</manufacturer>
