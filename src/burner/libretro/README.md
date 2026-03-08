@@ -128,7 +128,7 @@ The following device types are mostly WIP, they haven't been thoroughly tested a
 
 ## Emulating consoles and computers
 
-It also requires usage of specific romsets, meaning the rom must have the expected crc/size, and be packaged in an archive with a specific name ([the instructions to build those romsets aren't different from arcade](#step-3-building-the-romsets)).
+It also requires usage of specific romsets, meaning the rom must have the expected crc/size, and be packaged in an archive with a specific name ([the instructions to build those romsets aren't different from arcade](#building-romsets-for-fbneo)).
 
 You can use specific folder's name for detection, it's the easiest and recommended method, especially if you are using RetroArch playlists or if your device is not compatible with subsystems (android and consoles) :
 
