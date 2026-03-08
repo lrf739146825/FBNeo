@@ -62,7 +62,7 @@ Note : Here is a non-exhaustive list of additional parameters you might want to 
 
 ## Building romsets for FBNeo
 
-Arcade emulation won't work properly without the romsets matching the emulator. FBNeo being an emulator under active development, a given romset might change from time to time to stay in sync with the best dump available for that game.
+You won't be able to emulate games without the romsets matching this emulator. FBNeo being an emulator under active development, a given romset might change from time to time to stay in sync with the best dump available for that game.
 
 Don't expect things to work properly if you didn't build valid romsets, and don't report issues because your romsets are invalid.
 
@@ -74,6 +74,7 @@ You can download the dat files for the latest version of the core from the [dats
 
 It mostly consists of latest dumps available for MAME.
 The other romsets are usually a mix of hacks and homebrews, most of them can be found in HBMAME dumps.
+Console/computer romsets come from different sources (recently emulated systems are likely to be based on No-Intro, but older ones were mostly based on MESS, there are also a lot of hacks/homebrews you won't find in those sets).
 Having an older FBAlpha/FBNeo set among your ingredients will also help a lot.
 
 ### Step 3: Building the romsets

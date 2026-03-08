@@ -1599,6 +1599,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="battlesoccertp" cloneof="battlesoccerte" romof="battlesoccerte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Battle Soccer ~ Futebol dos Herois (Hack, Portuguese)</description>
+		<year>2003</year>
+		<manufacturer>Trans-Center</manufacturer>
+		<rom name="Battle Soccer - Futebol dos Herois T-Por (2003)(Trans-Center).sfc" size="1048576" crc="8e06ca02"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="battlesoccerj" cloneof="battlesoccerte" romof="battlesoccerte" sourcefile="snes/d_snes.cpp">
 		<description>Battle Soccer: Field no Hasha (Japan)</description>
 		<year>1992</year>
@@ -2115,6 +2124,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="brainlordtp" cloneof="brainlord" romof="brainlord" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Brain Lord (Hack, Portuguese v1.05)</description>
+		<year>2024-26</year>
+		<manufacturer>Dindo - Mumble</manufacturer>
+		<rom name="Brain Lord PT-BR v1.05 (2024-26)(Dindo - Mumble).sfc" size="2097152" crc="7ce76c1b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="brainlordj" cloneof="brainlord" romof="brainlord" sourcefile="snes/d_snes.cpp">
 		<description>Brain Lord (Japan)</description>
 		<year>1994</year>
@@ -2435,6 +2453,15 @@
 		<year>1992</year>
 		<manufacturer>Accolade</manufacturer>
 		<rom name="Bubsy in Claws Encounters of the Furred Kind (U)(1992)(Accolade).sfc" size="2097152" crc="444a52c1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bubsylbe" cloneof="bubsy" romof="bubsy" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Bubsy: Less Bad Edition (Hack, v1.3)</description>
+		<year>2026</year>
+		<manufacturer>NoPLo</manufacturer>
+		<rom name="Bubsy - Less Bad Edition v1.3 (2026)(NoPLo).sfc" size="2097152" crc="72f7fc86"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3841,7 +3868,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="deaetono" sourcefile="snes/d_snes.cpp">
+	<game name="deaetono" cloneof="feudalbros" romof="feudalbros" sourcefile="snes/d_snes.cpp">
 		<description>Deae Tonosama - Appare Ichiban (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Sunsoft</manufacturer>
@@ -4245,6 +4272,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="gooftroopti" cloneof="gooftroop" romof="gooftroop" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Disney's Goof Troop (Hack, Italian)</description>
+		<year>2022</year>
+		<manufacturer>Raviolo</manufacturer>
+		<rom name="Disney's Goof Troop T-Ita (2022)(Raviolo).sfc" size="1048576" crc="ccaa5e67"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gooftroop" sourcefile="snes/d_snes.cpp">
 		<description>Disney's Goof Troop (USA)</description>
 		<year>1993</year>
@@ -4301,6 +4337,24 @@
 		<year>1994</year>
 		<manufacturer>Virgin Int. - Disney Int.</manufacturer>
 		<rom name="Disney's The Jungle Book (E)(1994)(Virgin Int. - Disney Int.).sfc" size="2097152" crc="392ae185"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="junglebooktp" cloneof="junglebook" romof="junglebook" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Disney's The Jungle Book (Hack, Portuguese)</description>
+		<year>2019</year>
+		<manufacturer>Ripman</manufacturer>
+		<rom name="Disney's The Jungle Book T-Por (2019)(Ripman).sfc" size="2097152" crc="894760b1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="junglebookts" cloneof="junglebook" romof="junglebook" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Disney's The Jungle Book (Hack, Spanish)</description>
+		<year>2018</year>
+		<manufacturer>Wave</manufacturer>
+		<rom name="Disney's The Jungle Book T-Spa (2018)(Wave).sfc" size="2097152" crc="8a419a6a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4570,25 +4624,8 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="doraemonte" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Doraemon - Nobita to Yousei no Kuni (Hack, English v0.98)</description>
-		<year>2026</year>
-		<manufacturer>torvusY</manufacturer>
-		<rom name="Doraemon - Nobita to Yousei no Kuni T-Eng v0.98 (2026)(torvusY).sfc" size="524288" crc="19d069a2"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="doraemonj" cloneof="doraemonte" romof="doraemonte" sourcefile="snes/d_snes.cpp">
-		<description>Doraemon - Nobita to Yousei no Kuni (Japan, Rev. 1)</description>
-		<year>1993</year>
-		<manufacturer>Epoch Co.</manufacturer>
-		<rom name="Doraemon - Nobita to Yousei no Kuni (J, Rev 1)(1993)(Epoch Co.).sfc" size="524288" crc="55e44983"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="doraemon2j" sourcefile="snes/d_snes.cpp">
-		<description>Doraemon 2 - Nobita no Toys Land Daibouken (Japan)</description>
+		<description>Doraemon 2: Nobita no Toys Land Daibouken (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Epoch Co.</manufacturer>
 		<rom name="Doraemon 2 - Nobita no Toys Land Daibouken (J)(1993)(Epoch Co.).sfc" size="1048576" crc="d343b398"/>
@@ -4596,7 +4633,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="doraemon3j" sourcefile="snes/d_snes.cpp">
-		<description>Doraemon 3 - Nobita to Toki no Hougyoku (Japan)</description>
+		<description>Doraemon 3: Nobita to Toki no Hougyoku (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Epoch Co.</manufacturer>
 		<rom name="Doraemon 3 - Nobita to Toki no Hougyoku (J)(1994)(Epoch Co.).sfc" size="1572864" crc="560c5eab"/>
@@ -4617,6 +4654,23 @@
 		<year>1995</year>
 		<manufacturer>Epoch Co.</manufacturer>
 		<rom name="Doraemon 4 - Nobita to Tsuki no Oukoku (J)(1995)(Epoch).sfc" size="1572864" crc="4097bc01"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="doraemonte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Doraemon: Nobita and the Land of Fairies (Hack, English v0.98)</description>
+		<year>2026</year>
+		<manufacturer>torvusY</manufacturer>
+		<rom name="Doraemon - Nobita and the Land of Fairies T-Eng v0.98 (2026)(torvusY).sfc" size="524288" crc="19d069a2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="doraemonj" cloneof="doraemonte" romof="doraemonte" sourcefile="snes/d_snes.cpp">
+		<description>Doraemon: Nobita to Yousei no Kuni (Japan, Rev. 1)</description>
+		<year>1993</year>
+		<manufacturer>Epoch Co.</manufacturer>
+		<rom name="Doraemon - Nobita to Yousei no Kuni (J, Rev 1)(1993)(Epoch Co.).sfc" size="524288" crc="55e44983"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4862,6 +4916,15 @@
 		<year>1994</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Dragon Ball Z - Ultime Menace (E, France)(1994)(Bandai).sfc" size="2097152" crc="593eefe0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dragballzhdtp" cloneof="dragballzhdte" romof="dragballzhdte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, SA-1 enhancement CPU</comment>
+		<description>Dragon Ball Z: Hiper Dimensao (Hack, Portuguese)</description>
+		<year>2024</year>
+		<manufacturer>Vila Oculta do Romhacking</manufacturer>
+		<rom name="Dragon Ball Z - Hiper Dimensao PT-BR (2024)(Vila Oculta do Romhacking).sfc" size="3670016" crc="d319b002"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5563,7 +5626,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="famtanclub2j" cloneof="famtanclub2te" romof="famtanclub2te" sourcefile="snes/d_snes.cpp">
-		<description>Famicom Tantei Club Part II - Ushiro ni Tatsu Shoujo (Japan)</description>
+		<description>Famicom Tantei Club Part II: Ushiro ni Tatsu Shoujo (Japan)</description>
 		<year>1998</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Famicom Tantei Club Part II - Ushiro ni Tatsu Shoujo (J)(1998)(Nintendo).sfc" size="3145728" crc="28f450ac"/>
@@ -5648,6 +5711,14 @@
 		<year>1994</year>
 		<manufacturer>SNK - Takara Co.</manufacturer>
 		<rom name="Fatal Fury Special (U)(1994)(SNK - Takara).sfc" size="4194304" crc="93935bee"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="feudalbros" sourcefile="snes/d_snes.cpp">
+		<description>Feudal Bros - Tonosama 1 (World)</description>
+		<year>1995-2025</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Feudal Bros - Tonosama 1 (W)(1995-2025)(Sunsoft).sfc" size="2097152" crc="d283f4e9"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -8251,7 +8322,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jetsons" sourcefile="snes/d_snes.cpp">
-		<description>Jetsons, The - Invasion of the Planet Pirates (USA)</description>
+		<description>Jetsons, The: Invasion of the Planet Pirates (USA)</description>
 		<year>1994</year>
 		<manufacturer>Taito</manufacturer>
 		<rom name="Jetsons, The - Invasion of the Planet Pirates (U)(1994)(Taito).sfc" size="1048576" crc="3e3073ce"/>
@@ -8285,7 +8356,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jimpoweree" cloneof="jimpower" romof="jimpower" sourcefile="snes/d_snes.cpp">
-		<description>Jim Power - The Lost Dimension in 3D 'Enhanced Edition' (USA)</description>
+		<description>Jim Power: The Lost Dimension in 3D 'Enhanced Edition' (USA)</description>
 		<year>2015</year>
 		<manufacturer>Piko Interactive</manufacturer>
 		<rom name="Jim Power - The Lost Dimension in 3D Enhanced Edition (U)(2015)(Piko Interactive).sfc" size="2097152" crc="d2a2aea0"/>
@@ -8293,7 +8364,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jimpower" sourcefile="snes/d_snes.cpp">
-		<description>Jim Power - The Lost Dimension in 3D (USA)</description>
+		<description>Jim Power: The Lost Dimension in 3D (USA)</description>
 		<year>1993</year>
 		<manufacturer>Electro Brain</manufacturer>
 		<rom name="Jim Power - The Lost Dimension in 3D (U)(1993)(Electro Brain).sfc" size="1048576" crc="c469f8f0"/>
@@ -8536,7 +8607,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jpark2e" cloneof="jpark2" romof="jpark2" sourcefile="snes/d_snes.cpp">
-		<description>Jurassic Park II - The Chaos Continues (Euro)</description>
+		<description>Jurassic Park II: The Chaos Continues (Euro)</description>
 		<year>1994</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Jurassic Park II - The Chaos Continues (E)(1994)(Ocean).sfc" size="2097152" crc="8a926d1a"/>
@@ -8544,7 +8615,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jpark2" sourcefile="snes/d_snes.cpp">
-		<description>Jurassic Park II - The Chaos Continues (USA)</description>
+		<description>Jurassic Park II: The Chaos Continues (USA)</description>
 		<year>1994</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Jurassic Park II - The Chaos Continues (U)(1994)(Ocean).sfc" size="2097152" crc="836ee990"/>
@@ -8553,7 +8624,7 @@
 	</game>
 	<game name="jpark2redux" cloneof="jpark2" romof="jpark2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Jurassic Park II - The Chaos Continues Redux (Hack)</description>
+		<description>Jurassic Park II: The Chaos Continues Redux (Hack)</description>
 		<year>2025</year>
 		<manufacturer>BillyTime! Games</manufacturer>
 		<rom name="Jurassic Park II - The Chaos Continues Redux (2025)(BillyTime! Games).sfc" size="2097152" crc="620de6a3"/>
@@ -8616,6 +8687,24 @@
 		<year>1994</year>
 		<manufacturer>Athena Co.</manufacturer>
 		<rom name="Kaite Tsukutte Asoberu Dezaemon (J)(1994)(Athena).sfc" size="524288" crc="052167cc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kaizogten" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Hack of Capcom's Goof Troop</comment>
+		<description>Kaizo Goof Troop (English) (Hack)</description>
+		<year>2026</year>
+		<manufacturer>MegaStriker</manufacturer>
+		<rom name="Kaizo Goof Troop EN (2026)(MegaStriker).sfc" size="1048576" crc="8ca05167"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kaizogtpt" cloneof="kaizogten" romof="kaizogten" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Hack of Capcom's Goof Troop</comment>
+		<description>Kaizo Goof Troop (Portuguese) (Hack)</description>
+		<year>2026</year>
+		<manufacturer>MegaStriker</manufacturer>
+		<rom name="Kaizo Goof Troop PT (2026)(MegaStriker).sfc" size="1048576" crc="28ae336a"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10093,6 +10182,15 @@
 		<year>1995</year>
 		<manufacturer>Ocean Software</manufacturer>
 		<rom name="Manchester United Championship Soccer (E)(1995)(Ocean Software).sfc" size="1048576" crc="8d2596a7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ganbgoemon2tp" cloneof="ganbgoemon2te" romof="ganbgoemon2te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Manda Ver! Goemon II: O Estranho General MacGuiness (Hack, Portuguese)</description>
+		<year>2024</year>
+		<manufacturer>Maverick Blue Warrior</manufacturer>
+		<rom name="Manda Ver! Goemon II - O Estranho General MacGuiness PT-BR (2024)(Maverick Blue Warrior).sfc" size="4194304" crc="297329d2"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12140,7 +12238,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pacman2adve" cloneof="pacman2adv" romof="pacman2adv" sourcefile="snes/d_snes.cpp">
-		<description>Pac-Man 2 - The New Adventures (Euro, English)</description>
+		<description>Pac-Man 2: The New Adventures (Euro, English)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Pac-Man 2 - The New Adventures (E)(1994)(Namco).sfc" size="1572864" crc="51c8a0eb"/>
@@ -12148,7 +12246,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pacman2advf" cloneof="pacman2adv" romof="pacman2adv" sourcefile="snes/d_snes.cpp">
-		<description>Pac-Man 2 - The New Adventures (Euro, French)</description>
+		<description>Pac-Man 2: The New Adventures (Euro, French)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Pac-Man 2 - The New Adventures (E, France)(1994)(Namco).sfc" size="1572864" crc="30478a49"/>
@@ -12156,7 +12254,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pacman2advg" cloneof="pacman2adv" romof="pacman2adv" sourcefile="snes/d_snes.cpp">
-		<description>Pac-Man 2 - The New Adventures (Euro, German)</description>
+		<description>Pac-Man 2: The New Adventures (Euro, German)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Pac-Man 2 - The New Adventures (E, Germany)(1994)(Namco).sfc" size="1572864" crc="df6a092d"/>
@@ -12164,7 +12262,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pacman2adv" sourcefile="snes/d_snes.cpp">
-		<description>Pac-Man 2 - The New Adventures (USA)</description>
+		<description>Pac-Man 2: The New Adventures (USA)</description>
 		<year>1994</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Pac-Man 2 - The New Adventures (U)(1994)(Namco).sfc" size="1572864" crc="9fc62bcc"/>
@@ -12549,8 +12647,17 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pitfallmayatp" cloneof="pitfallmaya" romof="pitfallmaya" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Pitfall: The Mayan Adventure (Hack, Portuguese)</description>
+		<year>2019</year>
+		<manufacturer>Ripman</manufacturer>
+		<rom name="Pitfall - The Mayan Adventure T-Por (2019)(Ripman).sfc" size="2097152" crc="6e40f40f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pitfallmaya" sourcefile="snes/d_snes.cpp">
-		<description>Pitfall - The Mayan Adventure (USA)</description>
+		<description>Pitfall: The Mayan Adventure (USA)</description>
 		<year>1994</year>
 		<manufacturer>Activision</manufacturer>
 		<rom name="Pitfall - The Mayan Adventure (U)(1994)(Activision).sfc" size="2097152" crc="03e67d38"/>
@@ -15691,6 +15798,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="superadvisland2tp" cloneof="superadvisland2" romof="superadvisland2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Adventure Island II (Hack, Portuguese v1.01)</description>
+		<year>2025</year>
+		<manufacturer>Patryckpo</manufacturer>
+		<rom name="Super Adventure Island II PT-BR v1.01(2025)(Patryckpo).sfc" size="2097152" crc="6a33ddd7"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="superadvisland2" sourcefile="snes/d_snes.cpp">
 		<description>Super Adventure Island II (USA)</description>
 		<year>1994</year>
@@ -18042,6 +18158,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="talesofphanttp" cloneof="talesofphantte" romof="talesofphantte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Tales of Phantasia (Hack, Portuguese)</description>
+		<year>2002</year>
+		<manufacturer>SandMan</manufacturer>
+		<rom name="Tales of Phantasia T-Por (2002)(SandMan).sfc" size="6291968" crc="0413b3b8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="talesofphantts" cloneof="talesofphantte" romof="talesofphantte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Tales of Phantasia (Hack, Spanish)</description>
@@ -18367,10 +18492,10 @@
 	</game>
 	<game name="terranigmatp" cloneof="terranigmae" romof="terranigmae" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Terranigma (Hack, Portuguese v1.01)</description>
-		<year>2024</year>
+		<description>Terranigma (Hack, Portuguese v2.0)</description>
+		<year>2024-26</year>
 		<manufacturer>Dindo</manufacturer>
-		<rom name="Terranigma PT-BR v1.01 (2024)(Dindo).sfc" size="4194304" crc="66350def"/>
+		<rom name="Terranigma PT-BR v2.0 (2024-26)(Dindo).sfc" size="6291456" crc="867a6c06"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -17594,7 +17594,7 @@
 		<description>Manic Miner (Bug-Byte) (48K)</description>
 		<year>1983</year>
 		<manufacturer>Bug-Byte Software</manufacturer>
-		<rom name="Manic Miner 48K (1983)(Bug-Byte).tap" size="33689" crc="e6bac4e8"/>
+		<rom name="Manic Miner 48K (1983)(Bug-Byte).tzx" size="33205" crc="f89b74af"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -17603,7 +17603,7 @@
 		<description>Manic Miner (Software Projects) (48K)</description>
 		<year>1983</year>
 		<manufacturer>Software Projects</manufacturer>
-		<rom name="Manic Miner 48K (1983)(Software Projects).tap" size="33317" crc="eac88ad3"/>
+		<rom name="Manic Miner 48K (1983)(Software Projects).tzx" size="33299" crc="3b212860"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
