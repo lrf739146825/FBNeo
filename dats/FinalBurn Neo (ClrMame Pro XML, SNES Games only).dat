@@ -16650,6 +16650,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supergngenh" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Air control while jumping &amp; FastROM &amp; more...</comment>
+		<description>Super Ghouls'n Ghosts Enhanced (Hack)</description>
+		<year>2026</year>
+		<manufacturer>Tiken</manufacturer>
+		<rom name="Super Ghouls'n Ghosts Enhanced Hack (2026)(Tiken).sfc" size="1048576" crc="ebb9c790"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supergngr" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Super Ghouls'n Ghosts Restoration (Hack)</description>

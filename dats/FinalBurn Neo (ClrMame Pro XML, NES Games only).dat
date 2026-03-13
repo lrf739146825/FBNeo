@@ -1488,6 +1488,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="astyanaxe" cloneof="astyanax" romof="astyanax" sourcefile="nes/d_nes.cpp">
+		<description>Astyanax (Euro)</description>
+		<year>1990</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Astyanax (Euro)(1990)(Jaleco).nes" size="262160" crc="c9d85c8e"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
 	<game name="astyanaxc" cloneof="astyanax" romof="astyanax" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Astyanax (Hack, Chinese v1.1)</description>
@@ -2417,7 +2425,7 @@
 	</game>
 	<game name="blackhol" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Black Hole - Czarna Dziura (HB, v0.20)</description>
+		<description>Black Hole ~ Czarna Dziura (HB, v0.20)</description>
 		<year>2021</year>
 		<manufacturer>Siudym</manufacturer>
 		<rom name="Black Hole - Czarna Dziura v0.20 (2021)(Siudym).nes" size="131088" crc="8fd3a9a7"/>
@@ -2477,18 +2485,10 @@
 	</game>
 	<game name="blastermasterlk" cloneof="blastermaster" romof="blastermaster" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Blaster Master - The Lost Key (Hack, v1.06)</description>
+		<description>Blaster Master: The Lost Key (Hack, v1.06)</description>
 		<year>2014-2024</year>
 		<manufacturer>climax, HalDanGhor</manufacturer>
 		<rom name="Blaster Master - The Lost Key v1.06 (2014-2024)(climax, HalDanGhor).nes" size="262160" crc="56935623"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="blastermasterj" cloneof="blastermaster" romof="blastermaster" sourcefile="nes/d_nes.cpp">
-		<description>Blaster Master ~ Chou-Wakusei Senki - MetaFight (Japan)</description>
-		<year>1988</year>
-		<manufacturer>Sunsoft</manufacturer>
-		<rom name="Chou-Wakusei Senki - MetaFight (Japan)(1988)(Sunsoft).nes" size="262160" crc="6e286bb2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -3778,6 +3778,14 @@
 		<year>1986</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Choplifter (Japan)(1986)(Jaleco).nes" size="49168" crc="8bb9afa7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="blastermasterj" cloneof="blastermaster" romof="blastermaster" sourcefile="nes/d_nes.cpp">
+		<description>Chou-Wakusei Senki MetaFight (Japan)</description>
+		<year>1988</year>
+		<manufacturer>Sunsoft</manufacturer>
+		<rom name="Chou-Wakusei Senki MetaFight (Japan)(1988)(Sunsoft).nes" size="262160" crc="6e286bb2"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -5522,6 +5530,15 @@
 		<driver status="good"/>
 	</game>
 	<game name="doraemon" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Doraemon (Hack, English)</description>
+		<year>2016</year>
+		<manufacturer>Sky Yoshi</manufacturer>
+		<rom name="Doraemon T-Eng (2016)(Sky Yoshi).nes" size="163856" crc="0192b04d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="doraemonj" cloneof="doraemon" romof="doraemon" sourcefile="nes/d_nes.cpp">
 		<description>Doraemon (Japan, Rev. A)</description>
 		<year>1986</year>
 		<manufacturer>Hudson Soft</manufacturer>
@@ -12508,6 +12525,23 @@
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
 		<rom name="Loopz (USA)(1990)(Mindscape).nes" size="131088" crc="3e7a06a7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lordking" cloneof="astyanax" romof="astyanax" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Lord of King, The (Hack, English v2.01)</description>
+		<year>2025</year>
+		<manufacturer>BlackPaladin</manufacturer>
+		<rom name="Lord of King, The T-Eng v2.01 (2025)(BlackPaladin).nes" size="262160" crc="fa2eb072"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="lordkingj" cloneof="astyanax" romof="astyanax" sourcefile="nes/d_nes.cpp">
+		<description>Lord of King, The (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Lord of King, The (Japan)(1989)(Jaleco).nes" size="262160" crc="3e0c98bb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
