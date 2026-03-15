@@ -1237,6 +1237,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="astrojump" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Astro Jump (HB)</description>
+		<year>2026</year>
+		<manufacturer>Tiago Tresoldi, Freja Lindgren</manufacturer>
+		<rom name="Astro Jump (2026)(Tiago Tresoldi, Freja Lindgren).rom" size="16384" crc="cbce45b7"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="amc" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Press 'M' for Grenades</comment>
 		<description>Astro Marine Corps (Euro, Spanish)</description>
@@ -1543,7 +1555,7 @@
 	</game>
 	<game name="gantan" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Back to the Gantan - Year of the Rat (HB)</description>
+		<description>Back to the Gantan: Year of the Rat (HB)</description>
 		<year>2020</year>
 		<manufacturer>Nao</manufacturer>
 		<rom name="Back to the Gantan (2020)(Nao).rom" size="524288" crc="171d176b"/>
@@ -4015,6 +4027,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="chronorunner" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Chrono Runner (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>MSX Italia Association</manufacturer>
+		<rom name="Chrono Runner v1.1 (2026)(MSX Italia Association).rom" size="131072" crc="5652e7a1"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="chubbygristle" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Chubby Gristle (Euro)</description>
 		<year>1988</year>
@@ -5121,7 +5145,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="deepdng2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Deep Dungeon II - Yuushi no Monshou (Japan)</description>
+		<description>Deep Dungeon II: Yuushi no Monshou (Japan)</description>
 		<year>1988</year>
 		<manufacturer>ScapTrust</manufacturer>
 		<rom name="Deep Dungeon II (Japan)(1988)(ScapTrust).rom" size="131072" crc="101db19c"/>
@@ -6268,7 +6292,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="exerion2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Exerion II - Zorni (Japan)</description>
+		<description>Exerion II: Zorni (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Toshiba EMI</manufacturer>
 		<rom name="Exerion II - Zorni (Japan)(1985)(Toshiba EMI).rom" size="16384" crc="0b6c146f"/>
@@ -6279,7 +6303,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="exerion2a" cloneof="exerion2" romof="exerion2" sourcefile="msx/d_msx.cpp">
-		<description>Exerion II - Zorni (Japan, Alt)</description>
+		<description>Exerion II: Zorni (Japan, Alt)</description>
 		<year>1985</year>
 		<manufacturer>Toshiba EMI</manufacturer>
 		<rom name="Exerion II - Zorni (Japan, Alt)(1985)(Toshiba EMI).rom" size="16384" crc="f3144243"/>
@@ -6381,10 +6405,10 @@
 	</game>
 	<game name="eyebrawls" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Eye Brawls (HB)</description>
+		<description>Eye Brawls (HB, v1.1)</description>
 		<year>2026</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Eye Brawls (2026)(Jess Creations).rom" size="32768" crc="c1a37604"/>
+		<rom name="Eye Brawls v1.1 (2026)(Jess Creations).rom" size="32768" crc="26b6648d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -11665,24 +11689,24 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mitsumgtru" cloneof="mitsumgt" romof="mitsumgt" sourcefile="msx/d_msx.cpp">
-		<comment>Hack</comment>
-		<description>Mitsume Ga Tooru - The Three-Eyed One Comes Here (Hack, Russian)</description>
-		<year>2021</year>
-		<manufacturer>unknown</manufacturer>
-		<rom name="Mitsumega Toohru - The Three-Eyed One Comes Here T-Rus (1989-2021).rom" size="172032" crc="bd8c75d2"/>
-		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
-		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
-		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
-		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="mitsumgten" cloneof="mitsumgt" romof="mitsumgt" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
 		<description>Mitsume Ga Tooru: The Three-Eyed One Comes Here (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>Igor Bezhenar</manufacturer>
 		<rom name="Mitsumega Toohru - The Three-Eyed One Comes Here T-Eng (2021)(Igor Bezhenar).rom" size="172032" crc="efe1b953"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mitsumgtru" cloneof="mitsumgt" romof="mitsumgt" sourcefile="msx/d_msx.cpp">
+		<comment>Hack</comment>
+		<description>Mitsume Ga Tooru: The Three-Eyed One Comes Here (Hack, Russian)</description>
+		<year>2021</year>
+		<manufacturer>unknown</manufacturer>
+		<rom name="Mitsumega Toohru - The Three-Eyed One Comes Here T-Rus (1989-2021).rom" size="172032" crc="bd8c75d2"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15842,10 +15866,10 @@
 	</game>
 	<game name="shift" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Shift (HB)</description>
+		<description>Shift (HB, v1.1)</description>
 		<year>2026</year>
 		<manufacturer>Haplo</manufacturer>
-		<rom name="Shift (2026)(Haplo).rom" size="32768" crc="9f559331"/>
+		<rom name="Shift v1.1 (2026)(Haplo).rom" size="32768" crc="d4faed12"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -18365,6 +18389,18 @@
 		<year>1986</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Tower of Druaga, The (Japan)(1986)(Namco).rom" size="32768" crc="47bef309"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="toxictubes" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Toxic Tubes (HB)</description>
+		<year>2026</year>
+		<manufacturer>Murilo T. Carmello</manufacturer>
+		<rom name="Toxic Tubes (2026)(Murilo T. Carmello).rom" size="49152" crc="5931a8cd"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
