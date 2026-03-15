@@ -1320,6 +1320,7 @@ DRV		BurnDrvsms_astrofl;
 DRV		BurnDrvsms_astrofl1;
 DRV		BurnDrvsms_astforce;
 DRV		BurnDrvcv_astroinv;
+DRV		BurnDrvMSX_astrojump;
 DRV		BurnDrvMSX_amc;
 DRV		BurnSpecastmarcs;
 DRV		BurnSpecastmarcs2;
@@ -3797,6 +3798,7 @@ DRV		BurnSpecChristmaze;
 DRV		BurnSpecChromanoids;
 DRV		BurnDrvnes_radiasen;
 DRV		BurnDrvnes_chknight;
+DRV		BurnDrvMSX_chronorunner;
 DRV		BurnDrvsnes_Chronotriggerti;
 DRV		BurnDrvsnes_Chronotriggerts;
 DRV		BurnDrvsnes_Chronotriggerj;
@@ -4958,9 +4960,9 @@ DRV		BurnDrvsms_deepduckc;
 DRV		BurnDrvMSX_deepdng;
 DRV		BurnDrvMSX_deepdun;
 DRV		BurnDrvcv_deepdngadv;
-DRV		BurnDrvMSX_deepdng2;
 DRV		BurnDrvfds_deepdung2;
 DRV		BurnDrvfds_deepdung2j;
+DRV		BurnDrvMSX_deepdng2;
 DRV		BurnDrvnes_deepdung3;
 DRV		BurnDrvnes_deepdung3h;
 DRV		BurnDrvnes_deepdung3j;
@@ -8244,8 +8246,11 @@ DRV		BurnDrvGngt;
 DRV		BurnDrvnes_ghostsngoblins;
 DRV		BurnDrvGng;
 DRV		BurnDrvGnga;
+DRV		BurnDrvGngb;
 DRV		BurnDrvGngc;
 DRV		BurnDrvnes_ghostsngoblinsh;
+DRV		BurnDrvGngknight;
+DRV		BurnDrvGngmaiden;
 DRV		BurnDrvcv_gnz;
 DRV		BurnDrvnes_ghoulgrind;
 DRV		BurnDrvsnes_Ghoulpatrole;
@@ -12132,6 +12137,8 @@ DRV		BurnDrvMakaimuc;
 DRV		BurnDrvMakaimug;
 DRV		BurnDrvMakaimur;
 DRV		BurnDrvnes_makaimura;
+DRV		BurnDrvMakknight;
+DRV		BurnDrvMakmaiden;
 DRV		BurnDrvnes_makaimuraarcade;
 DRV		BurnDrvMSX_makethemfall;
 DRV		BurnDrvMSX_makethemjump;
@@ -13194,8 +13201,8 @@ DRV		BurnDrvnes_mitokou;
 DRV		BurnDrvnes_mitsumegatooruc;
 DRV		BurnDrvnes_mitsumegatooru;
 DRV		BurnDrvnes_mitsumegatooruj;
-DRV		BurnDrvMSX_mitsumgtru;
 DRV		BurnDrvMSX_mitsumgten;
+DRV		BurnDrvMSX_mitsumgtru;
 DRV		BurnDrvMSX_mitsumgt;
 DRV		BurnDrvMSX_mix;
 DRV		BurnDrvQuiz18k;
@@ -22577,6 +22584,7 @@ DRV		BurnDrvnes_towerofturmoil;
 DRV		BurnDrvmd_toxiccs;
 DRV		BurnDrvmd_toxicc;
 DRV		BurnDrvnes_toxiccrusaders;
+DRV		BurnDrvMSX_toxictubes;
 DRV		BurnDrvToyland;
 DRV		BurnDrvpce_toyshopb;
 DRV		BurnDrvmd_toystory;
@@ -26106,6 +26114,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_astrofl1,		// Astro Flash (Japan, Pirate)
 	&BurnDrvsms_astforce,		// Astro Force (HB, v1.03)
 	&BurnDrvcv_astroinv,		// Astro Invader (HB)
+	&BurnDrvMSX_astrojump,		// Astro Jump (HB)
 	&BurnDrvMSX_amc,			// Astro Marine Corps (Euro, Spanish)
 	&BurnSpecastmarcs,			// Astro Marine Corps - Part 1 (Spanish) (48K-128K)
 	&BurnSpecastmarcs2,			// Astro Marine Corps - Part 2 (Spanish) (48K-128K)
@@ -26329,7 +26338,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_backtof3c,		// Back to the Future Part III (Hack, Spanish)
 	&BurnDrvmd_backtof3u,		// Back to the Future Part III (USA)
 	&BurnDrvmd_backtof3cf,		// Back to the Future Part III - Color Fix (Hack)
-	&BurnDrvMSX_gantan,			// Back to the Gantan - Year of the Rat (HB)
+	&BurnDrvMSX_gantan,			// Back to the Gantan: Year of the Rat (HB)
 	&BurnDrvBackfire,			// Backfire! (Japan, set 1)
 	&BurnDrvBackfirea,			// Backfire! (Japan, set 2)
 	&BurnSpecBackgammon,		// Backgammon (CDS) (48K)
@@ -28583,6 +28592,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecChromanoids,		// Chromanoids (128K) (HB, v1.1)
 	&BurnDrvnes_radiasen,		// Chronicle of the Radia War (Hack, English)
 	&BurnDrvnes_chknight,		// Chrono Knight (HB)
+	&BurnDrvMSX_chronorunner,	// Chrono Runner (HB, v1.1)
 	&BurnDrvsnes_Chronotriggerti,// Chrono Trigger (Hack, Italian v1.2)
 	&BurnDrvsnes_Chronotriggerts,// Chrono Trigger (Hack, Spanish v1.07)
 	&BurnDrvsnes_Chronotriggerj,// Chrono Trigger (Japan)
@@ -29744,9 +29754,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_deepdng,		// Deep Dungeon (Japan)
 	&BurnDrvMSX_deepdun,		// Deep Dungeon Adventure (HB)
 	&BurnDrvcv_deepdngadv,		// Deep Dungeon Adventure (SGM) (HB)
-	&BurnDrvMSX_deepdng2,		// Deep Dungeon II - Yuushi no Monshou (Japan)
 	&BurnDrvfds_deepdung2,		// Deep Dungeon II: The The Hero's Crest (Hack, English)
 	&BurnDrvfds_deepdung2j,		// Deep Dungeon II: Yuushi no Monshou (Japan)
+	&BurnDrvMSX_deepdng2,		// Deep Dungeon II: Yuushi no Monshou (Japan)
 	&BurnDrvnes_deepdung3,		// Deep Dungeon III: The Journey to Become a Hero (Hack, English)
 	&BurnDrvnes_deepdung3h,		// Deep Dungeon III: The Journey to Become a Hero - Graphics Mod (Hack, v1.1)
 	&BurnDrvnes_deepdung3j,		// Deep Dungeon III: Yuushi heno Tabi (Japan)
@@ -31436,8 +31446,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_exerionk,		// Exerion (Korea)
 	&BurnDrvExeriont,			// Exerion (Taito)
 	&BurnDrvsg1k_exeriont,		// Exerion (Taiwan)
-	&BurnDrvMSX_exerion2,		// Exerion II - Zorni (Japan)
-	&BurnDrvMSX_exerion2a,		// Exerion II - Zorni (Japan, Alt)
+	&BurnDrvMSX_exerion2,		// Exerion II: Zorni (Japan)
+	&BurnDrvMSX_exerion2a,		// Exerion II: Zorni (Japan, Alt)
 	&BurnDrvExerion,			// Exerion
 	&BurnDrvExerizrb,			// Exerizer (bootleg)
 	&BurnDrvExerizer,			// Exerizer (Japan)
@@ -31501,7 +31511,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvExzisusa,			// Exzisus (Japan, conversion)
 	&BurnDrvExzisus,			// Exzisus (Japan, dedicated)
 	&BurnDrvExzisust,			// Exzisus (TAD license)
-	&BurnDrvMSX_eyebrawls,		// Eye Brawls (HB)
+	&BurnDrvMSX_eyebrawls,		// Eye Brawls (HB, v1.1)
 	&BurnDrvsg1k_eyebrawls,		// Eye Brawls (HB, v1.2)
 	&BurnDrvsnes_Eyebehold,		// Eye of the Beholder ~ Advanced Dungeons & Dragons (USA)
 	&BurnDrveyesb,				// Eyes (bootleg, set 1)
@@ -33030,8 +33040,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_ghostsngoblins,	// Ghosts'n Goblins (USA)
 	&BurnDrvGng,				// Ghosts'n Goblins (World? set 1)
 	&BurnDrvGnga,				// Ghosts'n Goblins (World? set 2)
-	&BurnDrvGngc,				// Ghosts'n Goblins (World? set 3)
+	&BurnDrvGngb,				// Ghosts'n Goblins (World? set 3)
+	&BurnDrvGngc,				// Ghosts'n Goblins (World? set 4)
 	&BurnDrvnes_ghostsngoblinsh,// Ghosts'n Goblins - Easy Mode (Hack, v2.0)
+	&BurnDrvGngknight,			// Ghosts'n Goblins - Knight Artoria Edition
+	&BurnDrvGngmaiden,			// Ghosts'n Goblins - Maiden Artoria Edition
 	&BurnDrvcv_gnz,				// Ghosts'n Zombies (HB)
 	&BurnDrvnes_ghoulgrind,		// Ghoul Grind Night of the Necromancer (HB)
 	&BurnDrvsnes_Ghoulpatrole,	// Ghoul Patrol (Euro)
@@ -36918,6 +36931,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMakaimug,			// Makaimura (Japan revision G)
 	&BurnDrvMakaimur,			// Makaimura (Japan)
 	&BurnDrvnes_makaimura,		// Makaimura (Japan)
+	&BurnDrvMakknight,			// Makaimura - Knight Artoria Edition
+	&BurnDrvMakmaiden,			// Makaimura - Maiden Artoria Edition
 	&BurnDrvnes_makaimuraarcade,// Makaimura Arcade (Hack)
 	&BurnDrvMSX_makethemfall,	// Make Them Fall (HB)
 	&BurnDrvMSX_makethemjump,	// Make Them Jump (HB)
@@ -37980,8 +37995,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_mitsumegatooruc,// Mitsume ga Tooru (Hack, Chinese v3)
 	&BurnDrvnes_mitsumegatooru,	// Mitsume ga Tooru (Hack, English)
 	&BurnDrvnes_mitsumegatooruj,// Mitsume ga Tooru (Japan)
-	&BurnDrvMSX_mitsumgtru,		// Mitsume Ga Tooru - The Three-Eyed One Comes Here (Hack, Russian)
 	&BurnDrvMSX_mitsumgten,		// Mitsume Ga Tooru: The Three-Eyed One Comes Here (Hack, English)
+	&BurnDrvMSX_mitsumgtru,		// Mitsume Ga Tooru: The Three-Eyed One Comes Here (Hack, Russian)
 	&BurnDrvMSX_mitsumgt,		// Mitsume Ga Tooru: The Three-Eyed One Comes Here (Japan)
 	&BurnDrvMSX_mix,			// Mix (HB, v1.2)
 	&BurnDrvQuiz18k,			// Miyasu Nonki no Quiz 18-Kin
@@ -42950,7 +42965,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Shienrevenge,	// Shien's Revenge (USA)
 	&BurnSpecShift128,			// Shift (128K) (HB)
 	&BurnSpecShift48,			// Shift (48K) (HB)
-	&BurnDrvMSX_shift,			// Shift (HB)
+	&BurnDrvMSX_shift,			// Shift (HB, v1.1)
 	&BurnDrvmd_sokoban,			// Shijou Saidai no Soukoban (Japan)
 	&BurnDrvmd_shikinjo,		// Shikinjoh (Japan)
 	&BurnDrvgg_shikinjo,		// Shikinjou (Japan)
@@ -44646,7 +44661,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsSf2mdtc,			// Street Fighter II': Magic Delta Turbo (bootleg, set 4)
 	&BurnDrvCpsSf2mkot,			// Street Fighter II': Magic KO Turbo!! - Nightmare Crack (set 1)
 	&BurnDrvCpsSf2mkot2,		// Street Fighter II': Magic KO Turbo!! - Nightmare Crack (set 2)
-	&BurnDrvCpsSf2prime,		// Street Fighter II': Prime (Ver 0.72, Hack)
+	&BurnDrvCpsSf2prime,		// Street Fighter II': Prime (Ver 0.73, Hack)
 	&BurnDrvCpsSf2rules,		// Street Fighter II: The World Warrior (bootleg with rules screen)
 	&BurnDrvCpsSf2b5,			// Street Fighter II: The World Warrior (bootleg, earliest, set 5)
 	&BurnDrvCpsSf2b,			// Street Fighter II: The World Warrior (bootleg, set 1)
@@ -47363,6 +47378,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_toxiccs,			// Toxic Crusaders (Hack, Spanish)
 	&BurnDrvmd_toxicc,			// Toxic Crusaders (USA)
 	&BurnDrvnes_toxiccrusaders,	// Toxic Crusaders (USA)
+	&BurnDrvMSX_toxictubes,		// Toxic Tubes (HB)
 	&BurnDrvToyland,			// Toy Land Adventure
 	&BurnDrvpce_toyshopb,		// Toy Shop Boys (Japan)
 	&BurnDrvmd_toystory,		// Toy Story (Euro)
@@ -50886,6 +50902,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_astrofl1", "sms/d_sms.cpp"},
 	{ "sms_astforce", "sms/d_sms.cpp"},
 	{ "cv_astroinv", "coleco/d_coleco.cpp"},
+	{ "msx_astrojump", "msx/d_msx.cpp"},
 	{ "msx_amc", "msx/d_msx.cpp"},
 	{ "spec_astmarcs", "spectrum/d_spectrum.cpp"},
 	{ "spec_astmarcs2", "spectrum/d_spectrum.cpp"},
@@ -53343,6 +53360,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_chromanoids", "spectrum/d_spectrum.cpp"},
 	{ "nes_radiasen", "nes/d_nes.cpp"},
 	{ "nes_chknight", "nes/d_nes.cpp"},
+	{ "msx_chronorunner", "msx/d_msx.cpp"},
 	{ "snes_chronotriggerti", "snes/d_snes.cpp"},
 	{ "snes_chronotriggerts", "snes/d_snes.cpp"},
 	{ "snes_chronotriggerj", "snes/d_snes.cpp"},
@@ -54498,9 +54516,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_deepdng", "msx/d_msx.cpp"},
 	{ "msx_deepdun", "msx/d_msx.cpp"},
 	{ "cv_deepdngadv", "coleco/d_coleco.cpp"},
-	{ "msx_deepdng2", "msx/d_msx.cpp"},
 	{ "fds_deepdung2", "nes/d_nes.cpp"},
 	{ "fds_deepdung2j", "nes/d_nes.cpp"},
+	{ "msx_deepdng2", "msx/d_msx.cpp"},
 	{ "nes_deepdung3", "nes/d_nes.cpp"},
 	{ "nes_deepdung3h", "nes/d_nes.cpp"},
 	{ "nes_deepdung3j", "nes/d_nes.cpp"},
@@ -57762,8 +57780,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_ghostsngoblins", "nes/d_nes.cpp"},
 	{ "gng", "pre90s/d_gng.cpp"},
 	{ "gnga", "pre90s/d_gng.cpp"},
+	{ "gngb", "pre90s/d_gng.cpp"},
 	{ "gngc", "pre90s/d_gng.cpp"},
 	{ "nes_ghostsngoblinsh", "nes/d_nes.cpp"},
+	{ "gngknight", "pre90s/d_gng.cpp"},
+	{ "gngmaiden", "pre90s/d_gng.cpp"},
 	{ "cv_gnz", "coleco/d_coleco.cpp"},
 	{ "nes_ghoulgrind", "nes/d_nes.cpp"},
 	{ "snes_ghoulpatrole", "snes/d_snes.cpp"},
@@ -61616,6 +61637,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "makaimurg", "pre90s/d_gng.cpp"},
 	{ "makaimur", "pre90s/d_gng.cpp"},
 	{ "nes_makaimura", "nes/d_nes.cpp"},
+	{ "makknight", "pre90s/d_gng.cpp"},
+	{ "makmaiden", "pre90s/d_gng.cpp"},
 	{ "nes_makaimuraarcade", "nes/d_nes.cpp"},
 	{ "msx_makethemfall", "msx/d_msx.cpp"},
 	{ "msx_makethemjump", "msx/d_msx.cpp"},
@@ -62674,8 +62697,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_mitsumegatooruc", "nes/d_nes.cpp"},
 	{ "nes_mitsumegatooru", "nes/d_nes.cpp"},
 	{ "nes_mitsumegatooruj", "nes/d_nes.cpp"},
-	{ "msx_mitsumgtru", "msx/d_msx.cpp"},
 	{ "msx_mitsumgten", "msx/d_msx.cpp"},
+	{ "msx_mitsumgtru", "msx/d_msx.cpp"},
 	{ "msx_mitsumgt", "msx/d_msx.cpp"},
 	{ "msx_mix", "msx/d_msx.cpp"},
 	{ "quiz18k", "pst90s/d_welltris.cpp"},
@@ -71969,6 +71992,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_toxiccs", "megadrive/d_megadrive.cpp"},
 	{ "md_toxicc", "megadrive/d_megadrive.cpp"},
 	{ "nes_toxiccrusaders", "nes/d_nes.cpp"},
+	{ "msx_toxictubes", "msx/d_msx.cpp"},
 	{ "toyland", "pst90s/d_vamphalf.cpp"},
 	{ "pce_toyshopb", "pce/d_pce.cpp"},
 	{ "md_toystory", "megadrive/d_megadrive.cpp"},
