@@ -4918,6 +4918,7 @@ DRV		BurnDrvnes_deadpool;
 DRV		BurnDrvnes_deadpoolsm1;
 DRV		BurnDrvnes_deadpoolsm2;
 DRV		BurnDrvsnes_Deaetono;
+DRV		Burnmd_Deathnlead;
 DRV		BurnDrvsnes_Dnrsupermane;
 DRV		BurnDrvmd_deathrets;
 DRV		BurnDrvmd_deathret;
@@ -29712,6 +29713,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_deadpoolsm1,	// Deadpool Special Mission (GlobalHack, v1.3, MMC3)
 	&BurnDrvnes_deadpoolsm2,	// Deadpool Special Mission (GlobalHack, v1.3, VCR2)
 	&BurnDrvsnes_Deaetono,		// Deae Tonosama - Appare Ichiban (Japan)
+	&Burnmd_Deathnlead,			// Death & Lead (HB)
 	&BurnDrvsnes_Dnrsupermane,	// Death and Return of Superman, The (Euro)
 	&BurnDrvmd_deathrets,		// Death and Return of Superman, The (Hack, Spanish)
 	&BurnDrvmd_deathret,		// Death and Return of Superman, The (USA)
@@ -54474,6 +54476,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_deadpoolsm1", "nes/d_nes.cpp"},
 	{ "nes_deadpoolsm2", "nes/d_nes.cpp"},
 	{ "snes_deaetono", "snes/d_snes.cpp"},
+	{ "md_deathnlead", "megadrive/d_megadrive.cpp"},
 	{ "snes_dnrsupermane", "snes/d_snes.cpp"},
 	{ "md_deathrets", "megadrive/d_megadrive.cpp"},
 	{ "md_deathret", "megadrive/d_megadrive.cpp"},
