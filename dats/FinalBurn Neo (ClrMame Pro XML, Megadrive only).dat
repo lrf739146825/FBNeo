@@ -4693,6 +4693,35 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="deathnlead" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Death &amp; Lead (HB)</description>
+		<year>2025</year>
+		<manufacturer>Kai Magazine</manufacturer>
+		<rom name="Death &amp; Lead (2025)(Kai Magazine).bin" size="4194304" crc="e1b3ee1f"/>
+		<sample name="01 1_1 o 5_1 glory salicornia bona loop" />
+		<sample name="02 1_2 The talking stone told the truths" />
+		<sample name="03 2_1 yerky and smoke" />
+		<sample name="04 2_2 CAT SOUP" />
+		<sample name="05 3_1 pendeja mescalera" />
+		<sample name="06 3_2 o 5_2 fuentealegre rage" />
+		<sample name="07 4_1 general desertor plan" />
+		<sample name="08 4_2 flamenco kenneth" />
+		<sample name="09 BOSS_LOOP" />
+		<sample name="10 BOSS_LOOPv1" />
+		<sample name="11 BOSS_LOOPv2" />
+		<sample name="12 BOSS_LOOPv3" />
+		<sample name="13 BOSS_LOOPv4" />
+		<sample name="14 FINAL_BOSS_LOOP" />
+		<sample name="15 STAGE_COMPLETE" />
+		<sample name="16 stage_start2" />
+		<sample name="17 TUTORIAL" />
+		<sample name="18 INTRO" />
+		<sample name="19 ENDING" />
+		<sample name="20 ending2" />
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="deathrets" cloneof="deathret" romof="deathret" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Death and Return of Superman, The (Hack, Spanish)</description>
