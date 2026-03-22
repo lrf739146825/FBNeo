@@ -1226,6 +1226,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="asterescue" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Asteroid Rescue (HB)</description>
+		<year>2026</year>
+		<manufacturer>Electric Adventures</manufacturer>
+		<rom name="Asteroid Rescue (2026)(Electric Adventures).rom" size="49152" crc="f80fc416"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="astrobls" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Astro Blaster (Euro)</description>
 		<year>1988</year>
@@ -9115,6 +9127,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="isabrave" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Isa Brave: Underworld keys (HB)</description>
+		<year>2026</year>
+		<manufacturer>Tom Martin</manufacturer>
+		<rom name="Isa Brave - Underworld keys (2026)(Tom Martin).rom" size="49152" crc="75dcd405"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="isitar7" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Isitar 7 (HB)</description>
@@ -9230,7 +9254,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="nipper2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Jack the Nipper II - In Coconut Capers (Euro)</description>
+		<description>Jack the Nipper II: In Coconut Capers (Euro)</description>
 		<year>1987</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
 		<rom name="Jack the Nipper II - In Coconut Capers (Euro, GB)(1987)(Gremlin Graphics).rom" size="131072" crc="6b0fd271"/>
@@ -9397,7 +9421,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="jsw2" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Jet Set Willy II - The Final Frontier (USA)</description>
+		<description>Jet Set Willy II: The Final Frontier (USA)</description>
 		<year>1985</year>
 		<manufacturer>Software Projects</manufacturer>
 		<rom name="Jet Set Willy II - The Final Frontier (USA)(1985)(Software Projects)[RUN'CAS-'].cas" size="51429" crc="4aef4095"/>
@@ -9424,6 +9448,18 @@
 		<year>1989</year>
 		<manufacturer>Players Software</manufacturer>
 		<rom name="Joe Blade (Euro, GB)(1989)(Players Software)[BLOAD'CAS-',R].cas" size="26791" crc="c958dd10"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jumpjoses" cloneof="jumpjosen" romof="jumpjosen" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Joselin El Saltarin (Spanish) (HB)</description>
+		<year>2026</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Joselin El Saltarin ES (2026)(joesg).rom" size="32768" crc="1cfe705d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -9469,6 +9505,18 @@
 		<year>1985</year>
 		<manufacturer>Nippon Columbia - Colpax - Universal</manufacturer>
 		<rom name="Jump Land (Japan)(1985)(Nippon Columbia, Colpax, Universal).rom" size="16384" crc="0f8699ba"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="jumpjosen" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Jumpin Joselin (English) (HB)</description>
+		<year>2026</year>
+		<manufacturer>joesg</manufacturer>
+		<rom name="Jumpin Joselin EN (2026)(joesg).rom" size="32768" crc="756c1e26"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -10287,7 +10335,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="koneko" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Koneko no Daibouken - Chibi-chan ga Iku (Japan)</description>
+		<description>Koneko no Daibouken: Chibi-chan ga Iku (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Casio</manufacturer>
 		<rom name="Koneko no Daibouken - Chibi-chan ga Iku (Japan)(1986)(Casio).rom" size="32768" crc="5a0b8739"/>
@@ -12063,7 +12111,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="moonwalker" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Moonwalker - The Computer Game (Euro)</description>
+		<description>Moonwalker: The Computer Game (Euro)</description>
 		<year>1989</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Moonwalker (Euro)(1989)(U.S. Gold)[RUN'CAS-'].cas" size="236833" crc="7bbf605f"/>
@@ -16391,6 +16439,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spacebash" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Space Bash: Contact !! (HB)</description>
+		<year>2026</year>
+		<manufacturer>Dave's Retro Forge</manufacturer>
+		<rom name="Space Bash - Contact !! (2026)(Dave's Retro Forge).rom" size="557056" crc="14dad385"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spacecmp" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Space Camp (Japan)</description>
 		<year>1986</year>
@@ -16954,10 +17014,10 @@
 	</game>
 	<game name="stonewise" cloneof="stonewis" romof="stonewis" sourcefile="msx/d_msx.cpp">
 		<comment>Hack</comment>
-		<description>Stone of Wisdom, The - Kenja no Ishi (Hack, English)</description>
+		<description>Stone of Wisdom, The ~ Kenja no Ishi (Hack, English)</description>
 		<year>2021</year>
 		<manufacturer>GDX</manufacturer>
-		<rom name="Stone of Wisdom, The  (T-Eng)(2021)(GDX).rom" size="32768" crc="f728c9de"/>
+		<rom name="Stone of Wisdom, The (T-Eng)(2021)(GDX).rom" size="32768" crc="f728c9de"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -16965,7 +17025,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="stonewis" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Stone of Wisdom, The - Kenja no Ishi (Japan)</description>
+		<description>Stone of Wisdom, The ~ Kenja no Ishi (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Casio</manufacturer>
 		<rom name="Stone of Wisdom, The (Japan)(1986)(Casio).rom" size="32768" crc="8c7a7435"/>
@@ -17302,7 +17362,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="slaydock" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Super Laydock - Mission Striker (Japan)</description>
+		<description>Super Laydock: Mission Striker (Japan)</description>
 		<year>1987</year>
 		<manufacturer>T&amp;E Soft</manufacturer>
 		<rom name="Super Laydock - Mission Striker (Japan)(1987)(T&amp;E Soft).rom" size="262144" crc="5dc45624"/>
@@ -17313,7 +17373,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="slaydockk" cloneof="slaydock" romof="slaydock" sourcefile="msx/d_msx.cpp">
-		<description>Super Laydock - Mission Striker (Korea) (Unl)</description>
+		<description>Super Laydock: Mission Striker (Korea) (Unl)</description>
 		<year>1988</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Super Laydock - Mission Striker (Korea)(Unl)(1988)(Zemina).rom" size="262144" crc="b885a464"/>
@@ -17965,7 +18025,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="theseus" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Theseus - Iligks I (Japan)</description>
+		<description>Theseus: Iligks I (Japan)</description>
 		<year>1984</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Theseus - Iligks I (Japan)(1984)(ASCII).rom" size="16384" crc="80495007"/>
@@ -17976,7 +18036,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="theseusa" cloneof="theseus" romof="theseus" sourcefile="msx/d_msx.cpp">
-		<description>Theseus - Iligks I (Japan, Alt)</description>
+		<description>Theseus: Iligks I (Japan, Alt)</description>
 		<year>1984</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Theseus - Iligks I (Japan, Alt)(1984)(ASCII).rom" size="16384" crc="53236741"/>
@@ -17987,7 +18047,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="theseusk" cloneof="theseus" romof="theseus" sourcefile="msx/d_msx.cpp">
-		<description>Theseus - Iligks I (Korea) (Unl)</description>
+		<description>Theseus: Iligks I (Korea) (Unl)</description>
 		<year>198?</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Theseus - Iligks I (Korea)(Unl)(198x)(Zemina).rom" size="16384" crc="6235de29"/>
@@ -18327,10 +18387,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="toprollr" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Top Roller! (Japan)</description>
+		<description>Top Roller (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="Top Roller! (Japan)(1984)(Jaleco).rom" size="16384" crc="fc609730"/>
+		<rom name="Top Roller (Japan)(1984)(Jaleco).rom" size="16384" crc="fc609730"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -19252,7 +19312,7 @@
 	</game>
 	<game name="whereisit" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Where Is it - The Quest For the 10th Island (HB)</description>
+		<description>Where Is it: The Quest For the 10th Island (HB)</description>
 		<year>2021</year>
 		<manufacturer>Eric Mendel</manufacturer>
 		<rom name="Where Is it - The Quest For the 10th Island (2021)(Eric Mendel).rom" size="32768" crc="e1abcfb8"/>
