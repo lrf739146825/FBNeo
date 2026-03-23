@@ -232,6 +232,7 @@ Here is a list of samples currently in use :
 | circus       |                                                                        |
 | crash        |                                                                        |
 | congo        |                                                                        |
+| deathnlead   | Not from MAME, megadrive                                               |
 | depthch      |                                                                        |
 | digger       | Not from MAME                                                          |
 | dkongjr      |                                                                        |
