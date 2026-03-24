@@ -36,6 +36,28 @@ static int StateGetMainRamAcb(BurnArea *pba)
 				bMainRamFound = true;
 			}
 			return 0;
+		case HARDWARE_SNK_NEOCD:
+			if ((strcmp(pba->szName, "68K program RAM") == 0)) {
+				sMemoryDescriptors[nMemoryCount].flags     = RETRO_MEMDESC_SYSTEM_RAM;
+				sMemoryDescriptors[nMemoryCount].ptr       = pba->Data;
+				sMemoryDescriptors[nMemoryCount].start     = 0x00000000;
+				sMemoryDescriptors[nMemoryCount].len       = pba->nLen;
+				sMemoryDescriptors[nMemoryCount].select    = 0;
+				sMemoryDescriptors[nMemoryCount].addrspace = pba->szName;
+				bMemoryMapFound = true;
+				nMemoryCount++;
+			}
+			if ((strcmp(pba->szName, "Memory card") == 0)) {
+				sMemoryDescriptors[nMemoryCount].flags     = RETRO_MEMDESC_SAVE_RAM;
+				sMemoryDescriptors[nMemoryCount].ptr       = pba->Data;
+				sMemoryDescriptors[nMemoryCount].start     = 0x00800000;
+				sMemoryDescriptors[nMemoryCount].len       = pba->nLen;
+				sMemoryDescriptors[nMemoryCount].select    = 0;
+				sMemoryDescriptors[nMemoryCount].addrspace = pba->szName;
+				bMemoryMapFound = true;
+				nMemoryCount++;
+			}
+			return 0;
 		case HARDWARE_SNK_NEOGEO:
 		case HARDWARE_IGS_PGM:
 			if (strcmp(pba->szName, "68K RAM") == 0) {

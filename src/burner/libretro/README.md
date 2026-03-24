@@ -232,6 +232,7 @@ Here is a list of samples currently in use :
 | circus       |                                                                        |
 | crash        |                                                                        |
 | congo        |                                                                        |
+| deathnlead   | Not from MAME, megadrive                                               |
 | depthch      |                                                                        |
 | digger       | Not from MAME                                                          |
 | dkongjr      |                                                                        |
@@ -262,11 +263,13 @@ Here is a list of samples currently in use :
 | seawolf      |                                                                        |
 | sfz3mix      | Not from MAME, optional, replace OG music by HQ music, no dipsw.       |
 | sharkatt     |                                                                        |
+| sidetrac     | Not from MAME                                                          |
 | sot4w        | Not from MAME, megadrive                                               |
 | spacefb      |                                                                        |
 | spacfury     |                                                                        |
 | stinger      | Not from MAME                                                          |
 | subroc3d     |                                                                        |
+| targ         |                                                                        |
 | thehand      |                                                                        |
 | thief        |                                                                        |
 | tr606drumkit | Not from MAME                                                          |
