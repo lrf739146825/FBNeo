@@ -4758,12 +4758,22 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="buzzsawbdm" cloneof="buzzsaw" romof="buzzsaw" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Buzzsaw+ [Box Deluxe Mix] (48K) (HB)</description>
+		<year>2013</year>
+		<manufacturer>Joefish</manufacturer>
+		<rom name="Buzzsaw+ Box Deluxe Mix 48K (2013)(Joefish).tap" size="42710" crc="7893b915"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="buzzsaw" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Buzzsaw+ (48K) (HB)</description>
+		<description>Buzzsaw+ [Foxton Locks Mix] (48K) (HB)</description>
 		<year>2011</year>
-		<manufacturer>Jason J. Railton</manufacturer>
-		<rom name="Buzzsaw+ 48K (2011)(Jason J. Railton).tap" size="42988" crc="f066f06d"/>
+		<manufacturer>Joefish</manufacturer>
+		<rom name="Buzzsaw+ Foxton Locks Mix 48K (2011)(Joefish).tap" size="42988" crc="f066f06d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -7502,7 +7512,7 @@
 	</game>
 	<game name="danterrifik2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Danterrifik II - The Nightmare Continues (128K) (HB)</description>
+		<description>Danterrifik II: The Nightmare Continues (128K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Toku Soft</manufacturer>
 		<rom name="Danterrifik II - The Nightmare Continues 128K (2020)(Toku Soft).tap" size="49982" crc="478c7adf"/>
@@ -7513,7 +7523,7 @@
 	</game>
 	<game name="danterrifik3" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Danterrifik III - The Dark Age of Grotesque (128K) (HB)</description>
+		<description>Danterrifik III: The Dark Age of Grotesque (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Toku Soft</manufacturer>
 		<rom name="Danterrifik III - The Dark Age of Grotesque 128K (2021)(TokuSoft).tap" size="46898" crc="9041c4da"/>
@@ -7524,7 +7534,7 @@
 	</game>
 	<game name="danterrifik4" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Danterrifik IV - A New Beginning (128K) (HB)</description>
+		<description>Danterrifik IV: A New Beginning (128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Toku Soft</manufacturer>
 		<rom name="Danterrifik IV - A New Beginning 128K (2023)(Tokusoft).tap" size="36977" crc="33a71a90"/>
@@ -7699,7 +7709,7 @@
 	</game>
 	<game name="darklostpages" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Dark, The - Lost Pages (128K) (HB)</description>
+		<description>Dark, The: Lost Pages (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Zosya Entertainment</manufacturer>
 		<rom name="Dark, The - Lost Pages 128K (2021)(Zosya Entertainment).tap" size="55037" crc="4ee940ee"/>
@@ -8723,6 +8733,28 @@
 		<manufacturer>Empire</manufacturer>
 		<rom name="Doctor Doom's Revenge 48K (1989)(Empire).tap" size="197516" crc="5f1b6cfc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="drlamorten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Doctor La Mort (English) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Toku Soft</manufacturer>
+		<rom name="Doctor La Mort EN 48K-128K (2026)(Toku Soft).tap" size="32211" crc="2e4ebe74"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="drlamortes" cloneof="drlamorten" romof="drlamorten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Doctor La Mort (Spanish) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Toku Soft</manufacturer>
+		<rom name="Doctor La Mort ES 48K-128K (2026)(Toku Soft).tap" size="32211" crc="a6a85a54"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19448,6 +19480,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mouselife" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mouse Life, A (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>BAD BITS</manufacturer>
+		<rom name="Mouse Life, A 48K (2026)(BAD BITS).tap" size="25424" crc="63616f45"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mousetrap" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Mousetrap (48K) (HB)</description>
@@ -25607,6 +25649,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="shiftex" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Shiftex (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Anate Studio</manufacturer>
+		<rom name="Shiftex 48K (2026)(Anate Studio).tap" size="46066" crc="37a77f8d"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="shinobi" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Shinobi (128K)</description>
 		<year>1989</year>
@@ -28387,6 +28439,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sweetfightin2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Sweet Fightin' +II (128K) (HB)</description>
+		<year>2025-26</year>
+		<manufacturer>ZX Presh</manufacturer>
+		<rom name="Sweet Fightin' +II 128K (2025-26)(ZX Presh).tap" size="605916" crc="b886316f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="switchblade" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Switchblade (128K)</description>
 		<year>1991</year>
@@ -28444,6 +28507,39 @@
 		<manufacturer>PSS</manufacturer>
 		<rom name="Swords &amp; Sorcery 48K (1985)(PSS).tap" size="48456" crc="ee9f4073"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="syrion2es" cloneof="syrion2en" romof="syrion2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Syrion II: Las seis piedras de Nefertiti (Spanish) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>S&amp;R</manufacturer>
+		<rom name="Syrion II ES 48K-128K (2026)(S&amp;R).tap" size="40100" crc="60bcaa93"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="syrion2it" cloneof="syrion2en" romof="syrion2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Syrion II: Le sei pietre di Nefertiti (Italian) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>S&amp;R</manufacturer>
+		<rom name="Syrion II IT 48K-128K (2026)(S&amp;R).tap" size="40096" crc="63d8295b"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="syrion2en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Syrion II: The Six Stones of Nefertiti (English) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>S&amp;R</manufacturer>
+		<rom name="Syrion II EN 48K-128K (2026)(S&amp;R).tap" size="40080" crc="b279e742"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -30482,6 +30578,17 @@
 		<rom name="Viaje al Centro de la Tierra - Version Extendida ES 48K-128K (2008)(Topo Siglo XXI).tap" size="196541" crc="83c5cd5b"/>
 		<rom name="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="vicecityblues" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Vice City Blues (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Softimar</manufacturer>
+		<rom name="Vice City Blues 128K (2026)(Softimar).tap" size="403236" crc="316bfbd4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

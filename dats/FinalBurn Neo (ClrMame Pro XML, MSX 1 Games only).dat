@@ -3217,6 +3217,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="calebeadv" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Calebe Adventure (HB, v1.3)</description>
+		<year>2026</year>
+		<manufacturer>Paulo Pereira &amp; Calebe Rodrigues Goncalves</manufacturer>
+		<rom name="Calebe Adventure v1.3 (2026)(Paulo Pereira &amp; Calebe Rodrigues Goncalves).rom" size="393216" crc="3625af7b"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="camelotw" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Camelot Warriors (Euro, Spanish)</description>
 		<year>1986</year>
@@ -6885,7 +6897,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fsim" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Flight Simulator - Gyorai Kougeki (Japan)</description>
+		<description>Flight Simulator: Gyorai Kougeki (Japan)</description>
 		<year>1988</year>
 		<manufacturer>subLOGIC</manufacturer>
 		<rom name="Flight Simulator - Gyorai Kougeki (Japan)(1988)(subLOGIC).rom" size="131072" crc="a6165bd4"/>
@@ -11633,7 +11645,7 @@
 		<driver status="preliminary"/>
 	</game>
 	<game name="mikie" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Mikie - Shinnyuushain Tooru-Kun (Japan)</description>
+		<description>Mikie: Shinnyuushain Tooru-Kun (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Konami - Sega</manufacturer>
 		<rom name="Mikie - Shinnyuushain Tooru-Kun (Japan)(1985)(Konami - Sega).rom" size="32768" crc="f4567a08"/>
@@ -11829,7 +11841,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gundam" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Mobile-Suit Gundam - Last Shooting (Japan)</description>
+		<description>Mobile-Suit Gundam: Last Shooting (Japan)</description>
 		<year>1984</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Mobile-Suit Gundam - Last Shooting (Japan)(1984)(Bandai).rom" size="16384" crc="1d27d31f"/>
@@ -11840,7 +11852,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gundama" cloneof="gundam" romof="gundam" sourcefile="msx/d_msx.cpp">
-		<description>Mobile-Suit Gundam - Last Shooting (Japan, Alt)</description>
+		<description>Mobile-Suit Gundam: Last Shooting (Japan, Alt)</description>
 		<year>1984</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Mobile-Suit Gundam - Last Shooting (Japan, Alt)(1984)(Bandai).rom" size="32768" crc="4725206f"/>
@@ -11851,7 +11863,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gundamk" cloneof="gundam" romof="gundam" sourcefile="msx/d_msx.cpp">
-		<description>Mobile-Suit Gundam - Last Shooting (Korea) (Unl)</description>
+		<description>Mobile-Suit Gundam: Last Shooting (Korea) (Unl)</description>
 		<year>198?</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Mobile-Suit Gundam - Last Shooting (Korea)(Unl)(198x)(Zemina).rom" size="32768" crc="5cef14d1"/>
@@ -12577,7 +12589,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="valis" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Mugen Senshi Valis (Japan)</description>
+		<description>Mugen Senshi Valis ~ The Fantasm Soldier Valis (Japan)</description>
 		<year>1986</year>
 		<manufacturer>Nihon Telenet</manufacturer>
 		<rom name="Mugen Senshi Valis (Japan)(1986)(Nihon Telenet).rom" size="131072" crc="309d996c"/>
@@ -12588,7 +12600,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="valisk" cloneof="valis" romof="valis" sourcefile="msx/d_msx.cpp">
-		<description>Mugen Senshi Valis (Korea) (Unl)</description>
+		<description>Mugen Senshi Valis ~ The Fantasm Soldier Valis (Korea) (Unl)</description>
 		<year>1987</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Mugen Senshi Valis (Korea)(Unl)(1987)(Zemina).rom" size="131072" crc="87361b76"/>
@@ -13080,7 +13092,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="ninjakmb" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Ninja-kun - Majou no Bouken (Japan)</description>
+		<description>Ninja-kun: Majou no Bouken (Japan)</description>
 		<year>1985</year>
 		<manufacturer>Nihon Dexter</manufacturer>
 		<rom name="Ninja-kun - Majou no Bouken (Japan)(1985)(Nihon Dexter).rom" size="32768" crc="ef339b82"/>
@@ -13458,7 +13470,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="oyotango" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Oyoide Tango (Japan)</description>
+		<description>Oyoide Tango ~ Swimming Tango (Japan)</description>
 		<year>1984</year>
 		<manufacturer>HAL Laboratory</manufacturer>
 		<rom name="Oyoide Tango (Japan)(1984)(HAL Laboratory).rom" size="8192" crc="01a24ca7"/>
@@ -13732,7 +13744,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="parodiuse" cloneof="parodius" romof="parodius" sourcefile="msx/d_msx.cpp">
-		<description>Parodius - Tako Saves Earth (Japan, English)</description>
+		<description>Parodius: Tako Saves Earth (Japan, English)</description>
 		<year>1988-2002</year>
 		<manufacturer>Konami - A&amp;L Soft</manufacturer>
 		<rom name="Parodius - Tako Saves Earth (Japan, EN)(1988-2002)(A&amp;L Soft).rom" size="131072" crc="68dea3f0"/>
@@ -13743,7 +13755,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="parodius" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Parodius - Tako wa Chikyuu wo Sukuu (Japan)</description>
+		<description>Parodius: Tako wa Chikyuu wo Sukuu (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Parodius (Japan)(1988)(Konami).rom" size="131072" crc="9bb308f5"/>
@@ -13754,7 +13766,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="parodiusa" cloneof="parodius" romof="parodius" sourcefile="msx/d_msx.cpp">
-		<description>Parodius - Tako wa Chikyuu wo Sukuu (Japan, Alt)</description>
+		<description>Parodius: Tako wa Chikyuu wo Sukuu (Japan, Alt)</description>
 		<year>1988</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Parodius (Japan, Alt)(1988)(Konami).rom" size="131072" crc="ca21cde4"/>
@@ -13833,7 +13845,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pengadvk2" cloneof="pengadv" romof="pengadv" sourcefile="msx/d_msx.cpp">
-		<description>Penguin Adventure - Yume Tairiku Adventure (Korea, Screen Software) (Unl)</description>
+		<description>Penguin Adventure ~ Yume Tairiku Adventure (Korea, Screen Software) (Unl)</description>
 		<year>1986</year>
 		<manufacturer>Screen Software</manufacturer>
 		<rom name="Yume Tairiku Adventure - Penguin Adventure (Korea)(Unl)(1986)(Screen).rom" size="131072" crc="38c35d99"/>
@@ -13844,7 +13856,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="pengadvk1" cloneof="pengadv" romof="pengadv" sourcefile="msx/d_msx.cpp">
-		<description>Penguin Adventure - Yume Tairiku Adventure (Korea, Zemina) (Unl)</description>
+		<description>Penguin Adventure ~ Yume Tairiku Adventure (Korea, Zemina) (Unl)</description>
 		<year>1987</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Yume Tairiku Adventure - Penguin Adventure (Korea)(Unl)(1987)(Zemina).rom" size="131072" crc="80814e55"/>

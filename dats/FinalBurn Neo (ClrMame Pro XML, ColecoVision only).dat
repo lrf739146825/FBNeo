@@ -5120,6 +5120,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="scramble" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Scramble (HB)</description>
+		<year>2024</year>
+		<manufacturer>Charles Spencer</manufacturer>
+		<rom name="Scramble (2024)(CollectorVision).rom" size="27902" crc="fc65fcd0"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sftscj" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Search For The Stolen Crown Jewels (HB)</description>
@@ -6147,9 +6160,9 @@
 	<game name="suprspac" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Super Space Acer (HB)</description>
-		<year>2015</year>
+		<year>1989-2023</year>
 		<manufacturer>Mike Brent</manufacturer>
-		<rom name="Super Space Acer (2015)(Mike Brent).rom" size="131072" crc="ae209065"/>
+		<rom name="Super Space Acer (1989-2023)(Mike Brent).rom" size="262144" crc="9e92c874"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6670,6 +6683,19 @@
 		<year>1984</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Video Hustler (USA, Proto 2)(1984)(Konami).rom" size="8192" crc="841d168f"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="virix" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Virix (HB)</description>
+		<year>2024</year>
+		<manufacturer>8 bit Milli Games</manufacturer>
+		<rom name="Virix (2024)(8 bit Milli Games).rom" size="131072" crc="c68d3768"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
