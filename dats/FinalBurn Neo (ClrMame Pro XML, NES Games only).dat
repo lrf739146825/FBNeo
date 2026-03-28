@@ -1394,10 +1394,10 @@
 	</game>
 	<game name="assimilate" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Assimilate (HB)</description>
-		<year>2012</year>
+		<description>Assimilate (HB, v1.1)</description>
+		<year>2012-15</year>
 		<manufacturer>Nessylum</manufacturer>
-		<rom name="Assimilate (2012)(Nessylum).nes" size="262160" crc="a2d504a8"/>
+		<rom name="Assimilate v1.1 (2012-15)(Nessylum).nes" size="262160" crc="53ae35b7"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2966,10 +2966,10 @@
 	</game>
 	<game name="bustina" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Bustina (HB, v1.04)</description>
+		<description>Bustina and the Search for Booty! (HB, v1.04)</description>
 		<year>2022-24</year>
 		<manufacturer>Adam Holmes</manufacturer>
-		<rom name="Bustina v1.04 (2022-24)(Adam Holmes).nes" size="524304" crc="b82ed907"/>
+		<rom name="Bustina and the Search for Booty! v1.04 (2022-24)(Adam Holmes).nes" size="524304" crc="b82ed907"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8379,20 +8379,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="garfiop" cloneof="garfi" romof="garfi" sourcefile="nes/d_nes.cpp">
-		<comment>Hack, Graphics improvement</comment>
-		<description>Garfield - A Week of Garfield OVERHAUL Project (Hack)</description>
-		<year>2022</year>
-		<manufacturer>Rani Baker</manufacturer>
-		<rom name="Garfield - A Week of Garfield OVERHAUL Project (2022)(Rani Baker).nes" size="163856" crc="46f0726f"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="garfi" sourcefile="nes/d_nes.cpp">
 		<description>Garfield no Isshukan ~ A Week of Garfield (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Towa Chiki</manufacturer>
 		<rom name="Garfield - A Week of Garfield (Japan)(1989)(Towa Chiki).nes" size="163856" crc="39c68f84"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="garfiop" cloneof="garfi" romof="garfi" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Graphics improvement</comment>
+		<description>Garfield: A Week of Garfield OVERHAUL Project (Hack)</description>
+		<year>2022</year>
+		<manufacturer>Rani Baker</manufacturer>
+		<rom name="Garfield - A Week of Garfield OVERHAUL Project (2022)(Rani Baker).nes" size="163856" crc="46f0726f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8950,7 +8950,7 @@
 	</game>
 	<game name="gradiusiiacd" cloneof="gradiusii" romof="gradiusii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Gradius II - Arrangement Chronicle Death (Hack, v2.0)</description>
+		<description>Gradius II: Arrangement Chronicle Death (Hack, v2.0)</description>
 		<year>2019</year>
 		<manufacturer>Messatu</manufacturer>
 		<rom name="Gradius II - Arrangement Chronicle Death v2.0 (2019)(Messatu).nes" size="524304" crc="e27f3192"/>
@@ -9268,6 +9268,15 @@
 		<year>1990</year>
 		<manufacturer>Varie</manufacturer>
 		<rom name="Gunhed - Aratanaru Tatakai (Japan)(1990)(Varie).nes" size="262160" crc="b14f0757"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="gunsdust" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Guns and Dust (HB, v3)</description>
+		<year>2025</year>
+		<manufacturer>5cinq</manufacturer>
+		<rom name="Guns and Dust v3 (2025)(5cinq).nes" size="524304" crc="e0da2187"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10655,6 +10664,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="jawsee" cloneof="jaws" romof="jaws" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Official Hack</comment>
+		<description>Jaws: Enhanced Edition (USA)</description>
+		<year>2026</year>
+		<manufacturer>Limited Run Games</manufacturer>
+		<rom name="Jaws - Enhanced Edition (USA)(2026)(Limited Run Games).nes" size="196624" crc="3ea0d8a6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="jaysilent" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Jay and Silent Bob Mall Brawl (HB)</description>
@@ -11342,15 +11360,6 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="kerokerkernoda" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kero Kero Keroppi no Daibouken (Hack, English)</description>
-		<year>2016</year>
-		<manufacturer>Gaijin Productions</manufacturer>
-		<rom name="Kero Kero Keroppi no Daibouken T-Eng (2016)(Gaijin Productions).nes" size="65552" crc="0dfbda9c"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="kerokerkernodaj" cloneof="kerokerkernoda" romof="kerokerkernoda" sourcefile="nes/d_nes.cpp">
 		<description>Kero Kero Keroppi no Daibouken (Japan)</description>
 		<year>1991</year>
@@ -11359,26 +11368,35 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="kerokerkernoda2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! (Hack, English)</description>
-		<year>2016</year>
-		<manufacturer>The Spoony Bard</manufacturer>
-		<rom name="Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! T-Eng (2016)(The Spoony Bard).nes" size="262160" crc="8b3c7d79"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="kerokerkernoda2j" cloneof="kerokerkernoda2" romof="kerokerkernoda2" sourcefile="nes/d_nes.cpp">
-		<description>Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! (Japan)</description>
+		<description>Kero Kero Keroppi no Daibouken 2: Donuts Ike wa Oosawagi! (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Character Soft</manufacturer>
 		<rom name="Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! (Japan)(1993)(Character Soft).nes" size="262160" crc="2c46f2a3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="kerokerkernoda" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kero Kero Keroppi's  Big Adventure 1 (Hack, English)</description>
+		<year>2016</year>
+		<manufacturer>Gaijin Productions</manufacturer>
+		<rom name="Kero Kero Keroppi no Daibouken T-Eng (2016)(Gaijin Productions).nes" size="65552" crc="0dfbda9c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kerokerkernoda2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kero Kero Keroppi's Great Big Adventure 2: Trouble in Donut Pond (Hack, English)</description>
+		<year>2016</year>
+		<manufacturer>The Spoony Bard</manufacturer>
+		<rom name="Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! T-Eng (2016)(The Spoony Bard).nes" size="262160" crc="8b3c7d79"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="keropkernosplbo" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Keroppi to Keroriinu no Splash Bomb! (Hack, English)</description>
+		<description>Keroppi &amp; Keroleen's Splash Bomb! (Hack, English)</description>
 		<year>2016</year>
 		<manufacturer>Suicidal Translations</manufacturer>
 		<rom name="Keroppi to Keroriinu no Splash Bomb! T-Eng (2016)(Suicidal Translations).nes" size="163856" crc="d7039620"/>
@@ -11635,20 +11653,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="kiterdai" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>Kiteretsu Daihyakka (Hack, English)</description>
-		<year>2016</year>
-		<manufacturer>Zynk Oxhyde</manufacturer>
-		<rom name="Kiteretsu Daihyakka T-Eng (2016)(Zynk Oxhyde).nes" size="262160" crc="ac9a9381"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="kiterdaij" cloneof="kiterdai" romof="kiterdai" sourcefile="nes/d_nes.cpp">
 		<description>Kiteretsu Daihyakka (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Epoch Co.</manufacturer>
 		<rom name="Kiteretsu Daihyakka (Japan)(1990)(Epoch Co.).nes" size="262160" crc="b6f4b759"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="kiterdai" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Kiteretsu Encyclopedia (Hack, English)</description>
+		<year>2016</year>
+		<manufacturer>Zynk Oxhyde</manufacturer>
+		<rom name="Kiteretsu Daihyakka T-Eng (2016)(Zynk Oxhyde).nes" size="262160" crc="ac9a9381"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13900,10 +13918,10 @@
 	</game>
 	<game name="midyammy" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Mid-Night Yammy (HB)</description>
-		<year>2025</year>
+		<description>Mid-Night Yammy (HB, v1.1.1)</description>
+		<year>2025-26</year>
 		<manufacturer>Kanno Develop</manufacturer>
-		<rom name="Mid-Night Yammy (2025)(Kanno Develop).nes" size="40976" crc="9778af48"/>
+		<rom name="Mid-Night Yammy v1.1.1 (2025-26)(Kanno Develop).nes" size="40976" crc="61730698"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -16756,6 +16774,15 @@
 		<year>2019</year>
 		<manufacturer>Toggle Switch</manufacturer>
 		<rom name="Project Blue (2019)(Toggle Switch).nes" size="524304" crc="43b9e57e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pteropus" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Zapper compatible game</comment>
+		<description>Pteropus (HB, v2.1)</description>
+		<year>2025-26</year>
+		<manufacturer>Retroplasmid</manufacturer>
+		<rom name="Pteropus v2.1 (2025-26)(Retroplasmid).nes" size="524304" crc="5905a4c1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22284,9 +22311,9 @@
 	<game name="traintrain" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Train! Train! (HB)</description>
-		<year>2025</year>
+		<year>2025-26</year>
 		<manufacturer>kn56k</manufacturer>
-		<rom name="Train! Train! (2025)(kn56k).nes" size="524304" crc="5c06e6ce"/>
+		<rom name="Train! Train! (2025-26)(kn56k).nes" size="524304" crc="7d7530ef"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
