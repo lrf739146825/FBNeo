@@ -616,9 +616,9 @@
 	<game name="alicesisters" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Alice Sisters (HB)</description>
-		<year>2022</year>
+		<year>2024</year>
 		<manufacturer>PixelHeart</manufacturer>
-		<rom name="Alice Sisters (2022)(PixelHeart).bin" size="4194304" crc="d5b794ed"/>
+		<rom name="Alice Sisters (2024)(PixelHeart).bin" size="4194304" crc="49025566"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1957,6 +1957,15 @@
 		<year>1991</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Battletoads (World)(1991)(Tradewest).bin" size="524288" crc="d10e103a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="battlewomen" cloneof="huntergirls" romof="huntergirls" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Battlewomen (HB)</description>
+		<year>2023</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Battlewomen (2023)(PSCD Games).bin" size="3014656" crc="b15a50fe"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5510,6 +5519,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dsymbol" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Double Symbol (HB, v1.34)</description>
+		<year>2018-2019</year>
+		<manufacturer>T-Arts Studios</manufacturer>
+		<rom name="Double Symbol v1.34 (2018-2019)(T-Arts Studios).bin" size="476774" crc="a06fb574"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="drrobotn" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Dr. Robotnik's Mean Bean Machine (Euro)</description>
 		<year>1993</year>
@@ -6285,6 +6303,15 @@
 		<year>2018</year>
 		<manufacturer>OrionSoft</manufacturer>
 		<rom name="Escape 2042 (2018)(OrionSoft).bin" size="4194304" crc="0d81511c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="escape2049" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Escape 2049 (M2) (HB)</description>
+		<year>2025-26</year>
+		<manufacturer>OrionSoft</manufacturer>
+		<rom name="Escape 2049 (2025-26)(OrionSoft).bin" size="4194304" crc="b8a2492c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11806,10 +11833,10 @@
 	</game>
 	<game name="mb2277" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Metal Blast 2277 (HB)</description>
-		<year>2019</year>
+		<description>Metal Blast 2277 (HB, v1.25)</description>
+		<year>2017-2019</year>
 		<manufacturer>T-Arts Studio</manufacturer>
-		<rom name="Metal Blast 2277 (rev01-2019)(T-Arts Studio).bin" size="2647322" crc="dfd4fe49"/>
+		<rom name="Metal Blast 2277 v1.25 (2017-2019)(T-Arts Studio).bin" size="2647322" crc="dfd4fe49"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13037,18 +13064,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="bullvsblj" cloneof="bullvsbl" romof="bullvsbl" sourcefile="megadrive/d_megadrive.cpp">
-		<description>NBA Playoffs - Bulls Vs Blazers (Japan)</description>
+		<description>NBA Playoffs: Bulls vs Blazers (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="NBA Playoffs - Bulls Vs Blazers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="eae8c000"/>
+		<rom name="NBA Playoffs - Bulls vs Blazers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="eae8c000"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="bullvsblj1" cloneof="bullvsbl" romof="bullvsbl" sourcefile="megadrive/d_megadrive.cpp">
-		<description>NBA Playoffs - Bulls Vs Blazers (Japan, Alt)</description>
+		<description>NBA Playoffs: Bulls vs Blazers (Japan, Alt)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="NBA Playoffs - Bulls Vs Blazers (Japan, Alt)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4565ce1f"/>
+		<rom name="NBA Playoffs - Bulls vs Blazers (Japan, Alt)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4565ce1f"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13061,10 +13088,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="bullvslaj" cloneof="bullvsla" romof="bullvsla" sourcefile="megadrive/d_megadrive.cpp">
-		<description>NBA Pro Basketball - Bulls Vs Lakers (Japan)</description>
+		<description>NBA Pro Basketball: Bulls vs Lakers (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Electronic Arts Victor</manufacturer>
-		<rom name="NBA Pro Basketball - Bulls Vs Lakers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4416ce39"/>
+		<rom name="NBA Pro Basketball - Bulls vs Lakers (Japan)(1993)(Electronic Arts Victor).bin" size="1048576" crc="4416ce39"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13512,26 +13539,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="nobubufu" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Nobunaga no Yabou - Bushou Fuuunroku (Japan)</description>
+		<description>Nobunaga no Yabou: Bushou Fuuunroku (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Nobunaga no Yabou - Bushou Fuuunroku (Japan)(1991)(Koei).bin" size="1048576" crc="30bf8637"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="nobuhao" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Nobunaga no Yabou - Haouden (Japan)</description>
-		<year>1994</year>
-		<manufacturer>Koei</manufacturer>
-		<rom name="Nobunaga no Yabou - Haouden (Japan)(1994)(Koei).bin" size="2097152" crc="96c01fc6"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="nobuzenk" cloneof="nobuamb" romof="nobuamb" sourcefile="megadrive/d_megadrive.cpp">
-		<description>Nobunaga no Yabou - Zenkokuban (Japan)</description>
-		<year>1993</year>
-		<manufacturer>Koei</manufacturer>
-		<rom name="Nobunaga no Yabou - Zenkokuban (Japan)(1993)(Koei).bin" size="524288" crc="1381b313"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13541,6 +13552,22 @@
 		<year>199?</year>
 		<manufacturer>Xu Yong Sheng</manufacturer>
 		<rom name="Nobunaga no Yabou - Haouden T-Chi (199x)(Xu Yong Sheng).bin" size="2097152" crc="0a0993cf"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nobuhao" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Nobunaga no Yabou: Haouden (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Koei</manufacturer>
+		<rom name="Nobunaga no Yabou - Haouden (Japan)(1994)(Koei).bin" size="2097152" crc="96c01fc6"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nobuzenk" cloneof="nobuamb" romof="nobuamb" sourcefile="megadrive/d_megadrive.cpp">
+		<description>Nobunaga no Yabou: Zenkokuban (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Koei</manufacturer>
+		<rom name="Nobunaga no Yabou - Zenkokuban (Japan)(1993)(Koei).bin" size="524288" crc="1381b313"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13557,6 +13584,15 @@
 		<year>1994</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Normy's Beach Babe-O-Rama (Euro, USA)(1994)(Electronic Arts).bin" size="1048576" crc="b56a8220"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nutsmilk" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Nuts &amp; Milk (HB)</description>
+		<year>2025</year>
+		<manufacturer>Mairtrus - YoSoyNacho</manufacturer>
+		<rom name="Nuts &amp; Milk (2025)(Mairtrus - YoSoyNacho).bin" size="62188" crc="c4eedd94"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14965,6 +15001,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="popeyefix" cloneof="popeyescp" romof="popeyescp" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Popeye in High Seas High-Jinks - Fixed Samples (Hack)</description>
+		<year>2026</year>
+		<manufacturer>Devan Wolf</manufacturer>
+		<rom name="Popeye in High Seas High-Jinks - Fixed Samples (2026)(Devan Wolf).bin" size="2097152" crc="561f5933"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="populous" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Populous (Euro)</description>
 		<year>1991</year>
@@ -15150,7 +15195,7 @@
 	</game>
 	<game name="ppersia2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Prototype</comment>
-		<description>Prince of Persia 2 - The Shadow and the Flame (Euro, Prototype)</description>
+		<description>Prince of Persia 2: The Shadow and the Flame (Euro, Prototype)</description>
 		<year>1995</year>
 		<manufacturer>Psygnosis</manufacturer>
 		<rom name="Prince of Persia 2 - The Shadow and the Flame (Euro, Proto)(1995)(Psygnosis).bin" size="2097152" crc="3ab44d46"/>
@@ -15159,7 +15204,7 @@
 	</game>
 	<game name="ppersia2s" cloneof="ppersia2" romof="ppersia2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Prince of Persia 2 - The Shadow and the Flame (Hack, Spanish)</description>
+		<description>Prince of Persia 2: The Shadow and the Flame (Hack, Spanish)</description>
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="prince of persia 2 - the shadow and the flame (hack, spanish) ( prototype).bin" size="2097152" crc="59da6398"/>
@@ -16786,6 +16831,15 @@
 		<year>1994</year>
 		<manufacturer>Sansan Co.</manufacturer>
 		<rom name="Sansan (Japan)(1994)(Sansan Co.).bin" size="1048576" crc="5b85deed"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="satanclaus" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Satan Claus (HB, v1.23)</description>
+		<year>2022-2024</year>
+		<manufacturer>T-Arts Studios</manufacturer>
+		<rom name="Satan Claus v1.23 (2022-2024)(T-Arts Studios).bin" size="3058530" crc="f6b9aea0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20303,6 +20357,15 @@
 		<year>1990</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Super Real Basketball (Japan, Korea)(1990)(Sega).bin" size="524288" crc="4346e11a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="srobin" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Robin (HB)</description>
+		<year>2025</year>
+		<manufacturer>Camden Town Games</manufacturer>
+		<rom name="Super Robin (2025)(Camden Town Games).bin" size="1441792" crc="3cfc7b64"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
