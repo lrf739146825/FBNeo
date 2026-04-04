@@ -200,6 +200,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="awassm" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Awass Micro (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Awass Micro (2026)(Inufuto).gg" size="16384" crc="eb97874d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="axbattlrp" cloneof="axbattlr" romof="axbattlr" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
 		<description>Ax Battler - A Legend of Golden Axe (Euro, USA, Prototype v2.0)</description>
@@ -1631,6 +1640,15 @@
 		<year>2005</year>
 		<manufacturer>Martin Konrad</manufacturer>
 		<rom name="GG Turrican (demo-1.0)(2005)(Martin Konrad).gg" size="524288" crc="971ca630"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gluf" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>GLUF Tesla Frog (HB)</description>
+		<year>2026</year>
+		<manufacturer>Tony &amp; Co.</manufacturer>
+		<rom name="GLUF Tesla Frog (2026)(Tony &amp; Co.).gg" size="131072" crc="1afb1281"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

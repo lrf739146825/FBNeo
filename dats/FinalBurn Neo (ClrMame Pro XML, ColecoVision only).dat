@@ -609,6 +609,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bokosukawars" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Bokosuka Wars (SGM) (HB)</description>
+		<year>2017</year>
+		<manufacturer>Opcode Games - ASCII</manufacturer>
+		<rom name="Bokosuka Wars SGM (2017)(Opcode Games).rom" size="32768" crc="59b0eb86"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bombjack" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Bomb Jack (HB)</description>
@@ -896,6 +909,19 @@
 		<year>1985-2018</year>
 		<manufacturer>Sega - Claus Baekkel</manufacturer>
 		<rom name="C-So (2018)(Team Pixelboy).rom" size="32768" crc="d182812a"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cabbagepk" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Cabbage Patch Kids (HB)</description>
+		<year>1983-2017</year>
+		<manufacturer>Opcode Games - Konami</manufacturer>
+		<rom name="Cabbage Patch Kids (1983-2017)(Opcode Games).rom" size="65536" crc="741cf863"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1624,6 +1650,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="digdugsgm" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Dig Dug (SGM) (HB)</description>
+		<year>1982-2017</year>
+		<manufacturer>Opcode Games - Namcot</manufacturer>
+		<rom name="Dig Dug SGM (1982-2017)(Opcode Games).rom" size="32768" crc="59d08879"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="digdug" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Prototype</comment>
 		<description>Dig Dug (USA, Prototype)</description>
@@ -1744,6 +1783,19 @@
 		<year>2021</year>
 		<manufacturer>Cote Gamers</manufacturer>
 		<rom name="Donuts Man (2021)(Cote Gamers).rom" size="32768" crc="517314b1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dorodon" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Dorodon (SGM) (HB)</description>
+		<year>1984-2017</year>
+		<manufacturer>Opcode Games - UPL</manufacturer>
+		<rom name="Dorodon SGM (1984-2017)(Opcode Games).rom" size="32768" crc="e3d61921"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2183,6 +2235,19 @@
 		<year>1984</year>
 		<manufacturer>Parker Brothers</manufacturer>
 		<rom name="Frogger II - ThreeeDeep! (USA)(1984)(Parker Brothers).rom" size="16384" crc="4229ea5a"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="frontlinsgm" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Front Line (SGM) (HB)</description>
+		<year>1984-2019</year>
+		<manufacturer>Opcode Games - Taito</manufacturer>
+		<rom name="Front Line SGM (1984-2019)(Opcode Games).rom" size="65536" crc="e544a5f9"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3375,6 +3440,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="magtreep" cloneof="magtree" romof="magtree" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Prototype, Published by Opcode Games</comment>
+		<description>Magical Tree (Prototype) (HB)</description>
+		<year>1984-2004</year>
+		<manufacturer>Konami</manufacturer>
+		<rom name="Magical Tree (1984-2004)(Opcode Games).rom" size="32768" crc="9f53f9cc"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="msolitaire" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Mahjong Solitaire (HB, v1.16)</description>
@@ -3905,6 +3983,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mouser" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Mouser (SGM) (HB)</description>
+		<year>1983-2017</year>
+		<manufacturer>Opcode Games - UPL</manufacturer>
+		<rom name="Mouser - SGM (1983-2017)(Opcode Games).rom" size="32768" crc="b9a8d81e"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mtrap" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Mousetrap (USA)</description>
 		<year>1982</year>
@@ -4349,6 +4440,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="parsec" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Parsec (HB)</description>
+		<year>1982-2024</year>
+		<manufacturer>Texas Instruments</manufacturer>
+		<rom name="Parsec (1982-2024)(CollectorVision).rom" size="32768" crc="2eee537a"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="peekaboo" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by Team Pixelboy</comment>
 		<description>Peek-A-Boo (HB)</description>
@@ -4394,6 +4498,19 @@
 		<year>2003-2010</year>
 		<manufacturer>Steve Begin</manufacturer>
 		<rom name="Penguin Land (2010)(CollectorVision - Steve Begin).rom" size="31788" crc="2357c3e3"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="penguinwars" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Super Game Module</comment>
+		<description>Penguin Wars (SGM) (HB)</description>
+		<year>2018</year>
+		<manufacturer>Opcode Games - ASCII</manufacturer>
+		<rom name="Penguin Wars SGM (2018)(Opcode Games).rom" size="65536" crc="4008a425"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6818,6 +6935,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wwestern" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Prototype</comment>
+		<description>Wild Western (Prototype)</description>
+		<year>1984</year>
+		<manufacturer>Taito</manufacturer>
+		<rom name="Wild Western (Proto) (1984)(Taito).rom" size="32768" crc="7dc4d155"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wingwar" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Wing War (USA)</description>
 		<year>1983</year>
@@ -6946,17 +7076,17 @@
 		<driver status="good"/>
 	</game>
 	<game name="yiearii" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Homebrew, SGM - NB: the game resets randomly!</comment>
+		<comment>Homebrew, SGM - Super Game Module</comment>
 		<description>Yie Ar Kung Fu II (SGM) (HB)</description>
 		<year>1985-2018</year>
 		<manufacturer>Opcode Games - Konami</manufacturer>
-		<rom name="Yie Ar Kung Fu II SGM (2018)(Opcode Games).rom" size="131072" crc="3143c6dd"/>
+		<rom name="Yie Ar Kung Fu II SGM (2018)(Opcode Games).rom" size="65536" crc="f5f722df"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
 		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
-		<driver status="preliminary"/>
+		<driver status="good"/>
 	</game>
 	<game name="yolk" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Prototype</comment>

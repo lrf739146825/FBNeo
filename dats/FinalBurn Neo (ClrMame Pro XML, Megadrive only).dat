@@ -10666,6 +10666,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sailormnpt" cloneof="sailormn" romof="sailormn" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Linda Guerreira Sailor Moon (Hack, Portuguese)</description>
+		<year>2020</year>
+		<manufacturer>Anime_World</manufacturer>
+		<rom name="Linda Guerreira Sailor Moon PT-BR (2020)(Anime_World).bin" size="4194304" crc="cf90364b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supmagic" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Linghuan Daoshi ~ Super Magician (China) (Unl)</description>
 		<year>1994</year>
@@ -15419,6 +15428,15 @@
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Punisher, The (Euro)(1994)(Capcom).bin" size="2097152" crc="729edd17"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="punisherpt" cloneof="punisher" romof="punisher" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Punisher, The (Hack, Portuguese)</description>
+		<year>2010</year>
+		<manufacturer>Monkey's Traducoes</manufacturer>
+		<rom name="Punisher, The PT-BR (2010)(Monkey's Traducoes).bin" size="2097386" crc="b9483d26"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
