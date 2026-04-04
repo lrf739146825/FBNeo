@@ -327,7 +327,24 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="addamfamc" cloneof="addamfam" romof="addamfam" sourcefile="nes/d_nes.cpp">
+	<game name="addamfame" cloneof="addamfam" romof="addamfam" sourcefile="nes/d_nes.cpp">
+		<description>Addams Family, The (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Addams Family, The (Euro, M3)(1991)(Ocean).nes" size="262160" crc="8707e956"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="addamfamtp" cloneof="addamfam" romof="addamfam" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Addams Family, The (Hack, Portuguese)</description>
+		<year>2001</year>
+		<manufacturer>Kaji</manufacturer>
+		<rom name="Addams Family, The PT-BR (2001)(Kaji).nes" size="262160" crc="3db484d4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="addamfamts" cloneof="addamfam" romof="addamfam" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Addams Family, The (Hack, Spanish)</description>
 		<year>2020</year>
@@ -338,15 +355,15 @@
 	</game>
 	<game name="addamfam" sourcefile="nes/d_nes.cpp">
 		<description>Addams Family, The (USA)</description>
-		<year>1992</year>
+		<year>1991-92</year>
 		<manufacturer>Ocean</manufacturer>
-		<rom name="Addams Family, The (USA)(1992)(Ocean).nes" size="262160" crc="08e2af80"/>
+		<rom name="Addams Family, The (USA)(1991-92)(Ocean).nes" size="262160" crc="08e2af80"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="addamfampugsschuc" cloneof="addamfampugsschu" romof="addamfampugsschu" sourcefile="nes/d_nes.cpp">
+	<game name="addamfampugsschuts" cloneof="addamfampugsschu" romof="addamfampugsschu" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Addams Family, The - Pugsley's Scavenger Hunt (Hack, Spanish v1.1)</description>
+		<description>Addams Family, The: Pugsley's Scavenger Hunt (Hack, Spanish v1.1)</description>
 		<year>2020</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Addams Family, The - Pugsley's Scavenger Hunt T-Spa v1.1 (2020)(Wave).nes" size="262160" crc="54bbec54"/>
@@ -354,7 +371,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="addamfampugsschu" sourcefile="nes/d_nes.cpp">
-		<description>Addams Family, The - Pugsley's Scavenger Hunt (USA)</description>
+		<description>Addams Family, The: Pugsley's Scavenger Hunt (USA)</description>
 		<year>1993</year>
 		<manufacturer>Ocean</manufacturer>
 		<rom name="Addams Family, The - Pugsley's Scavenger Hunt (USA)(1993)(Ocean).nes" size="262160" crc="6b8d777d"/>
@@ -767,7 +784,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="akumadenjc" cloneof="castliii" romof="castliii" sourcefile="nes/d_nes.cpp">
+	<game name="akumadenjts" cloneof="castliii" romof="castliii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Akumajou Densetsu (Hack, Spanish v1.1)</description>
 		<year>2017</year>
@@ -3299,6 +3316,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
 		<driver status="good"/>
 	</game>
+	<game name="castliitp" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania II: Simon's Quest (Hack, Portuguese)</description>
+		<year>2000</year>
+		<manufacturer>Jackal</manufacturer>
+		<rom name="Castlevania II - Simon's Quest PT-BR (2000)(Jackal).nes" size="262160" crc="2b3f7cd5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="castliih" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Castlevania II: Simon's Quest (Hack, Re-translation + Map)</description>
@@ -3317,7 +3343,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="castliic" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
+	<game name="castliits" cloneof="castlii" romof="castlii" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Castlevania II: Simon's Quest (Hack, Spanish v2.0)</description>
 		<year>2013</year>
@@ -4227,7 +4253,7 @@
 		<description>Contra Gender Swap (Hack)</description>
 		<year>2025</year>
 		<manufacturer>tavuntu</manufacturer>
-		<rom name="Contra Gender Swap (2025)(tavuntu).nes" size="262160" crc="f7fac010"/>
+		<rom name="Contra Gender Swap (2025)(tavuntu).nes" size="262160" crc="94708583"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9862,12 +9888,21 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="hokutonoken2c" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
+	<game name="hokutonoken2ts" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Hokuto no Ken 2 ~ Fist of the North Star (Hack, Spanish v1.1)</description>
 		<year>2018</year>
 		<manufacturer>Jonathan</manufacturer>
 		<rom name="Hokuto no Ken 2 T-Spa v1.1 (2018)(Jonathan).nes" size="131088" crc="3a3cd6df"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hokutonoken2tp" cloneof="hokutonoken2" romof="hokutonoken2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hokuto no Ken 2: A lenda do salvador do fim do seculo (Hack, Portuguese)</description>
+		<year>2009</year>
+		<manufacturer>Trans-Center</manufacturer>
+		<rom name="Hokuto no Ken 2 PT-BR (2009)(Trans-Center).nes" size="131088" crc="aff39071"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9902,6 +9937,15 @@
 		<year>2024</year>
 		<manufacturer>BlackPaladin</manufacturer>
 		<rom name="Hokuto no Ken 3 - Shin Seiki Souzou Seiken Retsuden T-Eng (2024)(BlackPaladin).nes" size="524304" crc="8b1eb74a"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hokutonokentp" cloneof="hokutonoken" romof="hokutonoken" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Hokuto no Ken: O punho da estrela do norte (Hack, Portuguese)</description>
+		<year>2009</year>
+		<manufacturer>Trans-Center</manufacturer>
+		<rom name="Hokuto no Ken PT-BR (2009)(Trans-Center).nes" size="65552" crc="8eef5d74"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -11010,6 +11054,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="jurassicparke" cloneof="jurassicpark" romof="jurassicpark" sourcefile="nes/d_nes.cpp">
+		<description>Jurassic Park (Euro)</description>
+		<year>1993</year>
+		<manufacturer>Ocean</manufacturer>
+		<rom name="Jurassic Park (Euro, M4)(1993)(Ocean).nes" size="262160" crc="bc088578"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
 	<game name="jurassicpark" sourcefile="nes/d_nes.cpp">
 		<description>Jurassic Park (USA)</description>
 		<year>1993</year>
@@ -11670,6 +11722,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="kitty" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Kitty (HB, v1.0.3)</description>
+		<year>2024</year>
+		<manufacturer>Mileco</manufacturer>
+		<rom name="Kitty v1.0.3 (2024)(Mileco).nes" size="524304" crc="86250822"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kittyscatch" sourcefile="nes/d_nes.cpp">
 		<description>Kitty's Catch (USA)</description>
 		<year>1989</year>
@@ -11699,6 +11760,15 @@
 		<year>1990</year>
 		<manufacturer>Tengen</manufacturer>
 		<rom name="Klax (USA)(Unl)(1990)(Tengen).nes" size="131088" crc="755cf043"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightcoinv" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Knight Coinventure (HB)</description>
+		<year>2025</year>
+		<manufacturer>Doby Games</manufacturer>
+		<rom name="Knight Coinventure (2025)(Doby Games).nes" size="524304" crc="3c73eff4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20175,6 +20245,15 @@
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Super C (USA)(1990)(Konami).nes" size="262160" crc="ed53852d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="supercgs" cloneof="superc" romof="superc" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Super C Gender Swap (Hack)</description>
+		<year>2026</year>
+		<manufacturer>Tobi522 - tavuntu</manufacturer>
+		<rom name="Super C Gender Swap (2026)(Tobi522 - tavuntu).nes" size="262160" crc="5b2fda42"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
