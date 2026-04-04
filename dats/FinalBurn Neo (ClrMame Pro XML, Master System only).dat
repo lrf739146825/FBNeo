@@ -668,6 +668,24 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="atoms" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Atoms! (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>The Gould Fish</manufacturer>
+		<rom name="Atoms v1.1 (2026)(The Gould Fish).sms" size="180224" crc="87d98e15"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="awass" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Awass (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Awass (2026)(Inufuto).sms" size="16384" crc="f0af51d6"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="smgp2" sourcefile="sms/d_sms.cpp">
 		<description>Ayrton Senna's Super Monaco GP II (Euro, Brazil, Korea)</description>
 		<year>1992</year>
@@ -1159,6 +1177,15 @@
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Captain Silver (USA)(1988)(Sega).sms" size="131072" crc="b81f6fa5"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="capturego" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Capture Go (HB)</description>
+		<year>2026</year>
+		<manufacturer>raphnet</manufacturer>
+		<rom name="Capture Go (2026)(raphnet).sms" size="262144" crc="b36c9f41"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2236,6 +2263,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fridgefury" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Fridge Fury (HB, v34c)</description>
+		<year>2026</year>
+		<manufacturer>MikGames</manufacturer>
+		<rom name="Fridge Fury v34c (2026)(MikGames).sms" size="425984" crc="fed2b034"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="frontierforced" cloneof="frontierforce" romof="frontierforce" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Frontier Force (HB, Alpha Demo v0.1.2.3)</description>
@@ -2525,6 +2561,15 @@
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Global Defense (Euro, USA, Proto)(1987)(Sega).sms" size="131072" crc="91a0fc4e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gluf" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>GLUF Tesla Frog (HB)</description>
+		<year>2026</year>
+		<manufacturer>Tony &amp; Co.</manufacturer>
+		<rom name="GLUF Tesla Frog (2026)(Tony &amp; Co.).sms" size="131072" crc="219439e7"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4834,6 +4879,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="roadfight" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Road Fighter (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>BadComputer, Chirinea</manufacturer>
+		<rom name="Road Fighter v1.2 (2026)(BadComputer, Chirinea).sms" size="524288" crc="31035323"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="roadfght" sourcefile="sms/d_sms.cpp">
 		<description>Road Fighter (Korea)</description>
 		<year>19??</year>
@@ -5680,6 +5734,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="stalactites" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Stalactites (HB, v0.7)</description>
+		<year>2026</year>
+		<manufacturer>haroldoop</manufacturer>
+		<rom name="Stalactites v0.7 (2026)(haroldoop).sms" size="32768" crc="f28cd77c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="starwars" sourcefile="sms/d_sms.cpp">
 		<description>Star Wars (Euro, Brazil)</description>
 		<year>1993</year>
@@ -5926,6 +5989,15 @@
 		<year>1991</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Super Kick Off (Euro, Brazil)(1991)(U.S. Gold).sms" size="262144" crc="406aa0c2"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smb" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, Unofficial Port - only the first level is available</comment>
+		<description>Super Mario Bros. (HB, v0.11)</description>
+		<year>2026</year>
+		<manufacturer>Lack of Track</manufacturer>
+		<rom name="Super Mario Bros. v0.11 (2026)(Lack of Track).sms" size="262144" crc="f0cac76b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

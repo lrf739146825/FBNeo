@@ -46715,6 +46715,25 @@ struct BurnDriver BurnDrvmd_pulsemanpt = {
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
 
+// Punisher, The (Hack, Portuguese)
+// https://www.romhacking.net/translations/1557/
+static struct BurnRomInfo md_punisherptRomDesc[] = {
+	{ "Punisher, The PT-BR (2010)(Monkey's Traducoes).bin", 2097386, 0xb9483d26, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_punisherpt)
+STD_ROM_FN(md_punisherpt)
+
+struct BurnDriver BurnDrvmd_punisherpt = {
+	"md_punisherpt", "md_punisher", NULL, NULL, "2010",
+	"Punisher, The (Hack, Portuguese)\0", NULL, "Monkey's Traducoes", "Genesis / Mega Drive",
+	NULL, NULL, L"Monkey's Tradu\u00e7\u00f5es", NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HACK, 2, HARDWARE_SEGA_MEGADRIVE, GBF_SCRFIGHT, 0,
+	MegadriveGetZipName, md_punisherptRomInfo, md_punisherptRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
 // QuackShot Starring Donald Duck (Hack, Portuguese)
 // https://romhackers.org/traducoes/console/mega-drive/quack-shot-starring-donald-duck-monkeys-traducoes/
 static struct BurnRomInfo md_quackshtptRomDesc[] = {
@@ -46730,6 +46749,25 @@ struct BurnDriver BurnDrvmd_quackshtpt = {
 	NULL, NULL, L"Monkey's Tradu\u00e7\u00f5es", NULL,
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HACK, 1, HARDWARE_SEGA_MEGADRIVE, GBF_PLATFORM, 0,
 	MegadriveGetZipName, md_quackshtptRomInfo, md_quackshtptRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// Linda Guerreira Sailor Moon (Hack, Portuguese)
+// https://www.romhacking.net/translations/5838/
+static struct BurnRomInfo md_sailormnptRomDesc[] = {
+	{ "Linda Guerreira Sailor Moon PT-BR (2020)(Anime_World).bin", 4194304, 0xcf90364b, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sailormnpt)
+STD_ROM_FN(md_sailormnpt)
+
+struct BurnDriver BurnDrvmd_sailormnpt = {
+	"md_sailormnpt", "md_sailormn", NULL, NULL, "2020",
+	"Linda Guerreira Sailor Moon (Hack, Portuguese)\0", NULL, "Anime_World", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HACK, 2, HARDWARE_SEGA_MEGADRIVE, GBF_SCRFIGHT, 0,
+	MegadriveGetZipName, md_sailormnptRomInfo, md_sailormnptRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
 	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
