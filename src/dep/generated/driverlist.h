@@ -3527,6 +3527,7 @@ DRV		BurnDrvsg1k_champboxt;
 DRV		BurnDrvsg1k_champglf;
 DRV		BurnDrvsg1k_champglf1;
 DRV		BurnDrvsg1k_champglfk;
+DRV		BurnDrvcv_cicehockey;
 DRV		BurnDrvMSX_champice;
 DRV		BurnDrvsg1k_champice;
 DRV		BurnDrvsg1k_champicek;
@@ -7484,6 +7485,7 @@ DRV		BurnDrvMSX_flubber;
 DRV		BurnDrvnes_fluffy;
 DRV		BurnSpecFlunky;
 DRV		BurnDrvmd_flux;
+DRV		BurnDrvcv_flux;
 DRV		BurnDrvnes_flyaway;
 DRV		BurnDrvFlyboyb;
 DRV		BurnDrvFlyboy;
@@ -9776,6 +9778,7 @@ DRV		BurnDrvMSX_iganinp2;
 DRV		BurnDrvMSX_iganinpo;
 DRV		BurnDrvIgmo;
 DRV		BurnDrvsnes_Ignfactor;
+DRV		BurnDrvnes_ignizol;
 DRV		BurnDrvsnes_Ihatovoj;
 DRV		BurnDrvIkarijp;
 DRV		BurnDrvnes_ikari;
@@ -28389,6 +28392,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_champglf,		// Champion Golf (Japan)
 	&BurnDrvsg1k_champglf1,		// Champion Golf (Japan, MyCard)
 	&BurnDrvsg1k_champglfk,		// Champion Golf (Korea)
+	&BurnDrvcv_cicehockey,		// Champion Ice Hockey (HB)
 	&BurnDrvMSX_champice,		// Champion Ice Hockey (Japan)
 	&BurnDrvsg1k_champice,		// Champion Ice Hockey (Japan)
 	&BurnDrvsg1k_champicek,		// Champion Ice Hockey (Korea)
@@ -29256,7 +29260,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_crazycars,		// Crazy Cars (HB)
 	&BurnSpecCrazycars2,		// Crazy Cars II (48K-128K)
 	&BurnSpecCrazycars2plus,	// Crazy Cars II+ (48K-128K) (Hack, v0.1)
-	&BurnDrvcv_Crazychickyjr,	// Crazy Chicky Junior (HB)
+	&BurnDrvcv_Crazychickyjr,	// Crazy Chicky Junior (HB, v1.1)
 	&BurnSpecCrazychristmas,	// Crazy Christmas (48K) (HB)
 	&BurnDrvCcboot,				// Crazy Climber (bootleg set 1)
 	&BurnDrvCcboot2,			// Crazy Climber (bootleg set 2)
@@ -32346,6 +32350,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fluffy,			// Fluffy Space Escape (HB)
 	&BurnSpecFlunky,			// Flunky (48K)
 	&BurnDrvmd_flux,			// Flux (Euro)
+	&BurnDrvcv_flux,			// Flux (HB)
 	&BurnDrvnes_flyaway,		// Fly a Way (HB)
 	&BurnDrvFlyboyb,			// Fly-Boy (bootleg)
 	&BurnDrvFlyboy,				// Fly-Boy
@@ -34638,6 +34643,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_iganinpo,		// Iga Ninpouchou ~ Small Ninja (Japan)
 	&BurnDrvIgmo,				// IGMO
 	&BurnDrvsnes_Ignfactor,		// Ignition Factor, The (USA)
+	&BurnDrvnes_ignizol,		// Ignizol Combusts Literally Everything (HB, 1.0.0)
 	&BurnDrvsnes_Ihatovoj,		// Ihatovo Monogatari (Japan)
 	&BurnDrvIkarijp,			// Ikari (Japan No Continues)
 	&BurnDrvnes_ikari,			// Ikari (Japan)
@@ -35775,7 +35781,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_kiterdai,		// Kiteretsu Encyclopedia (Hack, English)
 	&BurnDrvKittenk,			// Kitten Kaboodle
 	&BurnDrvfds_kittentale,		// Kitten's Tale, A - The Adventures of Chatran (Hack, English)
-	&BurnDrvnes_kitty,			// Kitty (HB, v1.0.3)
+	&BurnDrvnes_kitty,			// Kitty (HB, v1.0.4)
 	&BurnDrvnes_kittyscatch,	// Kitty's Catch (USA)
 	&BurnDrvnes_kiwikra,		// Kiwi Kraze - A Bird-Brained Adventure! (USA)
 	&BurnDrvKizuna,				// Kizuna Encounter - Super Tag Battle / Fu'un Super Tag Battle
@@ -47596,7 +47602,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTripool,			// Tri-Pool: 3-In-One (Casino Tech)
 	&BurnDrvTripoola,			// Tri-Pool: 3-In-One (Coastal Games)
 	&BurnDrvTrisport,			// Tri-Sports
-	&BurnDrvnes_kharzoid,		// Trial of Kharzoid, The (HB, v1.3)
+	&BurnDrvnes_kharzoid,		// Trial of Kharzoid, The (HB, v1.4)
 	&BurnDrvMSX_trialski,		// Trial Ski (Japan)
 	&BurnDrvTricktrp,			// Trick Trap (World?)
 	&BurnDrvpce_tricky,			// Tricky (Japan)
@@ -53225,6 +53231,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_champglf", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_champglf1", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_champglfk", "sg1000/d_sg1000.cpp"},
+	{ "cv_cicehockey", "coleco/d_coleco.cpp"},
 	{ "msx_champice", "msx/d_msx.cpp"},
 	{ "sg1k_champice", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_champicek", "sg1000/d_sg1000.cpp"},
@@ -57162,6 +57169,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_fluffy", "nes/d_nes.cpp"},
 	{ "spec_flunky", "spectrum/d_spectrum.cpp"},
 	{ "md_flux", "megadrive/d_megadrive.cpp"},
+	{ "cv_flux", "coleco/d_coleco.cpp"},
 	{ "nes_flyaway", "nes/d_nes.cpp"},
 	{ "flyboyb", "pre90s/d_fastfred.cpp"},
 	{ "flyboy", "pre90s/d_fastfred.cpp"},
@@ -59440,6 +59448,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_iganinpo", "msx/d_msx.cpp"},
 	{ "igmo", "pre90s/d_epos.cpp"},
 	{ "snes_ignfactor", "snes/d_snes.cpp"},
+	{ "nes_ignizol", "nes/d_nes.cpp"},
 	{ "snes_ihatovoj", "snes/d_snes.cpp"},
 	{ "ikarijp", "pre90s/d_snk.cpp"},
 	{ "nes_ikari", "nes/d_nes.cpp"},
