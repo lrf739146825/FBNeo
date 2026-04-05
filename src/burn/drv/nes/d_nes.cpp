@@ -19162,6 +19162,25 @@ struct BurnDriver BurnDrvnes_hurdles = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
+// Ignizol Combusts Literally Everything (HB)
+// https://captainpretzel.itch.io/ignizol-combusts-literally-everything
+static struct BurnRomInfo nes_ignizolRomDesc[] = {
+	{ "Ignizol Combusts Literally Everything (2026)(Captain Pretzel).nes",          40976, 0xae64a40f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(nes_ignizol)
+STD_ROM_FN(nes_ignizol)
+
+struct BurnDriver BurnDrvnes_ignizol = {
+	"nes_ignizol", NULL, NULL, NULL, "2026",
+	"Ignizol Combusts Literally Everything (HB, 1.0.0)\0", NULL, "Nintendo", "NES / Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING, 2, HARDWARE_NES, GBF_PLATFORM, 0,
+	NESGetZipName, nes_ignizolRomInfo, nes_ignizolRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
+	NESInit, NESExit, NESFrame, NESDraw, NESScan, &NESRecalc, 0x40,
+	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
+};
+
 // Indivisible (HB)
 static struct BurnRomInfo nes_indivisibleRomDesc[] = {
 	{ "Indivisible (2017)(Lab Zero Games).nes",          262160, 0x9f304e88, BRF_ESS | BRF_PRG },
@@ -19741,9 +19760,9 @@ struct BurnDriver BurnDrvnes_kirbyshlw = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
-// Kitty (HB, v1.0.3)
+// Kitty (HB, v1.0.4)
 static struct BurnRomInfo nes_kittyRomDesc[] = {
-	{ "Kitty v1.0.3 (2024)(Mileco).nes",          524304, 0x86250822, BRF_ESS | BRF_PRG },
+	{ "Kitty v1.0.4 (2024)(Mileco).nes",          524304, 0x9bfd02df, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(nes_kitty)
@@ -19751,7 +19770,7 @@ STD_ROM_FN(nes_kitty)
 
 struct BurnDriver BurnDrvnes_kitty = {
 	"nes_kitty", NULL, NULL, NULL, "2024",
-	"Kitty (HB, v1.0.3)\0", NULL, "Mileco", "NES / Famicom",
+	"Kitty (HB, v1.0.4)\0", NULL, "Mileco", "NES / Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_NES, GBF_PLATFORM, 0,
 	NESGetZipName, nes_kittyRomInfo, nes_kittyRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,
@@ -25724,9 +25743,9 @@ struct BurnDriver BurnDrvnes_traintrain = {
 	SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT
 };
 
-// Trial of Kharzoid, The (HB, v1.3)
+// Trial of Kharzoid, The (HB, v1.4)
 static struct BurnRomInfo nes_kharzoidRomDesc[] = {
-	{ "Trial of Kharzoid, The v1.3 (2025)(Pascal Belisle).nes",          393232, 0x8ab157a9, BRF_ESS | BRF_PRG },
+	{ "Trial of Kharzoid, The v1.4 (2025)(Pascal Belisle).nes",          393232, 0xaa921ede, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(nes_kharzoid)
@@ -25734,7 +25753,7 @@ STD_ROM_FN(nes_kharzoid)
 
 struct BurnDriver BurnDrvnes_kharzoid = {
 	"nes_kharzoid", NULL, NULL, NULL, "2025",
-	"Trial of Kharzoid, The (HB, v1.3)\0", NULL, "Pascal Belisle", "NES / Famicom",
+	"Trial of Kharzoid, The (HB, v1.4)\0", NULL, "Pascal Belisle", "NES / Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_NES, GBF_BALLPADDLE | GBF_BREAKOUT, 0,
 	NESGetZipName, nes_kharzoidRomInfo, nes_kharzoidRomName, NULL, NULL, NULL, NULL, NESInputInfo, NESDIPInfo,

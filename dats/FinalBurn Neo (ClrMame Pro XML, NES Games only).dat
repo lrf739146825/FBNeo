@@ -10267,6 +10267,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="ignizol" sourcefile="nes/d_nes.cpp">
+		<description>Ignizol Combusts Literally Everything (HB, 1.0.0)</description>
+		<year>2026</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Ignizol Combusts Literally Everything (2026)(Captain Pretzel).nes" size="40976" crc="ae64a40f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="ikari" cloneof="ikariwarriors" romof="ikariwarriors" sourcefile="nes/d_nes.cpp">
 		<description>Ikari (Japan)</description>
 		<year>1986</year>
@@ -11724,10 +11732,10 @@
 	</game>
 	<game name="kitty" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Kitty (HB, v1.0.3)</description>
+		<description>Kitty (HB, v1.0.4)</description>
 		<year>2024</year>
 		<manufacturer>Mileco</manufacturer>
-		<rom name="Kitty v1.0.3 (2024)(Mileco).nes" size="524304" crc="86250822"/>
+		<rom name="Kitty v1.0.4 (2024)(Mileco).nes" size="524304" crc="9bfd02df"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22423,10 +22431,10 @@
 	</game>
 	<game name="kharzoid" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Trial of Kharzoid, The (HB, v1.3)</description>
+		<description>Trial of Kharzoid, The (HB, v1.4)</description>
 		<year>2025</year>
 		<manufacturer>Pascal Belisle</manufacturer>
-		<rom name="Trial of Kharzoid, The v1.3 (2025)(Pascal Belisle).nes" size="393232" crc="8ab157a9"/>
+		<rom name="Trial of Kharzoid, The v1.4 (2025)(Pascal Belisle).nes" size="393232" crc="aa921ede"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
