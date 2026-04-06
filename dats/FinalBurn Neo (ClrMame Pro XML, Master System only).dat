@@ -5994,10 +5994,10 @@
 	</game>
 	<game name="smb" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, Unofficial Port - only the first level is available</comment>
-		<description>Super Mario Bros. (HB, v0.11)</description>
+		<description>Super Mario Bros. (HB, v0.12)</description>
 		<year>2026</year>
 		<manufacturer>Lack of Track</manufacturer>
-		<rom name="Super Mario Bros. v0.11 (2026)(Lack of Track).sms" size="262144" crc="f0cac76b"/>
+		<rom name="Super Mario Bros. v0.12 (2026)(Lack of Track).sms" size="262144" crc="03cfb75f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
