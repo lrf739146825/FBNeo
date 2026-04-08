@@ -89,6 +89,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pinkpanther" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Adventures of the Pink Panther, The (HB)</description>
+		<year>1983-2019</year>
+		<manufacturer>Napcec</manufacturer>
+		<rom name="Adventures of the Pink Panther, The (1983-2019)(CollectorVision).rom" size="131072" crc="a9d82b08"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aerial" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Aerial (HB)</description>
@@ -420,6 +433,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="barnbuster" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>BarnBuster (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="BarnBuster (2026)(DiRoccoVision).rom" size="32768" crc="75a4713d"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bofhoth" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Battle of Hoth (HB)</description>
@@ -551,6 +577,19 @@
 		<year>2022</year>
 		<manufacturer>Electric Adventures</manufacturer>
 		<rom name="Berzerk (2022)(CollectorVision).rom" size="32768" crc="6328ffc1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bigcatch" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Big Catch (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Big Catch (2026)(DiRoccoVision).rom" size="32768" crc="9ea3a524"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -751,6 +790,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bountybob" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Bounty Bob Strikes Back! (HB)</description>
+		<year>1984-2024</year>
+		<manufacturer>Big Five Software</manufacturer>
+		<rom name="Bounty Bob Strikes Back (1984-2024)(CollectorVision).rom" size="32768" crc="86db78b3"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="boxxle" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by Team Pixelboy</comment>
 		<description>Boxxle (HB)</description>
@@ -782,6 +834,19 @@
 		<year>1999</year>
 		<manufacturer>Daniel Bienvenu</manufacturer>
 		<rom name="Breakout (1999) (Daniel Bienvenu).rom" size="13696" crc="b05fb3ec"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bubbles" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Bubbles (HB)</description>
+		<year>1982-2024</year>
+		<manufacturer>Williams</manufacturer>
+		<rom name="Bubbles (1982-2024)(CollectorVision).rom" size="32768" crc="6e518f13"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -896,6 +961,45 @@
 		<year>2010</year>
 		<manufacturer>Dvik &amp; Joyrex</manufacturer>
 		<rom name="Burn Rubber (2010)(Dvik &amp; Joyrex).rom" size="32768" crc="b278ebde"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bustinout1" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>BUSTin-Out Vol. 1 (HB)</description>
+		<year>2000-2016</year>
+		<manufacturer>Daniel Bienvenu</manufacturer>
+		<rom name="BUSTin-Out Vol. 1 (2000-2016)(CollectorVision Games).rom" size="32768" crc="97b601a2"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bustinout2" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>BUSTin-Out Vol. 2 (HB)</description>
+		<year>2000-2016</year>
+		<manufacturer>Daniel Bienvenu</manufacturer>
+		<rom name="BUSTin-Out Vol. 2 (2000-2016)(CollectorVision Games).rom" size="32640" crc="e12ccc1e"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bustinout3" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>BUSTin-Out Vol. 3 (HB)</description>
+		<year>2000-2016</year>
+		<manufacturer>Daniel Bienvenu</manufacturer>
+		<rom name="BUSTin-Out Vol. 3 (2000-2016)(CollectorVision Games).rom" size="32768" crc="c3a925af"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1598,6 +1702,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="demonattack" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Demon Attack (HB)</description>
+		<year>1983-2023</year>
+		<manufacturer>Imagic</manufacturer>
+		<rom name="Demon Attack (1983-2023)(CollectorVision).rom" size="32768" crc="ba7049b7"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="desolator" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Super Game Module</comment>
 		<description>Desolator (SGM) (HB)</description>
@@ -1943,6 +2060,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="elecquart" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Electronic Quarterback (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Electronic Quarterback (2026)(DiRoccoVision).rom" size="32768" crc="722f7376"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="elevaction" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by CollectorVision Games</comment>
 		<description>Elevator Action (HB)</description>
@@ -2007,11 +2137,63 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="f2ffootball" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Face to Face Football (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Face to Face Football (2026)(DiRoccoVision).rom" size="32768" crc="f56f48f3"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="f2fhockey" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Face to Face Hockey (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Face to Face Hockey (2026)(DiRoccoVision).rom" size="32768" crc="acd9d815"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="f2fsoccer" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Face to Face Soccer (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Face to Face Soccer (2026)(DiRoccoVision).rom" size="32768" crc="d7002128"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="facemakr" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Facemaker (USA)</description>
 		<year>1983</year>
 		<manufacturer>Spinnaker Software</manufacturer>
 		<rom name="Facemaker (USA)(1983)(Spinnaker Software).rom" size="8192" crc="ec9dfb07"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="flstory" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Fairyland Story, The (HB)</description>
+		<year>1987-2023</year>
+		<manufacturer>Taito</manufacturer>
+		<rom name="Fairyland Story, The SGM (1987-2023)(CollectorVision).rom" size="131072" crc="87f3f556"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2025,6 +2207,19 @@
 		<year>1983</year>
 		<manufacturer>Fox Video Games</manufacturer>
 		<rom name="Fall Guy (USA, Proto)(1983)(Fox Video Games).rom" size="16384" crc="8a731b38"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fantasy" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Fantasy (HB)</description>
+		<year>1981-2025</year>
+		<manufacturer>SNK</manufacturer>
+		<rom name="Fantasy (1981-2025)(CollectorVision).rom" size="131072" crc="45dd259a"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2062,6 +2257,19 @@
 		<year>1984</year>
 		<manufacturer>Coleco</manufacturer>
 		<rom name="Fireman (USA)(1984)(Coleco).rom" size="32768" crc="64ec761e"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ffactory" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Fireworks Factory (HB)</description>
+		<year>1984</year>
+		<manufacturer>Nice Ideas</manufacturer>
+		<rom name="Fireworks Factory (1984)(Nice Ideas).rom" size="24576" crc="9425a648"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -2714,6 +2922,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hardhatmack" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Hard Hat Mack (SGM) (HB)</description>
+		<year>1983-2023</year>
+		<manufacturer>Electronic Arts</manufacturer>
+		<rom name="Hard Hat Mack SGM (1983-2023)(CollectorVision).rom" size="32768" crc="eaf5c5e1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="heist" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Heist, The (USA)</description>
 		<year>1983</year>
@@ -2950,6 +3171,19 @@
 		<year>2020</year>
 		<manufacturer>Team Pixelboy</manufacturer>
 		<rom name="Jewel Panic (2020)(Team Pixelboy).rom" size="65536" crc="9f74b0e9"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="joeskimo" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Prototype</comment>
+		<description>Joe The Eskimo (HB, Prototype)</description>
+		<year>2022</year>
+		<manufacturer>8 bit Milli Games</manufacturer>
+		<rom name="Joe The Eskimo (Proto)(2022)(8 bit Milli Games).rom" size="32768" crc="c644860a"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3427,6 +3661,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lunarball" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Lunar Ball (SGM) (HB)</description>
+		<year>1985-2023</year>
+		<manufacturer>Pony</manufacturer>
+		<rom name="Lunar Ball SGM (1985-2023)(CollectorVision).rom" size="32768" crc="e7922c9b"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lunaleep" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Lunar Leeper (HB)</description>
@@ -3550,6 +3797,19 @@
 		<year>1983</year>
 		<manufacturer>Mattel Electronics</manufacturer>
 		<rom name="Masters of the Universe - The Power of He-Man (USA, Proto)(1983)(Mattel Electronics).rom" size="32768" crc="2277f82b"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mathquest" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Math Quest (SGM) (HB)</description>
+		<year>2021</year>
+		<manufacturer>Paul Crowley</manufacturer>
+		<rom name="Math Quest SGM (2021)(CollectorVision).rom" size="32768" crc="0d5581cb"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5693,6 +5953,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spacequest" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Space Quest: Chapter I - The Sarien Encounter (SGM) (HB)</description>
+		<year>1986-2025</year>
+		<manufacturer>Sierra On-Line</manufacturer>
+		<rom name="Space Quest - Chapter I - The Sarien Encounter SGM (1986-2025)(CollectorVision).rom" size="524288" crc="2a4f3b7d"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spaceshuttle" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Published by Team Pixelboy</comment>
 		<description>Space Shuttle (SGM + EEPROM) (HB)</description>
@@ -6139,6 +6412,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sabowling" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
+		<description>Super Action Bowling (SGM) (HB)</description>
+		<year>1986-2022</year>
+		<manufacturer>Access Software</manufacturer>
+		<rom name="Super Action Bowling SGM (1986-2022)(Coleco).rom" size="131072" crc="6875c8d1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="saftsocc" cloneof="sasoccer" romof="sasoccer" sourcefile="coleco/d_coleco.cpp">
 		<description>Super Action Football (Euro)</description>
 		<year>1984</year>
@@ -6319,6 +6605,19 @@
 		<year>1986-2011</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Super Tank (2011)(Team Pixelboy).rom" size="32768" crc="e9b7ff6c"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="suwol" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Super Uwol! (HB)</description>
+		<year>2016-2021</year>
+		<manufacturer>The Mojon Twins - Alekmaul</manufacturer>
+		<rom name="Super Uwol (2016-2021)(CollectorVision).rom" size="131072" crc="13462ba5"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6597,6 +6896,32 @@
 		<year>2016</year>
 		<manufacturer>Imanok</manufacturer>
 		<rom name="Traffic Jam SGM (2017)(Team Pixelboy).rom" size="32768" crc="aad0f224"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="traildrive" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Trail Drive (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiRoccoVision</manufacturer>
+		<rom name="Trail Drive (2026)(DiRoccoVision).rom" size="131072" crc="0a334c0e"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="trehunt" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Treasure Hunt (HB)</description>
+		<year>1983-2022</year>
+		<manufacturer>Soundic</manufacturer>
+		<rom name="Treasure Hunt (1983-2022)(CollectorVision).rom" size="20464" crc="0ac0067c"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -7042,6 +7367,19 @@
 		<year>1984</year>
 		<manufacturer>K-Tel</manufacturer>
 		<rom name="Word Feud (USA)(1984)(K-Tel).rom" size="8192" crc="f7a29c01"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wordle" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Wordle (HB, v1.7)</description>
+		<year>2022</year>
+		<manufacturer>Dragon Fly Amusement</manufacturer>
+		<rom name="Wordle v1.7 (2022)(CollectorVision).rom" size="32768" crc="35db2611"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
