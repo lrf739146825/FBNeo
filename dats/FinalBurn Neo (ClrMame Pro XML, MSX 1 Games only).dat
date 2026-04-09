@@ -3684,6 +3684,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="champbilliards" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Champion Billiards (HB)</description>
+		<year>2020</year>
+		<manufacturer>Mastropiero</manufacturer>
+		<rom name="Champion Billiards (2020)(Mastropiero).rom" size="32768" crc="6e647e49"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="champbox" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Champion Boxing (Japan)</description>
 		<year>1985</year>
@@ -4434,6 +4446,18 @@
 		<year>1983</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Congo Bongo (Japan)(1983)(Sega).rom" size="65536" crc="cb054111"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="congobongo3d" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Congo Bongo - The Isometric Edition (HB)</description>
+		<year>2026</year>
+		<manufacturer>Mastropiero</manufacturer>
+		<rom name="Congo Bongo - The Isometric Edition (2026)(Mastropiero).rom" size="32768" crc="3c403f70"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -15467,6 +15491,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="saboteur2" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew, ZX Spectrum porting</comment>
+		<description>Saboteur 2 (HB)</description>
+		<year>2026</year>
+		<manufacturer>thealfest</manufacturer>
+		<rom name="Saboteur 2 (2026)(thealfest).cas" size="30823" crc="b85ba32d"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sacredvalley" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>Sacred Valley (HB)</description>
@@ -15550,7 +15586,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="salamandk" cloneof="salamand" romof="salamand" sourcefile="msx/d_msx.cpp">
-		<description>Salamander - Operation X (Korea) (Unl)</description>
+		<description>Salamander: Operation X (Korea) (Unl)</description>
 		<year>1988</year>
 		<manufacturer>Zemina</manufacturer>
 		<rom name="Salamander - Operation X (Korea)(1988)(Zemina).rom" size="131072" crc="40d19bf6"/>
@@ -15673,7 +15709,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="scopeon" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Scope On - Fight in Space (Japan)</description>
+		<description>Scope On: Fight in Space (Japan)</description>
 		<year>1983</year>
 		<manufacturer>ASCII Corp.</manufacturer>
 		<rom name="Scope On - Fight in Space (Japan)(1983)(ASCII).rom" size="16384" crc="5b33e583"/>
@@ -15821,7 +15857,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="senjokam" romof="msx" sourcefile="msx/d_msx.cpp">
-		<comment>aka Commando</comment>
+		<comment>also known as 'Commando'</comment>
 		<description>Senjou no Ookami (Japan)</description>
 		<year>1987</year>
 		<manufacturer>ASCII Corp.</manufacturer>
@@ -15983,23 +16019,23 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shouganai11" romof="msx" sourcefile="msx/d_msx.cpp">
-		<comment>Homebrew</comment>
-		<description>Shouganai (HB)</description>
-		<year>2013</year>
-		<manufacturer>Paxanga Software</manufacturer>
-		<rom name="Shoganai (2013)(Paxanga Software).rom" size="16384" crc="d27ea890"/>
+	<game name="shogun" romof="msx" sourcefile="msx/d_msx.cpp">
+		<description>Shogun (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Nihon Dexter</manufacturer>
+		<rom name="Shogun (Japan)(1987)(Nihon Dexter).rom" size="131072" crc="0e691c47"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shogun" romof="msx" sourcefile="msx/d_msx.cpp">
-		<description>Shougun (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Nihon Dexter</manufacturer>
-		<rom name="Shougun (Japan)(1987)(Nihon Dexter).rom" size="131072" crc="0e691c47"/>
+	<game name="shouganai11" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Shouganai (HB)</description>
+		<year>2013</year>
+		<manufacturer>Paxanga Software</manufacturer>
+		<rom name="Shoganai (2013)(Paxanga Software).rom" size="16384" crc="d27ea890"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -17395,6 +17431,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="superpacman" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Pac-Man (HB)</description>
+		<year>2026</year>
+		<manufacturer>Mastropiero</manufacturer>
+		<rom name="Super Pac-Man (2026)(Mastropiero).rom" size="16384" crc="e90ca974"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="suppachi" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Super Pachinko (Japan)</description>
 		<year>1985</year>
@@ -17488,6 +17536,18 @@
 		<year>1990</year>
 		<manufacturer>Clover</manufacturer>
 		<rom name="Super Suwanggi - Super Altered Beast (Korea)(1990)(Clover).rom" size="65536" crc="e953f2ab"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supertank" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Super Tank (HB)</description>
+		<year>2026</year>
+		<manufacturer>Mastropiero</manufacturer>
+		<rom name="Super Tank (2026)(Mastropiero).rom" size="32768" crc="a0b9e89d"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
