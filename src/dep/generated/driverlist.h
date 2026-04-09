@@ -3527,6 +3527,7 @@ DRV		BurnDrvChampbb2;
 DRV		BurnDrvsg1k_champbas;
 DRV		BurnDrvsg1k_champbasa;
 DRV		BurnDrvsg1k_champbast;
+DRV		BurnDrvMSX_champbilliards;
 DRV		BurnDrvsg1k_champbil;
 DRV		BurnDrvMSX_champbox;
 DRV		BurnDrvsg1k_champbox;
@@ -4176,6 +4177,7 @@ DRV		BurnDrvCongo;
 DRV		BurnDrvCongoa;
 DRV		BurnDrvsg1k_congot;
 DRV		BurnDrvcv_congo;
+DRV		BurnDrvMSX_congobongo3d;
 DRV		BurnDrvsnes_Congocapere;
 DRV		BurnDrvsnes_Congocaper;
 DRV		BurnSpecConnect4;
@@ -17618,6 +17620,7 @@ DRV		BurnDrvSabotenb;
 DRV		BurnDrvSabotenba;
 DRV		BurnSpecSaboteur23en;
 DRV		BurnSpecSaboteur23de;
+DRV		BurnDrvMSX_saboteur2;
 DRV		BurnSpecSabotur2mod128;
 DRV		BurnSpecSabotur2mod48;
 DRV		BurnSpecsabotur2;
@@ -18390,6 +18393,7 @@ DRV		BurnDrvShocking;
 DRV		BurnDrvtg_shockman;
 DRV		BurnDrvsnes_Shockman0te;
 DRV		BurnDrvnes_shockwave;
+DRV		BurnDrvMSX_shogun;
 DRV		BurnDrvShogwarrk;
 DRV		BurnDrvShogwarru;
 DRV		BurnDrvShogwarr;
@@ -18421,7 +18425,6 @@ DRV		BurnDrvMoshougi;
 DRV		BurnDrvngpc_shougic;
 DRV		BurnDrvpce_shogisi;
 DRV		BurnDrvpce_shogism;
-DRV		BurnDrvMSX_shogun;
 DRV		BurnDrvsnes_Shouashibe;
 DRV		BurnDrvsnes_Ninjasasuke;
 DRV		BurnDrvMSX_shoutmat;
@@ -20798,6 +20801,7 @@ DRV		BurnDrvsnes_Superoffroadbaja;
 DRV		BurnDrvmd_jordanb1;
 DRV		BurnDrvmd_jordanb;
 DRV		BurnDrvmd_jordanbj;
+DRV		BurnDrvMSX_superpacman;
 DRV		BurnDrvSuperpacm;
 DRV		BurnDrvcv_superpac;
 DRV		BurnDrvSuperpac;
@@ -21024,6 +21028,7 @@ DRV		BurnDrvMSX_suwanggi;
 DRV		BurnDrvsnes_Superswive;
 DRV		BurnDrvsnes_Superswivj;
 DRV		BurnDrvcv_suprtank;
+DRV		BurnDrvMSX_supertank;
 DRV		BurnDrvsg1k_supertnk;
 DRV		BurnDrvsg1k_supertnkk;
 DRV		BurnSpecSupertanksim;
@@ -28455,6 +28460,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_champbas,		// Champion Baseball (Japan)
 	&BurnDrvsg1k_champbasa,		// Champion Baseball (Japan, Older)
 	&BurnDrvsg1k_champbast,		// Champion Baseball (Taiwan)
+	&BurnDrvMSX_champbilliards,	// Champion Billiards (HB)
 	&BurnDrvsg1k_champbil,		// Champion Billiards (Japan)
 	&BurnDrvMSX_champbox,		// Champion Boxing (Japan)
 	&BurnDrvsg1k_champbox,		// Champion Boxing (Japan)
@@ -29104,6 +29110,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCongoa,				// Congo Bongo (Rev C, 3 board stack)
 	&BurnDrvsg1k_congot,		// Congo Bongo (Taiwan)
 	&BurnDrvcv_congo,			// Congo Bongo (USA)
+	&BurnDrvMSX_congobongo3d,	// Congo Bongo - The Isometric Edition (HB)
 	&BurnDrvsnes_Congocapere,	// Congo's Caper (Euro)
 	&BurnDrvsnes_Congocaper,	// Congo's Caper (USA)
 	&BurnSpecConnect4,			// Connect 4 (48K)
@@ -42546,6 +42553,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSabotenba,			// Saboten Bombers (set 2)
 	&BurnSpecSaboteur23en,		// Saboteur - Remastered (English) (48K) (HB)
 	&BurnSpecSaboteur23de,		// Saboteur - Remastered (German) (48K) (HB)
+	&BurnDrvMSX_saboteur2,		// Saboteur 2 (HB)
 	&BurnSpecSabotur2mod128,	// Saboteur 2 mod (128K) (HB, v1.1.2)
 	&BurnSpecSabotur2mod48,		// Saboteur 2 mod (48K) (HB, v1.1.2)
 	&BurnSpecsabotur2,			// Saboteur 2: Avenging Angel (128K)
@@ -42620,7 +42628,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsalamandt,			// Salamander (Tecfri license)
 	&BurnDrvSalamand,			// Salamander (version D)
 	&BurnDrvSalamandj,			// Salamander (version J)
-	&BurnDrvMSX_salamandk,		// Salamander - Operation X (Korea) (Unl)
+	&BurnDrvMSX_salamandk,		// Salamander: Operation X (Korea) (Unl)
 	&BurnSpecSambooncm,			// Sam Boon: A Case of Murder (128K) (HB)
 	&BurnSpecSamboondc,			// Sam Boon: The Dragnet Case (128K) (HB)
 	&BurnSpecSamallardes,		// Sam Mallard: El Caso del Cisne Desaparecido (Spanish) (48K) (HB, v1.2)
@@ -42850,7 +42858,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Scoobydoo,		// Scooby-Doo Mystery (USA)
 	&BurnDrvScotrsht,			// Scooter Shooter
 	&BurnDrvsms_scope,			// Scope (HB, v1.2)
-	&BurnDrvMSX_scopeon,		// Scope On - Fight in Space (Japan)
+	&BurnDrvMSX_scopeon,		// Scope On: Fight in Space (Japan)
 	&BurnDrvMSX_score3020,		// Score 3020 (Euro, Spanish)
 	&BurnSpecScore3020,			// Score 3020 (Spanish) (48K)
 	&BurnDrvScorpionmc,			// Scorpion (Moon Cresta hardware)
@@ -43318,6 +43326,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_shockman,		// Shockman (USA)
 	&BurnDrvsnes_Shockman0te,	// Shockman Zero (Hack, English)
 	&BurnDrvnes_shockwave,		// Shockwave (USA)
+	&BurnDrvMSX_shogun,			// Shogun (Japan)
 	&BurnDrvShogwarrk,			// Shogun Warriors (Korea?)
 	&BurnDrvShogwarru,			// Shogun Warriors (US)
 	&BurnDrvShogwarr,			// Shogun Warriors (World)
@@ -43349,7 +43358,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvngpc_shougic,		// Shougi no Tatsujin Color (Japan)
 	&BurnDrvpce_shogisi,		// Shougi Shodan Icchokusen (Japan)
 	&BurnDrvpce_shogism,		// Shougi Shoshinsha Muyou (Japan)
-	&BurnDrvMSX_shogun,			// Shougun (Japan)
 	&BurnDrvsnes_Shouashibe,	// Shounen Ashibe: Goma-chan no Yuuenchi Daibouken (Japan)
 	&BurnDrvsnes_Ninjasasuke,	// Shounen Ninja Sasuke (Japan)
 	&BurnDrvMSX_shoutmat,		// Shout Match (Japan)
@@ -45726,6 +45734,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_jordanb1,		// Super One on One - Jordan Vs Bird (Euro, USA)
 	&BurnDrvmd_jordanb,			// Super One on One - Jordan Vs Bird (Euro, USA, Rev. 1)
 	&BurnDrvmd_jordanbj,		// Super One on One - Jordan Vs Bird (Japan)
+	&BurnDrvMSX_superpacman,	// Super Pac-Man (HB)
 	&BurnDrvSuperpacm,			// Super Pac-Man (Midway)
 	&BurnDrvcv_superpac,		// Super Pac-Man (SGM) (HB)
 	&BurnDrvSuperpac,			// Super Pac-Man
@@ -45952,6 +45961,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Superswive,	// Super SWIV (Euro)
 	&BurnDrvsnes_Superswivj,	// Super SWIV (Japan)
 	&BurnDrvcv_suprtank,		// Super Tank (HB)
+	&BurnDrvMSX_supertank,		// Super Tank (HB)
 	&BurnDrvsg1k_supertnk,		// Super Tank (Japan)
 	&BurnDrvsg1k_supertnkk,		// Super Tank (Korea)
 	&BurnSpecSupertanksim,		// Super Tank Simulator (48K-128K)
@@ -53357,6 +53367,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_champbas", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_champbasa", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_champbast", "sg1000/d_sg1000.cpp"},
+	{ "msx_champbilliards", "msx/d_msx.cpp"},
 	{ "sg1k_champbil", "sg1000/d_sg1000.cpp"},
 	{ "msx_champbox", "msx/d_msx.cpp"},
 	{ "sg1k_champbox", "sg1000/d_sg1000.cpp"},
@@ -54006,6 +54017,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "congoa", "sega/d_zaxxon.cpp"},
 	{ "sg1k_congot", "sg1000/d_sg1000.cpp"},
 	{ "cv_congo", "coleco/d_coleco.cpp"},
+	{ "msx_congobongo3d", "msx/d_msx.cpp"},
 	{ "snes_congocapere", "snes/d_snes.cpp"},
 	{ "snes_congocaper", "snes/d_snes.cpp"},
 	{ "spec_connect4", "spectrum/d_spectrum.cpp"},
@@ -67348,6 +67360,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sabotenba", "pst90s/d_nmk16.cpp"},
 	{ "spec_saboteur23en", "spectrum/d_spectrum.cpp"},
 	{ "spec_saboteur23de", "spectrum/d_spectrum.cpp"},
+	{ "msx_saboteur2", "msx/d_msx.cpp"},
 	{ "spec_sabotur2mod128", "spectrum/d_spectrum.cpp"},
 	{ "spec_sabotur2mod48", "spectrum/d_spectrum.cpp"},
 	{ "spec_sabotur2", "spectrum/d_spectrum.cpp"},
@@ -68114,6 +68127,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tg_shockman", "pce/d_pce.cpp"},
 	{ "snes_shockman0te", "snes/d_snes.cpp"},
 	{ "nes_shockwave", "nes/d_nes.cpp"},
+	{ "msx_shogun", "msx/d_msx.cpp"},
 	{ "shogwarrk", "pst90s/d_kaneko16.cpp"},
 	{ "shogwarru", "pst90s/d_kaneko16.cpp"},
 	{ "shogwarr", "pst90s/d_kaneko16.cpp"},
@@ -68143,7 +68157,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ngp_shougic", "pst90s/d_ngp.cpp"},
 	{ "pce_shogisi", "pce/d_pce.cpp"},
 	{ "pce_shogism", "pce/d_pce.cpp"},
-	{ "msx_shogun", "msx/d_msx.cpp"},
 	{ "snes_shouashibe", "snes/d_snes.cpp"},
 	{ "snes_ninjasasuke", "snes/d_snes.cpp"},
 	{ "msx_shoutmat", "msx/d_msx.cpp"},
@@ -70490,6 +70503,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_jordanb1", "megadrive/d_megadrive.cpp"},
 	{ "md_jordanb", "megadrive/d_megadrive.cpp"},
 	{ "md_jordanbj", "megadrive/d_megadrive.cpp"},
+	{ "msx_superpacman", "msx/d_msx.cpp"},
 	{ "superpacm", "pre90s/d_mappy.cpp"},
 	{ "cv_superpac", "coleco/d_coleco.cpp"},
 	{ "superpac", "pre90s/d_mappy.cpp"},
@@ -70714,6 +70728,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_superswive", "snes/d_snes.cpp"},
 	{ "snes_superswivj", "snes/d_snes.cpp"},
 	{ "cv_suprtank", "coleco/d_coleco.cpp"},
+	{ "msx_supertank", "msx/d_msx.cpp"},
 	{ "sg1k_supertnk", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_supertnkk", "sg1000/d_sg1000.cpp"},
 	{ "spec_supertanksim", "spectrum/d_spectrum.cpp"},
