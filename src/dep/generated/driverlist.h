@@ -9994,6 +9994,7 @@ DRV		BurnSpecInvaders;
 DRV		BurnDrvMSX_invrevenge;
 DRV		BurnSpecInvagd;
 DRV		BurnSpecInvasion;
+DRV		BurnSpecInvmast;
 DRV		BurnSpecInvforce;
 DRV		BurnDrvMSX_invasion;
 DRV		BurnSpecInvzombie;
@@ -12283,6 +12284,7 @@ DRV		BurnSpecmminersp;
 DRV		BurnSpecManicminerll;
 DRV		BurnSpecManicminerllv2;
 DRV		BurnSpecManicrobot;
+DRV		BurnSpecManokone;
 DRV		BurnSpecManollo;
 DRV		BurnSpecMantis1;
 DRV		BurnSpecMantis2;
@@ -13521,6 +13523,7 @@ DRV		BurnDrvQuizhuhu;
 DRV		BurnDrvMSX_moritaot;
 DRV		BurnDrvpce_moritash;
 DRV		BurnSpecMoritz;
+DRV		BurnSpecMoritztea;
 DRV		BurnSpecMoritzautobath;
 DRV		BurnSpecMoritzstkbck;
 DRV		BurnSpecMoritzstriker;
@@ -14220,6 +14223,7 @@ DRV		BurnDrvNsmb;
 DRV		BurnDrvSyscheck;
 DRV		BurnDrvNeothndr;
 DRV		BurnDrvngpc_neoturfm;
+DRV		BurnDrvTurfmastsc;
 DRV		BurnDrvTurfmast;
 DRV		BurnDrvNeocup98;
 DRV		BurnDrvNeotet;
@@ -15191,6 +15195,7 @@ DRV		BurnDrvPanicstr;
 DRV		BurnDrvmd_pcottone;
 DRV		BurnDrvmd_pcottons;
 DRV		BurnDrvmd_pcotton;
+DRV		BurnSpecPanther;
 DRV		BurnDrvMSX_panther;
 DRV		BurnDrvmd_pantufaee;
 DRV		BurnDrvtg_panzakb;
@@ -16101,6 +16106,7 @@ DRV		BurnSpecPrisriot;
 DRV		BurnDrvmd_prisonelamd;
 DRV		BurnDrvcv_prisonofwar;
 DRV		BurnDrvmsx_prisonofwars;
+DRV		BurnSpecPrisstriss;
 //		BurnDrvngpc_ppaa01;		// no comment
 DRV		BurnDrvmd_par;
 DRV		BurnDrvmd_par2;
@@ -17034,6 +17040,7 @@ DRV		BurnSpecrescategolfo2;
 DRV		BurnSpecRescmarte;
 DRV		BurnDrvnes_rescueforce;
 DRV		BurnDrvsms_rescuems;
+DRV		BurnSpecRescuerocket;
 DRV		BurnDrvnes_rescuec;
 DRV		BurnDrvnes_rescue;
 DRV		BurnDrvRescue;
@@ -22580,6 +22587,7 @@ DRV		BurnDrvnes_toobin;
 DRV		BurnSpecToofy;
 DRV		BurnSpecToofy3;
 DRV		BurnSpecToofy2;
+DRV		BurnDrvmd_toogle;
 DRV		BurnDrvMSX_toolblocks;
 DRV		BurnSpecTopcat;
 DRV		BurnDrvTopdrive;
@@ -32516,7 +32524,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_fastfur5,		// Forsazh 5 Bystraya ~ Fast and the Furious 5 Quick (Russia) (Unl)
 	&BurnDrvFort2ba,			// Fortress 2 Blue Arcade (Korea) (ver 1.00 / pcb ver 3.05)
 	&BurnDrvFort2b,				// Fortress 2 Blue Arcade (World) (ver 1.01 / pcb ver 3.05)
-	&BurnDrvpce_necroste,		// Fortress of Necros (Hack, English v1.2)
+	&BurnDrvpce_necroste,		// Fortress of Necros (Hack, English v1.3)
 	&BurnDrvcv_fortune,			// Fortune Builder (USA)
 	&BurnSpecForward2past,		// Forward to the Past (48K) (HB)
 	&BurnDrvsg1k_foryster,		// Foryster (HB, v00.9)
@@ -34927,6 +34935,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_invrevenge,		// Invaders Revenge (Euro)
 	&BurnSpecInvagd,			// InvAGDers (48K) (HB)
 	&BurnSpecInvasion,			// Invasion (48K) (HB)
+	&BurnSpecInvmast,			// Invasion (48K)
 	&BurnSpecInvforce,			// Invasion Force (16K)
 	&BurnDrvMSX_invasion,		// Invasion of the big pixels (HB, Tech-Demo)
 	&BurnSpecInvzombie,			// Invasion of the Zombie Monsters (128K) (HB)
@@ -37216,6 +37225,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecManicminerll,		// Manic Miner - Lost Levels (128K) (HB, v1.2)
 	&BurnSpecManicminerllv2,	// Manic Miner - Lost Levels (128K) (HB, v2.0)
 	&BurnSpecManicrobot,		// Manic Mining Robot's Day Out (48K) (HB)
+	&BurnSpecManokone,			// Manokone no densetsu (48K-128K) (HB)
 	&BurnSpecManollo,			// Manollo: El Cavernicola (Spanish) (48K)
 	&BurnSpecMantis1,			// Mantis 1 (Spanish) (48K)
 	&BurnSpecMantis2,			// Mantis 2 (Spanish) (48K)
@@ -38454,6 +38464,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_moritaot,		// Morita Kazuo no Othello (Japan)
 	&BurnDrvpce_moritash,		// Morita Shougi PC (Japan)
 	&BurnSpecMoritz,			// Moritz (48K) (HB)
+	&BurnSpecMoritztea,			// Moritz at the Tea Party (48K) (HB)
 	&BurnSpecMoritzautobath,	// Moritz on the Autobahn (128K) (HB)
 	&BurnSpecMoritzstkbck,		// Moritz Strikes Back (48K) (HB)
 	&BurnSpecMoritzstriker,		// Moritz the Striker (48K) (HB)
@@ -39153,6 +39164,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSyscheck,			// Neo System Check (ver 1.0b)
 	&BurnDrvNeothndr,			// Neo Thunder (HB)
 	&BurnDrvngpc_neoturfm,		// Neo Turf Masters - Pocket Sport Series (World)
+	&BurnDrvTurfmastsc,			// Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack)
 	&BurnDrvTurfmast,			// Neo Turf Masters / Big Tournament Golf
 	&BurnDrvNeocup98,			// Neo-Geo Cup '98 - The Road to the Victory
 	&BurnDrvNeotet,				// NeoGeo 2-Player Tetris (HB)
@@ -39353,7 +39365,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecNighthallowen,		// Nightmare on Halloween (48K) (HB)
 	&BurnSpecNightrally,		// Nightmare Rally (48K)
 	&BurnSpecNightshade,		// Nightshade (48K)
-	&BurnDrvnes_nightshadetp,	// Nightshade (Hack, Portuguese v2.01)
+	&BurnDrvnes_nightshadetp,	// Nightshade (Hack, Portuguese v3.0)
 	&BurnDrvnes_nightshadetr,	// Nightshade (Hack, Russian)
 	&BurnDrvnes_nightshadets,	// Nightshade (Hack, Spanish)
 	&BurnDrvnes_nightshade,		// Nightshade (USA)
@@ -40124,6 +40136,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_pcottone,		// Panorama Cotton (Hack, English)
 	&BurnDrvmd_pcottons,		// Panorama Cotton (Hack, Spanish)
 	&BurnDrvmd_pcotton,			// Panorama Cotton (Japan)
+	&BurnSpecPanther,			// Panther (48K)
 	&BurnDrvMSX_panther,		// Panther (Japan)
 	&BurnDrvmd_pantufaee,		// Pantufa the Cat - Extended Edition (GlobalHack)
 	&BurnDrvtg_panzakb,			// Panza Kick Boxing (USA)
@@ -41034,6 +41047,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_prisonelamd,		// Prisonela MD (HB)
 	&BurnDrvcv_prisonofwar,		// Prisoner of War (SGM) (HB)
 	&BurnDrvmsx_prisonofwars,	// Prisoner of War (Spanish) (HB)
+	&BurnSpecPrisstriss,		// Priss Triss (48K-128K) (HB)
 //	&BurnDrvngpc_ppaa01,		// Prize Game - PP-AA01 Pusher Program (Japan) [no comment]
 	&BurnDrvmd_par,				// Pro Action Replay (Euro)
 	&BurnDrvmd_par2,			// Pro Action Replay 2 (Euro)
@@ -41326,7 +41340,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPuzznicu,			// Puzznic (US)
 	&BurnDrvnes_puzznic,		// Puzznic (USA)
 	&BurnDrvPuzznic,			// Puzznic (World)
-	&BurnDrvmd_puzzulswap,		// PuzzuL SwaP (HB, Final Beta)
+	&BurnDrvmd_puzzulswap,		// PuzzuL SwaP (HB, Rev. 02)
 	&BurnDrvMSX_puzzybox,		// PuzzyBox (HB)
 	&BurnDrvMSX_pwnd,			// PWND (HB)
 	&BurnSpecPyjamarama,		// Pyjamarama (48K)
@@ -41967,6 +41981,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecRescmarte,			// Rescate En Marte (48K) (HB)
 	&BurnDrvnes_rescueforce,	// Rescue Force: Heroes Unchained (HB)
 	&BurnDrvsms_rescuems,		// Rescue Mission (Euro, USA, Brazil)
+	&BurnSpecRescuerocket,		// Rescue Rocket (48K) (HB)
 	&BurnDrvnes_rescuec,		// Rescue: The Embassy Mission (Hack, Spanish)
 	&BurnDrvnes_rescue,			// Rescue: The Embassy Mission (USA)
 	&BurnDrvRescue,				// Rescue
@@ -47513,6 +47528,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecToofy,				// Toofy in Fan Land (48K) (HB)
 	&BurnSpecToofy3,			// Toofy's Nutty Nightmare (128K) (HB)
 	&BurnSpecToofy2,			// Toofy's Winter Nuts (48K) (HB)
+	&BurnDrvmd_toogle,			// Toogle (HB, Rev 01)
 	&BurnDrvMSX_toolblocks,		// Tool Blocks (HB)
 	&BurnSpecTopcat,			// Top Cat in Beverly Hills Cats (48K) (HB)
 	&BurnDrvTopdrive,			// Top Driving (version 1.1)
@@ -59798,6 +59814,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_invrevenge", "msx/d_msx.cpp"},
 	{ "spec_invagd", "spectrum/d_spectrum.cpp"},
 	{ "spec_invasion", "spectrum/d_spectrum.cpp"},
+	{ "spec_invmast", "spectrum/d_spectrum.cpp"},
 	{ "spec_invforce", "spectrum/d_spectrum.cpp"},
 	{ "msx_invasion", "msx/d_msx.cpp"},
 	{ "spec_invzombie", "spectrum/d_spectrum.cpp"},
@@ -62061,6 +62078,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_manicminerll", "spectrum/d_spectrum.cpp"},
 	{ "spec_manicminerllv2", "spectrum/d_spectrum.cpp"},
 	{ "spec_manicrobot", "spectrum/d_spectrum.cpp"},
+	{ "spec_manokone", "spectrum/d_spectrum.cpp"},
 	{ "spec_manollo", "spectrum/d_spectrum.cpp"},
 	{ "spec_mantis1", "spectrum/d_spectrum.cpp"},
 	{ "spec_mantis2", "spectrum/d_spectrum.cpp"},
@@ -63293,6 +63311,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_moritaot", "msx/d_msx.cpp"},
 	{ "pce_moritash", "pce/d_pce.cpp"},
 	{ "spec_moritz", "spectrum/d_spectrum.cpp"},
+	{ "spec_moritztea", "spectrum/d_spectrum.cpp"},
 	{ "spec_moritzautobath", "spectrum/d_spectrum.cpp"},
 	{ "spec_moritzstkbck", "spectrum/d_spectrum.cpp"},
 	{ "spec_moritzstriker", "spectrum/d_spectrum.cpp"},
@@ -63984,6 +64003,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "syscheck", "neogeo/d_neogeo.cpp"},
 	{ "neothndr", "neogeo/d_neogeo.cpp"},
 	{ "ngp_neoturfm", "pst90s/d_ngp.cpp"},
+	{ "turfmastsc", "neogeo/d_neogeo.cpp"},
 	{ "turfmast", "neogeo/d_neogeo.cpp"},
 	{ "neocup98", "neogeo/d_neogeo.cpp"},
 	{ "neotet", "neogeo/d_neogeo.cpp"},
@@ -64949,6 +64969,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_pcottone", "megadrive/d_megadrive.cpp"},
 	{ "md_pcottons", "megadrive/d_megadrive.cpp"},
 	{ "md_pcotton", "megadrive/d_megadrive.cpp"},
+	{ "spec_panther", "spectrum/d_spectrum.cpp"},
 	{ "msx_panther", "msx/d_msx.cpp"},
 	{ "md_pantufaee", "megadrive/d_megadrive.cpp"},
 	{ "tg_panzakb", "pce/d_pce.cpp"},
@@ -65853,6 +65874,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_prisonelamd", "megadrive/d_megadrive.cpp"},
 	{ "cv_prisonofwar", "coleco/d_coleco.cpp"},
 	{ "msx_prisonofwars", "msx/d_msx.cpp"},
+	{ "spec_prisstriss", "spectrum/d_spectrum.cpp"},
 	{ "ngp_ppaa01", "pst90s/d_ngp.cpp"},
 	{ "md_par", "megadrive/d_megadrive.cpp"},
 	{ "md_par2", "megadrive/d_megadrive.cpp"},
@@ -66780,6 +66802,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_rescmarte", "spectrum/d_spectrum.cpp"},
 	{ "nes_rescueforce", "nes/d_nes.cpp"},
 	{ "sms_rescuems", "sms/d_sms.cpp"},
+	{ "spec_rescuerocket", "spectrum/d_spectrum.cpp"},
 	{ "nes_rescuec", "nes/d_nes.cpp"},
 	{ "nes_rescue", "nes/d_nes.cpp"},
 	{ "rescue", "galaxian/d_galaxian.cpp"},
@@ -72268,6 +72291,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_toofy", "spectrum/d_spectrum.cpp"},
 	{ "spec_toofy3", "spectrum/d_spectrum.cpp"},
 	{ "spec_toofy2", "spectrum/d_spectrum.cpp"},
+	{ "md_toogle", "megadrive/d_megadrive.cpp"},
 	{ "msx_toolblocks", "msx/d_msx.cpp"},
 	{ "spec_topcat", "spectrum/d_spectrum.cpp"},
 	{ "topdrive", "pst90s/d_topdrive.cpp"},
