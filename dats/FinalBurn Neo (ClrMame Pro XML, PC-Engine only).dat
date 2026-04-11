@@ -882,10 +882,10 @@
 	</game>
 	<game name="necroste" cloneof="necros" romof="necros" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
-		<description>Fortress of Necros (Hack, English v1.2)</description>
+		<description>Fortress of Necros (Hack, English v1.3)</description>
 		<year>2025-26</year>
 		<manufacturer>washbear</manufacturer>
-		<rom name="Fortress of Necros T-Eng v1.2 (2025-26)(washbear).pce" size="524288" crc="6cebf8b7"/>
+		<rom name="Fortress of Necros T-Eng v1.3 (2025-26)(washbear).pce" size="524288" crc="e4965ab6"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
