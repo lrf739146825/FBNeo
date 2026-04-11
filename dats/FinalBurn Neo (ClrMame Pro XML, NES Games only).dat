@@ -15177,10 +15177,10 @@
 	</game>
 	<game name="nightshadetp" cloneof="nightshade" romof="nightshade" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Nightshade (Hack, Portuguese v2.01)</description>
-		<year>2022</year>
+		<description>Nightshade (Hack, Portuguese v3.0)</description>
+		<year>2022-25</year>
 		<manufacturer>ajkmetiuk</manufacturer>
-		<rom name="Nightshade T-Por v2.01 (2022)(ajkmetiuk).nes" size="524304" crc="90f8d346"/>
+		<rom name="Nightshade T-Por v3.0 (2022-25)(ajkmetiuk).nes" size="524304" crc="96e977f8"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

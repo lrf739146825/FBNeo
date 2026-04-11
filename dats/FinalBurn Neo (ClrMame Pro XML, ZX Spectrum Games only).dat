@@ -14593,6 +14593,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="invmast" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Invasion (48K)</description>
+		<year>1987</year>
+		<manufacturer>Mastertronic</manufacturer>
+		<rom name="Invasion 48K (1987)(Mastertronic).tzx" size="41093" crc="c62ab4b2"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="invforce" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>A: left - S: right - F: fire</comment>
 		<description>Invasion Force (16K)</description>
@@ -17672,6 +17681,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="manokone" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Manokone no densetsu (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>KrappyGamez</manufacturer>
+		<rom name="Manokone no densetsu 48K-128K (2026)(KrappyGamez).tap" size="42659" crc="34900aae"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="manollo" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Manollo: El Cavernicola (Spanish) (48K)</description>
 		<year>1988</year>
@@ -19300,6 +19320,16 @@
 		<year>2017</year>
 		<manufacturer>Sebastian Braunert</manufacturer>
 		<rom name="Moritz 48K (2017)(Sebastian Braunert).z80" size="39114" crc="f0f22000"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="moritztea" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Set '1.Keyboard' to use controller</comment>
+		<description>Moritz at the Tea Party (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>ZXAMAZE</manufacturer>
+		<rom name="Moritz at the Tea Party 48K (2026)(ZXAMAZE).tap" size="47777" crc="3d196761"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -21285,6 +21315,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="panther" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Define keys to use controller - SPACE: reset game</comment>
+		<description>Panther (48K)</description>
+		<year>1989</year>
+		<manufacturer>Mastertronic</manufacturer>
+		<rom name="Panther 48K (1989)(Mastertronic).tap" size="34670" crc="d613f908"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="paperboy" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Paperboy (48K)</description>
 		<year>1986</year>
@@ -22387,6 +22427,17 @@
 		<year>1990</year>
 		<manufacturer>Players Premier</manufacturer>
 		<rom name="Prison Riot 48K-128K (1990)(Players Premier).tap" size="64518" crc="b760f8bd"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="prisstriss" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Priss Triss (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>KTB Productions</manufacturer>
+		<rom name="Priss Triss 48K-128K (2026)(KTB Productions).tap" size="32587" crc="70b3dd6c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23743,6 +23794,16 @@
 		<year>2019</year>
 		<manufacturer>Jose Manuel Gris</manufacturer>
 		<rom name="Rescate En Marte 48K (2019)(Jose Manuel Gris).tap" size="28007" crc="dcf24427"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rescuerocket" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Rescue Rocket (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>KTB Productions</manufacturer>
+		<rom name="Rescue Rocket 48K (2026)(KTB Productions).tap" size="45453" crc="40e72923"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

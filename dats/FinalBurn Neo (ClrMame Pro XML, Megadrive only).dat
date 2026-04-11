@@ -15558,10 +15558,10 @@
 	</game>
 	<game name="puzzulswap" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>PuzzuL SwaP (HB, Final Beta)</description>
-		<year>2023</year>
+		<description>PuzzuL SwaP (HB, Rev. 02)</description>
+		<year>2023-24</year>
 		<manufacturer>GF64</manufacturer>
-		<rom name="PuzzuL SwaP - final beta (2023)(GF64).bin" size="288320" crc="22072371"/>
+		<rom name="PuzzuL SwaP - Rev. 02 (2023-24)(GF64).bin" size="524288" crc="4e1660f2"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21913,6 +21913,15 @@
 		<year>1993</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Tony La Russa Baseball (USA, Oceania)(1993)(Electronic Arts).bin" size="1048576" crc="24629c78"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="toogle" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Toogle (HB, Rev 01)</description>
+		<year>2025</year>
+		<manufacturer>Dune</manufacturer>
+		<rom name="Toogle - Rev 01 (2025)(Dune).bin" size="786432" crc="793b87c5"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
