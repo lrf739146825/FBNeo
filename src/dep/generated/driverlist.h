@@ -4563,6 +4563,7 @@ DRV		BurnDrvCuebrick;
 DRV		BurnSpecCulte;
 DRV		BurnSpecCults;
 DRV		BurnDrvMSX_cuncuna;
+DRV		BurnDrvcv_cure;
 DRV		BurnDrvMSX_thecure;
 DRV		BurnDrvMSX_Currojimenez;
 DRV		BurnDrvmd_curse;
@@ -4959,6 +4960,7 @@ DRV		BurnDrvdderby;
 DRV		BurnDrvmd_deathdls;
 DRV		BurnDrvmd_deathdl;
 DRV		BurnSpecDeathpit;
+DRV		BurnDrvcv_deathrace;
 DRV		BurnDrvnes_deathrace;
 DRV		BurnSpecDeathstalker;
 DRV		BurnSpecDstarint;
@@ -10826,6 +10828,7 @@ DRV		BurnDrvngpc_kikousei;
 DRV		BurnSpeckikstrt2;
 DRV		BurnDrvMSX_killmice;
 DRV		BurnDrvsnes_Killinste;
+DRV		BurnDrvcv_kinstinct;
 DRV		BurnDrvsnes_Killinst;
 DRV		BurnDrvsnes_Killinstee;
 DRV		BurnDrvMSX_killstation;
@@ -12501,6 +12504,7 @@ DRV		BurnSpecMastersmovie;
 DRV		BurnDrvMSX_masters;
 DRV		BurnSpecMastersadv;
 DRV		BurnDrvcv_masters;
+DRV		BurnDrvcv_mastersp;
 DRV		BurnSpecMasterword;
 DRV		BurnDrvMatmania;
 DRV		BurnSpecMatch3;
@@ -15849,6 +15853,7 @@ DRV		BurnDrvPolluxa;
 DRV		BurnDrvPolluxa2;
 DRV		BurnDrvPompingw;
 DRV		BurnDrvMSX_ponpon;
+DRV		BurnDrvcv_pong;
 DRV		BurnDrvponpokov;
 DRV		BurnDrvponpoko;
 DRV		BurnDrvMSX_poogaboo;
@@ -19199,6 +19204,7 @@ DRV		BurnDrvcv_spacehunter;
 DRV		BurnDrvnes_spacehunter;
 DRV		BurnDrvSpcinv95u;
 DRV		BurnDrvSpcinv95;
+DRV		BurnDrvcv_spaceinv;
 DRV		BurnDrvmd_spaceinv;
 DRV		BurnDrvMSX_spaceinv;
 DRV		BurnDrvnes_spaceinvaders;
@@ -21635,6 +21641,7 @@ DRV		BurnDrvmd_telebrad;
 DRV		BurnDrvMSX_telebunn;
 DRV		BurnDrvMSX_telebunna;
 DRV		BurnDrvcv_telebunny;
+DRV		BurnDrvcv_telebunnya;
 DRV		BurnSpecTelehugsen128;
 DRV		BurnSpecTelehugsen48;
 DRV		BurnDrvMSX_telethugsen;
@@ -22913,6 +22920,7 @@ DRV		BurnDrvTumblep;
 DRV		BurnSpecTumultph1;
 DRV		BurnDrvmd_tunshi1;
 DRV		BurnDrvmd_tunshi;
+DRV		BurnDrvcv_tunnelstrolls;
 DRV		BurnDrvcv_tunnels;
 DRV		BurnDrvTurboa;
 DRV		BurnDrvTurbod;
@@ -29504,6 +29512,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecCulte,				// Cult, The (English) (128K) (HB)
 	&BurnSpecCults,				// Culto, El (Spanish) (128K) (HB)
 	&BurnDrvMSX_cuncuna,		// Cuncuna (HB)
+	&BurnDrvcv_cure,			// Cure, The (HB)
 	&BurnDrvMSX_thecure,		// Cure, The (HB)
 	&BurnDrvMSX_Currojimenez,	// Curro Jimenez (Euro, Spanish)
 	&BurnDrvmd_curse,			// Curse (Japan)
@@ -29900,6 +29909,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_deathdls,		// Death Duel (Hack, Spanish)
 	&BurnDrvmd_deathdl,			// Death Duel (USA)
 	&BurnSpecDeathpit,			// Death Pit (48K)
+	&BurnDrvcv_deathrace,		// Death Race (HB, Prototype)
 	&BurnDrvnes_deathrace,		// Death Race (USA) (Unl)
 	&BurnSpecDeathstalker,		// Death Stalker (48K-128K)
 	&BurnSpecDstarint,			// Death Star Interceptor (48K)
@@ -35767,6 +35777,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpeckikstrt2,			// Kikstart 2 + Course Designer (48K)
 	&BurnDrvMSX_killmice,		// Kill Mice (HB)
 	&BurnDrvsnes_Killinste,		// Killer Instinct (Euro)
+	&BurnDrvcv_kinstinct,		// Killer Instinct (HB, Demo)
 	&BurnDrvsnes_Killinst,		// Killer Instinct (USA, Rev. 1)
 	&BurnDrvsnes_Killinstee,	// Killer Instinct - Eyedol Edition (Hack)
 	&BurnDrvMSX_killstation,	// Killer Station (Japan)
@@ -37441,7 +37452,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecMastersmovie,		// Masters of the Universe - The Movie (48K)
 	&BurnDrvMSX_masters,		// Masters of the Universe - The Movie (Euro)
 	&BurnSpecMastersadv,		// Masters of the Universe - The Super Adventure (48K)
-	&BurnDrvcv_masters,			// Masters of the Universe: The Power of He-Man (USA, Prototype)
+	&BurnDrvcv_masters,			// Masters of the Universe: The Power of He-Man (HB)
+	&BurnDrvcv_mastersp,		// Masters of the Universe: The Power of He-Man (USA, Prototype)
 	&BurnSpecMasterword,		// Masterword (Prototype) (48K)
 	&BurnDrvMatmania,			// Mat Mania
 	&BurnSpecMatch3,			// Match 3 (128K) (HB)
@@ -40790,6 +40802,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPolluxa2,			// Pollux (set 3)
 	&BurnDrvPompingw,			// Pomping World (Japan)
 	&BurnDrvMSX_ponpon,			// Pon Pon (HB, v1.51)
+	&BurnDrvcv_pong,			// Pong (HB)
 	&BurnDrvponpokov,			// Ponpoko (Venture Line)
 	&BurnDrvponpoko,			// Ponpoko
 	&BurnDrvMSX_poogaboo,		// Poogaboo (Euro, Spanish)
@@ -44140,6 +44153,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_spacehunter,	// Space Hunter (Japan)
 	&BurnDrvSpcinv95u,			// Space Invaders '95: The Attack Of Lunar Loonies (Ver 2.5A 1995/06/14)
 	&BurnDrvSpcinv95,			// Space Invaders '95: The Attack Of Lunar Loonies (Ver 2.5O 1995/06/14)
+	&BurnDrvcv_spaceinv,		// Space Invaders (HB)
 	&BurnDrvmd_spaceinv,		// Space Invaders (HB, v1.6)
 	&BurnDrvMSX_spaceinv,		// Space Invaders (Japan)
 	&BurnDrvnes_spaceinvaders,	// Space Invaders (Japan)
@@ -46576,6 +46590,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_telebunn,		// Telebunnie (Japan)
 	&BurnDrvMSX_telebunna,		// Telebunnie (Japan, Alt)
 	&BurnDrvcv_telebunny,		// Telebunny (HB)
+	&BurnDrvcv_telebunnya,		// Telebunny (HB, Alt)
 	&BurnSpecTelehugsen128,		// Telethugs (English) (128K) (HB)
 	&BurnSpecTelehugsen48,		// Telethugs (English) (48K) (HB)
 	&BurnDrvMSX_telethugsen,	// Telethugs (English) (HB)
@@ -47854,6 +47869,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTumultph1,			// Tumult - Phase 1 (48K) (HB)
 	&BurnDrvmd_tunshi1,			// Tun Shi Tian Di III (China) (Unl)
 	&BurnDrvmd_tunshi,			// Tun Shi Tian Di III (China, Simplified Chinese) (Unl)
+	&BurnDrvcv_tunnelstrolls,	// Tunnels & Trolls (HB, Demo)
 	&BurnDrvcv_tunnels,			// Tunnels and Trolls (USA, Prototype)
 	&BurnDrvTurboa,				// Turbo (encrypted, program 1262-1264)
 	&BurnDrvTurbod,				// Turbo (encrypted, program 1363-1365 rev A)
@@ -54413,6 +54429,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_culte", "spectrum/d_spectrum.cpp"},
 	{ "spec_cults", "spectrum/d_spectrum.cpp"},
 	{ "msx_cuncuna", "msx/d_msx.cpp"},
+	{ "cv_cure", "coleco/d_coleco.cpp"},
 	{ "msx_thecure", "msx/d_msx.cpp"},
 	{ "msx_currojimenez", "msx/d_msx.cpp"},
 	{ "md_curse", "megadrive/d_megadrive.cpp"},
@@ -54809,6 +54826,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_deathdls", "megadrive/d_megadrive.cpp"},
 	{ "md_deathdl", "megadrive/d_megadrive.cpp"},
 	{ "spec_deathpit", "spectrum/d_spectrum.cpp"},
+	{ "cv_deathrace", "coleco/d_coleco.cpp"},
 	{ "nes_deathrace", "nes/d_nes.cpp"},
 	{ "spec_deathstalker", "spectrum/d_spectrum.cpp"},
 	{ "spec_dstarint", "spectrum/d_spectrum.cpp"},
@@ -60632,6 +60650,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_kikstrt2", "spectrum/d_spectrum.cpp"},
 	{ "msx_killmice", "msx/d_msx.cpp"},
 	{ "snes_killinste", "snes/d_snes.cpp"},
+	{ "cv_kinstinct", "coleco/d_coleco.cpp"},
 	{ "snes_killinst", "snes/d_snes.cpp"},
 	{ "snes_killinstee", "snes/d_snes.cpp"},
 	{ "msx_killstation", "msx/d_msx.cpp"},
@@ -62295,6 +62314,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_masters", "msx/d_msx.cpp"},
 	{ "spec_mastersadv", "spectrum/d_spectrum.cpp"},
 	{ "cv_masters", "coleco/d_coleco.cpp"},
+	{ "cv_mastersp", "coleco/d_coleco.cpp"},
 	{ "spec_masterword", "spectrum/d_spectrum.cpp"},
 	{ "matmania", "pre90s/d_matmania.cpp"},
 	{ "spec_match3", "spectrum/d_spectrum.cpp"},
@@ -65617,6 +65637,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "polluxa2", "pst90s/d_dooyong.cpp"},
 	{ "pompingw", "pre90s/d_mitchell.cpp"},
 	{ "msx_ponpon", "msx/d_msx.cpp"},
+	{ "cv_pong", "coleco/d_coleco.cpp"},
 	{ "ponpokov", "pre90s/d_pacman.cpp"},
 	{ "ponpoko", "pre90s/d_pacman.cpp"},
 	{ "msx_poogaboo", "msx/d_msx.cpp"},
@@ -68941,6 +68962,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_spacehunter", "nes/d_nes.cpp"},
 	{ "spcinv95u", "taito/d_taitof3.cpp"},
 	{ "spcinv95", "taito/d_taitof3.cpp"},
+	{ "cv_spaceinv", "coleco/d_coleco.cpp"},
 	{ "md_spaceinv", "megadrive/d_megadrive.cpp"},
 	{ "msx_spaceinv", "msx/d_msx.cpp"},
 	{ "nes_spaceinvaders", "nes/d_nes.cpp"},
@@ -71347,6 +71369,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_telebunn", "msx/d_msx.cpp"},
 	{ "msx_telebunna", "msx/d_msx.cpp"},
 	{ "cv_telebunny", "coleco/d_coleco.cpp"},
+	{ "cv_telebunnya", "coleco/d_coleco.cpp"},
 	{ "spec_telehugsen128", "spectrum/d_spectrum.cpp"},
 	{ "spec_telehugsen48", "spectrum/d_spectrum.cpp"},
 	{ "msx_telethugsen", "msx/d_msx.cpp"},
@@ -72613,6 +72636,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_tumultph1", "spectrum/d_spectrum.cpp"},
 	{ "md_tunshi1", "megadrive/d_megadrive.cpp"},
 	{ "md_tunshi", "megadrive/d_megadrive.cpp"},
+	{ "cv_tunnelstrolls", "coleco/d_coleco.cpp"},
 	{ "cv_tunnels", "coleco/d_coleco.cpp"},
 	{ "turboa", "sega/d_turbo.cpp"},
 	{ "turbod", "sega/d_turbo.cpp"},
