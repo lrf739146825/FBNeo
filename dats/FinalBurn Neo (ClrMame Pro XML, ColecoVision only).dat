@@ -1565,6 +1565,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cure" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by Team Pixelboy</comment>
+		<description>Cure, The (HB)</description>
+		<year>2020</year>
+		<manufacturer>XL2S Entertainment</manufacturer>
+		<rom name="Cure, The (2020)(Team Pixelboy).rom" size="131072" crc="78e07081"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dacman" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Dacman (HB)</description>
@@ -1620,6 +1633,19 @@
 		<year>2009-2017</year>
 		<manufacturer>Danger Team</manufacturer>
 		<rom name="Danger Tower SGM (2017)(Team Pixelboy).rom" size="32768" crc="0246bdb1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="deathrace" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Prototype</comment>
+		<description>Death Race (HB, Prototype)</description>
+		<year>2011</year>
+		<manufacturer>&lt;unknown&gt;</manufacturer>
+		<rom name="Death Race (Proto) (2011)(unknown).rom" size="8192" crc="da6d5616"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3367,6 +3393,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="kinstinct" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>Killer Instinct (HB, Demo)</description>
+		<year>1997</year>
+		<manufacturer>Daniel Bienvenu</manufacturer>
+		<rom name="Killer Instinct (Demo) (1997)(Daniel Bienvenu).rom" size="9494" crc="58f10c63"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="kingball" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Published by Team Pixelboy</comment>
 		<description>King &amp; Balloon (SGM) (HB)</description>
@@ -3792,6 +3831,19 @@
 		<driver status="good"/>
 	</game>
 	<game name="masters" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Masters of the Universe: The Power of He-Man (HB)</description>
+		<year>1983-2022</year>
+		<manufacturer>Mattel Electronics</manufacturer>
+		<rom name="Masters of the Universe - The Power of He-Man (1983-2022)(CollectorVision).rom" size="32768" crc="838a9742"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mastersp" cloneof="masters" romof="masters" sourcefile="coleco/d_coleco.cpp">
 		<comment>Prototype</comment>
 		<description>Masters of the Universe: The Power of He-Man (USA, Prototype)</description>
 		<year>1983</year>
@@ -4942,6 +4994,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pong" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Pong (HB)</description>
+		<year>2014</year>
+		<manufacturer>Atari Games Ltd.</manufacturer>
+		<rom name="Pong (2014)(CollectorVision).rom" size="32750" crc="8aad0831"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pooyan" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by CollectorVision Games</comment>
 		<description>Pooyan (HB)</description>
@@ -5915,6 +5980,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spaceinv" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Space Invaders (HB)</description>
+		<year>200X</year>
+		<manufacturer>Taito</manufacturer>
+		<rom name="Space Invaders (200X)(CollectorVision Games).rom" size="16384" crc="5191bba9"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spaceinvcol" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Space Invaders Collection (HB)</description>
@@ -6778,6 +6856,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="telebunnya" cloneof="telebunny" romof="telebunny" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Telebunny (HB, Alt)</description>
+		<year>2014</year>
+		<manufacturer>CollectorVision Games</manufacturer>
+		<rom name="Telebunny (Alt)(2014)(CollectorVision).rom" size="30641" crc="26896d4b"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="telly" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Telly Turtle (USA)</description>
 		<year>1984</year>
@@ -6922,6 +7013,19 @@
 		<year>1983-2022</year>
 		<manufacturer>Soundic</manufacturer>
 		<rom name="Treasure Hunt (1983-2022)(CollectorVision).rom" size="20464" crc="0ac0067c"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tunnelstrolls" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Demo, Homebrew, Not playable Demo</comment>
+		<description>Tunnels &amp; Trolls (HB, Demo)</description>
+		<year>2010</year>
+		<manufacturer>Coleco</manufacturer>
+		<rom name="Tunnels &amp; Trolls (Demo) (2010)(CollectorVision Games).rom" size="16384" crc="a82ca225"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
