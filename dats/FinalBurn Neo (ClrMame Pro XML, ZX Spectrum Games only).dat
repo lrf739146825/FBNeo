@@ -7499,6 +7499,26 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dangmouseadv1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Use SPACE and ENTER to change and select the choices</comment>
+		<description>Danger Mouse in the Black Forest Chateau - Part 1 (48K)</description>
+		<year>1984</year>
+		<manufacturer>Creative Sparks</manufacturer>
+		<rom name="Danger Mouse in the Black Forest Chateau - Part 1 48K (1984)(Creative Sparks).tzx" size="34689" crc="831e507e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dangmouseadv2" cloneof="dangmouseadv1" romof="dangmouseadv1" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Password: 7842981</comment>
+		<description>Danger Mouse in the Black Forest Chateau - Part 2 (48K)</description>
+		<year>1984</year>
+		<manufacturer>Creative Sparks</manufacturer>
+		<rom name="Danger Mouse in the Black Forest Chateau - Part 2 48K (1984)(Creative Sparks).tzx" size="37069" crc="34f5d8c9"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="danterrifik" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Danterrifik (128K) (HB, v1.1)</description>
@@ -7544,10 +7564,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="darius" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Darius+ (128K)</description>
+		<description>Darius+ (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>The Edge</manufacturer>
-		<rom name="Darius+ 128K (1990)(The Edge Software).tap" size="219017" crc="e47f46f1"/>
+		<rom name="Darius+ 48K-128K (1990)(The Edge Software).tap" size="219017" crc="e47f46f1"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -7587,10 +7607,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="darkfusion" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Dark Fusion (128K)</description>
+		<description>Dark Fusion (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Dark Fusion 128K (1988)(Gremlin Graphics).tap" size="65624" crc="87c7d4d6"/>
+		<rom name="Dark Fusion 48K-128K (1988)(Gremlin Graphics).tap" size="65624" crc="87c7d4d6"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -14673,6 +14693,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="italia90wcs" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Italia '90: World Cup Soccer (48K)</description>
+		<year>1989</year>
+		<manufacturer>Virgin Games</manufacturer>
+		<rom name="Italia '90 - World Cup Soccer 48K (1989)(Virgin Games).tzx" size="55633" crc="18823fce"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="it1944en1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Italia 1944 - Part 1 (English) (48K) (HB)</description>
@@ -15532,6 +15561,16 @@
 		<rom name="Jubbles 128K (2017)(Jonathan Cauldwell).tap" size="33886" crc="75b86b88"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="judgedredd" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Use SPACE and ENTER to set options</comment>
+		<description>Judge Dredd (48K)</description>
+		<year>1987</year>
+		<manufacturer>Melbourne House</manufacturer>
+		<rom name="Judge Dredd 48K (1987)(Melbourne House).tzx" size="47929" crc="835fc84e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18821,6 +18860,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="minedout" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Mined Out (48K)</description>
+		<year>1983</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Mined Out 48K (1983)(Quicksilva).tzx" size="23253" crc="3e577060"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="miremare" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Mire Mare (48K) (HB, v1.09)</description>
@@ -20905,6 +20953,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="orcattack" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Orc Attack (48K)</description>
+		<year>1984</year>
+		<manufacturer>Creative Sparks</manufacturer>
+		<rom name="Orc Attack 48K (1984)(Creative Sparks).tzx" size="31150" crc="0cdb8978"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="orderslpdrag" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Redifine controls to use 'Sinclair 2' joystick</comment>
 		<description>Order of Sleeping Dragon, The (128K) (HB)</description>
@@ -21250,7 +21307,7 @@
 		<description>Pakacuda (16K)</description>
 		<year>1983</year>
 		<manufacturer>Rabbit Software</manufacturer>
-		<rom name="Pakacuda 16K (1983)(Rabbit).tap" size="15372" crc="789f0e0b"/>
+		<rom name="Pakacuda 16K (1983)(Rabbit Software).tap" size="15372" crc="789f0e0b"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -21386,8 +21443,8 @@
 	<game name="paratroopers" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Paratroopers (16K)</description>
 		<year>1983</year>
-		<manufacturer>Rabbit</manufacturer>
-		<rom name="Paratroopers 16K (1983)(Rabbit).tap" size="21732" crc="c19b3a5d"/>
+		<manufacturer>Rabbit Software</manufacturer>
+		<rom name="Paratroopers 16K (1983)(Rabbit Software).tap" size="21732" crc="c19b3a5d"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -21999,6 +22056,16 @@
 		<year>2021</year>
 		<manufacturer>Sebastian Braunert</manufacturer>
 		<rom name="Pink Pills - timer last 128K (2021)(Sebastian Braunert).tap" size="55882" crc="a88fe5f4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pipemania" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Pipe Mania (48K-128K)</description>
+		<year>1990</year>
+		<manufacturer>Empire Software</manufacturer>
+		<rom name="Pipe Mania 48K-128K (1990)(Empire Software).tzx" size="33375" crc="e642e3c7"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -26461,6 +26528,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="snodgits" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Snodgits (48K)</description>
+		<year>1985</year>
+		<manufacturer>Creative Sparks</manufacturer>
+		<rom name="Snodgits 48K (1985)(Creative Sparks).tzx" size="37856" crc="11504c62"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="snoopy" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Snoopy (48K)</description>
 		<year>1990</year>
@@ -27436,10 +27512,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="starpaws" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Star Paws (128K)</description>
+		<description>Star Paws (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Software Projects</manufacturer>
-		<rom name="Star Paws 128K (1988)(Software Projects).z80" size="50264" crc="14d2c355"/>
+		<rom name="Star Paws 48K-128K (1988)(Software Projects).tzx" size="55049" crc="8d1a426c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -28313,8 +28389,8 @@
 	<game name="supespri" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Super Sprint (48K)</description>
 		<year>1987</year>
-		<manufacturer>Activision</manufacturer>
-		<rom name="Super Sprint 48K (1987)(Activision).z80" size="31358" crc="52ee2754"/>
+		<manufacturer>Electric Dreams</manufacturer>
+		<rom name="Super Sprint 48K (1987)(Electric Dreams).tzx" size="52544" crc="f1912dc5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -31458,6 +31534,15 @@
 		<year>2025</year>
 		<manufacturer>JTKrakow</manufacturer>
 		<rom name="World of Spells 48K-AY (2025)(JTKrakow).tap" size="40818" crc="1972cb5e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wsbaseball" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>World Series Baseball (48K)</description>
+		<year>1985</year>
+		<manufacturer>Imagine Software</manufacturer>
+		<rom name="World Series Baseball 48K (1985)(Imagine Software).z80" size="35249" crc="7bdb465b"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
