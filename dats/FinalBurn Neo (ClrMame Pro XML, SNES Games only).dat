@@ -2834,6 +2834,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="castlevaniadxtp" cloneof="castlevaniadx" romof="castlevaniadx" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Castlevania Dracula X (Hack, Portuguese v3.0)</description>
+		<year>2023</year>
+		<manufacturer>ByFTR</manufacturer>
+		<rom name="Castlevania Dracula X PT-BR v3.0 (2023)(ByFTR).sfc" size="2097152" crc="b82c9024"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="castlevaniadx" sourcefile="snes/d_snes.cpp">
 		<description>Castlevania Dracula X (USA)</description>
 		<year>1995</year>
@@ -3593,6 +3602,15 @@
 		<year>1995</year>
 		<manufacturer>Acclaim Entertainment</manufacturer>
 		<rom name="CutThroat Island (E)(1995)(Acclaim Entertainment).sfc" size="2097152" crc="b5799f9c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cutthroattp" cloneof="cutthroat" romof="cutthroat" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>CutThroat Island (Hack, Portuguese)</description>
+		<year>2010</year>
+		<manufacturer>Monkey's Traducoes</manufacturer>
+		<rom name="CutThroat Island PT-BR (2010)(Monkey's Traducoes).sfc" size="2097152" crc="eaa49af7"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7230,6 +7248,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mickeytokyotp" cloneof="mickeytokyote" romof="mickeytokyote" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Grande Aventura de Mickey na Disneylandia de Toquio, A (Hack, Portuguese v1.4)</description>
+		<year>2022</year>
+		<manufacturer>Svambo, Maverick Blue Warrior</manufacturer>
+		<rom name="Grande Aventura de Mickey na Disneylandia de Toquio, A PT-BR v1.4 (2022)(Svambo, Maverick B. Warrior).sfc" size="1572864" crc="bcc63775"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="greatbattle2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Great Battle II, The - Last Fighter Twin (Hack, English v1.2)</description>
@@ -9141,6 +9168,14 @@
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Knights of the Round (U)(1994)(Capcom).sfc" size="1572864" crc="aaa82126"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="knightsroundtp" cloneof="knightsround" romof="knightsround" sourcefile="snes/d_snes.cpp">
+		<description>Knights of the Round ~ Cavaleiros da Tavola Redonda (Hack, Portuguese v1.1)</description>
+		<year>2010</year>
+		<manufacturer>Denim</manufacturer>
+		<rom name="Cavaleiros da Tavola Redonda PT-BR v1.1 (2010)(Denim).sfc" size="2097151" crc="0ee54922"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
