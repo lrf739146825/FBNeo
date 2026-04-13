@@ -11078,6 +11078,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="jurl" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jurl (HB)</description>
+		<year>2025</year>
+		<manufacturer>Tonsomo Entertainment</manufacturer>
+		<rom name="Jurl (2025)(Tonsomo Entertainment).nes" size="40976" crc="800b021f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="justbreed" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Just Breed (Hack, English)</description>

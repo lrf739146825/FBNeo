@@ -17801,6 +17801,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sirababol" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Sir Ababol (HB, v1.01)</description>
+		<year>2025</year>
+		<manufacturer>The Mojon Twins - Tzar</manufacturer>
+		<rom name="Sir Ababol v1.01 (2025)(The Mojon Twins - Tzar).bin" size="655360" crc="45875ed8"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="skelkrew" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Skeleton Krew (Euro)</description>
 		<year>1995</year>

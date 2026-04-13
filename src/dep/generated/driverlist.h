@@ -2749,6 +2749,8 @@ DRV		BurnDrvBrkrevjq;
 DRV		BurnDrvBrkrevext;
 DRV		BurnDrvBreakrev;
 DRV		BurnDrvBreakers;
+DRV		BurnDrvcv_breakout23j;
+DRV		BurnDrvcv_breakout23r;
 DRV		BurnDrvcv_breakout;
 DRV		BurnSpecBreakthru;
 DRV		BurnDrvnes_breakthru;
@@ -3476,7 +3478,9 @@ DRV		BurnDrvcv_caverns;
 DRV		BurnSpecCaveted;
 DRV		BurnSpecCavit;
 DRV		BurnDrvsms_cavit;
+DRV		BurnDrvcv_cavit;
 DRV		BurnDrvMSX_cavit;
+DRV		BurnDrvsg1k_cavit;
 DRV		BurnDrvsnes_Cbwarsj;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvpce_cdsysb;		// no comment [NOT WORKING]
@@ -6690,6 +6694,7 @@ DRV		BurnDrvfds_excitsoc;
 DRV		BurnDrvExedexes;
 DRV		BurnDrvExerionb;
 DRV		BurnDrvsg1k_exerion;
+DRV		BurnDrvcv_exerion;
 DRV		BurnDrvMSX_exerion;
 DRV		BurnDrvnes_exerion;
 DRV		BurnDrvMSX_exerionb;
@@ -10571,11 +10576,14 @@ DRV		BurnDrvsnes_Jpark2e;
 DRV		BurnDrvsnes_Jpark2;
 DRV		BurnDrvsnes_Jpark2redux;
 DRV		BurnSpecJurl;
+DRV		BurnDrvnes_jurl;
 DRV		BurnDrvjurl;
 DRV		BurnDrvsnes_Jurl;
 DRV		BurnDrvsms_jurl;
 DRV		BurnDrvpce_jurl;
 DRV		BurnDrvmd_jurl;
+DRV		BurnDrvcv_jurl;
+DRV		BurnDrvMSX_jurl;
 DRV		BurnSpecJustagal;
 DRV		BurnDrvnes_justbreed;
 DRV		BurnDrvnes_justbreedc;
@@ -11735,6 +11743,7 @@ DRV		BurnDrvsnes_Lobo;
 DRV		BurnDrvLockonph;
 DRV		BurnDrvsnes_Lockon;
 DRV		BurnDrvcv_locknchase;
+DRV		BurnDrvcv_locknchaseble;
 DRV		BurnSpecLocknchase;
 DRV		BurnDrvClocknchj;
 DRV		BurnDrvClocknch;
@@ -13756,6 +13765,7 @@ DRV		BurnDrvnes_mrsplash;
 DRV		BurnDrvmrtnt;
 DRV		BurnDrvsnes_Mrtuffe;
 DRV		BurnDrvsnes_Mrtuffep;
+DRV		BurnDrvcv_mrturtle;
 DRV		BurnDrvnes_mrvampire;
 DRV		BurnSpecMrweems;
 DRV		BurnSpecMrwimpy;
@@ -16417,6 +16427,7 @@ DRV		BurnDrvnes_puzznic;
 DRV		BurnDrvPuzznic;
 DRV		BurnDrvmd_puzzulswap;
 DRV		BurnDrvMSX_puzzybox;
+DRV		BurnDrvcv_pv2000;
 DRV		BurnDrvMSX_pwnd;
 DRV		BurnSpecPyjamarama;
 DRV		BurnDrvMSX_pyjamarama;
@@ -18602,7 +18613,9 @@ DRV		BurnDrvMSX_sinkking;
 DRV		BurnDrvnes_sinkingfeeling;
 DRV		BurnSpecSirababol;
 DRV		BurnDrvnes_sirababol;
+DRV		BurnDrvcv_sirababola;
 DRV		BurnDrvcv_sirababol;
+DRV		BurnDrvmd_sirababolx;
 DRV		BurnSpecsirababol2;
 DRV		BurnSpecSirababol2es;
 DRV		BurnSpecsirababoldx;
@@ -18890,6 +18903,9 @@ DRV		BurnDrvMSX_sofia;
 DRV		BurnSpecSoko1000;
 DRV		BurnDrvnes_sokobanana;
 DRV		BurnDrvnes_sokobananati;
+DRV		BurnSpecSoko64p;
+DRV		BurnDrvcv_soko64p;
+DRV		BurnDrvMSX_soko64p;
 DRV		BurnSpecSokoban;
 DRV		BurnDrvSokoban;
 DRV		BurnDrvpce_sokoban;
@@ -27711,6 +27727,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvBrkrevext,			// Breakers Revenge (Extra Mode, Hack)
 	&BurnDrvBreakrev,			// Breakers Revenge
 	&BurnDrvBreakers,			// Breakers
+	&BurnDrvcv_breakout23j,		// Breakout (2023) (HB, Joystick Version)
+	&BurnDrvcv_breakout23r,		// Breakout (2023) (HB, Roller Version)
 	&BurnDrvcv_breakout,		// Breakout (HB)
 	&BurnSpecBreakthru,			// Breakthru (48K)
 	&BurnDrvnes_breakthru,		// BreakThru (USA)
@@ -28438,7 +28456,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecCaveted,			// Caveted Against the Darkness (48K) (HB)
 	&BurnSpecCavit,				// Cavit (48K) (HB)
 	&BurnDrvsms_cavit,			// Cavit (HB)
+	&BurnDrvcv_cavit,			// Cavit (HB)
 	&BurnDrvMSX_cavit,			// Cavit (HB)
+	&BurnDrvsg1k_cavit,			// Cavit (HB)
 	&BurnDrvsnes_Cbwarsj,		// CB Chara Wars: Ushinawareta Gag (Japan)
 #if defined FBNEO_DEBUG
 	&BurnDrvpce_cdsysb,			// CD-Rom System Card (v1.0) [no comment, NOT WORKING]
@@ -31652,6 +31672,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvExedexes,			// Exed Exes
 	&BurnDrvExerionb,			// Exerion (bootleg, set 1)
 	&BurnDrvsg1k_exerion,		// Exerion (Euro, Japan)
+	&BurnDrvcv_exerion,			// Exerion (HB)
 	&BurnDrvMSX_exerion,		// Exerion (Japan)
 	&BurnDrvnes_exerion,		// Exerion (Japan)
 	&BurnDrvMSX_exerionb,		// Exerion (Japan, Alt 2)
@@ -35533,11 +35554,14 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Jpark2,		// Jurassic Park II: The Chaos Continues (USA)
 	&BurnDrvsnes_Jpark2redux,	// Jurassic Park II: The Chaos Continues Redux (Hack)
 	&BurnSpecJurl,				// Jurl (48K) (HB)
+	&BurnDrvnes_jurl,			// Jurl (HB)
 	&BurnDrvjurl,				// Jurl (HB, v0.3c)
 	&BurnDrvsnes_Jurl,			// Jurl (HB, v0.5a)
 	&BurnDrvsms_jurl,			// Jurl (HB, v0.9a)
 	&BurnDrvpce_jurl,			// Jurl (HB, v0.9b)
 	&BurnDrvmd_jurl,			// Jurl (HB, v1.0c)
+	&BurnDrvcv_jurl,			// Jurl (HB, v1.1a)
+	&BurnDrvMSX_jurl,			// Jurl (HB, v1.1a)
 	&BurnSpecJustagal,			// Just A Gal (48K) (HB)
 	&BurnDrvnes_justbreed,		// Just Breed (Hack, English)
 	&BurnDrvnes_justbreedc,		// Just Breed (Hack, Spanish v2.0)
@@ -36697,6 +36721,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvLockonph,			// Lock On (Philko)
 	&BurnDrvsnes_Lockon,		// Lock On (USA)
 	&BurnDrvcv_locknchase,		// Lock'n Chase (HB)
+	&BurnDrvcv_locknchaseble,	// Lock'n Chase Black Label Edition (HB)
 	&BurnSpecLocknchase,		// Lock'n'Chase (48K-128K)
 	&BurnDrvClocknchj,			// Lock'n'Chase (DECO Cassette) (Japan)
 	&BurnDrvClocknch,			// Lock'n'Chase (DECO Cassette) (US)
@@ -38718,6 +38743,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmrtnt,				// Mr. TNT
 	&BurnDrvsnes_Mrtuffe,		// Mr. Tuff (Euro) (TRR)
 	&BurnDrvsnes_Mrtuffep,		// Mr. Tuff (Euro, Prototype)
+	&BurnDrvcv_mrturtle,		// Mr. Turtle (HB)
 	&BurnDrvnes_mrvampire,		// Mr. Vampire (Hack, English)
 	&BurnSpecMrweems,			// Mr. Weems and the She Vampires (48K)
 	&BurnSpecMrwimpy,			// Mr. Wimpy (48K)
@@ -41379,6 +41405,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPuzznic,			// Puzznic (World)
 	&BurnDrvmd_puzzulswap,		// PuzzuL SwaP (HB, Rev. 02)
 	&BurnDrvMSX_puzzybox,		// PuzzyBox (HB)
+	&BurnDrvcv_pv2000,			// PV2000 (HB)
 	&BurnDrvMSX_pwnd,			// PWND (HB)
 	&BurnSpecPyjamarama,		// Pyjamarama (48K)
 	&BurnDrvMSX_pyjamarama,		// Pyjamarama (HB)
@@ -43564,7 +43591,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_sinkingfeeling,	// Sinking Feeling (HB)
 	&BurnSpecSirababol,			// Sir Ababol (48K) (HB)
 	&BurnDrvnes_sirababol,		// Sir Ababol (HB)
-	&BurnDrvcv_sirababol,		// Sir Ababol (HB, v1.1)
+	&BurnDrvcv_sirababola,		// Sir Ababol (HB, 20200415 v1.1)
+	&BurnDrvcv_sirababol,		// Sir Ababol (HB, 20200918)
+	&BurnDrvmd_sirababolx,		// Sir Ababol (HB, v1.01)
 	&BurnSpecsirababol2,		// Sir Ababol 2 (English) (128K) (HB)
 	&BurnSpecSirababol2es,		// Sir Ababol 2 (Spanish) (128K) (HB)
 	&BurnSpecsirababoldx,		// Sir Ababol DX (48K) (HB)
@@ -43852,6 +43881,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSoko1000,			// Soko Ban 1000 (48K) (HB)
 	&BurnDrvnes_sokobanana,		// Soko Banana (HB)
 	&BurnDrvnes_sokobananati,	// Soko Banana - Tinsel Island (HB)
+	&BurnSpecSoko64p,			// SOKO64+ (48K) (HB)
+	&BurnDrvcv_soko64p,			// SOKO64+ (HB)
+	&BurnDrvMSX_soko64p,		// SOKO64+ (HB)
 	&BurnSpecSokoban,			// Sokoban (Spanish) (48K-128K) (HB)
 	&BurnDrvSokoban,			// Sokoban LE
 	&BurnDrvpce_sokoban,		// Sokoban World (Japan)
@@ -52659,6 +52691,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "brkrevext", "neogeo/d_neogeo.cpp"},
 	{ "breakrev", "neogeo/d_neogeo.cpp"},
 	{ "breakers", "neogeo/d_neogeo.cpp"},
+	{ "cv_breakout23j", "coleco/d_coleco.cpp"},
+	{ "cv_breakout23r", "coleco/d_coleco.cpp"},
 	{ "cv_breakout", "coleco/d_coleco.cpp"},
 	{ "spec_breakthru", "spectrum/d_spectrum.cpp"},
 	{ "nes_breakthru", "nes/d_nes.cpp"},
@@ -53376,7 +53410,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_caveted", "spectrum/d_spectrum.cpp"},
 	{ "spec_cavit", "spectrum/d_spectrum.cpp"},
 	{ "sms_cavit", "sms/d_sms.cpp"},
+	{ "cv_cavit", "coleco/d_coleco.cpp"},
 	{ "msx_cavit", "msx/d_msx.cpp"},
+	{ "sg1k_cavit", "sg1000/d_sg1000.cpp"},
 	{ "snes_cbwarsj", "snes/d_snes.cpp"},
 	{ "pce_cdsysb", "pce/d_pce.cpp"},
 	{ "pce_cdsysa", "pce/d_pce.cpp"},
@@ -56572,6 +56608,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "exedexes", "pre90s/d_exedexes.cpp"},
 	{ "exerionb", "pre90s/d_exerion.cpp"},
 	{ "sg1k_exerion", "sg1000/d_sg1000.cpp"},
+	{ "cv_exerion", "coleco/d_coleco.cpp"},
 	{ "msx_exerion", "msx/d_msx.cpp"},
 	{ "nes_exerion", "nes/d_nes.cpp"},
 	{ "msx_exerionb", "msx/d_msx.cpp"},
@@ -60423,11 +60460,14 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_jpark2", "snes/d_snes.cpp"},
 	{ "snes_jpark2redux", "snes/d_snes.cpp"},
 	{ "spec_jurl", "spectrum/d_spectrum.cpp"},
+	{ "nes_jurl", "nes/d_nes.cpp"},
 	{ "jurl", "neogeo/d_neogeo.cpp"},
 	{ "snes_jurl", "snes/d_snes.cpp"},
 	{ "sms_jurl", "sms/d_sms.cpp"},
 	{ "pce_jurl", "pce/d_pce.cpp"},
 	{ "md_jurl", "megadrive/d_megadrive.cpp"},
+	{ "cv_jurl", "coleco/d_coleco.cpp"},
+	{ "msx_jurl", "msx/d_msx.cpp"},
 	{ "spec_justagal", "spectrum/d_spectrum.cpp"},
 	{ "nes_justbreed", "nes/d_nes.cpp"},
 	{ "nes_justbreedc", "nes/d_nes.cpp"},
@@ -61577,6 +61617,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "lockonph", "sega/d_sys16b.cpp"},
 	{ "snes_lockon", "snes/d_snes.cpp"},
 	{ "cv_locknchase", "coleco/d_coleco.cpp"},
+	{ "cv_locknchaseble", "coleco/d_coleco.cpp"},
 	{ "spec_locknchase", "spectrum/d_spectrum.cpp"},
 	{ "clocknchj", "dataeast/d_decocass.cpp"},
 	{ "clocknch", "dataeast/d_decocass.cpp"},
@@ -63582,6 +63623,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mrtnt", "pre90s/d_pacman.cpp"},
 	{ "snes_mrtuffe", "snes/d_snes.cpp"},
 	{ "snes_mrtuffep", "snes/d_snes.cpp"},
+	{ "cv_mrturtle", "coleco/d_coleco.cpp"},
 	{ "nes_mrvampire", "nes/d_nes.cpp"},
 	{ "spec_mrweems", "spectrum/d_spectrum.cpp"},
 	{ "spec_mrwimpy", "spectrum/d_spectrum.cpp"},
@@ -66223,6 +66265,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "puzznic", "taito/d_taitol.cpp"},
 	{ "md_puzzulswap", "megadrive/d_megadrive.cpp"},
 	{ "msx_puzzybox", "msx/d_msx.cpp"},
+	{ "cv_pv2000", "coleco/d_coleco.cpp"},
 	{ "msx_pwnd", "msx/d_msx.cpp"},
 	{ "spec_pyjamarama", "spectrum/d_spectrum.cpp"},
 	{ "msx_pyjamarama", "msx/d_msx.cpp"},
@@ -68392,7 +68435,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_sinkingfeeling", "nes/d_nes.cpp"},
 	{ "spec_sirababol", "spectrum/d_spectrum.cpp"},
 	{ "nes_sirababol", "nes/d_nes.cpp"},
+	{ "cv_sirababola", "coleco/d_coleco.cpp"},
 	{ "cv_sirababol", "coleco/d_coleco.cpp"},
+	{ "md_sirababol", "megadrive/d_megadrive.cpp"},
 	{ "spec_sirababol2", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirababol2es", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirababoldx", "spectrum/d_spectrum.cpp"},
@@ -68676,6 +68721,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_soko1000", "spectrum/d_spectrum.cpp"},
 	{ "nes_sokobanana", "nes/d_nes.cpp"},
 	{ "nes_sokobananati", "nes/d_nes.cpp"},
+	{ "spec_soko64p", "spectrum/d_spectrum.cpp"},
+	{ "cv_soko64p", "coleco/d_coleco.cpp"},
+	{ "msx_soko64p", "msx/d_msx.cpp"},
 	{ "spec_sokoban", "spectrum/d_spectrum.cpp"},
 	{ "sokoban", "taito/d_taitol.cpp"},
 	{ "pce_sokoban", "pce/d_pce.cpp"},

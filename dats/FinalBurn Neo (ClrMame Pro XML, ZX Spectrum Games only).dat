@@ -15637,7 +15637,7 @@
 		<description>Jurl (48K) (HB)</description>
 		<year>2025</year>
 		<manufacturer>Tonsomo Entertainment</manufacturer>
-		<rom name="Jurl 48K (2025)(Tonsomo Entertainment).tap" size="34891" crc="d8c5b97e"/>
+		<rom name="Jurl 48K (2025)(Tonsomo Entertainment).tap" size="34433" crc="ea757683"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -26584,6 +26584,16 @@
 		<year>2025</year>
 		<manufacturer>Serdjuk</manufacturer>
 		<rom name="Soko Ban 1000 48K (2025)(Serdjuk).tap" size="45089" crc="22c579e2"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="soko64p" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>SOKO64+ (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Marco Spedaletti</manufacturer>
+		<rom name="SOKO64+ 48K (2024)(Marco Spedaletti).tap" size="20470" crc="ccbd5bc9"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
