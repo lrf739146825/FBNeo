@@ -13819,6 +13819,15 @@ DRV		BurnDrvMSX_msxbball;
 DRV		BurnDrvMSX_msxbballa;
 DRV		BurnDrvMSX_msxbbal2;
 DRV		BurnDrvMSX_msxbasic;
+DRV		BurnDrvMSX_msxcomp1;
+DRV		BurnDrvMSX_msxcomp2;
+DRV		BurnDrvMSX_msxcomp3;
+DRV		BurnDrvMSX_msxcomp4;
+DRV		BurnDrvMSX_msxcomp5;
+DRV		BurnDrvMSX_msxcomp6;
+DRV		BurnDrvMSX_msxcomp7;
+DRV		BurnDrvMSX_msxcomp8;
+DRV		BurnDrvMSX_msxcomp9;
 DRV		BurnDrvMSX_msxpanic;
 DRV		BurnDrvMSX_msxrugby;
 DRV		BurnDrvMSX_msxsoccr;
@@ -38797,6 +38806,15 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_msxbballa,		// MSX Baseball (Japan, Alt)
 	&BurnDrvMSX_msxbbal2,		// MSX Baseball II National (Japan)
 	&BurnDrvMSX_msxbasic,		// MSX Basic
+	&BurnDrvMSX_msxcomp1,		// MSX Compilation Vol.1: Dinamic (HB)
+	&BurnDrvMSX_msxcomp2,		// MSX Compilation Vol.2: Isometric Games (HB)
+	&BurnDrvMSX_msxcomp3,		// MSX Compilation Vol.3: Opera (HB)
+	&BurnDrvMSX_msxcomp4,		// MSX Compilation Vol.4: Topo (HB)
+	&BurnDrvMSX_msxcomp5,		// MSX Compilation Vol.5: Zigurat (HB)
+	&BurnDrvMSX_msxcomp6,		// MSX Compilation Vol.6: Activision (HB)
+	&BurnDrvMSX_msxcomp7,		// MSX Compilation Vol.7: Ocean (HB)
+	&BurnDrvMSX_msxcomp8,		// MSX Compilation Vol.8: Aackosoft (HB)
+	&BurnDrvMSX_msxcomp9,		// MSX Compilation Vol.9: Gremlin (HB)
 	&BurnDrvMSX_msxpanic,		// MSX Panic (Euro, French)
 	&BurnDrvMSX_msxrugby,		// MSX Rugby (Japan)
 	&BurnDrvMSX_msxsoccr,		// MSX Soccer (Japan)
@@ -63677,6 +63695,15 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_msxbballa", "msx/d_msx.cpp"},
 	{ "msx_msxbbal2", "msx/d_msx.cpp"},
 	{ "msx_msxbasic", "msx/d_msx.cpp"},
+	{ "msx_msxcomp1", "msx/d_msx.cpp"},
+	{ "msx_msxcomp2", "msx/d_msx.cpp"},
+	{ "msx_msxcomp3", "msx/d_msx.cpp"},
+	{ "msx_msxcomp4", "msx/d_msx.cpp"},
+	{ "msx_msxcomp5", "msx/d_msx.cpp"},
+	{ "msx_msxcomp6", "msx/d_msx.cpp"},
+	{ "msx_msxcomp7", "msx/d_msx.cpp"},
+	{ "msx_msxcomp8", "msx/d_msx.cpp"},
+	{ "msx_msxcomp9", "msx/d_msx.cpp"},
 	{ "msx_msxpanic", "msx/d_msx.cpp"},
 	{ "msx_msxrugby", "msx/d_msx.cpp"},
 	{ "msx_msxsoccr", "msx/d_msx.cpp"},
