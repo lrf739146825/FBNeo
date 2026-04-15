@@ -1330,6 +1330,8 @@ void retro_init()
 	else
 		log_cb = log_dummy;
 
+	HandleMessage(RETRO_LOG_INFO, "[FBNeo] Running v%x.%x.%x.%02x %s %s\n", nBurnVer >> 20, (nBurnVer >> 16) & 0x0F, (nBurnVer >> 8) & 0xFF, nBurnVer & 0xFF, GIT_DATE, GIT_VERSION);
+
 	set_multi_language_strings();	// Determine the user's language and initialize all strings.
 
 	libretro_msg_interface_version = 0;
