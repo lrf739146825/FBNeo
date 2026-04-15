@@ -463,7 +463,7 @@ void m68k_set_pc_changed_cb(void (*cbf)(UINT32)) {
 }
 #endif	
 
-static int dummy_insn_cb(int) { return 0; }
+static int dummy_insn_cb(int unused) { (void)unused; return 0; }
 static int (*insn_cb)(int) = dummy_insn_cb;
 
 // caveat: only works on singular 68k.  stops on: address error, cpu sleeps / timeslice hacking
