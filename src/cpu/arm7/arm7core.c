@@ -160,7 +160,7 @@ ARM7_INLINE UINT32 arm7_cpu_read32(UINT32 addr)
 
     if (addr & 3)
     {
-	result = Arm7ReadLong(addr & ~3);
+        result = Arm7ReadLong(addr & ~3);
         result = (result >> (8 * (addr & 3))) | (result << (32 - (8 * (addr & 3))));
     }
     else
@@ -591,6 +591,7 @@ static void arm7_core_reset(void)
     SET_CPSR(GET_CPSR | I_MASK | F_MASK | 0x10);
     R15 = 0;
 //    change_pc(R15);
+	burn_until_irq = 0;
 }
 
 // Execute used to be here.. moved to separate file (arm7exec.c) to be included by cpu cores separately
@@ -706,6 +707,10 @@ static void arm7_burn_until_irq(int state)
 // CPU - SET IRQ LINE
 static void arm7_core_set_irq_line(int irqline, int state)
 {
+	if (state != 0) {
+		burn_until_irq = 0;
+	}
+
     switch (irqline) {
 
     case ARM7_IRQ_LINE: /* IRQ */
