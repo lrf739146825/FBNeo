@@ -340,7 +340,7 @@
 		<description>Addams Family, The (Hack, Portuguese)</description>
 		<year>2001</year>
 		<manufacturer>Kaji</manufacturer>
-		<rom name="Addams Family, The PT-BR (2001)(Kaji).nes" size="262160" crc="3db484d4"/>
+		<rom name="Addams Family, The T-Por (2001)(Kaji).nes" size="262160" crc="3db484d4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -945,6 +945,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="aliensmash" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Alien Smash (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>RBG Entertainment</manufacturer>
+		<rom name="Alien Smash v1.1 (2026)(RBG Entertainment).nes" size="524304" crc="d87adb78"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="aliensyndromej" cloneof="aliensyndrome" romof="aliensyndrome" sourcefile="nes/d_nes.cpp">
 		<description>Alien Syndrome (Japan)</description>
 		<year>1988</year>
@@ -1455,7 +1464,7 @@
 	</game>
 	<game name="astrofan" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Astro Fang - Super Machine (Hack, English)</description>
+		<description>Astro Fang: Super Machine (Hack, English)</description>
 		<year>2001</year>
 		<manufacturer>Caution</manufacturer>
 		<rom name="Astro Fang - Super Machine T-Eng (2001)(Caution).nes" size="262160" crc="cfdb30c9"/>
@@ -1463,7 +1472,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="astrofanj" cloneof="astrofan" romof="astrofan" sourcefile="nes/d_nes.cpp">
-		<description>Astro Fang - Super Machine (Japan)</description>
+		<description>Astro Fang: Super Machine (Japan)</description>
 		<year>1990</year>
 		<manufacturer>A Wave Inc.</manufacturer>
 		<rom name="Astro Fang - Super Machine (Japan)(1990)(A Wave Inc.).nes" size="262160" crc="c3dae718"/>
@@ -1557,7 +1566,7 @@
 	</game>
 	<game name="attacanigak" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Attack Animal Gakuen (Hack, English)</description>
+		<description>Attack Animal Accademy (Hack, English)</description>
 		<year>2003</year>
 		<manufacturer>PentarouZero</manufacturer>
 		<rom name="Attack Animal Gakuen T-Eng (2003)(PentarouZero).nes" size="131088" crc="efbf63ee"/>
@@ -3321,7 +3330,7 @@
 		<description>Castlevania II: Simon's Quest (Hack, Portuguese)</description>
 		<year>2000</year>
 		<manufacturer>Jackal</manufacturer>
-		<rom name="Castlevania II - Simon's Quest PT-BR (2000)(Jackal).nes" size="262160" crc="2b3f7cd5"/>
+		<rom name="Castlevania II - Simon's Quest T-Por (2000)(Jackal).nes" size="262160" crc="2b3f7cd5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4823,6 +4832,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="darkwingducktp" cloneof="darkwingduck" romof="darkwingduck" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Darkwing Duck (Hack, Portuguese)</description>
+		<year>2000</year>
+		<manufacturer>Trans-Center Traducoes</manufacturer>
+		<rom name="Darkwing Duck T-Por (2000)(Trans-Center Traducoes).nes" size="262160" crc="2ecdf63d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="darkwingduck" sourcefile="nes/d_nes.cpp">
 		<description>Darkwing Duck (USA)</description>
 		<year>1992</year>
@@ -4865,7 +4883,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="davidcrasaboyandhis" sourcefile="nes/d_nes.cpp">
-		<description>David Crane's A Boy and His Blob - Trouble on Blobolonia (USA)</description>
+		<description>David Crane's A Boy and His Blob: Trouble on Blobolonia (USA)</description>
 		<year>1990</year>
 		<manufacturer>Absolute Entertainment</manufacturer>
 		<rom name="David Crane's A Boy and His Blob - Trouble on Blobolonia (USA)(1990)(Absolute).nes" size="262160" crc="20a9e4a2"/>
@@ -8119,7 +8137,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="fushiblobby" cloneof="davidcrasaboyandhis" romof="davidcrasaboyandhis" sourcefile="nes/d_nes.cpp">
-		<description>Fushigi na Blobby - Blobania no Kiki (Japan)</description>
+		<description>Fushigi na Blobby: Blobania no Kiki (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="Fushigi na Blobby - Blobania no Kiki (Japan)(1990)(Jaleco).nes" size="262160" crc="76c8f957"/>
@@ -9901,8 +9919,8 @@
 		<comment>Hack</comment>
 		<description>Hokuto no Ken 2: A lenda do salvador do fim do seculo (Hack, Portuguese)</description>
 		<year>2009</year>
-		<manufacturer>Trans-Center</manufacturer>
-		<rom name="Hokuto no Ken 2 PT-BR (2009)(Trans-Center).nes" size="131088" crc="aff39071"/>
+		<manufacturer>Trans-Center Traducoes</manufacturer>
+		<rom name="Hokuto no Ken 2 T-Por (2009)(Trans-Center Traducoes).nes" size="131088" crc="aff39071"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -9944,8 +9962,8 @@
 		<comment>Hack</comment>
 		<description>Hokuto no Ken: O punho da estrela do norte (Hack, Portuguese)</description>
 		<year>2009</year>
-		<manufacturer>Trans-Center</manufacturer>
-		<rom name="Hokuto no Ken PT-BR (2009)(Trans-Center).nes" size="65552" crc="8eef5d74"/>
+		<manufacturer>Trans-Center Traducoes</manufacturer>
+		<rom name="Hokuto no Ken T-Por (2009)(Trans-Center Traducoes).nes" size="65552" crc="8eef5d74"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10775,6 +10793,15 @@
 		<year>2015</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Jet-Paco (2015)(The Mojon Twins).nes" size="40976" crc="b5f18574"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="jetpac" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew, Porting of a classic ZX Spectrum game</comment>
+		<description>Jetpac (HB)</description>
+		<year>2026</year>
+		<manufacturer>mssola</manufacturer>
+		<rom name="Jetpac (2026)(mssola).nes" size="40976" crc="0a4936af"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13411,6 +13438,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="masterlight" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Master of Light (HB)</description>
+		<year>2026</year>
+		<manufacturer>Board-B</manufacturer>
+		<rom name="Master of Light (2026)(Board-B).nes" size="524304" crc="24ba68d2"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="mastershooter" sourcefile="nes/d_nes.cpp">
 		<description>Master Shooter (Unl)</description>
 		<year>1993</year>
@@ -13848,7 +13884,16 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="metroidc" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
+	<game name="metroidtp" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Metroid (Hack, Portuguese)</description>
+		<year>2010</year>
+		<manufacturer>JM-Trad</manufacturer>
+		<rom name="Metroid T-Por (2010)(JM-Trad).nes" size="131088" crc="a4ef3475"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="metroidts" cloneof="metroid" romof="metroid" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Metroid (Hack, Spanish v2.0)</description>
 		<year>2021</year>
@@ -15984,6 +16029,15 @@
 		<year>2015</year>
 		<manufacturer>MrRichard999</manufacturer>
 		<rom name="Pachinko Daisakusen T-Eng v0.97b (2015)(MrRichard999).nes" size="262160" crc="95708287"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pacifister" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Pacifister, The (HB)</description>
+		<year>2026</year>
+		<manufacturer>Musikai</manufacturer>
+		<rom name="Pacifister, The (2026)(Musikai).nes" size="524304" crc="c0763d59"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22065,7 +22119,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tinytooadv6c" cloneof="tinytooadv6" romof="tinytooadv6" sourcefile="nes/d_nes.cpp">
+	<game name="tinytooadv6ts" cloneof="tinytooadv6" romof="tinytooadv6" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Tiny Toon Adventures 6 (Hack, Spanish)</description>
 		<year>2018</year>
@@ -22175,9 +22229,9 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="tomjerultgamcatandmc" cloneof="tomjerultgamcatandm" romof="tomjerultgamcatandm" sourcefile="nes/d_nes.cpp">
+	<game name="tomjerultgamcatandmts" cloneof="tomjerultgamcatandm" romof="tomjerultgamcatandm" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! (Hack, Spanish)</description>
+		<description>Tom &amp; Jerry: The Ultimate Game of Cat and Mouse! (Hack, Spanish)</description>
 		<year>2018</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! T-Spa (2018)(Wave).nes" size="262160" crc="9c6a9bcc"/>
@@ -22185,7 +22239,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="tomjerultgamcatandm" sourcefile="nes/d_nes.cpp">
-		<description>Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! (USA)</description>
+		<description>Tom &amp; Jerry: The Ultimate Game of Cat and Mouse! (USA)</description>
 		<year>1991</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
 		<rom name="Tom &amp; Jerry - The Ultimate Game of Cat and Mouse! (USA)(1991)(Hi Tech).nes" size="262160" crc="fca83867"/>
