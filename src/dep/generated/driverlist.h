@@ -8720,7 +8720,7 @@ DRV		BurnDrvF1gpstar3;
 DRV		BurnDrvF1gpstar;
 DRV		BurnDrvGstrik2;
 #if defined FBNEO_DEBUG
-DRV		BurnDrvGstrik2j;		// ROZ layer broken
+DRV		BurnDrvGstrik2j;		// no comment
 #endif
 DRV		BurnDrvGrndtour;
 DRV		BurnDrvsnes_Mickeytokyotp;
@@ -22026,6 +22026,7 @@ DRV		BurnDrvKof96rp;
 DRV		BurnDrvKof96rss;
 DRV		BurnDrvKof96r;
 DRV		BurnDrvKof97cn;
+DRV		BurnDrvkof97ae230625;
 DRV		BurnDrvKof97ae;
 DRV		BurnDrvKof97bt;
 DRV		BurnDrvKof97ts;
@@ -24962,6 +24963,7 @@ DRV		BurnDrvMSX_zorricoit;
 DRV		BurnDrvMSX_zorricoes;
 DRV		BurnSpecZorro;
 DRV		BurnDrvmd_zouzou;
+DRV		BurnDrvmd_zpfde;
 DRV		BurnDrvmd_zpf;
 DRV		BurnSpecZub;
 DRV		BurnDrvnes_zunousengal;
@@ -33716,7 +33718,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvF1gpstar,			// Grand Prix Star (ver 4.0)
 	&BurnDrvGstrik2,			// Grand Striker 2 (Europe and Oceania)
 #if defined FBNEO_DEBUG
-	&BurnDrvGstrik2j,			// Grand Striker 2 (Japan) [ROZ layer broken]
+	&BurnDrvGstrik2j,			// Grand Striker 2 (Japan) [no comment]
 #endif
 	&BurnDrvGrndtour,			// Grand Tour (V100U)
 	&BurnDrvsnes_Mickeytokyotp,	// Grande Aventura de Mickey na Disneylandia de Toquio, A (Hack, Portuguese v1.4)
@@ -47022,6 +47024,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKof96rss,			// The King of Fighters '96 (Remix Spring Special, Version 1.5, Hack)
 	&BurnDrvKof96r,				// The King of Fighters '96 (Revised, Hack)
 	&BurnDrvKof97cn,			// The King of Fighters '97 (10th Anniversary Chinese Edition, Hack)
+	&BurnDrvkof97ae230625,		// The King of Fighters '97 (Anniversary 2.3.0625, Hack)
 	&BurnDrvKof97ae,			// The King of Fighters '97 (Anniversary, Hack)
 	&BurnDrvKof97bt,			// The King of Fighters '97 (Balanced & Optimized, Hack)
 	&BurnDrvKof97ts,			// The King of Fighters '97 (Battle with Orochi, v1.2, Hack)
@@ -49958,6 +49961,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_zorricoes,		// Zorrico (Spanish) (HB)
 	&BurnSpecZorro,				// Zorro (48K)
 	&BurnDrvmd_zouzou,			// Zou! Zou! Zou! Rescue Daisakusen (Japan)
+	&BurnDrvmd_zpfde,			// ZPF (Digital Edition) (HB)
 	&BurnDrvmd_zpf,				// ZPF (HB)
 	&BurnSpecZub,				// Zub (48K-128K)
 	&BurnDrvnes_zunousengal,	// Zunou Senkan Galg (Japan)
@@ -71848,6 +71852,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kof96rss", "neogeo/d_neogeo.cpp"},
 	{ "kof96r", "neogeo/d_neogeo.cpp"},
 	{ "kof97cn", "neogeo/d_neogeo.cpp"},
+	{ "kof97ae230625", "neogeo/d_neogeo.cpp"},
 	{ "kof97ae", "neogeo/d_neogeo.cpp"},
 	{ "kof97bt", "neogeo/d_neogeo.cpp"},
 	{ "kof97ts", "neogeo/d_neogeo.cpp"},
@@ -74742,6 +74747,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_zorricoes", "msx/d_msx.cpp"},
 	{ "spec_zorro", "spectrum/d_spectrum.cpp"},
 	{ "md_zouzou", "megadrive/d_megadrive.cpp"},
+	{ "md_zpfde", "megadrive/d_megadrive.cpp"},
 	{ "md_zpf", "megadrive/d_megadrive.cpp"},
 	{ "spec_zub", "spectrum/d_spectrum.cpp"},
 	{ "nes_zunousengal", "nes/d_nes.cpp"},
