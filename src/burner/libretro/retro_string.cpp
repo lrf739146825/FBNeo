@@ -164,7 +164,8 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"Input Settings",
 		"Configure Input Settings",
 		"Advanced Settings",
-		"Configure Advanced Settings"
+		"Configure Advanced Settings",
+		"%s\nAnd %d more..."
 	},
 	{	// Simplified Chinese
 		"\u5c3d\u53ef\u80fd\u4f7f\u7528 32 \u4f4d\u8272\u6df1",
@@ -325,7 +326,8 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"\u8f93\u5165\u8bbe\u7f6e",
 		"\u914d\u7f6e\u8f93\u5165\u8bbe\u7f6e",
 		"\u9ad8\u7ea7\u8bbe\u7f6e",
-		"\u914d\u7f6e\u9ad8\u7ea7\u8bbe\u7f6e"
+		"\u914d\u7f6e\u9ad8\u7ea7\u8bbe\u7f6e",
+		"%s\n\u8fd8\u6709\u53e6\u5916 %d \u4e2a..."
 	},
 	{	// Traditional Chinese
 		"\u76e1\u53ef\u80fd\u4f7f\u7528 32 \u4f4d\u8272\u6df1",
@@ -486,7 +488,8 @@ static const char* multi_language_strings[MAX_LANGUAGES][NUM_STRING] = {
 		"\u8f38\u5165\u8a2d\u5b9a",
 		"\u914d\u7f6e\u8f38\u5165\u8a2d\u5b9a",
 		"\u9032\u968e\u8a2d\u5b9a",
-		"\u914d\u7f6e\u9032\u968e\u8a2d\u5b9a"
+		"\u914d\u7f6e\u9032\u968e\u8a2d\u5b9a",
+		"%s\n\u9084\u6709\u53e6\u5916 %d \u500b..."
 	}
 };
 

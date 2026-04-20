@@ -1,7 +1,7 @@
 #ifndef __RETRO_STRING__
 #define __RETRO_STRING__
 
-#define NUM_STRING	159
+#define NUM_STRING	160
 
 extern const char* pSelLangStr[NUM_STRING];
 
@@ -169,6 +169,7 @@ void set_multi_language_strings();
 #define RETRO_ERROR_MESSAGES_09				pSelLangStr[138]
 #define RETRO_ERROR_MESSAGES_10				pSelLangStr[139]
 #define RETRO_ERROR_MESSAGES_11				pSelLangStr[140]
+#define RETRO_ERROR_MESSAGES_12				pSelLangStr[141]
 
 
 #endif
