@@ -4328,7 +4328,7 @@
 		<year>2025</year>
 		<manufacturer>GGS Studio, Broke Studio</manufacturer>
 		<rom name="Cursed Legacy, The (2025)(GGS Studio, Broke Studio).bin" size="4194304" crc="43867c88"/>
-		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="custodian" sourcefile="megadrive/d_megadrive.cpp">
@@ -13940,7 +13940,7 @@
 		<year>2025</year>
 		<manufacturer>Jaleco - City Connection</manufacturer>
 		<rom name="P-47 II MD - The Freedom Star (2025)(City Connection).bin" size="1048576" crc="fe9b4c7f"/>
-		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="pod" sourcefile="megadrive/d_megadrive.cpp">
