@@ -556,7 +556,7 @@
 		<year>1989</year>
 		<manufacturer>Radiance Software</manufacturer>
 		<rom name="Side Arms - Hyper Dyne (USA)(1989)(Radiance Software).pce" size="262144" crc="d1993c9f"/>
-		<video type="raster" orientation="horizontal" width="352" height="242" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="352" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="silentd" sourcefile="pce/d_pce.cpp">
