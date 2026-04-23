@@ -17165,6 +17165,7 @@ DRV		BurnDrvgg_riddick;
 DRV		BurnDrvsnes_Riddickbb;
 DRV		BurnDrvRidleOfp;
 DRV		BurnDrvmd_riddle;
+DRV		BurnDrvsnes_Riderspirits;
 DRV		BurnDrvRidingfu;
 DRV		BurnDrvRidingfj;
 DRV		BurnDrvRidingf;
@@ -42174,6 +42175,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Riddickbb,		// Riddick Bowe Boxing (USA)
 	&BurnDrvRidleOfp,			// Riddle of Pythagoras (Japan)
 	&BurnDrvmd_riddle,			// Riddle Wired (Japan, SegaNet)
+	&BurnDrvsnes_Riderspirits,	// Rider's Spirits (World)
 	&BurnDrvRidingfu,			// Riding Fight (Ver 1.0A)
 	&BurnDrvRidingfj,			// Riding Fight (Ver 1.0J)
 	&BurnDrvRidingf,			// Riding Fight (Ver 1.0O)
@@ -67063,6 +67065,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_riddickbb", "snes/d_snes.cpp"},
 	{ "ridleofp", "sega/d_segae.cpp"},
 	{ "md_riddle", "megadrive/d_megadrive.cpp"},
+	{ "snes_riderspirits", "snes/d_snes.cpp"},
 	{ "ridingfu", "taito/d_taitof3.cpp"},
 	{ "ridingfj", "taito/d_taitof3.cpp"},
 	{ "ridingf", "taito/d_taitof3.cpp"},
