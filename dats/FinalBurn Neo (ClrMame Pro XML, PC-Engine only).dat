@@ -460,6 +460,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ccshockman" sourcefile="pce/d_pce.cpp">
+		<comment>Official English Translation</comment>
+		<description>Cyber Citizen Shockman (World)</description>
+		<year>1989-2024</year>
+		<manufacturer>Extreme - Ratalaika Games</manufacturer>
+		<rom name="Cyber Citizen Shockman (World)(1989-2024)(Extreme - Ratalaika).pce" size="524288" crc="5842f0ca"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cybrcore" sourcefile="pce/d_pce.cpp">
 		<description>Cyber Core (Japan)</description>
 		<year>1990</year>
@@ -1198,19 +1207,11 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shubibi" sourcefile="pce/d_pce.cpp">
+	<game name="shubibi" cloneof="ccshockman" romof="ccshockman" sourcefile="pce/d_pce.cpp">
 		<description>Kaizou Choujin Shubibinman (Japan)</description>
 		<year>1989</year>
-		<manufacturer>NCS - Masaya</manufacturer>
+		<manufacturer>NCS - Masaya Games</manufacturer>
 		<rom name="Kaizou Choujin Shubibinman (Japan)(1989)(NCS - Masaya).pce" size="262144" crc="a9084d6e"/>
-		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="shubibi2" sourcefile="pce/d_pce.cpp">
-		<description>Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)</description>
-		<year>1991</year>
-		<manufacturer>Masaya</manufacturer>
-		<rom name="Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)(1991)(Masaya).pce" size="524288" crc="109ba474"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
