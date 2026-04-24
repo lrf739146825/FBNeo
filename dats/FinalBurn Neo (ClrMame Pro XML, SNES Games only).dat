@@ -3631,6 +3631,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ccshockman0" cloneof="shockman0" romof="shockman0" sourcefile="snes/d_snes.cpp">
+		<comment>Official English Translation</comment>
+		<description>Cyber Citizen Shockman Zero (World)</description>
+		<year>1997-2024</year>
+		<manufacturer>Extreme - Ratalaika Games</manufacturer>
+		<rom name="Cyber Citizen Shockman Zero (W) (1997-2024)(Extreme - Ratalaika).sfc" size="1048576" crc="2b74f389"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cyberknightte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Cyber Knight (Hack, English v1.01)</description>
@@ -8772,11 +8781,11 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shubibinman" cloneof="shockman0te" romof="shockman0te" sourcefile="snes/d_snes.cpp">
+	<game name="shubibinman" cloneof="shockman0" romof="shockman0" sourcefile="snes/d_snes.cpp">
 		<description>Kaizou Choujin Shubibinman Zero (Japan)</description>
 		<year>1997-2017</year>
 		<manufacturer>Masaya Games - Columbus Circle</manufacturer>
-		<rom name="Kaizou Choujin Shubibinman Zero (J)(1997-2017)(Masaya - Columbus Circle).sfc" size="1048576" crc="e59e1096"/>
+		<rom name="Kaizou Choujin Shubibinman Zero (J)(1997-2017)(Masaya - Columbus Circle).sfc" size="1048576" crc="26509904"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14676,12 +14685,21 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="shockman0te" sourcefile="snes/d_snes.cpp">
+	<game name="shockman0te" cloneof="shockman0" romof="shockman0" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Shockman Zero (Hack, English)</description>
 		<year>2023</year>
 		<manufacturer>Svambo</manufacturer>
 		<rom name="Shockman Zero T-Eng (2023)(Svambo).sfc" size="1572864" crc="75d84c0f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shockman0" sourcefile="snes/d_snes.cpp">
+		<comment>Official English Translation</comment>
+		<description>Shockman Zero (World)</description>
+		<year>1997-2024</year>
+		<manufacturer>Extreme - Retro-bit</manufacturer>
+		<rom name="Shockman Zero (W) (1997-2024)(Extreme - Retro-bit).sfc" size="2097152" crc="fcb661e6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
