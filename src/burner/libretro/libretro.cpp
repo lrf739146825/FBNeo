@@ -2528,9 +2528,9 @@ bool retro_load_game_special(unsigned game_type, const struct retro_game_info *i
 
 void retro_unload_game(void)
 {
-	retro_pgm2_cards_reset();
 	if (nBurnDrvActive != ~0U)
 	{
+		retro_pgm2_cards_save_files();
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {
 			// Force newer format if the file doesn't exist yet
 			if(!filestream_exists(szMemoryCardFile))
@@ -2545,6 +2545,7 @@ void retro_unload_game(void)
 			CDEmuExit();
 		nBurnDrvActive = ~0U;
 	}
+	retro_pgm2_cards_reset();
 	if (pVidImage) {
 		free(pVidImage);
 		pVidImage = NULL;
@@ -2565,9 +2566,9 @@ void retro_unload_game(void)
 
 static void retro_incomplete_exit()
 {
-	retro_pgm2_cards_reset();
 	if (nBurnDrvActive != ~0U)
 	{
+		retro_pgm2_cards_save_files();
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {
 			// Force newer format if the file doesn't exist yet
 			if (!filestream_exists(szMemoryCardFile))
@@ -2582,6 +2583,7 @@ static void retro_incomplete_exit()
 			CDEmuExit();
 		nBurnDrvActive = ~0U;
 	}
+	retro_pgm2_cards_reset();
 	if (pVidImage) {
 		free(pVidImage);
 		pVidImage = NULL;
