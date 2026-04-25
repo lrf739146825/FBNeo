@@ -103,6 +103,7 @@ void pgm2SetRefreshRate(double hz);
 extern INT32  Pgm2MaxCardSlots;
 extern INT32  Pgm2ActiveCardSlot;
 extern bool   Pgm2CardInserted[4];
+extern bool   Pgm2CardAuthenticated[4];
 
 extern UINT8  CardlessHack;
 
