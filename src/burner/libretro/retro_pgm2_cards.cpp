@@ -32,6 +32,7 @@ static std::vector<std::string> s_opt_label_storage[4]; // paired: value, label,
 static retro_core_option_v2_definition s_opt_def[4];
 static char s_last_applied[4][16];
 static UINT8 s_pending_card_image[0x108];
+static std::string s_active_file_path[4];
 
 static int iequals_suffix(const char* name, const char* suf)
 {
@@ -110,6 +111,33 @@ static bool read_raw_card_file(const char* path, UINT8* dest, size_t dest_len)
 	return true;
 }
 
+static bool write_raw_card_file(const char* path, const UINT8* src, size_t src_len)
+{
+	if (!path || !path[0] || !src || src_len < 0x108)
+		return false;
+
+	size_t out_len = 0x108;
+	RFILE* rf = filestream_open(path, RETRO_VFS_FILE_ACCESS_READ, 0);
+	if (rf) {
+		int64_t sz = filestream_get_size(rf);
+		if (sz == 0x100)
+			out_len = 0x100;
+		else if (sz == 0x108)
+			out_len = 0x108;
+		filestream_close(rf);
+	} else if (iequals_suffix(path, ".bin")) {
+		out_len = 0x100;
+	}
+
+	RFILE* fp = filestream_open(path, RETRO_VFS_FILE_ACCESS_WRITE, 0);
+	if (!fp)
+		return false;
+
+	bool ok = (filestream_write(fp, src, (int64_t)out_len) == (int64_t)out_len);
+	filestream_close(fp);
+	return ok;
+}
+
 static bool build_builtin_card_image(UINT8* dest, size_t dest_len)
 {
 	if (!dest || dest_len < 0x108)
@@ -150,6 +178,22 @@ static void reinsert_slot_with_pending_image(int slot)
 	BurnAreaScan(ACB_WRITE | ACB_MEMCARD | ACB_MEMCARD_ACTION, &nMinVersion);
 
 	BurnAcb = prev_burn_acb;
+}
+
+static void save_active_slot_file(int slot)
+{
+	if (slot < 0 || slot >= 4)
+		return;
+	if (s_active_file_path[slot].empty() || !Pgm2Cards[slot])
+		return;
+
+	if (write_raw_card_file(s_active_file_path[slot].c_str(), Pgm2Cards[slot], 0x108)) {
+		log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: saved card file \"%s\"\n",
+			slot + 1, s_active_file_path[slot].c_str());
+	} else {
+		log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to save card file \"%s\"\n",
+			slot + 1, s_active_file_path[slot].c_str());
+	}
 }
 
 static void scan_slot_files(int slot, const char* drvname, char dir[MAX_PATH])
@@ -265,6 +309,7 @@ void retro_pgm2_cards_reset()
 		s_opt_key_str[i].clear();
 		s_opt_desc_str[i].clear();
 		s_opt_info_str[i].clear();
+		s_active_file_path[i].clear();
 		memset(s_last_applied[i], 0, sizeof(s_last_applied[i]));
 	}
 }
@@ -365,6 +410,8 @@ static void apply_one_slot(int slot)
 
 	int choice = atoi(var.value);
 
+	save_active_slot_file(slot);
+
 	if (choice == 0) {
 		if (!build_builtin_card_image(s_pending_card_image, sizeof(s_pending_card_image))) {
 			log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to build built-in ROM card template\n", slot + 1);
@@ -373,6 +420,7 @@ static void apply_one_slot(int slot)
 		}
 
 		reinsert_slot_with_pending_image(slot);
+		s_active_file_path[slot].clear();
 		log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using built-in ROM template (option value \"%s\")\n",
 			slot + 1, var.value);
 		return;
@@ -389,6 +437,7 @@ static void apply_one_slot(int slot)
 
 	if (read_raw_card_file(s_file_paths[slot][fi].c_str(), s_pending_card_image, sizeof(s_pending_card_image))) {
 		reinsert_slot_with_pending_image(slot);
+		s_active_file_path[slot] = s_file_paths[slot][fi];
 		log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: loaded card file \"%s\"\n",
 			slot + 1, s_file_paths[slot][fi].c_str());
 	} else {
@@ -396,6 +445,15 @@ static void apply_one_slot(int slot)
 			slot + 1, s_file_paths[slot][fi].c_str());
 		memset(s_last_applied[slot], 0, sizeof(s_last_applied[slot]));
 	}
+}
+
+void retro_pgm2_cards_save_files()
+{
+	if ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) != HARDWARE_IGS_PGM2)
+		return;
+
+	for (int s = 0; s < 4; s++)
+		save_active_slot_file(s);
 }
 
 void retro_pgm2_cards_apply_variables()
