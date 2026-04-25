@@ -6136,6 +6136,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="swordwork" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Sword Work (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Sword Work (2026)(Inufuto).sms" size="16384" crc="3936e21c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sydhunt" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Sydney Hunter and the Sacred Tribe (HB)</description>
