@@ -40002,7 +40002,7 @@ struct BurnDriver BurnDrvmd_genmtetris = {
 // Ghost Baseball (HB)
 // https://infinitestategames.itch.io/ghost-baseball
 static struct BurnRomInfo md_ghbaseballRomDesc[] = {
-	{ "Ghost Baseball (2026)(Infinite State Games).bin", 262144, 0xddf2fc4a, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+	{ "Ghost Baseball (2026)(Infinite State Games).bin", 262144, 0x8171276a, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
 };
 
 STD_ROM_PICK(md_ghbaseball)
@@ -41786,6 +41786,42 @@ struct BurnDriver BurnDrvmd_runes = {
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
 
+// Sacred Line: Genesis (HB, v1.1.9 Digital)
+static struct BurnRomInfo md_sacredlinegRomDesc[] = {
+	{ "Sacred Line - Genesis v1.1.9 Digital (2015)(Sasha Darko).bin", 3534836, 0x2e029ab4, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sacredlineg)
+STD_ROM_FN(md_sacredlineg)
+
+struct BurnDriver BurnDrvmd_sacredlineg = {
+	"md_sacredlineg", NULL, NULL, NULL, "2015",
+	"Sacred Line: Genesis (HB, v1.1.9 Digital)\0", NULL, "Sasha Darko", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
+	MegadriveGetZipName, md_sacredlinegRomInfo, md_sacredlinegRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// Sacred Line: Genesis (WaterMelon) (HB)
+static struct BurnRomInfo md_sacredlinegwmRomDesc[] = {
+	{ "Sacred Line - Genesis (Watermelon) (2014)(Sasha Darko).bin", 4194304, 0x06b219c0, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sacredlinegwm)
+STD_ROM_FN(md_sacredlinegwm)
+
+struct BurnDriver BurnDrvmd_sacredlinegwm = {
+	"md_sacredlinegwm", "md_sacredlineg", NULL, NULL, "2014",
+	"Sacred Line: Genesis (WaterMelon) (HB)\0", "Published by WaterMelon", "Sasha Darko", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
+	MegadriveGetZipName, md_sacredlinegwmRomInfo, md_sacredlinegwmRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
 // Sacred Line II (HB, v1.02)
 static struct BurnRomInfo md_sacredline2RomDesc[] = {
 	{ "Sacred Line II v1.02 (2024)(Mega Cat Studios).bin", 3979616, 0x2121d724, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
@@ -41800,6 +41836,60 @@ struct BurnDriver BurnDrvmd_sacredline2 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
 	MegadriveGetZipName, md_sacredline2RomInfo, md_sacredline2RomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// Sacred Line II: A Distant Light (HB)
+static struct BurnRomInfo md_sacredline2adlRomDesc[] = {
+	{ "Sacred Line II - A Distant Light (2024)(Sasha Darko).bin", 1147448, 0x8e84c7bd, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sacredline2adl)
+STD_ROM_FN(md_sacredline2adl)
+
+struct BurnDriver BurnDrvmd_sacredline2adl = {
+	"md_sacredline2adl", NULL, NULL, NULL, "2024",
+	"Sacred Line II: A Distant Light (HB)\0", "Addendum to Sacred Line II", "Sasha Darko", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
+	MegadriveGetZipName, md_sacredline2adlRomInfo, md_sacredline2adlRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// Sacred Line III (HB, v1.04)
+static struct BurnRomInfo md_sacredline3RomDesc[] = {
+	{ "Sacred Line III v1.04 (2025)(Sasha Darko).bin", 2897824, 0xbd4e551e, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sacredline3)
+STD_ROM_FN(md_sacredline3)
+
+struct BurnDriver BurnDrvmd_sacredline3 = {
+	"md_sacredline3", NULL, NULL, NULL, "2025",
+	"Sacred Line III (HB, v1.04)\0", NULL, "Sasha Darko", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
+	MegadriveGetZipName, md_sacredline3RomInfo, md_sacredline3RomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
+// Sacred Line Zero (HB, v2, Prototype)
+static struct BurnRomInfo md_sacredline0RomDesc[] = {
+	{ "Sacred Line Zero v2 (Proto)(2015-18)(Sasha Darko).bin", 2171696, 0xd8a662af, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_sacredline0)
+STD_ROM_FN(md_sacredline0)
+
+struct BurnDriver BurnDrvmd_sacredline0 = {
+	"md_sacredline0", NULL, NULL, NULL, "2015-18",
+	"Sacred Line Zero (HB, v2, Prototype)\0", NULL, "Sasha Darko", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW | BDF_PROTOTYPE, 1, HARDWARE_SEGA_MEGADRIVE, GBF_ADV, 0,
+	MegadriveGetZipName, md_sacredline0RomInfo, md_sacredline0RomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
 	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
@@ -43986,10 +44076,10 @@ struct BurnDriver BurnDrvmd_ghostbstse = {
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
 
-// Golden Axe - Arcade Colors (Hack, v1.2)
+// Golden Axe - Arcade Colors (Hack, v1.3)
 // https://www.romhacking.net/hacks/7004/
 static struct BurnRomInfo md_goldnaxeacRomDesc[] = {
-	{ "Golden Axe - Arcade Colors v1.2 (2026)(SCD).bin", 590842, 0xa14e80f7, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+	{ "Golden Axe - Arcade Colors v1.3 (2026)(SCD).bin", 590842, 0x0f0f9154, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
 };
 
 STD_ROM_PICK(md_goldnaxeac)
@@ -43997,7 +44087,7 @@ STD_ROM_FN(md_goldnaxeac)
 
 struct BurnDriver BurnDrvmd_goldnaxeac = {
 	"md_goldnaxeac", "md_goldnaxe", NULL, NULL, "2026",
-	"Golden Axe - Arcade Colors (Hack, v1.2)\0", NULL, "SCD", "Genesis / Mega Drive",
+	"Golden Axe - Arcade Colors (Hack, v1.3)\0", NULL, "SCD", "Genesis / Mega Drive",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_CLONE | BDF_HACK, 2, HARDWARE_SEGA_MEGADRIVE, GBF_SCRFIGHT, 0,
 	MegadriveGetZipName, md_goldnaxeacRomInfo, md_goldnaxeacRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
