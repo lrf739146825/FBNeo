@@ -1,0 +1,30 @@
+# Minimal Libretro subset: IGS PGM2 (IGS036 / ARM946 + IGS037 + YMZ774) only.
+#
+# Native: make SUBSET=pgm2 platform=unix REGEN_HEADERS=1 clean all -j$(nproc) -C src/burner/libretro
+#
+# REGEN_HEADERS=1 is required on first build (and after changing this file) so driverlist.h matches linked drivers.
+
+SOURCES_CXX += $(FBNEO_BURN_DIR)/burn_bitmap.cpp \
+	$(FBNEO_BURN_DIR)/burn_led.cpp \
+	$(FBNEO_BURN_DIR)/burn_pal.cpp \
+	$(FBNEO_BURN_DIR)/burn_sha1.cpp \
+	$(FBNEO_BURN_DIR)/burn_shift.cpp \
+	$(FBNEO_BURN_DIR)/tilemap_generic.cpp \
+	$(FBNEO_BURN_DIR)/tiles_generic.cpp \
+	$(FBNEO_BURN_DIR)/vector.cpp \
+	\
+	$(FBNEO_CPU_DIR)/arm9/arm9.cpp \
+	$(FBNEO_CPU_DIR)/arm9_intf.cpp \
+	\
+	$(FBNEO_BURN_SND_DIR)/ymz770.cpp \
+	$(FBNEO_BURN_SND_DIR)/mpeg_audio.cpp \
+	\
+	$(FBNEO_BURN_DEVICES_DIR)/joyprocess.cpp \
+	\
+	$(PGM2_DIR)/d_pgm2.cpp \
+	$(PGM2_DIR)/pgm2_run.cpp \
+	$(PGM2_DIR)/pgm2_draw.cpp \
+	$(PGM2_DIR)/pgm2_crypt.cpp
+
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO -DNO_CONSOLES_COMPUTERS
+CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO -DNO_CONSOLES_COMPUTERS
