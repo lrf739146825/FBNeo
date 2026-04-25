@@ -56,6 +56,7 @@ Note : Here is a non-exhaustive list of additional parameters you might want to 
 * **SUBSET=all** : Build a core that supports everything. This is the default SUBSET so you don't need to append it.
 * **SUBSET=neogeo** : Build a core that only supports neogeo games.
 * **SUBSET=cps12** : Build a core that only supports CPS-1 & CPS-2 games.
+* **SUBSET=pgm2** : Build a core that only supports IGS PGM2 games (orleg2, kov2nl, kov3, ddpdojt, kof98umh, …). Use **REGEN_HEADERS=1** on the first build and whenever you switch to or from this subset.
 * **generate-files** : Generate header/gamelist files and stop there.
 * **clean** : Remove any previously built object.
 * **REGEN_HEADERS=1** : This will run **generate-files** and **clean** consecutively before building the core, which is usually required when you made a change to the list of drivers you want to build, either from modifying the project's code or switching between SUBSETs. Note that make version 4.4 may be required for this to behave properly.
