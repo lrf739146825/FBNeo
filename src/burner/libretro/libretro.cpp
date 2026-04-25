@@ -9,6 +9,7 @@
 #include "aud_dsp.h"
 
 #include "retro_common.h"
+#include "retro_pgm2_cards.h"
 #include "retro_cdemu.h"
 #include "retro_input.h"
 #include "retro_memory.h"
@@ -2221,6 +2222,8 @@ static bool retro_load_game_common()
 			}
 		}
 
+		retro_pgm2_cards_refresh_environment();
+
 		if (BurnDrvGetTextA(DRV_COMMENT) && strlen(BurnDrvGetTextA(DRV_COMMENT)) > 0) {
 			HandleMessage(RETRO_LOG_WARN, "[FBNeo] %s\n", BurnDrvGetTextA(DRV_COMMENT));
 		}
@@ -2525,6 +2528,7 @@ bool retro_load_game_special(unsigned game_type, const struct retro_game_info *i
 
 void retro_unload_game(void)
 {
+	retro_pgm2_cards_reset();
 	if (nBurnDrvActive != ~0U)
 	{
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {
@@ -2561,6 +2565,7 @@ void retro_unload_game(void)
 
 static void retro_incomplete_exit()
 {
+	retro_pgm2_cards_reset();
 	if (nBurnDrvActive != ~0U)
 	{
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {

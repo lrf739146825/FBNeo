@@ -1,4 +1,5 @@
 #include "retro_common.h"
+#include "retro_pgm2_cards.h"
 #include "retro_input.h"
 
 #include <file/file_path.h>
@@ -1147,6 +1148,8 @@ void set_environment()
 		}
 	}
 
+	retro_pgm2_cards_push_options(vars_systems);
+
 #ifdef FBNEO_DEBUG
 	// Debug settings
 	var_fbneo_debug_layer_1.desc  = RETRO_DEBUG_LAYER_1_DEF_DESC;
@@ -1333,6 +1336,11 @@ void set_environment()
 			"romdata",
 			"RomData",
 			RETRO_ROMDATA_CAT_INFO
+		},
+		{
+			"pgm2",
+			"PGM2",
+			"IC card images in System/BIOS/fbneo/pgm2/"
 		},
 #ifdef FBNEO_DEBUG
 		{
@@ -1522,6 +1530,8 @@ error:
 			variables = NULL;
 		}
 	}
+
+	retro_pgm2_cards_after_set_environment();
 
 	vfs_iface_info.required_interface_version = FILESTREAM_REQUIRED_VFS_VERSION;
 	vfs_iface_info.iface                      = NULL;
@@ -2100,6 +2110,8 @@ void check_variables(void)
 			nSpriteEnable &= ~0x80;
 	}
 #endif
+
+	retro_pgm2_cards_apply_variables();
 }
 
 #ifdef USE_CYCLONE
