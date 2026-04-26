@@ -1366,6 +1366,7 @@ DRV		BurnDrvAsurabus;
 DRV		BurnSpecAsymmetry;
 DRV		BurnDrvAtaqandr;
 DRV		BurnDrvAsideral;
+DRV		BurnDrvAtarisy1;
 DRV		BurnSpecAtf128k;
 DRV		BurnSpecathena;
 DRV		BurnDrvAthenab;
@@ -9947,7 +9948,13 @@ DRV		BurnDrvnes_indiajonandlascrt;
 DRV		BurnDrvnes_indiajonandlascr;
 DRV		BurnDrvmd_indycrusu;
 DRV		BurnSpecindytempledoom;
+DRV		BurnDrvIndytempc;
 DRV		BurnDrvMSX_indy;
+DRV		BurnDrvIndytempd;
+DRV		BurnDrvIndytemp;
+DRV		BurnDrvIndytemp2;
+DRV		BurnDrvIndytemp3;
+DRV		BurnDrvIndytemp4;
 DRV		BurnDrvnes_indiajonandtemdo;
 DRV		BurnDrvsnes_Indianajonese;
 DRV		BurnDrvsnes_Indianajonesj;
@@ -12358,6 +12365,11 @@ DRV		BurnSpecmarauder;
 DRV		BurnDrvsms_marble;
 DRV		BurnDrvgg_marble;
 DRV		BurnDrvmd_marble;
+DRV		BurnDrvMarble;
+DRV		BurnDrvMarble2;
+DRV		BurnDrvMarble3;
+DRV		BurnDrvMarble4;
+DRV		BurnDrvMarble5;
 DRV		BurnDrvnes_marblemadness;
 DRV		BurnSpecmarblem;
 DRV		BurnDrvMarblmd2;
@@ -15497,6 +15509,7 @@ DRV		BurnDrvmd_sampras;
 DRV		BurnDrvmd_sampras2;
 DRV		BurnDrvmd_sampras1;
 DRV		BurnSpecPprat;
+DRV		BurnDrvPeterpak;
 DRV		BurnDrvnes_peterpanpir;
 DRV		BurnDrvPpan;
 DRV		BurnDrvCppicf;
@@ -17070,6 +17083,7 @@ DRV		BurnDrvfds_relicsen;
 DRV		BurnDrvRelief3;
 DRV		BurnDrvRelief2;
 DRV		BurnDrvRelief;
+DRV		BurnDrvReliefs1;
 DRV		BurnDrvsnes_Reliefpitcher;
 DRV		BurnSpecrelic;
 DRV		BurnSpecLareliquia;
@@ -17266,6 +17280,17 @@ DRV		BurnDrvmd_rrash3imp;
 DRV		BurnDrvmd_rrash3;
 DRV		BurnDrvmd_rrash3p;
 DRV		BurnSpecRblaster;
+DRV		BurnDrvRoadblstcg;
+DRV		BurnDrvRoadblstc1;
+DRV		BurnDrvRoadblstc;
+DRV		BurnDrvRoadblstg1;
+DRV		BurnDrvRoadblstg2;
+DRV		BurnDrvRoadblstg;
+DRV		BurnDrvRoadblstgu;
+DRV		BurnDrvRoadblst1;
+DRV		BurnDrvRoadblst2;
+DRV		BurnDrvRoadblst3;
+DRV		BurnDrvRoadblst;
 DRV		BurnDrvnes_roadfighterc;
 DRV		BurnDrvcv_roadfght;
 DRV		BurnDrvsms_roadfight;
@@ -17292,6 +17317,9 @@ DRV		BurnDrvmd_roadrashimp;
 DRV		BurnDrvsnes_Rr4wd;
 DRV		BurnSpecRoadrunner;
 DRV		BurnDrvsnes_Roadrunnere;
+DRV		BurnDrvRoadrunn1;
+DRV		BurnDrvRoadrunn2;
+DRV		BurnDrvRoadrunn;
 DRV		BurnDrvnes_roadrunner;
 DRV		BurnSpecRoadwile128;
 DRV		BurnSpecRoadwile;
@@ -26416,6 +26444,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecAsymmetry,			// Asymmetry (48K-128K) (HB, v1.1)
 	&BurnDrvAtaqandr,			// Ataque Androide - Moon Cresta (FAR S.A. Spanish bootleg)
 	&BurnDrvAsideral,			// Ataque Sideral (Spanish bootleg of UniWar S)
+	&BurnDrvAtarisy1,			// Atari System 1 BIOS [BIOS only, NOT WORKING]
 	&BurnSpecAtf128k,			// ATF - Advanced Tactical Fighter (128K)
 	&BurnSpecathena,			// Athena (48K-128K)
 	&BurnDrvAthenab,			// Athena (bootleg)
@@ -34997,7 +35026,13 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_indiajonandlascr,// Indiana Jones and the Last Crusade (USA) (UBI Soft)
 	&BurnDrvmd_indycrusu,		// Indiana Jones and the Last Crusade (USA)
 	&BurnSpecindytempledoom,	// Indiana Jones and the Temple of Doom (48K)
+	&BurnDrvIndytempc,			// Indiana Jones and the Temple of Doom (cocktail)
 	&BurnDrvMSX_indy,			// Indiana Jones and the Temple of Doom (Euro)
+	&BurnDrvIndytempd,			// Indiana Jones and the Temple of Doom (German)
+	&BurnDrvIndytemp,			// Indiana Jones and the Temple of Doom (set 1)
+	&BurnDrvIndytemp2,			// Indiana Jones and the Temple of Doom (set 2)
+	&BurnDrvIndytemp3,			// Indiana Jones and the Temple of Doom (set 3)
+	&BurnDrvIndytemp4,			// Indiana Jones and the Temple of Doom (set 4)
 	&BurnDrvnes_indiajonandtemdo,// Indiana Jones and the Temple of Doom (USA, Rev. A)
 	&BurnDrvsnes_Indianajonese,	// Indiana Jones' Greatest Adventures (Euro)
 	&BurnDrvsnes_Indianajonesj,	// Indiana Jones' Greatest Adventures (Japan)
@@ -37408,6 +37443,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_marble,			// Marble Madness (Euro)
 	&BurnDrvgg_marble,			// Marble Madness (Euro, USA)
 	&BurnDrvmd_marble,			// Marble Madness (Euro, USA)
+	&BurnDrvMarble,				// Marble Madness (set 1)
+	&BurnDrvMarble2,			// Marble Madness (set 2)
+	&BurnDrvMarble3,			// Marble Madness (set 3)
+	&BurnDrvMarble4,			// Marble Madness (set 4)
+	&BurnDrvMarble5,			// Marble Madness (set 5 - LSI Cartridge)
 	&BurnDrvnes_marblemadness,	// Marble Madness (USA)
 	&BurnSpecmarblem,			// Marble Madness - Deluxe Edition (48K)
 	&BurnDrvMarblmd2,			// Marble Madness II (prototype)
@@ -40547,6 +40587,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_sampras2,		// Pete Sampras Tennis (Euro, USA, J-Cart, Alt 2)
 	&BurnDrvmd_sampras1,		// Pete Sampras Tennis (Euro, USA, J-Cart, Alt)
 	&BurnSpecPprat,				// Peter Pack Rat (48K-128K)
+	&BurnDrvPeterpak,			// Peter Pack Rat
 	&BurnDrvnes_peterpanpir,	// Peter Pan & The Pirates (USA)
 	&BurnDrvPpan,				// Peter Pan (bootleg of Hook)
 	&BurnDrvCppicf,				// Peter Pepper's Ice Cream Factory (DECO Cassette) (US) (set 1)
@@ -42120,6 +42161,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvRelief3,			// Relief Pitcher (Rev B, 10 Apr 1992 / 08 Apr 1992)
 	&BurnDrvRelief2,			// Relief Pitcher (Rev C, 26 Apr 1992 / 08 Apr 1992)
 	&BurnDrvRelief,				// Relief Pitcher (Rev D, 07 Jun 1992 / 28 May 1992)
+	&BurnDrvReliefs1,			// Relief Pitcher (System 1, prototype)
 	&BurnDrvsnes_Reliefpitcher,	// Relief Pitcher (USA)
 	&BurnSpecrelic,				// Reliquia, La (English) (128K) (HB)
 	&BurnSpecLareliquia,		// Reliquia, La (Spanish) (128K) (HB)
@@ -42316,6 +42358,17 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_rrash3,			// Road 3 Rash: Tour de Force (Euro, USA)
 	&BurnDrvmd_rrash3p,			// Road 3 Rash: World Warriors (USA, Prototype)
 	&BurnSpecRblaster,			// Road Blasters (128K)
+	&BurnDrvRoadblstcg,			// Road Blasters (cockpit, German, rev 1)
+	&BurnDrvRoadblstc1,			// Road Blasters (cockpit, rev 1)
+	&BurnDrvRoadblstc,			// Road Blasters (cockpit, rev 2)
+	&BurnDrvRoadblstg1,			// Road Blasters (upright, German, rev 1)
+	&BurnDrvRoadblstg2,			// Road Blasters (upright, German, rev 2)
+	&BurnDrvRoadblstg,			// Road Blasters (upright, German, rev 3)
+	&BurnDrvRoadblstgu,			// Road Blasters (upright, German, rev ?)
+	&BurnDrvRoadblst1,			// Road Blasters (upright, rev 1)
+	&BurnDrvRoadblst2,			// Road Blasters (upright, rev 2)
+	&BurnDrvRoadblst3,			// Road Blasters (upright, rev 3)
+	&BurnDrvRoadblst,			// Road Blasters (upright, rev 4)
 	&BurnDrvnes_roadfighterc,	// Road Fighter (Hack, Chinese v1.2)
 	&BurnDrvcv_roadfght,		// Road Fighter (HB)
 	&BurnDrvsms_roadfight,		// Road Fighter (HB, v1.2)
@@ -42342,6 +42395,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Rr4wd,			// Road Riot 4WD (USA)
 	&BurnSpecRoadrunner,		// Road Runner (48K)
 	&BurnDrvsnes_Roadrunnere,	// Road Runner (Euro)
+	&BurnDrvRoadrunn1,			// Road Runner (rev 1)
+	&BurnDrvRoadrunn2,			// Road Runner (rev 1+)
+	&BurnDrvRoadrunn,			// Road Runner (rev 2)
 	&BurnDrvnes_roadrunner,		// Road Runner (USA) (Unl)
 	&BurnSpecRoadwile128,		// Road Runner and Wile E. Coyote (128K)
 	&BurnSpecRoadwile,			// Road Runner and Wile E. Coyote (48K)
@@ -51460,6 +51516,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_asymmetry", "spectrum/d_spectrum.cpp"},
 	{ "ataqandr", "galaxian/d_galaxian.cpp"},
 	{ "asideral", "galaxian/d_galaxian.cpp"},
+	{ "atarisy1", "atari/d_atarisy1.cpp"},
 	{ "spec_atf128k", "spectrum/d_spectrum.cpp"},
 	{ "spec_athena", "spectrum/d_spectrum.cpp"},
 	{ "athenab", "pre90s/d_snk.cpp"},
@@ -59987,7 +60044,13 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_indiajonandlascr", "nes/d_nes.cpp"},
 	{ "md_indycrusu", "megadrive/d_megadrive.cpp"},
 	{ "spec_indytempledoom", "spectrum/d_spectrum.cpp"},
+	{ "indytempc", "atari/d_atarisy1.cpp"},
 	{ "msx_indy", "msx/d_msx.cpp"},
+	{ "indytempd", "atari/d_atarisy1.cpp"},
+	{ "indytemp", "atari/d_atarisy1.cpp"},
+	{ "indytemp2", "atari/d_atarisy1.cpp"},
+	{ "indytemp3", "atari/d_atarisy1.cpp"},
+	{ "indytemp4", "atari/d_atarisy1.cpp"},
 	{ "nes_indiajonandtemdo", "nes/d_nes.cpp"},
 	{ "snes_indianajonese", "snes/d_snes.cpp"},
 	{ "snes_indianajonesj", "snes/d_snes.cpp"},
@@ -62370,6 +62433,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_marble", "sms/d_sms.cpp"},
 	{ "gg_marble", "sms/d_sms.cpp"},
 	{ "md_marble", "megadrive/d_megadrive.cpp"},
+	{ "marble", "atari/d_atarisy1.cpp"},
+	{ "marble2", "atari/d_atarisy1.cpp"},
+	{ "marble3", "atari/d_atarisy1.cpp"},
+	{ "marble4", "atari/d_atarisy1.cpp"},
+	{ "marble5", "atari/d_atarisy1.cpp"},
 	{ "nes_marblemadness", "nes/d_nes.cpp"},
 	{ "spec_marblem", "spectrum/d_spectrum.cpp"},
 	{ "marblmd2", "atari/d_marblmd2.cpp"},
@@ -65485,6 +65553,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_sampras2", "megadrive/d_megadrive.cpp"},
 	{ "md_sampras1", "megadrive/d_megadrive.cpp"},
 	{ "spec_pprat", "spectrum/d_spectrum.cpp"},
+	{ "peterpak", "atari/d_atarisy1.cpp"},
 	{ "nes_peterpanpir", "nes/d_nes.cpp"},
 	{ "ppan", "irem/d_m92.cpp"},
 	{ "cppicf", "dataeast/d_decocass.cpp"},
@@ -67050,6 +67119,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "relief3", "atari/d_relief.cpp"},
 	{ "relief2", "atari/d_relief.cpp"},
 	{ "relief", "atari/d_relief.cpp"},
+	{ "reliefs1", "atari/d_atarisy1.cpp"},
 	{ "snes_reliefpitcher", "snes/d_snes.cpp"},
 	{ "spec_relic", "spectrum/d_spectrum.cpp"},
 	{ "spec_lareliquia", "spectrum/d_spectrum.cpp"},
@@ -67246,6 +67316,17 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_rrash3", "megadrive/d_megadrive.cpp"},
 	{ "md_rrash3p", "megadrive/d_megadrive.cpp"},
 	{ "spec_rblaster", "spectrum/d_spectrum.cpp"},
+	{ "roadblstcg", "atari/d_atarisy1.cpp"},
+	{ "roadblstc1", "atari/d_atarisy1.cpp"},
+	{ "roadblstc", "atari/d_atarisy1.cpp"},
+	{ "roadblstg1", "atari/d_atarisy1.cpp"},
+	{ "roadblstg2", "atari/d_atarisy1.cpp"},
+	{ "roadblstg", "atari/d_atarisy1.cpp"},
+	{ "roadblstgu", "atari/d_atarisy1.cpp"},
+	{ "roadblst1", "atari/d_atarisy1.cpp"},
+	{ "roadblst2", "atari/d_atarisy1.cpp"},
+	{ "roadblst3", "atari/d_atarisy1.cpp"},
+	{ "roadblst", "atari/d_atarisy1.cpp"},
 	{ "nes_roadfighterc", "nes/d_nes.cpp"},
 	{ "cv_roadfght", "coleco/d_coleco.cpp"},
 	{ "sms_roadfight", "sms/d_sms.cpp"},
@@ -67272,6 +67353,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_rr4wd", "snes/d_snes.cpp"},
 	{ "spec_roadrunner", "spectrum/d_spectrum.cpp"},
 	{ "snes_roadrunnere", "snes/d_snes.cpp"},
+	{ "roadrunn1", "atari/d_atarisy1.cpp"},
+	{ "roadrunn2", "atari/d_atarisy1.cpp"},
+	{ "roadrunn", "atari/d_atarisy1.cpp"},
 	{ "nes_roadrunner", "nes/d_nes.cpp"},
 	{ "spec_roadwile128", "spectrum/d_spectrum.cpp"},
 	{ "spec_roadwile48", "spectrum/d_spectrum.cpp"},
