@@ -3130,6 +3130,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="impetusplus" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Impetus+ (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus+ (2025)(Inufuto).sms" size="24576" crc="98e5dabf"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="impmiss" sourcefile="sms/d_sms.cpp">
 		<description>Impossible Mission (Euro, Brazil)</description>
 		<year>1990</year>
@@ -6137,11 +6146,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="swordwork" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew</comment>
-		<description>Sword Work (HB)</description>
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>SwordWork (HB)</description>
 		<year>2026</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Sword Work (2026)(Inufuto).sms" size="16384" crc="3936e21c"/>
+		<rom name="SwordWork (2026)(Inufuto).sms" size="16384" crc="3936e21c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
