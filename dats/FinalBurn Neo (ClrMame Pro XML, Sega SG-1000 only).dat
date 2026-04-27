@@ -72,6 +72,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ascend" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Ascend (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Ascend (2022)(Inufuto).sg" size="9451" crc="69e60ce5"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="astrododge" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Homebrew</comment>
 		<description>Astrododge (HB)</description>
@@ -103,6 +112,15 @@
 		<year>198?</year>
 		<manufacturer>Aaronix</manufacturer>
 		<rom name="Bank Panic - Bi Li Da Dao (Taiwan)(198x)(Aaronix).sg" size="32768" crc="bd43fde4"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="battlot" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Battlot (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Battlot (2021)(Inufuto).sg" size="9745" crc="90532d80"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -178,6 +196,15 @@
 		<year>198?</year>
 		<manufacturer>DahJee</manufacturer>
 		<rom name="Bomber Man Special (Taiwan)(198x)(DahJee).sg" size="49152" crc="69fc1494"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bootskell" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Bootskell (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Bootskell (2021)(Inufuto).sg" size="9448" crc="c2413720"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1056,6 +1083,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lift" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Lift (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Lift (2022)(Inufuto).sg" size="8297" crc="f5e62875"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ldrun" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Lode Runner (Euro, Japan)</description>
 		<year>1984</year>
@@ -1261,6 +1297,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="neuras" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Neuras (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Neuras (2021)(Inufuto).sg" size="8373" crc="beb45e42"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ninjaprie" cloneof="ninjapri" romof="ninjapri" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Hack</comment>
 		<description>Ninja Princess (Hack, English)</description>
@@ -1316,6 +1361,15 @@
 		<year>1984</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Orguss (Japan)(1984)(Sega).sg" size="32768" crc="f4f78b76"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="osotos" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Osotos (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Osotos (2024)(Inufuto).sg" size="16384" crc="5e4238de"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1512,6 +1566,15 @@
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Rock n' Bolt (Japan)(1985)(Sega).sg" size="32768" crc="0ffdd03d"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ruptus" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Ruptus (HB)</description>
+		<year>2021</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Ruptus (2021)(Inufuto).sg" size="12455" crc="61b4a940"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1870,6 +1933,15 @@
 		<year>2025</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Svellas (2025)(Inufuto).sg" size="16384" crc="ea0cc388"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="swordwork" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>SwordWork (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="SwordWork (2026)(Inufuto).sg" size="16384" crc="1bfc657f"/>
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

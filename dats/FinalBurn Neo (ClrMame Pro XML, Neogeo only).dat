@@ -17589,18 +17589,18 @@
 	</game>
 	<game name="turfmastsc" cloneof="turfmast" romof="turfmast" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.05)</description>
+		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.08)</description>
 		<year>2026</year>
 		<manufacturer>dericmiller</manufacturer>
-		<rom name="200-p1sc.p1" size="2097152" crc="2afa257b"/>
+		<rom name="200-p1sc.p1" size="2097152" crc="c1c9751c"/>
 		<rom name="200-s1.s1" merge="200-s1.s1" size="131072" crc="9a5402b2"/>
-		<rom name="200-c1sc.c1" size="4194304" crc="31b37bde"/>
-		<rom name="200-c2sc.c2" size="4194304" crc="924aaad5"/>
-		<rom name="200-m1sc.m1" size="131072" crc="455fedf8"/>
+		<rom name="200-c1sc.c1" size="4194304" crc="bb2a69a7"/>
+		<rom name="200-c2sc.c2" size="4194304" crc="443e13c5"/>
+		<rom name="200-m1sc.m1" size="131072" crc="932b54e8"/>
 		<rom name="200-v1.v1" merge="200-v1.v1" size="2097152" crc="00fd48d2"/>
-		<rom name="200-v2sc.v2" size="2097152" crc="caf341a8"/>
+		<rom name="200-v2sc.v2" size="2097152" crc="8be97582"/>
 		<rom name="200-v3.v3" merge="200-v3.v3" size="2097152" crc="7abca053"/>
-		<rom name="200-v4sc.v4" size="2097152" crc="3ee02c5f"/>
+		<rom name="200-v4sc.v4" size="2097152" crc="e894954f"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>

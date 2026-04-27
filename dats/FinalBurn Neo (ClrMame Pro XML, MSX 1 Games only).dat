@@ -17764,6 +17764,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="swordwork" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>SwordWork (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="SwordWork (2026)(Inufuto).cas" size="8578" crc="4273bce0"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tvirus" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
 		<description>T-Virus (HB)</description>

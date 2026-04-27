@@ -4897,6 +4897,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cafetonic2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Cafetonic Strikes Back! (48K-128K) (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>Claus Games</manufacturer>
+		<rom name="Cafetonic Strikes Back! v1.1 - NORMAL 48K-128K (2026)(Claus Games).tap" size="36780" crc="01853d05"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cafetonic2h" cloneof="cafetonic2" romof="cafetonic2" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Cafetonic Strikes Back! - Hard Mode (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Claus Games</manufacturer>
+		<rom name="Cafetonic Strikes Back! - HARD 48K-128K (2026)(Claus Games).tap" size="37036" crc="0e3b815c"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="californiagames" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>California Games (48K)</description>
 		<year>1987</year>
@@ -6730,6 +6752,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cracky" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Cracky (48K) (HB)</description>
+		<year>2023</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Cracky 48K-AY (2023)(Inufuto).tzx" size="8623" crc="9c444d38"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cray5" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Cray-5 (128K) (HB)</description>
@@ -7410,8 +7442,8 @@
 		<comment>Homebrew</comment>
 		<description>Daga Oscura, La - Parte 1 (Spanish) (128K) (HB, v10)</description>
 		<year>2024-25</year>
-		<manufacturer>Ejvg</manufacturer>
-		<rom name="Daga Oscura, La - Parte 1 ES v10 128K (2024-25)(Ejvg).tap" size="109618" crc="43f79037"/>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Daga Oscura, La - Parte 1 ES v10 128K (2024-25)(EJVG).tap" size="109618" crc="43f79037"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -7421,8 +7453,8 @@
 		<comment>Homebrew</comment>
 		<description>Daga Oscura, La - Parte 2 (Spanish) (128K) (HB, v10)</description>
 		<year>2024-25</year>
-		<manufacturer>Ejvg</manufacturer>
-		<rom name="Daga Oscura, La - Parte 2 ES v10 128K (2024-25)(Ejvg).tap" size="111222" crc="28e4997f"/>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Daga Oscura, La - Parte 2 ES v10 128K (2024-25)(EJVG).tap" size="111222" crc="28e4997f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -7628,8 +7660,8 @@
 		<comment>Homebrew</comment>
 		<description>Dark Dagger, The - Part 1 (English) (128K) (HB)</description>
 		<year>2024</year>
-		<manufacturer>Ejvg</manufacturer>
-		<rom name="Dark Dagger, The - Part 1 EN 128K (2024)(Ejvg).tap" size="111774" crc="f0b8bdb4"/>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Dark Dagger, The - Part 1 EN 128K (2024)(EJVG).tap" size="111774" crc="f0b8bdb4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -7639,8 +7671,8 @@
 		<comment>Homebrew</comment>
 		<description>Dark Dagger, The - Part 2 (English) (128K) (HB)</description>
 		<year>2024</year>
-		<manufacturer>Ejvg</manufacturer>
-		<rom name="Dark Dagger, The - Part 2 EN 128K (2024)(Ejvg).tap" size="114154" crc="55f01963"/>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Dark Dagger, The - Part 2 EN 128K (2024)(EJVG).tap" size="114154" crc="55f01963"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9630,7 +9662,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dynadan2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Dynamite Dan II - Dr. Blitzen and the Islands of Arcanum (48K)</description>
+		<description>Dynamite Dan II: Dr. Blitzen and the Islands of Arcanum (48K)</description>
 		<year>1986</year>
 		<manufacturer>Mirrorsoft</manufacturer>
 		<rom name="Dynamite Dan II - Dr Blitzen And The Islands Of Arcanum 48K (1985)(Mirrorsoft).z80" size="43758" crc="df00027d"/>
@@ -9718,10 +9750,10 @@
 	</game>
 	<game name="earthlight" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Q: increase altitude - W: decrease altitude</comment>
-		<description>Earthlight (128K)</description>
+		<description>Earthlight (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Firebird Software</manufacturer>
-		<rom name="Earthlight 128K (1988)(Firebird Software).tap" size="61597" crc="063d61f4"/>
+		<rom name="Earthlight 48K-128K (1988)(Firebird Software).tap" size="61597" crc="063d61f4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -9772,7 +9804,7 @@
 		<description>Edd the Duck (48K)</description>
 		<year>1990</year>
 		<manufacturer>Impulze</manufacturer>
-		<rom name="Edd the Duck 48K (1990)(Impulze).z80" size="29944" crc="720cac09"/>
+		<rom name="Edd the Duck 48K (1990)(Impulze).tzx" size="44167" crc="dfc4785e"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9860,11 +9892,20 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="elecciogen" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Elecciones Generales (Spanish) (48K)</description>
+		<year>1986</year>
+		<manufacturer>Hobbypress</manufacturer>
+		<rom name="Elecciones Generales ES 48K (1986)(Hobbypress).tap" size="98472" crc="209b2822"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="elevaction" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Elevator Action (128K)</description>
+		<description>Elevator Action (48K-128K)</description>
 		<year>1987</year>
 		<manufacturer>Quicksilva</manufacturer>
-		<rom name="Elevator Action 128K (1987)(Quicksilva).tap" size="48481" crc="3000fcd9"/>
+		<rom name="Elevator Action 48K-128K (1987)(Quicksilva).tap" size="48481" crc="3000fcd9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -11068,6 +11109,17 @@
 		<manufacturer>Addictive Games</manufacturer>
 		<rom name="Football Manager 2 48K (1988)(Addictive Games).tap" size="50435" crc="060ddf75"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="manfutebolen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Football Manager 2025 (English) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>SofTiMar</manufacturer>
+		<rom name="Manager de Futebol 2025 EN 128K (2026)(SofTiMar).tap" size="86594" crc="905ac201"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12860,6 +12912,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="guntus" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Guntus (48K) (HB)</description>
+		<year>2022</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Guntus 48K-AY (2022)(Inufuto).tzx" size="12386" crc="9fd62800"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gutz" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Gutz (48K)</description>
 		<year>1988</year>
@@ -14307,6 +14369,16 @@
 		<year>2021</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Impetus 48K-AY (2021)(Inufuto).tap" size="16231" crc="059b3699"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="impetusplus" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Impetus+ (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Impetus+ 48K-AY (2025)(Inufuto).tzx" size="15492" crc="998812f7"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -17650,6 +17722,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="manfutebolpt" cloneof="manfutebolen" romof="manfutebolen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Manager de Futebol 2025 (Portuguese) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>SofTiMar</manufacturer>
+		<rom name="Manager de Futebol 2025 PT 128K (2026)(SofTiMar).tap" size="86862" crc="2ab04dd8"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="manutdeu" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Manchester United Europe (128K)</description>
 		<year>1991</year>
@@ -19622,7 +19705,7 @@
 	</game>
 	<game name="mowyadv128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mowy Adventures - Beer Quest (128K) (HB)</description>
+		<description>Mowy Adventures: Beer Quest (128K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Mowy Entertainment</manufacturer>
 		<rom name="Mowy Adventures - Beer Quest 128K (2021)(Mowy Entertainment).tap" size="60776" crc="9db853c6"/>
@@ -19633,7 +19716,7 @@
 	</game>
 	<game name="mowyadv48" cloneof="mowyadv128" romof="mowyadv128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mowy Adventures - Beer Quest (48K) (HB)</description>
+		<description>Mowy Adventures: Beer Quest (48K) (HB)</description>
 		<year>2021</year>
 		<manufacturer>Mowy Entertainment</manufacturer>
 		<rom name="Mowy Adventures - Beer Quest 48K (2021)(Mowy Entertainment).tap" size="40708" crc="48654617"/>
@@ -20144,6 +20227,36 @@
 		<rom name="NeverEnding Story, The 48K-128K (1985)(Ocean).tap" size="86648" crc="ccc97acd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nevermoren" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Nevermore (English) (48K) (HB, v5)</description>
+		<year>2020</year>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Nevermore EN v5 48K (2020)(EJVG).tzx" size="46242" crc="d3ef5f8d"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nevermorpt" cloneof="nevermoren" romof="nevermoren" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Nevermore (Portuguese) (48K) (HB, v5)</description>
+		<year>2020</year>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Nevermore PT v5 48K (2020)(EJVG).tzx" size="46149" crc="d62d73a4"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nevermores" cloneof="nevermoren" romof="nevermoren" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Nevermore (Spanish) (48K) (HB, v5)</description>
+		<year>2020</year>
+		<manufacturer>EJVG</manufacturer>
+		<rom name="Nevermore ES v5 48K (2020)(EJVG).tzx" size="46093" crc="83024407"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20732,6 +20845,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="torochaten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ochate Tower, The (English) (48K-128K) (HB, v1.4)</description>
+		<year>2026</year>
+		<manufacturer>FlunkyRetro</manufacturer>
+		<rom name="Torre de Ochate, A EN v1.4 - EASY 48K-128K (2026)(FlunkyRetro).tap" size="47075" crc="c922e889"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="torochatenh" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ochate Tower, The (English) - Hard mode (48K-128K) (HB, v1.4)</description>
+		<year>2026</year>
+		<manufacturer>FlunkyRetro</manufacturer>
+		<rom name="Torre de Ochate, A EN v1.4 - HARD 48K-128K (2026)(FlunkyRetro).tap" size="47331" crc="ded0ac36"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="octopussyte" cloneof="octopussy" romof="octopussy" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Hack</comment>
 		<description>Octopussy (48K-128K) (Hack, English)</description>
@@ -20818,8 +20953,8 @@
 		<comment>Homebrew</comment>
 		<description>Oh No! More Monkeys (48K) (HB)</description>
 		<year>2025</year>
-		<manufacturer>Softimar</manufacturer>
-		<rom name="Oh No! More Monkeys 48K (2025)(Softimar).tap" size="34013" crc="8482a8bc"/>
+		<manufacturer>SofTiMar</manufacturer>
+		<rom name="Oh No! More Monkeys 48K (2025)(SofTiMar).tap" size="34013" crc="8482a8bc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -21072,6 +21207,16 @@
 		<year>2023</year>
 		<manufacturer>The Mojon Twins</manufacturer>
 		<rom name="Orvol Voon ES 48K (2023)(The Mojon Twins).tap" size="35808" crc="fe3d978f"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="osotos" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Osotos (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="Osotos 48K-AY (2024)(Inufuto).tzx" size="10250" crc="3269cf11"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -23047,8 +23192,8 @@
 		<comment>Homebrew</comment>
 		<description>Quivira (128K) (HB)</description>
 		<year>2025</year>
-		<manufacturer>Softimar</manufacturer>
-		<rom name="Quivira 128K (2025)(Softimar).tap" size="153908" crc="e4817a3d"/>
+		<manufacturer>SofTiMar</manufacturer>
+		<rom name="Quivira 128K (2025)(SofTiMar).tap" size="153908" crc="e4817a3d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -28709,6 +28854,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="swordwork" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>SwordWork (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Inufuto</manufacturer>
+		<rom name="SwordWork 48K-AY (2026)(Inufuto).tzx" size="16384" crc="3f805434"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="syrion2es" cloneof="syrion2en" romof="syrion2en" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Syrion II: Las seis piedras de Nefertiti (Spanish) (48K-128K) (HB)</description>
@@ -29655,7 +29810,7 @@
 		<description>Tiny Nightmares (English) (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>EJVG</manufacturer>
-		<rom name="Tiny Nightmares EN 48K (2023)(ejvg).tap" size="40151" crc="1edd7448"/>
+		<rom name="Tiny Nightmares EN 48K (2023)(EJVG).tap" size="40151" crc="1edd7448"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -29665,7 +29820,7 @@
 		<description>Tiny Nightmares (Spanish) (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>EJVG</manufacturer>
-		<rom name="Tiny Nightmares ES 48K (2023)(ejvg).tap" size="40151" crc="12d6c318"/>
+		<rom name="Tiny Nightmares ES 48K (2023)(EJVG).tap" size="40151" crc="12d6c318"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -29826,23 +29981,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="torochaten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="torochatpt" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Torre de Ochate, A (English) (48K-128K) (HB, v1.3)</description>
+		<description>Torre de Ochate, A (Portuguese) (48K-128K) (HB, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>FlunkyRetro</manufacturer>
-		<rom name="Torre de Ochate, A EN v1.3 48K-128K (2026)(FlunkyRetro).tap" size="47331" crc="4200f902"/>
+		<rom name="Torre de Ochate, A PT v1.4 - EASY 48K-128K (2026)(FlunkyRetro).tap" size="47587" crc="c4413265"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="torochatpt" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
+	<game name="torochatpth" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Torre de Ochate, A (Portuguese) (48K-128K) (HB, v1.3.1)</description>
+		<description>Torre de Ochate, A (Portuguese) - Hard Mode (48K-128K) (HB, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>FlunkyRetro</manufacturer>
-		<rom name="Torre de Ochate, A PT v1.3.1 48K-128K (2026)(FlunkyRetro).tap" size="47843" crc="ad31674f"/>
+		<rom name="Torre de Ochate, A PT v1.4 - HARD 48K-128K (2026)(FlunkyRetro).tap" size="47587" crc="f714980a"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -29850,10 +30005,21 @@
 	</game>
 	<game name="torochates" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Torre de Ochate, A (Spanish) (48K-128K) (HB, v1.3.1)</description>
+		<description>Torre de Ochate, La (Spanish) (48K-128K) (HB, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>FlunkyRetro</manufacturer>
-		<rom name="Torre de Ochate, A ES v1.3.1 48K-128K (2026)(FlunkyRetro).tap" size="47587" crc="b1cbbc45"/>
+		<rom name="Torre de Ochate, A ES v1.4 - EASY 48K-128K (2026)(FlunkyRetro).tap" size="47331" crc="afd82a3a"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="torochatesh" cloneof="torochaten" romof="torochaten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Torre de Ochate, La (Spanish) - Hard mode (48K-128K) (HB, v1.4)</description>
+		<year>2026</year>
+		<manufacturer>FlunkyRetro</manufacturer>
+		<rom name="Torre de Ochate, A ES v1.4 - HARD 48K-128K (2026)(FlunkyRetro).tap" size="47331" crc="6a0330ee"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -30817,8 +30983,8 @@
 		<comment>Homebrew</comment>
 		<description>Vice City Blues (128K) (HB)</description>
 		<year>2026</year>
-		<manufacturer>Softimar</manufacturer>
-		<rom name="Vice City Blues 128K (2026)(Softimar).tap" size="403236" crc="316bfbd4"/>
+		<manufacturer>SofTiMar</manufacturer>
+		<rom name="Vice City Blues 128K (2026)(SofTiMar).tap" size="403236" crc="316bfbd4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31943,7 +32109,7 @@
 		<description>Yewdow (48K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Inufuto</manufacturer>
-		<rom name="Yewdow 48K (2023)(Inufuto).tap" size="9818" crc="faf70151"/>
+		<rom name="Yewdow 48K-AY (2023)(Inufuto).tap" size="9818" crc="faf70151"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

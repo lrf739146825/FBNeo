@@ -28088,7 +28088,7 @@ struct BurnDriver BurnDrvMSX_ascend = {
 	"msx_ascend", NULL, "msx_msx", NULL, "2022",
 	"Ascend (HB)\0", NULL, "Inufuto", "MSX",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_PLATFORM, 0,
 	MSXGetZipName, MSX_ascendRomInfo, MSX_ascendRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
 	272, 228, 4, 3
@@ -29439,7 +29439,7 @@ struct BurnDriver BurnDrvMSX_cracky = {
 	"msx_cracky", NULL, "msx_msx", NULL, "2023",
 	"Cracky (HB)\0", NULL, "Inufuto", "MSX",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_PLATFORM, 0,
 	MSXGetZipName, MSX_crackyRomInfo, MSX_crackyRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
 	CasBloadDrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
 	272, 228, 4, 3
@@ -31582,7 +31582,7 @@ struct BurnDriver BurnDrvMSX_lift = {
 	"msx_lift", NULL, "msx_msx", NULL, "2021",
 	"Lift (HB)\0", NULL, "Inufuto", "MSX",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_PLATFORM, 0,
 	MSXGetZipName, MSX_liftRomInfo, MSX_liftRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
 	272, 228, 4, 3
@@ -33023,7 +33023,7 @@ struct BurnDriver BurnDrvMSX_osotos = {
 	"msx_osotos", NULL, "msx_msx", NULL, "2024",
 	"Osotos (HB)\0", NULL, "Inufuto", "MSX",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION, 0,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_PLATFORM, 0,
 	MSXGetZipName, MSX_osotosRomInfo, MSX_osotosRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
 	CasBloadDrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
 	272, 228, 4, 3
@@ -34844,6 +34844,24 @@ struct BurnDriver BurnDrvMSX_svellas = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_MAZE, 0,
 	MSXGetZipName, MSX_svellasRomInfo, MSX_svellasRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
+	CasBloadDrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
+	272, 228, 4, 3
+};
+
+// SwordWork (HB)
+static struct BurnRomInfo MSX_swordworkRomDesc[] = {
+	{ "SwordWork (2026)(Inufuto).cas",	8578, 0x4273bce0, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(MSX_swordwork, MSX_swordwork, msx_msx)
+STD_ROM_FN(MSX_swordwork)
+
+struct BurnDriver BurnDrvMSX_swordwork = {
+	"msx_swordwork", NULL, "msx_msx", NULL, "2026",
+	"SwordWork (HB)\0", NULL, "Inufuto", "MSX",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_MSX, GBF_ACTION | GBF_MAZE, 0,
+	MSXGetZipName, MSX_swordworkRomInfo, MSX_swordworkRomName, NULL, NULL, NULL, NULL, MSXInputInfo, MSXDIPInfo,
 	CasBloadDrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, 0x10,
 	272, 228, 4, 3
 };

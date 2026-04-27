@@ -3016,7 +3016,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="saintseiougdenc" cloneof="saintseiougden" romof="saintseiougden" sourcefile="nes/d_nes.cpp">
+	<game name="saintseiougdents" cloneof="saintseiougden" romof="saintseiougden" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Caballeros del Zodiaco, Los: La Leyenda del Oro (Hack, Spanish)</description>
 		<year>2004</year>
@@ -11456,6 +11456,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="katango" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Katango (HB)</description>
+		<year>2024</year>
+		<manufacturer>Snauts</manufacturer>
+		<rom name="Katango (2024)(Snauts).nes" size="40976" crc="2d0aaf0c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kerokerkernodaj" cloneof="kerokerkernoda" romof="kerokerkernoda" sourcefile="nes/d_nes.cpp">
 		<description>Kero Kero Keroppi no Daibouken (Japan)</description>
 		<year>1991</year>
@@ -15998,6 +16007,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="pacmaniarcade" cloneof="pacmania" romof="pacmania" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Pac-Mania Arcade (Hack)</description>
+		<year>2026</year>
+		<manufacturer>125scratch</manufacturer>
+		<rom name="Pac-Mania Arcade (2026)(125scratch).nes" size="163856" crc="a822d9b1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="pacdaisaj" cloneof="pacdaisa" romof="pacdaisa" sourcefile="nes/d_nes.cpp">
 		<description>Pachinko Daisakusen (Japan)</description>
 		<year>1991</year>
@@ -18438,51 +18456,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="sdbttloozumou" sourcefile="nes/d_nes.cpp">
-		<description>SD Battle Oozumou - Heisei Hero Basho (Japan)</description>
+		<description>SD Battle Oozumou: Heisei Hero Basho (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Banpresto</manufacturer>
 		<rom name="SD Battle Oozumou - Heisei Hero Basho (Japan)(1990)(Banpresto).nes" size="262160" crc="cd1931de"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="sdgundgs2" sourcefile="nes/d_nes.cpp">
-		<description>SD Gundam - Gachapon Senshi 2 - Capsule Senki (Japan)</description>
-		<year>1989</year>
-		<manufacturer>Bandai</manufacturer>
-		<rom name="SD Gundam - Gachapon Senshi 2 - Capsule Senki (Japan)(1989)(Bandai).nes" size="262160" crc="88641b52"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="sdgundgs3" sourcefile="nes/d_nes.cpp">
-		<description>SD Gundam - Gachapon Senshi 3 - Eiyuu Senki (Japan)</description>
-		<year>1990</year>
-		<manufacturer>Yutaka</manufacturer>
-		<rom name="SD Gundam - Gachapon Senshi 3 - Eiyuu Senki (Japan)(1990)(Yutaka).nes" size="262160" crc="3af5beff"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="sdgundgs4" sourcefile="nes/d_nes.cpp">
-		<description>SD Gundam - Gachapon Senshi 4 - New Type Story (Japan)</description>
-		<year>1991</year>
-		<manufacturer>Yutaka</manufacturer>
-		<rom name="SD Gundam - Gachapon Senshi 4 - New Type Story (Japan)(1991)(Yutaka).nes" size="524304" crc="078b916e"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="sdgachapon5" sourcefile="nes/d_nes.cpp">
-		<description>SD Gundam - Gachapon Senshi 5 - Battle of Universal Century (Japan)</description>
-		<year>1992</year>
-		<manufacturer>Yutaka</manufacturer>
-		<rom name="SD Gundam - Gachapon Senshi 5 - Battle of Universal Century (Japan)(1992)(Yutaka).nes" size="262160" crc="971d0527"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="sdgundgs2c" cloneof="sdgundgs2" romof="sdgundgs2" sourcefile="nes/d_nes.cpp">
-		<comment>Hack</comment>
-		<description>SD Gundam - Gachapon Soldier 2 - Capsule War (Hack, Spanish)</description>
-		<year>2020</year>
-		<manufacturer>Max1323</manufacturer>
-		<rom name="SD Gundam - Gachapon Senshi 2 - Capsule Senki T-Spa (2020)(Max1323).nes" size="262160" crc="86274ffd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18525,6 +18502,47 @@
 		<year>2024</year>
 		<manufacturer>Max1323</manufacturer>
 		<rom name="SD Gundam Story - Knight Gundam Legend T-Spa (2024)(Max1323).nes" size="655376" crc="6e67014c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgundgs2" sourcefile="nes/d_nes.cpp">
+		<description>SD Gundam: Gachapon Senshi 2 - Capsule Senki (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Bandai</manufacturer>
+		<rom name="SD Gundam - Gachapon Senshi 2 - Capsule Senki (Japan)(1989)(Bandai).nes" size="262160" crc="88641b52"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgundgs3" sourcefile="nes/d_nes.cpp">
+		<description>SD Gundam: Gachapon Senshi 3 - Eiyuu Senki (Japan)</description>
+		<year>1990</year>
+		<manufacturer>Yutaka</manufacturer>
+		<rom name="SD Gundam - Gachapon Senshi 3 - Eiyuu Senki (Japan)(1990)(Yutaka).nes" size="262160" crc="3af5beff"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgundgs4" sourcefile="nes/d_nes.cpp">
+		<description>SD Gundam: Gachapon Senshi 4 - New Type Story (Japan)</description>
+		<year>1991</year>
+		<manufacturer>Yutaka</manufacturer>
+		<rom name="SD Gundam - Gachapon Senshi 4 - New Type Story (Japan)(1991)(Yutaka).nes" size="524304" crc="078b916e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgachapon5" sourcefile="nes/d_nes.cpp">
+		<description>SD Gundam: Gachapon Senshi 5 - Battle of Universal Century (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Yutaka</manufacturer>
+		<rom name="SD Gundam - Gachapon Senshi 5 - Battle of Universal Century (Japan)(1992)(Yutaka).nes" size="262160" crc="971d0527"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdgundgs2ts" cloneof="sdgundgs2" romof="sdgundgs2" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>SD Gundam: Gachapon Soldier 2 - Capsule War (Hack, Spanish)</description>
+		<year>2020</year>
+		<manufacturer>Max1323</manufacturer>
+		<rom name="SD Gundam - Gachapon Senshi 2 - Capsule Senki T-Spa (2020)(Max1323).nes" size="262160" crc="86274ffd"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -18704,6 +18722,47 @@
 		<manufacturer>Tecmo</manufacturer>
 		<rom name="Shadow Warriors Episode II - The Dark Sword of Chaos (Euro)(1991)(Tecmo).nes" size="262160" crc="96b6a919"/>
 		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowgatee" cloneof="shadowgate" romof="shadowgate" sourcefile="nes/d_nes.cpp">
+		<description>Shadowgate (Euro)</description>
+		<year>1991</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Shadowgate (Euro)(1991)(Kemco).nes" size="262160" crc="0d359f20"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowgatef" cloneof="shadowgate" romof="shadowgate" sourcefile="nes/d_nes.cpp">
+		<description>Shadowgate (France)</description>
+		<year>1991</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Shadowgate (France)(1991)(Kemco).nes" size="262160" crc="81d4e114"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowgateg" cloneof="shadowgate" romof="shadowgate" sourcefile="nes/d_nes.cpp">
+		<description>Shadowgate (Germany)</description>
+		<year>1991</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Shadowgate (Germany)(1991)(Kemco).nes" size="262160" crc="a895f19a"/>
+		<video type="raster" orientation="horizontal" width="256" height="232" aspectx="256" aspecty="232"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowgatetp" cloneof="shadowgate" romof="shadowgate" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Shadowgate (Hack, Portuguese)</description>
+		<year>2015</year>
+		<manufacturer>Zafarion</manufacturer>
+		<rom name="Shadowgate T-Por (2015)(Zafarion).nes" size="262160" crc="fa1ca914"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="shadowgatej" cloneof="shadowgate" romof="shadowgate" sourcefile="nes/d_nes.cpp">
+		<description>Shadowgate (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Kemco</manufacturer>
+		<rom name="Shadowgate (Japan)(1989)(Kemco).nes" size="262160" crc="d19538ac"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="shadowgate" sourcefile="nes/d_nes.cpp">
