@@ -515,7 +515,7 @@ static const char* multi_language_strings_ext[MAX_LANGUAGES][NUM_STRING_EXT] = {
 		"\u4e34\u65f6\u5361\uff08\u65e0\u6587\u4ef6\uff09",
 		"PGM2 \u63d2\u69fd P%c: %u \u4e2a\u5b58\u50a8\u5361\u6587\u4ef6",
 		"\u5b58\u50a8\u5361\u6587\u4ef6\u540d\u5fc5\u987b\u4ee5 ",
-		"_pN_ \u5f00\u5934\uff0c\u4ee5 .pg2 \u6216 .bin \u7ed3\u5c3e"
+		"_p\u73a9\u5bb6\u7f16\u53f7_ \u5f00\u5934\uff0c\u4ee5 .pg2 \u6216 .bin \u7ed3\u5c3e"
 	},
 	{	// Traditional Chinese
 		"\u5141\u8a31\u5ffd\u7565CRC",
@@ -525,7 +525,7 @@ static const char* multi_language_strings_ext[MAX_LANGUAGES][NUM_STRING_EXT] = {
 		"\u81e8\u6642\u5361\uff08\u7121\u6a94\u6848\uff09",
 		"PGM2 \u63d2\u69fd P%c: %u \u500b\u5132\u5b58\u5361\u6a94\u6848",
 		"\u5132\u5b58\u5361\u6a94\u6848\u540d\u7a31\u5fc5\u9808\u4ee5 ",
-		"_pN_ \u958b\u982d\uff0c\u4e26\u4ee5 .pg2 \u6216 .bin \u7d50\u5c3e"
+		"_p\u73a9\u5bb6\u7de8\u865f_ \u958b\u982d\uff0c\u4e26\u4ee5 .pg2 \u6216 .bin \u7d50\u5c3e"
 	}
 };
 
