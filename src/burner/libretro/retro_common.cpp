@@ -1357,9 +1357,9 @@ void set_environment()
 			RETRO_ROMDATA_CAT_INFO
 		},
 		{
-			"pgm2",
-			"PGM2",
-			"IC card images in System/BIOS/fbneo/pgm2/"
+			"pgm2_memory_card",
+			"PGM2 Memory Card",
+			"Select memory card before character selection. Default: Temporary Card (no file). Memory Card Files loctation: System/BIOS/fbneo/memcards/"
 		},
 #ifdef FBNEO_DEBUG
 		{

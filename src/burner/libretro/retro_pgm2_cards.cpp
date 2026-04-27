@@ -1,4 +1,4 @@
-// PGM2 IC card selection for libretro: scan system/fbneo/pgm2/<drv>_pN_*.pg2|.bin
+// PGM2 Memory card selection for libretro: scan system/fbneo/memcards/<drv>_pN_*.pg2|.bin
 
 #include "retro_pgm2_cards.h"
 #include "retro_common.h"
@@ -250,7 +250,7 @@ static void build_slot_option(int slot)
 	L.clear();
 	L.reserve(2 * (1 + s_file_paths[slot].size()));
 	L.push_back("0");
-	L.push_back("Built-in (ROM template)");
+	L.push_back("Temporary Card (no file)");
 	for (size_t i = 0; i < s_file_paths[slot].size(); i++) {
 		char idx[12];
 		snprintf(idx, sizeof(idx), "%u", (unsigned)(i + 1));
@@ -261,21 +261,13 @@ static void build_slot_option(int slot)
 	const size_t nfiles = s_file_paths[slot].size();
 	char slot_ch = (char)('1' + slot);
 	/* Keep desc 7-bit ASCII only; some frontends reject or mangle UTF-8 punctuation in SET_CORE_OPTIONS_V2. */
-	if (nfiles == 0) {
-		char buf[96];
-		snprintf(buf, sizeof(buf), "PGM2 slot P%c: built-in only (no files)", slot_ch);
-		s_opt_desc_str[slot].assign(buf);
-	} else {
-		char buf[96];
-		snprintf(buf, sizeof(buf), "PGM2 slot P%c: built-in + %u file(s)", slot_ch, (unsigned)nfiles);
-		s_opt_desc_str[slot].assign(buf);
-	}
+	char buf[96];
+	snprintf(buf, sizeof(buf), "PGM2 slot P%c: %u Memory Card File(s)", slot_ch, (unsigned)nfiles);
+	s_opt_desc_str[slot].assign(buf);
 
 	const char* drv = BurnDrvGetTextA(DRV_NAME);
 	if (!drv) drv = "";
-	s_opt_info_str[slot] =
-		"Built-in ROM card template plus files in System/BIOS fbneo/pgm2/. "
-		"Open the list to pick a file. Filenames must start with ";
+	s_opt_info_str[slot] = "Memory Card Filenames must start with ";
 	s_opt_info_str[slot] += drv;
 	s_opt_info_str[slot] += "_pN_ and end with .pg2 or .bin.";
 
@@ -285,7 +277,7 @@ static void build_slot_option(int slot)
 	def.desc_categorized = def.desc;
 	def.info = s_opt_info_str[slot].c_str();
 	def.info_categorized = NULL;
-	def.category_key = "pgm2";
+	def.category_key = "pgm2_memory_card";
 
 	int nvals = 1 + (int)s_file_paths[slot].size();
 	for (int i = 0; i < nvals; i++) {
@@ -353,7 +345,7 @@ static void rebuild_scan(bool preinit_before_drv_init)
 		return;
 
 	char dir[MAX_PATH];
-	snprintf(dir, sizeof(dir), "%s%cfbneo%cpgm2", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
+	snprintf(dir, sizeof(dir), "%s%cfbneo%cmemcards", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 	path_mkdir(dir);
 
 	log_cb(RETRO_LOG_INFO,
@@ -412,6 +404,7 @@ static void apply_one_slot(int slot)
 
 	save_active_slot_file(slot);
 
+	// built-in ROM card template : IN-Memory Temporary Card
 	if (choice == 0) {
 		if (!build_builtin_card_image(s_pending_card_image, sizeof(s_pending_card_image))) {
 			log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to build built-in ROM card template\n", slot + 1);
@@ -426,6 +419,7 @@ static void apply_one_slot(int slot)
 		return;
 	}
 
+	//Use Memory Card File
 	int fi = choice - 1;
 	if (fi < 0 || fi >= (int)s_file_paths[slot].size()) {
 		log_cb(RETRO_LOG_WARN,
