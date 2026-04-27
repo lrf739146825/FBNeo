@@ -250,7 +250,7 @@ static void build_slot_option(int slot)
 	L.clear();
 	L.reserve(2 * (1 + s_file_paths[slot].size()));
 	L.push_back("0");
-	L.push_back("Temporary Card (no file)");
+	L.push_back(RETRO_PGM2_TEMPORARY_CARD);
 	for (size_t i = 0; i < s_file_paths[slot].size(); i++) {
 		char idx[12];
 		snprintf(idx, sizeof(idx), "%u", (unsigned)(i + 1));
@@ -262,14 +262,14 @@ static void build_slot_option(int slot)
 	char slot_ch = (char)('1' + slot);
 	/* Keep desc 7-bit ASCII only; some frontends reject or mangle UTF-8 punctuation in SET_CORE_OPTIONS_V2. */
 	char buf[96];
-	snprintf(buf, sizeof(buf), "PGM2 slot P%c: %u Memory Card File(s)", slot_ch, (unsigned)nfiles);
+	snprintf(buf, sizeof(buf), RETRO_PGM2_MEMORY_CARD_SLOT_DESC, slot_ch, (unsigned)nfiles);
 	s_opt_desc_str[slot].assign(buf);
 
 	const char* drv = BurnDrvGetTextA(DRV_NAME);
 	if (!drv) drv = "";
-	s_opt_info_str[slot] = "Memory Card Filenames must start with ";
+	s_opt_info_str[slot] = RETRO_PGM2_MEMORY_CARD_SLOT_INFO_1;
 	s_opt_info_str[slot] += drv;
-	s_opt_info_str[slot] += "_pN_ and end with .pg2 or .bin.";
+	s_opt_info_str[slot] += RETRO_PGM2_MEMORY_CARD_SLOT_INFO_2;
 
 	retro_core_option_v2_definition& def = s_opt_def[slot];
 	def.key = s_opt_key_str[slot].c_str();
