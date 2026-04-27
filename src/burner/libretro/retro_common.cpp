@@ -1357,9 +1357,9 @@ void set_environment()
 			RETRO_ROMDATA_CAT_INFO
 		},
 		{
-			"pgm2",
-			"PGM2",
-			"IC card images in System/BIOS/fbneo/pgm2/"
+			"pgm2_memory_card",
+			RETRO_PGM2_MEMORY_CARD_DESC,
+			RETRO_PGM2_MEMORY_CARD_INFO
 		},
 #ifdef FBNEO_DEBUG
 		{
