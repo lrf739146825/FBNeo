@@ -1339,8 +1339,8 @@ void set_environment()
 		},
 		{
 			"pgm2_memory_card",
-			"PGM2 Memory Card",
-			"Select memory card before character selection. Default: Temporary Card (no file). Memory Card Files loctation: System/BIOS/fbneo/memcards/"
+			RETRO_PGM2_MEMORY_CARD_DESC,
+			RETRO_PGM2_MEMORY_CARD_INFO
 		},
 #ifdef FBNEO_DEBUG
 		{
