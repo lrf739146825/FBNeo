@@ -7887,10 +7887,10 @@
 	</game>
 	<game name="ghbaseball" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Ghost Baseball (HB)</description>
+		<description>Ghost Baseball (HB, v1.3)</description>
 		<year>2026</year>
 		<manufacturer>Infinite State Games</manufacturer>
-		<rom name="Ghost Baseball (2026)(Infinite State Games).bin" size="262144" crc="8171276a"/>
+		<rom name="Ghost Baseball v1.3 (2026)(Infinite State Games).bin" size="262144" crc="2b95120a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

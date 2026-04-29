@@ -334,6 +334,11 @@ bool MenuHandleKeyboard(MSG*);
 void MenuRemoveTheme();
 
 // sel.cpp
+
+  // unzip()'s buf must be free()'d after use.
+bool unzip(char *szZipFn, char *szFn, void **buf, size_t *bufsize);
+bool unzip_file_exists(char *szZipFn, char *szFn);
+
 extern UINT64 nLoadMenuShowX;
 extern int nLoadMenuShowY;
 extern int nLoadMenuExpand;
@@ -379,6 +384,7 @@ extern TCHAR szNeoCDGamesDir[MAX_PATH];
 
 HBITMAP ImageToBitmap(HWND hwnd, IMAGE* img);
 HBITMAP PNGLoadBitmap(HWND hWnd, FILE* fp, int nWidth, int nHeight, int nPreset);
+HBITMAP PNGLoadBitmapBuffer(HWND hWnd, void *buffer, int bufferLength, int nWidth, int nHeight, int nPreset);
 HBITMAP LoadBitmap(HWND hWnd, FILE* fp, int nWidth, int nHeight, int nPreset);
 int NeoCDList_CheckISO(TCHAR* pszFile, void (*pfEntryCallBack)(INT32, TCHAR*));
 

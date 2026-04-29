@@ -10093,7 +10093,7 @@
 		<description>Equinox (48K)</description>
 		<year>1986</year>
 		<manufacturer>Mikro-Gen</manufacturer>
-		<rom name="Equinox 48K (1986)(Mikro-Gen).z80" size="45770" crc="aaa2864d"/>
+		<rom name="Equinox 48K (1986)(Mikro-Gen).tap" size="49468" crc="c473e521"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -13810,6 +13810,15 @@
 		<year>1985</year>
 		<manufacturer>Gilsoft International</manufacturer>
 		<rom name="Hollow, The 48K (1985)(Gilsoft International).tap" size="47876" crc="d2d36c3a"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="snowmanes" cloneof="snowmanen" romof="snowmanen" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Hombre de Nieve (Spanish) (48K)</description>
+		<year>1983</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Hombre de Nieve 48K (1983)(Quicksilva).tzx" size="33616" crc="dcb28c80"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -26612,7 +26621,7 @@
 	</game>
 	<game name="slyspy" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Select 'Interface II' to use controller</comment>
-		<description>Sly Spy - Secret Agent (128K)</description>
+		<description>Sly Spy: Secret Agent (128K)</description>
 		<year>1990</year>
 		<manufacturer>Ocean Software</manufacturer>
 		<rom name="Sly Spy - Secret Agent 128K (1990)(Ocean).tap" size="170067" crc="1276744e"/>
@@ -26764,12 +26773,21 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="snowmanen" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Snowman, The (English) (48K)</description>
+		<year>1983</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Snowman, The 48K (1983)(Quicksilva).tzx" size="33510" crc="def506c0"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="soccerpinball" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Z: left flipper - M: right flipper - SPACE: shoot</comment>
-		<description>Soccer Pinball (128K)</description>
+		<description>Soccer Pinball (48K-128K)</description>
 		<year>1992</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Soccer Pinball 128K (1992)(Codemasters).tap" size="61677" crc="c1c3e3b6"/>
+		<rom name="Soccer Pinball 48K-128K (1992)(Codemasters).tap" size="61677" crc="c1c3e3b6"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -27156,6 +27174,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spaceintruders" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Space Intruders (16K)</description>
+		<year>1982</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Space Intruders 16K (1982)(Quicksilva).z80" size="5824" crc="254a3295"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spacejourney" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Space Journey (48K) (HB)</description>
@@ -27337,10 +27364,21 @@
 	</game>
 	<game name="speccysoccer" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Speccy Soccer (128K) (HB)</description>
+		<description>Speccy Soccer - Community edition 2023 (128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Voxel Tower</manufacturer>
-		<rom name="Speccy Soccer 128K (2023)(Voxel Tower).tap" size="106047" crc="a8eb8027"/>
+		<rom name="Speccy Soccer - Community edition 2023 128K (2023)(Voxel Tower).tap" size="106047" crc="a8eb8027"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="speccysoccer25" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Speccy Soccer - MicroHobby edition 2025 (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Voxel Tower</manufacturer>
+		<rom name="Speccy Soccer - MicroHobby edition 2025 128K (2026)(Voxel Tower).tap" size="106108" crc="2b075fe8"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -27560,7 +27598,7 @@
 		<description>Spooky Castle (48K)</description>
 		<year>1990</year>
 		<manufacturer>Atlantis Software</manufacturer>
-		<rom name="Spooky Castle 48K (1990)(Atlantis Software).z80" size="38671" crc="fad004e5"/>
+		<rom name="Spooky Castle 48K (1990)(Atlantis Software).tzx" size="24907" crc="a991eb04"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -30408,6 +30446,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tube" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Tube, The (48K-128K)</description>
+		<year>1987</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Tube, The 48K-128K (1987)(Quicksilva).tzx" size="50892" crc="ababf317"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tuerkas" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Tuerkas, the White Cat (48K) (HB, v1.2)</description>
@@ -31286,6 +31334,16 @@
 		<rom name="War Machine 128K (1989)(Players Premier).tap" size="54991" crc="7ac04bb1"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="warhog" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>WarHog (48K) (HB, v1.1.6)</description>
+		<year>2025-26</year>
+		<manufacturer>Abraxas Software</manufacturer>
+		<rom name="WarHog v1.1.6 48K (2025-26)(Abraxas Software).tap" size="47845" crc="6f910ca0"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
