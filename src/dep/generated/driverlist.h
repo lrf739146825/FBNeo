@@ -9523,6 +9523,7 @@ DRV		BurnDrvnes_holydiverj;
 DRV		BurnDrvsnes_Holystriker;
 DRV		BurnDrvsnes_Holyumbrj;
 DRV		BurnDrvsnes_Holyumbrte;
+DRV		BurnSpecSnowmanes;
 DRV		BurnSpecElhombre;
 DRV		BurnDrvsms_homea;
 DRV		BurnDrvsnes_Homealonee;
@@ -19019,6 +19020,7 @@ DRV		BurnDrvsnes_Snowwhite;
 DRV		BurnDrvMSX_snowboard;
 DRV		BurnSpecSnowund128;
 DRV		BurnSpecSnowund48;
+DRV		BurnSpecSnowmanen;
 DRV		BurnDrvMSX_snowman;
 DRV		BurnDrvcv_soknight;
 DRV		BurnDrvnes_soccer;
@@ -19362,6 +19364,7 @@ DRV		BurnDrvmd_sharrier;
 DRV		BurnDrvnes_spacehawk;
 DRV		BurnDrvcv_spacehunter;
 DRV		BurnDrvnes_spacehunter;
+DRV		BurnSpecSpaceintruders;
 DRV		BurnDrvSpcinv95u;
 DRV		BurnDrvSpcinv95;
 DRV		BurnDrvcv_spaceinv;
@@ -19483,6 +19486,7 @@ DRV		BurnSpecSpeccyqen;
 DRV		BurnSpecSpeccyqes;
 DRV		BurnSpecSpeccysaga;
 DRV		BurnSpecSpeccysoccer;
+DRV		BurnSpecSpeccysoccer25;
 DRV		BurnDrvsms_sci;
 DRV		BurnDrvsms_scip;
 DRV		BurnDrvpce_sci;
@@ -23081,6 +23085,7 @@ DRV		BurnDrvMSX_tuareg;
 DRV		BurnSpecTuareg;
 DRV		BurnDrvTubepb;
 DRV		BurnDrvTubep;
+DRV		BurnSpecTube;
 DRV		BurnDrvTubeit;
 DRV		BurnSpecTuerkas;
 DRV		BurnDrvsnes_Tuffenuff;
@@ -23908,6 +23913,7 @@ DRV		BurnDrvfds_wardnernomori;
 DRV		BurnDrvWardnerj;
 DRV		BurnDrvWardnerjb;
 DRV		BurnDrvmd_wardnerj;
+DRV		BurnSpecWarhog;
 DRV		BurnDrvmd_wario3;
 DRV		BurnDrvnes_warioswoods;
 DRV		BurnDrvsnes_Wariowoods;
@@ -33416,7 +33422,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_ghost,			// Ghost (Euro, Spanish)
 	&BurnDrvmsx_ghost2017,		// Ghost (HB)
 	&BurnDrvcv_ghost,			// Ghost (SGM) (HB)
-	&BurnDrvmd_ghbaseball,		// Ghost Baseball (HB)
+	&BurnDrvmd_ghbaseball,		// Ghost Baseball (HB, v1.3)
 	&BurnDrvcv_gblaster,		// Ghost Blaster (HB)
 	&BurnDrvGhostbi,			// Ghost Busters (FMV Demo)
 	&BurnSpecGcastle,			// Ghost Castle (48K) (HB)
@@ -34650,6 +34656,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Holystriker,	// Holy Striker (Japan)
 	&BurnDrvsnes_Holyumbrj,		// Holy Umbrella: Dondera no Mubou!! (Japan)
 	&BurnDrvsnes_Holyumbrte,	// Holy Umbrella: Dondera's Wild!! (Hack, English)
+	&BurnSpecSnowmanes,			// Hombre de Nieve (Spanish) (48K)
 	&BurnSpecElhombre,			// Hombre que susurraba a las balas, El (48K) (HB)
 	&BurnDrvsms_homea,			// Home Alone (Euro)
 	&BurnDrvsnes_Homealonee,	// Home Alone (Euro)
@@ -44028,7 +44035,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSlyspy2,			// Sly Spy (US, revision 2)
 	&BurnDrvSlyspy3,			// Sly Spy (US, revision 3)
 	&BurnDrvSlyspy,				// Sly Spy (US, revision 4)
-	&BurnSpecSlyspy,			// Sly Spy - Secret Agent (128K)
+	&BurnSpecSlyspy,			// Sly Spy: Secret Agent (128K)
 	&BurnDrvMSX_smackwac,		// Smack Wacker (Euro)
 	&BurnDrvsnes_Smartball,		// Smart Ball (USA)
 	&BurnDrvmd_smartmouse,		// Smart Mouse (HB)
@@ -44146,6 +44153,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_snowboard,		// Snowboarding (HB, v1.01)
 	&BurnSpecSnowund128,		// Snowed Under  (128K) (HB)
 	&BurnSpecSnowund48,			// Snowed Under (48K) (HB)
+	&BurnSpecSnowmanen,			// Snowman, The (English) (48K)
 	&BurnDrvMSX_snowman,		// Snowman, The (Euro)
 	&BurnDrvcv_soknight,		// So, you want to be a Knight? (HB)
 	&BurnDrvnes_soccer,			// Soccer (USA)
@@ -44154,7 +44162,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Soccerkide,	// Soccer Kid (Euro)
 	&BurnDrvsnes_Soccerkidj,	// Soccer Kid (Japan)
 	&BurnDrvnes_soccelea,		// Soccer League - Winner's Cup (Japan)
-	&BurnSpecSoccerpinball,		// Soccer Pinball (128K)
+	&BurnSpecSoccerpinball,		// Soccer Pinball (48K-128K)
 	&BurnDrvsnes_Soccershoot,	// Soccer Shootout (Euro)
 	&BurnDrvmd_socket,			// Socket (USA)
 	&BurnDrvsnes_Socksthecat,	// Socks the Cat Rocks the Hill (USA) (Second Dimension)
@@ -44489,6 +44497,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_spacehawk,		// Space Hawk (HB)
 	&BurnDrvcv_spacehunter,		// Space Hunter (HB)
 	&BurnDrvnes_spacehunter,	// Space Hunter (Japan)
+	&BurnSpecSpaceintruders,	// Space Intruders (16K)
 	&BurnDrvSpcinv95u,			// Space Invaders '95: The Attack Of Lunar Loonies (Ver 2.5A 1995/06/14)
 	&BurnDrvSpcinv95,			// Space Invaders '95: The Attack Of Lunar Loonies (Ver 2.5O 1995/06/14)
 	&BurnDrvcv_spaceinv,		// Space Invaders (HB)
@@ -44609,7 +44618,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSpeccyqen,			// Speccy Quiz (English) (48K-128K) (HB)
 	&BurnSpecSpeccyqes,			// Speccy Quiz (Spanish) (48K-128K) (HB)
 	&BurnSpecSpeccysaga,		// Speccy Saga Codename: RKW (48K-128K) (HB)
-	&BurnSpecSpeccysoccer,		// Speccy Soccer (128K) (HB)
+	&BurnSpecSpeccysoccer,		// Speccy Soccer - Community edition 2023 (128K) (HB)
+	&BurnSpecSpeccysoccer25,	// Speccy Soccer - MicroHobby edition 2025 (128K) (HB)
 	&BurnDrvsms_sci,			// Special Criminal Investigation (Euro)
 	&BurnDrvsms_scip,			// Special Criminal Investigation (Euro, Prototype)
 	&BurnDrvpce_sci,			// Special Criminal Investigation (Japan)
@@ -48208,6 +48218,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTuareg,			// Tuareg (Spanish) (48K)
 	&BurnDrvTubepb,				// Tube Panic (bootleg)
 	&BurnDrvTubep,				// Tube Panic
+	&BurnSpecTube,				// Tube, The (48K-128K)
 	&BurnDrvTubeit,				// Tube-It
 	&BurnSpecTuerkas,			// Tuerkas, the White Cat (48K) (HB, v1.2)
 	&BurnDrvsnes_Tuffenuff,		// Tuff E Nuff (USA)
@@ -49035,6 +49046,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvWardnerj,			// Wardner no Mori (Japan)
 	&BurnDrvWardnerjb,			// Wardner no Mori (Japan, bootleg)
 	&BurnDrvmd_wardnerj,		// Wardner no Mori Special (Japan)
+	&BurnSpecWarhog,			// WarHog (48K) (HB, v1.1.6)
 	&BurnDrvmd_wario3,			// Wario Land 3 (Russia) (Unl)
 	&BurnDrvnes_warioswoods,	// Wario's Woods (USA)
 	&BurnDrvsnes_Wariowoods,	// Wario's Woods (USA)
@@ -59719,6 +59731,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_holystriker", "snes/d_snes.cpp"},
 	{ "snes_holyumbrj", "snes/d_snes.cpp"},
 	{ "snes_holyumbrte", "snes/d_snes.cpp"},
+	{ "spec_snowmanes", "spectrum/d_spectrum.cpp"},
 	{ "spec_elhombre", "spectrum/d_spectrum.cpp"},
 	{ "sms_homea", "sms/d_sms.cpp"},
 	{ "snes_homealonee", "snes/d_snes.cpp"},
@@ -69135,6 +69148,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_snowboard", "msx/d_msx.cpp"},
 	{ "spec_snowund128", "spectrum/d_spectrum.cpp"},
 	{ "spec_snowund48", "spectrum/d_spectrum.cpp"},
+	{ "spec_snowmanen", "spectrum/d_spectrum.cpp"},
 	{ "msx_snowman", "msx/d_msx.cpp"},
 	{ "cv_soknight", "coleco/d_coleco.cpp"},
 	{ "nes_soccer", "nes/d_nes.cpp"},
@@ -69476,6 +69490,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_spacehawk", "nes/d_nes.cpp"},
 	{ "cv_spacehunter", "coleco/d_coleco.cpp"},
 	{ "nes_spacehunter", "nes/d_nes.cpp"},
+	{ "spec_spaceintruders", "spectrum/d_spectrum.cpp"},
 	{ "spcinv95u", "taito/d_taitof3.cpp"},
 	{ "spcinv95", "taito/d_taitof3.cpp"},
 	{ "cv_spaceinv", "coleco/d_coleco.cpp"},
@@ -69595,6 +69610,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_speccyqes", "spectrum/d_spectrum.cpp"},
 	{ "spec_speccysaga", "spectrum/d_spectrum.cpp"},
 	{ "spec_speccysoccer", "spectrum/d_spectrum.cpp"},
+	{ "spec_speccysoccer25", "spectrum/d_spectrum.cpp"},
 	{ "sms_sci", "sms/d_sms.cpp"},
 	{ "sms_scip", "sms/d_sms.cpp"},
 	{ "pce_sci", "pce/d_pce.cpp"},
@@ -73153,6 +73169,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_tuareg", "spectrum/d_spectrum.cpp"},
 	{ "tubepb", "pre90s/d_tubep.cpp"},
 	{ "tubep", "pre90s/d_tubep.cpp"},
+	{ "spec_tube", "spectrum/d_spectrum.cpp"},
 	{ "tubeit", "taito/d_taitol.cpp"},
 	{ "spec_tuerkas", "spectrum/d_spectrum.cpp"},
 	{ "snes_tuffenuff", "snes/d_snes.cpp"},
@@ -73968,6 +73985,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "wardnerj", "toaplan/d_wardner.cpp"},
 	{ "wardnerjb", "toaplan/d_wardner.cpp"},
 	{ "md_wardnerj", "megadrive/d_megadrive.cpp"},
+	{ "spec_warhog", "spectrum/d_spectrum.cpp"},
 	{ "md_wario3", "megadrive/d_megadrive.cpp"},
 	{ "nes_warioswoods", "nes/d_nes.cpp"},
 	{ "snes_wariowoods", "snes/d_snes.cpp"},
