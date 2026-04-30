@@ -452,6 +452,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="altbeastav" cloneof="altbeast" romof="altbeast" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Altered Beast - Arcade Voices (Hack, v1.2)</description>
+		<year>2018</year>
+		<manufacturer>Maxim</manufacturer>
+		<rom name="Altered Beast - Arcade Voices v1.2 (2018)(Maxim).sms" size="524288" crc="69fb5775"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ameribb" sourcefile="sms/d_sms.cpp">
 		<description>American Baseball (Euro, Brazil)</description>
 		<year>1989</year>
@@ -670,10 +679,10 @@
 	</game>
 	<game name="atoms" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Atoms! (HB, v1.1)</description>
+		<description>Atoms! (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>The Gould Fish</manufacturer>
-		<rom name="Atoms v1.1 (2026)(The Gould Fish).sms" size="180224" crc="87d98e15"/>
+		<rom name="Atoms v1.2 (2026)(The Gould Fish).sms" size="180224" crc="d6b7a3a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2265,10 +2274,10 @@
 	</game>
 	<game name="fridgefury" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Fridge Fury (HB, v34c)</description>
+		<description>Fridge Fury (HB, v36c)</description>
 		<year>2026</year>
 		<manufacturer>MikGames</manufacturer>
-		<rom name="Fridge Fury v34c (2026)(MikGames).sms" size="425984" crc="fed2b034"/>
+		<rom name="Fridge Fury v36c (2026)(MikGames).sms" size="425984" crc="51dcda45"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2566,10 +2575,10 @@
 	</game>
 	<game name="gluf" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>GLUF Tesla Frog (HB)</description>
+		<description>GLUF Tesla Frog (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>Tony &amp; Co.</manufacturer>
-		<rom name="GLUF Tesla Frog (2026)(Tony &amp; Co.).sms" size="131072" crc="219439e7"/>
+		<rom name="GLUF Tesla Frog v1.2 (2026)(Tony &amp; Co.).sms" size="131072" crc="fbda1873"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2964,6 +2973,15 @@
 		<year>1985</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Hang-On (Japan, MyCard)(1985)(Sega).bin" size="32768" crc="5c01adf9"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hangonenh" cloneof="hangon" romof="hangon" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Hang-On - Enhanced (Hack, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>chirinea, Maxim</manufacturer>
+		<rom name="Hang-On - Enhanced v1.1 (2026)(chirinea, Maxim).sms" size="32768" crc="37c2e336"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3519,9 +3537,18 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lemmingsrstd" cloneof="lemmings" romof="lemmings" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Lemmings - Restored (Hack, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>SquidgySquared</manufacturer>
+		<rom name="Lemmings - Restored v1.2 (2026)(SquidgySquared).sms" size="524288" crc="226dbdb3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="lemming2" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
-		<description>Lemmings 2 - The Tribes (Euro, Prototype)</description>
+		<description>Lemmings 2: The Tribes (Euro, Prototype)</description>
 		<year>1994</year>
 		<manufacturer>Psygnosis</manufacturer>
 		<rom name="Lemmings 2 - The Tribes (Euro, Proto)(1994)(Psygnosis).sms" size="524288" crc="cf5aecca"/>

@@ -1690,10 +1690,10 @@
 	</game>
 	<game name="gluf" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>GLUF Tesla Frog (HB)</description>
+		<description>GLUF Tesla Frog (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>Tony &amp; Co.</manufacturer>
-		<rom name="GLUF Tesla Frog (2026)(Tony &amp; Co.).gg" size="131072" crc="1afb1281"/>
+		<rom name="GLUF Tesla Frog v1.2 (2026)(Tony &amp; Co.).gg" size="131072" crc="2acb2043"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

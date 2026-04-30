@@ -860,6 +860,7 @@ DRV		BurnDrvAltbeast5d;
 DRV		BurnDrvAltbeast5;
 DRV		BurnDrvAltbeast6;
 DRV		BurnDrvAltbeast;
+DRV		BurnDrvsms_altbeastav;
 DRV		BurnDrvmd_altbeastrt;
 DRV		BurnDrvmd_altbeast2;
 DRV		BurnDrvmd_alterego;
@@ -3942,7 +3943,10 @@ DRV		BurnDrvMSX_citycona;
 DRV		BurnDrvCitycon;
 DRV		BurnDrvCitycona;
 DRV		BurnDrvnes_cityconnection;
+DRV		BurnDrvpce_cityhuntee;
 DRV		BurnDrvpce_cityhunte;
+DRV		BurnDrvpce_cityhunthm;
+DRV		BurnDrvpce_cityhuntj;
 DRV		BurnDrvpce_cityhunt;
 DRV		BurnDrvnes_citytrouble;
 DRV		BurnDrvsnes_Civilizationj;
@@ -9151,6 +9155,7 @@ DRV		BurnDrvMSX_hangona;
 DRV		BurnDrvsms_hangonj;
 DRV		BurnDrvHangon;
 DRV		BurnDrvHangon2;
+DRV		BurnDrvsms_hangonenh;
 DRV		BurnDrvcv_hangon2;
 DRV		BurnDrvsg1k_hangon2;
 DRV		BurnDrvsg1k_hangon2t1;
@@ -10868,6 +10873,7 @@ DRV		BurnDrvKicker;
 DRV		BurnDrvKikcubicb;
 DRV		BurnDrvnes_kicklecubicle;
 DRV		BurnDrvKickman;
+DRV		BurnDrvmd_kidchampt;
 DRV		BurnDrvmd_kidcham;
 DRV		BurnDrvmd_kidchams;
 DRV		BurnDrvnes_kiddracula;
@@ -11644,10 +11650,11 @@ DRV		BurnDrvgg_lemmingsp;
 DRV		BurnDrvsnes_Lemmingseh;
 DRV		BurnDrvmd_lemmingscph;
 DRV		BurnDrvsnes_Lemmingsh;
+DRV		BurnDrvsms_lemmingsrstd;
 DRV		BurnDrvgg_lemming2;
-DRV		BurnDrvsms_lemming2;
 DRV		BurnDrvsnes_Lemmings2;
 DRV		BurnDrvmd_lemming2;
+DRV		BurnDrvsms_lemming2;
 DRV		BurnDrvmd_lemming2u;
 DRV		BurnDrvnes_lemmingsimp;
 DRV		BurnDrvnes_legenzeltp;
@@ -25993,6 +26000,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAltbeast5,			// Altered Beast (set 5) (FD1094 317-0069)
 	&BurnDrvAltbeast6,			// Altered Beast (set 6) (8751 317-0076)
 	&BurnDrvAltbeast,			// Altered Beast (set 8) (8751 317-0078)
+	&BurnDrvsms_altbeastav,		// Altered Beast - Arcade Voices (Hack, v1.2)
 	&BurnDrvmd_altbeastrt,		// Altered Beast - ReToned (Hack, v1.16)
 	&BurnDrvmd_altbeast2,		// Altered Beast II: The Seven Depths of Hell (HB, Alpha-4)
 	&BurnDrvmd_alterego,		// AlterEgo Remastered (HB)
@@ -26548,7 +26556,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvChelnovu,			// Atomic Runner Chelnov (US)
 	&BurnDrvChelnov,			// Atomic Runner Chelnov (World)
 	&BurnSpecAtomicat,			// AtomiCat (48K) (HB)
-	&BurnDrvsms_atoms,			// Atoms! (HB, v1.1)
+	&BurnDrvsms_atoms,			// Atoms! (HB, v1.2)
 	&BurnDrvmd_atptour,			// ATP Tour Championship Tennis (Euro)
 	&BurnDrvmd_atptourp4,		// ATP Tour Championship Tennis (Prototype, 19940802)
 	&BurnDrvmd_atptourp1,		// ATP Tour Championship Tennis (Prototype, 19940908)
@@ -29075,8 +29083,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCitycon,			// City Connection (set 1)
 	&BurnDrvCitycona,			// City Connection (set 2)
 	&BurnDrvnes_cityconnection,	// City Connection (USA)
+	&BurnDrvpce_cityhuntee,		// City Hunter (Enhanced Version) (World)
 	&BurnDrvpce_cityhunte,		// City Hunter (Hack, English v1.1)
-	&BurnDrvpce_cityhunt,		// City Hunter (Japan)
+	&BurnDrvpce_cityhunthm,		// City Hunter (Hard Mode) (World)
+	&BurnDrvpce_cityhuntj,		// City Hunter (Japan)
+	&BurnDrvpce_cityhunt,		// City Hunter (World)
 	&BurnDrvnes_citytrouble,	// City Trouble (HB)
 	&BurnDrvsnes_Civilizationj,	// Civilization - Sekai Shichi Daibunmei (Japan)
 	&BurnDrvcv_cix,				// Cix (HB)
@@ -32824,7 +32835,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_fridaythe13thc,	// Friday the 13th (Hack, Spanish v1.1)
 	&BurnDrvnes_fridaythe13th,	// Friday the 13th (USA)
 	&BurnDrvnes_fridaythe13rtcbd,// Friday The 13th: Return To Camp Blood Demake (HB, v1.52)
-	&BurnDrvsms_fridgefury,		// Fridge Fury (HB, v34c)
+	&BurnDrvsms_fridgefury,		// Fridge Fury (HB, v36c)
 	&BurnSpecFrightmare,		// Frightmare (128K)
 	&BurnDrvFriskyt,			// Frisky Tom (set 1)
 	&BurnDrvFriskyta,			// Frisky Tom (set 2)
@@ -33573,8 +33584,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_heracless,		// Glory of Heracles, The: Labors of the Divine Hero (Hack, Spanish v1.1)
 	&BurnSpecgluf,				// GLUF (128K) (HB)
 	&BurnDrvmd_gluf,			// GLUF (HB)
-	&BurnDrvgg_gluf,			// GLUF Tesla Frog (HB)
-	&BurnDrvsms_gluf,			// GLUF Tesla Frog (HB)
+	&BurnDrvgg_gluf,			// GLUF Tesla Frog (HB, v1.2)
+	&BurnDrvsms_gluf,			// GLUF Tesla Frog (HB, v1.2)
 	&BurnSpecGlugglug,			// Glug Glug (48K)
 	&BurnDrvnes_glukthuwar,		// Gluk the Thunder Warrior (Spain) (Gluk Video) (Unl)
 	&BurnSpecGnasher,			// Gnasher (16K)
@@ -34284,6 +34295,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_hangonj,		// Hang-On (Japan, MyCard)
 	&BurnDrvHangon,				// Hang-On (Rev A)
 	&BurnDrvHangon2,			// Hang-On (Rev A, ride-on)
+	&BurnDrvsms_hangonenh,		// Hang-On - Enhanced (Hack, v1.1)
 	&BurnDrvcv_hangon2,			// Hang-On II (HB)
 	&BurnDrvsg1k_hangon2,		// Hang-On II (Japan)
 	&BurnDrvsg1k_hangon2t1,		// Hang-On II (Taiwan)
@@ -36001,6 +36013,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKikcubicb,			// Kickle Cubele
 	&BurnDrvnes_kicklecubicle,	// Kickle Cubicle (USA)
 	&BurnDrvKickman,			// Kickman (upright)
+	&BurnDrvmd_kidchampt,		// Kid Camaleao (Hack, Portuguese)
 	&BurnDrvmd_kidcham,			// Kid Chameleon (Euro, Korea, USA)
 	&BurnDrvmd_kidchams,		// Kid Chameleon (Hack, Spanish)
 	&BurnDrvnes_kiddracula,		// Kid Dracula (Hack, English)
@@ -36777,10 +36790,11 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Lemmingseh,	// Lemmings - Colour Palette & Level Title Fix (Euro) (Hack, v1.2 FINAL)
 	&BurnDrvmd_lemmingscph,		// Lemmings - Colour Palette & Level Title Fix (Euro) (Hack, v1.6 Final)
 	&BurnDrvsnes_Lemmingsh,		// Lemmings - Colour Palette & Level Title Fix (USA) (Hack, v1.0 FINAL)
+	&BurnDrvsms_lemmingsrstd,	// Lemmings - Restored (Hack, v1.2)
 	&BurnDrvgg_lemming2,		// Lemmings 2 - The Tribes (Euro, Prototype)
-	&BurnDrvsms_lemming2,		// Lemmings 2 - The Tribes (Euro, Prototype)
 	&BurnDrvsnes_Lemmings2,		// Lemmings 2 - The Tribes (USA)
 	&BurnDrvmd_lemming2,		// Lemmings 2: The Tribes (Euro)
+	&BurnDrvsms_lemming2,		// Lemmings 2: The Tribes (Euro, Prototype)
 	&BurnDrvmd_lemming2u,		// Lemmings 2: The Tribes (USA)
 	&BurnDrvnes_lemmingsimp,	// Lemmings Improvement (Hack, v1.3)
 	&BurnDrvnes_legenzeltp,		// Lenda de Zelda, A (Hack, Portuguese v2.0)
@@ -43497,7 +43511,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvShadfrceu,			// Shadow Force (US, Version 2)
 	&BurnDrvShadfrce,			// Shadow Force (World, Version 3)
 	&BurnDrvShadfrcej,			// Shadow Force - Henshin Ninja (Japan, Version 2)
-	&BurnDrvSgz,				// Shadow Gangs Zero (Kick Demo Ver: 2.0)
+	&BurnDrvSgz,				// Shadow Gangs Zero (Backers Demo V1.0)
 	&BurnSpecShadowofthebeast,	// Shadow Of The Beast (128K)
 	&BurnDrvsms_beast,			// Shadow of the Beast (Euro, Brazil)
 	&BurnDrvmd_beast,			// Shadow of the Beast (Euro, USA)
@@ -51122,6 +51136,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "altbeast5", "sega/d_sys16b.cpp"},
 	{ "altbeast6", "sega/d_sys16b.cpp"},
 	{ "altbeast", "sega/d_sys16b.cpp"},
+	{ "sms_altbeastav", "sms/d_sms.cpp"},
 	{ "md_altbeastrt", "megadrive/d_megadrive.cpp"},
 	{ "md_altbeast2", "megadrive/d_megadrive.cpp"},
 	{ "md_alterego", "megadrive/d_megadrive.cpp"},
@@ -54182,7 +54197,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "citycon", "pre90s/d_citycon.cpp"},
 	{ "citycona", "pre90s/d_citycon.cpp"},
 	{ "nes_cityconnection", "nes/d_nes.cpp"},
+	{ "pce_cityhuntee", "pce/d_pce.cpp"},
 	{ "pce_cityhunte", "pce/d_pce.cpp"},
+	{ "pce_cityhunthm", "pce/d_pce.cpp"},
+	{ "pce_cityhuntj", "pce/d_pce.cpp"},
 	{ "pce_cityhunt", "pce/d_pce.cpp"},
 	{ "nes_citytrouble", "nes/d_nes.cpp"},
 	{ "snes_civilizationj", "snes/d_snes.cpp"},
@@ -59361,6 +59379,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_hangonj", "sms/d_sms.cpp"},
 	{ "hangon", "sega/d_hangon.cpp"},
 	{ "hangon2", "sega/d_hangon.cpp"},
+	{ "sms_hangonenh", "sms/d_sms.cpp"},
 	{ "cv_hangon2", "coleco/d_coleco.cpp"},
 	{ "sg1k_hangon2", "sg1000/d_sg1000.cpp"},
 	{ "sg1k_hangon2t1", "sg1000/d_sg1000.cpp"},
@@ -61058,6 +61077,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kikcubicb", "irem/d_vigilant.cpp"},
 	{ "nes_kicklecubicle", "nes/d_nes.cpp"},
 	{ "kickman", "pre90s/d_mcr.cpp"},
+	{ "md_kidchampt", "megadrive/d_megadrive.cpp"},
 	{ "md_kidcham", "megadrive/d_megadrive.cpp"},
 	{ "md_kidchams", "megadrive/d_megadrive.cpp"},
 	{ "nes_kiddracula", "nes/d_nes.cpp"},
@@ -61830,10 +61850,11 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_lemmingseh", "snes/d_snes.cpp"},
 	{ "md_lemmingscph", "megadrive/d_megadrive.cpp"},
 	{ "snes_lemmingsh", "snes/d_snes.cpp"},
+	{ "sms_lemmingsrstd", "sms/d_sms.cpp"},
 	{ "gg_lemming2", "sms/d_sms.cpp"},
-	{ "sms_lemming2", "sms/d_sms.cpp"},
 	{ "snes_lemmings2", "snes/d_snes.cpp"},
 	{ "md_lemming2", "megadrive/d_megadrive.cpp"},
+	{ "sms_lemming2", "sms/d_sms.cpp"},
 	{ "md_lemming2u", "megadrive/d_megadrive.cpp"},
 	{ "nes_lemmingsimp", "nes/d_nes.cpp"},
 	{ "nes_legenzeltp", "nes/d_nes.cpp"},
