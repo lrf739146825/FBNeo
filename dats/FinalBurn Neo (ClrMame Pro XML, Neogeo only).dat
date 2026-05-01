@@ -23806,16 +23806,16 @@
 	</game>
 	<game name="sgz" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Demo</comment>
-		<description>Shadow Gangs Zero (Kick Demo Ver: 2.0)</description>
-		<year>2024</year>
-		<manufacturer>kickstarter</manufacturer>
-		<rom name="shadowgangs-p1.bin" size="1048576" crc="825d0989"/>
-		<rom name="shadowgangs-p2.bin" size="1048576" crc="3d1f0314"/>
-		<rom name="shadowgangs-s1.bin" size="131072" crc="2e4238d1"/>
-		<rom name="shadowgangs-c1.bin" size="2097152" crc="7679fe24"/>
-		<rom name="shadowgangs-c2.bin" size="2097152" crc="5374cdad"/>
-		<rom name="shadowgangs-m1.bin" size="131072" crc="11c56b34"/>
-		<rom name="shadowgangs-v1.bin" size="2097152" crc="8928bcf2"/>
+		<description>Shadow Gangs Zero (Backers Demo V1.0)</description>
+		<year>2026</year>
+		<manufacturer>JKM Corp.</manufacturer>
+		<rom name="shadowgangs-p1.bin" size="1048576" crc="d82b221c"/>
+		<rom name="shadowgangs-p2.bin" size="2097152" crc="29d808db"/>
+		<rom name="shadowgangs-s1.bin" size="131072" crc="0129953c"/>
+		<rom name="shadowgangs-c1.bin" size="16777216" crc="389f2418"/>
+		<rom name="shadowgangs-c2.bin" size="16777216" crc="0e80f762"/>
+		<rom name="shadowgangs-m1.bin" size="524288" crc="d8b119ee"/>
+		<rom name="shadowgangs-v1.bin" size="16777216" crc="3feb9e9b"/>
 		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
 		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
 		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>

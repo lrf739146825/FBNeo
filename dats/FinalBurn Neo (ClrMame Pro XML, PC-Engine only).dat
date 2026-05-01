@@ -411,6 +411,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="cityhuntee" cloneof="cityhunt" romof="cityhunt" sourcefile="pce/d_pce.cpp">
+		<comment>Official English Translation</comment>
+		<description>City Hunter (Enhanced Version) (World)</description>
+		<year>1989-2026</year>
+		<manufacturer>Sunsoft - Red Art Games</manufacturer>
+		<rom name="City Hunter (Enhanced Version) (World)(1989-2026)(Sunsoft - Red Art).pce" size="1048576" crc="18d09c0f"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cityhunte" cloneof="cityhunt" romof="cityhunt" sourcefile="pce/d_pce.cpp">
 		<comment>Hack</comment>
 		<description>City Hunter (Hack, English v1.1)</description>
@@ -420,11 +429,29 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="cityhunt" sourcefile="pce/d_pce.cpp">
+	<game name="cityhunthm" cloneof="cityhunt" romof="cityhunt" sourcefile="pce/d_pce.cpp">
+		<comment>Official English Translation</comment>
+		<description>City Hunter (Hard Mode) (World)</description>
+		<year>1989-2026</year>
+		<manufacturer>Sunsoft - Red Art Games</manufacturer>
+		<rom name="City Hunter (Hard Mode) (World)(1989-2026)(Sunsoft - Red Art).pce" size="1048576" crc="5d79e930"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cityhuntj" cloneof="cityhunt" romof="cityhunt" sourcefile="pce/d_pce.cpp">
 		<description>City Hunter (Japan)</description>
 		<year>1989</year>
 		<manufacturer>Sunsoft</manufacturer>
 		<rom name="City Hunter (Japan)(1989)(Sunsoft).pce" size="393216" crc="f91b055f"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cityhunt" sourcefile="pce/d_pce.cpp">
+		<comment>Official English Translation</comment>
+		<description>City Hunter (World)</description>
+		<year>1989-2026</year>
+		<manufacturer>Sunsoft - Red Art Games</manufacturer>
+		<rom name="City Hunter (World)(1989-2026)(Sunsoft - Red Art).pce" size="1048576" crc="7e9c2c7e"/>
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
