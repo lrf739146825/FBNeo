@@ -4915,6 +4915,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ringdashsms" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Ring Dash SMS (HB)</description>
+		<year>2025</year>
+		<manufacturer>Brig78</manufacturer>
+		<rom name="Ring Dash SMS (2025)(Brig78).sms" size="131072" crc="a1e883fc"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="roadfight" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Road Fighter (HB, v1.2)</description>

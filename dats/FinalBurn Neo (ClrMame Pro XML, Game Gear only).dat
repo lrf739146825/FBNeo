@@ -3548,6 +3548,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ringdashgg" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Ring Dash GG (HB)</description>
+		<year>2025</year>
+		<manufacturer>Brig78</manufacturer>
+		<rom name="Ring Dash GG (2025)(Brig78).gg" size="131072" crc="471c09b7"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="riserobo" sourcefile="sms/d_sms.cpp">
 		<description>Rise of the Robots (Euro, USA)</description>
 		<year>1994</year>

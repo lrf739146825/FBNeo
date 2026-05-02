@@ -434,11 +434,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="bankbuild" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Published by Good Deal Games</comment>
 		<description>Bankruptcy Builder (HB)</description>
 		<year>2013</year>
-		<manufacturer>Good Deal Games</manufacturer>
-		<rom name="Bankruptcy Builder (2013)(Good Deal Games).rom" size="32768" crc="b153c849"/>
+		<manufacturer>Philipp Klaus Krause</manufacturer>
+		<rom name="Bankruptcy Builder (2013)(Philipp Klaus Krause).rom" size="32768" crc="b153c849"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1007,6 +1007,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bustinout0" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>BUSTin-Out Vol. 0 (HB)</description>
+		<year>2000-2016</year>
+		<manufacturer>Daniel Bienvenu</manufacturer>
+		<rom name="BUSTin-Out Vol. 0 (2000)(Daniel Bienvenu).rom" size="32768" crc="edca3a1f"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bustinout1" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by CollectorVision Games</comment>
 		<description>BUSTin-Out Vol. 1 (HB)</description>
@@ -1429,11 +1442,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="cix" romof="coleco" sourcefile="coleco/d_coleco.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Published by Good Deal Games</comment>
 		<description>Cix (HB)</description>
 		<year>2013</year>
-		<manufacturer>Good Deal Games</manufacturer>
-		<rom name="Cix (2013)(Good Deal Games).rom" size="32768" crc="fea0da6d"/>
+		<manufacturer>Philipp Klaus Krause</manufacturer>
+		<rom name="Cix (2013)(Philipp Klaus Krause).rom" size="32768" crc="fea0da6d"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -1632,10 +1645,10 @@
 	</game>
 	<game name="cye" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
-		<description>Cye (HB)</description>
+		<description>Cye (HB, v1.1)</description>
 		<year>2007</year>
 		<manufacturer>Philipp Klaus Krause</manufacturer>
-		<rom name="Cye (2007)(Philipp Klaus Krause).rom" size="32768" crc="483c85b1"/>
+		<rom name="Cye v1.1 (2007)(Philipp Klaus Krause).rom" size="31351" crc="0eaec351"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -4356,12 +4369,25 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="monstmashergdg" cloneof="monstmasher" romof="monstmasher" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by Good Deals Games</comment>
+		<description>Monster Masher (Good Deals Games) (HB)</description>
+		<year>2006</year>
+		<manufacturer>Philipp Klaus Krause</manufacturer>
+		<rom name="Monster (Good Deals Games) (2006)(Philipp Klaus Krause).rom" size="30475" crc="c212599a"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="monstmasher" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Monster Masher (HB)</description>
 		<year>2006</year>
 		<manufacturer>Philipp Klaus Krause</manufacturer>
-		<rom name="Monster Masher (2006)(Philipp Klaus Krause).rom" size="30475" crc="c212599a"/>
+		<rom name="Monster Masher (2006)(Philipp Klaus Krause).rom" size="30542" crc="c9647af5"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -4570,6 +4596,19 @@
 		<year>1983</year>
 		<manufacturer>Coleco</manufacturer>
 		<rom name="Mr. Do! (USA, Euro)(1983)(Coleco).rom" size="24576" crc="461ab6ad"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mrdoarcade" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Mr. Do! Arcade (HB)</description>
+		<year>2026</year>
+		<manufacturer>Scott Moschella</manufacturer>
+		<rom name="Mr. Do! Arcade (2026)(Scott Moschella).rom" size="32695" crc="a06edcb1"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5796,6 +5835,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="schlangecv" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Schlange CV (HB)</description>
+		<year>2003-06</year>
+		<manufacturer>Philipp Klaus Krause</manufacturer>
+		<rom name="Schlange CV (2003-06)(Philipp Klaus Krause).rom" size="32768" crc="0ecdd112"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="scramble" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by CollectorVision Games</comment>
 		<description>Scramble (HB)</description>
@@ -5814,7 +5866,7 @@
 		<description>Search For The Stolen Crown Jewels (HB)</description>
 		<year>2006</year>
 		<manufacturer>Philipp Klaus Krause</manufacturer>
-		<rom name="Search for the Stolen Crown Jewels (2006)(Philipp Klaus Krause).rom" size="32768" crc="889f5b98"/>
+		<rom name="Search for the Stolen Crown Jewels (2006)(Philipp Klaus Krause).rom" size="32721" crc="4ad21572"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5838,9 +5890,9 @@
 	<game name="sftscj3" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Search For The Stolen Crown Jewels 3 (HB)</description>
-		<year>2013</year>
+		<year>2008-13</year>
 		<manufacturer>Phillipp Klaus Krause</manufacturer>
-		<rom name="Search for the Stolen Crown Jewels 3 (2013)(Phillipp Klaus Krause).rom" size="32768" crc="1f3981fc"/>
+		<rom name="Search for the Stolen Crown Jewels 3 (2008-13)(Phillipp Klaus Krause).rom" size="32768" crc="1f3981fc"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5930,6 +5982,19 @@
 		<year>2017</year>
 		<manufacturer>Paxanga</manufacturer>
 		<rom name="Shouganai SGM (2017)(Team Pixelboy).rom" size="32768" crc="89c2b16f"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shpuzzle" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Shunting Puzzle (HB)</description>
+		<year>2009</year>
+		<manufacturer>Philipp Klaus Krause</manufacturer>
+		<rom name="Shunting Puzzle (2009)(Philipp Klaus Krause).rom" size="32115" crc="2b85fbbc"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
