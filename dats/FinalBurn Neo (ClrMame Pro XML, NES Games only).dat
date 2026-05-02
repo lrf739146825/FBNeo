@@ -9797,16 +9797,8 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="hiryunoken" sourcefile="nes/d_nes.cpp">
-		<description>Hiryuu no Ken - Ougi no Sho (Japan)</description>
-		<year>1987</year>
-		<manufacturer>Culture Brain</manufacturer>
-		<rom name="Hiryuu no Ken - Ougi no Sho (Japan)(1987)(Culture Brain).nes" size="131088" crc="3887557d"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
 	<game name="hiryunokenii" sourcefile="nes/d_nes.cpp">
-		<description>Hiryuu no Ken II - Dragon no Tsubasa (Japan)</description>
+		<description>Hiryuu no Ken II: Dragon no Tsubasa (Japan)</description>
 		<year>1988</year>
 		<manufacturer>Culture Brain</manufacturer>
 		<rom name="Hiryuu no Ken II - Dragon no Tsubasa (Japan)(1988)(Culture Brain).nes" size="262160" crc="19d51349"/>
@@ -9814,7 +9806,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hiryunokeniii" sourcefile="nes/d_nes.cpp">
-		<description>Hiryuu no Ken III - 5 Nin no Ryuu Senshi (Japan)</description>
+		<description>Hiryuu no Ken III: 5 Nin no Ryuu Senshi (Japan)</description>
 		<year>1990</year>
 		<manufacturer>Culture Brain</manufacturer>
 		<rom name="Hiryuu no Ken III - 5 Nin no Ryuu Senshi (Japan)(1990)(Culture Brain).nes" size="262160" crc="a5f185c3"/>
@@ -9822,10 +9814,18 @@
 		<driver status="good"/>
 	</game>
 	<game name="hiryunokenspe" sourcefile="nes/d_nes.cpp">
-		<description>Hiryuu no Ken Special - Fighting Wars (Japan)</description>
+		<description>Hiryuu no Ken Special: Fighting Wars (Japan)</description>
 		<year>1991</year>
 		<manufacturer>Culture Brain</manufacturer>
 		<rom name="Hiryuu no Ken Special - Fighting Wars (Japan)(1991)(Culture Brain).nes" size="262160" crc="6a2450a8"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="hiryunoken" sourcefile="nes/d_nes.cpp">
+		<description>Hiryuu no Ken: Ougi no Sho (Japan)</description>
+		<year>1987</year>
+		<manufacturer>Culture Brain</manufacturer>
+		<rom name="Hiryuu no Ken - Ougi no Sho (Japan)(1987)(Culture Brain).nes" size="131088" crc="3887557d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -10944,6 +10944,15 @@
 		<year>1992</year>
 		<manufacturer>Wisdom Tree</manufacturer>
 		<rom name="Joshua &amp; the Battle of Jericho (USA)(1992)(Wisdom Tree).nes" size="262160" crc="8d608ab1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="jitu" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Journey Into The Unknown, A (HB)</description>
+		<year>2026</year>
+		<manufacturer>dalecoop Studio</manufacturer>
+		<rom name="Journey Into The Unknown, A (2026)(dalecoop Studio).nes" size="524304" crc="fe048893"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15749,6 +15758,15 @@
 		<year>1989</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Oishinbo Kyukyoku no Menu 3bon Syoubu (Japan)(1989)(Bandai).nes" size="262160" crc="4bfc079f"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="oldoaklane" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Old Oak Lane (HB)</description>
+		<year>2025</year>
+		<manufacturer>Sleepy Bits Games</manufacturer>
+		<rom name="Old Oak Lane (2025)(Sleepy Bits Games).nes" size="393232" crc="2ba1667e"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
