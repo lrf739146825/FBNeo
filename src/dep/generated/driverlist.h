@@ -3717,6 +3717,7 @@ DRV		BurnDrvmd_chesterw;
 DRV		BurnDrvsnes_Chesterwild;
 DRV		BurnDrvnes_chestfie;
 DRV		BurnSpecChevychase;
+DRV		BurnDrvnes_chewchewm;
 DRV		BurnDrvtg_chewman;
 DRV		BurnDrvChewing;
 DRV		BurnDrvCheyenne;
@@ -6945,6 +6946,8 @@ DRV		BurnDrvnes_famicomwars;
 DRV		BurnDrvnes_famicomwarsj;
 DRV		BurnDrvnes_famidash;
 DRV		BurnDrvnes_famidashb;
+DRV		BurnDrvnes_famidashc;
+DRV		BurnDrvnes_famidashd;
 DRV		BurnDrvnes_famikan;
 DRV		BurnDrvnes_familyboxing;
 DRV		BurnDrvnes_familcir91;
@@ -28882,6 +28885,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Chesterwild,	// Chester Cheetah - Wild Wild Quest (USA)
 	&BurnDrvnes_chestfie,		// Chester Field - Ankoku Shin e no Chousen (Japan)
 	&BurnSpecChevychase,		// Chevy Chase (48K-128K)
+	&BurnDrvnes_chewchewm,		// Chew Chew Mimic (HB)
 	&BurnDrvtg_chewman,			// Chew-Man-Fu (USA)
 	&BurnDrvChewing,			// Chewing Gum
 	&BurnDrvCheyenne,			// Cheyenne (version 1.0)
@@ -32108,8 +32112,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Famtanclub2j,	// Famicom Tantei Club Part II: Ushiro ni Tatsu Shoujo (Japan)
 	&BurnDrvnes_famicomwars,	// Famicom Wars (Hack, English)
 	&BurnDrvnes_famicomwarsj,	// Famicom Wars (Japan)
-	&BurnDrvnes_famidash,		// Famidash (HB, v1.2.1)
-	&BurnDrvnes_famidashb,		// Famidash - Side B (HB, v1.2.1)
+	&BurnDrvnes_famidash,		// Famidash (HB, v1.2.8)
+	&BurnDrvnes_famidashb,		// Famidash - Side B (HB, v1.2.8)
+	&BurnDrvnes_famidashc,		// Famidash - Side C (HB, v1.2.8)
+	&BurnDrvnes_famidashd,		// Famidash - Side D (HB, v1.2.8)
 	&BurnDrvnes_famikan,		// Famikan (Japan) (Unl)
 	&BurnDrvnes_familyboxing,	// Family Boxing (Japan)
 	&BurnDrvnes_familcir91,		// Family Circuit '91 (Japan)
@@ -54021,6 +54027,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_chesterwild", "snes/d_snes.cpp"},
 	{ "nes_chestfie", "nes/d_nes.cpp"},
 	{ "spec_chevychase", "spectrum/d_spectrum.cpp"},
+	{ "nes_chewchewm", "nes/d_nes.cpp"},
 	{ "tg_chewman", "pce/d_pce.cpp"},
 	{ "chewing", "galaxian/d_galaxian.cpp"},
 	{ "cheyenne", "pre90s/d_exidy440.cpp"},
@@ -57231,6 +57238,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_famicomwarsj", "nes/d_nes.cpp"},
 	{ "nes_famidash", "nes/d_nes.cpp"},
 	{ "nes_famidashb", "nes/d_nes.cpp"},
+	{ "nes_famidashc", "nes/d_nes.cpp"},
+	{ "nes_famidashd", "nes/d_nes.cpp"},
 	{ "nes_famikan", "nes/d_nes.cpp"},
 	{ "nes_familyboxing", "nes/d_nes.cpp"},
 	{ "nes_familcir91", "nes/d_nes.cpp"},

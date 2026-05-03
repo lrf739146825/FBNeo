@@ -3664,6 +3664,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="chewchewm" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Chew Chew Mimic (HB)</description>
+		<year>2025</year>
+		<manufacturer>Lowtek Games, Rigg'd Games</manufacturer>
+		<rom name="Chew Chew Mimic (2025)(Lowtek Games, Rigg'd Games).nes" size="262160" crc="8f8e5d67"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="cmbr4wl" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Chibi Monster Br4wl (HB)</description>
@@ -7167,19 +7176,37 @@
 	</game>
 	<game name="famidash" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Famidash (HB, v1.2.1)</description>
-		<year>2024</year>
+		<description>Famidash (HB, v1.2.8)</description>
+		<year>2024-26</year>
 		<manufacturer>TFDSoft</manufacturer>
-		<rom name="Famidash v1.2.1 (2024)(TFDSoft).nes" size="786448" crc="a94b4cbb"/>
+		<rom name="Famidash v1.2.8 (2024-26)(TFDSoft).nes" size="786448" crc="5bf705b3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
 	<game name="famidashb" cloneof="famidash" romof="famidash" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Famidash - Side B (HB, v1.2.1)</description>
-		<year>2024</year>
+		<description>Famidash - Side B (HB, v1.2.8)</description>
+		<year>2024-26</year>
 		<manufacturer>TFDSoft</manufacturer>
-		<rom name="Famidash - Side B v1.2.1 (2024)(TFDSoft).nes" size="786448" crc="6a90da54"/>
+		<rom name="Famidash - Side B v1.2.8 (2024-26)(TFDSoft).nes" size="786448" crc="9baf3585"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="famidashc" cloneof="famidash" romof="famidash" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Famidash - Side C (HB, v1.2.8)</description>
+		<year>2024-26</year>
+		<manufacturer>TFDSoft</manufacturer>
+		<rom name="Famidash - Side C v1.2.8 (2024-26)(TFDSoft).nes" size="786448" crc="7556930c"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="famidashd" cloneof="famidash" romof="famidash" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Famidash - Side D (HB, v1.2.8)</description>
+		<year>2024-26</year>
+		<manufacturer>TFDSoft</manufacturer>
+		<rom name="Famidash - Side D v1.2.8 (2024-26)(TFDSoft).nes" size="786448" crc="9fc1c56f"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
