@@ -2408,6 +2408,8 @@ INT32 pgm2Scan(INT32 nAction, INT32 *pnMin)
             SCAN_VAR(Pgm2PioOutData);
 		}
 
+		Pgm2ClearOpposite.scan();
+
 		SCAN_VAR(nCyclesExtra);
     }
 
@@ -2440,8 +2442,6 @@ INT32 pgm2Scan(INT32 nAction, INT32 *pnMin)
         pPgm2ScanCallback(nAction, pnMin);
 
     pgm2ScanDraw(nAction);
-
-	Pgm2ClearOpposite.scan();
 
     return 0;
 }

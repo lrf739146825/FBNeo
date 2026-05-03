@@ -18879,10 +18879,10 @@
 	</game>
 	<game name="mijadore2en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mijadore 2 - the Key (English) (128K) (HB)</description>
+		<description>Mijadore 2: The Key (English) (128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>EdD</manufacturer>
-		<rom name="Mijadore 2 - the Key EN 128K (2024)(EdD).tap" size="62816" crc="16ccd53d"/>
+		<rom name="Mijadore 2 - The Key EN 128K (2024)(EdD).tap" size="62816" crc="16ccd53d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18890,10 +18890,10 @@
 	</game>
 	<game name="mijadore2pt" cloneof="mijadore2en" romof="mijadore2en" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mijadore 2 - the Key (Portuguese) (128K) (HB)</description>
+		<description>Mijadore 2: The Key (Portuguese) (128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>EdD</manufacturer>
-		<rom name="Mijadore 2 - the Key PT 128K (2024)(EdD).tap" size="62794" crc="c5b88dcc"/>
+		<rom name="Mijadore 2 - The Key PT 128K (2024)(EdD).tap" size="62794" crc="c5b88dcc"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18901,10 +18901,10 @@
 	</game>
 	<game name="mijadore2es" cloneof="mijadore2en" romof="mijadore2en" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Mijadore 2 - the Key (Spanish) (128K) (HB)</description>
+		<description>Mijadore 2: The Key (Spanish) (128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>EdD</manufacturer>
-		<rom name="Mijadore 2 - the Key ES 128K (2024)(EdD).tap" size="62764" crc="f72024c3"/>
+		<rom name="Mijadore 2 - The Key ES 128K (2024)(EdD).tap" size="62764" crc="f72024c3"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19686,6 +19686,17 @@
 		<year>1991</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Mountain Bike Simulator 48K-128K (1991)(Codemasters).tzx" size="53071" crc="8be7582d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mouselife2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mouse Life 2, A: Escape from Science Lab (128K) (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>BAD BITS</manufacturer>
+		<rom name="Mouse Life 2, A - Escape from Science Lab v1.2 128K (2026)(BAD BITS).tap" size="43483" crc="968a5570"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -24405,6 +24416,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="robotriot" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Robot Riot (48K)</description>
+		<year>1983</year>
+		<manufacturer>Silversoft</manufacturer>
+		<rom name="Robot Riot 48K (1983)(Silversoft).tzx" size="27991" crc="1b7f09e5"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="robo2048" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Robotron: 2084 (48K)</description>
 		<year>1984</year>
@@ -28591,6 +28611,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="supermutt" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Z: left - X: right - P: jump/fly</comment>
+		<description>Super Mutt (48K)</description>
+		<year>1984</year>
+		<manufacturer>Silversoft</manufacturer>
+		<rom name="Super Mutt 48K (1984)(Silversoft).tzx" size="47839" crc="e6527c8b"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="superrobinhood" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Super Robin Hood (48K)</description>
 		<year>1987</year>
@@ -28716,6 +28746,17 @@
 		<manufacturer>Bitmap Soft</manufacturer>
 		<rom name="SuperHair 48K (2021)(Bitmap Soft).tap" size="48216" crc="96c8b90a"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superhair2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>SuperHair 2: Revenge of the Wizard (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>MicroChops</manufacturer>
+		<rom name="SuperHair 2 - Revenge of the Wizard 128K (2026)(MicroChops).tap" size="119124" crc="aab58c65"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -29041,6 +29082,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="talos" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Talos (48K)</description>
+		<year>1985</year>
+		<manufacturer>Silversoft</manufacturer>
+		<rom name="Talos 48K (1985)(Silversoft).tzx" size="48838" crc="0acd016d"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tankbtle" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Tank Battle (128K) (HB)</description>
@@ -29348,7 +29398,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="terracognita" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Terra Cognita - The Hollow Moon (48K)</description>
+		<description>Terra Cognita: The Hollow Moon (48K)</description>
 		<year>1986</year>
 		<manufacturer>Codemasters</manufacturer>
 		<rom name="Terra Cognita - The Hollow Moon 48K (1986)(Codemasters).tap" size="39094" crc="52ef2dd2"/>
@@ -31901,6 +31951,16 @@
 		<year>2018</year>
 		<manufacturer>Retrobytes Productions</manufacturer>
 		<rom name="World War Simulator, The - Part 2 ES 48K (2018)(Retrobytes Productions).tap" size="51254" crc="a6e457e1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wthas" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Set '6' to use controller</comment>
+		<description>Worse Things Happen at Sea (48K)</description>
+		<year>1984</year>
+		<manufacturer>Silversoft</manufacturer>
+		<rom name="Worse Things Happen at Sea 48K (1984)(Silversoft).tzx" size="42161" crc="3a9ab430"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
