@@ -6193,6 +6193,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fireemblem4tp" cloneof="fireemblem4te" romof="fireemblem4te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Fire Emblem - Genealogy of the Holy War (Hack, Portuguese v1.13)</description>
+		<year>2025</year>
+		<manufacturer>Escribas da Espada</manufacturer>
+		<rom name="Fire Emblem - Genealogy of the Holy War PT-BR v1.13 (2025)(Escribas da Espada).sfc" size="6926955" crc="328f3d50"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fireemblemtsc" cloneof="fireemblemte" romof="fireemblemte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Fire Emblem - Monshou no Nazo (Hack, Simplified Chinese v1.03)</description>
@@ -8484,6 +8493,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="joemac2tp" cloneof="joemac2" romof="joemac2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Joe &amp; Mac 2 - Lost in the Tropics (Hack, Portuguese)</description>
+		<year>2015</year>
+		<manufacturer>DarkLink, Denim</manufacturer>
+		<rom name="Joe &amp; Mac 2 - Lost in the Tropics PT-BR (2015)(DarkLink, Denim).sfc" size="1048576" crc="2831dd78"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="joemac2" sourcefile="snes/d_snes.cpp">
 		<description>Joe &amp; Mac 2 - Lost in the Tropics (USA)</description>
 		<year>1994</year>
@@ -10091,6 +10109,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="magkraytp" cloneof="magkrayte" romof="magkrayte" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Magic Knight Rayearth (Hack, Portuguese)</description>
+		<year>1995</year>
+		<manufacturer>Monkey's Traducoes</manufacturer>
+		<rom name="Magic Knight Rayearth PT-BR (2013)(Monkey's Traducoes).sfc" size="1572864" crc="79767b74"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="magicsworde" cloneof="magicsword" romof="magicsword" sourcefile="snes/d_snes.cpp">
 		<description>Magic Sword (Euro)</description>
 		<year>1992</year>
@@ -10691,6 +10718,15 @@
 		<year>1995</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man X3 (E)(1995)(Capcom).sfc" size="2097152" crc="c504ddfd"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanx3tp" cloneof="megamanx3" romof="megamanx3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, CX4 enhancement chip</comment>
+		<description>Mega Man X3 (Hack, Portuguese)</description>
+		<year>2019</year>
+		<manufacturer>Solid One</manufacturer>
+		<rom name="Mega Man X3 PT-BR (2019)(Solid One).sfc" size="4194304" crc="51c4afcf"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17173,6 +17209,15 @@
 		<year>2025</year>
 		<manufacturer>Metaquarius</manufacturer>
 		<rom name="Super Metroid X-Fusion v1.2 (2025)(Metaquarius).sfc" size="4194304" crc="0526898e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supermetroidtp" cloneof="supermetroid" romof="supermetroid" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Metroide (Hack, Portuguese)</description>
+		<year>2013</year>
+		<manufacturer>Denim, Spyblack</manufacturer>
+		<rom name="Super Metroide PT-BR (2013)(Denim, Spyblack).sfc" size="3145728" crc="f064cc3d"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
