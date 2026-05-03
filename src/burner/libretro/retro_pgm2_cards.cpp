@@ -16,6 +16,7 @@
 #include <cstring>
 #include <string>
 #include <time.h>
+#include <errno.h>
 #include <vector>
 
 extern char g_system_dir[MAX_PATH];
@@ -229,8 +230,14 @@ static bool create_timestamped_slot_card(int slot, std::string& out_path)
 	now = time(NULL);
 	if (now == (time_t)-1)
 		return false;
+#ifdef _WIN32
+	if (localtime_s(&tm_now, &now) != 0) {
+        return false;
+    }
+#else
 	if (!localtime_r(&now, &tm_now))
 		return false;
+#endif
 	if (strftime(stamp, sizeof(stamp), "%Y%m%d_%H%M%S", &tm_now) == 0)
 		return false;
 
@@ -360,11 +367,13 @@ static void build_slot_option(int slot)
 
 	std::vector<std::string>& L = s_opt_label_storage[slot];
 	L.clear();
-	L.reserve(2 * (2 + s_file_paths[slot].size()));
-	L.push_back("0");
+	L.reserve(2 * (3 + s_file_paths[slot].size()));
+	L.push_back("default");
+	L.push_back(RETRO_PGM2_DEFAULT_CARD);
+	L.push_back("temporary");
 	L.push_back(RETRO_PGM2_TEMPORARY_CARD);
 	L.push_back("new");
-	L.push_back("Create New (timestamped)");
+	L.push_back(RETRO_PGM2_NEW_CARD);
 	for (size_t i = 0; i < s_file_paths[slot].size(); i++) {
 		char idx[12];
 		snprintf(idx, sizeof(idx), "%u", (unsigned)(i + 1));
@@ -393,7 +402,7 @@ static void build_slot_option(int slot)
 	def.info_categorized = NULL;
 	def.category_key = "pgm2_memory_card";
 
-	int nvals = 2 + (int)s_file_paths[slot].size();
+	int nvals = 3 + (int)s_file_paths[slot].size();
 	for (int i = 0; i < nvals; i++) {
 		def.values[i].value = L[(size_t)i * 2].c_str();
 		def.values[i].label = L[(size_t)i * 2 + 1].c_str();
@@ -448,10 +457,9 @@ static void rebuild_scan(bool preinit_before_drv_init)
 	if ((BurnDrvGetHardwareCode() & HARDWARE_PUBLIC_MASK) != HARDWARE_IGS_PGM2)
 		return;
 
+	// The value of "slots_eff" is based on "Pgm2MaxCardSlots", which comes from BurnDrvInit().
 	int slots_eff = Pgm2MaxCardSlots;
-	if (slots_eff <= 0 && preinit_before_drv_init)
-		slots_eff = 4;
-	if (slots_eff <= 0)
+	if (slots_eff <= 0 && !preinit_before_drv_init)
 		return;
 
 	const char* drvname = BurnDrvGetTextA(DRV_NAME);
@@ -516,6 +524,48 @@ static void apply_one_slot(int slot)
 	s_last_applied[slot][sizeof(s_last_applied[slot]) - 1] = '\0';
 
 	save_active_slot_file(slot);
+
+	// Use Default Memory Card File ,end with '_defalut', Only one exists. If Failed ,fall back to Temporary Card.
+	if (strcmp(var.value, "default") == 0) {
+		if (!load_or_create_default_slot_card(slot)) {
+			if (!build_builtin_card_image(s_pending_card_image, sizeof(s_pending_card_image))) {
+				log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to build default ROM card template\n", slot + 1);
+				memset(s_last_applied[slot], 0, sizeof(s_last_applied[slot]));
+				return;
+			}
+			s_active_file_path[slot].clear();
+			log_cb(RETRO_LOG_WARN,
+				"[FBNeo PGM2 cards] slot P%d: failed to load/create default card file; using temporary ROM template\n",
+				slot + 1);
+		}
+
+		reinsert_slot_with_pending_image(slot);
+		if (!s_active_file_path[slot].empty()) {
+			log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using default card file \"%s\"\n",
+				slot + 1, s_active_file_path[slot].c_str());
+		} else {
+			log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using temporary default ROM template\n",
+				slot + 1);
+		}
+		return;
+	}
+
+	// Use IN-Memory Temporary Card ,No File. Expires on Exit Game.
+	if (strcmp(var.value, "temporary") == 0) {
+		if (!build_builtin_card_image(s_pending_card_image, sizeof(s_pending_card_image))) {
+			log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to build built-in ROM card template\n", slot + 1);
+			memset(s_last_applied[slot], 0, sizeof(s_last_applied[slot]));
+			return;
+		}
+
+		reinsert_slot_with_pending_image(slot);
+		s_active_file_path[slot].clear();
+		log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using built-in ROM template (option value \"%s\")\n",
+			slot + 1, var.value);
+		return;
+	}
+
+	// Create New Memory Card File, end with '_timestamped'. Multiple exist.
 	if (strcmp(var.value, "new") == 0) {
 		std::string new_path;
 		if (!create_timestamped_slot_card(slot, new_path)) {
@@ -550,32 +600,8 @@ static void apply_one_slot(int slot)
 		return;
 	}
 
+	//Choose memory card from System/BIOS/fbneo/memcards/. Default Card excluded
 	int choice = atoi(var.value);
-	if (choice == 0) {
-		if (!load_or_create_default_slot_card(slot)) {
-			if (!build_builtin_card_image(s_pending_card_image, sizeof(s_pending_card_image))) {
-				log_cb(RETRO_LOG_ERROR, "[FBNeo PGM2 cards] slot P%d: failed to build default ROM card template\n", slot + 1);
-				memset(s_last_applied[slot], 0, sizeof(s_last_applied[slot]));
-				return;
-			}
-			s_active_file_path[slot].clear();
-			log_cb(RETRO_LOG_WARN,
-				"[FBNeo PGM2 cards] slot P%d: failed to load/create default card file; using temporary ROM template\n",
-				slot + 1);
-		}
-
-		reinsert_slot_with_pending_image(slot);
-		if (!s_active_file_path[slot].empty()) {
-			log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using default card file \"%s\"\n",
-				slot + 1, s_active_file_path[slot].c_str());
-		} else {
-			log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: using temporary default ROM template\n",
-				slot + 1);
-		}
-		return;
-	}
-
-	//Use Memory Card File
 	int fi = choice - 1;
 	if (fi < 0 || fi >= (int)s_file_paths[slot].size()) {
 		log_cb(RETRO_LOG_WARN,
