@@ -112,7 +112,7 @@ static INT32  Pgm2CardLogCount = 0;
 static const INT32 PGM2_NUM_CARD_SLOTS = 4;
 static const INT32 PGM2_CARD_SIZE = 0x108;
 static const INT32 PGM2_CARD_DATA_SIZE = 0x100;
-bool Pgm2CardAuthenticated[4] = {false, false, false, false};
+static bool Pgm2CardAuthenticated[4] = {false, false, false, false};
 INT32  Pgm2MaxCardSlots = 0;
 INT32  Pgm2ActiveCardSlot = 0;
 bool   Pgm2CardInserted[4] = {false, false, false, false};
@@ -2293,11 +2293,6 @@ INT32 pgm2Scan(INT32 nAction, INT32 *pnMin)
         ba.Data   = Pgm2ExtRAM;
         ba.nLen   = 0x10000;
         ba.szName = "Battery SRAM NV";
-        if (nAction & ACB_WRITE) {
-            bprintf(PRINT_NORMAL, _T("[PGM2][NVRAM] load %s (%d bytes)\n"), ba.szName, ba.nLen);
-        } else if (nAction & ACB_READ) {
-            bprintf(PRINT_NORMAL, _T("[PGM2][NVRAM] save %s (%d bytes)\n"), ba.szName, ba.nLen);
-        }
         BurnAcb(&ba);
     }
 
@@ -2312,11 +2307,6 @@ INT32 pgm2Scan(INT32 nAction, INT32 *pnMin)
                 ba.Data   = Pgm2Cards[i];
                 ba.nLen   = PGM2_CARD_SIZE;
                 ba.szName = cardNames[i];
-                if (nAction & ACB_WRITE) {
-                    bprintf(PRINT_NORMAL, _T("[PGM2][NVRAM] load %s (%d bytes)\n"), ba.szName, ba.nLen);
-                } else if (nAction & ACB_READ) {
-                    bprintf(PRINT_NORMAL, _T("[PGM2][NVRAM] save %s (%d bytes)\n"), ba.szName, ba.nLen);
-                }
                 BurnAcb(&ba);
             }
         }
