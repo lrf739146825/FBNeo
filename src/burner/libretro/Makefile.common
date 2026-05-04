@@ -334,12 +334,12 @@ endif
 SOURCES_CXX += $(LIBRETRO_DIR)/libretro.cpp \
 	$(LIBRETRO_DIR)/retro_cdemu.cpp \
 	$(LIBRETRO_DIR)/retro_common.cpp \
-	$(LIBRETRO_DIR)/retro_pgm2_cards.cpp \
 	$(LIBRETRO_DIR)/retro_input.cpp \
 	$(LIBRETRO_DIR)/retro_memory.cpp \
 	$(LIBRETRO_DIR)/retro_string.cpp \
 	$(LIBRETRO_DIR)/ips_manager.cpp \
-	$(LIBRETRO_DIR)/romdata.cpp
+	$(LIBRETRO_DIR)/romdata.cpp \
+	$(LIBRETRO_DIR)/retro_pgm2_cards.cpp
 
 SOURCES_C += $(UGUI_DIR)/ugui.c \
 	$(UGUI_DIR)/ugui_textbox.c \
