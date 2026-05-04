@@ -1,6 +1,6 @@
 #include "retro_common.h"
-#include "retro_pgm2_cards.h"
 #include "retro_input.h"
+#include "retro_pgm2_cards.h"
 
 #include <file/file_path.h>
 #include <retro_dirent.h>
