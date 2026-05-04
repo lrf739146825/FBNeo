@@ -9,11 +9,11 @@
 #include "aud_dsp.h"
 
 #include "retro_common.h"
-#include "retro_pgm2_cards.h"
 #include "retro_cdemu.h"
 #include "retro_input.h"
 #include "retro_memory.h"
 #include "ugui_tools.h"
+#include "retro_pgm2_cards.h"
 
 #include <file/file_path.h>
 
