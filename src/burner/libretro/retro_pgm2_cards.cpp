@@ -21,7 +21,10 @@
 
 extern char g_system_dir[MAX_PATH];
 
-static const int kPgm2CardMaxChoices = 120; // + built-in stays under RETRO_NUM_CORE_OPTION_VALUES_MAX
+static const INT32 kPgm2CardMaxChoices = 120; // + built-in stays under RETRO_NUM_CORE_OPTION_VALUES_MAX
+
+static const INT32 PGM2_CARD_SIZE = 0x108;
+static const INT32 PGM2_CARD_DATA_SIZE = 0x100;
 
 static bool s_pgm2_cards_built = false;
 /** Slots last exposed in core options (may be provisional 4 before BurnDrvInit sets Pgm2MaxCardSlots). */
@@ -33,7 +36,7 @@ static std::string s_opt_info_str[4];
 static std::vector<std::string> s_opt_label_storage[4]; // paired: value, label, value, label, ...
 static retro_core_option_v2_definition s_opt_def[4];
 static char s_last_applied[4][16];
-static UINT8 s_pending_card_image[0x108];
+static UINT8 s_pending_card_image[PGM2_CARD_SIZE];
 static std::string s_active_file_path[4];
 
 static int iequals_suffix(const char* name, const char* suf)
@@ -119,18 +122,18 @@ static bool read_raw_card_file(const char* path, UINT8* dest, size_t dest_len)
 		return false;
 	}
 	memset(dest, 0xff, dest_len);
-	if (sz == 0x108) {
-		if (filestream_read(fp, dest, 0x108) != 0x108) {
+	if (sz == PGM2_CARD_SIZE) {
+		if (filestream_read(fp, dest, PGM2_CARD_SIZE) != PGM2_CARD_SIZE) {
 			filestream_close(fp);
 			return false;
 		}
-	} else if (sz == 0x100) {
-		if (filestream_read(fp, dest, 0x100) != 0x100) {
+	} else if (sz == PGM2_CARD_DATA_SIZE) {
+		if (filestream_read(fp, dest, PGM2_CARD_DATA_SIZE) != PGM2_CARD_DATA_SIZE) {
 			filestream_close(fp);
 			return false;
 		}
-		if (dest_len >= 0x108) {
-			memset(dest + 0x100, 0xff, 4);
+		if (dest_len >= PGM2_CARD_SIZE) {
+			memset(dest + PGM2_CARD_DATA_SIZE, 0xff, 4);
 			dest[0x104] = 0x07;
 			dest[0x105] = 0xff;
 			dest[0x106] = 0xff;
@@ -146,20 +149,20 @@ static bool read_raw_card_file(const char* path, UINT8* dest, size_t dest_len)
 
 static bool write_raw_card_file(const char* path, const UINT8* src, size_t src_len)
 {
-	if (!path || !path[0] || !src || src_len < 0x108)
+	if (!path || !path[0] || !src || src_len < PGM2_CARD_SIZE)
 		return false;
 
-	size_t out_len = 0x108;
+	size_t out_len = PGM2_CARD_SIZE;
 	RFILE* rf = filestream_open(path, RETRO_VFS_FILE_ACCESS_READ, 0);
 	if (rf) {
 		int64_t sz = filestream_get_size(rf);
-		if (sz == 0x100)
-			out_len = 0x100;
-		else if (sz == 0x108)
-			out_len = 0x108;
+		if (sz == PGM2_CARD_DATA_SIZE)
+			out_len = PGM2_CARD_DATA_SIZE;
+		else if (sz == PGM2_CARD_SIZE)
+			out_len = PGM2_CARD_SIZE;
 		filestream_close(rf);
 	} else if (iequals_suffix(path, ".bin")) {
-		out_len = 0x100;
+		out_len = PGM2_CARD_DATA_SIZE;
 	}
 
 	RFILE* fp = filestream_open(path, RETRO_VFS_FILE_ACCESS_WRITE, 0);
@@ -173,9 +176,9 @@ static bool write_raw_card_file(const char* path, const UINT8* src, size_t src_l
 
 static bool build_builtin_card_image(UINT8* dest, size_t dest_len)
 {
-	if (!dest || dest_len < 0x108)
+	if (!dest || dest_len < PGM2_CARD_SIZE)
 		return false;
-	if (pgm2GetCardRomTemplate(dest, (INT32)dest_len) >= 0x108)
+	if (pgm2GetCardRomTemplate(dest, (INT32)dest_len) >= PGM2_CARD_SIZE)
 		return true;
 
 	memset(dest, 0xff, dest_len);
@@ -298,6 +301,28 @@ static void reinsert_slot_with_pending_image(int slot)
 	BurnAcb = prev_burn_acb;
 }
 
+static void eject_slot(int slot) {
+
+    if (slot < 0 || slot >= 4)
+		return;
+
+    Pgm2ActiveCardSlot = slot;
+
+    if (Pgm2Cards[slot]) {
+        memset(Pgm2Cards[slot], 0xFF, PGM2_CARD_SIZE);
+    }
+
+    if (!s_active_file_path[slot].empty()) {
+        s_active_file_path[slot].clear();
+    }
+
+    Pgm2CardInserted[slot] = false;
+    Pgm2CardAuthenticated[slot] = false;
+
+    INT32 nMinVersion = 0;
+    BurnAreaScan(ACB_READ | ACB_MEMCARD | ACB_MEMCARD_ACTION, &nMinVersion);
+}
+
 static void save_active_slot_file(int slot)
 {
 	if (slot < 0 || slot >= 4)
@@ -305,7 +330,7 @@ static void save_active_slot_file(int slot)
 	if (s_active_file_path[slot].empty() || !Pgm2Cards[slot])
 		return;
 
-	if (write_raw_card_file(s_active_file_path[slot].c_str(), Pgm2Cards[slot], 0x108)) {
+	if (write_raw_card_file(s_active_file_path[slot].c_str(), Pgm2Cards[slot], PGM2_CARD_SIZE)) {
 		log_cb(RETRO_LOG_INFO, "[FBNeo PGM2 cards] slot P%d: saved card file \"%s\"\n",
 			slot + 1, s_active_file_path[slot].c_str());
 	} else {
@@ -368,6 +393,8 @@ static void build_slot_option(int slot)
 	std::vector<std::string>& L = s_opt_label_storage[slot];
 	L.clear();
 	L.reserve(2 * (3 + s_file_paths[slot].size()));
+	L.push_back("empty");
+	L.push_back(RETRO_PGM2_EMPTY_SLOT);
 	L.push_back("default");
 	L.push_back(RETRO_PGM2_DEFAULT_CARD);
 	L.push_back("temporary");
@@ -402,7 +429,7 @@ static void build_slot_option(int slot)
 	def.info_categorized = NULL;
 	def.category_key = "pgm2_memory_card";
 
-	int nvals = 3 + (int)s_file_paths[slot].size();
+	int nvals = 4 + (int)s_file_paths[slot].size();
 	for (int i = 0; i < nvals; i++) {
 		def.values[i].value = L[(size_t)i * 2].c_str();
 		def.values[i].label = L[(size_t)i * 2 + 1].c_str();
@@ -524,6 +551,13 @@ static void apply_one_slot(int slot)
 	s_last_applied[slot][sizeof(s_last_applied[slot]) - 1] = '\0';
 
 	save_active_slot_file(slot);
+
+	//Empty Slots
+	if (strcmp(var.value, "empty") == 0) {
+		eject_slot(slot);
+		log_cb(RETRO_LOG_WARN, "[FBNeo PGM2 cards] slot P%d: Use Empty Slot; Eject Card File.\n", slot + 1);
+		return;
+	}
 
 	// Use Default Memory Card File ,end with '_defalut', Only one exists. If Failed ,fall back to Temporary Card.
 	if (strcmp(var.value, "default") == 0) {

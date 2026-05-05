@@ -1,7 +1,7 @@
 #ifndef __RETRO_STRING__
 #define __RETRO_STRING__
 
-#define NUM_STRING	168
+#define NUM_STRING	169
 
 extern const char* pSelLangStr[NUM_STRING];
 
@@ -157,12 +157,13 @@ void set_multi_language_strings();
 #define RETRO_ADVANCED_CAT_INFO				pSelLangStr[158]
 #define RETRO_PGM2_MEMORY_CARD_DESC			pSelLangStr[160]
 #define RETRO_PGM2_MEMORY_CARD_INFO			pSelLangStr[161]
-#define RETRO_PGM2_DEFAULT_CARD				pSelLangStr[162]
-#define RETRO_PGM2_TEMPORARY_CARD			pSelLangStr[163]
-#define RETRO_PGM2_NEW_CARD					pSelLangStr[164]
-#define RETRO_PGM2_MEMORY_CARD_SLOT_DESC	pSelLangStr[165]
-#define RETRO_PGM2_MEMORY_CARD_SLOT_INFO_1	pSelLangStr[166]
-#define RETRO_PGM2_MEMORY_CARD_SLOT_INFO_2	pSelLangStr[167]
+#define RETRO_PGM2_EMPTY_SLOT				pSelLangStr[162]
+#define RETRO_PGM2_DEFAULT_CARD				pSelLangStr[163]
+#define RETRO_PGM2_TEMPORARY_CARD			pSelLangStr[164]
+#define RETRO_PGM2_NEW_CARD					pSelLangStr[165]
+#define RETRO_PGM2_MEMORY_CARD_SLOT_DESC	pSelLangStr[166]
+#define RETRO_PGM2_MEMORY_CARD_SLOT_INFO_1	pSelLangStr[167]
+#define RETRO_PGM2_MEMORY_CARD_SLOT_INFO_2	pSelLangStr[168]
 
 /* UGUI */
 #define RETRO_ERROR_MESSAGES_00				pSelLangStr[ 59]
