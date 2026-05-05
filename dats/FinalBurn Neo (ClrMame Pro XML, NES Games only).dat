@@ -15788,6 +15788,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="oldoaklaneerm" cloneof="oldoaklane" romof="oldoaklane" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Homebrew</comment>
+		<description>Old Oak Lane (Easy Reading Mod) (HB)</description>
+		<year>2025</year>
+		<manufacturer>grendell</manufacturer>
+		<rom name="Old Oak Lane (Easy Reading Mod) (2025)(grendell).nes" size="393232" crc="43ab500b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="oldoaklane" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Old Oak Lane (HB)</description>
@@ -18488,6 +18497,24 @@
 		<year>2019</year>
 		<manufacturer>FG Software</manufacturer>
 		<rom name="Saturn Smash (2019)(FG Software).nes" size="65552" crc="abc36edb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="savekuingmg" cloneof="savekuin" romof="savekuin" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Save the Kuin (Grass Mini Game) (HB)</description>
+		<year>2023</year>
+		<manufacturer>Yukahu Games</manufacturer>
+		<rom name="Save the Kuin (Grass Mini Game) (2023)(Yukahu Games).nes" size="262160" crc="eff7c5e7"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="savekuin" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Save the Kuin (HB)</description>
+		<year>2023</year>
+		<manufacturer>Yukahu Games</manufacturer>
+		<rom name="Save the Kuin (2023)(Yukahu Games).nes" size="262160" crc="832e87a6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

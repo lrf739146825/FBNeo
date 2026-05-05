@@ -1161,6 +1161,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="camknightsb" cloneof="camknights" romof="camknights" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Prototype</comment>
+		<description>Camelot Knights (HB, Prototype)</description>
+		<year>1988-2024</year>
+		<manufacturer>Nanochess</manufacturer>
+		<rom name="Camelot Knights (Proto) (1988-2024)(Nanochess).rom" size="10197" crc="445046d6"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="campaign" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<description>Campaign '84 (USA)</description>
 		<year>1983</year>
@@ -3923,10 +3936,10 @@
 	</game>
 	<game name="magtreep" cloneof="magtree" romof="magtree" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Prototype, Published by Opcode Games</comment>
-		<description>Magical Tree (Prototype) (HB)</description>
+		<description>Magical Tree (HB, Prototype)</description>
 		<year>1984-2004</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Magical Tree (1984-2004)(Opcode Games).rom" size="32768" crc="9f53f9cc"/>
+		<rom name="Magical Tree (Proto) (1984-2004)(Opcode Games).rom" size="32768" crc="9f53f9cc"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6574,6 +6587,32 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starocean" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Star Ocean - The Missed Hope (HB)</description>
+		<year>2015</year>
+		<manufacturer>Kiwi</manufacturer>
+		<rom name="Star Ocean - The Missed Hope (2015)(Kiwi).rom" size="31869" crc="08e7df91"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="staroceana" cloneof="starocean" romof="starocean" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Star Ocean - The Missed Hope (HB, Alt)</description>
+		<year>2015</year>
+		<manufacturer>Kiwi</manufacturer>
+		<rom name="Star Ocean - The Missed Hope (Alt)(2015)(Kiwi).rom" size="31873" crc="d3f3d2a1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="starsoldier" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Super Game Module</comment>
 		<description>Star Soldier (SGM) (HB)</description>
@@ -7199,6 +7238,32 @@
 		<year>2007</year>
 		<manufacturer>Scott Huggins</manufacturer>
 		<rom name="Terra Attack (2007)(Scott Huggins).rom" size="32768" crc="44d527e1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="textadv1ce" cloneof="textadv1" romof="textadv1" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Text Adventure - Part 1 (Cheat to Ending) (HB)</description>
+		<year>2015</year>
+		<manufacturer>Kiwi</manufacturer>
+		<rom name="Text Adventure - Part 1 (Cheat to Ending) (2015)(Kiwi).rom" size="32618" crc="7f20b2a1"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="textadv1" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Text Adventure - Part 1 (HB)</description>
+		<year>2015</year>
+		<manufacturer>Kiwi</manufacturer>
+		<rom name="Text Adventure - Part 1 (2015)(Kiwi).rom" size="32724" crc="17d6ab67"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
