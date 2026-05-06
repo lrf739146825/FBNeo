@@ -1,4 +1,4 @@
-// PGM2 Memory card selection for libretro: scan system/fbneo/memcards/<drv>_pN_*.pg2|.bin
+// PGM2 Memory card selection for libretro: scan 'g_save_dir'/fbneo/pgm2_memcards/<drv>_pN_*.pg2|.bin
 
 #include "retro_pgm2_cards.h"
 #include "retro_common.h"
@@ -19,9 +19,9 @@
 #include <errno.h>
 #include <vector>
 
-extern char g_system_dir[MAX_PATH];
+extern char g_save_dir[MAX_PATH];
 
-static const INT32 kPgm2CardMaxChoices = 120; // + built-in stays under RETRO_NUM_CORE_OPTION_VALUES_MAX
+static const INT32 kPgm2CardMaxChoices = 120; // kPgm2CardMaxChoices is constrained to <= RETRO_NUM_CORE_OPTION_VALUES_MAX (128)
 
 static const INT32 PGM2_CARD_SIZE = 0x108;
 static const INT32 PGM2_CARD_DATA_SIZE = 0x100;
@@ -69,10 +69,10 @@ static std::string label_for_card_file(const char* fullpath)
 
 static bool get_card_dir_path(char dir[MAX_PATH])
 {
-	if (!dir || !g_system_dir[0])
+	if (!dir || !g_save_dir[0])
 		return false;
 
-	snprintf(dir, MAX_PATH, "%s%cfbneo%cmemcards", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
+	snprintf(dir, MAX_PATH, "%s%cfbneo%cpgm2_memcards", g_save_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 	path_mkdir(dir);
 	return true;
 }
@@ -499,8 +499,8 @@ static void rebuild_scan(bool preinit_before_drv_init)
 	path_mkdir(dir);
 
 	log_cb(RETRO_LOG_INFO,
-		"[FBNeo PGM2 cards] scan: system_dir=\"%s\" card_dir=\"%s\" drvname=\"%s\" slots=%d%s\n",
-		g_system_dir, dir, drvname, slots_eff,
+		"[FBNeo PGM2 cards] scan: save_dir=\"%s\" card_dir=\"%s\" drvname=\"%s\" slots=%d%s\n",
+		g_save_dir, dir, drvname, slots_eff,
 		preinit_before_drv_init ? " (pre-init)" : "");
 
 	for (int s = 0; s < slots_eff && s < 4; s++) {
@@ -634,7 +634,7 @@ static void apply_one_slot(int slot)
 		return;
 	}
 
-	//Choose memory card from System/BIOS/fbneo/memcards/. Default Card excluded
+	//Choose memory card from 'g_save_dir'/fbneo/pgm2_memcards/. Default Card excluded.
 	int choice = atoi(var.value);
 	int fi = choice - 1;
 	if (fi < 0 || fi >= (int)s_file_paths[slot].size()) {
