@@ -2430,6 +2430,7 @@ DRV		BurnDrvBloodwar;
 DRV		BurnDrvnes_bloodfall;
 DRV		BurnDrvmd_bloodsht;
 DRV		BurnDrvmd_bloodshtfix;
+DRV		BurnSpecBloodstone;
 DRV		BurnDrvMSX_bloody;
 DRV		BurnSpecBloody;
 DRV		BurnSpecBloodpaws1;
@@ -8403,6 +8404,8 @@ DRV		BurnSpecGillimine;
 DRV		BurnSpecGimmebright;
 DRV		BurnDrvnes_gimmickc;
 DRV		BurnDrvnes_gimmick;
+DRV		BurnSpecGimmicken;
+DRV		BurnSpecGimmickes;
 DRV		BurnDrvfds_gingaden;
 DRV		BurnDrvfds_gingadenj;
 DRV		BurnDrvGinganin;
@@ -16736,6 +16739,7 @@ DRV		BurnDrvRtypeleo;
 DRV		BurnDrvtg_rtypeplus;
 DRV		BurnDrvMSX_ram;
 DRV		BurnSpecramtopo;
+DRV		BurnSpecRbi2bb;
 DRV		BurnDrvmd_rbibb93;
 DRV		BurnDrvmd_rbibb94;
 DRV		BurnDrvgg_rbibb94;
@@ -18394,6 +18398,7 @@ DRV		BurnDrvShdancer;
 DRV		BurnDrvmd_shdancers;
 DRV		BurnDrvmd_shdancerp;
 DRV		BurnDrvmd_shdancer;
+DRV		BurnSpecShadowfields;
 DRV		BurnDrvShadfrceu;
 DRV		BurnDrvShadfrce;
 DRV		BurnDrvShadfrcej;
@@ -18794,6 +18799,7 @@ DRV		BurnDrvcv_lancelot;
 DRV		BurnSpecSirefireit;
 DRV		BurnSpecSirefire2it;
 DRV		BurnDrvSirio2;
+DRV		BurnSpecSiriusrun;
 DRV		BurnSpecsirwoodintro;
 DRV		BurnSpecsirwoodg1;
 DRV		BurnSpecsirwoodg2;
@@ -27606,6 +27612,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_bloodfall,		// Bloodfall (HB)
 	&BurnDrvmd_bloodsht,		// Bloodshot ~ Battle Frenzy (Euro)
 	&BurnDrvmd_bloodshtfix,		// Bloodshot ~ Battle Frenzy (Hack, Texture Fix)
+	&BurnSpecBloodstone,		// Bloodstone (128K) (HB)
 	&BurnDrvMSX_bloody,			// Bloody (Euro, Spanish)
 	&BurnSpecBloody,			// Bloody (Spanish) (48K)
 	&BurnSpecBloodpaws1,		// Bloody Paws - Part 1 (Spanish) (128K)
@@ -33579,6 +33586,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecGimmebright,		// Gimme Bright (48K) (HB, v2.0)
 	&BurnDrvnes_gimmickc,		// Gimmick! (Hack, Chinese)
 	&BurnDrvnes_gimmick,		// Gimmick! (Japan)
+	&BurnSpecGimmicken,			// Gimmick! Yumetaro Odyssey (English) (128K) (HB)
+	&BurnSpecGimmickes,			// Gimmick! Yumetaro Odyssey (Spanish) (128K) (HB)
 	&BurnDrvfds_gingaden,		// Ginga Denshou - Galaxy Odyssey (Hack, English)
 	&BurnDrvfds_gingadenj,		// Ginga Denshou - Galaxy Odyssey (Japan)
 	&BurnDrvGinganin,			// Ginga Ninkyouden (set 1)
@@ -41912,6 +41921,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_rtypeplus,		// R-Type Plus (Hack)
 	&BurnDrvMSX_ram,			// R.A.M. (Euro, Spanish)
 	&BurnSpecramtopo,			// R.A.M. (Spanish) (48K)
+	&BurnSpecRbi2bb,			// R.B.I. 2 Baseball (128K)
 	&BurnDrvmd_rbibb93,			// R.B.I. Baseball '93 (USA)
 	&BurnDrvmd_rbibb94,			// R.B.I. Baseball '94 (Euro, USA)
 	&BurnDrvgg_rbibb94,			// R.B.I. Baseball '94 (USA)
@@ -43570,6 +43580,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_shdancers,		// Shadow Dancer: The Secret of Shinobi (Hack, Spanish)
 	&BurnDrvmd_shdancerp,		// Shadow Dancer: The Secret of Shinobi (Prototype)
 	&BurnDrvmd_shdancer,		// Shadow Dancer: The Secret of Shinobi (World)
+	&BurnSpecShadowfields,		// Shadow Fields (128K) (HB)
 	&BurnDrvShadfrceu,			// Shadow Force (US, Version 2)
 	&BurnDrvShadfrce,			// Shadow Force (World, Version 3)
 	&BurnDrvShadfrcej,			// Shadow Force - Henshin Ninja (Japan, Version 2)
@@ -43970,6 +43981,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSirefireit,		// Sire Fire (Italian) (48K)
 	&BurnSpecSirefire2it,		// Sire Fire 2 (Italian) (48K)
 	&BurnDrvSirio2,				// Sirio II (Calfesa S.L. Spanish bootleg of Moon Cresta)
+	&BurnSpecSiriusrun,			// Sirius Runner (48K) (HB, v1.1)
 	&BurnSpecsirwoodintro,		// Sirwood - Intro (128K)
 	&BurnSpecsirwoodg1,			// Sirwood - Part 1 (128K)
 	&BurnSpecsirwoodg2,			// Sirwood - Part 2 (128K)
@@ -44872,7 +44884,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSpotty,				// Spotty (Ver. 2.0.2)
 	&BurnDrvsnes_Sprigganpow,	// Spriggan Powered (Japan)
 	&BurnDrvSpringbd,			// Springboard (bootleg of Circus)
-	&BurnSpecSpringbot,			// Springbot - Mars Attack! (48K) (HB, v1.3)
+	&BurnSpecSpringbot,			// Springbot: Mars Attack! (48K) (HB, v1.3)
 	&BurnDrvSpringer,			// Springer
 	&BurnSpecSprouty,			// Sprouty (128K) (HB)
 	&BurnDrvcv_spunkysc,		// Spunky's Super Car! (HB)
@@ -52770,6 +52782,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_bloodfall", "nes/d_nes.cpp"},
 	{ "md_bloodsht", "megadrive/d_megadrive.cpp"},
 	{ "md_bloodshtfix", "megadrive/d_megadrive.cpp"},
+	{ "spec_bloodstone", "spectrum/d_spectrum.cpp"},
 	{ "msx_bloody", "msx/d_msx.cpp"},
 	{ "spec_bloody", "spectrum/d_spectrum.cpp"},
 	{ "spec_bloodpaws1", "spectrum/d_spectrum.cpp"},
@@ -58701,6 +58714,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_gimmebright", "spectrum/d_spectrum.cpp"},
 	{ "nes_gimmickc", "nes/d_nes.cpp"},
 	{ "nes_gimmick", "nes/d_nes.cpp"},
+	{ "spec_gimmicken", "spectrum/d_spectrum.cpp"},
+	{ "spec_gimmickes", "spectrum/d_spectrum.cpp"},
 	{ "fds_gingaden", "nes/d_nes.cpp"},
 	{ "fds_gingadenj", "nes/d_nes.cpp"},
 	{ "ginganin", "pre90s/d_ginganin.cpp"},
@@ -66968,6 +66983,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tg_rtypeplus", "pce/d_pce.cpp"},
 	{ "msx_ram", "msx/d_msx.cpp"},
 	{ "spec_ramtopo", "spectrum/d_spectrum.cpp"},
+	{ "spec_rbi2bb", "spectrum/d_spectrum.cpp"},
 	{ "md_rbibb93", "megadrive/d_megadrive.cpp"},
 	{ "md_rbibb94", "megadrive/d_megadrive.cpp"},
 	{ "gg_rbibb94", "sms/d_sms.cpp"},
@@ -68614,6 +68630,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_shdancers", "megadrive/d_megadrive.cpp"},
 	{ "md_shdancerp", "megadrive/d_megadrive.cpp"},
 	{ "md_shdancer", "megadrive/d_megadrive.cpp"},
+	{ "spec_shadowfields", "spectrum/d_spectrum.cpp"},
 	{ "shadfrceu", "pst90s/d_shadfrce.cpp"},
 	{ "shadfrce", "pst90s/d_shadfrce.cpp"},
 	{ "shadfrcej", "pst90s/d_shadfrce.cpp"},
@@ -69012,6 +69029,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_sirefireit", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirefire2it", "spectrum/d_spectrum.cpp"},
 	{ "sirio2", "galaxian/d_galaxian.cpp"},
+	{ "spec_siriusrun", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirwoodintro", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirwoodg1", "spectrum/d_spectrum.cpp"},
 	{ "spec_sirwoodg2", "spectrum/d_spectrum.cpp"},
