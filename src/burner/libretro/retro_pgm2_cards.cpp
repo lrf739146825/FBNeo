@@ -316,9 +316,6 @@ static void eject_slot(int slot) {
         s_active_file_path[slot].clear();
     }
 
-    Pgm2CardInserted[slot] = false;
-    Pgm2CardAuthenticated[slot] = false;
-
     INT32 nMinVersion = 0;
     BurnAreaScan(ACB_READ | ACB_MEMCARD | ACB_MEMCARD_ACTION, &nMinVersion);
 }
