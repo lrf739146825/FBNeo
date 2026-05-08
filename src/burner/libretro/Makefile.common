@@ -342,6 +342,8 @@ SOURCES_CXX += $(LIBRETRO_DIR)/libretro.cpp \
 
 ifeq ($(SUBSET),)
     SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards.cpp
+else ifeq ($(SUBSET),all)
+    SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards.cpp
 else
     SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards_stub.cpp
 endif
