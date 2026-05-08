@@ -339,14 +339,7 @@ SOURCES_CXX += $(LIBRETRO_DIR)/libretro.cpp \
 	$(LIBRETRO_DIR)/retro_string.cpp \
 	$(LIBRETRO_DIR)/ips_manager.cpp \
 	$(LIBRETRO_DIR)/romdata.cpp \
-
-ifeq ($(SUBSET),)
-    SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards.cpp
-else ifeq ($(SUBSET),all)
-    SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards.cpp
-else
-    SOURCES_CXX += $(LIBRETRO_DIR)/retro_pgm2_cards_stub.cpp
-endif
+	$(LIBRETRO_DIR)/retro_pgm2_cards.cpp
 
 SOURCES_C += $(UGUI_DIR)/ugui.c \
 	$(UGUI_DIR)/ugui_textbox.c \

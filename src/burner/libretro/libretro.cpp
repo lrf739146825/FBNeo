@@ -13,7 +13,9 @@
 #include "retro_input.h"
 #include "retro_memory.h"
 #include "ugui_tools.h"
+#ifndef NO_PGM2
 #include "retro_pgm2_cards.h"
+#endif
 
 #include <file/file_path.h>
 
@@ -2222,7 +2224,9 @@ static bool retro_load_game_common()
 			}
 		}
 
+#ifndef NO_PGM2
 		retro_pgm2_cards_refresh_environment();
+#endif
 
 		if (BurnDrvGetTextA(DRV_COMMENT) && strlen(BurnDrvGetTextA(DRV_COMMENT)) > 0) {
 			HandleMessage(RETRO_LOG_WARN, "[FBNeo] %s\n", BurnDrvGetTextA(DRV_COMMENT));
@@ -2530,7 +2534,9 @@ void retro_unload_game(void)
 {
 	if (nBurnDrvActive != ~0U)
 	{
+#ifndef NO_PGM2
 		retro_pgm2_cards_save_files();
+#endif
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {
 			// Force newer format if the file doesn't exist yet
 			if(!filestream_exists(szMemoryCardFile))
@@ -2545,7 +2551,9 @@ void retro_unload_game(void)
 			CDEmuExit();
 		nBurnDrvActive = ~0U;
 	}
+#ifndef NO_PGM2
 	retro_pgm2_cards_reset();
+#endif
 	if (pVidImage) {
 		free(pVidImage);
 		pVidImage = NULL;
@@ -2568,7 +2576,9 @@ static void retro_incomplete_exit()
 {
 	if (nBurnDrvActive != ~0U)
 	{
+#ifndef NO_PGM2
 		retro_pgm2_cards_save_files();
+#endif
 		if (bIsNeogeoCartGame && nMemcardMode != 0) {
 			// Force newer format if the file doesn't exist yet
 			if (!filestream_exists(szMemoryCardFile))
@@ -2583,7 +2593,9 @@ static void retro_incomplete_exit()
 			CDEmuExit();
 		nBurnDrvActive = ~0U;
 	}
+#ifndef NO_PGM2
 	retro_pgm2_cards_reset();
+#endif
 	if (pVidImage) {
 		free(pVidImage);
 		pVidImage = NULL;

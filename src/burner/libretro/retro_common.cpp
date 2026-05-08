@@ -1,6 +1,8 @@
 #include "retro_common.h"
 #include "retro_input.h"
+#ifndef NO_PGM2
 #include "retro_pgm2_cards.h"
+#endif
 
 #include <file/file_path.h>
 #include <retro_dirent.h>
@@ -848,6 +850,7 @@ void set_neogeo_bios_availability(char *szName, uint32_t crc, bool ignoreCrc)
 	}
 }
 
+#ifndef NO_NEOGEO
 static RomBiosInfo* find_neogeo_bios(uint32_t categories)
 {
 	for (int i = 0; neogeo_bioses[i].filename != NULL; i++)
@@ -860,6 +863,7 @@ static RomBiosInfo* find_neogeo_bios(uint32_t categories)
 
 	return NULL;
 }
+#endif
 
 void set_neo_system_bios()
 {
@@ -1148,7 +1152,9 @@ void set_environment()
 		}
 	}
 
+#ifndef NO_PGM2
 	retro_pgm2_cards_push_options(vars_systems);
+#endif
 
 #ifdef FBNEO_DEBUG
 	// Debug settings
@@ -1337,11 +1343,13 @@ void set_environment()
 			"RomData",
 			RETRO_ROMDATA_CAT_INFO
 		},
+#ifndef NO_PGM2
 		{
 			"pgm2_memory_card",
 			RETRO_PGM2_MEMORY_CARD_DESC,
 			RETRO_PGM2_MEMORY_CARD_INFO
 		},
+#endif
 #ifdef FBNEO_DEBUG
 		{
 			"debug",
@@ -1531,7 +1539,9 @@ error:
 		}
 	}
 
+#ifndef NO_PGM2
 	retro_pgm2_cards_after_set_environment();
+#endif
 
 	vfs_iface_info.required_interface_version = FILESTREAM_REQUIRED_VFS_VERSION;
 	vfs_iface_info.iface                      = NULL;
@@ -2111,7 +2121,9 @@ void check_variables(void)
 	}
 #endif
 
+#ifndef NO_PGM2
 	retro_pgm2_cards_apply_variables();
+#endif
 }
 
 #ifdef USE_CYCLONE

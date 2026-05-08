@@ -1289,7 +1289,7 @@ static INT_PTR CALLBACK DialogProc(HWND hDlg, UINT Msg, WPARAM wParam, LPARAM lP
 			if (TabPage == 13) SetPreview(szAppFlyersPath, "flyers", IMG_ASPECT_PRESERVE);
 			if (TabPage == 14) SetPreview(szAppCabinetsPath, "cabinets", IMG_ASPECT_PRESERVE);
 			if (TabPage == 15) SetPreview(szAppMarqueesPath, "marquees", IMG_ASPECT_PRESERVE);
-			if (TabPage == 16) SetPreview(szAppControlsPath, "controls", IMG_ASPECT_PRESERVE);
+			if (TabPage == 16) SetPreview(szAppControlsPath, "cpanel", IMG_ASPECT_PRESERVE);
 			if (TabPage == 17) SetPreview(szAppPCBsPath, "pcbs", IMG_ASPECT_PRESERVE);
 
 			return FALSE;
