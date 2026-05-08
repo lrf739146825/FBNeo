@@ -1,5 +1,7 @@
 // PGM2 Memory card selection for libretro: scan 'g_save_dir'/fbneo/pgm2_memcards/<drv>_pN_*.pg2|.bin
 
+#ifndef NO_PGM2
+
 #include "retro_pgm2_cards.h"
 #include "retro_common.h"
 
@@ -315,9 +317,6 @@ static void eject_slot(int slot) {
     if (!s_active_file_path[slot].empty()) {
         s_active_file_path[slot].clear();
     }
-
-    Pgm2CardInserted[slot] = false;
-    Pgm2CardAuthenticated[slot] = false;
 
     INT32 nMinVersion = 0;
     BurnAreaScan(ACB_READ | ACB_MEMCARD | ACB_MEMCARD_ACTION, &nMinVersion);
@@ -677,3 +676,5 @@ void retro_pgm2_cards_apply_variables()
 	for (int s = 0; s < n && s < 4; s++)
 		apply_one_slot(s);
 }
+
+#endif
