@@ -965,6 +965,8 @@ DRV		BurnDrvpce_ankoku;
 DRV		BurnDrvsms_anmitsu;
 DRV		BurnDrvMSX_anexoen;
 DRV		BurnDrvmd_annexedter;
+DRV		BurnDrvngpc_anotherdih;
+DRV		BurnDrvngpc_anotherdiha;
 DRV		BurnDrvmd_anotherw;
 DRV		BurnDrvsnes_Anotherworld;
 DRV		BurnSpecAntattack;
@@ -1697,12 +1699,14 @@ DRV		BurnDrvpce_barbarian;
 DRV		BurnSpecbarbarian;
 DRV		BurnSpecbarbarn2;
 DRV		BurnDrvMSX_barb2;
+DRV		BurnDrvngpc_barbinv;
 DRV		BurnDrvmd_barbarianrk;
 DRV		BurnDrvmd_barbarianami;
 DRV		BurnDrvmd_barbariancpc;
 DRV		BurnDrvmd_barbarianst;
 DRV		BurnDrvmd_barbarianc64;
 DRV		BurnDrvmd_barbarianzxs;
+DRV		BurnDrvngpc_barbarian;
 DRV		BurnSpecbarbpt1;
 DRV		BurnSpecbarbpt2;
 DRV		BurnDrvsnes_Barbiesupermodel;
@@ -2554,6 +2558,7 @@ DRV		BurnDrvpce_bombmn93;
 DRV		BurnDrvtg_bombmn93;
 DRV		BurnDrvpce_bombmn93s;
 DRV		BurnDrvpce_bombmn94;
+DRV		BurnDrvngpc_bomberman;
 DRV		BurnDrvfds_bomberman;
 DRV		BurnDrvnes_bombermanj;
 DRV		BurnDrvpce_bombman;
@@ -5276,6 +5281,7 @@ DRV		BurnDrvmd_dialqoc;
 DRV		BurnDrvmd_dialqo;
 DRV		BurnDrvcv_ddash;
 DRV		BurnDrvcv_ddash2;
+DRV		BurnDrvngpc_diamondrun;
 DRV		BurnDrvDiamrun;
 DRV		BurnDrvmd_diathieves;
 DRV		BurnSpecDcadv128;
@@ -12609,6 +12615,7 @@ DRV		BurnDrvMasterw;
 DRV		BurnSpecMasterpiecen;
 DRV		BurnSpecMasterpieces;
 DRV		BurnDrvnes_mastershooter;
+DRV		BurnDrvMastfury;
 DRV		BurnDrvsms_mastcomb;
 DRV		BurnSpecMastersarcade;
 DRV		BurnSpecMastersmovie;
@@ -26147,6 +26154,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_anmitsu,		// Anmitsu Hime (Japan)
 	&BurnDrvMSX_anexoen,		// Annex 1, The Algorithm (English) (HB)
 	&BurnDrvmd_annexedter,		// Annexed Territory (HB)
+	&BurnDrvngpc_anotherdih,	// Another Day in Hell (HB, v1.1)
+	&BurnDrvngpc_anotherdiha,	// Another Day in Hell (HB, v1.1, Alt)
 	&BurnDrvmd_anotherw,		// Another World (Euro)
 	&BurnDrvsnes_Anotherworld,	// Another World (Euro)
 	&BurnSpecAntattack,			// Ant Attack (48K)
@@ -26879,12 +26888,14 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecbarbarian,			// Barbarian (Psygnosis) (48K)
 	&BurnSpecbarbarn2,			// Barbarian II: The Dungeon of Drax (128K)
 	&BurnDrvMSX_barb2,			// Barbarian II: The Dungeon of Drax (Euro)
+	&BurnDrvngpc_barbinv,		// Barbarian Invaders (HB, v1.01)
 	&BurnDrvmd_barbarianrk,		// Barbarian Remake (HB)
 	&BurnDrvmd_barbarianami,	// Barbarian the Ultimate Warrior - Amiga (HB)
 	&BurnDrvmd_barbariancpc,	// Barbarian the Ultimate Warrior - Amstrad CPC (HB)
 	&BurnDrvmd_barbarianst,		// Barbarian the Ultimate Warrior - Atari ST (HB)
 	&BurnDrvmd_barbarianc64,	// Barbarian the Ultimate Warrior - C64 (HB)
 	&BurnDrvmd_barbarianzxs,	// Barbarian the Ultimate Warrior - ZX Spectrum (HB)
+	&BurnDrvngpc_barbarian,		// Barbarian: The Ultimate Warrior (HB)
 	&BurnSpecbarbpt1,			// Barbarian: The Ultimate Warrior - Part 1 (48K)
 	&BurnSpecbarbpt2,			// Barbarian: The Ultimate Warrior - Part 2 (48K)
 	&BurnDrvsnes_Barbiesupermodel,// Barbie - Super Model (USA)
@@ -27736,6 +27747,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvtg_bombmn93,		// Bomberman '93 (USA)
 	&BurnDrvpce_bombmn93s,		// Bomberman '93 - Special Version (Japan)
 	&BurnDrvpce_bombmn94,		// Bomberman '94 (Japan)
+	&BurnDrvngpc_bomberman,		// Bomberman (HB, v1.1)
 	&BurnDrvfds_bomberman,		// Bomberman (Japan)
 	&BurnDrvnes_bombermanj,		// Bomberman (Japan)
 	&BurnDrvpce_bombman,		// Bomberman (Japan)
@@ -30458,6 +30470,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_dialqo,			// Dial Q o Mawase! (Japan) (Unl)
 	&BurnDrvcv_ddash,			// Diamond Dash (HB)
 	&BurnDrvcv_ddash2,			// Diamond Dash 2 (HB)
+	&BurnDrvngpc_diamondrun,	// Diamond Run (HB)
 	&BurnDrvDiamrun,			// Diamond Run
 	&BurnDrvmd_diathieves,		// Diamond Thieves (HB)
 	&BurnSpecDcadv128,			// Diana Cave Adventure (128K) (HB)
@@ -37791,6 +37804,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecMasterpiecen,		// Master Piece (English) (48K) (HB)
 	&BurnSpecMasterpieces,		// Master Piece (Spanish) (48K) (HB)
 	&BurnDrvnes_mastershooter,	// Master Shooter (Unl)
+	&BurnDrvMastfury,			// Master's Fury
 	&BurnDrvsms_mastcomb,		// Masters of Combat (Euro, Brazil, Australia)
 	&BurnSpecMastersarcade,		// Masters of the Universe - The Arcade Game (48K)
 	&BurnSpecMastersmovie,		// Masters of the Universe - The Movie (48K)
@@ -51325,6 +51339,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_anmitsu", "sms/d_sms.cpp"},
 	{ "msx_anexoen", "msx/d_msx.cpp"},
 	{ "md_annexedter", "megadrive/d_megadrive.cpp"},
+	{ "ngp_anotherdih", "pst90s/d_ngp.cpp"},
+	{ "ngp_anotherdiha", "pst90s/d_ngp.cpp"},
 	{ "md_anotherw", "megadrive/d_megadrive.cpp"},
 	{ "snes_anotherworld", "snes/d_snes.cpp"},
 	{ "spec_antattack", "spectrum/d_spectrum.cpp"},
@@ -52053,12 +52069,14 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_barbarian", "spectrum/d_spectrum.cpp"},
 	{ "spec_barbarn2", "spectrum/d_spectrum.cpp"},
 	{ "msx_barb2", "msx/d_msx.cpp"},
+	{ "ngp_barbinv", "pst90s/d_ngp.cpp"},
 	{ "md_barbarianrk", "megadrive/d_megadrive.cpp"},
 	{ "md_barbarianami", "megadrive/d_megadrive.cpp"},
 	{ "md_barbariancpc", "megadrive/d_megadrive.cpp"},
 	{ "md_barbarianst", "megadrive/d_megadrive.cpp"},
 	{ "md_barbarianc64", "megadrive/d_megadrive.cpp"},
 	{ "md_barbarianzxs", "megadrive/d_megadrive.cpp"},
+	{ "ngp_barbarian", "pst90s/d_ngp.cpp"},
 	{ "spec_barbpt1", "spectrum/d_spectrum.cpp"},
 	{ "spec_barbpt2", "spectrum/d_spectrum.cpp"},
 	{ "snes_barbiesupermodel", "snes/d_snes.cpp"},
@@ -52906,6 +52924,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tg_bombmn93", "pce/d_pce.cpp"},
 	{ "pce_bombmn93s", "pce/d_pce.cpp"},
 	{ "pce_bombmn94", "pce/d_pce.cpp"},
+	{ "ngp_bomberman", "pst90s/d_ngp.cpp"},
 	{ "fds_bomberman", "nes/d_nes.cpp"},
 	{ "nes_bombermanj", "nes/d_nes.cpp"},
 	{ "pce_bombman", "pce/d_pce.cpp"},
@@ -55606,6 +55625,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_dialqo", "megadrive/d_megadrive.cpp"},
 	{ "cv_ddash", "coleco/d_coleco.cpp"},
 	{ "cv_ddash2", "coleco/d_coleco.cpp"},
+	{ "ngp_diamondrun", "pst90s/d_ngp.cpp"},
 	{ "diamrun", "pre90s/d_gng.cpp"},
 	{ "md_diathieves", "megadrive/d_megadrive.cpp"},
 	{ "spec_dcadv128", "spectrum/d_spectrum.cpp"},
@@ -62885,6 +62905,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_masterpiecen", "spectrum/d_spectrum.cpp"},
 	{ "spec_masterpieces", "spectrum/d_spectrum.cpp"},
 	{ "nes_mastershooter", "nes/d_nes.cpp"},
+	{ "mastfury", "pst90s/d_drgnmst.cpp"},
 	{ "sms_mastcomb", "sms/d_sms.cpp"},
 	{ "spec_mastersarcade", "spectrum/d_spectrum.cpp"},
 	{ "spec_mastersmovie", "spectrum/d_spectrum.cpp"},
