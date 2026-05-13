@@ -1453,6 +1453,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="frayte" cloneof="fray" romof="fray" sourcefile="sms/d_sms.cpp">
+		<comment>Hack</comment>
+		<description>Fray: Shugyouhen (Hack, English)</description>
+		<year>2026</year>
+		<manufacturer>BacklogOddy</manufacturer>
+		<rom name="Fray - Shugyou Hen T-Eng (2026)(BacklogOddy).gg" size="262144" crc="3ac4575b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fray" sourcefile="sms/d_sms.cpp">
 		<description>Fray: Shugyouhen (Japan)</description>
 		<year>1991</year>

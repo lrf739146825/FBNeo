@@ -7573,6 +7573,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="gzero" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>G-ZERO (HB, beta 4)</description>
+		<year>2025</year>
+		<manufacturer>gasega68k</manufacturer>
+		<rom name="G-ZERO (2025)(gasega68k).bin" size="524288" crc="e9d0c3f3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gadgets" cloneof="gadget" romof="gadget" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Gadget Twins (Hack, Spanish)</description>

@@ -3785,10 +3785,21 @@
 	</game>
 	<game name="bloodstone" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Bloodstone (128K) (HB, v1.2)</description>
+		<description>Bloodstone (English) (128K) (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>Romancha, Jerri, DaRkHoRaCe</manufacturer>
-		<rom name="Bloodstone v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72373" crc="31b09210"/>
+		<rom name="Bloodstone EN v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72373" crc="31b09210"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bloodstoneru" cloneof="bloodstone" romof="bloodstone" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Bloodstone (Russian) (128K) (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>Romancha, Jerri, DaRkHoRaCe</manufacturer>
+		<rom name="Bloodstone RU v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72632" crc="9c5a2cd2"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19508,7 +19519,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="moonwalk" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Moonwalker - The Computer Game (128K)</description>
+		<description>Moonwalker: The Computer Game (128K)</description>
 		<year>1989</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Moonwalker - The Computer Game 128K (1989)(U.S. Gold).tap" size="170496" crc="0c84679e"/>
@@ -19853,7 +19864,7 @@
 	<game name="mrwimpy" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Mr. Wimpy (48K)</description>
 		<year>1983</year>
-		<manufacturer>Ocean</manufacturer>
+		<manufacturer>Ocean Software</manufacturer>
 		<rom name="Mr. Wimpy 48K (1983)(Ocean).tzx" size="34941" crc="1353dba1"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -20005,7 +20016,7 @@
 	<game name="mutants" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Mutants (128K)</description>
 		<year>1987</year>
-		<manufacturer>Ocean</manufacturer>
+		<manufacturer>Ocean Software</manufacturer>
 		<rom name="Mutants 128K (1987)(Ocean).tzx" size="86381" crc="e1903034"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
@@ -30865,10 +30876,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="untouchb" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Untouchables, The (128K)</description>
+		<description>Untouchables, The (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Ocean Software</manufacturer>
-		<rom name="Untouchables, The 128K (1989)(Ocean).tap" size="182932" crc="81349cbf"/>
+		<rom name="Untouchables, The 48K-128K (1989)(Ocean).tap" size="182932" crc="81349cbf"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31325,7 +31336,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="viz" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Viz - The Computer Game (128K)</description>
+		<description>Viz: The Computer Game (128K)</description>
 		<year>1991</year>
 		<manufacturer>Virgin Games</manufacturer>
 		<rom name="Viz - The Computer Game 128K (1991)(Virgin Games).tap" size="167642" crc="005482f2"/>
@@ -31390,10 +31401,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="wackrace" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Wacky Races (128K)</description>
+		<description>Wacky Races (48K-128K)</description>
 		<year>1992</year>
 		<manufacturer>Hi-Tec Software</manufacturer>
-		<rom name="Wacky Races 128K (1992)(Hi-Tec).tap" size="149897" crc="c46f4db9"/>
+		<rom name="Wacky Races 48K-128K (1992)(Hi-Tec).tap" size="149897" crc="c46f4db9"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31442,10 +31453,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="warmachine" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>War Machine (128K)</description>
+		<description>War Machine (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Players Premier</manufacturer>
-		<rom name="War Machine 128K (1989)(Players Premier).tap" size="54991" crc="7ac04bb1"/>
+		<rom name="War Machine 48K-128K (1989)(Players Premier).tzx" size="55096" crc="749d9b64"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31493,11 +31504,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="wayexplf" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Press '1' or '2' to one-two players mode and '0' to redefine controls</comment>
+		<comment>Press '1' or '2' for one/two players mode and '0' to redefine controls</comment>
 		<description>Way of the Exploding Fist, The (48K)</description>
 		<year>1985</year>
 		<manufacturer>Melbourne House</manufacturer>
-		<rom name="Way of the Exploding Fist, The 48K (1985)(Melbourne House).tap" size="45962" crc="7e81d64e"/>
+		<rom name="Way of the Exploding Fist, The 48K (1985)(Melbourne House).tzx" size="46276" crc="ec9b3df5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -31565,13 +31576,13 @@
 		<description>Werewolves of London (48K)</description>
 		<year>1989</year>
 		<manufacturer>Mastertronic</manufacturer>
-		<rom name="Werewolves of London 48K (1989)(Mastertronic).tap" size="47170" crc="8b9b9683"/>
+		<rom name="Werewolves of London 48K (1989)(Mastertronic).tzx" size="47380" crc="ca53ad8a"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="westbank" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Keys 1, 2 and 3 to shoot - Keys O and P to move</comment>
+		<comment>Keys 1, 2 and 3 to shoot - Keys O/P to move</comment>
 		<description>West Bank (48K)</description>
 		<year>1985</year>
 		<manufacturer>Gremlin Graphics</manufacturer>

@@ -1861,6 +1861,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dragdescent" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Dragon's Descent (HB)</description>
+		<year>2026</year>
+		<manufacturer>Revontuli124</manufacturer>
+		<rom name="Dragon's Descent (2026)(Revontuli124).sms" size="49152" crc="2afa9c93"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dragon" sourcefile="sms/d_sms.cpp">
 		<description>Dragon: The Bruce Lee Story (Euro)</description>
 		<year>1994</year>
@@ -3624,7 +3633,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="loretta" cloneof="lorettate" romof="lorettate" sourcefile="sms/d_sms.cpp">
+	<game name="loretta" sourcefile="sms/d_sms.cpp">
 		<description>Loretta no Shouzou: Sherlock Holmes (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
@@ -3632,7 +3641,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="lorettate" sourcefile="sms/d_sms.cpp">
+	<game name="lorettate" cloneof="loretta" romof="loretta" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Loretta's Portrait (Hack, English)</description>
 		<year>2026</year>
@@ -4116,6 +4125,15 @@
 		<year>2024</year>
 		<manufacturer>xfixium</manufacturer>
 		<rom name="Ms. Pac-Man Classic v1.02 (2024)(xfixium).sms" size="81920" crc="a70051a0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="multimars" sourcefile="sms/d_sms.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>Multicolour Mars (HB, Tech-Demo v1.2)</description>
+		<year>2026</year>
+		<manufacturer>joe</manufacturer>
+		<rom name="Multicolour Mars v1.2 (2026)(joe).sms" size="32768" crc="14348fb2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5201,6 +5219,15 @@
 		<year>1988</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Shinobi (Japan, Brazil, v0)(1988)(Sega).sms" size="262144" crc="e1fff1bb"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shipschedemo" sourcefile="sms/d_sms.cpp">
+		<comment>Demo, Homebrew</comment>
+		<description>Ship Schematic Demo (HB, Tech-Demo)</description>
+		<year>2026</year>
+		<manufacturer>BadComputer, LovePenguin</manufacturer>
+		<rom name="Ship Schematic Demo (2026)(BadComputer, LovePenguin).sms" size="65536" crc="bad541e1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

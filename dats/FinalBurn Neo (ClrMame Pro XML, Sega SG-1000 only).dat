@@ -836,6 +836,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="girlgardpt" cloneof="girlgard" romof="girlgard" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Hack</comment>
+		<description>Girl's Garden ~ Jardim do Amor (Hack, Portuguese v2.0)</description>
+		<year>2016-26</year>
+		<manufacturer>Patryckpo</manufacturer>
+		<rom name="Jardim do Amor T-Por v2.0 (2016-26)(Patryckpo).sg" size="32768" crc="149ef6b1"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="golgo13" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Golgo 13 (Japan)</description>
 		<year>1984</year>

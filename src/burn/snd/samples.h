@@ -25,7 +25,7 @@ void BurnSampleSetPosition(INT32 sample, UINT32 position);
 
 void BurnSampleChannelPlay(INT32 channel, INT32 sample, INT32 loop = 0); // loop: -1, use config from sample struct
 void BurnSampleChannelPause(INT32 channel, bool pause);
-void BurnSampleChannelStop(INT32 channel);
+void BurnSampleChannelStop(INT32 channel, bool softstop = false);
 INT32 BurnSampleGetChannelStatus(INT32 channel);
 INT32 BurnSampleChannelGetPosition(INT32 channel);
 void BurnSampleChannelSetPosition(INT32 channel, UINT32 position);

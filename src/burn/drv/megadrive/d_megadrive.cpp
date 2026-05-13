@@ -39962,6 +39962,25 @@ struct BurnDriver BurnDrvmd_fxunyuki = {
 	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
 };
 
+// G-ZERO (HB, beta 4)
+// https://gasega68k.itch.io/g-zero
+static struct BurnRomInfo md_gzeroRomDesc[] = {
+	{ "G-ZERO (2025)(gasega68k).bin", 524288, 0xe9d0c3f3, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },
+};
+
+STD_ROM_PICK(md_gzero)
+STD_ROM_FN(md_gzero)
+
+struct BurnDriver BurnDrvmd_gzero = {
+	"md_gzero", NULL, NULL, NULL, "2025",
+	"G-ZERO (HB, beta 4)\0", NULL, "gasega68k", "Genesis / Mega Drive",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_16BIT_ONLY | BDF_HOMEBREW, 1, HARDWARE_SEGA_MEGADRIVE, GBF_RACING, 0,
+	MegadriveGetZipName, md_gzeroRomInfo, md_gzeroRomName, NULL, NULL, NULL, NULL, MegadriveInputInfo, MegadriveDIPInfo,
+	MegadriveInit, MegadriveExit, MegadriveFrame, MegadriveDraw, MegadriveScan,
+	&bMegadriveRecalcPalette, 0x100, 320, 224, 4, 3
+};
+
 // Galaga (Pocket Player Pro)
 static struct BurnRomInfo md_galagappRomDesc[] = {
 	{ "Galaga (2023)(My Arcade).bin", 131072, 0xeeca829d, BRF_PRG | SEGA_MD_ROM_LOAD16_WORD_SWAP | SEGA_MD_ROM_OFFS_000000  },

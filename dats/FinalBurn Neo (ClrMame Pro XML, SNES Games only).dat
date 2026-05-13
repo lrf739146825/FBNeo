@@ -1171,6 +1171,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="magicquest3tp" cloneof="magicquest3" romof="magicquest3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Aventura Magica 3 Estrelando Mickey &amp; Donald (Hack, Portuguese)</description>
+		<year>2020</year>
+		<manufacturer>RPGONE</manufacturer>
+		<rom name="Mickey to Donald - Magical Adventure 3 T-Por (2020)(RPGONE).sfc" size="2621440" crc="b5a295c4"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="advhouraits" cloneof="advhouraite" romof="advhouraite" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Aventuras de Hourai High, Las (Hack, Spanish v1.1)</description>
@@ -5273,6 +5282,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="earthwormjimtp" cloneof="earthwormjim" romof="earthwormjim" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Earthworm Jim (Hack, Portuguese)</description>
+		<year>2026</year>
+		<manufacturer>juliano_did</manufacturer>
+		<rom name="Earthworm Jim PT-BR (2026)(juliano_did).sfc" size="3145728" crc="5b989e82"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="earthwormjimj" cloneof="earthwormjim" romof="earthwormjim" sourcefile="snes/d_snes.cpp">
 		<description>Earthworm Jim (Japan)</description>
 		<year>1994</year>
@@ -5600,6 +5618,15 @@
 		<year>1990-91</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="F-Zero (U)(1990-91)(Nintendo).sfc" size="524288" crc="aa0e31de"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fzeroml" cloneof="fzero" romof="fzero" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>F-Zero: Max League (Hack)</description>
+		<year>2026</year>
+		<manufacturer>PowerPanda, Zephyrum25</manufacturer>
+		<rom name="F-Zero - MAX League (2026)(PowerPanda, Zephyrum25).sfc" size="1048576" crc="0539686b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6986,7 +7013,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gsmikami" sourcefile="snes/d_snes.cpp">
-		<description>Ghost Sweeper Mikami - Joreishi wa Nice Body (Japan)</description>
+		<description>Ghost Sweeper Mikami: Joreishi wa Nice Body (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Banalex</manufacturer>
 		<rom name="Ghost Sweeper Mikami - Joreishi wa Nice Body (J)(1993)(Banalex).sfc" size="1048576" crc="444c9962"/>
@@ -7352,6 +7379,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="greatcircmysttp" cloneof="greatcircmyst" romof="greatcircmyst" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Great Circus Mystery Starring Mickey &amp; Minnie, The (Hack, Portuguese v1.1)</description>
+		<year>2004</year>
+		<manufacturer>Fox Roms</manufacturer>
+		<rom name="Great Circus Mystery Starring Mickey &amp; Minnie, The T-Por v1.1 (2004)(Fox Roms).sfc" size="1572864" crc="a56b2a7b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="greatcircmyst" sourcefile="snes/d_snes.cpp">
 		<description>Great Circus Mystery Starring Mickey &amp; Minnie, The (USA)</description>
 		<year>1994</year>
@@ -7369,7 +7405,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gunforce" sourcefile="snes/d_snes.cpp">
-		<description>GunForce - Battle Fire Engulfed Terror Island (USA)</description>
+		<description>GunForce: Battle Fire Engulfed Terror Island (USA)</description>
 		<year>1992</year>
 		<manufacturer>Irem</manufacturer>
 		<rom name="GunForce - Battle Fire Engulfed Terror Island (U)(1992)(Irem).sfc" size="524288" crc="6f5c5dc0"/>
@@ -7385,7 +7421,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hagane" sourcefile="snes/d_snes.cpp">
-		<description>Hagane - The Final Conflict (USA)</description>
+		<description>Hagane: The Final Conflict (USA)</description>
 		<year>1994</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Hagane - The Final Conflict (U)(1994)(Hudson Soft).sfc" size="2097152" crc="8e0a7034"/>
@@ -8954,7 +8990,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gundamcd0079j" cloneof="gundamcd0079te" romof="gundamcd0079te" sourcefile="snes/d_snes.cpp">
-		<description>Kidou Senshi Gundam - Cross Dimension 0079 (Japan)</description>
+		<description>Kidou Senshi Gundam: Cross Dimension 0079 (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Kidou Senshi Gundam - Cross Dimension 0079 (J)(1995)(Bandai).sfc" size="1572864" crc="9ab3eb18"/>
@@ -10193,6 +10229,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="magicalquesttp" cloneof="magicalquest" romof="magicalquest" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Magical Quest Starring Mickey Mouse, The (Hack, Portuguese)</description>
+		<year>2004</year>
+		<manufacturer>Fox Roms</manufacturer>
+		<rom name="Magical Quest Starring Mickey Mouse, The T-Por (2004)(Fox Roms).sfc" size="1049088" crc="f666c92e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="magicalquest" sourcefile="snes/d_snes.cpp">
 		<description>Magical Quest Starring Mickey Mouse, The (USA)</description>
 		<year>1992</year>
@@ -10211,7 +10256,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="magicaltaruruutokun" sourcefile="snes/d_snes.cpp">
-		<description>Magical Taruruuto-kun - Magic Adventure (Japan)</description>
+		<description>Magical Taruruuto-kun: Magic Adventure (Japan)</description>
 		<year>1992</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Magical Taruruuto-kun - Magic Adventure (J)(1992)(Bandai).sfc" size="524288" crc="5f863463"/>
@@ -10905,7 +10950,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mickeymania" sourcefile="snes/d_snes.cpp">
-		<description>Mickey Mania - The Timeless Adventures of Mickey Mouse (USA)</description>
+		<description>Mickey Mania: The Timeless Adventures of Mickey Mouse (USA)</description>
 		<year>1994</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Mickey Mania - The Timeless Adventures of Mickey Mouse (U)(1994)(Sony Imagesoft).sfc" size="2097152" crc="08806b5b"/>
@@ -10929,7 +10974,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mickeymagicadv3" cloneof="magicquest3" romof="magicquest3" sourcefile="snes/d_snes.cpp">
-		<description>Mickey to Donald - Magical Adventure 3 (Japan)</description>
+		<description>Mickey to Donald: Magical Adventure 3 (Japan)</description>
 		<year>1995</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mickey to Donald - Magical Adventure 3 (J)(1995)(Capcom).sfc" size="2097152" crc="32eea1e9"/>
@@ -10937,7 +10982,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mickeymagicadv2" cloneof="greatcircmyst" romof="greatcircmyst" sourcefile="snes/d_snes.cpp">
-		<description>Mickey to Minnie - Magical Adventure 2 (Japan)</description>
+		<description>Mickey to Minnie: Magical Adventure 2 (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mickey to Minnie - Magical Adventure 2 (J)(1994)(Capcom).sfc" size="1572864" crc="8d258553"/>
@@ -11004,7 +11049,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="mightmagic2" sourcefile="snes/d_snes.cpp">
-		<description>Might and Magic II - Gates to Another World (Euro)</description>
+		<description>Might and Magic II: Gates to Another World (Euro)</description>
 		<year>1993</year>
 		<manufacturer>Elite</manufacturer>
 		<rom name="Might and Magic II - Gates to Another World (E)(1993)(Elite).sfc" size="1048576" crc="4062244b"/>
@@ -11013,7 +11058,7 @@
 	</game>
 	<game name="mightmagic3" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
-		<description>Might and Magic III - Isles of Terra (USA)</description>
+		<description>Might and Magic III: Isles of Terra (USA)</description>
 		<year>1994</year>
 		<manufacturer>FCI Inc.</manufacturer>
 		<rom name="Might and Magic III - Isles of Terra (U)(1994)(FCI).sfc" size="1572864" crc="8af25e7e"/>
@@ -11129,21 +11174,21 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gundamcd0079te" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Mobile Suit Gundam - Cross Dimension 0079 (Hack, English)</description>
-		<year>2004</year>
-		<manufacturer>Aeon Genesis</manufacturer>
-		<rom name="Mobile Suit Gundam - Cross Dimension 0079 T-Eng (2004)(Aeon Genesis).sfc" size="1573376" crc="2116b6c5"/>
-		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="gundamwte" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Mobile Suit Gundam Wing - Endless Duel (Hack, English)</description>
+		<description>Mobile Suit Gundam Wing: Endless Duel (Hack, English)</description>
 		<year>2002</year>
 		<manufacturer>Aeon Genesis</manufacturer>
 		<rom name="Mobile Suit Gundam Wing - Endless Duel T-Eng (2002)(Aeon Genesis).sfc" size="2097664" crc="8e2723ca"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gundamcd0079te" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mobile Suit Gundam: Cross Dimension 0079 (Hack, English)</description>
+		<year>2004</year>
+		<manufacturer>Aeon Genesis</manufacturer>
+		<rom name="Mobile Suit Gundam - Cross Dimension 0079 T-Eng (2004)(Aeon Genesis).sfc" size="1573376" crc="2116b6c5"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14064,6 +14109,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rosalinaen" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Rosalina's Gold Saga (GlobalHack, English)</description>
+		<year>2026</year>
+		<manufacturer>Tiozinho</manufacturer>
+		<rom name="Rosalina's Gold Saga EN (2026)(Tiozinho).sfc" size="4194304" crc="a206ec47"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rosalinapt" cloneof="rosalinaen" romof="rosalinaen" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
+		<description>Rosalina's Gold Saga (GlobalHack, Portuguese)</description>
+		<year>2026</year>
+		<manufacturer>Tiozinho</manufacturer>
+		<rom name="Rosalina's Gold Saga PT-BR (2026)(Tiozinho).sfc" size="4194304" crc="72668be1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="royalconq" cloneof="kingarthurw" romof="kingarthurw" sourcefile="snes/d_snes.cpp">
 		<comment>'SNES Mouse' compatible game (Set Dipswitches)</comment>
 		<description>Royal Conquest (Japan)</description>
@@ -14612,7 +14675,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="gundamwj" cloneof="gundamwte" romof="gundamwte" sourcefile="snes/d_snes.cpp">
-		<description>Shin Kidou Senki Gundam W - Endless Duel (Japan)</description>
+		<description>Shin Kidou Senki Gundam W: Endless Duel (Japan)</description>
 		<year>1996</year>
 		<manufacturer>Bandai</manufacturer>
 		<rom name="Shin Kidou Senki Gundam W - Endless Duel (J)(1996)(Bandai).sfc" size="2097152" crc="c0aecdca"/>
@@ -14757,7 +14820,7 @@
 	</game>
 	<game name="sicari2" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, Homebrew, GlobalHack of Super Mario World</comment>
-		<description>Sicari 2 - The Brink of Time (GlobalHack, v1.061)</description>
+		<description>Sicari 2: The Brink of Time (GlobalHack, v1.061)</description>
 		<year>2022</year>
 		<manufacturer>Yukivee</manufacturer>
 		<rom name="Sicari 2 - The Brink of Time v1.061 (2022)(Yukivee).sfc" size="4194304" crc="93ae800f"/>
@@ -19263,6 +19326,15 @@
 		<year>1993</year>
 		<manufacturer>Absolute Entertainment</manufacturer>
 		<rom name="Turn and Burn - No-Fly Zone (U)(1993)(Absolute Entertainment).sfc" size="2097152" crc="87bfa0b8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="turrican15" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Turrican 1.5 (HB)</description>
+		<year>2026</year>
+		<manufacturer>Super J11bit</manufacturer>
+		<rom name="Turrican 1.5 (2026)(Super J11bit).sfc" size="2097152" crc="a25868ac"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
