@@ -13872,6 +13872,7 @@ static INT32 FantastcInit()
 	nRet = GalInit();
 	
 	GalRenderFrameFunction = FantastcRenderFrame;
+	GalRenderBackgroundFunction = FantastcDrawBackground;
 	GalExtendSpriteInfoFunction = UpperExtendSpriteInfo;
 	
 	return nRet;
