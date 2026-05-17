@@ -3015,7 +3015,7 @@
 		<description>Beach Buggy Simulator (48K)</description>
 		<year>1988</year>
 		<manufacturer>Silverbird Software</manufacturer>
-		<rom name="Beach Buggy Simulator 48K (1988)(Silverbird).tap" size="48064" crc="4f4f62f2"/>
+		<rom name="Beach Buggy Simulator 48K (1988)(Silverbird Software).tap" size="48064" crc="4f4f62f2"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -3596,6 +3596,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="blindwalker" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Blindwalker (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Poe Games</manufacturer>
+		<rom name="Blindwalker 48K-128K (2026)(Poe Games).tap" size="35510" crc="4bf023bf"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="blinkys" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Blinky's Scary School (48K-128K)</description>
 		<year>1990</year>
@@ -3785,10 +3796,10 @@
 	</game>
 	<game name="bloodstone" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Bloodstone (English) (128K) (HB, v1.2)</description>
+		<description>Bloodstone (English) (128K) (HB, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>Romancha, Jerri, DaRkHoRaCe</manufacturer>
-		<rom name="Bloodstone EN v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72373" crc="31b09210"/>
+		<rom name="Bloodstone EN v1.4 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72379" crc="3b36644c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -3796,10 +3807,10 @@
 	</game>
 	<game name="bloodstoneru" cloneof="bloodstone" romof="bloodstone" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Bloodstone (Russian) (128K) (HB, v1.2)</description>
+		<description>Bloodstone (Russian) (128K) (HB, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>Romancha, Jerri, DaRkHoRaCe</manufacturer>
-		<rom name="Bloodstone RU v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72632" crc="9c5a2cd2"/>
+		<rom name="Bloodstone RU v1.2 128K (2026)(Romancha, Jerri, DaRkHoRaCe).tap" size="72640" crc="9ec27d60"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -5817,6 +5828,17 @@
 		<year>2023</year>
 		<manufacturer>Ariel Endaraues</manufacturer>
 		<rom name="Chromanoids v1.1 128K (2023)(Ariel Endaraues).tap" size="43903" crc="1999bbdd"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chromatixx" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Chromatixx (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Miguetelo</manufacturer>
+		<rom name="Chromatixx 128K (2026)(Miguetelo).tap" size="42883" crc="4c978e09"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -10516,6 +10538,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="fire" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Redifine keys to use controller</comment>
+		<description>F.I.R.E. (48K-128K)</description>
+		<year>1988</year>
+		<manufacturer>Fuxoft</manufacturer>
+		<rom name="FIRE 48K-128K (1988)(Fuxoft).tap" size="44960" crc="c11531d0"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="factdaze" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Factory Daze (128K) (HB)</description>
@@ -11569,6 +11602,17 @@
 		<manufacturer>EJVG</manufacturer>
 		<rom name="Fucking Mili 48K (2020)(EJVG).tap" size="39535" crc="04778248"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fsdefense" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Full Spectrum Defense (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Bitmap Soft</manufacturer>
+		<rom name="Full Spectrum Defense 48K-128K (2026)(Bitmap Soft).tap" size="51933" crc="0cb68375"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14590,6 +14634,16 @@
 		<manufacturer>Magnificent 7 Software</manufacturer>
 		<rom name="Indoor Soccer 48K (1986)(Magnificent 7 Software).z80" size="28909" crc="85a1a21f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="infection" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Infection (48K-128K)</description>
+		<year>1989</year>
+		<manufacturer>Virgin Mastertronic</manufacturer>
+		<rom name="Infection 48K-128K (1989)(Virgin Mastertronic).tzx" size="53064" crc="c53e6145"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20931,6 +20985,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="octan" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Octan (48K)</description>
+		<year>1988</year>
+		<manufacturer>Silverbird Software</manufacturer>
+		<rom name="Octan 48K (1988)(Silverbird Software).tzx" size="48566" crc="981fc462"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="octopussyte" cloneof="octopussy" romof="octopussy" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Hack</comment>
 		<description>Octopussy (48K-128K) (Hack, English)</description>
@@ -22075,7 +22138,7 @@
 		<description>Peter Pack Rat (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Silverbird Software</manufacturer>
-		<rom name="Peter Pack Rat 48K-128K (1989)(Silverbird).tap" size="53285" crc="5d318fcd"/>
+		<rom name="Peter Pack Rat 48K-128K (1989)(Silverbird Software).tap" size="53285" crc="5d318fcd"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -30605,7 +30668,7 @@
 		<description>Turbo Boat Simulator (48K-128K)</description>
 		<year>1988</year>
 		<manufacturer>Silverbird Software</manufacturer>
-		<rom name="Turbo Boat Simulator 48K-128K (1988)(Silverbird).tzx" size="36761" crc="3627ba55"/>
+		<rom name="Turbo Boat Simulator 48K-128K (1988)(Silverbird Software).tzx" size="36761" crc="3627ba55"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>

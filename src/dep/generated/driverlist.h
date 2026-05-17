@@ -2364,6 +2364,7 @@ DRV		BurnDrvBlzntrnd;
 DRV		BurnSpecBlendpic;
 DRV		BurnSpecBlimpgeddon;
 DRV		BurnSpecBlindpanic;
+DRV		BurnSpecBlindwalker;
 DRV		BurnSpecblinkys;
 DRV		BurnSpecBlizzardsrift;
 DRV		BurnDrvnes_blobland;
@@ -3872,6 +3873,7 @@ DRV		BurnDrvnes_christmascrisis2;
 DRV		BurnSpecChristmasrs;
 DRV		BurnSpecChristmaze;
 DRV		BurnSpecChromanoids;
+DRV		BurnSpecChromatixx;
 DRV		BurnDrvnes_radiasen;
 DRV		BurnDrvnes_chknight;
 DRV		BurnDrvMSX_chronorunner;
@@ -6894,6 +6896,7 @@ DRV		BurnDrvsnes_Fzeroe;
 DRV		BurnDrvsnes_Fzeroj;
 DRV		BurnDrvsnes_Fzero;
 DRV		BurnDrvsnes_Fzeroml;
+DRV		BurnSpecFire;
 DRV		BurnDrvFa;
 DRV		BurnDrvmd_f1;
 DRV		BurnDrvsms_f1;
@@ -7806,6 +7809,7 @@ DRV		BurnDrvFjbuster;
 DRV		BurnDrvsnes_Fullpower;
 DRV		BurnDrvnes_fullquietrv;
 DRV		BurnDrvnes_fullquiet;
+DRV		BurnSpecFsdefense;
 DRV		BurnSpecFullthrottle;
 DRV		BurnDrvFullthrl;
 DRV		BurnSpecFullthrottle2;
@@ -10033,6 +10037,7 @@ DRV		BurnDrvsnes_Indianajones;
 DRV		BurnDrvTurbobl;
 DRV		BurnDrvnes_indivisible;
 DRV		BurnSpecindrsoccr;
+DRV		BurnSpecInfection;
 DRV		BurnDrvMSX_infernalminer;
 DRV		BurnSpecInfiltrator;
 DRV		BurnDrvnes_infiltrator;
@@ -14845,6 +14850,7 @@ DRV		BurnDrvMSX_oceano;
 DRV		BurnSpecTorochaten;
 DRV		BurnSpecTorochatenh;
 DRV		BurnDrvMSX_octasquad;
+DRV		BurnSpecOctan;
 DRV		BurnSpecOctopussyte;
 DRV		BurnSpecOctopussy;
 DRV		BurnSpecOctuktty;
@@ -27604,6 +27610,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecBlendpic,			// Blendpic (48K) (HB)
 	&BurnSpecBlimpgeddon,		// Blimpgeddon (48K) (HB, v1.03)
 	&BurnSpecBlindpanic,		// Blind Panic (48K)
+	&BurnSpecBlindwalker,		// Blindwalker (48K-128K) (HB)
 	&BurnSpecblinkys,			// Blinky's Scary School (48K-128K)
 	&BurnSpecBlizzardsrift,		// Blizzard's Rift (128K) (HB)
 	&BurnDrvnes_blobland,		// Blob Land (HB)
@@ -27680,8 +27687,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_bloodfall,		// Bloodfall (HB)
 	&BurnDrvmd_bloodsht,		// Bloodshot ~ Battle Frenzy (Euro)
 	&BurnDrvmd_bloodshtfix,		// Bloodshot ~ Battle Frenzy (Hack, Texture Fix)
-	&BurnSpecBloodstone,		// Bloodstone (English) (128K) (HB, v1.2)
-	&BurnSpecBloodstoneru,		// Bloodstone (Russian) (128K) (HB, v1.2)
+	&BurnSpecBloodstone,		// Bloodstone (English) (128K) (HB, v1.4)
+	&BurnSpecBloodstoneru,		// Bloodstone (Russian) (128K) (HB, v1.4)
 	&BurnDrvMSX_bloody,			// Bloody (Euro, Spanish)
 	&BurnSpecBloody,			// Bloody (Spanish) (48K)
 	&BurnSpecBloodpaws1,		// Bloody Paws - Part 1 (Spanish) (128K)
@@ -29112,6 +29119,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecChristmasrs,		// Christmas Robin Simulator (48K) (HB)
 	&BurnSpecChristmaze,		// ChristMaze (48K) (HB)
 	&BurnSpecChromanoids,		// Chromanoids (128K) (HB, v1.1)
+	&BurnSpecChromatixx,		// Chromatixx (128K) (HB)
 	&BurnDrvnes_radiasen,		// Chronicle of the Radia War (Hack, English)
 	&BurnDrvnes_chknight,		// Chrono Knight (HB)
 	&BurnDrvMSX_chronorunner,	// Chrono Runner (HB, v1.1)
@@ -32134,6 +32142,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Fzeroj,		// F-Zero (Japan)
 	&BurnDrvsnes_Fzero,			// F-Zero (USA)
 	&BurnDrvsnes_Fzeroml,		// F-Zero: Max League (Hack)
+	&BurnSpecFire,				// F.I.R.E. (48K-128K)
 	&BurnDrvFa,					// F/A (Japan)
 	&BurnDrvmd_f1,				// F1 (Euro)
 	&BurnDrvsms_f1,				// F1 (Euro, Brazil)
@@ -33046,6 +33055,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Fullpower,		// Full Power (Japan)
 	&BurnDrvnes_fullquietrv,	// Full Quiet (HB)
 	&BurnDrvnes_fullquiet,		// Full Quiet (Test Cart) (HB, Prototype)
+	&BurnSpecFsdefense,			// Full Spectrum Defense (48K-128K) (HB)
 	&BurnSpecFullthrottle,		// Full Throttle (48K)
 	&BurnDrvFullthrl,			// Full Throttle (Japan)
 	&BurnSpecFullthrottle2,		// Full Throttle 2 (48K)
@@ -35273,6 +35283,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTurbobl,			// Indianapolis (bootleg of Turbo)
 	&BurnDrvnes_indivisible,	// Indivisible (HB)
 	&BurnSpecindrsoccr,			// Indoor Soccer (48K)
+	&BurnSpecInfection,			// Infection (48K-128K)
 	&BurnDrvMSX_infernalminer,	// Infernal Miner (Euro)
 	&BurnSpecInfiltrator,		// Infiltrator (48K)
 	&BurnDrvnes_infiltrator,	// Infiltrator (USA)
@@ -40085,6 +40096,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTorochaten,		// Ochate Tower, The (English) (48K-128K) (HB, v1.4)
 	&BurnSpecTorochatenh,		// Ochate Tower, The (English) - Hard mode (48K-128K) (HB, v1.4)
 	&BurnDrvMSX_octasquad,		// Octagon Squad (Euro)
+	&BurnSpecOctan,				// Octan (48K)
 	&BurnSpecOctopussyte,		// Octopussy (48K-128K) (Hack, English)
 	&BurnSpecOctopussy,			// Octopussy (Slovak) (48K-128K)
 	&BurnSpecOctuktty,			// OctuKitty (128K) (HB)
@@ -52832,6 +52844,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_blendpic", "spectrum/d_spectrum.cpp"},
 	{ "spec_blimpgeddon", "spectrum/d_spectrum.cpp"},
 	{ "spec_blindpanic", "spectrum/d_spectrum.cpp"},
+	{ "spec_blindwalker", "spectrum/d_spectrum.cpp"},
 	{ "spec_blinkys", "spectrum/d_spectrum.cpp"},
 	{ "spec_blizzardsrift", "spectrum/d_spectrum.cpp"},
 	{ "nes_blobland", "nes/d_nes.cpp"},
@@ -54326,6 +54339,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_christmasrs", "spectrum/d_spectrum.cpp"},
 	{ "spec_christmaze", "spectrum/d_spectrum.cpp"},
 	{ "spec_chromanoids", "spectrum/d_spectrum.cpp"},
+	{ "spec_chromatixx", "spectrum/d_spectrum.cpp"},
 	{ "nes_radiasen", "nes/d_nes.cpp"},
 	{ "nes_chknight", "nes/d_nes.cpp"},
 	{ "msx_chronorunner", "msx/d_msx.cpp"},
@@ -57330,6 +57344,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_fzeroj", "snes/d_snes.cpp"},
 	{ "snes_fzero", "snes/d_snes.cpp"},
 	{ "snes_fzeroml", "snes/d_snes.cpp"},
+	{ "spec_fire", "spectrum/d_spectrum.cpp"},
 	{ "fa", "pst90s/d_namcona1.cpp"},
 	{ "md_f1", "megadrive/d_megadrive.cpp"},
 	{ "sms_f1", "sms/d_sms.cpp"},
@@ -58238,6 +58253,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_fullpower", "snes/d_snes.cpp"},
 	{ "nes_fullquietrv", "nes/d_nes.cpp"},
 	{ "nes_fullquiet", "nes/d_nes.cpp"},
+	{ "spec_fsdefense", "spectrum/d_spectrum.cpp"},
 	{ "spec_fullthrottle", "spectrum/d_spectrum.cpp"},
 	{ "fullthrl", "taito/d_taitomisc.cpp"},
 	{ "spec_fullthrottle2", "spectrum/d_spectrum.cpp"},
@@ -60453,6 +60469,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "turbobl", "sega/d_turbo.cpp"},
 	{ "nes_indivisible", "nes/d_nes.cpp"},
 	{ "spec_indrsoccr", "spectrum/d_spectrum.cpp"},
+	{ "spec_infection", "spectrum/d_spectrum.cpp"},
 	{ "msx_infernalminer", "msx/d_msx.cpp"},
 	{ "spec_infiltrator", "spectrum/d_spectrum.cpp"},
 	{ "nes_infiltrator", "nes/d_nes.cpp"},
@@ -65221,6 +65238,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_torochaten", "spectrum/d_spectrum.cpp"},
 	{ "spec_torochatenh", "spectrum/d_spectrum.cpp"},
 	{ "msx_octasquad", "msx/d_msx.cpp"},
+	{ "spec_octan", "spectrum/d_spectrum.cpp"},
 	{ "spec_octopussyte", "spectrum/d_spectrum.cpp"},
 	{ "spec_octopussy", "spectrum/d_spectrum.cpp"},
 	{ "spec_octuktty", "spectrum/d_spectrum.cpp"},
