@@ -19563,10 +19563,10 @@
 	</game>
 	<game name="sonic" cloneof="somari" romof="somari" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Sonic the Hedgehog (Hack, v1.7)</description>
-		<year>2025</year>
+		<description>Sonic the Hedgehog (Hack, v1.7b)</description>
+		<year>2025-26</year>
 		<manufacturer>Terwilf</manufacturer>
-		<rom name="Sonic the Hedgehog v1.7 (Hack)(2025)(Terwilf).nes" size="786448" crc="9ea1ffbe"/>
+		<rom name="Sonic the Hedgehog v1.7b (Hack)(2025-26)(Terwilf).nes" size="786448" crc="67cc7c0a"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -23146,6 +23146,15 @@
 		<year>1991</year>
 		<manufacturer>American Video Entertainment</manufacturer>
 		<rom name="Venice Beach Volleyball (USA)(1991)(AVE).nes" size="65552" crc="4a267783"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="vexed" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Vexed (HB, v1.15)</description>
+		<year>2023-24</year>
+		<manufacturer>Under4Mhz</manufacturer>
+		<rom name="Vexed v1.15 (2023-24)(Under4Mhz).nes" size="32784" crc="7a1f3f2c"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

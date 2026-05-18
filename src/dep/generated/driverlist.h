@@ -2272,6 +2272,8 @@ DRV		BurnDrvnes_blackbas2;
 DRV		BurnDrvnes_blackbassthe;
 DRV		BurnDrvsms_blackblt;
 DRV		BurnDrvnes_blackboxcha;
+DRV		BurnDrvgg_bcastle;
+DRV		BurnDrvsms_bcastle;
 DRV		BurnDrvBlkdrgonb;
 DRV		BurnDrvBlkdrgon;
 DRV		BurnDrvBlkheartj;
@@ -21508,6 +21510,8 @@ DRV		BurnDrvsms_swordwork;
 DRV		BurnDrvcv_swordwork;
 DRV		BurnDrvMSX_swordwork;
 DRV		BurnDrvsg1k_swordwork;
+DRV		BurnDrvgg_swordworkm;
+DRV		BurnDrvngpc_swordworkm;
 DRV		BurnDrvmd_sydvaliss;
 DRV		BurnDrvmd_sydvalis;
 DRV		BurnDrvcv_sydneyhunt2;
@@ -23720,11 +23724,12 @@ DRV		BurnDrvMSX_vesikauhu;
 DRV		BurnDrvMSX_vestron;
 DRV		BurnSpecVexed128;
 DRV		BurnSpecVexed48;
-DRV		BurnDrvgg_vexed;
 DRV		BurnDrvsg1k_vexed;
-DRV		BurnDrvsms_vexed;
 DRV		BurnDrvcv_vexed;
+DRV		BurnDrvgg_vexed;
 DRV		BurnDrvMSX_vexed;
+DRV		BurnDrvnes_vexed;
+DRV		BurnDrvsms_vexed;
 DRV		BurnDrvHangonvf;
 DRV		BurnDrvMSX_viajecentro;
 DRV		BurnSpecviajecentterra;
@@ -24332,6 +24337,8 @@ DRV		BurnDrvmd_wolfchlds;
 DRV		BurnDrvmd_wolfchld;
 DRV		BurnDrvsnes_Wolfchild;
 DRV		BurnDrvsnes_Wolfchildfr;
+DRV		BurnDrvgg_wolfenstein;
+DRV		BurnDrvsms_wolfenstein;
 DRV		BurnDrvsnes_Wolf3d;
 DRV		BurnDrvmd_wolfstn3d;
 DRV		BurnDrvsnes_Wolf3dj;
@@ -27518,6 +27525,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_blackbassthe,	// Black Bass, The (Japan)
 	&BurnDrvsms_blackblt,		// Black Belt (Euro, USA)
 	&BurnDrvnes_blackboxcha,	// Black Box Challenge (HB)
+	&BurnDrvgg_bcastle,			// Black Castle (HB, 20240523)
+	&BurnDrvsms_bcastle,		// Black Castle (HB, 20240523)
 	&BurnDrvBlkdrgonb,			// Black Dragon (bootleg)
 	&BurnDrvBlkdrgon,			// Black Dragon (Japan)
 	&BurnDrvBlkheartj,			// Black Heart (Japan)
@@ -38779,7 +38788,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_monacogp,		// Monaco GP (Japan, v1.2)
 	&BurnDrvsg1k_monacogpt,		// Monaco GP (Taiwan)
 	&BurnDrvgg_mcmastergg,		// Monaco Master (HB, v1.1)
-	&BurnDrvsms_mcmaster,		// Monaco Master (HB, v2.9.2)
+	&BurnDrvsms_mcmaster,		// Monaco Master (HB, v2.9.3)
 	&BurnDrvnes_moneygame2,		// Money Game II, The: Kabutochou no Kiseki (Japan)
 	&BurnDrvnes_moneygame,		// Money Game, The (Japan)
 	&BurnDrvMonymony,			// Money Money (set 1)
@@ -43223,7 +43232,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSsho2emb,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Move Modeasy Special Attacks V4, Hack)
 	&BurnDrvSamsho2,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063)
 	&BurnDrvSamsho2t,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Optimized, Hack)
-	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.5, Hack)
+	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)
 	&BurnDrvSamsh2sp,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Special 2017, Hack)
 	&BurnDrvSamsh3bs,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (Boss, Hack)
 	&BurnDrvSamSho3h,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (NGH-087)
@@ -44528,7 +44537,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_sonic,			// Sonic the Hedgehog (Euro, USA)
 	&BurnDrvsms_sonic,			// Sonic The Hedgehog (Euro, USA, Brazil)
 	&BurnDrvsms_sonicfm102,		// Sonic The Hedgehog (Hack, FM Mod v1.02)
-	&BurnDrvnes_sonic,			// Sonic the Hedgehog (Hack, v1.7)
+	&BurnDrvnes_sonic,			// Sonic the Hedgehog (Hack, v1.7b)
 	&BurnDrvmd_sonicj,			// Sonic the Hedgehog (Japan, Korea)
 	&BurnDrvmd_sonicpir,		// Sonic the Hedgehog (Pirate, Ripped from Golden 10 in 1)
 	&BurnDrvmd_sonicp,			// Sonic the Hedgehog (Prototype)
@@ -46754,6 +46763,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvcv_swordwork,		// SwordWork (HB)
 	&BurnDrvMSX_swordwork,		// SwordWork (HB)
 	&BurnDrvsg1k_swordwork,		// SwordWork (HB)
+	&BurnDrvgg_swordworkm,		// SwordWork Micro (HB)
+	&BurnDrvngpc_swordworkm,	// SwordWork Micro (HB)
 	&BurnDrvmd_sydvaliss,		// Syd of Valis (Hack, Spanish v2.0)
 	&BurnDrvmd_sydvalis,		// Syd of Valis (USA)
 	&BurnDrvcv_sydneyhunt2,		// Sydney Hunter and the Caverns of Death (HB)
@@ -48966,11 +48977,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_vestron,		// Vestron (Euro)
 	&BurnSpecVexed128,			// Vexed (128K) (HB, v1.08)
 	&BurnSpecVexed48,			// Vexed (48K) (HB, v1.08)
-	&BurnDrvgg_vexed,			// Vexed (HB, v1.08)
 	&BurnDrvsg1k_vexed,			// Vexed (HB, v1.08)
-	&BurnDrvsms_vexed,			// Vexed (HB, v1.08)
 	&BurnDrvcv_vexed,			// Vexed (HB, v1.15)
+	&BurnDrvgg_vexed,			// Vexed (HB, v1.15)
 	&BurnDrvMSX_vexed,			// Vexed (HB, v1.15)
+	&BurnDrvnes_vexed,			// Vexed (HB, v1.15)
+	&BurnDrvsms_vexed,			// Vexed (HB, v1.15)
 	&BurnDrvHangonvf,			// VF (bootleg of Hang-On)
 	&BurnDrvMSX_viajecentro,	// Viaje al Centro de la Tierra (Euro, Spanish)
 	&BurnSpecviajecentterra,	// Viaje al Centro de la Tierra (Spanish) (48K)
@@ -49578,6 +49590,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_wolfchld,		// Wolfchild (USA)
 	&BurnDrvsnes_Wolfchild,		// Wolfchild (USA)
 	&BurnDrvsnes_Wolfchildfr,	// Wolfchild - FastROM (Hack)
+	&BurnDrvgg_wolfenstein,		// Wolfenstein (HB, v1.16)
+	&BurnDrvsms_wolfenstein,	// Wolfenstein (HB, v1.16)
 	&BurnDrvsnes_Wolf3d,		// Wolfenstein 3-D (USA)
 	&BurnDrvmd_wolfstn3d,		// Wolfenstein 3D (HB, fv11 fix)
 	&BurnDrvsnes_Wolf3dj,		// Wolfenstein 3D - The Claw of Eisenfaust (Japan)
@@ -52754,6 +52768,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_blackbassthe", "nes/d_nes.cpp"},
 	{ "sms_blackblt", "sms/d_sms.cpp"},
 	{ "nes_blackboxcha", "nes/d_nes.cpp"},
+	{ "gg_bcastle", "sms/d_sms.cpp"},
+	{ "sms_bcastle", "sms/d_sms.cpp"},
 	{ "blkdrgonb", "pre90s/d_blktiger.cpp"},
 	{ "blkdrgon", "pre90s/d_blktiger.cpp"},
 	{ "blkheartj", "pst90s/d_nmk16.cpp"},
@@ -71832,6 +71848,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cv_swordwork", "coleco/d_coleco.cpp"},
 	{ "msx_swordwork", "msx/d_msx.cpp"},
 	{ "sg1k_swordwork", "sg1000/d_sg1000.cpp"},
+	{ "gg_swordworkm", "sms/d_sms.cpp"},
+	{ "ngp_swordworkm", "pst90s/d_ngp.cpp"},
 	{ "md_sydvaliss", "megadrive/d_megadrive.cpp"},
 	{ "md_sydvalis", "megadrive/d_megadrive.cpp"},
 	{ "cv_sydneyhunt2", "coleco/d_coleco.cpp"},
@@ -74022,11 +74040,12 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_vestron", "msx/d_msx.cpp"},
 	{ "spec_vexed128", "spectrum/d_spectrum.cpp"},
 	{ "spec_vexed48", "spectrum/d_spectrum.cpp"},
-	{ "gg_vexed", "sms/d_sms.cpp"},
 	{ "sg1k_vexed", "sg1000/d_sg1000.cpp"},
-	{ "sms_vexed", "sms/d_sms.cpp"},
 	{ "cv_vexed", "coleco/d_coleco.cpp"},
+	{ "gg_vexed", "sms/d_sms.cpp"},
 	{ "msx_vexed", "msx/d_msx.cpp"},
+	{ "nes_vexed", "nes/d_nes.cpp"},
+	{ "sms_vexed", "sms/d_sms.cpp"},
 	{ "hangonvf", "sega/d_hangon.cpp"},
 	{ "msx_viajecentro", "msx/d_msx.cpp"},
 	{ "spec_viajecentterra", "spectrum/d_spectrum.cpp"},
@@ -74624,6 +74643,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_wolfchld", "megadrive/d_megadrive.cpp"},
 	{ "snes_wolfchild", "snes/d_snes.cpp"},
 	{ "snes_wolfchildfr", "snes/d_snes.cpp"},
+	{ "gg_wolfenstein", "sms/d_sms.cpp"},
+	{ "sms_wolfenstein", "sms/d_sms.cpp"},
 	{ "snes_wolf3d", "snes/d_snes.cpp"},
 	{ "md_wolfstn3d", "megadrive/d_megadrive.cpp"},
 	{ "snes_wolf3dj", "snes/d_snes.cpp"},
