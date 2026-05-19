@@ -979,6 +979,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bcastle" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Black Castle (HB, 20240523)</description>
+		<year>2023-24</year>
+		<manufacturer>toxa</manufacturer>
+		<rom name="Black Castle 20240523 (2023-24)(toxa).sms" size="65536" crc="aac28a8d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bladeag1" cloneof="bladeag" romof="bladeag" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
 		<description>Blade Eagle (USA, Prototype)</description>
@@ -3995,10 +4004,10 @@
 	</game>
 	<game name="mcmaster" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, YM2413 FM sound chip supported</comment>
-		<description>Monaco Master (HB, v2.9.2)</description>
+		<description>Monaco Master (HB, v2.9.3)</description>
 		<year>2023</year>
 		<manufacturer>Louis The SEGA Nerd</manufacturer>
-		<rom name="Monaco Master v2.9.2 (2023)(Louis The SEGA Nerd).sms" size="81920" crc="355330b6"/>
+		<rom name="Monaco Master v2.9.3 (2023)(Louis The SEGA Nerd).sms" size="81920" crc="694f1fdc"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6667,10 +6676,10 @@
 	</game>
 	<game name="vexed" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Vexed (HB, v1.08)</description>
-		<year>2021-23</year>
+		<description>Vexed (HB, v1.15)</description>
+		<year>2021-24</year>
 		<manufacturer>Under4Mhz</manufacturer>
-		<rom name="Vexed v1.08 (2023)(Under4Mhz).sms" size="32768" crc="834e1138"/>
+		<rom name="Vexed v1.15 (2021-24)(Under4Mhz).sms" size="32768" crc="47c39bac"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6832,6 +6841,15 @@
 		<year>1993</year>
 		<manufacturer>Virgin Games</manufacturer>
 		<rom name="Wolfchild (Euro, Brazil)(1993)(Virgin Games).sms" size="262144" crc="1f8efa1d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="wolfenstein" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Wolfenstein (HB, v1.16)</description>
+		<year>2023</year>
+		<manufacturer>Under4Mhz</manufacturer>
+		<rom name="Wolfenstein v1.16 (2023)(Under4Mhz).sms" size="524288" crc="dd940cdf"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

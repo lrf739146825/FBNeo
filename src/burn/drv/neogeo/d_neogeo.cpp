@@ -824,7 +824,7 @@ static struct BurnDIPInfo neogeoDIPList[] = {
 	{0x02,	0x01, 0x3f,	0x0d, "MVS Japan (J3)"							},
 	{0x02,	0x01, 0x3f,	0x0e, "MVS Japan (J3, alt)"						},
 	{0x02,	0x01, 0x3f,	0x0f, "AES Japan"								},
-	{0x02,	0x01, 0x3f,	0x10, "AES Asia"								},
+	{0x02,	0x01, 0x3f,	0x10, "AES World"								},
 	{0x02,	0x01, 0x3f,	0x11, "Development Kit"							},
 	{0x02,	0x01, 0x3f,	0x12, "Deck ver. 6 (Git Ver 1.3)"				},
 	{0x02,	0x01, 0x3f,	0x13, "Universe BIOS (Hack, Ver. 4.0)"			},
@@ -944,7 +944,7 @@ static struct BurnDIPInfo neoFakeDIPList[] = {
 	{0x02,	0x01, 0x3f,	0x0d, "MVS Japan (J3)"							},
 	{0x02,	0x01, 0x3f,	0x0e, "MVS Japan (J3, alt)"						},
 	{0x02,	0x01, 0x3f,	0x0f, "AES Japan"								},
-	{0x02,	0x01, 0x3f,	0x10, "AES Asia"								},
+	{0x02,	0x01, 0x3f,	0x10, "AES World"								},
 	{0x02,	0x01, 0x3f,	0x11, "Development Kit"							},
 	{0x02,	0x01, 0x3f,	0x12, "Deck ver. 6 (Git Ver 1.3)"				},
 	{0x02,	0x01, 0x3f,	0x13, "Universe BIOS (Hack, Ver. 4.0)"			},
@@ -1128,7 +1128,7 @@ static struct BurnDIPInfo neoForceAESDIPList[] = {
 	// System - BIOS
 	{0,		0xFD, 0,	10,    "BIOS"            },
 	{0x02,	0x01, 0x3f,	0x0f, "AES Japan"       },
-	{0x02,	0x01, 0x3f,	0x10, "AES Asia"        },
+	{0x02,	0x01, 0x3f,	0x10, "AES World"        },
 	{0x02,	0x01, 0x3f,	0x13, "Universe BIOS (Hack, Ver. 4.0)"			},
 	{0x02,	0x01, 0x3f,	0x14, "Universe BIOS (Hack, Ver. 3.3)"			},
 	{0x02,	0x01, 0x3f,	0x15, "Universe BIOS (Hack, Ver. 3.2)"			},
@@ -1316,7 +1316,7 @@ static struct BurnDIPInfo ngdefaultDIPList[] = {
 	{0x02,	0x01, 0x3f,	0x0d, "MVS Japan (J3)"							},
 	{0x02,	0x01, 0x3f,	0x0e, "MVS Japan (J3, alt)"						},
 	{0x02,	0x01, 0x3f,	0x0f, "AES Japan"								},
-	{0x02,	0x01, 0x3f,	0x10, "AES Asia"								},
+	{0x02,	0x01, 0x3f,	0x10, "AES World"								},
 	{0x02,	0x01, 0x3f,	0x11, "Development Kit"							},
 	{0x02,	0x01, 0x3f,	0x12, "Deck ver. 6 (Git Ver 1.3)"				},
 	{0x02,	0x01, 0x3f,	0x13, "Universe BIOS (Hack, Ver. 4.0)"			},
@@ -1423,7 +1423,7 @@ static struct BurnDIPInfo aesdefaultDIPList[] = {
 	{0x02,	0x01, 0x3f,	0x0d, "MVS Japan (J3)"							},
 	{0x02,	0x01, 0x3f,	0x0e, "MVS Japan (J3, alt)"						},
 	{0x02,	0x01, 0x3f,	0x0f, "AES Japan"								},
-	{0x02,	0x01, 0x3f,	0x10, "AES Asia"								},
+	{0x02,	0x01, 0x3f,	0x10, "AES World"								},
 	{0x02,	0x01, 0x3f,	0x11, "Development Kit"							},
 	{0x02,	0x01, 0x3f,	0x12, "Deck ver. 6 (Git Ver 1.3)"				},
 	{0x02,	0x01, 0x3f,	0x13, "Universe BIOS (Hack, Ver. 4.0)"			},
@@ -1628,7 +1628,7 @@ static struct BurnRomInfo neogeoRomDesc[] = {
 	{ "sp1-j3.bin",        0x20000, 0xfbc6d469, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 14 MVS Japan (J3, alt)
 #if !defined (ROM_VERIFY)
 	{ "neo-po.bin",        0x20000, 0x16d0c132, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 15 AES Japan
-	{ "neo-epo.bin",       0x20000, 0xd27a71f1, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 16 AES Asia
+	{ "neo-epo.bin",       0x20000, 0xd27a71f1, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 16 AES World
 	{ "neodebug.bin",      0x20000, 0x698ebb7d, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 17 Development Kit
 #else
 	{ "",                  0x00000, 0x00000000, 0                                                   }, // 15
@@ -1685,7 +1685,7 @@ static struct BurnRomInfo neoMVSRomDesc[] = {
 	{ "japan-j3.bin",      0x20000, 0xdff6d41f, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 13 MVS Japan (J3)
 	{ "sp1-j3.bin",        0x20000, 0xfbc6d469, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 14 MVS Japan (J3, alt)
 	{ "neo-po.bin",        0x20000, 0x16d0c132, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 15 AES Japan
-	{ "neo-epo.bin",       0x20000, 0xd27a71f1, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 16 AES Asia
+	{ "neo-epo.bin",       0x20000, 0xd27a71f1, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 16 AES World
 	{ "neodebug.bin",      0x20000, 0x698ebb7d, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 17 Development Kit
 	{ "sp-1v1_3db8c.bin",  0x20000, 0x162f0ebe, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 18 Deck ver. 6 (Git Ver 1.3)
 	{ "uni-bios_4_0.rom",  0x20000, 0xa7aab458, BRF_ESS | BRF_PRG | BRF_BIOS | BRF_SELECT | BRF_OPT }, // 19 Universe BIOS (Hack, Ver. 4.0)
@@ -6548,11 +6548,11 @@ static void LastbladPatchCallback()
 
 		UINT8 nRegion = NeoSystem & 0x3f;
 
-		// AES Japan (0x0f) / AES Asia (0x10)
+		// AES Japan (0x0f) / AES World (0x10)
 		if ((0x0f != nRegion) && (0x10 != nRegion)) {
 			NeoSystem &= ~nRegion;
 //			NeoSystem |= 0x0f;	// AES Japan
-			NeoSystem |= 0x10;	// AES Asia
+			NeoSystem |= 0x10;	// AES World
 		}
 	}
 
@@ -21633,14 +21633,14 @@ struct BurnDriver BurnDrvSamsh2jq = {
 };
 
 
-// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.5, Hack)
+// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)
 // Modified by Bear
-// 20260104
+// 20260516
 
 static struct BurnRomInfo samsho2peRomDesc[] = {
-	{ "063-p1pe.p1",	0x100000, 0xe4dd1c44, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
-	{ "063-p2pe.sp2",	0x100000, 0x68ef2a4a, 1 | BRF_ESS | BRF_PRG }, //  1
-	{ "063-p3pe.p3",	0x020000, 0x2c311c74, 1 | BRF_ESS | BRF_PRG }, //  2 Extra ROM
+	{ "063-p1pe.p1",	0x100000, 0xf828c04c, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
+	{ "063-p2pe.sp2",	0x100000, 0x7594e942, 1 | BRF_ESS | BRF_PRG }, //  1
+	{ "063-p3pe.p3",	0x020000, 0x7dd8bada, 1 | BRF_ESS | BRF_PRG }, //  2 Extra ROM
 
 	SAMSHO2_COMPONENTS
 };
@@ -21650,8 +21650,8 @@ STD_ROM_FN(samsho2pe)
 
 struct BurnDriver BurnDrvSamsho2pe = {
 	"samsho2pe", "samsho2", "neogeo", NULL, "2023-26",
-	"Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.5, Hack)\0", NULL, "Bear", "Neo Geo MVS",
-	L"Samurai Shodown II\0\u771F Samurai Spirits - \u8987\u738B\u4E38\u5730\u7344\u5909 (Perfect V. 2.5, Hack)\0", NULL, NULL, NULL,
+	"Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)\0", NULL, "Bear", "Neo Geo MVS",
+	L"Samurai Shodown II\0\u771F Samurai Spirits - \u8987\u738B\u4E38\u5730\u7344\u5909 (Perfect V. 2.6, Hack)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_VSFIGHT, FBF_SAMSHO,
 	NULL, samsho2peRomInfo, samsho2peRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neoForceMVSDIPInfo,
 	samsh2spInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,

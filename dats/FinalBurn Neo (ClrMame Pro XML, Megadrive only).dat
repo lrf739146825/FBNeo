@@ -784,6 +784,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="altbeastpt" cloneof="altbeast" romof="altbeast" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Altered Beast (Hack, Portuguese)</description>
+		<year>2026</year>
+		<manufacturer>CEGA Traducoes</manufacturer>
+		<rom name="Altered Beast PT-BR (2026)(CEGA Traducoes).bin" size="524288" crc="2676ef61"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="altbeasts" cloneof="altbeast" romof="altbeast" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Altered Beast (Hack, Spanish)</description>

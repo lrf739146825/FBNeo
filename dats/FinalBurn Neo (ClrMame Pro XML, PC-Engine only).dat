@@ -656,6 +656,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="diehardtp" cloneof="diehard" romof="diehard" sourcefile="pce/d_pce.cpp">
+		<comment>Hack</comment>
+		<description>Die Hard (Hack, Portuguese)</description>
+		<year>2018</year>
+		<manufacturer>Patryckpo</manufacturer>
+		<rom name="Die Hard T-Por (2018)(Patryckpo).pce" size="524288" crc="6634dc79"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="diehard" sourcefile="pce/d_pce.cpp">
 		<description>Die Hard (Japan)</description>
 		<year>1990</year>

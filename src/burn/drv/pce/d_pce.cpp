@@ -1659,6 +1659,26 @@ struct BurnDriver BurnDrvpce_diehardte = {
 };
 
 
+// Die Hard (Hack, Portuguese)
+// https://www.romhacking.net.br/index.php?topic=730.0
+static struct BurnRomInfo pce_diehardtpRomDesc[] = {
+	{ "Die Hard T-Por (2018)(Patryckpo).pce", 524288, 0x6634dc79, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(pce_diehardtp)
+STD_ROM_FN(pce_diehardtp)
+
+struct BurnDriver BurnDrvpce_diehardtp = {
+	"pce_diehardtp", "pce_diehard", NULL, NULL, "2018",
+	"Die Hard (Hack, Portuguese)\0", NULL, "Patryckpo", "PC Engine",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_PCENGINE_PCENGINE, GBF_RUNGUN, 0,
+	PceGetZipName, pce_diehardtpRomInfo, pce_diehardtpRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+
 // Digital Champ (Japan)
 
 static struct BurnRomInfo pce_digichmpRomDesc[] = {
@@ -3112,26 +3132,6 @@ struct BurnDriver BurnDrvpce_shubibi = {
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_PCENGINE_PCENGINE, GBF_RUNGUN | GBF_PLATFORM, 0,
 	PceGetZipName, pce_shubibiRomInfo, pce_shubibiRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
 	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
-	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
-};
-
-
-// Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)
-
-static struct BurnRomInfo tg_shubibi2RomDesc[] = {
-	{ "Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)(1991)(NCS - Masaya).pce", 0x080000, 0x109ba474, BRF_PRG | BRF_ESS },
-};
-
-STD_ROM_PICK(tg_shubibi2)
-STD_ROM_FN(tg_shubibi2)
-
-struct BurnDriver BurnDrvtg_shubibi2 = {
-	"tg_shubibi2", "tg_ccshockman2", NULL, NULL, "1991",
-	"Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)\0", NULL, "NCS - Masaya Games", "TurboGrafx 16",
-	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_PCENGINE_TG16, GBF_RUNGUN | GBF_PLATFORM, 0,
-	TgGetZipName, tg_shubibi2RomInfo, tg_shubibi2RomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
-	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
 
@@ -8008,6 +8008,26 @@ struct BurnDriver BurnDrvtg_jchan = {
 };
 
 
+// Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)
+
+static struct BurnRomInfo tg_shubibi2RomDesc[] = {
+	{ "Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)(1991)(NCS - Masaya).pce", 0x080000, 0x109ba474, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(tg_shubibi2)
+STD_ROM_FN(tg_shubibi2)
+
+struct BurnDriver BurnDrvtg_shubibi2 = {
+	"tg_shubibi2", "tg_ccshockman2", NULL, NULL, "1991",
+	"Kaizou Choujin Shubibinman 2: Aratanaru Teki (Japan)\0", NULL, "NCS - Masaya Games", "TurboGrafx 16",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_PCENGINE_TG16, GBF_RUNGUN | GBF_PLATFORM, 0,
+	TgGetZipName, tg_shubibi2RomInfo, tg_shubibi2RomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+
 // Keith Courage in Alpha Zones (USA)
 
 static struct BurnRomInfo tg_keithcorRomDesc[] = {
@@ -8123,6 +8143,26 @@ struct BurnDriver BurnDrvtg_legaxe = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_PCENGINE_TG16, GBF_SCRFIGHT | GBF_PLATFORM, 0,
 	TgGetZipName, tg_legaxeRomInfo, tg_legaxeRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+
+// Legendary Axe, The (Hack, Portuguese)
+// https://www.romhacking.net.br/index.php?topic=854.0
+static struct BurnRomInfo tg_legaxetpRomDesc[] = {
+	{ "Legendary Axe, The T-Por (2018)(Patryckpo).pce", 262144, 0x3682e4e1, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(tg_legaxetp)
+STD_ROM_FN(tg_legaxetp)
+
+struct BurnDriver BurnDrvtg_legaxetp = {
+	"tg_legaxetp", "tg_legaxe", NULL, NULL, "2018",
+	"Legendary Axe, The (Hack, Portuguese)\0", NULL, "Patryckpo", "TurboGrafx 16",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_PCENGINE_TG16, GBF_SCRFIGHT | GBF_PLATFORM, 0,
+	TgGetZipName, tg_legaxetpRomInfo, tg_legaxetpRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
 	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
@@ -8502,6 +8542,26 @@ struct BurnDriver BurnDrvtg_shockman = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_PCENGINE_TG16, GBF_RUNGUN | GBF_PLATFORM, 0,
 	TgGetZipName, tg_shockmanRomInfo, tg_shockmanRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+
+// Shockman (Hack, Portuguese v0.95)
+// https://www.romhacking.net.br/index.php?topic=120.0
+static struct BurnRomInfo tg_shockmantpRomDesc[] = {
+	{ "Shockman T-Por v0.95 (2017)(Maverick Blue Warrior).pce", 524288, 0x6059ae18, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(tg_shockmantp)
+STD_ROM_FN(tg_shockmantp)
+
+struct BurnDriver BurnDrvtg_shockmantp = {
+	"tg_shockmantp", "tg_ccshockman2", NULL, NULL, "2017",
+	"Shockman (Hack, Portuguese v0.95)\0", NULL, "Maverick Blue Warrior", "TurboGrafx 16",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_PCENGINE_TG16, GBF_RUNGUN | GBF_PLATFORM, 0,
+	TgGetZipName, tg_shockmantpRomInfo, tg_shockmantpRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
 	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
