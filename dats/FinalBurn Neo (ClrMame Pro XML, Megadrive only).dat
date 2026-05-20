@@ -12671,10 +12671,10 @@
 	</game>
 	<game name="mkaee" cloneof="mk" romof="mk" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Mortal Kombat Arcade Edition Enhanced (Hack, v2.2)</description>
-		<year>2025</year>
+		<description>Mortal Kombat Arcade Edition Enhanced (Hack, v2.4)</description>
+		<year>2026</year>
 		<manufacturer>Rael G.C.</manufacturer>
-		<rom name="Mortal Kombat Arcade Edition Enhanced v2.2 (2025)(Rael G.C.).bin" size="4194304" crc="e0b10bf3"/>
+		<rom name="Mortal Kombat Arcade Edition Enhanced v2.4 (2026)(Rael G.C.).bin" size="4194304" crc="20e1378c"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -19239,6 +19239,15 @@
 		<year>199?</year>
 		<manufacturer>&lt;unknown&gt;</manufacturer>
 		<rom name="Spy Kids 4 - All The Time In The World (Russia)(Unl)(199x).bin" size="2097152" crc="9a045ea3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="squarebrothers" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Square Brothers (HB)</description>
+		<year>2025</year>
+		<manufacturer>Ratalaika Games, 9Ratones, Two Black Cats</manufacturer>
+		<rom name="Square Brothers (2025)(Ratalaika Games, 9Ratones, Two Black Cats).bin" size="1048576" crc="3e866383"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

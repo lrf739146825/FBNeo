@@ -6453,10 +6453,10 @@
 	</game>
 	<game name="eyebrawls" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Eye Brawls (HB, v1.1)</description>
+		<description>Eye Brawls (HB, 5-9-26)</description>
 		<year>2026</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Eye Brawls v1.1 (2026)(Jess Creations).rom" size="32768" crc="26b6648d"/>
+		<rom name="Eye Brawls 5-9-26 (2026)(Jess Creations).rom" size="32768" crc="c1a37604"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
@@ -16516,10 +16516,10 @@
 	</game>
 	<game name="solarfox2" romof="msx" sourcefile="msx/d_msx.cpp">
 		<comment>Homebrew</comment>
-		<description>Solar Fox II: Space Evaders (HB)</description>
+		<description>Solar Fox II (HB)</description>
 		<year>2025</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Solar Fox II - Space Evaders (2025)(Jess Creations).rom" size="32768" crc="7ed32582"/>
+		<rom name="Solar Fox II (2025)(Jess Creations).rom" size="32768" crc="7ed32582"/>
 		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
 		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
 		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>

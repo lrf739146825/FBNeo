@@ -6747,8 +6747,8 @@
 		<comment>Homebrew</comment>
 		<description>Whack 'Em Smack 'Em Byrons Remarked (HB)</description>
 		<year>2025</year>
-		<manufacturer>ArugulaZ</manufacturer>
-		<rom name="Whack 'Em Smack 'Em Byrons Remarked (2025)(ArugulaZ).sms" size="131072" crc="be34ae87"/>
+		<manufacturer>Jess Creations - ArugulaZ</manufacturer>
+		<rom name="Whack 'Em Smack 'Em Byrons Remarked (2025)(Jess Creations - ArugulaZ).sms" size="131072" crc="be34ae87"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
