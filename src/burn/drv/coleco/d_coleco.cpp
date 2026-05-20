@@ -5493,6 +5493,24 @@ struct BurnDriver BurnDrvcv_bankbuild = {
     272, 228, 4, 3
 };
 
+// Barbarricade (HB, 5-19-26 Beta)
+static struct BurnRomInfo cv_barbarricadeRomDesc[] = {
+	{ "Barbarricade 5-19-26 Beta (2026)(Jess Creations).rom",	24576, 0x09785a9e, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(cv_barbarricade, cv_barbarricade, cv_coleco)
+STD_ROM_FN(cv_barbarricade)
+
+struct BurnDriver BurnDrvcv_barbarricade = {
+	"cv_barbarricade", NULL, "cv_coleco", NULL, "2026",
+	"Barbarricade (HB, 5-19-26 Beta)\0", NULL, "Jess Creations", "ColecoVision",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_BREAKOUT, 0,
+	CVGetZipName, cv_barbarricadeRomInfo, cv_barbarricadeRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
 // BarnBuster (HB)
 static struct BurnRomInfo cv_barnbusterRomDesc[] = {
     { "BarnBuster (2026)(DiRoccoVision).rom",	32768, 0x75a4713d, BRF_PRG | BRF_ESS },
@@ -7217,6 +7235,24 @@ struct BurnDriver BurnDrvcv_exerion = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_COLECO, GBF_SHOOT, 0,
 	CVGetZipName, cv_exerionRomInfo, cv_exerionRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
+// Eye Brawls (HB, 1-31-26)
+static struct BurnRomInfo cv_eyebrawlsRomDesc[] = {
+	{ "Eye Brawls 1-31-26 (2026)(Jess Creations).rom",	32768, 0x7129da45, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(cv_eyebrawls, cv_eyebrawls, cv_coleco)
+STD_ROM_FN(cv_eyebrawls)
+
+struct BurnDriver BurnDrvcv_eyebrawls = {
+	"cv_eyebrawls", NULL, "cv_coleco", NULL, "2026",
+	"Eye Brawls (HB, 1-31-26)\0", NULL, "Jess Creations", "ColecoVision",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_ACTION | GBF_MAZE, 0,
+	CVGetZipName, cv_eyebrawlsRomInfo, cv_eyebrawlsRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
 	272, 228, 4, 3
 };
@@ -9383,7 +9419,7 @@ struct BurnDriver BurnDrvcv_mrchin = {
 
 // Mr. Do! Arcade (HB)
 static struct BurnRomInfo cv_mrdoarcadeRomDesc[] = {
-	{ "Mr. Do! Arcade (2026)(Scott Moschella).rom",	32695, 0xa06edcb1, BRF_PRG | BRF_ESS },
+	{ "Mr. Do! Arcade (2026)(Scott Moschella).rom",	32768, 0x09f0d2c7, BRF_PRG | BRF_ESS },
 };
 
 STDROMPICKEXT(cv_mrdoarcade, cv_mrdoarcade, cv_coleco)
@@ -9395,6 +9431,24 @@ struct BurnDriver BurnDrvcv_mrdoarcade = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_COLECO, GBF_ACTION, 0,
 	CVGetZipName, cv_mrdoarcadeRomInfo, cv_mrdoarcadeRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
+// Mr. Do! Arcade - Red Nose (HB)
+static struct BurnRomInfo cv_mrdoarcadernRomDesc[] = {
+	{ "Mr. Do! Arcade - Red Nose (2026)(Scott Moschella).rom",	32768, 0x99324671, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(cv_mrdoarcadern, cv_mrdoarcadern, cv_coleco)
+STD_ROM_FN(cv_mrdoarcadern)
+
+struct BurnDriver BurnDrvcv_mrdoarcadern = {
+	"cv_mrdoarcadern", "cv_mrdoarcade", "cv_coleco", NULL, "2026",
+	"Mr. Do! Arcade - Red Nose (HB)\0", NULL, "Scott Moschella", "ColecoVision",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 2, HARDWARE_COLECO, GBF_ACTION, 0,
+	CVGetZipName, cv_mrdoarcadernRomInfo, cv_mrdoarcadernRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
 	272, 228, 4, 3
 };
@@ -9633,9 +9687,9 @@ struct BurnDriver BurnDrvcv_nsub = {
     272, 228, 4, 3
 };
 
-// Operation Hibernation (HB)
+// Operation Hibernation (HB, 10-11-25)
 static struct BurnRomInfo cv_ophibernRomDesc[] = {
-	{ "Operation Hibernation (2025)(Jess Creations).rom",	32768, 0x028809f5, BRF_PRG | BRF_ESS },
+	{ "Operation Hibernation 10-11-25 (2025)(Jess Creations).rom",	32768, 0x39ed33ed, BRF_PRG | BRF_ESS },
 };
 
 STDROMPICKEXT(cv_ophibern, cv_ophibern, cv_coleco)
@@ -9643,7 +9697,7 @@ STD_ROM_FN(cv_ophibern)
 
 struct BurnDriver BurnDrvcv_ophibern = {
 	"cv_ophibern", NULL, "cv_coleco", NULL, "2025",
-	"Operation Hibernation (HB)\0", NULL, "Jess Creations", "ColecoVision",
+	"Operation Hibernation (HB, 10-11-25)\0", NULL, "Jess Creations", "ColecoVision",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_PLATFORM, 0,
 	CVGetZipName, cv_ophibernRomInfo, cv_ophibernRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
@@ -10117,6 +10171,24 @@ struct BurnDriver BurnDrvcv_pyrawbc2 = {
     CVGetZipName, cv_pyrawbc2RomInfo, cv_pyrawbc2RomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
     DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
     272, 228, 4, 3
+};
+
+// Pyrebirds (HB, 01-22-26 Beta)
+static struct BurnRomInfo cv_pyrebirdsRomDesc[] = {
+	{ "Pyrebirds 01-22-26 Beta (2026)(Jess Creations).rom",	32768, 0x6bad1b85, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(cv_pyrebirds, cv_pyrebirds, cv_coleco)
+STD_ROM_FN(cv_pyrebirds)
+
+struct BurnDriver BurnDrvcv_pyrebirds = {
+	"cv_pyrebirds", NULL, "cv_coleco", NULL, "2026",
+	"Pyrebirds (HB, 01-22-26 Beta)\0", NULL, "Jess Creations", "ColecoVision",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_VERSHOOT, 0,
+	CVGetZipName, cv_pyrebirdsRomInfo, cv_pyrebirdsRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
 };
 
 // qbIqS (SGM) (HB)
@@ -10875,9 +10947,9 @@ struct BurnDriver BurnDrvcv_soko64p = {
 	272, 228, 4, 3
 };
 
-// Solar Fox II (HB)
+// Solar Fox II (HB, 10-2-25)
 static struct BurnRomInfo cv_solarfox2RomDesc[] = {
-    { "Solar Fox II (2025)(CollectorVision - Jess Creations).rom",	32768, 0xe1ada331, BRF_PRG | BRF_ESS },
+    { "Solar Fox II 10-2-25 (2025)(CollectorVision - Jess Creations).rom",	32768, 0xd679e739, BRF_PRG | BRF_ESS },
 };
 
 STDROMPICKEXT(cv_solarfox2, cv_solarfox2, cv_coleco)
@@ -10885,7 +10957,7 @@ STD_ROM_FN(cv_solarfox2)
 
 struct BurnDriver BurnDrvcv_solarfox2 = {
     "cv_solarfox2", NULL, "cv_coleco", NULL, "2025",
-    "Solar Fox II (HB)\0", "Published by CollectorVision Games", "Jess Creations", "ColecoVision",
+    "Solar Fox II (HB, 10-2-25)\0", "Published by CollectorVision Games", "Jess Creations", "ColecoVision",
     NULL, NULL, NULL, NULL,
     BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_ACTION, 0,
     CVGetZipName, cv_solarfox2RomInfo, cv_solarfox2RomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
