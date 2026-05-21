@@ -446,6 +446,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="barbarricade" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Barbarricade (HB, 5-19-26 Beta)</description>
+		<year>2026</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Barbarricade 5-19-26 Beta (2026)(Jess Creations).rom" size="24576" crc="09785a9e"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="barnbuster" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>BarnBuster (HB)</description>
@@ -2273,6 +2286,19 @@
 		<year>1983-2010</year>
 		<manufacturer>Jaleco - Sega</manufacturer>
 		<rom name="Exerion (1983-2010)(CollectorVision).rom" size="32768" crc="66dba33b"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="eyebrawls" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Eye Brawls (HB, 1-31-26)</description>
+		<year>2026</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Eye Brawls 1-31-26 (2026)(Jess Creations).rom" size="32768" crc="7129da45"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -4621,7 +4647,20 @@
 		<description>Mr. Do! Arcade (HB)</description>
 		<year>2026</year>
 		<manufacturer>Scott Moschella</manufacturer>
-		<rom name="Mr. Do! Arcade (2026)(Scott Moschella).rom" size="32695" crc="a06edcb1"/>
+		<rom name="Mr. Do! Arcade (2026)(Scott Moschella).rom" size="32768" crc="09f0d2c7"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mrdoarcadern" cloneof="mrdoarcade" romof="mrdoarcade" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Mr. Do! Arcade - Red Nose (HB)</description>
+		<year>2026</year>
+		<manufacturer>Scott Moschella</manufacturer>
+		<rom name="Mr. Do! Arcade - Red Nose (2026)(Scott Moschella).rom" size="32768" crc="99324671"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -4910,10 +4949,10 @@
 	</game>
 	<game name="ophibern" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
-		<description>Operation Hibernation (HB)</description>
+		<description>Operation Hibernation (HB, 10-11-25)</description>
 		<year>2025</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Operation Hibernation (2025)(Jess Creations).rom" size="32768" crc="028809f5"/>
+		<rom name="Operation Hibernation 10-11-25 (2025)(Jess Creations).rom" size="32768" crc="39ed33ed"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -5388,6 +5427,19 @@
 		<year>2008</year>
 		<manufacturer>Dvik &amp; Joyrex</manufacturer>
 		<rom name="Pyramid Warp &amp; Battle Ship Clapton II (2009)(Collectorvision Games).rom" size="32768" crc="f7052b06"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pyrebirds" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Pyrebirds (HB, 01-22-26 Beta)</description>
+		<year>2026</year>
+		<manufacturer>Jess Creations</manufacturer>
+		<rom name="Pyrebirds 01-22-26 Beta (2026)(Jess Creations).rom" size="32768" crc="6bad1b85"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -6256,10 +6308,10 @@
 	</game>
 	<game name="solarfox2" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, Published by CollectorVision Games</comment>
-		<description>Solar Fox II (HB)</description>
+		<description>Solar Fox II (HB, 10-2-25)</description>
 		<year>2025</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Solar Fox II (2025)(CollectorVision - Jess Creations).rom" size="32768" crc="e1ada331"/>
+		<rom name="Solar Fox II 10-2-25 (2025)(CollectorVision - Jess Creations).rom" size="32768" crc="d679e739"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>

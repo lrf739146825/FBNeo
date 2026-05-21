@@ -1715,6 +1715,7 @@ DRV		BurnSpecbarbpt1;
 DRV		BurnSpecbarbpt2;
 DRV		BurnDrvmd_barbarianzxs;
 DRV		BurnDrvpce_barbarianzxs;
+DRV		BurnDrvcv_barbarricade;
 DRV		BurnDrvsnes_Barbiesupermodel;
 DRV		BurnDrvsnes_Barbievacationadv;
 DRV		BurnDrvgg_barbie;
@@ -6836,8 +6837,9 @@ DRV		BurnDrvExvania;
 DRV		BurnDrvExzisusa;
 DRV		BurnDrvExzisus;
 DRV		BurnDrvExzisust;
-DRV		BurnDrvMSX_eyebrawls;
 DRV		BurnDrvsg1k_eyebrawls;
+DRV		BurnDrvcv_eyebrawls;
+DRV		BurnDrvMSX_eyebrawls;
 DRV		BurnDrvsnes_Eyebehold;
 DRV		BurnDrveyesb;
 DRV		BurnDrveyeszacb;
@@ -13872,6 +13874,7 @@ DRV		BurnDrvsnes_Mrdo;
 DRV		BurnDrvcv_mrdoa;
 DRV		BurnDrvcv_mrdo;
 DRV		BurnDrvcv_mrdoarcade;
+DRV		BurnDrvcv_mrdoarcadern;
 DRV		BurnDrvcv_mrdorunrun;
 DRV		BurnDrvMSX_mrdovsun;
 DRV		BurnDrvDouni;
@@ -16629,6 +16632,7 @@ DRV		BurnDrvMSX_pyramidwex;
 DRV		BurnDrvsms_pyramidwex;
 DRV		BurnSpecPyramid;
 DRV		BurnDrvnes_pyramidsra;
+DRV		BurnDrvcv_pyrebirds;
 DRV		BurnDrvMSX_pyroman;
 DRV		BurnDrvPyros;
 DRV		BurnDrvnes_qboy;
@@ -19150,9 +19154,9 @@ DRV		BurnSpecsolnegrose2;
 DRV		BurnDrvmd_soldeacep;
 DRV		BurnDrvmd_soldeace;
 DRV		BurnDrvSolarfox;
+DRV		BurnDrvMSX_solarfox2;
 DRV		BurnDrvcv_solarfox2;
 DRV		BurnDrvsg1k_solarfoxii;
-DRV		BurnDrvMSX_solarfox2;
 DRV		BurnDrvnes_solarjet;
 DRV		BurnDrvSolrwarr;
 DRV		BurnDrvSoldamj;
@@ -19793,6 +19797,7 @@ DRV		BurnSpecSqijzx;
 DRV		BurnDrvSquij;
 DRV		BurnSpecSqijd;
 DRV		BurnDrvnes_sqoon;
+DRV		BurnDrvmd_squarebrothers;
 DRV		BurnDrvMSX_squardan;
 DRV		BurnDrvMSX_squareball;
 DRV		BurnSpecSquares;
@@ -26968,6 +26973,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecbarbpt2,			// Barbarian: The Ultimate Warrior - Part 2 (48K)
 	&BurnDrvmd_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
 	&BurnDrvpce_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
+	&BurnDrvcv_barbarricade,	// Barbarricade (HB, 5-19-26 Beta)
 	&BurnDrvsnes_Barbiesupermodel,// Barbie - Super Model (USA)
 	&BurnDrvsnes_Barbievacationadv,// Barbie - Vacation Adventure (USA, Prototype)
 	&BurnDrvgg_barbie,			// Barbie Super Model (Prototype)
@@ -32089,8 +32095,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvExzisusa,			// Exzisus (Japan, conversion)
 	&BurnDrvExzisus,			// Exzisus (Japan, dedicated)
 	&BurnDrvExzisust,			// Exzisus (TAD license)
-	&BurnDrvMSX_eyebrawls,		// Eye Brawls (HB, v1.1)
-	&BurnDrvsg1k_eyebrawls,		// Eye Brawls (HB, v1.2)
+	&BurnDrvsg1k_eyebrawls,		// Eye Brawls (HB, 1-30-26)
+	&BurnDrvcv_eyebrawls,		// Eye Brawls (HB, 1-31-26)
+	&BurnDrvMSX_eyebrawls,		// Eye Brawls (HB, 5-9-26)
 	&BurnDrvsnes_Eyebehold,		// Eye of the Beholder ~ Advanced Dungeons & Dragons (USA)
 	&BurnDrveyesb,				// Eyes (bootleg, set 1)
 	&BurnDrveyeszacb,			// Eyes (bootleg, set 2, decrypted)
@@ -39001,7 +39008,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_mortalkombat4h,	// Mortal Kombat 4 (Hack, UMK3)
 	&BurnDrvnes_mortalkombat4,	// Mortal Kombat 4 (Unl)
 	&BurnDrvmd_mkae,			// Mortal Kombat Arcade Edition (Hack, v1.0d)
-	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v2.2)
+	&BurnDrvmd_mkaee,			// Mortal Kombat Arcade Edition Enhanced (Hack, v2.4)
 	&BurnDrvsms_mk2,			// Mortal Kombat II (Euro, Brazil)
 	&BurnDrvsnes_Mkiie,			// Mortal Kombat II (Euro, Rev. 1)
 	&BurnDrvMk2r11,				// Mortal Kombat II (rev L1.1)
@@ -39125,6 +39132,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvcv_mrdoa,			// Mr. Do! (USA, Alt)
 	&BurnDrvcv_mrdo,			// Mr. Do! (USA, Euro)
 	&BurnDrvcv_mrdoarcade,		// Mr. Do! Arcade (HB)
+	&BurnDrvcv_mrdoarcadern,	// Mr. Do! Arcade - Red Nose (HB)
 	&BurnDrvcv_mrdorunrun,		// Mr. Do! Run Run (SGM) (HB)
 	&BurnDrvMSX_mrdovsun,		// Mr. Do! vs Unicorns (Japan)
 	&BurnDrvDouni,				// Mr. Do! vs. Unicorns (Japan)
@@ -40220,9 +40228,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Opeuro3945,	// Operation Europe - Path to Victory 1939-45 (USA)
 	&BurnSpecOperationgunship,	// Operation Gunship (128K)
 	&BurnSpecOphanoi,			// Operation Hanoi (48K-128K)
-	&BurnDrvcv_ophibern,		// Operation Hibernation (HB)
+	&BurnDrvcv_ophibern,		// Operation Hibernation (HB, 10-11-25)
 	&BurnDrvMSX_ophibern,		// Operation Hibernation (HB, v1.1)
-	&BurnDrvsg1k_ophibernplus,	// Operation Hibernation Plus (HB, Rev.2)
+	&BurnDrvsg1k_ophibernplus,	// Operation Hibernation Plus (HB, 02-15-26)
 	&BurnSpecOphormuz,			// Operation Hormuz (48K-128K)
 	&BurnDrvsnes_Oplogicbombe,	// Operation Logic Bomb - The Ultimate Search & Destroy (Euro)
 	&BurnDrvsnes_Oplogicbomb,	// Operation Logic Bomb - The Ultimate Search & Destroy (USA)
@@ -41882,6 +41890,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_pyramidwex,		// Pyramid Warp Enhanced (HB)
 	&BurnSpecPyramid,			// Pyramid, The (128K) (HB)
 	&BurnDrvnes_pyramidsra,		// Pyramids of Ra (HB)
+	&BurnDrvcv_pyrebirds,		// Pyrebirds (HB, 01-22-26 Beta)
 	&BurnDrvMSX_pyroman,		// Pyro-Man (Euro)
 	&BurnDrvPyros,				// Pyros (US)
 	&BurnDrvnes_qboy,			// Q Boy (Asia) (Unl)
@@ -44403,9 +44412,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_soldeacep,		// Sol-Deace (Prototype, 19920203)
 	&BurnDrvmd_soldeace,		// Sol-Deace (USA)
 	&BurnDrvSolarfox,			// Solar Fox (upright)
-	&BurnDrvcv_solarfox2,		// Solar Fox II (HB)
-	&BurnDrvsg1k_solarfoxii,	// Solar Fox II (HB)
-	&BurnDrvMSX_solarfox2,		// Solar Fox II: Space Evaders (HB)
+	&BurnDrvMSX_solarfox2,		// Solar Fox II (HB)
+	&BurnDrvcv_solarfox2,		// Solar Fox II (HB, 10-2-25)
+	&BurnDrvsg1k_solarfoxii,	// Solar Fox II (HB, 21-10-25)
 	&BurnDrvnes_solarjet,		// Solar Jetman: Hunt for the Golden Warpship (USA)
 	&BurnDrvSolrwarr,			// Solar-Warrior (US)
 	&BurnDrvSoldamj,			// Soldam (Japan)
@@ -45046,6 +45055,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSquij,				// SQIJ!
 	&BurnSpecSqijd,				// SQIJ'D (128K) (HB)
 	&BurnDrvnes_sqoon,			// Sqoon (USA)
+	&BurnDrvmd_squarebrothers,	// Square Brothers (HB)
 	&BurnDrvMSX_squardan,		// Square Dancer (Japan)
 	&BurnDrvMSX_squareball,		// SquareBall (HB)
 	&BurnSpecSquares,			// Squares (128K) (HB)
@@ -52213,6 +52223,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_barbpt2", "spectrum/d_spectrum.cpp"},
 	{ "md_barbarianzxs", "megadrive/d_megadrive.cpp"},
 	{ "pce_barbarianzxs", "pce/d_pce.cpp"},
+	{ "cv_barbarricade", "coleco/d_coleco.cpp"},
 	{ "snes_barbiesupermodel", "snes/d_snes.cpp"},
 	{ "snes_barbievacationadv", "snes/d_snes.cpp"},
 	{ "gg_barbie", "sms/d_sms.cpp"},
@@ -57300,8 +57311,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "exzisusa", "taito/d_exzisus.cpp"},
 	{ "exzisus", "taito/d_exzisus.cpp"},
 	{ "exzisust", "taito/d_exzisus.cpp"},
-	{ "msx_eyebrawls", "msx/d_msx.cpp"},
 	{ "sg1k_eyebrawls", "sg1000/d_sg1000.cpp"},
+	{ "cv_eyebrawls", "coleco/d_coleco.cpp"},
+	{ "msx_eyebrawls", "msx/d_msx.cpp"},
 	{ "snes_eyebehold", "snes/d_snes.cpp"},
 	{ "eyesb", "pre90s/d_pacman.cpp"},
 	{ "eyeszacb", "pre90s/d_pacman.cpp"},
@@ -64282,6 +64294,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cv_mrdoa", "coleco/d_coleco.cpp"},
 	{ "cv_mrdo", "coleco/d_coleco.cpp"},
 	{ "cv_mrdoarcade", "coleco/d_coleco.cpp"},
+	{ "cv_mrdoarcadern", "coleco/d_coleco.cpp"},
 	{ "cv_mrdorunrun", "coleco/d_coleco.cpp"},
 	{ "msx_mrdovsun", "msx/d_msx.cpp"},
 	{ "douni", "pre90s/d_docastle.cpp"},
@@ -67017,6 +67030,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_pyramidwex", "sms/d_sms.cpp"},
 	{ "spec_pyramid", "spectrum/d_spectrum.cpp"},
 	{ "nes_pyramidsra", "nes/d_nes.cpp"},
+	{ "cv_pyrebirds", "coleco/d_coleco.cpp"},
 	{ "msx_pyroman", "msx/d_msx.cpp"},
 	{ "pyros", "toaplan/d_wardner.cpp"},
 	{ "nes_qboy", "nes/d_nes.cpp"},
@@ -69518,9 +69532,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_soldeacep", "megadrive/d_megadrive.cpp"},
 	{ "md_soldeace", "megadrive/d_megadrive.cpp"},
 	{ "solarfox", "pre90s/d_mcr.cpp"},
+	{ "msx_solarfox2", "msx/d_msx.cpp"},
 	{ "cv_solarfox2", "coleco/d_coleco.cpp"},
 	{ "sg1k_solarfoxii", "sg1000/d_sg1000.cpp"},
-	{ "msx_solarfox2", "msx/d_msx.cpp"},
 	{ "nes_solarjet", "nes/d_nes.cpp"},
 	{ "solrwarr", "pre90s/d_xain.cpp"},
 	{ "soldamj", "pre90s/d_megasys1.cpp"},
@@ -70157,6 +70171,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sqij", "taito/d_taitol.cpp"},
 	{ "spec_sqijd", "spectrum/d_spectrum.cpp"},
 	{ "nes_sqoon", "nes/d_nes.cpp"},
+	{ "md_squarebrothers", "megadrive/d_megadrive.cpp"},
 	{ "msx_squardan", "msx/d_msx.cpp"},
 	{ "msx_squareball", "msx/d_msx.cpp"},
 	{ "spec_squares", "spectrum/d_spectrum.cpp"},
