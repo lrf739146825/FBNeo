@@ -7465,9 +7465,18 @@
 		<description>D.N.A. Warrior (128K)</description>
 		<year>1989</year>
 		<manufacturer>Cascade Games</manufacturer>
-		<rom name="D.N.A. Warrior 128K (1989)(Cascade Games).tap" size="52639" crc="86a9a591"/>
+		<rom name="D.N.A. Warrior 128K (1989)(Cascade Games).tzx" size="52700" crc="efc5c184"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dnawarrior48" cloneof="dnawarrior" romof="dnawarrior" sourcefile="spectrum/d_spectrum.cpp">
+		<description>D.N.A. Warrior (48K)</description>
+		<year>1989</year>
+		<manufacturer>Cascade Games</manufacturer>
+		<rom name="D.N.A. Warrior 48K (1989)(Cascade Games).tzx" size="52699" crc="6931991f"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18410,6 +18419,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="maxstonetwoe" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone Two: In Count Vlad's castle (128K) (HB, easy)</description>
+		<year>2026</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone Two In Count Vlad's castle - easy 128K (2026)(Flopping).tap" size="77200" crc="903dd3a4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maxstonetwoh" cloneof="maxstonetwoe" romof="maxstonetwoe" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone Two: In Count Vlad's castle (128K) (HB, hard)</description>
+		<year>2026</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone Two In Count Vlad's castle - hard 128K (2026)(Flopping).tap" size="77134" crc="7cf5d43d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mazania" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Mazania: Mage Rage Part II (48K) (HB)</description>
@@ -22733,6 +22764,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="poyans" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Poyans (Italian) (48K)</description>
+		<year>1986</year>
+		<manufacturer>Special Playgames</manufacturer>
+		<rom name="Poyans IT 48K (1986)(Special Playgames).tzx" size="20509" crc="05cf46d9"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="prezu" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Pre-ZU (128K) (HB)</description>
@@ -23443,6 +23483,27 @@
 		<manufacturer>bedroom-coders</manufacturer>
 		<rom name="Racetrack Riches 48K (2025)(bedroom-coders).tap" size="46109" crc="1fe06ca6"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="radioralph128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press '0' on Start Screen to use controller</comment>
+		<description>Radioactive Ralph (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Simon Allan</manufacturer>
+		<rom name="Radioactive Ralph 128K (2026)(Simon Allan).tap" size="48543" crc="33e198c7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="radioralph48" cloneof="radioralph128" romof="radioralph128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Press '0' on Start Screen to use controller</comment>
+		<description>Radioactive Ralph (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Simon Allan</manufacturer>
+		<rom name="Radioactive Ralph 48K (2026)(Simon Allan).tap" size="43787" crc="88e08623"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -24336,6 +24397,15 @@
 		<year>1984</year>
 		<manufacturer>Mastertronic</manufacturer>
 		<rom name="Rifle Range 16K (1984)(Mastertronic).tap" size="24834" crc="f94351b2"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ringwars" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Ring Wars (48K)</description>
+		<year>1988</year>
+		<manufacturer>Cascade Games</manufacturer>
+		<rom name="Ring Wars 48K (1988)(Cascade Games).tzx" size="56066" crc="5dd8a7e8"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -29631,10 +29701,10 @@
 	</game>
 	<game name="tetris" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Press 'O' for options</comment>
-		<description>Tetris (Mirrorsoft) (128K)</description>
+		<description>Tetris (Mirrorsoft) (48K-128K)</description>
 		<year>1987-88</year>
 		<manufacturer>Mirrorsoft</manufacturer>
-		<rom name="Tetris 128K (1988)(Mirrorsoft).tap" size="38370" crc="6e160a6c"/>
+		<rom name="Tetris 48K-128K (1988)(Mirrorsoft).tap" size="38370" crc="6e160a6c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -29652,10 +29722,10 @@
 	</game>
 	<game name="tetrisce" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Tetris: Championship Edition (48K-128K) (HB, v0.8)</description>
-		<year>2020</year>
+		<description>Tetris: Championship Edition (48K-128K) (HB, v1.1)</description>
+		<year>2022-25</year>
 		<manufacturer>The Shich</manufacturer>
-		<rom name="Tetris - Championship Edition (2020)(TheShich).tap" size="47734" crc="a03fb265"/>
+		<rom name="Tetris - Championship Edition v1.1 48K-128K (2022-25)(The Shich).tap" size="47734" crc="968f70b1"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>

@@ -8144,10 +8144,10 @@
 	</game>
 	<game name="goldnaxeac" cloneof="goldnaxe" romof="goldnaxe" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Golden Axe - Arcade Colors (Hack, v1.3)</description>
+		<description>Golden Axe - Arcade Colors (Hack, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>SCD</manufacturer>
-		<rom name="Golden Axe - Arcade Colors v1.3 (2026)(SCD).bin" size="590842" crc="0f0f9154"/>
+		<rom name="Golden Axe - Arcade Colors v1.4 (2026)(SCD).bin" size="590842" crc="e19b97c4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

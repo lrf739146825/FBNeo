@@ -4761,6 +4761,7 @@ DRV		BurnDrvDdcrew1d;
 DRV		BurnDrvDdcrew1;
 DRV		BurnDrvMSX_devilhvn;
 DRV		BurnSpecDnawarrior;
+DRV		BurnSpecDnawarrior48;
 DRV		BurnDrvsnes_Dolls;
 DRV		BurnDrvsg1k_dacike;
 DRV		BurnSpecDavincien;
@@ -6603,6 +6604,7 @@ DRV		BurnSpecBuscamortaes;
 DRV		BurnSpecEnchanted;
 DRV		BurnDrvnes_smbendssmbha1;
 DRV		BurnSpecefmb;
+DRV		BurnDrvMSX_endurance;
 DRV		BurnSpecenduro;
 DRV		BurnDrvEndurord;
 DRV		BurnDrvEnduror1d;
@@ -12697,6 +12699,8 @@ DRV		BurnSpecMaxstone2es;
 DRV		BurnSpecMaxstone2en;
 DRV		BurnSpecMaxstonemhes;
 DRV		BurnSpecMaxstonemhen;
+DRV		BurnSpecMaxstonetwoe;
+DRV		BurnSpecMaxstonetwoh;
 DRV		BurnDrvnes_maxwar;
 DRV		BurnDrvMSX_maxima;
 DRV		BurnDrvMayday;
@@ -16225,6 +16229,7 @@ DRV		BurnDrvCpsPgearr1;
 DRV		BurnDrvCpsPgear;
 DRV		BurnDrvsnes_Powmongere;
 DRV		BurnDrvsnes_Powmongerj;
+DRV		BurnSpecPoyans;
 DRV		BurnDrvsnes_Ppubusact;
 DRV		BurnSpecPrezu;
 DRV		BurnDrvPbillianb;
@@ -16867,6 +16872,8 @@ DRV		BurnDrvmd_radrexs;
 DRV		BurnDrvmd_radrexp;
 DRV		BurnDrvmd_radrexu;
 DRV		BurnDrvsnes_Radicalrex;
+DRV		BurnSpecRadioralph128;
+DRV		BurnSpecRadioralph48;
 DRV		BurnDrvnes_rafworld;
 DRV		BurnDrvRaflesia;
 DRV		BurnDrvRaflesiau;
@@ -17360,6 +17367,7 @@ DRV		BurnDrvCpsRingdesth;
 DRV		BurnDrvRingrageu;
 DRV		BurnDrvRingragej;
 DRV		BurnDrvRingrage;
+DRV		BurnSpecRingwars;
 DRV		BurnSpecRingo;
 DRV		BurnDrvmd_ringspow;
 DRV		BurnDrvRiot;
@@ -30019,6 +30027,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDdcrew1,			// D. D. Crew (World, 4 Players) (FD1094 317-0187)
 	&BurnDrvMSX_devilhvn,		// D.H. - Devil's Heaven (Japan)
 	&BurnSpecDnawarrior,		// D.N.A. Warrior (128K)
+	&BurnSpecDnawarrior48,		// D.N.A. Warrior (48K)
 	&BurnDrvsnes_Dolls,			// D.O.L.L.S. (GlobalHack)
 	&BurnDrvsg1k_dacike,		// Da Cike ~ Yie Ar Kung-Fu II (Taiwan)
 	&BurnSpecDavincien,			// Da Vinci's Legacy - First Part (English) (128K) (HB)
@@ -31861,6 +31870,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecEnchanted,			// Enchanted (Spanish) (48K)
 	&BurnDrvnes_smbendssmbha1,	// Ende's Super Mario Bros. (Hack)
 	&BurnSpecefmb,				// Endless Forms Most Beautiful (48K) (HB)
+	&BurnDrvMSX_endurance,		// Endurance (HB)
 	&BurnSpecenduro,			// Enduro Racer (48K-128K)
 	&BurnDrvEndurord,			// Enduro Racer (bootleg of Rev A, YM2151, FD1089B 317-0013A set)
 	&BurnDrvEnduror1d,			// Enduro Racer (bootleg of YM2203, FD1089B 317-0013A set)
@@ -33837,7 +33847,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGoldnaxe,			// Golden Axe (set 6, US) (8751 317-123A)
 	&BurnDrvmd_goldnaxe1,		// Golden Axe (World)
 	&BurnDrvmd_goldnaxe,		// Golden Axe (World, v1.1)
-	&BurnDrvmd_goldnaxeac,		// Golden Axe - Arcade Colors (Hack, v1.3)
+	&BurnDrvmd_goldnaxeac,		// Golden Axe - Arcade Colors (Hack, v1.4)
 	&BurnDrvmd_goldnax2s,		// Golden Axe II (Hack, Spanish)
 	&BurnDrvmd_goldnax2,		// Golden Axe II (World)
 	&BurnDrvmd_goldnax2p,		// Golden Axe II (World, Prototype)
@@ -37955,6 +37965,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecMaxstone2en,		// Max Stone 2 MH Edition (English) (128K) (HB)
 	&BurnSpecMaxstonemhes,		// Max Stone Edicion MH (Spanish) (128K) (HB)
 	&BurnSpecMaxstonemhen,		// Max Stone MH Edition (English) (128K) (HB)
+	&BurnSpecMaxstonetwoe,		// Max Stone Two: In Count Vlad's castle (128K) (HB, easy)
+	&BurnSpecMaxstonetwoh,		// Max Stone Two: In Count Vlad's castle (128K) (HB, hard)
 	&BurnDrvnes_maxwar,			// Max Warrior - Wakusei Kaigenrei (Japan)
 	&BurnDrvMSX_maxima,			// Maxima (Euro)
 	&BurnDrvMayday,				// Mayday (set 1)
@@ -41483,6 +41495,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCpsPgear,			// Powered Gear: Strategic Variant Armor Equipment (Japan 941024)
 	&BurnDrvsnes_Powmongere,	// PowerMonger (Euro)
 	&BurnDrvsnes_Powmongerj,	// PowerMonger - Mashou no Bouryaku (Japan)
+	&BurnSpecPoyans,			// Poyans (Italian) (48K)
 	&BurnDrvsnes_Ppubusact,		// PPU bus act (HB)
 	&BurnSpecPrezu,				// Pre-ZU (128K) (HB)
 	&BurnDrvPbillianb,			// Prebillian (bootleg)
@@ -42125,6 +42138,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_radrexp,			// Radical Rex (Prototype)
 	&BurnDrvmd_radrexu,			// Radical Rex (USA)
 	&BurnDrvsnes_Radicalrex,	// Radical Rex (USA)
+	&BurnSpecRadioralph128,		// Radioactive Ralph (128K) (HB)
+	&BurnSpecRadioralph48,		// Radioactive Ralph (48K) (HB)
 	&BurnDrvnes_rafworld,		// Raf World (Japan)
 	&BurnDrvRaflesia,			// Rafflesia (315-5162)
 	&BurnDrvRaflesiau,			// Rafflesia (not encrypted)
@@ -42618,6 +42633,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvRingrageu,			// Ring Rage (Ver 2.3A 1992/08/09)
 	&BurnDrvRingragej,			// Ring Rage (Ver 2.3J 1992/08/09)
 	&BurnDrvRingrage,			// Ring Rage (Ver 2.3O 1992/08/09)
+	&BurnSpecRingwars,			// Ring Wars (48K)
 	&BurnSpecRingo,				// RINGO (128K) (HB)
 	&BurnDrvmd_ringspow,		// Rings of Power (Euro, USA)
 	&BurnDrvRiot,				// Riot (NMK)
@@ -47356,7 +47372,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTetrist,			// Tetris (Japan, Taito B-System, Nastar Conversion Kit)
 	&BurnDrvMSX_tetris,			// Tetris (Korea) (Unl)
 	&BurnDrvMSX_tetrisa,		// Tetris (Korea, Alt) (Unl)
-	&BurnSpectetris,			// Tetris (Mirrorsoft) (128K)
+	&BurnSpectetris,			// Tetris (Mirrorsoft) (48K-128K)
 	&BurnDrvnes_tetris,			// Tetris (Nintendo) (USA)
 	&BurnDrvmd_tetrispp,		// Tetris (Pocket Player Pro) [no comment, NOT WORKING]
 	&BurnDrvAtetris,			// Tetris (set 1)
@@ -47394,7 +47410,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTetrisp2a,			// Tetris Plus 2 (World, V2.7)
 	&BurnDrvTetrisp2,			// Tetris Plus 2 (World, V2.8)
 	&BurnDrvgg_tetris4gg,		// Tetris4GG (HB, v0.9)
-	&BurnSpecTetrisce,			// Tetris: Championship Edition (48K-128K) (HB, v0.8)
+	&BurnSpecTetrisce,			// Tetris: Championship Edition (48K-128K) (HB, v1.1)
 	&BurnDrvTgm2p,				// Tetris: The Absolute - The Grand Master 2 Plus
 	&BurnDrvTgm2,				// Tetris: The Absolute - The Grand Master 2
 	&BurnDrvMSX_tetsuman,		// Tetsuman (Japan)
@@ -48049,7 +48065,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTjcc,				// TJ's Cavern Capers (128K) (HB)
 	&BurnDrvsnes_Tkoscb,		// TKO Super Championship Boxing (USA)
 	&BurnDrvsnes_Tmntfightce,	// TMNT: Tournament Fighters - Cowabunga Edition (Hack)
-	&BurnDrvsnes_Tmntfightgme,	// TMNT: Tournament Fighters - Grandmasters Edition (Hack, v3.7)
+	&BurnDrvsnes_Tmntfightgme,	// TMNT: Tournament Fighters - Grandmasters Edition (Hack, v3.8)
 	&BurnDrvmd_tnnbass,			// TNN Bass Tournament of Champions (USA)
 	&BurnDrvsnes_Tnnbasstoc,	// TNN Bass Tournament of Champions (USA)
 	&BurnDrvmd_tnnout,			// TNN Outdoors Bass Tournament '96 (USA)
@@ -55245,6 +55261,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ddcrew1", "sega/d_sys18.cpp"},
 	{ "msx_devilhvn", "msx/d_msx.cpp"},
 	{ "spec_dnawarrior", "spectrum/d_spectrum.cpp"},
+	{ "spec_dnawarrior48", "spectrum/d_spectrum.cpp"},
 	{ "snes_dolls", "snes/d_snes.cpp"},
 	{ "sg1k_dacike", "sg1000/d_sg1000.cpp"},
 	{ "spec_davincien", "spectrum/d_spectrum.cpp"},
@@ -57077,6 +57094,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_enchanted", "spectrum/d_spectrum.cpp"},
 	{ "nes_smbendssmbha1", "nes/d_nes.cpp"},
 	{ "spec_efmb", "spectrum/d_spectrum.cpp"},
+	{ "msx_endurance", "msx/d_msx.cpp"},
 	{ "spec_enduro", "spectrum/d_spectrum.cpp"},
 	{ "endurord", "sega/d_hangon.cpp"},
 	{ "enduror1d", "sega/d_hangon.cpp"},
@@ -63125,6 +63143,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_maxstone2en", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstonemhes", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstonemhen", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstonetwoe", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstonetwoh", "spectrum/d_spectrum.cpp"},
 	{ "nes_maxwar", "nes/d_nes.cpp"},
 	{ "msx_maxima", "msx/d_msx.cpp"},
 	{ "mayday", "pre90s/d_williams.cpp"},
@@ -66627,6 +66647,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pgear", "capcom/d_cps2.cpp"},
 	{ "snes_powmongere", "snes/d_snes.cpp"},
 	{ "snes_powmongerj", "snes/d_snes.cpp"},
+	{ "spec_poyans", "spectrum/d_spectrum.cpp"},
 	{ "snes_ppubusact", "snes/d_snes.cpp"},
 	{ "spec_prezu", "spectrum/d_spectrum.cpp"},
 	{ "pbillianb", "taito/d_superqix.cpp"},
@@ -67263,6 +67284,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_radrexp", "megadrive/d_megadrive.cpp"},
 	{ "md_radrexu", "megadrive/d_megadrive.cpp"},
 	{ "snes_radicalrex", "snes/d_snes.cpp"},
+	{ "spec_radioralph128", "spectrum/d_spectrum.cpp"},
+	{ "spec_radioralph48", "spectrum/d_spectrum.cpp"},
 	{ "nes_rafworld", "nes/d_nes.cpp"},
 	{ "raflesia", "sega/d_sys1.cpp"},
 	{ "raflesiau", "sega/d_sys1.cpp"},
@@ -67756,6 +67779,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ringrageu", "taito/d_taitof3.cpp"},
 	{ "ringragej", "taito/d_taitof3.cpp"},
 	{ "ringrage", "taito/d_taitof3.cpp"},
+	{ "spec_ringwars", "spectrum/d_spectrum.cpp"},
 	{ "spec_ringo", "spectrum/d_spectrum.cpp"},
 	{ "md_ringspow", "megadrive/d_megadrive.cpp"},
 	{ "riot", "pst90s/d_tecmo16.cpp"},
