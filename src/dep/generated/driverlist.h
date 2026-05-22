@@ -693,7 +693,6 @@ DRV		BurnDrvsnes_Alien3;
 DRV		BurnSpecAlien8;
 DRV		BurnDrvMSX_alien8;
 DRV		BurnDrvMSX_alien8h;
-DRV		BurnDrvAlienaru;
 DRV		BurnDrvAlienar;
 DRV		BurnDrvaa;
 DRV		BurnSpecAaf;
@@ -3938,6 +3937,7 @@ DRV		BurnSpecCindyblock;
 DRV		BurnDrvsnes_Circuitusa;
 DRV		BurnDrvsms_circuit;
 DRV		BurnSpeccircuitry;
+DRV		BurnDrvCircuso;
 DRV		BurnDrvCircus;
 DRV		BurnDrvnes_circuscaper;
 DRV		BurnDrvCircuscc;
@@ -4432,13 +4432,13 @@ DRV		BurnDrvgg_crackym;
 DRV		BurnDrvngpc_crackym;
 DRV		BurnDrvnes_crapjob;
 DRV		BurnDrvnes_crashnboy;
-DRV		BurnDrvCrasha;
 DRV		BurnDrvHocrash;
 DRV		BurnDrvcrashh;
+DRV		BurnDrvCrash;
+DRV		BurnDrvCrasha;
 DRV		BurnDrvmd_crash;
 DRV		BurnDrvsnes_Crashbanden;
 DRV		BurnDrvsnes_Crashbandpt;
-DRV		BurnDrvCrash;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvCrater;			// Graphics Issues [NOT WORKING]
 #endif
@@ -23095,6 +23095,9 @@ DRV		BurnSpectrantor;
 DRV		BurnDrvMSX_trantor;
 DRV		BurnSpecTranzam;
 DRV		BurnSpectradooth;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvTrapeze;			// no comment [NOT WORKING]
+#endif
 DRV		BurnDrvMSX_trapox;
 DRV		BurnSpecTrashman;
 DRV		BurnSpecTrashmanen;
@@ -25963,7 +25966,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecAlien8,			// Alien 8 (48K)
 	&BurnDrvMSX_alien8,			// Alien 8 (Japan)
 	&BurnDrvMSX_alien8h,		// Alien 8 (Japan, Alt)
-	&BurnDrvAlienaru,			// Alien Arena (with Stargate sound)
 	&BurnDrvAlienar,			// Alien Arena
 	&BurnDrvaa,					// Alien Armada
 	&BurnSpecAaf,				// Alien Astro Frenzy (48K) (HB)
@@ -29208,6 +29210,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Circuitusa,	// Circuit USA (Japan)
 	&BurnDrvsms_circuit,		// Circuit, The (Japan)
 	&BurnSpeccircuitry,			// Circuitry (48K) (HB, v1.1)
+	&BurnDrvCircuso,			// Circus / Acrobat TV (older)
 	&BurnDrvCircus,				// Circus / Acrobat TV
 	&BurnDrvnes_circuscaper,	// Circus Caper (USA)
 	&BurnDrvCircuscc,			// Circus Charlie (Centuri)
@@ -29702,13 +29705,13 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvngpc_crackym,		// Cracky Mini (HB)
 	&BurnDrvnes_crapjob,		// Crap Job (HB)
 	&BurnDrvnes_crashnboy,		// Crash 'n' the Boys: Street Challenge (USA)
-	&BurnDrvCrasha,				// Crash (Alt)
 	&BurnDrvHocrash,			// Crash (bootleg of Head On)
 	&BurnDrvcrashh,				// Crash (Pac-Man)
+	&BurnDrvCrash,				// Crash (set 1)
+	&BurnDrvCrasha,				// Crash (set 2)
 	&BurnDrvmd_crash,			// Crash Bandicoot (Russia) (Unl)
 	&BurnDrvsnes_Crashbanden,	// Crash Bandicoot and the Retro Dimension (GlobalHack, English)
 	&BurnDrvsnes_Crashbandpt,	// Crash Bandicoot e a Dimensao Retro (GlobalHack, Portuguese)
-	&BurnDrvCrash,				// Crash
 #if defined FBNEO_DEBUG
 	&BurnDrvCrater,				// Crater Raider [Graphics Issues, NOT WORKING]
 #endif
@@ -44284,7 +44287,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_smackwac,		// Smack Wacker (Euro)
 	&BurnDrvsnes_Smartball,		// Smart Ball (USA)
 	&BurnDrvmd_smartmouse,		// Smart Mouse (HB)
-	&BurnDrvSmash,				// Smash (Crash bootleg)
+	&BurnDrvSmash,				// Smash (bootleg of Crash)
 	&BurnDrvfds_smashpingpong,	// Smash Ping Pong (Japan)
 	&BurnDrvsms_smashtv,		// Smash T.V. (Euro)
 	&BurnDrvnes_smashtvc,		// Smash T.V. (Hack, Spanish)
@@ -48365,6 +48368,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_trantor,		// Trantor: The Last Stormtrooper (Euro)
 	&BurnSpecTranzam,			// Tranz Am (16K)
 	&BurnSpectradooth,			// Trap Door, The (48K)
+#if defined FBNEO_DEBUG
+	&BurnDrvTrapeze,			// Trapeze / Trampoline [no comment, NOT WORKING]
+#endif
 	&BurnDrvMSX_trapox,			// Trapox (HB)
 	&BurnSpecTrashman,			// Trashman (48K)
 	&BurnSpecTrashmanen,		// TRASHMAN - Crisis Time (English) (128K) (HB)
@@ -51233,7 +51239,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_alien8", "spectrum/d_spectrum.cpp"},
 	{ "msx_alien8", "msx/d_msx.cpp"},
 	{ "msx_alien8h", "msx/d_msx.cpp"},
-	{ "alienaru", "pre90s/d_williams.cpp"},
 	{ "alienar", "pre90s/d_williams.cpp"},
 	{ "aa", "pre90s/d_pacman.cpp"},
 	{ "spec_aaf", "spectrum/d_spectrum.cpp"},
@@ -54452,6 +54457,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_circuitusa", "snes/d_snes.cpp"},
 	{ "sms_circuit", "sms/d_sms.cpp"},
 	{ "spec_circuitry", "spectrum/d_spectrum.cpp"},
+	{ "circuso", "pre90s/d_circus.cpp"},
 	{ "circus", "pre90s/d_circus.cpp"},
 	{ "nes_circuscaper", "nes/d_nes.cpp"},
 	{ "circuscc", "konami/d_circusc.cpp"},
@@ -54942,13 +54948,13 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ngp_crackym", "pst90s/d_ngp.cpp"},
 	{ "nes_crapjob", "nes/d_nes.cpp"},
 	{ "nes_crashnboy", "nes/d_nes.cpp"},
-	{ "crasha", "pre90s/d_circus.cpp"},
 	{ "hocrash", "pre90s/d_vicdual.cpp"},
 	{ "crashh", "pre90s/d_pacman.cpp"},
+	{ "crash", "pre90s/d_circus.cpp"},
+	{ "crasha", "pre90s/d_circus.cpp"},
 	{ "md_crash", "megadrive/d_megadrive.cpp"},
 	{ "snes_crashbanden", "snes/d_snes.cpp"},
 	{ "snes_crashbandpt", "snes/d_snes.cpp"},
-	{ "crash", "pre90s/d_circus.cpp"},
 	{ "crater", "pre90s/d_mcr3.cpp"},
 	{ "nes_cratersong", "nes/d_nes.cpp"},
 	{ "nes_cratersongde", "nes/d_nes.cpp"},
@@ -73453,6 +73459,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_trantor", "msx/d_msx.cpp"},
 	{ "spec_tranzam", "spectrum/d_spectrum.cpp"},
 	{ "spec_tradooth", "spectrum/d_spectrum.cpp"},
+	{ "trapeze", "pre90s/d_circus.cpp"},
 	{ "msx_trapox", "msx/d_msx.cpp"},
 	{ "spec_trashman", "spectrum/d_spectrum.cpp"},
 	{ "spec_trashmanen", "spectrum/d_spectrum.cpp"},
