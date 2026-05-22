@@ -130,6 +130,10 @@ ifneq (,$(findstring unix,$(platform)))
 	SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(VERSION_SCRIPT)
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	LDFLAGS += -lpthread
+	# enable link-time optimization for Unix platforms
+	LDFLAGS += -Wl,--as-needed -Wl,--gc-sections
+	CFLAGS += -ffunction-sections -fdata-sections
+	CXXFLAGS += -ffunction-sections -fdata-sections
 
 	# Raspberry Pi
 	ifneq (,$(findstring rpi1,$(platform)))
@@ -569,6 +573,8 @@ else
 	# LDFLAGS += -static-libgcc -static-libstd
 #   use inner Static Library libwinpthread.a
 	LDFLAGS += -static -Wl,--gc-sections -Wl,--as-needed
+	# enable link-time optimization for Win platforms
+	LDFLAGS +=  -ffunction-sections -fdata-sections
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	SPLIT_UP_LINK = 1
 endif
