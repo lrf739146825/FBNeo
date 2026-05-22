@@ -693,6 +693,7 @@ DRV		BurnDrvsnes_Alien3;
 DRV		BurnSpecAlien8;
 DRV		BurnDrvMSX_alien8;
 DRV		BurnDrvMSX_alien8h;
+DRV		BurnDrvAlienaru;
 DRV		BurnDrvAlienar;
 DRV		BurnDrvaa;
 DRV		BurnSpecAaf;
@@ -1551,6 +1552,7 @@ DRV		BurnSpecBabyman3;
 DRV		BurnSpecBabyman4gm;
 DRV		BurnSpecBabyman4in;
 DRV		BurnDrvbackfirt;
+DRV		BurnDrvbackfirtb;
 DRV		BurnDrvMSX_backgamj;
 DRV		BurnDrvMSX_backgamja;
 DRV		BurnDrvBssoccer;
@@ -7888,6 +7890,7 @@ DRV		BurnDrvMSX_gmonkey;
 DRV		BurnDrvGstream;
 DRV		BurnDrvmd_gzero;
 DRV		BurnSpecGihero;
+DRV		BurnDrvGijoeaa;
 DRV		BurnDrvGijoea;
 DRV		BurnDrvGijoej;
 DRV		BurnDrvGijoeua;
@@ -14103,6 +14106,7 @@ DRV		BurnDrvMvpjd;
 DRV		BurnDrvMvpj;
 DRV		BurnDrvMvpd;
 DRV		BurnDrvMvp;
+DRV		BurnDrvMx5000r;
 DRV		BurnDrvMx5000;
 DRV		BurnDrvMyherobl;
 DRV		BurnDrvsms_myhero;
@@ -25959,6 +25963,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecAlien8,			// Alien 8 (48K)
 	&BurnDrvMSX_alien8,			// Alien 8 (Japan)
 	&BurnDrvMSX_alien8h,		// Alien 8 (Japan, Alt)
+	&BurnDrvAlienaru,			// Alien Arena (with Stargate sound)
 	&BurnDrvAlienar,			// Alien Arena
 	&BurnDrvaa,					// Alien Armada
 	&BurnSpecAaf,				// Alien Astro Frenzy (48K) (HB)
@@ -26816,7 +26821,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecBabyman3,			// Baby-Man Vs Terminatots PT1 (48K) (HB, v1.01)
 	&BurnSpecBabyman4gm,		// Baby-Man Vs Terminatots PT2 - Game (48K) (HB)
 	&BurnSpecBabyman4in,		// Baby-Man Vs Terminatots PT2 - Intro (48K) (HB)
-	&BurnDrvbackfirt,			// Back Fire (Tecmo, bootleg)
+	&BurnDrvbackfirt,			// Back Fire (Tecmo)
+	&BurnDrvbackfirtb,			// Back Fire (Tecmo, bootleg)
 	&BurnDrvMSX_backgamj,		// Back Gammon (Japan)
 	&BurnDrvMSX_backgamja,		// Back Gammon (Japan, Alt)
 	&BurnDrvBssoccer,			// Back Street Soccer (KRB-0031 PCB)
@@ -32754,8 +32760,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFixeightut,			// FixEight (USA, Taito license)
 	&BurnDrvFixeightj,			// FixEight - Jigoku no Eiyuu Densetsu (Japan)
 	&BurnDrvFixeightjt,			// FixEight - Jigoku no Eiyuu Densetsu (Japan, Taito license)
-	&BurnDrvFlkatck,			// Flak Attack (Japan)
-	&BurnDrvFlkatcka,			// Flak Attack (Japan, PWB 450593 sub-board)
+	&BurnDrvFlkatck,			// Flak Attack (Japan, version P)
+	&BurnDrvFlkatcka,			// Flak Attack (Japan, version P, PWB 450593 sub-board)
 	&BurnDrvnes_flaphappy,		// Flap Happy (HB)
 	&BurnDrvcv_flapbrd,			// Flapee Byrd (HB)
 	&BurnDrvMSX_flappy,			// Flappy (Japan)
@@ -33154,11 +33160,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvGstream,			// G-Stream G2020
 	&BurnDrvmd_gzero,			// G-ZERO (HB, beta 4)
 	&BurnSpecGihero,			// G.I. Hero (48K-128K)
-	&BurnDrvGijoea,				// G.I. Joe (Asia, AA)
+	&BurnDrvGijoeaa,			// G.I. Joe (Asia, AA)
+	&BurnDrvGijoea,				// G.I. Joe (Asia, AAB)
 	&BurnDrvGijoej,				// G.I. Joe (Japan, JAA)
 	&BurnDrvGijoeua,			// G.I. Joe (US, UAA)
 	&BurnDrvGijoeu,				// G.I. Joe (US, UAB)
-	&BurnDrvGijoe,				// G.I. Joe (World, EAB, set 1)
+	&BurnDrvGijoe,				// G.I. Joe (World, EAB)
 	&BurnDrvGijoeea,			// G.I. Joe (World, EB8, prototype?)
 	&BurnDrvnes_gijoeareamhe,	// G.I. Joe - A Real American Hero (USA)
 	&BurnDrvnes_gijoeatlfa,		// G.I. Joe - The Atlantis Factor (USA)
@@ -39369,7 +39376,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMvpj,				// MVP (set 1, Japan) (FD1094 317-0142)
 	&BurnDrvMvpd,				// MVP (set 2, US) (bootleg of FD1094 317-0143 set)
 	&BurnDrvMvp,				// MVP (set 2, US) (FD1094 317-0143)
-	&BurnDrvMx5000,				// MX5000
+	&BurnDrvMx5000r,			// MX5000 (version R)
+	&BurnDrvMx5000,				// MX5000 (version U)
 	&BurnDrvMyherobl,			// My Hero (bootleg, 315-5132 encryption)
 	&BurnDrvsms_myhero,			// My Hero (Euro, USA, Brazil)
 	&BurnDrvsms_myheroc,		// My Hero (Euro, USA, Brazil, Sega Card)
@@ -51225,6 +51233,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_alien8", "spectrum/d_spectrum.cpp"},
 	{ "msx_alien8", "msx/d_msx.cpp"},
 	{ "msx_alien8h", "msx/d_msx.cpp"},
+	{ "alienaru", "pre90s/d_williams.cpp"},
 	{ "alienar", "pre90s/d_williams.cpp"},
 	{ "aa", "pre90s/d_pacman.cpp"},
 	{ "spec_aaf", "spectrum/d_spectrum.cpp"},
@@ -52077,6 +52086,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_babyman4gm", "spectrum/d_spectrum.cpp"},
 	{ "spec_babyman4in", "spectrum/d_spectrum.cpp"},
 	{ "backfirt", "pre90s/d_tecmo.cpp"},
+	{ "backfirtb", "pre90s/d_tecmo.cpp"},
 	{ "msx_backgamj", "msx/d_msx.cpp"},
 	{ "msx_backgamja", "msx/d_msx.cpp"},
 	{ "bssoccer", "pst90s/d_suna16.cpp"},
@@ -58370,6 +58380,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "gstream", "pst90s/d_gstream.cpp"},
 	{ "md_gzero", "megadrive/d_megadrive.cpp"},
 	{ "spec_gihero", "spectrum/d_spectrum.cpp"},
+	{ "gijoeaa", "konami/d_gijoe.cpp"},
 	{ "gijoea", "konami/d_gijoe.cpp"},
 	{ "gijoej", "konami/d_gijoe.cpp"},
 	{ "gijoeua", "konami/d_gijoe.cpp"},
@@ -64535,6 +64546,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mvpj", "sega/d_sys16b.cpp"},
 	{ "mvpd", "sega/d_sys16b.cpp"},
 	{ "mvp", "sega/d_sys16b.cpp"},
+	{ "mx5000r", "konami/d_flkatck.cpp"},
 	{ "mx5000", "konami/d_flkatck.cpp"},
 	{ "myherobl", "sega/d_sys1.cpp"},
 	{ "sms_myhero", "sms/d_sms.cpp"},
