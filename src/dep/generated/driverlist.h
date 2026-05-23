@@ -15113,6 +15113,7 @@ DRV		BurnDrvgg_outrunj;
 DRV		BurnDrvpce_outrun;
 DRV		BurnDrvOutrundxj;
 DRV		BurnDrvOutrunra;
+DRV		BurnDrvOutrunm;
 DRV		BurnDrvOutruneha;
 DRV		BurnDrvOutrunehb;
 DRV		BurnDrvOutruneh;
@@ -23095,9 +23096,7 @@ DRV		BurnSpectrantor;
 DRV		BurnDrvMSX_trantor;
 DRV		BurnSpecTranzam;
 DRV		BurnSpectradooth;
-#if defined FBNEO_DEBUG
-DRV		BurnDrvTrapeze;			// no comment [NOT WORKING]
-#endif
+DRV		BurnDrvTrapeze;
 DRV		BurnDrvMSX_trapox;
 DRV		BurnSpecTrashman;
 DRV		BurnSpecTrashmanen;
@@ -40386,6 +40385,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_outrun,			// Out Run (Japan)
 	&BurnDrvOutrundxj,			// Out Run (Japan, deluxe sitdown) (FD1089A 317-0019)
 	&BurnDrvOutrunra,			// Out Run (sitdown/upright, Rev A)
+	&BurnDrvOutrunm,			// Out Run (sitdown/upright, Rev B) (added music)
 	&BurnDrvOutruneha,			// Out Run (sitdown/upright, Rev B) (Enhanced Edition v1.1.0)
 	&BurnDrvOutrunehb,			// Out Run (sitdown/upright, Rev B) (Enhanced Edition v2.0.2)
 	&BurnDrvOutruneh,			// Out Run (sitdown/upright, Rev B) (Enhanced Edition v2.0.3)
@@ -48368,9 +48368,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_trantor,		// Trantor: The Last Stormtrooper (Euro)
 	&BurnSpecTranzam,			// Tranz Am (16K)
 	&BurnSpectradooth,			// Trap Door, The (48K)
-#if defined FBNEO_DEBUG
-	&BurnDrvTrapeze,			// Trapeze / Trampoline [no comment, NOT WORKING]
-#endif
+	&BurnDrvTrapeze,			// Trapeze / Trampoline
 	&BurnDrvMSX_trapox,			// Trapox (HB)
 	&BurnSpecTrashman,			// Trashman (48K)
 	&BurnSpecTrashmanen,		// TRASHMAN - Crisis Time (English) (128K) (HB)
@@ -65553,6 +65551,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "pce_outrun", "pce/d_pce.cpp"},
 	{ "outrundxj", "sega/d_outrun.cpp"},
 	{ "outrunra", "sega/d_outrun.cpp"},
+	{ "outrunm", "sega/d_outrun.cpp"},
 	{ "outruneha", "sega/d_outrun.cpp"},
 	{ "outrunehb", "sega/d_outrun.cpp"},
 	{ "outruneh", "sega/d_outrun.cpp"},
