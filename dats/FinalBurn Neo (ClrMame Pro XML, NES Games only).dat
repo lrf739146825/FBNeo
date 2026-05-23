@@ -6979,6 +6979,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="exodustp" cloneof="exodus" romof="exodus" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Exodus: Journey to the Promised Land (Hack, Portuguese v1.1) (Unl)</description>
+		<year>2023</year>
+		<manufacturer>Moises</manufacturer>
+		<rom name="Exodus - Journey to the Promised Land T-Por v1.1 (Unl)(2023)(Moises).nes" size="262160" crc="4cc80e8b"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="exodus" sourcefile="nes/d_nes.cpp">
 		<description>Exodus: Journey to the Promised Land (USA) (Unl)</description>
 		<year>1991</year>
@@ -9783,11 +9792,20 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="higem" sourcefile="nes/d_nes.cpp">
+	<game name="higem" cloneof="higemte" romof="higemte" sourcefile="nes/d_nes.cpp">
 		<description>Higemaru Makaijima: Nanatsu no Shima Daibouken (Japan)</description>
 		<year>1987</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Higemaru Makaijima - Nanatsu no Shima Daibouken (Japan)(1987)(Capcom).nes" size="131088" crc="c480eb6d"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="higemte" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Higemaru: Seven Islands Adventure (Hack, English)</description>
+		<year>2007</year>
+		<manufacturer>snark</manufacturer>
+		<rom name="Higemaru - Seven Islands Adventure T-Eng (2007)(snark).nes" size="131088" crc="1934ed15"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -13174,6 +13192,24 @@
 		<year>1987</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Majou Densetsu II - Daimashikyou Galious (Japan)(1987)(Konami).nes" size="131088" crc="763f2d28"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="makaiislandptp" cloneof="higemte" romof="higemte" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, Prototype</comment>
+		<description>Makai Island (Hack, Portuguese)</description>
+		<year>2022</year>
+		<manufacturer>SatY Traducoes</manufacturer>
+		<rom name="Makai Island T-Por (2022)(SatY Traducoes).nes" size="131088" crc="fd49c774"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="makaiislandp" cloneof="higemte" romof="higemte" sourcefile="nes/d_nes.cpp">
+		<comment>Prototype</comment>
+		<description>Makai Island (USA, Prototype)</description>
+		<year>1987</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="Makai Island (USA, Proto)(1987)(Capcom).nes" size="131088" crc="f17a09c3"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
