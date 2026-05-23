@@ -511,10 +511,13 @@ static void rebuild_scan(bool preinit_before_drv_init)
 	s_pgm2_cards_built = true;
 }
 
-void retro_pgm2_cards_refresh_environment()
+void retro_pgm2_cards_create_variables()
 {
 	rebuild_scan(false);
-	set_environment();
+}
+
+void retro_pgm2_cards_refresh_environment()
+{
 	for (int i = 0; i < 4; i++)
 		memset(s_last_applied[i], 0, sizeof(s_last_applied[i]));
 	retro_pgm2_cards_apply_variables();
