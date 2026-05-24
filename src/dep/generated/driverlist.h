@@ -8,6 +8,10 @@ DRV		BurnDrvlstwar99b;
 DRV		BurnDrv99lstwark;
 DRV		BurnDrvlstwar99;
 DRV		BurnDrvlstwar99a;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvSega005a;		// no comment [NOT WORKING]
+#endif
+DRV		BurnDrvSega005;
 DRV		BurnSpeclicencetokill128;
 DRV		BurnSpeclicencetokill48;
 DRV		BurnDrvMSX_lic2kill;
@@ -1328,6 +1332,16 @@ DRV		BurnDrvnes_astralworld;
 DRV		BurnDrvAstrians;
 DRV		BurnSpecAstroblast;
 DRV		BurnDrvMSX_astrobls;
+DRV		BurnDrvAstrobf;
+DRV		BurnDrvAstrobg;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvAstrob1;			// no comment [NOT WORKING]
+#endif
+DRV		BurnDrvAstrob2h;
+DRV		BurnDrvAstrob2;
+DRV		BurnDrvAstrob2a;
+DRV		BurnDrvAstrob2b;
+DRV		BurnDrvAstrob;
 DRV		BurnDrvnes_astroboy;
 DRV		BurnDrvsms_astroclimber;
 DRV		BurnDrvnes_astrofan;
@@ -13585,6 +13599,8 @@ DRV		BurnDrvsnes_Monopoly2;
 DRV		BurnDrvsnes_Monstaniate;
 DRV		BurnDrvsnes_Monstaniats;
 DRV		BurnDrvsnes_Monstaniaj;
+DRV		BurnDrvMonsterb2;
+DRV		BurnDrvMonsterb;
 DRV		BurnDrvsms_moncrunch;
 DRV		BurnDrvcv_monsthouse;
 DRV		BurnDrvMSX_monsterhunter;
@@ -15802,6 +15818,8 @@ DRV		BurnDrvMSX_picpuzzle2;
 DRV		BurnDrvsnes_Pieces;
 DRV		BurnDrvmd_psolar;
 DRV		BurnDrvsnes_Pierrelechef;
+DRV		BurnDrvPignewta;
+DRV		BurnDrvPignewt;
 DRV		BurnDrvPigskinb;
 DRV		BurnDrvPigskin;
 DRV		BurnDrvPigskina;
@@ -18850,6 +18868,7 @@ DRV		BurnSpecSinctoweres;
 DRV		BurnDrvsg1k_sindbadm;
 DRV		BurnDrvcv_sindmyst;
 DRV		BurnDrvsg1k_sindbadmt;
+DRV		BurnDrvSindbadm;
 DRV		BurnDrvpce_sindibad;
 DRV		BurnSpecSingledragon;
 DRV		BurnDrvSinistarp;
@@ -19537,6 +19556,8 @@ DRV		BurnDrvMSX_spacemouse;
 DRV		BurnDrvnes_spacemutdg;
 DRV		BurnDrvnes_spacemuteue;
 DRV		BurnDrvnes_spacemutjk;
+DRV		BurnDrvSpaceod2;
+DRV		BurnDrvSpaceod;
 DRV		BurnDrvcv_panic;
 DRV		BurnDrvSpaceplt;
 DRV		BurnDrvSpaceplta;
@@ -25292,6 +25313,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrv99lstwark,			// '99: The Last War (Kyugo)
 	&BurnDrvlstwar99,			// '99: The Last War (set 1)
 	&BurnDrvlstwar99a,			// '99: The Last War (set 2)
+#if defined FBNEO_DEBUG
+	&BurnDrvSega005a,			// 005 (earlier version?) [no comment, NOT WORKING]
+#endif
+	&BurnDrvSega005,			// 005
 	&BurnSpeclicencetokill128,	// 007 - Licence to Kill (128K)
 	&BurnSpeclicencetokill48,	// 007 - Licence to Kill (48K)
 	&BurnDrvMSX_lic2kill,		// 007 - Licence to Kill (Euro)
@@ -26612,6 +26637,16 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvAstrians,			// Astrians (clone of Swarm)
 	&BurnSpecAstroblast,		// Astro Blaster (16K)
 	&BurnDrvMSX_astrobls,		// Astro Blaster (Euro)
+	&BurnDrvAstrobf,			// Astro Blaster (French)
+	&BurnDrvAstrobg,			// Astro Blaster (German)
+#if defined FBNEO_DEBUG
+	&BurnDrvAstrob1,			// Astro Blaster (version 1) [no comment, NOT WORKING]
+#endif
+	&BurnDrvAstrob2h,			// Astro Blaster (version 2 Hack)
+	&BurnDrvAstrob2,			// Astro Blaster (version 2)
+	&BurnDrvAstrob2a,			// Astro Blaster (version 2a)
+	&BurnDrvAstrob2b,			// Astro Blaster (version 2b)
+	&BurnDrvAstrob,				// Astro Blaster (version 3)
 	&BurnDrvnes_astroboy,		// Astro Boy (Hack, English)
 	&BurnDrvsms_astroclimber,	// Astro Climber (HB, v1.2.1)
 	&BurnDrvnes_astrofan,		// Astro Fang: Super Machine (Hack, English)
@@ -26803,7 +26838,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvBwingso,			// B-Wings (Japan old Ver.)
 	&BurnDrvnes_bwings,			// B-Wings (Japan)
 	&BurnSpecBcbill,			// B.C. Bill (48K)
-	&BurnDrvBonkadv,			// B.C. Kid / Bonk's Adventure / Kyukyoku!! PC Genjin
+	&BurnDrvBonkadv,			// B.C. Kid (Europe) / Bonk's Adventure: Arcade Version (US, China, Korea) / Kyukyoku!! PC Genjin: Special Arcade Version (Japan)
 	&BurnDrvBcstry,				// B.C. Story (set 1)
 	&BurnDrvBcstrya,			// B.C. Story (set 2)
 	&BurnDrvMSX_bcquest,		// B.C.'s Quest for Tires (Japan)
@@ -38869,6 +38904,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Monstaniate,	// Monstania (Hack, English v1.03)
 	&BurnDrvsnes_Monstaniats,	// Monstania (Hack, Spanish v0.9)
 	&BurnDrvsnes_Monstaniaj,	// Monstania (Japan)
+	&BurnDrvMonsterb2,			// Monster Bash (2 board version)
+	&BurnDrvMonsterb,			// Monster Bash
 	&BurnDrvsms_moncrunch,		// Monster Crunch (HB, v1.00)
 	&BurnDrvcv_monsthouse,		// Monster House (SGM) (HB)
 	&BurnDrvMSX_monsterhunter,	// Monster Hunter (HB)
@@ -41086,6 +41123,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Pieces,		// Pieces (USA)
 	&BurnDrvmd_psolar,			// Pier Solar and the Great Architects (World, Rev. C) (HB)
 	&BurnDrvsnes_Pierrelechef,	// Pierre le Chef is... Out to Lunch (Euro)
+	&BurnDrvPignewta,			// Pig Newton (version A)
+	&BurnDrvPignewt,			// Pig Newton (version C)
 	&BurnDrvPigskinb,			// Pigskin 621AD (rev 1.1 6/05/90)
 	&BurnDrvPigskin,			// Pigskin 621AD (rev 1.1K 8/01/90)
 	&BurnDrvPigskina,			// Pigskin 621AD (rev 2.0 7/06/90)
@@ -44134,6 +44173,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_sindbadm,		// Sindbad Mystery (Euro, Japan)
 	&BurnDrvcv_sindmyst,		// Sindbad Mystery (HB)
 	&BurnDrvsg1k_sindbadmt,		// Sindbad Mystery (Taiwan)
+	&BurnDrvSindbadm,			// Sindbad Mystery
 	&BurnDrvpce_sindibad,		// Sindibad Chitei no Dai Makyuu (Japan)
 	&BurnSpecSingledragon,		// Single Dragon (128K) (HB)
 	&BurnDrvSinistarp,			// Sinistar (AMOA-82 prototype)
@@ -44821,6 +44861,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_spacemutdg,		// Space Mutants - DG BGM (HB)
 	&BurnDrvnes_spacemuteue,	// Space Mutants - Extendo UnCut Edition (HB)
 	&BurnDrvnes_spacemutjk,		// Space Mutants - JK BGM (HB)
+	&BurnDrvSpaceod2,			// Space Odyssey (version 1)
+	&BurnDrvSpaceod,			// Space Odyssey (version 2)
 	&BurnDrvcv_panic,			// Space Panic (USA, Euro)
 	&BurnDrvSpaceplt,			// Space Pilot (set 1)
 	&BurnDrvSpaceplta,			// Space Pilot (set 2)
@@ -50580,6 +50622,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "99lstwark", "pre90s/d_kyugo.cpp"},
 	{ "99lstwar", "pre90s/d_kyugo.cpp"},
 	{ "99lstwara", "pre90s/d_kyugo.cpp"},
+	{ "005a", "sega/d_segag80r.cpp"},
+	{ "005", "sega/d_segag80r.cpp"},
 	{ "spec_licencetokill128", "spectrum/d_spectrum.cpp"},
 	{ "spec_licencetokill48", "spectrum/d_spectrum.cpp"},
 	{ "msx_lic2kill", "msx/d_msx.cpp"},
@@ -51890,6 +51934,14 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "astrians", "galaxian/d_galaxian.cpp"},
 	{ "spec_astroblast", "spectrum/d_spectrum.cpp"},
 	{ "msx_astrobls", "msx/d_msx.cpp"},
+	{ "astrobf", "sega/d_segag80r.cpp"},
+	{ "astrobg", "sega/d_segag80r.cpp"},
+	{ "astrob1", "sega/d_segag80r.cpp"},
+	{ "astrob2h", "sega/d_segag80r.cpp"},
+	{ "astrob2", "sega/d_segag80r.cpp"},
+	{ "astrob2a", "sega/d_segag80r.cpp"},
+	{ "astrob2b", "sega/d_segag80r.cpp"},
+	{ "astrob", "sega/d_segag80r.cpp"},
 	{ "nes_astroboy", "nes/d_nes.cpp"},
 	{ "sms_astroclimber", "sms/d_sms.cpp"},
 	{ "nes_astrofan", "nes/d_nes.cpp"},
@@ -64061,6 +64113,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_monstaniate", "snes/d_snes.cpp"},
 	{ "snes_monstaniats", "snes/d_snes.cpp"},
 	{ "snes_monstaniaj", "snes/d_snes.cpp"},
+	{ "monsterb2", "sega/d_segag80r.cpp"},
+	{ "monsterb", "sega/d_segag80r.cpp"},
 	{ "sms_moncrunch", "sms/d_sms.cpp"},
 	{ "cv_monsthouse", "coleco/d_coleco.cpp"},
 	{ "msx_monsterhunter", "msx/d_msx.cpp"},
@@ -66258,6 +66312,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_pieces", "snes/d_snes.cpp"},
 	{ "md_psolar", "megadrive/d_megadrive.cpp"},
 	{ "snes_pierrelechef", "snes/d_snes.cpp"},
+	{ "pignewta", "sega/d_segag80r.cpp"},
+	{ "pignewt", "sega/d_segag80r.cpp"},
 	{ "pigskinb", "pre90s/d_mcr68.cpp"},
 	{ "pigskin", "pre90s/d_mcr68.cpp"},
 	{ "pigskina", "pre90s/d_mcr68.cpp"},
@@ -69284,6 +69340,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_sindbadm", "sg1000/d_sg1000.cpp"},
 	{ "cv_sindmyst", "coleco/d_coleco.cpp"},
 	{ "sg1k_sindbadmt", "sg1000/d_sg1000.cpp"},
+	{ "sindbadm", "sega/d_segag80r.cpp"},
 	{ "pce_sindibad", "pce/d_pce.cpp"},
 	{ "spec_singledragon", "spectrum/d_spectrum.cpp"},
 	{ "sinistarp", "pre90s/d_williams.cpp"},
@@ -69965,6 +70022,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_spacemutdg", "nes/d_nes.cpp"},
 	{ "nes_spacemuteue", "nes/d_nes.cpp"},
 	{ "nes_spacemutjk", "nes/d_nes.cpp"},
+	{ "spaceod2", "sega/d_segag80r.cpp"},
+	{ "spaceod", "sega/d_segag80r.cpp"},
 	{ "cv_panic", "coleco/d_coleco.cpp"},
 	{ "spaceplt", "konami/d_timeplt.cpp"},
 	{ "spaceplta", "konami/d_timeplt.cpp"},
