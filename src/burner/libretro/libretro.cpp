@@ -2100,6 +2100,11 @@ static bool retro_load_game_common()
 		// Create romdata core options
 		create_variables_from_romdatas();
 
+#ifndef NO_PGM2
+		// Create pgm2 memcard core options
+		retro_pgm2_cards_create_variables();
+#endif
+
 		// Send core options to frontend
 		set_environment();
 
