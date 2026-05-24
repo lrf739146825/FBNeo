@@ -4556,6 +4556,7 @@ DRV		BurnDrvpce_xwiber;
 DRV		BurnDrvCrossbow;
 DRV		BurnDrvCrsword;
 DRV		BurnDrvCrswd2bl;
+DRV		BurnDrvCrswd2blp;
 DRV		BurnSpeccrosswize;
 DRV		BurnDrvCphd;
 DRV		BurnDrvCthd2003;
@@ -9908,6 +9909,7 @@ DRV		BurnDrvfds_idolhlj;
 DRV		BurnDrvSuchie2o;
 DRV		BurnDrvSuchie2;
 DRV		BurnDrvFroman2b;
+DRV		BurnDrvFroman2bp;
 DRV		BurnDrvIganinju;
 DRV		BurnDrvMSX_iganinp2;
 DRV		BurnDrvMSX_iganinpo;
@@ -15417,6 +15419,7 @@ DRV		BurnSpecPanther;
 DRV		BurnDrvMSX_panther;
 DRV		BurnDrvmd_pantufaee;
 DRV		BurnDrvtg_panzakb;
+DRV		BurnDrvPanzer;
 DRV		BurnDrvgg_panzer;
 DRV		BurnDrvPaprazzi;
 DRV		BurnDrvnes_pplanev2;
@@ -15727,6 +15730,7 @@ DRV		BurnDrvMSX_phantis1;
 DRV		BurnSpecphantis1;
 DRV		BurnDrvMSX_phantis2;
 DRV		BurnSpecphantis2;
+DRV		BurnDrvPhantom;
 DRV		BurnDrvmd_phantom;
 DRV		BurnDrvsnes_Phantom2040e;
 DRV		BurnDrvgg_phantom;
@@ -15735,6 +15739,7 @@ DRV		BurnDrvsnes_Phantom2040;
 DRV		BurnSpecPhantclub;
 DRV		BurnDrvnes_phantomfighter;
 DRV		BurnSpecPhantomas;
+DRV		BurnDrvPhantoma;
 DRV		BurnSpecPhantomas2;
 DRV		BurnDrvMSX_phantom2;
 DRV		BurnSpecPhantmuseo;
@@ -17033,6 +17038,7 @@ DRV		BurnDrvcv_rallyx;
 DRV		BurnDrvsg1k_rallyx;
 DRV		BurnSpecRallybug;
 DRV		BurnDrvRallys;
+DRV		BurnDrvRallysa;
 DRV		BurnDrvnes_ralph4;
 DRV		BurnDrvnes_ramboc;
 DRV		BurnDrvMSX_rambo;
@@ -25151,6 +25157,7 @@ DRV		BurnDrvsms_zillion2;
 DRV		BurnDrvsms_zillion2pt;
 DRV		BurnDrvZingzip;
 DRV		BurnDrvZintrckb;
+DRV		BurnDrvZintrckbp;
 DRV		BurnDrvZintrkcd;
 DRV		BurnSpecZquestg;
 DRV		BurnSpecZquestt;
@@ -29833,6 +29840,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCrossbow,			// Crossbow (version 2.0)
 	&BurnDrvCrsword,			// Crossed Swords (ALM-002 ~ ALH-002)
 	&BurnDrvCrswd2bl,			// Crossed Swords 2 (bootleg of CD version)
+	&BurnDrvCrswd2blp,			// Crossed Swords 2 (bootleg of CD version, full CD audio)
 	&BurnSpeccrosswize,			// Crosswize (48K)
 	&BurnDrvCphd,				// Crouching Poney Hidden Dragon (HB, Demo)
 	&BurnDrvCthd2003,			// Crouching Tiger Hidden Dragon 2003 (hack of The King of Fighters 2001)
@@ -35185,6 +35193,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSuchie2o,			// Idol Janshi Suchie-Pai II (ver 1.0)
 	&BurnDrvSuchie2,			// Idol Janshi Suchie-Pai II (ver 1.1)
 	&BurnDrvFroman2b,			// Idol Mahjong Final Romance 2 (Neo-Geo, bootleg of CD version)
+	&BurnDrvFroman2bp,			// Idol Mahjong Final Romance 2 (Neo-Geo, bootleg of CD version, full CD audio)
 	&BurnDrvIganinju,			// Iga Ninjyutsuden (Japan)
 	&BurnDrvMSX_iganinp2,		// Iga Ninpouchou 2 ~ Small Ninja 2 (Japan)
 	&BurnDrvMSX_iganinpo,		// Iga Ninpouchou ~ Small Ninja (Japan)
@@ -40694,6 +40703,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_panther,		// Panther (Japan)
 	&BurnDrvmd_pantufaee,		// Pantufa the Cat - Extended Edition (GlobalHack)
 	&BurnDrvtg_panzakb,			// Panza Kick Boxing (USA)
+	&BurnDrvPanzer,				// Panzer (bootleg of Spectar)
 	&BurnDrvgg_panzer,			// Panzer Dragoon Mini (Japan)
 	&BurnDrvPaprazzi,			// Paparazzi
 	&BurnDrvnes_pplanev2,		// Paper Plane, The (HB, v2)
@@ -41004,6 +41014,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecphantis1,			// Phantis - Part 1 (Spanish) (48K)
 	&BurnDrvMSX_phantis2,		// Phantis - Part 2 (Euro, Spanish)
 	&BurnSpecphantis2,			// Phantis - Part 2 (Spanish) (48K)
+	&BurnDrvPhantom,			// Phantom (bootleg of Spectar)
 	&BurnDrvmd_phantom,			// Phantom 2040 (Euro)
 	&BurnDrvsnes_Phantom2040e,	// Phantom 2040 (Euro)
 	&BurnDrvgg_phantom,			// Phantom 2040 (Euro, USA)
@@ -41012,6 +41023,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecPhantclub,			// Phantom Club (48K)
 	&BurnDrvnes_phantomfighter,	// Phantom Fighter (USA)
 	&BurnSpecPhantomas,			// Phantomas (48K)
+	&BurnDrvPhantoma,			// Phantomas (bootleg of Spectar)
 	&BurnSpecPhantomas2,		// Phantomas 2 (48K)
 	&BurnDrvMSX_phantom2,		// Phantomas 2 (Euro, Spanish)
 	&BurnSpecPhantmuseo,		// Phantomas en el museo (Spanish) (48K)
@@ -42310,6 +42322,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_rallyx,		// Rally-X (Taiwan) (Unl)
 	&BurnSpecRallybug,			// Rallybug (48K) (HB)
 	&BurnDrvRallys,				// Rallys (bootleg of Spectar, set 1)
+	&BurnDrvRallysa,			// Rallys (bootleg of Spectar, set 2)
 	&BurnDrvnes_ralph4,			// Ralph 4 (HB)
 	&BurnDrvnes_ramboc,			// Rambo (Hack, Spanish)
 	&BurnDrvMSX_rambo,			// Rambo (Japan)
@@ -50428,6 +50441,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_zillion2pt,		// Zillion II: The Tri Formation (Hack, Portuguese v1.1)
 	&BurnDrvZingzip,			// Zing Zing Zip (World) / Zhen Zhen Ji Pao (China?)
 	&BurnDrvZintrckb,			// Zintrick / Oshidashi Zentrix (bootleg of CD version)
+	&BurnDrvZintrckbp,			// Zintrick / Oshidashi Zentrix (bootleg of CD version, multi-V)
 	&BurnDrvZintrkcd,			// Zintrick / Oshidashi Zentrix (Neo CD conversion)
 	&BurnSpecZquestg,			// Ziona Quest - Game (128K) (HB)
 	&BurnSpecZquestt,			// Ziona Quest - Training (128K) (HB)
@@ -55078,6 +55092,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "crossbow", "pre90s/d_exidy440.cpp"},
 	{ "crsword", "neogeo/d_neogeo.cpp"},
 	{ "crswd2bl", "neogeo/d_neogeo.cpp"},
+	{ "crswd2blp", "neogeo/d_neogeo.cpp"},
 	{ "spec_crosswize", "spectrum/d_spectrum.cpp"},
 	{ "cphd", "neogeo/d_neogeo.cpp"},
 	{ "cthd2003", "neogeo/d_neogeo.cpp"},
@@ -60402,6 +60417,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "suchie2o", "pst90s/d_ms32.cpp"},
 	{ "suchie2", "pst90s/d_ms32.cpp"},
 	{ "froman2b", "neogeo/d_neogeo.cpp"},
+	{ "froman2bp", "neogeo/d_neogeo.cpp"},
 	{ "iganinju", "pre90s/d_megasys1.cpp"},
 	{ "msx_iganinp2", "msx/d_msx.cpp"},
 	{ "msx_iganinpo", "msx/d_msx.cpp"},
@@ -65863,6 +65879,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_panther", "msx/d_msx.cpp"},
 	{ "md_pantufaee", "megadrive/d_megadrive.cpp"},
 	{ "tg_panzakb", "pce/d_pce.cpp"},
+	{ "panzer", "pre90s/d_exidy.cpp"},
 	{ "gg_panzer", "sms/d_sms.cpp"},
 	{ "paprazzi", "pst90s/d_yunsun16.cpp"},
 	{ "nes_pplanev2", "nes/d_nes.cpp"},
@@ -66169,6 +66186,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_phantis1", "spectrum/d_spectrum.cpp"},
 	{ "msx_phantis2", "msx/d_msx.cpp"},
 	{ "spec_phantis2", "spectrum/d_spectrum.cpp"},
+	{ "phantom", "pre90s/d_exidy.cpp"},
 	{ "md_phantom", "megadrive/d_megadrive.cpp"},
 	{ "snes_phantom2040e", "snes/d_snes.cpp"},
 	{ "gg_phantom", "sms/d_sms.cpp"},
@@ -66177,6 +66195,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_phantclub", "spectrum/d_spectrum.cpp"},
 	{ "nes_phantomfighter", "nes/d_nes.cpp"},
 	{ "spec_phantomas", "spectrum/d_spectrum.cpp"},
+	{ "phantoma", "pre90s/d_exidy.cpp"},
 	{ "spec_phantomas2", "spectrum/d_spectrum.cpp"},
 	{ "msx_phantom2", "msx/d_msx.cpp"},
 	{ "spec_phantmuseo", "spectrum/d_spectrum.cpp"},
@@ -67467,6 +67486,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_rallyx", "sg1000/d_sg1000.cpp"},
 	{ "spec_rallybug", "spectrum/d_spectrum.cpp"},
 	{ "rallys", "pre90s/d_exidy.cpp"},
+	{ "rallysa", "pre90s/d_exidy.cpp"},
 	{ "nes_ralph4", "nes/d_nes.cpp"},
 	{ "nes_ramboc", "nes/d_nes.cpp"},
 	{ "msx_rambo", "msx/d_msx.cpp"},
@@ -75493,6 +75513,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_zillion2pt", "sms/d_sms.cpp"},
 	{ "zingzip", "pst90s/d_seta.cpp"},
 	{ "zintrckb", "neogeo/d_neogeo.cpp"},
+	{ "zintrckbp", "neogeo/d_neogeo.cpp"},
 	{ "zintrkcd", "neogeo/d_neogeo.cpp"},
 	{ "spec_zquestg", "spectrum/d_spectrum.cpp"},
 	{ "spec_zquestt", "spectrum/d_spectrum.cpp"},
