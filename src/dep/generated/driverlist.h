@@ -11322,6 +11322,9 @@ DRV		BurnDrvMSX_kongrevp1;
 DRV		BurnSpeckongsrevenge1;
 DRV		BurnDrvMSX_kongrevp2;
 DRV		BurnSpeckongsrevenge2;
+DRV		BurnDrvnes_koopainahurryp;
+DRV		BurnDrvnes_koopainahurrys;
+DRV		BurnDrvnes_koopainahurrye;
 DRV		BurnDrvpce_proyak89;
 DRV		BurnDrvpce_proyak90;
 DRV		BurnDrvKorokoro;
@@ -21670,8 +21673,10 @@ DRV		BurnDrvnes_taiyonoyuufir;
 DRV		BurnDrvnes_taiyonoyuufirj;
 DRV		BurnDrvnes_takahashi;
 DRV		BurnDrvnes_takahashi2;
+DRV		BurnDrvnes_takahashi3tp;
 DRV		BurnDrvnes_takahashi3;
 DRV		BurnDrvnes_takameivic;
+DRV		BurnDrvnes_takahashi4tp;
 DRV		BurnDrvnes_takahashi4;
 DRV		BurnDrvMSX_takameij;
 DRV		BurnDrvMSX_takameija;
@@ -36627,6 +36632,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpeckongsrevenge1,		// Kong's Revenge - Part 1 (Spanish) (48K-128K)
 	&BurnDrvMSX_kongrevp2,		// Kong's Revenge - Part 2 (Euro, Spanish)
 	&BurnSpeckongsrevenge2,		// Kong's Revenge - Part 2 (Spanish) (48K-128K)
+	&BurnDrvnes_koopainahurryp,	// Koopa com Pressa (GlobalHack, Portuguese v1.2)
+	&BurnDrvnes_koopainahurrys,	// Koopa con Prisa (GlobalHack, Spanish v1.2)
+	&BurnDrvnes_koopainahurrye,	// Koopa in a Hurry (GlobalHack, English v1.2)
 	&BurnDrvpce_proyak89,		// Kore Ga Pro Yakyuu '89 (Japan)
 	&BurnDrvpce_proyak90,		// Kore Ga Pro Yakyuu '90 (Japan)
 	&BurnDrvKorokoro,			// Koro Koro Quest (Japan)
@@ -46975,8 +46983,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_taiyonoyuufirj,	// Taiyou no Yuusha Firebird (Japan)
 	&BurnDrvnes_takahashi,		// Takahashi Meijin no Bouken-jima (Japan)
 	&BurnDrvnes_takahashi2,		// Takahashi Meijin no Bouken-jima II (Japan)
+	&BurnDrvnes_takahashi3tp,	// Takahashi Meijin no Bouken-jima III (Hack, Portuguese)
 	&BurnDrvnes_takahashi3,		// Takahashi Meijin no Bouken-jima III (Japan)
 	&BurnDrvnes_takameivic,		// Takahashi Meijin no Bouken-jima IV (Hack, Chinese)
+	&BurnDrvnes_takahashi4tp,	// Takahashi Meijin no Bouken-jima IV (Hack, Portuguese)
 	&BurnDrvnes_takahashi4,		// Takahashi Meijin no Bouken-jima IV (Japan)
 	&BurnDrvMSX_takameij,		// Takahashi Meijin no Boukenjima (Japan)
 	&BurnDrvMSX_takameija,		// Takahashi Meijin no Boukenjima (Japan, Alt)
@@ -61850,6 +61860,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_kongsrevenge1", "spectrum/d_spectrum.cpp"},
 	{ "msx_kongrevp2", "msx/d_msx.cpp"},
 	{ "spec_kongsrevenge2", "spectrum/d_spectrum.cpp"},
+	{ "nes_koopainahurryp", "nes/d_nes.cpp"},
+	{ "nes_koopainahurrys", "nes/d_nes.cpp"},
+	{ "nes_koopainahurrye", "nes/d_nes.cpp"},
 	{ "pce_proyak89", "pce/d_pce.cpp"},
 	{ "pce_proyak90", "pce/d_pce.cpp"},
 	{ "korokoro", "cave/d_korokoro.cpp"},
@@ -72106,8 +72119,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_taiyonoyuufirj", "nes/d_nes.cpp"},
 	{ "nes_takahashi", "nes/d_nes.cpp"},
 	{ "nes_takahashi2", "nes/d_nes.cpp"},
+	{ "nes_takahashi3tp", "nes/d_nes.cpp"},
 	{ "nes_takahashi3", "nes/d_nes.cpp"},
 	{ "nes_takameivic", "nes/d_nes.cpp"},
+	{ "nes_takahashi4tp", "nes/d_nes.cpp"},
 	{ "nes_takahashi4", "nes/d_nes.cpp"},
 	{ "msx_takameij", "msx/d_msx.cpp"},
 	{ "msx_takameija", "msx/d_msx.cpp"},

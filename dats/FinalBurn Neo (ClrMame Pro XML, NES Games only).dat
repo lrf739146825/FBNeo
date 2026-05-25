@@ -11920,6 +11920,33 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="koopainahurryp" cloneof="koopainahurrye" romof="koopainahurrye" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, GlobalHack of Super Mario Bros.</comment>
+		<description>Koopa com Pressa (GlobalHack, Portuguese v1.2)</description>
+		<year>2022-26</year>
+		<manufacturer>Green Jerry</manufacturer>
+		<rom name="Koopa com Pressa PT v1.2 (2022-26)(Green Jerry).nes" size="40976" crc="4c0b1068"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="koopainahurrys" cloneof="koopainahurrye" romof="koopainahurrye" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, GlobalHack of Super Mario Bros.</comment>
+		<description>Koopa con Prisa (GlobalHack, Spanish v1.2)</description>
+		<year>2022-26</year>
+		<manufacturer>Green Jerry</manufacturer>
+		<rom name="Koopa con Prisa SP v1.2 (2022-26)(Green Jerry).nes" size="40976" crc="b0cfe3a5"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="koopainahurrye" sourcefile="nes/d_nes.cpp">
+		<comment>Hack, GlobalHack of Super Mario Bros.</comment>
+		<description>Koopa in a Hurry (GlobalHack, English v1.2)</description>
+		<year>2022-26</year>
+		<manufacturer>Green Jerry</manufacturer>
+		<rom name="Koopa in a Hurry EN v1.2 (2022-26)(Green Jerry).nes" size="40976" crc="fe02a2db"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kosatak" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Kosmity Atakujo (HB, v10.07.2020)</description>
@@ -21396,6 +21423,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="takahashi3tp" cloneof="advenisl3" romof="advenisl3" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Takahashi Meijin no Bouken-jima III (Hack, Portuguese)</description>
+		<year>2021</year>
+		<manufacturer>Patryckpo</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima III T-Por (2021)(Patryckpo).nes" size="262160" crc="423ad762"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="takahashi3" cloneof="advenisl3" romof="advenisl3" sourcefile="nes/d_nes.cpp">
 		<description>Takahashi Meijin no Bouken-jima III (Japan)</description>
 		<year>1992</year>
@@ -21410,6 +21446,15 @@
 		<year>2022</year>
 		<manufacturer>NOKOH</manufacturer>
 		<rom name="Takahashi Meijin no Bouken-jima IV T-Chi (2022)(NOKOH).nes" size="524304" crc="5d164133"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="takahashi4tp" cloneof="advenisliv" romof="advenisliv" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Takahashi Meijin no Bouken-jima IV (Hack, Portuguese)</description>
+		<year>2023</year>
+		<manufacturer>Patryckpo</manufacturer>
+		<rom name="Takahashi Meijin no Bouken-jima IV T-Por (2023)(Patryckpo).nes" size="393232" crc="9fc2fe68"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
