@@ -1002,12 +1002,14 @@ DRV		BurnDrvnes_aod;
 DRV		BurnDrvkovassg;
 DRV		BurnDrvkovassge;
 DRV		BurnDrvkovassgn;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvkovassg203;		// Imperfect Protection Emulation [NOT WORKING]
+DRV		BurnDrvkovassgp;		// Incomplete dump [NOT WORKING]
+DRV		BurnDrvkovassgplus;		// Incomplete dump [NOT WORKING]
+#endif
 DRV		BurnDrvpce_aoiblink;
 DRV		BurnDrvmd_genchohic;
 DRV		BurnDrvmd_genchohi;
-#if defined FBNEO_DEBUG
-DRV		BurnDrvkovassgplus;		// Incomplete dump [NOT WORKING]
-#endif
 DRV		BurnSpecapb;
 DRV		BurnDrvMSX_apeman;
 DRV		BurnDrvAponow;
@@ -10895,7 +10897,6 @@ DRV		BurnDrvKeta;
 DRV		BurnDrvKet1;
 DRV		BurnDrvKet;
 DRV		BurnDrvKetbl;
-DRV		BurnDrvketmatsuri;
 DRV		BurnDrvketarr10;
 DRV		BurnDrvketarrb;
 DRV		BurnDrvketarrf;
@@ -10904,6 +10905,8 @@ DRV		BurnDrvketarr151;
 DRV		BurnDrvketarrs15;
 DRV		BurnDrvketarrs151;
 DRV		BurnDrvketarr;
+DRV		BurnDrvketikd;
+DRV		BurnDrvketmatsuri;
 DRV		BurnDrvsnes_Kkplayermanager;
 DRV		BurnDrvcv_kevtris;
 DRV		BurnDrvMSX_keykaper;
@@ -12022,8 +12025,13 @@ DRV		BurnDrvkovlsjb;			// no comment [NOT WORKING]
 DRV		BurnDrvkovlsjba;		// Incomplete dump [NOT WORKING]
 DRV		BurnDrvkovlsqh;			// Incomplete dump [NOT WORKING]
 DRV		BurnDrvkovlsqh2;		// Incomplete dump [NOT WORKING]
+DRV		BurnDrvkovlsqh2p;		// Incomplete dump [NOT WORKING]
+DRV		BurnDrvkovlsqhp;		// Incomplete dump
 #endif
 DRV		BurnDrvkovlsqho;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvkovlsvsjbs;		// no comment [NOT WORKING]
+#endif
 DRV		BurnDrvkovlsyxqszl;
 DRV		BurnDrvkovlsyxqxzl;
 DRV		BurnDrvkovlsyxqxzlp;
@@ -16720,6 +16728,9 @@ DRV		BurnSpecQuahappy;
 DRV		BurnDrvkovqhsgs;
 DRV		BurnDrvkovqhsgsa;
 DRV		BurnDrvkovqhsgsd;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvkovqhsgs305;		// no comment [NOT WORKING]
+#endif
 DRV		BurnDrvQuantump;
 DRV		BurnDrvQuantum1;
 DRV		BurnDrvQuantum;
@@ -17637,13 +17648,17 @@ DRV		BurnDrvsnes_Rocketeer;
 DRV		BurnDrvnes_rocketman;
 DRV		BurnDrvnes_rockinkats;
 DRV		BurnDrvsnes_Rockmanforte;
+DRV		BurnDrvnes_rockmantp;
 DRV		BurnDrvnes_rockman;
 DRV		BurnDrvnes_rockm2;
+DRV		BurnDrvnes_rockm2tp;
 DRV		BurnDrvCpsRockman2j;
 DRV		BurnDrvnes_rockm3c;
 DRV		BurnDrvnes_rockm3;
+DRV		BurnDrvnes_rockm3tp;
 DRV		BurnDrvnes_rockm4;
 DRV		BurnDrvnes_rockm4mi;
+DRV		BurnDrvnes_rockm4tp;
 DRV		BurnDrvnes_rockm5;
 DRV		BurnDrvnes_rockm5mp;
 DRV		BurnDrvnes_rockm6ttc;
@@ -25164,6 +25179,9 @@ DRV		BurnDrvMSX_zexasltd;
 DRV		BurnDrvMSX_zexasltdb;
 DRV		BurnDrvMSX_zexasltda;
 DRV		Burnmd_Zhanqichess;
+#if defined FBNEO_DEBUG
+DRV		BurnDrvKovzscs;			// Imperfect Protection Emulation [NOT WORKING]
+#endif
 DRV		BurnDrvnes_zhenbenxiyouji;
 DRV		BurnDrvmd_chinesec;
 DRV		BurnDrvDrgnwrldv10c;
@@ -26312,12 +26330,14 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkovassg,			// Ao Shi San Guo (bootleg of Knights of Valour Super Heroes Plus, V202CN)
 	&BurnDrvkovassge,			// Ao Shi San Guo (bootleg of Knights of Valour Super Heroes Plus, V202CN, encrypted)
 	&BurnDrvkovassgn,			// Ao Shi San Guo (bootleg of Knights of Valour Super Heroes Plus, V202CN, encrypted, newer)
+#if defined FBNEO_DEBUG
+	&BurnDrvkovassg203,			// Ao Shi San Guo (bootleg of Knights of Valour Super Heroes Plus, V203CN) [Imperfect Protection Emulation, NOT WORKING]
+	&BurnDrvkovassgp,			// Ao Shi San Guo Jia Qiang Ban (bootleg of Knights of Valour Super Heroes Plus, V314CN) [Incomplete dump, NOT WORKING]
+	&BurnDrvkovassgplus,		// Ao Shi San Guo Te Bie Ban (bootleg of Knights of Valour Super Heroes Plus, V315CN) [Incomplete dump, NOT WORKING]
+#endif
 	&BurnDrvpce_aoiblink,		// Aoi Blink (Japan)
 	&BurnDrvmd_genchohic,		// Aoki Ookami to Shiroki Mejika: Genchou Hishi (Hack, Chinese)
 	&BurnDrvmd_genchohi,		// Aoki Ookami to Shiroki Mejika: Genchou Hishi (Japan)
-#if defined FBNEO_DEBUG
-	&BurnDrvkovassgplus,		// Aoshi Sanguo Plus (bootleg of Knights of Valour Super Heroes Plus, V315CN) [Incomplete dump, NOT WORKING]
-#endif
 	&BurnSpecapb,				// APB: All Points Bulletin (128K)
 	&BurnDrvMSX_apeman,			// Apeman Strikes Again, The (Euro)
 	&BurnDrvAponow,				// Apocaljpse Now (bootleg of Rescue)
@@ -33233,7 +33253,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvpce_gaiflamee,		// Gai Flame (Hack, English v0.98)
 	&BurnDrvpce_gaiflame,		// Gai Flame (Japan)
 #if defined FBNEO_DEBUG
-	&BurnDrvKovgsyx,			// Gai Shi Xing Xiong (bootleg of Knights of Valour Super Heroes Plus, V302CN) [Imperfect Protection Emulation, NOT WORKING]
+	&BurnDrvKovgsyx,			// Gai Shi Ying Xiong Jia Qiang Ban (bootleg of Knights of Valour Super Heroes Plus, V302CN) [Imperfect Protection Emulation, NOT WORKING]
 #endif
 	&BurnDrvGaialast,			// Gaia - The Last Choice of Earth
 	&BurnDrvGaia,				// Gaia Crusaders
@@ -36205,7 +36225,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKet1,				// Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver.) (alt rom fill)
 	&BurnDrvKet,				// Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver.)
 	&BurnDrvKetbl,				// Ketsui: Kizuna Jigoku Tachi (2003/01/01. Master Ver., bootleg cartridge conversion)
-	&BurnDrvketmatsuri,			// Ketsui: Kizuna Jigoku Tachi (2007/09/22 CAVEMATSURI VER.)
 	&BurnDrvketarr10,			// Ketsui: Kizuna Jigoku Tachi (2012/04/17 ARRANGE VER) (hack)
 	&BurnDrvketarrb,			// Ketsui: Kizuna Jigoku Tachi (2012/04/17 BACK. VER) (hack)
 	&BurnDrvketarrf,			// Ketsui: Kizuna Jigoku Tachi (2012/04/17 FAST. VER) (hack)
@@ -36214,6 +36233,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvketarrs15,			// Ketsui: Kizuna Jigoku Tachi (2012/06/27 MR.STOIC 1.5 VER) (hack)
 	&BurnDrvketarrs151,			// Ketsui: Kizuna Jigoku Tachi (2012/06/27 MR.STOIC 1.51 VER) (hack)
 	&BurnDrvketarr,				// Ketsui: Kizuna Jigoku Tachi (2014/07/16 ARRANGE 1.7 VER) (hack)
+	&BurnDrvketikd,				// Ketsui: Kizuna Jigoku Tachi - IKD 2007 Special (2007/09/22 CAVEMATSURI VER.) (encrypted)
+	&BurnDrvketmatsuri,			// Ketsui: Kizuna Jigoku Tachi - IKD 2007 Special (2007/09/22 CAVEMATSURI VER.)
 	&BurnDrvsnes_Kkplayermanager,// Kevin Keegan's Player Manager (Euro)
 	&BurnDrvcv_kevtris,			// Kevtris (HB)
 	&BurnDrvMSX_keykaper,		// Keystone Kapers (Japan)
@@ -37332,8 +37353,13 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkovlsjba,			// Luan Shi Jie Ba (bootleg of Knights of Valour Super Heroes Plus, ver. 200CN, set 2) [Incomplete dump, NOT WORKING]
 	&BurnDrvkovlsqh,			// Luan Shi Quan Huang (bootleg of Knights of Valour Super Heroes Plus, V200CN) [Incomplete dump, NOT WORKING]
 	&BurnDrvkovlsqh2,			// Luan Shi Quan Huang 2 (bootleg of Knights of Valour Super Heroes Plus, V200CN) [Incomplete dump, NOT WORKING]
+	&BurnDrvkovlsqh2p,			// Luan Shi Quan Huang 2 Jia Qiang Ban (bootleg of Knights of Valour Super Heroes Plus, V200CN) [Incomplete dump, NOT WORKING]
+	&BurnDrvkovlsqhp,			// Luan Shi Quan Huang Jia Qiang Ban (bootleg of Knights of Valour Super Heroes Plus, V113CN) [Incomplete dump]
 #endif
 	&BurnDrvkovlsqho,			// Luan Shi Quan Huang Te Bie Ban (bootleg of Knights of Valour Super Heroes Plus, V112CN)
+#if defined FBNEO_DEBUG
+	&BurnDrvkovlsvsjbs,			// Luan Shi VS Jie Ba Te Bie Ban (bootleg of Knights of Valour Super Heroes Plus, V200CN, set 1) [no comment, NOT WORKING]
+#endif
 	&BurnDrvkovlsyxqszl,		// Luan Shi Ying Xiong - Qiu Sheng Zhi Lu (hack of Knights of Valour Super Heroes Plus, ver. 500)
 	&BurnDrvkovlsyxqxzl,		// Luan Shi Ying Xiong - Qun Xiong Zhu Lu (hack of Knights of Valour Super Heroes Plus, ver. 500)
 	&BurnDrvkovlsyxqxzlp,		// Luan Shi Ying Xiong - Qun Xiong Zhu Lu Plus (hack of Knights of Valour Super Heroes Plus, ver. 500)
@@ -42030,6 +42056,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkovqhsgs,			// Quan Huang San Guo Te Bie Ban (bootleg of Knights of Valour Super Heroes, V303CN, set 1)
 	&BurnDrvkovqhsgsa,			// Quan Huang San Guo Te Bie Ban (bootleg of Knights of Valour Super Heroes, V303CN, set 2)
 	&BurnDrvkovqhsgsd,			// Quan Huang San Guo Te Bie Ban (bootleg of Knights of Valour Super Heroes, V303CN, unencrypted)
+#if defined FBNEO_DEBUG
+	&BurnDrvkovqhsgs305,		// Quan Huang San Guo Te Bie Ban (bootleg of Knights of Valour Super Heroes, V305CN) [no comment, NOT WORKING]
+#endif
 	&BurnDrvQuantump,			// Quantum (prototype)
 	&BurnDrvQuantum1,			// Quantum (rev 1)
 	&BurnDrvQuantum,			// Quantum (rev 2)
@@ -42947,13 +42976,17 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_rocketman,		// Rocketman (Unl)
 	&BurnDrvnes_rockinkats,		// Rockin' Kats (USA)
 	&BurnDrvsnes_Rockmanforte,	// Rockman & Forte (Japan)
+	&BurnDrvnes_rockmantp,		// Rockman (Hack, Portuguese)
 	&BurnDrvnes_rockman,		// Rockman (Japan)
 	&BurnDrvnes_rockm2,			// Rockman 2: Dr. Wily no Nazo (Japan)
+	&BurnDrvnes_rockm2tp,		// Rockman 2: O Misterio do Dr. Wily (Hack, Portuguese)
 	&BurnDrvCpsRockman2j,		// Rockman 2: The Power Fighters (Japan 960708)
 	&BurnDrvnes_rockm3c,		// Rockman 3: Dr. Wily no Saigo!? (Hack, Chinese)
 	&BurnDrvnes_rockm3,			// Rockman 3: Dr. Wily no Saigo!? (Japan)
+	&BurnDrvnes_rockm3tp,		// Rockman 3: O Fim do Dr.Wily!? (Hack, Portuguese v1.03)
 	&BurnDrvnes_rockm4,			// Rockman 4: Aratanaru Yabou!! (Japan)
 	&BurnDrvnes_rockm4mi,		// Rockman 4: Minus Infinity (Hack, v1.01)
+	&BurnDrvnes_rockm4tp,		// Rockman 4: Um Novo Plano Maligno!! (Hack, Portuguese)
 	&BurnDrvnes_rockm5,			// Rockman 5: Blues no Wana!? (Japan)
 	&BurnDrvnes_rockm5mp,		// Rockman 5: Metropolis (GlobalHack, v1.1a)
 	&BurnDrvnes_rockm6ttc,		// Rockman 6: Shijou Saidai no Tatakai!! (Hack, Traditional Chinese)
@@ -50474,6 +50507,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_zexasltdb,		// Zexas Limited (Japan, Alt 2)
 	&BurnDrvMSX_zexasltda,		// Zexas Limited (Japan, Alt)
 	&Burnmd_Zhanqichess,		// Zhan Qi Chinese Battle Chess (Taiwan) (Unl)
+#if defined FBNEO_DEBUG
+	&BurnDrvKovzscs,			// Zhan Shen Chuan Shuo 2 Te Bie Ban (bootleg of Knights of Valour Super Heroes Plus, V201CN) [Imperfect Protection Emulation, NOT WORKING]
+#endif
 	&BurnDrvnes_zhenbenxiyouji,	// Zhen Ben Xi You Ji (Asia) (Unl)
 	&BurnDrvmd_chinesec,		// Zhong Guo Xiang Qi Chinese Chess (Taiwan) (Unl)
 	&BurnDrvDrgnwrldv10c,		// Zhongguo Long (China, V010C)
@@ -51616,10 +51652,12 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kovassg", "pgm/d_pgm.cpp"},
 	{ "kovassge", "pgm/d_pgm.cpp"},
 	{ "kovassgn", "pgm/d_pgm.cpp"},
+	{ "kovassg203", "pgm/d_pgm.cpp"},
+	{ "kovassgp", "pgm/d_pgm.cpp"},
+	{ "kovassgplus", "pgm/d_pgm.cpp"},
 	{ "pce_aoiblink", "pce/d_pce.cpp"},
 	{ "md_genchohic", "megadrive/d_megadrive.cpp"},
 	{ "md_genchohi", "megadrive/d_megadrive.cpp"},
-	{ "kovassgplus", "pgm/d_pgm.cpp"},
 	{ "spec_apb", "spectrum/d_spectrum.cpp"},
 	{ "msx_apeman", "msx/d_msx.cpp"},
 	{ "aponow", "galaxian/d_galaxian.cpp"},
@@ -61437,7 +61475,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ket1", "pgm/d_pgm.cpp"},
 	{ "ket", "pgm/d_pgm.cpp"},
 	{ "ketbl", "pgm/d_pgm.cpp"},
-	{ "ketmatsuri", "pgm/d_pgm.cpp"},
 	{ "ketarr10", "pgm/d_pgm.cpp"},
 	{ "ketarrb", "pgm/d_pgm.cpp"},
 	{ "ketarrf", "pgm/d_pgm.cpp"},
@@ -61446,6 +61483,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ketarrs15", "pgm/d_pgm.cpp"},
 	{ "ketarrs151", "pgm/d_pgm.cpp"},
 	{ "ketarr", "pgm/d_pgm.cpp"},
+	{ "ketikd", "pgm/d_pgm.cpp"},
+	{ "ketmatsuri", "pgm/d_pgm.cpp"},
 	{ "snes_kkplayermanager", "snes/d_snes.cpp"},
 	{ "cv_kevtris", "coleco/d_coleco.cpp"},
 	{ "msx_keykaper", "msx/d_msx.cpp"},
@@ -62555,7 +62594,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kovlsjba", "pgm/d_pgm.cpp"},
 	{ "kovlsqh", "pgm/d_pgm.cpp"},
 	{ "kovlsqh2", "pgm/d_pgm.cpp"},
+	{ "kovlsqh2p", "pgm/d_pgm.cpp"},
+	{ "kovlsqhp", "pgm/d_pgm.cpp"},
 	{ "kovlsqho", "pgm/d_pgm.cpp"},
+	{ "kovlsvsjbs", "pgm/d_pgm.cpp"},
 	{ "kovlsyxqszl", "pgm/d_pgm.cpp"},
 	{ "kovlsyxqxzl", "pgm/d_pgm.cpp"},
 	{ "kovlsyxqxzlp", "pgm/d_pgm.cpp"},
@@ -67216,6 +67258,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kovqhsgs", "pgm/d_pgm.cpp"},
 	{ "kovqhsgsa", "pgm/d_pgm.cpp"},
 	{ "kovqhsgsd", "pgm/d_pgm.cpp"},
+	{ "kovqhsgs305", "pgm/d_pgm.cpp"},
 	{ "quantump", "pre90s/d_quantum.cpp"},
 	{ "quantum1", "pre90s/d_quantum.cpp"},
 	{ "quantum", "pre90s/d_quantum.cpp"},
@@ -68133,13 +68176,17 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_rocketman", "nes/d_nes.cpp"},
 	{ "nes_rockinkats", "nes/d_nes.cpp"},
 	{ "snes_rockmanforte", "snes/d_snes.cpp"},
+	{ "nes_rockmantp", "nes/d_nes.cpp"},
 	{ "nes_rockman", "nes/d_nes.cpp"},
 	{ "nes_rockm2", "nes/d_nes.cpp"},
+	{ "nes_rockm2tp", "nes/d_nes.cpp"},
 	{ "rockman2j", "capcom/d_cps2.cpp"},
 	{ "nes_rockm3c", "nes/d_nes.cpp"},
 	{ "nes_rockm3", "nes/d_nes.cpp"},
+	{ "nes_rockm3tp", "nes/d_nes.cpp"},
 	{ "nes_rockm4", "nes/d_nes.cpp"},
 	{ "nes_rockm4mi", "nes/d_nes.cpp"},
+	{ "nes_rockm4tp", "nes/d_nes.cpp"},
 	{ "nes_rockm5", "nes/d_nes.cpp"},
 	{ "nes_rockm5mp", "nes/d_nes.cpp"},
 	{ "nes_rockm6ttc", "nes/d_nes.cpp"},
@@ -75568,6 +75615,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_zexasltdb", "msx/d_msx.cpp"},
 	{ "msx_zexasltda", "msx/d_msx.cpp"},
 	{ "md_zhanqichess", "megadrive/d_megadrive.cpp"},
+	{ "kovzscs", "pgm/d_pgm.cpp"},
 	{ "nes_zhenbenxiyouji", "nes/d_nes.cpp"},
 	{ "md_chinesec", "megadrive/d_megadrive.cpp"},
 	{ "drgnwrldv10c", "pst90s/d_igs011.cpp"},
