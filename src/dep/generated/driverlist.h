@@ -6877,6 +6877,7 @@ DRV		BurnDrvF1dreamb;
 DRV		BurnDrvF1dreamba;
 DRV		BurnDrvpce_f1dream;
 DRV		BurnDrvF1dream;
+DRV		BurnDrvF1dreama;
 DRV		BurnDrvsnes_F1gpj;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvF1gpbl;			// no comment [NOT WORKING]
@@ -18189,6 +18190,7 @@ DRV		BurnDrvSaturnzi;
 DRV		BurnDrvSamsho2k;
 DRV		BurnDrvSamsho2ka;
 DRV		BurnDrvsnes_Saunamarioworld;
+DRV		BurnDrvSaurnfrnt;
 DRV		BurnDrvSaurobl;
 DRV		BurnDrvSaurop;
 DRV		BurnDrvSaurorr;
@@ -20964,6 +20966,7 @@ DRV		BurnSpecSuperhero;
 DRV		BurnDrvShimpactp4;
 DRV		BurnDrvShimpactp5;
 DRV		BurnDrvShimpactp6;
+DRV		BurnDrvShimpactl1;
 DRV		BurnDrvShimpact;
 DRV		BurnDrvmd_shimpact;
 DRV		BurnDrvsnes_Superhighimpact;
@@ -22725,7 +22728,7 @@ DRV		BurnDrvsnes_Tick;
 DRV		BurnSpecTiddly;
 DRV		BurnSpectigeroad;
 DRV		BurnDrvTigeroadb;
-DRV		BurnDrvTigeroadb2;
+DRV		BurnDrvTigeroadba;
 DRV		BurnDrvTigeroad;
 DRV		BurnDrvTigeroadu;
 DRV		BurnDrvtg_tigerrod;
@@ -32207,7 +32210,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvF1dreamb,			// F-1 Dream (bootleg, set 1)
 	&BurnDrvF1dreamba,			// F-1 Dream (bootleg, set 2)
 	&BurnDrvpce_f1dream,		// F-1 Dream (Japan)
-	&BurnDrvF1dream,			// F-1 Dream
+	&BurnDrvF1dream,			// F-1 Dream (set 1)
+	&BurnDrvF1dreama,			// F-1 Dream (set 2)
 	&BurnDrvsnes_F1gpj,			// F-1 Grand Prix (Japan)
 #if defined FBNEO_DEBUG
 	&BurnDrvF1gpbl,				// F-1 Grand Prix (Playmark bootleg) [no comment, NOT WORKING]
@@ -43376,7 +43380,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSsho2emb,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Move Modeasy Special Attacks V4, Hack)
 	&BurnDrvSamsho2,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063)
 	&BurnDrvSamsho2t,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Optimized, Hack)
-	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.6, Hack)
+	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.7, Hack)
 	&BurnDrvSamsh2sp,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Special 2017, Hack)
 	&BurnDrvSamsh3bs,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (Boss, Hack)
 	&BurnDrvSamSho3h,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (NGH-087)
@@ -43520,6 +43524,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSamsho2k,			// Saulabi Spirits / Jin Saulabi Tu Hon (Korean release of Samurai Shodown II, set 1)
 	&BurnDrvSamsho2ka,			// Saulabi Spirits / Jin Saulabi Tu Hon (Korean release of Samurai Shodown II, set 2)
 	&BurnDrvsnes_Saunamarioworld,// Sauna Mario World 2 (GlobalHack, v1.1)
+	&BurnDrvSaurnfrnt,			// Saurian Front (proto v5.0 8/07/90)
 	&BurnDrvSaurobl,			// Sauro (bootleg)
 	&BurnDrvSaurop,				// Sauro (Philko license)
 	&BurnDrvSaurorr,			// Sauro (Recreativos Real S.A. license)
@@ -46295,7 +46300,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvShimpactp4,			// Super High Impact (prototype, proto 4.0 09/10/91)
 	&BurnDrvShimpactp5,			// Super High Impact (prototype, proto 5.0 09/15/91)
 	&BurnDrvShimpactp6,			// Super High Impact (prototype, proto 6.0 09/23/91)
-	&BurnDrvShimpact,			// Super High Impact (rev LA1 09/30/91)
+	&BurnDrvShimpactl1,			// Super High Impact (rev LA1 09/30/91)
+	&BurnDrvShimpact,			// Super High Impact (rev LA2 10/22/91)
 	&BurnDrvmd_shimpact,		// Super High Impact (USA)
 	&BurnDrvsnes_Superhighimpact,// Super High Impact (USA)
 	&BurnDrvsnes_Suphockey94,	// Super Hockey '94 (Japan)
@@ -48056,7 +48062,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTiddly,			// Tiddly Drinks (48K)
 	&BurnSpectigeroad,			// Tiger Road (128K)
 	&BurnDrvTigeroadb,			// Tiger Road (US bootleg, set 1)
-	&BurnDrvTigeroadb2,			// Tiger Road (US bootleg, set 2)
+	&BurnDrvTigeroadba,			// Tiger Road (US bootleg, set 2)
 	&BurnDrvTigeroad,			// Tiger Road (US)
 	&BurnDrvTigeroadu,			// Tiger Road (US, Romstar license)
 	&BurnDrvtg_tigerrod,		// Tiger Road (USA)
@@ -57493,6 +57499,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "f1dreamba", "pre90s/d_tigeroad.cpp"},
 	{ "pce_f1dream", "pce/d_pce.cpp"},
 	{ "f1dream", "pre90s/d_tigeroad.cpp"},
+	{ "f1dreama", "pre90s/d_tigeroad.cpp"},
 	{ "snes_f1gpj", "snes/d_snes.cpp"},
 	{ "f1gpbl", "pst90s/d_f1gp.cpp"},
 	{ "f1gp", "pst90s/d_f1gp.cpp"},
@@ -68715,6 +68722,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "samsho2k", "neogeo/d_neogeo.cpp"},
 	{ "samsho2ka", "neogeo/d_neogeo.cpp"},
 	{ "snes_saunamarioworld", "snes/d_snes.cpp"},
+	{ "saurnfrnt", "midway/d_yunit.cpp"},
 	{ "saurobl", "pre90s/d_sauro.cpp"},
 	{ "saurop", "pre90s/d_sauro.cpp"},
 	{ "saurorr", "pre90s/d_sauro.cpp"},
@@ -71454,6 +71462,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "shimpactp4", "midway/d_yunit.cpp"},
 	{ "shimpactp5", "midway/d_yunit.cpp"},
 	{ "shimpactp6", "midway/d_yunit.cpp"},
+	{ "shimpactl1", "midway/d_yunit.cpp"},
 	{ "shimpact", "midway/d_yunit.cpp"},
 	{ "md_shimpact", "megadrive/d_megadrive.cpp"},
 	{ "snes_superhighimpact", "snes/d_snes.cpp"},
@@ -73205,7 +73214,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_tiddly", "spectrum/d_spectrum.cpp"},
 	{ "spec_tigeroad", "spectrum/d_spectrum.cpp"},
 	{ "tigeroadb", "pre90s/d_tigeroad.cpp"},
-	{ "tigeroadb2", "pre90s/d_tigeroad.cpp"},
+	{ "tigeroadba", "pre90s/d_tigeroad.cpp"},
 	{ "tigeroad", "pre90s/d_tigeroad.cpp"},
 	{ "tigeroadu", "pre90s/d_tigeroad.cpp"},
 	{ "tg_tigerrod", "pce/d_pce.cpp"},
