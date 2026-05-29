@@ -4183,6 +4183,7 @@ DRV		BurnDrvmspacmanbhe;
 DRV		BurnDrvmspacmanbcc;
 DRV		BurnDrvmspacmanblt;
 DRV		BurnDrvmspacmanblt2;
+DRV		BurnDrvmspacmanblt3;
 DRV		BurnDrvmspacmanbco;
 DRV		BurnSpecComechip;
 DRV		BurnSpecCometenc;
@@ -17027,6 +17028,7 @@ DRV		BurnDrvRaidrs5t;
 DRV		BurnDrvRaidrs5ta;
 DRV		BurnDrvRaiders5;
 DRV		BurnDrvRaiga;
+DRV		BurnDrvRaigaa;
 DRV		BurnDrvStratof;
 DRV		BurnDrvRchasej;
 DRV		BurnDrvRchasejb;
@@ -22731,6 +22733,7 @@ DRV		BurnDrvTigerhb1;
 DRV		BurnDrvTigerhb2;
 DRV		BurnDrvTigerhb3;
 DRV		BurnDrvTigerhj;
+DRV		BurnDrvTigerhbt;
 DRV		BurnDrvTigerh;
 DRV		BurnDrvnes_tigerheli;
 DRV		BurnSpecTikitaca;
@@ -29511,6 +29514,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmspacmanbcc,		// Come-Cocos (Ms. Pac-Man) ('Made in Greece' Tecnausa bootleg)
 	&BurnDrvmspacmanblt,		// Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 1)
 	&BurnDrvmspacmanblt2,		// Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 2)
+	&BurnDrvmspacmanblt3,		// Come-Cocos (Ms. Pac-Man) ('Made in Greece' Triunvi bootleg, set 3)
 	&BurnDrvmspacmanbco,		// Come-Cocos (Ms. Pac-Man) (Cocamatic bootleg)
 	&BurnSpecComechip,			// Comeme el Chip (128K) (HB)
 	&BurnSpecCometenc,			// Comet Encounter (48K)
@@ -42354,7 +42358,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvRaidrs5t,			// Raiders5 (Japan, set 1)
 	&BurnDrvRaidrs5ta,			// Raiders5 (Japan, set 2, bootleg?)
 	&BurnDrvRaiders5,			// Raiders5
-	&BurnDrvRaiga,				// Raiga - Strato Fighter (Japan)
+	&BurnDrvRaiga,				// Raiga - Strato Fighter (Japan, set 1)
+	&BurnDrvRaigaa,				// Raiga - Strato Fighter (Japan, set 2)
 	&BurnDrvStratof,			// Raiga - Strato Fighter (US)
 	&BurnDrvRchasej,			// Rail Chase (Japan)
 	&BurnDrvRchasejb,			// Rail Chase (Japan, Rev B)
@@ -44532,8 +44537,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSokoban,			// Sokoban LE
 	&BurnDrvpce_sokoban,		// Sokoban World (Japan)
 	&BurnDrvSokonuke,			// Sokonuke Taisen Game (Japan)
-	&BurnDrvSoldividk,			// Sol Divide - The Sword Of Darkness (Korea)
-	&BurnDrvSoldivid,			// Sol Divide - The Sword Of Darkness
+	&BurnDrvSoldividk,			// Sol Divide: Sword Of Darkness (Korea)
+	&BurnDrvSoldivid,			// Sol Divide: Sword Of Darkness
 	&BurnDrvMSX_solnegro1,		// Sol Negro - Part 1 (Euro, Spanish)
 	&BurnSpecsolnegro1,			// Sol Negro - Part 1 (Spanish) (48K)
 	&BurnDrvMSX_solnegro2,		// Sol Negro - Part 2 (Euro, Spanish)
@@ -45101,7 +45106,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_splathou,		// Splatter House: Super Deformed (Hack, English v2.0)
 	&BurnDrvnes_splathouj,		// Splatter House: Wanpaku Graffiti (Japan)
 	&BurnDrvnes_splatworldj,	// Splatter World: Rick to Kyoufu no Daiou (Japan, Prototype)
-	&BurnDrvnes_splatworld,		// Splatter World: Rick vs. the King of Terror (Hack, English)
+	&BurnDrvnes_splatworld,		// Splatter World: Rick vs. the King of Terror (Hack, English v1.10)
 	&BurnDrvpce_splatth,		// Splatterhouse (Japan)
 	&BurnDrvtg_splatth,			// Splatterhouse (USA)
 	&BurnDrvmd_splatth2,		// Splatterhouse 2 (Euro)
@@ -47587,7 +47592,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTeot,				// The Eye of Typhoon (HB, Beta 7 Version)
 	&BurnDrvFlstoryo,			// The FairyLand Story (earlier)
 	&BurnDrvFlstory,			// The FairyLand Story
-	&BurnDrvDaraku,				// The Fallen Angels (World) / Daraku Tenshi - The Fallen Angels (Japan)
+	&BurnDrvDaraku,				// The Fallen Angels (World) / Daraku Tenshi: The Fallen Angels (Japan)
 	&BurnDrvFroundl,			// The Final Round (version L)
 	&BurnDrvFround,				// The Final Round (version M)
 	&BurnDrvGametngk,			// The Game Paradise - Master of Shooting! / Game Tengoku - The Game Paradise (ver 1.0)
@@ -48059,6 +48064,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvTigerhb2,			// Tiger-Heli (bootleg set 2)
 	&BurnDrvTigerhb3,			// Tiger-Heli (bootleg set 3)
 	&BurnDrvTigerhj,			// Tiger-Heli (Japan)
+	&BurnDrvTigerhbt,			// Tiger-Heli (Tecfri bootleg)
 	&BurnDrvTigerh,				// Tiger-Heli (US)
 	&BurnDrvnes_tigerheli,		// Tiger-Heli (USA)
 	&BurnSpecTikitaca,			// Tiki Taca (48K) (HB)
@@ -48184,7 +48190,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecTjcc,				// TJ's Cavern Capers (128K) (HB)
 	&BurnDrvsnes_Tkoscb,		// TKO Super Championship Boxing (USA)
 	&BurnDrvsnes_Tmntfightce,	// TMNT: Tournament Fighters - Cowabunga Edition (Hack)
-	&BurnDrvsnes_Tmntfightgme,	// TMNT: Tournament Fighters - Grandmasters Edition (Hack, v3.8)
+	&BurnDrvsnes_Tmntfightgme,	// TMNT: Tournament Fighters - Grandmasters Edition (Hack, v3.9)
 	&BurnDrvmd_tnnbass,			// TNN Bass Tournament of Champions (USA)
 	&BurnDrvsnes_Tnnbasstoc,	// TNN Bass Tournament of Champions (USA)
 	&BurnDrvmd_tnnout,			// TNN Outdoors Bass Tournament '96 (USA)
@@ -54809,6 +54815,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mspacmanbcc", "pre90s/d_pacman.cpp"},
 	{ "mspacmanblt", "pre90s/d_pacman.cpp"},
 	{ "mspacmanblt2", "pre90s/d_pacman.cpp"},
+	{ "mspacmanblt3", "pre90s/d_pacman.cpp"},
 	{ "mspacmanbco", "pre90s/d_pacman.cpp"},
 	{ "spec_comechip", "spectrum/d_spectrum.cpp"},
 	{ "spec_cometenc", "spectrum/d_spectrum.cpp"},
@@ -67555,6 +67562,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "raiders5ta", "pre90s/d_pkunwar.cpp"},
 	{ "raiders5", "pre90s/d_pkunwar.cpp"},
 	{ "raiga", "pst90s/d_gaiden.cpp"},
+	{ "raigaa", "pst90s/d_gaiden.cpp"},
 	{ "stratof", "pst90s/d_gaiden.cpp"},
 	{ "rchasej", "sega/d_ybrd.cpp"},
 	{ "rchasejb", "sega/d_ybrd.cpp"},
@@ -73205,6 +73213,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "tigerhb2", "toaplan/d_slapfght.cpp"},
 	{ "tigerhb3", "toaplan/d_slapfght.cpp"},
 	{ "tigerhj", "toaplan/d_slapfght.cpp"},
+	{ "tigerhbt", "toaplan/d_slapfght.cpp"},
 	{ "tigerh", "toaplan/d_slapfght.cpp"},
 	{ "nes_tigerheli", "nes/d_nes.cpp"},
 	{ "spec_tikitaca", "spectrum/d_spectrum.cpp"},
