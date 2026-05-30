@@ -37190,9 +37190,9 @@
 	</game>
 	<game name="violentv" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Homebrew</comment>
-		<description>Violent Vengeance: The Universe Hero (Beta 3.28)</description>
-		<year>2025-26</year>
-		<manufacturer>OzzyOuzo</manufacturer>
+		<description>Violent Vengeance: The Universe Hero (Beta 3.28, FEB 1 2026)</description>
+		<year>2026</year>
+		<manufacturer>Balek Corp.</manufacturer>
 		<rom name="violentv-p1.bin" size="1048576" crc="59b78bc5"/>
 		<rom name="violentv-p2.bin" size="8388608" crc="fdad36d7"/>
 		<rom name="violentv-s1.bin" size="131072" crc="f7302142"/>
