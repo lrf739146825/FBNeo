@@ -15347,6 +15347,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="nightcity" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Night City (HB)</description>
+		<year>2026</year>
+		<manufacturer>Foko Games</manufacturer>
+		<rom name="Night City (2026)(Foko Games).nes" size="40976" crc="39dd25fa"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="nightonelmstra" sourcefile="nes/d_nes.cpp">
 		<description>Nightmare on Elm Street, A (USA)</description>
 		<year>1990</year>
@@ -15361,15 +15370,6 @@
 		<year>1999-2022</year>
 		<manufacturer>Fista Productions</manufacturer>
 		<rom name="Nightmare on Elm Street, A - Son of a Hundred Maniacs Demake v0.02 (1999-2022)(Fista Productions).nes" size="524304" crc="7c6b0b6c"/>
-		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
-		<driver status="good"/>
-	</game>
-	<game name="nightscity" sourcefile="nes/d_nes.cpp">
-		<comment>Homebrew</comment>
-		<description>Nights City (HB)</description>
-		<year>2026</year>
-		<manufacturer>Foko Games</manufacturer>
-		<rom name="Nights City (2026)(Foko Games).nes" size="40976" crc="39dd25fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

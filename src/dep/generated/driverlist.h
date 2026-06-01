@@ -14648,6 +14648,7 @@ DRV		BurnDrvmd_mansellu;
 DRV		BurnDrvsnes_Nigelmansell;
 DRV		BurnSpecnbreed;
 DRV		BurnDrvMSX_nightcity;
+DRV		BurnDrvnes_nightcity;
 DRV		BurnDrvtg_nightcr;
 DRV		BurnDrvMSX_nightdriver;
 DRV		BurnDrvNitedrvr;
@@ -14681,7 +14682,6 @@ DRV		BurnDrvnes_nightonelmstra;
 DRV		BurnDrvnes_nightelmstreetdmk;
 DRV		BurnSpecNighthallowen;
 DRV		BurnSpecNightrally;
-DRV		BurnDrvnes_nightscity;
 DRV		BurnSpecNightshade;
 DRV		BurnDrvnes_nightshadetp;
 DRV		BurnDrvnes_nightshadetr;
@@ -40014,6 +40014,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Nigelmansell,	// Nigel Mansell's World Championship Racing (USA)
 	&BurnSpecnbreed,			// Night Breed (128K)
 	&BurnDrvMSX_nightcity,		// Night City (HB)
+	&BurnDrvnes_nightcity,		// Night City (HB)
 	&BurnDrvtg_nightcr,			// Night Creatures (USA)
 	&BurnDrvMSX_nightdriver,	// Night Driver (HB)
 	&BurnDrvNitedrvr,			// Night Driver
@@ -40047,7 +40048,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_nightelmstreetdmk,// Nightmare on Elm Street, A: Son of a Hundred Maniacs Demake (HB, v0.02)
 	&BurnSpecNighthallowen,		// Nightmare on Halloween (48K) (HB)
 	&BurnSpecNightrally,		// Nightmare Rally (48K)
-	&BurnDrvnes_nightscity,		// Nights City (HB)
 	&BurnSpecNightshade,		// Nightshade (48K)
 	&BurnDrvnes_nightshadetp,	// Nightshade (Hack, Portuguese v3.0)
 	&BurnDrvnes_nightshadetr,	// Nightshade (Hack, Russian)
@@ -65270,6 +65270,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_nigelmansell", "snes/d_snes.cpp"},
 	{ "spec_nbreed", "spectrum/d_spectrum.cpp"},
 	{ "msx_nightcity", "msx/d_msx.cpp"},
+	{ "nes_nightcity", "nes/d_nes.cpp"},
 	{ "tg_nightcr", "pce/d_pce.cpp"},
 	{ "msx_nightdriver", "msx/d_msx.cpp"},
 	{ "nitedrvr", "pre90s/d_nitedrvr.cpp"},
@@ -65303,7 +65304,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_nightelmstreetdmk", "nes/d_nes.cpp"},
 	{ "spec_nighthallowen", "spectrum/d_spectrum.cpp"},
 	{ "spec_nightrally", "spectrum/d_spectrum.cpp"},
-	{ "nes_nightscity", "nes/d_nes.cpp"},
 	{ "spec_nightshade", "spectrum/d_spectrum.cpp"},
 	{ "nes_nightshadetp", "nes/d_nes.cpp"},
 	{ "nes_nightshadetr", "nes/d_nes.cpp"},
