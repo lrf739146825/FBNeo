@@ -16031,6 +16031,7 @@ DRV		BurnDrvnes_platoon;
 DRV		BurnDrvMSX_playball;
 DRV		BurnDrvPlgirls2b;
 DRV		BurnDrvPlgirls2;
+DRV		BurnDrvPlgirls2j;
 DRV		BurnDrvPlgirls;
 DRV		BurnDrvPlayball;
 DRV		BurnDrvMSX_strippoker;
@@ -41400,7 +41401,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_platoon,		// Platoon (USA)
 	&BurnDrvMSX_playball,		// Play Ball (Japan)
 	&BurnDrvPlgirls2b,			// Play Girls 2 (bootleg)
-	&BurnDrvPlgirls2,			// Play Girls 2
+	&BurnDrvPlgirls2,			// Play Girls 2 (Europe)
+	&BurnDrvPlgirls2j,			// Play Girls 2 (Japan)
 	&BurnDrvPlgirls,			// Play Girls
 	&BurnDrvPlayball,			// PlayBall! (prototype)
 	&BurnDrvMSX_strippoker,		// Playhouse Strippoker (Euro)
@@ -66653,6 +66655,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_playball", "msx/d_msx.cpp"},
 	{ "plgirls2b", "taito/d_taitol.cpp"},
 	{ "plgirls2", "taito/d_taitol.cpp"},
+	{ "plgirls2j", "taito/d_taitol.cpp"},
 	{ "plgirls", "taito/d_taitol.cpp"},
 	{ "playball", "pre90s/d_williams.cpp"},
 	{ "msx_strippoker", "msx/d_msx.cpp"},
