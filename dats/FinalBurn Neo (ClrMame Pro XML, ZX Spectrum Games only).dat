@@ -3184,10 +3184,10 @@
 	</game>
 	<game name="beltalowda1en" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Beltalowda - Part 1 (English) (128K) (HB, v1.4)</description>
+		<description>Beltalowda - Part 1 (English) (128K) (HB, v1.5)</description>
 		<year>2026</year>
 		<manufacturer>Molisoft</manufacturer>
-		<rom name="Beltalowda - Part 1 EN v1.4 128K (2026)(Molisoft).tap" size="122263" crc="161c7cd9"/>
+		<rom name="Beltalowda - Part 1 EN v1.5 128K (2026)(Molisoft).tap" size="122306" crc="b885f0bb"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -3195,10 +3195,10 @@
 	</game>
 	<game name="beltalowda2en" cloneof="beltalowda1en" romof="beltalowda1en" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, Password: inyalowda</comment>
-		<description>Beltalowda - Part 2 (English) (128K) (HB, v1.4)</description>
+		<description>Beltalowda - Part 2 (English) (128K) (HB, v1.5)</description>
 		<year>2026</year>
 		<manufacturer>Molisoft</manufacturer>
-		<rom name="Beltalowda - Part 2 EN v1.4 128K (2026)(Molisoft).tap" size="124565" crc="9f54dec0"/>
+		<rom name="Beltalowda - Part 2 EN v1.5 128K (2026)(Molisoft).tap" size="124565" crc="9f54dec0"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -13496,6 +13496,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="headon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Head On (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Indigobeetle</manufacturer>
+		<rom name="Head On 48K (2026)(Indigobeetle).tap" size="28632" crc="a4d9d5f6"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="headheel" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Carry: ENTER - Fire: X - Swop: S</comment>
 		<description>Head over Heels (48K-128K)</description>
@@ -13567,7 +13577,7 @@
 	</game>
 	<game name="heartlight" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, R: restart level and lose a life</comment>
-		<description>Heartlight (128K) (HB)</description>
+		<description>Heartlight (48K-128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>Rafal Miazga</manufacturer>
 		<rom name="Heartlight 48K-128K (2024)(Rafal Miazga).tap" size="37417" crc="f6930dcd"/>
@@ -14004,10 +14014,10 @@
 	</game>
 	<game name="hopnfrog" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Hop'n'Frog (128K) (HB)</description>
+		<description>Hop'n'Frog (48K-128K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>Gabriele Amore</manufacturer>
-		<rom name="Hop'n'Frog 128K (2015)(Gabriele Amore).tap" size="23739" crc="7d55a6f4"/>
+		<rom name="Hop'n'Frog 48K-128K (2015)(Gabriele Amore).tap" size="23739" crc="7d55a6f4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15314,10 +15324,10 @@
 	</game>
 	<game name="jankyjoe" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Janky Joe in Retro Hell (128K) (HB)</description>
+		<description>Janky Joe in Retro Hell (48K-128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Sloanysoft</manufacturer>
-		<rom name="Janky Joe in Retro Hell 128K (2023)(Sloanysoft).tap" size="43848" crc="247dddd0"/>
+		<rom name="Janky Joe in Retro Hell 48K-128K (2023)(Sloanysoft).tap" size="43848" crc="247dddd0"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15325,10 +15335,10 @@
 	</game>
 	<game name="janosik" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Janosik (128K) (HB)</description>
+		<description>Janosik (48K-128K) (HB)</description>
 		<year>2013</year>
 		<manufacturer>Rafal Miazga, Alex Heather</manufacturer>
-		<rom name="Janosik 128K (2013)(Rafal Miazga, Alex Heather).tap" size="44357" crc="365cc37f"/>
+		<rom name="Janosik 48K-128K (2013)(Rafal Miazga, Alex Heather).tap" size="44357" crc="365cc37f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15374,10 +15384,10 @@
 	</game>
 	<game name="jeffnotes" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Jeff &amp; the Blue Notes (128K) (HB)</description>
+		<description>Jeff &amp; the Blue Notes (48K-128K) (HB)</description>
 		<year>2023</year>
 		<manufacturer>Deanysoft</manufacturer>
-		<rom name="Jeff &amp; The Blue Notes 128K (2023)(Deanysoft).tap" size="44152" crc="2484175f"/>
+		<rom name="Jeff &amp; The Blue Notes 48K-128K (2023)(Deanysoft).tap" size="44152" crc="2484175f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -15498,10 +15508,10 @@
 	</game>
 	<game name="jetsetsw" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Jet Set Steamboat Willie (128K) (HB)</description>
+		<description>Jet Set Steamboat Willie (48K-128K) (HB)</description>
 		<year>2024</year>
 		<manufacturer>Sloanysoft</manufacturer>
-		<rom name="Jet Set Steamboat Willie 128K (2024)(Sloanysoft).tap" size="47655" crc="0e27d045"/>
+		<rom name="Jet Set Steamboat Willie 48K-128K (2024)(Sloanysoft).tap" size="47655" crc="0e27d045"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -19184,6 +19194,27 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="minesweeper128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Minesweeper (128K) (HB, v1.03)</description>
+		<year>2023</year>
+		<manufacturer>Under4Mhz</manufacturer>
+		<rom name="Minesweeper v1.03 128K (2023)(Under4Mhz).tap" size="15851" crc="1e27e992"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="minesweeper48" cloneof="minesweeper128" romof="minesweeper128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Minesweeper (48K) (HB, v1.03)</description>
+		<year>2023</year>
+		<manufacturer>Under4Mhz</manufacturer>
+		<rom name="Minesweeper v1.03 48K (2023)(Under4Mhz).tap" size="16439" crc="44a3f73e"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="miremare" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Mire Mare (48K) (HB, v1.09)</description>
@@ -22694,10 +22725,10 @@
 	</game>
 	<game name="pooperscooper" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Pooper Scooper (128K) (HB)</description>
+		<description>Pooper Scooper (48K-128K) (HB)</description>
 		<year>2018</year>
 		<manufacturer>The Death Squad</manufacturer>
-		<rom name="Pooper Scooper 128K (2018)(The Death Squad).tap" size="43438" crc="7bfc504c"/>
+		<rom name="Pooper Scooper 48K-128K (2018)(The Death Squad).tap" size="43438" crc="7bfc504c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -25209,6 +25240,16 @@
 		<year>1988</year>
 		<manufacturer>Activision</manufacturer>
 		<rom name="S.D.I. -  Strategic Defense Initiative 48K (1988)(Activision).tzx" size="48081" crc="9dd91929"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sdo" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>S.D.O.: Star Defence Operation (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Xevimet4l</manufacturer>
+		<rom name="Star Defence Operation 48K (2026)(Xevimet4l).tap" size="39275" crc="764f6b69"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -28175,10 +28216,10 @@
 	</game>
 	<game name="starsgumi" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>STARS - Gumi (128K) (HB)</description>
+		<description>STARS - Gumi (48K-128K) (HB)</description>
 		<year>2015</year>
 		<manufacturer>kas29</manufacturer>
-		<rom name="STARS - Gumi 128K (2015)(kas29).tap" size="23775" crc="eb39a1df"/>
+		<rom name="STARS - Gumi 48K-128K (2015)(kas29).tap" size="23775" crc="eb39a1df"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -28186,10 +28227,10 @@
 	</game>
 	<game name="starsgumi2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>STARS - Gumi 2 (128K) (HB)</description>
+		<description>STARS - Gumi 2 (48K-128K) (HB)</description>
 		<year>2022</year>
 		<manufacturer>kas29</manufacturer>
-		<rom name="Stars - Gumi 2 128K (2022)(kas29).tap" size="41242" crc="64e2c5f5"/>
+		<rom name="Stars - Gumi 2 48K-128K (2022)(kas29).tap" size="41242" crc="64e2c5f5"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -29823,12 +29864,23 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tharkys" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Tharkys the Knight (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>JayDroid</manufacturer>
+		<rom name="Tharkys the Knight 128K (2026)(JayDroid).tap" size="125428" crc="52340a44"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tsfeeling" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>That Sinking Feeling (128K) (HB)</description>
+		<description>That Sinking Feeling (48K-128K) (HB)</description>
 		<year>2017</year>
 		<manufacturer>Sunteam</manufacturer>
-		<rom name="That Sinking Feeling 128K (2017)(Sunteam).tap" size="34567" crc="e7822c33"/>
+		<rom name="That Sinking Feeling 48K-128K (2017)(Sunteam).tap" size="34567" crc="e7822c33"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -29856,10 +29908,10 @@
 	</game>
 	<game name="3octopuses" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Three Octopuses (128K) (HB)</description>
+		<description>Three Octopuses (48K-128K) (HB)</description>
 		<year>2017</year>
 		<manufacturer>kas29</manufacturer>
-		<rom name="Three Octopuses 128K (2017)(kas29).tap" size="25990" crc="0f80336f"/>
+		<rom name="Three Octopuses 48K-128K (2017)(kas29).tap" size="25990" crc="0f80336f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31301,6 +31353,16 @@
 		<year>1990</year>
 		<manufacturer>System 3</manufacturer>
 		<rom name="Vendetta 48K (1990)(System 3).tap" size="165768" crc="8992478a"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="venture48k" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>VENTURE 48k (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>jason-indie</manufacturer>
+		<rom name="VENTURE 48k 48K (2026)(jason-indie).tap" size="43148" crc="75cf5e5c"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
