@@ -7388,6 +7388,7 @@ DRV		BurnDrvFinallapc;
 DRV		BurnDrvFinallapd;
 DRV		BurnDrvFinallap;
 DRV		BurnDrvFinalap2j;
+DRV		BurnDrvFinalap2jb;
 DRV		BurnDrvFinalap2;
 DRV		BurnDrvFinalap3bl;
 DRV		BurnDrvFinalap3j;
@@ -12880,6 +12881,7 @@ DRV		BurnDrvnes_megakaijubb;
 DRV		BurnDrvsnes_Megalomaniae;
 DRV		BurnDrvsnes_Megalomaniaj;
 DRV		BurnDrvsnes_Megamanbass;
+DRV		BurnDrvsnes_Megamanbasstp;
 DRV		BurnDrvgg_megaman;
 DRV		BurnDrvnes_megamanc;
 DRV		BurnDrvnes_megaman;
@@ -12907,6 +12909,7 @@ DRV		BurnDrvnes_megaman5c;
 DRV		BurnDrvnes_megaman5;
 DRV		BurnDrvnes_megaman6c;
 DRV		BurnDrvnes_megaman6;
+DRV		BurnDrvsnes_Megaman7tp;
 DRV		BurnDrvsnes_Megamanxe;
 DRV		BurnDrvsnes_Megamanx;
 DRV		BurnDrvsnes_Megamanxpz;
@@ -17409,6 +17412,7 @@ DRV		BurnDrvcv_reversi;
 DRV		BurnDrvcv_reversdd;
 DRV		BurnDrvmd_revx;
 DRV		BurnDrvRevxp5;
+DRV		BurnDrvRevx1;
 DRV		BurnDrvRevx;
 DRV		BurnDrvsnes_Revx;
 DRV		BurnDrvnes_revgems;
@@ -17713,8 +17717,10 @@ DRV		BurnDrvnes_rockm3tp;
 DRV		BurnDrvnes_rockm4;
 DRV		BurnDrvnes_rockm4mi;
 DRV		BurnDrvnes_rockm4tp;
+DRV		BurnDrvnes_rockm5tp;
 DRV		BurnDrvnes_rockm5;
 DRV		BurnDrvnes_rockm5mp;
+DRV		BurnDrvnes_rockm6tp;
 DRV		BurnDrvnes_rockm6ttc;
 DRV		BurnDrvnes_rockm6;
 DRV		BurnDrvsnes_Rockman7epte;
@@ -19829,15 +19835,15 @@ DRV		BurnDrvSplash;
 DRV		BurnSpecSplat;
 DRV		BurnDrvSplat;
 DRV		BurnDrvnes_splatood;
-DRV		BurnDrvSplatterj;
-DRV		BurnDrvSplatter;
-DRV		BurnDrvSplatter2;
 DRV		BurnDrvnes_splathou;
 DRV		BurnDrvnes_splathouj;
 DRV		BurnDrvnes_splatworldj;
 DRV		BurnDrvnes_splatworld;
 DRV		BurnDrvpce_splatth;
+DRV		BurnDrvSplatterj;
 DRV		BurnDrvtg_splatth;
+DRV		BurnDrvSplatter;
+DRV		BurnDrvSplatter2;
 DRV		BurnDrvmd_splatth2;
 DRV		BurnDrvmd_splatth2u;
 DRV		BurnDrvmd_splatth3s;
@@ -32785,6 +32791,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvFinallapd,			// Final Lap (Rev D)
 	&BurnDrvFinallap,			// Final Lap (Rev E)
 	&BurnDrvFinalap2j,			// Final Lap 2 (Japan)
+	&BurnDrvFinalap2jb,			// Final Lap 2 (Japan, Rev B)
 	&BurnDrvFinalap2,			// Final Lap 2
 	&BurnDrvFinalap3bl,			// Final Lap 3 (bootleg)
 	&BurnDrvFinalap3j,			// Final Lap 3 (Japan)
@@ -38277,6 +38284,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Megalomaniae,	// Mega lo Mania (Euro)
 	&BurnDrvsnes_Megalomaniaj,	// Mega lo Mania - Jikuu Daisenryaku (Japan)
 	&BurnDrvsnes_Megamanbass,	// Mega Man & Bass (Hack, English v1.1)
+	&BurnDrvsnes_Megamanbasstp,	// Mega Man & Bass (Hack, Portuguese)
 	&BurnDrvgg_megaman,			// Mega Man (Euro, USA)
 	&BurnDrvnes_megamanc,		// Mega Man (Hack, Spanish)
 	&BurnDrvnes_megaman,		// Mega Man (USA)
@@ -38304,6 +38312,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_megaman5,		// Mega Man V (USA)
 	&BurnDrvnes_megaman6c,		// Mega Man VI (Hack, Spanish v1.1)
 	&BurnDrvnes_megaman6,		// Mega Man VI (USA)
+	&BurnDrvsnes_Megaman7tp,	// Mega Man VII (Hack, Portuguese)
 	&BurnDrvsnes_Megamanxe,		// Mega Man X (Euro)
 	&BurnDrvsnes_Megamanx,		// Mega Man X (USA, Rev. 1)
 	&BurnDrvsnes_Megamanxpz,	// Mega Man X - Project Zero (Hack)
@@ -42805,8 +42814,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvcv_reversi,			// Reversi (HB)
 	&BurnDrvcv_reversdd,		// Reversi and Diamond Dash (HB)
 	&BurnDrvmd_revx,			// Revolution X (Euro, USA)
-	&BurnDrvRevxp5,				// Revolution X (prototype, rev 5.0 5/23/94)
-	&BurnDrvRevx,				// Revolution X (rev 1.0 6/16/94)
+	&BurnDrvRevxp5,				// Revolution X (prototype, revision 5.0 5/23/94)
+	&BurnDrvRevx1,				// Revolution X (revision 1.0 6/16/94)
+	&BurnDrvRevx,				// Revolution X (revision 2.0 9/8/94)
 	&BurnDrvsnes_Revx,			// Revolution X (USA)
 	&BurnDrvnes_revgems,		// Revolving Gems (HB)
 	&BurnDrvsnes_Rexronan,		// Rex Ronan - Experimental Surgeon (USA)
@@ -43110,8 +43120,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_rockm4,			// Rockman 4: Aratanaru Yabou!! (Japan)
 	&BurnDrvnes_rockm4mi,		// Rockman 4: Minus Infinity (Hack, v1.01)
 	&BurnDrvnes_rockm4tp,		// Rockman 4: Um Novo Plano Maligno!! (Hack, Portuguese)
+	&BurnDrvnes_rockm5tp,		// Rockman 5: A Armadilha do Blues!? (Hack, Portuguese)
 	&BurnDrvnes_rockm5,			// Rockman 5: Blues no Wana!? (Japan)
 	&BurnDrvnes_rockm5mp,		// Rockman 5: Metropolis (GlobalHack, v1.1a)
+	&BurnDrvnes_rockm6tp,		// Rockman 6: A Maior Batalha de Todas!! (Hack, Portuguese)
 	&BurnDrvnes_rockm6ttc,		// Rockman 6: Shijou Saidai no Tatakai!! (Hack, Traditional Chinese)
 	&BurnDrvnes_rockm6,			// Rockman 6: Shijou Saidai no Tatakai!! (Japan)
 	&BurnDrvsnes_Rockman7epte,	// Rockman 7 EP (Hack, English v1.02)
@@ -45226,15 +45238,15 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSplat,				// Splat! (48K)
 	&BurnDrvSplat,				// Splat!
 	&BurnDrvnes_splatood,		// SplatooD (HB, v1.0.6)
-	&BurnDrvSplatterj,			// Splatter House (Japan, SH1)
-	&BurnDrvSplatter,			// Splatter House (World, new version (SH3))
-	&BurnDrvSplatter2,			// Splatter House (World, old version (SH2))
 	&BurnDrvnes_splathou,		// Splatter House: Super Deformed (Hack, English v2.0)
 	&BurnDrvnes_splathouj,		// Splatter House: Wanpaku Graffiti (Japan)
 	&BurnDrvnes_splatworldj,	// Splatter World: Rick to Kyoufu no Daiou (Japan, Prototype)
 	&BurnDrvnes_splatworld,		// Splatter World: Rick vs. the King of Terror (Hack, English v1.10)
 	&BurnDrvpce_splatth,		// Splatterhouse (Japan)
+	&BurnDrvSplatterj,			// Splatterhouse (Japan, SH1)
 	&BurnDrvtg_splatth,			// Splatterhouse (USA)
+	&BurnDrvSplatter,			// Splatterhouse (World, new version (SH3))
+	&BurnDrvSplatter2,			// Splatterhouse (World, old version (SH2))
 	&BurnDrvmd_splatth2,		// Splatterhouse 2 (Euro)
 	&BurnDrvmd_splatth2u,		// Splatterhouse 2 (USA)
 	&BurnDrvmd_splatth3s,		// Splatterhouse 3 (Hack, Spanish)
@@ -58132,6 +58144,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "finallapd", "pst90s/d_namcos2.cpp"},
 	{ "finallap", "pst90s/d_namcos2.cpp"},
 	{ "finalap2j", "pst90s/d_namcos2.cpp"},
+	{ "finalap2jb", "pst90s/d_namcos2.cpp"},
 	{ "finalap2", "pst90s/d_namcos2.cpp"},
 	{ "finalap3bl", "pst90s/d_namcos2.cpp"},
 	{ "finalap3j", "pst90s/d_namcos2.cpp"},
@@ -63578,6 +63591,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_megalomaniae", "snes/d_snes.cpp"},
 	{ "snes_megalomaniaj", "snes/d_snes.cpp"},
 	{ "snes_megamanbass", "snes/d_snes.cpp"},
+	{ "snes_megamanbasstp", "snes/d_snes.cpp"},
 	{ "gg_megaman", "sms/d_sms.cpp"},
 	{ "nes_megamanc", "nes/d_nes.cpp"},
 	{ "nes_megaman", "nes/d_nes.cpp"},
@@ -63605,6 +63619,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_megaman5", "nes/d_nes.cpp"},
 	{ "nes_megaman6c", "nes/d_nes.cpp"},
 	{ "nes_megaman6", "nes/d_nes.cpp"},
+	{ "snes_megaman7tp", "snes/d_snes.cpp"},
 	{ "snes_megamanxe", "snes/d_snes.cpp"},
 	{ "snes_megamanx", "snes/d_snes.cpp"},
 	{ "snes_megamanxpz", "snes/d_snes.cpp"},
@@ -68075,6 +68090,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "cv_reversdd", "coleco/d_coleco.cpp"},
 	{ "md_revx", "megadrive/d_megadrive.cpp"},
 	{ "revxp5", "midway/d_xunit.cpp"},
+	{ "revx1", "midway/d_xunit.cpp"},
 	{ "revx", "midway/d_xunit.cpp"},
 	{ "snes_revx", "snes/d_snes.cpp"},
 	{ "nes_revgems", "nes/d_nes.cpp"},
@@ -68379,8 +68395,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_rockm4", "nes/d_nes.cpp"},
 	{ "nes_rockm4mi", "nes/d_nes.cpp"},
 	{ "nes_rockm4tp", "nes/d_nes.cpp"},
+	{ "nes_rockm5tp", "nes/d_nes.cpp"},
 	{ "nes_rockm5", "nes/d_nes.cpp"},
 	{ "nes_rockm5mp", "nes/d_nes.cpp"},
+	{ "nes_rockm6tp", "nes/d_nes.cpp"},
 	{ "nes_rockm6ttc", "nes/d_nes.cpp"},
 	{ "nes_rockm6", "nes/d_nes.cpp"},
 	{ "snes_rockman7epte", "snes/d_snes.cpp"},
@@ -70473,15 +70491,15 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_splat", "spectrum/d_spectrum.cpp"},
 	{ "splat", "pre90s/d_williams.cpp"},
 	{ "nes_splatood", "nes/d_nes.cpp"},
-	{ "splatterj", "pre90s/d_namcos1.cpp"},
-	{ "splatter", "pre90s/d_namcos1.cpp"},
-	{ "splatter2", "pre90s/d_namcos1.cpp"},
 	{ "nes_splathou", "nes/d_nes.cpp"},
 	{ "nes_splathouj", "nes/d_nes.cpp"},
 	{ "nes_splatworldj", "nes/d_nes.cpp"},
 	{ "nes_splatworld", "nes/d_nes.cpp"},
 	{ "pce_splatth", "pce/d_pce.cpp"},
+	{ "splatterj", "pre90s/d_namcos1.cpp"},
 	{ "tg_splatth", "pce/d_pce.cpp"},
+	{ "splatter", "pre90s/d_namcos1.cpp"},
+	{ "splatter2", "pre90s/d_namcos1.cpp"},
 	{ "md_splatth2", "megadrive/d_megadrive.cpp"},
 	{ "md_splatth2u", "megadrive/d_megadrive.cpp"},
 	{ "md_splatth3s", "megadrive/d_megadrive.cpp"},
