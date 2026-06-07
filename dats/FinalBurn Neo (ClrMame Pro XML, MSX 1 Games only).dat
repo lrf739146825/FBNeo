@@ -11192,6 +11192,18 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="manhole" romof="msx" sourcefile="msx/d_msx.cpp">
+		<comment>Homebrew</comment>
+		<description>Manhole (HB, v0.6b)</description>
+		<year>2024</year>
+		<manufacturer>Electric Dreams</manufacturer>
+		<rom name="Manhole v0.6b (2024)(Electric Dreams).rom" size="16384" crc="64e525ef"/>
+		<rom name="msx.rom" merge="msx.rom" size="32768" crc="a317e6b4"/>
+		<rom name="msxj.rom" merge="msxj.rom" size="32768" crc="071135e0"/>
+		<rom name="kanji.rom" merge="kanji.rom" size="262144" crc="1f6406fb"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="manicminer" romof="msx" sourcefile="msx/d_msx.cpp">
 		<description>Manic Miner (Euro)</description>
 		<year>1984</year>

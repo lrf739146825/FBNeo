@@ -1191,6 +1191,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="manhole" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Manhole (HB, v0.6b)</description>
+		<year>2024</year>
+		<manufacturer>Electric Dreams</manufacturer>
+		<rom name="Manhole v0.6b (2024)(Electric Dreams).sg" size="12276" crc="e96272f6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mazy" sourcefile="sg1000/d_sg1000.cpp">
 		<comment>Homebrew</comment>
 		<description>Mazy (HB)</description>

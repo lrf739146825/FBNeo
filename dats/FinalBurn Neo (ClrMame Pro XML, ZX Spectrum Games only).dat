@@ -1077,6 +1077,36 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="alicia" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Published by Microhobby</comment>
+		<description>Alicia (Spanish) (48K)</description>
+		<year>1985</year>
+		<manufacturer>Luis E.Juan</manufacturer>
+		<rom name="Alicia ES 48K (1985)(Luis E.Juan).z80" size="31607" crc="45f96467"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aliciaesp" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Alicia a traves del espejo (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Jose Luis Cebrian</manufacturer>
+		<rom name="Alicia a traves del espejo ES 128K (2025)(Jose Luis Cebrian).tap" size="87813" crc="78605781"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aliciamarav" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Alicia en el Pais de las Maravillas (Spanish) (48K)</description>
+		<year>1987</year>
+		<manufacturer>DaniSoft</manufacturer>
+		<rom name="Alicia en el Pais de las Maravillas ES 48K (1987)(DaniSoft).tzx" size="44324" crc="c667fbcc"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aliente" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Hack</comment>
 		<description>Alien (English) (48K) (Hack)</description>
@@ -16363,28 +16393,6 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kojizes" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
-		<description>Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)</description>
-		<year>2025</year>
-		<manufacturer>Clanbyte</manufacturer>
-		<rom name="Koji al rescate de la Superaleacion Z ES 128K (2025)(Clanbyte).tap" size="72751" crc="9dfed9f1"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="kojizen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
-		<description>Koji to the rescue of Superalloy Z (English) (128K) (HB)</description>
-		<year>2025</year>
-		<manufacturer>Clanbyte</manufacturer>
-		<rom name="Koji to the rescue of Superalloy Z EN 128K (2025)(Clanbyte).tap" size="72571" crc="ee3f26ad"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="komando2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Komando II (Slovak) (48K)</description>
 		<year>1992</year>
@@ -18450,6 +18458,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="maxstonetwoees" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone Dos: en el castillo del Conde (Spanish) (128K) (HB, easy)</description>
+		<year>2026</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone Dos en el castillo del Conde - easy ES 128K (2026)(Flopping).tap" size="77508" crc="afde4591"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="maxstonetwohes" cloneof="maxstonetwoees" romof="maxstonetwoees" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Max Stone Dos: en el castillo del Conde (Spanish) (128K) (HB, hard)</description>
+		<year>2026</year>
+		<manufacturer>Flopping</manufacturer>
+		<rom name="Max Stone Dos en el castillo del Conde - hard ES 128K (2026)(Flopping).tap" size="77423" crc="bfdde644"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="maxstonemhes" cloneof="maxstonemhen" romof="maxstonemhen" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Max Stone Edicion MH (Spanish) (128K) (HB)</description>
@@ -18474,10 +18504,10 @@
 	</game>
 	<game name="maxstonetwoe" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Max Stone Two: In Count Vlad's castle (128K) (HB, easy)</description>
+		<description>Max Stone Two: In Count Vlad's castle (English) (128K) (HB, easy)</description>
 		<year>2026</year>
 		<manufacturer>Flopping</manufacturer>
-		<rom name="Max Stone Two In Count Vlad's castle - easy 128K (2026)(Flopping).tap" size="77200" crc="903dd3a4"/>
+		<rom name="Max Stone Two In Count Vlad's castle - easy EN 128K (2026)(Flopping).tap" size="77200" crc="903dd3a4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18485,10 +18515,10 @@
 	</game>
 	<game name="maxstonetwoh" cloneof="maxstonetwoe" romof="maxstonetwoe" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Max Stone Two: In Count Vlad's castle (128K) (HB, hard)</description>
+		<description>Max Stone Two: In Count Vlad's castle (English) (128K) (HB, hard)</description>
 		<year>2026</year>
 		<manufacturer>Flopping</manufacturer>
-		<rom name="Max Stone Two In Count Vlad's castle - hard 128K (2026)(Flopping).tap" size="77134" crc="7cf5d43d"/>
+		<rom name="Max Stone Two In Count Vlad's castle - hard EN 128K (2026)(Flopping).tap" size="77134" crc="7cf5d43d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18552,6 +18582,39 @@
 		<manufacturer>Jari Komppa</manufacturer>
 		<rom name="Mazeract 48K (2017)(Jari Komppa).tap" size="15728" crc="55bfddd5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kojizes" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mazinger Z: Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Mazinger Z - Koji al rescate de la Superaleacion Z ES 128K (2025)(Clanbyte).tap" size="72751" crc="34be1efc"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kojizen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mazinger Z: Koji to the rescue of Superalloy Z (English) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Mazinger Z - Koji to the rescue of Superalloy Z EN 128K (2025)(Clanbyte).tap" size="72571" crc="c135a8ff"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kojizit" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Mazinger Z: Ryo in soccorso della Superlega Z (Italian) (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Clanbyte</manufacturer>
+		<rom name="Mazinger Z - Ryo in soccorso della Superlega Z IT 128K (2025)(Clanbyte).tap" size="72672" crc="13f9f2b4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20742,6 +20805,17 @@
 		<year>2025</year>
 		<manufacturer>Itho Games</manufacturer>
 		<rom name="Ninja Secret Agent Chapter 1 128K (2025)(Itho Games).tap" size="58403" crc="5c22d5e6"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ninjasac2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Ninja Secret Agent - Chapter 2 (128K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>Itho Games</manufacturer>
+		<rom name="Ninja Secret Agent Chapter 2 128K (2025)(Itho Games).tap" size="70753" crc="c09d704c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23066,6 +23140,27 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starwash128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Proyecto Starwash (Spanish) (128K) (HB, v1.0.6-beta.1)</description>
+		<year>1989-2025</year>
+		<manufacturer>Ricardo Villalba</manufacturer>
+		<rom name="Proyecto Starwash ES v1.0.6-beta.1 128K (1989-2025)(Ricardo Villalba).tap" size="120730" crc="256bc4b9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="starwash48" cloneof="starwash128" romof="starwash128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Proyecto Starwash (Spanish) (48K) (HB, v1.0.5-beta.1)</description>
+		<year>1989-2025</year>
+		<manufacturer>Ricardo Villalba</manufacturer>
+		<rom name="Proyecto Starwash ES v1.0.5-beta.1 48K (1989-2025)(Ricardo Villalba).tap" size="39758" crc="cc700089"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="psichess" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>S+2/S+3: 2D/3D view - M+1: start game - J+2: use controller</comment>
 		<description>Psi Chess (48K)</description>
@@ -25182,17 +25277,6 @@
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Rygar - Legendary Warrior 48K (1987)(U.S. Gold).tap" size="44813" crc="c64bbc03"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="kojizit" cloneof="kojizen" romof="kojizen" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
-		<description>Ryo in soccorso della Superlega Z (Italian) (128K) (HB)</description>
-		<year>2025</year>
-		<manufacturer>Clanbyte</manufacturer>
-		<rom name="Ryo in soccorso della Superlega Z IT 128K (2025)(Clanbyte).tap" size="72683" crc="e6626e6c"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -28236,6 +28320,27 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starwashmf128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Starwash: la mision final (Spanish) (128K) (HB, v1.0.4-beta.1)</description>
+		<year>2025</year>
+		<manufacturer>Ricardo Villalba</manufacturer>
+		<rom name="Starwash - la mision final ES v1.0.4-beta.1 128K (2025)(Ricardo Villalba).tap" size="57423" crc="e86909ec"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="starwashmf48" cloneof="starwashmf128" romof="starwashmf128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Starwash: la mision final (Spanish) (48K) (HB, v1.0.4-beta.1)</description>
+		<year>2025</year>
+		<manufacturer>Ricardo Villalba</manufacturer>
+		<rom name="Starwash - la mision final ES v1.0.4-beta.1 48K (2025)(Ricardo Villalba).tap" size="33183" crc="1c600d7f"/>
+		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="steeleagle" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Steel Eagle (48K-128K)</description>
 		<year>1990</year>
@@ -29079,6 +29184,26 @@
 		<rom name="SuperHair 2 - Revenge of the Wizard 128K (2026)(MicroChops).tap" size="119124" crc="aab58c65"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slopez1" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Superlopez: El senor de los chupetes - Parte 1 (Spanish) (48K) (HB)</description>
+		<year>1989</year>
+		<manufacturer>Rino-Soft</manufacturer>
+		<rom name="Superlopez - El senor de los chupetes - Parte 1 ES 48K (1989)(Rino-Soft).z80" size="41310" crc="9d404540"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="slopez2" cloneof="slopez1" romof="slopez1" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Password: PACIENCIA</comment>
+		<description>Superlopez: El senor de los chupetes - Parte 2 (Spanish) (48K) (HB)</description>
+		<year>1989</year>
+		<manufacturer>Rino-Soft</manufacturer>
+		<rom name="Superlopez - El senor de los chupetes - Parte 2 ES 48K (1989)(Rino-Soft).z80" size="40794" crc="8b409053"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -32260,6 +32385,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="wospellssc" cloneof="wospells" romof="wospells" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>World of Spells - Santa Claus (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>JTKrakow</manufacturer>
+		<rom name="World of Spells - Santa Claus 48K-AY (2025)(JTKrakow).tap" size="43557" crc="ae9ae272"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="wsbaseball" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>World Series Baseball (48K)</description>
 		<year>1985</year>
@@ -33112,7 +33247,7 @@
 		<description>ZX Parachute (16K) (HB)</description>
 		<year>2020</year>
 		<manufacturer>Carles Oriol</manufacturer>
-		<rom name="ZX Parachute 16K (2020)(Carles Oriol).tap" size="12897" crc="c82e385e"/>
+		<rom name="ZX Parachute 16K (2020)(Carles Oriol).tap" size="11867" crc="70ba46de"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>

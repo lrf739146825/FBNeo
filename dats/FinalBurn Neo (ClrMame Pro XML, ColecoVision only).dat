@@ -448,10 +448,10 @@
 	</game>
 	<game name="barbarricade" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
-		<description>Barbarricade (HB, 06-02-26)</description>
+		<description>Barbarricade (HB, 06-03-26)</description>
 		<year>2026</year>
 		<manufacturer>Jess Creations</manufacturer>
-		<rom name="Barbarricade 06-02-26 (2026)(Jess Creations).rom" size="32768" crc="0327148b"/>
+		<rom name="Barbarricade 06-03-26 (2026)(Jess Creations).rom" size="32768" crc="bf40aaf7"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -3169,6 +3169,19 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hardhat" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, Published by CollectorVision Games</comment>
+		<description>Hard Hat (HB)</description>
+		<year>1982-2022</year>
+		<manufacturer>Exidy</manufacturer>
+		<rom name="Hard Hat (2022)(CollectorVision).rom" size="32768" crc="221fbcfa"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hardhatmack" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew, SGM - Published by CollectorVision Games</comment>
 		<description>Hard Hat Mack (SGM) (HB)</description>
@@ -3239,6 +3252,19 @@
 		<year>2023</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Hopman (2023)(Inufuto).rom" size="9834" crc="856fc7b8"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hustle" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew, In the Game Over screen push 5 (keypad) and then push 1 or 2 to play</comment>
+		<description>Hustle (HB)</description>
+		<year>2023</year>
+		<manufacturer>CollectorVision - Gremlin</manufacturer>
+		<rom name="Hustle (2023)(CollectorVision).rom" size="16384" crc="c8f7d8c5"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
@@ -4054,7 +4080,7 @@
 	<game name="msolitaire" romof="coleco" sourcefile="coleco/d_coleco.cpp">
 		<comment>Homebrew</comment>
 		<description>Mahjong Solitaire (HB, v1.16)</description>
-		<year>2021</year>
+		<year>2023</year>
 		<manufacturer>Under4Mhz</manufacturer>
 		<rom name="Mahjong Solitaire v1.16 (2023)(Under4Mhz).rom" size="32768" crc="119af363"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
@@ -4070,6 +4096,19 @@
 		<year>2015-16</year>
 		<manufacturer>Lemonize</manufacturer>
 		<rom name="Majikazo SGM (2016)(Team Pixelboy).rom" size="32768" crc="2a1438c0"/>
+		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
+		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
+		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>
+		<rom name="czz50.rom" merge="czz50.rom" size="16384" crc="4999abc6"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="manhole" romof="coleco" sourcefile="coleco/d_coleco.cpp">
+		<comment>Homebrew</comment>
+		<description>Manhole (HB, v0.6b)</description>
+		<year>2024</year>
+		<manufacturer>Electric Dreams</manufacturer>
+		<rom name="Manhole v0.6b (2024)(Electric Dreams).rom" size="11288" crc="068bfdbe"/>
 		<rom name="coleco.rom" merge="coleco.rom" size="8192" crc="3aa93ef3"/>
 		<rom name="colecoa.rom" merge="colecoa.rom" size="8192" crc="39bb16fc"/>
 		<rom name="svi603.rom" merge="svi603.rom" size="8192" crc="19e91b82"/>

@@ -681,6 +681,9 @@ DRV		BurnDrvMSX_alibabab;
 DRV		BurnDrvMSX_alibabaa;
 DRV		BurnDrvsms_alibaba;
 DRV		BurnDrvmd_alicesisters;
+DRV		BurnSpecAlicia;
+DRV		BurnSpecAliciaesp;
+DRV		BurnSpecAliciamarav;
 DRV		BurnSpecAliente;
 DRV		BurnSpecAlienit;
 DRV		BurnDrvsnes_Alien3e;
@@ -1734,8 +1737,8 @@ DRV		BurnSpecbarbpt1;
 DRV		BurnSpecbarbpt2;
 DRV		BurnDrvmd_barbarianzxs;
 DRV		BurnDrvpce_barbarianzxs;
-DRV		BurnDrvcv_barbarricade;
 DRV		BurnDrvsg1k_barbarricade;
+DRV		BurnDrvcv_barbarricade;
 DRV		BurnDrvsnes_Barbiesupermodel;
 DRV		BurnDrvsnes_Barbievacationadv;
 DRV		BurnDrvgg_barbie;
@@ -9288,6 +9291,7 @@ DRV		BurnSpecharddriv;
 DRV		BurnDrvmd_harddriv;
 DRV		BurnDrvHarddunkj;
 DRV		BurnDrvHarddunk;
+DRV		BurnDrvcv_hardhat;
 DRV		BurnDrvcv_hardhatmack;
 DRV		BurnDrvHardhat;
 DRV		BurnDrvHardheadb;
@@ -9817,6 +9821,7 @@ DRV		BurnDrvmd_hurrican;
 DRV		BurnDrvsnes_Hurricanese;
 DRV		BurnDrvsnes_Hurricanes;
 DRV		BurnSpecHurtingzone;
+DRV		BurnDrvcv_hustle;
 DRV		BurnDrvcv_hchumy;
 DRV		BurnDrvsg1k_hustle;
 DRV		BurnDrvMSX_hustle;
@@ -11302,8 +11307,6 @@ DRV		BurnDrvMSX_koedoli;
 DRV		BurnDrvngpc_koikoi;
 DRV		BurnDrvKoikois2;
 DRV		BurnDrvRockragej;
-DRV		BurnSpecKojizes;
-DRV		BurnSpecKojizen;
 DRV		BurnDrvnes_kokoadventure;
 DRV		BurnDrvEto;
 DRV		BurnDrvEtoa;
@@ -11903,6 +11906,7 @@ DRV		BurnDrvnes_littlnemc;
 DRV		BurnDrvnes_littlnem;
 DRV		BurnDrvnes_littlninbro;
 DRV		BurnSpecLittlepuff;
+DRV		BurnDrvLittlerb;
 DRV		BurnDrvnes_littlesamson;
 DRV		BurnDrvnes_littlesamsonh;
 DRV		BurnDrvsms_lilsamson;
@@ -12477,6 +12481,9 @@ DRV		BurnDrvMSX_manesa;
 DRV		BurnDrvMangchi;
 DRV		BurnDrvCmanhat;
 DRV		BurnDrvManhatan;
+DRV		BurnDrvcv_manhole;
+DRV		BurnDrvMSX_manhole;
+DRV		BurnDrvsg1k_manhole;
 DRV		BurnDrvManiach;
 DRV		BurnDrvManiach2;
 DRV		BurnDrvnes_maniacmansione;
@@ -12769,6 +12776,8 @@ DRV		BurnSpecMaxstone128es;
 DRV		BurnSpecMaxstone48es;
 DRV		BurnSpecMaxstone2es;
 DRV		BurnSpecMaxstone2en;
+DRV		BurnSpecMaxstonetwoees;
+DRV		BurnSpecMaxstonetwohes;
 DRV		BurnSpecMaxstonemhes;
 DRV		BurnSpecMaxstonemhen;
 DRV		BurnSpecMaxstonetwoe;
@@ -12806,6 +12815,9 @@ DRV		BurnDrvmd_mazinwar;
 DRV		BurnDrvmazingerj;
 DRV		BurnDrvsnes_Mazingerz;
 DRV		BurnDrvmazinger;
+DRV		BurnSpecKojizes;
+DRV		BurnSpecKojizen;
+DRV		BurnSpecKojizit;
 DRV		BurnDrvsnes_Mystdung2ts;
 DRV		BurnSpecMazy;
 DRV		BurnDrvsms_mazy;
@@ -14812,6 +14824,7 @@ DRV		BurnDrvnes_ninjaryudeniii;
 DRV		BurnDrvMSX_ninjasav;
 DRV		BurnSpecNinjascooter;
 DRV		BurnSpecNinjasac1;
+DRV		BurnSpecNinjasac2;
 DRV		BurnSpecNinjaspirit;
 DRV		BurnDrvtg_nspirit;
 DRV		BurnDrvNspirit;
@@ -16485,6 +16498,8 @@ DRV		BurnSpecPrjrev;
 DRV		BurnSpecprojstealthfighter;
 DRV		BurnSpecPvaelius;
 DRV		BurnDrvsms_sms3samp;
+DRV		BurnSpecStarwash128;
+DRV		BurnSpecStarwash48;
 DRV		BurnSpecPsichess;
 DRV		BurnSpecPssst;
 DRV		BurnDrvmd_psyoblade;
@@ -17933,7 +17948,6 @@ DRV		BurnDrvsms_rygarat;
 DRV		BurnSpecRygar2020;
 DRV		BurnDrvsms_rygarct;
 DRV		BurnSpecrygar;
-DRV		BurnSpecKojizit;
 DRV		BurnDrvRyujina;
 DRV		BurnDrvRyujin;
 DRV		BurnDrvRyukyud;
@@ -19741,6 +19755,7 @@ DRV		BurnDrvSpec2k;
 DRV		BurnSpecSpecross;
 DRV		BurnDrvSpeedbal;
 DRV		BurnDrvSpeedbala;
+DRV		BurnDrvSpeedbalb;
 DRV		BurnDrvSpdball;
 DRV		BurnDrvSpdcoin;
 DRV		BurnDrvMSX_speedking;
@@ -20103,6 +20118,8 @@ DRV		BurnDrvnes_startropics;
 DRV		BurnDrvnes_startropicsmf;
 DRV		BurnDrvnes_startiits;
 DRV		BurnDrvnes_startii;
+DRV		BurnSpecStarwashmf128;
+DRV		BurnSpecStarwashmf48;
 DRV		BurnDrvStealsee;
 DRV		BurnDrvcv_steam;
 DRV		BurnDrvnes_stedj;
@@ -21538,6 +21555,8 @@ DRV		BurnSpecSuperhair128;
 DRV		BurnSpecSuperhair48;
 DRV		BurnSpecSuperhair2;
 DRV		BurnDrvSsoldier;
+DRV		BurnSpecSlopez1;
+DRV		BurnSpecSlopez2;
 DRV		BurnDrvmd_Supermans;
 DRV		BurnDrvnes_supermanh;
 DRV		BurnDrvnes_supermanj;
@@ -24687,6 +24706,7 @@ DRV		BurnDrvmd_worldilljp1;
 DRV		BurnDrvmd_worldilljp2;
 DRV		BurnSpecWoow;
 DRV		BurnSpecWospells;
+DRV		BurnSpecWospellssc;
 DRV		BurnDrvnes_worldwarc;
 DRV		BurnDrvnes_worldwar;
 DRV		BurnDrvWpksocv2;
@@ -26084,6 +26104,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_alibabaa,		// Alibaba and 40 Thieves (Japan, Alt)
 	&BurnDrvsms_alibaba,		// Alibaba and 40 Thieves (Korea)
 	&BurnDrvmd_alicesisters,	// Alice Sisters (HB)
+	&BurnSpecAlicia,			// Alicia (Spanish) (48K)
+	&BurnSpecAliciaesp,			// Alicia a traves del espejo (Spanish) (128K) (HB)
+	&BurnSpecAliciamarav,		// Alicia en el Pais de las Maravillas (Spanish) (48K)
 	&BurnSpecAliente,			// Alien (English) (48K) (Hack)
 	&BurnSpecAlienit,			// Alien (Italian) (48K)
 	&BurnDrvsnes_Alien3e,		// Alien 3 (Euro)
@@ -27137,8 +27160,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecbarbpt2,			// Barbarian: The Ultimate Warrior - Part 2 (48K)
 	&BurnDrvmd_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
 	&BurnDrvpce_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
-	&BurnDrvcv_barbarricade,	// Barbarricade (HB, 06-02-26)
 	&BurnDrvsg1k_barbarricade,	// Barbarricade (HB, 06-02-26)
+	&BurnDrvcv_barbarricade,	// Barbarricade (HB, 06-03-26)
 	&BurnDrvsnes_Barbiesupermodel,// Barbie - Super Model (USA)
 	&BurnDrvsnes_Barbievacationadv,// Barbie - Vacation Adventure (USA, Prototype)
 	&BurnDrvgg_barbie,			// Barbie Super Model (Prototype)
@@ -34691,6 +34714,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_harddriv,		// Hard Drivin' (World)
 	&BurnDrvHarddunkj,			// Hard Dunk (Japan)
 	&BurnDrvHarddunk,			// Hard Dunk (World)
+	&BurnDrvcv_hardhat,			// Hard Hat (HB)
 	&BurnDrvcv_hardhatmack,		// Hard Hat Mack (SGM) (HB)
 	&BurnDrvHardhat,			// Hard Hat
 	&BurnDrvHardheadb,			// Hard Head (bootleg, set 1)
@@ -35220,6 +35244,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Hurricanese,	// Hurricanes (Euro)
 	&BurnDrvsnes_Hurricanes,	// Hurricanes (USA)
 	&BurnSpecHurtingzone,		// Hurting Zone (48K) (HB)
+	&BurnDrvcv_hustle,			// Hustle (HB)
 	&BurnDrvcv_hchumy,			// Hustle Chumy (HB)
 	&BurnDrvsg1k_hustle,		// Hustle Chumy (Japan)
 	&BurnDrvMSX_hustle,			// Hustle! Chumy (Japan)
@@ -36705,8 +36730,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvngpc_koikoi,		// Koi Koi Mahjong (Japan)
 	&BurnDrvKoikois2,			// Koi Koi Shimasho 2 - Super Real Hanafuda (Japan)
 	&BurnDrvRockragej,			// Koi no Hotrock (Japan)
-	&BurnSpecKojizes,			// Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)
-	&BurnSpecKojizen,			// Koji to the rescue of Superalloy Z (English) (128K) (HB)
 	&BurnDrvnes_kokoadventure,	// Koko Adventure (Korea)
 	&BurnDrvEto,				// Kokontouzai Eto Monogatari (Japan)
 	&BurnDrvEtoa,				// Kokontouzai Eto Monogatari (Japan, prototype?)
@@ -36853,7 +36876,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKurikintu,			// Kuri Kinton (US)
 	&BurnDrvKurikintw,			// Kuri Kinton (US, World Games license)
 	&BurnDrvKurikint,			// Kuri Kinton (World)
-	&BurnDrvKurikinta,			// Kuri Kinton (World, prototype?)
+	&BurnDrvKurikinta,			// Kuri Kinton (World, prototype)
 	&BurnDrvKsayakyu,			// Kusayakyuu
 	&BurnDrvmd_kuuga,			// Kuuga - Operation Code 'Vapor Trail' (Japan)
 	&BurnDrvmd_kuzyaeo,			// Kuzya - Ekologiya V Opasnosti (Russia) (Unl)
@@ -37306,6 +37329,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_littlnem,		// Little Nemo: The Dream Master (USA)
 	&BurnDrvnes_littlninbro,	// Little Ninja Brothers (USA)
 	&BurnSpecLittlepuff,		// Little Puff in Dragonland (48K-128K)
+	&BurnDrvLittlerb,			// Little Robin
 	&BurnDrvnes_littlesamson,	// Little Samson (USA)
 	&BurnDrvnes_littlesamsonh,	// Little Samson Restoration & Sound Hack (Hack)
 	&BurnDrvsms_lilsamson,		// Little Samson Tribute (GlobalHack, v1.1, Portuguese)
@@ -37857,7 +37881,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_malaika,		// Malaika (HB, v1.2)
 	&BurnDrvMSX_malaikapq13,	// Malaika Prehistoric Quest (HB, v1.3)
 	&BurnDrvnes_malasombra,		// Malasombra (HB)
-	&BurnDrvmd_mcastilla,		// Maldita Castilla: Requiem (HB, Demo v1.2)
+	&BurnDrvmd_mcastilla,		// Maldita Castilla: Requiem (HB, Demo v1.4)
 	&BurnSpecMaligore,			// Malignant Gore, The (128K) (HB)
 	&BurnDrvmd_whacacri,		// Mallet Legend's Whac-a-Critter (USA, Taiwan) (Unl) [no comment, NOT WORKING]
 	&BurnDrvMSX_maltesepool,	// Maltese Joe's Pool Challenge (Euro)
@@ -37880,6 +37904,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMangchi,			// Mang-Chi
 	&BurnDrvCmanhat,			// Manhattan (DECO Cassette) (Japan)
 	&BurnDrvManhatan,			// Manhattan 24 Bunsyo (Japan)
+	&BurnDrvcv_manhole,			// Manhole (HB, v0.6b)
+	&BurnDrvMSX_manhole,		// Manhole (HB, v0.6b)
+	&BurnDrvsg1k_manhole,		// Manhole (HB, v0.6b)
 	&BurnDrvManiach,			// Mania Challenge (set 1)
 	&BurnDrvManiach2,			// Mania Challenge (set 2)
 	&BurnDrvnes_maniacmansione,	// Maniac Mansion (Euro)
@@ -38172,10 +38199,12 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecMaxstone48es,		// Max Stone (Spanish) (48K) (HB)
 	&BurnSpecMaxstone2es,		// Max Stone 2 Edicion MH (Spanish) (128K) (HB)
 	&BurnSpecMaxstone2en,		// Max Stone 2 MH Edition (English) (128K) (HB)
+	&BurnSpecMaxstonetwoees,	// Max Stone Dos: en el castillo del Conde (Spanish) (128K) (HB, easy)
+	&BurnSpecMaxstonetwohes,	// Max Stone Dos: en el castillo del Conde (Spanish) (128K) (HB, hard)
 	&BurnSpecMaxstonemhes,		// Max Stone Edicion MH (Spanish) (128K) (HB)
 	&BurnSpecMaxstonemhen,		// Max Stone MH Edition (English) (128K) (HB)
-	&BurnSpecMaxstonetwoe,		// Max Stone Two: In Count Vlad's castle (128K) (HB, easy)
-	&BurnSpecMaxstonetwoh,		// Max Stone Two: In Count Vlad's castle (128K) (HB, hard)
+	&BurnSpecMaxstonetwoe,		// Max Stone Two: In Count Vlad's castle (English) (128K) (HB, easy)
+	&BurnSpecMaxstonetwoh,		// Max Stone Two: In Count Vlad's castle (English) (128K) (HB, hard)
 	&BurnDrvnes_maxwar,			// Max Warrior - Wakusei Kaigenrei (Japan)
 	&BurnDrvMSX_maxima,			// Maxima (Euro)
 	&BurnDrvMayday,				// Mayday (set 1)
@@ -38209,6 +38238,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmazingerj,			// Mazinger Z (Japan)
 	&BurnDrvsnes_Mazingerz,		// Mazinger Z (Japan)
 	&BurnDrvmazinger,			// Mazinger Z (World)
+	&BurnSpecKojizes,			// Mazinger Z: Koji al rescate de la Superaleacion Z (Spanish) (128K) (HB)
+	&BurnSpecKojizen,			// Mazinger Z: Koji to the rescue of Superalloy Z (English) (128K) (HB)
+	&BurnSpecKojizit,			// Mazinger Z: Ryo in soccorso della Superlega Z (Italian) (128K) (HB)
 	&BurnDrvsnes_Mystdung2ts,	// Mazmorra Misteriosa 2: Shiren al Vagabundo (Hack, Spanish v1.1)
 	&BurnSpecMazy,				// Mazy (48K) (HB)
 	&BurnDrvsms_mazy,			// Mazy (HB)
@@ -40215,6 +40247,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_ninjasav,		// Ninja Savior (HB, RLV921)
 	&BurnSpecNinjascooter,		// Ninja Scooter Simulator (48K)
 	&BurnSpecNinjasac1,			// Ninja Secret Agent - Chapter 1 (128K) (HB)
+	&BurnSpecNinjasac2,			// Ninja Secret Agent - Chapter 2 (128K) (HB)
 	&BurnSpecNinjaspirit,		// Ninja Spirit (128K)
 	&BurnDrvtg_nspirit,			// Ninja Spirit (USA)
 	&BurnDrvNspirit,			// Ninja Spirit (World)
@@ -41888,6 +41921,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecprojstealthfighter,// Project Stealth Fighter (48K-128K)
 	&BurnSpecPvaelius,			// Project Vaelius (128K) (HB)
 	&BurnDrvsms_sms3samp,		// Promocao Especial M. System III Compact (Brazil, Sample)
+	&BurnSpecStarwash128,		// Proyecto Starwash (Spanish) (128K) (HB, v1.0.6-beta.1)
+	&BurnSpecStarwash48,		// Proyecto Starwash (Spanish) (48K) (HB, v1.0.5-beta.1)
 	&BurnSpecPsichess,			// Psi Chess (48K)
 	&BurnSpecPssst,				// Pssst (16K)
 	&BurnDrvmd_psyoblade,		// Psy-O-Blade (Hack, English)
@@ -42124,7 +42159,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecPyracurse,			// Pyracurse (48K)
 	&BurnDrvnes_pyramid,		// Pyramid (Unl)
 	&BurnSpecPyramidescape,		// Pyramid Escape (128K) (HB, v0.8.0)
-	&BurnDrvsms_pyramidescape,	// Pyramid Escape (HB, v1.2.1)
+	&BurnDrvsms_pyramidescape,	// Pyramid Escape (HB, v1.2.2)
 	&BurnDrvnes_pyramidii,		// Pyramid II (Unl)
 	&BurnDrvmd_pyramidgnk,		// Pyramid Magic (Japan, Game no Kandume MegaCD Rip)
 	&BurnDrvmd_pyramid,			// Pyramid Magic (Japan, SegaNet)
@@ -43336,7 +43371,6 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecRygar2020,			// Rygar - Colour Enhancement (48K) (Hack)
 	&BurnDrvsms_rygarct,		// Rygar - Custom Title (Hack)
 	&BurnSpecrygar,				// Rygar - Legendary Warrior (48K)
-	&BurnSpecKojizit,			// Ryo in soccorso della Superlega Z (Italian) (128K) (HB)
 	&BurnDrvRyujina,			// Ryu Jin (Japan, ET910000A PCB)
 	&BurnDrvRyujin,				// Ryu Jin (Japan, ET910000B PCB)
 	&BurnDrvRyukyud,			// RyuKyu (Japan) (bootleg of FD1094 317-5023 set)
@@ -45144,6 +45178,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSpecross,			// Spectrum Cross (16K)
 	&BurnDrvSpeedbal,			// Speed Ball (set 1)
 	&BurnDrvSpeedbala,			// Speed Ball (set 2)
+	&BurnDrvSpeedbalb,			// Speed Ball (set 3)
 	&BurnDrvSpdball,			// Speed Ball - Contest at Neonworld (prototype)
 	&BurnDrvSpdcoin,			// Speed Coin (prototype)
 	&BurnDrvMSX_speedking,		// Speed King (Euro)
@@ -45506,6 +45541,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_startropicsmf,	// StarTropics - Music Fix (Hack)
 	&BurnDrvnes_startiits,		// Startropics II: Zoda's Revenge (Hack, Spanish)
 	&BurnDrvnes_startii,		// Startropics II: Zoda's Revenge (USA)
+	&BurnSpecStarwashmf128,		// Starwash: la mision final (Spanish) (128K) (HB, v1.0.4-beta.1)
+	&BurnSpecStarwashmf48,		// Starwash: la mision final (Spanish) (48K) (HB, v1.0.4-beta.1)
 	&BurnDrvStealsee,			// Steal See
 	&BurnDrvcv_steam,			// Steamroller (USA, Prototype)
 	&BurnDrvnes_stedj,			// Sted: Iseki Wakusei no Yabou (Japan)
@@ -46941,6 +46978,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecSuperhair48,		// SuperHair (48K) (HB)
 	&BurnSpecSuperhair2,		// SuperHair 2: Revenge of the Wizard (128K) (HB)
 	&BurnDrvSsoldier,			// Superior Soldiers (US)
+	&BurnSpecSlopez1,			// Superlopez: El senor de los chupetes - Parte 1 (Spanish) (48K) (HB)
+	&BurnSpecSlopez2,			// Superlopez: El senor de los chupetes - Parte 2 (Spanish) (48K) (HB)
 	&BurnDrvmd_Supermans,		// Superman (Hack, Spanish)
 	&BurnDrvnes_supermanh,		// Superman (Hack, v1.1)
 	&BurnDrvnes_supermanj,		// Superman (Japan)
@@ -50090,6 +50129,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_worldilljp2,		// World of Illusion: Fushigi na Magic Box (Japan, Prototype B)
 	&BurnSpecWoow,				// World of One Way, A (16K) (HB, v0.41)
 	&BurnSpecWospells,			// World of Spells (48K) (HB)
+	&BurnSpecWospellssc,		// World of Spells - Santa Claus (48K) (HB)
 	&BurnDrvnes_worldwarc,		// World of Warcraft - Demon Hunter (China) (Unl)
 	&BurnDrvnes_worldwar,		// World of Warcraft - Demon Hunter (Hack, English)
 	&BurnDrvWpksocv2,			// World PK Soccer V2 (ver 1.1)
@@ -51485,6 +51525,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_alibabaa", "msx/d_msx.cpp"},
 	{ "sms_alibaba", "sms/d_sms.cpp"},
 	{ "md_alicesisters", "megadrive/d_megadrive.cpp"},
+	{ "spec_alicia", "spectrum/d_spectrum.cpp"},
+	{ "spec_aliciaesp", "spectrum/d_spectrum.cpp"},
+	{ "spec_aliciamarav", "spectrum/d_spectrum.cpp"},
 	{ "spec_aliente", "spectrum/d_spectrum.cpp"},
 	{ "spec_alienit", "spectrum/d_spectrum.cpp"},
 	{ "snes_alien3e", "snes/d_snes.cpp"},
@@ -52528,8 +52571,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_barbpt2", "spectrum/d_spectrum.cpp"},
 	{ "md_barbarianzxs", "megadrive/d_megadrive.cpp"},
 	{ "pce_barbarianzxs", "pce/d_pce.cpp"},
-	{ "cv_barbarricade", "coleco/d_coleco.cpp"},
 	{ "sg1k_barbarricade", "sg1000/d_sg1000.cpp"},
+	{ "cv_barbarricade", "coleco/d_coleco.cpp"},
 	{ "snes_barbiesupermodel", "snes/d_snes.cpp"},
 	{ "snes_barbievacationadv", "snes/d_snes.cpp"},
 	{ "gg_barbie", "sms/d_sms.cpp"},
@@ -60034,6 +60077,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_harddriv", "megadrive/d_megadrive.cpp"},
 	{ "harddunkj", "sega/d_segas32.cpp"},
 	{ "harddunk", "sega/d_segas32.cpp"},
+	{ "cv_hardhat", "coleco/d_coleco.cpp"},
 	{ "cv_hardhatmack", "coleco/d_coleco.cpp"},
 	{ "hardhat", "pre90s/d_exidy.cpp"},
 	{ "hardheadb", "pre90s/d_suna8.cpp"},
@@ -60559,6 +60603,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_hurricanese", "snes/d_snes.cpp"},
 	{ "snes_hurricanes", "snes/d_snes.cpp"},
 	{ "spec_hurtingzone", "spectrum/d_spectrum.cpp"},
+	{ "cv_hustle", "coleco/d_coleco.cpp"},
 	{ "cv_hchumy", "coleco/d_coleco.cpp"},
 	{ "sg1k_hustle", "sg1000/d_sg1000.cpp"},
 	{ "msx_hustle", "msx/d_msx.cpp"},
@@ -62026,8 +62071,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "ngp_koikoi", "pst90s/d_ngp.cpp"},
 	{ "koikois2", "pst90s/d_ssv.cpp"},
 	{ "rockragej", "konami/d_rockrage.cpp"},
-	{ "spec_kojizes", "spectrum/d_spectrum.cpp"},
-	{ "spec_kojizen", "spectrum/d_spectrum.cpp"},
 	{ "nes_kokoadventure", "nes/d_nes.cpp"},
 	{ "eto", "taito/d_asuka.cpp"},
 	{ "etoa", "taito/d_asuka.cpp"},
@@ -62623,6 +62666,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_littlnem", "nes/d_nes.cpp"},
 	{ "nes_littlninbro", "nes/d_nes.cpp"},
 	{ "spec_littlepuff", "spectrum/d_spectrum.cpp"},
+	{ "littlerb", "pst90s/d_littlerb.cpp"},
 	{ "nes_littlesamson", "nes/d_nes.cpp"},
 	{ "nes_littlesamsonh", "nes/d_nes.cpp"},
 	{ "sms_lilsamson", "sms/d_sms.cpp"},
@@ -63189,6 +63233,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mangchi", "pst90s/d_nmk16.cpp"},
 	{ "cmanhat", "dataeast/d_decocass.cpp"},
 	{ "manhatan", "konami/d_jailbrek.cpp"},
+	{ "cv_manhole", "coleco/d_coleco.cpp"},
+	{ "msx_manhole", "msx/d_msx.cpp"},
+	{ "sg1k_manhole", "sg1000/d_sg1000.cpp"},
 	{ "maniach", "pre90s/d_matmania.cpp"},
 	{ "maniach2", "pre90s/d_matmania.cpp"},
 	{ "nes_maniacmansione", "nes/d_nes.cpp"},
@@ -63481,6 +63528,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_maxstone48es", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstone2es", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstone2en", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstonetwoees", "spectrum/d_spectrum.cpp"},
+	{ "spec_maxstonetwohes", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstonemhes", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstonemhen", "spectrum/d_spectrum.cpp"},
 	{ "spec_maxstonetwoe", "spectrum/d_spectrum.cpp"},
@@ -63518,6 +63567,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "mazingerj", "cave/d_mazinger.cpp"},
 	{ "snes_mazingerz", "snes/d_snes.cpp"},
 	{ "mazinger", "cave/d_mazinger.cpp"},
+	{ "spec_kojizes", "spectrum/d_spectrum.cpp"},
+	{ "spec_kojizen", "spectrum/d_spectrum.cpp"},
+	{ "spec_kojizit", "spectrum/d_spectrum.cpp"},
 	{ "snes_mystdung2ts", "snes/d_snes.cpp"},
 	{ "spec_mazy", "spectrum/d_spectrum.cpp"},
 	{ "sms_mazy", "sms/d_sms.cpp"},
@@ -65508,6 +65560,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "msx_ninjasav", "msx/d_msx.cpp"},
 	{ "spec_ninjascooter", "spectrum/d_spectrum.cpp"},
 	{ "spec_ninjasac1", "spectrum/d_spectrum.cpp"},
+	{ "spec_ninjasac2", "spectrum/d_spectrum.cpp"},
 	{ "spec_ninjaspirit", "spectrum/d_spectrum.cpp"},
 	{ "tg_nspirit", "pce/d_pce.cpp"},
 	{ "nspirit", "irem/d_m72.cpp"},
@@ -67169,6 +67222,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_projstealthfighter", "spectrum/d_spectrum.cpp"},
 	{ "spec_pvaelius", "spectrum/d_spectrum.cpp"},
 	{ "sms_sms3samp", "sms/d_sms.cpp"},
+	{ "spec_starwash128", "spectrum/d_spectrum.cpp"},
+	{ "spec_starwash48", "spectrum/d_spectrum.cpp"},
 	{ "spec_psichess", "spectrum/d_spectrum.cpp"},
 	{ "spec_pssst", "spectrum/d_spectrum.cpp"},
 	{ "md_psyoblade", "megadrive/d_megadrive.cpp"},
@@ -68607,7 +68662,6 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_rygar2020", "spectrum/d_spectrum.cpp"},
 	{ "sms_rygarct", "sms/d_sms.cpp"},
 	{ "spec_rygar", "spectrum/d_spectrum.cpp"},
-	{ "spec_kojizit", "spectrum/d_spectrum.cpp"},
 	{ "ryujina", "taito/d_taitob.cpp"},
 	{ "ryujin", "taito/d_taitob.cpp"},
 	{ "ryukyud", "sega/d_sys16b.cpp"},
@@ -70397,6 +70451,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_specross", "spectrum/d_spectrum.cpp"},
 	{ "speedbal", "pre90s/d_speedbal.cpp"},
 	{ "speedbala", "pre90s/d_speedbal.cpp"},
+	{ "speedbalb", "pre90s/d_speedbal.cpp"},
 	{ "spdball", "pre90s/d_williams.cpp"},
 	{ "spdcoin", "galaxian/d_galaxian.cpp"},
 	{ "msx_speedking", "msx/d_msx.cpp"},
@@ -70759,6 +70814,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_startropicsmf", "nes/d_nes.cpp"},
 	{ "nes_startiits", "nes/d_nes.cpp"},
 	{ "nes_startii", "nes/d_nes.cpp"},
+	{ "spec_starwashmf128", "spectrum/d_spectrum.cpp"},
+	{ "spec_starwashmf48", "spectrum/d_spectrum.cpp"},
 	{ "stealsee", "pst90s/d_eolith.cpp"},
 	{ "cv_steam", "coleco/d_coleco.cpp"},
 	{ "nes_stedj", "nes/d_nes.cpp"},
@@ -72170,6 +72227,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_superhair48", "spectrum/d_spectrum.cpp"},
 	{ "spec_superhair2", "spectrum/d_spectrum.cpp"},
 	{ "ssoldier", "irem/d_m92.cpp"},
+	{ "spec_slopez1", "spectrum/d_spectrum.cpp"},
+	{ "spec_slopez2", "spectrum/d_spectrum.cpp"},
 	{ "md_supermans", "megadrive/d_megadrive.cpp"},
 	{ "nes_supermanh", "nes/d_nes.cpp"},
 	{ "nes_supermanj", "nes/d_nes.cpp"},
@@ -75287,6 +75346,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "md_worldilljp2", "megadrive/d_megadrive.cpp"},
 	{ "spec_woow", "spectrum/d_spectrum.cpp"},
 	{ "spec_wospells", "spectrum/d_spectrum.cpp"},
+	{ "spec_wospellssc", "spectrum/d_spectrum.cpp"},
 	{ "nes_worldwarc", "nes/d_nes.cpp"},
 	{ "nes_worldwar", "nes/d_nes.cpp"},
 	{ "wpksocv2", "pst90s/d_ms32.cpp"},
