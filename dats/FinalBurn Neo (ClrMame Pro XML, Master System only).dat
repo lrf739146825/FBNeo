@@ -3809,10 +3809,10 @@
 	</game>
 	<game name="mbarbarricade" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Master Barbarricade (HB, RC2)</description>
+		<description>Master Barbarricade (HB, 06-25-26)</description>
 		<year>2026</year>
 		<manufacturer>Jess Creations - ArugulaZ</manufacturer>
-		<rom name="Master Barbarricade RC2 (2026)(Jess Creations - ArugulaZ).sms" size="49152" crc="12ab8665"/>
+		<rom name="Master Barbarricade 06-25-26 (2026)(Jess Creations - ArugulaZ).sms" size="49152" crc="2426d6ea"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

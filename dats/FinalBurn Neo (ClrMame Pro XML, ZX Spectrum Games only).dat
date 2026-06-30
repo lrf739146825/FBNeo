@@ -4785,16 +4785,16 @@
 	</game>
 	<game name="buckrogers" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Buck Rogers: Planet of Zoom (48K)</description>
-		<year>1984</year>
+		<year>1985</year>
 		<manufacturer>U.S. Gold</manufacturer>
-		<rom name="Buck Rogers - Planet of Zoom 48K (1985)(U.S. Gold).z80" size="30201" crc="e8b65171"/>
+		<rom name="Buck Rogers - Planet of Zoom 48K (1985)(U.S. Gold).tzx" size="42183" crc="ce0c93cc"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="budokan" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Select 'Teclado' to use controller</comment>
-		<description>Budokan - The Martial Spirit (48K)</description>
+		<description>Budokan: The Martial Spirit (48K)</description>
 		<year>1991</year>
 		<manufacturer>Dro Soft</manufacturer>
 		<rom name="Budokan - The Martial Spirit 48K (1991)(Dro Soft).tap" size="110405" crc="7672dc9d"/>
@@ -9173,7 +9173,7 @@
 		<description>Don't Panic! (16K)</description>
 		<year>1985</year>
 		<manufacturer>Firebird Software</manufacturer>
-		<rom name="Don't Panic! 16K (1985)(Firebird Software).z80" size="15293" crc="75879d60"/>
+		<rom name="Don't Panic! 16K (1985)(Firebird Software).tzx" size="16603" crc="245b5b30"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -9529,10 +9529,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="dragonspirit" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Dragon Spirit (128K)</description>
+		<description>Dragon Spirit (48K-128K)</description>
 		<year>1989</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="Dragon Spirit (1989)(Domark).tap" size="164427" crc="adc4c7cf"/>
+		<rom name="Dragon Spirit 48K-128K (1989)(Domark).tap" size="164427" crc="adc4c7cf"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -27750,6 +27750,28 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="spacinv" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, K: insert coins - 1or2: start - P1/P2: O/P and A</comment>
+		<description>Space invaders (48K-128K) (HB, v1.4.1)</description>
+		<year>2021</year>
+		<manufacturer>SplinterGU</manufacturer>
+		<rom name="Space invaders v1.4.1 48K-128K (2021)(SplinterGU).tzx" size="29436" crc="61582cb7"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spacinvcoop" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, K: insert coins - 1or2: start - P1: Q/W and X - P2: O/P and SPACE</comment>
+		<description>Space Invaders Co-Op (48K-128K) (HB, v2.0.1)</description>
+		<year>2026</year>
+		<manufacturer>SplinterGU</manufacturer>
+		<rom name="Space Invaders Co-Op v2.0.1 48K-128K (2026)(SplinterGU).tzx" size="32554" crc="19f54c9f"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="spacejourney" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Space Journey (48K) (HB)</description>
@@ -28037,6 +28059,28 @@
 		<rom name="Spherical Remastered 128K (2015)(Rafal Miazga).tap" size="171049" crc="c5ae07e6"/>
 		<rom name="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spiderblasten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Spider Blast (English) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Wizbit Games</manufacturer>
+		<rom name="Spider Blast EN 48K-128K (2026)(Wizbit Games).tap" size="44915" crc="d6d49818"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spiderblastes" cloneof="spiderblasten" romof="spiderblasten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Spider Blast (Spanish) (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Wizbit Games</manufacturer>
+		<rom name="Spider Blast ES (48K-128K) (2026)(Wizbit Games).tap" size="44915" crc="a509a830"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -29219,11 +29263,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="ssinvaders" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>In main menu: 'A' to move - 'Q' to select</comment>
+		<comment>Options menu: use 'A' to move and 'Q' to select</comment>
 		<description>Super Space Invaders (128K)</description>
 		<year>1991</year>
 		<manufacturer>Domark</manufacturer>
-		<rom name="Super Space Invaders 128K (1991)(Domark).z80" size="104637" crc="2a36ad52"/>
+		<rom name="Super Space Invaders 128K (1991)(Domark).tzx" size="119931" crc="9e5ce705"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
