@@ -2973,7 +2973,7 @@ DRV		BurnDrvBuccanrsb;
 DRV		BurnDrvsnes_Buckrogers;
 DRV		BurnDrvcv_buckrogsgm;
 DRV		BurnDrvmd_buckrog;
-DRV		BurnSpecbuckrogers;
+DRV		BurnSpecBuckrogers;
 DRV		BurnDrvMSX_buckrog;
 DRV		BurnDrvBuckrogn;
 DRV		BurnDrvBuckrogn2;
@@ -4475,6 +4475,7 @@ DRV		BurnDrvCrkdownj;
 DRV		BurnDrvCrkdownu;
 DRV		BurnDrvmd_crkdownu;
 DRV		BurnDrvCrkdown;
+DRV		BurnDrvcv_crackpots;
 DRV		BurnDrvCracksht;
 DRV		BurnSpecCracky;
 DRV		BurnDrvsms_cracky;
@@ -4490,7 +4491,9 @@ DRV		BurnDrvcrashh;
 DRV		BurnDrvCrash;
 DRV		BurnDrvCrasha;
 DRV		BurnDrvmd_crash;
+DRV		BurnDrvsnes_Crashband2en;
 DRV		BurnDrvsnes_Crashbanden;
+DRV		BurnDrvsnes_Crashband2pt;
 DRV		BurnDrvsnes_Crashbandpt;
 #if defined FBNEO_DEBUG
 DRV		BurnDrvCrater;			// Graphics Issues [NOT WORKING]
@@ -11290,9 +11293,9 @@ DRV		BurnDrvkov2nl_302hk;
 DRV		BurnDrvkov2nl_302jp;
 DRV		BurnDrvkov2nl;
 DRV		BurnDrvkov2nl_302tw;
-DRV		BurnDrvkov2nld_300cn;
-DRV		BurnDrvkov2nld_301cn;
-DRV		BurnDrvkov2nld_302cn;
+DRV		BurnDrvkov2nld_300;
+DRV		BurnDrvkov2nld_301;
+DRV		BurnDrvkov2nld;
 DRV		BurnDrvKov2pemp;
 DRV		BurnDrvKov2p200;
 DRV		BurnDrvKov2p202;
@@ -15212,9 +15215,9 @@ DRV		BurnDrvorleg2_104hk;
 DRV		BurnDrvorleg2_104jp;
 DRV		BurnDrvorleg2;
 DRV		BurnDrvorleg2_104tw;
-DRV		BurnDrvorleg2d_101cn;
-DRV		BurnDrvorleg2d_103cn;
-DRV		BurnDrvororleg2d_104cn;
+DRV		BurnDrvorleg2d_101;
+DRV		BurnDrvorleg2d_103;
+DRV		BurnDrvororleg2d;
 DRV		BurnDrvoldsdsgl;
 DRV		BurnDrvOlds100;
 DRV		BurnDrvOlds100a;
@@ -15530,6 +15533,7 @@ DRV		BurnSpecPaletoj2sp;
 DRV		BurnDrvsg1k_palikat;
 DRV		BurnSpecPanamajoe;
 DRV		BurnDrvnes_pandababy;
+DRV		BurnDrvmd_pandajump;
 DRV		BurnDrvPandajump;
 DRV		BurnDrvPandajump2;
 DRV		BurnDrvnes_pandaworld;
@@ -19859,6 +19863,8 @@ DRV		BurnDrvnes_speluiij;
 DRV		BurnDrvSpelunkr;
 DRV		BurnSpecSpherical;
 DRV		BurnSpecSpherical128rm;
+DRV		BurnSpecSpiderblasten;
+DRV		BurnSpecSpiderblastes;
 DRV		BurnSpecSpidmami;
 DRV		BurnSpecSpidyweb;
 DRV		BurnDrvMSX_spider;
@@ -27249,7 +27255,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvmd_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
 	&BurnDrvpce_barbarianzxs,	// Barbarian: The Ultimate Warrior - ZX Spectrum (HB)
 	&BurnDrvsg1k_barbarricade,	// Barbarricade (HB, 06-02-26)
-	&BurnDrvcv_barbarricade,	// Barbarricade (HB, 06-17-26)
+	&BurnDrvcv_barbarricade,	// Barbarricade (HB, 06-25-26)
 	&BurnDrvsnes_Barbiesupermodel,// Barbie - Super Model (USA)
 	&BurnDrvsnes_Barbievacationadv,// Barbie - Vacation Adventure (USA, Prototype)
 	&BurnDrvgg_barbie,			// Barbie Super Model (Prototype)
@@ -28476,7 +28482,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Buckrogers,	// Buck Rogers - The Arcade Game (USA, Prototype)
 	&BurnDrvcv_buckrogsgm,		// Buck Rogers Super Game (SGM) (HB)
 	&BurnDrvmd_buckrog,			// Buck Rogers: Countdown to Doomsday (Euro, USA)
-	&BurnSpecbuckrogers,		// Buck Rogers: Planet of Zoom (48K)
+	&BurnSpecBuckrogers,		// Buck Rogers: Planet of Zoom (48K)
 	&BurnDrvMSX_buckrog,		// Buck Rogers: Planet of Zoom (Japan)
 	&BurnDrvBuckrogn,			// Buck Rogers: Planet of Zoom (not encrypted, set 1)
 	&BurnDrvBuckrogn2,			// Buck Rogers: Planet of Zoom (not encrypted, set 2)
@@ -28493,7 +28499,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvBuckyuab,			// Bucky O'Hare (ver UAB)
 	&BurnDrvMSX_bdg110,			// Buddhagillie (HB, v1.1)
 	&BurnDrvMSX_budokan,		// Budokan (Euro)
-	&BurnSpecBudokan,			// Budokan - The Martial Spirit (48K)
+	&BurnSpecBudokan,			// Budokan: The Martial Spirit (48K)
 	&BurnDrvmd_budokan,			// Budokan: The Martial Spirit (Euro)
 	&BurnDrvmd_budokanp,		// Budokan: The Martial Spirit (Prototype)
 	&BurnDrvmd_budokanu,		// Budokan: The Martial Spirit (USA)
@@ -29978,6 +29984,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCrkdownu,			// Crack Down (US, Floppy Based, FD1094 317-0058-04d)
 	&BurnDrvmd_crkdownu,		// Crack Down (USA)
 	&BurnDrvCrkdown,			// Crack Down (World, Floppy Based, FD1094 317-0058-04c)
+	&BurnDrvcv_crackpots,		// CrackPots (HB)
 	&BurnDrvCracksht,			// Crackshot (version 2.0)
 	&BurnSpecCracky,			// Cracky (48K) (HB)
 	&BurnDrvsms_cracky,			// Cracky (HB)
@@ -29993,8 +30000,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvCrash,				// Crash (set 1)
 	&BurnDrvCrasha,				// Crash (set 2)
 	&BurnDrvmd_crash,			// Crash Bandicoot (Russia) (Unl)
-	&BurnDrvsnes_Crashbanden,	// Crash Bandicoot and the Retro Dimension (GlobalHack, English)
-	&BurnDrvsnes_Crashbandpt,	// Crash Bandicoot e a Dimensao Retro (GlobalHack, Portuguese)
+	&BurnDrvsnes_Crashband2en,	// Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt (GlobalHack, English v1.02)
+	&BurnDrvsnes_Crashbanden,	// Crash Bandicoot and the Retro Dimension Enhanced (GlobalHack, English v1.22)
+	&BurnDrvsnes_Crashband2pt,	// Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.02)
+	&BurnDrvsnes_Crashbandpt,	// Crash Bandicoot e a Dimensao Retro Versao Melhorada (GlobalHack, Portuguese v1.22)
 #if defined FBNEO_DEBUG
 	&BurnDrvCrater,				// Crater Raider [Graphics Issues, NOT WORKING]
 #endif
@@ -31145,7 +31154,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvDdp3blk,			// DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, newer)
 	&BurnDrvDdp3blka,			// DoDonPachi Dai-Ou-Jou Black Label (Japan, 2002.10.07.Black Ver, older)
 	&BurnDrvddpdojt,			// DoDonPachi Dai-Ou-Jou Tamashii (V201, China)
-	&BurnDrvddpdojtd,			// DoDonPachi Dai-Ou-Jou Tamashii (V201, China, Decrypted)
+	&BurnDrvddpdojtd,			// DoDonPachi Dai-Ou-Jou Tamashii (V201, Decrypted)
 	&BurnDrvDdp2100j,			// DoDonPachi II (Japan, ver. 100)
 	&BurnDrvDdp2101j,			// DoDonPachi II (Japan, ver. 101)
 	&BurnDrvDdp2j,				// DoDonPachi II (Japan, ver. 102)
@@ -31659,7 +31668,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvMSX_romancia,		// Dragon Slayer Jr. ~ Romancia (Japan)
 	&BurnDrvmd_dslayed,			// Dragon Slayer: The Legend of Heroes (Japan)
 	&BurnDrvmd_dslayed2,		// Dragon Slayer: The Legend of Heroes II (Japan)
-	&BurnSpecDragonspirit,		// Dragon Spirit (128K)
+	&BurnSpecDragonspirit,		// Dragon Spirit (48K-128K)
 	&BurnDrvDspirit2,			// Dragon Spirit (DS2)
 	&BurnDrvpce_dspirit,		// Dragon Spirit (Japan)
 	&BurnDrvDspirit,			// Dragon Spirit (new version (DS3))
@@ -36793,9 +36802,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkov2nl_302jp,		// Knights of Valour 2 New Legend (V302, Japan)
 	&BurnDrvkov2nl,				// Knights of Valour 2 New Legend (V302, Overseas)
 	&BurnDrvkov2nl_302tw,		// Knights of Valour 2 New Legend (V302, Taiwan)
-	&BurnDrvkov2nld_300cn,		// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Gaishi Yingxiong (V300, China, Decrypted)
-	&BurnDrvkov2nld_301cn,		// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Gaishi Yingxiong (V301, China, Decrypted)
-	&BurnDrvkov2nld_302cn,		// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Gaishi Yingxiong (V302, China, Decrypted)
+	&BurnDrvkov2nld_300,		// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Hengsao Qianjun (V300, Decrypted)
+	&BurnDrvkov2nld_301,		// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Hengsao Qianjun (V301, Decrypted)
+	&BurnDrvkov2nld,			// Knights of Valour 2 New Legend / Sanguo Zhan Ji 2 Hengsao Qianjun (V302, Decrypted)
 	&BurnDrvKov2pemp,			// Knights of Valour 2 Plus - Extend Magic Plus (Hack)
 	&BurnDrvKov2p200,			// Knights of Valour 2 Plus - Nine Dragons / Sanguo Zhan Ji 2 Qunxiong Zhengba / Sanguo Zhan Ji 2 Feilong Zai Tian / Sangoku Senki Busyou Souha (ver. M200XX, 200, 100CN)
 	&BurnDrvKov2p202,			// Knights of Valour 2 Plus - Nine Dragons / Sanguo Zhan Ji 2 Qunxiong Zhengba / Sanguo Zhan Ji 2 Feilong Zai Tian / Sangoku Senki Busyou Souha (ver. M202XX, 200, 100CN)
@@ -36808,10 +36817,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvkov3_101,			// Knights of Valour 3 (V101, China)
 	&BurnDrvkov3_102,			// Knights of Valour 3 (V102, China)
 	&BurnDrvkov3,				// Knights of Valour 3 (V104, China)
-	&BurnDrvkov3d_100,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V100, China, Decrypted)
-	&BurnDrvkov3d_101,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V101, China, Decrypted)
-	&BurnDrvkov3d_102,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V102, China, Decrypted)
-	&BurnDrvkov3d,				// Knights of Valour 3 / Sanguo Zhan Ji 3 (V104, China, Decrypted)
+	&BurnDrvkov3d_100,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V100, China, Hong kong, Taiwan, Decrypted)
+	&BurnDrvkov3d_101,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V101, China, Hong kong, Taiwan, Decrypted)
+	&BurnDrvkov3d_102,			// Knights of Valour 3 / Sanguo Zhan Ji 3 (V102, China, Hong kong, Taiwan, Decrypted)
+	&BurnDrvkov3d,				// Knights of Valour 3 / Sanguo Zhan Ji 3 (V104, China, Hong kong, Taiwan, Decrypted)
 	&BurnDrvkovplusq,			// Knights of Valour Plus - New Biography of Heroes (V120)
 	&BurnDrvkovplus20tx,		// Knights of Valour Plus - Qun Xiong Luan Wu 2020
 	&BurnDrvKovplusbl,			// Knights of Valour Plus / San Guo Zhan Ji - Zeng Zong Plus/ Sangoku Senki Masamune Plus (bootleg, V117CN?) 
@@ -38256,7 +38265,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Mask,			// Mask, The (USA)
 	&BurnDrvnes_maskedninhan,	// Masked Ninja Hanamaru (Hack, English v1.1)
 	&BurnDrvKamenrid,			// Masked Riders Club Battle Race / Kamen Rider Club Battle Racer
-	&BurnDrvsms_mbarbarricade,	// Master Barbarricade (HB, RC2)
+	&BurnDrvsms_mbarbarricade,	// Master Barbarricade (HB, 06-25-26)
 	&BurnSpecMasterblaster,		// Master Blaster (48K)
 	&BurnDrvMastboyod,			// Master Boy (1987, Z80 hardware)
 	&BurnDrvMastboyo,			// Master Boy (1987, Z80 hardware, Covielsa, set 1)
@@ -40715,9 +40724,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvorleg2_104jp,		// Oriental Legend 2 (V104, Japan)
 	&BurnDrvorleg2,				// Oriental Legend 2 (V104, Overseas)
 	&BurnDrvorleg2_104tw,		// Oriental Legend 2 (V104, Taiwan)
-	&BurnDrvorleg2d_101cn,		// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V101, China, Decrypted)
-	&BurnDrvorleg2d_103cn,		// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V103, China, Decrypted)
-	&BurnDrvororleg2d_104cn,	// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V104, China, Decrypted)
+	&BurnDrvorleg2d_101,		// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V101, Decrypted)
+	&BurnDrvorleg2d_103,		// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V103, Decrypted)
+	&BurnDrvororleg2d,			// Oriental Legend 2 / Xi You Shi E Zhuan 2 (V104, Decrypted)
 	&BurnDrvoldsdsgl,			// Oriental Legend Special - Da Sheng Gui Lai (Hack)
 	&BurnDrvOlds100,			// Oriental Legend Special / Xiyou Shi E Zhuan Super (ver. 100, set 1)
 	&BurnDrvOlds100a,			// Oriental Legend Special / Xiyou Shi E Zhuan Super (ver. 100, set 2)
@@ -41033,6 +41042,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsg1k_palikat,		// Palikat (HB)
 	&BurnSpecPanamajoe,			// Panama Joe ~ Montezuma's Revenge (48K)
 	&BurnDrvnes_pandababy,		// Panda Baby (Unl)
+	&BurnDrvmd_pandajump,		// Panda Jump (HB)
 	&BurnDrvPandajump,			// Panda Jump (set 1)
 	&BurnDrvPandajump2,			// Panda Jump (set 2)
 	&BurnDrvnes_pandaworld,		// Panda World (Unl)
@@ -43691,7 +43701,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSsho2emb,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Move Modeasy Special Attacks V4, Hack)
 	&BurnDrvSamsho2,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (NGM-063 ~ NGH-063)
 	&BurnDrvSamsho2t,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Optimized, Hack)
-	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.8, Hack)
+	&BurnDrvSamsho2pe,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Perfect V. 2.9, Hack)
 	&BurnDrvSamsh2sp,			// Samurai Shodown II / Shin Samurai Spirits - Haohmaru Jigokuhen (Special 2017, Hack)
 	&BurnDrvSamsh3bs,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (Boss, Hack)
 	&BurnDrvSamSho3h,			// Samurai Shodown III / Samurai Spirits - Zankurou Musouken (NGH-087)
@@ -45362,6 +45372,8 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvSpelunkr,			// Spelunker
 	&BurnSpecSpherical,			// Spherical (48K)
 	&BurnSpecSpherical128rm,	// Spherical Remastered (128K) (Hack)
+	&BurnSpecSpiderblasten,		// Spider Blast (English) (48K-128K) (HB)
+	&BurnSpecSpiderblastes,		// Spider Blast (Spanish) (48K-128K) (HB)
 	&BurnSpecSpidmami,			// Spider Mami (Spanish) (128K) (HB)
 	&BurnSpecSpidyweb,			// Spider's Web (16K)
 	&BurnDrvMSX_spider,			// Spider, The (Japan)
@@ -48047,7 +48059,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvKof98ult,			// The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (Ultimate Match, Hack)
 	&BurnDrvKof98mix,			// The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (Unlimited, Hack)
 	&BurnDrvkof98umh,			// The King of Fighters '98: Ultimate Match HERO (China, V100)
-	&BurnDrvkof98umhd,			// The King of Fighters '98: Ultimate Match HERO (V100, China, Decrypted)
+	&BurnDrvkof98umhd,			// The King of Fighters '98: Ultimate Match HERO (V100, Decrypted)
 	&BurnDrvKof99ae,			// The King of Fighters '99 - Millennium Battle (Anniversary, Hack)
 	&BurnDrvKof99cb,			// The King of Fighters '99 - Millennium Battle (Combo, Hack)
 	&BurnDrvKof99e,				// The King of Fighters '99 - Millennium Battle (earlier)
@@ -55447,6 +55459,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "crkdownu", "sega/d_sys24.cpp"},
 	{ "md_crkdownu", "megadrive/d_megadrive.cpp"},
 	{ "crkdown", "sega/d_sys24.cpp"},
+	{ "cv_crackpots", "coleco/d_coleco.cpp"},
 	{ "cracksht", "pre90s/d_exidy440.cpp"},
 	{ "spec_cracky", "spectrum/d_spectrum.cpp"},
 	{ "sms_cracky", "sms/d_sms.cpp"},
@@ -55462,7 +55475,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "crash", "pre90s/d_circus.cpp"},
 	{ "crasha", "pre90s/d_circus.cpp"},
 	{ "md_crash", "megadrive/d_megadrive.cpp"},
+	{ "snes_crashband2en", "snes/d_snes.cpp"},
 	{ "snes_crashbanden", "snes/d_snes.cpp"},
+	{ "snes_crashband2pt", "snes/d_snes.cpp"},
 	{ "snes_crashbandpt", "snes/d_snes.cpp"},
 	{ "crater", "pre90s/d_mcr3.cpp"},
 	{ "nes_cratersong", "nes/d_nes.cpp"},
@@ -62214,9 +62229,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "kov2nl_302jp", "pgm2/d_pgm2.cpp"},
 	{ "kov2nl", "pgm2/d_pgm2.cpp"},
 	{ "kov2nl_302tw", "pgm2/d_pgm2.cpp"},
-	{ "kov2nld_300cn", "pgm2/d_pgm2.cpp"},
-	{ "kov2nld_301cn", "pgm2/d_pgm2.cpp"},
-	{ "kov2nld_302cn", "pgm2/d_pgm2.cpp"},
+	{ "kov2nld_300", "pgm2/d_pgm2.cpp"},
+	{ "kov2nld_301", "pgm2/d_pgm2.cpp"},
+	{ "kov2nld", "pgm2/d_pgm2.cpp"},
 	{ "kov2pemp", "pgm/d_pgm.cpp"},
 	{ "kov2p200", "pgm/d_pgm.cpp"},
 	{ "kov2p202", "pgm/d_pgm.cpp"},
@@ -66106,9 +66121,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "orleg2_104jp", "pgm2/d_pgm2.cpp"},
 	{ "orleg2", "pgm2/d_pgm2.cpp"},
 	{ "orleg2_104tw", "pgm2/d_pgm2.cpp"},
-	{ "orleg2d_101cn", "pgm2/d_pgm2.cpp"},
-	{ "orleg2d_103cn", "pgm2/d_pgm2.cpp"},
-	{ "orleg2d_104cn", "pgm2/d_pgm2.cpp"},
+	{ "orleg2d_101", "pgm2/d_pgm2.cpp"},
+	{ "orleg2d_103", "pgm2/d_pgm2.cpp"},
+	{ "orleg2d", "pgm2/d_pgm2.cpp"},
 	{ "oldsdsgl", "pgm/d_pgm.cpp"},
 	{ "olds100", "pgm/d_pgm.cpp"},
 	{ "olds100a", "pgm/d_pgm.cpp"},
@@ -66422,6 +66437,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sg1k_palikat", "sg1000/d_sg1000.cpp"},
 	{ "spec_panamajoe", "spectrum/d_spectrum.cpp"},
 	{ "nes_pandababy", "nes/d_nes.cpp"},
+	{ "md_pandajump", "megadrive/d_megadrive.cpp"},
 	{ "pandajump", "galaxian/d_galaxian.cpp"},
 	{ "pandajump2", "galaxian/d_galaxian.cpp"},
 	{ "nes_pandaworld", "nes/d_nes.cpp"},
@@ -70715,6 +70731,8 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spelunkr", "irem/d_m62.cpp"},
 	{ "spec_spherical", "spectrum/d_spectrum.cpp"},
 	{ "spec_spherical128rm", "spectrum/d_spectrum.cpp"},
+	{ "spec_spiderblasten", "spectrum/d_spectrum.cpp"},
+	{ "spec_spiderblastes", "spectrum/d_spectrum.cpp"},
 	{ "spec_spidmami", "spectrum/d_spectrum.cpp"},
 	{ "spec_spidyweb", "spectrum/d_spectrum.cpp"},
 	{ "msx_spider", "msx/d_msx.cpp"},
