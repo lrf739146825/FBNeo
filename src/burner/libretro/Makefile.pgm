@@ -1,0 +1,47 @@
+# Minimal Libretro subset: IGS PGM (PolyGame Master)
+#
+# Build command: make SUBSET=pgm REGEN_HEADERS=1 -j$(nproc) -C src/burner/libretro
+#
+# Note: REGEN_HEADERS=1 ensures driverlist.h matches the linked drivers , platform = ??? is optional.
+
+SOURCES_CXX += \
+	$(FBNEO_BURN_DIR)/burn_sha1.cpp \
+	$(FBNEO_BURN_DIR)/burn_pal.cpp \
+	$(FBNEO_BURN_DIR)/tilemap_generic.cpp \
+	$(FBNEO_BURN_DIR)/tiles_generic.cpp \
+	$(FBNEO_BURN_DIR)/burn_bitmap.cpp \
+	\
+	$(FBNEO_CPU_DIR)/arm7/arm7.cpp \
+	$(FBNEO_CPU_DIR)/arm7_intf.cpp \
+	$(FBNEO_CPU_DIR)/m68000_intf.cpp \
+	$(FBNEO_CPU_DIR)/z80_intf.cpp \
+	$(Z80_CPU_DIR)/z80.cpp \
+	$(Z80_CPU_DIR)/z80ctc.cpp \
+	$(Z80_CPU_DIR)/z80daisy.cpp \
+	$(Z80_CPU_DIR)/z80pio.cpp \
+	\
+	$(FBNEO_BURN_SND_DIR)/ymz770.cpp \
+	$(FBNEO_BURN_SND_DIR)/ics2115.cpp \
+	$(FBNEO_BURN_SND_DIR)/samples.cpp \
+	$(FBNEO_BURN_SND_DIR)/mpeg_audio.cpp \
+	\
+	$(FBNEO_BURN_DEVICES_DIR)/joyprocess.cpp \
+	$(FBNEO_BURN_DEVICES_DIR)/v3021.cpp \
+	\
+	$(PGM_DIR)/d_pgm.cpp \
+	$(PGM_DIR)/pgm_run.cpp \
+	$(PGM_DIR)/pgm_draw.cpp \
+	$(PGM_DIR)/pgm_crypt.cpp \
+	$(PGM_DIR)/pgm_asic25.cpp \
+	$(PGM_DIR)/pgm_asic27a_type1.cpp \
+	$(PGM_DIR)/pgm_asic27a_type2.cpp \
+	$(PGM_DIR)/pgm_asic27a_type3.cpp \
+	$(PGM_DIR)/pgm_asic3.cpp \
+	$(PGM_DIR)/pgm_sprite_create.cpp
+
+SOURCES_C += \
+	$(M68K_CPU_DIR)/m68kcpu.c \
+	$(M68K_CPU_DIR)/m68kops.c
+
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO -DNO_PGM2
+CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO -DNO_PGM2

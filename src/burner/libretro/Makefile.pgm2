@@ -1,8 +1,8 @@
-# Minimal Libretro subset: IGS PGM2 (IGS036 / ARM946 + IGS037 + YMZ774) only.
+# Minimal Libretro subset: IGS PGM2 (PolyGame Master 2)
 #
-# Native: make SUBSET=pgm2 platform=unix REGEN_HEADERS=1 clean all -j$(nproc) -C src/burner/libretro
+# Build command: make SUBSET=pgm2 REGEN_HEADERS=1 -j$(nproc) -C src/burner/libretro
 #
-# REGEN_HEADERS=1 is required on first build (and after changing this file) so driverlist.h matches linked drivers.
+# Note: REGEN_HEADERS=1 ensures driverlist.h matches the linked drivers , platform = ??? is optional.
 
 SOURCES_CXX += $(FBNEO_BURN_DIR)/burn_bitmap.cpp \
 	$(FBNEO_BURN_DIR)/burn_led.cpp \
@@ -26,5 +26,5 @@ SOURCES_CXX += $(FBNEO_BURN_DIR)/burn_bitmap.cpp \
 	$(PGM2_DIR)/pgm2_draw.cpp \
 	$(PGM2_DIR)/pgm2_crypt.cpp
 
-CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO -DNO_CONSOLES_COMPUTERS
-CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_NEOGEO -DNO_CONSOLES_COMPUTERS
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO
+CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO

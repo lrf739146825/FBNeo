@@ -1,0 +1,26 @@
+# Minimal Libretro subset: CPS3 (Capcom Play System 3)
+#
+# Build command: make SUBSET=cps3 REGEN_HEADERS=1 -j$(nproc) -C src/burner/libretro
+#
+# Note: REGEN_HEADERS=1 ensures driverlist.h matches the linked drivers , platform = ??? is optional.
+
+SOURCES_CXX += \
+	$(FBNEO_BURN_DIR)/burn_sha1.cpp \
+	$(FBNEO_BURN_DIR)/burn_pal.cpp \
+	$(FBNEO_BURN_DIR)/burn_bitmap.cpp \
+	$(FBNEO_BURN_DIR)/tilemap_generic.cpp \
+	$(FBNEO_BURN_DIR)/tiles_generic.cpp \
+	\
+	$(FBNEO_CPU_DIR)/sh2/sh2.cpp \
+	\
+	$(FBNEO_BURN_SND_DIR)/samples.cpp \
+	\
+	$(FBNEO_BURN_DEVICES_DIR)/joyprocess.cpp \
+	\
+	$(CPS3_DIR)/cps3run.cpp \
+	$(CPS3_DIR)/cps3snd.cpp \
+	$(CPS3_DIR)/d_cps3.cpp
+
+CFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO -DNO_PGM2
+CXXFLAGS += -DSUBSET=\"$(SUBSET)\" -DNO_CONSOLES_COMPUTERS -DNO_NEOGEO -DNO_PGM2
+
