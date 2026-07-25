@@ -3,7 +3,7 @@
 #include "burnint.h"
 #include "samples.h"
 
-#if defined(BUILD_WIN32) || defined(__LIBRETRO__)	// Already tested platforms are added here
+#if defined(BUILD_WIN32) || defined(BUILD_SDL) || defined(BUILD_SDL2) || defined(__LIBRETRO__)	// Already tested platforms are added here
 #define INCLUDE_FLACMP3_SUPPORT
 #endif // BUILD_WIN32
 
