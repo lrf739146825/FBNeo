@@ -7897,6 +7897,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="462" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="moritash2" romof="st018" sourcefile="snes/d_snes.cpp">
+		<description>Hayazashi Nidan Morita Shougi 2 (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Seta</manufacturer>
+		<rom name="Hayazashi Nidan Morita Shougi 2 (J)(1995)(Seta).sfc" size="524288" crc="dd852671"/>
+		<rom name="st018.bin" merge="st018.bin" size="163840" crc="5c403cc5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="headonsoccer" sourcefile="snes/d_snes.cpp">
 		<description>Head-On Soccer (USA)</description>
 		<year>1995</year>
@@ -20020,6 +20029,15 @@
 		<year>1992</year>
 		<manufacturer>Hi Tech Expressions</manufacturer>
 		<rom name="Tom and Jerry (U)(1992)(Hi Tech Expressions).sfc" size="524288" crc="8b1dafbb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tomvsjerryp" sourcefile="snes/d_snes.cpp">
+		<comment>Prototype</comment>
+		<description>Tom vs Jerry - The Chase Is On! (Euro, Prototype)</description>
+		<year>1995</year>
+		<manufacturer>Software Creations</manufacturer>
+		<rom name="Tom vs Jerry - The Chase Is On! (E, Proto) (1995)(Software Creations).sfc" size="2097152" crc="690b8c85"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

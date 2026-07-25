@@ -136,6 +136,7 @@ TCHAR szAppCheatsPath[MAX_PATH];
 TCHAR szAppIpsesPath[MAX_PATH];
 TCHAR szAppRomdatasPath[MAX_PATH];
 TCHAR szAppPathDefPath[MAX_PATH];
+TCHAR szAppSnesMsu1Path[MAX_PATH];
 TCHAR szAppBurnVer[16];
 
 static char szRomsetPath[MAX_PATH]        = { 0 };
@@ -1995,22 +1996,19 @@ static bool retro_load_game_common()
 	// Initialize EEPROM path
 	snprintf_nowarn (szAppEEPROMPath, sizeof(szAppEEPROMPath), "%s%cfbneo%c", g_save_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 
-	// Create EEPROM path if it does not exist
-	// because of some bug on gekko based devices (see https://github.com/libretro/libretro-common/issues/161), we can't use the szAppEEPROMPath variable which requires the trailing slash
-	char EEPROMPathToCreate[MAX_PATH];
-	snprintf_nowarn (EEPROMPathToCreate, sizeof(EEPROMPathToCreate), "%s%cfbneo", g_save_dir, PATH_DEFAULT_SLASH_C());
-	path_mkdir(EEPROMPathToCreate);
-
 	// Initialize Hiscore path
 	snprintf_nowarn (szAppHiscorePath, sizeof(szAppHiscorePath), "%s%cfbneo%c", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 
 	// Initialize Samples path
 	snprintf_nowarn (szAppSamplesPath, sizeof(szAppSamplesPath), "%s%cfbneo%csamples%c", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 
+	// Initialize SNES MSU1 path
+	snprintf_nowarn (szAppSnesMsu1Path, sizeof(szAppSnesMsu1Path), "%s%cfbneo%csnesmsu1%c", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
+
 	// Initialize Cheats path
 	snprintf_nowarn (szAppCheatsPath, sizeof(szAppCheatsPath), "%s%cfbneo%ccheats%c", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 
-	// Initialize Ipses path
+	// Initialize Ips path
 	snprintf_nowarn(szAppIpsesPath, sizeof(szAppIpsesPath), "%s%cfbneo%cips%c", g_system_dir, PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C(), PATH_DEFAULT_SLASH_C());
 
 	// Initialize Romdata path
@@ -2024,6 +2022,17 @@ static bool retro_load_game_common()
 
 	// Initialize HDD path
 	snprintf_nowarn (szAppHDDPath, sizeof(szAppHDDPath), "%s%c", g_rom_dir, PATH_DEFAULT_SLASH_C());
+
+	// create some of those folders
+	// note: https://github.com/libretro/libretro-common/issues/161 is supposedly fixed,
+	//       so we don't have to worry about trailing slash
+	path_mkdir(szAppEEPROMPath);
+	path_mkdir(szAppHiscorePath);
+	path_mkdir(szAppSamplesPath);
+	path_mkdir(szAppSnesMsu1Path);
+	path_mkdir(szAppCheatsPath);
+	path_mkdir(szAppIpsesPath);
+	path_mkdir(szAppRomdatasPath);
 
 	gui_show = false;
 
