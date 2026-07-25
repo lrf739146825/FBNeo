@@ -600,6 +600,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="adkw" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Hack</comment>
 		<description>ADK World (Neo CD conversion)</description>
 		<year>1995</year>
 		<manufacturer>Alpha Denshi Co.</manufacturer>
@@ -17912,10 +17913,10 @@
 	</game>
 	<game name="turfmastsc" cloneof="turfmast" romof="turfmast" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.08)</description>
+		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.09)</description>
 		<year>2026</year>
 		<manufacturer>dericmiller</manufacturer>
-		<rom name="200-p1sc.p1" size="2097152" crc="c1c9751c"/>
+		<rom name="200-p1sc.p1" size="2097152" crc="efd0ef14"/>
 		<rom name="200-s1.s1" merge="200-s1.s1" size="131072" crc="9a5402b2"/>
 		<rom name="200-c1sc.c1" size="4194304" crc="bb2a69a7"/>
 		<rom name="200-c2sc.c2" size="4194304" crc="443e13c5"/>

@@ -19737,6 +19737,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="soldam" sourcefile="nes/d_nes.cpp">
+		<comment>Published by Homebrew Factory</comment>
+		<description>Soldam (World)</description>
+		<year>1992-2025</year>
+		<manufacturer>Jaleco</manufacturer>
+		<rom name="Soldam (World) (1992-2025)(Jaleco).nes" size="196624" crc="1dfd9206"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hikarnosenphoulgaon" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Soldier of Light Photon: The Ultimate Game on Planet Earth (Hack, English)</description>
@@ -20966,6 +20975,15 @@
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Super Mario Bros. 2 T-Spa (2017)(Wave).nes" size="262160" crc="36114415"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="smb2p" cloneof="smb2" romof="smb2" sourcefile="nes/d_nes.cpp">
+		<comment>Prototype</comment>
+		<description>Super Mario Bros. 2 (USA, Prototype)</description>
+		<year>1988</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Super Mario Bros. 2 (USA, Proto)(1988)(Nintendo).nes" size="131088" crc="4a8a2e84"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

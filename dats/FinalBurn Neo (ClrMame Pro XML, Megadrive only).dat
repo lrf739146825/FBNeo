@@ -2398,6 +2398,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="blueandr" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Blue And Red - Fight The Robots! (HB, v1.7 NTSC)</description>
+		<year>2026</year>
+		<manufacturer>Kaiju Wasp</manufacturer>
+		<rom name="Blue And Red - Fight The Robots! v1.7 NTSC (2026)(Kaiju Wasp).bin" size="2359296" crc="a3bef481"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bodycob" cloneof="bodyco" romof="bodyco" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Lightgun 'Menacer' compatible game</comment>
 		<description>Body Count (Brazil)</description>
@@ -11822,6 +11831,15 @@
 		<year>2025-26</year>
 		<manufacturer>RCampeador</manufacturer>
 		<rom name="Mega Pang v0.3 Beta (2025-26)(RCampeador).bin" size="1572864" crc="edc09063"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megapushori" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Mega Pushori (HB)</description>
+		<year>2026</year>
+		<manufacturer>abadede919302</manufacturer>
+		<rom name="Mega Pushori (2026)(abadede919302).bin" size="262144" crc="2f60ad1d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -241,6 +241,8 @@ INCLUDE_DIRS := $(FBNEO_BURNER_DIR)/win32 \
 	$(FBNEO_LIB_DIR)/zlib \
 	$(FBNEO_LIB_DIR)/lib7z \
 	$(FBNEO_LIB_DIR)/dr_libs \
+	$(FBNEO_LIB_DIR)/stb_vorbis \
+	$(FBNEO_LIB_DIR)/r8brain \
 	$(CAPCOM_DIR) \
 	$(KONAMI_DIR) \
 	$(DATAEAST_DIR) \
