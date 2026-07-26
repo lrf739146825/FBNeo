@@ -21146,6 +21146,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="smusa" cloneof="smb2" romof="smb2" sourcefile="nes/d_nes.cpp">
+		<description>Super Mario USA (Japan)</description>
+		<year>1992</year>
+		<manufacturer>Nintendo</manufacturer>
+		<rom name="Super Mario USA (Japan)(1992)(Nintendo).nes" size="262160" crc="94076bf6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="supermarwor" sourcefile="nes/d_nes.cpp">
 		<description>Super Mario World (Taiwan) (Unl)</description>
 		<year>1995</year>

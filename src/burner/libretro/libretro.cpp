@@ -141,7 +141,7 @@ TCHAR szAppBurnVer[16];
 
 static char szRomsetPath[MAX_PATH]        = { 0 };
 
-#define TYPES_MAX	(27)	// Maximum number of machine types
+#define TYPES_MAX	(28)	// Maximum number of machine types
 
 static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 	{
@@ -161,6 +161,7 @@ static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 		_T("nes"),
 		_T("fds"),
 		_T("ngp"),
+		_T("astro"),
 		_T("chf"),			_T("channelf")							// consoles_dir
 	},
 	{
@@ -180,6 +181,7 @@ static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 		_T("nes_"),
 		_T("fds_"),
 		_T("ngp_"),
+		_T("astro_"),
 		_T("chf_"),			_T("chf_")								// Signage of the console
 	}
 };
@@ -471,6 +473,7 @@ void retro_set_environment(retro_environment_t cb)
 		{ "Iso", "ccd|cue",    true, true, true, NULL, 0 },
 	};
 	static const struct retro_subsystem_info subsystems[] = {
+		{ "Bally Astrocade Home Computer",       "astro", subsystem_rom, 1, RETRO_GAME_TYPE_ASTRO },
 		{ "CBS ColecoVision",                    "cv",    subsystem_rom, 1, RETRO_GAME_TYPE_CV    },
 		{ "Fairchild ChannelF",                  "chf",   subsystem_rom, 1, RETRO_GAME_TYPE_CHF   },
 		{ "MSX 1",                               "msx",   subsystem_rom, 1, RETRO_GAME_TYPE_MSX   },
@@ -479,7 +482,7 @@ void retro_set_environment(retro_environment_t cb)
 		{ "Nec TurboGrafx-16",                   "tg16",  subsystem_rom, 1, RETRO_GAME_TYPE_TG    },
 		{ "Nintendo Entertainment System",       "nes",   subsystem_rom, 1, RETRO_GAME_TYPE_NES   },
 		{ "Nintendo Family Disk System",         "fds",   subsystem_rom, 1, RETRO_GAME_TYPE_FDS   },
-		{ "Super Nintendo Entertainment System", "snes",  subsystem_rom, 1, RETRO_GAME_TYPE_SNES   },
+		{ "Super Nintendo Entertainment System", "snes",  subsystem_rom, 1, RETRO_GAME_TYPE_SNES  },
 		{ "Sega GameGear",                       "gg",    subsystem_rom, 1, RETRO_GAME_TYPE_GG    },
 		{ "Sega Master System",                  "sms",   subsystem_rom, 1, RETRO_GAME_TYPE_SMS   },
 		{ "Sega Megadrive",                      "md",    subsystem_rom, 1, RETRO_GAME_TYPE_MD    },
@@ -1328,6 +1331,9 @@ int CreateAllDatfiles(char* dat_folder)
 
 	snprintf_nowarn(szFilename, sizeof(szFilename), "%s%c%s (%s).dat", dat_folder, PATH_DEFAULT_SLASH_C(), APP_TITLE, "ClrMame Pro XML, ZX Spectrum Games only");
 	create_datfile(szFilename, DAT_SPECTRUM_ONLY);
+
+	snprintf_nowarn(szFilename, sizeof(szFilename), "%s%c%s (%s).dat", dat_folder, PATH_DEFAULT_SLASH_C(), APP_TITLE, "ClrMame Pro XML, Bally Astrocade Games only");
+	create_datfile(szFilename, DAT_ASTROHOME_ONLY);
 #endif
 
 	return nRet;
@@ -2463,6 +2469,10 @@ bool retro_load_game(const struct retro_game_info *info)
 		HandleMessage(RETRO_LOG_INFO, "[FBNeo] subsystem chf identified from parent folder\n");
 		if (strncmp(g_driver_name, "chf_", 4) != 0) prefix = "chf_";
 	}
+	if(strcmp(g_rom_parent_dir, "astro")==0) {
+		HandleMessage(RETRO_LOG_INFO, "[FBNeo] subsystem astro identified from parent folder\n");
+		if (strncmp(g_driver_name, "astro_", 6) != 0) prefix = "astro_";
+	}
 	if(strcmp(g_rom_parent_dir, "neocd")==0 || strncmp(g_driver_name, "neocd_", 6)==0) {
 		HandleMessage(RETRO_LOG_INFO, "[FBNeo] subsystem neocd identified from parent folder\n");
 		prefix = "";
@@ -2529,6 +2539,9 @@ bool retro_load_game_special(unsigned game_type, const struct retro_game_info *i
 			break;
 		case RETRO_GAME_TYPE_CHF:
 			prefix = "chf_";
+			break;
+		case RETRO_GAME_TYPE_ASTRO:
+			prefix = "astro_";
 			break;
 		case RETRO_GAME_TYPE_NEOCD:
 			prefix = "";
