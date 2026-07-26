@@ -25,6 +25,7 @@
 #include <time.h>
 
 #ifndef SUPPORT_SPLIT_DRIVER
+ #define BUILD_ASTROHOME
  #define BUILD_ATARI
  #define BUILD_CAPCOM
  #define BUILD_CAVE
@@ -599,6 +600,7 @@ int BurnComputeSHA1(const UINT8 *buffer, int buffer_size, char *hash_str);
 #define HARDWARE_PREFIX_CHANNELF                        (0x21000000)
 #define HARDWARE_PREFIX_SNES                            (0x22000000)
 #define HARDWARE_PREFIX_IGS_PGM2						(0x23000000)
+#define HARDWARE_PREFIX_ASTROHOME                       (0x24000000)
 
 #define HARDWARE_SNK_NGP								(HARDWARE_PREFIX_NGP | 0x00000000)
 #define HARDWARE_SNK_NGPC								(HARDWARE_PREFIX_NGP | 0x00000001) // must not be 0x10000
@@ -845,6 +847,8 @@ int BurnComputeSHA1(const UINT8 *buffer, int buffer_size, char *hash_str);
 #define HARDWARE_SNES_JUSTIFIER                         (HARDWARE_PREFIX_SNES | 0x0000002)
 
 #define HARDWARE_CHANNELF                               (HARDWARE_PREFIX_CHANNELF)
+
+#define HARDWARE_ASTROHOME                              (HARDWARE_PREFIX_ASTROHOME)
 
 // flags for the genre member
 #define GBF_HORSHOOT									(1 << 0)

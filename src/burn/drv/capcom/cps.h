@@ -1,3 +1,7 @@
+#pragma once
+#ifndef _CPS_H_
+#define _CPS_H_
+
 // CPS ----------------------------------
 #include "burnint.h"
 #include "m68000_intf.h"
@@ -522,6 +526,20 @@ void Sf2mdtSoundFrameStart();
 void Sf2mdtSoundFrameEnd();
 INT32 Sf2mdtScanSound(INT32 nAction, INT32 *pnMin);
 
+// d_cps1.cpp
+#define CPS1_68K_PROGRAM_BYTESWAP			1
+#define CPS1_68K_PROGRAM_NO_BYTESWAP		2
+#define CPS1_Z80_PROGRAM					3
+#define CPS1_TILES							4
+#define CPS1_OKIM6295_SAMPLES				5
+#define CPS1_QSOUND_SAMPLES					6
+#define CPS1_PIC							7
+#define CPS1_EXTRA_TILES_SF2EBBL_400000		8
+#define CPS1_EXTRA_TILES_400000				9
+#define CPS1_EXTRA_TILES_SF2KORYU_400000	10
+#define CPS1_EXTRA_TILES_SF2B_400000		11
+#define CPS1_EXTRA_TILES_SF2MKOT_400000		12
+
 // d_cps2.cpp
 #define CPS2_PRG_68K						1
 #define CPS2_PRG_68K_SIMM					2
@@ -543,3 +561,5 @@ extern INT32 Cps2DisableDigitalVolume;
 extern UINT8 Cps2VolUp;
 extern UINT8 Cps2VolDwn;
 extern UINT8 AspectDIP;
+
+#endif
