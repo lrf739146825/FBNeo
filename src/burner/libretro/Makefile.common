@@ -319,24 +319,27 @@ endif
 ifeq ($(INCLUDE_7Z_SUPPORT), 1)
 	FBNEO_DEFINES += -DINCLUDE_7Z_SUPPORT -DZ7_PPMD_SUPPORT -DZ7_ST
 	SOURCES_CXX += $(FBNEO_BURNER_DIR)/un7z.cpp
-	ifneq ($(STATIC_LINKING), 1)
-		SOURCES_C += $(FBNEO_LIB_DIR)/lib7z/7zArcIn.c \
-			$(FBNEO_LIB_DIR)/lib7z/7zBuf.c \
-			$(FBNEO_LIB_DIR)/lib7z/7zCrc.c \
-			$(FBNEO_LIB_DIR)/lib7z/7zCrcOpt.c \
-			$(FBNEO_LIB_DIR)/lib7z/7zDec.c \
-			$(FBNEO_LIB_DIR)/lib7z/7zStream.c \
-			$(FBNEO_LIB_DIR)/lib7z/Bcj2.c \
-			$(FBNEO_LIB_DIR)/lib7z/Bra.c \
-			$(FBNEO_LIB_DIR)/lib7z/Bra86.c \
-			$(FBNEO_LIB_DIR)/lib7z/BraIA64.c \
-			$(FBNEO_LIB_DIR)/lib7z/CpuArch.c \
-			$(FBNEO_LIB_DIR)/lib7z/Delta.c \
-			$(FBNEO_LIB_DIR)/lib7z/Lzma2Dec.c \
-			$(FBNEO_LIB_DIR)/lib7z/LzmaDec.c \
-			$(FBNEO_LIB_DIR)/lib7z/Ppmd7.c \
-			$(FBNEO_LIB_DIR)/lib7z/Ppmd7Dec.c
-	endif
+	# Statically linked builds used to borrow the 7-Zip SDK from the frontend,
+	# but RetroArch dropped deps/7zip in favour of its own r7z_* reader, so the
+	# SzArEx_*/LookToRead2_* symbols are no longer exported. Always compile our
+	# own copy: archive members are only pulled in when still undefined at link
+	# time, so this cannot clash with a frontend that does provide them.
+	SOURCES_C += $(FBNEO_LIB_DIR)/lib7z/7zArcIn.c \
+		$(FBNEO_LIB_DIR)/lib7z/7zBuf.c \
+		$(FBNEO_LIB_DIR)/lib7z/7zCrc.c \
+		$(FBNEO_LIB_DIR)/lib7z/7zCrcOpt.c \
+		$(FBNEO_LIB_DIR)/lib7z/7zDec.c \
+		$(FBNEO_LIB_DIR)/lib7z/7zStream.c \
+		$(FBNEO_LIB_DIR)/lib7z/Bcj2.c \
+		$(FBNEO_LIB_DIR)/lib7z/Bra.c \
+		$(FBNEO_LIB_DIR)/lib7z/Bra86.c \
+		$(FBNEO_LIB_DIR)/lib7z/BraIA64.c \
+		$(FBNEO_LIB_DIR)/lib7z/CpuArch.c \
+		$(FBNEO_LIB_DIR)/lib7z/Delta.c \
+		$(FBNEO_LIB_DIR)/lib7z/Lzma2Dec.c \
+		$(FBNEO_LIB_DIR)/lib7z/LzmaDec.c \
+		$(FBNEO_LIB_DIR)/lib7z/Ppmd7.c \
+		$(FBNEO_LIB_DIR)/lib7z/Ppmd7Dec.c
 endif
 
 SOURCES_CXX += $(LIBRETRO_DIR)/libretro.cpp \
