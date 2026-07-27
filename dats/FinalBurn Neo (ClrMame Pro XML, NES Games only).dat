@@ -1985,12 +1985,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="batmanreturnsbe" cloneof="batmanreturns" romof="batmanreturns" sourcefile="nes/d_nes.cpp">
+	<game name="batmanreturnsde" cloneof="batmanreturns" romof="batmanreturns" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Batman Returns - Black Edition (Hack, Ver. Ultima)</description>
-		<year>2025</year>
+		<description>Batman Returns - Dark Edition (Hack, Ver. 21-07-26)</description>
+		<year>2026</year>
 		<manufacturer>DarthVaderX</manufacturer>
-		<rom name="Batman Returns Black Edition - Ver. Ultima (2025)(DarthVaderX).nes" size="393232" crc="8137e670"/>
+		<rom name="Batman Returns Dark Edition - Ver. 21-07-26 (2026)(DarthVaderX).nes" size="393232" crc="8ac8a211"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2002,12 +2002,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="batmaretjokbe" cloneof="batmaretjok" romof="batmaretjok" sourcefile="nes/d_nes.cpp">
+	<game name="batmaretjokde" cloneof="batmaretjok" romof="batmaretjok" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Batman: Return of the Joker - Black Edition (Hack, Ver. 30-06-26)</description>
-		<year>2025-26</year>
+		<description>Batman: Return of the Joker - Dark Edition (Hack, Ver. 21-07-26)</description>
+		<year>2026</year>
 		<manufacturer>DarthVaderX</manufacturer>
-		<rom name="Batman Return of the Joker Black Edition - Ver. 30-06-26 (2025-26)(DarthVaderX).nes" size="393232" crc="56e5bca9"/>
+		<rom name="Batman Return of the Joker Dark Edition - Ver. 21-07-26 (2026)(DarthVaderX).nes" size="393232" crc="75136fac"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -2045,12 +2045,12 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
-	<game name="batmavidgambe" cloneof="batmavidgam" romof="batmavidgam" sourcefile="nes/d_nes.cpp">
+	<game name="batmavidgamde" cloneof="batmavidgam" romof="batmavidgam" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
-		<description>Batman: The Video Game - Black Edition (Hack, Ver. Ultima)</description>
-		<year>2025</year>
+		<description>Batman: The Video Game - Dark Edition (Hack, Ver. 21-07-26)</description>
+		<year>2026</year>
 		<manufacturer>DarthVaderX</manufacturer>
-		<rom name="Batman Black Edition - Ver. Ultima (2025)(DarthVaderX).nes" size="262160" crc="932a75e8"/>
+		<rom name="Batman Dark Edition - Ver. 21-07-26 (2026)(DarthVaderX).nes" size="262160" crc="6d02f9eb"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

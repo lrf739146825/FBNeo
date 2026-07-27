@@ -295,7 +295,8 @@ else ifneq (,$(filter $(platform), ps3 psl1ght))
        PLATFORM_DEFINES += -D__PSL1GHT__
 	endif
 	ENDIANNESS_DEFINES =  -DWORDS_BIGENDIAN
-	EXTERNAL_ZLIB = 1
+	# RetroArch no longer vendors zlib, build our own copy
+	EXTERNAL_ZLIB = 0
 	STATIC_LINKING = 1
 	INCLUDE_7Z_SUPPORT = 0
 
@@ -314,7 +315,8 @@ else ifeq ($(platform), vita)
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	CFLAGS += -mfloat-abi=hard -fsingle-precision-constant
 	CXXFLAGS += -mfloat-abi=hard -fsingle-precision-constant -fpermissive -fno-rtti
-	EXTERNAL_ZLIB = 1
+	# RetroArch no longer vendors zlib, build our own copy
+	EXTERNAL_ZLIB = 0
 	STATIC_LINKING = 1
 	USE_CYCLONE = 1
 
@@ -328,7 +330,8 @@ else ifeq ($(platform), ctr)
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	CFLAGS += -march=armv6k -mtune=mpcore -mfloat-abi=hard
 	CXXFLAGS += -march=armv6k -mtune=mpcore -mfloat-abi=hard -fpermissive -fno-rtti
-	EXTERNAL_ZLIB = 1
+	# RetroArch no longer vendors zlib, build our own copy
+	EXTERNAL_ZLIB = 0
 	STATIC_LINKING = 1
 	USE_CYCLONE = 1
 
@@ -447,7 +450,8 @@ else ifneq (,$(filter $(platform), ngc wii wiiu))
 	AR = powerpc-eabi-ar$(EXE_EXT)
 	ENDIANNESS_DEFINES =  -DWORDS_BIGENDIAN
 	PLATFORM_DEFINES := -ffunction-sections -fdata-sections -D__wiiu__ -D__wut__ -UPPC
-	EXTERNAL_ZLIB = 1
+	# RetroArch no longer vendors zlib, build our own copy
+	EXTERNAL_ZLIB = 0
 	STATIC_LINKING = 1
 
 	# Nintendo WiiU

@@ -1857,10 +1857,10 @@ DRV		BurnDrvnes_batmanreturns;
 DRV		BurnDrvsnes_Batmanreturns;
 DRV		BurnDrvgg_batmanrn;
 DRV		BurnDrvmd_batmanrn;
-DRV		BurnDrvnes_batmanreturnsbe;
+DRV		BurnDrvnes_batmanreturnsde;
 DRV		BurnDrvmd_batmanrnmd;
 DRV		BurnDrvnes_batmaretjok;
-DRV		BurnDrvnes_batmaretjokbe;
+DRV		BurnDrvnes_batmaretjokde;
 DRV		BurnDrvmd_batmanrj;
 DRV		BurnSpecbatmancc;
 DRV		BurnSpecbatmancc2;
@@ -1871,7 +1871,7 @@ DRV		BurnDrvnes_batmavidgamc;
 DRV		BurnDrvnes_batmavidgamtp;
 DRV		BurnDrvnes_batmavidgamj;
 DRV		BurnDrvnes_batmavidgam;
-DRV		BurnDrvnes_batmavidgambe;
+DRV		BurnDrvnes_batmavidgamde;
 DRV		BurnDrvBatman;
 DRV		BurnSpecBatmanoloe;
 DRV		BurnSpecBatmanolos;
@@ -12056,6 +12056,7 @@ DRV		BurnDrvnes_littlesamsonh;
 DRV		BurnDrvsms_lilsamson;
 DRV		BurnDrvnes_lsisyphus;
 DRV		BurnDrvsnes_Livealivete;
+DRV		BurnDrvsnes_Livealivetp;
 DRV		BurnDrvsnes_Livealivets;
 DRV		BurnDrvsnes_Livealivej;
 DRV		BurnDrvLivequiz;
@@ -21528,6 +21529,9 @@ DRV		BurnDrvnes_superpinball;
 DRV		BurnDrvsnes_Spinballbtme;
 DRV		BurnDrvsnes_Spinballbtmj;
 DRV		BurnDrvsnes_Spinballbtm;
+DRV		BurnDrvSpbactnj;
+DRV		BurnDrvSpbactn;
+DRV		BurnDrvSpbactnp;
 DRV		BurnDrvnes_superpitfall;
 DRV		BurnDrvnes_superpit30t;
 DRV		BurnDrvsnes_Splayactionfootball;
@@ -25158,6 +25162,7 @@ DRV		BurnDrvsnes_Xmenmae;
 DRV		BurnDrvsnes_Xmenmatp;
 DRV		BurnDrvsnes_Xmenmaj;
 DRV		BurnDrvsnes_Xmenma;
+DRV		BurnDrvsnes_Xmenmareb;
 DRV		BurnDrvmd_xmen2;
 DRV		BurnDrvmd_xmen2s;
 DRV		BurnDrvmd_xmen2p02;
@@ -27595,10 +27600,10 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Batmanreturns,	// Batman Returns (USA)
 	&BurnDrvgg_batmanrn,		// Batman Returns (World)
 	&BurnDrvmd_batmanrn,		// Batman Returns (World)
-	&BurnDrvnes_batmanreturnsbe,// Batman Returns - Black Edition (Hack, Ver. Ultima)
+	&BurnDrvnes_batmanreturnsde,// Batman Returns - Dark Edition (Hack, Ver. 21-07-26)
 	&BurnDrvmd_batmanrnmd,		// Batman Returns MD (HB, v1.1)
 	&BurnDrvnes_batmaretjok,	// Batman: Return of the Joker (USA)
-	&BurnDrvnes_batmaretjokbe,	// Batman: Return of the Joker - Black Edition (Hack, Ver. 30-06-26)
+	&BurnDrvnes_batmaretjokde,	// Batman: Return of the Joker - Dark Edition (Hack, Ver. 21-07-26)
 	&BurnDrvmd_batmanrj,		// Batman: Revenge of the Joker (USA)
 	&BurnSpecbatmancc,			// Batman: The Caped Crusader - Part 1: A Bird in the Hand (48K)
 	&BurnSpecbatmancc2,			// Batman: The Caped Crusader - Part 2: A Fete Worse than Death (48K)
@@ -27609,7 +27614,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvnes_batmavidgamtp,	// Batman: The Video Game (Hack, Portuguese v1.2)
 	&BurnDrvnes_batmavidgamj,	// Batman: The Video Game (Japan)
 	&BurnDrvnes_batmavidgam,	// Batman: The Video Game (USA)
-	&BurnDrvnes_batmavidgambe,	// Batman: The Video Game - Black Edition (Hack, Ver. Ultima)
+	&BurnDrvnes_batmavidgamde,	// Batman: The Video Game - Dark Edition (Hack, Ver. 21-07-26)
 	&BurnDrvBatman,				// Batman
 	&BurnSpecBatmanoloe,		// BatManolo (English) (48K) (HB, v1.1)
 	&BurnSpecBatmanolos,		// BatManolo (Spanish) (48K) (HB, v1.1)
@@ -37794,6 +37799,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_lilsamson,		// Little Samson Tribute (GlobalHack, v1.1, Portuguese)
 	&BurnDrvnes_lsisyphus,		// Little Sisyphus (HB)
 	&BurnDrvsnes_Livealivete,	// Live A Live (Hack, English v2.00)
+	&BurnDrvsnes_Livealivetp,	// Live A Live (Hack, Portuguese v2.3)
 	&BurnDrvsnes_Livealivets,	// Live A Live (Hack, Spanish v1.6)
 	&BurnDrvsnes_Livealivej,	// Live A Live (Japan)
 	&BurnDrvLivequiz,			// Live Quiz Show
@@ -40106,7 +40112,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_myheroc,		// My Hero (Euro, USA, Brazil, Sega Card)
 	&BurnDrvMyhero,				// My Hero (US, not encrypted)
 	&BurnDrvMSX_sacredplace,	// My Sacred Place (HB)
-	&BurnDrvsnes_Mystdung2te,	// Mysterious Dungeon 2: Shiren the Wanderer (Hack, English)
+	&BurnDrvsnes_Mystdung2te,	// Mysterious Dungeon 2: Shiren the Wanderer (Hack, English v1.02)
 	&BurnDrvfds_mystemurcas,	// Mysterious Murasame Castle, The (Hack, English)
 	&BurnDrvmystston,			// Mysterious Stones - Dr. John's Adventure
 	&BurnDrvmyststni,			// Mysterious Stones - Dr. Kick in Adventure (Itisa PCB)
@@ -47266,6 +47272,9 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Spinballbtme,	// Super Pinball - Behind the Mask (Euro)
 	&BurnDrvsnes_Spinballbtmj,	// Super Pinball - Behind the Mask (Japan)
 	&BurnDrvsnes_Spinballbtm,	// Super Pinball - Behind the Mask (USA, Rev. 1)
+	&BurnDrvSpbactnj,			// Super Pinball Action (Japan)
+	&BurnDrvSpbactn,			// Super Pinball Action (US)
+	&BurnDrvSpbactnp,			// Super Pinball Action (US, prototype, dual screen)
 	&BurnDrvnes_superpitfall,	// Super Pitfall (USA)
 	&BurnDrvnes_superpit30t,	// Super Pitfall 30th Anniversary Edition (HB)
 	&BurnDrvsnes_Splayactionfootball,// Super Play Action Football (USA)
@@ -50896,6 +50905,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_Xmenmatp,		// X-Men - Mutant Apocalypse (Hack, Portuguese)
 	&BurnDrvsnes_Xmenmaj,		// X-Men - Mutant Apocalypse (Japan)
 	&BurnDrvsnes_Xmenma,		// X-Men - Mutant Apocalypse (USA)
+	&BurnDrvsnes_Xmenmareb,		// X-Men - Mutant Apocalypse - Rebalanced (Hack)
 	&BurnDrvmd_xmen2,			// X-Men 2: Clone Wars (Euro, USA)
 	&BurnDrvmd_xmen2s,			// X-Men 2: Clone Wars (Hack, Spanish)
 	&BurnDrvmd_xmen2p02,		// X-Men 2: Clone Wars (Prototype, 19941215)
@@ -51175,7 +51185,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsms_ys,				// Ys: The Vanished Omens (Euro, USA, Brazil)
 	&BurnDrvsms_ysfm,			// Ys: The Vanished Omens (Hack, FM Mod v1.2)
 	&BurnDrvsms_ysd,			// Ys: The Vanished Omens (USA, Demo)
-	&BurnDrvsnes_Yuuyuuhak2tp,	// Yu Yu Hakusho 2: The Fighting Chapter (Hack, Portuguese)
+	&BurnDrvsnes_Yuuyuuhak2tp,	// Yu Yu Hakusho 2: The Fighting Chapter (Hack, Portuguese v1.2)
 	&BurnDrvmd_yuyug,			// Yu Yu Hakusho Gaiden (Japan)
 	&BurnDrvgg_yuyu2,			// Yu Yu Hakusho II: Gekitou! Nanakyou no Tatakai (Japan)
 	&BurnDrvgg_yuyu,			// Yu Yu Hakusho: Horobishimono no Gyakushuu (Japan)
@@ -53321,10 +53331,10 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_batmanreturns", "snes/d_snes.cpp"},
 	{ "gg_batmanrn", "sms/d_sms.cpp"},
 	{ "md_batmanrn", "megadrive/d_megadrive.cpp"},
-	{ "nes_batmanreturnsbe", "nes/d_nes.cpp"},
+	{ "nes_batmanreturnsde", "nes/d_nes.cpp"},
 	{ "md_batmanrnmd", "megadrive/d_megadrive.cpp"},
 	{ "nes_batmaretjok", "nes/d_nes.cpp"},
-	{ "nes_batmaretjokbe", "nes/d_nes.cpp"},
+	{ "nes_batmaretjokde", "nes/d_nes.cpp"},
 	{ "md_batmanrj", "megadrive/d_megadrive.cpp"},
 	{ "spec_batmancc", "spectrum/d_spectrum.cpp"},
 	{ "spec_batmancc2", "spectrum/d_spectrum.cpp"},
@@ -53335,7 +53345,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "nes_batmavidgamtp", "nes/d_nes.cpp"},
 	{ "nes_batmavidgamj", "nes/d_nes.cpp"},
 	{ "nes_batmavidgam", "nes/d_nes.cpp"},
-	{ "nes_batmavidgambe", "nes/d_nes.cpp"},
+	{ "nes_batmavidgamde", "nes/d_nes.cpp"},
 	{ "batman", "atari/d_batman.cpp"},
 	{ "spec_batmanoloe", "spectrum/d_spectrum.cpp"},
 	{ "spec_batmanolos", "spectrum/d_spectrum.cpp"},
@@ -63446,6 +63456,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "sms_lilsamson", "sms/d_sms.cpp"},
 	{ "nes_lsisyphus", "nes/d_nes.cpp"},
 	{ "snes_livealivete", "snes/d_snes.cpp"},
+	{ "snes_livealivetp", "snes/d_snes.cpp"},
 	{ "snes_livealivets", "snes/d_snes.cpp"},
 	{ "snes_livealivej", "snes/d_snes.cpp"},
 	{ "livequiz", "pst90s/d_midas.cpp"},
@@ -72834,6 +72845,9 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_spinballbtme", "snes/d_snes.cpp"},
 	{ "snes_spinballbtmj", "snes/d_snes.cpp"},
 	{ "snes_spinballbtm", "snes/d_snes.cpp"},
+	{ "spbactnj", "pre90s/d_spbactn.cpp"},
+	{ "spbactn", "pre90s/d_spbactn.cpp"},
+	{ "spbactnp", "pre90s/d_spbactn.cpp"},
 	{ "nes_superpitfall", "nes/d_nes.cpp"},
 	{ "nes_superpit30t", "nes/d_nes.cpp"},
 	{ "snes_splayactionfootball", "snes/d_snes.cpp"},
@@ -76426,6 +76440,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_xmenmatp", "snes/d_snes.cpp"},
 	{ "snes_xmenmaj", "snes/d_snes.cpp"},
 	{ "snes_xmenma", "snes/d_snes.cpp"},
+	{ "snes_xmenmareb", "snes/d_snes.cpp"},
 	{ "md_xmen2", "megadrive/d_megadrive.cpp"},
 	{ "md_xmen2s", "megadrive/d_megadrive.cpp"},
 	{ "md_xmen2p02", "megadrive/d_megadrive.cpp"},
