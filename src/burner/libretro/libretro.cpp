@@ -161,7 +161,7 @@ static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 		_T("nes"),
 		_T("fds"),
 		_T("ngp"),
-		_T("astro"),
+		_T("astro"),		_T("astrohome"),
 		_T("chf"),			_T("channelf")							// consoles_dir
 	},
 	{
@@ -181,7 +181,7 @@ static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 		_T("nes_"),
 		_T("fds_"),
 		_T("ngp_"),
-		_T("astro_"),
+		_T("astro_"),		_T("astro_"),
 		_T("chf_"),			_T("chf_")								// Signage of the console
 	}
 };
@@ -2469,7 +2469,7 @@ bool retro_load_game(const struct retro_game_info *info)
 		HandleMessage(RETRO_LOG_INFO, "[FBNeo] subsystem chf identified from parent folder\n");
 		if (strncmp(g_driver_name, "chf_", 4) != 0) prefix = "chf_";
 	}
-	if(strcmp(g_rom_parent_dir, "astro")==0) {
+	if(strcmp(g_rom_parent_dir, "astro")==0 || strcmp(g_rom_parent_dir, "astrohome")==0) {
 		HandleMessage(RETRO_LOG_INFO, "[FBNeo] subsystem astro identified from parent folder\n");
 		if (strncmp(g_driver_name, "astro_", 6) != 0) prefix = "astro_";
 	}

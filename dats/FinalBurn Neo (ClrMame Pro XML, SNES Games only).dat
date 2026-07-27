@@ -10227,6 +10227,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="livealivetp" cloneof="livealivete" romof="livealivete" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Live A Live (Hack, Portuguese v2.3)</description>
+		<year>2024</year>
+		<manufacturer>Jotesc0, Aeon Genesis</manufacturer>
+		<rom name="Live A Live PT-BR v2.3 (2024)(Jotesc0, Aeon Genesis).sfc" size="2621440" crc="3020dbaa"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="livealivets" cloneof="livealivete" romof="livealivete" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Live A Live (Hack, Spanish v1.6)</description>
@@ -11981,10 +11990,10 @@
 	</game>
 	<game name="mystdung2te" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Mysterious Dungeon 2: Shiren the Wanderer (Hack, English)</description>
-		<year>2006</year>
-		<manufacturer>Aeon Genesis</manufacturer>
-		<rom name="Mysterious Dungeon 2 - Shiren the Wanderer T-Eng (2006)(Aeon Genesis).sfc" size="4194304" crc="f9789079"/>
+		<description>Mysterious Dungeon 2: Shiren the Wanderer (Hack, English v1.02)</description>
+		<year>2006-2026</year>
+		<manufacturer>Aeon Genesis, iggypoop</manufacturer>
+		<rom name="Mysterious Dungeon 2 - Shiren the Wanderer T-Eng v1.02 (2006-2026)(Aeon Genesis, iggypoop).sfc" size="4194304" crc="ab38bde3"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21490,6 +21499,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="xmenmareb" cloneof="xmenma" romof="xmenma" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>X-Men - Mutant Apocalypse - Rebalanced (Hack)</description>
+		<year>2026</year>
+		<manufacturer>BlastoBR</manufacturer>
+		<rom name="X-Men - Mutant Apocalypse - Rebalanced (2026)(BlastoBR).sfc" size="2097152" crc="5836480c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="xmenvsf" sourcefile="snes/d_snes.cpp">
 		<description>X-Men vs. Street Fighter (USA) (Unl)</description>
 		<year>1998</year>
@@ -21666,10 +21684,10 @@
 	</game>
 	<game name="yuuyuuhak2tp" cloneof="yuuyuuhak2j" romof="yuuyuuhak2j" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
-		<description>Yu Yu Hakusho 2: The Fighting Chapter (Hack, Portuguese)</description>
-		<year>2024</year>
+		<description>Yu Yu Hakusho 2: The Fighting Chapter (Hack, Portuguese v1.2)</description>
+		<year>2024-26</year>
 		<manufacturer>Hextinkers</manufacturer>
-		<rom name="Yu Yu Hakusho 2 - The Fighting Chapter PT-BR v1.0 (2024)(Hextinkers).sfc" size="2097152" crc="52ac1195"/>
+		<rom name="Yu Yu Hakusho 2 - The Fighting Chapter PT-BR v1.2 (2024-26)(Hextinkers).sfc" size="2097152" crc="38769d36"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
