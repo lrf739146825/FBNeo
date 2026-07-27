@@ -499,20 +499,29 @@ static INT32 ConfigParseFile(TCHAR* pszFilename, const std::vector<TCHAR>* iniCo
 
 		nLen = _tcslen(szLine);
 
-		// Get rid of the linefeed at the end
-		while ((nLen > 0) && (szLine[nLen - 1] == 0x0A || szLine[nLen - 1] == 0x0D)) {
-			szLine[nLen - 1] = 0;
-			nLen--;
+		// Trim trailing whitespace (Space, Tab, CR, LF)
+		while (nLen > 0) {
+			TCHAR c = szLine[nLen - 1];
+			if (c == _T(' ') || c == _T('\t') || c == 0x0A || c == 0x0D) {
+				szLine[nLen - 1] = 0;
+				nLen--;
+			} else {
+				break;
+			}
 		}
-
-		// Get rid of the linefeed at the begin
-		INT32 nSkipped = 0;
-		while (nLen > 0 && (szLine[nSkipped] == 0x0A || szLine[nSkipped] == 0x0D)) {
-			nSkipped++;
+		// Trim leading whitespace (Space, Tab, CR, LF)
+		TCHAR* pStart = szLine;
+		while (*pStart && (*pStart == _T(' ') || *pStart == _T('\t') || *pStart == 0x0A || *pStart == 0x0D)) {
+			pStart++;
 		}
-		if (nSkipped > 0) {
-			memmove(szLine, szLine + nSkipped, (nLen - nSkipped + 1) * sizeof(TCHAR));
-			nLen -= nSkipped;
+		// Shift string if leading whitespace was found
+		if (pStart != szLine) {
+			_tcscpy(szLine, pStart);
+			nLen = _tcslen(szLine);
+		}
+		// Skip empty lines to avoid parsing errors
+		if (_tcslen(szLine) == 0) {
+			continue;
 		}
 
 		s = szLine;													// Start parsing
