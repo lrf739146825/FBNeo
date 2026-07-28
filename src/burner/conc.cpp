@@ -1659,8 +1659,10 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 	return 0;
 }
 
-// variable for multiple cheat
+// In the standalone client, cheats need to be reloaded every time a game is loaded, but libretro just need to load once.
+#ifdef __LIBRETRO__
 INT32 init_cheat = 1;
+#endif
 
 INT32 ConfigCheatLoad()
 {
@@ -1682,8 +1684,9 @@ INT32 ConfigCheatLoad()
 	INT32 ret = 1;
 
 	// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
+#ifdef __LIBRETRO__
 	if(init_cheat){
-
+#endif
 		if (HW_NES) { // only for NES/FC!
 			_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, szDrvName);
 			ConfigParseVCT(szFilename);
@@ -1713,8 +1716,10 @@ INT32 ConfigCheatLoad()
 		_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, szDrvName);
 		ConfigParseNebulaFile(szFilename);
 
+#ifdef __LIBRETRO__
 		init_cheat = 0;
 	}
+#endif
 
 	if (pCheatInfo) {
 		INT32 nCurrentCheat = 0;
