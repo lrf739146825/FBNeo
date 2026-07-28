@@ -1221,11 +1221,6 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 	return foundData ? 0 : 1;
 }
 
-int mame_cheat_use_itself = 0;
-int wayder_cheat_use_itself = 0;
-int mame_cheat_use_parent = 0;
-int wayder_cheat_use_parent = 0;
-
 static INT32 ConfigParseMAMEFile(int is_wayder)
 {
 	TCHAR szFileName[MAX_PATH] = _T("");
@@ -1257,13 +1252,6 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 		ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 		if (ret == 0) {
 			ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
-			if(ret == 0 ){
-				if(is_wayder){
-					wayder_cheat_use_itself = 1;
-				}else{
-					mame_cheat_use_itself = 1;
-				}
-			}
 		}
 		// let's try using parent entry as a fallback if no cheat was found for this romset
 		if (ret > 0 && (BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
@@ -1272,13 +1260,6 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 			ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 			if (ret == 0) {
 				ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
-				if(ret == 0 ){
-					if(is_wayder){
-						wayder_cheat_use_parent = 1;
-					}else{
-						mame_cheat_use_parent = 1;
-					}
-				}
 			}
 		}
 
