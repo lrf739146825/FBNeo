@@ -141,7 +141,7 @@ TCHAR szAppBurnVer[16];
 
 static char szRomsetPath[MAX_PATH]        = { 0 };
 
-#define TYPES_MAX	(28)	// Maximum number of machine types
+#define TYPES_MAX	(29)	// Maximum number of machine types
 
 static const TCHAR szTypeEnum[2][TYPES_MAX][13] = {
 	{
