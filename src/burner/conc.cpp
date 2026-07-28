@@ -1358,7 +1358,7 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 	return ret;
 }
 
-INT32 use_z7_ini_parent = 0;
+bool use_z7_ini_parent = false;
 
  //Extract matched INI in cheat.zip or 7z
 static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheat) {
@@ -1369,7 +1369,7 @@ static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, s
 			if (LoadIniContentFromZip(BurnDrvGetText(DRV_PARENT), zipFileName, CurrentIniCheatContent) != 0) {
 				return 1;
 			}else{
-				use_z7_ini_parent = 1;
+				use_z7_ini_parent = true;
 			}
 		} else {
 			return 1;
@@ -1661,7 +1661,7 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 
 // In the standalone client, cheats need to be reloaded every time a game is loaded, but libretro just need to load once.
 #ifdef __LIBRETRO__
-INT32 init_cheat = 1;
+bool bLibretroCheatAlreadyLoaded = false;
 #endif
 
 INT32 ConfigCheatLoad()
@@ -1680,23 +1680,22 @@ INT32 ConfigCheatLoad()
 	pPreviousCheat = NULL;
 
 	INT32 is_wayder = 1;
-
 	INT32 ret = 1;
 
 	// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
 #ifdef __LIBRETRO__
-	if(init_cheat){
+	if(!bLibretroCheatAlreadyLoaded){
 #endif
 		if (HW_NES) { // only for NES/FC!
 			_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, szDrvName);
 			ConfigParseVCT(szFilename);
 		} // keep loading & adding stuff even if .vct file loads.
 
-		// mame cheat
-		ConfigParseMAMEFile(!is_wayder);
-		ConfigParseMAMEFile(is_wayder);
+		// cheat.dat, cheatnes.dat, cheatsnes.dat, wayder_cheat.dat
+		ConfigParseMAMEFile(!is_wayder /* cheat.dat, cheatnes.dat, cheatsnes.dat */);
+		ConfigParseMAMEFile(is_wayder /* wayder */);
 
-		//use single ini first
+		//ini-style file, use single file first
 		_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, szDrvName);
 		if(ConfigParseFile(szFilename,NULL)){
 			//try load ini from zip/7z
@@ -1712,12 +1711,12 @@ INT32 ConfigCheatLoad()
 			}
 		}
 
-		//Nebula cheat
+		// nebula-format .dat file
 		_stprintf(szFilename, _T("%s%s.dat"), szAppCheatsPath, szDrvName);
 		ConfigParseNebulaFile(szFilename);
 
 #ifdef __LIBRETRO__
-		init_cheat = 0;
+		bLibretroCheatAlreadyLoaded = true;
 	}
 #endif
 
