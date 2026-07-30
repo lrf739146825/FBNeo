@@ -3462,6 +3462,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bionicninja" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Select '2 Sinclair' to use controller</comment>
+		<description>Bionic Ninja (48K)</description>
+		<year>1989</year>
+		<manufacturer>Zeppelin Games</manufacturer>
+		<rom name="Bionic Ninja 48K (1989)(Zeppelin Games).tzx" size="43341" crc="71025a4b"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="bnb" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Birds and the Bees, The (48K)</description>
 		<year>1983</year>
@@ -9434,6 +9444,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="downpipe2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Down the Pipe 2: Lost in Space (48K-128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>DF Design</manufacturer>
+		<rom name="Down the Pipe 2 - Lost in Space 48K-128K (2026)(DF Design).tap" size="71827" crc="06cbdad9"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="downpiperef" cloneof="downpipe128" romof="downpipe128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Down the pipe Reflushed (48K) (HB)</description>
@@ -9710,7 +9731,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="bodyguard" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, AY Sound Supported</comment>
+		<comment>Homebrew, AY Sound supported</comment>
 		<description>DS.Bodyguard (48K) (HB, v1.1)</description>
 		<year>2025</year>
 		<manufacturer>Delta Squad</manufacturer>
@@ -10354,10 +10375,10 @@
 		<driver status="good"/>
 	</game>
 	<game name="escalderon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Escape From Alderon (48K)</description>
+		<description>Escape from Alderon (48K)</description>
 		<year>1986</year>
 		<manufacturer>Troggerz Inc.</manufacturer>
-		<rom name="Escape From Alderon 48K (1986)(Troggerz Inc.).tap" size="22008" crc="0cc57bee"/>
+		<rom name="Escape from Alderon 48K (1986)(Troggerz Inc.).tap" size="22008" crc="0cc57bee"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10374,10 +10395,30 @@
 	</game>
 	<game name="esccolony" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Escape From Colony 8 (48K) (HB)</description>
+		<description>Escape from Colony 8 (48K) (HB)</description>
 		<year>2014</year>
 		<manufacturer>usebox.net</manufacturer>
-		<rom name="Escape From Colony 8 48K (2014)(usebox.net).tap" size="33045" crc="b55aad43"/>
+		<rom name="Escape from Colony 8 48K (2014)(usebox.net).tap" size="33045" crc="b55aad43"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="escorpoen" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Escape from Corpocity (English) (48K) (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>Juanma2k</manufacturer>
+		<rom name="Escape from Corpocity EN v1.1 48K (2026)(Juanma2k).tap" size="47547" crc="226a67e1"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="escorpoes" cloneof="escorpoen" romof="escorpoen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Escape from Corpocity (Spanish) (48K) (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>Juanma2k</manufacturer>
+		<rom name="Escape from Corpocity ES v1.1 48K (2026)(Juanma2k).tap" size="47793" crc="b9b5c217"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -14919,7 +14960,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="intensity" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Press 1: one player option - Press 2: two player option</comment>
+		<comment>Press '1' for one player mode and '2' for two player mode</comment>
 		<description>Intensity (48K)</description>
 		<year>1988</year>
 		<manufacturer>Firebird Software</manufacturer>
@@ -16661,7 +16702,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="kubanoiden" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, AY Sound Supported</comment>
+		<comment>Homebrew, AY Sound supported</comment>
 		<description>Kubanoid (English) (48K) (HB, v1.1)</description>
 		<year>2025</year>
 		<manufacturer>Stardust</manufacturer>
@@ -16671,7 +16712,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="kubanoidru" cloneof="kubanoiden" romof="kubanoiden" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew, AY Sound Supported</comment>
+		<comment>Homebrew, AY Sound supported</comment>
 		<description>Kubanoid (Russian) (48K) (HB, v1.1)</description>
 		<year>2025</year>
 		<manufacturer>Stardust</manufacturer>
@@ -19135,11 +19176,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="mickeymouse" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>SPACE: change weapon</comment>
-		<description>Mickey Mouse - The Computer Game (48K)</description>
+		<comment>Press SPACE to skip intro screen and to change weapon in game</comment>
+		<description>Mickey Mouse: The Computer Game (48K)</description>
 		<year>1988</year>
 		<manufacturer>Gremlin Graphics</manufacturer>
-		<rom name="Mickey Mouse - The Computer Game 48K (1988)(Gremlin Graphics).z80" size="43296" crc="aa993b54"/>
+		<rom name="Mickey Mouse - The Computer Game 48K (1988)(Gremlin Graphics).tap" size="81822" crc="caa35e2f"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19157,8 +19198,8 @@
 	<game name="micromouse" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Micro Mouse Goes De-bugging (48K-128K)</description>
 		<year>1989</year>
-		<manufacturer>Mastertronic Plus</manufacturer>
-		<rom name="Micro Mouse Goes De-bugging 48K-128K (1989)(Mastertronic Plus).tap" size="47636" crc="6a8a8635"/>
+		<manufacturer>Virgin Mastertronic</manufacturer>
+		<rom name="Micro Mouse Goes De-bugging 48K-128K (1989)(Virgin Mastertronic).tap" size="47636" crc="6a8a8635"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -23019,6 +23060,16 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="porklike" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, AY Sound supported</comment>
+		<description>Porklike (48K) (HB, v1.06)</description>
+		<year>2026</year>
+		<manufacturer>Hairy Viking</manufacturer>
+		<rom name="Porklike v1.06 48K-AY (2026)(Hairy Viking).tap" size="38513" crc="8a8d7f30"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="poseidon" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Poseidon: Planet Eleven (48K)</description>
 		<year>1990</year>
@@ -23195,12 +23246,30 @@
 		<driver status="good"/>
 	</game>
 	<game name="progolfsim" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Pro Golf Simulator (128K)</description>
+		<description>Pro Golf Simulator (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Codemasters</manufacturer>
-		<rom name="Pro Golf Simulator 128K (1990)(Codemasters).tap" size="48603" crc="6e5bed28"/>
+		<rom name="Pro Golf Simulator 48K-128K (1990)(Codemasters).tap" size="48603" crc="6e5bed28"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="progolfpb" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Pro Golf: Peeble Beach (48K)</description>
+		<year>1986</year>
+		<manufacturer>Atlantis Software</manufacturer>
+		<rom name="Pro Golf - Peeble Beach 48K (1986)(Atlantis Software).tap" size="49088" crc="d36dc84f"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="progolfsd" cloneof="progolfpb" romof="progolfpb" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Pro Golf: Sunningdale (48K)</description>
+		<year>1986</year>
+		<manufacturer>Atlantis Software</manufacturer>
+		<rom name="Pro Golf - Sunningdale 48K (1986)(Atlantis Software).tap" size="49088" crc="e201426b"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -27124,7 +27193,7 @@
 		<description>Skateball (48K)</description>
 		<year>1988</year>
 		<manufacturer>Ubi Soft</manufacturer>
-		<rom name="Skateball 48K (1988)(Ubi Soft).tap" size="49399" crc="e816c833"/>
+		<rom name="Skateball 48K (1988)(Ubi Soft).tzx" size="49454" crc="3d078071"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -33627,6 +33696,28 @@
 		<manufacturer>Adam Ainsworth</manufacturer>
 		<rom name="ZX Wordle 48K (2022)(Adam Ainsworth).tap" size="30945" crc="cab302a6"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zxgolfjp" cloneof="zxgolfusa" romof="zxgolfusa" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>ZXGolf Japan (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="ZXGolf Japan 128K (2026)(Menyiques).tap" size="130584" crc="66d13731"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="zxgolfusa" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>ZXGolf USA (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="ZXGolf USA 128K (2026)(Menyiques).tap" size="128792" crc="2ef7e677"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
