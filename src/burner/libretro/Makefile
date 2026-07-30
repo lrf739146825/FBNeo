@@ -53,6 +53,7 @@ filter_out2 = $(call filter_out1,$(call filter_out1,$1))
 # ARMv7-NEON Cross-compilation
 # sudo apt-get install git build-essential gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
 # make -j4 platform=armv7-neon -C ./src/burner/libretro
+# arm-linux-gnueabihf-strip  ./src/burner/libretro/fbneo_libretro.so
 ifeq ($(platform), armv7-neon)
   CC        = arm-linux-gnueabihf-gcc
   CXX       = arm-linux-gnueabihf-g++
@@ -67,11 +68,19 @@ endif
 # AArch64 Cross-compilation
 # sudo apt-get install git build-essential gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 # make -j6 platform=aarch64 -C ./src/burner/libretro
+# aarch64-linux-gnu-strip ./src/burner/libretro/fbneo_libretro.so
 ifeq ($(platform), aarch64)
   CC        = aarch64-linux-gnu-gcc
   CXX       = aarch64-linux-gnu-g++
   ARCH      = arm64
-  COMMON_FLAGS += -march=armv8-a -mtune=cortex-a53
+  ifeq ($(cortex), a55)
+    # Cortex-A55 compile requires GCC >= 9.0 (Ubuntu 20.04 or newer)
+    COMMON_FLAGS := -march=armv8.2-a+simd -mtune=cortex-a55
+  else ifeq ($(cortex), a35)
+    COMMON_FLAGS := -march=armv8-a+simd -mtune=cortex-a35
+  else
+    COMMON_FLAGS += -march=armv8-a+simd -mtune=cortex-a53
+  endif
   CFLAGS    = -std=gnu99 $(COMMON_FLAGS)
   CXXFLAGS  = -std=c++11 $(COMMON_FLAGS)
   HAVE_NEON = 0
