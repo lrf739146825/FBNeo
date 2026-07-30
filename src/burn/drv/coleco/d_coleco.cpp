@@ -9635,7 +9635,7 @@ struct BurnDriver BurnDrvcv_mrchin = {
 
 // Mr. Do! Arcade (HB)
 static struct BurnRomInfo cv_mrdoarcadeRomDesc[] = {
-	{ "Mr. Do! Arcade (2026)(Scott Moschella).rom",	32768, 0x09f0d2c7, BRF_PRG | BRF_ESS },
+	{ "Mr. Do! Arcade (2026)(Scott Moschella).rom",	32768, 0x51dc96d1, BRF_PRG | BRF_ESS },
 };
 
 STDROMPICKEXT(cv_mrdoarcade, cv_mrdoarcade, cv_coleco)
@@ -9653,7 +9653,7 @@ struct BurnDriver BurnDrvcv_mrdoarcade = {
 
 // Mr. Do! Arcade - Red Nose (HB)
 static struct BurnRomInfo cv_mrdoarcadernRomDesc[] = {
-	{ "Mr. Do! Arcade - Red Nose (2026)(Scott Moschella).rom",	32768, 0x99324671, BRF_PRG | BRF_ESS },
+	{ "Mr. Do! Arcade - Red Nose (2026)(Scott Moschella).rom",	32768, 0x90f4e6e3, BRF_PRG | BRF_ESS },
 };
 
 STDROMPICKEXT(cv_mrdoarcadern, cv_mrdoarcadern, cv_coleco)
@@ -11716,6 +11716,24 @@ struct BurnDriver BurnDrvcv_strippoker = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_CARD, 0,
 	CVGetZipName, cv_strippokerRomInfo, cv_strippokerRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
+// Structris (HB)
+static struct BurnRomInfo cv_structrisRomDesc[] = {
+	{ "Structris (2026)(unhuman).rom",	24576, 0xdbe7dd23, BRF_PRG | BRF_ESS },
+};
+
+STDROMPICKEXT(cv_structris, cv_structris, cv_coleco)
+STD_ROM_FN(cv_structris)
+
+struct BurnDriver BurnDrvcv_structris = {
+	"cv_structris", NULL, "cv_coleco", NULL, "2026",
+	"Structris (HB)\0", NULL, "unhuman", "ColecoVision",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_COLECO, GBF_ACTION, 0,
+	CVGetZipName, cv_structrisRomInfo, cv_structrisRomName, NULL, NULL, NULL, NULL, ColecoInputInfo, ColecoDIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
 	272, 228, 4, 3
 };
