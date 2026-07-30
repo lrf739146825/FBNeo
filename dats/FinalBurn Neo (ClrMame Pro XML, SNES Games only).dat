@@ -490,6 +490,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aerofighttp" cloneof="aerofight" romof="aerofight" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Aero Fighters (Hack, Portuguese)</description>
+		<year>2022</year>
+		<manufacturer>Vila Oculta do Romhacking</manufacturer>
+		<rom name="Aero Fighters PT-BR (2022)(Vila Oculta do Romhacking).sfc" size="1572864" crc="79a01296"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aerofight" sourcefile="snes/d_snes.cpp">
 		<description>Aero Fighters (USA)</description>
 		<year>1993</year>
@@ -13804,6 +13813,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="princepersiatp" cloneof="princepersia" romof="princepersia" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Prince of Persia (Hack, Portuguese v1.01)</description>
+		<year>2010</year>
+		<manufacturer>Mattos</manufacturer>
+		<rom name="Prince of Persia PT-BR v1.01 (2010)(Mattos).sfc" size="1048576" crc="7cef5430"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="princepersiaj" cloneof="princepersia" romof="princepersia" sourcefile="snes/d_snes.cpp">
 		<description>Prince of Persia (Japan)</description>
 		<year>1992</year>
@@ -16273,7 +16291,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="starfoxex" sourcefile="snes/d_snes.cpp">
+	<game name="starfoxex" cloneof="starfox" romof="starfox" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>Star Fox EX (Hack, v1.11.02b)</description>
 		<year>2025</year>
@@ -16528,7 +16546,7 @@
 		<description>Street Fighter EX Plus Alpha (USA) (Unl)</description>
 		<year>1997</year>
 		<manufacturer>DVS Electronic</manufacturer>
-		<rom name="Street Fighter EX Plus Alpha (U)(Unl)(1997)(DVS Electronic).sfc" size="2097152" crc="bf3fa644"/>
+		<rom name="Street Fighter EX Plus Alpha (U)(Unl)(1997)(DVS Electronic).sfc" size="2097152" crc="dad59b9f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17967,6 +17985,15 @@
 		<year>2022</year>
 		<manufacturer>bMatSantos</manufacturer>
 		<rom name="Super Mario So Estrelas PT-BR v1.11 (2022)(bMatSantos).sfc" size="2097152" crc="c0df4bd8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="smallstarswldtp" cloneof="smallstarsworld" romof="smallstarsworld" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Mario So Estrelas + Super Mundo Mario (Hack, Portuguese v1.12)</description>
+		<year>2022</year>
+		<manufacturer>bMatSantos</manufacturer>
+		<rom name="Super Mario So Estrelas + Super Mundo Mario PT-BR v1.12 (2022)(bMatSantos).sfc" size="2621440" crc="9ad38083"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -1929,6 +1929,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="structris" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Structris (HB)</description>
+		<year>2026</year>
+		<manufacturer>unhuman</manufacturer>
+		<rom name="Structris (2026)(unhuman).sg" size="32768" crc="58a27c68"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supertnk" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Super Tank (Japan)</description>
 		<year>1986</year>
