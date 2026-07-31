@@ -50,11 +50,11 @@ filter_out2 = $(call filter_out1,$(call filter_out1,$1))
 #  LDFLAGS  += -ldl -lpthread
 #endif
 
-# ARMv7-NEON Cross-compilation
+# ARMv7-NEON-HF Cross-compilation
 # sudo apt-get install git build-essential gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf
-# make -j4 platform=armv7-neon -C ./src/burner/libretro
+# make -j4 platform=armv7-neon-hf -C ./src/burner/libretro
 # arm-linux-gnueabihf-strip ./src/burner/libretro/fbneo_libretro.so
-ifeq ($(platform), armv7-neon)
+ifeq ($(platform), armv7-neon-hf)
   CC        = arm-linux-gnueabihf-gcc
   CXX       = arm-linux-gnueabihf-g++
   ARCH      = arm
