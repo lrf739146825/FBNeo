@@ -26,6 +26,7 @@ const INT32 CD_TYPE_CCD      = 1 << 2;
 const INT32 CD_TYPE_CHD      = 1 << 3;
 
 static INT32 cd_pregap;
+static double cd_volume = 100.0;
 
 struct MSF { UINT8 M; UINT8 S; UINT8 F; };
 
@@ -463,6 +464,7 @@ static INT32 cdimgExit()
 
 	cdimgTrack = 0;
 	cdimgLBA   = 0;
+	cd_volume  = 100.0;
 
 	free_s((void**)&cdimgTOC);
 	free_s((void**)&QChannel);
@@ -1005,6 +1007,13 @@ static UINT8* cdimgReadQChannel()
 	return QChannelData;
 }
 
+static int cdimgSetVolume(double dVolume)
+{
+	cd_volume = dVolume;
+
+	return 0;
+}
+
 static INT32 cdimgGetSoundBuffer(INT16* buffer, INT32 samples)
 {
 
@@ -1049,8 +1058,8 @@ static INT32 cdimgGetSoundBuffer(INT16* buffer, INT32 samples)
 		INT16* dst = buffer;
 
 		for (INT32 i = (cdimgOutputbufferSize - cdimgOutputPosition) * 2 - 1; i > 0; ) {
-			dst[i] = CLIP((src[i]) + dst[i]); i--;
-			dst[i] = CLIP((src[i]) + dst[i]); i--;
+			dst[i] = CLIP((src[i] * (cd_volume / 100.0)) + dst[i]); i--;
+			dst[i] = CLIP((src[i] * (cd_volume / 100.0)) + dst[i]); i--;
 		}
 
 		buffer += (cdimgOutputbufferSize - cdimgOutputPosition) * 2;
@@ -1110,8 +1119,8 @@ static INT32 cdimgGetSoundBuffer(INT16* buffer, INT32 samples)
 		INT16* dst = buffer;
 
 		for (INT32 i = samples * 2 - 1; i > 0; ) {
-			dst[i] = CLIP((src[i]) + dst[i]); i--;
-			dst[i] = CLIP((src[i]) + dst[i]); i--;
+			dst[i] = CLIP((src[i] * (cd_volume / 100.0)) + dst[i]); i--;
+			dst[i] = CLIP((src[i] * (cd_volume / 100.0)) + dst[i]); i--;
 		}
 
 		cdimgOutputPosition += samples;
@@ -1151,4 +1160,4 @@ static INT32 cdimgGetSettings(InterfaceInfo* pInfo)
 	return 0;
 }
 
-struct CDEmuDo cdimgDo = { cdimgExit, cdimgInit, cdimgStop, cdimgPlay, cdimgLoadSector, cdimgReadTOC, cdimgReadQChannel, cdimgGetSoundBuffer, cdimgScan, cdimgGetSettings, _T("raw image CD emulation") };
+struct CDEmuDo cdimgDo = { cdimgExit, cdimgInit, cdimgStop, cdimgPlay, cdimgLoadSector, cdimgReadTOC, cdimgReadQChannel, cdimgSetVolume, cdimgGetSoundBuffer, cdimgScan, cdimgGetSettings, _T("raw image CD emulation") };
