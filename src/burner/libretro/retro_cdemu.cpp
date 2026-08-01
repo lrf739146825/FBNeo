@@ -30,6 +30,7 @@ const int CD_TYPE_BINCUE   = 1 << 1;
 const int CD_TYPE_CCD      = 1 << 2;
 
 static int cd_pregap;
+static double cd_volume = 100.0;
 
 struct MSF { UINT8 M; UINT8 S; UINT8 F; };
 
@@ -487,6 +488,7 @@ static int cdimgExit()
 
 	cdimgTrack = 0;
 	cdimgLBA = 0;
+	cd_volume = 100.0;
 
 	if (cdimgTOC)
 		free(cdimgTOC);
@@ -841,6 +843,13 @@ static UINT8* cdimgReadQChannel()
 	return QChannelData;
 }
 
+static int cdimgSetVolume(double dVolume)
+{
+	cd_volume = dVolume;
+
+	return 0;
+}
+
 static int cdimgGetSoundBuffer(short* buffer, int samples)
 {
 
@@ -898,9 +907,9 @@ static int cdimgGetSoundBuffer(short* buffer, int samples)
 		for (int i = (cdimgOutputbufferSize - cdimgOutputPosition) * 2 - 1; i > 0; )
 		{
 			short tmpsrc;
-			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]);
+			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]) * (cd_volume / 100.0);
 			dst[i] = CLIP(tmpsrc + dst[i]); i--;
-			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]);
+			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]) * (cd_volume / 100.0);
 			dst[i] = CLIP(tmpsrc + dst[i]); i--;
 		}
 
@@ -920,9 +929,9 @@ static int cdimgGetSoundBuffer(short* buffer, int samples)
 		for (int i = samples * 2 - 1; i > 0; )
 		{
 			short tmpsrc;
-			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]);
+			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]) * (cd_volume / 100.0);
 			dst[i] = CLIP(tmpsrc + dst[i]); i--;
-			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]);
+			tmpsrc = BURN_ENDIAN_SWAP_INT16(src[i]) * (cd_volume / 100.0);
 			dst[i] = CLIP(tmpsrc + dst[i]); i--;
 		}
 
@@ -1119,6 +1128,12 @@ UINT8* CDEmuReadQChannel() {
 		return NULL;
 	}
 	return cdimgReadQChannel();
+}
+INT32 CDEmuSetVolume(double dVolume) {
+	if (!bCDEmuOkay) {
+		return 1;
+	}
+	return cdimgSetVolume(dVolume);
 }
 INT32 CDEmuGetSoundBuffer(INT16* buffer, INT32 samples) {
 	if (!bCDEmuOkay) {

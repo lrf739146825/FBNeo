@@ -5896,6 +5896,7 @@ DRV		BurnSpecdoomdemo;
 DRV		BurnDrvsnes_doome;
 DRV		BurnDrvsnes_doomj;
 DRV		BurnDrvsnes_doom;
+DRV		BurnDrvsnes_doomfx3;
 DRV		BurnSpecDoompond;
 DRV		BurnSpecDoompit;
 DRV		BurnDrvsnes_Doomtroop;
@@ -31655,6 +31656,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvsnes_doome,			// Doom (Euro)
 	&BurnDrvsnes_doomj,			// Doom (Japan)
 	&BurnDrvsnes_doom,			// Doom (USA)
+	&BurnDrvsnes_doomfx3,		// Doom FX3 (USA)
 	&BurnSpecDoompond,			// Doom of the Pond, The (English) (128K) (HB)
 	&BurnSpecDoompit,			// Doom Pit (128K) (HB)
 	&BurnDrvsnes_Doomtroop,		// Doom Troopers (USA)
@@ -57370,6 +57372,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "snes_doome", "snes/d_snes.cpp"},
 	{ "snes_doomj", "snes/d_snes.cpp"},
 	{ "snes_doom", "snes/d_snes.cpp"},
+	{ "snes_doomfx3", "snes/d_snes.cpp"},
 	{ "spec_doompond", "spectrum/d_spectrum.cpp"},
 	{ "spec_doompit", "spectrum/d_spectrum.cpp"},
 	{ "snes_doomtroop", "snes/d_snes.cpp"},
