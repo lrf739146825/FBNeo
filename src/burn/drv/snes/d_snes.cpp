@@ -10742,7 +10742,7 @@ struct BurnDriver BurnDrvsnes_doomj = {
 // GSU-3 / SuperFX 3
 
 static struct BurnRomInfo snes_doomfx3RomDesc[] = {
-	{ "Doom FX3(U)(2025)(Limited Run Games).sfc", 4194304, 0x8698cbac, BRF_ESS | BRF_PRG },
+	{ "Doom FX3 (U)(2025)(Limited Run Games).sfc", 4194304, 0x8698cbac, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_doomfx3)
@@ -35615,6 +35615,46 @@ struct BurnDriver BurnDrvsnes_starfoxj = {
 	512, 448, 4, 3
 };
 
+// Star Fox FX3 (USA, Rev 2, v1.2.7)
+// GSU‑3
+
+static struct BurnRomInfo snes_starfoxfx3RomDesc[] = {
+	{ "Star Fox FX3 v1.2.7 (U, Rev 2)(2026)(Sunlit).sfc", 4194304, 0x3139726f, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_starfoxfx3)
+STD_ROM_FN(snes_starfoxfx3)
+
+struct BurnDriver BurnDrvsnes_starfoxfx3 = {
+	"snes_starfoxfx3", "snes_starfox", NULL, NULL, "2026",
+	"Star Fox FX3 (USA, Rev 2, v1.2.7)\0", NULL, "Sunlit", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_SHOOT, 0,
+	SNESGetZipName, snes_starfoxfx3RomInfo, snes_starfoxfx3RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Star Fox FX3 (Japan, Rev 1, v1.2.7)
+// GSU‑3
+
+static struct BurnRomInfo snes_starfoxfx3jRomDesc[] = {
+	{ "Star Fox FX3 v1.2.7 (J, Rev 1)(2026)(Sunlit).sfc", 4194304, 0x5cd60d02, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_starfoxfx3j)
+STD_ROM_FN(snes_starfoxfx3j)
+
+struct BurnDriver BurnDrvsnes_starfoxfx3j = {
+	"snes_starfoxfx3j", "snes_starfox", NULL, NULL, "2026",
+	"Star Fox FX3 (Japan, Rev 1, v1.2.7)\0", NULL, "Sunlit", "SNES / Super Famicom",
+	L"Star Fox FX3 (Japan, Rev 1, v1.2.7)\0\u30b9\u30bf\u30fc\u30d5\u30a9\u30c3\u30af\u30b9 FX3\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_SHOOT, 0,
+	SNESGetZipName, snes_starfoxfx3jRomInfo, snes_starfoxfx3jRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
 // Star Fox 2 (USA, Europe, Classic Mini, Switch Online)
 // GSU‑2
 
@@ -35648,9 +35688,49 @@ STD_ROM_FN(snes_starfox2j)
 struct BurnDriver BurnDrvsnes_starfox2j = {
 	"snes_starfox2j", "snes_starfox2", NULL, NULL, "2017",
 	"Star Fox 2 (Japan, Classic Mini, Switch Online)\0", NULL, "Nintendo", "SNES / Super Famicom",
-	NULL, NULL, NULL, NULL,
+	L"Star Fox 2 (Japan, Classic Mini, Switch Online)\0\u30b9\u30bf\u30fc\u30d5\u30a9\u30c3\u30af\u30b9 2\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE, 2, HARDWARE_SNES, GBF_SHOOT, 0,
 	SNESGetZipName, snes_starfox2jRomInfo, snes_starfox2jRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Star Fox 2 FX3 (USA, Europe, v1.0.7)
+// GSU‑3
+
+static struct BurnRomInfo snes_starfox2fx3RomDesc[] = {
+	{ "Star Fox 2 FX3 v1.0.7 (U, E)(2026)(Sunlit).sfc", 4194304, 0x4d474be0, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_starfox2fx3)
+STD_ROM_FN(snes_starfox2fx3)
+
+struct BurnDriver BurnDrvsnes_starfox2fx3 = {
+	"snes_starfox2fx3", "snes_starfox2", NULL, NULL, "2026",
+	"Star Fox 2 FX3 (USA, Europe, v1.0.7)\0", NULL, "Sunlit", "SNES / Super Famicom",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_SHOOT, 0,
+	SNESGetZipName, snes_starfox2fx3RomInfo, snes_starfox2fx3RomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
+	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
+	512, 448, 4, 3
+};
+
+// Star Fox 2 FX3 (Japan, v1.0.7)
+// GSU‑3
+
+static struct BurnRomInfo snes_starfox2fx3jRomDesc[] = {
+	{ "Star Fox 2 FX3 v1.0.7 (J)(2026)(Sunlit).sfc", 4194304, 0xb67c09be, BRF_ESS | BRF_PRG },
+};
+
+STD_ROM_PICK(snes_starfox2fx3j)
+STD_ROM_FN(snes_starfox2fx3j)
+
+struct BurnDriver BurnDrvsnes_starfox2fx3j = {
+	"snes_starfox2fx3j", "snes_starfox2", NULL, NULL, "2026",
+	"Star Fox 2 FX3 (Japan, v1.0.7)\0", NULL, "Sunlit", "SNES / Super Famicom",
+	L"Star Fox 2 FX3 (Japan, v1.0.7)\0\u30b9\u30bf\u30fc\u30d5\u30a9\u30c3\u30af\u30b9 2 FX3\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_SNES, GBF_SHOOT, 0,
+	SNESGetZipName, snes_starfox2fx3jRomInfo, snes_starfox2fx3jRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
@@ -46554,10 +46634,10 @@ struct BurnDriver BurnDrvsnes_Cosmogangpzlh = {
 	512, 448, 4, 3
 };
 
-// Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt (GlobalHack, English v1.03)
+// Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt (GlobalHack, English v1.04)
 
 static struct BurnRomInfo snes_Crashband2enRomDesc[] = {
-	{ "Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt EN v1.03 (2026)(Bandicoot).sfc", 4194304, 0x17fba547, BRF_ESS | BRF_PRG },
+	{ "Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt EN v1.04 (2026)(Bandicoot).sfc", 4194304, 0xe228b3b1, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Crashband2en)
@@ -46565,7 +46645,7 @@ STD_ROM_FN(snes_Crashband2en)
 
 struct BurnDriver BurnDrvsnes_Crashband2en = {
 	"snes_crashband2en", NULL, NULL, NULL, "2026",
-	"Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt (GlobalHack, English v1.03)\0", "GlobalHack of Super Mario World", "Bandicoot", "SNES / Super Famicom",
+	"Crash Bandicoot and the Retro Dimension 2 - The Crystal Hunt (GlobalHack, English v1.04)\0", "GlobalHack of Super Mario World", "Bandicoot", "SNES / Super Famicom",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW | BDF_HACK, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_Crashband2enRomInfo, snes_Crashband2enRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -46573,10 +46653,10 @@ struct BurnDriver BurnDrvsnes_Crashband2en = {
 	512, 448, 4, 3
 };
 
-// Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.03)
+// Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.04)
 
 static struct BurnRomInfo snes_Crashband2ptRomDesc[] = {
-	{ "Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais PT v1.03 (2026)(Bandicoot).sfc", 4194304, 0xe1c7528e, BRF_ESS | BRF_PRG },
+	{ "Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais PT v1.04 (2026)(Bandicoot).sfc", 4194304, 0x57d583d0, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Crashband2pt)
@@ -46584,18 +46664,18 @@ STD_ROM_FN(snes_Crashband2pt)
 
 struct BurnDriver BurnDrvsnes_Crashband2pt = {
 	"snes_crashband2pt", "snes_crashband2en", NULL, NULL, "2026",
-	"Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.03)\0", "GlobalHack of Super Mario World", "Bandicoot", "SNES / Super Famicom",
-	L"Crash Bandicoot e a Dimens\u00e3o Retr\u00f4 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.02)\0", NULL, NULL, NULL,
+	"Crash Bandicoot e a Dimensao Retro 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.04)\0", "GlobalHack of Super Mario World", "Bandicoot", "SNES / Super Famicom",
+	L"Crash Bandicoot e a Dimens\u00e3o Retr\u00f4 2 - A Busca pelos Cristais (GlobalHack, Portuguese v1.04)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW | BDF_HACK, 2, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_Crashband2ptRomInfo, snes_Crashband2ptRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
 	512, 448, 4, 3
 };
 
-// Crash Bandicoot and the Retro Dimension Enhanced (GlobalHack, English v1.23)
+// Crash Bandicoot and the Retro Dimension Enhanced (GlobalHack, English v1.24)
 
 static struct BurnRomInfo snes_CrashbandenRomDesc[] = {
-	{ "Crash Bandicoot and the Retro Dimension Enhanced EN v1.23 (2025-26)(Bandicoot).sfc", 4194304, 0x04e5840b, BRF_ESS | BRF_PRG },
+	{ "Crash Bandicoot and the Retro Dimension Enhanced EN v1.24 (2025-26)(Bandicoot).sfc", 4194304, 0x3f65ee6c, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Crashbanden)
@@ -46603,7 +46683,7 @@ STD_ROM_FN(snes_Crashbanden)
 
 struct BurnDriver BurnDrvsnes_Crashbanden = {
 	"snes_crashbanden", NULL, NULL, NULL, "2025-26",
-	"Crash Bandicoot and the Retro Dimension Enhanced (GlobalHack, English v1.23)\0", "GlobalHack of Super Mario World", "Bindicoot", "Nintendo",
+	"Crash Bandicoot and the Retro Dimension Enhanced (GlobalHack, English v1.24)\0", "GlobalHack of Super Mario World", "Bindicoot", "Nintendo",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW | BDF_HACK, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_CrashbandenRomInfo, snes_CrashbandenRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
@@ -46611,10 +46691,10 @@ struct BurnDriver BurnDrvsnes_Crashbanden = {
 	512, 448, 4, 3
 };
 
-// Crash Bandicoot e a Dimensao Retro Versao Melhorada (GlobalHack, Portuguese v1.23)
+// Crash Bandicoot e a Dimensao Retro Versao Aprimorada (GlobalHack, Portuguese v1.24)
 
 static struct BurnRomInfo snes_CrashbandptRomDesc[] = {
-	{ "Crash Bandicoot e a Dimensao Retro Versao Melhorada PT v1.23 (2025-26)(Bandicoot).sfc", 4194304, 0xccff27c5, BRF_ESS | BRF_PRG },
+	{ "Crash Bandicoot e a Dimensao Retro Versao Aprimorada PT v1.24 (2025-26)(Bandicoot).sfc", 4194304, 0xacb3773d, BRF_ESS | BRF_PRG },
 };
 
 STD_ROM_PICK(snes_Crashbandpt)
@@ -46622,8 +46702,8 @@ STD_ROM_FN(snes_Crashbandpt)
 
 struct BurnDriver BurnDrvsnes_Crashbandpt = {
 	"snes_crashbandpt", "snes_crashbanden", NULL, NULL, "2025-26",
-	"Crash Bandicoot e a Dimensao Retro Versao Melhorada (GlobalHack, Portuguese v1.23)\0", "GlobalHack of Super Mario World", "Bandicoot", "Nintendo",
-	L"Crash Bandicoot e a Dimens\u00e3o Retr\u00f4 Vers\u00e3o Melhorada (GlobalHack, Portuguese v1.23)\0", NULL, NULL, NULL,
+	"Crash Bandicoot e a Dimensao Retro Versao Aprimorada (GlobalHack, Portuguese v1.24)\0", "GlobalHack of Super Mario World", "Bandicoot", "Nintendo",
+	L"Crash Bandicoot e a Dimens\u00e3o Retr\u00f4 Vers\u00e3o Aprimorada (GlobalHack, Portuguese v1.24)\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW | BDF_HACK, 1, HARDWARE_SNES, GBF_PLATFORM, 0,
 	SNESGetZipName, snes_CrashbandptRomInfo, snes_CrashbandptRomName, NULL, NULL, NULL, NULL, SNESInputInfo, SNESDIPInfo,
 	DrvInit, DrvExit, DrvFrame, DrvDraw, DrvScan, &DrvRecalc, 0x8000,
