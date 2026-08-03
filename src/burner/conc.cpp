@@ -7,7 +7,17 @@
 
 // Helper function to check if a given byte sequence is a valid UTF-8 sequence
 bool IsValidUtf8Sequence(const unsigned char* data, size_t length) {
-	for (size_t i = 0; i < length;) {
+
+	// all ASCII , retrun true
+	size_t i = 0;
+	for (; i < length; i++) {
+		unsigned char c = data[i];
+		if (c > 0x7F) break;
+	}
+	if (i == length) return true;
+
+	//continue check encoding
+	for (; i < length;) {
 		unsigned char c = data[i];
 		if (c <= 0x7F) { // 1-byte (ASCII)
 			i++;
@@ -1190,36 +1200,49 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name, const TCHAR *pszFil
 
 static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvName, int is_wayder) {
 
-	if(is_wayder){
-		CurrentWayderMameCheatContent.clear();
-	}else{
-		CurrentMameCheatContent.clear();
-	}
+	fseek(MameDatCheat, 0, SEEK_SET);
+
+	// auto create utf8 256kb cache size
+	std::vector<TCHAR>& targetCache = is_wayder ? CurrentWayderMameCheatContent : CurrentMameCheatContent;
+	targetCache.clear();
+	targetCache.reserve(262144);
+
 	TCHAR szLine[1024];
 	TCHAR gName[64];
 	_stprintf(gName, _T(":%s:"), matchDrvName);
+#if defined(BUILD_WIN32)
+	int gNameLen = lstrlen(gName);
+#else
+	int gNameLen = strlen(gName);
+#endif
 
 	bool foundData = false;
-
+	bool inTargetSection = false;
 	while (_fgetts(szLine, 1024, MameDatCheat) != NULL) {
-		// Check if the current line contains matchDrvName
-#if defined(BUILD_WIN32)
-		if (_tcsncmp(szLine, gName, lstrlen(gName)) == 0) {
-#else
-		if (_tcsncmp(szLine, gName, strlen(gName)) == 0) {
-#endif
-			foundData = true;
 
-			// Add the current line to CurrentMameCheatContent
-			for (TCHAR* p = szLine; *p; ++p) {
-				if (*p != _T('\0')) {
-					if(is_wayder){
-						CurrentWayderMameCheatContent.push_back(*p);
-					}else{
-						CurrentMameCheatContent.push_back(*p);
-					}
-				}
+		if (szLine[0] == _T(';')) {
+			continue;
+		}
+
+		if (!inTargetSection) {
+			// Check if the current line contains matchDrvName
+			if (_tcsncmp(szLine, gName, gNameLen) == 0) {
+				inTargetSection = true;
+				foundData = true;
+				// Add the current line to CurrentMameCheatContent
+				size_t lineLen = _tcslen(szLine);
+				targetCache.insert(targetCache.end(), szLine, szLine + lineLen);
 			}
+		} else {
+			if (szLine[0] == _T('\0') || szLine[0] == _T('\n') || szLine[0] == _T('\r')) {
+				break;
+			}
+		    if (_tcsncmp(szLine, gName, gNameLen) != 0) {
+				break;
+			}
+			// Add the current line to CurrentMameCheatContent
+			size_t lineLen = _tcslen(szLine);
+			targetCache.insert(targetCache.end(), szLine, szLine + lineLen);
 		}
 	}
 
@@ -1408,12 +1431,13 @@ static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, s
 
 	int depth = 0;
 	bool processInclude = true;
-	//max searching included files 5 depth
-	while (processInclude && depth < 5) {
+	//max searching included files 2 depth
+	while (processInclude && depth < 2) {
 		processInclude = false;
 		std::vector<TCHAR> newContent;
 		const TCHAR* iniPtr = CurrentIniCheatContent.data();
 		std::vector<TCHAR> szLine;
+		szLine.reserve(4096);
 
 		// Let's check each line of CurrentIniCheatContent
 		// Looking for include file and hooking them to CurrentIniCheatContent
@@ -1785,6 +1809,11 @@ INT32 ConfigCheatLoad()
 #ifdef __LIBRETRO__
 		bLibretroCheatAlreadyLoaded = true;
 	}
+#else
+		// standalone client do not need cache
+		CurrentMameCheatContent.clear();
+		CurrentWayderMameCheatContent.clear();
+		CurrentIniCheatContent.clear();
 #endif
 
 	if (pCheatInfo) {
