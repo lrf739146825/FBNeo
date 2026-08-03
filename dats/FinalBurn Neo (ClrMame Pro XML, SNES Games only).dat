@@ -4944,6 +4944,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="doomfx3" cloneof="doom" romof="doom" sourcefile="snes/d_snes.cpp">
+		<description>Doom FX3 (USA)</description>
+		<year>2025</year>
+		<manufacturer>Limited Run Games</manufacturer>
+		<rom name="Doom FX3(U)(2025)(Limited Run Games).sfc" size="4194304" crc="8698cbac"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="doomtroop" sourcefile="snes/d_snes.cpp">
 		<description>Doom Troopers (USA)</description>
 		<year>1995</year>
