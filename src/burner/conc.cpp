@@ -1226,10 +1226,12 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 	return foundData ? 0 : 1;
 }
 
+#ifdef __LIBRETRO__
 bool mame_cheat_use_itself = false;
 bool wayder_cheat_use_itself = false;
 bool mame_cheat_use_parent = false;
 bool wayder_cheat_use_parent = false;
+#endif
 
 static INT32 ConfigParseMAMEFile(int is_wayder)
 {
@@ -1262,6 +1264,7 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 		ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 		if (ret == 0) {
 			ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
+#ifdef __LIBRETRO__
 			if(ret == 0 ){
 				if(is_wayder){
 					wayder_cheat_use_itself = true;
@@ -1269,6 +1272,7 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 					mame_cheat_use_itself = true;
 				}
 			}
+#endif
 		}
 		// let's try using parent entry as a fallback if no cheat was found for this romset
 		if (ret > 0 && (BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
@@ -1277,6 +1281,7 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 			ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 			if (ret == 0) {
 				ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
+#ifdef __LIBRETRO__
 				if(ret == 0 ){
 					if(is_wayder){
 						wayder_cheat_use_parent = true;
@@ -1284,6 +1289,7 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 						mame_cheat_use_parent = true;
 					}
 				}
+#endif
 			}
 		}
 
@@ -1732,20 +1738,29 @@ INT32 ConfigCheatLoad()
 
 		// load MAME .dat cheat
 		int is_wayder = 1;
+#ifdef __LIBRETRO__
 		if(mame_cheat_use_itself){
 			ConfigParseMAMEFile_internal(szDrvName, _T("cheat.dat"),!is_wayder);
 		}else if(mame_cheat_use_parent){
 			ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("cheat.dat"),!is_wayder);
 		}else{
+#endif
 			ConfigParseMAMEFile(!is_wayder /* cheat.dat, cheatnes.dat, cheatsnes.dat */);
+#ifdef __LIBRETRO__
 		}
+#endif
+
+#ifdef __LIBRETRO__
 		if(wayder_cheat_use_itself){
 			ConfigParseMAMEFile_internal(szDrvName, _T("wayder_cheat.dat"),is_wayder);
 		}else if(wayder_cheat_use_parent){
 			ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("wayder_cheat.dat"),is_wayder);
 		}else{
+#endif
 			ConfigParseMAMEFile(is_wayder /* wayder */);
+#ifdef __LIBRETRO__
 		}
+#endif
 
 		//ini-style file, use single file first
 		_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, szDrvName);
