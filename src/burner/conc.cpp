@@ -1731,7 +1731,7 @@ INT32 ConfigCheatLoad()
 		} // keep loading & adding stuff even if .vct file loads.
 
 		// load MAME .dat cheat
-		bool is_wayder = true;
+		int is_wayder = 1;
 		if(mame_cheat_use_itself){
 			ConfigParseMAMEFile_internal(szDrvName, _T("cheat.dat"),!is_wayder);
 		}else if(mame_cheat_use_parent){
