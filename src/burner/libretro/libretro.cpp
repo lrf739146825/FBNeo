@@ -2596,6 +2596,8 @@ bool retro_load_game_special(unsigned game_type, const struct retro_game_info *i
 	return retro_load_game_common();
 }
 
+extern void ResetLibretroCheatLoadedFlag(bool bClearCache);
+
 void retro_unload_game(void)
 {
 	if (nBurnDrvActive != ~0U)
@@ -2613,6 +2615,7 @@ void retro_unload_game(void)
 		if (BurnNvramSave(g_autofs_path) == 0 && path_is_valid(g_autofs_path))
 			HandleMessage(RETRO_LOG_INFO, "[FBNeo] EEPROM succesfully saved to %s\n", g_autofs_path);
 		BurnDrvExit();
+		ResetLibretroCheatLoadedFlag(true);
 		if (nGameType == RETRO_GAME_TYPE_NEOCD)
 			CDEmuExit();
 		nBurnDrvActive = ~0U;
@@ -2655,6 +2658,7 @@ static void retro_incomplete_exit()
 		if (BurnNvramSave(g_autofs_path) == 0 && path_is_valid(g_autofs_path))
 			HandleMessage(RETRO_LOG_INFO, "[FBNeo] EEPROM succesfully saved to %s\n", g_autofs_path);
 		BurnDrvExit();
+		ResetLibretroCheatLoadedFlag(false);
 		if (nGameType == RETRO_GAME_TYPE_NEOCD)
 			CDEmuExit();
 		nBurnDrvActive = ~0U;

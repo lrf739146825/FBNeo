@@ -944,6 +944,11 @@ static INT32 ConfigParseMAMEFile_internal(const TCHAR *name, const TCHAR *pszFil
 
 	_stprintf(gName, _T(":%s:"), name);
 
+    const std::vector<TCHAR>& targetCache = is_wayder ? CurrentWayderMameCheatContent : CurrentMameCheatContent;
+    if (targetCache.empty() || targetCache.front() == _T('\0')) {
+        return 1;
+    }
+
 	const TCHAR* iniPtr = is_wayder? CurrentWayderMameCheatContent.data(): CurrentMameCheatContent.data();
 
 	while (*iniPtr)
@@ -1221,6 +1226,11 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 	return foundData ? 0 : 1;
 }
 
+bool mame_cheat_use_itself = false;
+bool wayder_cheat_use_itself = false;
+bool mame_cheat_use_parent = false;
+bool wayder_cheat_use_parent = false;
+
 static INT32 ConfigParseMAMEFile(int is_wayder)
 {
 	TCHAR szFileName[MAX_PATH] = _T("");
@@ -1252,6 +1262,13 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 		ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 		if (ret == 0) {
 			ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
+			if(ret == 0 ){
+				if(is_wayder){
+					wayder_cheat_use_itself = true;
+				}else{
+					mame_cheat_use_itself = true;
+				}
+			}
 		}
 		// let's try using parent entry as a fallback if no cheat was found for this romset
 		if (ret > 0 && (BurnDrvGetFlags() & BDF_CLONE) && BurnDrvGetText(DRV_PARENT)) {
@@ -1260,6 +1277,13 @@ static INT32 ConfigParseMAMEFile(int is_wayder)
 			ret = ExtractMameCheatFromDat(fz, DrvName, is_wayder);
 			if (ret == 0) {
 				ret = ConfigParseMAMEFile_internal(DrvName, pszFileHeading, is_wayder );
+				if(ret == 0 ){
+					if(is_wayder){
+						wayder_cheat_use_parent = true;
+					}else{
+						mame_cheat_use_parent = true;
+					}
+				}
 			}
 		}
 
@@ -1361,7 +1385,7 @@ static INT32 LoadIniContentFromZip(const TCHAR* DrvName, const TCHAR* zipFileNam
 bool use_z7_ini_parent = false;
 
  //Extract matched INI in cheat.zip or 7z
-static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheat) {
+static INT32 ExtractIniFromZip(const TCHAR* DrvName, const TCHAR* zipFileName, std::vector<TCHAR>& CurrentIniCheatContent) {
 
 	if (LoadIniContentFromZip(DrvName, zipFileName, CurrentIniCheatContent) != 0) {
 		// try load parent cheat
@@ -1662,44 +1686,72 @@ static INT32 ConfigParseVCT(TCHAR* pszFilename)
 // In the standalone client, cheats need to be reloaded every time a game is loaded, but libretro just need to load once.
 #ifdef __LIBRETRO__
 bool bLibretroCheatAlreadyLoaded = false;
+
+//libretro.cpp  retro_incomplete_exit() bClearCache = false ;  retro_unload_game()  bClearCache = true;
+void ResetLibretroCheatLoadedFlag(bool bClearCache)
+{
+	bLibretroCheatAlreadyLoaded = false;
+	if (bClearCache) {
+		mame_cheat_use_itself = false;
+		wayder_cheat_use_itself = false;
+		mame_cheat_use_parent = false;
+		wayder_cheat_use_parent = false;
+		use_z7_ini_parent = false;
+		CurrentMameCheatContent.clear();
+		CurrentWayderMameCheatContent.clear();
+		CurrentIniCheatContent.clear();
+	}
+}
 #endif
 
+// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
 INT32 ConfigCheatLoad()
 {
-	TCHAR szFilename[MAX_PATH] = _T("");
-	TCHAR szDrvName[MAX_PATH] = _T("");
 
-	if (NeoCDInfo_ID()) {
-		_stprintf(szDrvName, _T("ngcd_%s"), NeoCDInfo_Text(DRV_NAME));
-	} else {
-		_stprintf(szDrvName, _T("%s"), BurnDrvGetText(DRV_NAME));
-	}
-	bprintf(0, _T("Cheat engine, game name: %s\n"), szDrvName);
-
-	pCurrentCheat = NULL;
-	pPreviousCheat = NULL;
-
-	INT32 is_wayder = 1;
-	INT32 ret = 1;
-
-	// Load multiple cheat types  { VirtuaNes .vct + cheat.dat, wayder_cheat.dat; cheatnes.dat; cheatsnes.dat + .ini > 7z/zip .ini + Nebula .dat }
 #ifdef __LIBRETRO__
 	if(!bLibretroCheatAlreadyLoaded){
 #endif
+
+		TCHAR szFilename[MAX_PATH] = _T("");
+		TCHAR szDrvName[MAX_PATH] = _T("");
+
+		if (NeoCDInfo_ID()) {
+			_stprintf(szDrvName, _T("ngcd_%s"), NeoCDInfo_Text(DRV_NAME));
+		} else {
+			_stprintf(szDrvName, _T("%s"), BurnDrvGetText(DRV_NAME));
+		}
+		bprintf(0, _T("Cheat engine, game name: %s\n"), szDrvName);
+
+		pCurrentCheat = NULL;
+		pPreviousCheat = NULL;
+
 		if (HW_NES) { // only for NES/FC!
 			_stprintf(szFilename, _T("%s%s.vct"), szAppCheatsPath, szDrvName);
 			ConfigParseVCT(szFilename);
 		} // keep loading & adding stuff even if .vct file loads.
 
-		// cheat.dat, cheatnes.dat, cheatsnes.dat, wayder_cheat.dat
-		ConfigParseMAMEFile(!is_wayder /* cheat.dat, cheatnes.dat, cheatsnes.dat */);
-		ConfigParseMAMEFile(is_wayder /* wayder */);
+		// load MAME .dat cheat
+		bool is_wayder = true;
+		if(mame_cheat_use_itself){
+			ConfigParseMAMEFile_internal(szDrvName, _T("cheat.dat"),!is_wayder);
+		}else if(mame_cheat_use_parent){
+			ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("cheat.dat"),!is_wayder);
+		}else{
+			ConfigParseMAMEFile(!is_wayder /* cheat.dat, cheatnes.dat, cheatsnes.dat */);
+		}
+		if(wayder_cheat_use_itself){
+			ConfigParseMAMEFile_internal(szDrvName, _T("wayder_cheat.dat"),is_wayder);
+		}else if(wayder_cheat_use_parent){
+			ConfigParseMAMEFile_internal(BurnDrvGetText(DRV_PARENT),_T("wayder_cheat.dat"),is_wayder);
+		}else{
+			ConfigParseMAMEFile(is_wayder /* wayder */);
+		}
 
 		//ini-style file, use single file first
 		_stprintf(szFilename, _T("%s%s.ini"), szAppCheatsPath, szDrvName);
 		if(ConfigParseFile(szFilename,NULL)){
 			//try load ini from zip/7z
-			ret = ExtractIniFromZip(szDrvName, _T("cheat"), CurrentIniCheatContent);
+			INT32 ret = ExtractIniFromZip(szDrvName, _T("cheat"), CurrentIniCheatContent);
 			if (ret == 0) {
 				// (cheat.zip/7z) pszFilename only uses for cheaterror and pszFileHeading as string, not a file in this step
 				if(use_z7_ini_parent){
@@ -1729,5 +1781,5 @@ INT32 ConfigCheatLoad()
 		CheatUpdate();
 	}
 
-	return ret;
+	return 0;
 }
