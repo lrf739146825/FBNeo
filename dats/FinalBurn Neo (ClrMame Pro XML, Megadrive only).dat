@@ -2023,6 +2023,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="beachvolley" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Beach Volley (HB, Alpha)</description>
+		<year>2020</year>
+		<manufacturer>Z-Team</manufacturer>
+		<rom name="Beach Volley Alpha (2020)(Z-Team).bin" size="786432" crc="06218ee7"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="beastwj" cloneof="beastw" romof="beastw" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Beast Warriors (Japan)</description>
 		<year>1991</year>
@@ -7383,6 +7392,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="flikisesc" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Fliki's Escape (HB, Spanish)</description>
+		<year>2026</year>
+		<manufacturer>Retroplaying BCN</manufacturer>
+		<rom name="Fliki's Escape (ES)(2026)(Retroplaying BCN).bin" size="786432" crc="b3116d82"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="flint" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Flintstones, The (Euro)</description>
 		<year>1993</year>
@@ -7726,6 +7744,15 @@
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Galahad T-Spa (2017)(Wave).bin" size="1048576" crc="29cb154b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="galaxian" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Galaxian (HB, 20260803-1314)</description>
+		<year>2026</year>
+		<manufacturer>Nameless Algorithm</manufacturer>
+		<rom name="Galaxian 20260803-1314 (2026)(Nameless Algorithm).bin" size="151468" crc="1214a3ca"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15212,6 +15239,24 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pitfall2600" cloneof="pitfall2600r" romof="pitfall2600r" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Pitfall 2600 (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>SirVH</manufacturer>
+		<rom name="Pitfall 2600 v0.0.1 (2026)(SirVH).bin" size="131072" crc="4bc9756e"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pitfall2600r" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Pitfall 2600 Remastered (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>SirVH</manufacturer>
+		<rom name="Pitfall 2600 Remastered v0.0.1 (2026)(SirVH).bin" size="131072" crc="8d835c62"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pitfall" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Pitfall: The Mayan Adventure (Euro)</description>
 		<year>1994</year>
@@ -15922,6 +15967,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="queenreversi" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Queen’s Reversi (HB, v1.01)</description>
+		<year>2026</year>
+		<manufacturer>NK-Soft</manufacturer>
+		<rom name="Queen’s Reversi v1.01 (2026)(NK-Soft).bin" size="1703936" crc="00c79e37"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="rbibb93" sourcefile="megadrive/d_megadrive.cpp">
 		<description>R.B.I. Baseball '93 (USA)</description>
 		<year>1993</year>
@@ -16218,6 +16272,15 @@
 		<year>1991</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Rent a Hero (Japan)(1991)(Sega).bin" size="1048576" crc="2e515f82"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="rescuedog" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Rescue Dog (HB, v0.2)</description>
+		<year>2026</year>
+		<manufacturer>Nameless Algorithm</manufacturer>
+		<rom name="Rescue Dog v0.2 (2026)(Nameless Algorithm).bin" size="12896" crc="6d7e3327"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16609,6 +16672,15 @@
 		<year>2017</year>
 		<manufacturer>Wave</manufacturer>
 		<rom name="Robocop 3 T-Spa (2017)(Wave).bin" size="524288" crc="eecbff56"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="robocopmd" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Robocop MD (HB, v0.1.0 demo.1)</description>
+		<year>2026</year>
+		<manufacturer>Bocalini</manufacturer>
+		<rom name="Robocop MD v0.1.0 demo.1 (2026)(Bocalini).bin" size="1179648" crc="373bc851"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -21756,6 +21828,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="preliminary"/>
 	</game>
+	<game name="tetrisredux" cloneof="tetris" romof="tetris" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Hack</comment>
+		<description>Tetris Redux (Hack)</description>
+		<year>2026</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Tetris Redux (2026)(BillyTime! Games).bin" size="262144" crc="b2d5bdb2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="themeprk" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Theme Park (Euro, USA)</description>
 		<year>1995</year>
@@ -23170,6 +23251,15 @@
 		<year>1991</year>
 		<manufacturer>Renovation</manufacturer>
 		<rom name="Vapor Trail (USA)(1991)(Renovation).bin" size="1048576" crc="c49e3a0a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="varg" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>VARG (HB, Summer '26 Demo)</description>
+		<year>2026</year>
+		<manufacturer>Schwefelholger</manufacturer>
+		<rom name="VARG Summer '26 Demo (2026)(Schwefelholger).bin" size="524288" crc="4bca0133"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

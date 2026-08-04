@@ -17913,10 +17913,10 @@
 	</game>
 	<game name="turfmastsc" cloneof="turfmast" romof="turfmast" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.09)</description>
+		<description>Neo Turf Masters / Big Tournament Golf: Scotland Course (Hack, v1.10)</description>
 		<year>2026</year>
 		<manufacturer>dericmiller</manufacturer>
-		<rom name="200-p1sc.p1" size="2097152" crc="efd0ef14"/>
+		<rom name="200-p1sc.p1" size="2097152" crc="c3d845ae"/>
 		<rom name="200-s1.s1" merge="200-s1.s1" size="131072" crc="9a5402b2"/>
 		<rom name="200-c1sc.c1" size="4194304" crc="bb2a69a7"/>
 		<rom name="200-c2sc.c2" size="4194304" crc="443e13c5"/>
@@ -23676,15 +23676,15 @@
 	</game>
 	<game name="sengoku2rb" cloneof="sengoku2" romof="sengoku2" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Sengoku 2 / Sengoku Denshou 2 (Hack, Red Blood)</description>
+		<description>Sengoku 2 / Sengoku Denshou 2 (Hack, Red Blood v1.14)</description>
 		<year>2026</year>
 		<manufacturer>Raphael-Boichot</manufacturer>
-		<rom name="040-p1rb.p1" size="1048576" crc="b26122f7"/>
+		<rom name="040-p1rb.p1" size="1048576" crc="9a8925fe"/>
 		<rom name="040-s1.s1" merge="040-s1.s1" size="131072" crc="cd9802a3"/>
-		<rom name="040-c1rb.c1" size="2097152" crc="414b1c85"/>
-		<rom name="040-c2rb.c2" size="2097152" crc="86b929ad"/>
-		<rom name="040-c3rb.c3" size="524288" crc="327e432f"/>
-		<rom name="040-c4rb.c4" size="524288" crc="4c6d8667"/>
+		<rom name="040-c1rb.c1" size="2097152" crc="5740194a"/>
+		<rom name="040-c2rb.c2" size="2097152" crc="dc5a1591"/>
+		<rom name="040-c3rb.c3" size="524288" crc="5c4040e5"/>
+		<rom name="040-c4rb.c4" size="524288" crc="57ca479b"/>
 		<rom name="040-m1.m1" merge="040-m1.m1" size="131072" crc="d4de4bca"/>
 		<rom name="040-v1.v1" merge="040-v1.v1" size="2097152" crc="71cb4b5d"/>
 		<rom name="040-v2.v2" merge="040-v2.v2" size="1048576" crc="c5cece01"/>

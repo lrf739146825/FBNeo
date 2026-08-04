@@ -5390,6 +5390,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="diggymole" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Diggy Diggy Mole (HB)</description>
+		<year>2026</year>
+		<manufacturer>Novasplore Games</manufacturer>
+		<rom name="Diggy Diggy Mole (2026)(Novasplore Games).nes" size="98320" crc="aa4951b1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="digitdevmonmegte" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Digital Devil Monogatari - Megami Tensei (Hack, English)</description>
