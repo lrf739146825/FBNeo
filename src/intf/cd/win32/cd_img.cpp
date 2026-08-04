@@ -889,6 +889,8 @@ static INT32 cdimgLoadSector(INT32 LBA, char* pBuffer)
 	}
 	// dprintf(_T("    [ %02X %02X %02X %02X  %02X %02X %02X %02X  %02X %02X %02X %02X  %02X %02X %02X %02X ]\n"), pBuffer[0], pBuffer[1], pBuffer[2], pBuffer[3], pBuffer[4], pBuffer[5], pBuffer[6], pBuffer[7], pBuffer[8], pBuffer[9], pBuffer[10], pBuffer[11], pBuffer[12], pBuffer[13], pBuffer[14], pBuffer[15]);
 
+	cdimgLBA++;
+
 	return cdimgLBA;
 }
 
@@ -1012,6 +1014,10 @@ static int cdimgSetVolume(double dVolume)
 	cd_volume = dVolume;
 
 	return 0;
+}
+
+INT32 cdimgGetCurrentLBA() {
+	return cdimgLBA;
 }
 
 static INT32 cdimgGetSoundBuffer(INT16* buffer, INT32 samples)
@@ -1160,4 +1166,4 @@ static INT32 cdimgGetSettings(InterfaceInfo* pInfo)
 	return 0;
 }
 
-struct CDEmuDo cdimgDo = { cdimgExit, cdimgInit, cdimgStop, cdimgPlay, cdimgLoadSector, cdimgReadTOC, cdimgReadQChannel, cdimgSetVolume, cdimgGetSoundBuffer, cdimgScan, cdimgGetSettings, _T("raw image CD emulation") };
+struct CDEmuDo cdimgDo = { cdimgExit, cdimgInit, cdimgStop, cdimgPlay, cdimgLoadSector, cdimgReadTOC, cdimgReadQChannel, cdimgSetVolume, cdimgGetCurrentLBA, cdimgGetSoundBuffer, cdimgScan, cdimgGetSettings, _T("raw image CD emulation") };
