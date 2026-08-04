@@ -1237,7 +1237,7 @@ static INT32 ExtractMameCheatFromDat(FILE* MameDatCheat, const TCHAR* matchDrvNa
 			if (szLine[0] == _T('\0') || szLine[0] == _T('\n') || szLine[0] == _T('\r')) {
 				break;
 			}
-		    if (_tcsncmp(szLine, gName, gNameLen) != 0) {
+			if (_tcsncmp(szLine, gName, gNameLen) != 0) {
 				break;
 			}
 			// Add the current line to CurrentMameCheatContent
