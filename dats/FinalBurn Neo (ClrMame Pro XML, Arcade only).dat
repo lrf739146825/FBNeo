@@ -2588,19 +2588,19 @@
 		<description>64th. Street: A Detective Story (Japan, set 1)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="91105-3.bin" size="262144" crc="a211a83b"/>
-		<rom name="91105-2.bin" size="262144" crc="27c1f436"/>
-		<rom name="64th_08.rom" merge="64th_08.rom" size="65536" crc="632be0c1"/>
-		<rom name="64th_07.rom" merge="64th_07.rom" size="65536" crc="13595d01"/>
-		<rom name="mo-91009.mcu" merge="mo-91009.mcu" size="16384" crc="c6f509ac"/>
-		<rom name="64th_01.rom" merge="64th_01.rom" size="524288" crc="06222f90"/>
-		<rom name="64th_06.rom" merge="64th_06.rom" size="524288" crc="2bfcdc75"/>
-		<rom name="64th_09.rom" merge="64th_09.rom" size="131072" crc="a4a97db4"/>
-		<rom name="64th_05.rom" merge="64th_05.rom" size="524288" crc="a89a7020"/>
-		<rom name="64th_04.rom" merge="64th_04.rom" size="524288" crc="98f83ef6"/>
-		<rom name="64th_11.rom" merge="64th_11.rom" size="131072" crc="b0b8a65c"/>
-		<rom name="64th_10.rom" merge="64th_10.rom" size="262144" crc="a3390561"/>
-		<rom name="pr91009.12" merge="pr91009.12" size="512" crc="c69423d6"/>
+		<rom name="rb-91105-3.ic53" size="262144" crc="a211a83b"/>
+		<rom name="rb-91105-2.ic32" size="262144" crc="27c1f436"/>
+		<rom name="rb-91105_8.ic99" merge="rb-91105_8.ic99" size="65536" crc="632be0c1"/>
+		<rom name="rb-91105.7.ic98" merge="rb-91105.7.ic98" size="65536" crc="13595d01"/>
+		<rom name="mo-91009.mcu.ic14" merge="mo-91009.mcu.ic14" size="16384" crc="c6f509ac"/>
+		<rom name="rb-91105_1_rev_a.ic17" merge="rb-91105_1_rev_a.ic17" size="524288" crc="06222f90"/>
+		<rom name="rb-91105_6_rev_a.ic67" merge="rb-91105_6_rev_a.ic67" size="524288" crc="2bfcdc75"/>
+		<rom name="rb-91105_9_rev_a.ic125" merge="rb-91105_9_rev_a.ic125" size="131072" crc="a4a97db4"/>
+		<rom name="rb-91105_5_rev_a.ic61" merge="rb-91105_5_rev_a.ic61" size="524288" crc="a89a7020"/>
+		<rom name="rb-91105_4_rev_a.ic60" merge="rb-91105_4_rev_a.ic60" size="524288" crc="98f83ef6"/>
+		<rom name="rb-91105_11_rev_a.ic.132" merge="rb-91105_11_rev_a.ic.132" size="131072" crc="b0b8a65c"/>
+		<rom name="rb-91105_10_rev_a.ic131" merge="rb-91105_10_rev_a.ic131" size="262144" crc="a3390561"/>
+		<rom name="pr91009.ic155" merge="pr91009.ic155" size="512" crc="c69423d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2608,19 +2608,19 @@
 		<description>64th. Street: A Detective Story (Japan, set 2)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="ic53.bin" size="262144" crc="c978d086"/>
-		<rom name="ic52.bin" size="262144" crc="af475852"/>
-		<rom name="64th_08.rom" merge="64th_08.rom" size="65536" crc="632be0c1"/>
-		<rom name="64th_07.rom" merge="64th_07.rom" size="65536" crc="13595d01"/>
-		<rom name="mo-91009.mcu" merge="mo-91009.mcu" size="16384" crc="c6f509ac"/>
-		<rom name="64th_01.rom" merge="64th_01.rom" size="524288" crc="06222f90"/>
-		<rom name="64th_06.rom" merge="64th_06.rom" size="524288" crc="2bfcdc75"/>
-		<rom name="64th_09.rom" merge="64th_09.rom" size="131072" crc="a4a97db4"/>
-		<rom name="64th_05.rom" merge="64th_05.rom" size="524288" crc="a89a7020"/>
-		<rom name="64th_04.rom" merge="64th_04.rom" size="524288" crc="98f83ef6"/>
-		<rom name="64th_11.rom" merge="64th_11.rom" size="131072" crc="b0b8a65c"/>
-		<rom name="64th_10.rom" merge="64th_10.rom" size="262144" crc="a3390561"/>
-		<rom name="pr91009.12" merge="pr91009.12" size="512" crc="c69423d6"/>
+		<rom name="3.ic53" size="262144" crc="c978d086"/>
+		<rom name="2.ic52" size="262144" crc="af475852"/>
+		<rom name="rb-91105_8.ic99" merge="rb-91105_8.ic99" size="65536" crc="632be0c1"/>
+		<rom name="rb-91105.7.ic98" merge="rb-91105.7.ic98" size="65536" crc="13595d01"/>
+		<rom name="mo-91009.mcu.ic14" merge="mo-91009.mcu.ic14" size="16384" crc="c6f509ac"/>
+		<rom name="rb-91105_1_rev_a.ic17" merge="rb-91105_1_rev_a.ic17" size="524288" crc="06222f90"/>
+		<rom name="rb-91105_6_rev_a.ic67" merge="rb-91105_6_rev_a.ic67" size="524288" crc="2bfcdc75"/>
+		<rom name="rb-91105_9_rev_a.ic125" merge="rb-91105_9_rev_a.ic125" size="131072" crc="a4a97db4"/>
+		<rom name="rb-91105_5_rev_a.ic61" merge="rb-91105_5_rev_a.ic61" size="524288" crc="a89a7020"/>
+		<rom name="rb-91105_4_rev_a.ic60" merge="rb-91105_4_rev_a.ic60" size="524288" crc="98f83ef6"/>
+		<rom name="rb-91105_11_rev_a.ic.132" merge="rb-91105_11_rev_a.ic.132" size="131072" crc="b0b8a65c"/>
+		<rom name="rb-91105_10_rev_a.ic131" merge="rb-91105_10_rev_a.ic131" size="262144" crc="a3390561"/>
+		<rom name="pr91009.ic155" merge="pr91009.ic155" size="512" crc="c69423d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2628,19 +2628,19 @@
 		<description>64th. Street: A Detective Story (World)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
-		<rom name="64th_03.rom" size="262144" crc="ed6c6942"/>
-		<rom name="64th_02.rom" size="262144" crc="0621ed1d"/>
-		<rom name="64th_08.rom" size="65536" crc="632be0c1"/>
-		<rom name="64th_07.rom" size="65536" crc="13595d01"/>
-		<rom name="mo-91009.mcu" size="16384" crc="c6f509ac"/>
-		<rom name="64th_01.rom" size="524288" crc="06222f90"/>
-		<rom name="64th_06.rom" size="524288" crc="2bfcdc75"/>
-		<rom name="64th_09.rom" size="131072" crc="a4a97db4"/>
-		<rom name="64th_05.rom" size="524288" crc="a89a7020"/>
-		<rom name="64th_04.rom" size="524288" crc="98f83ef6"/>
-		<rom name="64th_11.rom" size="131072" crc="b0b8a65c"/>
-		<rom name="64th_10.rom" size="262144" crc="a3390561"/>
-		<rom name="pr91009.12" size="512" crc="c69423d6"/>
+		<rom name="rb-91105_3_ver_e1.1.ic53" size="262144" crc="ed6c6942"/>
+		<rom name="rb-91105_2_ver_e1.1.ic52" size="262144" crc="0621ed1d"/>
+		<rom name="rb-91105_8.ic99" size="65536" crc="632be0c1"/>
+		<rom name="rb-91105.7.ic98" size="65536" crc="13595d01"/>
+		<rom name="mo-91009.mcu.ic14" size="16384" crc="c6f509ac"/>
+		<rom name="rb-91105_1_rev_a.ic17" size="524288" crc="06222f90"/>
+		<rom name="rb-91105_6_rev_a.ic67" size="524288" crc="2bfcdc75"/>
+		<rom name="rb-91105_9_rev_a.ic125" size="131072" crc="a4a97db4"/>
+		<rom name="rb-91105_5_rev_a.ic61" size="524288" crc="a89a7020"/>
+		<rom name="rb-91105_4_rev_a.ic60" size="524288" crc="98f83ef6"/>
+		<rom name="rb-91105_11_rev_a.ic.132" size="131072" crc="b0b8a65c"/>
+		<rom name="rb-91105_10_rev_a.ic131" size="262144" crc="a3390561"/>
+		<rom name="pr91009.ic155" size="512" crc="c69423d6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2666,6 +2666,270 @@
 		<rom name="1.u97" size="524288" crc="cd1ffe88"/>
 		<rom name="3.u137" size="131072" crc="669ed310"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720gr1" cloneof="720" romof="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (German, rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-2226.7lm" size="16384" crc="bbe90b2a"/>
+		<rom name="136047-2227.7mn" size="16384" crc="c628fcc9"/>
+		<rom name="136047-2228.6fh" size="65536" crc="a115aa94"/>
+		<rom name="136047-3231.6mn" size="65536" crc="b704e865"/>
+		<rom name="136047-1129.6hj" merge="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" merge="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" merge="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" merge="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-1134.2a" size="16384" crc="09a418c2"/>
+		<rom name="136047-1135.2b" merge="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-1136.2cd" size="16384" crc="dad40e6d"/>
+		<rom name="136047-1121.6a" merge="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" merge="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" merge="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" merge="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" merge="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" merge="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" merge="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" merge="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" merge="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" merge="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" merge="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" merge="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" merge="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" merge="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" merge="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" merge="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" merge="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" merge="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" merge="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" merge="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" merge="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" merge="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" merge="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" merge="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1225.4t" size="16384" crc="264eda88"/>
+		<rom name="720-eeprom.bin" merge="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720g" cloneof="720" romof="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (German, rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-3226.7lm" size="16384" crc="472be9aa"/>
+		<rom name="136047-2227.7mn" size="16384" crc="c628fcc9"/>
+		<rom name="136047-3228.6fh" size="65536" crc="10bbbce7"/>
+		<rom name="136047-4231.6mn" size="65536" crc="c29188b0"/>
+		<rom name="136047-1129.6hj" merge="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" merge="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" merge="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" merge="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-2134.2a" merge="136047-2134.2a" size="16384" crc="0db4ca28"/>
+		<rom name="136047-1135.2b" merge="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-2136.2cd" merge="136047-2136.2cd" size="16384" crc="00b06bec"/>
+		<rom name="136047-1121.6a" merge="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" merge="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" merge="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" merge="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" merge="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" merge="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" merge="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" merge="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" merge="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" merge="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" merge="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" merge="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" merge="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" merge="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" merge="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" merge="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" merge="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" merge="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" merge="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" merge="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" merge="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" merge="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" merge="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" merge="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1225.4t" size="16384" crc="264eda88"/>
+		<rom name="720-eeprom.bin" merge="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720r1" cloneof="720" romof="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-1126.7lm" size="16384" crc="f0ef298a"/>
+		<rom name="136047-1127.7mn" size="16384" crc="57e49398"/>
+		<rom name="136047-1128.6fh" size="65536" crc="2884dcff"/>
+		<rom name="136047-1131.6mn" size="65536" crc="94c8195e"/>
+		<rom name="136047-1129.6hj" merge="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" merge="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" merge="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" merge="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-1134.2a" size="16384" crc="09a418c2"/>
+		<rom name="136047-1135.2b" merge="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-1136.2cd" size="16384" crc="dad40e6d"/>
+		<rom name="136047-1121.6a" merge="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" merge="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" merge="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" merge="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" merge="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" merge="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" merge="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" merge="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" merge="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" merge="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" merge="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" merge="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" merge="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" merge="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" merge="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" merge="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" merge="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" merge="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" merge="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" merge="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" merge="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" merge="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" merge="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" merge="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1125.4t" merge="136047-1125.4t" size="16384" crc="6b7e2328"/>
+		<rom name="720-eeprom.bin" merge="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720r2" cloneof="720" romof="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-2126.7lm" size="16384" crc="d07e731c"/>
+		<rom name="136047-2127.7mn" size="16384" crc="2d19116c"/>
+		<rom name="136047-2128.6fh" size="65536" crc="edad0bc0"/>
+		<rom name="136047-2131.6mn" size="65536" crc="bfdd95a4"/>
+		<rom name="136047-1129.6hj" merge="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" merge="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" merge="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" merge="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-1134.2a" size="16384" crc="09a418c2"/>
+		<rom name="136047-1135.2b" merge="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-1136.2cd" size="16384" crc="dad40e6d"/>
+		<rom name="136047-1121.6a" merge="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" merge="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" merge="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" merge="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" merge="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" merge="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" merge="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" merge="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" merge="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" merge="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" merge="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" merge="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" merge="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" merge="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" merge="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" merge="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" merge="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" merge="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" merge="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" merge="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" merge="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" merge="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" merge="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" merge="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1125.4t" merge="136047-1125.4t" size="16384" crc="6b7e2328"/>
+		<rom name="720-eeprom.bin" merge="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720r3" cloneof="720" romof="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (rev 3)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-2126.7lm" size="16384" crc="d07e731c"/>
+		<rom name="136047-2127.7mn" size="16384" crc="2d19116c"/>
+		<rom name="136047-2128.6fh" size="65536" crc="edad0bc0"/>
+		<rom name="136047-3131.6mn" size="65536" crc="704dc925"/>
+		<rom name="136047-1129.6hj" merge="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" merge="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" merge="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" merge="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-1134.2a" size="16384" crc="09a418c2"/>
+		<rom name="136047-1135.2b" merge="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-1136.2cd" size="16384" crc="dad40e6d"/>
+		<rom name="136047-1121.6a" merge="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" merge="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" merge="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" merge="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" merge="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" merge="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" merge="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" merge="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" merge="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" merge="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" merge="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" merge="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" merge="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" merge="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" merge="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" merge="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" merge="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" merge="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" merge="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" merge="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" merge="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" merge="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" merge="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" merge="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1125.4t" merge="136047-1125.4t" size="16384" crc="6b7e2328"/>
+		<rom name="720-eeprom.bin" merge="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="720" sourcefile="atari/d_atarisy2.cpp">
+		<description>720 Degrees (rev 4)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136047-3126.7lm" size="16384" crc="43abd367"/>
+		<rom name="136047-3127.7mn" size="16384" crc="772e1e5b"/>
+		<rom name="136047-3128.6fh" size="65536" crc="bf6f425b"/>
+		<rom name="136047-4131.6mn" size="65536" crc="2ea8a20f"/>
+		<rom name="136047-1129.6hj" size="65536" crc="eabf0b01"/>
+		<rom name="136047-1132.6p" size="65536" crc="a24f333e"/>
+		<rom name="136047-1130.6k" size="65536" crc="93fba845"/>
+		<rom name="136047-1133.6r" size="65536" crc="53c177be"/>
+		<rom name="136047-2134.2a" size="16384" crc="0db4ca28"/>
+		<rom name="136047-1135.2b" size="16384" crc="b1f157d0"/>
+		<rom name="136047-2136.2cd" size="16384" crc="00b06bec"/>
+		<rom name="136047-1121.6a" size="32768" crc="7adb5f9a"/>
+		<rom name="136047-1122.6b" size="32768" crc="41b60141"/>
+		<rom name="136047-1123.7a" size="32768" crc="501881d5"/>
+		<rom name="136047-1124.7b" size="32768" crc="096f2574"/>
+		<rom name="136047-1117.6c" size="32768" crc="5a55f149"/>
+		<rom name="136047-1118.6d" size="32768" crc="9bb2429e"/>
+		<rom name="136047-1119.7d" size="32768" crc="8f7b20e5"/>
+		<rom name="136047-1120.7c" size="32768" crc="46af6d35"/>
+		<rom name="136047-1109.6t" size="65536" crc="0a46b693"/>
+		<rom name="136047-1110.6sr" size="65536" crc="457d7e38"/>
+		<rom name="136047-1111.6p" size="65536" crc="ffad0a5b"/>
+		<rom name="136047-1112.6n" size="65536" crc="06664580"/>
+		<rom name="136047-1113.6m" size="65536" crc="7445dc0f"/>
+		<rom name="136047-1114.6l" size="65536" crc="23eaceb0"/>
+		<rom name="136047-1115.6kj" size="65536" crc="0cc8de53"/>
+		<rom name="136047-1116.6jh" size="65536" crc="2d8f1369"/>
+		<rom name="136047-1101.5t" size="65536" crc="2ac77b80"/>
+		<rom name="136047-1102.5sr" size="65536" crc="f19c3b06"/>
+		<rom name="136047-1103.5p" size="65536" crc="78f9ab90"/>
+		<rom name="136047-1104.5n" size="65536" crc="77ce4a7f"/>
+		<rom name="136047-1105.5m" size="65536" crc="bef5a025"/>
+		<rom name="136047-1106.5l" size="65536" crc="92a159c8"/>
+		<rom name="136047-1107.5kj" size="65536" crc="0a94a3ef"/>
+		<rom name="136047-1108.5jh" size="65536" crc="9815eda6"/>
+		<rom name="136047-1125.4t" size="16384" crc="6b7e2328"/>
+		<rom name="720-eeprom.bin" size="512" crc="5d2acf11"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="800fatha" cloneof="mariner" romof="mariner" sourcefile="galaxian/d_galaxian.cpp">
@@ -3870,8 +4134,78 @@
 		<video type="vector" orientation="horizontal" width="640" height="480" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aburner131" cloneof="aburner" romof="aburner" sourcefile="sega/d_xbrd.cpp">
+		<description>After Burner (VER 1.31, deluxe/upright)</description>
+		<year>1987</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="epr-10940.58" size="131072" crc="4d132c4e"/>
+		<rom name="epr-10941.63" size="131072" crc="136ea264"/>
+		<rom name="epr-10927.20" size="131072" crc="66d36757"/>
+		<rom name="epr-10928.29" size="131072" crc="7c01d40b"/>
+		<rom name="epr-10926.154" size="65536" crc="ed8bd632"/>
+		<rom name="epr-10925.153" size="65536" crc="4ef048cc"/>
+		<rom name="epr-10924.152" size="65536" crc="50c15a6d"/>
+		<rom name="mpr-10932.90" merge="mpr-10932.90" size="131072" crc="cc0821d6"/>
+		<rom name="mpr-10934.94" merge="mpr-10934.94" size="131072" crc="4a51b1fa"/>
+		<rom name="mpr-10936.98" merge="mpr-10936.98" size="131072" crc="ada70d64"/>
+		<rom name="mpr-10938.102" merge="mpr-10938.102" size="131072" crc="e7675baf"/>
+		<rom name="mpr-10933.91" merge="mpr-10933.91" size="131072" crc="c8efb2c3"/>
+		<rom name="mpr-10935.95" merge="mpr-10935.95" size="131072" crc="c1e23521"/>
+		<rom name="mpr-10937.99" merge="mpr-10937.99" size="131072" crc="f0199658"/>
+		<rom name="mpr-10939.103" merge="mpr-10939.103" size="131072" crc="a0d49480"/>
+		<rom name="epr-10942.92" size="131072" crc="5ce10b8c"/>
+		<rom name="epr-10943.96" size="131072" crc="b98294dc"/>
+		<rom name="epr-10944.100" size="131072" crc="17be8f67"/>
+		<rom name="epr-10945.104" size="131072" crc="df4d4c4f"/>
+		<rom name="epr-10946.93" size="131072" crc="d7d485f4"/>
+		<rom name="epr-10947.97" size="131072" crc="08838392"/>
+		<rom name="epr-10948.101" size="131072" crc="64284761"/>
+		<rom name="epr-10949.105" size="131072" crc="d8437d92"/>
+		<rom name="epr-10922.40" merge="epr-10922.40" size="65536" crc="b49183d4"/>
+		<rom name="epr-10923.17" merge="epr-10923.17" size="65536" crc="6888eb8f"/>
+		<rom name="mpr-10931.11" merge="mpr-10931.11" size="131072" crc="9209068f"/>
+		<rom name="mpr-10930.12" merge="mpr-10930.12" size="131072" crc="6493368b"/>
+		<rom name="epr-10929.13" merge="epr-10929.13" size="131072" crc="6c07c78d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aburner" sourcefile="sega/d_xbrd.cpp">
+		<description>After Burner (VER 1.32, deluxe/upright)</description>
+		<year>1987</year>
+		<manufacturer>Sega</manufacturer>
+		<rom name="epr-11092.58" size="131072" crc="fa02b5cb"/>
+		<rom name="epr-11093.63" size="131072" crc="89a288c4"/>
+		<rom name="epr-11090.20" size="131072" crc="8eda767d"/>
+		<rom name="epr-11091.29" size="131072" crc="0c3e9a93"/>
+		<rom name="epr-11089.154" size="65536" crc="95bc1587"/>
+		<rom name="epr-11088.153" size="65536" crc="39d09c13"/>
+		<rom name="epr-11087.152" size="65536" crc="2aea8441"/>
+		<rom name="mpr-10932.90" size="131072" crc="cc0821d6"/>
+		<rom name="mpr-10934.94" size="131072" crc="4a51b1fa"/>
+		<rom name="mpr-10936.98" size="131072" crc="ada70d64"/>
+		<rom name="mpr-10938.102" size="131072" crc="e7675baf"/>
+		<rom name="mpr-10933.91" size="131072" crc="c8efb2c3"/>
+		<rom name="mpr-10935.95" size="131072" crc="c1e23521"/>
+		<rom name="mpr-10937.99" size="131072" crc="f0199658"/>
+		<rom name="mpr-10939.103" size="131072" crc="a0d49480"/>
+		<rom name="epr-11094.92" size="131072" crc="bdd60da2"/>
+		<rom name="epr-11095.96" size="131072" crc="06a35fce"/>
+		<rom name="epr-11096.100" size="131072" crc="027b0689"/>
+		<rom name="epr-11097.104" size="131072" crc="9e1fec09"/>
+		<rom name="epr-11098.93" size="131072" crc="22f432da"/>
+		<rom name="epr-11099.97" size="131072" crc="debd9460"/>
+		<rom name="epr-11100.101" size="131072" crc="7823c611"/>
+		<rom name="epr-11101.105" size="131072" crc="ef294c12"/>
+		<rom name="epr-10922.40" size="65536" crc="b49183d4"/>
+		<rom name="epr-10923.17" size="65536" crc="6888eb8f"/>
+		<rom name="mpr-10931.11" size="131072" crc="9209068f"/>
+		<rom name="mpr-10930.12" size="131072" crc="6493368b"/>
+		<rom name="epr-10929.13" size="131072" crc="6c07c78d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="aburner2g" cloneof="aburner2" romof="aburner2" sourcefile="sega/d_xbrd.cpp">
-		<description>After Burner II (German)</description>
+		<description>After Burner II (German, VER 2.01, deluxe/upright)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="epr-11173a.58" size="131072" crc="cbf480f4"/>
@@ -3901,12 +4235,12 @@
 		<rom name="epr-11112.17" merge="epr-11112.17" size="65536" crc="d777fc6d"/>
 		<rom name="mpr-10931.11" merge="mpr-10931.11" size="131072" crc="9209068f"/>
 		<rom name="mpr-10930.12" merge="mpr-10930.12" size="131072" crc="6493368b"/>
-		<rom name="epr-10929.13" merge="epr-11102.13" size="131072" crc="6c07c78d"/>
+		<rom name="epr-11102.13" merge="epr-11102.13" size="131072" crc="6c07c78d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="aburner2" sourcefile="sega/d_xbrd.cpp">
-		<description>After Burner II</description>
+		<description>After Burner II (VER 2.00, deluxe/upright)</description>
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="epr-11107.58" size="131072" crc="6d87bab7"/>
@@ -3937,41 +4271,6 @@
 		<rom name="mpr-10931.11" size="131072" crc="9209068f"/>
 		<rom name="mpr-10930.12" size="131072" crc="6493368b"/>
 		<rom name="epr-11102.13" size="131072" crc="6c07c78d"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="aburner" sourcefile="sega/d_xbrd.cpp">
-		<description>After Burner</description>
-		<year>1987</year>
-		<manufacturer>Sega</manufacturer>
-		<rom name="epr-10940.58" size="131072" crc="4d132c4e"/>
-		<rom name="epr-10941.63" size="131072" crc="136ea264"/>
-		<rom name="epr-10927.20" size="131072" crc="66d36757"/>
-		<rom name="epr-10928.29" size="131072" crc="7c01d40b"/>
-		<rom name="epr-10926.154" size="65536" crc="ed8bd632"/>
-		<rom name="epr-10925.153" size="65536" crc="4ef048cc"/>
-		<rom name="epr-10924.152" size="65536" crc="50c15a6d"/>
-		<rom name="mpr-10932.90" size="131072" crc="cc0821d6"/>
-		<rom name="mpr-10934.94" size="131072" crc="4a51b1fa"/>
-		<rom name="mpr-10936.98" size="131072" crc="ada70d64"/>
-		<rom name="mpr-10938.102" size="131072" crc="e7675baf"/>
-		<rom name="mpr-10933.91" size="131072" crc="c8efb2c3"/>
-		<rom name="mpr-10935.95" size="131072" crc="c1e23521"/>
-		<rom name="mpr-10937.99" size="131072" crc="f0199658"/>
-		<rom name="mpr-10939.103" size="131072" crc="a0d49480"/>
-		<rom name="epr-10942.92" size="131072" crc="5ce10b8c"/>
-		<rom name="epr-10943.96" size="131072" crc="b98294dc"/>
-		<rom name="epr-10944.100" size="131072" crc="17be8f67"/>
-		<rom name="epr-10945.104" size="131072" crc="df4d4c4f"/>
-		<rom name="epr-10946.93" size="131072" crc="d7d485f4"/>
-		<rom name="epr-10947.97" size="131072" crc="08838392"/>
-		<rom name="epr-10948.101" size="131072" crc="64284761"/>
-		<rom name="epr-10949.105" size="131072" crc="d8437d92"/>
-		<rom name="epr-10922.40" size="65536" crc="b49183d4"/>
-		<rom name="epr-10923.17" size="65536" crc="6888eb8f"/>
-		<rom name="mpr-10931.11" size="131072" crc="9209068f"/>
-		<rom name="mpr-10930.12" size="131072" crc="6493368b"/>
-		<rom name="epr-10929.13" size="131072" crc="6c07c78d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -7062,6 +7361,393 @@
 		<rom name="ddp3_bios.u37" merge="ddp3_bios.u37" size="524288" crc="b3cc5c8f"/>
 		<rom name="bios.u42" merge="bios.u42" size="131072" crc="517cf7a2"/>
 		<video type="raster" orientation="horizontal" width="448" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="apbf" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (French)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-1628.6f" size="65536" crc="075e9a18"/>
+		<rom name="136051-1629.6n" size="65536" crc="8951514a"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-5134.2a" merge="136051-5134.2a" size="16384" crc="1c8bdeed"/>
+		<rom name="136051-5135.2bc" merge="136051-5135.2bc" size="16384" crc="ed6adb91"/>
+		<rom name="136051-5136.2d" merge="136051-5136.2d" size="16384" crc="341f8486"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apbg" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (German)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-1228.6f" size="65536" crc="44781913"/>
+		<rom name="136051-1229.6n" size="65536" crc="f18afffd"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-4134.2a" size="16384" crc="45e03b0e"/>
+		<rom name="136051-4135.2bc" size="16384" crc="b4ca24b2"/>
+		<rom name="136051-4136.2d" size="16384" crc="11efaabf"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb1" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 1)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-1126.7l" size="16384" crc="d385994c"/>
+		<rom name="136051-1127.7n" size="16384" crc="9b40b0b4"/>
+		<rom name="136051-1128.6f" size="65536" crc="8d5d9f4a"/>
+		<rom name="136051-1129.6n" size="65536" crc="2948cef0"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-1134.2a" size="16384" crc="a65748b9"/>
+		<rom name="136051-1135.2bc" size="16384" crc="e9692cea"/>
+		<rom name="136051-1136.2d" size="16384" crc="92fc7657"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb2" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 2)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-2128.6f" size="65536" crc="61a81436"/>
+		<rom name="136051-2129.6n" size="65536" crc="24500ed6"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-1134.2a" size="16384" crc="a65748b9"/>
+		<rom name="136051-1135.2bc" size="16384" crc="e9692cea"/>
+		<rom name="136051-1136.2d" size="16384" crc="92fc7657"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb3" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 3)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-3128.6f" size="65536" crc="cbdbfb42"/>
+		<rom name="136051-3129.6n" size="65536" crc="14d1cc8d"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-1134.2a" size="16384" crc="a65748b9"/>
+		<rom name="136051-1135.2bc" size="16384" crc="e9692cea"/>
+		<rom name="136051-1136.2d" size="16384" crc="92fc7657"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb4" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 4)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-4128.6f" size="65536" crc="46009f6b"/>
+		<rom name="136051-4129.6n" size="65536" crc="e8ca47e2"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-5134.2a" merge="136051-5134.2a" size="16384" crc="1c8bdeed"/>
+		<rom name="136051-5135.2bc" merge="136051-5135.2bc" size="16384" crc="ed6adb91"/>
+		<rom name="136051-5136.2d" merge="136051-5136.2d" size="16384" crc="341f8486"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb5" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 5)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-5128.6f" size="65536" crc="4b4ff365"/>
+		<rom name="136051-5129.6n" size="65536" crc="059ab792"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-5134.2a" merge="136051-5134.2a" size="16384" crc="1c8bdeed"/>
+		<rom name="136051-5135.2bc" merge="136051-5135.2bc" size="16384" crc="ed6adb91"/>
+		<rom name="136051-5136.2d" merge="136051-5136.2d" size="16384" crc="341f8486"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb6" cloneof="apb" romof="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 6)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" merge="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" merge="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-6128.6f" size="65536" crc="c852959d"/>
+		<rom name="136051-6129.6n" size="65536" crc="b5d1d8eb"/>
+		<rom name="136051-1130.6j" merge="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" merge="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" merge="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" merge="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-5134.2a" merge="136051-5134.2a" size="16384" crc="1c8bdeed"/>
+		<rom name="136051-5135.2bc" merge="136051-5135.2bc" size="16384" crc="ed6adb91"/>
+		<rom name="136051-5136.2d" merge="136051-5136.2d" size="16384" crc="341f8486"/>
+		<rom name="136051-1118.6a" merge="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" merge="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" merge="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" merge="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" merge="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" merge="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" merge="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" merge="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" merge="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" merge="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" merge="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" merge="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" merge="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" merge="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" merge="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" merge="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" merge="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" merge="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" merge="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" merge="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" merge="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" merge="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" merge="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" merge="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" merge="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="apb" sourcefile="atari/d_atarisy2.cpp">
+		<description>APB - All Points Bulletin (rev 7)</description>
+		<year>1987</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136051-2126.7l" size="16384" crc="8edf4726"/>
+		<rom name="136051-2127.7n" size="16384" crc="e2b2aff2"/>
+		<rom name="136051-7128.6f" size="65536" crc="c08504d2"/>
+		<rom name="136051-7129.6n" size="65536" crc="79adb57f"/>
+		<rom name="136051-1130.6j" size="65536" crc="f64c752e"/>
+		<rom name="136051-1131.6p" size="65536" crc="0a506e04"/>
+		<rom name="136051-1132.6l" size="65536" crc="6d0e7a4e"/>
+		<rom name="136051-1133.6s" size="65536" crc="af88d429"/>
+		<rom name="136051-5134.2a" size="16384" crc="1c8bdeed"/>
+		<rom name="136051-5135.2bc" size="16384" crc="ed6adb91"/>
+		<rom name="136051-5136.2d" size="16384" crc="341f8486"/>
+		<rom name="136051-1118.6a" size="32768" crc="93752c49"/>
+		<rom name="136051-1120.6bc" size="65536" crc="043086f8"/>
+		<rom name="136051-1122.7a" size="65536" crc="5ee79481"/>
+		<rom name="136051-1124.7bc" size="65536" crc="27760395"/>
+		<rom name="136051-1117.6cd" size="32768" crc="cfc3f8a3"/>
+		<rom name="136051-1119.6de" size="65536" crc="68850612"/>
+		<rom name="136051-1121.7de" size="65536" crc="c7977062"/>
+		<rom name="136051-1123.7cd" size="65536" crc="3c96c848"/>
+		<rom name="136051-1105.6t" size="65536" crc="9b78a88e"/>
+		<rom name="136051-1106.6rs" size="65536" crc="4787ff58"/>
+		<rom name="136051-1107.6pr" size="65536" crc="0e85f2ac"/>
+		<rom name="136051-1108.6n" size="65536" crc="70ff9308"/>
+		<rom name="136051-1113.6m" size="65536" crc="4a445356"/>
+		<rom name="136051-1114.6kl" size="65536" crc="b9b27f3c"/>
+		<rom name="136051-1115.6jk" size="65536" crc="a7671dd8"/>
+		<rom name="136051-1116.6h" size="65536" crc="879fc7de"/>
+		<rom name="136051-1101.5t" size="65536" crc="0ef13513"/>
+		<rom name="136051-1102.5rs" size="65536" crc="401e06fd"/>
+		<rom name="136051-1103.5pr" size="65536" crc="50d820e8"/>
+		<rom name="136051-1104.5n" size="65536" crc="912d878f"/>
+		<rom name="136051-1109.5m" size="65536" crc="6716a408"/>
+		<rom name="136051-1110.5kl" size="65536" crc="7e184981"/>
+		<rom name="136051-1111.5jk" size="65536" crc="353a14fd"/>
+		<rom name="136051-1112.5h" size="65536" crc="3af7c50f"/>
+		<rom name="136051-1125.4t" size="16384" crc="05a0341c"/>
+		<video type="raster" orientation="vertical" width="384" height="512" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
 	<game name="aponow" cloneof="rescue" romof="rescue" sourcefile="galaxian/d_galaxian.cpp">
@@ -10375,7 +11061,7 @@
 	<game name="asukaja" cloneof="asuka" romof="asuka" sourcefile="taito/d_asuka.cpp">
 		<description>Asuka &amp; Asuka (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b68-09.ic23" size="131072" crc="1eaa1bbb"/>
 		<rom name="b68-08.ic8" size="131072" crc="8cc96e60"/>
 		<rom name="b68-03.ic30" merge="b68-03.ic30" size="524288" crc="d3a59b10"/>
@@ -10393,7 +11079,7 @@
 	<game name="asukaj" cloneof="asuka" romof="asuka" sourcefile="taito/d_asuka.cpp">
 		<description>Asuka &amp; Asuka (Japan, rev 1)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b68-09-1.ic23" size="131072" crc="d61be555"/>
 		<rom name="b68-08-1.ic8" size="131072" crc="e916f17b"/>
 		<rom name="b68-03.ic30" merge="b68-03.ic30" size="524288" crc="d3a59b10"/>
@@ -10411,7 +11097,7 @@
 	<game name="asuka" sourcefile="taito/d_asuka.cpp">
 		<description>Asuka &amp; Asuka (World)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b68-13.ic23" size="131072" crc="855efb3e"/>
 		<rom name="b68-12.ic8" size="131072" crc="271eeee9"/>
 		<rom name="b68-03.ic30" size="524288" crc="d3a59b10"/>
@@ -11537,7 +12223,7 @@
 		<rom name="spirit06.rom" size="262144" crc="609f71fe"/>
 		<rom name="spirit01.rom" size="131072" crc="d02ec045"/>
 		<rom name="spirit02.rom" size="131072" crc="30213390"/>
-		<rom name="m50747" size="4096" status="nodump"/>
+		<rom name="avspirit-mcu.11l" size="16384" crc="d9b2eb1a"/>
 		<rom name="spirit12.rom" size="524288" crc="728335d4"/>
 		<rom name="spirit11.rom" size="524288" crc="7896f6b0"/>
 		<rom name="spirit09.rom" size="131072" crc="0c37edf7"/>
@@ -16024,7 +16710,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16050,9 +16736,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16081,9 +16767,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16112,9 +16798,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16143,9 +16829,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16174,9 +16860,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16205,7 +16891,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16231,9 +16917,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16262,9 +16948,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16293,9 +16979,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16324,9 +17010,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -16379,7 +17065,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16454,7 +17140,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16508,27 +17194,27 @@
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sailormnj" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
+	<game name="sailormn" sourcefile="cave/d_sailormn.cpp">
 		<description>Bishoujo Senshi Sailor Moon (Version 95/03/22B, Japan)</description>
 		<year>1995</year>
 		<manufacturer>Gazelle (Banpresto license)</manufacturer>
-		<rom name="bpsm945a.u45" merge="bpsm945a.u45" size="524288" crc="898c9515"/>
-		<rom name="bpsm.u46" merge="bpsm.u46" size="2097152" crc="32084e80"/>
-		<rom name="bpsm945a.u9" merge="bpsm945a.u9" size="524288" crc="438de548"/>
-		<rom name="bpsm.u76" merge="bpsm.u76" size="2097152" crc="a243a5ba"/>
-		<rom name="bpsm.u77" merge="bpsm.u77" size="2097152" crc="5179a4ac"/>
-		<rom name="bpsm.u53" merge="bpsm.u53" size="2097152" crc="b9b15f83"/>
-		<rom name="bpsm.u54" merge="bpsm.u54" size="2097152" crc="8f00679d"/>
-		<rom name="bpsm.u57" merge="bpsm.u57" size="2097152" crc="86be7b63"/>
-		<rom name="bpsm.u58" merge="bpsm.u58" size="2097152" crc="e0bba83b"/>
-		<rom name="bpsm.u62" merge="bpsm.u62" size="2097152" crc="a1e3bfac"/>
-		<rom name="bpsm.u61" merge="bpsm.u61" size="2097152" crc="6a014b52"/>
-		<rom name="bpsm.u60" merge="bpsm.u60" size="2097152" crc="992468c0"/>
-		<rom name="bpsm.u65" merge="bpsm.u65" size="2097152" crc="f60fb7b5"/>
-		<rom name="bpsm.u64" merge="bpsm.u64" size="2097152" crc="6559d31c"/>
-		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
-		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
-		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
+		<rom name="bpsm945a.u45" size="524288" crc="898c9515"/>
+		<rom name="bpsm.u46" size="2097152" crc="32084e80"/>
+		<rom name="bpsm945a.u9" size="524288" crc="438de548"/>
+		<rom name="bpsm.u76" size="2097152" crc="a243a5ba"/>
+		<rom name="bpsm.u77" size="2097152" crc="5179a4ac"/>
+		<rom name="bpsm.u53" size="2097152" crc="b9b15f83"/>
+		<rom name="bpsm.u54" size="2097152" crc="8f00679d"/>
+		<rom name="bpsm.u57" size="2097152" crc="86be7b63"/>
+		<rom name="bpsm.u58" size="2097152" crc="e0bba83b"/>
+		<rom name="bpsm.u62" size="2097152" crc="a1e3bfac"/>
+		<rom name="bpsm.u61" size="2097152" crc="6a014b52"/>
+		<rom name="bpsm.u60" size="2097152" crc="992468c0"/>
+		<rom name="bpsm.u65" size="2097152" crc="f60fb7b5"/>
+		<rom name="bpsm.u64" size="2097152" crc="6559d31c"/>
+		<rom name="bpsm.u63" size="2097152" crc="d57a56b4"/>
+		<rom name="bpsm.u48" size="2097152" crc="498e4ed1"/>
+		<rom name="bpsm.u47" size="524288" crc="0f2901b9"/>
 		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -17044,6 +17730,34 @@
 		<rom name="pal20.u15" size="1" status="nodump"/>
 		<rom name="pal12h6.14e" size="52" crc="6b46dd6d"/>
 		<video type="raster" orientation="horizontal" width="512" height="480" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blasterkit" cloneof="blaster" romof="blaster" sourcefile="pre90s/d_williams.cpp">
+		<description>Blaster (conversion kit)</description>
+		<year>1983</year>
+		<manufacturer>Williams / Vid Kidz</manufacturer>
+		<rom name="blastkit_rom_16.ic39" size="4096" crc="414b2abf"/>
+		<rom name="blastkit_rom_13.ic27" size="8192" crc="9c64db76"/>
+		<rom name="blastkit_rom_11.ic25" size="8192" crc="b7df4914"/>
+		<rom name="blastkit_rom_12.ic26" size="8192" crc="8b1e26ab"/>
+		<rom name="blastkit_rom_17.ic41" size="4096" crc="577d1e9a"/>
+		<rom name="blastkit_rom_15.ic38" merge="proto5_blaster_3021_rom_15.ic38" size="16384" crc="1ad146a4"/>
+		<rom name="blastkit_rom_8.ic20" merge="proto5_blaster_3021_rom_8.ic20" size="16384" crc="f110bbb0"/>
+		<rom name="blastkit_rom_9.ic22" merge="proto5_blaster_3021_rom_9.ic22" size="16384" crc="5c5b0f8a"/>
+		<rom name="blastkit_rom_10.ic24" merge="proto5_blaster_3021_rom_10.ic24" size="16384" crc="d47eb67f"/>
+		<rom name="blastkit_rom_6.ic13" merge="proto5_blaster_3021_rom_6.ic13" size="16384" crc="47fc007e"/>
+		<rom name="blastkit_rom_5.ic11" merge="proto5_blaster_3021_rom_5.ic11" size="16384" crc="15c1b94d"/>
+		<rom name="blastkit_rom_14.ic35" merge="proto5_blaster_3021_rom_14.ic35" size="16384" crc="aea6b846"/>
+		<rom name="blastkit_rom_7.ic15" size="16384" crc="6fcc2153"/>
+		<rom name="blastkit_rom_1.ic1" merge="proto5_blaster_3021_rom_1.ic1" size="16384" crc="8d0ea9e7"/>
+		<rom name="blastkit_rom_2.ic3" merge="proto5_blaster_3021_rom_2.ic3" size="16384" crc="03c4012c"/>
+		<rom name="blastkit_rom_4.ic7" size="16384" crc="f80e9ff5"/>
+		<rom name="blastkit_rom_3.ic6" size="16384" crc="20e851f9"/>
+		<rom name="blastkit_rom_18" merge="proto5_blaster_3021_rom_18.sb13" size="4096" crc="c33a3145"/>
+		<rom name="decoder_rom_4.ic42" merge="decoder_rom_4.ic42" size="512" crc="e6631c23"/>
+		<rom name="video_decoder_rom_6.ic23" merge="video_decoder_rom_6.ic23" size="512" crc="83faf25e"/>
+		<rom name="blaster.col" merge="blaster.col" size="2048" crc="bac50bc4"/>
+		<video type="raster" orientation="horizontal" width="292" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="blastero" cloneof="blaster" romof="blaster" sourcefile="pre90s/d_williams.cpp">
@@ -19116,7 +19830,7 @@
 	<game name="bonzeadvu" cloneof="bonzeadv" romof="bonzeadv" sourcefile="taito/d_asuka.cpp">
 		<description>Bonze Adventure (US, rev 1)</description>
 		<year>1988</year>
-		<manufacturer>Taito America Corporation</manufacturer>
+		<manufacturer>Taito America</manufacturer>
 		<rom name="b41-09-1.17" merge="b41-09-1.17" size="65536" crc="af821fbc"/>
 		<rom name="b41-11-1.26" merge="b41-11-1.26" size="65536" crc="823fff00"/>
 		<rom name="b41-10.16" merge="b41-10.16" size="65536" crc="4ca94d77"/>
@@ -19134,7 +19848,7 @@
 	<game name="bonzeadvo" cloneof="bonzeadv" romof="bonzeadv" sourcefile="taito/d_asuka.cpp">
 		<description>Bonze Adventure (World)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b41-09.17" size="65536" crc="06818710"/>
 		<rom name="b41-11.26" size="65536" crc="33c4c2f4"/>
 		<rom name="b41-10.16" merge="b41-10.16" size="65536" crc="4ca94d77"/>
@@ -19153,7 +19867,7 @@
 		<comment>Prototype</comment>
 		<description>Bonze Adventure (World, prototype, newer)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="0l.ic17" size="65536" crc="9e046e6f"/>
 		<rom name="0h.ic26" size="65536" crc="3e2b2628"/>
 		<rom name="1h.ic16" size="65536" crc="52f31b98"/>
@@ -19184,7 +19898,7 @@
 		<comment>Prototype</comment>
 		<description>Bonze Adventure (World, prototype, older)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="prg 0h.ic17" size="65536" crc="ce530615"/>
 		<rom name="prg 0l.ic26" size="65536" crc="048a0dcb"/>
 		<rom name="prg 1h.ic16" size="65536" crc="e5d63e9b"/>
@@ -19226,7 +19940,7 @@
 	<game name="bonzeadv" romof="cchip" sourcefile="taito/d_asuka.cpp">
 		<description>Bonze Adventure (World, rev 1)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b41-09-1.17" size="65536" crc="af821fbc"/>
 		<rom name="b41-11-1.26" size="65536" crc="823fff00"/>
 		<rom name="b41-10.16" size="65536" crc="4ca94d77"/>
@@ -22992,7 +23706,7 @@
 	<game name="cadashf" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (France)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_19.ic11" size="131072" crc="4d70543b"/>
 		<rom name="c21_21.ic15" size="131072" crc="0e5b9950"/>
 		<rom name="c21_18.ic10" size="131072" crc="8a19e59b"/>
@@ -23011,7 +23725,7 @@
 	<game name="cadashgo" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Germany)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_23.ic11" size="131072" crc="fad37785"/>
 		<rom name="c21_25.ic15" size="131072" crc="594dda9f"/>
 		<rom name="c21_22.ic10" size="131072" crc="7610a9b4"/>
@@ -23030,7 +23744,7 @@
 	<game name="cadashg" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Germany, rev 1)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_23-1.ic11" size="131072" crc="30ddbabe"/>
 		<rom name="c21_25-1.ic15" size="131072" crc="24e10611"/>
 		<rom name="c21_22-1.ic10" size="131072" crc="daf58b2d"/>
@@ -23049,7 +23763,7 @@
 	<game name="cadashi" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Italy)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_27-1.ic11" size="131072" crc="d1d9e613"/>
 		<rom name="c21_29-1.ic15" size="131072" crc="142256ef"/>
 		<rom name="c21_26-1.ic10" size="131072" crc="c9cf6e30"/>
@@ -23068,7 +23782,7 @@
 	<game name="cadashjo" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_04.ic11" size="131072" crc="be7d3f12"/>
 		<rom name="c21_06.ic15" size="131072" crc="1db3fe02"/>
 		<rom name="c21_03.ic10" size="131072" crc="7e31c5a3"/>
@@ -23087,7 +23801,7 @@
 	<game name="cadashj1" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Japan, rev 1)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_04-1.ic11" size="131072" crc="cc22ebe5"/>
 		<rom name="c21_06-1.ic15" size="131072" crc="26e03304"/>
 		<rom name="c21_03-1.ic10" size="131072" crc="c54888ed"/>
@@ -23106,7 +23820,7 @@
 	<game name="cadashj" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Japan, rev 2)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_04-2.ic11" size="131072" crc="7a9c1828"/>
 		<rom name="c21_06-2.ic15" size="131072" crc="c9d6440a"/>
 		<rom name="c21_03-2.ic10" size="131072" crc="30afc320"/>
@@ -23125,7 +23839,7 @@
 	<game name="cadashso" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Spain)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="conchimatic_c_31.ic11" size="131072" crc="091e71de"/>
 		<rom name="conchimatic_c_33.ic15" size="131072" crc="64722757"/>
 		<rom name="conchimatic_c_30.ic10" size="131072" crc="f7572e71"/>
@@ -23144,7 +23858,7 @@
 	<game name="cadashs" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (Spain, rev 1)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="ic11" size="131072" crc="6c11743e"/>
 		<rom name="ic15" size="131072" crc="73224356"/>
 		<rom name="ic10" size="131072" crc="57d659d9"/>
@@ -23163,7 +23877,7 @@
 	<game name="cadashu1" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (US, rev 1?)</description>
 		<year>1989</year>
-		<manufacturer>Taito America Corporation</manufacturer>
+		<manufacturer>Taito America</manufacturer>
 		<rom name="c21_14-x.ic11" size="131072" crc="64f22e5e"/>
 		<rom name="c21_16-x.ic15" size="131072" crc="77f5d79f"/>
 		<rom name="c21_13-x.ic10" size="131072" crc="488fd6d6"/>
@@ -23182,7 +23896,7 @@
 	<game name="cadashu" cloneof="cadash" romof="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (US, rev 2)</description>
 		<year>1989</year>
-		<manufacturer>Taito America Corporation</manufacturer>
+		<manufacturer>Taito America</manufacturer>
 		<rom name="c21_14-2.ic11" size="131072" crc="f823d418"/>
 		<rom name="c21_16-2.ic15" size="131072" crc="90165577"/>
 		<rom name="c21_13-2.ic10" size="131072" crc="92dcc3ae"/>
@@ -23201,7 +23915,7 @@
 	<game name="cadash" sourcefile="taito/d_asuka.cpp">
 		<description>Cadash (World)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c21_14.ic11" size="131072" crc="5daf13fb"/>
 		<rom name="c21_16.ic15" size="131072" crc="cbaa2e75"/>
 		<rom name="c21_13.ic10" size="131072" crc="6b9e0ee9"/>
@@ -23221,7 +23935,7 @@
 		<comment>Prototype</comment>
 		<description>Cadash (World, prototype)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="euro main h.ic11" size="131072" crc="9dae00ca"/>
 		<rom name="euro main l.ic15" size="131072" crc="ba66b6a5"/>
 		<rom name="euro data h.bin" size="131072" crc="bcce9d44"/>
@@ -24785,6 +25499,27 @@
 		<rom name="9505-01.n5" size="256" crc="60507c07"/>
 		<rom name="9491-01.j6" size="256" crc="b8094b4c"/>
 		<video type="raster" orientation="horizontal" width="256" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cbasebal" sourcefile="pre90s/d_cbasebal.cpp">
+		<description>Capcom Baseball (Japan)</description>
+		<year>1989</year>
+		<manufacturer>Capcom</manufacturer>
+		<rom name="cbj10.11j" size="32768" crc="bbff0acc"/>
+		<rom name="cbj07.16f" size="131072" crc="8111d13f"/>
+		<rom name="cbj06.14f" size="131072" crc="9aaa0e37"/>
+		<rom name="cbj05.13f" size="131072" crc="d0089f37"/>
+		<rom name="cbj13.16m" size="65536" crc="2359fa0a"/>
+		<rom name="cbj02.1f" size="131072" crc="d6740535"/>
+		<rom name="cbj03.2f" size="131072" crc="88098dcd"/>
+		<rom name="cbj08.1j" size="131072" crc="5f3344bf"/>
+		<rom name="cbj09.2j" size="131072" crc="aafffdae"/>
+		<rom name="cbj11.1m" size="131072" crc="bdc1507d"/>
+		<rom name="cbj12.2m" size="131072" crc="973f3efe"/>
+		<rom name="cbj14.1n" size="131072" crc="765dabaa"/>
+		<rom name="cbj15.2n" size="131072" crc="74756de5"/>
+		<rom name="cbj01.1e" size="131072" crc="1d8968bd"/>
+		<video type="raster" orientation="horizontal" width="384" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="capbowl" sourcefile="pre90s/d_capbowl.cpp">
@@ -27022,6 +27757,286 @@
 		<rom name="c01-03.rom" size="524288" crc="2a142dbc"/>
 		<rom name="c01-05.rom" size="131072" crc="22efad4a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprintf" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (French)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-1626.7l" size="16384" crc="f9d4fbd3"/>
+		<rom name="136045-1627.7n" size="16384" crc="637f0afa"/>
+		<rom name="136045-1625.6f" size="32768" crc="1edc6462"/>
+		<rom name="136045-1622.6n" size="32768" crc="a1c78189"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprintg1" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (German, rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-1226.7l" size="16384" crc="becfc276"/>
+		<rom name="136045-1227.7n" size="16384" crc="d1dce1cc"/>
+		<rom name="136045-1225.6f" size="32768" crc="e787da64"/>
+		<rom name="136045-1222.6n" size="32768" crc="5656cc40"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprintg" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (German, rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-2226.7l" size="16384" crc="1f437a3f"/>
+		<rom name="136045-1227.7n" size="16384" crc="d1dce1cc"/>
+		<rom name="136045-1225.6f" size="32768" crc="e787da64"/>
+		<rom name="136045-1222.6n" size="32768" crc="5656cc40"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprint1" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-1126.7l" size="16384" crc="a04ecbac"/>
+		<rom name="136045-1127.7n" size="16384" crc="e3e37258"/>
+		<rom name="136045-1125.6f" size="32768" crc="650623d2"/>
+		<rom name="136045-1122.6n" size="32768" crc="ca1b1cbf"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprint2" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-2126.7l" size="16384" crc="0ff83de8"/>
+		<rom name="136045-1127.7n" size="16384" crc="e3e37258"/>
+		<rom name="136045-1125.6f" size="32768" crc="650623d2"/>
+		<rom name="136045-1122.6n" size="32768" crc="ca1b1cbf"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (rev 3)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-3126.7l" size="16384" crc="1dcf8b98"/>
+		<rom name="136045-2127.7n" size="16384" crc="bdcbe42c"/>
+		<rom name="136045-2125.6f" size="32768" crc="76cc68b9"/>
+		<rom name="136045-2122.6n" size="32768" crc="87dda6e5"/>
+		<rom name="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprints1" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (Spanish, rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-1326.7l" size="16384" crc="cfa673a6"/>
+		<rom name="136045-1327.7n" size="16384" crc="16c1dcab"/>
+		<rom name="136045-1325.6f" size="32768" crc="8661f17b"/>
+		<rom name="136045-1322.6n" size="32768" crc="7f440847"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="csprints" cloneof="csprint" romof="csprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Championship Sprint (Spanish, rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136045-2326.7l" size="16384" crc="fd4ed0d3"/>
+		<rom name="136045-2327.7n" size="16384" crc="5ef2a65a"/>
+		<rom name="136045-2325.6f" size="32768" crc="57253376"/>
+		<rom name="136045-2322.6n" size="32768" crc="b4265cae"/>
+		<rom name="136045-1124.6k" merge="136045-1124.6k" size="32768" crc="47efca1f"/>
+		<rom name="136045-1121.6r" merge="136045-1121.6r" size="32768" crc="6ca404bb"/>
+		<rom name="136045-1123.6l" merge="136045-1123.6l" size="32768" crc="0a4d216a"/>
+		<rom name="136045-1120.6s" merge="136045-1120.6s" size="32768" crc="103f3fde"/>
+		<rom name="136045-1118.2bc" merge="136045-1118.2bc" size="16384" crc="eba41b2f"/>
+		<rom name="136045-1119.2d" merge="136045-1119.2d" size="16384" crc="9e49043a"/>
+		<rom name="136045-1105.6a" merge="136045-1105.6a" size="32768" crc="3773bfbb"/>
+		<rom name="136045-1106.6b" merge="136045-1106.6b" size="32768" crc="13a24886"/>
+		<rom name="136045-1101.7a" merge="136045-1101.7a" size="65536" crc="5a55f931"/>
+		<rom name="136045-1102.7b" merge="136045-1102.7b" size="32768" crc="37548a60"/>
+		<rom name="136045-1107.6c" merge="136045-1107.6c" size="32768" crc="e35e354e"/>
+		<rom name="136045-1108.6de" merge="136045-1108.6de" size="32768" crc="361db8b7"/>
+		<rom name="136045-1104.7de" merge="136045-1104.7de" size="65536" crc="d1f8fe7b"/>
+		<rom name="136045-1103.7c" merge="136045-1103.7c" size="32768" crc="8f8c9692"/>
+		<rom name="136045-1112.6l" merge="136045-1112.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136045-1111.6k" merge="136045-1111.6k" size="32768" crc="abcbc114"/>
+		<rom name="136045-1110.6hj" merge="136045-1110.6hj" size="32768" crc="9e91e734"/>
+		<rom name="136045-1109.6fh" merge="136045-1109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136045-1116.6rs" merge="136045-1116.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136045-1115.6pr" merge="136045-1115.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136045-1114.6n" merge="136045-1114.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136045-1113.6m" merge="136045-1113.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136045-1117.6t" merge="136045-1117.6t" size="16384" crc="82da786d"/>
+		<rom name="csprint-eeprom.bin" merge="csprint-eeprom.bin" size="512" crc="ce1c7319"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="chanbara" sourcefile="dataeast/d_chanbara.cpp">
@@ -42474,6 +43489,58 @@
 		<video type="raster" orientation="vertical" width="240" height="320" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
+	<game name="doomgeo" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Homebrew, No sound and minor graphical glitches</comment>
+		<description>DoomGeo (HB, 8643a06)</description>
+		<year>2026</year>
+		<manufacturer>Sabino</manufacturer>
+		<rom name="doomgeo-p1.bin" size="524288" crc="3fbc2d79"/>
+		<rom name="doomgeo-s1.bin" size="131072" crc="248bc475"/>
+		<rom name="doomgeo-c1.bin" size="4194304" crc="70903dec"/>
+		<rom name="doomgeo-c2.bin" size="4194304" crc="90bc023a"/>
+		<rom name="doomgeo-m1.bin" size="131072" crc="1c996f5d"/>
+		<rom name="doomgeo-v1.bin" size="524288" crc="75660aac"/>
+		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
+		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
+		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
+		<rom name="sp-u2.sp1" merge="sp-u2.sp1" size="131072" crc="e72943de"/>
+		<rom name="sp1-u2" merge="sp1-u2" size="131072" crc="62f021f4"/>
+		<rom name="sp-e.sp1" merge="sp-e.sp1" size="131072" crc="2723a5b5"/>
+		<rom name="sp1-u4.bin" merge="sp1-u4.bin" size="131072" crc="1179a30f"/>
+		<rom name="sp1-u3.bin" merge="sp1-u3.bin" size="131072" crc="2025b7a2"/>
+		<rom name="vs-bios.rom" merge="vs-bios.rom" size="131072" crc="f0e8f27d"/>
+		<rom name="sp-j2.sp1" merge="sp-j2.sp1" size="131072" crc="acede59c"/>
+		<rom name="sp1.jipan.1024" merge="sp1.jipan.1024" size="131072" crc="9fb0abe4"/>
+		<rom name="sp-45.sp1" merge="sp-45.sp1" size="524288" crc="03cc9f6a"/>
+		<rom name="sp-j3.sp1" merge="sp-j3.sp1" size="524288" crc="486cb450"/>
+		<rom name="japan-j3.bin" merge="japan-j3.bin" size="131072" crc="dff6d41f"/>
+		<rom name="sp1-j3.bin" merge="sp1-j3.bin" size="131072" crc="fbc6d469"/>
+		<rom name="neo-po.bin" merge="neo-po.bin" size="131072" crc="16d0c132"/>
+		<rom name="neo-epo.bin" merge="neo-epo.bin" size="131072" crc="d27a71f1"/>
+		<rom name="neodebug.bin" merge="neodebug.bin" size="131072" crc="698ebb7d"/>
+		<rom name="sp-1v1_3db8c.bin" merge="sp-1v1_3db8c.bin" size="131072" crc="162f0ebe"/>
+		<rom name="uni-bios_4_0.rom" merge="uni-bios_4_0.rom" size="131072" crc="a7aab458"/>
+		<rom name="uni-bios_3_3.rom" merge="uni-bios_3_3.rom" size="131072" crc="24858466"/>
+		<rom name="uni-bios_3_2.rom" merge="uni-bios_3_2.rom" size="131072" crc="a4e8b9b3"/>
+		<rom name="uni-bios_3_1.rom" merge="uni-bios_3_1.rom" size="131072" crc="0c58093f"/>
+		<rom name="uni-bios_3_0.rom" merge="uni-bios_3_0.rom" size="131072" crc="a97c89a9"/>
+		<rom name="uni-bios_2_3.rom" merge="uni-bios_2_3.rom" size="131072" crc="27664eb5"/>
+		<rom name="uni-bios_2_3o.rom" merge="uni-bios_2_3o.rom" size="131072" crc="601720ae"/>
+		<rom name="uni-bios_2_2.rom" merge="uni-bios_2_2.rom" size="131072" crc="2d50996a"/>
+		<rom name="uni-bios_2_1.rom" merge="uni-bios_2_1.rom" size="131072" crc="8dabf76b"/>
+		<rom name="uni-bios_2_0.rom" merge="uni-bios_2_0.rom" size="131072" crc="0c12c2ad"/>
+		<rom name="uni-bios_1_3.rom" merge="uni-bios_1_3.rom" size="131072" crc="b24b44a0"/>
+		<rom name="uni-bios_1_2.rom" merge="uni-bios_1_2.rom" size="131072" crc="4fa698e9"/>
+		<rom name="uni-bios_1_2o.rom" merge="uni-bios_1_2o.rom" size="131072" crc="e19d3ce9"/>
+		<rom name="uni-bios_1_1.rom" merge="uni-bios_1_1.rom" size="131072" crc="5dda0d84"/>
+		<rom name="uni-bios_1_0.rom" merge="uni-bios_1_0.rom" size="131072" crc="0ce453a0"/>
+		<rom name="neopen.sp1" merge="neopen.sp1" size="131072" crc="cb915e76"/>
+		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
+		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
+		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dorachan" sourcefile="pre90s/d_dorachan.cpp">
 		<comment>No sound</comment>
 		<description>Dora-chan (Japan)</description>
@@ -47243,7 +48310,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="edfb" cloneof="edf" romof="edf" sourcefile="pre90s/d_megasys1.cpp">
-		<description>E.D.F.: Earth Defense Force (set 3</description>
+		<description>E.D.F.: Earth Defense Force (set 3)</description>
 		<year>1991</year>
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="edf_5_ver1.b5" size="262144" crc="1a5958a9"/>
@@ -57384,6 +58451,58 @@
 		<video type="raster" orientation="vertical" width="224" height="256" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
+	<game name="freedoom" cloneof="doomgeo" romof="doomgeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Homebrew, No sound and minor graphical glitches</comment>
+		<description>Freedoom (HB, v0.13.0 8643a06)</description>
+		<year>2026</year>
+		<manufacturer>Sabino</manufacturer>
+		<rom name="freedoom-p1.bin" size="524288" crc="f57478f2"/>
+		<rom name="freedoom-s1.bin" size="131072" crc="1b4ec91c"/>
+		<rom name="freedoom-c1.bin" size="4194304" crc="bb8e2a1b"/>
+		<rom name="freedoom-c2.bin" size="4194304" crc="51a2ebaa"/>
+		<rom name="freedoom-m1.bin" merge="doomgeo-m1.bin" size="131072" crc="1c996f5d"/>
+		<rom name="freedoom-v1.bin" merge="doomgeo-v1.bin" size="524288" crc="75660aac"/>
+		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
+		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
+		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
+		<rom name="sp-u2.sp1" merge="sp-u2.sp1" size="131072" crc="e72943de"/>
+		<rom name="sp1-u2" merge="sp1-u2" size="131072" crc="62f021f4"/>
+		<rom name="sp-e.sp1" merge="sp-e.sp1" size="131072" crc="2723a5b5"/>
+		<rom name="sp1-u4.bin" merge="sp1-u4.bin" size="131072" crc="1179a30f"/>
+		<rom name="sp1-u3.bin" merge="sp1-u3.bin" size="131072" crc="2025b7a2"/>
+		<rom name="vs-bios.rom" merge="vs-bios.rom" size="131072" crc="f0e8f27d"/>
+		<rom name="sp-j2.sp1" merge="sp-j2.sp1" size="131072" crc="acede59c"/>
+		<rom name="sp1.jipan.1024" merge="sp1.jipan.1024" size="131072" crc="9fb0abe4"/>
+		<rom name="sp-45.sp1" merge="sp-45.sp1" size="524288" crc="03cc9f6a"/>
+		<rom name="sp-j3.sp1" merge="sp-j3.sp1" size="524288" crc="486cb450"/>
+		<rom name="japan-j3.bin" merge="japan-j3.bin" size="131072" crc="dff6d41f"/>
+		<rom name="sp1-j3.bin" merge="sp1-j3.bin" size="131072" crc="fbc6d469"/>
+		<rom name="neo-po.bin" merge="neo-po.bin" size="131072" crc="16d0c132"/>
+		<rom name="neo-epo.bin" merge="neo-epo.bin" size="131072" crc="d27a71f1"/>
+		<rom name="neodebug.bin" merge="neodebug.bin" size="131072" crc="698ebb7d"/>
+		<rom name="sp-1v1_3db8c.bin" merge="sp-1v1_3db8c.bin" size="131072" crc="162f0ebe"/>
+		<rom name="uni-bios_4_0.rom" merge="uni-bios_4_0.rom" size="131072" crc="a7aab458"/>
+		<rom name="uni-bios_3_3.rom" merge="uni-bios_3_3.rom" size="131072" crc="24858466"/>
+		<rom name="uni-bios_3_2.rom" merge="uni-bios_3_2.rom" size="131072" crc="a4e8b9b3"/>
+		<rom name="uni-bios_3_1.rom" merge="uni-bios_3_1.rom" size="131072" crc="0c58093f"/>
+		<rom name="uni-bios_3_0.rom" merge="uni-bios_3_0.rom" size="131072" crc="a97c89a9"/>
+		<rom name="uni-bios_2_3.rom" merge="uni-bios_2_3.rom" size="131072" crc="27664eb5"/>
+		<rom name="uni-bios_2_3o.rom" merge="uni-bios_2_3o.rom" size="131072" crc="601720ae"/>
+		<rom name="uni-bios_2_2.rom" merge="uni-bios_2_2.rom" size="131072" crc="2d50996a"/>
+		<rom name="uni-bios_2_1.rom" merge="uni-bios_2_1.rom" size="131072" crc="8dabf76b"/>
+		<rom name="uni-bios_2_0.rom" merge="uni-bios_2_0.rom" size="131072" crc="0c12c2ad"/>
+		<rom name="uni-bios_1_3.rom" merge="uni-bios_1_3.rom" size="131072" crc="b24b44a0"/>
+		<rom name="uni-bios_1_2.rom" merge="uni-bios_1_2.rom" size="131072" crc="4fa698e9"/>
+		<rom name="uni-bios_1_2o.rom" merge="uni-bios_1_2o.rom" size="131072" crc="e19d3ce9"/>
+		<rom name="uni-bios_1_1.rom" merge="uni-bios_1_1.rom" size="131072" crc="5dda0d84"/>
+		<rom name="uni-bios_1_0.rom" merge="uni-bios_1_0.rom" size="131072" crc="0ce453a0"/>
+		<rom name="neopen.sp1" merge="neopen.sp1" size="131072" crc="cb915e76"/>
+		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
+		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
+		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="freeze" sourcefile="pre90s/d_jack.cpp">
 		<description>Freeze</description>
 		<year>1984</year>
@@ -58656,7 +59775,7 @@
 		<video type="raster" orientation="horizontal" width="320" height="232" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gwarriorb" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
+	<game name="bs_gwarrior" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
 		<description>Galactic Warriors (Bubble System)</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
@@ -63619,6 +64738,34 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="gngenh" cloneof="gng" romof="gng" sourcefile="pre90s/d_gng.cpp">
+		<comment>Hack</comment>
+		<description>Ghosts'n Goblins (Enhanced)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying</manufacturer>
+		<rom name="mm_c_04" merge="mm_c_04" size="16384" crc="4f94130f"/>
+		<rom name="mm_c_03enh" size="32768" crc="ab30bc6d"/>
+		<rom name="mm_c_05enh" size="32768" crc="7a60a968"/>
+		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
+		<rom name="gg1.bin" merge="gg1.bin" size="16384" crc="ecfccf07"/>
+		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
+		<rom name="gg10.bin" merge="gg10.bin" size="16384" crc="7302529d"/>
+		<rom name="gg9.bin" merge="gg9.bin" size="16384" crc="20035bda"/>
+		<rom name="gg8.bin" merge="gg8.bin" size="16384" crc="f12ba271"/>
+		<rom name="gg7.bin" merge="gg7.bin" size="16384" crc="e525207d"/>
+		<rom name="gg6.bin" merge="gg6.bin" size="16384" crc="2d77e9b2"/>
+		<rom name="gg17.bin" merge="gg17.bin" size="16384" crc="93e50a8f"/>
+		<rom name="gg16.bin" merge="gg16.bin" size="16384" crc="06d7e5ca"/>
+		<rom name="gg15.bin" merge="gg15.bin" size="16384" crc="bc1fe02d"/>
+		<rom name="gg14.bin" merge="gg14.bin" size="16384" crc="6aaf12f9"/>
+		<rom name="gg13.bin" merge="gg13.bin" size="16384" crc="e80c3fca"/>
+		<rom name="gg12.bin" merge="gg12.bin" size="16384" crc="7780a925"/>
+		<rom name="tbp24s10.14k" merge="tbp24s10.14k" size="256" crc="0eaf5158"/>
+		<rom name="63s141.2e" merge="63s141.2e" size="256" crc="4a1285a4"/>
+		<rom name="gg-pal10l8.bin" merge="gg-pal10l8.bin" size="44" crc="87f1b7e0"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="gngblita" cloneof="gng" romof="gng" sourcefile="pre90s/d_gng.cpp">
 		<comment>Bootleg</comment>
 		<description>Ghosts'n Goblins (Italian bootleg, harder)</description>
@@ -63811,7 +64958,7 @@
 		<manufacturer>GoodLuckTrying</manufacturer>
 		<rom name="mm_c_knight_04" size="16384" crc="b96e18c0"/>
 		<rom name="mm_c_knight_03" size="32768" crc="57f4f653"/>
-		<rom name="mm_c_knight_05" size="32768" crc="63320d7d"/>
+		<rom name="mm_c_knight_05" size="32768" crc="a8a1a2e7"/>
 		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
 		<rom name="gg1knight.bin" size="16384" crc="c12dd3e3"/>
 		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
@@ -63839,7 +64986,7 @@
 		<manufacturer>GoodLuckTrying</manufacturer>
 		<rom name="mm_c_maiden_04" size="16384" crc="269b5163"/>
 		<rom name="mm_c_maiden_03" size="32768" crc="57f4f653"/>
-		<rom name="mm_c_maiden_05" size="32768" crc="02e34e64"/>
+		<rom name="mm_c_maiden_05" size="32768" crc="4f443f38"/>
 		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
 		<rom name="gg1maiden.bin" size="16384" crc="82e2fa18"/>
 		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
@@ -67414,7 +68561,7 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gradiusb" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
+	<game name="bs_gradius" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
 		<description>Gradius (Bubble System)</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
@@ -75512,7 +76659,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="hotdogst" sourcefile="cave/d_hotdogst.cpp">
-		<description>Hotdog Storm - The First Supersonics (korea)</description>
+		<description>Hotdog Storm - The First Supersonics (Korea)</description>
 		<year>1996</year>
 		<manufacturer>Marble (Ace International license)</manufacturer>
 		<rom name="mp3.u29" size="524288" crc="1f4e5479"/>
@@ -77558,7 +78705,6 @@
 		<rom name="04.27c512" size="65536" crc="f786cf3e"/>
 		<rom name="05.27c512" size="65536" crc="1737ed64"/>
 		<rom name="06.27c512" size="65536" crc="9f12bcb9"/>
-		<rom name="m50747" size="4096" status="nodump"/>
 		<rom name="11.27c1001" size="131072" crc="451a1428"/>
 		<rom name="12.27c1001" size="131072" crc="9ead7432"/>
 		<rom name="13.27c1001" size="131072" crc="7e39842a"/>
@@ -79036,7 +80182,7 @@
 	<game name="jigkmgria" cloneof="bonzeadv" romof="bonzeadv" sourcefile="taito/d_asuka.cpp">
 		<description>Jigoku Meguri (Japan)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b41-09.17" size="65536" crc="06818710"/>
 		<rom name="b41-11.26" size="65536" crc="33c4c2f4"/>
 		<rom name="b41-10.16" merge="b41-10.16" size="65536" crc="4ca94d77"/>
@@ -79054,7 +80200,7 @@
 	<game name="jigkmgri" cloneof="bonzeadv" romof="bonzeadv" sourcefile="taito/d_asuka.cpp">
 		<description>Jigoku Meguri (Japan, rev 1)</description>
 		<year>1988</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="b41-09-1.17" merge="b41-09-1.17" size="65536" crc="af821fbc"/>
 		<rom name="b41-11-1.26" merge="b41-11-1.26" size="65536" crc="823fff00"/>
 		<rom name="b41-10.16" merge="b41-10.16" size="65536" crc="4ca94d77"/>
@@ -86962,8 +88108,8 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="rf2b" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
-		<description>Konami RF2 - Red Fighter (Bubble System)</description>
+	<game name="bs_rf2" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
+		<description>Konami RF2: Red Fighter (Bubble System)</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="boot.bin" size="480" crc="ee6e93d7"/>
@@ -86978,7 +88124,7 @@
 		<driver status="preliminary"/>
 	</game>
 	<game name="rf2" cloneof="konamigt" romof="konamigt" sourcefile="konami/d_nemesis.cpp">
-		<description>Konami RF2 - Red Fighter</description>
+		<description>Konami RF2: Red Fighter</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="400-a06.15l" size="32768" crc="b99d8cff"/>
@@ -94812,6 +95958,33 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="makaimurenh" cloneof="gng" romof="gng" sourcefile="pre90s/d_gng.cpp">
+		<comment>Hack</comment>
+		<description>Makaimura (Enhanced)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying</manufacturer>
+		<rom name="10n.rom" size="16384" crc="81e567e0"/>
+		<rom name="8nenh.rom" size="32768" crc="dc342bc7"/>
+		<rom name="12nenh.rom" size="32768" crc="db25d78d"/>
+		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
+		<rom name="gg1.bin" merge="gg1.bin" size="16384" crc="ecfccf07"/>
+		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
+		<rom name="gg10.bin" merge="gg10.bin" size="16384" crc="7302529d"/>
+		<rom name="gg9.bin" merge="gg9.bin" size="16384" crc="20035bda"/>
+		<rom name="gg8.bin" merge="gg8.bin" size="16384" crc="f12ba271"/>
+		<rom name="gg7.bin" merge="gg7.bin" size="16384" crc="e525207d"/>
+		<rom name="gg6.bin" merge="gg6.bin" size="16384" crc="2d77e9b2"/>
+		<rom name="gng13.n4" size="16384" crc="4613afdc"/>
+		<rom name="gg16.bin" merge="gg16.bin" size="16384" crc="06d7e5ca"/>
+		<rom name="gg15.bin" merge="gg15.bin" size="16384" crc="bc1fe02d"/>
+		<rom name="gng16.l4" size="16384" crc="608d68d5"/>
+		<rom name="gg13.bin" merge="gg13.bin" size="16384" crc="e80c3fca"/>
+		<rom name="gg12.bin" merge="gg12.bin" size="16384" crc="7780a925"/>
+		<rom name="tbp24s10.14k" merge="tbp24s10.14k" size="256" crc="0eaf5158"/>
+		<rom name="63s141.2e" merge="63s141.2e" size="256" crc="4a1285a4"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="makaimur" cloneof="gng" romof="gng" sourcefile="pre90s/d_gng.cpp">
 		<description>Makaimura (Japan revision A?)</description>
 		<year>1985</year>
@@ -94952,7 +96125,7 @@
 		<manufacturer>GoodLuckTrying</manufacturer>
 		<rom name="10nknight.rom" size="16384" crc="f0868081"/>
 		<rom name="8nknight.rom" size="32768" crc="28546c2b"/>
-		<rom name="12nknight.rom" size="32768" crc="0d414cbc"/>
+		<rom name="12nknight.rom" size="32768" crc="56283321"/>
 		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
 		<rom name="gg1knight.bin" size="16384" crc="c12dd3e3"/>
 		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
@@ -94979,7 +96152,7 @@
 		<manufacturer>GoodLuckTrying</manufacturer>
 		<rom name="10nmaiden.rom" size="16384" crc="6f73c922"/>
 		<rom name="8nmaiden.rom" size="32768" crc="28546c2b"/>
-		<rom name="12nmaiden.rom" size="32768" crc="6c900fa5"/>
+		<rom name="12nmaiden.rom" size="32768" crc="29101f6b"/>
 		<rom name="gg2.bin" merge="gg2.bin" size="32768" crc="615f5b6f"/>
 		<rom name="gg1maiden.bin" size="16384" crc="82e2fa18"/>
 		<rom name="gg11.bin" merge="gg11.bin" size="16384" crc="ddd56fa9"/>
@@ -98123,7 +99296,7 @@
 	<game name="mofflott" sourcefile="taito/d_asuka.cpp">
 		<description>Maze of Flott (Japan)</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="c17-09.bin" size="131072" crc="05ee110f"/>
 		<rom name="c17-08.bin" size="131072" crc="d0aacffd"/>
 		<rom name="c17-03.bin" size="524288" crc="27047fc3"/>
@@ -98133,6 +99306,8 @@
 		<rom name="c17-05.bin" size="65536" crc="57ac4741"/>
 		<rom name="c17-04.bin" size="65536" crc="f4250410"/>
 		<rom name="c17-06.bin" size="65536" crc="5c332125"/>
+		<rom name="pal20l8acns-b88-11.ic32" size="324" crc="9be618d1"/>
+		<rom name="pal16l8acn-b88-05.ic43" size="260" crc="d6524ccc"/>
 		<video type="raster" orientation="vertical" width="240" height="320" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
@@ -119965,6 +121140,27 @@
 		<video type="raster" orientation="horizontal" width="248" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="defenderom" cloneof="defender" romof="defender" sourcefile="pre90s/d_williams.cpp">
+		<comment>Bootleg</comment>
+		<description>Operacion Defender (bootleg of Defender)</description>
+		<year>1981</year>
+		<manufacturer>bootleg (Operamatic)</manufacturer>
+		<rom name="rom1.bin" size="4096" crc="8c04602b"/>
+		<rom name="rom2.bin" merge="defend.2" size="4096" crc="89b75984"/>
+		<rom name="rom3.bin" merge="defend.3" size="4096" crc="94f51e9b"/>
+		<rom name="rom10.bin" size="2048" crc="12e2bd1c"/>
+		<rom name="rom7.bin" size="2048" crc="19e1ac79"/>
+		<rom name="rom9.bin" size="2048" crc="b8ac5966"/>
+		<rom name="rom6.bin" merge="defend.11" size="2048" crc="9deaf6d9"/>
+		<rom name="rom8.bin" merge="defend.7" size="2048" crc="339e092e"/>
+		<rom name="rom5.bin" size="2048" crc="871f75a0"/>
+		<rom name="rom4.bin" merge="defend.6" size="2048" crc="65f4efd1"/>
+		<rom name="rom12.bin" size="2048" crc="f122d9c9"/>
+		<rom name="7641-1.bin" size="512" crc="25de5d85"/>
+		<rom name="7641-2.bin" merge="decoder.3" size="512" crc="c3f45f70"/>
+		<video type="raster" orientation="horizontal" width="292" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="opwolfb" cloneof="opwolf" romof="opwolf" sourcefile="taito/d_taitomisc.cpp">
 		<comment>Bootleg</comment>
 		<description>Operation Bear (bootleg of Operation Wolf)</description>
@@ -124207,6 +125403,141 @@
 		<video type="raster" orientation="vertical" width="224" height="380" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
+	<game name="paperboyp" cloneof="paperboy" romof="paperboy" sourcefile="atari/d_atarisy2.cpp">
+		<description>Paperboy (prototype)</description>
+		<year>1983</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="fix-low.5p" size="16384" crc="55a7137b"/>
+		<rom name="fix-hi.5m" size="16384" crc="e386b4f9"/>
+		<rom name="l-0.7t" size="16384" crc="fbf26418"/>
+		<rom name="h-0.6t" size="16384" crc="ee4334ea"/>
+		<rom name="pagroml-1.6rs" size="16384" crc="1414b432"/>
+		<rom name="h-1.5t" size="16384" crc="ee902968"/>
+		<rom name="pagroml-2.7rs" size="16384" crc="be537e48"/>
+		<rom name="pagromh-2.4t" size="16384" crc="949defeb"/>
+		<rom name="low-3.5rs" size="16384" crc="a0afde83"/>
+		<rom name="hi-3.4rs" size="16384" crc="7a1a4d69"/>
+		<rom name="paptst4000.2a" size="16384" crc="e5ee1bca"/>
+		<rom name="paptst8000.2c" size="16384" crc="c51ebdb0"/>
+		<rom name="paptstc000.2g" size="16384" crc="e663d9c2"/>
+		<rom name="vid_a06.rv1" merge="vid_a06.rv1" size="32768" crc="b32ffddf"/>
+		<rom name="vid_b06.rv1" merge="vid_b06.rv1" size="16384" crc="301b849d"/>
+		<rom name="vid_c06.rv1" merge="vid_c06.rv1" size="32768" crc="7bb59d68"/>
+		<rom name="vid_d06.rv1" merge="vid_d06.rv1" size="16384" crc="1a1d4ba8"/>
+		<rom name="vid_l06.rv1" merge="vid_l06.rv1" size="32768" crc="067ef202"/>
+		<rom name="vid_k06.rv1" merge="vid_k06.rv1" size="32768" crc="76b977c4"/>
+		<rom name="vid_j06.rv1" merge="vid_j06.rv1" size="32768" crc="2a3cc8d0"/>
+		<rom name="vid_h06.rv1" merge="vid_h06.rv1" size="32768" crc="6763a321"/>
+		<rom name="vid_s06.rv1" merge="vid_s06.rv1" size="32768" crc="0a321b7b"/>
+		<rom name="vid_p06.rv1" merge="vid_p06.rv1" size="32768" crc="5bd089ee"/>
+		<rom name="vid_n06.rv1" merge="vid_n06.rv1" size="32768" crc="c34a517d"/>
+		<rom name="vid_m06.rv1" merge="vid_m06.rv1" size="32768" crc="df723956"/>
+		<rom name="vid_t06.rv1" merge="vid_t06.rv1" size="8192" crc="60d7aebb"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="preliminary"/>
+	</game>
+	<game name="paperboyr1" cloneof="paperboy" romof="paperboy" sourcefile="atari/d_atarisy2.cpp">
+		<description>Paperboy (rev 1)</description>
+		<year>1984</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="cpu_l07.rv1" size="16384" crc="fd87a8ee"/>
+		<rom name="cpu_n07.rv1" size="16384" crc="a997e217"/>
+		<rom name="cpu_f06.rv1" size="16384" crc="e871248d"/>
+		<rom name="cpu_n06.rv1" size="16384" crc="4d110e5f"/>
+		<rom name="cpu_j06.rv1" merge="cpu_j06.rv1" size="16384" crc="a754b12d"/>
+		<rom name="cpu_p06.rv1" merge="cpu_p06.rv1" size="16384" crc="89a1ff9c"/>
+		<rom name="cpu_k06.rv1" merge="cpu_k06.rv1" size="16384" crc="290bb034"/>
+		<rom name="cpu_r06.rv1" merge="cpu_r06.rv1" size="16384" crc="826993de"/>
+		<rom name="cpu_l06.rv1" size="16384" crc="ccbc58a6"/>
+		<rom name="cpu_s06.rv1" size="16384" crc="a7f14643"/>
+		<rom name="cpu_a02.rv1" size="16384" crc="5479a788"/>
+		<rom name="cpu_b02.rv1" size="16384" crc="de4147c6"/>
+		<rom name="cpu_c02.rv1" size="16384" crc="b71505fc"/>
+		<rom name="vid_a06.rv1" merge="vid_a06.rv1" size="32768" crc="b32ffddf"/>
+		<rom name="vid_b06.rv1" merge="vid_b06.rv1" size="16384" crc="301b849d"/>
+		<rom name="vid_c06.rv1" merge="vid_c06.rv1" size="32768" crc="7bb59d68"/>
+		<rom name="vid_d06.rv1" merge="vid_d06.rv1" size="16384" crc="1a1d4ba8"/>
+		<rom name="vid_l06.rv1" merge="vid_l06.rv1" size="32768" crc="067ef202"/>
+		<rom name="vid_k06.rv1" merge="vid_k06.rv1" size="32768" crc="76b977c4"/>
+		<rom name="vid_j06.rv1" merge="vid_j06.rv1" size="32768" crc="2a3cc8d0"/>
+		<rom name="vid_h06.rv1" merge="vid_h06.rv1" size="32768" crc="6763a321"/>
+		<rom name="vid_s06.rv1" merge="vid_s06.rv1" size="32768" crc="0a321b7b"/>
+		<rom name="vid_p06.rv1" merge="vid_p06.rv1" size="32768" crc="5bd089ee"/>
+		<rom name="vid_n06.rv1" merge="vid_n06.rv1" size="32768" crc="c34a517d"/>
+		<rom name="vid_m06.rv1" merge="vid_m06.rv1" size="32768" crc="df723956"/>
+		<rom name="vid_t06.rv1" merge="vid_t06.rv1" size="8192" crc="60d7aebb"/>
+		<rom name="paperboy-eeprom.bin" merge="paperboy-eeprom.bin" size="512" crc="1bbf9b07"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="paperboyr2" cloneof="paperboy" romof="paperboy" sourcefile="atari/d_atarisy2.cpp">
+		<description>Paperboy (rev 2)</description>
+		<year>1984</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="cpu_l07.rv2" size="16384" crc="39d0a625"/>
+		<rom name="cpu_n07.rv2" size="16384" crc="3c5de588"/>
+		<rom name="cpu_f06.rv2" merge="cpu_f06.rv2" size="16384" crc="3fea86ac"/>
+		<rom name="cpu_n06.rv2" merge="cpu_n06.rv2" size="16384" crc="711b17ba"/>
+		<rom name="cpu_j06.rv1" merge="cpu_j06.rv1" size="16384" crc="a754b12d"/>
+		<rom name="cpu_p06.rv1" merge="cpu_p06.rv1" size="16384" crc="89a1ff9c"/>
+		<rom name="cpu_k06.rv1" merge="cpu_k06.rv1" size="16384" crc="290bb034"/>
+		<rom name="cpu_r06.rv1" merge="cpu_r06.rv1" size="16384" crc="826993de"/>
+		<rom name="cpu_l06.rv2" merge="cpu_l06.rv2" size="16384" crc="8a754466"/>
+		<rom name="cpu_s06.rv2" merge="cpu_s06.rv2" size="16384" crc="224209f9"/>
+		<rom name="cpu_a02.rv2" size="16384" crc="4a759092"/>
+		<rom name="cpu_b02.rv2" merge="cpu_b02.rv2" size="16384" crc="e4e7a8b9"/>
+		<rom name="cpu_c02.rv2" merge="cpu_c02.rv2" size="16384" crc="d44c2aa2"/>
+		<rom name="vid_a06.rv1" merge="vid_a06.rv1" size="32768" crc="b32ffddf"/>
+		<rom name="vid_b06.rv1" merge="vid_b06.rv1" size="16384" crc="301b849d"/>
+		<rom name="vid_c06.rv1" merge="vid_c06.rv1" size="32768" crc="7bb59d68"/>
+		<rom name="vid_d06.rv1" merge="vid_d06.rv1" size="16384" crc="1a1d4ba8"/>
+		<rom name="vid_l06.rv1" merge="vid_l06.rv1" size="32768" crc="067ef202"/>
+		<rom name="vid_k06.rv1" merge="vid_k06.rv1" size="32768" crc="76b977c4"/>
+		<rom name="vid_j06.rv1" merge="vid_j06.rv1" size="32768" crc="2a3cc8d0"/>
+		<rom name="vid_h06.rv1" merge="vid_h06.rv1" size="32768" crc="6763a321"/>
+		<rom name="vid_s06.rv1" merge="vid_s06.rv1" size="32768" crc="0a321b7b"/>
+		<rom name="vid_p06.rv1" merge="vid_p06.rv1" size="32768" crc="5bd089ee"/>
+		<rom name="vid_n06.rv1" merge="vid_n06.rv1" size="32768" crc="c34a517d"/>
+		<rom name="vid_m06.rv1" merge="vid_m06.rv1" size="32768" crc="df723956"/>
+		<rom name="vid_t06.rv1" merge="vid_t06.rv1" size="8192" crc="60d7aebb"/>
+		<rom name="paperboy-eeprom.bin" merge="paperboy-eeprom.bin" size="512" crc="1bbf9b07"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="paperboy" sourcefile="atari/d_atarisy2.cpp">
+		<description>Paperboy (rev 3)</description>
+		<year>1984</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="cpu_l07.rv3" size="16384" crc="4024bb9b"/>
+		<rom name="cpu_n07.rv3" size="16384" crc="0260901a"/>
+		<rom name="cpu_f06.rv2" size="16384" crc="3fea86ac"/>
+		<rom name="cpu_n06.rv2" size="16384" crc="711b17ba"/>
+		<rom name="cpu_j06.rv1" size="16384" crc="a754b12d"/>
+		<rom name="cpu_p06.rv1" size="16384" crc="89a1ff9c"/>
+		<rom name="cpu_k06.rv1" size="16384" crc="290bb034"/>
+		<rom name="cpu_r06.rv1" size="16384" crc="826993de"/>
+		<rom name="cpu_l06.rv2" size="16384" crc="8a754466"/>
+		<rom name="cpu_s06.rv2" size="16384" crc="224209f9"/>
+		<rom name="cpu_a02.rv3" size="16384" crc="ba251bc4"/>
+		<rom name="cpu_b02.rv2" size="16384" crc="e4e7a8b9"/>
+		<rom name="cpu_c02.rv2" size="16384" crc="d44c2aa2"/>
+		<rom name="vid_a06.rv1" size="32768" crc="b32ffddf"/>
+		<rom name="vid_b06.rv1" size="16384" crc="301b849d"/>
+		<rom name="vid_c06.rv1" size="32768" crc="7bb59d68"/>
+		<rom name="vid_d06.rv1" size="16384" crc="1a1d4ba8"/>
+		<rom name="vid_l06.rv1" size="32768" crc="067ef202"/>
+		<rom name="vid_k06.rv1" size="32768" crc="76b977c4"/>
+		<rom name="vid_j06.rv1" size="32768" crc="2a3cc8d0"/>
+		<rom name="vid_h06.rv1" size="32768" crc="6763a321"/>
+		<rom name="vid_s06.rv1" size="32768" crc="0a321b7b"/>
+		<rom name="vid_p06.rv1" size="32768" crc="5bd089ee"/>
+		<rom name="vid_n06.rv1" size="32768" crc="c34a517d"/>
+		<rom name="vid_m06.rv1" size="32768" crc="df723956"/>
+		<rom name="vid_t06.rv1" size="8192" crc="60d7aebb"/>
+		<rom name="paperboy-eeprom.bin" size="512" crc="1bbf9b07"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pturn" sourcefile="pre90s/d_pturn.cpp">
 		<description>Parallel Turn</description>
 		<year>1984</year>
@@ -124598,7 +125929,7 @@
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="peek a boo j ver 1.1 - 3.ic29" size="131072" crc="f5f4cf33"/>
 		<rom name="peek a boo j ver 1.1 - 2.ic28" size="131072" crc="7b3d430d"/>
-		<rom name="mo-90233.mcu" size="16384" crc="9dfba11b"/>
+		<rom name="mo-92033.mcu.ic120" size="16384" crc="9dfba11b"/>
 		<rom name="5" size="524288" crc="34fa07bb"/>
 		<rom name="4" size="131072" crc="f037794b"/>
 		<rom name="1" size="524288" crc="5a444ecf"/>
@@ -124613,7 +125944,7 @@
 		<manufacturer>Jaleco</manufacturer>
 		<rom name="pb92127a_3_ver1.0.ic29" size="131072" crc="4603176a"/>
 		<rom name="pb92127a_2_ver1.0.ic28" size="131072" crc="7bf4716b"/>
-		<rom name="mo-90233.mcu" merge="mo-90233.mcu" size="16384" crc="9dfba11b"/>
+		<rom name="mo-92033.mcu.ic120" merge="mo-92033.mcu.ic120" size="16384" crc="9dfba11b"/>
 		<rom name="5" merge="5" size="524288" crc="34fa07bb"/>
 		<rom name="4" merge="4" size="131072" crc="f037794b"/>
 		<rom name="1" merge="1" size="524288" crc="5a444ecf"/>
@@ -130202,9 +131533,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -130233,9 +131564,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -130264,9 +131595,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -130295,9 +131626,9 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
@@ -130326,16 +131657,16 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<rom name="sailormn_usa.nv" size="128" crc="3915abe3"/>
-		<rom name="sailormn_japan.nv" size="128" crc="ea03c30a"/>
+		<rom name="sailormn_japan.nv" merge="sailormn_japan.nv" size="128" crc="ea03c30a"/>
 		<rom name="sailormn_korea.nv" size="128" crc="0e7de398"/>
 		<rom name="sailormn_taiwan.nv" size="128" crc="6c7e8c2a"/>
 		<rom name="sailormn_hongkong.nv" size="128" crc="4d24c874"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sailormno" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
+	<game name="sailormnoe" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
 		<description>Pretty Soldier Sailor Moon (Version 95/03/21, Europe)</description>
 		<year>1995</year>
 		<manufacturer>Gazelle (Banpresto license)</manufacturer>
@@ -130356,7 +131687,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -130410,7 +131741,7 @@
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sailormnn" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
+	<game name="sailormnne" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
 		<description>Pretty Soldier Sailor Moon (Version 95/03/22, Europe)</description>
 		<year>1995</year>
 		<manufacturer>Gazelle (Banpresto license)</manufacturer>
@@ -130431,7 +131762,7 @@
 		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
 		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
 		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
-		<rom name="sailormn_europe.nv" merge="sailormn_europe.nv" size="128" crc="59a7dc50"/>
+		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -130485,27 +131816,27 @@
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sailormn" sourcefile="cave/d_sailormn.cpp">
+	<game name="sailormne" cloneof="sailormn" romof="sailormn" sourcefile="cave/d_sailormn.cpp">
 		<description>Pretty Soldier Sailor Moon (Version 95/03/22B, Europe)</description>
 		<year>1995</year>
 		<manufacturer>Gazelle (Banpresto license)</manufacturer>
-		<rom name="bpsm945a.u45" size="524288" crc="898c9515"/>
-		<rom name="bpsm.u46" size="2097152" crc="32084e80"/>
-		<rom name="bpsm945a.u9" size="524288" crc="438de548"/>
-		<rom name="bpsm.u76" size="2097152" crc="a243a5ba"/>
-		<rom name="bpsm.u77" size="2097152" crc="5179a4ac"/>
-		<rom name="bpsm.u53" size="2097152" crc="b9b15f83"/>
-		<rom name="bpsm.u54" size="2097152" crc="8f00679d"/>
-		<rom name="bpsm.u57" size="2097152" crc="86be7b63"/>
-		<rom name="bpsm.u58" size="2097152" crc="e0bba83b"/>
-		<rom name="bpsm.u62" size="2097152" crc="a1e3bfac"/>
-		<rom name="bpsm.u61" size="2097152" crc="6a014b52"/>
-		<rom name="bpsm.u60" size="2097152" crc="992468c0"/>
-		<rom name="bpsm.u65" size="2097152" crc="f60fb7b5"/>
-		<rom name="bpsm.u64" size="2097152" crc="6559d31c"/>
-		<rom name="bpsm.u63" size="2097152" crc="d57a56b4"/>
-		<rom name="bpsm.u48" size="2097152" crc="498e4ed1"/>
-		<rom name="bpsm.u47" size="524288" crc="0f2901b9"/>
+		<rom name="bpsm945a.u45" merge="bpsm945a.u45" size="524288" crc="898c9515"/>
+		<rom name="bpsm.u46" merge="bpsm.u46" size="2097152" crc="32084e80"/>
+		<rom name="bpsm945a.u9" merge="bpsm945a.u9" size="524288" crc="438de548"/>
+		<rom name="bpsm.u76" merge="bpsm.u76" size="2097152" crc="a243a5ba"/>
+		<rom name="bpsm.u77" merge="bpsm.u77" size="2097152" crc="5179a4ac"/>
+		<rom name="bpsm.u53" merge="bpsm.u53" size="2097152" crc="b9b15f83"/>
+		<rom name="bpsm.u54" merge="bpsm.u54" size="2097152" crc="8f00679d"/>
+		<rom name="bpsm.u57" merge="bpsm.u57" size="2097152" crc="86be7b63"/>
+		<rom name="bpsm.u58" merge="bpsm.u58" size="2097152" crc="e0bba83b"/>
+		<rom name="bpsm.u62" merge="bpsm.u62" size="2097152" crc="a1e3bfac"/>
+		<rom name="bpsm.u61" merge="bpsm.u61" size="2097152" crc="6a014b52"/>
+		<rom name="bpsm.u60" merge="bpsm.u60" size="2097152" crc="992468c0"/>
+		<rom name="bpsm.u65" merge="bpsm.u65" size="2097152" crc="f60fb7b5"/>
+		<rom name="bpsm.u64" merge="bpsm.u64" size="2097152" crc="6559d31c"/>
+		<rom name="bpsm.u63" merge="bpsm.u63" size="2097152" crc="d57a56b4"/>
+		<rom name="bpsm.u48" merge="bpsm.u48" size="2097152" crc="498e4ed1"/>
+		<rom name="bpsm.u47" merge="bpsm.u47" size="524288" crc="0f2901b9"/>
 		<rom name="sailormn_europe.nv" size="128" crc="59a7dc50"/>
 		<video type="raster" orientation="horizontal" width="320" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -141807,6 +143138,58 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rickdangdx" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
+		<comment>Homebrew</comment>
+		<description>Rick Dangerous DX (HB)</description>
+		<year>2026</year>
+		<manufacturer>Z-Team</manufacturer>
+		<rom name="rickdx-p1.bin" size="524288" crc="d3dd7ab5"/>
+		<rom name="rickdx-s1.bin" size="131072" crc="4ec73f78"/>
+		<rom name="rickdx-c1.bin" size="1310720" crc="89e09533"/>
+		<rom name="rickdx-c2.bin" size="1310720" crc="c2df94d4"/>
+		<rom name="rickdx-m1.bin" size="262144" crc="ad8f34e8"/>
+		<rom name="rickdx-v1.bin" size="7077888" crc="69fb1fdf"/>
+		<rom name="sp-s3.sp1" merge="sp-s3.sp1" size="131072" crc="91b64be3"/>
+		<rom name="sp-s2.sp1" merge="sp-s2.sp1" size="131072" crc="9036d879"/>
+		<rom name="sp-s.sp1" merge="sp-s.sp1" size="131072" crc="c7f2fa45"/>
+		<rom name="sp-u2.sp1" merge="sp-u2.sp1" size="131072" crc="e72943de"/>
+		<rom name="sp1-u2" merge="sp1-u2" size="131072" crc="62f021f4"/>
+		<rom name="sp-e.sp1" merge="sp-e.sp1" size="131072" crc="2723a5b5"/>
+		<rom name="sp1-u4.bin" merge="sp1-u4.bin" size="131072" crc="1179a30f"/>
+		<rom name="sp1-u3.bin" merge="sp1-u3.bin" size="131072" crc="2025b7a2"/>
+		<rom name="vs-bios.rom" merge="vs-bios.rom" size="131072" crc="f0e8f27d"/>
+		<rom name="sp-j2.sp1" merge="sp-j2.sp1" size="131072" crc="acede59c"/>
+		<rom name="sp1.jipan.1024" merge="sp1.jipan.1024" size="131072" crc="9fb0abe4"/>
+		<rom name="sp-45.sp1" merge="sp-45.sp1" size="524288" crc="03cc9f6a"/>
+		<rom name="sp-j3.sp1" merge="sp-j3.sp1" size="524288" crc="486cb450"/>
+		<rom name="japan-j3.bin" merge="japan-j3.bin" size="131072" crc="dff6d41f"/>
+		<rom name="sp1-j3.bin" merge="sp1-j3.bin" size="131072" crc="fbc6d469"/>
+		<rom name="neo-po.bin" merge="neo-po.bin" size="131072" crc="16d0c132"/>
+		<rom name="neo-epo.bin" merge="neo-epo.bin" size="131072" crc="d27a71f1"/>
+		<rom name="neodebug.bin" merge="neodebug.bin" size="131072" crc="698ebb7d"/>
+		<rom name="sp-1v1_3db8c.bin" merge="sp-1v1_3db8c.bin" size="131072" crc="162f0ebe"/>
+		<rom name="uni-bios_4_0.rom" merge="uni-bios_4_0.rom" size="131072" crc="a7aab458"/>
+		<rom name="uni-bios_3_3.rom" merge="uni-bios_3_3.rom" size="131072" crc="24858466"/>
+		<rom name="uni-bios_3_2.rom" merge="uni-bios_3_2.rom" size="131072" crc="a4e8b9b3"/>
+		<rom name="uni-bios_3_1.rom" merge="uni-bios_3_1.rom" size="131072" crc="0c58093f"/>
+		<rom name="uni-bios_3_0.rom" merge="uni-bios_3_0.rom" size="131072" crc="a97c89a9"/>
+		<rom name="uni-bios_2_3.rom" merge="uni-bios_2_3.rom" size="131072" crc="27664eb5"/>
+		<rom name="uni-bios_2_3o.rom" merge="uni-bios_2_3o.rom" size="131072" crc="601720ae"/>
+		<rom name="uni-bios_2_2.rom" merge="uni-bios_2_2.rom" size="131072" crc="2d50996a"/>
+		<rom name="uni-bios_2_1.rom" merge="uni-bios_2_1.rom" size="131072" crc="8dabf76b"/>
+		<rom name="uni-bios_2_0.rom" merge="uni-bios_2_0.rom" size="131072" crc="0c12c2ad"/>
+		<rom name="uni-bios_1_3.rom" merge="uni-bios_1_3.rom" size="131072" crc="b24b44a0"/>
+		<rom name="uni-bios_1_2.rom" merge="uni-bios_1_2.rom" size="131072" crc="4fa698e9"/>
+		<rom name="uni-bios_1_2o.rom" merge="uni-bios_1_2o.rom" size="131072" crc="e19d3ce9"/>
+		<rom name="uni-bios_1_1.rom" merge="uni-bios_1_1.rom" size="131072" crc="5dda0d84"/>
+		<rom name="uni-bios_1_0.rom" merge="uni-bios_1_0.rom" size="131072" crc="0ce453a0"/>
+		<rom name="neopen.sp1" merge="neopen.sp1" size="131072" crc="cb915e76"/>
+		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
+		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
+		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
+		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ridleofp" sourcefile="sega/d_segae.cpp">
 		<description>Riddle of Pythagoras (Japan)</description>
 		<year>1986</year>
@@ -144078,7 +145461,7 @@
 	</game>
 	<game name="robotron87" cloneof="robotron" romof="robotron" sourcefile="pre90s/d_williams.cpp">
 		<comment>Hack</comment>
-		<description>Robotron: 2084 (1987 'shot-in-the-corner' bugfix)</description>
+		<description>Robotron: 2084 (1987 'shot-in-the-corner' bug fix)</description>
 		<year>1987</year>
 		<manufacturer>hack</manufacturer>
 		<rom name="2084_rom_10b_3005-22.a7" merge="2084_rom_10b_3005-22.a7" size="4096" crc="13797024"/>
@@ -144146,7 +145529,8 @@
 		<driver status="good"/>
 	</game>
 	<game name="robotronr3" cloneof="robotron" romof="robotron" sourcefile="pre90s/d_williams.cpp">
-		<description>Robotron: 2084 (Release 3)</description>
+		<comment>Prototype</comment>
+		<description>Robotron: 2084 (Release 3, prototype)</description>
 		<year>1982</year>
 		<manufacturer>Williams / Vid Kidz</manufacturer>
 		<rom name="r3_10.a7" size="4096" crc="1fb75828"/>
@@ -144167,8 +145551,30 @@
 		<video type="raster" orientation="horizontal" width="292" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="robotronyo" cloneof="robotron" romof="robotron" sourcefile="pre90s/d_williams.cpp">
+		<description>Robotron: 2084 (Release 4, yellow/orange label)</description>
+		<year>1982</year>
+		<manufacturer>Williams / Vid Kidz</manufacturer>
+		<rom name="2084_rom_10b_3005-10.a7" size="4096" crc="4a9d5f52"/>
+		<rom name="2084_rom_11b_3005-11.c7" size="4096" crc="2afc5e7f"/>
+		<rom name="2084_rom_12b_3005-12.e7" size="4096" crc="45da9202"/>
+		<rom name="2084_rom_1b_3005-1.e4" merge="2084_rom_1b_3005-13.e4" size="4096" crc="66c7d3ef"/>
+		<rom name="2084_rom_2b_3005-2.c4" merge="2084_rom_2b_3005-14.c4" size="4096" crc="5bc6c614"/>
+		<rom name="2084_rom_3b_3005-3.a4" size="4096" crc="67a369bc"/>
+		<rom name="2084_rom_4b_3005-4.e5" size="4096" crc="b0de677a"/>
+		<rom name="2084_rom_5b_3005-5.c5" size="4096" crc="24726007"/>
+		<rom name="2084_rom_6b_3005-6.a5" size="4096" crc="028181a6"/>
+		<rom name="2084_rom_7b_3005-7.e6" size="4096" crc="4dfcceae"/>
+		<rom name="2084_rom_8b_3005-8.c6" merge="2084_rom_8b_3005-20.c6" size="4096" crc="3a96e88c"/>
+		<rom name="2084_rom_9b_3005-9.a6" merge="2084_rom_9b_3005-21.a6" size="4096" crc="b124367b"/>
+		<rom name="video_sound_rom_3_std_767.ic12" merge="video_sound_rom_3_std_767.ic12" size="4096" crc="c56c1d28"/>
+		<rom name="decoder_rom_4.3g" merge="decoder_rom_4.3g" size="512" crc="e6631c23"/>
+		<rom name="decoder_rom_6.3c" merge="decoder_rom_6.3c" size="512" crc="83faf25e"/>
+		<video type="raster" orientation="horizontal" width="292" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="robotron" sourcefile="pre90s/d_williams.cpp">
-		<description>Robotron: 2084 (Solid Blue label)</description>
+		<description>Robotron: 2084 (Release 5, solid blue label)</description>
 		<year>1982</year>
 		<manufacturer>Williams / Vid Kidz</manufacturer>
 		<rom name="2084_rom_10b_3005-22.a7" size="4096" crc="13797024"/>
@@ -144205,28 +145611,6 @@
 		<rom name="roboun11.7b" size="4096" crc="8981a43b"/>
 		<rom name="roboun11.8b" merge="2084_rom_8b_3005-20.c6" size="4096" crc="3a96e88c"/>
 		<rom name="roboun11.9b" merge="2084_rom_9b_3005-21.a6" size="4096" crc="b124367b"/>
-		<rom name="video_sound_rom_3_std_767.ic12" merge="video_sound_rom_3_std_767.ic12" size="4096" crc="c56c1d28"/>
-		<rom name="decoder_rom_4.3g" merge="decoder_rom_4.3g" size="512" crc="e6631c23"/>
-		<rom name="decoder_rom_6.3c" merge="decoder_rom_6.3c" size="512" crc="83faf25e"/>
-		<video type="raster" orientation="horizontal" width="292" height="240" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="robotronyo" cloneof="robotron" romof="robotron" sourcefile="pre90s/d_williams.cpp">
-		<description>Robotron: 2084 (Yellow/Orange label)</description>
-		<year>1982</year>
-		<manufacturer>Williams / Vid Kidz</manufacturer>
-		<rom name="2084_rom_10b_3005-10.a7" size="4096" crc="4a9d5f52"/>
-		<rom name="2084_rom_11b_3005-11.c7" size="4096" crc="2afc5e7f"/>
-		<rom name="2084_rom_12b_3005-12.e7" size="4096" crc="45da9202"/>
-		<rom name="2084_rom_1b_3005-1.e4" merge="2084_rom_1b_3005-13.e4" size="4096" crc="66c7d3ef"/>
-		<rom name="2084_rom_2b_3005-2.c4" merge="2084_rom_2b_3005-14.c4" size="4096" crc="5bc6c614"/>
-		<rom name="2084_rom_3b_3005-3.a4" size="4096" crc="67a369bc"/>
-		<rom name="2084_rom_4b_3005-4.e5" size="4096" crc="b0de677a"/>
-		<rom name="2084_rom_5b_3005-5.c5" size="4096" crc="24726007"/>
-		<rom name="2084_rom_6b_3005-6.a5" size="4096" crc="028181a6"/>
-		<rom name="2084_rom_7b_3005-7.e6" size="4096" crc="4dfcceae"/>
-		<rom name="2084_rom_8b_3005-8.c6" merge="2084_rom_8b_3005-20.c6" size="4096" crc="3a96e88c"/>
-		<rom name="2084_rom_9b_3005-9.a6" merge="2084_rom_9b_3005-21.a6" size="4096" crc="b124367b"/>
 		<rom name="video_sound_rom_3_std_767.ic12" merge="video_sound_rom_3_std_767.ic12" size="4096" crc="c56c1d28"/>
 		<rom name="decoder_rom_4.3g" merge="decoder_rom_4.3g" size="512" crc="e6631c23"/>
 		<rom name="decoder_rom_6.3c" merge="decoder_rom_6.3c" size="512" crc="83faf25e"/>
@@ -146586,7 +147970,7 @@
 	<game name="stdragon" sourcefile="pre90s/d_megasys1.cpp">
 		<description>Saint Dragon (set 1)</description>
 		<year>1989</year>
-		<manufacturer>Jaleco</manufacturer>
+		<manufacturer>Jaleco / NMK</manufacturer>
 		<rom name="jsd-02.bin" size="131072" crc="cc29ab19"/>
 		<rom name="jsd-01.bin" size="131072" crc="67429a57"/>
 		<rom name="jsd-05.bin" size="65536" crc="8c04feaa"/>
@@ -146616,7 +148000,7 @@
 	<game name="stdragona" cloneof="stdragon" romof="stdragon" sourcefile="pre90s/d_megasys1.cpp">
 		<description>Saint Dragon (set 2)</description>
 		<year>1989</year>
-		<manufacturer>Jaleco</manufacturer>
+		<manufacturer>Jaleco / NMK</manufacturer>
 		<rom name="jsda-02.bin" size="131072" crc="d65d4154"/>
 		<rom name="jsda-01.bin" size="131072" crc="c40c8ee1"/>
 		<rom name="jsd-05.bin" merge="jsd-05.bin" size="65536" crc="8c04feaa"/>
@@ -152374,15 +153758,15 @@
 	</game>
 	<game name="sengoku2rb" cloneof="sengoku2" romof="sengoku2" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Sengoku 2 / Sengoku Denshou 2 (Hack, Red Blood v1.14)</description>
+		<description>Sengoku 2 / Sengoku Denshou 2 (Hack, Red Blood v1.15)</description>
 		<year>2026</year>
 		<manufacturer>Raphael-Boichot</manufacturer>
 		<rom name="040-p1rb.p1" size="1048576" crc="9a8925fe"/>
 		<rom name="040-s1.s1" merge="040-s1.s1" size="131072" crc="cd9802a3"/>
-		<rom name="040-c1rb.c1" size="2097152" crc="5740194a"/>
-		<rom name="040-c2rb.c2" size="2097152" crc="dc5a1591"/>
-		<rom name="040-c3rb.c3" size="524288" crc="5c4040e5"/>
-		<rom name="040-c4rb.c4" size="524288" crc="57ca479b"/>
+		<rom name="040-c1rb.c1" size="2097152" crc="451cdf68"/>
+		<rom name="040-c2rb.c2" size="2097152" crc="942d98b8"/>
+		<rom name="040-c3rb.c3" size="524288" crc="f3992a91"/>
+		<rom name="040-c4rb.c4" size="524288" crc="7838143d"/>
 		<rom name="040-m1.m1" merge="040-m1.m1" size="131072" crc="d4de4bca"/>
 		<rom name="040-v1.v1" merge="040-v1.v1" size="2097152" crc="71cb4b5d"/>
 		<rom name="040-v2.v2" merge="040-v2.v2" size="1048576" crc="c5cece01"/>
@@ -177004,6 +178388,251 @@
 		<video type="raster" orientation="horizontal" width="368" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="ssprintf" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (French)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-134.7l" size="16384" crc="b7757b44"/>
+		<rom name="136042-135.7n" size="16384" crc="4fc132ba"/>
+		<rom name="136042-133.6f" size="32768" crc="0b9f89da"/>
+		<rom name="136042-132.6n" size="32768" crc="fe02509d"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-119.2bc" size="16384" crc="0c810231"/>
+		<rom name="136042-120.2d" size="16384" crc="647b7481"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-218.6t" size="16384" crc="8e500be1"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprintg1" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (German, rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-230.7l" size="16384" crc="e5b2da29"/>
+		<rom name="136042-231.7n" size="16384" crc="fac14b00"/>
+		<rom name="136042-229.6f" size="32768" crc="78b01070"/>
+		<rom name="136042-225.6n" size="32768" crc="03688b4c"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-119.2bc" size="16384" crc="0c810231"/>
+		<rom name="136042-120.2d" size="16384" crc="647b7481"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-118.6t" merge="136042-118.6t" size="16384" crc="8489d113"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprintg" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (German, rev 2)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-430.7l" size="16384" crc="c21df5f5"/>
+		<rom name="136042-431.7n" size="16384" crc="5880fc58"/>
+		<rom name="136042-429.6f" size="32768" crc="2060f68a"/>
+		<rom name="136042-425.6n" size="32768" crc="b7274985"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-119.2bc" size="16384" crc="0c810231"/>
+		<rom name="136042-120.2d" size="16384" crc="647b7481"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-118.6t" merge="136042-118.6t" size="16384" crc="8489d113"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprint1" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (rev 1)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-130.7l" size="16384" crc="b1edc688"/>
+		<rom name="136042-131.7n" size="16384" crc="df49dc5a"/>
+		<rom name="136042-129.6f" size="32768" crc="8be22fca"/>
+		<rom name="136042-125.6n" size="32768" crc="30b9e101"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-119.2bc" size="16384" crc="0c810231"/>
+		<rom name="136042-120.2d" size="16384" crc="647b7481"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-118.6t" merge="136042-118.6t" size="16384" crc="8489d113"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprint3" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (rev 3)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-330.7l" merge="136042-330.7l" size="16384" crc="ee312027"/>
+		<rom name="136042-331.7n" merge="136042-331.7n" size="16384" crc="2ef15354"/>
+		<rom name="136042-329.6f" merge="136042-329.6f" size="32768" crc="ed1d6205"/>
+		<rom name="136042-325.6n" merge="136042-325.6n" size="32768" crc="aecaa2bf"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-319.2bc" size="16384" crc="c7f31c16"/>
+		<rom name="136042-320.2d" size="16384" crc="9815ece9"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-118.6t" merge="136042-118.6t" size="16384" crc="8489d113"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (rev 4)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-330.7l" size="16384" crc="ee312027"/>
+		<rom name="136042-331.7n" size="16384" crc="2ef15354"/>
+		<rom name="136042-329.6f" size="32768" crc="ed1d6205"/>
+		<rom name="136042-325.6n" size="32768" crc="aecaa2bf"/>
+		<rom name="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-419.2bc" size="16384" crc="b277915a"/>
+		<rom name="136042-420.2d" size="16384" crc="170b2c53"/>
+		<rom name="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-118.6t" size="16384" crc="8489d113"/>
+		<rom name="ssprint-eeprom.bin" size="512" crc="9301ed27"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="ssprints" cloneof="ssprint" romof="ssprint" sourcefile="atari/d_atarisy2.cpp">
+		<description>Super Sprint (Spanish)</description>
+		<year>1986</year>
+		<manufacturer>Atari Games</manufacturer>
+		<rom name="136042-138.7l" size="16384" crc="234a7c65"/>
+		<rom name="136042-139.7n" size="16384" crc="7652a461"/>
+		<rom name="136042-137.6f" size="32768" crc="fa4c7e9d"/>
+		<rom name="136042-136.6n" size="32768" crc="7c20a249"/>
+		<rom name="136042-127.6k" merge="136042-127.6k" size="32768" crc="de6c4db9"/>
+		<rom name="136042-123.6r" merge="136042-123.6r" size="32768" crc="aff23b5a"/>
+		<rom name="136042-126.6l" merge="136042-126.6l" size="32768" crc="92f5392c"/>
+		<rom name="136042-122.6s" merge="136042-122.6s" size="32768" crc="0381f362"/>
+		<rom name="136042-119.2bc" size="16384" crc="0c810231"/>
+		<rom name="136042-120.2d" size="16384" crc="647b7481"/>
+		<rom name="136042-105.6a" merge="136042-105.6a" size="65536" crc="911499fe"/>
+		<rom name="136042-106.6b" merge="136042-106.6b" size="32768" crc="a39b25ed"/>
+		<rom name="136042-101.7a" merge="136042-101.7a" size="65536" crc="6d015c72"/>
+		<rom name="136042-102.7b" merge="136042-102.7b" size="32768" crc="54e21f0a"/>
+		<rom name="136042-107.6c" merge="136042-107.6c" size="65536" crc="b7ded658"/>
+		<rom name="136042-108.6de" merge="136042-108.6de" size="32768" crc="4a804a4c"/>
+		<rom name="136042-104.7de" merge="136042-104.7de" size="65536" crc="339644ed"/>
+		<rom name="136042-103.7c" merge="136042-103.7c" size="32768" crc="64d473a8"/>
+		<rom name="136042-113.6l" merge="136042-113.6l" size="32768" crc="f869b0fc"/>
+		<rom name="136042-112.6k" merge="136042-112.6k" size="32768" crc="abcbc114"/>
+		<rom name="136042-110.6jh" merge="136042-110.6jh" size="32768" crc="9e91e734"/>
+		<rom name="136042-109.6fh" merge="136042-109.6fh" size="32768" crc="3a051f36"/>
+		<rom name="136042-117.6rs" merge="136042-117.6rs" size="32768" crc="b15c1b90"/>
+		<rom name="136042-116.6pr" merge="136042-116.6pr" size="32768" crc="1dcdd5aa"/>
+		<rom name="136042-115.6n" merge="136042-115.6n" size="32768" crc="fb5677d9"/>
+		<rom name="136042-114.6m" merge="136042-114.6m" size="32768" crc="35e70a8d"/>
+		<rom name="136042-218.6t" size="16384" crc="8e500be1"/>
+		<rom name="ssprint1-eeprom.bin" size="512" crc="ed263888"/>
+		<video type="raster" orientation="horizontal" width="512" height="384" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="sstarcrs" cloneof="mooncrst" romof="mooncrst" sourcefile="galaxian/d_galaxian.cpp">
 		<comment>Bootleg</comment>
 		<description>Super Star Crest</description>
@@ -185095,6 +186724,42 @@
 		<rom name="fi-2" size="512" crc="f305c8d5"/>
 		<rom name="fi-3" size="512" crc="f61a9686"/>
 		<video type="raster" orientation="vertical" width="248" height="256" aspectx="3" aspecty="4"/>
+		<driver status="good"/>
+	</game>
+	<game name="dfjail" sourcefile="sega/d_sys16b.cpp">
+		<description>The Destroyer From Jail (Korea)</description>
+		<year>1991</year>
+		<manufacturer>Philko</manufacturer>
+		<rom name="3.c15" size="131072" crc="dc763979"/>
+		<rom name="1.b15" size="131072" crc="ee235fa5"/>
+		<rom name="4.c16" size="131072" crc="cdcbf6b1"/>
+		<rom name="2.b16" size="131072" crc="49ff074d"/>
+		<rom name="9.f16" size="131072" crc="b2a49d12"/>
+		<rom name="10.f17" size="131072" crc="7d9e8397"/>
+		<rom name="7.f14" size="131072" crc="549af682"/>
+		<rom name="8.f15" size="131072" crc="625c118d"/>
+		<rom name="5.f12" size="131072" crc="9d00656d"/>
+		<rom name="6.f13" size="131072" crc="37b7bf90"/>
+		<rom name="11.g12" size="131072" crc="019662e6"/>
+		<rom name="19.h12" size="131072" crc="f84f472b"/>
+		<rom name="12.g13" size="131072" crc="d222e52b"/>
+		<rom name="20.h13" size="131072" crc="f28bdf76"/>
+		<rom name="13.g14" size="131072" crc="f125b5b0"/>
+		<rom name="21.h14" size="131072" crc="0508cb29"/>
+		<rom name="14.g15" size="131072" crc="ca831a54"/>
+		<rom name="22.h15" size="131072" crc="7329f038"/>
+		<rom name="15.g16" size="131072" crc="db426709"/>
+		<rom name="23.h16" size="131072" crc="94ca23e8"/>
+		<rom name="16.g17" size="131072" crc="f7b2aad6"/>
+		<rom name="24.h17" size="131072" crc="6628becc"/>
+		<rom name="17.g19" size="131072" crc="9302cfc3"/>
+		<rom name="25.h19" size="131072" crc="26ca591f"/>
+		<rom name="18.g20" size="131072" crc="fc8aced0"/>
+		<rom name="26.h20" size="131072" crc="5828e0af"/>
+		<rom name="29.f3" size="32768" crc="7f3ebb6a"/>
+		<rom name="27.g1" size="131072" crc="7a88e1c1"/>
+		<rom name="28.g3" size="131072" crc="ed96d6b9"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="dbldynj" sourcefile="pre90s/d_dynduke.cpp">
@@ -207495,7 +209160,7 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="twinbeeb" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
+	<game name="bs_twinbee" romof="bubsys" sourcefile="konami/d_nemesis.cpp">
 		<description>TwinBee (Bubble System)</description>
 		<year>1985</year>
 		<manufacturer>Konami</manufacturer>
@@ -215750,17 +217415,17 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="wjammlmpl" cloneof="wjammers" romof="wjammers" sourcefile="neogeo/d_neogeo.cpp">
+	<game name="wjammeb" cloneof="wjammers" romof="wjammers" sourcefile="neogeo/d_neogeo.cpp">
 		<comment>Hack</comment>
-		<description>Windjammers / Flying Power Disc (Let me play longer, Hack)</description>
-		<year>2025</year>
+		<description>Windjammers / Flying Power Disc (Endless Breeze, Hack, v1.1.0)</description>
+		<year>2025-26</year>
 		<manufacturer>Boomchil</manufacturer>
-		<rom name="065-p1lmpl.p1" size="1048576" crc="bd442f8f"/>
-		<rom name="065-s1lmpl.s1" size="131072" crc="d282ba6d"/>
+		<rom name="065-p1eb.p1" size="1048576" crc="042fbcdf"/>
+		<rom name="065-s1eb.s1" size="131072" crc="9827f989"/>
 		<rom name="065-c1.c1" merge="065-c1.c1" size="1048576" crc="c7650204"/>
 		<rom name="065-c2.c2" merge="065-c2.c2" size="1048576" crc="d9f3e71d"/>
-		<rom name="065-c3.c3" merge="065-c3.c3" size="1048576" crc="40986386"/>
-		<rom name="065-c4.c4" merge="065-c4.c4" size="1048576" crc="715e15ff"/>
+		<rom name="065-c3eb.c3" size="1048576" crc="153363b0"/>
+		<rom name="065-c4eb.c4" size="1048576" crc="c7b5b02d"/>
 		<rom name="065-m1.m1" merge="065-m1.m1" size="131072" crc="52c23cfc"/>
 		<rom name="065-v1.v1" merge="065-v1.v1" size="1048576" crc="ce8b3698"/>
 		<rom name="065-v2.v2" merge="065-v2.v2" size="1048576" crc="659f9b96"/>
@@ -215804,7 +217469,7 @@
 		<rom name="sm1.sm1" merge="sm1.sm1" size="131072" crc="94416d67"/>
 		<rom name="sfix.sfix" merge="sfix.sfix" size="131072" crc="c2ea0cfd"/>
 		<rom name="000-lo.lo" merge="000-lo.lo" size="131072" crc="5a86cff2"/>
-		<video type="raster" orientation="horizontal" width="304" height="224" aspectx="4" aspecty="3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="wjammers" romof="neogeo" sourcefile="neogeo/d_neogeo.cpp">
@@ -224925,7 +226590,7 @@
 		<comment>Internal ROM only</comment>
 		<description>C-Chip Internal ROM</description>
 		<year>1989</year>
-		<manufacturer>Taito Corporation Japan</manufacturer>
+		<manufacturer>Taito</manufacturer>
 		<rom name="cchip_upd78c11.bin" size="4096" crc="43021521"/>
 	</game>
 	<game isbios="yes" name="decocass" sourcefile="dataeast/d_decocass.cpp">

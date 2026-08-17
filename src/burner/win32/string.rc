@@ -203,6 +203,7 @@ BEGIN
 	IDS_SEL_NES                 "NES"
 	IDS_SEL_FDS                 "FDS"
 	IDS_SEL_SNES				"SNES"
+	IDS_SEL_GBA                 "GBA"
 	IDS_SEL_NGP                 "Neo Geo Pocket"
 	IDS_SEL_CHANNELF            "Fairchild Channel F"
 	IDS_SEL_ASTROHOME           "Bally Astrocade"
@@ -262,7 +263,7 @@ BEGIN
 	
 	IDS_SUPPORTPATH_TITLE		"%s%sEdit support file paths"
 
-	IDS_NGCD_DIAG_TITLE			"%s%sNeo Geo CDZ%sSelect Game"
+	IDS_NGCD_DIAG_TITLE			"%s%sCD Image Library%sSelect Game"
 	IDS_NGCD_TITLE				"Title"
 	IDS_NGCD_NGCDID				"NGCD-ID"
 
