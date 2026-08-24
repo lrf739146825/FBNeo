@@ -8,6 +8,7 @@
 #include "c6280.h"
 #include "bitswap.h"
 #include "pce_cd.h"
+#include "pcecdlist.h"
 
 static UINT8 *AllMem;
 static UINT8 *MemEnd;
@@ -35,7 +36,7 @@ UINT8 PCEJoy2[12];
 UINT8 PCEJoy3[12];
 UINT8 PCEJoy4[12];
 UINT8 PCEJoy5[12];
-UINT8 PCEDips[3];
+UINT8 PCEDips[4];
 
 static UINT8 last_dip;
 
@@ -210,9 +211,10 @@ static void pce_write(UINT32 address, UINT8 data)
 		return;
 	}
 
-	CDSubsystemMiscWrite(address, data); // cd system (acard, bram)
-
-	bprintf(0,_T("unknown write %x:%x\n"), address, data );
+	if (!CDSubsystemMiscWrite(address, data)) { // cd system (acard, bram)
+		// if the cd system doesn't handle this address, better log it!
+		bprintf(0,_T("unknown write %x:%x\n"), address, data);
+	}
 }
 
 static UINT8 pce_read(UINT32 address)
@@ -269,10 +271,6 @@ static UINT8 pce_read(UINT32 address)
 	}
 
 	return CDSubsystemMiscRead(address); // cd system (acard, bram)
-
-	bprintf(0,_T("Unknown read %x\n"), address );
-
-	return 0;
 }
 
 static UINT8 sgx_read(UINT32 address)
@@ -404,7 +402,7 @@ static INT32 CommonInit(int type)
 	{
 		memset (PCECartROM, 0xff, length);
 
-		if (BurnLoadRom(PCECartROM, 0, 1)) return 1;
+		if (BurnLoadRom(PCECartROM, PCEDips[3], 1)) return 1;
 
 		if (ri.nLen & 0x200) { // remove header
 			memcpy (PCECartROM, PCECartROM + 0x200, ri.nLen - 0x200);
@@ -558,6 +556,9 @@ INT32 PCEExit()
 	h6280Exit();
 
 	CDSubsystemExit();
+
+	// release the PC Engine CD information object if needed
+	PceCDInfo_Exit();
 
 	BurnFree(AllMem);
 

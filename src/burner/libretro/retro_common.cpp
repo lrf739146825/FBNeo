@@ -1,6 +1,6 @@
 #include "retro_common.h"
 #include "retro_input.h"
-#ifndef NO_PGM2
+#ifdef BUILD_PGM2
 #include "retro_pgm2_cards.h"
 #endif
 
@@ -8,6 +8,7 @@
 #include <retro_dirent.h>
 #include <streams/file_stream.h>
 
+#ifdef BUILD_NEOGEO
 struct RomBiosInfo neogeo_bioses[] = {
 	{"sp-s3.sp1",         0x91b64be3, 0x00, "MVS Asia/Europe ver. 6 (1 slot)", NEOGEO_MVS | NEOGEO_EUR, 0 },
 	{"sp-s2.sp1",         0x9036d879, 0x01, "MVS Asia/Europe ver. 5 (1 slot)", NEOGEO_MVS | NEOGEO_EUR, 0 },
@@ -43,15 +44,18 @@ struct RomBiosInfo neogeo_bioses[] = {
 	{"uni-bios_1_0.rom",  0x0ce453a0, 0x21, "Universe BIOS ver. 1.0"         , NEOGEO_UNI,              0 },
 	{NULL,                0,          0,    NULL,                                                       0 }
 };
+#endif
 
 std::vector<dipswitch_core_option> dipswitch_core_options;
 struct GameInp *pgi_reset;
 struct GameInp *pgi_diag;
 struct GameInp *pgi_debug_dip_1;
 struct GameInp *pgi_debug_dip_2;
+#ifdef BUILD_NEOGEO
 bool bIsNeogeoCartGame                = false;
 bool allow_neogeo_mode                = true;
 bool neogeo_use_specific_default_bios = false;
+#endif
 bool bAllowDepth32                    = false;
 bool bPatchedRomsetsEnabled           = true;
 bool bAllowIgnoreCrc                  = false;
@@ -410,6 +414,7 @@ static struct retro_core_option_v2_definition var_fbneo_cyclone = {
 };
 #endif
 
+#ifdef BUILD_NEOGEO
 // Neo Geo core options
 static struct retro_core_option_v2_definition var_fbneo_neogeo_mode = {
 	"fbneo-neogeo-mode",
@@ -669,6 +674,7 @@ static struct retro_core_option_v2_definition var_fbneo_debug_dip_2_8 = {
 	},
 	"disabled"
 };
+#endif
 
 #ifdef FBNEO_DEBUG
 static struct retro_core_option_v2_definition var_fbneo_debug_layer_1 = {
@@ -853,6 +859,7 @@ char* str_char_replace(char* destination, char c_find, char c_replace)
 	return destination;
 }
 
+#ifdef BUILD_NEOGEO
 void set_neogeo_bios_availability(char *szName, uint32_t crc, bool ignoreCrc)
 {
 	for (int i = 0; neogeo_bioses[i].filename != NULL; i++)
@@ -865,7 +872,6 @@ void set_neogeo_bios_availability(char *szName, uint32_t crc, bool ignoreCrc)
 	}
 }
 
-#ifndef NO_NEOGEO
 static RomBiosInfo* find_neogeo_bios(uint32_t categories)
 {
 	for (int i = 0; neogeo_bioses[i].filename != NULL; i++)
@@ -878,11 +884,9 @@ static RomBiosInfo* find_neogeo_bios(uint32_t categories)
 
 	return NULL;
 }
-#endif
 
 void set_neo_system_bios()
 {
-#ifndef NO_NEOGEO
 	if (g_opt_neo_geo_mode == 0)
 	{
 		// Nothing to do in DIPSWITCH mode because the NeoSystem variable is changed by the DIP Switch core option
@@ -902,7 +906,6 @@ void set_neo_system_bios()
 			log_cb(RETRO_LOG_INFO, "No bios found for requested mode, falling back to DIPSWITCH => NeoSystem: 0x%02x.\n", NeoSystem);
 		}
 	}
-#endif
 }
 
 void evaluate_neogeo_bios_mode(const char* drvname)
@@ -945,6 +948,7 @@ void evaluate_neogeo_bios_mode(const char* drvname)
 		g_opt_neo_geo_mode = 0;
 	}
 }
+#endif
 
 void set_environment()
 {
@@ -1084,6 +1088,7 @@ void set_environment()
 	var_fbneo_fixed_frameskip.values[5].label = RETRO_FSFIXED_LABEL_5;
 	vars_systems.push_back(&var_fbneo_fixed_frameskip);
 
+#ifdef BUILD_NEOGEO
 	// Add the Neo Geo core options
 	if (bIsNeogeoCartGame)
 	{
@@ -1170,8 +1175,9 @@ void set_environment()
 			vars_systems.push_back(&var_fbneo_debug_dip_2_8);
 		}
 	}
+#endif
 
-#ifndef NO_PGM2
+#ifdef BUILD_PGM2
 	retro_pgm2_cards_push_options(vars_systems);
 #endif
 
@@ -1254,11 +1260,13 @@ void set_environment()
 		option_defs_us[idx_var].desc             = dipswitch_core_options[dip_idx].friendly_name.c_str();
 		option_defs_us[idx_var].desc_categorized = dipswitch_core_options[dip_idx].friendly_name_categorized.c_str();
 		option_defs_us[idx_var].default_value    = dipswitch_core_options[dip_idx].default_bdi.szText;
+#ifdef BUILD_NEOGEO
 		// Instead of filtering out the dips, make the description a warning if it's a neogeo game using a different default bios
 		if (neogeo_use_specific_default_bios && bIsNeogeoCartGame && dipswitch_core_options[dip_idx].friendly_name.compare("[Dipswitch] BIOS") == 0)
 			option_defs_us[idx_var].info         = RETRO_NGBIOS_DEF_INFO_0;
 		else
 			option_defs_us[idx_var].info         = RETRO_NGBIOS_DEF_INFO_1;
+#endif
 		for (int dip_value_idx = 0; dip_value_idx < dipswitch_core_options[dip_idx].values.size(); dip_value_idx++)
 		{
 			option_defs_us[idx_var].values[dip_value_idx].value = dipswitch_core_options[dip_idx].values[dip_value_idx].friendly_name.c_str();
@@ -1332,11 +1340,13 @@ void set_environment()
 			RETRO_INPUT_CAT_DESC,
 			RETRO_INPUT_CAT_INFO
 		},
+#ifdef BUILD_NEOGEO
 		{
 			"neogeo",
 			RETRO_NEOGEO_CAT_DESC,
 			RETRO_NEOGEO_CAT_INFO
 		},
+#endif
 		{
 			"frameskip",
 			RETRO_FRAME_CAT_DESC,
@@ -1362,7 +1372,7 @@ void set_environment()
 			"RomData",
 			RETRO_ROMDATA_CAT_INFO
 		},
-#ifndef NO_PGM2
+#ifdef BUILD_PGM2
 		{
 			"pgm2_memory_card",
 			RETRO_PGM2_MEMORY_CARD_DESC,
@@ -1738,6 +1748,7 @@ void check_variables(void)
 		}
 	}
 
+#ifdef BUILD_NEOGEO
 	if (bIsNeogeoCartGame)
 	{
 		if (allow_neogeo_mode)
@@ -1912,6 +1923,7 @@ void check_variables(void)
 				*(pgi_debug_dip_2->Input.pVal) = pgi_debug_dip_2->Input.nVal;
 		}
 	}
+#endif
 
 	if (BurnDrvGetFlags() & BDF_HISCORE_SUPPORTED)
 	{
@@ -2146,7 +2158,7 @@ void check_variables(void)
 	}
 #endif
 
-#ifndef NO_PGM2
+#ifdef BUILD_PGM2
 	retro_pgm2_cards_apply_variables();
 #endif
 }
