@@ -135,7 +135,7 @@ ifneq (,$(findstring unix,$(platform)))
 	SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(VERSION_SCRIPT)
 	ENDIANNESS_DEFINES := -DLSB_FIRST
 	LDFLAGS += -lpthread
-	# enable link-time optimization for Unix platforms
+	# Enable dead code elimination and reduce binary size for Unix platforms
 	LDFLAGS += -Wl,--as-needed -Wl,--gc-sections
 	CFLAGS += -ffunction-sections -fdata-sections
 	CXXFLAGS += -ffunction-sections -fdata-sections
@@ -581,7 +581,7 @@ else
 	CXX ?= g++
 	SHARED := -shared -Wl,-no-undefined -Wl,--version-script=$(VERSION_SCRIPT)
 	LDFLAGS += -static-libgcc -static-libstdc++
-	# enable link-time optimization for Win platforms
+	# Enable dead code elimination and reduce binary size for Win platforms
 	LDFLAGS += -Wl,--gc-sections -Wl,--as-needed
 	LDFLAGS += -ffunction-sections -fdata-sections
 	ENDIANNESS_DEFINES := -DLSB_FIRST
