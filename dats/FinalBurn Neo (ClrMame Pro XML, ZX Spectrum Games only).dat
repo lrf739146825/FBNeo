@@ -2966,6 +2966,26 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bartoloen" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Bartolo's Quest (English) (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Molisoft</manufacturer>
+		<rom name="Bartolo's Quest EN 48K (2026)(Molisoft).tap" size="18224" crc="27cb1564"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bartoloes" cloneof="bartoloen" romof="bartoloen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Bartolo's Quest (Spanish) (48K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Molisoft</manufacturer>
+		<rom name="Bartolo's Quest ES 48K (2026)(Molisoft).tap" size="18209" crc="da420719"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="basictoweren" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Basic Tower (English) (48K) (HB, v6.4)</description>
@@ -7168,7 +7188,7 @@
 		<description>Count Duckula II (128K)</description>
 		<year>1992</year>
 		<manufacturer>Alternative Software</manufacturer>
-		<rom name="Count Duckula 2 128K (1992)(Alternative).tap" size="96837" crc="e5c979e1"/>
+		<rom name="Count Duckula 2 128K (1992)(Alternative).tzx" size="97164" crc="52e73530"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -7178,7 +7198,7 @@
 		<description>Count Duckula II (48K)</description>
 		<year>1992</year>
 		<manufacturer>Alternative Software</manufacturer>
-		<rom name="Count Duckula 2 48K (1992)(Alternative).tap" size="47605" crc="7b53965d"/>
+		<rom name="Count Duckula 2 48K (1992)(Alternative).tzx" size="47627" crc="1789c1c2"/>
 		<rom name="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -7308,7 +7328,7 @@
 		<description>Cray-5 (128K) (HB)</description>
 		<year>2011</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Cray-5 128K (2011)(RetroWorks).tap" size="53875" crc="a1467bf5"/>
+		<rom name="Cray-5 128K (2011)(RetroWorks).tzx" size="54107" crc="d598fc8d"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -12832,7 +12852,7 @@
 		<description>Genesis dawn of a new day (128K) (HB)</description>
 		<year>2010</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Genesis dawn of a new day 128K (2010)(RetroWorks).tap" size="63025" crc="3a5fb7db"/>
+		<rom name="Genesis dawn of a new day 128K (2010)(RetroWorks).tzx" size="63392" crc="982c67a4"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18223,21 +18243,10 @@
 	</game>
 	<game name="lostulumen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Lost Treasures of Tulum, The (English) (128K) (HB)</description>
-		<year>2020</year>
+		<description>Lost Treasures of Tulum, The (English) (128K) (HB, v1.1)</description>
+		<year>2020-22</year>
 		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Lost Treasures of Tulum, The EN 128K (2020)(RetroWorks).tap" size="75999" crc="c64c38ad"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
-		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="lostulumes" cloneof="lostulumen" romof="lostulumen" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Homebrew</comment>
-		<description>Lost Treasures of Tulum, The (Spanish) (128K) (HB)</description>
-		<year>2020</year>
-		<manufacturer>RetroWorks</manufacturer>
-		<rom name="Lost Treasures of Tulum, The ES 128K (2020)(RetroWorks).tap" size="75999" crc="c4087b0e"/>
+		<rom name="Lost Treasures of Tulum, The EN v1.1 128K (2020-22)(RetroWorks).tzx" size="76045" crc="a387543f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -27668,10 +27677,10 @@
 	</game>
 	<game name="shabelialen" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Shadows of Belial (English) (128K) (HB, v1.0.3)</description>
+		<description>Shadows of Belial (English) (128K) (HB, v1.0.4)</description>
 		<year>RetroWorks</year>
 		<manufacturer>2026</manufacturer>
-		<rom name="Shadows of Belial EN v1.0.3 128K (2016)(RetroWorks).tap" size="138700" crc="8a4e7852"/>
+		<rom name="Shadows of Belial EN v1.0.4 128K (2016)(RetroWorks).tap" size="138736" crc="caf1f445"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -27679,10 +27688,10 @@
 	</game>
 	<game name="shabeliales" cloneof="shabelialen" romof="shabelialen" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Shadows of Belial (Spanish) (128K) (HB, v1.0.3)</description>
+		<description>Shadows of Belial (Spanish) (128K) (HB, v1.0.4)</description>
 		<year>RetroWorks</year>
 		<manufacturer>2026</manufacturer>
-		<rom name="Shadows of Belial ES v1.0.3 128K (2026)(RetroWorks).tap" size="139288" crc="a12c31d0"/>
+		<rom name="Shadows of Belial ES v1.0.4 128K (2026)(RetroWorks).tap" size="139295" crc="07167c28"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -31566,6 +31575,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lostulumes" cloneof="lostulumen" romof="lostulumen" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Tesoros Perdidos de Tulum, Los (Spanish) (128K) (HB)</description>
+		<year>2020</year>
+		<manufacturer>RetroWorks</manufacturer>
+		<rom name="Lost Treasures of Tulum, The ES 128K (2020)(RetroWorks).tzx" size="76033" crc="2b8ee45d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="testdrv2" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<description>Test Drive II - The Duel (128K)</description>
 		<year>1989</year>
@@ -32927,6 +32947,46 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="umbra1en" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Umbra - Part 1 (English) (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Umbra - Part 1 EN 48K (2025)(DARKSIDE29SOFT).tap" size="39127" crc="0576c036"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="umbra2en" cloneof="umbra1en" romof="umbra1en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Passwords: Belartz BI2678BG - Jonatan BI1714BG - Veronika BI4590BG</comment>
+		<description>Umbra - Part 2 (English) (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Umbra - Part 2 EN 48K (2025)(DARKSIDE29SOFT).tap" size="38639" crc="b2822de3"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="umbra1es" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Umbra - Parte 1 (Spanish) (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Umbra - Parte 1 ES 48K (2025)(DARKSIDE29SOFT).tap" size="39141" crc="aee1c7fd"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="umbra2es" cloneof="umbra1es" romof="umbra1es" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, Passwords: Belartz BI2678BG - Jonatan BI1714BG - Veronika BI4590BG</comment>
+		<description>Umbra - Parte 2 (Spanish) (48K) (HB)</description>
+		<year>2025</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Umbra - Parte 2 ES 48K (2025)(DARKSIDE29SOFT).tap" size="38648" crc="15b81c4e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="un2azul" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Un 2 Azul (48K) (HB)</description>
@@ -33009,6 +33069,66 @@
 		<year>1986-87</year>
 		<manufacturer>Hewson Consultants</manufacturer>
 		<rom name="Uridium Plus 48K (1987)(Hewson Consultants).tzx" size="49837" crc="09d9e37e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola1es" cloneof="urkiola1en" romof="urkiola1en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola I - El despertar de Gaueko (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola I - El despertar de Gaueko ES 48K (2024)(DARKSIDE29SOFT).tap" size="39667" crc="cf6c56bf"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola1en" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola I - Gaueko's Awakening (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola I - Gaueko's Awakening EN 48K (2024)(DARKSIDE29SOFT).tap" size="39677" crc="e71f8cdc"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola2es" cloneof="urkiola2en" romof="urkiola2en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola II - El origen de Gaueko (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola II - El origen de Gaueko ES 48K (2024)(DARKSIDE29SOFT).tap" size="38864" crc="ac091e33"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola2en" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola II - The Origin of Gaueko (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola II - The Origin of Gaueko EN 48K (2024)(DARKSIDE29SOFT).tap" size="38862" crc="d23b45ef"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola3en" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola III - Seven Streets (English) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola III - Seven Streets EN 48K (2024)(DARKSIDE29SOFT).tap" size="40161" crc="15f9bf93"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="urkiola3es" cloneof="urkiola3en" romof="urkiola3en" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Urkiola III - Siete calles (Spanish) (48K) (HB)</description>
+		<year>2024</year>
+		<manufacturer>DARKSIDE29SOFT</manufacturer>
+		<rom name="Urkiola III - Siete calles ES 48K (2024)(DARKSIDE29SOFT).tap" size="40169" crc="75e174a7"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
