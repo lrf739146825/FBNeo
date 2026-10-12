@@ -753,6 +753,40 @@ static struct BurnDIPInfo neodualDIPList[] = {
 	{0x00,	0x01, 0x04,	0x04, "On"},
 };
 
+static struct BurnDIPInfo neotapDIPList[] = {
+	// Offset
+	{0x31,	0xF0, 0x00,	0x00, NULL},
+
+	// Defaults
+	{0x00,	0xFF, 0xFF,	0x04, NULL}, // DIP 1 (forcing mahjong panel, it seems required for bpanicdx in MVS mode)
+	{0x01,	0xFF, 0x7F,	0x00, NULL}, // DIP 2
+	{0x02,	0xFF, 0xFF,	0x80, NULL}, // System
+	{0x03,	0xFF, 0xFF,	0x01, NULL}, // Slots
+	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
+	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
+};
+
+static struct BurnDIPInfo neoftc1bDIPList[] = {
+	// Offset
+	{0x31,	0xF0, 0x00,	0x00, NULL},
+
+	// Defaults
+	{0x00,	0xFF, 0xFF,	0x02, NULL}, // DIP 1
+	{0x01,	0xFF, 0x7F,	0x00, NULL}, // DIP 2
+	{0x02,	0xFF, 0xFF,	0x8B, NULL}, // System (NEO-MVH MV1C)
+	{0x03,	0xFF, 0xFF,	0x01, NULL}, // Slots
+	{0x07,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Unibios HW)
+	{0x08,	0xFF, 0xFF,	0x00, NULL}, // Fake DIP (Overscan)
+
+	{0,		0xFE, 0,	2,	  "Players"},
+	{0x00,	0x01, 0x02,	0x00, "2"},
+	{0x00,	0x01, 0x02,	0x02, "4"},
+
+	{0,		0xFD, 0,	2,	  "Autofire"},
+	{0x00,	0x01, 0x04,	0x00, "Off"},
+	{0x00,	0x01, 0x04,	0x04, "On"},
+};
+
 static struct BurnDIPInfo neomahjongDIPList[] = {
 	// Offset
 	{0x2C,	0xF0, 0x00,	0x00, NULL},
@@ -867,6 +901,8 @@ static struct BurnDIPInfo neogeoDIPList[] = {
 STDDIPINFOEXT(neogeo,     neodefault,    neogeo)
 STDDIPINFOEXT(neopaddle,  neopaddle,     neogeo)
 STDDIPINFOEXT(neodual,    neodual,       neogeo)
+STDDIPINFOEXT(neotap,     neotap,        neogeo)
+STDDIPINFOEXT(neoftc1b,   neoftc1b,      neogeo)
 STDDIPINFOEXT(neomahjong, neomahjong,    neogeo)
 STDDIPINFOEXT(neogeousa,  neousadefault, neogeo)
 STDDIPINFOEXT(neogeojpn,  neojpndefault, neogeo)
@@ -6009,6 +6045,22 @@ struct BurnDriver BurnDrvKizuna = {
 	L"Kizuna Encounter - Super Tag Battle\0\u98A8\u96F2 Super Tag Battle\0", NULL, NULL, NULL,
 	BDF_GAME_WORKING, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO | HARDWARE_SNK_SWAPP, GBF_VSFIGHT, 0,
 	NULL, kizunaRomInfo, kizunaRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000, 304, 224, 4, 3
+};
+
+// Kizuna Encounter - Super Tag Battle 4 Way Battle Version / Fu'un Super Tag Battle Special Version
+// Same cartridge as kizuna, 4 player mode needs the NEO-FTC1B splitter (MV-1B/MV-1C only)
+
+STDROMPICKEXT(kizuna4p, kizuna, neogeo)
+STD_ROM_FN(kizuna4p)
+
+struct BurnDriver BurnDrvKizuna4p = {
+	"kizuna4p", "kizuna", "neogeo", NULL, "1996",
+	"Kizuna Encounter - Super Tag Battle 4 Way Battle Version / Fu'un Super Tag Battle Special Version\0", NULL, "SNK", "Neo Geo MVS",
+	L"Kizuna Encounter - Super Tag Battle 4 Way Battle Version\0\u98A8\u96F2 Super Tag Battle Special Version\0", NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE, 4, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO | HARDWARE_SNK_SWAPP | HARDWARE_SNK_NEOFTC1B, GBF_VSFIGHT, 0,
+	NULL, kizuna4pRomInfo, kizuna4pRomName, NULL, NULL, NULL, NULL, neodualInputInfo, neoftc1bDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000, 304, 224, 4, 3
 };
@@ -29284,7 +29336,6 @@ struct BurnDriver BurnDrvBonusstage = {
 
 // Block Panic DX (HB, ver. 20250101)
 // https://www.patreon.com/posts/block-panic-dx-119035418
-// 3 & 4 players not working (needs Multitap)
 
 static struct BurnRomInfo bpanicdxRomDesc[] = {
 	{ "bpanicdx.p1",	0x080000, 0x8f59134f, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
@@ -29309,8 +29360,8 @@ struct BurnDriver BurnDrvBpanicdx = {
 	"bpanicdx", NULL, "neogeo", NULL, "2025",
 	"Block Panic DX (HB, ver. 20250101)\0", NULL, "Blastar", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PUZZLE, 0,
-	NULL, bpanicdxRomInfo, bpanicdxRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO | HARDWARE_SNK_NEOTAP, GBF_PUZZLE, 0,
+	NULL, bpanicdxRomInfo, bpanicdxRomName, NULL, NULL, NULL, NULL, neodualInputInfo, neotapDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };
@@ -29469,7 +29520,6 @@ struct BurnDriver midnight = {
 
 // NeoTRIS (HB, Free beta 2 ver. 202009)
 // https://www.chipsonsteroids.com/
-// 3 & 4 players not working (needs Multitap)
 
 static struct BurnRomInfo neotrisRomDesc[] = {
 	{ "neotris-p1.bin",    0x080000, 0x4cd619cf, 1 | BRF_ESS | BRF_PRG }, //  0 68K code
@@ -29494,13 +29544,28 @@ static struct BurnRomInfo neotrisRomDesc[] = {
 STDROMPICKEXT(neotris, neotris, neogeo)
 STD_ROM_FN(neotris)
 
+static void NeotrisPatchCallback()
+{
+	// enable the 4P mode in that demo
+	if (((UINT16*)Neo68KROMActive)[0x1a13e / 2] == BURN_ENDIAN_SWAP_INT16(0x4239)) {
+		((UINT16*)Neo68KROMActive)[0x1a13e / 2] = BURN_ENDIAN_SWAP_INT16(0x50f9);
+	}
+}
+
+static INT32 NeotrisInit()
+{
+	NeoCallbackActive->pResetCallback = NeotrisPatchCallback;
+
+	return NeoInit();
+}
+
 struct BurnDriver BurnDrvNeotris = {
 	"neotris", NULL, "neogeo", NULL, "2020",
 	"NeoTRIS (HB, Free Beta 2, ver. 202009)\0", NULL, "Chipsonsteroids", "Neo Geo MVS",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PUZZLE, 0,
-	NULL, neotrisRomInfo, neotrisRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
-	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 4, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO | HARDWARE_SNK_NEOTAP, GBF_PUZZLE, 0,
+	NULL, neotrisRomInfo, neotrisRomName, NULL, NULL, NULL, NULL, neodualInputInfo, neotapDIPInfo,
+	NeotrisInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000,	304, 224, 4, 3
 };
 
@@ -30498,6 +30563,36 @@ struct BurnDriver BurnDrvShinobing = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_PLATFORM | GBF_SCRFIGHT, 0,
 	NULL, shinobingRomInfo, shinobingRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
+	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
+	0x1000, 320, 224, 4, 3
+};
+
+
+// Sword of Sodan (HB, Beta v0.4)
+// https://bendk97.itch.io/sword-of-sodan-neogeo
+
+static struct BurnRomInfo swsodanRomDesc[] = {
+	{ "swsodan-p1.p1",	0x100000, 0xd515bf3d, 1 | BRF_ESS | BRF_PRG }, 	//  0 68K code
+
+	{ "swsodan-s1.s1",	0x020000, 0x8c2cfe44, 2 | BRF_GRA },           	//  2 Text layer tiles
+
+	{ "swsodan-c1.c1",	0x200000, 0x1255788c, 3 | BRF_GRA },           	//  3 Sprite data
+	{ "swsodan-c2.c2",	0x200000, 0x497b17e1, 3 | BRF_GRA },           	//  4
+
+	{ "swsodan-m1.m1",	0x020000, 0xbf95a6a1, 4 | BRF_ESS | BRF_PRG }, 	//  5 Z80 code
+
+	{ "swsodan-v1.v1",	0x400000, 0xf1962c04, 5 | BRF_SND },           	//  6 Sound data
+};
+
+STDROMPICKEXT(swsodan, swsodan, neogeo)
+STD_ROM_FN(swsodan)
+
+struct BurnDriver BurnDrvSwsodan = {
+	"swsodan", NULL, "neogeo", NULL, "2026",
+	"Sword of Sodan (HB, Beta v0.4)\0", NULL, "BenDk97", "Neo Geo MVS",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_PREFIX_CARTRIDGE | HARDWARE_SNK_NEOGEO, GBF_SCRFIGHT, 0,
+	NULL, swsodanRomInfo, swsodanRomName, NULL, NULL, NULL, NULL, neogeoInputInfo, neogeoDIPInfo,
 	NeoInit, NeoExit, NeoFrame, NeoRender, NeoScan, &NeoRecalcPalette,
 	0x1000, 320, 224, 4, 3
 };
