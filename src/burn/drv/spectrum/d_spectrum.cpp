@@ -7511,7 +7511,7 @@ struct BurnDriver BurnSpecCostacapers = {
 // Count Duckula II (128K)
 
 static struct BurnRomInfo SpecCountduck2128RomDesc[] = {
-	{ "Count Duckula 2 128K (1992)(Alternative).tap", 96837, 0xe5c979e1, BRF_ESS | BRF_PRG },
+	{ "Count Duckula 2 128K (1992)(Alternative).tzx", 97164, 0x52e73530, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecCountduck2128, SpecCountduck2128, Spec128)
@@ -7530,7 +7530,7 @@ struct BurnDriver BurnSpecCountduck2128 = {
 // Count Duckula II (48K)
 
 static struct BurnRomInfo SpecCountduck248RomDesc[] = {
-	{ "Count Duckula 2 48K (1992)(Alternative).tap", 47605, 0x7b53965d, BRF_ESS | BRF_PRG },
+	{ "Count Duckula 2 48K (1992)(Alternative).tzx", 47627, 0x1789c1c2, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecCountduck248, SpecCountduck248, Spectrum)
@@ -35714,6 +35714,44 @@ struct BurnDriver BurnSpecBark = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
+// Bartolo's Quest (English) (48K) (HB)
+
+static struct BurnRomInfo SpecBartoloenRomDesc[] = {
+	{ "Bartolo's Quest EN 48K (2026)(Molisoft).tap", 18224, 0x27cb1564, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecBartoloen, SpecBartoloen, Spectrum)
+STD_ROM_FN(SpecBartoloen)
+
+struct BurnDriver BurnSpecBartoloen = {
+	"spec_bartoloen", NULL, "spec_spectrum", NULL, "2026",
+	"Bartolo's Quest (English) (48K) (HB)\0", NULL, "Molisoft", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ACTION, 0,
+	SpectrumGetZipName, SpecBartoloenRomInfo, SpecBartoloenRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Bartolo's Quest (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecBartoloesRomDesc[] = {
+	{ "Bartolo's Quest ES 48K (2026)(Molisoft).tap", 18209, 0xda420719, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecBartoloes, SpecBartoloes, Spectrum)
+STD_ROM_FN(SpecBartoloes)
+
+struct BurnDriver BurnSpecBartoloes = {
+	"spec_bartoloes", "spec_bartoloen", "spec_spectrum", NULL, "2026",
+	"Bartolo's Quest (Spanish) (48K) (HB)\0", NULL, "Molisoft", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE |  BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ACTION, 0,
+	SpectrumGetZipName, SpecBartoloesRomInfo, SpecBartoloesRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
 // Basic Tower (English) (48K) (HB, v6.4)
 
 static struct BurnRomInfo SpecBasictowerenRomDesc[] = {
@@ -39936,7 +39974,7 @@ struct BurnDriver BurnSpecCrazyforest = {
 // Cray-5 (128K) (HB)
 
 static struct BurnRomInfo SpecCray5RomDesc[] = {
-	{ "Cray-5 128K (2011)(RetroWorks).tap", 53875, 0xa1467bf5, BRF_ESS | BRF_PRG },
+	{ "Cray-5 128K (2011)(RetroWorks).tzx", 54107, 0xd598fc8d, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecCray5, SpecCray5, Spec128)
@@ -39946,7 +39984,7 @@ struct BurnDriver BurnSpecCray5 = {
 	"spec_cray5", NULL, "spec_spec128", NULL, "2011",
 	"Cray-5 (128K) (HB)\0", NULL, "RetroWorks", "ZX Spectrum",
 	NULL, NULL, NULL, NULL,
-	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_RUNGUN, 0,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_MULTISHOOT, 0,
 	SpectrumGetZipName, SpecCray5RomInfo, SpecCray5RomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
 	Spec128KInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
 	&SpecRecalc, 0x10, 288, 224, 4, 3
@@ -45085,7 +45123,7 @@ struct BurnDriver BurnSpecGenerdigital = {
 // Genesis dawn of a new day (128K) (HB)
 
 static struct BurnRomInfo SpecGenesisRomDesc[] = {
-	{ "Genesis dawn of a new day 128K (2010)(RetroWorks).tap", 63025, 0x3a5fb7db, BRF_ESS | BRF_PRG },
+	{ "Genesis dawn of a new day 128K (2010)(RetroWorks).tzx", 63392, 0x982c67a4, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecGenesis, SpecGenesis, Spec128)
@@ -49946,18 +49984,18 @@ struct BurnDriver BurnSpecLosttapes = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
-// Lost Treasures of Tulum, The (English) (128K) (HB)
+// Lost Treasures of Tulum, The (English) (128K) (HB, v1.1)
 
 static struct BurnRomInfo SpeclostulumenRomDesc[] = {
-	{ "Lost Treasures of Tulum, The EN 128K (2020)(RetroWorks).tap", 75999, 0xc64c38ad, BRF_ESS | BRF_PRG },
+	{ "Lost Treasures of Tulum, The EN v1.1 128K (2020-22)(RetroWorks).tzx", 76045, 0xa387543f, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(Speclostulumen, Speclostulumen, Spec128)
 STD_ROM_FN(Speclostulumen)
 
 struct BurnDriver BurnSpeclostulumen = {
-	"spec_lostulumen", NULL, "spec_spec128", NULL, "2020",
-	"Lost Treasures of Tulum, The (English) (128K) (HB)\0", NULL, "RetroWorks", "ZX Spectrum",
+	"spec_lostulumen", NULL, "spec_spec128", NULL, "2020-22",
+	"Lost Treasures of Tulum, The (English) (128K) (HB, v1.1)\0", NULL, "RetroWorks", "ZX Spectrum",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV | GBF_PLATFORM, 0,
 	SpectrumGetZipName, SpeclostulumenRomInfo, SpeclostulumenRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecIntf2DIPInfo,
@@ -49965,10 +50003,10 @@ struct BurnDriver BurnSpeclostulumen = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
-// Lost Treasures of Tulum, The (Spanish) (128K) (HB)
+// Tesoros Perdidos de Tulum, Los (Spanish) (128K) (HB)
 
 static struct BurnRomInfo SpeclostulumesRomDesc[] = {
-	{ "Lost Treasures of Tulum, The ES 128K (2020)(RetroWorks).tap", 75999, 0xc4087b0e, BRF_ESS | BRF_PRG },
+	{ "Lost Treasures of Tulum, The ES 128K (2020)(RetroWorks).tzx", 76033, 0x2b8ee45d, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(Speclostulumes, Speclostulumes, Spec128)
@@ -49976,7 +50014,7 @@ STD_ROM_FN(Speclostulumes)
 
 struct BurnDriver BurnSpeclostulumes = {
 	"spec_lostulumes", "spec_lostulumen", "spec_spec128", NULL, "2020",
-	"Lost Treasures of Tulum, The (Spanish) (128K) (HB)\0", NULL, "RetroWorks", "ZX Spectrum",
+	"Tesoros Perdidos de Tulum, Los (Spanish) (128K) (HB)\0", NULL, "RetroWorks", "ZX Spectrum",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV | GBF_PLATFORM, 0,
 	SpectrumGetZipName, SpeclostulumesRomInfo, SpeclostulumesRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecIntf2DIPInfo,
@@ -59675,10 +59713,10 @@ struct BurnDriver BurnSpecShadowfields = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
-// Shadows of Belial (English) (128K) (HB, v1.0.3)
+// Shadows of Belial (English) (128K) (HB, v1.0.4)
 
 static struct BurnRomInfo SpecShabelialenRomDesc[] = {
-	{ "Shadows of Belial EN v1.0.3 128K (2016)(RetroWorks).tap", 138700, 0x8a4e7852, BRF_ESS | BRF_PRG },
+	{ "Shadows of Belial EN v1.0.4 128K (2016)(RetroWorks).tap", 138736, 0xcaf1f445, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecShabelialen, SpecShabelialen, Spec128)
@@ -59686,7 +59724,7 @@ STD_ROM_FN(SpecShabelialen)
 
 struct BurnDriver BurnSpecShabelialen = {
 	"spec_shabelialen", NULL, "spec_spec128", NULL, "RetroWorks",
-	"Shadows of Belial (English) (128K) (HB, v1.0.3)\0", NULL, "2026", "ZX Spectrum",
+	"Shadows of Belial (English) (128K) (HB, v1.0.4)\0", NULL, "2026", "ZX Spectrum",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_PLATFORM, 0,
 	SpectrumGetZipName, SpecShabelialenRomInfo, SpecShabelialenRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
@@ -59694,10 +59732,10 @@ struct BurnDriver BurnSpecShabelialen = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 	
-// Shadows of Belial (Spanish) (128K) (HB, v1.0.3)
+// Shadows of Belial (Spanish) (128K) (HB, v1.0.4)
 
 static struct BurnRomInfo SpecShabelialesRomDesc[] = {
-	{ "Shadows of Belial ES v1.0.3 128K (2026)(RetroWorks).tap", 139288, 0xa12c31d0, BRF_ESS | BRF_PRG },
+	{ "Shadows of Belial ES v1.0.4 128K (2026)(RetroWorks).tap", 139295, 0x07167c28, BRF_ESS | BRF_PRG },
 };
 
 STDROMPICKEXT(SpecShabeliales, SpecShabeliales, Spec128)
@@ -59705,7 +59743,7 @@ STD_ROM_FN(SpecShabeliales)
 
 struct BurnDriver BurnSpecShabeliales = {
 	"spec_shabeliales", "spec_shabelialen", "spec_spec128", NULL, "RetroWorks",
-	"Shadows of Belial (Spanish) (128K) (HB, v1.0.3)\0", NULL, "2026", "ZX Spectrum",
+	"Shadows of Belial (Spanish) (128K) (HB, v1.0.4)\0", NULL, "2026", "ZX Spectrum",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_PLATFORM, 0,
 	SpectrumGetZipName, SpecShabelialesRomInfo, SpecShabelialesRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
@@ -64292,6 +64330,82 @@ struct BurnDriver BurnSpecUfo = {
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
 
+// Umbra - Part 1 (English) (48K) (HB)
+
+static struct BurnRomInfo SpecUmbra1enRomDesc[] = {
+	{ "Umbra - Part 1 EN 48K (2025)(DARKSIDE29SOFT).tap", 39127, 0x0576c036, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUmbra1en, SpecUmbra1en, Spectrum)
+STD_ROM_FN(SpecUmbra1en)
+
+struct BurnDriver BurnSpecUmbra1en = {
+	"spec_umbra1en", NULL, "spec_spectrum", NULL, "2025",
+	"Umbra - Part 1 (English) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUmbra1enRomInfo, SpecUmbra1enRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Umbra - Part 2 (English) (48K) (HB)
+
+static struct BurnRomInfo SpecUmbra2enRomDesc[] = {
+	{ "Umbra - Part 2 EN 48K (2025)(DARKSIDE29SOFT).tap", 38639, 0xb2822de3, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUmbra2en, SpecUmbra2en, Spectrum)
+STD_ROM_FN(SpecUmbra2en)
+
+struct BurnDriver BurnSpecUmbra2en = {
+	"spec_umbra2en", "spec_umbra1en", "spec_spectrum", NULL, "2025",
+	"Umbra - Part 2 (English) (48K) (HB)\0", "Passwords: Belartz BI2678BG - Jonatan BI1714BG - Veronika BI4590BG" , "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUmbra2enRomInfo, SpecUmbra2enRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Umbra - Parte 1 (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecUmbra1esRomDesc[] = {
+	{ "Umbra - Parte 1 ES 48K (2025)(DARKSIDE29SOFT).tap", 39141, 0xaee1c7fd, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUmbra1es, SpecUmbra1es, Spectrum)
+STD_ROM_FN(SpecUmbra1es)
+
+struct BurnDriver BurnSpecUmbra1es = {
+	"spec_umbra1es", NULL, "spec_spectrum", NULL, "2025",
+	"Umbra - Parte 1 (Spanish) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUmbra1esRomInfo, SpecUmbra1esRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Umbra - Parte 2 (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecUmbra2esRomDesc[] = {
+	{ "Umbra - Parte 2 ES 48K (2025)(DARKSIDE29SOFT).tap", 38648, 0x15b81c4e, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUmbra2es, SpecUmbra2es, Spectrum)
+STD_ROM_FN(SpecUmbra2es)
+
+struct BurnDriver BurnSpecUmbra2es = {
+	"spec_umbra2es", "spec_umbra1es", "spec_spectrum", NULL, "2025",
+	"Umbra - Parte 2 (Spanish) (48K) (HB)\0", "Passwords: Belartz BI2678BG - Jonatan BI1714BG - Veronika BI4590BG" , "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUmbra2esRomInfo, SpecUmbra2esRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
 // Un 2 Azul (48K) (HB)
 
 static struct BurnRomInfo SpecUn2azulRomDesc[] = {
@@ -64345,6 +64459,120 @@ struct BurnDriver BurnSpecUnicorn = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_PUZZLE, 0,
 	SpectrumGetZipName, SpecUnicornRomInfo, SpecUnicornRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecQAOPSpaceDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola I - Gaueko's Awakening (English) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola1enRomDesc[] = {
+	{ "Urkiola I - Gaueko's Awakening EN 48K (2024)(DARKSIDE29SOFT).tap", 39677, 0xe71f8cdc, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola1en, SpecUrkiola1en, Spectrum)
+STD_ROM_FN(SpecUrkiola1en)
+
+struct BurnDriver BurnSpecUrkiola1en = {
+	"spec_urkiola1en", NULL, "spec_spectrum", NULL, "2024",
+	"Urkiola I - Gaueko's Awakening (English) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola1enRomInfo, SpecUrkiola1enRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola I - El despertar de Gaueko (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola1esRomDesc[] = {
+	{ "Urkiola I - El despertar de Gaueko ES 48K (2024)(DARKSIDE29SOFT).tap", 39667, 0xcf6c56bf, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola1es, SpecUrkiola1es, Spectrum)
+STD_ROM_FN(SpecUrkiola1es)
+
+struct BurnDriver BurnSpecUrkiola1es = {
+	"spec_urkiola1es", "spec_urkiola1en", "spec_spectrum", NULL, "2024",
+	"Urkiola I - El despertar de Gaueko (Spanish) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola1esRomInfo, SpecUrkiola1esRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola II - The Origin of Gaueko (English) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola2enRomDesc[] = {
+	{ "Urkiola II - The Origin of Gaueko EN 48K (2024)(DARKSIDE29SOFT).tap", 38862, 0xd23b45ef, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola2en, SpecUrkiola2en, Spectrum)
+STD_ROM_FN(SpecUrkiola2en)
+
+struct BurnDriver BurnSpecUrkiola2en = {
+	"spec_urkiola2en", NULL, "spec_spectrum", NULL, "2024",
+	"Urkiola II - The Origin of Gaueko (English) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola2enRomInfo, SpecUrkiola2enRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola II - El origen de Gaueko (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola2esRomDesc[] = {
+	{ "Urkiola II - El origen de Gaueko ES 48K (2024)(DARKSIDE29SOFT).tap", 38864, 0xac091e33, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola2es, SpecUrkiola2es, Spectrum)
+STD_ROM_FN(SpecUrkiola2es)
+
+struct BurnDriver BurnSpecUrkiola2es = {
+	"spec_urkiola2es", "spec_urkiola2en", "spec_spectrum", NULL, "2024",
+	"Urkiola II - El origen de Gaueko (Spanish) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola2esRomInfo, SpecUrkiola2esRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola III - Seven Streets (English) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola3enRomDesc[] = {
+	{ "Urkiola III - Seven Streets EN 48K (2024)(DARKSIDE29SOFT).tap", 40161, 0x15f9bf93, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola3en, SpecUrkiola3en, Spectrum)
+STD_ROM_FN(SpecUrkiola3en)
+
+struct BurnDriver BurnSpecUrkiola3en = {
+	"spec_urkiola3en", NULL, "spec_spectrum", NULL, "2024",
+	"Urkiola III - Seven Streets (English) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola3enRomInfo, SpecUrkiola3enRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
+	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
+	&SpecRecalc, 0x10, 288, 224, 4, 3
+};
+
+// Urkiola III - Siete calles (Spanish) (48K) (HB)
+
+static struct BurnRomInfo SpecUrkiola3esRomDesc[] = {
+	{ "Urkiola III - Siete calles ES 48K (2024)(DARKSIDE29SOFT).tap", 40169, 0x75e174a7, BRF_ESS | BRF_PRG },
+};
+
+STDROMPICKEXT(SpecUrkiola3es, SpecUrkiola3es, Spectrum)
+STD_ROM_FN(SpecUrkiola3es)
+
+struct BurnDriver BurnSpecUrkiola3es = {
+	"spec_urkiola3es", "spec_urkiola3en", "spec_spectrum", NULL, "2024",
+	"Urkiola III - Siete calles (Spanish) (48K) (HB)\0", NULL, "DARKSIDE29SOFT", "ZX Spectrum",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HOMEBREW, 1, HARDWARE_SPECTRUM, GBF_ADV, 0,
+	SpectrumGetZipName, SpecUrkiola3esRomInfo, SpecUrkiola3esRomName, NULL, NULL, NULL, NULL, SpecInputInfo, SpecDIPInfo,
 	SpecInit, SpecExit, SpecFrame, SpecDraw, SpecScan,
 	&SpecRecalc, 0x10, 288, 224, 4, 3
 };
