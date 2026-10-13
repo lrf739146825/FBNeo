@@ -8279,6 +8279,16 @@
 		<video type="raster" orientation="horizontal" width="240" height="160" aspectx="3" aspecty="2"/>
 		<driver status="good"/>
 	</game>
+	<game name="dundurban" romof="gba" sourcefile="gba/d_gba.cpp">
+		<comment>Homebrew</comment>
+		<description>Dungeon Durban (HB, v1.0.0)</description>
+		<year>2026</year>
+		<manufacturer>Durban Games</manufacturer>
+		<rom name="Dungeon Durban v1.0.0 (2026)(Durban Games).gba" size="3377160" crc="ca21f79b"/>
+		<rom name="gba_bios.bin" merge="gba_bios.bin" size="16384" crc="81977335"/>
+		<video type="raster" orientation="horizontal" width="240" height="160" aspectx="3" aspecty="2"/>
+		<driver status="good"/>
+	</game>
 	<game name="dta" romof="gba" sourcefile="gba/d_gba.cpp">
 		<comment>Homebrew</comment>
 		<description>Dungeon Tactics Advance (HB)</description>

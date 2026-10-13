@@ -194,6 +194,15 @@
 		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="batmanhb" sourcefile="pce/d_pce.cpp">
+		<comment>Homebrew</comment>
+		<description>Batman (HB)</description>
+		<year>2026</year>
+		<manufacturer>Magic Games</manufacturer>
+		<rom name="Batman (2026)(Magic Games).pce" size="1048576" crc="0577fe88"/>
+		<video type="raster" orientation="horizontal" width="1024" height="240" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="batman" sourcefile="pce/d_pce.cpp">
 		<description>Batman (Japan)</description>
 		<year>1990</year>

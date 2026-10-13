@@ -387,11 +387,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="aliencat2" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Level 28 Fixed</comment>
 		<description>Alien Cat 2 (HB)</description>
 		<year>2025</year>
 		<manufacturer>PSCD Games</manufacturer>
 		<rom name="Alien Cat 2 (2025)(PSCD Games).sms" size="344064" crc="7acff9b3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aliencat2a" cloneof="aliencat2" romof="aliencat2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Alien Cat 2 (HB, Alt)</description>
+		<year>2025</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Alien Cat 2 (Alt)(2025)(PSCD Games).sms" size="327680" crc="188ec6fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -819,6 +828,15 @@
 		<year>1989</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Basket Ball Nightmare (Euro, Brazil)(1989)(Sega).sms" size="262144" crc="0df8597f"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="batmanhb" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Batman (HB)</description>
+		<year>2026</year>
+		<manufacturer>Magic Games</manufacturer>
+		<rom name="Batman (2026)(Magic Games).sms" size="4194304" crc="a5d296e1"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4793,6 +4811,15 @@
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Pro Yakyuu Pennant Race, The (Japan)(1987)(Sega).sms" size="131072" crc="da9be8f0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="prjgalaxy" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Project Galaxy (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Project Galaxy v0.0.1 (2026)(haroldo-ok).sms" size="49152" crc="1baf5cb4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

@@ -5986,6 +5986,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dundurban" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Dungeon Durban (HB, v0.9.0)</description>
+		<year>2026</year>
+		<manufacturer>Durban Games</manufacturer>
+		<rom name="Dungeon Durban v0.9.0 (2026)(Durban Games).bin" size="1966080" crc="991e2234"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ddwares" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Dungeons &amp; Dragons - Warriors of the Eternal Sun (Euro, USA)</description>
 		<year>1992</year>
@@ -9257,15 +9266,6 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="sidearms" sourcefile="megadrive/d_megadrive.cpp">
-		<comment>Homebrew</comment>
-		<description>Hyper Dyne Side Arms (HB, v1.3)</description>
-		<year>2026</year>
-		<manufacturer>rester159</manufacturer>
-		<rom name="Hyper Dyne Side Arms v1.3 (2026)(rester159).bin" size="2621440" crc="4016ab99"/>
-		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
 	<game name="hypermgnk" cloneof="hyperm" romof="hyperm" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Hyper Marbles (Japan, Game no Kandume MegaCD Rip)</description>
 		<year>1991</year>
@@ -10640,6 +10640,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lamulana" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>La-Mulana (HB)</description>
+		<year>2026</year>
+		<manufacturer>hombreimaginario</manufacturer>
+		<rom name="La-Mulana (2026)(hombreimaginario).bin" size="3407872" crc="3ff78925"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="laddersroom" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Ladders Room (HB)</description>
@@ -11286,6 +11295,15 @@
 		<year>1992</year>
 		<manufacturer>Electronic Arts</manufacturer>
 		<rom name="Lotus Turbo Challenge (Euro, USA)(1992)(Electronic Arts).bin" size="1048576" crc="b83ccb7a"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="luckydrop" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Lucky Drop! (HB)</description>
+		<year>2026</year>
+		<manufacturer>Mike Daw</manufacturer>
+		<rom name="Lucky Drop! (2026)(Mike Daw).bin" size="393216" crc="3060d2b0"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14052,6 +14070,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nightvein" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>NightVein (HB, Demo 1.0.7)</description>
+		<year>2025</year>
+		<manufacturer>Retro Hammer</manufacturer>
+		<rom name="NightVein Demo 1.0.7 (2025)(Retro Hammer).bin" size="1409024" crc="ff730f1b"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nikkan" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Nikkan Sports Pro Yakyuu VAN (Japan)</description>
 		<year>1991</year>
@@ -14646,6 +14673,15 @@
 		<year>2026</year>
 		<manufacturer>abadede919302</manufacturer>
 		<rom name="Panda Jump (2026)(abadede919302).bin" size="262144" crc="164e8dfa"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pang" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Pang (HB, Beta v0.59)</description>
+		<year>2026</year>
+		<manufacturer>DavidGames</manufacturer>
+		<rom name="Pang Beta v0.59 (2026)(DavidGames).bin" size="1441792" crc="3f5edd0a"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17300,6 +17336,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="rodland" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Rodland (HB, Demo)</description>
+		<year>2026</year>
+		<manufacturer>format_c</manufacturer>
+		<rom name="Rodland Demo (2026)(format_c).bin" size="1048576" crc="4db093f3"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mvpbb" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Roger Clements MVP Baseball (USA)</description>
 		<year>1992</year>
@@ -18636,6 +18681,15 @@
 		<year>2023</year>
 		<manufacturer>manu2097</manufacturer>
 		<rom name="Shylax v0.1 (2023)(manu2097).bin" size="1310720" crc="b29cf25d"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="sidearms" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Side Arms - Hyper Dyne (HB, v2.0)</description>
+		<year>2026</year>
+		<manufacturer>rester159</manufacturer>
+		<rom name="Side Arms - Hyper Dyne v2.0 (2026)(rester159).bin" size="4194304" crc="f1eca687"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20408,10 +20462,10 @@
 	</game>
 	<game name="sf248m" cloneof="sf2" romof="sf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Street Fighter II' - Special Champion Edition - 48 Mbits (Hack, v1.3)</description>
+		<description>Street Fighter II' - Special Champion Edition - 48 Mbits (Hack, v1.4)</description>
 		<year>2026</year>
 		<manufacturer>marcel_law</manufacturer>
-		<rom name="Street Fighter II' - Special Champion Edition - 48 Mbits v1.3 (2026)(marcel_law).bin" size="6291456" crc="12bb071a"/>
+		<rom name="Street Fighter II' - Special Champion Edition - 48 Mbits v1.4 (2026)(marcel_law).bin" size="6291456" crc="7e6d6b6d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22420,6 +22474,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="the8" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>The 8 (HB, Demo v1.0)</description>
+		<year>2026</year>
+		<manufacturer>Le Phil du Temps</manufacturer>
+		<rom name="The 8 Demo v1.0 (2026)(Le Phil du Temps).bin" size="1966080" crc="3fa96d14"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="themeprk" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Theme Park (Euro, USA)</description>
 		<year>1995</year>
@@ -22612,6 +22675,15 @@
 		<year>1994</year>
 		<manufacturer>Fox Interactive</manufacturer>
 		<rom name="Tick, The (USA)(1994)(Fox Interactive).bin" size="2097152" crc="425132f0"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tigeroad" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Tiger Road (HB)</description>
+		<year>2026</year>
+		<manufacturer>hombreimaginario</manufacturer>
+		<rom name="Tiger Road (2026)(hombreimaginario).bin" size="2490368" crc="88cba784"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
