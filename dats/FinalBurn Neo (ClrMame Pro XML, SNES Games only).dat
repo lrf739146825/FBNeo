@@ -4037,6 +4037,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dangdave" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Dangerous Dave (HB, v0.1)</description>
+		<year>2026</year>
+		<manufacturer>ludufre</manufacturer>
+		<rom name="Dangerous Dave v0.1 (2026)(ludufre).sfc" size="1048576" crc="11333e54"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dariusforce" cloneof="supernova" romof="supernova" sourcefile="snes/d_snes.cpp">
 		<description>Darius Force (Japan)</description>
 		<year>1993</year>
@@ -5220,6 +5229,22 @@
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Double Dragon V - The Shadow Falls (U)(1994)(Tradewest).sfc" size="3145728" crc="98a96ae8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="downworldte" sourcefile="snes/d_snes.cpp">
+		<description>Down the World - Mervil's Ambition (Hack, English v1.1.0-beta)</description>
+		<year>2026</year>
+		<manufacturer>pzapzap</manufacturer>
+		<rom name="Down the World - Mervil's Ambition T-Eng v1.1.0-beta (2026)(pzapzap).sfc" size="4194304" crc="4c87ed04"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="downworld" cloneof="downworldte" romof="downworldte" sourcefile="snes/d_snes.cpp">
+		<description>Down the World - Mervil's Ambition (Japan)</description>
+		<year>1994</year>
+		<manufacturer>ASCII Corp.</manufacturer>
+		<rom name="Down the World - Mervil's Ambition (J)(1994)(ASCII).sfc" size="2097152" crc="f1110fad"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -10613,6 +10638,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lovequestte" sourcefile="snes/d_snes.cpp">
+		<description>Love Quest (Hack, English v1.1.0-beta)</description>
+		<year>2026</year>
+		<manufacturer>pzapzap</manufacturer>
+		<rom name="Love Quest T-Eng v1.1.0-beta (2026)(pzapzap).sfc" size="3145728" crc="47b42865"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lovequest" cloneof="lovequestte" romof="lovequestte" sourcefile="snes/d_snes.cpp">
+		<description>Love Quest (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Tokuma Shoten</manufacturer>
+		<rom name="Love Quest (J)(1995)(Tokuma Shoten).sfc" size="1572864" crc="92fad6fc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="luckyluke" sourcefile="snes/d_snes.cpp">
 		<description>Lucky Luke (Euro)</description>
 		<year>1997</year>
@@ -12523,6 +12564,15 @@
 		<year>2019</year>
 		<manufacturer>PA Games</manufacturer>
 		<rom name="Neko Tako (2019)(PA Games).sfc" size="1048576" crc="72bdafbb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nemeshit" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Nemeshit (HB)</description>
+		<year>2026</year>
+		<manufacturer>Clankerbast Software</manufacturer>
+		<rom name="Nemeshit (2026)(Clankerbast Software).sfc" size="4194304" crc="388fea7c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17066,6 +17116,15 @@
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Sunset Riders (U)(1993)(Konami).sfc" size="1048576" crc="52ada404"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supaplex" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew, SA-1 enhancement CPU</comment>
+		<description>Supaplex (HB, v0.2)</description>
+		<year>2026</year>
+		<manufacturer>ludufre</manufacturer>
+		<rom name="Supaplex v0.2 (2026)(ludufre).sfc" size="4194304" crc="146e59dc"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

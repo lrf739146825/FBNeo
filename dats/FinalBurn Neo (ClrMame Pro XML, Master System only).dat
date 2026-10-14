@@ -4576,10 +4576,10 @@
 	</game>
 	<game name="pedrisco" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
-		<description>Pedrisco (HB, v1.1)</description>
+		<description>Pedrisco (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>vosges6128</manufacturer>
-		<rom name="Pedrisco v1.1 (2026)(vosges6128).sms" size="131072" crc="271296bc"/>
+		<rom name="Pedrisco v1.2 (2026)(vosges6128).sms" size="131072" crc="159f11a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

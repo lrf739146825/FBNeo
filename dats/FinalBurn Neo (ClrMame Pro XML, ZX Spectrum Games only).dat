@@ -21471,6 +21471,17 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nemeshit" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Nemeshit (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Clankerbast Software</manufacturer>
+		<rom name="Nemeshit 128K (2026)(Clankerbast Software).tap" size="89060" crc="c1fb22bc"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="nwarlock" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>at intro press Fire and Space to view 'credits+music' screen</comment>
 		<description>Nemesis the Warlock (128K)</description>
@@ -23208,10 +23219,10 @@
 	</game>
 	<game name="pedrisco" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Pedrisco (48K-128K) (HB)</description>
+		<description>Pedrisco (48K-128K) (HB, v1.2)</description>
 		<year>2026</year>
 		<manufacturer>vosges6128</manufacturer>
-		<rom name="Pedrisco 48K-128K (2026)(vosges6128).tap" size="27819" crc="45bbba00"/>
+		<rom name="Pedrisco v1.2 48K-128K (2026)(vosges6128).tap" size="30555" crc="43158c9f"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>

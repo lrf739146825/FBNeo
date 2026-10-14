@@ -1236,6 +1236,15 @@
 		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mikemech" sourcefile="sg1000/d_sg1000.cpp">
+		<comment>Homebrew</comment>
+		<description>Mike Mech (HB)</description>
+		<year>2026</year>
+		<manufacturer>SiRioKD</manufacturer>
+		<rom name="Mike Mech (2026)(SiRioKD).sg" size="49152" crc="1977d78b"/>
+		<video type="raster" orientation="horizontal" width="272" height="228" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="motianda" cloneof="rocknbol" romof="rocknbol" sourcefile="sg1000/d_sg1000.cpp">
 		<description>Mo Tian Da Lou (Taiwan)</description>
 		<year>198?</year>

@@ -8832,12 +8832,21 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="hangon" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Hang-On (HB, v1.11T)</description>
+		<year>2026</year>
+		<manufacturer>ShinobiZ</manufacturer>
+		<rom name="Hang-On v1.11T (2026)(ShinobiZ).bin" size="4194304" crc="7616cf34"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="hangonjrarc" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Hang-On Jr. - Arcade Port (HB)</description>
+		<description>Hang-On Jr. (HB)</description>
 		<year>2026</year>
 		<manufacturer>yosoynacho</manufacturer>
-		<rom name="Hang-On Jr. - Arcade Port (2026)(yosoynacho).bin" size="270416" crc="bf2dc938"/>
+		<rom name="Hang-On Jr. (2026)(yosoynacho).bin" size="270416" crc="bf2dc938"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11960,6 +11969,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mcommando" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Mega Commando (HB, v0.8b)</description>
+		<year>2026</year>
+		<manufacturer>MXRetroDev</manufacturer>
+		<rom name="Mega Commando v0.8b (2026)(MXRetroDev).bin" size="2752512" crc="da4a0edd"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megaflappy" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
 		<description>Mega Flappy Sis (HB)</description>
@@ -13719,6 +13737,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="nemeshit" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Nemeshit (HB)</description>
+		<year>2026</year>
+		<manufacturer>Clankerbast Software</manufacturer>
+		<rom name="Nemeshit (2026)(Clankerbast Software).bin" size="4194304" crc="8f93aed2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="n3dgpebb" cloneof="pebble" romof="pebble" sourcefile="megadrive/d_megadrive.cpp">
 		<description>New 3D Golf Simulation - Pebble Beach no Hatou (Japan)</description>
 		<year>1993</year>
@@ -14678,10 +14705,10 @@
 	</game>
 	<game name="pang" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Pang (HB, Beta v0.59)</description>
+		<description>Pang (HB, Beta v0.61)</description>
 		<year>2026</year>
 		<manufacturer>DavidGames</manufacturer>
-		<rom name="Pang Beta v0.59 (2026)(DavidGames).bin" size="1441792" crc="3f5edd0a"/>
+		<rom name="Pang Beta v0.61 (2026)(DavidGames).bin" size="1441792" crc="bd568ca7"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17813,7 +17840,7 @@
 		<description>Scoff (HB, v2)</description>
 		<year>2026</year>
 		<manufacturer>Mike Daw</manufacturer>
-		<rom name="Scoff v2 (2026)(Mike Daw).bin" size="262144" crc="5a06186b"/>
+		<rom name="Scoff v2 (2026)(Mike Daw).bin" size="262144" crc="056b0644"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22476,10 +22503,10 @@
 	</game>
 	<game name="the8" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>The 8 (HB, Demo v1.0)</description>
+		<description>The 8 (HB, Public Demo 1.0)</description>
 		<year>2026</year>
 		<manufacturer>Le Phil du Temps</manufacturer>
-		<rom name="The 8 Demo v1.0 (2026)(Le Phil du Temps).bin" size="1966080" crc="3fa96d14"/>
+		<rom name="The 8 Public Demo 1.0 (2026)(Le Phil du Temps).bin" size="1966080" crc="3fa96d14"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22680,10 +22707,10 @@
 	</game>
 	<game name="tigeroad" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Tiger Road (HB)</description>
+		<description>Tiger Road (HB, Beta 17)</description>
 		<year>2026</year>
 		<manufacturer>hombreimaginario</manufacturer>
-		<rom name="Tiger Road (2026)(hombreimaginario).bin" size="2490368" crc="88cba784"/>
+		<rom name="Tiger Road Beta 17 (2026)(hombreimaginario).bin" size="2490368" crc="407b4191"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
