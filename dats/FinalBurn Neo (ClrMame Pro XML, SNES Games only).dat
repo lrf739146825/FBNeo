@@ -16657,6 +16657,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starfoxcfx3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Super FX GSU-3 enhancement chip</comment>
+		<description>Star Fox Collection FX3 (Hack, v1.0.1)</description>
+		<year>2026</year>
+		<manufacturer>kandowontu</manufacturer>
+		<rom name="Star Fox Collection FX3 v1.0.1 (2026)(kandowontu).sfc" size="4194304" crc="97b253ab"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="starfoxex" cloneof="starfox" romof="starfox" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, Super FX GSU-1 enhancement chip</comment>
 		<description>Star Fox EX (Hack, v1.11.02b)</description>

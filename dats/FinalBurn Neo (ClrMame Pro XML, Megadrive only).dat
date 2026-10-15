@@ -14705,10 +14705,19 @@
 	</game>
 	<game name="pang" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Pang (HB, Beta v0.61)</description>
+		<description>Pang (DavidGames) (HB, Beta v0.75)</description>
 		<year>2026</year>
 		<manufacturer>DavidGames</manufacturer>
-		<rom name="Pang Beta v0.61 (2026)(DavidGames).bin" size="1441792" crc="bd568ca7"/>
+		<rom name="Pang Beta v0.75 (2026)(DavidGames).bin" size="1441792" crc="75a52a4f"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pangoib" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Pang (Oldschool Is Beautiful) (HB, Beta)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Pang Beta (2026)(Oldschool Is Beautiful).bin" size="3050860" crc="3b31e790"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22257,10 +22266,10 @@
 	</game>
 	<game name="tmntarcade" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Teenage Mutant Ninja Turtles: The Arcade Game (HB, v0.3.2)</description>
+		<description>Teenage Mutant Ninja Turtles: The Arcade Game (HB, v0.3.6)</description>
 		<year>2026</year>
 		<manufacturer>Gustavo Valenzuela</manufacturer>
-		<rom name="Teenage Mutant Ninja Turtles - The Arcade Game v0.3.2 (2026)(Gustavo Valenzuela).bin" size="3276800" crc="72b939fb"/>
+		<rom name="Teenage Mutant Ninja Turtles - The Arcade Game v0.3.6 (2026)(Gustavo Valenzuela).bin" size="4063232" crc="bd1f9815"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

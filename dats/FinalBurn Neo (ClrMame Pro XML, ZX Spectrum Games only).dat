@@ -3202,8 +3202,8 @@
 		<comment>Homebrew</comment>
 		<description>Battle City (48K) (HB)</description>
 		<year>2021</year>
-		<manufacturer>Menyiques Soft</manufacturer>
-		<rom name="Battle City 48K (2021)(Menyiques Soft).tap" size="36024" crc="f3b29343"/>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Battle City 48K (2021)(Menyiques).tap" size="36024" crc="f3b29343"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -5208,6 +5208,16 @@
 		<year>1985</year>
 		<manufacturer>Icon Software</manufacturer>
 		<rom name="Bug-Eyes 48K (1985)(Icon Software).tzx" size="27941" crc="c4bfb698"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="bugaboo" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>1: jump left - 0: jump right - A: abort game</comment>
+		<description>Bugaboo the Flea (48K)</description>
+		<year>1983</year>
+		<manufacturer>Quicksilva</manufacturer>
+		<rom name="Bugaboo the Flea 48K (1983)(Quicksilva).tap" size="30368" crc="e4345dae"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -8453,6 +8463,61 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="dasbootca" cloneof="dasbooten" romof="dasbooten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Das Boot (Castilian) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Das Boot CA 128K (2026)(Menyiques).tap" size="122554" crc="994c3043"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dasbooten" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Das Boot (English) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Das Boot EN 128K (2026)(Menyiques).tap" size="122855" crc="e623e702"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dasbootfr" cloneof="dasbooten" romof="dasbooten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Das Boot (French) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Das Boot FR 128K (2026)(Menyiques).tap" size="122714" crc="50ad3a2d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dasbootpt" cloneof="dasbooten" romof="dasbooten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Das Boot (Portuguese) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Das Boot PT 128K (2026)(Menyiques).tap" size="122452" crc="fd7d2555"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dasbootes" cloneof="dasbooten" romof="dasbooten" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>Das Boot (Spanish) (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>Menyiques</manufacturer>
+		<rom name="Das Boot ES 128K (2026)(Menyiques).tap" size="122192" crc="4ac7c6e4"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="daveinfs" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew, M: reverse - SPACE: jump - Q: quit</comment>
 		<description>Dave Infuriators (48K) (HB)</description>
@@ -10290,11 +10355,11 @@
 		<driver status="good"/>
 	</game>
 	<game name="duet" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<comment>Q, A, E, R and Z to control player 1</comment>
+		<comment>Q, A, E, R and Z default keys for player 1</comment>
 		<description>Duet (48K)</description>
 		<year>1987</year>
 		<manufacturer>Elite Systems</manufacturer>
-		<rom name="Duet 48K (1987)(Elite).tap" size="41164" crc="80308e30"/>
+		<rom name="Duet 48K (1987)(Elite Systems).tzx" size="46919" crc="fee2761e"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10350,7 +10415,7 @@
 		<driver status="good"/>
 	</game>
 	<game name="dustin" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Dustin - The Game (Spanish) (48K)</description>
+		<description>Dustin: The Game (Spanish) (48K)</description>
 		<year>1986</year>
 		<manufacturer>Dinamic Software</manufacturer>
 		<rom name="Dustin - The Game ES 48K (1986)(Dinamic Software).tzx" size="46725" crc="86bb8c23"/>
@@ -10410,7 +10475,7 @@
 		<description>Dynatron Mission (48K)</description>
 		<year>1987</year>
 		<manufacturer>Mastertronic</manufacturer>
-		<rom name="Dynatron Mission 48K (1987)(Mastertronic).tap" size="48128" crc="a54ffa29"/>
+		<rom name="Dynatron Mission 48K (1987)(Mastertronic).tzx" size="47807" crc="77fea3c5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -10547,7 +10612,7 @@
 	</game>
 	<game name="egghead3" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Egghead 3 - Egghead in Space (48K) (HB)</description>
+		<description>Egghead 3 ~ Egghead in Space (48K) (HB)</description>
 		<year>2002</year>
 		<manufacturer>Jonathan Cauldwell</manufacturer>
 		<rom name="Egghead 3 - Egghead in Space (2002)(Jonathan Cauldwell).tap" size="44595" crc="ee2d725c"/>
@@ -10557,7 +10622,7 @@
 	</game>
 	<game name="egghead4" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Egghead 4 - Egghead Entertains (128K) (HB)</description>
+		<description>Egghead 4 ~ Egghead Entertains (128K) (HB)</description>
 		<year>2006</year>
 		<manufacturer>Jonathan Cauldwell</manufacturer>
 		<rom name="Egghead 4 - Egghead Entertains 128K (2006)(Jonathan Cauldwell).tap" size="47432" crc="7b0e6452"/>
@@ -10568,7 +10633,7 @@
 	</game>
 	<game name="egghead5" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Egghead 5 - Egghead Round the Med (128K) (HB)</description>
+		<description>Egghead 5 ~ Egghead Round the Med (128K) (HB)</description>
 		<year>2007</year>
 		<manufacturer>Jonathan Cauldwell</manufacturer>
 		<rom name="Egghead 5 - Egghead Round the Med 128K (2007)(Jonathan Cauldwell).tap" size="64228" crc="da3aa38b"/>
@@ -10579,7 +10644,7 @@
 	</game>
 	<game name="egghead2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>AY Sound supported</comment>
-		<description>Egghead II - Egghead to the Rescue (48K)</description>
+		<description>Egghead II ~ Egghead to the Rescue (48K)</description>
 		<year>1990</year>
 		<manufacturer>Crash</manufacturer>
 		<rom name="Egghead II - Egghead to the Rescue 48K-AY (1990)(Crash).tap" size="46328" crc="b854984a"/>
@@ -10592,17 +10657,17 @@
 		<description>Eggsterminator, The (128K) (HB)</description>
 		<year>2018</year>
 		<manufacturer>The Death Squad</manufacturer>
-		<rom name="The Eggsterminator (2018)(The Death Squad).tap" size="48022" crc="6960fff0"/>
+		<rom name="Eggsterminator, The (2018)(The Death Squad).tap" size="48022" crc="6960fff0"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="eidolon" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Eidolon, The (128K)</description>
+		<description>Eidolon, The (48K-128K)</description>
 		<year>1986</year>
 		<manufacturer>Activision - Lucasfilm Games</manufacturer>
-		<rom name="Eidolon, The 128K (1986)(Activision - Lucasfilm Games).tap" size="107749" crc="00677105"/>
+		<rom name="Eidolon, The 48K-128K (1986)(Activision - Lucasfilm Games).tap" size="107749" crc="00677105"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
@@ -18379,7 +18444,7 @@
 		<description>M.O.V.I.E. (48K)</description>
 		<year>1986</year>
 		<manufacturer>Imagine Software</manufacturer>
-		<rom name="MOVIE 48K (1986)(Imagine Software).tap" size="48594" crc="4f413f00"/>
+		<rom name="MOVIE 48K (1986)(Imagine Software).tzx" size="50625" crc="38567363"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -18480,22 +18545,21 @@
 		<driver status="good"/>
 	</game>
 	<game name="mamienca" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Mad Mix 2: En el Castillo de los Fantasmas (Spanish) (128K)</description>
+		<description>Mad Mix 2: En el Castillo de los Fantasmas (Spanish) (48K-128K)</description>
 		<year>1990</year>
 		<manufacturer>Topo Soft</manufacturer>
-		<rom name="Mad Mix 2 - En el Castillo de los Fantasmas ES 128K (1990)(Topo Soft).tap" size="80610" crc="2e343a0c"/>
+		<rom name="Mad Mix 2 - En el Castillo de los Fantasmas ES 48K-128K (1990)(Topo Soft).tap" size="80610" crc="2e343a0c"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="madmixgame" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
-		<description>Mad Mix Game (Spanish) (128K)</description>
+	<game name="madmixgame" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Mad Mix Game (Spanish) (48K)</description>
 		<year>1988</year>
 		<manufacturer>Topo Soft</manufacturer>
-		<rom name="Mad Mix Game ES 128K (1988)(Topo Soft).z80" size="43437" crc="c35eb329"/>
-		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
-		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<rom name="Mad Mix Game ES 48K (1988)(Topo Soft).tzx" size="51403" crc="6d8ca935"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -25554,6 +25618,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="redhawk" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Redhawk (48K)</description>
+		<year>1986</year>
+		<manufacturer>Melbourne House</manufacturer>
+		<rom name="Redhawk 48K (1986)(Melbourne House).tzx" size="48072" crc="5d8899c4"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="redshift" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Redshift (128K) (HB, M2)</description>
@@ -27003,6 +27076,16 @@
 		<year>2016-21</year>
 		<manufacturer>Ersh</manufacturer>
 		<rom name="Sam Mallard ES v1.2 48K (2016-21)(Ersh).tap" size="40825" crc="1f33d48e"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="samallardv2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew, 10th Anniversary Edition</comment>
+		<description>Sam Mallard: The Case of the Missing Swan (48K) (HB, v2.0)</description>
+		<year>2026</year>
+		<manufacturer>Ersh</manufacturer>
+		<rom name="Sam Mallard EN v2.0 48K (2026)(Ersh).tap" size="39387" crc="a60b39e5"/>
 		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -29920,6 +30003,15 @@
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starstrike2" romof="spectrum" sourcefile="spectrum/d_spectrum.cpp">
+		<description>Starstrike II (48K)</description>
+		<year>1986</year>
+		<manufacturer>Realtime Games</manufacturer>
+		<rom name="Starstrike II 48K (1986)(Realtime Games).tzx" size="49556" crc="18262188"/>
+		<rom name="spectrum.rom" merge="spectrum.rom" size="16384" crc="ddee531f"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="starwashmf128" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
 		<description>Starwash: la mision final (Spanish) (128K) (HB, v1.0.4-beta.1)</description>
@@ -32153,6 +32245,17 @@
 		<year>2023</year>
 		<manufacturer>Rafal Miazga</manufacturer>
 		<rom name="Tobit 128K (2023)(Rafal Miazga).tap" size="47074" crc="69b7065d"/>
+		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
+		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
+		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tobobobo" romof="spec128" sourcefile="spectrum/d_spectrum.cpp">
+		<comment>Homebrew</comment>
+		<description>ToboBobo Go Home (128K) (HB)</description>
+		<year>2026</year>
+		<manufacturer>SpectrumNez</manufacturer>
+		<rom name="ToboBobo Go Home 128K (2026)(SpectrumNez).tap" size="44308" crc="a0bf16cc"/>
 		<rom name="zx128_0.rom" merge="zx128_0.rom" size="16384" crc="e76799d2"/>
 		<rom name="zx128_1.rom" merge="zx128_1.rom" size="16384" crc="b96a36be"/>
 		<video type="raster" orientation="horizontal" width="288" height="224" aspectx="4" aspecty="3"/>
