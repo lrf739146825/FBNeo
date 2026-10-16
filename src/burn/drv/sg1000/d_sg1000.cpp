@@ -4229,6 +4229,24 @@ struct BurnDriver BurnDrvsg1k_bootskell = {
 	272, 228, 4, 3
 };
 
+// Bubble Fight (HB, v1.2.0)
+static struct BurnRomInfo sg1k_bubblefightRomDesc[] = {
+	{ "Bubble Fight v1.2.0 (2026)(SiRioHD).sg",	32768, 0x4e6f8134, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sg1k_bubblefight)
+STD_ROM_FN(sg1k_bubblefight)
+
+struct BurnDriver BurnDrvsg1k_bubblefight = {
+	"sg1k_bubblefight", NULL, NULL, NULL, "2026",
+	"Bubble Fight (HB, v1.2.0)\0", NULL, "SiRioHD", "Sega SG-1000",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_SG1000, GBF_ACTION, 0,
+	SG1KGetZipName, sg1k_bubblefightRomInfo, sg1k_bubblefightRomName, NULL, NULL, NULL, NULL, Sg1000InputInfo, Sg1000DIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
 // Cacorm (HB)
 static struct BurnRomInfo sg1k_cacormRomDesc[] = {
 	{ "Cacorm (2022)(Inufuto).sg",	8550, 0x26d37da3, BRF_PRG | BRF_ESS },
@@ -4621,6 +4639,24 @@ struct BurnDriver BurnDrvsg1k_mieyen = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_SG1000, GBF_ACTION | GBF_MAZE, 0,
 	SG1KGetZipName, sg1k_mieyenRomInfo, sg1k_mieyenRomName, NULL, NULL, NULL, NULL, Sg1000InputInfo, Sg1000DIPInfo,
+	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
+	272, 228, 4, 3
+};
+
+// Mike Mech (HB)
+static struct BurnRomInfo sg1k_mikemechRomDesc[] = {
+	{ "Mike Mech (2026)(SiRioKD).sg",	49152, 0x1977d78b, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(sg1k_mikemech)
+STD_ROM_FN(sg1k_mikemech)
+
+struct BurnDriver BurnDrvsg1k_mikemech = {
+	"sg1k_mikemech", NULL, NULL, NULL, "2026",
+	"Mike Mech (HB)\0", NULL, "SiRioKD", "Sega SG-1000",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_SEGA_SG1000 | HARDWARE_SEGA_SG1000_RAMEXP_B, GBF_PLATFORM, 0,
+	SG1KGetZipName, sg1k_mikemechRomInfo, sg1k_mikemechRomName, NULL, NULL, NULL, NULL, Sg1000InputInfo, Sg1000DIPInfo,
 	DrvInit, DrvExit, DrvFrame, TMS9928ADraw, DrvScan, NULL, TMS9928A_PALETTE_SIZE,
 	272, 228, 4, 3
 };

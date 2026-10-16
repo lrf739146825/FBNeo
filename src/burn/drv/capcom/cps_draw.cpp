@@ -216,8 +216,8 @@ static INT32 DrawStar(INT32 nLayer)
 		nStarColour = pStar[nStar];
 
 		if (nStarColour != 0x0F) {
-			nStarXPos = (((nStar >> 8) << 5) - *((INT16*)(CpsSaveReg[0] + 0x18 + (nLayer << 2))) + (nStarColour & 0x1F) - 64) & 0x01FF;
-			nStarYPos = ((nStar & 0xFF) - *((INT16*)(CpsSaveReg[0] + 0x1A + (nLayer << 2))) - 16) & 0xFF;
+			nStarXPos = (((nStar >> 8) << 5) - BURN_ENDIAN_SWAP_INT16(*((INT16*)(CpsSaveReg[0] + 0x18 + (nLayer << 2)))) + (nStarColour & 0x1F) - 64) & 0x01FF;
+			nStarYPos = ((nStar & 0xFF) - BURN_ENDIAN_SWAP_INT16(*((INT16*)(CpsSaveReg[0] + 0x1A + (nLayer << 2)))) - 16) & 0xFF;
 
 			if (nStarXPos < nCpsScreenWidth && nStarYPos < nCpsScreenHeight) {
 				nStarColour = ((nStarColour & 0xE0) >> 1) + ((GetCurrentFrame() >> 4) % ((nStarColour & 0x80) ? 0xe : 0xf));
@@ -499,8 +499,11 @@ static void DoDraw(INT32 Recalc)
 {
 	CtvReady();								// Point to correct tile drawing functions
 
-	if (CpsRecalcPal || bCpsUpdatePalEveryFrame) GetPalette(0, 6);
-	if (Recalc || bCpsUpdatePalEveryFrame) CpsPalUpdate(CpsSavePal);		// recalc whole palette if needed
+	// xmvsf3v3: a state load restores the effective palette itself; rereading palette RAM would lose it
+	if (!CpsPalConsumeRestoredCache()) {
+		if (CpsRecalcPal || bCpsUpdatePalEveryFrame) GetPalette(0, 6);
+		if (Recalc || bCpsUpdatePalEveryFrame) CpsPalUpdate(CpsSavePal);		// recalc whole palette if needed
+	}
 
 	CpsClearScreen();
 

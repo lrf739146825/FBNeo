@@ -387,11 +387,20 @@
 		<driver status="good"/>
 	</game>
 	<game name="aliencat2" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew</comment>
+		<comment>Homebrew, Level 28 Fixed</comment>
 		<description>Alien Cat 2 (HB)</description>
 		<year>2025</year>
 		<manufacturer>PSCD Games</manufacturer>
 		<rom name="Alien Cat 2 (2025)(PSCD Games).sms" size="344064" crc="7acff9b3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="aliencat2a" cloneof="aliencat2" romof="aliencat2" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Alien Cat 2 (HB, Alt)</description>
+		<year>2025</year>
+		<manufacturer>PSCD Games</manufacturer>
+		<rom name="Alien Cat 2 (Alt)(2025)(PSCD Games).sms" size="327680" crc="188ec6fa"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -822,6 +831,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="batmanhb" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Batman (HB)</description>
+		<year>2026</year>
+		<manufacturer>Magic Games</manufacturer>
+		<rom name="Batman (2026)(Magic Games).sms" size="4194304" crc="a5d296e1"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="batmanrn" sourcefile="sms/d_sms.cpp">
 		<description>Batman Returns (Euro, Brazil)</description>
 		<year>1993</year>
@@ -1133,6 +1151,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bubblefight" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Bubble Fight (HB, v1.2.0)</description>
+		<year>2026</year>
+		<manufacturer>SiRioHD</manufacturer>
+		<rom name="Bubble Fight v1.2.0 (2026)(SiRioHD).sms" size="262144" crc="cf50f7e5"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="buggyrun" sourcefile="sms/d_sms.cpp">
 		<description>Buggy Run (Euro, Brazil)</description>
 		<year>1993</year>
@@ -1368,6 +1395,14 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="borgmane" cloneof="cyborgh" romof="cyborgh" sourcefile="sms/d_sms.cpp">
+		<description>Chouon Senshi Borgman (Hack, English)</description>
+		<year>2026</year>
+		<manufacturer>FomaLSSJ</manufacturer>
+		<rom name="Chouon Senshi Borgman T-Eng (2026)(FomaLSSJ).sms" size="131072" crc="afd6e0d0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="borgman" cloneof="cyborgh" romof="cyborgh" sourcefile="sms/d_sms.cpp">
 		<description>Chouon Senshi Borgman (Japan)</description>
 		<year>1988</year>
@@ -1406,6 +1441,15 @@
 		<year>1993</year>
 		<manufacturer>Core Design</manufacturer>
 		<rom name="Chuck Rock II - Son of Chuck (Euro)(1993)(Core Design).sms" size="524288" crc="c30e690a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chuckieegg" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Chuckie Egg Remake (HB)</description>
+		<year>2026</year>
+		<manufacturer>Flying Carpet</manufacturer>
+		<rom name="Chuckie Egg Remake (2026)(Flying Carpet).sms" size="32768" crc="846b823f"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -1525,6 +1569,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="crocopinball" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Croco Pinball (HB, v1.0)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Croco Pinball v1.0 (2026)(Oldschool Is Beautiful).sms" size="524288" crc="b24987b4"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cybers" sourcefile="sms/d_sms.cpp">
 		<description>Cyber Shinobi, The (Euro, Brazil)</description>
 		<year>1990</year>
@@ -1609,7 +1662,7 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="datastorm10" sourcefile="sms/d_sms.cpp">
+	<game name="datastorm" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Data Storm (HB)</description>
 		<year>2016</year>
@@ -2257,6 +2310,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="flashback" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Flashback (HB, v0.0.7)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Flashback v0.0.7 (2026)(haroldo-ok).sms" size="4194304" crc="b2f984c8"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="fpoint" sourcefile="sms/d_sms.cpp">
 		<description>Flashpoint (Korea)</description>
 		<year>199?</year>
@@ -2305,15 +2367,6 @@
 		<year>2026</year>
 		<manufacturer>MikGames</manufacturer>
 		<rom name="Fridge Fury v36c (2026)(MikGames).sms" size="425984" crc="51dcda45"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
-		<driver status="good"/>
-	</game>
-	<game name="frontierforced" cloneof="frontierforce" romof="frontierforce" sourcefile="sms/d_sms.cpp">
-		<comment>Homebrew</comment>
-		<description>Frontier Force (HB, Alpha Demo v0.1.2.3)</description>
-		<year>2024</year>
-		<manufacturer>BadComputer</manufacturer>
-		<rom name="Frontier Force - Alpha Demo v0.1.2.3 (2024)(BadComputer).sms" size="262144" crc="def51eb0"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2507,6 +2560,15 @@
 		<year>1995</year>
 		<manufacturer>Tec Toy</manufacturer>
 		<rom name="Geraldinho (Brazil)(1995)(Tec Toy).sms" size="32768" crc="956c416b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="getbluesph" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew, YM2413 FM sound chip supported</comment>
+		<description>Get Blue Spheres! (HB)</description>
+		<year>2026</year>
+		<manufacturer>GuyDeNaville</manufacturer>
+		<rom name="Get Blue Spheres! (2026)(GuyDeNaville).sms" size="262144" crc="c9d82c04"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2751,8 +2813,8 @@
 		<comment>Homebrew</comment>
 		<description>Grail of the Gods (HB, v0.99)</description>
 		<year>2023-25</year>
-		<manufacturer>Guydebaville</manufacturer>
-		<rom name="Grail of the Gods v0.99 (2023-25)(Guydebaville).sms" size="131072" crc="fb3a8ab3"/>
+		<manufacturer>GuyDeNaville</manufacturer>
+		<rom name="Grail of the Gods v0.99 (2023-25)(GuyDeNaville).sms" size="131072" crc="fb3a8ab3"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3120,6 +3182,15 @@
 		<year>1991</year>
 		<manufacturer>Clover</manufacturer>
 		<rom name="Hong Kil Dong (Korea)(1991)(Clover).sms" size="49152" crc="8040b2fa"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="hongkong97" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Hong Kong '97 (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>SirVH</manufacturer>
+		<rom name="Hong Kong '97 v0.0.1 (2026)(SirVH).sms" size="491520" crc="ef93e8da"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3860,6 +3931,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mtennis" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Master Tennis (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Master Tennis v1.2 (2026)(Oldschool Is Beautiful).sms" size="65536" crc="88033cd3"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mastcomb" sourcefile="sms/d_sms.cpp">
 		<description>Masters of Combat (Euro, Brazil, Australia)</description>
 		<year>1993</year>
@@ -4367,6 +4447,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="oriflame" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Oriflame (HB)</description>
+		<year>2026</year>
+		<manufacturer>Altair</manufacturer>
+		<rom name="Oriflame (2026)(Altair).sms" size="1048576" crc="fee8077a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="osotos" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, YM2413 FM sound chip supported</comment>
 		<description>Osotos (HB)</description>
@@ -4482,6 +4571,15 @@
 		<year>19??</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Pat Riley Basketball (USA, Proto)(19xx)(Sega).sms" size="262144" crc="9aefe664"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="pedrisco" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Pedrisco (HB, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>vosges6128</manufacturer>
+		<rom name="Pedrisco v1.2 (2026)(vosges6128).sms" size="131072" crc="159f11a2"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4713,6 +4811,15 @@
 		<year>1987</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Pro Yakyuu Pennant Race, The (Japan)(1987)(Sega).sms" size="131072" crc="da9be8f0"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="prjgalaxy" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Project Galaxy (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Project Galaxy v0.0.1 (2026)(haroldo-ok).sms" size="49152" crc="1baf5cb4"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4950,6 +5057,15 @@
 		<year>2022</year>
 		<manufacturer>Maxim</manufacturer>
 		<rom name="Rayman Retro Rumble v1.3 (2022)(Maxim).sms" size="524288" crc="932c57d5"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="razingcore" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Razing Core (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>Bad Computer</manufacturer>
+		<rom name="Razing Core v1.1 (2026)(Bad Computer).sms" size="524288" crc="811b0309"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5407,6 +5523,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="skyhaul" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>SkyHaul (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="SkyHaul v0.0.1 (2026)(haroldo-ok).sms" size="32768" crc="51fc7c6b"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="slapshotp" cloneof="slapshot" romof="slapshot" sourcefile="sms/d_sms.cpp">
 		<comment>Prototype</comment>
 		<description>Slap Shoot (Prototype)</description>
@@ -5860,6 +5985,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="sqrdoom" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Square Doom (HB, v0.0.3)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Square Doom v0.0.3 (2026)(haroldo-ok).sms" size="1048576" crc="df11b06c"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="stalactites" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Stalactites (HB, v0.7)</description>
@@ -6120,11 +6254,11 @@
 	</game>
 	<game name="smb" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew, YM2413 FM sound chip supported</comment>
-		<description>Super Mario Bros. (HB, v0.12.e83b808)</description>
+		<description>Super Mario Bros. (HB, v1.10)</description>
 		<year>2026</year>
 		<manufacturer>Lack of Track</manufacturer>
-		<rom name="Super Mario Bros. v0.12.e83b808 (2026)(Lack of Track).sms" size="262144" crc="b209d7a8"/>
-		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<rom name="Super Mario Bros. v1.10 (2026)(Lack of Track).sms" size="262144" crc="cf970915"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
 	<game name="smgp" sourcefile="sms/d_sms.cpp">
@@ -6405,6 +6539,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="tempest2k" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Tempest 2K (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Tempest 2K v0.0.1 (2026)(haroldo-ok).sms" size="4194304" crc="70786af5"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tempojrgg2sms" sourcefile="sms/d_sms.cpp">
 		<comment>Hack</comment>
 		<description>Tempo Jr. (Hack, GG2SMS Conversion)</description>
@@ -6487,6 +6630,15 @@
 		<year>2026</year>
 		<manufacturer>Master Linkuei</manufacturer>
 		<rom name="Tetris (System E) v1.5 (2026)(Master Linkuei).sms" size="131072" crc="08ab88b7"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tetris4gg" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Tetris4GG (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>Armix</manufacturer>
+		<rom name="Tetris4GG v1.1 (2026)(Armix).sms" size="131072" crc="93d2a287"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

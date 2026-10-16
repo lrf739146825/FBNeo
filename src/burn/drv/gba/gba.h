@@ -38,6 +38,20 @@ typedef uint64_t UINT64;
 #define SB_LIKELY(x)   (x)
 #endif
 
+#if defined(__GNUC__) || defined(__clang__)
+#define SB_ALWAYS_INLINE static inline __attribute__((always_inline))
+#elif defined(_MSC_VER)
+#define SB_ALWAYS_INLINE static __forceinline
+#else
+#define SB_ALWAYS_INLINE static inline
+#endif
+
+#if defined(__GNUC__) || defined(__clang__) || defined(_MSC_VER)
+#define SB_RESTRICT __restrict
+#else
+#define SB_RESTRICT
+#endif
+
 #define SB_FILE_PATH_SIZE				1024
 #define SB_BFE(VALUE, BITOFFSET, SIZE)	(((VALUE) >> (BITOFFSET)) & ((1llu << (SIZE)) - 1))
 #define SB_AUDIO_RING_BUFFER_SIZE		(2048 * 8)
@@ -118,7 +132,7 @@ typedef struct {
 #define GBA_EVENT_PRIORITY_AUDIO	4
 #define GBA_EVENT_PRIORITY_DMA		5
 
-#include "cpu.h"
+#include "gbacpu.h"
 
 //////////////////////////////////////////////////////////////////////////////////////////
 // MMIO Register listing from GBATEK (https://problemkaputt.de/gbatek.htm#gbamemorymap) //
@@ -298,7 +312,7 @@ enum gba_rtc_phase {
 	GBA_RTC_COMMAND,
 	GBA_RTC_RECEIVE,
 	GBA_RTC_SEND,
-	GBA_RTC_COMPLETE,
+	GBA_RTC_COMPLETE
 };
 
 enum gba_rtc_register {
@@ -309,7 +323,7 @@ enum gba_rtc_register {
 	GBA_RTC_STATUS,
 	GBA_RTC_UNUSED2,
 	GBA_RTC_TIME,
-	GBA_RTC_UNUSED3,
+	GBA_RTC_UNUSED3
 };
 
 typedef struct {
@@ -534,6 +548,7 @@ typedef struct gba_t {
 	UINT32 second_target_buffer[GBA_LCD_W];
 	UINT8  window[GBA_LCD_W];
 	UINT8* framebuffer;
+	bool   framebuffer_is_direct_copy;  // true = framebuffer already in output bpp (DrvDraw can memcpy); false = scratch R,G,B,X (per-pixel conversion)
 	// IF propagates with up to 4-cycle delay; this FIFO tracks it
 	UINT16 pipelined_if[5];
 	INT32  active_if_pipe_stages;
@@ -546,6 +561,8 @@ typedef struct gba_t {
 	gba_solar_sensor_t solar_sensor;
 	gba_gyro_sensor_t  gyro_sensor;
 	gba_tilt_sensor_t  tilt_sensor;
+
+	struct ppu_worker_t* ppu_worker_ptr;  // per-instance worker (NULL = single-thread); safe for Netplay / multi-instance
 } gba_t;
 
 typedef struct {
@@ -653,13 +670,13 @@ enum GbaButton {
 	GBA_BUTTON_UP,
 	GBA_BUTTON_DOWN,
 	GBA_BUTTON_R,
-	GBA_BUTTON_L,
+	GBA_BUTTON_L
 };
 
 enum GbaDipSwitch {
 	GBA_DIPSWITCH_01 = 0,	// video rendering: 0 = scanline, 1 = per-pixel
 	GBA_DIPSWITCH_02,		// BIOS selection:  0 = optional, 1 = custom
-	GBA_DIPSWITCH_03,		// per-game patch
+	GBA_DIPSWITCH_03		// per-game patch
 };
 
 enum GbaCartridgeFeature {
@@ -667,7 +684,7 @@ enum GbaCartridgeFeature {
 	GBA_CART_SOLAR  = 1 << 1,
 	GBA_CART_RUMBLE = 1 << 2,
 	GBA_CART_GYRO   = 1 << 3,
-	GBA_CART_TILT   = 1 << 4,
+	GBA_CART_TILT   = 1 << 4
 };
 
 struct GbaInput {
@@ -701,12 +718,14 @@ void   GbaCoreSetBiosMode(GbaCore *core, INT32 forceCustomBios);
 void   GbaCoreSetRenderMode(GbaCore *core, INT32 perPixelMode);
 INT32  GbaCoreReset(GbaCore *core);
 void   GbaCoreSetInput(GbaCore *core, const GbaInput *input);
+void   GbaCoreSetOutputBpp(GbaCore *core, INT32 bpp);  // configure worker output bpp (2=RGB565, 3=BGR24, 4=XRGB8888) to match nBurnBpp; call once after Init, before first RunFrame
 INT32  GbaCoreConfigureAudio(GbaCore *core, double sourceRate, INT32 outputFrames, INT32 captureAudio);
 INT32  GbaCoreRunFrame(GbaCore *core);
 UINT32 GbaCoreGetCartridgeFeatures(const GbaCore *core);
 UINT8  GbaCoreGetRumbleOutput(const GbaCore *core);
 
-const UINT32* GbaCoreGetFramebuffer(const GbaCore* core);
+const UINT8* GbaCoreGetFramebuffer(const GbaCore* core);
+bool   GbaCoreFramebufferIsDirectCopyable(const GbaCore* core);  // true = framebuffer already in output bpp (DrvDraw can memcpy); false = scratch R,G,B,X (per-pixel conversion)
 UINT32 GbaCoreGetFramebufferPitch();
 INT32  GbaCoreRenderAudio(GbaCore *core, INT16 *stereo, INT32 frames);
 void   GbaCoreClearAudio(GbaCore *core);
@@ -721,7 +740,7 @@ void   GbaCoreClearBatteryDirty(GbaCore *core);
 
 size_t GbaCoreStateSize();
 INT32  GbaCoreSaveState(const GbaCore *core, void *data, size_t size);
-INT32  GbaCoreLoadState(GbaCore *core, const void *data, size_t size, INT32 preserveAudio = 0);
+INT32  GbaCoreLoadState(GbaCore *core, const void *data, size_t size, INT32 preservePresentation = 0);
 void   GbaCoreRebind(GbaCore *core);
 
 

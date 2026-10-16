@@ -895,6 +895,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="angeliquete" sourcefile="snes/d_snes.cpp">
+		<description>Angelique (Hack, English, v0.99a)</description>
+		<year>2026</year>
+		<manufacturer>Neocrypton</manufacturer>
+		<rom name="Angelique T-Eng v0.99a (2026)(Neocrypton).sfc" size="4194304" crc="46be57be"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="angeliquej" cloneof="angeliquete" romof="angeliquete" sourcefile="snes/d_snes.cpp">
+		<description>Angelique (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Koei</manufacturer>
+		<rom name="Angelique (J)(1994)(Koei).sfc" size="2097152" crc="ec3edb9e"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="angelsong" sourcefile="snes/d_snes.cpp">
 		<comment>Homebrew</comment>
 		<description>Angelsong (HB, v1.5)</description>
@@ -1207,6 +1223,14 @@
 		<year>1992</year>
 		<manufacturer>NCS - Masaya</manufacturer>
 		<rom name="Assault Suits Valken (J)(1992)(NCS - Masaya).sfc" size="1048576" crc="a5f63557"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="assaultsvrb" cloneof="cybernator" romof="cybernator" sourcefile="snes/d_snes.cpp">
+		<description>Assault Suits Valken (USA) (Retro-bit)</description>
+		<year>2024</year>
+		<manufacturer>Retro-bit</manufacturer>
+		<rom name="Assault Suits Valken (U)(2024)(Retro-bit).sfc" size="2097152" crc="b802fc5e"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -2079,6 +2103,15 @@
 		<year>1995</year>
 		<manufacturer>POW</manufacturer>
 		<rom name="Block Kuzushi (J)(1995)(POW).sfc" size="524288" crc="5cce2e55"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="blokit" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Blokit (HB, v1.0.1)</description>
+		<year>2026</year>
+		<manufacturer>Crisps</manufacturer>
+		<rom name="Blokit v1.0.1 (2026)(Crisps).sfc" size="262143" crc="c45ec1c5"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3223,6 +3256,24 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="chomakmurknight" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Chou Makaimura - Knight Artoria Edition (Hack, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying, Fred</manufacturer>
+		<rom name="Chou Makaimura - Knight Artoria Edition v1.2 (2026)(GoodLuckTrying, Fred).sfc" size="1048576" crc="86bd3499"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="chomakmurmaiden" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Chou Makaimura - Maiden Artoria Edition (Hack, v1.2)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying, Fred</manufacturer>
+		<rom name="Chou Makaimura - Maiden Artoria Edition v1.2 (2026)(GoodLuckTrying, Fred).sfc" size="1048576" crc="4fa2d787"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="cymacross" sourcefile="snes/d_snes.cpp">
 		<description>Choujikuu Yousai Macross: Scrambled Valkyrie (Japan)</description>
 		<year>1993</year>
@@ -3662,7 +3713,7 @@
 		<description>Cosmo Gang - The Puzzle - Double Rotation (Hack)</description>
 		<year>2023</year>
 		<manufacturer>bankbank</manufacturer>
-		<rom name="Cosmo Gang - The Puzzle - Double Rotation Hack (2023)(bankbank).sfc" size="524288" crc="524ee83b"/>
+		<rom name="Cosmo Gang - The Puzzle - Double Rotation (2023)(bankbank).sfc" size="524288" crc="524ee83b"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3983,6 +4034,15 @@
 		<year>1994</year>
 		<manufacturer>Koei</manufacturer>
 		<rom name="Daikoukai Jidai II (J)(1994)(Koei).sfc" size="2097152" crc="eebc4170"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dangdave" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Dangerous Dave (HB, v0.1)</description>
+		<year>2026</year>
+		<manufacturer>ludufre</manufacturer>
+		<rom name="Dangerous Dave v0.1 (2026)(ludufre).sfc" size="1048576" crc="11333e54"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5169,6 +5229,22 @@
 		<year>1994</year>
 		<manufacturer>Tradewest</manufacturer>
 		<rom name="Double Dragon V - The Shadow Falls (U)(1994)(Tradewest).sfc" size="3145728" crc="98a96ae8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="downworldte" sourcefile="snes/d_snes.cpp">
+		<description>Down the World - Mervil's Ambition (Hack, English v1.1.0-beta)</description>
+		<year>2026</year>
+		<manufacturer>pzapzap</manufacturer>
+		<rom name="Down the World - Mervil's Ambition T-Eng v1.1.0-beta (2026)(pzapzap).sfc" size="4194304" crc="4c87ed04"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="downworld" cloneof="downworldte" romof="downworldte" sourcefile="snes/d_snes.cpp">
+		<description>Down the World - Mervil's Ambition (Japan)</description>
+		<year>1994</year>
+		<manufacturer>ASCII Corp.</manufacturer>
+		<rom name="Down the World - Mervil's Ambition (J)(1994)(ASCII).sfc" size="2097152" crc="f1110fad"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6805,6 +6881,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="firewall" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Firewall (HB)</description>
+		<year>2026</year>
+		<manufacturer>ColPanic</manufacturer>
+		<rom name="Firewall (2026)(ColPanic).sfc" size="524288" crc="c7b83d03"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="firstsamuraie" cloneof="firstsamurai" romof="firstsamurai" sourcefile="snes/d_snes.cpp">
 		<description>First Samurai (Euro)</description>
 		<year>1993</year>
@@ -7470,11 +7555,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="gsmikami" sourcefile="snes/d_snes.cpp">
+	<game name="gsmikami" cloneof="gsmikamite" romof="gsmikamite" sourcefile="snes/d_snes.cpp">
 		<description>Ghost Sweeper Mikami: Joreishi wa Nice Body (Japan)</description>
 		<year>1993</year>
 		<manufacturer>Banalex</manufacturer>
 		<rom name="Ghost Sweeper Mikami - Joreishi wa Nice Body (J)(1993)(Banalex).sfc" size="1048576" crc="444c9962"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="gsmikamite" sourcefile="snes/d_snes.cpp">
+		<description>Ghost Sweeper Mikami: The Exorcist with a Nice Body (Hack, English)</description>
+		<year>2026</year>
+		<manufacturer>Pizzano</manufacturer>
+		<rom name="Ghost Sweeper Mikami - The Exorcist with a Nice Body T-Eng (2026)(Pizzano).sfc" size="1048576" crc="a381ca79"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -9398,7 +9491,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="kamenrider" sourcefile="snes/d_snes.cpp">
+	<game name="kamenriderte" sourcefile="snes/d_snes.cpp">
+		<description>Kamen Rider (Hack, English)</description>
+		<year>2026</year>
+		<manufacturer>kamencoder</manufacturer>
+		<rom name="Kamen Rider T-Eng (2026)(kamencoder).sfc" size="2097152" crc="7602d9b2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="kamenrider" cloneof="kamenriderte" romof="kamenriderte" sourcefile="snes/d_snes.cpp">
 		<description>Kamen Rider (Japan, Rev. 1)</description>
 		<year>1993</year>
 		<manufacturer>Bandai</manufacturer>
@@ -10537,6 +10638,22 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="lovequestte" sourcefile="snes/d_snes.cpp">
+		<description>Love Quest (Hack, English v1.1.0-beta)</description>
+		<year>2026</year>
+		<manufacturer>pzapzap</manufacturer>
+		<rom name="Love Quest T-Eng v1.1.0-beta (2026)(pzapzap).sfc" size="3145728" crc="47b42865"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="lovequest" cloneof="lovequestte" romof="lovequestte" sourcefile="snes/d_snes.cpp">
+		<description>Love Quest (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Tokuma Shoten</manufacturer>
+		<rom name="Love Quest (J)(1995)(Tokuma Shoten).sfc" size="1572864" crc="92fad6fc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="luckyluke" sourcefile="snes/d_snes.cpp">
 		<description>Lucky Luke (Euro)</description>
 		<year>1997</year>
@@ -11086,12 +11203,19 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="mshwargemsr" cloneof="mshwargems" romof="mshwargems" sourcefile="snes/d_snes.cpp">
-		<comment>Hack</comment>
-		<description>Marvel Super Heroes - War of the Gems Redux (Hack)</description>
-		<year>2025</year>
-		<manufacturer>BillyTime! Games</manufacturer>
-		<rom name="Marvel Super Heroes - War of the Gems Redux (2025)(BillyTime! Games).sfc" size="2097152" crc="2dc14312"/>
+	<game name="marmaladeboyte" sourcefile="snes/d_snes.cpp">
+		<description>Marmalade Boy (Hack, English, v0.96)</description>
+		<year>2026</year>
+		<manufacturer>Neocrypton</manufacturer>
+		<rom name="Marmalade Boy T-Eng v0.96 (2026)(Neocrypton).sfc" size="2097152" crc="3885c5cc"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="marmaladeboyj" cloneof="marmaladeboyte" romof="marmaladeboyte" sourcefile="snes/d_snes.cpp">
+		<description>Marmalade Boy (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Bandai</manufacturer>
+		<rom name="Marmalade Boy (J)(1995)(Bandai).sfc" size="1048576" crc="5299b3a6"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11124,6 +11248,15 @@
 		<year>1996</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Marvel Super Heroes - War of the Gems (U)(1996)(Capcom).sfc" size="2097152" crc="00af56e8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mshwargemsr" cloneof="mshwargems" romof="mshwargems" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Marvel Super Heroes: War of the Gems Redux (Hack, v2.1)</description>
+		<year>2025-26</year>
+		<manufacturer>BillyTime! Games</manufacturer>
+		<rom name="Marvel Super Heroes - War of the Gems Redux v2.1 (2025-26)(BillyTime! Games).sfc" size="2097152" crc="ce4eb55c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -11410,6 +11543,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="megamanxsa1p" cloneof="megamanx" romof="megamanx" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, SA-1 enhancement CPU</comment>
+		<description>Mega Man X - SA-1 Plus (Hack, v2.0.0)</description>
+		<year>2026</year>
+		<manufacturer>llethas</manufacturer>
+		<rom name="Mega Man X - SA-1 Plus v2.0.0 (2026)(llethas).sfc" size="1572864" crc="11b4cc3b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="megamanx2e" cloneof="megamanx2" romof="megamanx2" sourcefile="snes/d_snes.cpp">
 		<comment>CX4 enhancement chip</comment>
 		<description>Mega Man X2 (Euro)</description>
@@ -11434,6 +11576,24 @@
 		<year>1994</year>
 		<manufacturer>Capcom</manufacturer>
 		<rom name="Mega Man X2 (U)(1994)(Capcom).sfc" size="1572864" crc="947b0355"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanx2fr" cloneof="megamanx2" romof="megamanx2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mega Man X2 - FastROM (Hack, v4.0)</description>
+		<year>2023</year>
+		<manufacturer>kandowontu</manufacturer>
+		<rom name="Mega Man X2 - FastROM v4.0 (2023)(kandowontu).sfc" size="1572864" crc="84caa522"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="megamanx2frp" cloneof="megamanx2" romof="megamanx2" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, SA-1 enhancement CPU</comment>
+		<description>Mega Man X2 - FastROM Plus (Hack, v1.0.1)</description>
+		<year>2026</year>
+		<manufacturer>llethas</manufacturer>
+		<rom name="Mega Man X2 - FastROM Plus v1.0.1 (2026)(llethas).sfc" size="1572864" crc="e06039f1"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12014,6 +12174,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="mkma17" cloneof="mk" romof="mk" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Mortal Kombat MA-17 (Hack)</description>
+		<year>2026</year>
+		<manufacturer>Yoshihiro</manufacturer>
+		<rom name="Mortal Kombat MA-17 (2026)(Yoshihiro).sfc" size="4194304" crc="be05b9c8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mkmg2000" sourcefile="snes/d_snes.cpp">
 		<description>Mortal Kombat Mythologies - Gold 2000 (USA) (Unl)</description>
 		<year>2000</year>
@@ -12395,6 +12564,15 @@
 		<year>2019</year>
 		<manufacturer>PA Games</manufacturer>
 		<rom name="Neko Tako (2019)(PA Games).sfc" size="1048576" crc="72bdafbb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="nemeshit" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Nemeshit (HB)</description>
+		<year>2026</year>
+		<manufacturer>Clankerbast Software</manufacturer>
+		<rom name="Nemeshit (2026)(Clankerbast Software).sfc" size="4194304" crc="388fea7c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -12820,7 +12998,7 @@
 		<description>Oh No! More Zombies Ate My Neighbors! (Hack)</description>
 		<year>2010</year>
 		<manufacturer>Stanley_Decker, Sloat</manufacturer>
-		<rom name="Oh No! More Zombies Ate My Neighbors! - Hack (2010)(Stanley_Decker, Sloat).sfc" size="4194304" crc="d218147c"/>
+		<rom name="Oh No! More Zombies Ate My Neighbors! (2010)(Stanley_Decker, Sloat).sfc" size="4194304" crc="d218147c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16479,6 +16657,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="starfoxcfx3" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Super FX GSU-3 enhancement chip</comment>
+		<description>Star Fox Collection FX3 (Hack, v1.0.1)</description>
+		<year>2026</year>
+		<manufacturer>kandowontu</manufacturer>
+		<rom name="Star Fox Collection FX3 v1.0.1 (2026)(kandowontu).sfc" size="4194304" crc="97b253ab"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="starfoxex" cloneof="starfox" romof="starfox" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, Super FX GSU-1 enhancement chip</comment>
 		<description>Star Fox EX (Hack, v1.11.02b)</description>
@@ -16503,6 +16690,15 @@
 		<year>2026</year>
 		<manufacturer>Sunlit</manufacturer>
 		<rom name="Star Fox FX3 v1.2.7 (U, Rev 2)(2026)(Sunlit).sfc" size="4194304" crc="3139726f"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="starfoxun" cloneof="starfox" romof="starfox" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, Super FX GSU-1 enhancement chip</comment>
+		<description>Star Fox Unleashed (Hack, Preview 1)</description>
+		<year>2026</year>
+		<manufacturer>Ensign Salt</manufacturer>
+		<rom name="Star Fox Unleashed Preview 1 (2026)(Ensign Salt).sfc" size="2097152" crc="aaf4d919"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16929,6 +17125,15 @@
 		<year>1993</year>
 		<manufacturer>Konami</manufacturer>
 		<rom name="Sunset Riders (U)(1993)(Konami).sfc" size="1048576" crc="52ada404"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supaplex" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew, SA-1 enhancement CPU</comment>
+		<description>Supaplex (HB, v0.2)</description>
+		<year>2026</year>
+		<manufacturer>ludufre</manufacturer>
+		<rom name="Supaplex v0.2 (2026)(ludufre).sfc" size="4194304" crc="146e59dc"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17862,6 +18067,54 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="superfsoccer94" cloneof="superfsoccer94fd" romof="superfsoccer94fd" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer 94 - World Cup Edition (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer 94 - World Cup Edition (J)(1994)(Human Entertainment).sfc" size="1048576" crc="d547c5d2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superfsoccer94fd" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer 94 - World Cup Final Data (Japan)</description>
+		<year>1994</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer 94 - World Cup Final Data (J)(1994)(Human Entertainment).sfc" size="1048576" crc="bf1f2e16"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superfsoccer95" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer 95 - della Serie A (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer 95 - della Serie A (J)(1995)(Human Entertainment).sfc" size="1572864" crc="798352bf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superfsoccer95x" cloneof="superfsoccer95" romof="superfsoccer95" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer 95 - della Serie A - UCC Xaqua Version (Japan)</description>
+		<year>1995</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer 95 - della Serie A - UCC Xaqua Version (J)(1995)(Human Entertainment).sfc" size="1572864" crc="1cf83bc2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superfsoccer96" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer 96 - World Club Edition (Japan)</description>
+		<year>1996</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer 96 - World Club Edition (J)(1996)(Human Entertainment).sfc" size="1572864" crc="f42272cb"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superfsoccer2" sourcefile="snes/d_snes.cpp">
+		<description>Super Formation Soccer II (Japan)</description>
+		<year>1993</year>
+		<manufacturer>Human Entertainment</manufacturer>
+		<rom name="Super Formation Soccer II (J)(1993)(Human Entertainment).sfc" size="524288" crc="74c75074"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="supergenjin" cloneof="superbonk" romof="superbonk" sourcefile="snes/d_snes.cpp">
 		<description>Super Genjin (Japan)</description>
 		<year>1994</year>
@@ -17875,6 +18128,24 @@
 		<year>1995</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Super Genjin 2 (J)(1995)(Hudson Soft).sfc" size="1572864" crc="c5d12427"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spgngknight" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Ghouls 'N Ghosts - Knight Artoria Edition (Hack, v3.2)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying, Fred</manufacturer>
+		<rom name="Super Ghouls 'N Ghosts - Knight Artoria Edition v3.2 (2026)(GoodLuckTrying, Fred).sfc" size="1048576" crc="7967c502"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="spgngmaiden" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Ghouls 'N Ghosts - Maiden Artoria Edition (Hack, v3.2)</description>
+		<year>2026</year>
+		<manufacturer>GoodLuckTrying, Fred</manufacturer>
+		<rom name="Super Ghouls 'N Ghosts - Maiden Artoria Edition v3.2 (2026)(GoodLuckTrying, Fred).sfc" size="1048576" crc="f9e91182"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17905,10 +18176,10 @@
 	</game>
 	<game name="supergngenh" cloneof="supergng" romof="supergng" sourcefile="snes/d_snes.cpp">
 		<comment>Hack, Air control while jumping &amp; FastROM &amp; more...</comment>
-		<description>Super Ghouls'n Ghosts Enhanced (Hack)</description>
+		<description>Super Ghouls'n Ghosts Enhanced (Hack, v1.1.0)</description>
 		<year>2026</year>
 		<manufacturer>Tiken</manufacturer>
-		<rom name="Super Ghouls'n Ghosts Enhanced Hack (2026)(Tiken).sfc" size="1048576" crc="ebb9c790"/>
+		<rom name="Super Ghouls'n Ghosts Enhanced v1.1.0 (2026)(Tiken).sfc" size="1048576" crc="4e1618ac"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17917,7 +18188,7 @@
 		<description>Super Ghouls'n Ghosts Restoration (Hack)</description>
 		<year>2023-25</year>
 		<manufacturer>SCD</manufacturer>
-		<rom name="Super Ghouls'n Ghosts Restoration Hack (2023-25)(SCD).sfc" size="2097152" crc="d983a882"/>
+		<rom name="Super Ghouls'n Ghosts Restoration (2023-25)(SCD).sfc" size="2097152" crc="d983a882"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18176,6 +18447,16 @@
 		<year>1992</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="Super Mario Kart (U)(1992)(Nintendo).sfc" size="524288" crc="cd80db86"/>
+		<rom name="dsp1b.bin" merge="dsp1b.bin" size="10240" crc="453557e0"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="supermkartfse" cloneof="supermkart" romof="supermkart" sourcefile="snes/d_snes.cpp">
+		<comment>Hack, DSP-1B enhancement chip</comment>
+		<description>Super Mario Kart - Fullscreen Edition (Hack, v1.5)</description>
+		<year>2026</year>
+		<manufacturer>Psicopompo</manufacturer>
+		<rom name="Super Mario Kart - Fullscreen Edition v1.5 (2026)(Psicopompo).sfc" size="1048576" crc="6af5145e"/>
 		<rom name="dsp1b.bin" merge="dsp1b.bin" size="10240" crc="453557e0"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
@@ -19541,7 +19822,16 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="taekwondoj" sourcefile="snes/d_snes.cpp">
+	<game name="taekwondote" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Taekwon-Do (Hack, English &amp; Spanish)</description>
+		<year>2026</year>
+		<manufacturer>Patch Clan</manufacturer>
+		<rom name="Taekwon-Do T-Eng T-Spa (2026)(Patch Clan).sfc" size="2097152" crc="124d0ab1"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="taekwondoj" cloneof="taekwondote" romof="taekwondote" sourcefile="snes/d_snes.cpp">
 		<description>Taekwon-Do (Japan)</description>
 		<year>1994</year>
 		<manufacturer>Human Entertainment</manufacturer>
@@ -19549,7 +19839,7 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
-	<game name="taekwondok" cloneof="taekwondoj" romof="taekwondoj" sourcefile="snes/d_snes.cpp">
+	<game name="taekwondok" cloneof="taekwondote" romof="taekwondote" sourcefile="snes/d_snes.cpp">
 		<description>Taekwon-Do (Korea)</description>
 		<year>1994</year>
 		<manufacturer>Human Entertainment</manufacturer>
@@ -20133,6 +20423,14 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="thunderspiritsfro" cloneof="thunderspirits" romof="thunderspirits" sourcefile="snes/d_snes.cpp">
+		<description>Thunder Spirits - FastROM + Optimized (Hack)</description>
+		<year>2026</year>
+		<manufacturer>MaxwelOlinda</manufacturer>
+		<rom name="Thunder Spirits - FastROM + Optimized (2026)(MaxwelOlinda).sfc" size="1048576" crc="52d44169"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="tick" sourcefile="snes/d_snes.cpp">
 		<description>Tick, The (USA)</description>
 		<year>1994</year>
@@ -20303,6 +20601,15 @@
 		<year>1992</year>
 		<manufacturer>Sofel</manufacturer>
 		<rom name="TKO Super Championship Boxing (U)(1992)(Sofel).sfc" size="524288" crc="fd4af462"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tmntsf2t" cloneof="sf2turbo" romof="sf2turbo" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>TMNT x Street Fighter II Turbo (Hack, v29)</description>
+		<year>2026</year>
+		<manufacturer>RyanFox.eth</manufacturer>
+		<rom name="TMNT x Street Fighter II Turbo v29 (2026)(RyanFox.eth).sfc" size="4194304" crc="094ddc93"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

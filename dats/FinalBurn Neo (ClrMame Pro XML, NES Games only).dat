@@ -983,10 +983,10 @@
 	</game>
 	<game name="aliensmash" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
-		<description>Alien Smash (HB, v1.1)</description>
+		<description>Alien Smash (HB)</description>
 		<year>2026</year>
 		<manufacturer>RBG Entertainment</manufacturer>
-		<rom name="Alien Smash v1.1 (2026)(RBG Entertainment).nes" size="524304" crc="d87adb78"/>
+		<rom name="Alien Smash (2026)(RBG Entertainment).nes" size="524304" crc="1c692e98"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -1250,9 +1250,9 @@
 	<game name="argondream" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew, No Sound</comment>
 		<description>Argon Dream (HB)</description>
-		<year>2025</year>
+		<year>2025-26</year>
 		<manufacturer>Johnybot</manufacturer>
-		<rom name="Argon Dream (2025)(Johnybot).nes" size="24592" crc="d4ab5d9c"/>
+		<rom name="Argon Dream (2025-26)(Johnybot).nes" size="40976" crc="192d41c1"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -4576,8 +4576,8 @@
 		<comment>Homebrew</comment>
 		<description>Crabbie Attack! (HB)</description>
 		<year>2023</year>
-		<manufacturer>TurtleRescueNES</manufacturer>
-		<rom name="Crabbie Attack! (2023)(TurtleRescueNES).nes" size="524304" crc="9838a3d0"/>
+		<manufacturer>Joe Sherman</manufacturer>
+		<rom name="Crabbie Attack! (2023)(Joe Sherman).nes" size="524304" crc="9838a3d0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -6537,6 +6537,15 @@
 		<year>1990</year>
 		<manufacturer>Sony Imagesoft</manufacturer>
 		<rom name="Dragon's Lair (USA)(1990)(Sony Imagesoft).nes" size="131088" crc="f90ae80e"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="drapuzzch" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Dragon's Puzzle Challenge (HB)</description>
+		<year>2026</year>
+		<manufacturer>BMO Studios</manufacturer>
+		<rom name="Dragon's Puzzle Challenge (2026)(BMO Studios).nes" size="131088" crc="283ef285"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -8758,6 +8767,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="getittog" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Get It Together! (HB)</description>
+		<year>2026</year>
+		<manufacturer>IMP Games</manufacturer>
+		<rom name="Get It Together! (2026)(IMP Games).nes" size="524304" crc="c05c17f1"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="getemgary" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>Get'Em Gary (HB)</description>
@@ -10085,6 +10103,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="hoboalbohaa" cloneof="hoboalboha" romof="hoboalboha" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Hobo Albo's Halloween Adventure (HB, v1.5, Alt)</description>
+		<year>2025</year>
+		<manufacturer>RBG Entertainment</manufacturer>
+		<rom name="Hobo Albo's Halloween Adventure v1.5 (Alt)(2025)(RBG Entertainment).nes" size="524304" crc="e3f081c6"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="hogansalley" sourcefile="nes/d_nes.cpp">
 		<comment>Zapper compatible game</comment>
 		<description>Hogan's Alley (USA)</description>
@@ -10868,6 +10895,15 @@
 		<year>1990</year>
 		<manufacturer>Hudson Soft</manufacturer>
 		<rom name="Jackie Chan's Action Kung Fu (USA)(1990)(Hudson Soft).nes" size="262160" crc="6f371f16"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="jacobselev" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Jacob's Elevator (HB)</description>
+		<year>2026</year>
+		<manufacturer>gamma_correction</manufacturer>
+		<rom name="Jacob's Elevator (2026)(gamma_correction).nes" size="40976" crc="d8bb43f6"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -12193,6 +12229,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="kubo3" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>KUBO 3 (HB, Rev. J)</description>
+		<year>2022</year>
+		<manufacturer>SJ Games</manufacturer>
+		<rom name="KUBO 3 Rev J (2022)(SJ Games).nes" size="524304" crc="0f1462fb"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="kujakuou" cloneof="peacocking" romof="peacocking" sourcefile="nes/d_nes.cpp">
 		<description>Kujaku Ou (Japan)</description>
 		<year>1988</year>
@@ -13310,6 +13355,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="magicpuzpopar" sourcefile="nes/d_nes.cpp">
+		<comment>Hack</comment>
+		<description>Magical Puzzle Popils - Audio Recreation (Hack, v1.0A)</description>
+		<year>2026</year>
+		<manufacturer>Mister Man</manufacturer>
+		<rom name="Magical Puzzle Popils - Audio Recreation v1.0A (2026)(Mister Man).nes" size="196624" crc="792f6122"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="magictarkun" sourcefile="nes/d_nes.cpp">
 		<description>Magical Taruruuto-kun - Fantastic World!! (Japan)</description>
 		<year>1991</year>
@@ -13662,6 +13716,15 @@
 		<year>1989</year>
 		<manufacturer>Milton Bradley</manufacturer>
 		<rom name="Marble Madness (USA)(1989)(Milton Bradley).nes" size="131088" crc="f9282f28"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="marianaseq" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mariana Sequence, The (HB, v1.1)</description>
+		<year>2026</year>
+		<manufacturer>CGT Games</manufacturer>
+		<rom name="Mariana Sequence, The v1.1(HB) (2026)(CGT Games).nes" size="524304" crc="63307f67"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -15448,6 +15511,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="nemeshit" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Nemeshit (HB)</description>
+		<year>2026</year>
+		<manufacturer>Clankerbast Software</manufacturer>
+		<rom name="Nemeshit (2026)(Clankerbast Software).nes" size="786448" crc="9fb4b6a3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="nemulesis" sourcefile="nes/d_nes.cpp">
 		<comment>Homebrew</comment>
 		<description>neMULEsis (HB, v2.25.23)</description>
@@ -16318,6 +16390,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="owareabapa" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>OWARE: Abapa (HB, v2.30)</description>
+		<year>2026</year>
+		<manufacturer>Jiucai Baobao</manufacturer>
+		<rom name="OWARE - Abapa v2.30 (2026)(Jiucai Baobao).nes" size="40976" crc="6ca55989"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="powc" cloneof="pow" romof="pow" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>P.O.W. - Prisoners of War (Hack, Spanish v2.0)</description>
@@ -16449,6 +16530,15 @@
 		<year>2026</year>
 		<manufacturer>Musikai</manufacturer>
 		<rom name="Pacifister, The (2026)(Musikai).nes" size="524304" crc="c0763d59"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="packet" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Packet (HB)</description>
+		<year>2026</year>
+		<manufacturer>Joe Sherman</manufacturer>
+		<rom name="Packet (2026)(Joe Sherman).nes" size="524304" crc="f437e3b4"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -17487,6 +17577,15 @@
 		<year>2019</year>
 		<manufacturer>Piko Interactive</manufacturer>
 		<rom name="Pyramids of Ra (2019)(Piko Interactive).nes" size="393232" crc="0bcee664"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="pyrga" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Pyrga (HB, v1.52)</description>
+		<year>2026</year>
+		<manufacturer>Jiucai Baobao</manufacturer>
+		<rom name="Pyrga v1.52 (2026)(Jiucai Baobao).nes" size="32784" crc="a97601c5"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -20946,7 +21045,7 @@
 		<description>Super C (USA)</description>
 		<year>1990</year>
 		<manufacturer>Konami</manufacturer>
-		<rom name="Super C (USA)(1990)(Konami).nes" size="262160" crc="ed53852d"/>
+		<rom name="Super C (USA)(1990)(Konami).nes" size="262160" crc="1ac846f0"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
@@ -22002,6 +22101,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="tanker" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Tanker: Battle City Reimagined (HB)</description>
+		<year>2026</year>
+		<manufacturer>Slonenok Studio</manufacturer>
+		<rom name="Tanker - Battle City Reimagined (2026)(Slonenok Studio).nes" size="40976" crc="1f7b7d28"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="taote" sourcefile="nes/d_nes.cpp">
 		<comment>Hack</comment>
 		<description>Tao (Hack, English)</description>
@@ -22875,6 +22983,15 @@
 		<year>1989</year>
 		<manufacturer>Nintendo</manufacturer>
 		<rom name="To The Earth (USA)(1989)(Nintendo).nes" size="65552" crc="4137b9b3"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="togyzqumalaq" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Togyzqumalaq (HB, v2.0.9)</description>
+		<year>2026</year>
+		<manufacturer>Jiucai Baobao</manufacturer>
+		<rom name="Togyzqumalaq v2.0.9 (2026)(Jiucai Baobao).nes" size="40976" crc="e09a3dda"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

@@ -40,6 +40,9 @@
     <ClCompile Include="..\..\src\burn\vector.cpp">
       <Filter>burn</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\src\burn\burn_hdd.cpp">
+      <Filter>burn</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\src\burn\snd\ay8910.c">
       <Filter>burn\snd</Filter>
     </ClCompile>
@@ -2830,12 +2833,6 @@
     <ClCompile Include="..\..\src\cpu\i8051\mcs51.cpp">
       <Filter>cpus\i8051</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\cpu\mips3\cop0.cpp">
-      <Filter>cpus\mips</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\cpu\mips3\cop1.cpp">
-      <Filter>cpus\mips</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\cpu\mips3\mips3.cpp">
       <Filter>cpus\mips</Filter>
     </ClCompile>
@@ -3093,9 +3090,6 @@
     </ClCompile>
     <ClCompile Include="..\..\src\burn\drv\dataeast\d_liberate.cpp">
       <Filter>burn\drv\dataeast</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\cpu\mips3\x64\mips3_x64.cpp">
-      <Filter>cpus\mips</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\burn\drv\pre90s\d_berzerk.cpp">
       <Filter>burn\drv\pre90s</Filter>

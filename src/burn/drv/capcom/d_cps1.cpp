@@ -557,7 +557,7 @@ static INT32 get_distance(INT32 from, INT32 to) {
 
 static UINT8 adjusted_rotate_gunpos(INT32 i)
 {
-	return (*rotate_gunpos[i] & 0x7ff) / 0x40;
+	return (BURN_ENDIAN_SWAP_INT16(*rotate_gunpos[i]) & 0x7ff) / 0x40;
 }
 
 static void RotateDoTick()
@@ -15748,6 +15748,36 @@ static struct BurnRomInfo Sf2cedaRomDesc[] = {
 STD_ROM_PICK(Sf2ceda)
 STD_ROM_FN(Sf2ceda)
 
+// Street Fighter II': BONUS STAGE (Hack)
+// https://archive.org/details/sf2bs
+
+static struct BurnRomInfo Sf2bsRomDesc[] = {
+	{ "bs92e_23b.8f", 	0x0080000, 0x3e74960a, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "bs92_22b.7f", 	0x0080000, 0xc2a6dfb2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "bs92_21a.6f", 	0x0080000, 0xc0c44499, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+
+	{ "s92_01.bin",   	0x0080000, 0x03b0d852, BRF_GRA | CPS1_TILES },
+	{ "s92_02.bin",   	0x0080000, 0x840289ec, BRF_GRA | CPS1_TILES },
+	{ "s92_03.bin",   	0x0080000, 0xcdb5f027, BRF_GRA | CPS1_TILES },
+	{ "s92_04.bin",   	0x0080000, 0xe2799472, BRF_GRA | CPS1_TILES },
+	{ "s92_05.bin",   	0x0080000, 0xba8a2761, BRF_GRA | CPS1_TILES },
+	{ "s92_06.bin",   	0x0080000, 0xe584bfb5, BRF_GRA | CPS1_TILES },
+	{ "s92_07.bin",   	0x0080000, 0x21e3f87d, BRF_GRA | CPS1_TILES },
+	{ "s92_08.bin",   	0x0080000, 0xbefc47df, BRF_GRA | CPS1_TILES },
+	{ "s92_10.bin",   	0x0080000, 0x960687d5, BRF_GRA | CPS1_TILES },
+	{ "s92_11.bin",   	0x0080000, 0x978ecd18, BRF_GRA | CPS1_TILES },
+	{ "s92_12.bin",   	0x0080000, 0xd6ec9a0a, BRF_GRA | CPS1_TILES },
+	{ "s92_13.bin",   	0x0080000, 0xed2c67f6, BRF_GRA | CPS1_TILES },
+
+	{ "s92_09.bin",   	0x0010000, 0x08f6b60e, BRF_PRG | CPS1_Z80_PROGRAM },
+
+	{ "s92_18.bin",  	0x0020000, 0x7f162009, BRF_SND | CPS1_OKIM6295_SAMPLES },
+	{ "s92_19.bin",   	0x0020000, 0xbeade53f, BRF_SND | CPS1_OKIM6295_SAMPLES },
+};
+
+STD_ROM_PICK(Sf2bs)
+STD_ROM_FN(Sf2bs)
+
 static struct BurnRomInfo SfzchRomDesc[] = {
 	{ "sfzch23",       0x080000, 0x1140743f, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
 	{ "sfza22",        0x080000, 0x8d9b2480, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
@@ -17862,6 +17892,7 @@ static const struct GameConfig ConfigTable[] =
 	{ "sf2cebltw"     , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2sl73a"      , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2ceda"       , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
+	{ "sf2bs"         , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2hf"         , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2hfu"        , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
 	{ "sf2hfj"        , CPS_B_21_DEF, mapper_S9263B, 0, NULL                },
@@ -19457,7 +19488,7 @@ void __fastcall DaimakaibFFWriteWord(UINT32 a, UINT16 d)
 	}
 	
 	UINT16 *RAM = (UINT16*)CpsRamFF;
-	RAM[((a & 0xffff) >> 1)] = d;
+	RAM[((a & 0xffff) >> 1)] = BURN_ENDIAN_SWAP_INT16(d);
 }
 
 static INT32 DaimakaibInit()
@@ -20166,7 +20197,7 @@ void __fastcall PunipicFFWriteWord(UINT32 a, UINT16 d)
 	}
 	
 	UINT16 *RAM = (UINT16*)CpsRamFF;
-	RAM[((a & 0xffff) >> 1)] = d;
+	RAM[((a & 0xffff) >> 1)] = BURN_ENDIAN_SWAP_INT16(d);
 }
 
 static INT32 PunipicScanCallback(INT32 nAction, INT32 *pnMin)
@@ -21181,37 +21212,37 @@ void __fastcall Sf2ceeablScrollWrite(UINT32 a, UINT16 d)
 	switch (a) {
 		case 0x980000: {
 			// scroll1 y
-			*((UINT16*)(CpsReg + 0x0e)) = d;
+			*((UINT16*)(CpsReg + 0x0e)) = BURN_ENDIAN_SWAP_INT16(d);
 			return;
 		}
 		
 		case 0x980002: {
 			// scroll1 x
-			*((UINT16*)(CpsReg + 0x0c)) = d - 0x40;
+			*((UINT16*)(CpsReg + 0x0c)) = BURN_ENDIAN_SWAP_INT16(d - 0x40);
 			return;
 		}
 		
 		case 0x980004: {
 			// scroll2 y
-			*((UINT16*)(CpsReg + 0x12)) = d;
+			*((UINT16*)(CpsReg + 0x12)) = BURN_ENDIAN_SWAP_INT16(d);
 			return;
 		}
 		
 		case 0x980006: {
 			// scroll2 x
-			*((UINT16*)(CpsReg + 0x10)) = d - 0x3c;
+			*((UINT16*)(CpsReg + 0x10)) = BURN_ENDIAN_SWAP_INT16(d - 0x3c);
 			return;
 		}
 		
 		case 0x980008: {
 			// scroll3 y
-			*((UINT16*)(CpsReg + 0x16)) = d;
+			*((UINT16*)(CpsReg + 0x16)) = BURN_ENDIAN_SWAP_INT16(d);
 			return;
 		}
 		
 		case 0x98000a: {
 			// scroll3 x
-			*((UINT16*)(CpsReg + 0x14)) = d - 0x40;
+			*((UINT16*)(CpsReg + 0x14)) = BURN_ENDIAN_SWAP_INT16(d - 0x40);
 			return;
 		}
 		
@@ -21279,7 +21310,7 @@ void __fastcall Sf2ceeablScrollWrite(UINT32 a, UINT16 d)
 		
 		case 0x980016: {
 			// scroll3 ram offset
-			*((UINT16*)(CpsReg + 0x06)) = d;
+			*((UINT16*)(CpsReg + 0x06)) = BURN_ENDIAN_SWAP_INT16(d);
 			return;
 		}
 		
@@ -21646,7 +21677,7 @@ void __fastcall Sf2ceuab6WriteWord(UINT32 a, UINT16 d)
 {
 	if (a == 0x8001b2) {
 		// scroll 2 X offset has moved in this set
-		*((UINT16*)(CpsReg + 0x10)) = d;
+		*((UINT16*)(CpsReg + 0x10)) = BURN_ENDIAN_SWAP_INT16(d);
 		return;
 	}
 	
@@ -21806,7 +21837,7 @@ void __fastcall Sf2hfjbWriteWord(UINT32 a, UINT16 d)
 {
 	if (a == 0x800124) {
 		// row scroll start register moved in this set
-		*((UINT16*)(CpsReg + 0x20)) = d;
+		*((UINT16*)(CpsReg + 0x20)) = BURN_ENDIAN_SWAP_INT16(d);
 		return;
 	}
 	
@@ -21925,7 +21956,7 @@ void __fastcall SlampicFFWriteWord(UINT32 a, UINT16 d)
 	}
 	
 	UINT16 *RAM = (UINT16*)CpsRamFF;
-	RAM[((a & 0xffff) >> 1)] = d;
+	RAM[((a & 0xffff) >> 1)] = BURN_ENDIAN_SWAP_INT16(d);
 }
 
 static void SlampicPatchCallback()
@@ -22125,7 +22156,7 @@ static void __fastcall VarthbRegWriteWord(UINT32 a, UINT16 d)
 	if (a == 0x800188) {
 		if (d > 0x9000) {
 			// scroll 3 ram offset
-			*((UINT16*)(CpsReg + 0x06)) = d;
+			*((UINT16*)(CpsReg + 0x06)) = BURN_ENDIAN_SWAP_INT16(d);
 			return;
 		} // sound fade command written through CpsWritePort
 	}
@@ -22196,7 +22227,7 @@ static void Varthb2Callback()
 	// bootleg sprites index tiles from 0x8000 upwards; mirror the graphics
 	// so those tiles resolve into a valid copy at 0x400000
 	memcpy(CpsGfx + 0x400000, CpsGfx, 0x200000);
-};
+}
 
 static INT32 Varthb2Init()
 {
@@ -22460,7 +22491,7 @@ void __fastcall Wofr1blFFWriteWord(UINT32 a, UINT16 d)
 	}
 	
 	UINT16 *RAM = (UINT16*)CpsRamFF;
-	RAM[((a & 0xffff) >> 1)] = d;
+	RAM[((a & 0xffff) >> 1)] = BURN_ENDIAN_SWAP_INT16(d);
 }
 
 static void WofhPatch()
@@ -22545,7 +22576,7 @@ static void __fastcall SgyxzSpriteRamWriteLong(UINT32 a, UINT32 d)
 {
 	if (d == 0xffffffff) d = 0xefffefff; // Strange protection or glitch???
 
-	*((UINT32*)(CpsRam90 + (a & 0x3fffc))) = (d << 16) | (d >> 16);
+	*((UINT32*)(CpsRam90 + (a & 0x3fffc))) = BURN_ENDIAN_SWAP_INT32((d << 16) | (d >> 16));
 }
 
 static INT32 SgyxzInit()
@@ -26164,6 +26195,16 @@ struct BurnDriver BurnDrvCpsSf2ceda = {
 	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
 };
 
+struct BurnDriver BurnDrvCpsSf2bs = {
+	"sf2bs", "sf2ce", NULL, NULL, "2026",
+	"Street Fighter II': BONUS STAGE (Hack)\0", NULL, "zeroco", "CPS1",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
+	NULL, Sf2bsRomInfo, Sf2bsRomName, NULL, NULL, NULL, NULL, Sf2InputInfo, Sf2DIPInfo,
+	TwelveMhzInit, DrvExit, Cps1Frame, CpsRedraw, CpsAreaScan,
+	&CpsRecalcPal, 0x1000, 384, 224, 4, 3
+};
+
 struct BurnDriver BurnDrvCpsSfzch = {
 	"sfzch", NULL, NULL, NULL, "1995",
 	"Street Fighter Zero (CPS Changer, Japan 951020)\0", NULL, "Capcom", "CPS Changer",
@@ -27443,9 +27484,9 @@ struct BurnDriver BurnDrvCpsSf2hfsce = {
 // For more infomation, please visit: https://sf2mix.github.io/
 
 static struct BurnRomInfo sf2mixRomDesc[] = {
-	{ "smxe_23b.8f",   0x080000, 0x41877bf2, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-	{ "smx_22b.7f",    0x080000, 0xecc7e105, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
-	{ "smx_21a.6f",    0x080000, 0x07fb17ea, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smxe_23b.8f",   0x080000, 0x60d0d40d, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smx_22b.7f",    0x080000, 0xf7bd54e7, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
+	{ "smx_21a.6f",    0x080000, 0xb580c709, BRF_ESS | BRF_PRG | CPS1_68K_PROGRAM_NO_BYTESWAP },
 
 	{ "smx-1m.3a",     0x080000, 0xa8f70643, BRF_GRA | CPS1_TILES },
 	{ "smx-3m.5a",     0x080000, 0xf73f1913, BRF_GRA | CPS1_TILES },
@@ -27478,8 +27519,8 @@ STD_ROM_PICK(sf2mix)
 STD_ROM_FN(sf2mix)
 
 struct BurnDriver BurnDrvCpsSf2mix = {
-	"sf2mix", "sf2ce", NULL, NULL, "2025",
-	"Street Fighter II Mix (v1.6)\0", NULL, "hack", "CPS1",
+	"sf2mix", "sf2ce", NULL, NULL, "2025-26",
+	"Street Fighter II Mix (v1.7)\0", NULL, "hack", "CPS1",
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 2, HARDWARE_CAPCOM_CPS1, GBF_VSFIGHT, FBF_SF,
 	NULL, sf2mixRomInfo, sf2mixRomName, NULL, NULL, NULL, NULL, Sf2InputInfo, Sf2mixDIPInfo,

@@ -5959,7 +5959,7 @@ struct BurnDriver BurnDrvpce_soldblas = {
 // Son Son II (Japan)
 
 static struct BurnRomInfo pce_sonson2RomDesc[] = {
-	{ "son son ii (japan).pce", 0x040000, 0xd7921df2, BRF_PRG | BRF_ESS },
+	{ "Son Son II (Japan)(1989)(NEC).pce", 0x040000, 0xd7921df2, BRF_PRG | BRF_ESS },
 };
 
 STD_ROM_PICK(pce_sonson2)
@@ -5971,6 +5971,26 @@ struct BurnDriver BurnDrvpce_sonson2 = {
 	NULL, NULL, NULL, NULL,
 	BDF_GAME_WORKING, 1, HARDWARE_PCENGINE_PCENGINE, GBF_PLATFORM, 0,
 	PceGetZipName, pce_sonson2RomInfo, pce_sonson2RomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+
+// Son Son II (Hack, English)
+// https://romhackplaza.org/translations/sonson-ii-pc-engine-english-translation-english-translation-pc-engine-supergrafx
+static struct BurnRomInfo pce_sonson2teRomDesc[] = {
+	{ "Son Son II T-Eng (2026)(Jackic).pce", 524288, 0xef783f57, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(pce_sonson2te)
+STD_ROM_FN(pce_sonson2te)
+
+struct BurnDriver BurnDrvpce_sonson2te = {
+	"pce_sonson2te", "pce_sonson2", NULL, NULL, "2026",
+	"Son Son II (Hack, English)\0", NULL, "Jackic", "PC Engine",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_PCENGINE_PCENGINE, GBF_PLATFORM, 0,
+	PceGetZipName, pce_sonson2teRomInfo, pce_sonson2teRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
 	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
@@ -9408,6 +9428,25 @@ struct BurnDriver BurnDrvpce_barbarianzxs = {
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
 
+// Batman (HB)
+
+static struct BurnRomInfo pce_batmanhbRomDesc[] = {
+	{ "Batman (2026)(Magic Games).pce", 1048576, 0x0577fe88, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(pce_batmanhb)
+STD_ROM_FN(pce_batmanhb)
+
+struct BurnDriver BurnDrvpce_batmanhb = {
+	"pce_batmanhb", NULL, NULL, NULL, "2026",
+	"Batman (HB)\0", NULL, "Magic Games", "PC Engine",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 1, HARDWARE_PCENGINE_PCENGINE, GBF_ADV | GBF_PLATFORM, 0,
+	PceGetZipName, pce_batmanhbRomInfo, pce_batmanhbRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
 // Death Sword - Apple II (HB)
 
 static struct BurnRomInfo pce_barbarianap2RomDesc[] = {
@@ -9861,6 +9900,25 @@ struct BurnDriver BurnDrvtg_chasehqnf = {
 	BDF_GAME_WORKING | BDF_CLONE | BDF_HACK, 1, HARDWARE_PCENGINE_TG16, GBF_RACING, 0,
 	TgGetZipName, tg_chasehqnfRomInfo, tg_chasehqnfRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
 	TG16Init, PCEExit, PCEFrame, PCEDraw, PCEScan,
+	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
+};
+
+// Tetris - Atari Games Arcade Port (HB, v1.01)
+
+static struct BurnRomInfo pce_tetrisarcRomDesc[] = {
+	{ "Tetris - Atari Games Arcade Port v1.01 (2026)(ShinobiZ).pce", 524288, 0x5fccd826, BRF_PRG | BRF_ESS },
+};
+
+STD_ROM_PICK(pce_tetrisarc)
+STD_ROM_FN(pce_tetrisarc)
+
+struct BurnDriver BurnDrvpce_tetrisarc = {
+	"pce_tetrisarc", NULL, NULL, NULL, "2026",
+	"Tetris - Atari Games Arcade Port (HB, v1.01)\0", NULL, "ShinobiZ", "PC Engine",
+	NULL, NULL, NULL, NULL,
+	BDF_GAME_WORKING | BDF_HOMEBREW, 2, HARDWARE_PCENGINE_PCENGINE, GBF_PUZZLE, 0,
+	PceGetZipName, pce_tetrisarcRomInfo, pce_tetrisarcRomName, NULL, NULL, NULL, NULL, pceInputInfo, pceDIPInfo,
+	PCEInit, PCEExit, PCEFrame, PCEDraw, PCEScan,
 	&PCEPaletteRecalc, 0x400, 1024, 240, 4, 3
 };
 

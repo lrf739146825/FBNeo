@@ -256,7 +256,7 @@ int HandleMessage(enum retro_log_level level, TCHAR* szFormat, ...)
 				environ_cb(RETRO_ENVIRONMENT_SET_MESSAGE, &msg);
 			}
 		}
-		log_cb(level, buf);
+		log_cb(level, "%s", buf);
 	}
 
 	return rc;
@@ -268,15 +268,16 @@ static INT32 __cdecl libretro_bprintf(INT32 nStatus, TCHAR* szFormat, ...)
 	va_list vp;
 
 	// some format specifiers don't translate well into the retro logs, replace them
-	szFormat = string_replace_substring(szFormat, strlen(szFormat), "%S", strlen("%S"), "%s", strlen("%s"));
+	char *fmt = string_replace_substring(szFormat, strlen(szFormat), "%S", strlen("%S"), "%s", strlen("%s"));
 
 	// retro logs prefer ending with \n
 	// 2021-10-26: disabled it's causing overflow in a few cases, find a better way to do this...
 	//if (szFormat[strlen(szFormat)-1] != '\n') strncat(szFormat, "\n", 1);
 
 	va_start(vp, szFormat);
-	int rc = vsnprintf(buf, PRINTF_BUFFER_SIZE, szFormat, vp);
+	int rc = vsnprintf(buf, PRINTF_BUFFER_SIZE, fmt ? fmt : szFormat, vp);
 	va_end(vp);
+	free(fmt);
 
 	if (rc >= 0)
 	{
@@ -292,7 +293,7 @@ static INT32 __cdecl libretro_bprintf(INT32 nStatus, TCHAR* szFormat, ...)
 		else if (nStatus == PRINT_ERROR)
 			retro_log = RETRO_LOG_ERROR;
 
-		HandleMessage(retro_log, buf);
+		HandleMessage(retro_log, "%s", buf);
 
 #ifdef FBNEO_DEBUG
 		// Let's send errors to a file
@@ -577,7 +578,7 @@ static int create_variables_from_dipswitches()
 	for (int i = 0; BurnDrvGetDIPInfo(&bdi, i) == 0; i++)
 	{
 		/* 0xFE is the beginning label for a DIP switch entry */
-		/* 0xFD are region DIP switches */
+		/* 0xFD are "fake" DIP switches (region, bios selection, ...) */
 		if ((bdi.nFlags == 0xFE || bdi.nFlags == 0xFD) && bdi.nSetting > 1)
 		{
 			dipswitch_core_options.push_back(dipswitch_core_option());
@@ -3264,8 +3265,6 @@ char* GameDecoration(UINT32 nBurnDrv)
 	nBurnDrvActive = nOldBurnDrv;
 	return szGameDecoration;
 }
-
-#undef TYPES_MAX
 
 // functions from src/burner/misc.cpp
 
