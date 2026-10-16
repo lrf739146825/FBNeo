@@ -8465,7 +8465,7 @@
 	</game>
 	<game name="dasbootca" cloneof="dasbooten" romof="dasbooten" sourcefile="spectrum/d_spectrum.cpp">
 		<comment>Homebrew</comment>
-		<description>Das Boot (Castilian) (128K) (HB)</description>
+		<description>Das Boot (Catalan) (128K) (HB)</description>
 		<year>2026</year>
 		<manufacturer>Menyiques</manufacturer>
 		<rom name="Das Boot CA 128K (2026)(Menyiques).tap" size="122554" crc="994c3043"/>

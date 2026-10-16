@@ -1016,6 +1016,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="arcadiama" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Arcadiama (HB, v1.03)</description>
+		<year>2026</year>
+		<manufacturer>NK</manufacturer>
+		<rom name="Arcadiama v1.03 (2026)(NK).bin" size="2752512" crc="d2951706"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="archrivl" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Arch Rivals (Euro, USA)</description>
 		<year>1992</year>
@@ -2279,6 +2288,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="bioblade" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Bio Blade: A Star Odyssey (HB)</description>
+		<year>2026</year>
+		<manufacturer>Berk Devs</manufacturer>
+		<rom name="Bio Blade - A Star Odyssey (2026)(Berk Devs).bin" size="655360" crc="9072be7c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="biohazrb" sourcefile="megadrive/d_megadrive.cpp">
 		<description>Bio Hazard Battle (Euro, USA)</description>
 		<year>1992</year>
@@ -2949,6 +2967,15 @@
 		<year>1990</year>
 		<manufacturer>Namco</manufacturer>
 		<rom name="Burning Force (USA)(1990)(Namco).bin" size="524288" crc="bdc8f02c"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="cabal" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Cabal (HB, Beta 1)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Cabal Beta 1 (2026)(Oldschool Is Beautiful).bin" size="2097152" crc="67e040cb"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5212,6 +5239,15 @@
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="diceroyal" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Dice Royal (HB, Alpha)</description>
+		<year>2026</year>
+		<manufacturer>Grave Games</manufacturer>
+		<rom name="Dice Royal Alpha (2026)(Grave Games).bin" size="262144" crc="0c8b6016"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="dicktrs" cloneof="dicktr" romof="dicktr" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
 		<description>Dick Tracy (Hack, Spanish)</description>
@@ -7293,6 +7329,15 @@
 		<year>2022</year>
 		<manufacturer>Manganga Team</manufacturer>
 		<rom name="Fight Game II 3000 (2022)(Manganga Team).bin" size="4194304" crc="769de2f6"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fightpub" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Fight Pub (HB, v0.5.3)</description>
+		<year>2026</year>
+		<manufacturer>Dead House Studios</manufacturer>
+		<rom name="Fight Pub v0.5.3 (2026)(Dead House Studios).bin" size="786432" crc="f9aac5d3"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14714,10 +14759,10 @@
 	</game>
 	<game name="pangoib" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Pang (Oldschool Is Beautiful) (HB, Beta)</description>
+		<description>Pang (Oldschool Is Beautiful) (HB, Beta 2)</description>
 		<year>2026</year>
 		<manufacturer>Oldschool Is Beautiful</manufacturer>
-		<rom name="Pang Beta (2026)(Oldschool Is Beautiful).bin" size="3050860" crc="3b31e790"/>
+		<rom name="Pang Beta 2 (2026)(Oldschool Is Beautiful).bin" size="3068942" crc="f348ef08"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18722,10 +18767,10 @@
 	</game>
 	<game name="sidearms" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Side Arms - Hyper Dyne (HB, v2.0)</description>
+		<description>Side Arms - Hyper Dyne (HB, v2.1)</description>
 		<year>2026</year>
 		<manufacturer>rester159</manufacturer>
-		<rom name="Side Arms - Hyper Dyne v2.0 (2026)(rester159).bin" size="4194304" crc="f1eca687"/>
+		<rom name="Side Arms - Hyper Dyne v2.1 (2026)(rester159).bin" size="4194304" crc="b36c3a67"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -20498,10 +20543,10 @@
 	</game>
 	<game name="sf248m" cloneof="sf2" romof="sf2" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Hack</comment>
-		<description>Street Fighter II' - Special Champion Edition - 48 Mbits (Hack, v1.4)</description>
+		<description>Street Fighter II' - Special Champion Edition - 48 MBits Blast Processing Edition (Hack, v1.6)</description>
 		<year>2026</year>
 		<manufacturer>marcel_law</manufacturer>
-		<rom name="Street Fighter II' - Special Champion Edition - 48 Mbits v1.4 (2026)(marcel_law).bin" size="6291456" crc="7e6d6b6d"/>
+		<rom name="Street Fighter II' - Special Champion Edition - 48 MBits Blast Processing Edition v1.6 (2026)(marcel_law).bin" size="6291456" crc="09579505"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22266,10 +22311,10 @@
 	</game>
 	<game name="tmntarcade" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Teenage Mutant Ninja Turtles: The Arcade Game (HB, v0.3.6)</description>
+		<description>Teenage Mutant Ninja Turtles: The Arcade Game (HB, v0.3.6b)</description>
 		<year>2026</year>
 		<manufacturer>Gustavo Valenzuela</manufacturer>
-		<rom name="Teenage Mutant Ninja Turtles - The Arcade Game v0.3.6 (2026)(Gustavo Valenzuela).bin" size="4063232" crc="bd1f9815"/>
+		<rom name="Teenage Mutant Ninja Turtles - The Arcade Game v0.3.6b (2026)(Gustavo Valenzuela).bin" size="4063232" crc="4de8ffb4"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

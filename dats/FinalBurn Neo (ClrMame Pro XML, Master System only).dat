@@ -695,6 +695,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="aticatac" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Atic Atac (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Atic Atac v0.0.1 (2026)(haroldo-ok).sms" size="2097152" crc="40eaffa1"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="atoms" sourcefile="sms/d_sms.cpp">
 		<comment>Homebrew</comment>
 		<description>Atoms! (HB, v1.2)</description>
@@ -1641,6 +1650,15 @@
 		<year>2025</year>
 		<manufacturer>SatY Traducoes</manufacturer>
 		<rom name="Danan - The Jungle Fighter T-Por v3.1 (2025)(SatY Traducoes).sms" size="262144" crc="d2a99fdc"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="dangdave" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Dangerous Dave (HB, v0.0.2)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Dangerous Dave v0.0.2 (2026)(haroldo-ok).sms" size="32768" crc="e328ba4b"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -3398,6 +3416,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="jetpac" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Jetpac (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Jetpac v0.0.1 (2026)(haroldo-ok).sms" size="65536" crc="c558c850"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="joemont" sourcefile="sms/d_sms.cpp">
 		<description>Joe Montana Football (Euro, USA, Brazil)</description>
 		<year>1990</year>
@@ -3801,6 +3828,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="madmixgr" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Mad Mix Game R (HB)</description>
+		<year>2026</year>
+		<manufacturer>Magic Games</manufacturer>
+		<rom name="Mad Mix Game R (2026)(Magic Games).sms" size="4194304" crc="01fd018a"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="mjsengok" sourcefile="sms/d_sms.cpp">
 		<description>Mahjong Sengoku Jidai (Japan, Hong Kong)</description>
 		<year>1987</year>
@@ -4053,6 +4089,15 @@
 		<year>2025</year>
 		<manufacturer>Inufuto</manufacturer>
 		<rom name="Mieyen (2025)(Inufuto).sms" size="16384" crc="364c06ed"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="mikemech" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Mike Mech (HB)</description>
+		<year>2026</year>
+		<manufacturer>SiRioKD</manufacturer>
+		<rom name="Mike Mech (2026)(SiRioKD).sms" size="131072" crc="968b908c"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -4470,6 +4515,24 @@
 		<year>1993</year>
 		<manufacturer>Sega</manufacturer>
 		<rom name="Ottifants, The (Euro, Brazil)(1993)(Sega).sms" size="262144" crc="82ef2a7d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="outworld" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Out of This World (HB, v0.0.4)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Out of This World v0.0.4 (2026)(haroldo-ok).sms" size="4194304" crc="b3b5300e"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="outworldcv" cloneof="outworld" romof="outworld" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Out of This World - Cutscene Viewer (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Out of This World - Cutscene Viewer v0.0.1 (2026)(haroldo-ok).sms" size="4194304" crc="0d8d0504"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -6008,6 +6071,15 @@
 		<year>1993</year>
 		<manufacturer>U.S. Gold</manufacturer>
 		<rom name="Star Wars (Euro, Brazil)(1993)(U.S. Gold).sms" size="524288" crc="d4b8f66d"/>
+		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="stardust" sourcefile="sms/d_sms.cpp">
+		<comment>Homebrew</comment>
+		<description>Stardust (HB, v0.0.1)</description>
+		<year>2026</year>
+		<manufacturer>haroldo-ok</manufacturer>
+		<rom name="Stardust v0.0.1 (2026)(haroldo-ok).sms" size="524288" crc="2de87b06"/>
 		<video type="raster" orientation="horizontal" width="256" height="192" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>

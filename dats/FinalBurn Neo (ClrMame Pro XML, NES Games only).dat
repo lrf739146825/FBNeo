@@ -5378,6 +5378,15 @@
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>
+	<game name="diceroyal" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Dice Royal (HB, Alpha)</description>
+		<year>2026</year>
+		<manufacturer>Grave Games</manufacturer>
+		<rom name="Dice Royal Alpha (2026)(Grave Games).nes" size="73744" crc="a5c17ade"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
 	<game name="dicktracy" sourcefile="nes/d_nes.cpp">
 		<description>Dick Tracy (USA)</description>
 		<year>1990</year>
@@ -13193,6 +13202,15 @@
 		<year>1990</year>
 		<manufacturer>Mindscape</manufacturer>
 		<rom name="Mad Max (USA)(1990)(Mindscape).nes" size="262160" crc="28fd4957"/>
+		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
+		<driver status="good"/>
+	</game>
+	<game name="madmixgr" sourcefile="nes/d_nes.cpp">
+		<comment>Homebrew</comment>
+		<description>Mad Mix Game R (HB)</description>
+		<year>2026</year>
+		<manufacturer>Magic Games</manufacturer>
+		<rom name="Mad Mix Game R (2026)(Magic Games).nes" size="2097168" crc="58702f7d"/>
 		<video type="raster" orientation="horizontal" width="256" height="224" aspectx="256" aspecty="224"/>
 		<driver status="good"/>
 	</game>

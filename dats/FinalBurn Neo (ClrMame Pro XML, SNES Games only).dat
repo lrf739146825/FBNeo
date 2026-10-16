@@ -38,6 +38,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="2048fp" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>2048 Fibo+ (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="2048 Fibo+ (2026)(DiTnera).sfc" size="131072" crc="a3e5b01c"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="3ninjaskbtp" cloneof="3ninjaskb" romof="3ninjaskb" sourcefile="snes/d_snes.cpp">
 		<comment>Hack</comment>
 		<description>3 Ninjas Kick Back (Hack, Portuguese v1.7)</description>
@@ -1405,6 +1414,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="balance67" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Balance 67 (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="Balance 67 (2026)(DiTnera).sfc" size="131072" crc="1eca7b04"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="ballz3d" romof="dsp1b" sourcefile="snes/d_snes.cpp">
 		<comment>DSP-1B enhancement chip</comment>
 		<description>Ballz 3D: Fighting at Its Ballziest (USA)</description>
@@ -1511,6 +1529,15 @@
 		<year>2017</year>
 		<manufacturer>DeJap Translations, Docrow</manufacturer>
 		<rom name="Bastard!! - Dark God of Destruction T-Eng 'Easy Spells' (2017)(DeJap Translations, Docrow).sfc" size="2097664" crc="564504cf"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="batida" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Batida (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="Batida (2026)(DiTnera).sfc" size="262144" crc="379caf5f"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -5785,6 +5812,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="echo" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>ECHO (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="ECHO (2026)(DiTnera).sfc" size="131072" crc="684427f6"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="edonokiba" sourcefile="snes/d_snes.cpp">
 		<description>Edono Kiba (Japan)</description>
 		<year>1993</year>
@@ -6715,6 +6751,33 @@
 		<year>1993</year>
 		<manufacturer>Forum</manufacturer>
 		<rom name="Finalset (J)(1993)(Forum).sfc" size="1048576" crc="e06fae58"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="find87v2" cloneof="find87" romof="find87" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Find 87 (HB, v2)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="Find 87 v2 (2026)(DiTnera).sfc" size="262144" crc="797eb82b"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="find87" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Find 87 (HB, v3)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="Find 87 v3 (2026)(DiTnera).sfc" size="262144" crc="973cc7a2"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="fio" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>FIO (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="FIO (2026)(DiTnera).sfc" size="262144" crc="c7f21be4"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -13769,6 +13832,15 @@
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
+	<game name="pocketgravity" sourcefile="snes/d_snes.cpp">
+		<comment>Homebrew</comment>
+		<description>Pocket Gravity (HB)</description>
+		<year>2026</year>
+		<manufacturer>DiTnera</manufacturer>
+		<rom name="Pocket Gravity (2026)(DiTnera).sfc" size="131072" crc="1f174fa8"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="pocketmonster" sourcefile="snes/d_snes.cpp">
 		<description>Pocket Monster (USA) (Unl)</description>
 		<year>1999</year>
@@ -14680,6 +14752,15 @@
 		<year>2009</year>
 		<manufacturer>SENSOR&amp;KV&amp;SATAN</manufacturer>
 		<rom name="Return of Double Dragon - Threat from the East h7hard-1909096 (2009)(SENSOR&amp;KV&amp;SATAN).sfc" size="1048576" crc="56192693"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="returndoubledragonp" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Return of Double Dragon PLUS (Hack, v0.9)</description>
+		<year>2026</year>
+		<manufacturer>Jackic</manufacturer>
+		<rom name="Return of Double Dragon PLUS v0.9 (2026)(Jackic).sfc" size="2097152" crc="62d3188c"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -17882,6 +17963,15 @@
 		<year>1992</year>
 		<manufacturer>Tradewest - Technos</manufacturer>
 		<rom name="Super Double Dragon (U)(1992)(Tradewest - Technos).sfc" size="1048576" crc="09ed12a5"/>
+		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="superdoubledragonp" cloneof="returndoubledragonev" romof="returndoubledragonev" sourcefile="snes/d_snes.cpp">
+		<comment>Hack</comment>
+		<description>Super Double Dragon PLUS (Hack, v0.9)</description>
+		<year>2026</year>
+		<manufacturer>Jackic</manufacturer>
+		<rom name="Super Double Dragon PLUS v0.9 (2026)(Jackic).sfc" size="2097152" crc="60e7aa93"/>
 		<video type="raster" orientation="horizontal" width="512" height="448" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
