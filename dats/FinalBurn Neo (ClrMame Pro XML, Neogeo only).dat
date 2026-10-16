@@ -30564,7 +30564,7 @@
 		<description>The King of Fighters '98 - The Slugfest / King of Fighters '98 - Dream Match Never Ends (BC Style 2002, Hack) (Unknown Author)</description>
 		<year>20??</year>
 		<manufacturer>hack</manufacturer>
-		<rom name="98s02-p1.p1" size="1048576" crc="2fd34fd8"/>
+		<rom name="98s02-p1.p1" size="1048576" crc="fafb0449"/>
 		<rom name="98s02-p2.p2" size="4194304" crc="ccc71b9c"/>
 		<rom name="98s02-s1.s1" size="131072" crc="f6871e73"/>
 		<rom name="242-c1pfe.c1" size="8388608" crc="379654a5"/>

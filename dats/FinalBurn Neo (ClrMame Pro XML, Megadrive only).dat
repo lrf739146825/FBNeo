@@ -2972,10 +2972,10 @@
 	</game>
 	<game name="cabal" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Cabal (HB, Beta 1)</description>
+		<description>Cabal (HB, Beta 2a)</description>
 		<year>2026</year>
 		<manufacturer>Oldschool Is Beautiful</manufacturer>
-		<rom name="Cabal Beta 1 (2026)(Oldschool Is Beautiful).bin" size="2097152" crc="67e040cb"/>
+		<rom name="Cabal Beta 2a (2026)(Oldschool Is Beautiful).bin" size="2097152" crc="d4dd88df"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -14759,10 +14759,10 @@
 	</game>
 	<game name="pangoib" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Pang (Oldschool Is Beautiful) (HB, Beta 2)</description>
+		<description>Pang (Oldschool Is Beautiful) (HB, Beta 3)</description>
 		<year>2026</year>
 		<manufacturer>Oldschool Is Beautiful</manufacturer>
-		<rom name="Pang Beta 2 (2026)(Oldschool Is Beautiful).bin" size="3068942" crc="f348ef08"/>
+		<rom name="Pang Beta 3 (2026)(Oldschool Is Beautiful).bin" size="3877096" crc="a789941b"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -15095,6 +15095,15 @@
 		<year>2025</year>
 		<manufacturer>WaterMelon</manufacturer>
 		<rom name="Paprium Minigame (2020)(WaterMelon).bin" size="524288" crc="57b0ffa4"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="parasol" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Parasol Stars (HB, Beta 1)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Parasol Stars Beta 1 (2026)(Oldschool Is Beautiful).bin" size="8388608" crc="3d3c10fd"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -16503,6 +16512,15 @@
 		<year>2026</year>
 		<manufacturer>NK Soft</manufacturer>
 		<rom name="Queen’s Reversi v1.01 (2026)(NK Soft).bin" size="1703936" crc="00c79e37"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="quoridor" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Quoridor MD (HB)</description>
+		<year>2026</year>
+		<manufacturer>abadede919302</manufacturer>
+		<rom name="Quoridor MD (2026)(abadede919302).bin" size="262144" crc="e9f77007"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -18575,6 +18593,15 @@
 		<year>2014</year>
 		<manufacturer>Dark Claw</manufacturer>
 		<rom name="Shining Tactics Absolute Final Edition (2014)(Dark Claw).bin" size="4194304" crc="49d556e2"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="shinobi" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Shinobi (HB, Beta 1)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Shinobi Beta 1 (2026)(Oldschool Is Beautiful).bin" size="4194304" crc="1c33bd69"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
@@ -22761,10 +22788,19 @@
 	</game>
 	<game name="tigeroad" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Tiger Road (HB, Beta 17)</description>
+		<description>Tiger Road (hombreimaginario) (HB, Beta 17)</description>
 		<year>2026</year>
 		<manufacturer>hombreimaginario</manufacturer>
 		<rom name="Tiger Road Beta 17 (2026)(hombreimaginario).bin" size="2490368" crc="407b4191"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
+	<game name="tigeroadoib" sourcefile="megadrive/d_megadrive.cpp">
+		<comment>Homebrew</comment>
+		<description>Tiger Road (Oldschool Is Beautiful) (HB, Alpha)</description>
+		<year>2026</year>
+		<manufacturer>Oldschool Is Beautiful</manufacturer>
+		<rom name="Tiger Road Alpha (2026)(Oldschool Is Beautiful).bin" size="4194304" crc="e7a2835d"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
