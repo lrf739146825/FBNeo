@@ -12290,6 +12290,7 @@ DRV		BurnSpecjswilly3;
 DRV		BurnSpecJetsetwrr;
 DRV		BurnDrvnes_jetpaco;
 DRV		BurnDrvnes_jetpac;
+DRV		BurnDrvJetpac;
 DRV		BurnDrvsms_jetpac;
 DRV		BurnSpecJetpacminer;
 DRV		BurnSpecJetpackjock;
@@ -41955,6 +41956,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnSpecJetsetwrr,			// Jet Set Willy: Role Reversal (48K) (HB)
 	&BurnDrvnes_jetpaco,		// Jet-Paco (HB)
 	&BurnDrvnes_jetpac,			// Jetpac (HB)
+	&BurnDrvJetpac,				// Jetpac (HB)
 	&BurnDrvsms_jetpac,			// Jetpac (HB, v0.0.1)
 	&BurnSpecJetpacminer,		// JetPac Miner (48K) (HB, v1.2b)
 	&BurnSpecJetpackjock,		// Jetpack Jock (48K-128K) (HB)
@@ -47798,7 +47800,7 @@ static struct BurnDriver* pDriver[] = {
 	&BurnDrvPangb2,				// Pang (bootleg, set 4)
 	&BurnDrvPangbold2,			// Pang (bootleg, set 5)
 	&BurnDrvPangbold3,			// Pang (bootleg, set 6)
-	&BurnDrvmd_pang,			// Pang (DavidGames) (HB, Beta v0.75)
+	&BurnDrvmd_pang,			// Pang (DavidGames) (HB, Beta v0.81)
 	&BurnDrvcv_pang,			// Pang (HB, RC2.0)
 	&BurnDrvmd_pangoib,			// Pang (Oldschool Is Beautiful) (HB, Beta 3)
 	&BurnDrvPang,				// Pang (World)
@@ -71554,6 +71556,7 @@ static game_sourcefile_entry sourcefile_table[] = {
 	{ "spec_jetsetwrr", "spectrum/d_spectrum.cpp"},
 	{ "nes_jetpaco", "nes/d_nes.cpp"},
 	{ "nes_jetpac", "nes/d_nes.cpp"},
+	{ "jetpac", "taito/d_taitol.cpp"},
 	{ "sms_jetpac", "sms/d_sms.cpp"},
 	{ "spec_jetpacminer", "spectrum/d_spectrum.cpp"},
 	{ "spec_jetpackjock", "spectrum/d_spectrum.cpp"},

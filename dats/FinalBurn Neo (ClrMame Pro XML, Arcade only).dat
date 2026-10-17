@@ -80988,6 +80988,17 @@
 		<video type="raster" orientation="vertical" width="224" height="256" aspectx="3" aspecty="4"/>
 		<driver status="good"/>
 	</game>
+	<game name="jetpac" sourcefile="taito/d_taitol.cpp">
+		<description>Jetpac (HB)</description>
+		<year>2026</year>
+		<manufacturer>Tardis Remakes</manufacturer>
+		<rom name="jp-ic10" size="61440" crc="f06281c4"/>
+		<rom name="jp-b96-07.ic9" size="65536" crc="83e284a4"/>
+		<rom name="jp-b96-08.ic8" size="65536" crc="d714c279"/>
+		<rom name="jp-gal16v8-b86-04.bin" size="279" crc="bf8c0ea0"/>
+		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
+		<driver status="good"/>
+	</game>
 	<game name="samesamecn" cloneof="fireshrk" romof="fireshrk" sourcefile="toaplan/d_toaplan1.cpp">
 		<description>Jiao! Jiao! Jiao! (China, 2P set)</description>
 		<year>1990</year>

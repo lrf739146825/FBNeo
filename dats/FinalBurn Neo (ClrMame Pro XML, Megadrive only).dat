@@ -14750,10 +14750,10 @@
 	</game>
 	<game name="pang" sourcefile="megadrive/d_megadrive.cpp">
 		<comment>Homebrew</comment>
-		<description>Pang (DavidGames) (HB, Beta v0.75)</description>
+		<description>Pang (DavidGames) (HB, Beta v0.81)</description>
 		<year>2026</year>
 		<manufacturer>DavidGames</manufacturer>
-		<rom name="Pang Beta v0.75 (2026)(DavidGames).bin" size="1441792" crc="75a52a4f"/>
+		<rom name="Pang Beta v0.81 (2026)(DavidGames).bin" size="1441792" crc="eb641d44"/>
 		<video type="raster" orientation="horizontal" width="320" height="224" aspectx="4" aspecty="3"/>
 		<driver status="good"/>
 	</game>
