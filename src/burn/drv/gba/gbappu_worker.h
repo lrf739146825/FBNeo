@@ -1608,6 +1608,39 @@ static bool ppu_worker_render_frame_into(ppu_worker_snapshot_t* snap, UINT32* ou
 		return true;
 	}
 
+	// OPT2: reuse leading scanlines byte-identical to the previous frame
+	// (gated to ghosting=0, out_bpp=4, no VRAM journal). Sufficient condition
+	// only. Compare line 0 first so always-changing scenes skip the VRAM memcmp.
+	bool can_opt2 = false;
+	int  opt2_end = 0;
+	ppu_worker_snapshot_t* prev = NULL;
+	int front = w->front_idx;
+	if (snap->ghosting_strength == 0.0f && w->out_bpp == 4
+		&& w->prev_sig_valid && front >= 0 && front != ridx
+		&& !snap->vram_journal) {
+		prev = &w->snapshots[front];
+		if (!prev->vram_journal && snap->stop_mode == prev->stop_mode
+			&& memcmp(&snap->line_state[0], &prev->line_state[0],
+			          sizeof(ppu_worker_line_state_t)) == 0) {
+			// Line 0 matches: compare full VRAM.
+			if (memcmp(snap->vram, prev->vram, 128 * 1024) == 0) {
+				INT32 y = 1;
+				for (; y < GBA_LCD_H; ++y) {
+					if (memcmp(&snap->line_state[y], &prev->line_state[y],
+					           sizeof(ppu_worker_line_state_t)) != 0)
+						break;
+				}
+				opt2_end = y;
+				can_opt2 = true;
+			}
+		}
+	}
+	if (can_opt2 && opt2_end >= GBA_LCD_H) {
+		// All 160 lines identical: copy the whole frame.
+		memcpy(out_fb, w->backbuf[front], GBA_LCD_W * GBA_LCD_H * 4);
+		return true;
+	}
+
 	gba_ppu_t ppu_state;
 	UINT32    first_buf[GBA_LCD_W];
 	UINT32    second_buf[GBA_LCD_W];
@@ -1705,7 +1738,43 @@ static bool ppu_worker_render_frame_into(ppu_worker_snapshot_t* snap, UINT32* ou
 	if (frame_sbf_q8 > 0 && ghost_fb)
 		memcpy(out_fb, ghost_fb, fb_bytes);
 
-	for (INT32 y = 0; y < GBA_LCD_H; ++y) {
+	INT32 y_start = 0;
+	if (can_opt2) {
+		// Copy reused leading lines from the previous backbuf, then resume
+		// normal rendering at y = opt2_end.
+		const UINT32* prev_fb = w->backbuf[front];
+		if (opt2_end > 0)
+			memcpy(out_fb, prev_fb, opt2_end * GBA_LCD_W * 4);
+		// Force second_buf armed: a reused line may hold a semi-transparent
+		// OBJ. False positive costs one backdrop fill, no pixel difference.
+		ctx.need_second_buf = true;
+		// Replay mosaic_y_counter over the skipped lines to match the value the
+		// real loop would have at y = opt2_end.
+		{
+			INT32 moc = -1;
+			for (INT32 yy = 0; yy < opt2_end; ++yy) {
+				UINT16 mr = BURN_ENDIAN_SWAP_INT16(*(const UINT16*)(snap->line_state[yy].io + (GBA_MOSAIC & 0x3f)));
+				INT32 my = SB_BFE(mr, 12, 4) + 1;
+				if (++moc >= my || yy == 0) moc = 0;
+			}
+			ctx.ppu->mosaic_y_counter = moc;
+		}
+		// Seed palette cache from the last reused line.
+		if (opt2_end > 0) {
+			memcpy(ctx.last_palette, snap->line_state[opt2_end - 1].palette, 1024);
+			ctx.pal_valid = true;
+			const UINT16* p16 = (const UINT16*)ctx.last_palette;
+			for (INT32 pi = 0; pi < 512; ++pi) {
+				UINT16 c = BURN_ENDIAN_SWAP_INT16(p16[pi]);
+				UINT32 r = c & 0x1Fu, g = (c >> 5) & 0x1Fu, b = (c >> 10) & 0x1Fu;
+				r = (r << 3) | (r >> 2); g = (g << 3) | (g >> 2); b = (b << 3) | (b >> 2);
+				ctx.pal_xrgb32[pi] = (r << 16) | (g << 8) | b;
+			}
+		}
+		y_start = opt2_end;
+	}
+
+	for (INT32 y = y_start; y < GBA_LCD_H; ++y) {
 		// Cancel/shutdown check: exit at a scanline boundary.
 		if (w->exiting || w->cancel_render) return false;
 
